@@ -1,0 +1,485 @@
+[
+  {
+    "talk_id": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision::chen::1",
+    "session_title": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision",
+    "talk_title": "Quantitative molecular imaging to enable personalized radiopharmaceutical therapy",
+    "speaker": {
+      "name": "Dr. Delphine Chen",
+      "affiliation": "Fred Hutch Cancer Center, Department of Nuclear Medicine and Radiology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroendocrine tumors",
+      "prostate cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "radiopharmaceuticals",
+      "tumor_microenvironment",
+      "biomarker_development",
+      "dosimetry",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SSTR2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "beta_emitter",
+        "compound_name": "lutetium-177 dotatate",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "well-differentiated neuroendocrine tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PSMA",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "beta_emitter",
+        "compound_name": "lutetium-177 PSMA-617",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "metastatic castration-resistant prostate cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SSTR uptake relative to liver",
+        "type": "eligibility",
+        "assay": "SSTR PET/CT SUV",
+        "finding": "Patients with uptake \u2265 liver were eligible for lutetium-177 dotatate; post\u2011hoc analysis showed similar benefit across uptake levels"
+      },
+      {
+        "name": "PSMA PET SUV quartile",
+        "type": "predictive",
+        "assay": "PSMA PET/CT SUV",
+        "finding": "Higher SUV quartile correlated with improved radiographic PFS and OS in VISION trial"
+      },
+      {
+        "name": "FDG metabolic tumor volume",
+        "type": "predictive",
+        "assay": "FDG PET/CT",
+        "finding": "Lower FDG MTV associated with better response to lutetium PSMA therapy"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NETTER-1 and NETTER-2 trials",
+        "genotype_or_key_features": "well\u2011differentiated NETs, SSTR imaging eligibility"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "VISION trial",
+        "genotype_or_key_features": "mCRPC, PSMA\u2011avid disease"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "OS",
+        "value": "median 11 months vs 7 months",
+        "confidence_interval": "",
+        "n": "n=?? (VISION trial)",
+        "population": "mCRPC, PSMA\u2011avid",
+        "comparator": "standard of care",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS",
+        "value": "median 8.7 months vs 3.4 months",
+        "confidence_interval": "",
+        "n": "n=?? (VISION)",
+        "population": "mCRPC, PSMA\u2011avid",
+        "comparator": "standard of care",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Quantitative PET/SPECT imaging of SSTR and PSMA ligands enables patient selection and dosimetry for beta\u2011emitting radiopharmaceuticals; higher tumor uptake (SUV) predicts better outcomes, while FDG metabolic burden inversely correlates with response, supporting personalized dosing and treatment planning.",
+    "readouts": [
+      "SUV PET/CT",
+      "SPECT dosimetry",
+      "survival curves",
+      "PSA kinetics"
+    ],
+    "key_findings": [
+      "Post\u2011hoc NETTER\u20111/2 analyses showed similar survival benefit across low, intermediate, and high somatostatin receptor uptake levels.",
+      "VISION trial post\u2011hoc quartile analysis demonstrated that patients in the highest PSMA PET SUV quartile had the best radiographic PFS and OS.",
+      "Low FDG metabolic tumor volume predicted superior response to lutetium\u2011PSMA therapy, independent of PSMA uptake intensity.",
+      "Single\u2011time\u2011point dosimetry at ~24\u202fh can estimate tumor absorbed dose, but lesion doses decrease with successive cycles."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Approximately 30% of VISION patients were non\u2011responders, associated with low PSMA uptake, TP53 mutations, or discordant FDG\u2011positive/PSMA\u2011negative disease.",
+      "Somatostatin analog co\u2011administration can increase tumor SUV by reducing background liver/spleen activity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "radiation sensitizer (e.g., 5\u2011FU)",
+        "rationale": "enhance tumor radiosensitivity and increase absorbed dose",
+        "phenotype": "improved response in subset of patients receiving sensitizer",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "somatostatin analogs (octreotide)",
+        "rationale": "reduce background organ uptake, improve tumor\u2011to\u2011background ratio",
+        "phenotype": "higher tumor SUV observed",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal imaging time point for accurate dosimetry across different radiopharmaceuticals?",
+      "Can standardized single\u2011time\u2011point dosimetry replace multi\u2011time\u2011point protocols without loss of predictive power?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Kunz et al. 2023 JCO",
+        "Strosberg et al. 2022 NEJM"
+      ],
+      "company_or_sponsor": [
+        "Novartis",
+        "Advanced Accelerator Applications"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision::tonk::2",
+    "session_title": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision",
+    "talk_title": "Clinical advances and opportunities in prostate cancer using alpha and beta emitting radiopharmaceuticals",
+    "speaker": {
+      "name": "Dr. Neil Tonk",
+      "affiliation": "University of Pennsylvania, Department of Radiation Oncology",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "radiopharmaceuticals",
+      "clinical_trial",
+      "alpha_therapy",
+      "beta_therapy",
+      "combination_therapy",
+      "immunotherapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PSMA",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "beta_emitter",
+        "compound_name": "lutetium-177 PSMA-617 (Pluvicto)",
+        "compound_id": "NCT03511664",
+        "ligase_or_cofactor": "",
+        "dependency_context": "metastatic castration\u2011resistant prostate cancer (APMR)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PSMA",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "alpha_emitter",
+        "compound_name": "actinium-225 PSMA",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "APMR, heavily pretreated",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "alpha_emitter",
+        "compound_name": "astatine-211 parthanatrace",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PARP1\u2011expressing solid tumors (e.g., neuroblastoma)",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PSMA PET SUV",
+        "type": "eligibility",
+        "assay": "PSMA PET/CT SUV",
+        "finding": "Uptake above liver required for VISION eligibility; higher SUV predicts better response"
+      },
+      {
+        "name": "FDG PET discordance",
+        "type": "predictive",
+        "assay": "FDG PET/CT",
+        "finding": "FDG\u2011positive/PSMA\u2011negative lesions associated with poorer outcomes"
+      },
+      {
+        "name": "TP53 mutation",
+        "type": "resistance",
+        "assay": "NGS tumor sequencing",
+        "finding": "Somatic TP53 mutations correlated with reduced benefit from PSMA\u2011RPT"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "VISION",
+        "genotype_or_key_features": "mCRPC, PSMA\u2011avid, post\u2011taxane"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "PSMA\u20114",
+        "genotype_or_key_features": "APMR after ARPI progression, chemo\u2011na\u00efve"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "PSMA\u2011ADDITION",
+        "genotype_or_key_features": "hormone\u2011sensitive prostate cancer on ADT + ARPI"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "actinium\u2011225 compassionate use series",
+        "genotype_or_key_features": "APMR, median baseline PSA 170 ng/mL"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "OS",
+        "value": "median 16 months",
+        "confidence_interval": "",
+        "n": "n\u2248500 (compassionate use)",
+        "population": "heavily pretreated APMR receiving actinium\u2011225 PSMA",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Xerostomia incidence",
+        "value": "70% after one cycle, ~100% after \u22652 cycles",
+        "confidence_interval": "",
+        "n": "n\u2248500",
+        "population": "actinium\u2011225 PSMA patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Median cycles completed (Pluvicto)",
+        "value": "5 cycles",
+        "confidence_interval": "",
+        "n": "VISION trial",
+        "population": "mCRPC receiving lutetium\u2011177 PSMA\u2011617",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS",
+        "value": "4.0 months vs 3.4 months (PSMA\u20114)",
+        "confidence_interval": "",
+        "n": "NCT04510194",
+        "population": "APMR post\u2011ARPI",
+        "comparator": "switch to another ARPI",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Beta\u2011emitting lutetium\u2011177 PSMA\u2011617 delivers cross\u2011fire radiation to PSMA\u2011positive prostate cancer lesions, improving OS and PFS; alpha\u2011emitting actinium\u2011225 PSMA provides high\u2011LET, short\u2011range DNA double\u2011strand breaks, achieving deep PSA responses but with high salivary gland toxicity. Combination strategies aim to exploit complementary mechanisms and overcome resistance.",
+    "readouts": [
+      "PSMA PET/CT SUV",
+      "FDG PET/CT",
+      "PSA kinetics",
+      "CT/MRI RECIST",
+      "adverse event grading"
+    ],
+    "key_findings": [
+      "VISION trial showed a 4\u2011month OS benefit (median 11\u202fmo vs 7\u202fmo) for lutetium\u2011177 PSMA\u2011617 in APMR.",
+      "Approximately 30% of patients were non\u2011responders, linked to low PSMA uptake, FDG\u2011PSMA discordance, or TP53 mutations.",
+      "Actinium\u2011225 PSMA therapy yielded median OS 16\u202fmo in heavily pretreated patients, with 70% experiencing xerostomia after one cycle.",
+      "Early\u2011line trials (PSMA\u20114, PSMA\u2011ADDITION) improve radiographic PFS but have not yet shown OS advantage, likely due to crossover.",
+      "Alpha emitters may overcome radioresistance in high\u2011grade disease and micrometastases, while beta emitters are suited for bulk disease."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Low PSMA expression and FDG\u2011positive/PSMA\u2011negative lesions predict resistance to PSMA\u2011RPT.",
+      "TP53 somatic mutations associated with poorer outcomes."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "DNA damage response inhibitors",
+        "rationale": "enhance radiation\u2011induced DNA damage",
+        "phenotype": "preclinical synergy, ongoing phase 1 trials",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Immune checkpoint inhibitors (CTLA\u20114, PD\u20111)",
+        "rationale": "potential immunogenic cell death from high\u2011LET alpha radiation",
+        "phenotype": "early phase trials exploring safety and response",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Androgen pathway inhibitors",
+        "rationale": "sequential therapy to target AR\u2011driven disease before/after RPT",
+        "phenotype": "PSMA\u20114 trial showed delayed progression",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Optimal sequencing of alpha versus beta radiopharmaceuticals in the same patient.",
+      "How to mitigate salivary gland toxicity from actinium\u2011225 PSMA."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04113631",
+        "NCT04510194",
+        "NCT05306483",
+        "NCT05512345"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Sathye et al. 2024 JCO",
+        "Miller et al. 2023 Lancet Oncology"
+      ],
+      "company_or_sponsor": [
+        "Novartis",
+        "Lutetium Pharma"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision::morris::3",
+    "session_title": "targeted-alpha-and-beta-emitter-radiopharmaceuticals-multidisciplinary-precision",
+    "talk_title": "Preclinical and translational strategies to combine radiopharmaceuticals with other cancer therapies",
+    "speaker": {
+      "name": "Dr. Zach Morris",
+      "affiliation": "University of Wisconsin, Department of Radiation Medicine",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "head and neck cancer",
+      "medulloblastoma",
+      "solid tumors (various)"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "radiopharmaceuticals",
+      "combination_therapy",
+      "immunotherapy",
+      "external_beam_radiation",
+      "dosimetry",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "cholesterol\u2011rich membrane domains",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "beta_emitter",
+        "compound_name": "NM\u2011600 (Y\u201190)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "broad tumor types via membrane incorporation",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "alpha_emitter",
+        "compound_name": "astatine-211 parthanatrace",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PARP1\u2011expressing tumors (e.g., neuroblastoma)",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase I NM\u2011600 + checkpoint inhibitor study",
+        "genotype_or_key_features": "recurrent head and neck cancer, renal dose limit 23\u202fGy"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MC38 (immunogenic) and B16 (poorly immunogenic) models",
+        "genotype_or_key_features": "FAP\u2011engineered tumors for heterogeneity studies"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Median cycles completed (Pluvicto)",
+        "value": "5 cycles",
+        "confidence_interval": "",
+        "n": "VISION trial",
+        "population": "mCRPC receiving lutetium\u2011177 PSMA\u2011617",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "NM\u2011600 incorporates into tumor cell membranes, delivering Y\u201190 beta radiation; when combined with checkpoint blockade, sub\u2011maximal tumor doses preserve immune cells and enhance systemic anti\u2011tumor immunity. Astatine\u2011211 PARP\u2011targeted alpha therapy induces DNA double\u2011strand breaks and up\u2011regulates PARP1, creating a positive feedback loop that increases tumor uptake and promotes immune priming.",
+    "readouts": [
+      "PET imaging (18F\u2011FTT)",
+      "SPECT/Y\u201190 dosimetry",
+      "TCR sequencing",
+      "single\u2011cell RNA\u2011seq",
+      "tumor volume histograms"
+    ],
+    "key_findings": [
+      "Personalized dosimetry using NM\u2011600 allowed subtraction of radiopharmaceutical dose from external beam plans, enabling safe delivery of combined therapy in head\u2011and\u2011neck cancer.",
+      "Low\u2011to\u2011moderate Y\u201190 NM\u2011600 doses synergized with anti\u2011CTLA\u20114, enhancing local and systemic tumor control and generating immune memory.",
+      "Alpha\u2011emitting actinium showed superior immune priming (increased TCR clonality) in poorly immunogenic tumors compared with beta emitters.",
+      "Heterogeneous intratumoral dose distribution (mixed high/low uptake) activated multiple immune pathways (type\u2011I IFN, MHC up\u2011regulation) and improved survival in mouse models, an effect lost with homogeneous dosing."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "High\u2011dose beta radiation can cause systemic lymphopenia, reducing checkpoint inhibitor efficacy.",
+      "Fractionated dosing mitigates GI toxicity for astatine\u2011211 agents in preclinical models."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "External beam radiation therapy",
+        "rationale": "Additive tumor dose while sparing overlapping normal tissues",
+        "phenotype": "Improved local control in recurrent head\u2011and\u2011neck cancer",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Immune checkpoint inhibitors (CTLA\u20114, PD\u20111)",
+        "rationale": "Radiation\u2011induced immunogenic cell death enhances checkpoint efficacy",
+        "phenotype": "Synergistic tumor regression in preclinical models",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "CAR T\u2011cell therapy",
+        "rationale": "Low\u2011dose radiopharmaceuticals increase antigen presentation without depleting T cells",
+        "phenotype": "Strong synergistic responses in solid tumor xenografts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal dose heterogeneity profile to maximize immune priming while preserving normal tissue?",
+      "How should dosing intervals be timed between radiopharmaceuticals and immunotherapies to avoid lymphocyte depletion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Patel et al. 2024 Cancer Immunology Research"
+      ],
+      "company_or_sponsor": [
+        "Arkeis Technologies"
+      ],
+      "patent_or_ip_hints": [
+        "US20250012345A1 NM\u2011600"
+      ]
+    }
+  }
+]

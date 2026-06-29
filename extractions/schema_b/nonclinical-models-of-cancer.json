@@ -1,0 +1,514 @@
+[
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Tiffany Choi",
+      "institution_or_pharma": "Baylor College of Medicine",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "Germline DAM2 R404W variant drives glioma susceptibility",
+      "rhetorical_signals": [
+        "Speaker said: \"the overexpression here is limited to just the tumor cells, and these mice are also immunodeficient, so lacking the immunocompetent system that human patients have.\"",
+        "Speaker said: \"I haven't looked at those, but it would be interesting to dive deeper.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No orthotopic immunocompetent tumor model demonstrated",
+        "Mechanistic link to Wnt signaling not shown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of validated biomarkers linking DAM2 R404W to patient prognosis; CrisPRO could develop a splicing\u2011based biomarker panel to predict susceptibility.",
+        "transcript_evidence": "Speaker said: \"we haven't really seen how this R414W variant actually plays into the role of the canonical role that it has. It has a role in Wnt signaling, and I don't really see any evidence of promoting Wnt signaling or any kind of gain-of-function phenotype from this.\"",
+        "crispro_angle": "Use CrisPRO's computational spine to integrate RNA\u2011seq and splicing data from DAM2 mutant tumors to derive predictive signatures.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does the DAM2 R404W variant affect Wnt signaling in glioma?",
+      "What is the cell\u2011intrinsic versus extrinsic mechanism driving glial progenitor expansion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DAM2 R404W glioma models"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Thangaraj Mohan",
+      "institution_or_pharma": "University of Texas at San Antonio",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "Age\u2011dependent mammary tumor genesis driven by mutant PIK3CA",
+      "rhetorical_signals": [
+        "Speaker said: \"I don't think it can affect our model because the estrogen alpha receptor is expressed in the tumor, so tumor cells is actually producing the ER alpha.\"",
+        "Speaker said: \"We see a higher tumor incidence and also early onset compared to the young mice.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PIK3CA H1047R\u2011driven tumor model",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of hormonal (estrogen) modulation in aged mice may mask true tumor growth dynamics",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Age\u2011dependent PIK3CA murine introductal study",
+        "target_biology": "PIK3CA H1047R oncogenic signaling in mammary epithelium",
+        "flawed_enrollment_criteria": "Mice not stratified by hormonal status (e.g., ovariectomy) despite age\u2011related estrogen changes",
+        "missing_biomarker": "Serum estrogen levels or ER\u03b1 status in injected ducts",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort per age group limits power to detect age\u2011specific effects",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Lentiviral PIK3CA H1047R delivery system",
+        "ip_vulnerability_note": "Speaker noted difficulty targeting the bladder\u2011relevant E545K hotspot due to PAM constraints, indicating platform limitation.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single hotspot mutation may limit translational relevance to human breast cancer heterogeneity"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that aged mice have higher tumor incidence yet slower tumor growth, then concluded that targeting age\u2011associated epithelial changes may offer prevention opportunities \u2013 contradictory because high incidence suggests a strong oncogenic drive despite slower growth."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No orthotopic tumor data",
+        "Hormonal status not measured"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic partners for PIK3CA\u2011mutant tumors in aged microenvironment, e.g., endocrine modulators.",
+        "transcript_evidence": "Speaker said: \"Removing... ovariectomy... I don't think it can affect our model because the estrogen alpha receptor is expressed in the tumor.\"",
+        "crispro_angle": "CrisPRO can model pathway cross\u2011talk between PI3K and estrogen signaling to prioritize combination candidates.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of biomarkers to predict which aged mice will develop tumors; CrisPRO could generate a transcriptomic risk score.",
+        "transcript_evidence": "Speaker said: \"The aged mice shows higher tumor incidence and also early onset compared to the young mice.\"",
+        "crispro_angle": "Apply CrisPRO's machine\u2011learning spine to integrate basal/luminal cell ratios and PI3K activity for risk stratification.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Would ovariectomy alter tumor initiation in the aged model?",
+      "How does multiple pregnancy affect the basal/luminal cell dynamics and tumor susceptibility?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PIK3CA H1047R murine introductal model"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Philip Abosh",
+      "institution_or_pharma": "Fox Chase Cancer Center",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "Modeling bladder cancer PIK3 pathway alterations with CRISPR organoids and CAF co\u2011engraftment",
+      "rhetorical_signals": [
+        "Speaker said: \"We saw that the tumors do shrink in both the hotspot organoid line as well as the baseline organoid that doesn't have the hotspot.\"",
+        "Speaker said: \"The GM\u2011CSF knockout did not reliably shrink tumor formation.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Alpelisib in PIK3CA\u2011mutant bladder organoid xenografts",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "CAF\u2011mediated immunosuppression masks genotype\u2011specific drug sensitivity",
+        "unexplained_resistance_quote": "Speaker said: \"the GM\u2011CSF knockout did not reliably shrink tumor formation.\"",
+        "ghost_responder_admission": "Speaker noted shrinkage in both hotspot and wild\u2011type organoids, implying a non\u2011specific effect.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Bladder organoid\u2011CAF flank engraftment study",
+        "target_biology": "PIK3CA hotspot activation in bladder cancer",
+        "flawed_enrollment_criteria": "Engraftment only in immunocompromised mice or with exogenous CAFs, not reflecting native tumor\u2011immune context",
+        "missing_biomarker": "Endogenous CAF markers to stratify tumors before implantation",
+        "static_vs_dynamic_failure": "No serial ctDNA or immune profiling during treatment",
+        "statistical_concern": "Small n per genotype limits detection of genotype\u2011specific effects",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CRISPR\u2011engineered bladder organoid platform",
+        "ip_vulnerability_note": "Reliance on Cre\u2011inducible Cas9 mouse line and luciferase labeling may be circumvented by alternative labeling strategies.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Need for CAF co\u2011injection reduces scalability for high\u2011throughput screening"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed genotype\u2011specific sensitization to alpelisib in vitro, then presented in vivo data where both hotspot and wild\u2011type tumors responded similarly, contradicting the earlier claim of genotype\u2011specific efficacy."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of orthotopic bladder tumor model",
+        "No immune profiling (e.g., phospho\u2011STAT3) to link cytokine crosstalk to response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target IL\u20116/GM\u2011CSF axis identified in CAF\u2011organoid crosstalk to overcome immunosuppression and improve alpelisib efficacy.",
+        "transcript_evidence": "Speaker said: \"We found that IL\u20116 was coming from the CAFs, and the GM\u2011CSF was coming from the organoids.\"",
+        "crispro_angle": "CrisPRO can simulate cytokine network perturbations to prioritize combination inhibitors (e.g., JAK inhibitors) with alpelisib.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop a fully immunocompetent orthotopic bladder organoid model eliminating need for exogenous CAFs.",
+        "transcript_evidence": "Speaker said: \"They don't grow orthotopically. And then we started putting them in flank engraftment and they start to regress.\"",
+        "crispro_angle": "Leverage CrisPRO's organoid\u2011to\u2011patient translation framework to design microenvironment\u2011aware preclinical pipelines.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Alpelisib (Piqray)",
+        "context": "Clinically approved PI3K inhibitor tested on organoids",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Cisplatin",
+        "context": "Standard of care chemotherapy used as comparator",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does phospho\u2011STAT3 activation occur in CAF\u2011co\u2011engrafted tumors?",
+      "Can IL\u20116 blockade synergize with alpelisib in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Alpelisib",
+        "CAF\u2011derived IL\u20116 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Anna Pasto",
+      "institution_or_pharma": "GlaxoSmithKline",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "Patient\u2011derived organoids and multi\u2011omic profiling to predict immunotherapy response in NSCLC",
+      "rhetorical_signals": [
+        "Speaker said: \"The patient\u2011derived organoids established from the patient classified as responder ... were actually presenting an enrichment in the activation of the inflammatory associated pathway.\"",
+        "Speaker said: \"The penetration of CD45 positive cells was much higher in the patient\u2011derived organoids classified as not responder.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No functional validation that organoid immune infiltration predicts patient outcome",
+        "Missing comparison to standard PD\u2011L1 biomarker"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived composite biomarker integrating organoid cytokine response and spatial transcriptomics to outperform PD\u2011L1.",
+        "transcript_evidence": "Speaker said: \"This dichotomy, not responder, responder, do not significantly correlate with any clinical associated info, including PD\u2011L1 status or the mutation.\"",
+        "crispro_angle": "CrisPRO can fuse multi\u2011omic layers (spatial, bulk RNA, cytokine) into a predictive score.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify agents that convert the high CD45\u2011infiltrated, exhausted phenotype in non\u2011responders into a productive anti\u2011tumor response.",
+        "transcript_evidence": "Speaker said: \"The CD8 infiltrated the not responder organoids were actually characterized by a predominantly exhaustion profile.\"",
+        "crispro_angle": "Use CrisPRO to simulate checkpoint blockade plus epigenetic modulators to reverse exhaustion signatures.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PD\u2011L1 testing",
+        "context": "Standard biomarker that showed no correlation in this cohort",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What drives the higher CD45 infiltration in non\u2011responders?",
+      "Can the Notch pathway differences observed in spatial data explain response heterogeneity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GSK organoid platform",
+        "PD\u2011L1 assays"
+      ],
+      "companies_to_monitor": [
+        "GSK"
+      ]
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Emma Clarkin",
+      "institution_or_pharma": "University of California, San Diego",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "3D biosensing nanobioreactor to visualize APOBEC3\u2011driven splicing dynamics in aged bone marrow",
+      "rhetorical_signals": [
+        "Speaker said: \"We see a shift from red to green between the PCH to A3C samples.\"",
+        "Speaker said: \"We do think that it happens directly through RNA editing.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proprietary 3D nanobioreactor platform",
+        "ip_vulnerability_note": "Speaker noted the system is patented but not yet commercialized, indicating potential for external licensing.",
+        "scale_or_manufacturing_bottleneck": "Current system appears low\u2011throughput and requires specialized equipment.",
+        "clinical_strategy_weakness": null
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Direct demonstration that APOBEC3C edits splice sites is missing",
+        "In vivo relevance of observed exon\u2011skipping not shown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Model APOBEC3C\u2011mediated splicing alterations to predict emergence of pre\u2011cancer clones and test splicing modulators.",
+        "transcript_evidence": "Speaker said: \"We see an increase in GFP expression in the APOBEC3C transduced aged bone marrow cells, as well as a decrease in the shift of RFP to GFP expression throughout these cells.\"",
+        "crispro_angle": "CrisPRO can simulate APOBEC3C\u2011induced editing on splice donor/acceptor motifs to prioritize splicing\u2011targeted therapeutics.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does nuclear versus cytoplasmic localization of APOBEC3C affect splicing outcomes?",
+      "Can the nanobioreactor be adapted for high\u2011throughput drug screening?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "APOBEC3C overexpression constructs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Felix Berg",
+      "institution_or_pharma": "Vitrosken",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "Ex vivo micro\u2011tumor platform predicts ADC and combination responses in ovarian cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We see a very nice correlation of the ADC MIRF to paclitaxel, while this is less the case for carboplatin and topotecan.\"",
+        "Speaker said: \"We don't passage it. So the whole assay really from sample collection to having the results is about 10 days.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Retrospective ex vivo ADC response correlation study",
+        "target_biology": "Folate receptor\u2011alpha targeted ADC efficacy",
+        "flawed_enrollment_criteria": "Samples collected up to 4 months post\u2011chemotherapy show reduced culture success, potentially biasing toward treatment\u2011na\u00efve tumors",
+        "missing_biomarker": "Time since last systemic therapy",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Limited number of patients (n=25) for ADC response analysis",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proprietary hydrogel matrix for micro\u2011tumor culture",
+        "ip_vulnerability_note": "Speaker described it as a proprietary mix; details not disclosed, may be reverse\u2011engineered.",
+        "scale_or_manufacturing_bottleneck": "Requires fresh patient tissue; scalability limited by biopsy availability.",
+        "clinical_strategy_weakness": "Platform currently validated only in ovarian cancer; broader tumor types need further data."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Prospective validation of predictive power",
+        "Mechanistic link between antigen heterogeneity and ADC efficacy not fully explored"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Integrate CrisPRO predictive modeling to select patients with high FR\u03b1 heterogeneity for ADC trials, improving enrichment.",
+        "transcript_evidence": "Speaker said: \"We observed quite some intra\u2011patient heterogeneity in this, as well as inter\u2011patient heterogeneity in a sense that, for example, for patient one, we see a rather broad expression of the ADC target antigen at a moderate expression level.\"",
+        "crispro_angle": "Use CrisPRO to simulate antigen distribution scenarios and forecast response rates for trial stratification.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic partners (e.g., PARP inhibitors) for FR\u03b1\u2011ADC based on ex vivo synergy data.",
+        "transcript_evidence": "Speaker said: \"We see a nice synergistic effect... for some patients, but not in others.\"",
+        "crispro_angle": "CrisPRO can model DNA repair deficiency interactions with ADC payloads to prioritize combos.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mirvetuximab soravtansine",
+        "context": "FR\u03b1\u2011targeting ADC evaluated in the platform",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Olaparib",
+        "context": "PARP inhibitor combined with ADC in ex vivo tests",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How does prior chemotherapy timing affect ex vivo culture success?",
+      "Can the platform predict long\u2011term clinical outcomes beyond progression\u2011free survival?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Mirvetuximab soravtansine",
+        "Olaparib"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "nonclinical-models-of-cancer::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Erika Van Aeou",
+      "institution_or_pharma": "Elephas BioScience",
+      "session_title": "nonclinical-models-of-cancer",
+      "talk_title": "eLive platform: ex vivo cytokine profiling of fresh tumor fragments predicts ICI response",
+      "rhetorical_signals": [
+        "Speaker said: \"We have 93% of concordance of what we have done ex vivo and what the patient had received in the clinic and the observed clinical responses.\"",
+        "Speaker said: \"Data science have done a lot of analysis on trying to predict the patient responder in the clinic with only interferon gamma or interferon gamma and CXCL10 does not give us this 93% correlation.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Elephas eLive ICI predictive study",
+        "target_biology": "Immune checkpoint inhibitor efficacy in solid tumors",
+        "flawed_enrollment_criteria": "Single core needle biopsy per patient may miss intratumoral heterogeneity",
+        "missing_biomarker": "Spatial mapping of immune infiltrates beyond cytokine panel",
+        "static_vs_dynamic_failure": "No longitudinal cytokine sampling during treatment",
+        "statistical_concern": "Cohort size (28 patients) limits robustness of 93% concordance claim",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "eLive proprietary cutting and gel\u2011encapsulation method",
+        "ip_vulnerability_note": "Method described in detail during talk; may be replicable without licensing.",
+        "scale_or_manufacturing_bottleneck": "Requires fresh biopsy processing within narrow time window.",
+        "clinical_strategy_weakness": "Limited to settings where biopsy material is available; not applicable to radiologic\u2011only assessments."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Validation in larger, multi\u2011center cohorts",
+        "Correlation of subcluster phenotypes with overall survival"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Expand CrisPRO to integrate the nine\u2011cytokine eLive index with spatial transcriptomics for a more robust predictive model.",
+        "transcript_evidence": "Speaker said: \"The eLive index, which is our prediction algorithm that is based in the nine most upregulated cytokines.\"",
+        "crispro_angle": "CrisPRO can fuse cytokine signatures with spatial immune cell maps to improve responder prediction beyond 93%.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify agents that convert subcluster four (polyfunctional with VEGF) into a more T\u2011cell inflamed phenotype.",
+        "transcript_evidence": "Speaker said: \"Subcluster four is the most robust out of all subclusters with a very complex tumor microenvironment... we hypothesize not only doing immune checkpoint inhibitors and monotherapy, also combining with VEGF inhibitors.\"",
+        "crispro_angle": "Simulate VEGF blockade impact on cytokine network using CrisPRO to prioritize combos.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Do the four cytokine subclusters predict duration of response or overall survival?",
+      "Can interferon\u2011gamma alone ever serve as a sufficient predictor in any subset?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "eLive platform",
+        "ICI therapies"
+      ],
+      "companies_to_monitor": [
+        "Elephas BioScience"
+      ]
+    }
+  }
+]

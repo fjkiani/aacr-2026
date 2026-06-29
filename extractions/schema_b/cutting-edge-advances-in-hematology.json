@@ -1,0 +1,588 @@
+[
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Michelle Haber",
+      "institution_or_pharma": "Sydney, Australia",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "Potentiating venetoclax response using the NAMPT inhibitor OT-82",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped OS data entirely, presented only PFS"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "OT-82 (NAMPT inhibitor)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Thrombocytopenia as dose-limiting toxicity not fully addressed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted DLT for OT-82 is thrombocytopenia",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "NAMPT inhibitor OT-82",
+        "ip_vulnerability_note": "Speaker highlighted that older NAMPT inhibitors had retinal toxicity, implying OT-82 may share class liabilities",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without biomarker stratification"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker-stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify biomarkers (e.g., KMT2A rearrangement, FLT3 mutation) that predict OT-82 + venetoclax response",
+        "transcript_evidence": "Speaker noted higher response in KMT2A\u2011rearranged and FLT3\u2011mutated PDXs but lacked statistical significance",
+        "crispro_angle": "Use CrisPRO to model metabolic dependencies and predict responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine OT-82 with agents that mitigate thrombocytopenia",
+        "transcript_evidence": "Speaker mentioned need for clinical protocols that mitigate thrombocytopenia",
+        "crispro_angle": "Predict synergistic combos that spare platelets via pathway analysis",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What specific biomarkers can reliably predict response to OT-82 + venetoclax?",
+      "Can thrombocytopenia be mitigated without compromising efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "OT-82",
+        "Venetoclax"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Kai Wu",
+      "institution_or_pharma": "Fred Hutch Cancer Center",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "Non\u2011canonical CAR T cell states in multiple myeloma",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped detailed functional assays for persistor cells"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BCMA CAR T therapy",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of biomarkers to predict persistor CAR T cell emergence",
+        "unexplained_resistance_quote": "Speaker admitted that many patients relapse despite BCMA expression",
+        "ghost_responder_admission": "Some patients show durable responses with persistor T cells",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "BCMA\u2011targeted CAR T cells",
+        "flawed_enrollment_criteria": "Enrolling all BCMA\u2011positive patients without stratifying by CAR T cell functional state",
+        "missing_biomarker": "Baseline persistor T cell signature",
+        "static_vs_dynamic_failure": "No serial monitoring of CAR T cell exhaustion or persistor state",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "4\u20111BB \u03b6 CAR construct",
+        "ip_vulnerability_note": "Speaker noted that persistor state arises from multiple early CAR T subsets, suggesting platform flexibility but also lack of specificity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use of same CAR construct without addressing exhaustion mechanisms"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high AP\u20111 expression in persistor cells (suggesting activation) but concluded that these cells have low exhaustion markers, contradicting typical exhaustion signatures"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No functional validation of persistor cytotoxicity",
+        "Lack of long\u2011term survival data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target AP\u20111 driven persistor program to sustain CAR T activity",
+        "transcript_evidence": "Speaker highlighted AP\u20111 genes (JunB, FosB) high in persistor cells",
+        "crispro_angle": "Model transcription factor network to identify small\u2011molecule inhibitors of AP\u20111 that could prevent persistor formation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop assay for early persistor signature to select patients for combination therapy",
+        "transcript_evidence": "Speaker noted persistor cells arise from multiple early states and correlate with durable response",
+        "crispro_angle": "Use CrisPRO to integrate single\u2011cell data and predict persistor emergence",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ide\u2011cel",
+        "context": "FDA\u2011approved BCMA CAR T product",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "ciltacel",
+        "context": "FDA\u2011approved BCMA CAR T product",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the functional capacity of persistor CAR T cells in vivo?",
+      "Can modulation of AP\u20111 improve durability of response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BCMA CAR T products (ide\u2011cel, ciltacel)"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Meredith Nix",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "Molecular glue recruiting lysine acetyltransferases to BCL6",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped discussion of off\u2011target effects of KatTCIP"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TCIP3 (KatTCIP molecular glue)",
+        "failure_type": "insufficient_efficacy_in_low_BCL6_contexts",
+        "mechanistic_blindspot": "Reliance on BCL6 expression; low BCL6 tumors may not respond",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some high\u2011BCL6 lines responded dramatically, implying subset efficacy",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "KatTCIP platform linking BCL6 BTB inhibitor to P300/CBP bromodomain inhibitor",
+        "ip_vulnerability_note": "Speaker disclosed limited protein\u2011protein interface (only two neo\u2011hydrogen bonds), suggesting modest cooperativity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential lack of potency in tumors with heterogeneous BCL6 expression"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed potent activation of BCL6\u2011dependent transcription (high GFP) but concluded that global acetylation is unchanged, which seems contradictory"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy in solid tumor models",
+        "Lack of toxicity data beyond weight monitoring"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Apply CrisPRO to redesign KatTCIP linkers for stronger ternary complex formation",
+        "transcript_evidence": "Speaker noted limited plasticity of ligand binding and only two neo\u2011hydrogen bonds",
+        "crispro_angle": "Predict optimal linker geometry to increase cooperativity",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TCIP3 with MYC inhibitors to overcome residual MYC activity",
+        "transcript_evidence": "Speaker reported residual MYC expression despite BCL6 activation",
+        "crispro_angle": "Model network to identify synergistic targets",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Arvinas BCL6 degrader",
+        "context": "Compared potency to TCIP3",
+        "sentiment": "critical"
+      },
+      {
+        "name": "BRD4\u2011BCL6 heterobifunctional",
+        "context": "Asked about potency comparison",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can TCIP3 be effective in low\u2011BCL6 expressing lymphomas?",
+      "What are the long\u2011term safety implications of recruiting P300/CBP globally?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TCIP3",
+        "Arvinas BCL6 degrader"
+      ],
+      "companies_to_monitor": [
+        "Arvinas",
+        "Gray Lab (Stanford)"
+      ]
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Nicolas Dicieri",
+      "institution_or_pharma": "Cornell University",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "FGFR1\u2011positive CAF inhibition to improve CAR\u2011T efficacy",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped detailed toxicity assessment of FGFR inhibitor"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "FGFR1 inhibitor (FGFRi)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects on normal fibroblasts not addressed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Combination rescued CAR\u2011T refractory models, implying subset benefit",
+        "hidden_tox_signal": "No explicit safety data presented",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "FGFR1 signaling in cancer\u2011associated fibroblasts",
+        "flawed_enrollment_criteria": "Enrolling all relapsed AML patients without selecting for FGFR1\u2011positive CAF signature",
+        "missing_biomarker": "FGFR1 expression in tumor microenvironment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small preclinical cohort, risk of over\u2011interpretation",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "FGFR1 inhibitor used to target CAFs",
+        "ip_vulnerability_note": "Speaker disclosed that the inhibitor is not CAF\u2011specific and may affect other FGFR1\u2011expressing cells",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use without patient selection could dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical safety data",
+        "Lack of biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a gene\u2011expression signature for FGFR1\u2011positive CAFs to select patients for FGFRi + CAR\u2011T",
+        "transcript_evidence": "Speaker highlighted that only mesenchymal microenvironment tumors responded",
+        "crispro_angle": "Use CrisPRO to integrate scRNA\u2011seq CAF data and predict responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine FGFRi with agents that boost macrophage recruitment (e.g., CSF1R agonists)",
+        "transcript_evidence": "FGFR inhibition increased MCP chemokines and macrophage infiltration",
+        "crispro_angle": "Model cytokine network to identify synergistic combos",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the safety profile of chronic FGFR1 inhibition in patients?",
+      "Can FGFR1 expression be reliably measured in routine biopsies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "FGFR1 inhibitors"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Xujing Yang",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "Condensate dynamics drive adaptive METTL3 inhibitor resistance",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped detailed pharmacokinetic data for STC\u201115"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "METTL3 inhibitor (STC\u201115)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "YTHDC1 condensate formation not addressed in original trial design",
+        "unexplained_resistance_quote": "Speaker noted that overexpression of YTHDC1 caused resistance without clear mechanistic explanation",
+        "ghost_responder_admission": "Some tumors showed durable response when YTHDC1 was low",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "METTL3 methyltransferase activity",
+        "flawed_enrollment_criteria": "No stratification by YTHDC1 expression or condensate phenotype",
+        "missing_biomarker": "YTHDC1 protein level / condensate dynamics",
+        "static_vs_dynamic_failure": "No serial monitoring of condensate properties",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "STC\u201115 METTL3 inhibitor",
+        "ip_vulnerability_note": "Resistance mediated by YTHDC1 condensate adaptation, a mechanism not covered by current IP",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of combination strategy to prevent condensate\u2011driven resistance"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that METTL3 inhibition reduces MYC/BCL2 mRNA stability yet later claimed residual M6A and YTHDC1 condensates rescue MYC/BCL2 protein levels"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical outcome data from Phase 2",
+        "Lack of patient\u2011level YTHDC1 biomarker data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop YTHDC1 inhibitor or degrader to prevent condensate\u2011mediated resistance",
+        "transcript_evidence": "Speaker demonstrated that YTHDC1 inhibition reverses resistance in vitro",
+        "crispro_angle": "Model condensate dynamics to predict optimal dosing schedules",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use YTHDC1 expression/condensate liquid\u2011like score to select patients for METTL3 inhibitor therapy",
+        "transcript_evidence": "Speaker highlighted correlation between condensate properties and drug response",
+        "crispro_angle": "Integrate imaging data with CrisPRO to generate predictive biomarker",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Venetoclax",
+        "context": "Combined with METTL3 inhibitor to overcome resistance",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the safety profile of combined YTHDC1 and METTL3 inhibition?",
+      "Can condensate imaging be standardized for clinical use?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "STC\u201115",
+        "YTHDC1 inhibitor"
+      ],
+      "companies_to_monitor": [
+        "STORM Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Jost",
+      "institution_or_pharma": "Medical University of Graz",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "Lymphotoxin\u2011\u03b1 activation of TNFR1 induces AML cell death",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped discussion of potential cytokine storm risk"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Lymphotoxin\u2011\u03b1 cytokine therapy",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential systemic inflammation and cytokine release not evaluated",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Effective in TRAF2\u2011low AML samples",
+        "hidden_tox_signal": "No cytopenia observed in mice but human safety unknown",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "TNFR1 activation via lymphotoxin\u2011\u03b1",
+        "flawed_enrollment_criteria": "No selection for TRAF2\u2011low AML patients",
+        "missing_biomarker": "TRAF2 protein level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Modified lymphotoxin\u2011\u03b1 cytokine candidates",
+        "ip_vulnerability_note": "Speaker disclosed early\u2011stage modifications; IP may be narrow",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on cytokine delivery without clear dosing regimen"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Human safety and cytokine release data missing",
+        "No biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop assay for TRAF2 deficiency to identify AML patients likely to respond",
+        "transcript_evidence": "Speaker showed TRAF2 repression across AML subtypes correlates with sensitivity",
+        "crispro_angle": "Model TRAF2 network to predict responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine lymphotoxin\u2011\u03b1 with agents that further down\u2011regulate TRAF2 or enhance necroptosis",
+        "transcript_evidence": "Speaker noted necroptosis pathway involvement",
+        "crispro_angle": "Predict synergistic combos targeting necroptosis",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the risk of systemic inflammation in patients?",
+      "Can TRAF2 levels be reliably measured in clinical samples?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Lymphotoxin\u2011\u03b1 cytokine candidates"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Matteo Brindisi",
+      "institution_or_pharma": "University of Milan",
+      "session_title": "cutting-edge-advances-in-hematology",
+      "talk_title": "MET12L as a novel player in platelet dysfunction in myeloid neoplasms",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped detailed discussion of potential bleeding risk"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "MET12L loss",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Impact on megakaryocyte maturation not fully dissected",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "MET12L deletion reduces thrombocytosis in JAK2\u2011V617F mice",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MET12L knockout model",
+        "ip_vulnerability_note": "No therapeutic agent yet; target is loss\u2011of\u2011function",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of druggable approach to modulate MET12L"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human therapeutic candidate",
+        "Limited functional data on clotting"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "indication_expansion",
+        "description": "Explore MET12L as a therapeutic target to mitigate thrombocytosis in MPN patients",
+        "transcript_evidence": "Speaker showed MET12L deletion counteracts thrombocytosis in JAK2\u2011V617F mice",
+        "crispro_angle": "Model mediator complex alterations to design small molecules that mimic MET12L loss",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop MET12L expression assay to identify patients with high platelet counts",
+        "transcript_evidence": "Single\u2011cell RNA\u2011seq data linked MET12L expression to platelet features in MPN/MDS patients",
+        "crispro_angle": "Integrate scRNA\u2011seq with CrisPRO to predict high\u2011MET12L responders",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Can MET12L be pharmacologically targeted?",
+      "Does MET12L loss affect bleeding risk in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MET12L"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

@@ -1,0 +1,455 @@
+[
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::gina::1",
+    "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+    "talk_title": "Metabolic vulnerabilities of Nrf2-activated cancer cells and cysteine availability in vivo",
+    "speaker": {
+      "name": "Gina",
+      "affiliation": "Memphis Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung adenocarcinoma",
+      "liver cancer",
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "metabolism",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Nrf2",
+        "alteration": "mutant",
+        "pathway": "oxidative_stress_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Keap1",
+        "alteration": "mutant",
+        "pathway": "oxidative_stress_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "xCT",
+        "alteration": "",
+        "pathway": "cysteine_transport",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "GCLC",
+        "alteration": "",
+        "pathway": "glutathione_synthesis",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CB-839",
+        "alteration": "",
+        "pathway": "glutaminase",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "GEM",
+        "name": "KRAS; p53; Nrf2 mutant lung tumor model",
+        "genotype_or_key_features": "KRAS G12D, p53 loss, Nrf2 mutation"
+      },
+      {
+        "model_type": "GEM",
+        "name": "Myc overexpression, p53 deletion liver tumor model",
+        "genotype_or_key_features": "hydrodynamic tail vein Myc OE, p53 KO"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "A549 (KEAP1 mutant)",
+        "genotype_or_key_features": "KEAP1 loss, KRAS WT"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "H1299",
+        "genotype_or_key_features": "NSCLC line"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Gina demonstrated that Nrf2 activation rewires cysteine and glutathione metabolism, creating dependencies on cystine uptake, glutamine metabolism, and NADPH production; she showed tissue-specific cysteine sourcing via transsulfuration in liver versus reliance on extracellular cystine in lung tumors, and highlighted how microenvironmental nutrient gradients shape these vulnerabilities.",
+    "readouts": [
+      "13C-serine tracing",
+      "13C-cystine tracing",
+      "LC-MS metabolomics",
+      "interstitial fluid metabolite quantification",
+      "cell viability assays",
+      "mitochondrial ROS measurements"
+    ],
+    "key_findings": [
+      "Liver tumors retain transsulfuration activity, while KRAS-driven lung tumors lack cysteine synthesis and depend on extracellular cystine.",
+      "Interstitial fluid of lung tumors contains ~40 \u00b5M reduced cysteine and ~1 mM reduced glutathione, indicating a shift to cysteine uptake.",
+      "Blocking cystine uptake with GGSTOP impairs tumor growth in vivo, but technical issues limited chronic dosing.",
+      "Nrf2-active cells become glutamate\u2011limited and are sensitized to glutaminase inhibition (CB\u2011839) in standard RPMI but not in tumor\u2011derived sTIF media.",
+      "sTIF media, mimicking interstitial fluid, rescues cystine\u2011starved cells and abolishes CB\u2011839 sensitivity, revealing context\u2011dependent metabolic vulnerabilities."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Nrf2\u2011active cells show selective sensitivity to glutaminase inhibition only under artificial cystine\u2011rich conditions.",
+      "Tumor microenvironment\u2011derived cysteine reduces reliance on glutamine metabolism, potentially conferring resistance to CB\u2011839."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CB\u2011839 (glutaminase inhibitor)",
+        "rationale": "Exploit glutamate limitation in Nrf2\u2011active cells",
+        "phenotype": "Synergistic tumor cell death in RPMI but not in sTIF",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "GGSTOP (GGT inhibitor)",
+        "rationale": "Block extracellular glutathione\u2011derived cysteine supply",
+        "phenotype": "Impaired tumor growth in mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What are the precise transporters mediating cysteine uptake in lung tumors?",
+      "Can chronic inhibition of GGT or cystine transport be achieved without immune neutralization?",
+      "How does spatial heterogeneity of interstitial cysteine affect therapeutic windows?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::ho::2",
+    "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+    "talk_title": "Mitochondrial protein degradation drives heme\u2011mediated CD8 T\u2011cell exhaustion",
+    "speaker": {
+      "name": "Ping\u2011Chi Ho",
+      "affiliation": "Lausanne, Switzerland",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BACH2",
+        "alteration": "",
+        "pathway": "transcriptional_repression",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BLIMP1",
+        "alteration": "",
+        "pathway": "effector_differentiation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Proteasome",
+        "alteration": "",
+        "pathway": "protein_degradation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Heme",
+        "alteration": "",
+        "pathway": "heme_signaling",
+        "modality": "other",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PD\u20111",
+        "type": "exhaustion",
+        "finding": "Higher expression on heme\u2011treated CD8 T cells (n=multiple donors)"
+      },
+      {
+        "name": "TCF1",
+        "type": "stemness",
+        "finding": "Reduced expression after heme exposure"
+      },
+      {
+        "name": "BACH2",
+        "type": "stemness",
+        "finding": "Proteasome inhibition restores BACH2 protein levels"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "tumor\u2011bearing mice CD8 T\u2011cell isolates",
+        "genotype_or_key_features": "MDR high vs MDR low mitochondrial phenotype"
+      },
+      {
+        "model_type": "human",
+        "name": "NY\u2011ESO TCR\u2011engineered CD8 T cells",
+        "genotype_or_key_features": "In vitro tumor\u2011mimic conditions"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "CD19 CAR T\u2011cell patients (n=6)",
+        "genotype_or_key_features": "Responder vs non\u2011responder analysis"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "BACH2 protein level",
+        "value": "\u2191 after MG132 treatment",
+        "n": "n=3 donors",
+        "population": "MDR\u2011low exhausted CD8 T cells",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Proliferation of heme\u2011treated T cells in vivo",
+        "value": "Reduced expansion compared with control",
+        "n": "n=5 mice per group",
+        "population": "adoptively transferred T cells",
+        "comparator": "vehicle\u2011treated T cells",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Ho showed that chronic antigen exposure in tumors leads to accumulation of depolarized mitochondria in CD8 T cells; blocked mitophagy forces proteasomal degradation of mitochondrial proteins, releasing heme that binds and degrades BACH2, relieving repression of BLIMP1 and driving terminal exhaustion.",
+    "readouts": [
+      "MitoTracker Green/Deep Red flow cytometry",
+      "RNA\u2011seq",
+      "Dron\u2011mCherry reporter degradation assay",
+      "Quantitative proteomics after cycloheximide chase",
+      "Avidin\u2011HRP heme detection assay",
+      "In vivo adoptive transfer proliferation tracking"
+    ],
+    "key_findings": [
+      "MDR\u2011low CD8 T cells in tumors have high mitochondrial mass but low membrane potential and upregulated proteasome genes.",
+      "Proteasome inhibition (MG132) restores BACH2 and reduces BLIMP1, partially reversing exhaustion markers.",
+      "Heme released from degraded mitochondrial hemoproteins increases in exhausted T cells and correlates with exhaustion severity in vivo.",
+      "Exogenous heme treatment in vitro drives PD\u20111 up\u2011regulation, TCF1 loss, and cytokine production decline.",
+      "BACH2 mutant resistant to heme binding preserves stemness markers even in tumor\u2011derived damaged\u2011mitochondria T cells."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Proteasome activity is selectively up\u2011regulated in mitochondria\u2011damaged T cells, not in cytosol.",
+      "Heme\u2011mediated BACH2 degradation appears specific to hemoproteins released from mitochondria."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Bortezomib (proteasome inhibitor)",
+        "rationale": "Prevent mitochondrial protein degradation and heme release",
+        "phenotype": "Improved proliferation and cytokine production of CD19 CAR T cells in vitro",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Heme scavenger (apo\u2011HRP assay control)",
+        "rationale": "Validate heme\u2011dependent exhaustion mechanism",
+        "phenotype": "Reduced regulatory heme signal when proteasome blocked",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What nuclear heme\u2011binding partners mediate transcriptional reprogramming beyond BACH2?",
+      "Can selective modulation of mitochondrial protein turnover be achieved without global proteasome inhibition?",
+      "How does this pathway operate in chronic viral infections versus cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Thompson et al. 2023 Immunity",
+        "DeGoeffe et al. 2024 Nature Immunology"
+      ],
+      "company_or_sponsor": [
+        "Bristol\u2011Myers Squibb (bortezomib supply)"
+      ],
+      "patent_or_ip_hints": [
+        "Method for modulating T\u2011cell exhaustion via proteasome inhibition"
+      ]
+    }
+  },
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::huang::3",
+    "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+    "talk_title": "TIM\u20114/AMPK\u2011TREM1 axis controls mitochondrial metabolism and immunosuppression in tumor\u2011associated macrophages",
+    "speaker": {
+      "name": "Stanley Huang",
+      "affiliation": "Ohio State University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "lung carcinoma",
+      "ovarian cancer",
+      "liver cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "macrophage_biology",
+      "metabolism",
+      "epigenetics",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TREM1",
+        "alteration": "",
+        "pathway": "mitochondrial_chaperone",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TIM4",
+        "alteration": "",
+        "pathway": "phosphatidylserine_receptor",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AMPK",
+        "alteration": "",
+        "pathway": "energy_sensor",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "GMG3",
+        "alteration": "",
+        "pathway": "histone_demethylase",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD206",
+        "type": "immunosuppressive",
+        "finding": "Increased in TREM1\u2011negative TAMs"
+      },
+      {
+        "name": "ARG1",
+        "type": "immunosuppressive",
+        "finding": "Elevated in TIM4\u2011high TAMs"
+      },
+      {
+        "name": "CD86",
+        "type": "activation",
+        "finding": "Higher in TREM1\u2011positive TAMs"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "B16\u2011Y111.7 melanoma model",
+        "genotype_or_key_features": "C57BL/6, tumor\u2011bearing"
+      },
+      {
+        "model_type": "conditional_knockout",
+        "name": "LysM\u2011Cre;Trem1^fl/fl",
+        "genotype_or_key_features": "Myeloid\u2011specific TREM1 deletion"
+      },
+      {
+        "model_type": "conditional_knockout",
+        "name": "LysM\u2011Cre;Ampk\u03b11^fl/fl",
+        "genotype_or_key_features": "Myeloid\u2011specific AMPK knockdown"
+      },
+      {
+        "model_type": "conditional_knockout",
+        "name": "LysM\u2011Cre;Gmg3^fl/fl",
+        "genotype_or_key_features": "Myeloid\u2011specific GMG3 deletion"
+      },
+      {
+        "model_type": "human",
+        "name": "colon cancer patient TAM scRNA\u2011seq",
+        "genotype_or_key_features": "TREM1 high vs low subsets"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Huang identified that tumor\u2011derived signals up\u2011regulate TIM4, which activates AMPK, suppresses TREM1 expression, and enhances mitochondrial complex II activity and glutamine\u2011derived \u03b1\u2011KG production in tumor\u2011associated macrophages; the resulting \u03b1\u2011KG fuels JMJD3\u2011mediated H3K27 demethylation, driving an immunosuppressive M2\u2011like phenotype.",
+    "readouts": [
+      "Seahorse mitochondrial respiration assays",
+      "Western blot for phospho\u2011AMPK, TREM1, TIM4",
+      "Flow cytometry for CD206, CD86, ARG1",
+      "LC\u2011MS metabolomics (\u03b1\u2011KG, glutamine)",
+      "scRNA\u2011seq of TAMs",
+      "Tumor growth curves in mice"
+    ],
+    "key_findings": [
+      "Tumor\u2011associated macrophages show ~70% reduction of TREM1 protein compared with splenic macrophages.",
+      "TIM4 deficiency or blockade restores TREM1 expression, reduces mitochondrial complex II activity, and diminishes \u03b1\u2011KG production.",
+      "Myeloid\u2011specific TREM1 deletion hyperactivates mitochondrial respiration, increases immunosuppressive markers, accelerates tumor growth, and shortens mouse survival.",
+      "AMPK activation downstream of TIM4 suppresses TREM1; AMPK knockdown rescues TREM1 and lowers mitochondrial activity.",
+      "GMG3 loss in myeloid cells reduces tumor size, TAM numbers, and immunosuppressive markers while enhancing CD8 T\u2011cell infiltration.",
+      "Combined TIM4 antibody and GMG3 inhibitor (GSKJ4) synergistically shrink tumors, decrease TAM immunosuppression, and improve survival in mouse melanoma."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "TIM4\u2011mediated AMPK activation selectively suppresses TREM1 in TAMs without affecting peripheral macrophages.",
+      "GMG3 inhibition preferentially impacts TAMs with high \u03b1\u2011KG, sparing normal tissue macrophages."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "TIM4 monoclonal antibody",
+        "rationale": "Block TIM4\u2011AMPK signaling to restore TREM1 and reduce mitochondrial hyperactivity",
+        "phenotype": "Reduced tumor growth and TAM immunosuppression in mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "GSKJ4 (JMJD3 inhibitor)",
+        "rationale": "Prevent \u03b1\u2011KG\u2011driven H3K27 demethylation and M2 gene expression",
+        "phenotype": "Decreased ARG1/CD206, increased CD86/MHC\u2011II, enhanced CD8 T\u2011cell infiltration",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "TIM4 antibody + GSKJ4",
+        "rationale": "Dual blockade of upstream signaling and epigenetic effector",
+        "phenotype": "Synergistic tumor regression and prolonged survival",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can TIM4 blockade be combined safely with PD\u20111/PD\u2011L1 checkpoint inhibitors?",
+      "What is the impact of systemic AMPK inhibition on other immune subsets?",
+      "Are there biomarkers (e.g., circulating \u03b1\u2011KG) predictive of response to TIM4/GMG3 targeting?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhao et al. 2024 Cancer Immunology Research",
+        "Lydia Rains et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Genentech (TIM4 antibody development)",
+        "Selleckchem (GSKJ4 supply)"
+      ],
+      "patent_or_ip_hints": [
+        "Methods of modulating TAM metabolism via TIM4\u2011AMPK\u2011TREM1 axis"
+      ]
+    }
+  }
+]

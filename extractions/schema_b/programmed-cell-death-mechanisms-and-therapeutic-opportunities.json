@@ -1,0 +1,283 @@
+[
+  {
+    "talk_id": "programmed-cell-death-mechanisms-and-therapeutic-opportunities::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Andreas Strasser",
+      "institution_or_pharma": "Walter and Eliza Hall Institute",
+      "session_title": "programmed-cell-death-mechanisms-and-therapeutic-opportunities",
+      "talk_title": "Enhancing the activity of BH3 mimetics",
+      "rhetorical_signals": [
+        "Speaker said: \"the biggest surprise for us was our biggest hit in our genetic screens and knockouts was p53\"",
+        "Speaker said: \"we have never treated p53 knockout mice with an MDM2 or BCL-xL inhibitor, but that could be done very easily\"",
+        "Speaker said: \"the STING agonist alone gives phenomenal extension of lifespan\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Venetoclax (BCL2 inhibitor)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Loss of p53 prevents the feed\u2011forward amplification loop that boosts apoptosis after BH3 mimetic treatment",
+        "unexplained_resistance_quote": "We were really puzzled, but then pretty much at that time when we got these genetic screen data... loss of p53 portends poorer survival",
+        "ghost_responder_admission": "some patients respond to venetoclax plus azacitidine but relapse later, suggesting a resistant sub\u2011clone",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data from the ongoing Melbourne trial",
+        "Lack of biomarker\u2011stratified analysis for STING expression in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumors with low STING expression that may benefit from strategies to up\u2011regulate STING before combining with BH3 mimetics",
+        "transcript_evidence": "Our research question is how can we increase STING expression in cancer cells that actually have very low levels of STING",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and epigenetic data to predict STING\u2011low tumors and suggest epigenetic modifiers to raise STING levels",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Leverage CrisPRO to predict which cancers will show synergistic response to STING agonist + BH3 mimetic combos based on cGAS\u2011STING pathway activation signatures",
+        "transcript_evidence": "We think that combining STING agonists with BH3 mimetic drug may be going forward into clinical assessments",
+        "crispro_angle": "CrisPRO can model pathway cross\u2011talk and rank combination efficacy across tumor types",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Venetoclax (ABT\u2011199)",
+        "context": "Approved BCL2 inhibitor used as reference for resistance studies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Navitoclax (ABT\u2011263)",
+        "context": "STING agonists originally developed by several pharma companies; mentioned as prior BCL\u2011XL inhibitor with platelet toxicity",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Exact molecular mechanism by which mitochondrial outer membrane permeabilization leads to p53 activation",
+      "Whether STING agonist treatment up\u2011regulates death receptors on tumor cells"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT??? (Melbourne trial recruiting, not specified in transcript)"
+      ],
+      "assets_to_track": [
+        "Venetoclax",
+        "STING agonists"
+      ],
+      "companies_to_monitor": [
+        "Walter and Eliza Hall Institute collaborations"
+      ]
+    }
+  },
+  {
+    "talk_id": "programmed-cell-death-mechanisms-and-therapeutic-opportunities::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Larry Boyes",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute",
+      "session_title": "programmed-cell-death-mechanisms-and-therapeutic-opportunities",
+      "talk_title": "Intrinsic and extrinsic factors driving the targeting of apoptosis in solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"We saw that there was a very satisfying decrease in BCL\u2011XL expression in these tumors, regardless of whether paclitaxel was on board or not\"",
+        "Speaker said: \"the platelet levels were maintained in safe levels for the duration of the experiment\"",
+        "Speaker said: \"the combination therapy was able to completely eradicate these tumors\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Navitoclax (BCL\u2011XL inhibitor)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "On\u2011target inhibition of BCL\u2011XL in platelets causes rapid thrombocytopenia, limiting dose escalation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Platelet drop observed within hours of dosing",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BCL\u2011XL PROTAC degrader DT2216",
+        "ip_vulnerability_note": "Relies on VHL E3 ligase; efficacy may be limited in cells/tissues with low VHL expression",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires co\u2011administration with mitotic agents (e.g., paclitaxel) to achieve MCL\u20111 down\u2011regulation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that BCL\u2011XL is highly expressed and essential in ovarian cancer cells, yet concluded that BCL\u2011XL inhibition alone is insufficient because of rapid apoptotic adaptation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No randomized clinical efficacy data yet for DT2216 + paclitaxel",
+        "Limited exploration of combination with carboplatin or PARP inhibitors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Use CrisPRO to predict which solid\u2011tumor subtypes will exhibit strong mitotic\u2011arrest\u2011induced MCL\u20111 depletion and thus respond to BCL\u2011XL degradation plus taxanes",
+        "transcript_evidence": "We believe that paclitaxel leads to a dramatic downregulation of MCL\u20111, and the degrader eliminates BCL\u2011XL, driving synergistic apoptosis",
+        "crispro_angle": "CrisPRO can model drug\u2011induced proteome dynamics to prioritize tumor types for this combination",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumors with high BCL\u2011XL dependence (e.g., via BH3 profiling) to select patients for DT2216 therapy",
+        "transcript_evidence": "Across ovarian cancer patient specimens we saw indications of BCL\u2011XL dependence regardless of prior therapy",
+        "crispro_angle": "CrisPRO can integrate BH3 profiling data with transcriptomics to generate a BCL\u2011XL dependence score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a trial that incorporates a thrombopoietin agonist (e.g., romiplostim) to mitigate platelet toxicity of BCL\u2011XL inhibitors",
+        "transcript_evidence": "Treating mice with romiplostim before navitoclax prevented severe thrombocytopenia",
+        "crispro_angle": "CrisPRO can simulate hematopoietic compartment effects of dosing schedules to optimize safety",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Navitoclax (ABT\u2011263)",
+        "context": "First\u2011generation BCL\u2011XL inhibitor causing thrombocytopenia",
+        "sentiment": "critical"
+      },
+      {
+        "name": "DT2216 (BCL\u2011XL PROTAC degrader)",
+        "context": "PROTAC that degrades BCL\u2011XL while sparing platelets due to low VHL in platelets",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "S63845 (MCL\u20111 inhibitor)",
+        "context": "Mentioned as a potent MCL\u20111 inhibitor with cardiac troponin signals",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can DT2216 be combined safely with carboplatin or PARP inhibitors in ovarian cancer?",
+      "What is the mechanistic basis for the observed nuclear localization of BCL\u2011XL after paclitaxel treatment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DT2216",
+        "Paclitaxel",
+        "Navitoclax"
+      ],
+      "companies_to_monitor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Servier (S63845 developer)"
+      ]
+    }
+  },
+  {
+    "talk_id": "programmed-cell-death-mechanisms-and-therapeutic-opportunities::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Larry Boyes",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute",
+      "session_title": "programmed-cell-death-mechanisms-and-therapeutic-opportunities",
+      "talk_title": "Targeting BCL\u2011XL in solid tumors with a PROTAC degrader",
+      "rhetorical_signals": [
+        "Speaker said: \"the combination therapy was able to completely eradicate these tumors\"",
+        "Speaker said: \"platelet levels were maintained in safe levels for the duration of the experiment\"",
+        "Speaker said: \"we saw a very satisfying decrease in BCL\u2011XL expression in these tumors\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BCL\u2011XL PROTAC DT2216 (when combined with MCL\u20111 inhibition)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Co\u2011targeting BCL\u2011XL and MCL\u20111 leads to vascular toxicity not mitigated by PROTAC degradation in endothelial cells",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Severe vasculature toxicity observed in pre\u2011clinical models with BCL\u2011XL + MCL\u20111 inhibitors",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DT2216 PROTAC platform",
+        "ip_vulnerability_note": "Depends on VHL E3 ligase; tumors with low VHL may be less responsive",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires mitotic\u2011arrest agents to down\u2011regulate MCL\u20111 for maximal efficacy"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of data on combination with platinum agents or PARP inhibitors",
+        "No long\u2011term cardiac safety data for DT2216 in humans"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate that PROTAC\u2011mediated degradation of BCL\u2011XL yields deeper target knock\u2011down and less adaptive up\u2011regulation than inhibition",
+        "transcript_evidence": "Degrader leads to near\u2011complete loss of BCL\u2011XL within 24\u202fh, whereas inhibition causes BCL\u2011XL protein accumulation",
+        "crispro_angle": "CrisPRO can quantify degradation kinetics versus inhibition across cell lines to support PROTAC advantage",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify additional mitotic\u2011arrest agents (e.g., PLK1, Aurora kinase inhibitors) that synergize with BCL\u2011XL degradation",
+        "transcript_evidence": "Any agent that induces mitotic arrest synergizes very well with BCL\u2011XL degradation",
+        "crispro_angle": "CrisPRO can predict synergy scores for BCL\u2011XL degrader with a library of mitotic inhibitors",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Navitoclax (ABT\u2011263)",
+        "context": "First\u2011generation BCL\u2011XL inhibitor with platelet toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "DT2216",
+        "context": "BCL\u2011XL PROTAC degrader under clinical investigation",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Paclitaxel",
+        "context": "Standard of care microtubule\u2011targeting agent used in combination",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can a BCL\u2011XL degrader be engineered to avoid VHL dependence and thus broaden tumor applicability?",
+      "What is the impact of DT2216 on immune cell subsets in the tumor microenvironment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT??? (DT2216 + paclitaxel trial at Dana\u2011Farber, not specified)"
+      ],
+      "assets_to_track": [
+        "DT2216",
+        "Paclitaxel",
+        "Navitoclax"
+      ],
+      "companies_to_monitor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Companies developing BCL\u2011XL PROTACs"
+      ]
+    }
+  }
+]

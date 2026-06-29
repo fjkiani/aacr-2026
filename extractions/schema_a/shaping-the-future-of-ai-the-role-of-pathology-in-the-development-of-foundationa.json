@@ -1,0 +1,309 @@
+[
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::laak::1",
+    "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+    "talk_title": "Foundation models in pathology: data requirements, performance and robustness",
+    "speaker": {
+      "name": "Jeroen van der Laak",
+      "affiliation": "Radboud University Medical Center, Nijmegen, Netherlands, Department of Computational Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "breast cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "immunotherapy",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "KRAS mutation",
+        "type": "predictive",
+        "assay": "H&E slide prediction",
+        "finding": "F1 score 0.85 for KRAS mutation prediction from H&E slides"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Panda Challenge prostate cohort",
+        "genotype_or_key_features": "12,000 prostate biopsies, 5,600 pathologist reviews"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Quadratic weighted Kappa",
+        "value": "0.93",
+        "confidence_interval": "",
+        "n": "n=12,000 biopsies",
+        "population": "prostate cancer biopsies",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Energy consumption",
+        "value": "35x",
+        "confidence_interval": "",
+        "n": "",
+        "population": "foundation model vs task\u2011specific model",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Foundation models are trained with self\u2011supervised learning on large, diverse pathology image collections to produce high\u2011dimensional embeddings that capture generic visual features; these embeddings enable few\u2011shot downstream tasks such as cancer grading, mutation prediction, and survival modeling with reduced data requirements.",
+    "readouts": [
+      "Kappa statistics",
+      "F1 score",
+      "energy consumption"
+    ],
+    "key_findings": [
+      "Training on 12,000 prostate biopsies and 5,600 pathologist reviews yielded a quadratic weighted Kappa of up to 0.93, matching expert performance.",
+      "Foundation models achieved comparable performance with as little as 1% of the training data, whereas task\u2011specific models required >30% of data to reach similar accuracy.",
+      "Generalizability of foundation models was superior on out\u2011of\u2011distribution cohorts but depended on the diversity of the pre\u2011training data.",
+      "Foundation models consumed 35 times more energy than task\u2011specific models, highlighting a trade\u2011off between data efficiency and computational cost."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Performance degrades on demographic subgroups under\u2011represented in the training set (e.g., Asian patients in breast cancer subtype classification).",
+      "Bias in training data leads to reduced accuracy on minority groups, but foundation models like CTranspath mitigate this bias."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "text reports (captions)",
+        "rationale": "Combining image embeddings with textual pathology reports provides contextual information that improves robustness and performance.",
+        "phenotype": "Improved classification accuracy and robustness with multimodal embeddings versus image\u2011only models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How can we further reduce the energy footprint of large foundation models without sacrificing data efficiency?",
+      "What is the optimal balance between model size and data diversity for maximal generalizability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Campanella et al. 2022 Nature Medicine"
+      ],
+      "company_or_sponsor": [
+        "Aiosyn"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::lipkova::2",
+    "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+    "talk_title": "Benchmarking foundation models for survival prediction and the SURFER prognostic model",
+    "speaker": {
+      "name": "Jana Lipkova",
+      "affiliation": "University of California, Irvine, Departments of Pathology and Biomedical Engineering",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "bladder cancer",
+      "colorectal cancer",
+      "brain cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "translational",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "KRAS mutation",
+        "type": "predictive",
+        "assay": "H&E slide prediction",
+        "finding": "F1 score 0.85 for KRAS mutation prediction"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA and NIH\u2011PLCO cohort",
+        "genotype_or_key_features": "\u224815,000 whole slide images across 13 cancer types"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "PATOS benchmark dataset",
+        "genotype_or_key_features": "13 cancer types, internal and external validation splits"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "SURFER extends a vision\u2011language foundation model (Titan) with SoftCLIP, a weighted contrastive loss that incorporates patient survival times into the embedding space, enabling the model to learn prognostic features directly from whole\u2011slide images and associated outcome text.",
+    "readouts": [
+      "F1 score",
+      "UMAP visualizations",
+      "survival concordance (C\u2011index) improvement"
+    ],
+    "key_findings": [
+      "Patch\u2011level foundation models outperform slide\u2011level models for survival prediction across 13 cancer types.",
+      "Multimodal models (image\u202f+\u202ftext) do not significantly improve survival prediction over unimodal models when prognostic information is absent from the text.",
+      "The SURFER model, trained with SoftCLIP on ~15,000 slides, yields a clear gradient of risk groups in UMAP space and improves downstream survival C\u2011index compared with the baseline Titan model.",
+      "Pan\u2011cancer training slightly outperforms cancer\u2011specific models, demonstrating feasibility of a single prognostic model for diverse tumor types."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Interpretability heatmaps differ markedly between foundation models, indicating model\u2011specific attention patterns that may affect biomarker discovery."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "patient outcome text (survival times)",
+        "rationale": "Embedding survival information guides the contrastive learning to cluster patients with similar outcomes.",
+        "phenotype": "Improved risk stratification and higher C\u2011index in downstream survival models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can additional modalities such as treatment response or molecular subtypes further enhance prognostic foundation models?",
+      "What is the optimal balance between patch\u2011level and slide\u2011level representations for different clinical endpoints?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Campanella et al. 2022 Nature Medicine",
+        "Giraffe et al. 2023"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::kater::3",
+    "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+    "talk_title": "Clinical applications of pathology foundation models and future AI agents",
+    "speaker": {
+      "name": "Jakob Kater",
+      "affiliation": "Technical University of Dresden, Germany, Professor of Clinical Artificial Intelligence; Senior Physician, Medical Oncology, University Hospital Dresden",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "prostate cancer",
+      "breast cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "clinical_trial",
+    "topic_categories": [
+      "AI_ML",
+      "immunotherapy",
+      "clinical_trial",
+      "translation",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "EGFR mutation",
+        "type": "predictive",
+        "assay": "AI prediction from H&E slides",
+        "finding": "Reduced rapid molecular testing by 43% while maintaining clinical performance in a prospective lung cancer screening study"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "EGFR screening trial (Memorial Sloan Kettering)",
+        "genotype_or_key_features": "Prospective evaluation of AI\u2011based EGFR prediction from pathology slides"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Reduction in molecular tests",
+        "value": "43%",
+        "confidence_interval": "",
+        "n": "",
+        "population": "lung cancer patients undergoing EGFR screening",
+        "comparator": "standard reflex testing",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Foundation models generate generic image embeddings that can be fine\u2011tuned for specific clinical tasks; when combined with large language model agents, they enable multimodal reasoning across pathology, radiology, genomics and clinical records to support tumor board decision\u2011making and trial matching.",
+    "readouts": [
+      "test reduction percentage",
+      "model performance metrics (not specified)",
+      "agent benchmark against human oncologists"
+    ],
+    "key_findings": [
+      "AI models trained on H&E slides can predict EGFR mutation status, allowing a 43% reduction in rapid molecular testing without loss of diagnostic accuracy.",
+      "Foundation models accelerate development of downstream tasks (e.g., molecular alteration inference, survival prediction) by requiring far fewer labeled examples.",
+      "Multimodal agents that integrate foundation model embeddings with language models can replicate tumor board reasoning and achieve performance comparable to human oncologists in benchmark studies."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Current AI agents lack robust regulatory guardrails and human\u2011oversight mechanisms, posing safety and compliance challenges."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "large language model (LLM) chatbot",
+        "rationale": "Leverage LLM reasoning and tool\u2011use capabilities to synthesize pathology, radiology, genomics and clinical data for treatment recommendations.",
+        "phenotype": "Agent performance comparable to human oncologists in simulated tumor board cases.",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How can regulatory frameworks be adapted to certify autonomous AI agents for clinical decision support?",
+      "What infrastructure investments are required to achieve widespread digital pathology adoption necessary for foundation model deployment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Campanella et al. 2022 Nature Medicine"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,964 @@
+[
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::cheng::1",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Spatial Transcriptomics Profiling of Colorectal Cancer Tumors in Alaska Native People: Discovery of Prognostic Biomarkers",
+    "speaker": {
+      "name": "Geryk Cheng",
+      "affiliation": "Unknown",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "translational",
+      "basic_science",
+      "spatial_biology",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "SPINK4",
+        "type": "predictive",
+        "assay": "GeoMix",
+        "finding": "Upregulated in epithelial compartment of tumor center in patients who did not die from colorectal cancer."
+      },
+      {
+        "name": "MUQ2",
+        "type": "predictive",
+        "assay": "GeoMix",
+        "finding": "Upregulated in epithelial compartment of tumor center in patients who did not die from colorectal cancer."
+      },
+      {
+        "name": "HBA2",
+        "type": "predictive",
+        "assay": "GeoMix",
+        "finding": "Upregulated in epithelial compartment of invasive margin in patients who die from colorectal cancer."
+      },
+      {
+        "name": "Interferon alpha and gamma response pathway",
+        "type": "predictive",
+        "assay": "GeoMix",
+        "finding": "Enriched in epithelial compartment (tumor center and invasive margin) in patients who did not die from colorectal cancer."
+      },
+      {
+        "name": "Epithelial-mesenchymal transition pathways",
+        "type": "predictive",
+        "assay": "GeoMix",
+        "finding": "Enriched in epithelial and stromal compartments of invasive margin in patients who die from colorectal cancer."
+      },
+      {
+        "name": "Plasma cells",
+        "type": "predictive",
+        "assay": "SpatialDecon (GeoMix)",
+        "finding": "Increased in epithelial compartment at tumor center in patients who did not die from colorectal cancer."
+      },
+      {
+        "name": "Mast cells",
+        "type": "predictive",
+        "assay": "SpatialDecon (GeoMix)",
+        "finding": "Increased in stromal compartment at tumor center in patients who die from colorectal cancer."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Alaska Native colorectal cancer patients",
+        "genotype_or_key_features": "217 patients with FFPE tissue blocks, matched for sex, tumor stage, and tumor sites. Deaths matched 1:2 to non-deaths."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "This study utilized spatial transcriptomics (GeoMix) to profile colorectal cancer tumors in Alaska Native people, identifying prognostic biomarkers associated with mortality. Key findings include differential gene expression (SPINK4, MUQ2, HBA2) and pathway enrichment (interferon response, EMT) in tumor and stromal compartments, as well as altered cell type abundance (plasma cells, mast cells), correlating with patient survival outcomes.",
+    "readouts": [
+      "GeoMix (spatial transcriptomics)",
+      "bulk RNA-seq",
+      "PhenoCyte (spatial proteomics)",
+      "Xenia (spatial transcriptomics)",
+      "SpatialDecon"
+    ],
+    "key_findings": [
+      "Identified spatially specific markers tied to colorectal cancer-specific mortality in Alaska Native people.",
+      "In the tumor center epithelial compartment, downregulation of MILK2 and SPINK4, and interferon alpha and gamma pathways were associated with not dying from colorectal cancer.",
+      "In the tumor center, a decrease in plasma cells and an increase in mast cells were observed in patients who did not die from colorectal cancer.",
+      "In the invasive margin epithelial compartment, an increase in HBA2 expression was observed in patients who died from colorectal cancer.",
+      "Epithelial-mesenchymal transition pathways were enriched in the invasive margin (epithelial and stromal compartments) in patients who died from colorectal cancer."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::routenberg::2",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Highly Multiplexed Immunoassays Enable Discovery of Multi-Marker EV Surface Signatures as Novel Biomarkers",
+    "speaker": {
+      "name": "David Routtenberg",
+      "affiliation": "Mesoscale Diagnostics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "biomarker_development",
+      "liquid_biopsy",
+      "ctDNA",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CEA",
+        "alteration": null,
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "colorectal cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CEA (soluble)",
+        "type": "predictive",
+        "assay": "ELISA (implied)",
+        "finding": "16% of stage IV CRC patients were undetectable."
+      },
+      {
+        "name": "CEA on EV surface",
+        "type": "predictive",
+        "assay": "Combinatorial immunosequencing",
+        "finding": "Detectable in stage IV CRC patients where soluble CEA was undetectable."
+      },
+      {
+        "name": "CD73, CD13, CEA triplet signature",
+        "type": "predictive",
+        "assay": "Combinatorial immunosequencing",
+        "finding": "Recurrent components in CRC-secreted EVs, with prognostic value."
+      },
+      {
+        "name": "Epithelial cell markers (CEA, E-cadherin, EpCAM)",
+        "type": "predictive",
+        "assay": "Combinatorial immunosequencing",
+        "finding": "Reflect epithelial cell origin in CRC EVs."
+      },
+      {
+        "name": "Stromal cell markers",
+        "type": "predictive",
+        "assay": "Combinatorial immunosequencing",
+        "finding": "Reflect stromal cell origin in CRC EVs."
+      },
+      {
+        "name": "CD73",
+        "type": "predictive",
+        "assay": "Combinatorial immunosequencing",
+        "finding": "Found on both stromal and epithelial populations."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Colorectal cancer patients",
+        "genotype_or_key_features": "Three independent cohorts: 1 cross-sectional (Bob Coffey lab), 2 longitudinal (Andy Nixon lab)."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Diffi, HCT15",
+        "genotype_or_key_features": "Colorectal carcinoma cell lines used for assay validation."
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CEA detectability (soluble)",
+        "value": "84%",
+        "confidence_interval": null,
+        "n": "Stage IV CRC patients",
+        "population": "Stage IV CRC patients",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "CEA detectability (EV surface)",
+        "value": "100%",
+        "confidence_interval": null,
+        "n": "Stage IV CRC patients",
+        "population": "Stage IV CRC patients",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "FDR significant prognostic signatures",
+        "value": "Quite a few",
+        "confidence_interval": null,
+        "n": "Top 100 overexpressed signatures in tumors",
+        "population": "CRC patients (longitudinal cohorts)",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "This presentation introduces a novel combinatorial immunosequencing platform for highly multiplexed profiling of extracellular vesicle (EV) surface signatures. The technology enables the discovery of multi-marker combinations that can distinguish cell origins and provide prognostic information, demonstrating improved sensitivity over single markers and showing consistent findings across multiple colorectal cancer cohorts.",
+    "readouts": [
+      "Combinatorial immunosequencing",
+      "NGS",
+      "ECL planar array platform (MST)"
+    ],
+    "key_findings": [
+      "Soluble CEA was undetectable in 16% of stage IV CRC patients, while the same molecule on EV surfaces was detectable.",
+      "The combinatorial immunosequencing platform can detect rare EV subpopulations (1 in 10 million) with high sensitivity and a four-log dynamic range.",
+      "Three-marker combinations consistently discriminated between epithelial and stromal cell origins in CRC EVs across three independent cohorts.",
+      "Several multi-marker EV surface signatures showed FDR significant prognostic value in longitudinal CRC cohorts.",
+      "CD73, CD13, and CEA were identified as recurrent components in CRC-secreted EVs with prognostic potential."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Plans for validation of findings.",
+      "Potential for early detection using multi-marker EV signatures."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::soto::3",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Differences in Survival Outcomes Among Metastatic Colorectal Cancer Patients Across Fibroblast Growth Factor Receptor Two and Three Expression Levels",
+    "speaker": {
+      "name": "Steve Soto",
+      "affiliation": "USC Norris Center",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "metastatic",
+    "topic_categories": [
+      "translational",
+      "biomarker_development",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "high expression",
+        "pathway": "angiogenesis",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "metastatic colorectal cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "high expression",
+        "pathway": "angiogenesis",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "metastatic colorectal cancer, cetuximab arm",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "FGFR3",
+        "alteration": "high expression",
+        "pathway": "tumor microenvironment modulation",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "metastatic colorectal cancer, cetuximab arm",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "SNP RS-3135718 variant allele",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "metastatic colorectal cancer, cetuximab arm",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "SNP RS-3135718 homozygous variant",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "metastatic colorectal cancer, cetuximab arm",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "FGFR2 gene expression",
+        "type": "prognostic",
+        "assay": "RNA-seq (implied from CALGB SWOG 80405)",
+        "finding": "Associated with worse overall survival across treatment arms (HR 1.28, median survival difference 7.4 months)."
+      },
+      {
+        "name": "FGFR2 gene expression",
+        "type": "predictive",
+        "assay": "RNA-seq (implied from CALGB SWOG 80405)",
+        "finding": "Predictive of overall survival in patients treated with cetuximab (HR 1.56, median survival difference 12 months)."
+      },
+      {
+        "name": "FGFR3 gene expression",
+        "type": "predictive",
+        "assay": "RNA-seq (implied from CALGB SWOG 80405)",
+        "finding": "Predictive of overall survival in patients treated with cetuximab (HR 0.59, median survival difference 12.4 months)."
+      },
+      {
+        "name": "FGFR2 SNP RS-3135718",
+        "type": "predictive",
+        "assay": "Genotyping (implied from CALGB SWOG 80405)",
+        "finding": "Predictive of progression-free and overall survival in patients treated with cetuximab. Homozygous variant associated with improved survival (median survival difference 3 months vs WT)."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "CALGB SWOG 80405 Phase III clinical trial",
+        "genotype_or_key_features": "Newly diagnosed metastatic colorectal cancer patients randomized to chemotherapy + cetuximab or chemotherapy + bevacizumab. Covariates adjusted for: KRAS mutation, BRAF mutation, MSI status, sidedness, age, sex."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "CRC cell lines",
+        "genotype_or_key_features": "Used for preclinical validation of FGFR2 inhibition."
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall Survival (FGFR2 high vs low)",
+        "value": "HR 1.28",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "All patients",
+        "comparator": "FGFR2 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Median Survival Difference (FGFR2 high vs low)",
+        "value": "7.4 months",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "All patients",
+        "comparator": "FGFR2 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall Survival (FGFR2 high vs low, cetuximab arm)",
+        "value": "HR 1.56",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "Cetuximab arm",
+        "comparator": "FGFR2 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Median Survival Difference (FGFR2 high vs low, cetuximab arm)",
+        "value": "12 months",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "Cetuximab arm",
+        "comparator": "FGFR2 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall Survival (FGFR3 high vs low, cetuximab arm)",
+        "value": "HR 0.59",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "Cetuximab arm",
+        "comparator": "FGFR3 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Median Survival Difference (FGFR3 high vs low, cetuximab arm)",
+        "value": "12.4 months",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "Cetuximab arm",
+        "comparator": "FGFR3 low",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall Survival (FGFR2 SNP RS-3135718 homozygous variant vs WT, cetuximab arm)",
+        "value": "3 months",
+        "confidence_interval": null,
+        "n": "CALGB SWOG 80405 cohort",
+        "population": "Cetuximab arm",
+        "comparator": "Wild Type",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "This study investigated the prognostic and predictive value of FGFR2 and FGFR3 gene expression and FGFR2 SNPs in metastatic colorectal cancer patients from the CALGB SWOG 80405 trial. FGFR2 high expression was associated with worse survival overall and specifically in the cetuximab arm, while FGFR3 high expression and a specific FGFR2 SNP (RS-3135718) were associated with improved survival in the cetuximab arm, suggesting differential roles in response to EGFR inhibition.",
+    "readouts": [
+      "RNA-seq",
+      "Genotyping"
+    ],
+    "key_findings": [
+      "FGFR2 high expression was prognostic for worse overall survival in mCRC patients (HR 1.28).",
+      "FGFR2 high expression was predictive of worse overall survival in the cetuximab arm (HR 1.56).",
+      "FGFR3 high expression was predictive of improved overall survival in the cetuximab arm (HR 0.59).",
+      "FGFR2 SNP RS-3135718 variant allele was predictive of improved PFS and OS in the cetuximab arm.",
+      "FGFR2 inhibition decreased cell viability in CRC cell lines, reiterating its criticality for cell survival."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Why do FGFR2 and FGFR3 behave differently despite being in the same family?",
+      "Underlying mechanisms for FGFR3's association with improved survival in the cetuximab arm."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::ahmad::4",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Mapping of Spatial Organization of B Cells and Immune Signaling in Triple Negative Breast Cancer to Characterize Response to Immunotherapy",
+    "speaker": {
+      "name": "Lubna Ahmad",
+      "affiliation": "University of Cambridge",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "triple negative breast cancer"
+    ],
+    "clinical_stage": "early-stage",
+    "topic_categories": [
+      "immunotherapy",
+      "spatial_biology",
+      "biomarker_development",
+      "translational",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Germinal center B cells",
+        "type": "predictive",
+        "assay": "Imaging Mass Cytometry (IMC)",
+        "finding": "Associated with immunotherapy response on-treatment."
+      },
+      {
+        "name": "Plasma memory B cells",
+        "type": "predictive",
+        "assay": "Imaging Mass Cytometry (IMC)",
+        "finding": "Associated with immunotherapy response on-treatment."
+      },
+      {
+        "name": "Naive B cells",
+        "type": "predictive",
+        "assay": "Imaging Mass Cytometry (IMC)",
+        "finding": "Associated with immunotherapy response on-treatment."
+      },
+      {
+        "name": "B activated niche",
+        "type": "predictive",
+        "assay": "GraphST (IMC)",
+        "finding": "Significantly associated with immunotherapy response across neighborhood scales."
+      },
+      {
+        "name": "Germinal center niche",
+        "type": "predictive",
+        "assay": "GraphST (IMC)",
+        "finding": "Trends towards association with immunotherapy response."
+      },
+      {
+        "name": "Plasma-maturing niche",
+        "type": "predictive",
+        "assay": "GraphST (IMC)",
+        "finding": "Trends towards association with immunotherapy response."
+      },
+      {
+        "name": "Plasma-rich niche interacting with CD15, MHC-1 and 2 epithelial cells",
+        "type": "predictive",
+        "assay": "IMC",
+        "finding": "Associated with immunotherapy response at baseline (immunotherapy arm)."
+      },
+      {
+        "name": "B cells from B activated niche interacting with CD4, CD8, plasma, and B cells",
+        "type": "predictive",
+        "assay": "IMC",
+        "finding": "Associated with immunotherapy response on-treatment."
+      },
+      {
+        "name": "Naive B cells enrichment",
+        "type": "predictive",
+        "assay": "IMC",
+        "finding": "Most abundant phenotype enriched on-treatment in chemoimmunotherapy arm, also enriched in chemotherapy arm."
+      },
+      {
+        "name": "Cytokine enrichment within niches",
+        "type": "predictive",
+        "assay": "IMC",
+        "finding": "Persistent feature in chemoimmunotherapy responders post-treatment."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "NEOCHIP study",
+        "genotype_or_key_features": "280 early-stage triple-negative breast cancer patients randomized to chemoimmunotherapy or chemotherapy. Samples collected at baseline, on-treatment, and post-treatment."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "This study investigated the role of B cells and cytokine signaling in triple-negative breast cancer (TNBC) response to immunotherapy using imaging mass cytometry (IMC). Findings indicate that B cell densities, specific B cell niches (e.g., B activated niche), and their interactions with other immune cells are significantly associated with immunotherapy response. The spatial organization of B cells and cytokine enrichment within niches appear to be key drivers of treatment efficacy.",
+    "readouts": [
+      "Imaging Mass Cytometry (IMC)",
+      "RNA probes (double Z probes)",
+      "Metal-conjugated antibodies",
+      "H&E staining"
+    ],
+    "key_findings": [
+      "Several B cell populations (germinal center B, plasma memory, naive B) are associated with immunotherapy response on-treatment.",
+      "Specific B cell niches (germinal center, B activated, plasma-rich, plasma-maturing) were identified.",
+      "The B activated niche and its interactions with other immune cells are predictive of immunotherapy response.",
+      "B cells are more significantly impacted post-immunotherapy compared to other TME cells.",
+      "Cytokine enrichment within niches is a persistent feature in immunotherapy responders across treatment time points."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do B cells and plasma cells contribute to immunotherapy response, given the traditional focus on T cells?",
+      "The role of antibodies produced by plasma cells in immunotherapy response.",
+      "Potential for targeting B cells or their niches in immunotherapy."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::mand::5",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "AI-Powered Deep Visual Proteomics (DVP) Links Pancreatic Precursor Biology to PDAC Survival Phenotypes",
+    "speaker": {
+      "name": "Andreas Mand",
+      "affiliation": "Omic Vision Biosciences",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "pancreatic precursor lesions"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "spatial_biology",
+      "biomarker_development",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "hotspot mutations",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "pancreatic precursor lesions and PDAC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Cancer-associated normal ducts vs. incidental normal ducts",
+        "type": "predictive",
+        "assay": "Mass spectrometry-based proteomics",
+        "finding": "Cancer-associated ducts show enrichment of proteins reflecting oxidative stress, metabolic reprogramming, and immune editing."
+      },
+      {
+        "name": "Inflammation and antigen presentation pathways",
+        "type": "predictive",
+        "assay": "Pathway enrichment analysis (Mass spectrometry-based proteomics)",
+        "finding": "Upregulated early in normal ducts, all the way to low-grade PANA, then sharply drop in high-grade PANA, suggesting immune evasion."
+      },
+      {
+        "name": "KRAS mutations",
+        "type": "predictive",
+        "assay": "Mass spectrometry-based proteomics (peptide analysis)",
+        "finding": "Identified hotspot mutations in normal ducts, ADMs, and PANA lesions, allowing genotype-phenotype correlation."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Pancreatic precursor lesions and PDAC cohort",
+        "genotype_or_key_features": "Cohort 1: Incidental normal ducts and ADMs, low-grade PANAs. Cohort 2: Cancer-associated normal ducts, low-grade and high-grade PANAs, tumor cells. Isolated <100 phenotype-matched epithelial cells."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "This study applied AI-powered Deep Visual Proteomics (DVP) to analyze pancreatic precursor lesions and PDAC. By integrating high-resolution microscopy with mass spectrometry-based spatial proteomics, the researchers identified early molecular changes in normal ducts associated with cancer development, including immune editing and metabolic reprogramming. The technology also enabled the detection of KRAS mutations directly from proteomic data, linking genotype to phenotype and revealing insights into immune evasion in high-grade PANA.",
+    "readouts": [
+      "H&E staining",
+      "Immunohistochemistry (IHC)",
+      "Immunofluorescence (IF)",
+      "Mass spectrometry-based proteomics",
+      "Laser microdissection"
+    ],
+    "key_findings": [
+      "Cancer-associated normal ducts show distinct proteomic profiles compared to incidental normal ducts, including oxidative stress, metabolic reprogramming, and immune editing.",
+      "Inflammation and antigen presentation pathways are upregulated early in pancreatic precursor lesions but drop sharply in high-grade PANA, indicating immune evasion.",
+      "KRAS hotspot mutations can be identified from proteomic data, enabling genotype-phenotype correlation in precursor lesions.",
+      "The study identified a 'cancer field effect' where normal ducts near tumors acquire immune signatures.",
+      "DVP identified distinct proteomic differences between spatially adjacent regions within tumors, highlighting tumor heterogeneity."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Translating these findings into clinical diagnostics or therapeutics.",
+      "Further exploration of the identified immune evasion mechanisms."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nature Biotechnology 2022",
+        "Nature Methods 2024"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::kinsella::6",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Spatial Immune Multiomics Refines Prognostication in Early-Stage Estrogen Receptor-Positive Breast Cancer",
+    "speaker": {
+      "name": "Zach Kinsella",
+      "affiliation": "Royal College of Surgeons in Ireland",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "early-stage",
+    "topic_categories": [
+      "biomarker_development",
+      "spatial_biology",
+      "translational",
+      "clinical_trial",
+      "AI_ML"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ESR1",
+        "alteration": "downregulation",
+        "pathway": "estrogen receptor signaling",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "inflamed epithelia in ER+ breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CTLA4",
+        "alteration": "upregulation",
+        "pathway": "immune checkpoint",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "inflamed epithelia and stroma in ER+ breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TIGIT",
+        "alteration": "upregulation",
+        "pathway": "immune checkpoint",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "inflamed epithelia in ER+ breast cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD96",
+        "alteration": "upregulation",
+        "pathway": "immune checkpoint",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "inflamed epithelia in ER+ breast cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD8",
+        "alteration": "high density",
+        "pathway": "cytotoxic T cell infiltration",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "intermediate recurrence score ER+ breast cancer, chemo arm",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Inflamed TME and epithelia",
+        "type": "prognostic",
+        "assay": "Spatial transcriptomics and proteomics",
+        "finding": "Associated with poorer outcome in patients receiving chemotherapy in the intermediate recurrence score group."
+      },
+      {
+        "name": "Stromal CD8 density",
+        "type": "predictive",
+        "assay": "Immunohistochemistry (IHC)",
+        "finding": "Predictive marker of chemo inferiority in intermediate recurrence score ER+ breast cancer."
+      },
+      {
+        "name": "Epithelial CD8 density",
+        "type": "predictive",
+        "assay": "Immunohistochemistry (IHC)",
+        "finding": "Conferred poorer outcome in patients randomized to chemotherapy."
+      },
+      {
+        "name": "Tregs fluidity",
+        "type": "prognostic",
+        "assay": "Proteomics",
+        "finding": "More fluid in inflamed TME, likely to infiltrate epithelia."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Irish patients from TAILORx trial",
+        "genotype_or_key_features": "Early-stage ER-positive, HER2-negative breast cancer patients with intermediate recurrence score (11-25). Randomized to hormone therapy alone or chemoendocrine therapy."
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "15-year survival difference (90th percentile CD8 density)",
+        "value": "16%",
+        "confidence_interval": null,
+        "n": "TAILORx intermediate recurrence score cohort",
+        "population": "Intermediate recurrence score ER+ breast cancer",
+        "comparator": "Hormone therapy alone vs. chemotherapy",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Median survival time difference (90th percentile CD8 density)",
+        "value": "13 months",
+        "confidence_interval": null,
+        "n": "TAILORx intermediate recurrence score cohort",
+        "population": "Intermediate recurrence score ER+ breast cancer",
+        "comparator": "Hormone therapy alone vs. chemotherapy",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "This study utilized spatial multiomics (IHC, spatial transcriptomics, spatial proteomics) on early-stage ER+ breast cancer patients from the TAILORx trial to refine prognostication in the intermediate recurrence score group. Findings reveal that inflamed immune microenvironments are associated with dysfunctional responses, including upregulation of checkpoints and downregulation of ER signaling. High stromal CD8 density was identified as a predictive marker of chemo inferiority, suggesting that immune infiltration patterns can refine treatment decisions.",
+    "readouts": [
+      "Immunohistochemistry (IHC)",
+      "Spatial transcriptomics (NanoString GeoMx)",
+      "Spatial proteomics (Akoya 6-plex immunofluorescence)"
+    ],
+    "key_findings": [
+      "Four TME types and three epithelial types were identified, with immune types not significantly captured by Oncotype DX Recurrence Score.",
+      "Inflamed epithelia were characterized by downregulation of ESR1 and suppression of DNA repair pathways.",
+      "Inflamed TME and epithelia were prognostic in the intermediate recurrence score group, with chemotherapy showing poorer outcomes.",
+      "High stromal CD8 density was a predictive marker of chemo inferiority in the intermediate recurrence score group.",
+      "Increasing CD8 density conferred poorer outcome on chemotherapy, adding prognostic information to clinical variables."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [
+      "Inflamed states are transcriptomically wired to more dysfunctions, such as expression of checkpoints, exhaustion transcripts, M2-like macrophage, and remodeling genes, as well as dedifferentiation."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to translate these findings into a clinical assay, potentially using foundational models for TIL scoring.",
+      "The role of chemotherapy in ER+ breast cancer with high CD8 density.",
+      "The relationship between CD8 density and response to immunotherapy in triple-negative breast cancer."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-biomarkers-at-single-cell-resolution-mapping-tumor-ecosystems-with-prote::deynaud::7",
+    "session_title": "Spatial Biomarkers at Single-Cell Resolution",
+    "talk_title": "Unbiased Phenotyping of CRISPR Edited Tumors with Preserved Map and Subcellular Imaging of the Mouse Whole Transcriptome, 22,000 Plex",
+    "speaker": {
+      "name": "Maxime Deynaud",
+      "affiliation": "Nordic",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "platform_technology",
+      "AI_ML",
+      "spatial_biology",
+      "synthetic_biology",
+      "CRISPR"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "VEGFR1",
+        "alteration": "knockout",
+        "pathway": "angiogenesis",
+        "modality": "CRISPR",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "mouse lung tumors treated with PD1",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CCAM6",
+        "alteration": "high expression",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "human lung cancer",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Predicted human CCAM6 expression",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Identified specific tumors with high predicted human CCAM6 expression in mouse models, correlating with a switch in histology resembling human CCAM6-high tumors."
+      },
+      {
+        "name": "STK11 knockout phenotype",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Associated with cold TME and fibrotic signature."
+      },
+      {
+        "name": "beta2m knockout phenotype",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Associated with low T cells and cold TME."
+      },
+      {
+        "name": "beta-catenin knockout phenotype",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Associated with hot TME and T cell activity."
+      },
+      {
+        "name": "SOX1 knockout phenotype",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Associated with hot TME and T cell activity."
+      },
+      {
+        "name": "PTPN2 knockout phenotype",
+        "type": "predictive",
+        "assay": "H&E inference (MAIRS model)",
+        "finding": "Associated with hot TME and T cell activity."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "PertiMap platform",
+        "genotype_or_key_features": "Scaled in vivo perturbation platform using protein barcodes (ProCode CRISPRs) in mouse lungs. Generated >600 genetic perturbations across 4 therapeutic interventions."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "This presentation describes the PertiMap platform, which uses CRISPR-edited, barcoded tumors in mice to generate large-scale in vivo perturbation data. This data is then 'humanized' using the MAIRS model, which projects human biology onto mouse H&E images, enabling the discovery of novel therapeutic targets and combinations. The approach allows for unbiased phenotyping of genetic perturbations and identification of drivers of tumor biology and response to therapy.",
+    "readouts": [
+      "Protein barcodes",
+      "CRISPR editing",
+      "Multiplex IF",
+      "Spatial transcriptomics (CosMx)",
+      "H&E imaging"
+    ],
+    "key_findings": [
+      "The PertiMap platform enables scaled in vivo genetic perturbation and multimodal tissue profiling.",
+      "The MAIRS model can project human biology onto mouse H&E images, effectively 'humanizing' preclinical models.",
+      "MAIRS identified tumors with high predicted human CCAM6 expression in mouse models, correlating with specific histological changes.",
+      "The embedding space of perturbations revealed distinct phenotypic clusters associated with immune infiltration, fibrosis, and metabolic signatures.",
+      "VEGFR1 knockout tumors treated with PD1 showed a shift towards a hot TME, suggesting a rationale for combination therapy."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "VEGFR1 inhibition + PD1 blockade",
+        "rationale": "VEGFR1 knockout tumors treated with PD1 showed a drastic shift towards a hot TME.",
+        "phenotype": "Hot TME",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "Oncogene targeted therapy + PD1 blockade",
+        "rationale": "Identified a gene knockout that suggests a rationale for combination with PD1.",
+        "phenotype": "Unknown",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "How to validate the predicted human gene expression in mouse models.",
+      "The application of MAIRS to humanized mouse models with both mouse and human cells.",
+      "The number of genes that can be identified in the inferred spatial transcriptomes."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

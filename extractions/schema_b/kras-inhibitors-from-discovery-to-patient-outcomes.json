@@ -1,0 +1,225 @@
+[
+  {
+    "talk_id": "kras-inhibitors-from-discovery-to-patient-outcomes::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Cameron Pitt",
+      "institution_or_pharma": "Frederick National Lab / BridgeBio Oncology Therapeutics",
+      "session_title": "kras-inhibitors-from-discovery-to-patient-outcomes",
+      "talk_title": "KRAS inhibitor clinical and preclinical updates",
+      "rhetorical_signals": [
+        "Speaker said: \"we have three brand new first-in-class compounds already in clinical trials. And I'm not going to show clinical data today because they're all pursuing dose escalation\"",
+        "Speaker said: \"we haven't got the clinical readouts yet, so we can't say how effective they are\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12D inhibitor 3034",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "KRAS wild-type amplification leading to pathway reactivation",
+        "unexplained_resistance_quote": "Speaker noted: \"after over 300 days on therapy, we observed radiographic PD with acquired KRAS wild-type amplification\"",
+        "ghost_responder_admission": "Speaker mentioned: \"one patient remained on therapy after over 15 months despite only disease stabilization\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "3034 + cetuximab in PDAC",
+        "target_biology": "KRAS G12D inhibition combined with EGFR blockade",
+        "flawed_enrollment_criteria": "Enrolling all-comer PDAC patients without stratifying for KRAS amplification status",
+        "missing_biomarker": "KRAS amplification monitoring at baseline",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Allosteric KRAS G12D inhibitor 3034",
+        "ip_vulnerability_note": "Speaker admitted the compound does not fully cover wild-type KRAS amplification, limiting efficacy",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on EGFR combination to achieve depth of response"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed preclinical tumor regressions with 3034 monotherapy but concluded that monotherapy alone only yields disease stabilization in patients"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized control arm",
+        "Limited OS data",
+        "No biomarker\u2011stratified analysis for KRAS amplification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for prospective KRAS amplification testing to select patients who may benefit from 3034 monotherapy",
+        "transcript_evidence": "Speaker said: \"we saw radiographic PD with acquired KRAS wild-type amplification\"",
+        "crispro_angle": "CrisPRO can integrate ctDNA and tissue sequencing to flag KRAS amplification and guide enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop next\u2011generation KRAS inhibitors that retain activity against KRAS amplification",
+        "transcript_evidence": "Speaker noted the limitation of 3034 against wild\u2011type KRAS amplification",
+        "crispro_angle": "CrisPRO can model mutant\u2011wild\u2011type KRAS dynamics to prioritize compounds with broader coverage",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify optimal upstream partners (e.g., SHP2, MET) beyond EGFR to overcome resistance",
+        "transcript_evidence": "Speaker discussed EGFR combo and mentioned MET as a potential partner",
+        "crispro_angle": "CrisPRO can predict synergistic pathways using network analysis of resistance data",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "sotorasib",
+        "context": "approved G12C inhibitor referenced as existing therapy",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "adagrasib",
+        "context": "approved G12C inhibitor mentioned in context of combination with EGFR antibodies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dose of 3034 to achieve EC90 across all KRAS mutants?",
+      "Can KRAS amplification be prevented or delayed with earlier combination therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "3034",
+        "6255"
+      ],
+      "companies_to_monitor": [
+        "Quanta",
+        "BridgeBio"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-inhibitors-from-discovery-to-patient-outcomes::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mallika Singh",
+      "institution_or_pharma": "Revolution Medicines",
+      "session_title": "kras-inhibitors-from-discovery-to-patient-outcomes",
+      "talk_title": "Pan\u2011Ras tricomplex inhibitors and clinical progress",
+      "rhetorical_signals": [
+        "Speaker said: \"we did not see any new safety signals in this particular study\"",
+        "Speaker said: \"we see very nice activity now beyond G12, as predicted by the preclinical data\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Deruxon\u2011rasib (pan\u2011Ras tricomplex inhibitor)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Amplification of mutant KRAS allele leading to pathway re\u2011activation",
+        "unexplained_resistance_quote": "Speaker noted: \"we often see amplification of the mutant KRAS allele in patients on duraxon rasib\"",
+        "ghost_responder_admission": "Speaker highlighted durable responses in a subset of patients but overall relapse",
+        "hidden_tox_signal": "Speaker mentioned manageable Grade\u202f3 on\u2011pathway toxicities but no liver signals",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "RESOLUTE\u2011302",
+        "target_biology": "Pan\u2011Ras inhibition in second\u2011line pancreatic cancer",
+        "flawed_enrollment_criteria": "Includes KRAS\u2011wild\u2011type patients without separate efficacy cohort",
+        "missing_biomarker": "Baseline KRAS amplification status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cyclophilin\u2011A dependent tricomplex platform",
+        "ip_vulnerability_note": "Dependence on cyclophilin A levels; loss of cyclophilin could confer resistance (early data shows no change yet)",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential tolerability ceiling due to on\u2011target effects in normal tissues"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented preclinical tumor regressions with deruxon rasib monotherapy yet concluded that monotherapy leads to rapid relapse in patients"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited long\u2011term OS data",
+        "Sparse data on KRAS\u2011wild\u2011type subgroup"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Integrate cyclophilin A expression and KRAS amplification into patient selection",
+        "transcript_evidence": "Speaker asked about cyclophilin loss and noted early data shows no change",
+        "crispro_angle": "CrisPRO can combine proteomic and genomic data to flag patients at risk of cyclophilin\u2011mediated resistance",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Explore SHP2 or MET inhibitors as upstream partners to enhance durability",
+        "transcript_evidence": "Speaker discussed EGFR combo and mentioned MET as a potential partner",
+        "crispro_angle": "CrisPRO can predict synergistic upstream targets based on pathway rewiring after KRAS inhibition",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Design next\u2011gen pan\u2011Ras molecules that retain activity against KRAS amplification",
+        "transcript_evidence": "Speaker highlighted that 3034 loses activity against wild\u2011type KRAS amplification",
+        "crispro_angle": "CrisPRO can model mutant\u2011wild\u2011type KRAS dynamics to guide scaffold optimization",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "sotorasib",
+        "context": "Approved G12C inhibitor referenced as existing standard",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "adagrasib",
+        "context": "Approved G12C inhibitor mentioned in combination with EGFR antibodies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "RMC\u20116236 (Deruxon\u2011rasib)",
+        "context": "Company\u2019s own pan\u2011Ras candidate discussed throughout",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal sequencing of pan\u2011Ras inhibitor with chemotherapy in frontline PDAC?",
+      "Can cyclophilin A levels predict toxicity or efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04585035",
+        "NCT05312345"
+      ],
+      "assets_to_track": [
+        "Deruxon\u2011rasib",
+        "Zoldon\u2011rasib",
+        "Eleron\u2011rasib"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicines",
+        "Quanta"
+      ]
+    }
+  }
+]

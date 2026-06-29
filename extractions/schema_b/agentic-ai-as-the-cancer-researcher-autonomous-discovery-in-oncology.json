@@ -1,0 +1,162 @@
+[
+  {
+    "talk_id": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Daniela Bittermann",
+      "institution_or_pharma": "Brigham and Women's Hospital / Dana-Farber Cancer Institute",
+      "session_title": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology",
+      "talk_title": "Agentic AI for Clinical Development in Oncology",
+      "rhetorical_signals": [
+        "Speaker said: \"We tend to take a fairly blunt approach to identifying cohorts for clinical trials... This leads to diluted signal and limited information to drive go/no-go decisions.\"",
+        "Speaker said: \"We are not leading to decrements in accuracy or data quality, and actually we're improving the consistency, so reducing noise in adverse event determinations.\"",
+        "Speaker said: \"We don't know if performance in these multi-choice question answer settings really translates to similar performance in real\u2011world applications.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Clinical trial patient selection based on blunt, non\u2011molecular criteria",
+        "flawed_enrollment_criteria": "Enrolling all\u2011comers without molecular or real\u2011world evidence stratification, leading to diluted signal",
+        "missing_biomarker": "Molecular or real\u2011world predictive biomarker to enrich for responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering due to signal dilution",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No clinical trial efficacy data presented",
+        "No OS or PFS endpoints",
+        "No biomarker\u2011stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for molecular or real\u2011world evidence biomarkers to replace blunt patient selection and improve signal\u2011to\u2011noise in trials.",
+        "transcript_evidence": "Speaker said: \"If we're able to more precisely select patients, we can potentially run a clinical trial with fewer patients due to improved signal-to-noise ratio.\"",
+        "crispro_angle": "CrisPRO can generate and validate predictive biomarker signatures from multi\u2011modal data to enable molecularly stratified enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate agentic AI\u2011driven real\u2011world evidence generation to inform eligibility criteria and comparator selection.",
+        "transcript_evidence": "Speaker said: \"Agentic AI can be used to develop the evidence base to guide clinical development decisions... what patient stratification options can be used, what endpoints should be selected.\"",
+        "crispro_angle": "CrisPRO\u2019s workflow engine can simulate trial designs with AI\u2011derived eligibility criteria and predict statistical power.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How can regulatory bodies evaluate and certify agentic AI systems that generate trial design recommendations?",
+      "What standards are needed for benchmarking real\u2011world performance of AI\u2011extracted adverse event data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sebastian Firsch",
+      "institution_or_pharma": "University Medical Center Mainz, Germany",
+      "session_title": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology",
+      "talk_title": "AI Agents in Clinical Tissue Medicine and Research",
+      "rhetorical_signals": [
+        "Speaker said: \"If we don't have high-quality data integration, standardization, harmonization, that conveyor belt approach is going to fall apart really rapidly.\"",
+        "Speaker said: \"We have to be aware of attack vectors that could be used to manipulate the system... incidental prompt injection attacks can highly influence a model's decision.\"",
+        "Speaker said: \"We are not an autonomous system; the pathologist can always intervene via the reasoning trace.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AI pathology agents lacking robustness to prompt injection attacks",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Vulnerability to malicious text prompts that overwrite visual diagnostic cues",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Open\u2011source pathology foundation models with limited proprietary protection",
+        "ip_vulnerability_note": "Speaker disclosed that the system is built on open\u2011source models that can be run on\u2011premise, indicating limited IP moat.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on modular open tools may lead to inconsistent performance across institutions without standardized validation."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the AI agent can generate a microscopic description and then pass it to an LLM for diagnosis, but later emphasized that \"we have to be aware of attack vectors\" that could completely flip the diagnosis, contradicting the confidence in the autonomous pipeline."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation of the end\u2011to\u2011end agentic pathology workflow",
+        "No quantitative performance metrics beyond prototype examples"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop robust detection and mitigation of prompt\u2011injection attacks in pathology AI agents.",
+        "transcript_evidence": "Speaker said: \"If you include a text statement that the slide looks completely healthy, the model will completely forget...\"",
+        "crispro_angle": "CrisPRO can embed adversarial\u2011training and provenance tracing to safeguard against malicious prompt manipulation.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s modular tool\u2011integration framework to provide standardized, auditable pipelines for multi\u2011modal pathology AI agents.",
+        "transcript_evidence": "Speaker said: \"We have a reasoning trace for quality management purposes... you can get the reasoning of each of the single agents as well.\"",
+        "crispro_angle": "CrisPRO offers end\u2011to\u2011end traceability and versioned tool registries, addressing the need for governance highlighted by the speaker.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "TissueLab",
+        "context": "Mentioned as an example of existing pathology AI tools",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "PathChat+ / SlideZEEK",
+        "context": "Cited as prior work using agentic workflows for diagnosis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Stanford Spatial Agent",
+        "context": "Referenced for spatial biology integration",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can standardized benchmarking be established for multi\u2011modal agentic pathology systems?",
+      "What governance frameworks are needed to certify safety against prompt\u2011injection attacks in clinical use?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Pathology foundation models",
+        "AI agents for IHC interpretation"
+      ],
+      "companies_to_monitor": [
+        "Google DeepMind (pathology AI)",
+        "Microsoft Healthcare"
+      ]
+    }
+  }
+]

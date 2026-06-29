@@ -1,0 +1,290 @@
+[
+  {
+    "talk_id": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Jennifer Ligibel",
+      "institution_or_pharma": "Dana-Farber Cancer Institute at Harvard",
+      "session_title": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni",
+      "talk_title": "Obesity and cancer: is it a modifiable risk factor?",
+      "rhetorical_signals": [
+        "Speaker said: \"Unfortunately, we don't have much evidence at this point from well-designed randomized trials looking at the impact of an intentional weight loss intervention\"",
+        "Speaker said: \"We have some really interesting preliminary evidence suggesting that weight is indeed a factor that we can modify\"",
+        "Speaker said: \"We are hopeful that this sets us up well for the rest of our session focusing on GLP-1s\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Weight loss interventions (lifestyle, bariatric surgery)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of randomized trial data to prove causality between weight loss and cancer risk reduction",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Breast Cancer Weight Loss Trial (Phase 3)",
+        "target_biology": "Weight loss effect on invasive disease\u2011free survival in early\u2011stage breast cancer",
+        "flawed_enrollment_criteria": "Enrolled only patients with BMI \u226527 kg/m\u00b2, limiting generalizability to normal\u2011weight patients",
+        "missing_biomarker": "No stratification by metabolic biomarkers (e.g., insulin resistance, leptin levels)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary outcome (iDFS) not yet mature; results pending",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival or cancer\u2011specific mortality data yet",
+        "Lack of randomized control arm for weight\u2011loss interventions"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify metabolic biomarkers (e.g., insulin, leptin, HOMA\u2011IR) that predict which obese patients benefit most from weight\u2011loss interventions",
+        "transcript_evidence": "Speaker highlighted that \"hyperinsulinemia\" and \"hyperleptinemia\" were reversed with weight loss and correlated with outcomes",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics metabolic signatures to stratify patients for targeted weight\u2011loss therapies",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a randomized, biomarker\u2011enriched trial comparing GLP\u20111RA\u2011mediated weight loss versus lifestyle bariatric surgery with cancer incidence as endpoint",
+        "transcript_evidence": "Speaker noted the absence of well\u2011designed randomized trials for weight loss and cancer risk",
+        "crispro_angle": "CrisPRO can simulate trial power and endpoint projections using existing cohort data to optimize design",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Will intentional weight loss after cancer diagnosis improve cancer\u2011specific mortality in a randomized setting?",
+      "What metabolic thresholds define a patient as likely to benefit from weight\u2011loss interventions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04022761 (Breast Cancer Weight Loss Trial)"
+      ],
+      "assets_to_track": [
+        "Breast Cancer Weight Loss Trial results",
+        "Bariatric surgery cancer risk registries"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Steve Hursting",
+      "institution_or_pharma": "Lineberger Comprehensive Cancer Center at UNC",
+      "session_title": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni",
+      "talk_title": "Preclinical mechanisms of GLP\u20111R agonists in obesity\u2011driven cancers",
+      "rhetorical_signals": [
+        "Speaker said: \"We saw no evidence for direct effects on cancer cells\"",
+        "Speaker said: \"Obesity drives T cell immunosuppression, particularly... reversed by tirzepatide\"",
+        "Speaker said: \"When we ablate CD8 T cells, tirzepatide loses its anti\u2011tumor effect\""
+      ],
+      "presentation_type": "preclinical_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Tirzepatide (GLP\u20111/GIP dual agonist)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Potential residual immunosuppression in non\u2011obese or advanced tumor settings not addressed",
+        "unexplained_resistance_quote": "Speaker noted that in non\u2011obese mice the effect was less pronounced, suggesting weight\u2011loss dependence",
+        "ghost_responder_admission": "Mentioned that some tumors responded even in non\u2011obese mice (endometrial model)",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical tirzepatide interception studies (MC38, EO771, PY230)",
+        "target_biology": "Weight\u2011loss mediated reversal of obesity\u2011driven tumor immunosuppression",
+        "flawed_enrollment_criteria": "Mouse models only; lack of human metabolic heterogeneity and advanced disease states",
+        "missing_biomarker": "No baseline tumor\u2011immune profiling to predict responders",
+        "static_vs_dynamic_failure": "No longitudinal tumor\u2011immune monitoring beyond endpoint tumor mass",
+        "statistical_concern": null,
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tirzepatide dual GLP\u20111/GIP agonist",
+        "ip_vulnerability_note": "Efficacy appears largely weight\u2011loss driven; no direct tumor cell cytotoxicity observed",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on obesity reduction may limit applicability to patients with cachexia or advanced disease"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed bulk RNA\u2011seq data indicating strong immune activation reversal by tirzepatide, then concluded that the drug\u2019s anti\u2011cancer effect is primarily due to appetite/weight loss, downplaying the immune mechanism"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human pharmacodynamic or tumor response data",
+        "Lack of mechanistic validation of leptin vs insulin vs IGF\u20111 as causal mediators"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop computational models to predict which obesity\u2011driven tumors will remain immunosuppressed despite weight loss, guiding combination with checkpoint inhibitors",
+        "transcript_evidence": "Speaker demonstrated that CD8 T\u2011cell ablation abolishes tirzepatide benefit",
+        "crispro_angle": "CrisPRO can integrate tumor\u2011immune single\u2011cell data with metabolic signatures to identify patients needing added immunotherapy",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine tirzepatide with agents that directly modulate TAM polarization (e.g., CSF1R inhibitors) to overcome residual M2 phenotype",
+        "transcript_evidence": "Speaker noted obesity drives M2\u2011like TAMs and tirzepatide only partially reverses this",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of metabolic and TAM\u2011targeted therapies",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Semaglutide",
+        "context": "Mentioned as a single GLP\u20111 agonist approved for weight loss",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Retatrutide",
+        "context": "Triple agonist (GLP\u20111, GIP, glucagon) with emerging preclinical data",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Which specific metabolic factor (leptin, insulin, IGF\u20111) is the dominant driver of immune suppression?",
+      "Can tirzepatide\u2019s anti\u2011tumor effect be uncoupled from weight loss via direct immune modulation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Tirzepatide preclinical oncology programs",
+        "GLP\u20111R agonist combination trials with immunotherapy"
+      ],
+      "companies_to_monitor": [
+        "Eli Lilly (tirzepatide)",
+        "Novo Nordisk (semaglutide)"
+      ]
+    }
+  },
+  {
+    "talk_id": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Yang",
+      "institution_or_pharma": "University of ??? (Data Science Group)",
+      "session_title": "from-mechanisms-to-real-world-evidence-the-emerging-role-of-glp-1-receptor-agoni",
+      "talk_title": "Real\u2011world evidence of GLP\u20111R agonists on cancer risk and survivorship",
+      "rhetorical_signals": [
+        "Speaker said: \"We actually see a little bit increased risk when you're looking at GLP\u20111 user against SGLT2 in kidney cancer\"",
+        "Speaker said: \"Overall non\u2011significant if you're looking at GLP\u20111 against SGLT2 on the nine cancers\"",
+        "Speaker said: \"GLP\u20111 improves survival in cancer survivors with type 2 diabetes compared to SGLT2 and DPP4\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "GLP\u20111R agonists (early generation) in type 2 diabetes patients",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential kidney cancer risk not explained by metabolic reversal; underlying diabetic nephropathy may interact",
+        "unexplained_resistance_quote": "Speaker noted increased kidney cancer risk in GLP\u20111 vs SGLT2 but could not reconcile mechanism",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Medicare GLP\u20111 vs SGLT2/DPP4 comparative cohort (2016\u20112020)",
+        "target_biology": "Association of GLP\u20111 exposure with cancer incidence and survival in diabetic patients",
+        "flawed_enrollment_criteria": "Only includes patients on GLP\u20111 for diabetes (pre\u20112021), excludes newer agents; limited to Medicare fee\u2011for\u2011service",
+        "missing_biomarker": "No stratification by obesity severity, BMI, or metabolic biomarkers",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample for kidney cancer subgroup; borderline significance",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "OneFlorida EHR GLP\u20111 vs non\u2011users obesity cohort (2014\u20112024)",
+        "target_biology": "GLP\u20111 impact on incidence of obesity\u2011related cancers",
+        "flawed_enrollment_criteria": "Observational design; potential confounding by indication; time\u2011dependent propensity matching may not fully adjust",
+        "missing_biomarker": "Lack of drug generation (liraglutide vs semaglutide) data",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential residual confounding; limited power for rare cancers",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Early\u2011generation GLP\u20111R agonists (liraglutide, exenatide)",
+        "ip_vulnerability_note": "Speaker indicated Medicare data only captures pre\u20112020 agents, missing newer, potentially more effective compounds",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on older agents limits relevance to current clinical practice where semaglutide/tirzepatide dominate"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented epidemiologic data showing no overall cancer protection with GLP\u20111 vs SGLT2, yet later concluded that GLP\u20111 improves survival in cancer survivors, implying benefit despite earlier neutral signal"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No data on newer GLP\u20111 agents (semaglutide, tirzepatide) in Medicare cohort",
+        "Limited mechanistic insight into kidney cancer signal"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a real\u2011world biomarker panel (e.g., eGFR trajectory, leptin, insulin) to identify diabetic patients at risk of GLP\u20111\u2011associated kidney cancer",
+        "transcript_evidence": "Speaker highlighted increased kidney cancer risk in GLP\u20111 vs SGLT2 users",
+        "crispro_angle": "CrisPRO can model longitudinal renal function and cancer incidence to pinpoint high\u2011risk subpopulations",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Show that newer GLP\u20111 agents (semaglutide/tirzepatide) have a different safety/efficacy profile than older agents, leveraging real\u2011world data pipelines",
+        "transcript_evidence": "Speaker noted Medicare data ends before semaglutide/tirzepatide approval",
+        "crispro_angle": "CrisPRO can integrate claims and EHR data to compare generation\u2011specific outcomes",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "SGLT2 inhibitors",
+        "context": "Active comparator in Medicare and EHR analyses",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "DPP4 inhibitors",
+        "context": "Active comparator in Medicare analysis",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What drives the observed kidney cancer signal with GLP\u20111 use in diabetic patients?",
+      "Do newer GLP\u20111 agents mitigate this risk compared with older agents?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Real\u2011world studies of semaglutide and tirzepatide cancer outcomes",
+        "Kidney cancer incidence in GLP\u20111 registries"
+      ],
+      "companies_to_monitor": [
+        "Eli Lilly",
+        "Novo Nordisk"
+      ]
+    }
+  }
+]

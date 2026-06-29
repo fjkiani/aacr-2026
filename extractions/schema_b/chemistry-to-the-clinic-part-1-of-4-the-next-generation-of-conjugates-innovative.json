@@ -1,0 +1,351 @@
+[
+  {
+    "talk_id": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Nathan Toomey",
+      "institution_or_pharma": "Binghamton University",
+      "session_title": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative",
+      "talk_title": "Immune-stimulating ADCs: payload design, Fc silencing, and dual payload strategies",
+      "rhetorical_signals": [
+        "Speaker said: \"we see improved efficacy, so it's a matched dose. This is 10 MPK Q4d times three. So you see the improved efficacy\"",
+        "Speaker said: \"we believe that this is driven by the Fc gamma activity\"",
+        "Speaker said: \"we do not see any meaningful activity on body weight, movement, lethargy\"",
+        "Speaker said: \"we did not do any sort of necroscopy here, but for what it's worth, in life findings are very, very nice here\"",
+        "Speaker said: \"we have not done PK on the payload itself yet\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "First\u2011generation ISACs (e.g., Bolt, Novartis, Silverback, Mersana, Takeda)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Fc gamma\u2011mediated uptake causing cytokine release syndrome and anti\u2011drug antibodies",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted significant CRS\u2011related toxicities in early ISACs and ADA formation",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "STING\u2011based ISACs",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Broad STING expression in non\u2011tumor tissues dilutes tumor delivery",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "TLR7 agonist delivered via Fc\u2011active ADC",
+        "flawed_enrollment_criteria": "Using Fc\u2011active antibodies leads to off\u2011target Fc\u03b3 uptake and CRS, diluting tumor\u2011specific signal",
+        "missing_biomarker": "No patient selection based on tumor TLR7 expression or immune infiltrate",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Fc\u2011active, non\u2011cleavable linker ISAC platform",
+        "ip_vulnerability_note": "Speaker highlighted reliance on Fc\u03b3 activity and non\u2011cleavable linkers, which are known to cause CRS and ADA",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad, non\u2011selected patient population and lack of biomarker\u2011driven dosing"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that Fc\u2011active ISACs cause strong cytokine release in PBMC assays, then concluded that Fc silencing will reduce CRS risk \u2013 contradictory because cytokine release was attributed to Fc\u03b3 uptake, yet Fc silencing also reduces payload delivery to immune cells"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS or long\u2011term survival data",
+        "No clinical efficacy data presented",
+        "Limited pharmacokinetic data on payload"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of patient selection based on tumor TLR7 expression or immune infiltrate suggests an opportunity for CrisPRO to develop predictive biomarkers for ISAC response.",
+        "transcript_evidence": "Speaker noted that \"Fc gamma\u2011mediated uptake\" drives cytokine release and that \"most of the ADC actually ends up in non\u2011tumor tissue\".",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and spatial immune profiling to identify tumors with high TLR7\u2011expressing APCs and low peripheral Fc\u03b3R activity, enabling enriched enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Dual payload ADCs combining a TLR7 agonist with a tubulin inhibitor (MMAF) show synergistic activity without overlapping toxicities, suggesting a platform for CrisPRO to prioritize non\u2011overlapping payload combos.",
+        "transcript_evidence": "Speaker stated: \"The toxicities will not necessarily be building on one another\" and presented data where the dual payload outperformed single agents.",
+        "crispro_angle": "CrisPRO can model pharmacodynamic interactions between immune\u2011stimulating and cytotoxic payloads to predict optimal DAR ratios and dosing schedules.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Bolt",
+        "context": "First\u2011generation ISAC developer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Novartis",
+        "context": "First\u2011generation ISAC developer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Silverback",
+        "context": "First\u2011generation ISAC developer with noted failures",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Mersana",
+        "context": "First\u2011generation ISAC developer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Takeda",
+        "context": "First\u2011generation ISAC developer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sutro",
+        "context": "Developer of dual\u2011payload ISACs",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal DAR ratio for dual\u2011payload ISACs to balance efficacy and CRS risk?",
+      "Can Fc\u2011silenced ISACs achieve sufficient tumor uptake in patients without Fc\u03b3R\u2011mediated internalization?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TLR7 agonist ISAC programs at Bolt, Novartis, Silverback",
+        "Dual\u2011payload ADCs combining MMAF and immune agonists"
+      ],
+      "companies_to_monitor": [
+        "Bolt",
+        "Novartis",
+        "Silverback",
+        "Mersana",
+        "Takeda",
+        "Sutro"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Shixiong Wang",
+      "institution_or_pharma": "AbbVie",
+      "session_title": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative",
+      "talk_title": "PI3K/mTOR inhibitor payloads for ADCs: from hematologic to solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"We rationalize by leveraging the tumor\u2011specific mechanism, we can reduce, enable rational combination, and also treat new indications\"",
+        "Speaker said: \"Our ADC demonstrated tumor regression at 3 MPK, which is impressive\"",
+        "Speaker said: \"We saw no body weight loss associated with any of the ADC group\"",
+        "Speaker said: \"The ADC groups had no body weight loss, whereas alpelisib showed weight loss\"",
+        "Speaker said: \"We observed a threshold effect: payload level above ~100\u202fng/mL associated with robust p\u2011S6 suppression\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Pan\u2011PI3K/mTOR inhibitor payload (omipalisib analogues)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "On\u2011target PI3K/mTOR inhibition leads to class\u2011wide metabolic toxicities (e.g., hyperglycemia) not fully mitigated by ADC delivery",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted \u201ctarget organs are very consistent with approved PI3K inhibitors\u201d implying similar toxicity profile",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "ADC delivering pan\u2011PI3K/mTOR inhibitor to CD70b\u2011positive B\u2011cell malignancies",
+        "flawed_enrollment_criteria": "No biomarker stratification beyond CD70b expression; does not account for PI3K pathway mutations that may affect response",
+        "missing_biomarker": "PIK3CA mutation status or PTEN loss",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DAR10 high\u2011loading pan\u2011PI3K/mTOR payload ADC",
+        "ip_vulnerability_note": "Speaker admitted need to lower DAR and improve site\u2011specific conjugation, indicating current chemistry may be sub\u2011optimal",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad indication strategy without clear biomarker\u2011driven patient selection could dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented sub\u2011nanomolar in\u2011vitro potency of the PI3K/mTOR payload, then concluded that the ADC can be used broadly across solid tumors without additional biomarker selection \u2013 contradictory to the need for PI3K pathway alterations for efficacy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator arm",
+        "Limited long\u2011term safety data (e.g., hyperglycemia not observed but not fully explored)",
+        "No formal biomarker\u2011stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of PIK3CA mutation or PTEN loss stratification suggests an opportunity for CrisPRO to develop a predictive gene\u2011expression signature for PI3K/mTOR ADC response.",
+        "transcript_evidence": "Speaker highlighted that \"PIK3CA alteration landscape\" drives sensitivity and that \"PI3K wild\u2011type tumors can still be sensitive\" but did not present data.",
+        "crispro_angle": "CrisPRO can integrate tumor genomics and transcriptomics to define a composite PI3K pathway activation score for patient enrichment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combination of the PI3K/mTOR ADC with venetoclax showed synergistic tumor regression, indicating a platform for CrisPRO to prioritize BCL2 inhibitors as partners.",
+        "transcript_evidence": "Speaker said: \"The combination of our PI3K ADC with venetoclax showed exceptional tumor suppression\".",
+        "crispro_angle": "CrisPRO can model synergistic PD effects and predict optimal dosing schedules for PI3K ADC + BCL2 inhibitor regimens.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "copanlisib",
+        "context": "Comparator small\u2011molecule PI3K inhibitor",
+        "sentiment": "critical"
+      },
+      {
+        "name": "alpelisib",
+        "context": "Comparator small\u2011molecule PI3K inhibitor with observed weight loss",
+        "sentiment": "critical"
+      },
+      {
+        "name": "trodelvy",
+        "context": "Comparator ADC that was inactive in the models",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the therapeutic window of the pan\u2011PI3K/mTOR ADC in humans compared to small\u2011molecule inhibitors?",
+      "Can lower DAR formats maintain efficacy while reducing potential aggregation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PI3K/mTOR ADC programs at AbbVie",
+        "Venetoclax combination trials with PI3K inhibitors"
+      ],
+      "companies_to_monitor": [
+        "AbbVie",
+        "Novartis",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Koichi Ito",
+      "institution_or_pharma": "Prelude Therapeutics",
+      "session_title": "chemistry-to-the-clinic-part-1-of-4-the-next-generation-of-conjugates-innovative",
+      "talk_title": "Degrader Antibody Conjugates (DACs): targeted protein degraders as next\u2011gen ADC payloads",
+      "rhetorical_signals": [
+        "Speaker said: \"We hypothesized that this DAC approach have a really strong potential to deliver both improved efficacy and improved tolerability\"",
+        "Speaker said: \"We did not see significant body weight loss or mouse deaths in these models, highlighting the improved therapeutic index\"",
+        "Speaker said: \"Degrader\u201106 had a half\u2011life of only 34 hours, which is pretty short\"",
+        "Speaker said: \"Degrader\u201107 shows >200\u202fhours half\u2011life and improved stability\"",
+        "Speaker said: \"We see bystander effect in vitro studies\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Degrader\u201106 (cereblon\u2011based SMARCA2/4 degrader)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Rapid plasma hydrolysis of cereblon ligand leading to loss of payload activity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted mouse body weight loss and deaths with the free degrader, indicating systemic toxicity",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "SMARCA2/4 dual degrader delivered via antibody to PSMA or mutant CALR tumors",
+        "flawed_enrollment_criteria": "No selection for tumors with SWI/SNF dependency or SMARCA2/4 expression levels",
+        "missing_biomarker": "SMARCA2/4 loss\u2011of\u2011function or SWI/SNF mutation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "VHL\u2011based SMARCA2/4 degrader payload",
+        "ip_vulnerability_note": "Speaker disclosed degradation potency (370\u202fpM) and linker chemistry, indicating the core scaffold is the key IP element",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on high DAR (DAR8) may affect manufacturability and increase heterogeneity"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated potent in\u2011vitro degradation (picomolar) yet admitted that the free degrader caused severe weight loss and deaths, while the ADC showed no toxicity \u2013 contradictory regarding the intrinsic safety of the payload"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human PK/PD or safety data",
+        "Stability of degrader payload within the ADC not fully characterized"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can model the relationship between intracellular degrader concentration, target protein half\u2011life, and tumor regression to optimize DAR and linker design for DACs.",
+        "transcript_evidence": "Speaker highlighted a threshold payload level (~100\u202fng/mL) correlating with robust p\u2011S6 suppression for PI3K ADCs, suggesting similar quantitative relationships could be applied to DACs.",
+        "crispro_angle": "CrisPRO\u2019s kinetic modeling can predict the minimal intracellular degrader exposure needed for durable target knock\u2011down, guiding payload optimization.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of patient selection based on SWI/SNF complex dependency offers an opportunity for CrisPRO to develop a transcriptional signature to identify tumors most likely to respond to SMARCA2/4 DACs.",
+        "transcript_evidence": "Speaker noted sensitivity in prostate, breast, AML, and multiple myeloma cell lines but did not present a biomarker framework.",
+        "crispro_angle": "CrisPRO can integrate CRISPR\u2011screen and expression data to derive a predictive score for SMARCA2/4 dependency.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MMAE ADCs",
+        "context": "Standard cytotoxic payloads used as benchmark",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Topoisomerase I inhibitor ADCs",
+        "context": "Standard cytotoxic payloads used as benchmark",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal degradation percentage of SMARCA2/4 required for tumor regression in vivo?",
+      "Can the improved plasma stability of Degrader\u201107 be maintained after conjugation to different antibodies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SMARCA2/4 degrader payload programs at Prelude Therapeutics",
+        "DAC platforms from other companies (e.g., Daiichi Sankyo, Pfizer)"
+      ],
+      "companies_to_monitor": [
+        "Prelude Therapeutics",
+        "Daiichi Sankyo",
+        "Pfizer",
+        "BMS"
+      ]
+    }
+  }
+]

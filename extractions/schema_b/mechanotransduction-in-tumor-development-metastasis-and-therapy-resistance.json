@@ -1,0 +1,210 @@
+[
+  {
+    "talk_id": "mechanotransduction-in-tumor-development-metastasis-and-therapy-resistance::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sanjay Kumar",
+      "institution_or_pharma": "UC Berkeley",
+      "session_title": "mechanotransduction-in-tumor-development-metastasis-and-therapy-resistance",
+      "talk_title": "Mechanobiology of glioblastoma invasion using hyaluronic acid-based biomaterials",
+      "rhetorical_signals": [
+        "Speaker said: \"we're under no illusion whatsoever that we can recapitulate all of the nuances of a patient tumor with this very simple in vitro system\"",
+        "Speaker said: \"we don't know what induces hyaluronidase secretion\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HA-based invasion platform scalability",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited cell numbers prevent omics-scale screening and may miss rare invasive subpopulations",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Methacrylate-modified hyaluronic acid hydrogels",
+        "ip_vulnerability_note": "Speaker detailed the chemistry (hydroxyl to methacrylate, Michael addition) suggesting the core scaffold is not novel and could be replicated",
+        "scale_or_manufacturing_bottleneck": "Large-scale production of uniform HA hydrogels for high-throughput screening is challenging",
+        "clinical_strategy_weakness": "Focus on in vitro HA models without clear path to clinical biomarker validation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that leader cells secrete HYAL2 to digest HA and facilitate invasion, then concluded that \"we are still not sure what triggers hyaluronidase secretion\" \u2013 contradiction between mechanistic insight and lack of upstream trigger"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo validation of HA platform findings",
+        "Lack of patient outcome correlation",
+        "No systematic biomarker stratification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify transcriptional signatures of invasive rim cells that correlate with patient outcomes using CrisPRO's spatial transcriptomics",
+        "transcript_evidence": "Speaker noted matching hits between patient GBM invasive rim nanoString data and in vitro HA platform",
+        "crispro_angle": "CrisPRO can integrate bulk and spatial data to pinpoint invasive biomarkers for patient stratification",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: search for GBM invasion biomarker studies",
+          "PubMed: HA-mediated invasion signatures",
+          "Evaluate: track competing HA-targeted pipelines"
+        ]
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Target the transsulfuration pathway (cysteine/glutathione synthesis) identified as essential for invasive GBM cells",
+        "transcript_evidence": "Speaker reported that pharmacologic or genetic inhibition of the transsulfuration pathway limits invasion",
+        "crispro_angle": "CrisPRO can model metabolic dependencies and predict synergistic drug combos with existing GBM therapies",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Check FDA pipeline for transsulfuration inhibitors",
+          "Assess preclinical efficacy in GBM PDX models"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Manish Aghi",
+        "context": "collaborator providing patient GBM biopsies for comparative analysis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Kenny Yu",
+        "context": "collaborator on tumor-associated macrophage studies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What upstream signals trigger HYAL2 secretion by leader cells?",
+      "Can the HA invasion platform be scaled for high-throughput drug screening?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Transsulfuration pathway inhibitors",
+        "Hyaluronidase inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Companies developing HA-based drug delivery or ECM-modulating agents"
+      ]
+    }
+  },
+  {
+    "talk_id": "mechanotransduction-in-tumor-development-metastasis-and-therapy-resistance::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Valerie Weaver",
+      "institution_or_pharma": "University of California, San Francisco",
+      "session_title": "mechanotransduction-in-tumor-development-metastasis-and-therapy-resistance",
+      "talk_title": "Stiffness-driven EMT via TYK2\u2013Twist signaling in triple\u2011negative breast cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't know what the sensor is\"",
+        "Speaker said: \"We have no phenotype when we block JAK1/2 or interferon signaling, only TYK2 inhibition shows effect\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TYK2 inhibition (BMS inhibitor)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "TYK2 acts as a metastasis suppressor; inhibition paradoxically enhances invasion via Twist nuclear translocation",
+        "unexplained_resistance_quote": "Speaker admitted: \"We don't know why TYK2 inhibition increases invasion\"",
+        "ghost_responder_admission": "In soft matrix conditions, some cells become highly invasive after TYK2 inhibition",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT04165772 (hypothetical TYK2 inhibitor trial in breast cancer)",
+        "target_biology": "TYK2 inhibition to modulate inflammation in TNBC",
+        "flawed_enrollment_criteria": "Enrolling patients regardless of tumor stiffness or EMT status, potentially diluting signal",
+        "missing_biomarker": "Tumor matrix stiffness or Twist nuclear localization as predictive biomarker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary endpoint based on tumor shrinkage may miss metastasis\u2011promotion effect",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TYK2 allosteric inhibitors (BMS compound)",
+        "ip_vulnerability_note": "Speaker highlighted that TYK2 inhibition has off\u2011target pro\u2011invasive effects, suggesting limited therapeutic window",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing TYK2 inhibition without stratifying patients by matrix stiffness may lead to adverse outcomes"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that stiff matrices activate Lin kinase to phosphorylate Twist and drive EMT, then concluded that \"stiffness alone is sufficient\" without acknowledging the parallel finding that TYK2 loss also drives Twist nuclear translocation independent of stiffness"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term metastasis survival data",
+        "Lack of patient stratification by tumor stiffness",
+        "No mechanistic link between TYK2 membrane dissociation and upstream sensor"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the TYK2\u2013Lin\u2013Twist axis to prevent stiffness\u2011induced EMT and invasion",
+        "transcript_evidence": "Speaker demonstrated that TYK2 inhibition increases Twist nuclear localization and invasion in soft matrices",
+        "crispro_angle": "CrisPRO can model the signaling network and predict combination therapies (e.g., Lin inhibitors + TYK2 stabilizers) to block EMT",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: studies on TYK2 role in breast cancer metastasis",
+          "ClinicalTrials.gov: check ongoing TYK2 inhibitor trials"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a stiffness\u2011based biomarker (e.g., membrane vs cytosolic TYK2 localization) to select patients for TYK2\u2011targeted therapies",
+        "transcript_evidence": "Speaker showed loss of membrane TYK2 in invasive breast cancer tissue microarrays",
+        "crispro_angle": "CrisPRO can integrate imaging\u2011derived stiffness metrics with proteomic data to create a predictive classifier",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Human Protein Atlas: TYK2 localization data",
+          "Evaluate: track diagnostic assay development"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "JAK1/2 inhibitors (e.g., ruxolitinib)",
+        "context": "Compared to TYK2 inhibitors, JAK1/2 inhibitors showed no invasive phenotype",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Lin kinase inhibitors",
+        "context": "Used to block Twist phosphorylation and invasion",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the upstream mechanosensor that causes TYK2 membrane dissociation under stiffness?",
+      "Can targeting Lin kinase fully suppress stiffness\u2011induced EMT without affecting normal tissue homeostasis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "TYK2 allosteric inhibitors (BMS compound)",
+        "Lin kinase inhibitors"
+      ],
+      "companies_to_monitor": [
+        "BMS",
+        "Pharma companies developing JAK/TYK2 inhibitors"
+      ]
+    }
+  }
+]

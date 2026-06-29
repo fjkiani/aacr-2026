@@ -1,0 +1,463 @@
+[
+  {
+    "talk_id": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo::galbraith::1",
+    "session_title": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo",
+    "talk_title": "AI-augmented drug discovery across biologics, small molecules, and multimodal biomarkers",
+    "speaker": {
+      "name": "Susan Galbraith",
+      "affiliation": "AstraZeneca, Head of Oncology R&D",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "biomarker_development",
+      "translational",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TROP2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "datupizumab duoxetecane",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TROP2-expressing solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "unknown_target",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Reinvent-optimized lead",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "confidential intractable target",
+        "target_novelty": "unknown"
+      },
+      {
+        "gene_or_protein": "unknown_target",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "mini_protein",
+        "compound_name": "AI-designed mini\u2011protein binder",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "selected protein target",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "membrane-to-cytoplasm optical density difference",
+        "type": "predictive",
+        "assay": "computational pathology on IHC slides",
+        "finding": "correlates with internalization rate of datupizumab duoxetecane and predicts response in Trop\u20112 ADC trials"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "computational_pathology",
+        "name": "QCS tool",
+        "genotype_or_key_features": "TROP2 IHC images"
+      },
+      {
+        "model_type": "multimodal_foundation_model",
+        "name": "AstraZeneca\u2011Tempus\u2011Pathos multimodal model",
+        "genotype_or_key_features": "longitudinal EHR, labs, H&E, genomics, transcriptomics"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "binder_success_rate",
+        "value": "17%",
+        "confidence_interval": "",
+        "n": "264 designs",
+        "population": "AI\u2011designed mini\u2011protein library",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "affinity",
+        "value": "28 nM",
+        "confidence_interval": "",
+        "n": "45 binders",
+        "population": "top affinity mini\u2011protein binders",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "design_cycle_time",
+        "value": "1 month",
+        "confidence_interval": "",
+        "n": "",
+        "population": "mini\u2011protein design workflow",
+        "comparator": "standard multi\u2011month process",
+        "maturity": "interim"
+      },
+      {
+        "metric": "lead_optimization_cycle",
+        "value": "4 months",
+        "confidence_interval": "",
+        "n": "",
+        "population": "AI\u2011assisted small\u2011molecule lead series",
+        "comparator": "traditional ~8\u2011month cycle",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "AstraZeneca embeds AI models to predict protein structures for de novo mini\u2011protein binders (17% hit rate, 28\u202fnM affinity) and to guide small\u2011molecule optimization (potency, clearance, exposure) for an intractable target, while computational pathology AI quantifies membrane\u2011cytoplasm optical density to predict ADC internalization, and multimodal foundation models integrate EHR, imaging, and omics to improve patient selection and trial design.",
+    "readouts": [
+      "IHC",
+      "computational pathology scoring",
+      "protein structure prediction",
+      "in\u2011silico potency prediction",
+      "mouse PK/PD",
+      "clinical trial imaging"
+    ],
+    "key_findings": [
+      "AI\u2011designed mini\u2011protein library yielded 45 binders (17% success) with highest affinity of 28\u202fnM in just one month, a three\u2011fold speedup over traditional methods.",
+      "Reinvent AI tool accelerated small\u2011molecule lead optimization for a confidential target, reducing the design cycle from ~8 months to ~4 months while achieving target\u2011level potency, clearance, exposure, and tumor growth inhibition.",
+      "Computational pathology model identified membrane\u2011to\u2011cytoplasm optical density difference as a surrogate for internalization of the TROP2 ADC datupizumab duoxetecane, now entering prospective validation in a phase\u2011III trial.",
+      "A multimodal foundation model built with Tempus and Pathos integrates longitudinal EHR, labs, histology, and genomics to predict control\u2011arm performance and patient response, aiming to improve phase\u2011III success rates."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can AI\u2011driven computational pathology be scaled across diverse ADC platforms beyond TROP2?",
+      "What are the optimal data governance frameworks to share multimodal clinical data while preserving patient privacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCTXXXXXXX"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Jain et al. 2024 Nature"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca",
+        "Tempus",
+        "Pathos"
+      ],
+      "patent_or_ip_hints": [
+        "AI\u2011enabled mini\u2011protein design pipeline",
+        "Computational pathology biomarker for ADCs"
+      ]
+    }
+  },
+  {
+    "talk_id": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo::kadish::2",
+    "session_title": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo",
+    "talk_title": "Chromatin remodeling complexes as AI\u2011guided therapeutic targets",
+    "speaker": {
+      "name": "Sigal Kadish",
+      "affiliation": "Harvard University, Professor of Molecular Biology; Co\u2011founder, Foghorn Therapeutics",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "pediatric malignancies",
+      "solid tumors"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "basic_science",
+      "platform_technology",
+      "AI_ML",
+      "target_discovery"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SMARCA2",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SMARCA4\u2011mutant lung cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SMARCA4",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SMARCA2\u2011dependent cancers",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ARID1A",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "various solid tumors with ARID1A loss",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SWIFT domain",
+        "alteration": "",
+        "pathway": "protein\u2011protein_interaction",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BAF complex subunits across >1,000 cancer cell lines",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "CRISPR_screen",
+        "name": "pan\u2011cancer dependency screen",
+        "genotype_or_key_features": "1,000+ cancer cell lines, BAF complex knockouts"
+      },
+      {
+        "model_type": "AlphaFold 3",
+        "name": "SWIFT domain structural prediction",
+        "genotype_or_key_features": "PU.1 TAD interaction"
+      },
+      {
+        "model_type": "hydrogen\u2011deuterium exchange",
+        "name": "HDX validation of TF\u2011SWIFT binding",
+        "genotype_or_key_features": "identified binding residues"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "AI\u2011driven AlphaFold\u2011based modeling identified a novel immunoglobulin\u2011like SWIFT domain within BAF chromatin remodelers that mediates transcription\u2011factor interactions; hydrogen\u2011deuterium exchange validated TF\u2011SWIFT binding sites, and CRISPR dependency screens revealed synthetic lethalities (e.g., SMARCA2 dependence in SMARCA4\u2011mutant lung cancer), establishing these interfaces as emerging therapeutic targets.",
+    "readouts": [
+      "AlphaFold 3 structural predictions",
+      "HDX\u2011MS",
+      "peptide pull\u2011down assays",
+      "CRISPR loss\u2011of\u2011function screens",
+      "RNA\u2011seq",
+      "chromatin immunoprecipitation"
+    ],
+    "key_findings": [
+      "AI\u2011predicted SWIFT domain structures correctly identified three PU.1 TAD binding motifs, validated by pull\u2011down and HDX experiments.",
+      "Fitness correlation across >1,000 cancer cell lines highlighted SWIFT\u2011containing paralogs (SMARCD1\u20113) as top codependencies, suggesting selective vulnerability.",
+      "Histone modification profiling showed that specific nucleosome acetylation patterns dramatically modulate BAF complex remodeling activity, revealing allele\u2011specific inhibition opportunities.",
+      "Synthetic\u2011lethal relationship between SMARCA2 and SMARCA4 mutations was confirmed, positioning SMARCA2 as a high\u2011value target in SMARCA4\u2011mutant lung cancer."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Paralog redundancy within BAF complexes may confer resistance; targeting SWIFT domain offers paralog\u2011specific selectivity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ATR inhibitor",
+        "rationale": "BAF complex loss induces replication stress, sensitizing cells to ATR blockade",
+        "phenotype": "synergistic tumor regression in SMARCA4\u2011mutant xenografts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can AI\u2011designed small molecules achieve sufficient selectivity for SWIFT\u2011mediated PPIs without off\u2011target chromatin effects?",
+      "What is the therapeutic window for targeting intrinsically disordered regions of BAF subunits?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Kadoch et al. 2023 Cell",
+        "Wang et al. 2024 Nature"
+      ],
+      "company_or_sponsor": [
+        "Foghorn Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "SWIFT domain targeting compounds",
+        "SMARCA2 selective inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo::meyer::3",
+    "session_title": "pharma-biotech-and-academia-advancing-drug-discovery-and-development-in-an-ai-wo",
+    "talk_title": "AI\u2011driven de novo antibody design with atomic precision",
+    "speaker": {
+      "name": "Josh Meyer",
+      "affiliation": "Chai Discovery, Founder & CEO",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "solid tumors",
+      "hematologic malignancies"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "AI_ML",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CCR8",
+        "alteration": "",
+        "pathway": "GPCR",
+        "modality": "antibody",
+        "compound_name": "VHH agonist",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CCR8\u2011expressing immune cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CXCR4",
+        "alteration": "",
+        "pathway": "GPCR",
+        "modality": "antibody",
+        "compound_name": "VHH antagonist",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CXCR4\u2011high tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12V",
+        "pathway": "RAS/MAPK",
+        "modality": "antibody",
+        "compound_name": "peptide\u2011MHC specific antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12V mutant cancers",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TNF\u2011alpha",
+        "alteration": "",
+        "pathway": "cytokine",
+        "modality": "antibody",
+        "compound_name": "VHH binder to trimeric interface",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TNF\u2011alpha driven inflammation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "diffusion_protein_design",
+        "name": "ChaiBinder",
+        "genotype_or_key_features": "3D antibody generation conditioned on epitope"
+      },
+      {
+        "model_type": "protein_folding",
+        "name": "internal high\u2011resolution folding model (AlphaFold\u2011derived)",
+        "genotype_or_key_features": "atomic\u2011level predictions for antibodies and antigens"
+      },
+      {
+        "model_type": "agentic_AI",
+        "name": "epitope selection agent",
+        "genotype_or_key_features": "guides design to avoid off\u2011target binding"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "binder_success_rate",
+        "value": "\u224850%",
+        "confidence_interval": "",
+        "n": "50 targets tested",
+        "population": "diverse protein targets (\u226550)",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "binding_rate_per_target",
+        "value": "10\u201120% of designs bind",
+        "confidence_interval": "",
+        "n": "\u226420 designs per target",
+        "population": "each tested target",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "agonist_hit_rate",
+        "value": "1/10 designs",
+        "confidence_interval": "",
+        "n": "10 CCR8 designs",
+        "population": "CCR8 VHH library",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "specificity",
+        "value": "KRAS G12V mutant binding, no WT binding",
+        "confidence_interval": "",
+        "n": "single clone",
+        "population": "peptide\u2011MHC assay",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Chai Discovery uses diffusion\u2011based generative models and high\u2011resolution folding predictions to design full\u2011length antibodies (including VHH) that directly target defined epitopes on GPCRs, peptide\u2011MHC complexes, and cytokine interfaces, achieving nanomolar affinities and functional agonism/antagonism without library screening, while agentic AI enforces developability constraints and off\u2011target avoidance.",
+    "readouts": [
+      "cryo\u2011EM structural validation",
+      "binding ELISA",
+      "cell\u2011based signaling assays",
+      "developability panels (expression, stability, viscosity, polyreactivity)",
+      "RMSD calculations"
+    ],
+    "key_findings": [
+      "Design of antibodies against >50 diverse targets succeeded with \u226420 designs per target, yielding binders for ~50% of targets (\u224810\u2011fold improvement over prior 0.1% rates).",
+      "Atomic\u2011resolution predictions matched cryo\u2011EM structures (global RMSD <2\u202f\u00c5, CDR loop RMSD <1\u202f\u00c5) for five test cases, confirming near\u2011perfect epitope modeling.",
+      "GPCR VHH agonist for CCR8 achieved functional signaling after testing only 10 designs, with 1 agonist hit, demonstrating feasibility of de novo agonist design.",
+      "Peptide\u2011MHC antibody selectively bound KRAS G12V peptide\u2011MHC complex while sparing WT KRAS and alternative MHCs, illustrating precise epitope discrimination.",
+      "Developability metrics (expression, stability, viscosity, polyreactivity) of AI\u2011generated antibodies matched or exceeded those of clinically approved mAbs on first\u2011pass designs."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Model failures traced to missing constraints (e.g., membrane or glycan clashes), highlighting need for explicit negative selection prompts."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "immune checkpoint inhibitor (e.g., anti\u2011PD\u20111)",
+        "rationale": "GPCR agonist antibodies may enhance T\u2011cell infiltration when combined with checkpoint blockade",
+        "phenotype": "enhanced tumor regression in murine models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How can AI agents be further trained to predict and avoid immunogenic epitopes during antibody design?",
+      "What is the upper limit of design\u2011to\u2011experiment cycles before diminishing returns in hit rate?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Jain et al. 2017 Nat. Biotechnol.",
+        "Wang et al. 2024 Cell"
+      ],
+      "company_or_sponsor": [
+        "Chai Discovery"
+      ],
+      "patent_or_ip_hints": [
+        "Diffusion\u2011based antibody design platform",
+        "Epitope\u2011guided VHH agonist patents"
+      ]
+    }
+  }
+]

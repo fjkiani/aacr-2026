@@ -1,0 +1,226 @@
+[
+  {
+    "talk_id": "advances-in-understanding-disseminated-tumor-cells-an-emerging-opportunity-to-pr::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Louis Chodosh",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "Advances in Understanding Disseminated Tumor Cells: An Emerging Opportunity to Prevent Lethal Breast Cancer?",
+      "talk_title": "Targeting Dormant Residual Tumor Cells in the Surveillance Window (CLEVER Trial)",
+      "rhetorical_signals": [
+        "Speaker said: \"we were told this is an impossible trial to do. No one will do it, no one will fund it.\"",
+        "Speaker said: \"there were no unexpected adverse events, and there was no grade four or five toxicity.\"",
+        "Speaker said: \"the five\u2011year recurrence\u2011free survival across all groups was about 96%, which is substantially better than would be expected based on the high\u2011risk nature of this population.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CLEVER phase\u202fII trial",
+        "target_biology": "autophagy and mTOR signaling in dormant residual tumor cells",
+        "flawed_enrollment_criteria": "Eligibility required bone\u2011marrow aspirate positivity by low\u2011sensitivity IHC, potentially excluding patients with low\u2011level DTCs and leading to selection bias",
+        "missing_biomarker": "A high\u2011sensitivity, quantitative DTC biomarker (e.g., ctDNA or flow\u2011cytometry\u2011based assay) to stratify patients",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "The trial was not powered for recurrence\u2011free survival, making the exploratory endpoint underpowered",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker\u2011stratified analysis beyond IHC DTC counts",
+        "No comparison to standard of care arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "The current IHC\u2011based DTC assay is low\u2011throughput and insensitive; CrisPRO could develop a computational pipeline to integrate flow\u2011cytometry and ctDNA data for more precise DTC quantification.",
+        "transcript_evidence": "Speaker said: \"it's low throughput, it's low sensitivity... there is a high false negative rate from studying just one bone marrow aspirate\"",
+        "crispro_angle": "Apply machine\u2011learning models to multimodal single\u2011cell and ctDNA datasets to generate a high\u2011sensitivity DTC risk score.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Autophagy and mTOR inhibition reduce DTC burden; CrisPRO could identify patients whose DTCs show transcriptional signatures of autophagy dependence for targeted therapy.",
+        "transcript_evidence": "Speaker said: \"pharmacologically block autophagy by administering chloroquine... results in an improvement in recurrence\u2011free survival\"",
+        "crispro_angle": "Use CrisPRO to predict autophagy\u2011dependency scores from bulk and single\u2011cell RNA\u2011seq of DTCs, guiding chloroquine\u2011based regimens.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011driven adaptive trial that enrolls only patients with confirmed DTC clearance after a run\u2011in period, reducing dilution of signal.",
+        "transcript_evidence": "Speaker said: \"the lessons of the CLEVER trials was first, we see concordant effects in patients than in mice... transient inhibition of autophagy or mTOR during this surveillance period can both reduce RTC burden\"",
+        "crispro_angle": "Leverage CrisPRO predictive models to define optimal treatment windows and adaptive randomization rules based on real\u2011time DTC dynamics.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Will long\u2011term follow\u2011up confirm a survival benefit of DTC\u2011targeted therapy?",
+      "What is the optimal duration of autophagy/mTOR inhibition to maximize benefit while minimizing toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "hydroxychloroquine",
+        "everolimus",
+        "chloroquine"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "advances-in-understanding-disseminated-tumor-cells-an-emerging-opportunity-to-pr::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Amulya Sreekumar",
+      "institution_or_pharma": "University of Pennsylvania (Chodosh Lab)",
+      "session_title": "Advances in Understanding Disseminated Tumor Cells: An Emerging Opportunity to Prevent Lethal Breast Cancer?",
+      "talk_title": "Residual Breast Cancer Cells Co\u2011opt SOX5\u2011driven Endochondral Ossification to Maintain Dormancy",
+      "rhetorical_signals": [
+        "Speaker said: \"loss of SOX5 accelerates recurrence by increasing proliferation in the latent window\"",
+        "Speaker said: \"SOX5 loss massively decreased the calcification and PET tracer uptake that we normally see in the residual lesions\"",
+        "Speaker said: \"enrichment of these signatures was associated with a delay in time to recurrence\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SOX5\u2011driven ossification pathway",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Downstream effectors of SOX5 that enforce dormancy (e.g., specific osteogenic transcriptional programs) are not targeted by current therapies",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human therapeutic intervention targeting SOX5 reported",
+        "Limited patient cohort linking ossification signatures to outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Endochondral ossification gene signatures could serve as a dormancy biomarker; CrisPRO can develop a predictive model to identify patients with high ossification scores for tailored therapy.",
+        "transcript_evidence": "Speaker said: \"enrichment of these signatures was associated with a delay in time to recurrence\"",
+        "crispro_angle": "Integrate bulk RNA\u2011seq and single\u2011cell data to compute an ossification\u2011dormancy score for risk stratification.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Loss of SOX5 removes a brake on proliferation; CrisPRO could screen for small molecules that mimic SOX5 activity or activate downstream osteogenic pathways.",
+        "transcript_evidence": "Speaker said: \"loss of SOX5 promotes RTC proliferation and accelerates recurrence\"",
+        "crispro_angle": "Use computational docking and network analysis to prioritize compounds that activate SOX5\u2011regulated osteogenic targets.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s single\u2011cell multi\u2011omics pipeline can simultaneously capture ossification signatures and proliferation markers, outperforming standard IHC.",
+        "transcript_evidence": "Speaker said: \"we used PET/CT with 18F\u2011sodium fluoride to detect calcification in residual lesions\"",
+        "crispro_angle": "Apply CrisPRO to integrate imaging\u2011derived quantitative PET data with transcriptomics for a composite dormancy index.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the direct transcriptional targets of SOX5 that enforce the ossification program?",
+      "Can pharmacologic activation of the ossification pathway be safely achieved in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SOX5",
+        "osteogenic pathway modulators"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "advances-in-understanding-disseminated-tumor-cells-an-emerging-opportunity-to-pr::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Christoph Klein",
+      "institution_or_pharma": "University of Regensburg, Germany",
+      "session_title": "Advances in Understanding Disseminated Tumor Cells: An Emerging Opportunity to Prevent Lethal Breast Cancer?",
+      "talk_title": "Molecular Characteristics of Patient\u2011Derived Disseminated Tumor Cells",
+      "rhetorical_signals": [
+        "Speaker said: \"dissemination actually starts very early, long before we have a tumor\"",
+        "Speaker said: \"M0 DCCs cluster very closely to human embryonic stem cells\"",
+        "Speaker said: \"embryo\u2011like DCCs are associated with risk of metastasis\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Early\u2011seeded disseminated cancer cells (M0 DCCs)",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Lack of sensitive detection methods for embryonic\u2011like DCCs during surveillance",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical trial linking embryonic\u2011like DCC detection to therapeutic intervention",
+        "Limited longitudinal sampling to track DCC evolution"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a computational classifier to identify embryonic\u2011like DCC transcriptional signatures in bone\u2011marrow or blood samples.",
+        "transcript_evidence": "Speaker said: \"M0 DCCs actually cluster very closely to human embryonic stem cells\"",
+        "crispro_angle": "Train a machine\u2011learning model on single\u2011cell RNA\u2011seq data to generate an embryonic\u2011DCC score for early risk assessment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s single\u2011cell phospho\u2011proteomics can uncover active signaling (e.g., IL\u20116, p\u2011STAT3) in rare DCCs, surpassing bulk assays.",
+        "transcript_evidence": "Speaker said: \"we can detect activation of HER2, phospho\u2011AKT, phospho\u2011STAT3 in individual DCCs\"",
+        "crispro_angle": "Integrate phospho\u2011protein barcoding with transcriptomics to map functional states of DCCs.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify kinase inhibitors (e.g., JAK/STAT blockers) that target activated pathways in embryonic\u2011like DCCs for combination trials.",
+        "transcript_evidence": "Speaker said: \"we see activation of IL6 signaling and phospho\u2011ERK, phospho\u2011AKT, phospho\u2011STAT3\"",
+        "crispro_angle": "Use CrisPRO network analysis to prioritize existing drugs that disrupt these signaling hubs in DCCs.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What drives the early embryonic\u2011like transcriptional program in M0 DCCs?",
+      "Why do embryonic\u2011like DCCs correlate with early mortality in lung cancer but later mortality in breast cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IL\u20116 pathway inhibitors",
+        "single\u2011cell phospho\u2011proteomics platforms"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

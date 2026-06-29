@@ -1,0 +1,262 @@
+[
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Broad Institute speaker",
+      "institution_or_pharma": "Broad Institute",
+      "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+      "talk_title": "Spatial transcriptomics technologies and tumor history",
+      "rhetorical_signals": [
+        "Speaker said: \"These measurements are snapshots. You have to kill the sample, or maybe the sample's already dead, when you make the measurement, and they're destructive snapshots.\"",
+        "Speaker said: \"We think of it as a kind of a universal platform to move any single-cell measurement, whether that is DNA, RNA, epigenomes, directly into the spatial context.\"",
+        "Speaker said: \"We see that the neural crest transitory state is strongly associated with a particular immune suppressive neighborhood...\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No functional validation of inferred lineage relationships",
+        "No in vivo perturbation data linking spatial niches to therapeutic response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Neural crest-like tumor cells are protected by SPP1 and post\u2011N, suggesting a secreted\u2011factor mediated resistance that could be targeted.",
+        "transcript_evidence": "Speaker said: \"When you add SPP1 to cells, it seems to also protect, only in the neural crest cell line state, it protects cells from interferon and TNF cytokine killing.\"",
+        "crispro_angle": "CrisPRO can model secreted factor\u2013receptor networks and predict combinatorial inhibitors to overcome SPP1\u2011mediated resistance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Spatially distinct tumor cell states (melanocytic vs neural\u2011crest) correlate with immune niches, offering a spatial biomarker for patient stratification.",
+        "transcript_evidence": "Speaker said: \"Tumor cells in state one are relatively depleted in immune cells in their neighborhood, and then there's a particular enrichment in T cells in tumor cells with state two.\"",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomics with outcome data to derive predictive spatial signatures.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Slide\u2011Seq (Takara)",
+        "context": "Mentioned as a commercialized version of bar\u2011coded array technology.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Visium HD",
+        "context": "Compared performance metrics (UMIs per cell, genes per cell) against Slide\u2011Tags.",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the specific antigens recognized by the T\u2011cell clones associated with tumor sub\u2011clones?",
+      "How can the inferred lineage trees be experimentally validated in human samples?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Slide\u2011Tags platform",
+        "CRISPR lineage tracing models (KP tracer)"
+      ],
+      "companies_to_monitor": [
+        "Takara Bio",
+        "10x Genomics"
+      ]
+    }
+  },
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dana Pe'er",
+      "institution_or_pharma": "Sloan Kettering Institute",
+      "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+      "talk_title": "Decoding tissue architecture in tumors with SEGER and Wormhole",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't want to solve this by using a boundary, we're not going to draw a membrane staining, that won't work.\"",
+        "Speaker said: \"Our AI is going to understand the phenotypic manifold, cell states, how they relate to each other, not cell types, but the full rich manifold.\"",
+        "Speaker said: \"Basal cells are only 4% of the tissue mass, but killing them collapses the entire tumor.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Basal cell niche (CSF2 signaling)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Reliance on CSF2 produced by basal cells to maintain immunosuppressive macrophages",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SEGER decontamination algorithm",
+        "ip_vulnerability_note": "Relies on nucleus\u2011centric graph embedding; may be circumvented by alternative segmentation pipelines that improve boundary detection.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Heavy computational demand limits scalability to large clinical cohorts."
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Wormhole transformer for niche representation",
+        "ip_vulnerability_note": "Transformer model trained on specific mouse datasets; may not generalize without extensive retraining to human clinical samples.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires massive compute resources; could delay translation to routine pathology."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that basal cells constitute only 4% of tumor mass but concluded that targeting basal cells leads to complete tumor collapse, contradicting the expectation that such a minor population would have limited impact."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Lack of human tumor validation for basal\u2011cell ablation phenotype",
+        "No long\u2011term outcome data after niche disruption"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "CSF2 signaling from basal cells is a vulnerability; CrisPRO can design combinatorial inhibitors to disrupt this niche.",
+        "transcript_evidence": "Speaker said: \"CSF2 might be doing something here... removing CSF2 just from the basal cells phenocopies collapsing and killing the basal cells.\"",
+        "crispro_angle": "CrisPRO can predict synergistic targets downstream of CSF2 to mimic basal\u2011cell ablation without genetic manipulation.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "SEGER outperforms boundary\u2011based decontamination methods, offering a more accurate spatial transcriptomics pipeline.",
+        "transcript_evidence": "Speaker said: \"We just say forget the boundary, assign transcripts to cells as link assignment, and that's our big difference.\"",
+        "crispro_angle": "CrisPRO can integrate SEGER\u2011processed data to improve downstream computational modeling of spatial niches.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PROSEG",
+        "context": "Compared against SEGER, noted to produce 'psychopathically shaped' boundaries.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Visium HD",
+        "context": "Mentioned as a technology with lower resolution than Slide\u2011Tags.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the upstream regulators of CSF2 production in basal cells?",
+      "Can basal\u2011cell ablation be achieved pharmacologically in human PDAC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Basal\u2011cell specific DTR mouse models",
+        "CSF2 inhibitors in PDAC"
+      ],
+      "companies_to_monitor": [
+        "10x Genomics",
+        "Illumina (spatial platforms)"
+      ]
+    }
+  },
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Itay Tirosh",
+      "institution_or_pharma": "Broad Institute",
+      "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+      "talk_title": "Spatial transcriptomes and single\u2011cell transcriptomes in glioma and head\u2011and\u2011neck cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"Visium spots are 55 microns and contain 5 to 20 cells, making pattern interpretation challenging.\"",
+        "Speaker said: \"In 64% of the spots, one cell state or one cell type controls the vast majority of the cells in a given spot.\"",
+        "Speaker said: \"Partial EMT at the tumor core is colocalized with inflammatory myeloid cells and oncostatin M signaling.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Partial EMT driven by oncostatin M in tumor core",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of therapeutic agents targeting OSM\u2011OSMR axis in head\u2011and\u2011neck cancer",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "N/A",
+        "target_biology": "Spatial heterogeneity of EMT in head\u2011and\u2011neck cancer",
+        "flawed_enrollment_criteria": "No biomarker stratification for EMT pattern (edge vs core) in patient selection",
+        "missing_biomarker": "EMT spatial pattern (edge vs core) as a predictive biomarker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering when subgrouping patients by EMT spatial pattern",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that partial EMT can be induced both by TGF\u2011\u03b2 at the tumor edge and by oncostatin M in the core, yet concluded that EMT at the core may have a stronger immunosuppressive effect, despite limited direct functional evidence."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of longitudinal clinical outcome linking EMT spatial pattern to therapy response",
+        "No functional validation that oncostatin M drives EMT in vivo"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Targeting OSM\u2011OSMR signaling together with checkpoint blockade could overcome core\u2011localized EMT\u2013mediated immunosuppression.",
+        "transcript_evidence": "Speaker said: \"Oncostatin M... induces many of the partial EMT genes\" and \"EMT at the core is associated with lower lymphocyte infiltration.\"",
+        "crispro_angle": "CrisPRO can simulate combined OSM inhibition and immunotherapy to predict synergistic effects on tumor microenvironment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Spatial EMT pattern (edge vs core) can serve as a predictive biomarker for patient stratification in trials.",
+        "transcript_evidence": "Speaker said: \"In some samples, EMT enriched at the edge; in others, EMT enriched at the core... suggests two subtypes of tumors.\"",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomics with survival data to develop a spatial EMT signature.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Visium",
+        "context": "Described as having 55\u2011micron spots with mixed cell content.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "CODEX / PhenoCycler",
+        "context": "Provided single\u2011cell protein resolution complementary to Visium.",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What determines whether a tumor adopts edge\u2011localized versus core\u2011localized EMT?",
+      "Can OSM inhibition reverse core EMT and restore lymphocyte infiltration?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Oncostatin M inhibitors",
+        "TGF\u2011\u03b2 pathway inhibitors in head\u2011and\u2011neck cancer"
+      ],
+      "companies_to_monitor": [
+        "Genentech",
+        "Novartis"
+      ]
+    }
+  }
+]

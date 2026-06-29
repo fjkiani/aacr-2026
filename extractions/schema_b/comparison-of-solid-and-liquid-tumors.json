@@ -1,0 +1,275 @@
+[
+  {
+    "talk_id": "comparison-of-solid-and-liquid-tumors::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Hugues de The",
+      "institution_or_pharma": "Coll\u00e8ge de France, Paris",
+      "session_title": "comparison-of-solid-and-liquid-tumors",
+      "talk_title": "Cure of acute promyelocytic leukemia: mechanisms and future directions",
+      "rhetorical_signals": [
+        "Speaker said: \"retinoic acid, rarely cures any patient on its own\"",
+        "Speaker said: \"in rare arsenic\u2011resistant patients, mutations of the alpha helix ... were found\"",
+        "Speaker said: \"the immune system is largely dispensable, not necessary for the full eradication\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Retinoic acid monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of PML\u2011RAR degradation when used alone",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Arsenic\u2011resistant APL patients",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Mutations in the cysteine triad of PML that prevent arsenic binding",
+        "unexplained_resistance_quote": "mutations of the alpha helix that allows the formation of this trimer ... were found in a tri\u2011resistant APL",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that differentiation occurs early after retinoic acid treatment, then said that differentiation alone is not sufficient for cure, contradicting the earlier narrative that differentiation was the driving force"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_OS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No discussion of long\u2011term immune surveillance data",
+        "Limited mechanistic data on why PML\u2011RAR is the unique fusion partner"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the arsenic\u2011binding cysteine triad mutations in PML\u2011RAR to restore arsenic sensitivity",
+        "transcript_evidence": "mutations of the alpha helix that allows the formation of this trimer ... were found in a tri\u2011resistant APL",
+        "crispro_angle": "CrisPRO can model the structural impact of cysteine triad mutations and design small molecules that bind alternative sites to induce degradation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine retinoic acid/arsenic with agents that boost p53 activation to enhance senescence\u2011driven cure",
+        "transcript_evidence": "degradation of PML\u2011RER allows reformation of PML nuclear bodies, which will drive p53 activation, loss of self\u2011renewal senescence",
+        "crispro_angle": "CrisPRO can predict synergistic p53\u2011activating compounds that complement the existing regimen",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Tony Letai",
+        "context": "co\u2011author of reviews on APL biology and collaborator on mechanistic studies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the downstream retinoic acid target genes that enforce self\u2011renewal?",
+      "Can the PML\u2011senescence hub be leveraged to improve response to other therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Retinoic acid",
+        "Arsenic trioxide"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "comparison-of-solid-and-liquid-tumors::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Christopher Sarosiek",
+      "institution_or_pharma": "Harvard School of Public Health",
+      "session_title": "comparison-of-solid-and-liquid-tumors",
+      "talk_title": "Apoptotic priming explains solid vs. liquid tumor chemotherapy responses",
+      "rhetorical_signals": [
+        "Speaker said: \"we see that blood cancers are dramatically more sensitive to a wide range of different therapies\"",
+        "Speaker said: \"we see that the only cancer cell lines that actually exhibit single agent sensitivity to these drugs targeting BCL2 family proteins are really blood cancers\"",
+        "Speaker said: \"we didn't look deeply at sex\u2011based differences, we saw no major difference in neural stem cells\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BCL2 family inhibitors in solid tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Redundant pro\u2011survival proteins (BCL\u2011XL, MCL1) mask single\u2011agent activity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "N/A",
+        "target_biology": "Apoptotic priming as predictive biomarker",
+        "flawed_enrollment_criteria": "Enrolling all solid tumor histologies without stratifying by baseline BH3 profiling",
+        "missing_biomarker": "Baseline apoptotic priming score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that solid tumor cell lines are largely unprimed yet concluded that targeting BCL2 family proteins will be broadly effective without addressing redundancy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of in\u2011vivo validation of BH3 profiling\u2011guided therapy",
+        "No OS or PFS data linked to priming status"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement CrisPRO\u2011derived apoptotic priming scores to stratify patients for BCL2 family inhibitor trials",
+        "transcript_evidence": "baseline priming correlates with chemotherapy sensitivity across cancer types",
+        "crispro_angle": "CrisPRO can integrate BH3 profiling data with genomic features to generate a predictive priming index",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine BCL\u2011XL degraders (e.g., DT2216) with standard chemotherapy in unprimed solid tumors",
+        "transcript_evidence": "BCL\u2011XL inhibitor plus vincristine rescued response in adult rhabdomyosarcoma model",
+        "crispro_angle": "CrisPRO can predict synergistic drug pairs that raise priming above a therapeutic threshold",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Tony Letai",
+        "context": "developer of BH3 profiling assay",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do dynamic changes in priming after radiation or targeted therapy influence treatment sequencing?",
+      "Are there sex\u2011specific modifiers of priming that were not captured?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BH3 mimetics (venetoclax, DT2216)",
+        "Standard chemotherapies (cisplatin, vincristine)"
+      ],
+      "companies_to_monitor": [
+        "AbbVie (venetoclax)",
+        "AstraZeneca (DT2216)"
+      ]
+    }
+  },
+  {
+    "talk_id": "comparison-of-solid-and-liquid-tumors::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Luca Mazzarella",
+      "institution_or_pharma": "European Institute of Oncology, Milan",
+      "session_title": "comparison-of-solid-and-liquid-tumors",
+      "talk_title": "NF1 as a microtubule regulator and predictor of maytansinoid ADC response",
+      "rhetorical_signals": [
+        "Speaker said: \"we found a novel function for NF1 in modulating microtubule repair, which is Ras independent\"",
+        "Speaker said: \"the knockout cells responded much, much better to the same drug\"",
+        "Speaker said: \"mutants that are defective for the RasGAP activity are also defective for the microtubule repair activity\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Maytansinoid ADCs in NF1\u2011wildtype tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of NF1\u2011mediated microtubule repair reduces drug binding sites, lowering ADC potency",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "NF1\u2011mutated patients showed statistically significant longer PFS with T\u2011DM1",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "N/A",
+        "target_biology": "Maytansinoid ADC efficacy in HER2+ breast cancer",
+        "flawed_enrollment_criteria": "No stratification by NF1 mutation status despite preclinical evidence of differential response",
+        "missing_biomarker": "NF1 mutation or loss\u2011of\u2011function status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underestimation of effect size due to mixed NF1 WT/Mut cohort",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Maytansinoid payload (DM1) in ADCs",
+        "ip_vulnerability_note": "Efficacy depends on microtubule repair status; tumors lacking NF1 show increased binding sites, suggesting a narrow therapeutic window",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Using maytansinoid ADCs without biomarker selection may dilute clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that NF1 loss increases microtubule dynamics and drug binding, then concluded that NF1 is primarily a Ras GAP, downplaying the microtubule role"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Limited patient cohort (34) for NF1\u2011mutant outcome analysis",
+        "No prospective trial confirming NF1 as predictive biomarker"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to develop an NF1\u2011based predictive model for maytansinoid ADC response",
+        "transcript_evidence": "NF1 knockout cells responded much, much better to the same drug; patient data showed longer PFS in NF1\u2011mutated cohort",
+        "crispro_angle": "CrisPRO can integrate NF1 mutation, expression, and microtubule dynamics data to generate a response score for ADCs",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue maytansinoid ADC programs that failed in unselected trials by re\u2011designing them for NF1\u2011mutant populations",
+        "transcript_evidence": "clinical cohort showed significant PFS benefit in NF1\u2011mutated patients",
+        "crispro_angle": "CrisPRO can identify sub\u2011populations with high predicted priming for microtubule repair deficiency",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "T\u2011DM1 (ado-trastuzumab emtansine)",
+        "context": "ADC evaluated in NF1 WT vs KO models",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Other ADCs with topoisomerase payloads (TDXD)",
+        "context": "Showed no differential effect, highlighting specificity for maytansinoid",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Which domain(s) of NF1 mediate microtubule binding and repair?",
+      "How does p53 status modulate the balance between Ras\u2011driven and microtubule\u2011driven phenotypes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "T\u2011DM1",
+        "Maytansinoid ADCs",
+        "NF1 mutation status assays"
+      ],
+      "companies_to_monitor": [
+        "Roche (T\u2011DM1)",
+        "AstraZeneca (ADC pipelines)"
+      ]
+    }
+  }
+]

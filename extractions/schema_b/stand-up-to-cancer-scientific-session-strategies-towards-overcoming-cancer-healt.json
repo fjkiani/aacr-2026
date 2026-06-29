@@ -1,0 +1,275 @@
+[
+  {
+    "talk_id": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Jennifer Haas",
+      "institution_or_pharma": "Massachusetts General Hospital",
+      "session_title": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt",
+      "talk_title": "Pragmatic trial of mailed FIT vs FIT\u2011DNA outreach in community health centers",
+      "rhetorical_signals": [
+        "Speaker said: \"colonoscopies after an abnormal test result was limited despite centralized phone\u2011based navigation\"",
+        "Speaker said: \"there was a significant but modestly higher return rate in the FIT\u2011DNA arm compared to the FIT arm, 28% versus 23%\"",
+        "Speaker said: \"we didn't assess cost effectiveness, which, given the differences in the brands, might actually be interesting\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "FIT\u2011DNA outreach program",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited colonoscopy completion after abnormal stool test due to access barriers not addressed by the outreach",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CARE\u2011CCRS Study",
+        "target_biology": "Increase colorectal cancer screening uptake via mailed stool\u2011based tests",
+        "flawed_enrollment_criteria": "Different FIT kit brands used across sites leading to variable positivity rates and potential dilution of signal",
+        "missing_biomarker": "No biomarker\u2011guided stratification of patients (e.g., risk scores) to target higher\u2011risk individuals",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for subgroup analyses due to site\u2011level heterogeneity",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No cost\u2011effectiveness analysis presented",
+        "No long\u2011term follow\u2011up (OS) data",
+        "No biomarker\u2011stratified analysis of screening uptake"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "The trial did not use risk\u2011based biomarkers to prioritize patients for FIT vs FIT\u2011DNA, creating an opportunity for CrisPRO to develop predictive risk scores to guide test selection.",
+        "transcript_evidence": "Speaker noted that \"we did not assess cost effectiveness\" and that FIT kit brand differences affected positivity rates",
+        "crispro_angle": "CrisPRO can generate individualized risk models integrating demographics, insurance status, and prior screening history to assign the optimal stool\u2011based test, improving yield and cost\u2011effectiveness.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Standardize FIT kit brand and incorporate real\u2011time colonoscopy capacity data to reduce variability across sites.",
+        "transcript_evidence": "Speaker said \"different FIT kit brands with different positivity rates\" and \"colonoscopies were limited despite navigation\"",
+        "crispro_angle": "CrisPRO\u2019s simulation engine can model site\u2011specific logistics and suggest optimal kit selection and navigation intensity per clinic.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Exact Sciences",
+        "context": "Manufacturer of the FIT\u2011DNA kit and provider of patient navigation services",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Cologuard (Exact Sciences brand)",
+        "context": "Mentioned as the FIT\u2011DNA product used in the trial",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can colonoscopy completion rates be improved in low\u2011resource CHCs?",
+      "What is the cost\u2011effectiveness of FIT vs FIT\u2011DNA when accounting for downstream colonoscopy utilization?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "FIT\u2011DNA outreach program",
+        "Exact Sciences navigation platform"
+      ],
+      "companies_to_monitor": [
+        "Exact Sciences"
+      ]
+    }
+  },
+  {
+    "talk_id": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Nina Bachael",
+      "institution_or_pharma": "Mount Sinai Cancer Center",
+      "session_title": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt",
+      "talk_title": "DISRUPT: Diversity and Inclusion in Scientific Research Underpinning Trials",
+      "rhetorical_signals": [
+        "Speaker said: \"We had a much higher refusal rate than we expected, and most of that was due to the fact that it's an extremely emotional time for people, and they just did not want to deal with research\"",
+        "Speaker said: \"Timing is critical. Timing is critical for algorithm accuracy, and it's also critical for patients' abilities to even hear about the possibility of participating in research\"",
+        "Speaker said: \"We found that minority patients are less likely to be eligible for clinical trials due to higher comorbidity loads\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DISRUPT patient\u2011identification algorithm",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Algorithm lacks real\u2011time scan results, causing missed eligibility for patients with positive scans",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      },
+      {
+        "failing_compound_or_target": "Minority patient eligibility",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Higher burden of comorbidities in minority patients reduces trial eligibility",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DISRUPT trial enrollment pipeline",
+        "target_biology": "Match patients at treatment decision points to open oncology trials",
+        "flawed_enrollment_criteria": "Algorithm runs before scan results are available, leading to false negatives for trial\u2011eligible patients",
+        "missing_biomarker": "Real\u2011time imaging biomarkers (e.g., scan results) not integrated",
+        "static_vs_dynamic_failure": "No on\u2011treatment data feed into algorithm",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No data on long\u2011term trial enrollment outcomes beyond initial consent",
+        "Lack of integration of real\u2011time imaging data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can incorporate real\u2011time scan results and comorbidity weighting to improve algorithm precision for minority patients.",
+        "transcript_evidence": "Speaker noted that timing of scan results was a major limitation for the algorithm",
+        "crispro_angle": "CrisPRO\u2019s dynamic data integration layer can ingest EMR imaging feeds instantly, updating eligibility matches on the fly.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Provide a unified, AI\u2011driven trial\u2011matching platform that reduces manual review by >35% and improves eligibility capture.",
+        "transcript_evidence": "Speaker reported that the current algorithm reduced manual review by 35% but still missed many eligible patients",
+        "crispro_angle": "CrisPRO\u2019s scalable matching engine can handle larger trial catalogs and patient cohorts with higher accuracy.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How can the algorithm be adapted to incorporate real\u2011time imaging and lab data?",
+      "What interventions can reduce the high refusal rate among patients during emotionally charged visits?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DISRUPT trial matching algorithm",
+        "Epic EMR integration tools"
+      ],
+      "companies_to_monitor": [
+        "Epic Systems"
+      ]
+    }
+  },
+  {
+    "talk_id": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Robert Winn",
+      "institution_or_pharma": "VCU Massey Comprehensive Cancer Center / Fox Chase Cancer Center",
+      "session_title": "stand-up-to-cancer-scientific-session-strategies-towards-overcoming-cancer-healt",
+      "talk_title": "Lung cancer screening in the I\u201195 corridor: multimodal navigation and health disparities",
+      "rhetorical_signals": [
+        "Speaker said: \"We saw higher screening uptake when we used multi\u2011modal, multi\u2011level navigation including community activators\"",
+        "Speaker said: \"We did not have mobile vans, and that likely limited our numbers in rugged rural areas\"",
+        "Speaker said: \"Navigation cost is actually low and provides downstream benefit, but funding sustainability is a concern\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Navigation program without mobile van capability",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of mobile screening units limits access for patients with transportation barriers",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Sustainable funding for navigators",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Reliance on grant funding threatens long\u2011term continuity of navigation services",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted \"navigation cost is actually low but we need to convince health systems\"",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Southeastern Consortium Lung Cancer Health Disparities Screening",
+        "target_biology": "Increase low\u2011dose CT screening uptake in African\u2011American and rural populations",
+        "flawed_enrollment_criteria": "No mobile van component and limited financial\u2011toxicity navigation, reducing reach in remote areas",
+        "missing_biomarker": "No integration of zip\u2011code level risk scores to prioritize high\u2011risk neighborhoods",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for rural sub\u2011cohorts due to lower enrollment",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Navigation workflow model",
+        "ip_vulnerability_note": "Speaker disclosed that the model relies heavily on grant\u2011funded staff and lacks proprietary technology, making it easy for competitors to replicate with modest resources",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad outreach without mobile units dilutes signal in hard\u2011to\u2011reach rural pockets"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No cost\u2011effectiveness or health\u2011economic analysis",
+        "No data on long\u2011term lung cancer outcomes (mortality)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Partner with CrisPRO to embed zip\u2011code based risk modeling and AI\u2011driven mobile unit routing to extend screening reach.",
+        "transcript_evidence": "Speaker highlighted need for mobile vans and mentioned zip\u2011code level disparities",
+        "crispro_angle": "CrisPRO can generate geospatial risk maps and optimize mobile unit deployment schedules.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate financial\u2011toxicity navigation as a formal trial arm to test impact on enrollment sustainability.",
+        "transcript_evidence": "Speaker noted \"we wanted to include financial advisors in navigation but lacked resources\"",
+        "crispro_angle": "CrisPRO can simulate trial designs with added financial navigation components to predict enrollment boost.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Would adding mobile screening vans significantly improve uptake in rugged rural areas?",
+      "How can health systems be convinced to fund navigation programs sustainably?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Southeastern Consortium lung screening navigation program"
+      ],
+      "companies_to_monitor": [
+        "Health system partners in the I\u201195 corridor"
+      ]
+    }
+  }
+]

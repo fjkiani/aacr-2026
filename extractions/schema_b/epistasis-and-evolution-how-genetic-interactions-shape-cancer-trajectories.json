@@ -1,0 +1,254 @@
+[
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jaime Aranzo",
+      "institution_or_pharma": "Sanger Institute (software developer)",
+      "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+      "talk_title": "Genetic interactions in cancer: detection, modeling, and clinical relevance",
+      "rhetorical_signals": [],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No experimental validation of predicted epistatic modules",
+        "No single\u2011cell resolution to confirm co\u2011occurrence in the same cell"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Network modules predict patient survival and tumor subtype; CrisPRO could provide a computational framework to stratify patients by module membership for prognosis and trial enrichment.",
+        "transcript_evidence": "Speaker said: \"mutational profiles associated with network modules are informative of patient survival\" and \"early mutations in these pretumoral lesions can help predict future tumor subtypes\".",
+        "crispro_angle": "CrisPRO can integrate epistatic network signatures with clinical outcomes to generate robust, reproducible biomarker panels for subtype prediction.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sanger Institute",
+        "context": "Developer of the NDSCV software used in the analysis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Solid Park",
+        "context": "Mentioned for work on genetic interactions between somatic mutations and copy number variation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do the predicted epistatic modules perform in prospective clinical cohorts?",
+      "Can single\u2011cell sequencing validate that module\u2011specific mutations co\u2011occur within the same tumor cell?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "cosalliance R package",
+        "NDSCV software"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jorge Alfaro-Murillo",
+      "institution_or_pharma": "Universidad de Costa Rica",
+      "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+      "talk_title": "Quantifying Epistasis and Evolutionary Trajectories in Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't have enough data for more than a few genes; the model grows exponentially while data grows linearly\"",
+        "Speaker said: \"We haven't looked at copy\u2011number effects yet, but there are papers on it\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Limited to pairwise analysis due to data sparsity",
+        "No incorporation of copy\u2011number or indel mutation types yet"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s ability to model higher\u2011order epistatic interactions could overcome the exponential scaling limitation highlighted by the speaker.",
+        "transcript_evidence": "Speaker said: \"With four genes it's very complicated\u2026 the data doesn\u2019t grow exponentially\".",
+        "crispro_angle": "CrisPRO\u2019s scalable probabilistic framework can jointly infer substitution rates for larger gene sets without exponential blow\u2011up.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "The method identifies synergistic driver pairs (e.g., KRAS\u2011KEAP1) that could be targeted with combination therapies.",
+        "transcript_evidence": "Speaker highlighted that KRAS synergistically enhances selection for KEAP1 and SDK11 mutations.",
+        "crispro_angle": "CrisPRO can prioritize drug combinations by quantifying the magnitude of synergistic selection coefficients.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "SigMutCel",
+        "context": "Tool mentioned for estimating mutation signatures used to derive neutral mutation rates",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "BNDS",
+        "context": "Tool referenced for neutral mutation rate estimation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How robust are the inferred substitution rates when integrating copy\u2011number alterations?",
+      "Can the framework be extended to incorporate subclonal allele frequency information?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Jorge Alfaro-Murillo\u2019s epistasis inference software (Python implementation)",
+        "SigMutCel mutation signature tool"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Jeff (last speaker, name not provided)",
+      "institution_or_pharma": "University of ??? (unspecified)",
+      "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+      "talk_title": "Tobacco Smoking and the Somatic Selective Epistasis in Lung Adenocarcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"Smoking tends to increase the selection for KRAS, KEAP1 and SDK11\"",
+        "Speaker said: \"EGFR is not selected at all in smokers\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "EGFR\u2011targeted TKIs in ever\u2011smokers",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reduced selection pressure for EGFR mutations in smokers diminishes TKI benefit",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Lung adenocarcinoma targeted therapy trials (generic)",
+        "target_biology": "EGFR inhibition",
+        "flawed_enrollment_criteria": "Trials often do not stratify by smoking history, mixing ever\u2011smokers and never\u2011smokers",
+        "missing_biomarker": "Smoking status as a predictive biomarker for EGFR TKI response",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering of subgroup analyses for never\u2011smokers",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EGFR TKI monotherapy",
+        "ip_vulnerability_note": "Efficacy is highly dependent on smoking\u2011related selection; without accounting for environment, the therapeutic window narrows",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing EGFR inhibitors without smoking\u2011status stratification may dilute clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that EGFR mutations are less frequent in smokers (data) but then concluded that EGFR TKIs should be used uniformly, ignoring the reduced selection in smokers"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective trial data separating smokers vs non\u2011smokers for EGFR TKI efficacy",
+        "Limited functional validation of smoking\u2011specific epistatic interactions"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Incorporate smoking history into CrisPRO\u2019s predictive models to refine EGFR\u2011targeted therapy selection.",
+        "transcript_evidence": "Speaker said: \"The substantially stronger selection for EGFR mutations in never smoker LUAD implies that EGFR TKIs should yield greater clinical benefit in never smokers\".",
+        "crispro_angle": "CrisPRO can combine mutational signatures with environmental covariates (smoking) to generate a composite risk score for EGFR TKI response.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic driver pairs (e.g., KRAS\u2011KEAP1) prevalent in smokers for combination therapy design.",
+        "transcript_evidence": "Speaker highlighted that KRAS and KEAP1 have stronger selection in ever\u2011smokers and co\u2011mutation worsens survival.",
+        "crispro_angle": "CrisPRO can rank combination candidates by quantifying joint selection coefficients in smoker\u2011specific cohorts.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "KRAS inhibitors",
+        "context": "Discussed as more selected in smokers",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "EGFR TKIs",
+        "context": "Efficacy reduced in smokers",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Do other environmental factors (e.g., air pollution) similarly reshape epistatic landscapes?",
+      "Can longitudinal sampling track how smoking\u2011induced epistasis evolves during therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "EGFR TKI clinical trial protocols",
+        "Smoking\u2011status stratified lung adenocarcinoma datasets"
+      ],
+      "companies_to_monitor": [
+        "Companies developing KRAS inhibitors",
+        "EGFR TKI manufacturers"
+      ]
+    }
+  },
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Jeff (panel moderator, no original data)",
+      "institution_or_pharma": "N/A",
+      "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+      "talk_title": "Panel discussion (no original data)",
+      "rhetorical_signals": [],
+      "presentation_type": "panel_discussion"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "not_applicable",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": []
+    },
+    "crispro_opportunity": [],
+    "cited_competitors": [],
+    "unresolved_questions": [],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  }
+]

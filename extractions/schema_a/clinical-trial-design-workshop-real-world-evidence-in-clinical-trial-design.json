@@ -1,0 +1,220 @@
+[
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::hubbard::1",
+    "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+    "talk_title": "Methodological considerations for incorporating real-world data into clinical trial design",
+    "speaker": {
+      "name": "Rebecca Hubbard",
+      "affiliation": "Brown University, Carl Kawaja and Wendy Holcomb Professor of Public Health, Professor of Biostatistics and Data Science",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "translational",
+      "methodology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [
+      {
+        "metric": "bias",
+        "value": "substantial bias with full pooling",
+        "n": "simulation",
+        "population": "hybrid control trial simulations",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "type_one_error",
+        "value": "inflated with full pooling and static borrowing",
+        "n": "simulation",
+        "population": "hybrid control trial simulations",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "power",
+        "value": "increased with full pooling but biased; restored with propensity weighting",
+        "n": "simulation",
+        "population": "hybrid control trial simulations",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Hubbard presented a framework for hybrid control trial designs that augment internal control arms with external real-world data, comparing analysis strategies (full pooling, static borrowing, propensity score weighting) via simulations to assess bias, type I error, and power, highlighting propensity weighting as a method that controls bias while improving efficiency.",
+    "readouts": [
+      "simulation_study",
+      "hazard_ratio_plots"
+    ],
+    "key_findings": [
+      "Full pooling of external control data introduces substantial bias in treatment effect estimates.",
+      "Static borrowing reduces bias but still shows inflated type I error under strong confounding.",
+      "Propensity score weighting eliminates bias and restores type I error to nominal levels while providing a power boost.",
+      "Dynamic borrowing yields estimates close to trial-only results with minimal efficiency gain."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to ensure all relevant confounders are captured for propensity score adjustment in real-world datasets?",
+      "What are optimal methods for dynamic borrowing when external data quality varies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::meropol::2",
+    "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+    "talk_title": "Real-world data curation from EHRs and applications to clinical trials",
+    "speaker": {
+      "name": "Neil Meropol",
+      "affiliation": "Flatiron Health, Principal Investigator Elect of the ASCO TAPER study",
+      "role": "industry_presenter",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non-small cell lung cancer",
+      "bladder cancer",
+      "multiple myeloma",
+      "pancreatic adenocarcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "real_world_data",
+      "methodology",
+      "AI_ML",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Flatiron Health EHR-derived cohorts",
+        "genotype_or_key_features": "various cancers, includes structured and unstructured data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Meropol described methods for extracting structured variables from EHRs using human abstraction, machine learning, and large language models, presented quality assessment frameworks, and illustrated applications such as external control arm construction for the RESOLVE pancreatic trial and outcome analyses in NSCLC and bladder cancer.",
+    "readouts": [
+      "structured_data_extraction",
+      "LLM_validation_curves",
+      "propensity_score_matching",
+      "survival_curves"
+    ],
+    "key_findings": [
+      "LLM-extracted progression dates showed high reliability compared to human abstraction across multiple tumor types.",
+      "External control arms built from multiple real-world data sources closely matched the RESOLVE trial control arm after propensity score adjustment.",
+      "In bladder cancer, patients receiving cisplatin off-label had better outcomes than those who did not.",
+      "In early-stage NSCLC, neoadjuvant immunotherapy improved distant metastasis-free survival, but additional adjuvant therapy did not show further benefit."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to standardize LLM validation across institutions for regulatory acceptance?",
+      "What are optimal strategies for handling missingness in key covariates during propensity score construction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Flatiron Health",
+        "Friends of Cancer Research",
+        "J&J"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::o'dwyer::3",
+    "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+    "talk_title": "Prospective real-world data registry embedded in an ECOG-ACRIN phase III trial",
+    "speaker": {
+      "name": "Peter O'Dwyer",
+      "affiliation": "University of Pennsylvania, Medical Oncologist, co-chair of ECOG-ACRIN Research Group",
+      "role": "clinician_investigator",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "clinical_trial",
+      "real_world_data",
+      "methodology",
+      "regulatory"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "ECOG-ACRIN EA5182",
+        "genotype_or_key_features": "EGFR-mutant NSCLC, arms: osimertinib vs osimertinib + bevacizumab"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Prospective real-world registry (PRECOG 1702)",
+        "genotype_or_key_features": "Patients receiving same therapies outside trial, same eligibility criteria"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "data_capture_rate",
+        "value": "85% of key variables captured",
+        "n": "first 80 patients",
+        "population": "prospective real-world registry",
+        "maturity": "interim"
+      },
+      {
+        "metric": "accrual_rate",
+        "value": "25 patients per month",
+        "n": "ongoing",
+        "population": "prospective registry across 40 sites",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "O'Dwyer outlined the design and early feasibility results of a prospective real-world data registry (PRECOG 1702) run in parallel with the ECOG-ACRIN phase III trial EA5182, demonstrating high data completeness (>85%) and rapid accrual, and discussed operational challenges such as site CRA engagement, IRB barriers, and EHR documentation gaps.",
+    "readouts": [
+      "prospective data capture metrics",
+      "site accrual dashboards",
+      "key variable completeness assessment"
+    ],
+    "key_findings": [
+      "Prospective real-world registry achieved >85% capture of predefined key variables after minimal data cleaning.",
+      "Accrual reached target of 25 patients/month after an initial slow start, now active at 40 institutions.",
+      "CRAs are critical for data collection; engagement and regular communication improve site performance.",
+      "Regulatory challenges include IRB exemptions for patient-reported outcomes and social determinants of health."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can EHR-integrated smart forms (e.g., Chart Hero, OncAssessment) be scaled across diverse health systems?",
+      "What regulatory pathways best accommodate prospective real-world registries as external controls?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "ECOG-ACRIN",
+        "FDA"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

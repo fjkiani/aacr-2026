@@ -1,0 +1,781 @@
+[
+  {
+    "talk_id": "adoptive-t-cell-therapy::qi::1",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "Iterative engineering of GPCR-targeted synthetic TCR and STAR T cells in advanced solid tumors",
+    "speaker": {
+      "name": "Changsong Qi",
+      "affiliation": "Peking University Cancer Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "hepatocellular carcinoma",
+      "gastric cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GPC3",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "CAR_T",
+        "compound_name": "STAR T (GPC3-targeted)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "GPC3-positive advanced solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CXCR2",
+        "alteration": "",
+        "pathway": "chemokine_receptor",
+        "modality": "CAR_T",
+        "compound_name": "CXCR2-armored STAR T",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Version 2 STAR T construct",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "IL-15",
+        "alteration": "",
+        "pathway": "cytokine_signaling",
+        "modality": "CAR_T",
+        "compound_name": "membrane-bound IL-15",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Version 3 STAR T construct",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "GPC3 expression",
+        "type": "eligibility",
+        "assay": "IHC",
+        "finding": "Positive in >70% HCC and >95% AFP+ gastric cancer"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Version 2 STAR T cohort",
+        "genotype_or_key_features": "3 heavily pretreated AFP-positive gastric cancer patients"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Version 3 STAR T cohort",
+        "genotype_or_key_features": "4 patients (1 HCC, 3 AFP-positive gastric cancer)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "objective response rate",
+        "value": "33.3%",
+        "confidence_interval": "",
+        "n": "n=3",
+        "population": "Version 2 cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "disease control rate",
+        "value": "66.7%",
+        "confidence_interval": "",
+        "n": "n=3",
+        "population": "Version 2 cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "objective response rate",
+        "value": "15%",
+        "confidence_interval": "",
+        "n": "n=4",
+        "population": "Version 3 cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "disease control rate",
+        "value": "75%",
+        "confidence_interval": "",
+        "n": "n=4",
+        "population": "Version 3 cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "grade \u22653 CRS",
+        "value": "42.9%",
+        "confidence_interval": "",
+        "n": "n=7",
+        "population": "all treated patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "grade 2 ICANS",
+        "value": "14.3%",
+        "confidence_interval": "",
+        "n": "n=7",
+        "population": "all treated patients",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "STAR T cells fuse a CAR extracellular domain with TCR signaling machinery, enabling low-antigen, high-sensitivity activation; CXCR2 expression improves tumor trafficking, and membrane-bound IL-15 provides autocrine survival signals, together enhancing expansion, persistence, and antitumor activity in GPC3-positive solid tumors.",
+    "readouts": [
+      "flow_cytometry",
+      "clinical_imaging",
+      "tumor_biopsy"
+    ],
+    "key_findings": [
+      "Version 2 STAR T cells achieved ORR 33.3% and DCR 66.7% in three heavily pretreated AFP-positive gastric cancer patients.",
+      "CXCR2-armored STAR T cells improved tumor trafficking in preclinical models.",
+      "Membrane-bound IL-15 (Version 3) increased ORR to 15% and DCR to 75% in four patients with advanced HCC or gastric cancer.",
+      "Grade \u22653 CRS occurred in 42.9% of patients; no treatment\u2011related deaths were observed."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Limited persistence of STAR T cells observed; responders showed sustained expansion while non\u2011responders had rapid decline in copy number."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CXCR2 expression",
+        "rationale": "Enhance chemokine\u2011mediated tumor infiltration",
+        "phenotype": "Improved trafficking and localization in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "membrane-bound IL-15",
+        "rationale": "Provide autonomous survival signal to overcome persistence hurdle",
+        "phenotype": "Dramatically superior expansion and near\u2011complete tumor eradication in vivo",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What mechanisms underlie the limited long\u2011term persistence despite IL\u201115 armoring?",
+      "Can further engineering improve safety while maintaining efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::yang::2",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "Cellular architecture of infused TILs predicts efficacy of autologous TIL therapy in acral melanoma",
+    "speaker": {
+      "name": "Qilong Yang",
+      "affiliation": "Tianjin Medical University Cancer Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "acral melanoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "cellular_therapy",
+      "TIL",
+      "clinical_trial",
+      "biomarker_development",
+      "single_cell"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "TFH cell frequency",
+        "type": "predictive",
+        "assay": "single-cell RNA-seq",
+        "finding": "Higher TFH proportion correlated with durable response"
+      },
+      {
+        "name": "intermediate exhausted CD8 T cells",
+        "type": "predictive",
+        "assay": "single-cell RNA-seq",
+        "finding": "Enriched in responders versus terminal exhausted cells in non\u2011responders"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "investigator\u2011initiated TIL trial",
+        "genotype_or_key_features": "4 Chinese acral melanoma patients, heavily pretreated"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "disease control rate",
+        "value": "75%",
+        "confidence_interval": "",
+        "n": "n=4",
+        "population": "acral melanoma TIL trial",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Autologous tumor\u2011infiltrating lymphocytes expanded ex vivo retain functional subsets; infusion of products enriched for TFH and intermediate exhausted CD8 T cells seeds progenitor\u2011like clones that persist and differentiate in vivo, driving durable tumor regression in acral melanoma.",
+    "readouts": [
+      "single-cell RNA-seq",
+      "TCR sequencing",
+      "flow_cytometry",
+      "CT imaging"
+    ],
+    "key_findings": [
+      "Three of four acral melanoma patients achieved disease control (75% DCR).",
+      "Responder showed >90% T cells in peripheral blood at week 12 versus low levels in stable disease patient.",
+      "Effective response linked to higher fractions of TFH and intermediate exhausted CD8 T cells, not total T cell count.",
+      "Clonal analysis revealed expanded progenitor\u2011like TCR clones persisting in blood up to 12 weeks post\u2011infusion."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Non\u2011responders harbored predominantly terminal exhausted CD8 T cells lacking tumor reactivity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CRISPR\u2011based T\u2011cell editor (T\u2011editor)",
+        "rationale": "Enhance TIL function and overcome TGF\u2011\u03b2 mediated suppression",
+        "phenotype": "Increased IFN\u2011\u03b3 production and cytolysis in mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can TFH and intermediate exhausted signatures be used prospectively to select patients?",
+      "What is the optimal dosing schedule for sustained clonal persistence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::desomme::3",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "First\u2011in\u2011class CAR dendritic cell platform driving broad and durable antitumor immunity in solid tumors",
+    "speaker": {
+      "name": "Carl Desomme",
+      "affiliation": "Washington University School of Medicine, St. Louis",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "sarcoma",
+      "solid tumors (heterogeneous)"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "dendritic_cells",
+      "platform_technology",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "B7-H3",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_Dendritic",
+        "compound_name": "CAR\u2011DC1 B7-H3",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B7-H3 positive solid tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "B7-H3 expression",
+        "type": "eligibility",
+        "assay": "IHC",
+        "finding": "Present on majority of tested solid tumor models"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MCA\u2011induced sarcoma (75% B7-H3+)",
+        "genotype_or_key_features": "25% B7-H3 negative cells to model heterogeneity"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CAR\u2011engineered type\u20111 dendritic cells (CAR\u2011DC1) bearing a B7\u2011H3 scFv and a TLR4 intracellular domain capture tumor antigens, enhance cross\u2011presentation, and prime robust tumor\u2011specific CD8 T cell responses, leading to complete tumor rejection and long\u2011term immune memory even against antigen\u2011negative variants.",
+    "readouts": [
+      "flow_cytometry",
+      "mass_spec peptide elution",
+      "in vivo tumor growth curves",
+      "survival"
+    ],
+    "key_findings": [
+      "TLR4\u2011signaling CAR\u2011DC1s induced strong costimulatory molecule upregulation (CCR7, CD86, CD70).",
+      "In vitro, CAR\u2011DC1s cross\u2011presented OVA and endogenous tumor peptides at markedly higher abundance than control DCs.",
+      "In the heterogeneous sarcoma model, 30/30 mice achieved complete tumor rejection after CAR\u2011DC1 treatment.",
+      "Mice cured by CAR\u2011DC1s rejected rechallenge with both B7\u2011H3\u2011positive and B7\u2011H3\u2011negative tumors, indicating epitope spreading."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "intratumoral delivery",
+        "rationale": "Enhance local antigen capture and reduce systemic exposure",
+        "phenotype": "Planned for Phase I trial (2027) with dose escalation",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Will CAR\u2011DC1s be effective against low\u2011B7\u2011H3 expressing tumors?",
+      "What is the optimal dosing route (IT vs IV) for different solid tumor types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Fisher Scientific"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::heiteneider::4",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "Decoding the medulloblastoma serpinosome prioritizes the oncofetal antigen GPC2 for potent CAR T cell therapy",
+    "speaker": {
+      "name": "Sabine Heiteneider",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "medulloblastoma",
+      "neuroblastoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "CAR_T",
+      "oncofetal_antigen",
+      "pediatric_cancer",
+      "clinical_trial",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GPC2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "compound_name": "GPC2 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "GPC2\u2011positive medulloblastoma and neuroblastoma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "GPC2 density",
+        "type": "predictive",
+        "assay": "flow_cytometry (molecules per cell)",
+        "finding": "Median >6,000 molecules/cell in medulloblastoma specimens, above detection threshold"
+      },
+      {
+        "name": "CD133 co\u2011expression",
+        "type": "predictive",
+        "assay": "IHC/flow",
+        "finding": "GPC2\u2011high cells enriched for CD133+ stem\u2011like phenotype"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "Group 4 medulloblastoma PDX",
+        "genotype_or_key_features": "GPC2 expression matching clinical levels"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "Group 3 MYCN\u2011amplified medulloblastoma",
+        "genotype_or_key_features": "High GPC2, aggressive phenotype"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "dose\u2011limiting toxicity",
+        "value": "none observed (max grade 2 neurotoxicity)",
+        "confidence_interval": "",
+        "n": "n=4 patients",
+        "population": "GPC2\u2011positive CNS embryonal tumors",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "GPC2\u2011directed CAR T cells with CD28 costimulatory domain and c\u2011Jun overexpression achieve low\u2011antigen detection, target GPC2\u2011high tumor\u2011initiating cells, and overcome antigen\u2011loss escape, leading to durable tumor control in medulloblastoma models and early clinical safety.",
+    "readouts": [
+      "flow_cytometry",
+      "single\u2011cell RNA\u2011seq",
+      "tumor sphere assay",
+      "in vivo tumor growth",
+      "clinical imaging"
+    ],
+    "key_findings": [
+      "GPC2 identified as top oncofetal surface antigen in medulloblastoma via surfaceome analysis.",
+      "CAR T cells required CD28 transmembrane domain to detect ~5,000\u20116,000 GPC2 molecules/cell.",
+      "c\u2011Jun overexpression reduced antigen\u2011low escape and enhanced cytokine production.",
+      "Phase\u202f1 trial (NCT\u2011pending) enrolled 4 patients with no dose\u2011limiting toxicities and detectable CAR T cells in CSF."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Tumor escape observed with reduced GPC2 density; c\u2011Jun engineering mitigated this."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "c\u2011Jun overexpression",
+        "rationale": "Lower antigen detection threshold and resist exhaustion",
+        "phenotype": "Higher IFN\u2011\u03b3 and IL\u20112 secretion against low\u2011GPC2 cells",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will GPC2 CAR T cells be effective against heterogeneous CNS tumors with variable GPC2 expression?",
+      "What is the optimal intra\u2011cerebral dosing schedule?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::bassar::5",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "NK TCR cells, a next\u2011generation platform expanding NK cell therapeutic potential",
+    "speaker": {
+      "name": "Rafet Bassar",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "multiple myeloma",
+      "sarcoma",
+      "melanoma",
+      "AML"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "NK_cell_therapy",
+      "TCR_engineering",
+      "cellular_therapy",
+      "clinical_trial",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PRAME",
+        "alteration": "",
+        "pathway": "cancer_testis_antigen",
+        "modality": "TCR_NK",
+        "compound_name": "PRAME TCR\u2011NK",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PRAME\u2011positive tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NY-ESO-1",
+        "alteration": "",
+        "pathway": "cancer_testis_antigen",
+        "modality": "TCR_NK",
+        "compound_name": "NY-ESO-1 TCR\u2011NK",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NY-ESO-1\u2011positive tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "NK TCR basket trial (myeloma & sarcoma)",
+        "genotype_or_key_features": "Dose escalation, off\u2011the\u2011shelf cord\u2011blood NK product"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "MM.1S myeloma model",
+        "genotype_or_key_features": "NY-ESO-1 positive"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "complete remission duration",
+        "value": "2 years ongoing",
+        "confidence_interval": "",
+        "n": "n=1 patient",
+        "population": "NY-ESO-1 positive multiple myeloma, heavily pretreated",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "grade \u22653 CRS",
+        "value": "none reported",
+        "confidence_interval": "",
+        "n": "n=5 patients",
+        "population": "NK TCR trial",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Cord\u2011blood NK cells are engineered to express a full CD3 complex and a tumor\u2011specific TCR (e.g., PRAME or NY\u2011ESO\u20111), coupling antigen\u2011specific TCR signaling with innate NK cytotoxic receptors and IL\u201115 support, resulting in rapid, serial killing of target cells with minimal off\u2011target activity.",
+    "readouts": [
+      "flow_cytometry",
+      "Incucyte live\u2011cell imaging",
+      "single\u2011cell killing assay",
+      "bioluminescence imaging in mice"
+    ],
+    "key_findings": [
+      "TCR\u2011NK cells killed target tumor spheroids faster than conventional TCR\u2011T cells (\u22482\u202fmin vs\u202f\u22486\u202fmin per target).",
+      "In vivo, NK TCR treatment cured 5/5 myeloma\u2011bearing mice with durable engraftment in blood, bone marrow, and spleen.",
+      "No off\u2011target toxicity observed in peptide\u2011pulsed LCL assays or in treated patients (no CRS, ICANS, or GvHD).",
+      "First patient with NY\u2011ESO\u20111\u2011positive myeloma achieved complete remission lasting >2\u202fyears after a single 22\u202fM dose."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will NK TCR cells retain activity against MHC\u2011downregulated tumors?",
+      "Can additional cytokine support further improve persistence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::eben::6",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "Universal T cell therapy screening library and preclinical models of CAR T cell therapy",
+    "speaker": {
+      "name": "Alexander Eben",
+      "affiliation": "Stanford University (post\u2011bac trainee)",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "large B\u2011cell lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "platform_technology",
+      "CRISPR_screen",
+      "machine_learning"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "in_vitro",
+        "name": "Toledo lymphoma cell line co\u2011culture",
+        "genotype_or_key_features": "Repeated stimulation assay"
+      },
+      {
+        "model_type": "in_vivo",
+        "name": "Toledo xenograft mouse model",
+        "genotype_or_key_features": "IV CAR T infusion, tumor burden monitored by BLI"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CRISPR\u2011all enables multiplexed knock\u2011in of CAR constructs and gene perturbations into the TRAC locus of primary T cells; the CACTUS library screens combinatorial edits to identify genetic configurations that enhance CAR T cell proliferation and antitumor activity against lymphoma.",
+    "readouts": [
+      "NGS barcode sequencing",
+      "cell proliferation assays",
+      "tumor bioluminescence imaging"
+    ],
+    "key_findings": [
+      "Synthetic chimeras (e.g., FAS\u2011OX40) and stemness factors (TCF7L1) consistently enriched across multiple screens.",
+      "Lymphoma\u2011specific hits (ARID family genes) emerged only in Toledo co\u2011culture screens.",
+      "In vivo screen identified similar top hits, with ~71% concordance between in vitro, in vivo, and deep\u2011learning model predictions."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Which of the identified gene edits translate to improved clinical response in patients?",
+      "Can CACTEX2 be refined to a minimal set for rapid clinical testing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::arnett::7",
+    "session_title": "adoptive-t-cell-therapy",
+    "talk_title": "Triple disruption of CCDC6, ZEB1B, and ASB2 promotes therapeutic efficacy of GPC3\u2011targeted CAR T cells",
+    "speaker": {
+      "name": "Aslan Arnett",
+      "affiliation": "Baylor College of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "hepatocellular carcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "CAR_T",
+      "gene_editing",
+      "IL-15_armored",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GPC3",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "compound_name": "IL-15 armored GPC3 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "GPC3\u2011positive HCC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CCDC6",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Triple knockout with ASB2 and CBLB",
+        "target_novelty": "unknown"
+      },
+      {
+        "gene_or_protein": "ASB2",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Triple knockout",
+        "target_novelty": "unknown"
+      },
+      {
+        "gene_or_protein": "CBLB",
+        "alteration": "",
+        "pathway": "negative_regulator_TCR_signaling",
+        "modality": "knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Triple knockout",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "IL-15 armored GPC3 CAR T trial",
+        "genotype_or_key_features": "Patients with advanced HCC or gastric cancer"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "HCC mouse model",
+        "genotype_or_key_features": "IL-15 GPC3 CAR T cells with triple knockout (CBLB, CCDC6, ASB2)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "peak CAR T cell expansion",
+        "value": "14.7 billion cells",
+        "confidence_interval": "",
+        "n": "n=1 patient",
+        "population": "IL-15 armored GPC3 CAR T recipient",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "grade 3 CRS",
+        "value": "1 patient",
+        "confidence_interval": "",
+        "n": "n=1",
+        "population": "IL-15 armored GPC3 CAR T trial",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "IL\u201115\u2011armed GPC3 CAR T cells achieve high expansion; integration\u2011mediated disruption of CBLB, CCDC6, and ASB2 further enhances proliferation and antitumor activity, likely by relieving negative regulation of TCR signaling and promoting survival pathways.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "TCR sequencing",
+      "flow_cytometry",
+      "bioluminescence imaging"
+    ],
+    "key_findings": [
+      "One patient showed dramatic tumor reduction in 16\u202fdays with peak CAR T expansion of 14.7\u202fB cells.",
+      "Clonal analysis revealed a dominant TCR clone not present in the infusion product.",
+      "Retroviral integrations disrupted CBLB, CCDC6, and ASB2, correlating with the expanded clone.",
+      "Triple knockout of these genes in IL\u201115 CAR T cells led to greater T cell expansion and complete tumor control in HCC xenograft mice."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Potential autoimmunity risk from CBLB loss; however, monoallelic disruption appeared safe in patient."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IL-15 armoring",
+        "rationale": "Provide autonomous survival signal",
+        "phenotype": "Enhanced expansion and persistence",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "triple gene knockout (CBLB, CCDC6, ASB2)",
+        "rationale": "Remove negative regulators to boost proliferation",
+        "phenotype": "Increased expansion and complete tumor eradication in mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Is disruption of all three genes required for maximal benefit?",
+      "Does IL\u201115 synergize with the knockouts or act independently?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": [
+        "patent related to triple knockout strategy"
+      ]
+    }
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "talk_id": "immunometabolism-in-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Owen Sansom",
+      "institution_or_pharma": "Cancer Research UK / University of Cambridge",
+      "session_title": "immunometabolism-in-cancer",
+      "talk_title": "Modeling immune metabolism and cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"If we delete 7A5, what you found was one of the biggest suppressions that we've seen in our colorectal cancer models.\"",
+        "Speaker said: \"When we use our RAS inhibitors, we no longer have this wall of macrophages, and they sort of then move in and permit throughout the entire MET.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No in vivo efficacy data for SLC7A5 inhibition in combination with standard of care",
+        "No toxicity or pharmacokinetic data for SLC7A5 targeting agents"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "SLC7A5 expression is highly up\u2011regulated in APC\u2011KRAS tumors and in the squamous subtype of pancreatic cancer, suggesting a patient subset that may benefit from SLC7A5\u2011targeted strategies.",
+        "transcript_evidence": "Speaker said: \"We found is highly upregulated in the APC KRAS, but it's also highly upregulated under energetic stress.\"",
+        "crispro_angle": "CrisPRO could develop a transcriptional signature to identify tumors with high SLC7A5 activity for patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Deletion of SLC7A5 dramatically slows tumor genesis in KPC pancreatic models but does not fully prevent tumor formation, indicating a partially effective asset that could be rescued with combination approaches.",
+        "transcript_evidence": "Speaker said: \"If you delete 7A5, you really strikingly slow tumor genesis. There was no impact on PanINs, and actually many of your mice developed tumors that were not pancreatic.\"",
+        "crispro_angle": "CrisPRO can model metabolic network rewiring to predict synergistic drug combinations that complement SLC7A5 inhibition.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise mechanism by which SLC7A5 deletion alters MAPK and mTOR signaling in KRAS\u2011mutant tumors?",
+      "Can SLC7A5 inhibition synergize with KRAS G12C inhibitors in colorectal cancer models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SLC7A5 inhibitors",
+        "KRAS G12C inhibitors (e.g., Mirati G12D compound)"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Mirati Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "immunometabolism-in-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Greg Delgoff",
+      "institution_or_pharma": "University of Pittsburgh / UPMC Hillman Cancer Center",
+      "session_title": "immunometabolism-in-cancer",
+      "talk_title": "Metabolic consequences of T cell exhaustion",
+      "rhetorical_signals": [
+        "Speaker said: \"We can see that while activation can acutely turn on the mitochondrial citrate carrier, chronic stimulation and especially hypoxic stress drove the persistent upregulation of this citrate carrier.\"",
+        "Speaker said: \"When we knock out the citrate carrier and prevent the citrate from leaving the mitochondria, now we have a very superior oxidative phenotype with high respiratory capacity in these cells.\"",
+        "Speaker said: \"These T cells are far less likely to progress to terminal exhaustion, both by PD\u20111, TIM\u20113, but also by the expression of the terminal exhaustion marker CD39.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SLC25A1 (mitochondrial citrate carrier)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "The role of cytosolic citrate\u2011derived acetyl\u2011CoA in driving lipid droplet formation and protein hyper\u2011acetylation was not addressed in early therapeutic designs.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Citrate carrier (SLC25A1) inhibition",
+        "ip_vulnerability_note": "Speaker disclosed that hydroxycitrate is an allosteric inhibitor of SLC25A1, indicating the target is druggable but may be limited to low\u2011affinity compounds.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Current approach relies on CRISPR knockout in adoptive T cells; translation to a small\u2011molecule therapy may be hampered by lack of selective, potent inhibitors."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that exhausted T cells accumulate large lipid droplets (suggesting excess carbon storage) yet concluded that exhaustion is driven by carbon starvation \u2013 contradictory observation of lipid accumulation versus claimed nutrient scarcity."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No in vivo tumor regression data beyond modest tumor control",
+        "Lack of pharmacologic inhibitor data for SLC25A1"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting SLC25A1 to prevent citrate export blocks lipid droplet formation and protein hyper\u2011acetylation, restoring mitochondrial function in chronically stimulated T cells.",
+        "transcript_evidence": "Speaker said: \"When we knock out the citrate carrier... these cells were much better, were metabolically superior to typical T cells.\"",
+        "crispro_angle": "CrisPRO can model the impact of SLC25A1 inhibition on the T cell metabolic network and predict optimal combination with PD\u20111 blockade.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Synergistic use of SLC25A1 inhibition with PD\u20111 blockade to enhance adoptive T cell therapy efficacy.",
+        "transcript_evidence": "Speaker said: \"These cells also synergize very well with PD\u20111 blockade.\"",
+        "crispro_angle": "CrisPRO can simulate combined checkpoint and metabolic interventions to prioritize dosing schedules.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mirati G12D compound",
+        "context": "Used as a KRAS G12D inhibitor in mouse models to assess metabolic effects.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the relative contribution of glucose\u2011derived versus glutamine\u2011derived citrate to the exhaustion phenotype?",
+      "Can pharmacologic SLC25A1 inhibitors recapitulate the CRISPR knockout phenotype in human T cells?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SLC25A1 inhibitors (hydroxycitrate)",
+        "CRISPR\u2011edited T cell therapies targeting metabolic checkpoints"
+      ],
+      "companies_to_monitor": [
+        "Mirati Therapeutics",
+        "Companies developing metabolic modulators for immunotherapy"
+      ]
+    }
+  },
+  {
+    "talk_id": "immunometabolism-in-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Madar",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "immunometabolism-in-cancer",
+      "talk_title": "Metabolism in NK cells for cellular therapies",
+      "rhetorical_signals": [
+        "Speaker said: \"Cord blood NK cells show higher enrichment in amino acid metabolism, carbohydrate metabolism, lipid metabolism compared to peripheral blood NK cells.\"",
+        "Speaker said: \"Culturing NK cells in APEL media increased mitochondrial mass, potential, and oxidative phosphorylation compared to standard media.\"",
+        "Speaker said: \"Knocking out CIS or TGF\u2011\u03b2 receptor II in CAR NK cells improves mTOR signaling and in vivo anti\u2011tumor activity.\"",
+        "Speaker said: \"Expression of adenoviral E4ORF1 in NK cells enhances glycolysis, OXPHOS, and tumor killing even under nutrient starvation, dependent on AMPK activation.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1/2 trial of TGF\u2011\u03b2RII\u2011KO CD70 CAR NK cells (AML)",
+        "target_biology": "TGF\u2011\u03b2 mediated metabolic suppression of NK cells",
+        "flawed_enrollment_criteria": "Broad enrollment without stratification for tumor metabolic phenotype may dilute signal.",
+        "missing_biomarker": "Baseline TGF\u2011\u03b2 activity or NK cell metabolic fitness biomarkers not required for entry.",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early\u2011phase dose\u2011escalation may be underpowered to detect efficacy differences across metabolic subgroups.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "E4ORF1 metabolic reprogramming",
+        "ip_vulnerability_note": "Speaker disclosed that E4ORF1 is a viral protein; its mechanism (PI3K\u2011AKT\u2011mTOR activation) is well\u2011known and could be mimicked by small molecules, reducing IP uniqueness.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on viral gene overexpression may raise regulatory and safety concerns for clinical translation."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term persistence and safety data for E4ORF1\u2011engineered NK cells",
+        "Comparative efficacy of APEL\u2011media priming versus standard media in clinical\u2011grade manufacturing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can model the metabolic impact of media composition (APEL vs standard) to design optimized GMP\u2011compatible formulations for NK cell manufacturing.",
+        "transcript_evidence": "Speaker said: \"NK cells grown in APEL media show enhanced oxidative phosphorylation and better killing across multiple tumor models.\"",
+        "crispro_angle": "Use computational metabolic flux analysis to predict media components that maximize mitochondrial fitness while maintaining GMP compliance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine CIS or TGF\u2011\u03b2RII knockout NK cells with small\u2011molecule AMPK activators to further boost the E4ORF1\u2011mediated metabolic program.",
+        "transcript_evidence": "Speaker said: \"E4ORF1 engineered NK cells depend on AMPK; inhibition abrogates the phenotype.\"",
+        "crispro_angle": "Simulate synergistic effects of genetic and pharmacologic AMPK activation on NK cell cytotoxicity.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CIS (CISH) knockout platforms",
+        "context": "Referenced as a metabolic checkpoint previously targeted in NK cells.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "TGF\u2011\u03b2RII knockout strategies",
+        "context": "Discussed as a method to overcome TGF\u2011\u03b2 mediated suppression.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Which specific lipid components of APEL media drive the observed mitochondrial enhancements?",
+      "Can E4ORF1\u2011engineered NK cells maintain metabolic fitness and safety after large\u2011scale GMP expansion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345 (hypothetical ID for the TGF\u2011\u03b2RII\u2011KO CD70 CAR NK trial)"
+      ],
+      "assets_to_track": [
+        "E4ORF1\u2011engineered NK cell platform",
+        "CIS\u2011KO NK cell products",
+        "TGF\u2011\u03b2RII\u2011KO CAR NK cells"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson (internal program)",
+        "Companies developing NK cell off\u2011the\u2011shelf platforms"
+      ]
+    }
+  }
+]

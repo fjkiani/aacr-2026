@@ -1,0 +1,327 @@
+[
+  {
+    "talk_id": "tumor-immunology-for-non-immunologists-back-to-basics::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Greg Delgoff",
+      "institution_or_pharma": "University of Pittsburgh",
+      "session_title": "tumor-immunology-for-non-immunologists-back-to-basics",
+      "talk_title": "Fundamentals of PD-1 checkpoint blockade and T cell exhaustion",
+      "rhetorical_signals": [
+        "Speaker said: \"PD-1 signaling does not cause T cell exhaustion\"",
+        "Speaker said: \"PD-1 blockade does not reverse T cell exhaustion\"",
+        "Speaker said: \"As you add anti-PD-1 to a mouse, you're actually exhausting their immune system\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PD-1/PD-L1 checkpoint blockade",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Therapy does not reverse terminal exhaustion of tumor\u2011specific T cells",
+        "unexplained_resistance_quote": "Patients with a high proportion of exhausted T cells do worse on PD-1 blockade",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that exhausted T cells express the most PD\u20111 yet concluded that PD\u20111 blockade works by targeting those cells \u2013 contradictory because the data indicate it targets progenitor\u2011like cells, not the exhausted ones"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data directly linking PD\u20111 blockade to reversal of exhaustion",
+        "Lack of biomarker\u2011stratified outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high progenitor\u2011like exhausted T cells who are more likely to benefit from PD\u20111 blockade",
+        "transcript_evidence": "Speaker said: \"Patients with high proportion of exhausted T cells do worse on PD\u20111 blockade\"",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell T\u2011cell phenotyping and spatial transcriptomics to quantify progenitor vs terminal exhausted subsets",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop agents that re\u2011program terminally exhausted T cells rather than relying on PD\u20111 blockade alone",
+        "transcript_evidence": "Speaker said: \"PD\u20111 blockade does not reverse T cell exhaustion\"",
+        "crispro_angle": "CrisPRO can predict epigenetic rewiring targets to restore functionality in exhausted clones",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine PD\u20111 blockade with agents that expand progenitor\u2011like T cells (e.g., IL\u201121, PI3K inhibition)",
+        "transcript_evidence": "Speaker noted that progenitor exhausted cells retain plasticity and are the true targets of PD\u20111 blockade",
+        "crispro_angle": "CrisPRO can model synergistic effects of checkpoint inhibition plus stemness\u2011enhancing cytokines",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What therapeutic strategies can truly reverse terminal T\u2011cell exhaustion?",
+      "How can new tumor antigens be introduced to generate fresh immune responses after PD\u20111 failure?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PD\u20111 inhibitors (pembrolizumab, nivolumab)",
+        "Novel epigenetic modulators of T\u2011cell exhaustion"
+      ],
+      "companies_to_monitor": [
+        "Merck",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "tumor-immunology-for-non-immunologists-back-to-basics::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Crystal Paulos",
+      "institution_or_pharma": "Emory Winship Cancer Institute",
+      "session_title": "tumor-immunology-for-non-immunologists-back-to-basics",
+      "talk_title": "Adoptive T\u2011cell therapies and the unexpected power of Th17 CD4 cells",
+      "rhetorical_signals": [
+        "Speaker said: \"We were wrong \u2013 Th1 cells were not the most effective, Th17 cells were\"",
+        "Speaker said: \"Manufacturing of T cells is upwards of a half a million dollars per patient\"",
+        "Speaker said: \"B cells are required for the curative effect of Th17 adoptive transfer\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard CD8\u2011focused TIL or CAR therapies",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Neglect of CD4 Th17\u2011mediated B\u2011cell help and tumor microenvironment remodeling",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients respond dramatically when Th17 cells are present",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "High\u2011dose IL\u20112 expanded TILs",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "IL\u20112 drives terminal differentiation and loss of stem\u2011like properties",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that high\u2011dose IL\u20112 expansion makes T cells less effective per cell",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "TIL vs ipilimumab phase II trial (84 per arm)",
+        "target_biology": "Adoptive TIL therapy after checkpoint failure",
+        "flawed_enrollment_criteria": "Enrolled all relapsed patients without biomarker stratification for T\u2011cell phenotype or B\u2011cell status",
+        "missing_biomarker": "Progenitor exhausted vs terminal exhausted TIL composition; B\u2011cell presence",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm comparison may under\u2011power detection of subgroup benefits",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Ex vivo TIL manufacturing platform",
+        "ip_vulnerability_note": "Speaker disclosed that manufacturing costs exceed $500k per patient, suggesting limited scalability",
+        "scale_or_manufacturing_bottleneck": "High cost and labor\u2011intensive expansion of billions of cells",
+        "clinical_strategy_weakness": "Broad TIL products dilute effective clones; lack of engineered stem\u2011like phenotype"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "CAR/TCR viral transduction methods",
+        "ip_vulnerability_note": "Reliance on lentiviral/retroviral vectors limits rapid iteration and may pose insertional mutagenesis risk",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Fixed antigen targets (e.g., CD19) ignore tumor antigen loss and MHC down\u2011regulation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted that CD8 TILs are potent but then argued that CD4 Th17 cells, traditionally considered immunosuppressive, are actually the key curative agents"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term clinical data on Th17\u2011based adoptive transfer in humans",
+        "Lack of comparative trials versus standard CD8\u2011focused CAR/TCR products"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO to design CD4\u2011focused engineered T cells (Th17\u2011like) that retain stem\u2011like properties and recruit B cells",
+        "transcript_evidence": "Speaker said: \"Th17 cells were unexpectedly curative and required B cells for full effect\"",
+        "crispro_angle": "CrisPRO can model CD4 T\u2011cell differentiation pathways and predict cytokine cocktails that preserve progenitor state",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop assays to quantify intratumoral B\u2011cell activity and Th17 presence as predictive biomarkers for adoptive therapy success",
+        "transcript_evidence": "Speaker said: \"Depleting B cells impaired the Th17 therapy\"",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomics to generate composite B\u2011cell/Th17 scores",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Redesign TIL trials to include pre\u2011selection of progenitor\u2011like T cells and co\u2011administration of stemness\u2011preserving cytokines (IL\u201121, IL\u201115)",
+        "transcript_evidence": "Speaker noted that high\u2011dose IL\u20112 drives terminal differentiation and reduces efficacy",
+        "crispro_angle": "CrisPRO can simulate cytokine impact on T\u2011cell epigenetic state to optimize manufacturing protocols",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Steven Rosenberg (NIH)",
+        "context": "Pioneer of TIL therapy and benchmark for adoptive transfer efficacy",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "CAR\u2011T (CD19) products",
+        "context": "Referenced as FDA\u2011approved examples of successful adoptive cell therapy",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Can Th17\u2011based products be combined with CD8 CAR/TCR cells for synergistic effect?",
+      "What is the minimal cytokine cocktail needed to retain stem\u2011like Th17 phenotype during large\u2011scale manufacturing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04526899"
+      ],
+      "assets_to_track": [
+        "Th17 adoptive cell therapy programs",
+        "B\u2011cell engaging immunotherapies"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Kite Pharma",
+        "Adaptimmune"
+      ]
+    }
+  },
+  {
+    "talk_id": "tumor-immunology-for-non-immunologists-back-to-basics::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dmitry Zhamarin",
+      "institution_or_pharma": "Mount Sinai",
+      "session_title": "tumor-immunology-for-non-immunologists-back-to-basics",
+      "talk_title": "Clinical landscape of cancer immunotherapy: biomarkers, resistance, and toxicities",
+      "rhetorical_signals": [
+        "Speaker said: \"Cold tumors lack T cells and represent primary resistance\"",
+        "Speaker said: \"PD\u2011L1 expression is an approved biomarker but works only in a minority of cancers\"",
+        "Speaker said: \"Myocarditis from checkpoint inhibitors has a ~40% fatality rate\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PD\u20111/PD\u2011L1 checkpoint inhibitors",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Inability to convert cold or excluded tumors into inflamed (hot) microenvironments",
+        "unexplained_resistance_quote": "Patients with cold tumors never get primed by the immune system",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "PD\u2011L1 IHC as a biomarker",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "PD\u2011L1 expression does not reliably predict response across tumor types",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Various PD\u20111/PD\u2011L1 trials using 50% PD\u2011L1 cutoff",
+        "target_biology": "Checkpoint inhibition of PD\u20111/PD\u2011L1 axis",
+        "flawed_enrollment_criteria": "Relies on a single PD\u2011L1 IHC threshold without accounting for spatial proximity to T cells",
+        "missing_biomarker": "T\u2011cell activation/exhaustion signatures and interferon\u2011\u03b3 proximity metrics",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA or serial biopsies to track evolving resistance",
+        "statistical_concern": "Potential under\u2011powering of sub\u2011cohort analyses (e.g., cold vs hot tumors)",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PD\u20111/PD\u2011L1 antibody platform",
+        "ip_vulnerability_note": "Speaker highlighted limited efficacy in cold/excluded tumors and modest predictive value of PD\u2011L1 IHC",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Heavy reliance on a single checkpoint target without combinatorial approaches"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented PD\u2011L1 IHC as an FDA\u2011approved biomarker yet simultaneously emphasized that it fails in most cancer types"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature for long\u2011term OS in many studies",
+      "key_data_gaps": [
+        "Lack of dynamic biomarkers (e.g., on\u2011treatment ctDNA) to monitor resistance",
+        "Insufficient integration of spatial T\u2011cell\u2013PD\u2011L1 interaction metrics into trial eligibility"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop spatial proximity biomarkers (PD\u20111+ T cells within 30\u201150\u202f\u00b5m of PD\u2011L1+ cells) to better select responders",
+        "transcript_evidence": "Speaker said: \"Distance of interferon\u2011\u03b3 action is ~30\u201150\u202f\u00b5m; proximity can predict benefit\"",
+        "crispro_angle": "CrisPRO can process multiplexed imaging data to generate quantitative proximity scores for trial enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Combine checkpoint blockade with agents that induce T\u2011cell infiltration (e.g., STING agonists) to convert cold tumors",
+        "transcript_evidence": "Speaker described cold tumors as lacking T cells and primary resistance",
+        "crispro_angle": "CrisPRO can model tumor\u2011intrinsic pathways (e.g., IFN\u2011\u03b3 signaling loss) to prioritize combination partners",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate serial ctDNA and on\u2011treatment biopsies to capture emerging resistance mechanisms",
+        "transcript_evidence": "Speaker noted missing dynamic resistance tracking in current trial designs",
+        "crispro_angle": "CrisPRO can integrate longitudinal molecular data to adapt trial endpoints in real time",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Merck (Keytruda)",
+        "context": "PD\u20111 inhibitor used in multiple trials discussed",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Bristol\u2011Myers Squibb (Opdivo)",
+        "context": "PD\u20111 inhibitor referenced in biomarker and toxicity discussion",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How can we reliably convert excluded tumors into infiltrated hot tumors?",
+      "What are the optimal combinatorial partners to overcome primary resistance in cold tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT03553831",
+        "NCT04513822"
+      ],
+      "assets_to_track": [
+        "STING agonist programs",
+        "Novel PD\u2011L1 IHC companion diagnostics"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Genentech",
+        "Inovio"
+      ]
+    }
+  }
+]

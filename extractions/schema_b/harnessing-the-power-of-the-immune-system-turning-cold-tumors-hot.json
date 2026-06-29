@@ -1,0 +1,249 @@
+[
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::gajewski::1",
+    "talk_metadata": {
+      "speaker_name": "Tom Gajewski",
+      "institution_or_pharma": "University of Chicago",
+      "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+      "talk_title": "Mechanisms of Efficacy versus Failure of Cancer Immunotherapy",
+      "rhetorical_signals": [
+        "Speaker said: 'putting things back is still ongoing, but that's only half of the picture'",
+        "Speaker said: 'we're starting to think that this is the exception, not the rule'",
+        "Speaker said: 'I don't like that term, but the suppressive macrophages'"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TLR agonists and STING agonists",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Requirement for specific cell types (plasmacytoid dendritic cells for CpG; CDC1 cells for STING) to be present in the tumor for efficacy; simply activating the pathway is insufficient if the cellular architecture is missing.",
+        "unexplained_resistance_quote": "these interventions have limited efficacy because they're not sufficient to make a cold tumor hot",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "anti-PD-1",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Dominance of suppressive M2-like macrophages in non-T cell inflamed tumors that may render T cells dysfunctional even if they successfully infiltrate.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "efficacy of single agent anti-PD-1 is enriched in patients who have this activated T cell gene signature",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Small molecule inhibitors of PKC delta",
+        "ip_vulnerability_note": "Speaker admitted to only having 'partial selectivity' so far in medicinal chemistry efforts to target PKC delta over other PKC family members.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": null
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No human clinical trial data for PKC delta or GPNMB inhibitors",
+        "Lack of data on the specific receptor for GPNMB"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting PKC delta or GPNMB to reprogram suppressive M2-like macrophages into inflammatory M1-like macrophages to sensitize cold tumors to PD-1 blockade.",
+        "transcript_evidence": "we're thinking for the resistant tumors, all roads are leading to these suppressive M2-like macrophages... maybe we can drug this target and shift the myeloid phenotype in vivo",
+        "crispro_angle": "Use computational spine to identify the specific GPNMB receptor or identify synergistic targets that bypass the need for gamma interferon for macrophage repolarization.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: search for GPNMB receptor candidates",
+          "PubMed: PKC delta selectivity profiles for existing kinase inhibitors"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Jen Margol",
+        "context": "Mentioned as finding similar microbiome observations",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Laurent Siefogel",
+        "context": "Mentioned as finding similar microbiome observations",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Where do SPP1 positive macrophages come from (bone marrow-derived vs tissue-resident)?",
+      "What is the relevant receptor for GPNMB?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PKC delta inhibitors",
+        "GPNMB inhibitors"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::pieper::1",
+    "talk_metadata": {
+      "speaker_name": "Daniel Pieper",
+      "institution_or_pharma": "Netherlands Cancer Institute",
+      "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+      "talk_title": "Peripheral Blood-Based Discovery Platform for Response versus Resistance",
+      "rhetorical_signals": [
+        "Speaker said: 'we're still not completely sure whether we're not looking at an artifact'",
+        "Speaker said: 'it is a bit too early to tell you, but I'm quite happy with the preliminary data'"
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TIL therapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Standard TIL therapy lacks purification of reactive T cells, leading to low response rates (approx 20% in melanoma).",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "around 20% of complete responders in melanoma TIL therapy trials",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of definitive evidence that heterotypic clusters in blood correlate with clinical response",
+        "Small sample size for cluster analysis (21 patients for identification, 11 for killing assays)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Developing a method to isolate tumor-reactive T cells via heterotypic cluster purification to improve TIL therapy efficacy.",
+        "transcript_evidence": "we try to purify the clusters and use only those tumor-reactive T cells to make a TIL product",
+        "crispro_angle": "Integrate cluster-based TCR sequencing with CrisPRO's biomarker platform to predict which patients will have sufficient cluster populations for this approach.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: check current TIL therapy protocols for purification steps"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting MGT2 or DEP5 to overcome T cell dysfunction and enhance tumor killing.",
+        "transcript_evidence": "if we knock out MGT2 in T cells, we see better tumor killing in vitro and in vivo",
+        "crispro_angle": "Screen for small molecule inhibitors of MGT2 or DEP5 using the computational spine to ensure minimal off-target T cell toxicity.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: MGT2 function in N-glycan pathway and T cell activation"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Can these clusters be reliably detected in peripheral blood?",
+      "Are the T cells in clusters better killers because of their state or because of the interaction itself?",
+      "Do the tumor cells in clusters possess specific markers (hypoxia/MHC high) that cause the interaction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MGT2 inhibitors",
+        "DEP5 inhibitors",
+        "TRAF2/RNF31 inhibitors"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::fong::1",
+    "talk_metadata": {
+      "speaker_name": "Larry Fong",
+      "institution_or_pharma": "UCSF / Fred Hutch",
+      "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+      "talk_title": "Myeloid-Mediated Immune Suppression in Prostate Cancer",
+      "rhetorical_signals": [
+        "Speaker said: 'I would argue that excluded phenotype probably reduces the potential clinical efficacy'",
+        "Speaker said: 'we don't have an answer at present for that question' (regarding epigenetic subtypes)"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Atezolizumab (and other checkpoint inhibitors in prostate cancer)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Presence of SPP1-high TAMs producing adenosine via CD73, and IL-1beta high neutrophils in bone metastases, creating an immunosuppressive environment.",
+        "unexplained_resistance_quote": "eight phase III clinical trials with different checkpoint inhibitors that failed to show any survival advantage",
+        "ghost_responder_admission": "clinical responses in about 20% of our patients with castration-resistant disease (when combined with zafirlukast)",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Sipuleucel-T",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "T cells are 'hung up' at the invasive margin (excluded phenotype), preventing infiltration into the tumor center.",
+        "unexplained_resistance_quote": "these T cells are actually hung up in what we called at the time the interface",
+        "ghost_responder_admission": "showed about a four-month overall survival advantage",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Lack of data on whether SPP1 macrophages are present in normal prostate tissue",
+        "Lack of correlation between epigenetic subtypes (neuroendocrine vs AR+) and myeloid composition"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combining A2A receptor antagonists (e.g., zafirlukast) with PD-1 blockade specifically in patients with high SPP1-high TAM signatures.",
+        "transcript_evidence": "responders at baseline had really high levels of these SPP1 TAMs, whereas the non-responders did not",
+        "crispro_angle": "Develop a predictive biomarker panel for SPP1-high TAMs to stratify patients for A2A receptor antagonist combinations.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: search for A2A receptor antagonists in prostate cancer"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting CXCR1/2 or IL-1beta to overcome neutrophil-mediated suppression in bone metastases.",
+        "transcript_evidence": "if we use a small molecule inhibitor of CXCR1 and 2, you can see enhancement of that anti-tumor response",
+        "crispro_angle": "Use the computational spine to identify the most potent CXCR2 inhibitors that minimize systemic neutrophil depletion while maximizing tumor-infiltrating neutrophil inhibition.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: CXCR2 inhibitors in bone metastasis"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Are SPP1 macrophages present in normal prostate tissue?",
+      "Do epigenetic subtypes of prostate cancer drive the different myeloid compositions across metastatic sites?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zafirlukast",
+        "CXCR1/2 inhibitors",
+        "IL-1beta receptor antibodies"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

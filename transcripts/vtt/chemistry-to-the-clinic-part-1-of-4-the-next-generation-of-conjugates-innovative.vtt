@@ -1,0 +1,6525 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:02.440
+Good morning, everyone. Welcome to this early morning
+
+2
+00:00:02.620 --> 00:00:06.060
+education session on the next generation of
+
+3
+00:00:06.160 --> 00:00:10.120
+conjugates. My name is Zhiqing Wang, and it's my pleasure to chair today's
+
+4
+00:00:10.220 --> 00:00:14.160
+session. As you can see, we have an outstanding lineup of speakers from both
+
+5
+00:00:14.200 --> 00:00:17.190
+academia and industry, so I look forward to the presentations and
+
+6
+00:00:17.200 --> 00:00:19.680
+discussions. Just trying to
+
+7
+00:00:20.800 --> 00:00:24.480
+hit a few housekeeping items. So we each try to
+
+8
+00:00:25.200 --> 00:00:27.020
+do a presentation for about 25 minutes.
+
+9
+00:00:27.600 --> 00:00:29.480
+There will be a Q&amp;A session follows.
+
+10
+00:00:29.720 --> 00:00:33.560
+So there will be three microphones in the aisle, so just go up to the microphone,
+
+11
+00:00:34.760 --> 00:00:36.900
+and we'll prompt you for the question.
+
+12
+00:00:37.380 --> 00:00:39.520
+We'll probably take turns between different microphones.
+
+13
+00:00:42.440 --> 00:00:43.600
+So just trying to set the stage.
+
+14
+00:00:44.740 --> 00:00:48.140
+While the remarkable progress in ADC development requires
+
+15
+00:00:48.220 --> 00:00:50.560
+optimization of all different parts of the molecules.
+
+16
+00:00:51.080 --> 00:00:53.440
+So today we'll be focusing on payload.
+
+17
+00:00:55.400 --> 00:00:58.000
+This was an excellent analysis provided by Dr.
+
+18
+00:00:58.220 --> 00:01:01.900
+Raphael Colombo at last year's AACR, and he will update on
+
+19
+00:01:01.980 --> 00:01:05.840
+this at tomorrow's plenary. As you can see here, despite the explosive
+
+20
+00:01:05.940 --> 00:01:07.740
+growth of ADCs going to the clinic,
+
+21
+00:01:08.570 --> 00:01:12.280
+the payload diversity, as can be seen by those different color schemes here, are
+
+22
+00:01:12.320 --> 00:01:16.100
+very limited, still restricted to a few well-known
+
+23
+00:01:16.140 --> 00:01:19.840
+payload classes, such as MTI or topoisomerase inhibitors.
+
+24
+00:01:20.490 --> 00:01:24.160
+So now with clinical resistance emerging, there's really a strong need to expand
+
+25
+00:01:24.180 --> 00:01:25.260
+our payload toolboxes.
+
+26
+00:01:26.120 --> 00:01:27.620
+So with that, I'm going to turn over to Dr.
+
+27
+00:01:27.660 --> 00:01:30.700
+Toomey to the podium for the first presentation of the session.
+
+28
+00:01:50.940 --> 00:01:53.500
+Okay. Well, hello, everyone. So my name is Nathan Toomey.
+
+29
+00:01:53.880 --> 00:01:54.060
+I
+
+30
+00:01:54.880 --> 00:01:58.820
+am a professor at Binghamton University, and I've been
+
+31
+00:01:58.840 --> 00:02:00.880
+in the ADC field for going on
+
+32
+00:02:02.000 --> 00:02:03.880
+15, 18 years now. So
+
+33
+00:02:04.720 --> 00:02:07.000
+it's been fun to watch the development in this field.
+
+34
+00:02:07.020 --> 00:02:07.200
+And
+
+35
+00:02:08.200 --> 00:02:12.000
+my background includes both some time in the pharmaceutical industry as well as
+
+36
+00:02:12.060 --> 00:02:15.660
+in academia. And I moved into the academic space about nine years
+
+37
+00:02:15.700 --> 00:02:19.320
+ago. And when I moved there, one of my goals in
+
+38
+00:02:19.400 --> 00:02:20.220
+moving from
+
+39
+00:02:21.120 --> 00:02:22.440
+more pharmaceutical
+
+40
+00:02:23.740 --> 00:02:27.620
+industry-related research into academia was
+
+41
+00:02:27.660 --> 00:02:31.560
+to try to take ADCs outside of oncology and to use
+
+42
+00:02:31.580 --> 00:02:32.920
+some non-conventional payloads.
+
+43
+00:02:32.950 --> 00:02:36.720
+And so when I entered the field, one of my real
+
+44
+00:02:37.660 --> 00:02:41.180
+motivations and one of the things I focused on was immune-modulating payloads.
+
+45
+00:02:41.200 --> 00:02:45.140
+And so both immune-stimulating as well as immune-suppressing antibody drug
+
+46
+00:02:45.220 --> 00:02:47.800
+conjugates. And so that's the focus of my research lab here at Binghamton
+
+47
+00:02:47.860 --> 00:02:51.520
+University, and I'm going to talk about just some thoughts that I have around
+
+48
+00:02:51.540 --> 00:02:55.510
+immune-stimulating ADCs, and in particular, a program that I've developed in
+
+49
+00:02:55.520 --> 00:02:59.300
+my own lab. But I'll also talk about the field broadly and what I think are both
+
+50
+00:02:59.340 --> 00:03:03.320
+some promises and some pitfalls in it. So here's some disclosure information.
+
+51
+00:03:03.380 --> 00:03:04.720
+Of course, I am at Binghamton University.
+
+52
+00:03:04.800 --> 00:03:07.720
+I do work with a number of pharmaceutical companies and biotech companies as we
+
+53
+00:03:07.760 --> 00:03:09.360
+collaborate on various projects.
+
+54
+00:03:09.820 --> 00:03:13.500
+So the initiation of this project, of course, like
+
+55
+00:03:13.560 --> 00:03:17.080
+many of these types of efforts, began with the success of
+
+56
+00:03:17.140 --> 00:03:19.340
+checkpoint inhibitors that we're all aware of.
+
+57
+00:03:19.860 --> 00:03:23.470
+So checkpoint inhibitors, of course, we know are widely used,
+
+58
+00:03:24.200 --> 00:03:28.140
+but they have significant limitations in that very few patients respond
+
+59
+00:03:28.200 --> 00:03:30.800
+to them, but those that respond tend to respond very well.
+
+60
+00:03:31.180 --> 00:03:33.060
+And so one of our thoughts,
+
+61
+00:03:34.260 --> 00:03:38.100
+we along with many others, were thinking, okay, is it enough to just take the
+
+62
+00:03:38.180 --> 00:03:41.000
+brakes off of the immune system? Can we tap on the gas?
+
+63
+00:03:41.280 --> 00:03:43.340
+Carefully, of course, but tap on the gas.
+
+64
+00:03:43.380 --> 00:03:46.900
+And so that's kind of the advent of the idea of immune-stimulating ADCs.
+
+65
+00:03:47.380 --> 00:03:51.220
+And so the focal point of these has largely been on a
+
+66
+00:03:52.120 --> 00:03:55.800
+variety of innate immune receptors, so in particular toll-like
+
+67
+00:03:55.840 --> 00:03:59.800
+receptors, as well as STING. And
+
+68
+00:04:00.220 --> 00:04:04.140
+these innate immune receptors are involved in immune surveillance and
+
+69
+00:04:04.720 --> 00:04:06.180
+typically recognize
+
+70
+00:04:08.080 --> 00:04:11.940
+conserved components on bacterial and
+
+71
+00:04:12.160 --> 00:04:16.000
+viral pathogens. In particular, TLR3, 7, 8, 9,
+
+72
+00:04:16.661 --> 00:04:20.421
+and STING recognize various nucleotides, RNA,
+
+73
+00:04:20.519 --> 00:04:24.000
+DNA, and so on, whereas TLR1,
+
+74
+00:04:24.700 --> 00:04:28.660
+2, 4, 5, and 6 are typically recognizing lipopeptides associated
+
+75
+00:04:28.700 --> 00:04:29.640
+with bacterial cell
+
+76
+00:04:30.840 --> 00:04:31.300
+membranes.
+
+77
+00:04:32.300 --> 00:04:32.520
+So
+
+78
+00:04:33.340 --> 00:04:34.120
+TLRs,
+
+79
+00:04:35.980 --> 00:04:39.820
+the TLR7 in particular, where I'll be focusing, is an endosomal
+
+80
+00:04:40.720 --> 00:04:44.200
+receptor, and so it is
+
+81
+00:04:44.260 --> 00:04:48.100
+unlike many of the targets that we go after with traditional ADCs.
+
+82
+00:04:48.460 --> 00:04:52.240
+These TLRs are restricted. The expression is typically
+
+83
+00:04:52.260 --> 00:04:55.920
+restricted to immune cells and often to particular subsets of immune
+
+84
+00:04:56.000 --> 00:04:59.860
+cells. So TLR7 and 8, as you see here, has
+
+85
+00:05:00.240 --> 00:05:03.180
+expression in monocytes and B cells, whereas
+
+86
+00:05:03.240 --> 00:05:06.740
+TLR8 largely on monocytes and as well as
+
+87
+00:05:06.780 --> 00:05:07.360
+neutrophils.
+
+88
+00:05:08.220 --> 00:05:10.560
+STING has broad immune expression.
+
+89
+00:05:10.620 --> 00:05:14.170
+If you look at other TLR, TLR9 and TLR7 have very similar
+
+90
+00:05:14.180 --> 00:05:15.660
+expression profiles.
+
+91
+00:05:16.540 --> 00:05:18.890
+So the key point here is that
+
+92
+00:05:19.800 --> 00:05:23.380
+since the target of these payloads is in immune cells, okay, how exactly are we
+
+93
+00:05:23.420 --> 00:05:25.320
+getting the payload to these immune cells?
+
+94
+00:05:25.760 --> 00:05:29.700
+And the traditional approach is outlined here, where we
+
+95
+00:05:29.740 --> 00:05:31.360
+take a tumor-targeting antibody
+
+96
+00:05:32.400 --> 00:05:36.320
+with the TLR agonist attached to it, and this, of
+
+97
+00:05:36.360 --> 00:05:37.780
+course, opsonizes our
+
+98
+00:05:39.180 --> 00:05:42.469
+cancer cells, and then it gets taken up into tumor-associated
+
+99
+00:05:42.540 --> 00:05:45.720
+antigen-presenting cells via an
+
+100
+00:05:45.800 --> 00:05:49.300
+ADCP sort of mechanism that's driven by Fc gamma
+
+101
+00:05:49.340 --> 00:05:53.240
+receptors. And so typically, Fc gamma activity has
+
+102
+00:05:53.300 --> 00:05:56.920
+been required and is a key feature and is a key driving
+
+103
+00:05:57.020 --> 00:06:00.980
+factor with traditional immune-stimulating antibody conjugates or
+
+104
+00:06:01.060 --> 00:06:04.990
+ISACs.Upon internalization into the APC, of
+
+105
+00:06:05.020 --> 00:06:07.840
+course, the ADC gets degraded along with the tumor
+
+106
+00:06:08.800 --> 00:06:12.410
+cell itself, releasing the agonist and resulting in
+
+107
+00:06:12.700 --> 00:06:16.550
+the release of cytokines, cell proliferation, and T cell
+
+108
+00:06:16.640 --> 00:06:20.500
+stimulation, ultimately converting the idea, converting
+
+109
+00:06:20.620 --> 00:06:23.260
+a cold tumor to a hot tumor, essentially.
+
+110
+00:06:24.280 --> 00:06:28.170
+As you look at the key differences between traditional cytotoxic ADCs and
+
+111
+00:06:28.240 --> 00:06:31.360
+immune-stimulating ADCs, I think it's helpful to take a step back.
+
+112
+00:06:31.560 --> 00:06:33.460
+Some of these are things that I've learned the hard way.
+
+113
+00:06:34.060 --> 00:06:37.600
+But as you approach a program, there are key differences here, and in
+
+114
+00:06:37.620 --> 00:06:41.250
+particular, things that make the development of some of these immune-stimulated
+
+115
+00:06:41.250 --> 00:06:45.140
+ADCs approaches difficult are seen here in the lower left, and that where
+
+116
+00:06:45.180 --> 00:06:48.440
+they really differ from the development of traditional
+
+117
+00:06:49.740 --> 00:06:53.660
+cytotoxic ADCs. And so for in vitro assays, for example,
+
+118
+00:06:53.740 --> 00:06:55.740
+we can't do traditional cytotoxic assays.
+
+119
+00:06:55.800 --> 00:06:59.660
+We typically rely on co-culture assays to
+
+120
+00:07:00.360 --> 00:07:04.080
+advance compounds through triaging compounds and demonstrating
+
+121
+00:07:04.520 --> 00:07:05.760
+efficacy and so on in
+
+122
+00:07:07.300 --> 00:07:09.600
+an in vitro setting. In vivo models,
+
+123
+00:07:10.440 --> 00:07:13.980
+again, traditional ADCs rely on a xenograft sort of study with an
+
+124
+00:07:14.000 --> 00:07:17.700
+immunocompromised mouse. But of course, if we're going after the immune system,
+
+125
+00:07:18.440 --> 00:07:22.200
+trying to activate various immune pathways, that's not the best system to
+
+126
+00:07:22.220 --> 00:07:25.180
+demonstrate efficacy, although it does work, as I'll show you in a minute.
+
+127
+00:07:25.240 --> 00:07:28.760
+But syngeneic tumors are much more common, which of course introduces its
+
+128
+00:07:28.820 --> 00:07:30.760
+own complexities.
+
+129
+00:07:31.580 --> 00:07:35.520
+And often this ends up requiring a
+
+130
+00:07:35.940 --> 00:07:39.800
+surrogate antibody. And so the idea that rather than a human IgG
+
+131
+00:07:39.860 --> 00:07:41.850
+that we can typically dose into our
+
+132
+00:07:43.280 --> 00:07:47.080
+xenograft study, we have to go in with a mouse IgG that targets the
+
+133
+00:07:47.160 --> 00:07:49.920
+antigen of interest, which is of course problematic.
+
+134
+00:07:50.320 --> 00:07:54.260
+It adds some complexity to this. So that of course stems from ADA
+
+135
+00:07:54.320 --> 00:07:58.160
+concerns, which is a problem both in preclinical models and as we'll see, a
+
+136
+00:07:58.180 --> 00:08:00.300
+problem has been observed in the clinic as well.
+
+137
+00:08:01.120 --> 00:08:05.020
+But one of the things that's quite different, the types of toxicity that we
+
+138
+00:08:05.080 --> 00:08:08.080
+observe, very different. So we're typically looking at
+
+139
+00:08:08.180 --> 00:08:11.780
+CRS-related toxicities with immune-stimulating ADCs,
+
+140
+00:08:12.220 --> 00:08:12.929
+which has
+
+141
+00:08:14.240 --> 00:08:17.940
+some interesting possibilities that I'll finish this presentation with.
+
+142
+00:08:18.300 --> 00:08:21.550
+So there have been a number of these ISACs.
+
+143
+00:08:21.620 --> 00:08:25.190
+I'm going to call these first-generation ISACs that have gone into the clinic from
+
+144
+00:08:25.200 --> 00:08:28.920
+Bolt and Novartis, Silverback, Mersana, Takeda.
+
+145
+00:08:31.260 --> 00:08:35.010
+With the exception of the one from Mersana, these have dropped out of the
+
+146
+00:08:35.020 --> 00:08:35.360
+clinic
+
+147
+00:08:36.560 --> 00:08:40.300
+due to various reasons, many of the reasons associated with
+
+148
+00:08:40.560 --> 00:08:44.220
+cytokine release syndrome, as well as anti-drug
+
+149
+00:08:44.420 --> 00:08:48.260
+antibodies or ADA formation. Most of these, as you see here,
+
+150
+00:08:48.480 --> 00:08:52.380
+do employ non-cleavable linkers, and they employ Fc gamma
+
+151
+00:08:52.700 --> 00:08:55.720
+active ADC or antibody backbones.
+
+152
+00:08:56.200 --> 00:08:59.860
+This non-cleavable linker stems from the mechanism that I talked about earlier,
+
+153
+00:09:00.360 --> 00:09:03.400
+where the uptake involves Fc
+
+154
+00:09:03.960 --> 00:09:07.350
+gamma-mediated phagocytosis, so then you have
+
+155
+00:09:08.000 --> 00:09:11.080
+release of the payload right directly within the APC.
+
+156
+00:09:11.570 --> 00:09:15.400
+And so the non-cleavable linker actually helps it stay within the APC and not
+
+157
+00:09:15.440 --> 00:09:19.400
+diffuse into nearby tissues. That's been a mainstay of most of the
+
+158
+00:09:19.440 --> 00:09:21.120
+early-generation ISAC designs.
+
+159
+00:09:22.860 --> 00:09:22.920
+So
+
+160
+00:09:23.980 --> 00:09:27.500
+given that these first-generation designs have been
+
+161
+00:09:27.520 --> 00:09:28.190
+problematic,
+
+162
+00:09:29.100 --> 00:09:32.160
+what are some paths forward here? And these are my own thoughts here, and I know
+
+163
+00:09:32.340 --> 00:09:35.950
+not everybody's going to agree with these, but I think my own thought is
+
+164
+00:09:36.060 --> 00:09:40.000
+STING has some problems with it in that it has broad expression both in
+
+165
+00:09:40.020 --> 00:09:43.760
+tumor and non-tumor tissue. So getting, as we all know
+
+166
+00:09:44.740 --> 00:09:48.700
+in the ADC field, the amount of ADC that's actually delivered to the tumor
+
+167
+00:09:48.760 --> 00:09:51.230
+is really quite small. Most of it
+
+168
+00:09:52.280 --> 00:09:54.080
+actually ends up in non-tumor tissue.
+
+169
+00:09:54.120 --> 00:09:58.090
+And so the idea that STING is present in virtually all nucleated cells
+
+170
+00:09:58.100 --> 00:10:00.600
+in the body may be problematic from that perspective.
+
+171
+00:10:01.240 --> 00:10:05.040
+I think some of the experience from these early-generation ADCs point to the idea
+
+172
+00:10:05.060 --> 00:10:05.840
+that maybe we can
+
+173
+00:10:09.120 --> 00:10:12.780
+improve some safety through ablation of Fc gamma activity, and that's going to
+
+174
+00:10:12.820 --> 00:10:15.620
+require tweaking the linker, as I'll show you in a second here.
+
+175
+00:10:15.660 --> 00:10:19.240
+So if we can employ cleavable linkers and highly
+
+176
+00:10:19.360 --> 00:10:23.000
+permeable payloads, we can employ Fc silent
+
+177
+00:10:23.779 --> 00:10:27.360
+antibody delivery vehicles, as I'll get to in the next slide
+
+178
+00:10:27.380 --> 00:10:30.920
+here. And then TLR8, I think that given its high
+
+179
+00:10:30.980 --> 00:10:33.620
+expression and broad expression in
+
+180
+00:10:34.320 --> 00:10:38.280
+macrophages as opposed to TLR7, may present some problems
+
+181
+00:10:38.300 --> 00:10:41.330
+and may be behind some of the difficulties that Silverback faced with their
+
+182
+00:10:41.440 --> 00:10:41.860
+program.
+
+183
+00:10:42.780 --> 00:10:46.540
+I'm excited about some new pattern recognition receptors, TLR9,
+
+184
+00:10:46.620 --> 00:10:49.170
+TLR3, RIG-I, that are in earlier stage development.
+
+185
+00:10:49.220 --> 00:10:52.000
+TLR9 actually in the clinic, as I'll show you in a minute.
+
+186
+00:10:52.580 --> 00:10:55.740
+Okay, so the focus of my lab has been on TLR7
+
+187
+00:10:55.800 --> 00:10:57.480
+agonists. And so
+
+188
+00:10:58.660 --> 00:11:02.100
+one of the things I like about TLR7 is the fact that there's some
+
+189
+00:11:02.740 --> 00:11:05.200
+clinical validation associated with this target,
+
+190
+00:11:05.600 --> 00:11:09.400
+the TLR7 agonist imiquimod is
+
+191
+00:11:09.480 --> 00:11:11.800
+FDA approved for topical applications.
+
+192
+00:11:12.300 --> 00:11:15.770
+It does have systemic risk of CRS when dosed
+
+193
+00:11:15.800 --> 00:11:19.720
+systemically, hence the ADC or ISAC sort
+
+194
+00:11:19.740 --> 00:11:20.800
+of delivery approach.
+
+195
+00:11:21.680 --> 00:11:24.940
+It is clinically validated as a vaccine adjuvant.
+
+196
+00:11:25.020 --> 00:11:26.560
+It's used for basal cell carcinoma.
+
+197
+00:11:26.600 --> 00:11:30.400
+It has potent anti-tumor activity in various animal models, and it potently
+
+198
+00:11:30.420 --> 00:11:34.340
+induces the release of interferon alpha, which interferon alpha, of course, we
+
+199
+00:11:34.360 --> 00:11:36.640
+know has wide anti-tumor activity.
+
+200
+00:11:36.720 --> 00:11:40.260
+So together, I think the TLR7
+
+201
+00:11:40.420 --> 00:11:44.360
+agonists do have some strong validation
+
+202
+00:11:44.400 --> 00:11:46.720
+in terms of their use in ISAC approaches.
+
+203
+00:11:46.780 --> 00:11:50.480
+So our approach has been to take a twist off of
+
+204
+00:11:50.540 --> 00:11:54.500
+the Novartis Silverback Bolt approach, which relies on that
+
+205
+00:11:54.600 --> 00:11:58.380
+Fc gamma-mediated uptake, and instead rely on indirect
+
+206
+00:11:58.660 --> 00:12:02.460
+delivery of the TLR agonist to the tumor microenvironment through the use of a
+
+207
+00:12:02.520 --> 00:12:06.240
+highly permeable TLR7 agonist combined with a
+
+208
+00:12:07.920 --> 00:12:11.440
+cleavable linker. And so in other words, using classical
+
+209
+00:12:11.460 --> 00:12:15.370
+bystander activity to get into the tumor as opposed to
+
+210
+00:12:15.400 --> 00:12:16.420
+the indirect
+
+211
+00:12:17.080 --> 00:12:19.480
+ADCP-mediated
+
+212
+00:12:19.540 --> 00:12:21.748
+uptake.So the
+
+213
+00:12:22.748 --> 00:12:24.368
+agonist that we have employed, we
+
+214
+00:12:25.308 --> 00:12:27.628
+call E104. It's a twist on a
+
+215
+00:12:29.468 --> 00:12:31.368
+prior agonist that was purported in literature.
+
+216
+00:12:31.388 --> 00:12:34.208
+We tweaked it a little bit to allow for good
+
+217
+00:12:34.568 --> 00:12:35.408
+conjugation,
+
+218
+00:12:36.368 --> 00:12:39.128
+some selectivity, and in particular, permeability.
+
+219
+00:12:40.068 --> 00:12:41.248
+So this agonist,
+
+220
+00:12:42.528 --> 00:12:45.008
+it's a low nanomolar agonist against TLR7.
+
+221
+00:12:45.648 --> 00:12:48.148
+It has virtually no activity against TLR8.
+
+222
+00:12:48.688 --> 00:12:52.228
+It's active against both the human and the mouse TLR7 receptor,
+
+223
+00:12:53.228 --> 00:12:57.068
+and at low nanomolar levels, induces cytokine release in PBMC,
+
+224
+00:12:57.208 --> 00:13:00.898
+upregulation of CD80 and 86 on APCs,
+
+225
+00:13:01.288 --> 00:13:04.068
+has high permeability, as I mentioned, and it has rapid liver metabolism.
+
+226
+00:13:04.148 --> 00:13:07.088
+So in our mind, this is a good payload for
+
+227
+00:13:07.768 --> 00:13:11.508
+development of an ISIC approach. And so our design is
+
+228
+00:13:11.518 --> 00:13:12.488
+shown here.
+
+229
+00:13:13.388 --> 00:13:16.097
+The cases I'm going to show you over the next few slides,
+
+230
+00:13:16.468 --> 00:13:20.028
+I'll talk about both Trop-2 targeted as well as
+
+231
+00:13:20.088 --> 00:13:21.648
+HER2 targeted ADCs.
+
+232
+00:13:22.268 --> 00:13:25.887
+We link the E104
+
+233
+00:13:26.088 --> 00:13:28.408
+payload via a legumain cleavable linker.
+
+234
+00:13:28.488 --> 00:13:30.968
+The legumain cleavable linker is shown in yellow.
+
+235
+00:13:31.008 --> 00:13:32.888
+That's been something that my lab has focused on.
+
+236
+00:13:32.928 --> 00:13:36.108
+It's not the focal point of this discussion, but we've developed these legumain
+
+237
+00:13:36.148 --> 00:13:39.868
+cleavable linkers for ADCs, delivering a variety of payloads over the number of
+
+238
+00:13:39.888 --> 00:13:43.508
+years. But the thing I like about these legumain cleavable linkers,
+
+239
+00:13:43.888 --> 00:13:46.888
+two things. One is legumain
+
+240
+00:13:47.268 --> 00:13:50.408
+expression is upregulated in many solid tumors.
+
+241
+00:13:50.438 --> 00:13:54.208
+So you have very robust legumain activity in most solid
+
+242
+00:13:54.248 --> 00:13:57.388
+tumor tissues. And the
+
+243
+00:13:57.748 --> 00:14:01.648
+peptide that is relied on for cleavage, again, the one in yellow there,
+
+244
+00:14:02.108 --> 00:14:06.088
+is highly, highly polar. And so this kind of negates the need
+
+245
+00:14:06.208 --> 00:14:08.628
+for some of the fancier approaches with PEG and
+
+246
+00:14:09.668 --> 00:14:13.438
+phosphate groups and other tricks that people play in order
+
+247
+00:14:13.508 --> 00:14:15.878
+to improve the polarity of linkers.
+
+248
+00:14:15.908 --> 00:14:18.738
+The polarity is already baked into this linker. So we really like this.
+
+249
+00:14:18.768 --> 00:14:22.748
+We've gone in with largely DAR8 ADCs, which will have
+
+250
+00:14:22.768 --> 00:14:25.348
+some limitations, as we'll see. But anyway, this is our ADC design.
+
+251
+00:14:25.368 --> 00:14:27.628
+So I'll kind of walk you through a few things here.
+
+252
+00:14:28.868 --> 00:14:32.748
+Number one, this is in the context of HER2.
+
+253
+00:14:33.108 --> 00:14:33.368
+This is
+
+254
+00:14:34.368 --> 00:14:36.248
+some data from a paper we published last year.
+
+255
+00:14:36.768 --> 00:14:37.028
+So
+
+256
+00:14:37.968 --> 00:14:41.868
+we're going after SKBr3s, which are high HER2-expressing cells, and
+
+257
+00:14:42.068 --> 00:14:45.928
+looking for immune activation of co-cultured
+
+258
+00:14:45.988 --> 00:14:48.708
+murine macrophages, and we're looking for that via
+
+259
+00:14:49.308 --> 00:14:53.208
+both NF-kappa B as well as cytokine expression.
+
+260
+00:14:53.248 --> 00:14:53.688
+And again,
+
+261
+00:14:54.788 --> 00:14:58.388
+I just want to emphasize here that E104 itself has no impact on the
+
+262
+00:14:58.448 --> 00:15:01.948
+SKBr3 cells itself. So the payload has no toxicity, no
+
+263
+00:15:02.388 --> 00:15:06.348
+meaningful impact as far as we can observe on the
+
+264
+00:15:06.428 --> 00:15:10.088
+SKBr3 cells. What it's doing is it's releasing this payload to the
+
+265
+00:15:10.148 --> 00:15:13.608
+nearby APCs and activating those, and as you can see, we
+
+266
+00:15:13.668 --> 00:15:15.368
+see robust-- Whoops,
+
+267
+00:15:16.368 --> 00:15:20.328
+back up here. Robust activation of the NF-kappa B pathway in the
+
+268
+00:15:20.368 --> 00:15:23.868
+macrophages. Now, what I'm showing here is green versus blue.
+
+269
+00:15:23.908 --> 00:15:27.798
+Our green here is our traditional ISIC design, so this is
+
+270
+00:15:27.888 --> 00:15:31.818
+a non-cleavable linker with an Fc active antibody
+
+271
+00:15:31.908 --> 00:15:35.008
+backbone. The blue is our kind of
+
+272
+00:15:36.008 --> 00:15:39.468
+re-engineered or reimagined version of that, where we incorporate the cleavable
+
+273
+00:15:39.508 --> 00:15:43.468
+linker as well as Fc ablation. And so we see improved
+
+274
+00:15:43.548 --> 00:15:47.148
+specificity in terms of our targeted versus isotype control, so
+
+275
+00:15:47.448 --> 00:15:51.288
+very potent activity in terms of activating the tumor-associated macrophages.
+
+276
+00:15:51.528 --> 00:15:55.068
+But importantly, we have in a xenograft model here,
+
+277
+00:15:55.788 --> 00:15:59.668
+the HCC1954, we have improved efficacy, so it's a
+
+278
+00:15:59.728 --> 00:16:03.408
+matched dose. This is 10 MPK Q4d times three.
+
+279
+00:16:03.888 --> 00:16:06.848
+So you see the improved efficacy, but one additional thing I'm going to point out
+
+280
+00:16:06.888 --> 00:16:10.148
+here is the isotype control data right here.
+
+281
+00:16:10.188 --> 00:16:14.048
+So if we look at our traditional design that employs the Fc active
+
+282
+00:16:14.268 --> 00:16:15.008
+antibodies,
+
+283
+00:16:15.928 --> 00:16:19.888
+you see that the isotype control has some
+
+284
+00:16:19.948 --> 00:16:21.508
+meaningful tumor
+
+285
+00:16:22.428 --> 00:16:23.228
+growth delay here.
+
+286
+00:16:24.588 --> 00:16:28.208
+And we believe that this is driven by the Fc gamma
+
+287
+00:16:28.268 --> 00:16:32.188
+activity. So if we look at the gray line here, in our Fc ablated
+
+288
+00:16:33.048 --> 00:16:35.808
+ADC, we do not see any tumor regression at the same dose.
+
+289
+00:16:36.128 --> 00:16:36.228
+So,
+
+290
+00:16:37.047 --> 00:16:39.107
+this is also seen in
+
+291
+00:16:40.167 --> 00:16:44.048
+what I'm showing over here on the right, where we take these ADCs and we incubate
+
+292
+00:16:44.068 --> 00:16:48.018
+them in human PBMCs overnight. And what we're looking for is the release of various
+
+293
+00:16:48.028 --> 00:16:50.408
+cytokines. So I'm showing here TNF alpha and IL-6.
+
+294
+00:16:50.888 --> 00:16:54.788
+And what we see is in our traditional ISIC design in green, we
+
+295
+00:16:54.848 --> 00:16:58.828
+see a robust release of TNF alpha and IL-6. Again, no tumor here.
+
+296
+00:16:59.188 --> 00:17:03.148
+So this would have to be mediated by some
+
+297
+00:17:03.168 --> 00:17:05.969
+sort of nonspecific uptake, and I'm going to hypothesize that it's Fc
+
+298
+00:17:06.028 --> 00:17:09.348
+gamma-mediated uptake. So in our Fc silent version of this in
+
+299
+00:17:09.368 --> 00:17:12.788
+blue, we don't see any meaningful cytokine release.
+
+300
+00:17:12.808 --> 00:17:16.628
+We take this into a multi-dose study in an immune competent
+
+301
+00:17:16.748 --> 00:17:20.548
+mouse, taking blood samples, looking for
+
+302
+00:17:20.628 --> 00:17:23.828
+PK, but also looking for signs of efficacy.
+
+303
+00:17:24.168 --> 00:17:28.098
+And after our second dose, we see some significant toxicity,
+
+304
+00:17:28.488 --> 00:17:32.308
+perhaps ADA-mediated toxicities associated with our
+
+305
+00:17:32.348 --> 00:17:34.228
+traditional Fc
+
+306
+00:17:35.128 --> 00:17:38.588
+active ADCs, and this is just a few different permutations of this.
+
+307
+00:17:38.848 --> 00:17:42.608
+In a few different permutations of our Fc silent ADCs, we do not
+
+308
+00:17:42.748 --> 00:17:44.688
+see any meaningful activity there.
+
+309
+00:17:44.788 --> 00:17:48.060
+So we were encouraged by that.We take this
+
+310
+00:17:48.100 --> 00:17:51.920
+from HER2 and now applying this to Trop-2.
+
+311
+00:17:51.980 --> 00:17:55.940
+So exactly the same chemistry. Now we're going to apply this to a Trop-2 antibody,
+
+312
+00:17:56.000 --> 00:17:59.650
+so just sacituzumab. And what we're doing is taking CF PAC cells,
+
+313
+00:17:59.720 --> 00:18:03.439
+co-culturing those with human PBMC-derived
+
+314
+00:18:03.580 --> 00:18:07.460
+M2 macrophages, and we see a
+
+315
+00:18:07.580 --> 00:18:11.520
+nice expression of TNF alpha in the case of our Trop-2
+
+316
+00:18:11.560 --> 00:18:15.400
+targeted ADC here in red, our isotype targeted, and our naked
+
+317
+00:18:15.440 --> 00:18:18.400
+antibodies, we do not see the same cytokine release.
+
+318
+00:18:19.360 --> 00:18:23.140
+When we take these BXPC-3 cells, again, Trop-2
+
+319
+00:18:23.160 --> 00:18:26.850
+positive, co-culture those with bone marrow-derived macrophages,
+
+320
+00:18:27.480 --> 00:18:30.880
+M2 bone marrow-derived macrophages, you see, again, a nice IL-6 release.
+
+321
+00:18:31.480 --> 00:18:34.480
+Whereas in our case for isotype controls, naked antibodies, we do not see that.
+
+322
+00:18:34.800 --> 00:18:38.660
+And then finally, we did take this into a
+
+323
+00:18:39.060 --> 00:18:42.320
+xenograft model. I'm not going to show that result here just for the sake of time,
+
+324
+00:18:42.360 --> 00:18:43.200
+but I'll show you this
+
+325
+00:18:44.200 --> 00:18:47.680
+syngeneic model using Trop-2 expressing MC38 cells.
+
+326
+00:18:47.720 --> 00:18:50.310
+This is now in C57 mice, so again, immune competent mice.
+
+327
+00:18:50.640 --> 00:18:52.619
+We can see we can lower the dose dramatically.
+
+328
+00:18:52.700 --> 00:18:56.440
+So unlike the 10 MPK that was required for efficacy in the previous
+
+329
+00:18:56.460 --> 00:19:00.440
+study that I showed you, now in immune competent mouse, as you might expect, we
+
+330
+00:19:00.480 --> 00:19:00.780
+can see
+
+331
+00:19:01.660 --> 00:19:05.220
+efficacy at much lower doses at around 3 MPK and Q4D times three.
+
+332
+00:19:05.240 --> 00:19:09.190
+And encouragingly, once again, our isotype control and
+
+333
+00:19:09.300 --> 00:19:11.840
+naked antibody do not elicit any activity in this model.
+
+334
+00:19:12.880 --> 00:19:16.800
+So when we take blood samples from these
+
+335
+00:19:16.880 --> 00:19:17.990
+mice after-- If
+
+336
+00:19:19.200 --> 00:19:19.750
+I go back
+
+337
+00:19:20.880 --> 00:19:24.400
+here, we take blood samples basically four days after the last dose.
+
+338
+00:19:24.430 --> 00:19:28.260
+So here around day 12 or so, we're taking blood samples from these mice,
+
+339
+00:19:28.560 --> 00:19:32.460
+and what we're doing is we're doing an ELISA where we capture with
+
+340
+00:19:32.800 --> 00:19:36.020
+a immobilized Trop-2 protein, and then
+
+341
+00:19:37.500 --> 00:19:41.440
+doing our detection with an anti-mouse
+
+342
+00:19:41.720 --> 00:19:42.280
+Fc.
+
+343
+00:19:43.880 --> 00:19:47.540
+And so we're basically looking for mouse anti-human Trop-2 antibodies.
+
+344
+00:19:47.580 --> 00:19:50.640
+So that would be indicative of an adaptive immune response.
+
+345
+00:19:50.680 --> 00:19:54.480
+We can see four days after the last dose of Isaac, we see a nice
+
+346
+00:19:54.520 --> 00:19:58.209
+response. So we see a formation of mouse anti-human Trop-2 antibodies.
+
+347
+00:19:58.750 --> 00:20:02.020
+That persists for at least one month after that final
+
+348
+00:20:02.040 --> 00:20:05.790
+dose. Whereas when we look at just our naked
+
+349
+00:20:05.800 --> 00:20:09.580
+antibody treated control, we see a much lower or basically background
+
+350
+00:20:09.640 --> 00:20:12.060
+level response, same thing as PBS here.
+
+351
+00:20:12.960 --> 00:20:16.709
+Once again here in a repeat dose study in the C57 mice,
+
+352
+00:20:17.020 --> 00:20:20.940
+we're taking our Fc ablated Isaac versus our traditional Fc active Isaac,
+
+353
+00:20:21.440 --> 00:20:21.709
+and
+
+354
+00:20:23.060 --> 00:20:26.560
+we can tolerate up to 10 MPK. We actually didn't go any higher than this.
+
+355
+00:20:26.860 --> 00:20:30.680
+10 MPK for three doses. We don't see any meaningful activity on body
+
+356
+00:20:30.760 --> 00:20:33.340
+weight, movement, lethargy, that sort of thing.
+
+357
+00:20:33.660 --> 00:20:37.500
+We didn't do any sort of necroscopy here, but for what it's worth, in
+
+358
+00:20:37.540 --> 00:20:39.720
+life findings are very, very nice here.
+
+359
+00:20:40.080 --> 00:20:42.030
+Whereas, again, the traditional
+
+360
+00:20:43.520 --> 00:20:46.880
+design, even after the first dose at 3 MPK, we
+
+361
+00:20:46.920 --> 00:20:49.500
+start seeing some significant signs
+
+362
+00:20:49.580 --> 00:20:52.980
+in terms of
+
+363
+00:20:53.420 --> 00:20:55.260
+movement and lethargy and so on.
+
+364
+00:20:56.500 --> 00:21:00.480
+Okay. So, in terms of the payload, one
+
+365
+00:21:00.520 --> 00:21:04.100
+of the things that we want to see here is that the payload gets into our
+
+366
+00:21:04.120 --> 00:21:07.920
+tissues and gets out and then gets cleared very quickly.
+
+367
+00:21:07.950 --> 00:21:11.860
+And so we have not done PK on the payload itself yet, but I'm just comparing
+
+368
+00:21:11.900 --> 00:21:15.600
+here what Risiquimod looks like. So this is a very closely related
+
+369
+00:21:15.640 --> 00:21:16.180
+molecule,
+
+370
+00:21:17.200 --> 00:21:18.920
+and it gets cleared within
+
+371
+00:21:19.820 --> 00:21:22.510
+an hour or so. So it has very rapid
+
+372
+00:21:23.520 --> 00:21:27.480
+clearance. Our molecule has increased liver microsome
+
+373
+00:21:27.520 --> 00:21:29.660
+clearance as compared to Risiquimod.
+
+374
+00:21:29.720 --> 00:21:33.060
+So we believe it's going to have this rapid clearance similar to Risiquimod,
+
+375
+00:21:33.500 --> 00:21:35.800
+perhaps even more rapid clearance, which is kind of what we want to see.
+
+376
+00:21:36.860 --> 00:21:38.920
+Now, I will say that the ADC itself
+
+377
+00:21:39.820 --> 00:21:43.740
+is cleared more rapidly, and so I'm showing over here as compared to matched
+
+378
+00:21:43.820 --> 00:21:47.660
+dose of naked antibody versus our Isaac. Isaac is cleared more rapidly.
+
+379
+00:21:47.690 --> 00:21:50.660
+So we still have some room for optimization here.
+
+380
+00:21:50.700 --> 00:21:54.600
+These have been DAR8 ADCs, so we need to go in with a lower DAR, maybe some
+
+381
+00:21:54.620 --> 00:21:56.480
+site-specific conjugations, some things like that.
+
+382
+00:21:56.540 --> 00:21:56.570
+So
+
+383
+00:21:57.460 --> 00:22:01.360
+this is not a finished system yet, but we're working on it.
+
+384
+00:22:03.180 --> 00:22:07.060
+And then what I'm going to finish up with here is kind of where we're going next
+
+385
+00:22:07.120 --> 00:22:11.000
+with this. And I'm sure at this conference you'll see a number of dual payload
+
+386
+00:22:11.060 --> 00:22:11.970
+ADC talks. It's
+
+387
+00:22:12.860 --> 00:22:16.570
+kind of funny, I've been in the ADC field long enough that just
+
+388
+00:22:16.840 --> 00:22:17.220
+five,
+
+389
+00:22:18.160 --> 00:22:21.580
+eight years ago, people were scoffing and laughing at the idea of dual payload
+
+390
+00:22:21.640 --> 00:22:24.180
+ADCs. Now there's loads of people pursuing it.
+
+391
+00:22:24.740 --> 00:22:28.460
+Now, one of the things that I have always been concerned about when it comes to
+
+392
+00:22:28.480 --> 00:22:32.010
+dual payload ADCs is overlapping toxicities or synergistic
+
+393
+00:22:32.010 --> 00:22:35.420
+toxicities, because we know that many of the cytotoxic payloads out
+
+394
+00:22:35.460 --> 00:22:36.900
+there have similar
+
+395
+00:22:38.220 --> 00:22:42.100
+dose limiting toxicities that could exacerbate one another
+
+396
+00:22:42.160 --> 00:22:44.520
+if dosed together in the same molecule.
+
+397
+00:22:45.020 --> 00:22:48.460
+One of the things I particularly like about these immune stimulating
+
+398
+00:22:48.500 --> 00:22:51.900
+ADCs is that the types of toxicity observed are
+
+399
+00:22:51.940 --> 00:22:52.750
+completely
+
+400
+00:22:53.620 --> 00:22:56.410
+different than traditional cytotoxic ADCs.
+
+401
+00:22:57.280 --> 00:23:01.020
+Which means, of course, we're going to run into a dose limiting toxicity, but it
+
+402
+00:23:01.080 --> 00:23:02.400
+may not be synergistic. So
+
+403
+00:23:06.800 --> 00:23:09.480
+the toxicities will not necessarily be building on one another.
+
+404
+00:23:09.600 --> 00:23:13.500
+So the idea of a dual payload ADC that delivers
+
+405
+00:23:13.540 --> 00:23:17.240
+an immune stimulant and a cytotoxin, to me, is more appealing
+
+406
+00:23:17.560 --> 00:23:20.440
+than a dual payload that delivers two cytotoxins.
+
+407
+00:23:21.060 --> 00:23:24.140
+So our approach for this has been to
+
+408
+00:23:25.460 --> 00:23:29.360
+deliver MMAF along with E104. And the
+
+409
+00:23:29.400 --> 00:23:33.060
+reason for this is that MMAF is an
+
+410
+00:23:33.120 --> 00:23:36.970
+impermeable cytotoxin. And so our delivery mechanism, we're
+
+411
+00:23:36.980 --> 00:23:40.940
+delivering to, say,
+
+412
+00:23:41.000 --> 00:23:43.420
+HER2 or in this case, Trop-2 tumors.
+
+413
+00:23:43.460 --> 00:23:47.426
+So MMAFHas the anti-tumor activity within the cells delivered to, but
+
+414
+00:23:47.436 --> 00:23:51.016
+then our bystander activity being driven by the E104,
+
+415
+00:23:52.096 --> 00:23:54.096
+through the mechanism that I showed previously.
+
+416
+00:23:54.156 --> 00:23:57.436
+Now, our approach has been rather than branch linker, our approach has been
+
+417
+00:23:57.476 --> 00:23:59.746
+orthogonal conjugation using
+
+418
+00:24:00.596 --> 00:24:04.416
+the approach that I'm showing here, where one payload is attached via
+
+419
+00:24:04.476 --> 00:24:08.136
+transglutaminase chemistry using this thiolation chemistry that
+
+420
+00:24:08.196 --> 00:24:10.196
+we published on a number of years ago.
+
+421
+00:24:10.596 --> 00:24:14.056
+The other payload attached via traditional hinge cysteine, so
+
+422
+00:24:14.696 --> 00:24:18.236
+a basic eight plus two mechanism. And so given the
+
+423
+00:24:18.276 --> 00:24:20.906
+potency of MMAF, our thought was to go in with the
+
+424
+00:24:21.976 --> 00:24:25.356
+DAR2 for MMAF and the DAR8 for our
+
+425
+00:24:25.376 --> 00:24:26.466
+cytotoxin. But of course,
+
+426
+00:24:27.416 --> 00:24:30.716
+for less potent cytotoxins, we could kind of flip that.
+
+427
+00:24:32.676 --> 00:24:36.396
+So we did go through a whole battery of in vitro
+
+428
+00:24:36.476 --> 00:24:38.376
+validations that I'm not going to talk about here.
+
+429
+00:24:38.436 --> 00:24:41.476
+We'll be publishing this later this year, but I'm going to show you just some
+
+430
+00:24:41.496 --> 00:24:43.166
+results we got just a few weeks ago,
+
+431
+00:24:43.996 --> 00:24:46.816
+where we took this into a xenograft study.
+
+432
+00:24:47.396 --> 00:24:49.856
+And what I'm showing, I'm showing two different linkers.
+
+433
+00:24:50.616 --> 00:24:53.016
+I'm not going to say what those linkers are, but basically two different linkers
+
+434
+00:24:53.026 --> 00:24:56.276
+that connect E104. But I want to show you over here on the left,
+
+435
+00:24:57.196 --> 00:25:00.316
+this is three MPK Q4d times three.
+
+436
+00:25:00.836 --> 00:25:03.336
+Consistent with our prior efficacy studies,
+
+437
+00:25:03.656 --> 00:25:08.596
+our
+
+438
+00:25:08.636 --> 00:25:11.916
+prior efficacy studies required around 10 MPK before we saw efficacy.
+
+439
+00:25:11.956 --> 00:25:15.366
+So three MPK, the single payload ADCs didn't show
+
+440
+00:25:15.416 --> 00:25:18.486
+significant efficacy, which was not surprising in terms of
+
+441
+00:25:18.876 --> 00:25:22.626
+the prior results. So you can see the line there in blue is our
+
+442
+00:25:22.676 --> 00:25:26.556
+MMAF ADC single payload, no effect on tumor
+
+443
+00:25:26.576 --> 00:25:30.536
+growth. Red, our E104 ADC, no significant efficacy
+
+444
+00:25:30.596 --> 00:25:34.536
+on its own. But combined, you see in purple, we see significant
+
+445
+00:25:34.696 --> 00:25:38.196
+tumor growth delay. The ISIC control
+
+446
+00:25:38.316 --> 00:25:41.956
+in gray, you see no significant effect on tumor growth.
+
+447
+00:25:42.316 --> 00:25:44.206
+And then over on the right, we changed the linker a little bit.
+
+448
+00:25:44.336 --> 00:25:47.996
+In this case, our E104 ADC alone in
+
+449
+00:25:48.056 --> 00:25:51.866
+red did show activity on-- so single payload ADC did show activity, but
+
+450
+00:25:51.896 --> 00:25:55.776
+encouragingly, the combination in purple, dual payload ADC
+
+451
+00:25:55.836 --> 00:25:58.096
+showed improved activity as compared to the single.
+
+452
+00:25:59.596 --> 00:25:59.836
+By the way,
+
+453
+00:26:01.236 --> 00:26:04.996
+we didn't observe any sort of in-life findings in terms of weight
+
+454
+00:26:05.056 --> 00:26:08.736
+loss or behavioral changes, anything like that at those doses we were giving.
+
+455
+00:26:09.116 --> 00:26:12.296
+So we're encouraged by that. And then finally, what I want to say, what else is on
+
+456
+00:26:12.316 --> 00:26:16.276
+the horizon here? So there's a number of folks
+
+457
+00:26:16.356 --> 00:26:20.076
+that I'm encouraged to see that are kind of moving back into the ISIC
+
+458
+00:26:20.156 --> 00:26:20.856
+field. There's
+
+459
+00:26:21.676 --> 00:26:24.896
+a little bit of people moved away from it for a number of years, and that now a
+
+460
+00:26:24.956 --> 00:26:25.756
+number of folks are
+
+461
+00:26:26.916 --> 00:26:27.636
+trying to
+
+462
+00:26:28.556 --> 00:26:31.696
+look at various permutations of some of those original studies.
+
+463
+00:26:31.736 --> 00:26:32.716
+So we're seeing different
+
+464
+00:26:33.656 --> 00:26:34.976
+immune agonists. So
+
+465
+00:26:36.536 --> 00:26:37.356
+we see from
+
+466
+00:26:38.276 --> 00:26:41.756
+some TLR9 agonists now in the clinic, TLR9-based ISICs.
+
+467
+00:26:42.176 --> 00:26:43.676
+We see some more potent
+
+468
+00:26:45.136 --> 00:26:49.096
+TLR7 agonists coming from Bolt, going out against claudin 18.2.
+
+469
+00:26:49.616 --> 00:26:51.796
+A number of folks are taking cleavable linkers
+
+470
+00:26:52.836 --> 00:26:56.476
+and Fc ablated ADCs similar to our approach.
+
+471
+00:26:56.516 --> 00:27:00.256
+We see this from Daiichi Sankyo, Pfizer, and some from BMS.
+
+472
+00:27:00.336 --> 00:27:03.756
+I do understand the one from Pfizer perhaps has dropped down recently.
+
+473
+00:27:04.576 --> 00:27:07.936
+So I'm encouraged to see some folks getting back into this space, and I think it
+
+474
+00:27:07.956 --> 00:27:11.936
+has a lot of potential. Dual payload ADCs, Sutro has been one of the main
+
+475
+00:27:11.996 --> 00:27:15.876
+companies that has-- looking at immune agonist
+
+476
+00:27:15.956 --> 00:27:19.436
+plus a cytotoxin. They've been in on that for a number of years.
+
+477
+00:27:20.056 --> 00:27:23.696
+So I'm encouraged to see some people moving into that dual payload space.
+
+478
+00:27:23.736 --> 00:27:27.666
+So just in terms of some conclusions here, hopefully, I've shown you that we've
+
+479
+00:27:27.696 --> 00:27:31.546
+developed these ligamen cleavable TLR7 agonist-based ISICs
+
+480
+00:27:31.546 --> 00:27:35.236
+that exhibit some strong potency and some acceptable safety in these murine
+
+481
+00:27:35.276 --> 00:27:36.416
+cancer models.
+
+482
+00:27:37.476 --> 00:27:41.336
+Fc silenced ISICs induced reduced cytokine release, reduced off-target
+
+483
+00:27:41.346 --> 00:27:43.596
+uptake, hopefully leading to reduced CRS risk.
+
+484
+00:27:43.616 --> 00:27:45.996
+Of course, that has to be played out in the clinic.
+
+485
+00:27:46.036 --> 00:27:49.396
+And then dual payload ADCs, in particular tubulin inhibitors plus
+
+486
+00:27:49.616 --> 00:27:53.485
+TLR7 agonists show some promising activity really outperforming either of the
+
+487
+00:27:53.556 --> 00:27:56.936
+single payload comparators. So I'm encouraged to see where that goes.
+
+488
+00:27:57.356 --> 00:28:00.286
+And so this is my research team. I've got some amazing graduate students and
+
+489
+00:28:00.336 --> 00:28:03.555
+postdocs that have worked on this project as well as a bunch of other projects that
+
+490
+00:28:03.656 --> 00:28:07.316
+I have not talked about here. Funding has come from a variety of sources, both
+
+491
+00:28:08.196 --> 00:28:09.826
+in the private sector as well as public sector.
+
+492
+00:28:10.376 --> 00:28:11.496
+And I want to thank you for your attention.
+
+493
+00:28:18.396 --> 00:28:19.956
+So we open up for questions.
+
+494
+00:28:27.796 --> 00:28:30.756
+Frank Lee from WuXi AppTec. Yeah, great talk.
+
+495
+00:28:31.056 --> 00:28:31.216
+Thank you.
+
+496
+00:28:31.256 --> 00:28:34.956
+So one question I have, the co-culture PBMC
+
+497
+00:28:34.996 --> 00:28:38.476
+assay, like E104, your molecule was
+
+498
+00:28:38.516 --> 00:28:42.356
+anti-HER2 cleavable, like a stimulation is
+
+499
+00:28:42.436 --> 00:28:44.496
+quite different. So because
+
+500
+00:28:46.236 --> 00:28:48.656
+E104 gives very strong stimulation.
+
+501
+00:28:49.136 --> 00:28:52.196
+Why anti-HER2 cleavable
+
+502
+00:28:53.296 --> 00:28:56.716
+almost nothing from the data, right?
+
+503
+00:28:57.116 --> 00:28:58.576
+So what's the reason?
+
+504
+00:28:59.696 --> 00:29:02.716
+So I think you're referring to the PBMC culture that we did.
+
+505
+00:29:02.756 --> 00:29:03.776
+So this was
+
+506
+00:29:05.756 --> 00:29:09.676
+overnight incubation with PBMC, so there was no tumor antigen present, so there's
+
+507
+00:29:09.716 --> 00:29:13.676
+no real mechanism for the ADCs to get into the PBMCs.
+
+508
+00:29:13.796 --> 00:29:15.956
+That was kind of my point with doing that assay.
+
+509
+00:29:16.436 --> 00:29:20.376
+With the Fc ablation, there's no Fc gamma-mediated uptake,
+
+510
+00:29:20.496 --> 00:29:23.986
+so we really don't see any meaningful activation of PBMCs,
+
+511
+00:29:24.336 --> 00:29:28.216
+whereas in our Fc active comparator, we saw that Fc
+
+512
+00:29:28.276 --> 00:29:31.896
+gamma-mediated uptake, some activation cytokine release, which may be behind some
+
+513
+00:29:31.916 --> 00:29:35.416
+of the CRS that's observed in some of the clinical ISICs
+
+514
+00:29:35.836 --> 00:29:36.196
+to date.
+
+515
+00:29:36.576 --> 00:29:37.236
+Yeah. Thank you.
+
+516
+00:29:39.756 --> 00:29:43.196
+Ben Neal, NYU. Very nice talk. I have a question about your
+
+517
+00:29:43.216 --> 00:29:45.396
+Trop-2 engineered syngeneic model.
+
+518
+00:29:45.496 --> 00:29:48.656
+You said that you developed anti-Trop-2
+
+519
+00:29:48.736 --> 00:29:51.536
+antibodies as evidence of the adaptive response.
+
+520
+00:29:51.976 --> 00:29:54.560
+Do you also de-Develop a T cell response.
+
+521
+00:29:54.580 --> 00:29:58.490
+Did you try transferring the T cells or re-challenging with
+
+522
+00:29:58.520 --> 00:29:58.940
+the tumor?
+
+523
+00:29:59.920 --> 00:30:03.780
+We did not get to re-challenge. So, yeah, we should have.
+
+524
+00:30:03.840 --> 00:30:07.399
+Basically, our IACUC protocol was not approved for re-challenging.
+
+525
+00:30:07.480 --> 00:30:09.020
+So, no, we did not get to re-challenge.
+
+526
+00:30:09.220 --> 00:30:10.460
+Transfer the T cells.
+
+527
+00:30:10.680 --> 00:30:11.660
+Yes. We would like to
+
+528
+00:30:12.760 --> 00:30:16.400
+do that, though.
+
+529
+00:30:16.410 --> 00:30:16.720
+Over here.
+
+530
+00:30:19.160 --> 00:30:22.740
+Hi, I'm Hans Henning Böhm from Merck, Germany. I have a question.
+
+531
+00:30:22.780 --> 00:30:25.920
+Why did you choose MMAF, to
+
+532
+00:30:25.960 --> 00:30:29.740
+combine, instead of topoisomerase inhibitors?
+
+533
+00:30:30.060 --> 00:30:33.480
+A little bit against the trend maybe that we saw in the very first slide of the
+
+534
+00:30:33.540 --> 00:30:36.200
+session.
+
+535
+00:30:36.420 --> 00:30:38.730
+I think one of the reasons was,
+
+536
+00:30:40.400 --> 00:30:44.260
+MMAF was much more polar. So when we're talking about DAR eight
+
+537
+00:30:44.280 --> 00:30:47.700
+plus two, I was rather concerned about some of the
+
+538
+00:30:47.740 --> 00:30:49.900
+hydrophobicity that with some of the...
+
+539
+00:30:50.540 --> 00:30:52.100
+Of course, we could have engineered it
+
+540
+00:30:53.320 --> 00:30:56.150
+appropriately, but I think that just the conjugation would've been much more
+
+541
+00:30:56.180 --> 00:30:59.040
+challenging, if we used the topoisomerase inhibitors.
+
+542
+00:30:59.700 --> 00:31:03.100
+One of the other things that has concerned me a little bit is topoisomerase
+
+543
+00:31:03.160 --> 00:31:05.460
+inhibitors have been reported to up-regulate...
+
+544
+00:31:05.660 --> 00:31:09.520
+I'm sorry, TLR7 agonists have been reported to up-regulate
+
+545
+00:31:09.540 --> 00:31:12.980
+DNA repair pathways, and so that does concern me a little bit about the
+
+546
+00:31:13.020 --> 00:31:16.500
+combination of topoisomerase inhibitors with
+
+547
+00:31:16.540 --> 00:31:20.480
+TLR7 agonists as compared to, TLR7 agonists with
+
+548
+00:31:20.520 --> 00:31:21.780
+tubulin inhibitors.
+
+549
+00:31:21.860 --> 00:31:23.300
+Thanks.
+
+550
+00:31:24.980 --> 00:31:27.240
+Hi. Hello. I'm Zhipeng from Roche.
+
+551
+00:31:27.700 --> 00:31:31.160
+So I have question regarding the immunogenicity.
+
+552
+00:31:32.280 --> 00:31:33.360
+I think ISAC,
+
+553
+00:31:34.200 --> 00:31:38.060
+one of the potential liability is the strong
+
+554
+00:31:38.120 --> 00:31:40.820
+immunogenicity and ADA concerns.
+
+555
+00:31:41.040 --> 00:31:41.800
+For your
+
+556
+00:31:42.720 --> 00:31:46.500
+FC mutant and cleavable design and also the
+
+557
+00:31:46.620 --> 00:31:50.420
+dual payload design, do you think this will have
+
+558
+00:31:50.500 --> 00:31:54.200
+a reduced concern regarding immunogenicity?
+
+559
+00:31:55.400 --> 00:31:59.260
+That is certainly our hope, but I will say in our mouse models, we do see
+
+560
+00:31:59.300 --> 00:32:03.240
+strong immunogenicity. However, I think we see strong
+
+561
+00:32:03.279 --> 00:32:07.200
+immunogenicity even in control conjugates that do
+
+562
+00:32:07.320 --> 00:32:09.780
+not have our TLR7 agonist on board.
+
+563
+00:32:09.860 --> 00:32:10.580
+So
+
+564
+00:32:11.400 --> 00:32:13.880
+one of the things we're trying to do right now is to go in with surrogate
+
+565
+00:32:13.940 --> 00:32:17.280
+antibodies, so basically a mouse anti-human
+
+566
+00:32:17.360 --> 00:32:21.100
+Trop-2 version of the ISACs that we've shown and see if
+
+567
+00:32:21.160 --> 00:32:23.940
+those have immunogenicity. We have not done that experiment to date.
+
+568
+00:32:24.860 --> 00:32:28.340
+What about the cytotoxic dual payload?
+
+569
+00:32:29.000 --> 00:32:32.580
+We have not done the immunogenicity studies with our dual payload
+
+570
+00:32:32.640 --> 00:32:36.540
+ADCs. I would expect we do have it, but again, these are human
+
+571
+00:32:36.550 --> 00:32:40.480
+antibodies dosed in a mouse, so virtually any ADCU dose is going to
+
+572
+00:32:40.560 --> 00:32:43.849
+have that immunogenicity. So I don't think it's unique to the ISAC approach that
+
+573
+00:32:43.860 --> 00:32:44.580
+we're taking.
+
+574
+00:32:44.620 --> 00:32:45.760
+Okay. Thank you.
+
+575
+00:32:46.340 --> 00:32:50.099
+Hi, this is Hang Chen from Remgen. Wonderful talk. Thank you so much.
+
+576
+00:32:50.260 --> 00:32:50.420
+Thank you.
+
+577
+00:32:50.540 --> 00:32:54.520
+I have a question about the TLR8 you mentioned is also
+
+578
+00:32:54.560 --> 00:32:56.120
+highly expressed in the neutrophil.
+
+579
+00:32:56.640 --> 00:33:00.220
+I know some people also want to engage a neutrophil to attack a
+
+580
+00:33:00.620 --> 00:33:04.440
+tumor. Can you explain a little bit more about why you don't want
+
+581
+00:33:04.520 --> 00:33:04.960
+neutrophil?
+
+582
+00:33:06.140 --> 00:33:10.069
+So I'm approaching this as more of a chemist than immunologist, but
+
+583
+00:33:10.120 --> 00:33:13.950
+I guess my thinking has been we want to be able
+
+584
+00:33:14.000 --> 00:33:17.880
+to activate the types of immune cells that are in the tumor
+
+585
+00:33:17.960 --> 00:33:21.160
+microenvironment and avoid as much stimulation as we can,
+
+586
+00:33:21.940 --> 00:33:25.480
+for non-relevant immune cells because, of course, those
+
+587
+00:33:29.160 --> 00:33:31.860
+just during systemic exposure, we could have just some off targets here.
+
+588
+00:33:31.900 --> 00:33:34.800
+We know CRS is a problem, so let's try to limit the exposure as much as we can to
+
+589
+00:33:34.840 --> 00:33:36.310
+the tumor-associated cell types.
+
+590
+00:33:36.760 --> 00:33:39.620
+That's simplistic thinking on my part, but yeah.
+
+591
+00:33:39.740 --> 00:33:40.800
+Okay. Last question.
+
+592
+00:33:42.020 --> 00:33:44.120
+Thank you. That was a great talk. Mark Orr from Astellas.
+
+593
+00:33:44.980 --> 00:33:47.400
+I was wondering if you could say a little bit more about how you're thinking on
+
+594
+00:33:47.460 --> 00:33:51.260
+the, choosing the DARs for these dual, immunostimulatory and
+
+595
+00:33:51.300 --> 00:33:54.940
+toxin ADCs. I think you said you had an eight plus two in the data you presented.
+
+596
+00:33:57.060 --> 00:33:59.840
+Sorry. The question is about how I think about the DAR ratio?
+
+597
+00:34:00.090 --> 00:34:02.660
+Yes. Selecting, optimizing the DARs for the dual payloads.
+
+598
+00:34:02.800 --> 00:34:04.860
+Okay. So in a way that's
+
+599
+00:34:06.200 --> 00:34:09.940
+fairly straightforward when you think about it because we have a good
+
+600
+00:34:10.000 --> 00:34:13.600
+idea of the efficacy and tolerability of the single payload ADCs.
+
+601
+00:34:13.680 --> 00:34:15.600
+So like in our case, we were going in
+
+602
+00:34:16.520 --> 00:34:20.301
+knowing that MMAF, there's a long history with MMAF, so we
+
+603
+00:34:20.341 --> 00:34:24.261
+know roughly what doses that we should see efficacy
+
+604
+00:34:24.281 --> 00:34:27.640
+at, and we know what doses we see efficacy for our single payload
+
+605
+00:34:27.680 --> 00:34:30.160
+TLR7 agonist ADCs. So
+
+606
+00:34:30.220 --> 00:34:34.100
+we know which one should be more and which one should be less.
+
+607
+00:34:34.120 --> 00:34:38.040
+So I like that eight plus two motif because we can just gear it
+
+608
+00:34:38.080 --> 00:34:40.500
+towards whichever one's the most potent, make that our DAR2.
+
+609
+00:34:40.920 --> 00:34:43.470
+That's simplistic thinking, but...
+
+610
+00:34:46.560 --> 00:34:50.301
+Okay. So with that, I'm going to turn it over to Shixiong Wang, who will give our
+
+611
+00:34:50.341 --> 00:34:51.720
+second presentation.
+
+612
+00:34:55.390 --> 00:35:03.340
+Sorry.
+
+613
+00:35:05.920 --> 00:35:09.200
+Okay. Thank you Dr. Mi for your excellent presentation and discussion.
+
+614
+00:35:10.080 --> 00:35:13.700
+So, again, my name is Shixiong Wang, and I'm going to switch gears, talk about our
+
+615
+00:35:14.480 --> 00:35:18.140
+work from my time at AbbVie, focusing on identifying kinase inhibitors, in this
+
+616
+00:35:18.180 --> 00:35:21.880
+case, PI3K/mTOR inhibitors as ADC payloads to target the
+
+617
+00:35:21.920 --> 00:35:23.640
+tumor intrinsic vulnerabilities.
+
+618
+00:35:26.420 --> 00:35:29.860
+So why PI3K? With the successful launch of ibrutinib and
+
+619
+00:35:29.900 --> 00:35:32.040
+venetoclax, we asked ourselves a question.
+
+620
+00:35:32.380 --> 00:35:36.220
+What are the targets we want to go after next to really enhance the clinical
+
+621
+00:35:36.300 --> 00:35:38.960
+efficacy and also address emerging resistance?
+
+622
+00:35:39.860 --> 00:35:42.120
+So this had to led us to PI3K.
+
+623
+00:35:43.040 --> 00:35:47.000
+As you can see here on the left diagram, which represents a B-cell signaling
+
+624
+00:35:47.040 --> 00:35:50.980
+pathway, so PI3K, especially PI3K delta, is
+
+625
+00:35:51.100 --> 00:35:54.680
+really a central node to really the B-cell activation signal downstream
+
+626
+00:35:55.220 --> 00:35:59.052
+leading to malignant cell proliferation.So this dependency
+
+627
+00:35:59.112 --> 00:36:03.072
+has been validated by the approval of multiple marketed drugs, shown on the left,
+
+628
+00:36:03.572 --> 00:36:05.472
+for the treatment of B-cell malignancies.
+
+629
+00:36:08.132 --> 00:36:12.082
+Preclinically, there's indication there significant potential
+
+630
+00:36:12.092 --> 00:36:15.072
+to combine PI3K inhibitors with those two agents.
+
+631
+00:36:15.112 --> 00:36:18.962
+There's also been suggested that the APEM PI3K profile will
+
+632
+00:36:19.072 --> 00:36:22.892
+be beneficial to treat diffuse large B-cell lymphoma,
+
+633
+00:36:22.952 --> 00:36:24.142
+which is a new indication.
+
+634
+00:36:25.952 --> 00:36:29.552
+So unfortunately for those PI3K inhibitors, their use are very
+
+635
+00:36:29.592 --> 00:36:32.372
+limited by severe on-target adverse events.
+
+636
+00:36:32.862 --> 00:36:36.772
+Some of them are shown here. So this very poor benefit to risk
+
+637
+00:36:36.912 --> 00:36:37.352
+profile
+
+638
+00:36:38.152 --> 00:36:42.092
+really limits their use and result in multiple market withdrawals, as can be
+
+639
+00:36:42.132 --> 00:36:44.092
+seen by those crossed out indications.
+
+640
+00:36:45.252 --> 00:36:48.552
+So that's the exact reason why we want to pivot into the ADC platform.
+
+641
+00:36:49.212 --> 00:36:49.292
+We
+
+642
+00:36:50.172 --> 00:36:50.692
+rationalize
+
+643
+00:36:51.492 --> 00:36:55.281
+by leveraging the tumor-specific mechanism, we can reduce,
+
+644
+00:36:55.872 --> 00:36:59.292
+enable rational combination, and also treat new indications.
+
+645
+00:37:01.312 --> 00:37:05.022
+So to be an ideal ADC payload, they will need exquisite level for
+
+646
+00:37:05.132 --> 00:37:09.032
+biochemical potencies. If you look at most of the market-approved
+
+647
+00:37:09.052 --> 00:37:11.172
+drugs, most of them really fall short.
+
+648
+00:37:11.932 --> 00:37:15.552
+Look at the omipalisib, which is the experimental drug as shown here.
+
+649
+00:37:15.592 --> 00:37:19.572
+It really has the exquisite level of potencies against the various isoforms
+
+650
+00:37:19.632 --> 00:37:23.552
+of PI3K. It's also quite active against mTOR, as shown
+
+651
+00:37:23.592 --> 00:37:27.312
+here, which to us could be advantageous, especially in the solid tumor
+
+652
+00:37:27.392 --> 00:37:31.052
+indications. Because mTOR is right downstream from PI3K, by
+
+653
+00:37:31.112 --> 00:37:34.632
+inhibiting both, we can suppress this adaptive resistance,
+
+654
+00:37:35.472 --> 00:37:37.032
+hence enhanced the durability.
+
+655
+00:37:38.912 --> 00:37:39.972
+So on the right is a
+
+656
+00:37:40.972 --> 00:37:43.632
+panel of lymphoma cell lines. As you can see,
+
+657
+00:37:44.012 --> 00:37:47.772
+the outstanding biochemical potency of omipalisib
+
+658
+00:37:48.332 --> 00:37:52.272
+translates into a really high sub-nanomolar to single-digit
+
+659
+00:37:52.352 --> 00:37:56.102
+nanomolar cell growth inhibition, really position this payload well for further
+
+660
+00:37:56.152 --> 00:37:57.772
+exploration.
+
+661
+00:37:59.592 --> 00:38:00.052
+So to
+
+662
+00:38:00.952 --> 00:38:03.592
+optimize omipalisib, there are two key goals.
+
+663
+00:38:03.652 --> 00:38:07.232
+The first one is to try to improve the potency even more, and the second is try to
+
+664
+00:38:07.252 --> 00:38:10.852
+build in a functional group for linker attachment without disrupting the binding.
+
+665
+00:38:12.712 --> 00:38:16.612
+So for the first goal, we utilized this fragment molecular orbital analysis
+
+666
+00:38:16.632 --> 00:38:19.852
+or FMO analysis. This is a quantum
+
+667
+00:38:19.892 --> 00:38:21.872
+mechanic-based method. So basically,
+
+668
+00:38:22.752 --> 00:38:26.572
+it's a calculation of the most important interactions
+
+669
+00:38:26.692 --> 00:38:30.492
+between the amino acid residues with a ligand and identify the
+
+670
+00:38:30.552 --> 00:38:34.492
+most important pairs. So each of the vertical bar represent a particular
+
+671
+00:38:34.552 --> 00:38:38.252
+amino acid residue. You want to look for the most net negative gain.
+
+672
+00:38:38.672 --> 00:38:42.612
+So as you can see here, lysine 833 holds great promise, and also
+
+673
+00:38:43.512 --> 00:38:47.012
+based on this green color, which represents the electrostatic interaction, that's
+
+674
+00:38:47.022 --> 00:38:48.101
+something we're going to go after.
+
+675
+00:38:48.692 --> 00:38:49.572
+So with that insight,
+
+676
+00:38:50.392 --> 00:38:52.691
+we added a single fluorine atom to the phenyl ring.
+
+677
+00:38:52.732 --> 00:38:56.152
+So reduce the effective pKa of this NH, lead to
+
+678
+00:38:56.252 --> 00:39:00.052
+stronger electrostatic or cell bridge interaction with the lysine
+
+679
+00:39:00.192 --> 00:39:00.712
+833.
+
+680
+00:39:01.912 --> 00:39:02.672
+Furthermore, we
+
+681
+00:39:03.612 --> 00:39:06.492
+have this terminal free amino group for linker attachment.
+
+682
+00:39:07.492 --> 00:39:11.352
+As you can see here, there's actually meaningful improvement of PI3K
+
+683
+00:39:11.432 --> 00:39:11.952
+activity,
+
+684
+00:39:12.812 --> 00:39:16.752
+as well as cellular activity. So the next thing we did is
+
+685
+00:39:16.772 --> 00:39:18.872
+try to improve the... Okay, so
+
+686
+00:39:19.712 --> 00:39:23.332
+going back just a little bit. So this compound one became our
+
+687
+00:39:23.392 --> 00:39:25.972
+payload for most of the HEM cell line characterization.
+
+688
+00:39:26.832 --> 00:39:30.592
+We further want to improve on the mTOR activity, so in this case, we replaced this
+
+689
+00:39:30.672 --> 00:39:34.392
+bis-cyclic ring with this tricyclic bidentate hinge binder.
+
+690
+00:39:35.672 --> 00:39:39.632
+So what this does is really enforce a pi-pi stack interaction with
+
+691
+00:39:39.672 --> 00:39:43.612
+mTOR tryptophan residue 2239. So we saw a significant
+
+692
+00:39:43.732 --> 00:39:47.441
+improvements of the mTOR activity, while not really sacrificing the
+
+693
+00:39:47.472 --> 00:39:51.052
+PI3K activity. We also see a concurrent
+
+694
+00:39:51.072 --> 00:39:51.612
+improvement
+
+695
+00:39:52.892 --> 00:39:54.092
+of the cellular potency.
+
+696
+00:39:56.332 --> 00:39:58.192
+So to identify the best antigen, we
+
+697
+00:39:59.112 --> 00:40:02.502
+look at the expression profiles of CD19, 22, and
+
+698
+00:40:02.772 --> 00:40:06.292
+70b across both tumor and also normal tissues
+
+699
+00:40:06.772 --> 00:40:07.672
+in different databases.
+
+700
+00:40:08.512 --> 00:40:12.472
+As you can see here, 19, 22, and 70b have very similar expression levels,
+
+701
+00:40:13.032 --> 00:40:16.801
+primarily in the B-cell malignancies or B-cell
+
+702
+00:40:16.801 --> 00:40:20.552
+lineage normal tissues. So we decide to go with the CD70b
+
+703
+00:40:20.612 --> 00:40:23.972
+because it's a clinically validated antigen by
+
+704
+00:40:24.032 --> 00:40:27.632
+association with the Polivi, which is a
+
+705
+00:40:27.772 --> 00:40:29.212
+MMA-based ADC.
+
+706
+00:40:31.332 --> 00:40:35.232
+So with CD70b selected and equipped with compound one, we prepare
+
+707
+00:40:35.272 --> 00:40:38.872
+two linker drugs. First one has this BRAC gly-lysine.
+
+708
+00:40:38.912 --> 00:40:40.712
+Another one has MA gly-Ala.
+
+709
+00:40:42.852 --> 00:40:43.992
+So as you can see here,
+
+710
+00:40:45.132 --> 00:40:48.912
+what we're trying to do is we're trying to maximize ADC potency, so we enable the
+
+711
+00:40:48.932 --> 00:40:50.092
+DAR 10 format.
+
+712
+00:40:51.752 --> 00:40:55.292
+Still though, if you look at the property, they're actually very good with very low
+
+713
+00:40:55.352 --> 00:40:56.612
+aggregation and
+
+714
+00:40:57.612 --> 00:40:59.292
+very high mouse plasma stability.
+
+715
+00:41:01.772 --> 00:41:05.272
+So when we look at the ADC data in the panel of
+
+716
+00:41:05.632 --> 00:41:09.232
+lymphoma cell lines, that's shown in green, those compounds are actually quite
+
+717
+00:41:09.312 --> 00:41:09.712
+potent,
+
+718
+00:41:10.932 --> 00:41:14.412
+sometimes overlapping with that of the blue curve, which is the free payload.
+
+719
+00:41:14.992 --> 00:41:18.842
+There's substantial separation between the targeted ADC versus isotype
+
+720
+00:41:18.852 --> 00:41:20.152
+ADC and the antibody.
+
+721
+00:41:21.932 --> 00:41:25.652
+So having established the high in vitro potency, we move those compounds
+
+722
+00:41:25.692 --> 00:41:29.582
+into a TMD lymphoma cell model. On the left,
+
+723
+00:41:29.732 --> 00:41:33.372
+this is a ibrutibib-resistant C481 mutant
+
+724
+00:41:33.432 --> 00:41:37.292
+line. As you can see here, twice dosing at the five and 15
+
+725
+00:41:37.312 --> 00:41:41.252
+MPK, we saw tumor regression outperforming either the antibody or
+
+726
+00:41:41.292 --> 00:41:44.852
+the isotype ADC. On the right, we perform the dose titration
+
+727
+00:41:44.932 --> 00:41:48.332
+study. As you can see at the dose as low as 1.5
+
+728
+00:41:48.392 --> 00:41:50.692
+MPK, we outperform the copalisib,
+
+729
+00:41:51.552 --> 00:41:54.112
+which was approved the drug at the 5 MPK.
+
+730
+00:41:54.352 --> 00:41:56.832
+This is a therapeutically relevant dose.
+
+731
+00:41:56.852 --> 00:42:00.312
+At higher doses, we saw pronounced dose-dependent tumor
+
+732
+00:42:00.372 --> 00:42:00.872
+regression.
+
+733
+00:42:01.812 --> 00:42:05.692
+If you try to back-calculate the tumor stasis dose, it turns out to be around 3
+
+734
+00:42:05.792 --> 00:42:09.402
+MPK, which is pretty impressive.So across these two different studies,
+
+735
+00:42:09.562 --> 00:42:13.442
+LD1 and LD2, these two different linker drugs performed almost
+
+736
+00:42:13.482 --> 00:42:14.142
+identically.
+
+737
+00:42:17.122 --> 00:42:17.561
+So the
+
+738
+00:42:18.482 --> 00:42:22.022
+utilization of a targeted therapy, as our payload, gave us this unique
+
+739
+00:42:22.122 --> 00:42:25.632
+opportunity in examining the tumor PK/PD relationship.
+
+740
+00:42:25.822 --> 00:42:29.422
+So in this case, we measured the phospho-S6 ribosome protein
+
+741
+00:42:29.502 --> 00:42:33.202
+suppression, which is the downstream marker for PI3K inhibition,
+
+742
+00:42:33.762 --> 00:42:37.712
+and correlated back with the tumor payload levels after the treatments
+
+743
+00:42:37.742 --> 00:42:38.402
+of the ADC.
+
+744
+00:42:39.402 --> 00:42:42.422
+You can see here, there almost seems to be a threshold effect.
+
+745
+00:42:42.482 --> 00:42:45.922
+Once the payload level is above about 100 to 110 nanogram per mil,
+
+746
+00:42:46.822 --> 00:42:50.811
+it's associated with a pretty robust phosphorylated S6 RP suppression,
+
+747
+00:42:50.882 --> 00:42:52.592
+indicating high target engagement.
+
+748
+00:42:53.642 --> 00:42:57.362
+On the right, we plotted the tumor growth inhibition versus the tumor
+
+749
+00:42:57.402 --> 00:43:00.242
+payload level in excess of the
+
+750
+00:43:01.062 --> 00:43:04.722
+IC50 of the payload. As you can see, when the ratio exceeds about one,
+
+751
+00:43:05.482 --> 00:43:09.382
+it's associated with a tumor growth inhibition of over 100%,
+
+752
+00:43:09.522 --> 00:43:13.282
+meaning tumor regression. So this data, in totality
+
+753
+00:43:13.362 --> 00:43:15.062
+really supports this
+
+754
+00:43:15.942 --> 00:43:19.322
+concentration-dependent efficacy, and it really establishes the
+
+755
+00:43:19.342 --> 00:43:23.182
+pharmacodynamic benchmarks for optimized
+
+756
+00:43:23.222 --> 00:43:24.122
+ADC activity.
+
+757
+00:43:26.342 --> 00:43:29.842
+So we moved our ADC into two other DLBCL models.
+
+758
+00:43:29.882 --> 00:43:33.642
+On the left, this is a so-called active B-cell lymphoma model.
+
+759
+00:43:34.042 --> 00:43:36.222
+It performed very similarly to TMDA.
+
+760
+00:43:36.302 --> 00:43:40.102
+We saw tumor regression at 15 NPK. On the right, this is the
+
+761
+00:43:40.142 --> 00:43:43.482
+LLY1 called the germ center B-cell lymphoma model.
+
+762
+00:43:44.102 --> 00:43:47.982
+Usually not very responsive to PI3K delta inhibitor, but because our payload
+
+763
+00:43:48.052 --> 00:43:51.042
+is a pan-PI3K inhibitor, you do see a dose-dependent
+
+764
+00:43:51.142 --> 00:43:53.842
+sensitivity, especially at 15 NPK.
+
+765
+00:43:54.322 --> 00:43:58.022
+So this just tells us our single agent can actually have broad-spectrum
+
+766
+00:43:58.062 --> 00:44:00.882
+activity across different DLBCL cell lines.
+
+767
+00:44:03.162 --> 00:44:06.522
+So building on the single-agent activity, we wanted to explore next,
+
+768
+00:44:07.442 --> 00:44:10.522
+the rationale biological combination.
+
+769
+00:44:10.582 --> 00:44:12.662
+So again, looking at this LLY1 model.
+
+770
+00:44:13.262 --> 00:44:17.042
+It turns out this LLY1 is a specific presentation, a
+
+771
+00:44:17.142 --> 00:44:18.702
+so-called the double-hit lymphoma,
+
+772
+00:44:19.562 --> 00:44:22.602
+because it has a translocation of c-MYC and the BCL2.
+
+773
+00:44:22.682 --> 00:44:26.582
+So in the clinic, this is a very aggressive form and high-risk
+
+774
+00:44:26.662 --> 00:44:30.302
+form of lymphoma. Sometimes it's actually not very
+
+775
+00:44:30.322 --> 00:44:34.182
+responsive to chemo such as R-CHOP, but it really provides a
+
+776
+00:44:34.242 --> 00:44:37.802
+perfect biological rationale for us to combine our PI3K ADC
+
+777
+00:44:38.242 --> 00:44:40.682
+with a BCL2 agent such as venetoclax.
+
+778
+00:44:41.302 --> 00:44:44.502
+So in this case, we use compound two as our payload because it's higher
+
+779
+00:44:45.342 --> 00:44:49.202
+potency. As you can see in the graph on the lower left, the green
+
+780
+00:44:49.242 --> 00:44:52.802
+line represents the combination of our PI3K ADC with the
+
+781
+00:44:52.822 --> 00:44:55.702
+venetoclax. You saw pretty exceptional
+
+782
+00:44:56.582 --> 00:45:00.502
+tumor suppression and sustained efficacy, much better
+
+783
+00:45:00.522 --> 00:45:04.382
+than copanlisib or the ADC alone. Also much better than the
+
+784
+00:45:04.422 --> 00:45:06.541
+copanlisib plus venetoclax.
+
+785
+00:45:07.222 --> 00:45:10.791
+Well, notably, there's no weight
+
+786
+00:45:10.862 --> 00:45:13.482
+loss associated with any of the ADC group.
+
+787
+00:45:15.342 --> 00:45:19.052
+So this mechanism of action work on the right explains the
+
+788
+00:45:19.062 --> 00:45:22.302
+synergy. PI3K inhibition leads to
+
+789
+00:45:22.362 --> 00:45:25.962
+GSK-3beta activation, which will in turn
+
+790
+00:45:26.002 --> 00:45:29.082
+phosphorylate the MYC. And as you remember, this is a MYC
+
+791
+00:45:29.962 --> 00:45:30.702
+translocation
+
+792
+00:45:31.822 --> 00:45:32.262
+cell line.
+
+793
+00:45:33.422 --> 00:45:36.542
+Then when that's phosphorylated, that will lead to
+
+794
+00:45:36.582 --> 00:45:40.002
+proteasome-dependent degradation, and we definitely demonstrate that dependency.
+
+795
+00:45:40.822 --> 00:45:42.742
+So you can see there's a dose-responsive
+
+796
+00:45:43.562 --> 00:45:47.502
+MYC degradation concurrent with phospho-S6 RP suppression,
+
+797
+00:45:47.662 --> 00:45:48.962
+so meaning on-target effect.
+
+798
+00:45:49.782 --> 00:45:53.722
+So this data clearly demonstrates the potential combination potential
+
+799
+00:45:53.802 --> 00:45:57.302
+for our PI3K ADC with the venetoclax in this high-risk
+
+800
+00:45:57.802 --> 00:45:58.662
+patient population.
+
+801
+00:46:00.422 --> 00:46:04.202
+Just to summarize the first part, we have been able to identify
+
+802
+00:46:04.242 --> 00:46:08.042
+ADCs that demonstrate the tumor stasis dose in a sensitive
+
+803
+00:46:08.082 --> 00:46:10.062
+HIM model at about three NPK.
+
+804
+00:46:11.642 --> 00:46:15.582
+So this ADC is actually remarkably well-tolerated in rats up
+
+805
+00:46:15.602 --> 00:46:19.522
+to 150 NPK, in the monkey up to 100 NPK.
+
+806
+00:46:19.562 --> 00:46:23.162
+The target organs are very consistent with approved PI3K
+
+807
+00:46:23.182 --> 00:46:23.682
+inhibitors.
+
+808
+00:46:24.581 --> 00:46:28.322
+So with this substantial level of safety margin, we
+
+809
+00:46:28.402 --> 00:46:32.162
+asked a very logical question: Can we use the PI3K
+
+810
+00:46:32.202 --> 00:46:36.102
+BDCs for solid tumor indications, which have very large
+
+811
+00:46:36.142 --> 00:46:37.042
+unmet medical needs?
+
+812
+00:46:38.982 --> 00:46:42.722
+So to answer this question, I think this audience is very
+
+813
+00:46:42.782 --> 00:46:46.442
+familiar with that. The PI3K pathway is probably one of the most
+
+814
+00:46:46.882 --> 00:46:50.712
+disrupted pathways in human cancers, accounting for about over
+
+815
+00:46:50.782 --> 00:46:54.162
+40% of the patients altogether. Just the
+
+816
+00:46:54.202 --> 00:46:56.432
+PIK3CA, which is the PI3KA,
+
+817
+00:46:57.962 --> 00:47:01.462
+PI3K alpha mutation, drives about 13% of the
+
+818
+00:47:01.522 --> 00:47:01.982
+cases.
+
+819
+00:47:04.462 --> 00:47:08.182
+So there are many approved and also experimental agents, as highlighted here,
+
+820
+00:47:08.222 --> 00:47:09.232
+either in green or
+
+821
+00:47:10.062 --> 00:47:13.082
+in red. There probably will be many more agents coming.
+
+822
+00:47:13.542 --> 00:47:16.322
+So they target different nodes. There are PI3K inhibitors.
+
+823
+00:47:16.362 --> 00:47:19.102
+There are MTOR inhibitors. Of course, there are AKT inhibitors.
+
+824
+00:47:19.902 --> 00:47:23.482
+It's always going to be a balancing act between the efficacy
+
+825
+00:47:23.542 --> 00:47:26.482
+durability versus on-target toxicity.
+
+826
+00:47:28.242 --> 00:47:32.182
+So, as you can see, our payload targets really different nodes here.
+
+827
+00:47:32.262 --> 00:47:36.062
+So we're hoping we can really balancing out the efficacy, the
+
+828
+00:47:36.102 --> 00:47:39.802
+toxicity, but more importantly, to unlock the combination
+
+829
+00:47:39.842 --> 00:47:40.342
+potential.
+
+830
+00:47:42.802 --> 00:47:44.762
+So just the quick analysis of the
+
+831
+00:47:45.742 --> 00:47:49.702
+indication strategy. If you look at the PIK3CA
+
+832
+00:47:49.742 --> 00:47:53.682
+alteration landscape based on cBioPortal analysis on the left,
+
+833
+00:47:54.422 --> 00:47:58.142
+PIK3CA alteration primarily includes either amplification
+
+834
+00:47:58.662 --> 00:48:02.362
+or hotspot mutation. So those alterations dominate in
+
+835
+00:48:03.082 --> 00:48:06.642
+cancers such as breast, squamous lung, and head and neck.
+
+836
+00:48:08.262 --> 00:48:11.882
+So those should be the patients will be most sensitive to our
+
+837
+00:48:11.942 --> 00:48:15.934
+agent.There are also PI3K wild-type tumors, but PI3K
+
+838
+00:48:16.014 --> 00:48:18.314
+can still play a significant biological role.
+
+839
+00:48:18.454 --> 00:48:22.234
+For example, in the RAS mutant setting, PI3K can still play a
+
+840
+00:48:22.334 --> 00:48:23.874
+downstream effector molecule.
+
+841
+00:48:24.774 --> 00:48:28.394
+There are also PTEN loss and the aktor amplification patient population.
+
+842
+00:48:28.514 --> 00:48:32.434
+So if you combine those genetic backgrounds together, we can still constitute
+
+843
+00:48:32.634 --> 00:48:33.194
+a pretty
+
+844
+00:48:34.274 --> 00:48:37.514
+broad landscape where our single agent can be effective.
+
+845
+00:48:39.134 --> 00:48:42.554
+So of course, there's a huge combination potential because of the
+
+846
+00:48:43.474 --> 00:48:46.834
+robust scientific rationale. So there are many agents we can combine
+
+847
+00:48:47.234 --> 00:48:49.334
+PI3K ADC with, including
+
+848
+00:48:50.514 --> 00:48:51.454
+MEK inhibitor,
+
+849
+00:48:52.334 --> 00:48:56.274
+TKI, CDK, and estrogen receptor inhibitors.
+
+850
+00:48:59.394 --> 00:49:03.194
+So to maximize the potential in solid tumor, we want to optimize our
+
+851
+00:49:03.674 --> 00:49:06.054
+payload a little bit more. So in this case, we made a slide,
+
+852
+00:49:07.454 --> 00:49:11.434
+structure modification. We include this hydroxyl as the amide group.
+
+853
+00:49:11.854 --> 00:49:15.654
+So this hydroxyl is important to engage sort of a more
+
+854
+00:49:15.714 --> 00:49:19.314
+hydrogen bond network within mTOR to boost the potency by a
+
+855
+00:49:19.374 --> 00:49:22.894
+fewfold, and also having this free hydroxyl will enable us
+
+856
+00:49:22.974 --> 00:49:26.674
+to include a GGFG linker, as I will speak on
+
+857
+00:49:26.714 --> 00:49:27.554
+subsequent slide.
+
+858
+00:49:29.954 --> 00:49:33.614
+So this page on the left, basically just trying to put into
+
+859
+00:49:33.634 --> 00:49:37.584
+context how potent our compound has become based on both the
+
+860
+00:49:37.614 --> 00:49:41.214
+mTOR activity and also PI3K alpha activity.
+
+861
+00:49:41.734 --> 00:49:45.474
+It sits at the lower left corner versus some of the
+
+862
+00:49:45.494 --> 00:49:46.554
+approved agents here.
+
+863
+00:49:49.214 --> 00:49:53.084
+So in the kind of profiling study, our compound is actually quite selective,
+
+864
+00:49:53.154 --> 00:49:55.334
+especially against the non-lipid kinases.
+
+865
+00:49:56.474 --> 00:50:00.394
+It also maintained a fairly reasonable selectivity profile in a
+
+866
+00:50:00.454 --> 00:50:03.154
+separate panel screening of 78 targets.
+
+867
+00:50:03.434 --> 00:50:04.574
+So overall, this is a highly
+
+868
+00:50:06.134 --> 00:50:07.154
+optimized molecule.
+
+869
+00:50:11.114 --> 00:50:14.354
+So I can see this is old slide deck that hasn't been updated, but I'm just going to
+
+870
+00:50:14.534 --> 00:50:18.194
+blow through real quickly. So we look at this compound, just to
+
+871
+00:50:18.294 --> 00:50:21.814
+profile this compound versus some other comparators in this specific
+
+872
+00:50:21.874 --> 00:50:23.694
+T47D breast
+
+873
+00:50:25.514 --> 00:50:26.194
+cancer cell line.
+
+874
+00:50:27.274 --> 00:50:30.854
+Probably just to point your attention to the graph on the right.
+
+875
+00:50:31.874 --> 00:50:35.394
+This is a correlation of the cell growth inhibition versus
+
+876
+00:50:35.454 --> 00:50:37.854
+phosphorylation pathway suppression.
+
+877
+00:50:37.914 --> 00:50:41.694
+Again, compound three is orders of magnitude more potent than everything else.
+
+878
+00:50:42.254 --> 00:50:46.114
+And also there's a very nice linear correlation between those
+
+879
+00:50:46.154 --> 00:50:49.614
+two values, indicating a very specific target
+
+880
+00:50:50.114 --> 00:50:50.954
+pathway inhibition.
+
+881
+00:50:52.954 --> 00:50:55.444
+So I'm going to just go through this picture real quickly.
+
+882
+00:50:56.354 --> 00:50:59.454
+Of course, I just showed the data in a single cell line, but we really want to
+
+883
+00:50:59.514 --> 00:51:03.494
+understand the profile of this compound in the broad spectrum cell panel screening.
+
+884
+00:51:03.574 --> 00:51:06.294
+So we submit this compound for a DenMap screening.
+
+885
+00:51:07.154 --> 00:51:11.114
+So it turns out this compound, actually in terms of sensitivity profile,
+
+886
+00:51:11.534 --> 00:51:15.014
+is highly correlative to other known PI3K/mTOR
+
+887
+00:51:15.054 --> 00:51:18.694
+inhibitors. And also, if you look at the pan-cancer analysis on the right,
+
+888
+00:51:19.394 --> 00:51:23.074
+those cells that harbor PIK3CA mutation are extremely sensitive, as
+
+889
+00:51:23.154 --> 00:51:24.874
+represented by this lower numeric
+
+890
+00:51:26.914 --> 00:51:30.414
+AUC value. And that translates true for different lineages.
+
+891
+00:51:30.754 --> 00:51:34.294
+So overall, this really tells us our compound is highly on target.
+
+892
+00:51:34.954 --> 00:51:37.324
+Really no surprising off target identified.
+
+893
+00:51:40.254 --> 00:51:42.694
+So I think selecting the right antigen is really important.
+
+894
+00:51:43.794 --> 00:51:47.094
+So we selected HER2 as our antigen based
+
+895
+00:51:48.074 --> 00:51:50.994
+on both the genetic and also clinical
+
+896
+00:51:51.454 --> 00:51:54.814
+validation. Of course, HER2, who needs another HER2?
+
+897
+00:51:55.454 --> 00:51:58.234
+But I think we have strong rationale for that.
+
+898
+00:51:58.294 --> 00:52:02.034
+If you look at the codependency analysis, there's a high
+
+899
+00:52:02.534 --> 00:52:06.174
+codependency between PIK3CA versus HER2, which makes perfect sense because
+
+900
+00:52:06.274 --> 00:52:09.694
+PI3K is right underneath of HER2 pathway.
+
+901
+00:52:10.934 --> 00:52:14.694
+But also if you think of if this PI3K activation mutation, then
+
+902
+00:52:14.714 --> 00:52:17.774
+it can potentially to escape from HER2 therapy.
+
+903
+00:52:18.394 --> 00:52:21.954
+That turned out to be the case by this clinical study that was published 10 years
+
+904
+00:52:22.014 --> 00:52:25.614
+ago. If you look at the two right bars for the front line
+
+905
+00:52:26.054 --> 00:52:29.394
+HER2 therapy, in this case it's lapatinib plus
+
+906
+00:52:29.474 --> 00:52:32.434
+trastuzumab. The patients who actually have the
+
+907
+00:52:32.474 --> 00:52:36.034
+PI3K activation mutation responded much poorly
+
+908
+00:52:36.754 --> 00:52:38.314
+than the patients who are wild type.
+
+909
+00:52:39.014 --> 00:52:39.314
+So this
+
+910
+00:52:42.074 --> 00:52:45.654
+makes sense, right? Because HER2 is really upstream, but when you have a survival
+
+911
+00:52:45.714 --> 00:52:48.234
+pathway downstream, right? So that's going to escape.
+
+912
+00:52:48.794 --> 00:52:52.534
+But that also implies those tumors should be sensitive to PI3K
+
+913
+00:52:52.574 --> 00:52:55.954
+inhibitors. So that was proven to be true by this
+
+914
+00:52:56.194 --> 00:52:59.334
+preclinical study on the right. This is cell line that developed the
+
+915
+00:52:59.354 --> 00:53:03.234
+trastuzumab resistance. But when we add back PI3K
+
+916
+00:53:03.254 --> 00:53:06.914
+inhibitor or PI3K/mTOR inhibitor, you saw tumor regression.
+
+917
+00:53:07.814 --> 00:53:11.054
+So this really lead a pretty strong therapeutic rationale.
+
+918
+00:53:11.154 --> 00:53:14.934
+So for us, when we have a HER2 PI3K ADC, we're not just
+
+919
+00:53:14.994 --> 00:53:18.934
+using HER2 simply as the cell surface marker, but we actually target
+
+920
+00:53:19.014 --> 00:53:22.454
+those cells where PI3K activation can lead to escape.
+
+921
+00:53:22.994 --> 00:53:26.394
+So by combining these two synergistic most together,
+
+922
+00:53:27.094 --> 00:53:27.494
+we can
+
+923
+00:53:28.414 --> 00:53:32.254
+prevent escape and potentially address resistance and
+
+924
+00:53:32.354 --> 00:53:33.534
+really enhance efficacy.
+
+925
+00:53:35.734 --> 00:53:36.834
+So we enabled our
+
+926
+00:53:37.934 --> 00:53:41.834
+HER2 ADC by using the GGFG linker, because we
+
+927
+00:53:41.894 --> 00:53:45.354
+like the stability and its overall release specificity.
+
+928
+00:53:45.754 --> 00:53:48.804
+It's obviously one of the more validated linkers out there
+
+929
+00:53:50.394 --> 00:53:54.274
+in agents such as Enhertu. We looked at both pertuzumab and the
+
+930
+00:53:54.314 --> 00:53:57.294
+trastuzumab ADCs, and they actually performed very
+
+931
+00:53:57.304 --> 00:54:01.024
+similarly. And you will probably see data for both of those
+
+932
+00:54:01.074 --> 00:54:01.694
+antibodies.
+
+933
+00:54:02.994 --> 00:54:06.354
+But we decided to move forward with the pertuzumab ADC because the combination
+
+934
+00:54:06.394 --> 00:54:10.054
+potential with Enhertu and also trastuzumab.
+
+935
+00:54:10.934 --> 00:54:14.174
+So when we look at the cell potency of our ADCs in this
+
+936
+00:54:14.194 --> 00:54:18.114
+HCC1954 model, which is a HER2 high breast
+
+937
+00:54:18.174 --> 00:54:21.854
+cancer model, our ADC in purple is very
+
+938
+00:54:21.874 --> 00:54:25.126
+potent. It's actually more potent than the free payload.In this
+
+939
+00:54:25.266 --> 00:54:28.886
+ZR74-5-1 HER2 low model,
+
+940
+00:54:29.846 --> 00:54:33.646
+it has a PIK3CA null mutation, so it's still pretty sensitive to the PI3K
+
+941
+00:54:33.686 --> 00:54:37.196
+inhibitor, as you can see here. But this compound has a weaker,
+
+942
+00:54:38.046 --> 00:54:41.666
+but yet still pretty distinctive sensitivity to our ADC.
+
+943
+00:54:42.266 --> 00:54:45.886
+And if we plot the HER2 expression levels versus our
+
+944
+00:54:45.906 --> 00:54:49.166
+ADC sensitivity, there's a pretty nice correlation indicating
+
+945
+00:54:49.186 --> 00:54:50.986
+antigen-mediated effect.
+
+946
+00:54:53.166 --> 00:54:56.845
+So I want to quickly discuss about this bystander effect studies.
+
+947
+00:54:57.546 --> 00:55:00.986
+So in this case, it's a tissue co-culture study.
+
+948
+00:55:01.086 --> 00:55:04.426
+We mixed HER2-positive cells with HER2 negative cells, in this case,
+
+949
+00:55:04.586 --> 00:55:08.226
+HCC70 cells. So to better
+
+950
+00:55:08.286 --> 00:55:11.746
+monitor these HER2 negative cells, we gave a red
+
+951
+00:55:11.866 --> 00:55:15.146
+nuclear eye label so that we can monitor the
+
+952
+00:55:15.186 --> 00:55:18.466
+viability. In the meantime, we also had a green
+
+953
+00:55:18.546 --> 00:55:22.486
+fluorescence label on this FoxO3A protein, which is a AKT
+
+954
+00:55:22.586 --> 00:55:26.186
+substrate. So that will allow us to monitor the AKT pathway.
+
+955
+00:55:27.926 --> 00:55:29.236
+So when monitoring the
+
+956
+00:55:31.406 --> 00:55:35.276
+red object counts, which is an indication of the cell viability,
+
+957
+00:55:36.506 --> 00:55:40.486
+our HER2 ADC actually demonstrate pretty substantial bystander
+
+958
+00:55:40.526 --> 00:55:44.206
+effect as in HER2 in terms of the bystander cell
+
+959
+00:55:44.226 --> 00:55:47.806
+killing shown here on the left side of this page.
+
+960
+00:55:48.546 --> 00:55:52.366
+However, when we're looking at the green marker dynamics, they
+
+961
+00:55:52.386 --> 00:55:55.426
+behave very differently. So in HER2 had very little change, but
+
+962
+00:55:55.526 --> 00:55:59.306
+our PI3K ADC, we saw pretty substantial
+
+963
+00:56:01.266 --> 00:56:04.106
+inhibition of this phospho-AKT pathway.
+
+964
+00:56:04.166 --> 00:56:08.046
+So this tells us even though both kinds of agents lead to a
+
+965
+00:56:08.106 --> 00:56:11.846
+similar level of bystander killing, but the mechanism by which they're operating
+
+966
+00:56:12.126 --> 00:56:12.806
+are very different.
+
+967
+00:56:14.146 --> 00:56:16.726
+So moving our ADC into efficacy studies.
+
+968
+00:56:17.126 --> 00:56:21.086
+At 3 MPK, we saw tumor growth inhibition, but at
+
+969
+00:56:21.266 --> 00:56:23.006
+nine MPK, we saw tumor regression.
+
+970
+00:56:23.646 --> 00:56:27.466
+In the same model, alpelisib only led to stasis
+
+971
+00:56:27.886 --> 00:56:31.106
+and followed by tumor relapse once we stopped dosing, and
+
+972
+00:56:31.126 --> 00:56:35.086
+trodelvy was not active. It's worth noting that our ADC
+
+973
+00:56:35.226 --> 00:56:39.006
+groups had no body weight loss. However, alpelisib, we did
+
+974
+00:56:39.326 --> 00:56:42.066
+observe a body weight loss and the dose-limiting toxicity.
+
+975
+00:56:43.486 --> 00:56:46.466
+Looking at the PD markers, in this case, we looked at the phospho-AKT.
+
+976
+00:56:47.326 --> 00:56:50.686
+At nine MPK, all the way out to 240 hours, we
+
+977
+00:56:50.746 --> 00:56:54.646
+saw complete AKT suppression, while if you look at the systemic
+
+978
+00:56:54.746 --> 00:56:57.526
+agents, even though they were dosed once every day,
+
+979
+00:56:58.486 --> 00:57:02.406
+the suppression was not nearly as complete and seems to be a little bit transient.
+
+980
+00:57:04.046 --> 00:57:07.566
+In another HER2 high model, this time it's a slightly different PIK3CA
+
+981
+00:57:07.646 --> 00:57:08.186
+mutation.
+
+982
+00:57:09.006 --> 00:57:12.866
+Our pertuzumab ADC at 10 MPK showed tumor stasis comparable to in
+
+983
+00:57:12.926 --> 00:57:16.726
+HER2. So on the right, this is sort of a clinical modeling
+
+984
+00:57:16.746 --> 00:57:20.326
+experiment. So we treated the tumor first with alpelisib, we saw
+
+985
+00:57:21.226 --> 00:57:23.366
+stasis, then we took the alpelisib
+
+986
+00:57:24.246 --> 00:57:26.406
+off, then the tumor started relapsing.
+
+987
+00:57:26.506 --> 00:57:29.686
+At this point, we gave a rescue dose of our pertuzumab ADC.
+
+988
+00:57:29.766 --> 00:57:32.926
+We saw very rapid tumor regression to a lower baseline level.
+
+989
+00:57:34.606 --> 00:57:38.506
+Now, another HER2 low models. The first one on the
+
+990
+00:57:38.546 --> 00:57:42.376
+left is T47D model. As you can see, at the 15 MPK, our
+
+991
+00:57:42.386 --> 00:57:46.326
+ADC had pretty substantial tumor regression and tumor stasis.
+
+992
+00:57:47.186 --> 00:57:50.566
+Trastuzumab doesn't work, and trodelvy didn't work at all.
+
+993
+00:57:50.606 --> 00:57:54.126
+This is interesting because T47D is HER2 positive.
+
+994
+00:57:55.026 --> 00:57:58.936
+In this PDX model, we can see sort of a door-dependent tumor growth
+
+995
+00:57:58.986 --> 00:57:59.546
+inhibition.
+
+996
+00:58:00.366 --> 00:58:03.806
+So this data really demonstrates our ADC can actually be
+
+997
+00:58:04.006 --> 00:58:05.766
+efficacious even in a HER2 low setting.
+
+998
+00:58:09.866 --> 00:58:12.986
+Okay, this is a really early version, so I don't know why it was not updated.
+
+999
+00:58:13.006 --> 00:58:16.846
+But anyway, so I'm just going to point your attention to this particular
+
+1000
+00:58:16.906 --> 00:58:20.106
+PI3K wild type in the non-breast cancer model.
+
+1001
+00:58:20.226 --> 00:58:24.206
+So in this OE19 model with the trastuzumab ADC, at the 15
+
+1002
+00:58:24.246 --> 00:58:28.126
+MPK, we saw tumor growth inhibition, while
+
+1003
+00:58:28.146 --> 00:58:31.146
+trastuzumab and alpelisib both were not nearly as active.
+
+1004
+00:58:33.226 --> 00:58:35.986
+Now going to combination studies shown below.
+
+1005
+00:58:36.866 --> 00:58:40.726
+As you can see here with the sub-efficacious dose of trastuzumab and our
+
+1006
+00:58:40.766 --> 00:58:43.506
+pertuzumab ADC really led to massive synergy.
+
+1007
+00:58:44.105 --> 00:58:47.826
+On the right, this is a KRAS-dependent pancreatic cell line, which is
+
+1008
+00:58:47.886 --> 00:58:51.506
+sensitive to G12C inhibitor. In this case, it's sotorasib.
+
+1009
+00:58:52.006 --> 00:58:54.006
+You see some tumor growth inhibition.
+
+1010
+00:58:54.026 --> 00:58:57.426
+And we also had the proof of concept PI3K ADC CD71,
+
+1011
+00:58:58.046 --> 00:58:59.966
+because this cell is CD71 positive.
+
+1012
+00:59:00.486 --> 00:59:04.226
+We did see some efficacy, but when you combine the two agents together in a green
+
+1013
+00:59:04.286 --> 00:59:05.826
+curve, it led to tumor
+
+1014
+00:59:06.666 --> 00:59:09.806
+regression. So combining all this data together clearly
+
+1015
+00:59:10.526 --> 00:59:11.746
+validates the broad
+
+1016
+00:59:12.686 --> 00:59:16.626
+utility of our platform and the powerful combination potential across
+
+1017
+00:59:16.906 --> 00:59:18.206
+diverse genetic backgrounds.
+
+1018
+00:59:19.566 --> 00:59:21.926
+So now going to transition to the safety studies.
+
+1019
+00:59:22.606 --> 00:59:26.566
+Here we summarize the preclinical tolerability and the PK profile of our
+
+1020
+00:59:26.586 --> 00:59:27.766
+ADC in rat.
+
+1021
+00:59:30.046 --> 00:59:33.746
+If you look at this ADC, it's actually well-tolerated in rats at the 50
+
+1022
+00:59:33.826 --> 00:59:37.706
+MPK. We look at exposure levels, and the total
+
+1023
+00:59:37.766 --> 00:59:41.186
+antibody and the total ADC are virtually superimposable.
+
+1024
+00:59:41.826 --> 00:59:45.166
+And that, coupled with the very low free payload release,
+
+1025
+00:59:45.466 --> 00:59:49.326
+indicating this conjugate is actually very stable in the systemic
+
+1026
+00:59:49.446 --> 00:59:52.326
+circulation. So the pathology findings are very
+
+1027
+00:59:52.366 --> 00:59:55.266
+consistent with on-target effects.
+
+1028
+00:59:55.926 --> 00:59:59.666
+So because of this combination of the tolerability
+
+1029
+01:00:00.186 --> 01:00:04.126
+and also stability in rat, really derisks this platform from
+
+1030
+01:00:04.186 --> 01:00:05.546
+off-target liabilities.
+
+1031
+01:00:07.706 --> 01:00:11.546
+So now I just want to summarize. So we started from omipalisib and
+
+1032
+01:00:11.666 --> 01:00:14.746
+went through multiple cycles and identified different
+
+1033
+01:00:14.866 --> 01:00:18.670
+payload... for different sort of types of cancers
+
+1034
+01:00:19.370 --> 01:00:21.410
+through this rationale iterative design.
+
+1035
+01:00:21.850 --> 01:00:25.760
+We enhanced the pharmacology by including mTOR, and also we were
+
+1036
+01:00:25.810 --> 01:00:28.990
+able to improve the pharmacological profile,
+
+1037
+01:00:29.910 --> 01:00:33.630
+identify a linker attachment, hence enabling various
+
+1038
+01:00:33.770 --> 01:00:37.470
+antibody drug conjugates that demonstrate the robust target engagement and
+
+1039
+01:00:37.570 --> 01:00:41.270
+efficacy in both hematological and also solid tumor
+
+1040
+01:00:41.310 --> 01:00:44.630
+models. These are actually well-tolerated and demonstrate the
+
+1041
+01:00:44.650 --> 01:00:48.170
+tolerability in rat exposure and tox studies of up to
+
+1042
+01:00:48.950 --> 01:00:52.630
+50 MPK. So this molecular design framework can definitely be
+
+1043
+01:00:52.670 --> 01:00:56.090
+applied to other types of molecules for payload
+
+1044
+01:00:56.150 --> 01:00:56.730
+development.
+
+1045
+01:00:58.830 --> 01:01:02.350
+So I just want to wrap up. I want to really thank my coworkers at
+
+1046
+01:01:02.450 --> 01:01:06.330
+AbbVie previously and currently for making this possible.
+
+1047
+01:01:06.800 --> 01:01:09.630
+I'm incredibly grateful to their dedication.
+
+1048
+01:01:10.130 --> 01:01:13.260
+And also I want to highlight the work of my coworker, Chi Lu, who's in the
+
+1049
+01:01:13.330 --> 01:01:17.050
+audience. He was the chemistry lead for this program as of
+
+1050
+01:01:17.070 --> 01:01:20.490
+recent. So he'll be presenting a poster with the title shown here.
+
+1051
+01:01:20.650 --> 01:01:23.970
+There'll be much more SCR optimization and also
+
+1052
+01:01:24.010 --> 01:01:27.250
+pharmacology characterization data in his poster, so
+
+1053
+01:01:27.290 --> 01:01:29.790
+please come by, check it out if you're interested.
+
+1054
+01:01:29.810 --> 01:01:32.290
+It's going to be in tomorrow's session.
+
+1055
+01:01:32.910 --> 01:01:35.130
+So with that, I'm going to thank you for your time and attention.
+
+1056
+01:01:35.170 --> 01:01:36.350
+I'd be happy to answer questions.
+
+1057
+01:01:43.470 --> 01:01:46.170
+Yeah, thanks for the great talk, frankly, from Wish Abtech.
+
+1058
+01:01:46.710 --> 01:01:50.370
+So I have a question for your TMT8 model, the Hema model,
+
+1059
+01:01:50.690 --> 01:01:50.870
+right?
+
+1060
+01:01:51.790 --> 01:01:55.210
+Because from your in vitro assay, like your
+
+1061
+01:01:55.510 --> 01:01:59.170
+omilifib with bare
+
+1062
+01:01:59.250 --> 01:02:00.270
+copalib,
+
+1063
+01:02:01.190 --> 01:02:04.050
+more like only beta and gamma PI3K just
+
+1064
+01:02:04.710 --> 01:02:08.410
+show improvement. But from that model, but
+
+1065
+01:02:08.710 --> 01:02:12.310
+I expect the bare compound should show some efficacy because
+
+1066
+01:02:12.910 --> 01:02:16.840
+you do have ADC naked antibody control on the
+
+1067
+01:02:16.840 --> 01:02:20.490
+left, did not show any efficacy. So what's the reason?
+
+1068
+01:02:20.550 --> 01:02:21.070
+Because
+
+1069
+01:02:21.930 --> 01:02:24.230
+your kinase inhibition very similar.
+
+1070
+01:02:25.049 --> 01:02:28.750
+But I think more like ADCC, ADCP
+
+1071
+01:02:29.050 --> 01:02:31.630
+effect, plus your inhibitor effect.
+
+1072
+01:02:31.930 --> 01:02:35.770
+But from your control, the antibody, that is not the case.
+
+1073
+01:02:36.130 --> 01:02:39.780
+So what's the reason? Because only slightly different beta and
+
+1074
+01:02:39.850 --> 01:02:42.030
+gamma inhibition cause huge difference.
+
+1075
+01:02:43.730 --> 01:02:47.450
+So I guess your question is why the ADC shows much better efficacy than
+
+1076
+01:02:47.530 --> 01:02:51.010
+anybody, and even though the PI3K
+
+1077
+01:02:51.250 --> 01:02:52.850
+activity was not that much better?
+
+1078
+01:02:53.430 --> 01:02:56.450
+Why bare compound no efficacy at all, basically that's fine.
+
+1079
+01:02:56.470 --> 01:02:58.390
+Why copalib doesn't have efficacy at all?
+
+1080
+01:02:58.790 --> 01:03:02.730
+Yeah, because your CD79a and with
+
+1081
+01:03:02.890 --> 01:03:05.230
+your inhibitor show greater efficacy, right?
+
+1082
+01:03:06.510 --> 01:03:10.230
+Yeah, I think copalib, obviously, I think the 5
+
+1083
+01:03:10.310 --> 01:03:13.940
+MPK was an efficacious dose, but it's probably not the maximum efficacious
+
+1084
+01:03:13.990 --> 01:03:14.650
+dose.
+
+1085
+01:03:14.679 --> 01:03:14.679
+Okay.
+
+1086
+01:03:14.750 --> 01:03:18.630
+So I think that allows us for the comparison, but I think another very
+
+1087
+01:03:19.430 --> 01:03:22.970
+interesting mechanism rationale is what we did find, which I didn't show today, is
+
+1088
+01:03:22.990 --> 01:03:26.870
+that PI3K inhibition can actually lead to CD79B upregulation.
+
+1089
+01:03:27.450 --> 01:03:31.010
+So you have this sort of feed-forward mechanism, which can potentially make your
+
+1090
+01:03:31.030 --> 01:03:34.430
+ADC more efficacious than if you were to combine the antibody with
+
+1091
+01:03:34.570 --> 01:03:36.870
+the inhibitor alone itself, right?
+
+1092
+01:03:36.890 --> 01:03:38.470
+So there's some sort of synergistic-
+
+1093
+01:03:38.730 --> 01:03:38.950
+Mm-hmm
+
+1094
+01:03:38.970 --> 01:03:42.290
+... effect between CD79B and the PI3K.
+
+1095
+01:03:42.730 --> 01:03:46.610
+Okay, last question. Basically, so many B-cell target, why
+
+1096
+01:03:47.170 --> 01:03:49.830
+CD79B, not A, not others?
+
+1097
+01:03:51.690 --> 01:03:53.350
+We actually didn't make those conjugates.
+
+1098
+01:03:54.230 --> 01:03:58.190
+CD79B was obviously validated because the polyB had shown a lot
+
+1099
+01:03:58.230 --> 01:03:59.110
+of clinical effects.
+
+1100
+01:04:00.250 --> 01:04:04.110
+We looked at some of the others, CD90 and 22, I believe,
+
+1101
+01:04:04.210 --> 01:04:06.630
+didn't look as good as CD79B as well.
+
+1102
+01:04:06.770 --> 01:04:07.810
+Thank you very much.
+
+1103
+01:04:09.050 --> 01:04:09.490
+Yeah.
+
+1104
+01:04:09.550 --> 01:04:13.210
+Hi. Thanks, Dr. Wang, for the nice talk. I'm Jipeng from Roche.
+
+1105
+01:04:13.690 --> 01:04:16.270
+So I noticed you used two different
+
+1106
+01:04:17.690 --> 01:04:21.630
+linker and payload design for liquid and solid tumors.
+
+1107
+01:04:22.070 --> 01:04:25.110
+I'm just wondering whether you could briefly summarize
+
+1108
+01:04:26.110 --> 01:04:30.070
+for different type of tumor, what's the preferred
+
+1109
+01:04:30.430 --> 01:04:34.350
+linker and payload activities? And whether for your solid
+
+1110
+01:04:34.450 --> 01:04:38.270
+tumor linker and payload, you tried that in the liquid
+
+1111
+01:04:38.290 --> 01:04:40.490
+tumor as well? What about the
+
+1112
+01:04:41.310 --> 01:04:41.930
+performance?
+
+1113
+01:04:42.770 --> 01:04:46.290
+Okay, is the question if we use the solid tumor
+
+1114
+01:04:46.390 --> 01:04:48.530
+payload in the HEM model?
+
+1115
+01:04:49.450 --> 01:04:53.070
+So we do have a compound two actually showed--
+
+1116
+01:04:53.350 --> 01:04:55.450
+we had data for compound two in both
+
+1117
+01:04:56.290 --> 01:04:58.490
+HEM and also solid tumor cell lines.
+
+1118
+01:04:58.650 --> 01:05:01.610
+So clearly solid, always you're going to see a right shift.
+
+1119
+01:05:03.470 --> 01:05:03.660
+Mm-hmm.
+
+1120
+01:05:04.690 --> 01:05:08.550
+Does that make sense? So I would imagine, I would say if we apply compound
+
+1121
+01:05:08.610 --> 01:05:12.450
+three back into HEM, I would think probably it would perform better, but
+
+1122
+01:05:12.490 --> 01:05:13.890
+we didn't do that experiment.
+
+1123
+01:05:15.950 --> 01:05:17.050
+Okay. Yeah. Thank you.
+
+1124
+01:05:17.840 --> 01:05:18.950
+Okay.
+
+1125
+01:05:19.450 --> 01:05:22.830
+Hello, I'm from Zai Lab. Thank you for the very exciting
+
+1126
+01:05:22.890 --> 01:05:26.730
+talk. So I have two questions. One is, now you have a large
+
+1127
+01:05:26.770 --> 01:05:30.150
+molecule, right? So, do you worry about the tumor
+
+1128
+01:05:30.190 --> 01:05:34.110
+penetration? And the second question is, compared to conventional
+
+1129
+01:05:34.150 --> 01:05:35.130
+kinase inhibitor,
+
+1130
+01:05:36.190 --> 01:05:39.770
+have you seen less tox with this conjugation?
+
+1131
+01:05:39.870 --> 01:05:40.210
+Thank you.
+
+1132
+01:05:41.890 --> 01:05:43.610
+Right. So I think the tumor
+
+1133
+01:05:44.990 --> 01:05:46.710
+penetration wasn't a big issue,
+
+1134
+01:05:47.610 --> 01:05:51.110
+because we did see the PD. In fact, we also saw pretty substantial
+
+1135
+01:05:51.730 --> 01:05:54.640
+tumor payload. I mean, that's the exact reason why you want to use the antibody,
+
+1136
+01:05:54.710 --> 01:05:57.490
+right? So I don't think that's necessary, is that barrier itself.
+
+1137
+01:05:57.920 --> 01:05:58.730
+And also, our compounds
+
+1138
+01:05:59.590 --> 01:06:01.510
+do have pretty substantial bystander effect.
+
+1139
+01:06:02.270 --> 01:06:04.200
+Second question, do we see less tox?
+
+1140
+01:06:04.310 --> 01:06:06.090
+I think it's a harder question to answer,
+
+1141
+01:06:06.910 --> 01:06:09.450
+because you really have to be very quantitative about it.
+
+1142
+01:06:10.130 --> 01:06:13.729
+But what I can say is the organ tox
+
+1143
+01:06:13.770 --> 01:06:17.140
+profiles, or at least the organs, are
+
+1144
+01:06:17.170 --> 01:06:20.791
+veryAlmost identical, right? But then it's really based on some of the
+
+1145
+01:06:20.862 --> 01:06:24.782
+therapeutic exposure levels versus the efficacy exposure levels
+
+1146
+01:06:24.822 --> 01:06:26.292
+to define that margin. Right.
+
+1147
+01:06:27.132 --> 01:06:27.422
+Thank you.
+
+1148
+01:06:29.122 --> 01:06:32.562
+Thanks for your talk. On the same topic of talks, did you see
+
+1149
+01:06:32.622 --> 01:06:35.562
+hyperglycemia in any animal model?
+
+1150
+01:06:36.462 --> 01:06:38.862
+We do not see that. Good question. All right.
+
+1151
+01:06:38.962 --> 01:06:39.902
+I think we're going to wrap up this
+
+1152
+01:06:41.322 --> 01:06:43.032
+part, and I would like to invite Dr.
+
+1153
+01:06:43.462 --> 01:06:47.082
+Ito to the podium for the final presentation of this session.
+
+1154
+01:07:02.622 --> 01:07:06.582
+Okay. Good morning, everyone. My name is Koichi Ito
+
+1155
+01:07:06.722 --> 01:07:08.582
+from Prelude Therapeutics.
+
+1156
+01:07:09.742 --> 01:07:13.002
+I'm from Biology and Pharmacology Group, the Prelude.
+
+1157
+01:07:13.602 --> 01:07:15.302
+I'm going to talk about today
+
+1158
+01:07:16.122 --> 01:07:19.502
+our new ADC approach with targeted
+
+1159
+01:07:19.902 --> 01:07:23.242
+protein degrader or TPD molecules as a payload.
+
+1160
+01:07:23.722 --> 01:07:27.482
+We sometimes call it the degrader antibody conjugate or
+
+1161
+01:07:27.522 --> 01:07:27.822
+DAC.
+
+1162
+01:07:30.622 --> 01:07:32.082
+Here is my disclosure information.
+
+1163
+01:07:33.302 --> 01:07:34.902
+And, yeah, we
+
+1164
+01:07:35.722 --> 01:07:36.402
+learned about
+
+1165
+01:07:37.662 --> 01:07:39.742
+the two really innovative new
+
+1166
+01:07:40.702 --> 01:07:44.562
+payload approach for ADC. Perhaps we are all trying
+
+1167
+01:07:44.622 --> 01:07:47.322
+to improve or modify the
+
+1168
+01:07:47.362 --> 01:07:50.592
+traditional ADCs with cytotoxic
+
+1169
+01:07:50.702 --> 01:07:51.492
+chemotherapies,
+
+1170
+01:07:52.882 --> 01:07:56.632
+which successfully have proven that this modality,
+
+1171
+01:07:56.822 --> 01:08:00.362
+antibody drug conjugation modality, actually works in patients.
+
+1172
+01:08:01.182 --> 01:08:02.902
+But we also learned a lot
+
+1173
+01:08:03.722 --> 01:08:05.582
+from these traditional ADCs
+
+1174
+01:08:06.962 --> 01:08:10.712
+about how to use it safely and more effectively,
+
+1175
+01:08:11.302 --> 01:08:14.382
+and also where further
+
+1176
+01:08:14.502 --> 01:08:16.362
+improvements are needed.
+
+1177
+01:08:17.362 --> 01:08:21.062
+So at the Prelude, we are really focused on
+
+1178
+01:08:21.722 --> 01:08:25.163
+using a targeted protein degrader or TPD molecule
+
+1179
+01:08:26.041 --> 01:08:29.702
+as a payload in instead of the cytotoxic chemotherapy.
+
+1180
+01:08:29.822 --> 01:08:32.123
+Unlike this conventional cytotoxic
+
+1181
+01:08:32.942 --> 01:08:33.902
+chemotherapy agent,
+
+1182
+01:08:34.762 --> 01:08:38.503
+targeted protein degrader or TPD molecules can
+
+1183
+01:08:38.682 --> 01:08:42.422
+really selectively degrade your target protein
+
+1184
+01:08:42.482 --> 01:08:45.242
+with a well biologically validated
+
+1185
+01:08:46.963 --> 01:08:50.402
+function. So you can modulate the specific
+
+1186
+01:08:50.543 --> 01:08:54.402
+oncogenic pathways by using TPD. So
+
+1187
+01:08:54.562 --> 01:08:58.132
+with these two layers of selectivities, antibodies,
+
+1188
+01:08:58.282 --> 01:09:01.862
+and TPD molecules, we hypothesized that
+
+1189
+01:09:03.043 --> 01:09:06.762
+this DAC approach, degrader antibody conjugate approach,
+
+1190
+01:09:07.602 --> 01:09:11.062
+have a really strong potential to deliver
+
+1191
+01:09:11.583 --> 01:09:14.902
+both improved efficacy and improved
+
+1192
+01:09:14.922 --> 01:09:15.682
+tolerability.
+
+1193
+01:09:17.062 --> 01:09:20.562
+And also in terms of the PD marker,
+
+1194
+01:09:21.003 --> 01:09:24.831
+because we are degrading your target protein, it is
+
+1195
+01:09:25.003 --> 01:09:28.963
+relatively straightforward to track the PD in cells and the
+
+1196
+01:09:29.003 --> 01:09:31.482
+patient, unlike traditional ADCs.
+
+1197
+01:09:32.402 --> 01:09:34.432
+And also, TPDs
+
+1198
+01:09:35.822 --> 01:09:39.793
+are typically non-genotoxic, which is important for
+
+1199
+01:09:40.482 --> 01:09:43.822
+develop-ability because we are not directly targeting DNA.
+
+1200
+01:09:45.322 --> 01:09:45.463
+So,
+
+1201
+01:09:47.702 --> 01:09:48.822
+just for
+
+1202
+01:09:49.782 --> 01:09:53.702
+some of the audience who may
+
+1203
+01:09:53.742 --> 01:09:57.522
+not be so familiar with this targeted protein degrader approach,
+
+1204
+01:09:57.842 --> 01:10:00.742
+let me just briefly introduce this concept.
+
+1205
+01:10:01.532 --> 01:10:04.062
+The TPD molecules are typically
+
+1206
+01:10:04.102 --> 01:10:05.622
+heterobifunctional
+
+1207
+01:10:06.582 --> 01:10:10.022
+molecules, are composed of the ligand of protein of
+
+1208
+01:10:10.082 --> 01:10:12.262
+interest, E3 ligase,
+
+1209
+01:10:13.062 --> 01:10:14.902
+connected via a linker.
+
+1210
+01:10:15.822 --> 01:10:19.812
+There are monovalent degraders or molecular glues, but I'm not going
+
+1211
+01:10:19.842 --> 01:10:21.622
+to talk about those molecules today.
+
+1212
+01:10:22.862 --> 01:10:26.822
+And these TPD molecules themselves have a really strong
+
+1213
+01:10:27.302 --> 01:10:31.042
+potential to be a novel therapeutic approach or
+
+1214
+01:10:31.062 --> 01:10:31.682
+modality,
+
+1215
+01:10:32.662 --> 01:10:34.942
+and many of them are actually in a clinical trial.
+
+1216
+01:10:35.962 --> 01:10:39.262
+But here, we aim to further
+
+1217
+01:10:39.342 --> 01:10:43.242
+improve the therapeutic index and increase the efficacy
+
+1218
+01:10:43.282 --> 01:10:46.262
+with the antibody drug conjugation approach.
+
+1219
+01:10:47.502 --> 01:10:51.422
+Mechanistically, this heterobifunctional molecule will induce the
+
+1220
+01:10:51.442 --> 01:10:55.262
+proximity between the E3 ligase and your protein of
+
+1221
+01:10:55.402 --> 01:10:55.882
+interest,
+
+1222
+01:10:57.122 --> 01:11:00.942
+and promotes the polyubiquitination of your target protein,
+
+1223
+01:11:01.342 --> 01:11:04.682
+followed by proteasome-mediated
+
+1224
+01:11:04.782 --> 01:11:08.402
+degradation. So basically, you hijack the
+
+1225
+01:11:08.462 --> 01:11:12.122
+endogenous polyubiquitination, ubiquitin proteasome
+
+1226
+01:11:12.422 --> 01:11:13.522
+machinery in the cells.
+
+1227
+01:11:15.182 --> 01:11:18.592
+There are several advantages of using TPDs.
+
+1228
+01:11:19.202 --> 01:11:21.442
+We can achieve excellent potencies.
+
+1229
+01:11:22.042 --> 01:11:24.082
+We can discuss this in a few slides.
+
+1230
+01:11:24.622 --> 01:11:28.182
+And also, a mechanism of action of this molecule is a
+
+1231
+01:11:28.222 --> 01:11:31.742
+catalytic activity. It's an event-driven pharmacology,
+
+1232
+01:11:32.302 --> 01:11:35.282
+unlike traditional small molecule with
+
+1233
+01:11:35.422 --> 01:11:37.482
+occupancy-driven pharmacology.
+
+1234
+01:11:38.342 --> 01:11:41.642
+And also, TPD can prolong the pharmacodynamics
+
+1235
+01:11:42.202 --> 01:11:45.782
+effect, PD effect, resulting from the protein resynthesis.
+
+1236
+01:11:46.002 --> 01:11:49.882
+Once you get rid of this protein in cancer cells, it takes some time
+
+1237
+01:11:49.962 --> 01:11:52.922
+for cancer cells to recover the loss of protein.
+
+1238
+01:11:54.262 --> 01:11:58.142
+And potentially, they enhance the pharmacological functions by
+
+1239
+01:11:58.202 --> 01:12:01.482
+targeting, regulating your PPIs, protein-protein
+
+1240
+01:12:01.502 --> 01:12:05.242
+interactions, or even disrupting the larger
+
+1241
+01:12:05.442 --> 01:12:09.282
+protein complex by degrading one of the subunits of
+
+1242
+01:12:09.342 --> 01:12:12.682
+the complex. So these are also very unique
+
+1243
+01:12:12.742 --> 01:12:16.582
+to the targeted protein degrader modality.
+
+1244
+01:12:16.682 --> 01:12:20.618
+So overall, TPDHas a really
+
+1245
+01:12:20.738 --> 01:12:21.318
+promising
+
+1246
+01:12:23.378 --> 01:12:23.958
+approach
+
+1247
+01:12:24.878 --> 01:12:27.218
+by using as a payload molecule.
+
+1248
+01:12:30.538 --> 01:12:33.838
+So here we are looking at the classes of
+
+1249
+01:12:34.098 --> 01:12:37.558
+payload of ADCs that are approved
+
+1250
+01:12:37.678 --> 01:12:41.518
+or in clinical trials. As you can see, a majority
+
+1251
+01:12:41.838 --> 01:12:45.818
+of ADCs use three cytotoxic payload classes,
+
+1252
+01:12:46.518 --> 01:12:50.338
+microtubule inhibitors, topoisomerase inhibitors, and
+
+1253
+01:12:50.398 --> 01:12:51.758
+DNA-damaging agent.
+
+1254
+01:12:52.898 --> 01:12:56.767
+So we think the TPDs uniquely could serve as a
+
+1255
+01:12:56.958 --> 01:13:00.678
+payload with excellent potency and additional
+
+1256
+01:13:00.758 --> 01:13:04.118
+benefits that I just discussed in the previous slides.
+
+1257
+01:13:07.498 --> 01:13:11.338
+So here is a summary of advantages and their rationale
+
+1258
+01:13:12.098 --> 01:13:14.218
+by using TPD as a payload.
+
+1259
+01:13:15.558 --> 01:13:18.678
+We can achieve exceptional potency,
+
+1260
+01:13:19.338 --> 01:13:23.158
+enabling the possibility of lower DAR ADCs
+
+1261
+01:13:23.168 --> 01:13:26.938
+and improve the developability. We can keep the
+
+1262
+01:13:26.978 --> 01:13:30.658
+molecule permeabilities, so that allows
+
+1263
+01:13:31.478 --> 01:13:34.938
+bystander effect, especially in the context of solid tumors.
+
+1264
+01:13:37.058 --> 01:13:40.818
+And we can design the TPD to have a high clearance,
+
+1265
+01:13:41.118 --> 01:13:43.968
+which may reduce the systemic toxicity.
+
+1266
+01:13:44.518 --> 01:13:48.458
+We can also design it as a prodrug, which also
+
+1267
+01:13:48.498 --> 01:13:51.718
+may reduce the systemic toxicity and improve the
+
+1268
+01:13:51.758 --> 01:13:52.558
+developability.
+
+1269
+01:13:54.018 --> 01:13:57.878
+The highly stable linker is also
+
+1270
+01:13:57.998 --> 01:14:01.098
+very important factors for the TPD molecules.
+
+1271
+01:14:01.138 --> 01:14:02.978
+So I'm coming back to this in a few minutes.
+
+1272
+01:14:03.918 --> 01:14:07.038
+And again, typically, TPDs are
+
+1273
+01:14:07.138 --> 01:14:10.628
+non-genotoxic, so it's good for developabilities and
+
+1274
+01:14:10.758 --> 01:14:14.038
+also are suitable for therapeutics beyond cancer
+
+1275
+01:14:14.818 --> 01:14:16.998
+with the longer-term treatment.
+
+1276
+01:14:21.638 --> 01:14:25.158
+So here I'm showing how we actually optimized
+
+1277
+01:14:25.858 --> 01:14:29.398
+TPD payload as well as the payload linker.
+
+1278
+01:14:29.858 --> 01:14:33.418
+As you can see, there are many places that we wanted to
+
+1279
+01:14:33.478 --> 01:14:34.138
+optimize.
+
+1280
+01:14:35.538 --> 01:14:39.178
+We had a really extensive medicinal chemistry
+
+1281
+01:14:39.218 --> 01:14:42.678
+campaign combined with biology screening.
+
+1282
+01:14:44.198 --> 01:14:47.938
+Because MMAE and the topoisomerase I inhibitor already have
+
+1283
+01:14:48.058 --> 01:14:50.518
+exceptional anti-cancer
+
+1284
+01:14:51.578 --> 01:14:55.278
+potency, we are also really focused on getting
+
+1285
+01:14:55.338 --> 01:14:59.018
+the exceptional degradation potency in picomolar range.
+
+1286
+01:14:59.778 --> 01:15:03.498
+We also needed to keep the reasonable permeability
+
+1287
+01:15:03.838 --> 01:15:07.478
+and metabolism, high clearance for the ideal
+
+1288
+01:15:07.838 --> 01:15:10.978
+payload candidates, as well as the balanced
+
+1289
+01:15:11.038 --> 01:15:14.918
+polarity and non-genotoxicity for the
+
+1290
+01:15:14.958 --> 01:15:16.998
+reasonable drug developability.
+
+1291
+01:15:18.498 --> 01:15:21.178
+In terms of the payload linker optimization,
+
+1292
+01:15:22.098 --> 01:15:25.458
+we needed to test in the DAC format.
+
+1293
+01:15:25.538 --> 01:15:29.358
+So we conjugated the designed payload linkers to
+
+1294
+01:15:29.418 --> 01:15:32.858
+appropriate antibodies, and we tested this DAC
+
+1295
+01:15:33.178 --> 01:15:36.558
+format in cellular assays to generate the SAR.
+
+1296
+01:15:37.818 --> 01:15:40.838
+And we also looked at the stability and
+
+1297
+01:15:41.258 --> 01:15:45.118
+aggregation state of these generated DACs to
+
+1298
+01:15:45.358 --> 01:15:48.158
+really keep looking at the developability as well.
+
+1299
+01:15:49.118 --> 01:15:52.558
+So with this constant feedback loops enabled
+
+1300
+01:15:53.238 --> 01:15:56.938
+us to identify a series of really interesting
+
+1301
+01:15:56.998 --> 01:15:57.418
+novel
+
+1302
+01:15:58.238 --> 01:16:01.648
+TPD molecule, as well as the payload linker that
+
+1303
+01:16:01.698 --> 01:16:04.658
+supports the efficacy of the TPD
+
+1304
+01:16:04.698 --> 01:16:06.398
+payload.
+
+1305
+01:16:08.298 --> 01:16:10.938
+So now I'm going to talk about our first target.
+
+1306
+01:16:11.578 --> 01:16:15.498
+We are looking at the SMARCA2 and SMARCA4.
+
+1307
+01:16:16.258 --> 01:16:19.858
+These are the ATPase catalytic subunit
+
+1308
+01:16:20.458 --> 01:16:24.338
+of the SWI/SNF complex. This complex is a
+
+1309
+01:16:24.398 --> 01:16:27.258
+major chromatin remodeling complex.
+
+1310
+01:16:27.948 --> 01:16:31.818
+This SWI/SNF complex contained either SMARCA2
+
+1311
+01:16:31.858 --> 01:16:34.378
+or SMARCA4 in the cells.
+
+1312
+01:16:35.378 --> 01:16:39.197
+Dual inhibition of the SMARCA2 and SMARCA4 have been
+
+1313
+01:16:39.238 --> 01:16:39.868
+shown to
+
+1314
+01:16:40.697 --> 01:16:42.858
+inhibit certain cancer types,
+
+1315
+01:16:43.718 --> 01:16:47.598
+such as prostate cancer and hematological cancers such
+
+1316
+01:16:47.658 --> 01:16:51.647
+as AML. However, this simultaneous inhibition or
+
+1317
+01:16:51.738 --> 01:16:54.848
+targeting degradation of SMARCA2 and
+
+1318
+01:16:55.178 --> 01:16:56.058
+4
+
+1319
+01:16:57.238 --> 01:17:00.758
+has been also associated with limited, really challenging
+
+1320
+01:17:01.038 --> 01:17:04.578
+tolerability issues. So we thought that
+
+1321
+01:17:04.818 --> 01:17:07.918
+antibody drug conjugation with SMARCA2/4 dual
+
+1322
+01:17:07.998 --> 01:17:11.278
+degradation could represent a really promising
+
+1323
+01:17:11.378 --> 01:17:14.378
+approach for a new therapeutic modality.
+
+1324
+01:17:19.368 --> 01:17:22.978
+We identified a novel SMARCA2/4 bromodomain
+
+1325
+01:17:23.058 --> 01:17:26.018
+binder from fragment screening and
+
+1326
+01:17:27.158 --> 01:17:27.438
+the
+
+1327
+01:17:28.598 --> 01:17:30.578
+structure-based drug design approach.
+
+1328
+01:17:31.378 --> 01:17:32.858
+This tricycle with the phenol,
+
+1329
+01:17:33.798 --> 01:17:37.198
+this SMARCA2/4 binder with the VHL
+
+1330
+01:17:37.498 --> 01:17:40.978
+ligand, we generated this Degrader 02.
+
+1331
+01:17:42.158 --> 01:17:45.898
+And in high bit cell screening, we saw the SMARCA2
+
+1332
+01:17:46.018 --> 01:17:49.098
+degradation potency was about 300 nanomolar.
+
+1333
+01:17:51.338 --> 01:17:54.438
+And we optimized this starting point of
+
+1334
+01:17:54.738 --> 01:17:58.598
+SMARCA2/4 dual degrader, and we identified the Degrader
+
+1335
+01:17:58.778 --> 01:17:59.368
+04,
+
+1336
+01:18:01.518 --> 01:18:05.098
+which significantly improved the degradation
+
+1337
+01:18:05.198 --> 01:18:07.848
+potency that I'm going to show you in the following slides.
+
+1338
+01:18:08.358 --> 01:18:11.278
+But we first wanted to validate this
+
+1339
+01:18:11.918 --> 01:18:14.898
+degrader for in broad cell line panel to
+
+1340
+01:18:14.938 --> 01:18:17.634
+identifyThis
+
+1341
+01:18:18.594 --> 01:18:22.154
+more sensitive cancer types to SWI/SNF
+
+1342
+01:18:22.214 --> 01:18:25.894
+inhibition. As you can see here in the cell line panel data,
+
+1343
+01:18:26.334 --> 01:18:30.314
+there are notably sensitive cancer types such
+
+1344
+01:18:30.334 --> 01:18:34.034
+as prostate cancer, breast cancer, TNBC, ER
+
+1345
+01:18:34.074 --> 01:18:37.894
+positive HER2 breast cancer, and also the lymphoma,
+
+1346
+01:18:38.094 --> 01:18:39.934
+AML, and multiple myeloma.
+
+1347
+01:18:41.074 --> 01:18:44.154
+And also, there are subsets of
+
+1348
+01:18:44.914 --> 01:18:46.174
+solid tumors in the middle,
+
+1349
+01:18:47.054 --> 01:18:48.174
+show the reasonable
+
+1350
+01:18:49.734 --> 01:18:53.634
+response. So it might be interesting to see if we can find
+
+1351
+01:18:53.694 --> 01:18:56.794
+a biomarker-driven approach in these indications.
+
+1352
+01:18:58.494 --> 01:19:01.674
+We did see comparable anti-proliferation
+
+1353
+01:19:01.794 --> 01:19:05.734
+activity between the MMAE and Degrader-IV
+
+1354
+01:19:05.814 --> 01:19:08.374
+in prostate cancer cell lines.
+
+1355
+01:19:13.434 --> 01:19:16.854
+We tested this Degrader-04 in vivo models,
+
+1356
+01:19:17.714 --> 01:19:21.414
+VCaP and then LNCaP. These are prostate cancer CDX
+
+1357
+01:19:21.454 --> 01:19:24.954
+models. As you can see, the Degrader-04 show the
+
+1358
+01:19:24.974 --> 01:19:28.054
+dose-dependent, a really strong anti-tumor activity.
+
+1359
+01:19:29.474 --> 01:19:32.854
+However, as you can imagine, this payload, the dual degrader,
+
+1360
+01:19:33.294 --> 01:19:36.954
+had a time and dose-dependent toxicity.
+
+1361
+01:19:37.574 --> 01:19:40.874
+Mouse body weight loss and animal deaths were observed,
+
+1362
+01:19:41.314 --> 01:19:44.574
+highlighting the poor tolerability of this molecule.
+
+1363
+01:19:44.614 --> 01:19:48.254
+This is something we expected. So again, the ADC approach
+
+1364
+01:19:48.334 --> 01:19:49.414
+was wanted.
+
+1365
+01:19:52.654 --> 01:19:56.234
+So we validated this new concept, the SMARC2 for DAC
+
+1366
+01:19:56.374 --> 01:19:57.854
+in various
+
+1367
+01:19:58.994 --> 01:20:02.414
+clinically validated antigen targets such as
+
+1368
+01:20:02.434 --> 01:20:06.374
+PSMA, CalR, Trop-2,
+
+1369
+01:20:06.494 --> 01:20:10.294
+NCD123, CCND5, and MET, and the list goes
+
+1370
+01:20:10.354 --> 01:20:12.533
+on. So we conjugated these
+
+1371
+01:20:13.474 --> 01:20:17.354
+clinically validated antibodies with SMARC2 for dual degraders
+
+1372
+01:20:17.394 --> 01:20:20.734
+to generate the SMARC2 for DAC or precision DAC.
+
+1373
+01:20:21.514 --> 01:20:25.414
+We tested these DACs in different cancer cell lines, and we
+
+1374
+01:20:25.474 --> 01:20:28.874
+confirmed the antigen-selective activities in vitro.
+
+1375
+01:20:29.694 --> 01:20:33.284
+So I'm going to show you some of the data from the PSMA and
+
+1376
+01:20:33.394 --> 01:20:36.894
+mutant CalR validation programs today.
+
+1377
+01:20:40.134 --> 01:20:41.294
+But just a little bit of
+
+1378
+01:20:42.214 --> 01:20:45.474
+details in the structure. This is the
+
+1379
+01:20:45.594 --> 01:20:49.474
+Degrader-04 structure, VHL-based SMARC2 for
+
+1380
+01:20:49.514 --> 01:20:50.014
+degrader.
+
+1381
+01:20:51.194 --> 01:20:54.994
+The potency of degradation of SMARC2 was
+
+1382
+01:20:55.214 --> 01:20:57.654
+370 picomolar now, so it's about
+
+1383
+01:20:59.034 --> 01:21:01.474
+1,000-fold better than Degrader-02.
+
+1384
+01:21:02.154 --> 01:21:06.134
+SMARC4 degradation potency was about 2.7 nanomolar.
+
+1385
+01:21:07.234 --> 01:21:10.474
+And we used this NH as a linkage site.
+
+1386
+01:21:10.794 --> 01:21:14.234
+We generated the payload Linker-01.
+
+1387
+01:21:15.074 --> 01:21:17.074
+Now you can see here in the proteasome,
+
+1388
+01:21:18.394 --> 01:21:20.634
+cleavable val-Ser dipeptide.
+
+1389
+01:21:23.014 --> 01:21:26.594
+And using this Payload-01, we generated
+
+1390
+01:21:27.454 --> 01:21:31.354
+the DAC-02 with J591.
+
+1391
+01:21:31.534 --> 01:21:35.194
+It is anti-PSMA monoclonal antibodies.
+
+1392
+01:21:36.234 --> 01:21:38.653
+And this DAC-02 showed
+
+1393
+01:21:39.354 --> 01:21:43.334
+dose-dependent internalization signals in
+
+1394
+01:21:43.454 --> 01:21:47.354
+LNCaP PSMA-positive cells, but not the PSMA-negative
+
+1395
+01:21:47.514 --> 01:21:51.054
+PC3 cells. We also confirmed the SMARC4
+
+1396
+01:21:51.074 --> 01:21:53.814
+degradation in antigen positive,
+
+1397
+01:21:55.454 --> 01:21:59.074
+PSMA positive LNCaP cells, but not PSMA-negative
+
+1398
+01:21:59.114 --> 01:22:00.034
+PC3 cells.
+
+1399
+01:22:02.854 --> 01:22:05.514
+And we tested this DAC in vivo models.
+
+1400
+01:22:06.714 --> 01:22:09.374
+So you can see here in the LNCaP model,
+
+1401
+01:22:09.954 --> 01:22:13.694
+DAC-02 weekly dosing showed robust anti-tumor
+
+1402
+01:22:13.704 --> 01:22:16.994
+activity, but not in the PSMA-negative
+
+1403
+01:22:17.074 --> 01:22:20.874
+PC3 CDX models. But more importantly,
+
+1404
+01:22:21.074 --> 01:22:24.234
+we did not see the significant body weight loss or
+
+1405
+01:22:24.994 --> 01:22:28.894
+mouse deaths in these models, highlighting the improved
+
+1406
+01:22:29.014 --> 01:22:32.734
+therapeutic index compared to the degrader payload
+
+1407
+01:22:32.774 --> 01:22:33.294
+itself.
+
+1408
+01:22:37.213 --> 01:22:41.004
+But we weren't so happy with this degradation potency.
+
+1409
+01:22:41.074 --> 01:22:44.794
+As you can see, the SMARC4 degradation potency was
+
+1410
+01:22:44.914 --> 01:22:48.674
+at 2.7 nanomolar. Like
+
+1411
+01:22:49.454 --> 01:22:53.254
+I said earlier, we really wanted to have a better potency,
+
+1412
+01:22:53.374 --> 01:22:56.974
+picomolar range potency. So we spent some time on
+
+1413
+01:22:57.054 --> 01:23:00.854
+improving this degradation potency, and we even switched the
+
+1414
+01:23:00.874 --> 01:23:04.414
+E3 ligase from VHL ligand to cereblon ligand, and
+
+1415
+01:23:04.514 --> 01:23:08.174
+we identified the Degrader-06, which
+
+1416
+01:23:08.234 --> 01:23:12.174
+had 40 and 90 picomolar degradation potency for
+
+1417
+01:23:12.214 --> 01:23:15.954
+SMARC2 and SMARC4 respectively. We were also
+
+1418
+01:23:16.054 --> 01:23:19.454
+able to reduce the fold selectivity between the SMARC2 and
+
+1419
+01:23:19.514 --> 01:23:23.034
+SMARC4. Now it's only 2.3, so we are almost
+
+1420
+01:23:23.094 --> 01:23:26.834
+equally degrade the SMARC2 and SMARC4 in the cells.
+
+1421
+01:23:27.734 --> 01:23:31.514
+We are also able to maintain the high clearance
+
+1422
+01:23:31.674 --> 01:23:34.774
+of this molecule to minimize the free payload exposure.
+
+1423
+01:23:36.794 --> 01:23:40.414
+But this Degrader-06 had another problem.
+
+1424
+01:23:41.414 --> 01:23:44.534
+This is the hydrolysis. This is well-known
+
+1425
+01:23:44.574 --> 01:23:47.454
+inactivation of cereblon ligand part.
+
+1426
+01:23:47.674 --> 01:23:50.634
+The ring opens up, and it becomes inactive.
+
+1427
+01:23:51.434 --> 01:23:55.354
+So we looked at the stability of this Degrader-06 in human plasma
+
+1428
+01:23:55.434 --> 01:23:59.134
+and mouse plasma, and half-life was only 34 hours.
+
+1429
+01:23:59.194 --> 01:24:01.154
+This is less than one and a half days.
+
+1430
+01:24:01.674 --> 01:24:04.234
+This is pretty short half-life as a payload.
+
+1431
+01:24:05.194 --> 01:24:08.854
+And unfortunately, this could also happen on
+
+1432
+01:24:08.914 --> 01:24:12.764
+antibody as well. We tested the similar studies,
+
+1433
+01:24:13.074 --> 01:24:16.894
+human plasma incubation for two days of the DAC-09
+
+1434
+01:24:16.954 --> 01:24:20.074
+and DAC-10, and we found that
+
+1435
+01:24:20.374 --> 01:24:23.534
+74% and 81% of
+
+1436
+01:24:23.694 --> 01:24:26.814
+conjugated this Degrader-06 was already
+
+1437
+01:24:26.894 --> 01:24:30.638
+inactive.So in order to
+
+1438
+01:24:30.698 --> 01:24:34.658
+advance the molecule to in vivo efficacy
+
+1439
+01:24:34.718 --> 01:24:38.658
+study, weekly dosing efficacy, or even nominate the degrader antibody
+
+1440
+01:24:38.678 --> 01:24:42.578
+conjugate candidate, we really needed to improve
+
+1441
+01:24:42.958 --> 01:24:46.938
+this stability of TPD molecule. So
+
+1442
+01:24:46.998 --> 01:24:50.618
+the medicinal chemistry approach could extend this
+
+1443
+01:24:50.638 --> 01:24:53.738
+payload stability in plasma. Now you have
+
+1444
+01:24:54.598 --> 01:24:58.558
+more than 200 hours. This is actually more than 10 days of half-life
+
+1445
+01:24:58.958 --> 01:25:00.358
+of the degrader 07.
+
+1446
+01:25:02.058 --> 01:25:05.818
+Even the potency was slightly better, and now selectivity is one
+
+1447
+01:25:05.858 --> 01:25:07.058
+times 1x.
+
+1448
+01:25:07.898 --> 01:25:11.658
+So we are pretty happy with this degrader 07 as a payload
+
+1449
+01:25:11.778 --> 01:25:15.438
+candidate. We checked the selectivity of this
+
+1450
+01:25:15.458 --> 01:25:19.178
+degrader in the global proteomics mass spec, and you can see
+
+1451
+01:25:19.238 --> 01:25:22.678
+SMARCA2 and SMARCA4 on the top. And also, I
+
+1452
+01:25:22.738 --> 01:25:26.258
+highlighted a couple of subunits of SWI/SNF complex
+
+1453
+01:25:26.858 --> 01:25:29.888
+started to pop up in this graph,
+
+1454
+01:25:30.698 --> 01:25:34.508
+indicating the disruption of SWI/SNF complex in
+
+1455
+01:25:34.818 --> 01:25:35.478
+LNCAP cells.
+
+1456
+01:25:36.428 --> 01:25:39.558
+So currently, we are using this degrader
+
+1457
+01:25:39.738 --> 01:25:43.538
+07 bioconjugation to various antibodies for
+
+1458
+01:25:43.678 --> 01:25:45.298
+proof of concept studies.
+
+1459
+01:25:49.118 --> 01:25:52.698
+And in the next couple of slides, I'm going to show you early
+
+1460
+01:25:52.738 --> 01:25:54.338
+stage of mutant Calr
+
+1461
+01:25:55.458 --> 01:25:58.518
+SMARCA2/4 DAC validation studies.
+
+1462
+01:25:58.718 --> 01:26:02.358
+Mutant Calr is frequently expressed in MPN
+
+1463
+01:26:02.618 --> 01:26:03.118
+cells.
+
+1464
+01:26:04.418 --> 01:26:04.608
+And
+
+1465
+01:26:05.658 --> 01:26:09.338
+it alters C-terminus of the protein, and it binds
+
+1466
+01:26:09.458 --> 01:26:12.818
+to MPL, the thrombopoietin receptor,
+
+1467
+01:26:12.938 --> 01:26:16.918
+to induce the constitutively active JAK-STAT
+
+1468
+01:26:16.938 --> 01:26:17.538
+signaling.
+
+1469
+01:26:18.718 --> 01:26:21.838
+And only this mutant Calr can
+
+1470
+01:26:22.518 --> 01:26:25.998
+bind to this MPL receptor and expose to the
+
+1471
+01:26:26.058 --> 01:26:29.528
+extracellular matrix, you can selectively
+
+1472
+01:26:29.598 --> 01:26:30.138
+target
+
+1473
+01:26:31.198 --> 01:26:34.408
+mutant Calr-expressing cells, but not healthy
+
+1474
+01:26:34.998 --> 01:26:35.678
+normal cells.
+
+1475
+01:26:36.758 --> 01:26:40.578
+So we conjugated SMARCA2/4 degrader to the mutant
+
+1476
+01:26:40.658 --> 01:26:44.578
+Calr antibodies, and then we tested in vitro
+
+1477
+01:26:44.678 --> 01:26:48.518
+first. You can see here mutant, this Calr DAC,
+
+1478
+01:26:48.778 --> 01:26:52.398
+show the SMARCA2 and four degradation only in Calr
+
+1479
+01:26:52.658 --> 01:26:55.838
+mutant cells, but not in Calr wild-type cells.
+
+1480
+01:26:56.878 --> 01:27:00.138
+We also confirmed the better anti-proliferation
+
+1481
+01:27:00.198 --> 01:27:03.838
+activity of this Calr SMARCA2/4 DAC
+
+1482
+01:27:04.578 --> 01:27:08.278
+in Calr mutant cells but compared to Calr
+
+1483
+01:27:08.618 --> 01:27:09.398
+wild-type cells.
+
+1484
+01:27:13.158 --> 01:27:16.958
+Now we tested this Calr SMARCA2/4 DAC in
+
+1485
+01:27:16.978 --> 01:27:20.558
+vivo models, TF1 Calr Del52 frameshift
+
+1486
+01:27:20.658 --> 01:27:24.478
+mutation expressing CDX models. As you can see
+
+1487
+01:27:24.538 --> 01:27:28.338
+here in this model, the weekly dosing of this DAC showed robust
+
+1488
+01:27:29.038 --> 01:27:32.398
+anti-tumor activity at really well-tolerated doses.
+
+1489
+01:27:33.818 --> 01:27:37.638
+We confirmed the target engagement by looking at the reduction of
+
+1490
+01:27:37.678 --> 01:27:41.538
+SMARCA2/4 protein level in the treated tumor as well,
+
+1491
+01:27:42.498 --> 01:27:45.198
+which supports the in vivo mechanism of action.
+
+1492
+01:27:47.818 --> 01:27:49.198
+So this is my last slide.
+
+1493
+01:27:50.218 --> 01:27:53.938
+I hope I was able to convince that TPD, targeted
+
+1494
+01:27:54.018 --> 01:27:57.438
+protein degraders, could represent the next
+
+1495
+01:27:57.578 --> 01:27:59.418
+generation of payload
+
+1496
+01:28:00.358 --> 01:28:04.258
+of ADCs. We can achieve exceptionally potent
+
+1497
+01:28:04.398 --> 01:28:08.078
+and stable molecules with this TPD approach.
+
+1498
+01:28:08.738 --> 01:28:10.638
+We validated this novel,
+
+1499
+01:28:11.438 --> 01:28:15.398
+the modality with SMARCA2/4 degraders in various
+
+1500
+01:28:15.558 --> 01:28:18.978
+different type of cancer types in
+
+1501
+01:28:19.018 --> 01:28:22.718
+vitro to confirm the antigen-selective
+
+1502
+01:28:23.838 --> 01:28:27.818
+activities. Also, in vivo efficacy confirmed
+
+1503
+01:28:27.878 --> 01:28:30.558
+that improved therapeutic index.
+
+1504
+01:28:32.798 --> 01:28:34.358
+Thank you very much.
+
+1505
+01:28:41.598 --> 01:28:42.458
+Open to questions.
+
+1506
+01:28:47.618 --> 01:28:51.538
+Hi, very nice talk. And I'm very curious about
+
+1507
+01:28:52.158 --> 01:28:55.898
+the bystander killing effects of the DAC.
+
+1508
+01:28:56.258 --> 01:29:00.078
+The other question is, you mentioned that the DAC is
+
+1509
+01:29:00.258 --> 01:29:03.478
+events-driven. And what's the percentage of a
+
+1510
+01:29:03.558 --> 01:29:07.438
+degradation you need to achieve to kill the tumor?
+
+1511
+01:29:08.478 --> 01:29:10.688
+Sorry, I couldn't hear the first question.
+
+1512
+01:29:10.718 --> 01:29:14.458
+The question is the bystander killing effects of the DAC.
+
+1513
+01:29:16.538 --> 01:29:17.818
+Bystander killing, you know.
+
+1514
+01:29:17.858 --> 01:29:19.338
+Bystander. Yeah.
+
+1515
+01:29:20.738 --> 01:29:22.358
+It's depending on the molecule,
+
+1516
+01:29:23.218 --> 01:29:27.118
+but we do see the bystander effect in vitro
+
+1517
+01:29:27.198 --> 01:29:27.578
+studies.
+
+1518
+01:29:32.458 --> 01:29:33.278
+Very nice talk.
+
+1519
+01:29:34.258 --> 01:29:38.038
+How big is your molecule? Because ADCs are
+
+1520
+01:29:38.138 --> 01:29:42.018
+about 150 kilodaltons, and they penetrate tumors
+
+1521
+01:29:42.058 --> 01:29:44.478
+very poorly. I would imagine that this is bigger than that.
+
+1522
+01:29:47.218 --> 01:29:47.978
+Sorry, I couldn't really...
+
+1523
+01:29:48.918 --> 01:29:51.768
+So the audio is actually pretty bad in this room. Can you repeat the question?
+
+1524
+01:29:51.818 --> 01:29:53.238
+I think the question is how good-
+
+1525
+01:29:53.538 --> 01:29:54.358
+How big.
+
+1526
+01:29:54.668 --> 01:29:55.658
+How big? Okay.
+
+1527
+01:29:55.818 --> 01:29:56.078
+How big
+
+1528
+01:29:57.218 --> 01:29:58.318
+of the TPD molecule?
+
+1529
+01:29:59.258 --> 01:30:02.378
+Of the entire drug conjugate, the TPD, yeah.
+
+1530
+01:30:03.838 --> 01:30:07.358
+Again, it's depending on the TPD molecules and the
+
+1531
+01:30:07.398 --> 01:30:08.638
+linker.
+
+1532
+01:30:08.738 --> 01:30:16.458
+But
+
+1533
+01:30:17.118 --> 01:30:18.178
+we did not see
+
+1534
+01:30:19.278 --> 01:30:22.908
+lots of aggregation in the product, so we could-
+
+1535
+01:30:22.938 --> 01:30:25.528
+What I'm concerned about is tumor penetration, because
+
+1536
+01:30:25.578 --> 01:30:29.278
+ADCs are 150 kilodaltons, and they
+
+1537
+01:30:29.338 --> 01:30:30.798
+penetrate tumors very poorly.
+
+1538
+01:30:30.918 --> 01:30:31.178
+Mm-hmm.
+
+1539
+01:30:31.938 --> 01:30:34.878
+So I'm wondering, by adding this, how big are you making?
+
+1540
+01:30:36.750 --> 01:30:39.670
+As you saw the structure, we discussed a couple of structures.
+
+1541
+01:30:39.730 --> 01:30:42.990
+The molecule itself is not so large compared
+
+1542
+01:30:43.050 --> 01:30:46.780
+to the other molecules like
+
+1543
+01:30:46.890 --> 01:30:48.590
+MMAE and topoisomerase inhibitors.
+
+1544
+01:30:48.670 --> 01:30:48.930
+So
+
+1545
+01:30:49.870 --> 01:30:53.750
+I think we believe that it is not the concern for
+
+1546
+01:30:53.810 --> 01:30:53.990
+us.
+
+1547
+01:30:55.050 --> 01:30:55.310
+Thank you.
+
+1548
+01:30:58.850 --> 01:31:00.770
+Thank you so much for the great talk.
+
+1549
+01:31:01.130 --> 01:31:05.050
+So I have two questions regarding the TPD molecule
+
+1550
+01:31:05.110 --> 01:31:07.670
+that you have used and also the DACs.
+
+1551
+01:31:08.310 --> 01:31:10.690
+So you mentioned about the
+
+1552
+01:31:11.770 --> 01:31:15.150
+ring open stability and the plasma stability regarding the
+
+1553
+01:31:15.190 --> 01:31:18.970
+CRBM-based degraders for utilizing
+
+1554
+01:31:19.670 --> 01:31:22.150
+as a degrader antibody conjugate payload.
+
+1555
+01:31:22.590 --> 01:31:26.030
+I wonder how much extent you can
+
+1556
+01:31:26.090 --> 01:31:29.850
+actually extrapolate the plasma
+
+1557
+01:31:29.990 --> 01:31:33.630
+stability of the degrader itself to
+
+1558
+01:31:33.730 --> 01:31:37.390
+the actual stability inside
+
+1559
+01:31:37.430 --> 01:31:41.370
+the DACs when you actually make the ADC
+
+1560
+01:31:41.410 --> 01:31:43.610
+molecule. That's the first question.
+
+1561
+01:31:43.750 --> 01:31:43.910
+Yeah.
+
+1562
+01:31:44.090 --> 01:31:47.590
+And then the second question is you mentioned
+
+1563
+01:31:47.650 --> 01:31:51.090
+about around the double-digit picomolar
+
+1564
+01:31:51.890 --> 01:31:54.130
+DC50 values for the
+
+1565
+01:31:55.650 --> 01:31:59.610
+payload you have used. Do you believe that's sort of the
+
+1566
+01:31:59.770 --> 01:32:03.550
+boundary range for the DAC payloads
+
+1567
+01:32:03.690 --> 01:32:07.070
+to achieve, or is it depending on the
+
+1568
+01:32:07.150 --> 01:32:10.010
+target that you are dealing with?
+
+1569
+01:32:10.450 --> 01:32:12.850
+Yeah, those are both really great questions.
+
+1570
+01:32:12.890 --> 01:32:14.140
+The stability
+
+1571
+01:32:16.310 --> 01:32:16.850
+question,
+
+1572
+01:32:19.270 --> 01:32:23.050
+we just found out about this, and I think we need to
+
+1573
+01:32:23.090 --> 01:32:25.170
+really do a lot of studies to find out
+
+1574
+01:32:26.770 --> 01:32:27.030
+the
+
+1575
+01:32:28.270 --> 01:32:32.050
+ring opening rate in the ADCs. That's
+
+1576
+01:32:32.090 --> 01:32:34.290
+something we really would like to perform.
+
+1577
+01:32:34.630 --> 01:32:37.830
+And then is this depending on the molecules and
+
+1578
+01:32:39.170 --> 01:32:43.090
+antibody as well? We are actually surprised that we didn't see this much of
+
+1579
+01:32:43.610 --> 01:32:47.350
+hydrolysis on the antibodies. So this is something we
+
+1580
+01:32:48.570 --> 01:32:51.290
+tried to do a lot, but a med chem
+
+1581
+01:32:52.330 --> 01:32:55.750
+approach could really improve that by
+
+1582
+01:32:55.830 --> 01:32:56.850
+modulating the
+
+1583
+01:32:57.690 --> 01:32:58.970
+cell ligand part.
+
+1584
+01:32:59.790 --> 01:33:02.950
+And the second question, the picomolar range.
+
+1585
+01:33:04.090 --> 01:33:07.530
+Yes, like you said, I think it's depending on the
+
+1586
+01:33:08.070 --> 01:33:10.950
+cancer types and again, the molecule as well.
+
+1587
+01:33:12.230 --> 01:33:16.090
+And it's also the balance between the potency and the
+
+1588
+01:33:16.110 --> 01:33:20.010
+DAR. We tested a couple of different DARs, but again, we
+
+1589
+01:33:21.330 --> 01:33:25.090
+do see sometimes increase, but sometimes that doesn't really increase
+
+1590
+01:33:25.130 --> 01:33:28.690
+the potency. So it's really depending on
+
+1591
+01:33:29.150 --> 01:33:32.150
+the cancer types and sensitivity to the SMIG2 for
+
+1592
+01:33:32.650 --> 01:33:33.169
+targeting.
+
+1593
+01:33:34.890 --> 01:33:36.950
+We're probably going to take the final question here.
+
+1594
+01:33:37.330 --> 01:33:40.890
+Sure. Coming back to the previous question on the H50.
+
+1595
+01:33:40.970 --> 01:33:44.410
+First of all, thank you very much. Very nice talk on the next-gen payload.
+
+1596
+01:33:45.330 --> 01:33:48.510
+I'm wondering within the cell line that you have tested, I mean, different
+
+1597
+01:33:48.550 --> 01:33:52.490
+indication, could you find any correlation between
+
+1598
+01:33:52.870 --> 01:33:54.870
+why you have sensitivity in certain
+
+1599
+01:33:55.710 --> 01:33:58.070
+subtypes or certain indications or not?
+
+1600
+01:33:58.110 --> 01:34:01.170
+And secondly, I saw the data on the Linkab.
+
+1601
+01:34:01.250 --> 01:34:02.840
+I know it's a very resilient model.
+
+1602
+01:34:03.790 --> 01:34:07.390
+And you tried the weekly dosing. However, I didn't
+
+1603
+01:34:07.570 --> 01:34:10.630
+see reaching to a kind of a full regression.
+
+1604
+01:34:11.470 --> 01:34:12.890
+Even after the day 20,
+
+1605
+01:34:13.770 --> 01:34:15.670
+it looked like that the model is growing back.
+
+1606
+01:34:15.770 --> 01:34:18.990
+So do you think you need some sort of a dose adjustment?
+
+1607
+01:34:19.450 --> 01:34:22.790
+What I'm trying to get out of it is what we are looking in terms of the
+
+1608
+01:34:22.850 --> 01:34:26.370
+efficacy with the PSMA perhaps in the patients.
+
+1609
+01:34:29.350 --> 01:34:30.810
+Yes. The first question,
+
+1610
+01:34:31.710 --> 01:34:35.340
+the biological mechanism of this inhibition of
+
+1611
+01:34:35.430 --> 01:34:37.110
+SWI/SNF complex, there are
+
+1612
+01:34:38.190 --> 01:34:39.550
+many publications out there.
+
+1613
+01:34:40.610 --> 01:34:41.710
+I think overall,
+
+1614
+01:34:42.530 --> 01:34:46.170
+like transcription and enhancer-addicted cancers, or
+
+1615
+01:34:47.450 --> 01:34:51.400
+like hormone receptor-driven cancers are relatively sensitive.
+
+1616
+01:34:51.400 --> 01:34:54.870
+As you saw, the prostate cancer and
+
+1617
+01:34:54.950 --> 01:34:57.670
+ER-positive cancer are relatively more sensitive.
+
+1618
+01:34:58.310 --> 01:35:02.030
+So I think that also play a role a lot, in terms of
+
+1619
+01:35:02.070 --> 01:35:03.930
+the sensitive cancer types.
+
+1620
+01:35:05.010 --> 01:35:07.450
+And the second question, the potency
+
+1621
+01:35:10.490 --> 01:35:13.450
+of the degradation and in vivo
+
+1622
+01:35:15.370 --> 01:35:16.130
+models,
+
+1623
+01:35:17.410 --> 01:35:19.530
+yeah, it is hard to
+
+1624
+01:35:20.370 --> 01:35:20.870
+say.
+
+1625
+01:35:22.170 --> 01:35:25.490
+Yeah, that's something we are also
+
+1626
+01:35:26.990 --> 01:35:30.290
+trying to do in different cancer types, to look
+
+1627
+01:35:30.370 --> 01:35:34.110
+at the DACs with the different
+
+1628
+01:35:34.130 --> 01:35:36.430
+potency as well.
+
+1629
+01:35:38.190 --> 01:35:39.950
+Okay. I think we're going to wrap up this session.
+
+1630
+01:35:40.010 --> 01:35:43.430
+I want to thank my fellow speakers and also thank you for participating.
+
+1631
+01:35:44.750 --> 01:35:48.370
+Enjoy the rest of the day and also the conference. Thank you, guys.

@@ -1,0 +1,930 @@
+[
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::debnath::1",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Non-enzymatic HDAC-mediated repression reveals selective stress adaptive mechanisms for cancer therapy",
+    "speaker": {
+      "name": "Olivia Debnath",
+      "affiliation": "Dana-Farber Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroblastoma",
+      "multiple myeloma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HDAC1",
+        "pathway": "epigenetics",
+        "modality": "other",
+        "target_novelty": "undruggable_being_addressed"
+      },
+      {
+        "gene_or_protein": "HDAC2",
+        "pathway": "epigenetics",
+        "modality": "other",
+        "target_novelty": "undruggable_being_addressed"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "yeast",
+        "genotype_or_key_features": "URA3 reporter assay"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "neuroblastoma cell line",
+        "genotype_or_key_features": "N-MYC-driven"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "This talk describes the discovery and characterization of E6R, a non-enzymatic inhibitor of the Sin3-Rpd3L (HDAC1/2) complex in yeast and neuroblastoma cells. Unlike traditional HDAC inhibitors, E6R disrupts protein-protein interfaces, leading to a distinct transcriptomic signature. In neuroblastoma, E6R induces cell cycle arrest via p53/E2F signaling and integrated stress response, achieving therapeutic effects without the broad cytotoxicity of enzymatic HDAC inhibitors.",
+    "readouts": [
+      "RNA-seq",
+      "luminescence-based deacetylase activity assay",
+      "western_blot",
+      "invasion assay",
+      "viability assay",
+      "hypergeometric test",
+      "Jaccard's index",
+      "Pearson correlation",
+      "effect size analysis",
+      "gene set enrichment analysis",
+      "single-cell RNA sequencing"
+    ],
+    "key_findings": [
+      "E6R is a non-enzymatic inhibitor of the Sin3-Rpd3L complex, identified through a yeast-based reporter assay screening 52,000 compounds.",
+      "E6R exhibits a distinct transcriptomic signature compared to enzymatic HDAC inhibitors (TSA) and complex knockouts (Rpd3, Sin3).",
+      "In neuroblastoma cells, E6R reduces invasion without significant cytotoxicity, unlike TSA.",
+      "E6R affects 14x fewer genes than TSA in neuroblastoma cells, indicating higher transcriptional selectivity.",
+      "E6R induces cell cycle arrest via p53/E2F signaling and repression of G2M checkpoint genes.",
+      "E6R specifically activates integrated stress response and pro-apoptotic pathways, including ATF4 targets like DDIT3 and GDF15.",
+      "Single-cell RNA sequencing shows E6R treatment mirrors DMSO control in cell state composition."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [
+      "E6R shows a broad tolerance window in neuroblastoma cells, unlike TSA which is cytotoxic at low concentrations."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Is ATF4 activity a direct outcome of SIN3 regulation or an indirect effect?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::fachman::2",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Molecular Glue Degrader of the ARNT Protein",
+    "speaker": {
+      "name": "Jake Fachman",
+      "affiliation": "Neomorph",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "clear cell renal cell carcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "PROTAC_degrader",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ARNT",
+        "alteration": null,
+        "pathway": "HIF signaling",
+        "modality": "PROTAC_degrader",
+        "compound_name": "NEO811",
+        "compound_id": null,
+        "ligase_or_cofactor": "CRBN",
+        "dependency_context": "VHL-deficient clear cell renal cell carcinoma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ARNT expression",
+        "type": "predictive",
+        "assay": "western_blot",
+        "finding": "Knockdown of ARNT leads to tumor growth regression in A498 system."
+      },
+      {
+        "name": "HIF-2 alpha pathway modulation",
+        "type": "predictive",
+        "assay": "western_blot",
+        "finding": "NEO811 treatment modulates VEGF and NDRG1."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "A498",
+        "genotype_or_key_features": "CCRCC"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "7860 xenograft system",
+        "genotype_or_key_features": "VHL deficient, relies on HIF-2 alpha signaling"
+      },
+      {
+        "model_type": "PDX",
+        "name": "XP490 PDX line",
+        "genotype_or_key_features": "low HIF-2 alpha, high HIF-1 alpha, resistant to HIF-2 alpha inhibitors"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "NEO811 is a potent and selective molecular glue degrader of ARNT (HIF1 beta) for clear cell renal cell carcinoma (ccRCC). ARNT is central to HIF signaling, angiogenesis, proliferation, and immune suppression. NEO811 demonstrates dose-dependent tumor growth inhibition as a single agent, shows synergistic effects with belzutifan, and retains activity in models of acquired and intrinsic resistance to HIF-2 alpha inhibitors, supporting its clinical development.",
+    "readouts": [
+      "western_blot",
+      "cellular degradation assay",
+      "proteomics",
+      "flow cytometry",
+      "tumor growth inhibition assay",
+      "plasma exposure PK"
+    ],
+    "key_findings": [
+      "ARNT knockdown in A498 cells leads to tumor growth regression, validating ARNT as a target in ccRCC.",
+      "NEO811 is a potent ARNT degrader with low nanomolar activity, dependent on cereblon, and shows a favorable selectivity window.",
+      "NEO811 demonstrates dose-dependent tumor growth inhibition in the 7860 xenograft model, with >50% regression at 3 mg/kg.",
+      "NEO811 shows synergistic tumor growth regression when combined with belzutifan.",
+      "NEO811 retains activity in a model of acquired resistance to HIF-2 alpha inhibitors (G323E mutation).",
+      "NEO811 shows activity in the XP490 PDX model, which is intrinsically resistant to HIF-2 alpha inhibitors.",
+      "NEO811 is orally bioavailable and well-tolerated in preclinical studies."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "NEO811 retains activity in models of acquired resistance to HIF-2 alpha inhibitors (G323E mutation).",
+      "NEO811 shows activity in a PDX model intrinsically resistant to HIF-2 alpha inhibitors (low HIF-2 alpha, high HIF-1 alpha)."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "belzutifan",
+        "rationale": "Targeting the same pathway (HIF-2 alpha) to potentially hit pathways harder.",
+        "phenotype": "Significantly more tumor growth regression than any single agent.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Chen et al. (Brigirulis lab)"
+      ],
+      "company_or_sponsor": [
+        "Peloton Labs"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::tiedje::3",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Molecular Glue Degrader Targeting the CCNE1 Protein",
+    "speaker": {
+      "name": "Ralf Tiedje",
+      "affiliation": "Monterosa Therapeutics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "ovarian cancer",
+      "endometrial cancer",
+      "gastric cancer",
+      "breast cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "PROTAC_degrader",
+      "targeted_therapy",
+      "clinical_trial",
+      "cell_cycle"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CCNE1",
+        "alteration": "amplification",
+        "pathway": "cell cycle",
+        "modality": "PROTAC_degrader",
+        "compound_name": "MRT55811",
+        "compound_id": null,
+        "ligase_or_cofactor": "CRBN",
+        "dependency_context": "CCNE1 amplified cancers",
+        "target_novelty": "undruggable_being_addressed"
+      },
+      {
+        "gene_or_protein": "CDK2",
+        "alteration": null,
+        "pathway": "cell cycle",
+        "modality": "PROTAC_degrader",
+        "compound_name": "MRT55811",
+        "compound_id": null,
+        "ligase_or_cofactor": "CRBN",
+        "dependency_context": "CCNE1 amplified cancers",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CCNE1 amplification",
+        "type": "predictive",
+        "assay": "genomic analysis",
+        "finding": "Activity of MRT55811 is exclusively observed in CCNE1 amplified cell lines."
+      },
+      {
+        "name": "Rb phosphorylation",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "MRT55811 treatment leads to Rb dephosphorylation."
+      },
+      {
+        "name": "S-phase progression",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "MRT55811 treatment completely suppresses S-phase."
+      },
+      {
+        "name": "P16 expression",
+        "type": "predictive",
+        "assay": "not specified",
+        "finding": "Low P16 expression in CCNE1 amplified cancers correlates with sensitivity to MRT55811."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "isogenic cell lines",
+        "genotype_or_key_features": "Rb knockout"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "CCNE1 amplified cell lines",
+        "genotype_or_key_features": "ovarian, endometrial, gastric, breast cancer"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "MKN1 gastric cancer cell line xenograft",
+        "genotype_or_key_features": "CCNE1 amplified"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "ovarian and breast cancer cell line xenografts",
+        "genotype_or_key_features": "CCNE1 amplified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "MRT55811 is a first-in-class molecular glue degrader targeting CCNE1, an oncogene amplified in various cancers. It induces co-degradation of CCNE1 and CDK2, leading to Rb dephosphorylation, cell cycle arrest, and anti-proliferative effects specifically in CCNE1-amplified cancers. This mechanism differentiates it from CDK2 inhibitors and suggests a favorable therapeutic window.",
+    "readouts": [
+      "proteomics",
+      "western_blot",
+      "flow cytometry",
+      "cell viability assay",
+      "cryo-EM",
+      "ubiquitination assay",
+      "xenograft tumor growth assay"
+    ],
+    "key_findings": [
+      "MRT55811 is a potent and selective CCNE1 degrader, exclusively active in CCNE1 amplified cell lines.",
+      "MRT55811 induces co-degradation of CCNE1 and CDK2, leading to Rb dephosphorylation and S-phase arrest.",
+      "The degrader forms a quaternary complex involving CRBN, glue, CCNE1, and CDK2.",
+      "MRT55811 shows potent anti-proliferative activity in CCNE1 amplified cell lines, with GI50s in the nanomolar range.",
+      "MRT55811 demonstrates tumor regression in xenograft models of CCNE1 amplified gastric, ovarian, and breast cancers.",
+      "MRT55811 shows an edge over CDK2 inhibitors in preclinical models.",
+      "The compound is well-tolerated in preclinical studies."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "MRT55811 shows no activity in non-amplified cell lines, suggesting high cancer specificity.",
+      "The compound's activity is dependent on CCNE1 amplification, differentiating it from CDK2 inhibitors which show broader activity."
+    ],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::yang::4",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Molecular Glue Degrader of the RNA Binding Protein HuR",
+    "speaker": {
+      "name": "Zhang Yang",
+      "affiliation": "Degron Therapeutics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "solid tumors"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "PROTAC_degrader",
+      "targeted_therapy",
+      "clinical_trial",
+      "RNA_binding_protein"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HuR",
+        "alteration": "overexpression",
+        "pathway": "RNA regulation",
+        "modality": "PROTAC_degrader",
+        "compound_name": "HUR degrader two",
+        "compound_id": null,
+        "ligase_or_cofactor": "CRBN",
+        "dependency_context": "BRAF mutant colorectal cancer",
+        "target_novelty": "undruggable_being_addressed"
+      },
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "mutation",
+        "pathway": "MAPK signaling",
+        "modality": "other",
+        "compound_name": "dabrafenib",
+        "compound_id": null,
+        "dependency_context": "BRAF mutant colorectal cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HuR degradation",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "HUR degrader two achieves 96% degradation at 10 uM."
+      },
+      {
+        "name": "BRAF mutation",
+        "type": "predictive",
+        "assay": "genomic analysis",
+        "finding": "Strong positive correlation between HuR dependency and BRAF mutation status."
+      },
+      {
+        "name": "Cell viability",
+        "type": "predictive",
+        "assay": "cell viability assay",
+        "finding": "HUR degrader selectively reduced cell viability in BRAF mutant CRC cell lines."
+      },
+      {
+        "name": "MAPK signaling",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "HUR degrader confirmed pathway inhibition in resistant cells."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "CRBN WT and KO cells",
+        "genotype_or_key_features": "Used for screening and validation of CRBN dependency."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "BRAF mutant CRC cell lines",
+        "genotype_or_key_features": "Used for proof of concept study."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "BRAF-resistant MDSDN cells",
+        "genotype_or_key_features": "Generated for evaluating resistance bypass."
+      },
+      {
+        "model_type": "PDX",
+        "name": "BRAF mutant CRC PDX model",
+        "genotype_or_key_features": "Used for in vivo efficacy studies."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Degron Therapeutics has developed DG6498, a potent and selective molecular glue degrader of the RNA-binding protein HuR, targeting BRAF-mutant colorectal cancer. HuR is an undruggable oncogenic driver. DG6498 induces CRBN-dependent degradation of HuR, showing efficacy in BRAF-mutant CRC models and overcoming resistance to BRAF inhibitors. The compound has favorable PK/PD properties and is currently in Phase 1 clinical development.",
+    "readouts": [
+      "quantitative proteomics",
+      "western_blot",
+      "CHX chase assay",
+      "in vitro polyubiquitination assay",
+      "cryo-EM",
+      "cell viability assay",
+      "RNA-seq",
+      "in vivo tumor growth inhibition assay"
+    ],
+    "key_findings": [
+      "A molecular glue degrader of HuR was identified through proteomic screening of a proprietary compound library.",
+      "HUR degrader two exhibits potent HuR degradation (DC50 = 3.8 nM, 96% max degradation) dependent on CRBN and the proteasome.",
+      "Cryo-EM structure reveals the ternary complex formation between CRBN, MGD, and HuR.",
+      "HuR dependency is strongly correlated with BRAF mutation status, making BRAF-mutant CRC a key indication.",
+      "The HuR degrader selectively reduces cell viability in BRAF-mutant CRC cell lines.",
+      "The HuR degrader overcomes resistance to dabrafenib in BRAF-mutant CRC models.",
+      "DG6498, a lead compound, shows robust and sustained HuR degradation and favorable PK/ADME properties.",
+      "DG6498 is currently in Phase 1 clinical development for BRAF-mutant CRC and other solid tumors."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "The HuR degrader overcomes resistance to dabrafenib in BRAF-mutant CRC models.",
+      "BRAF wild-type cell lines remained resistant to HuR degradation despite efficient HuR degradation."
+    ],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::theis::5",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "BBO10203, a RAS PI3 Breaker, Inhibits Phospho-AKT Signaling in HER2-Amplified Models Through Inhibition of Non-Canonical RAS Signaling",
+    "speaker": {
+      "name": "James Theis",
+      "affiliation": "BridgeBio Oncology Therapeutics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "esophageal cancer",
+      "lung cancer",
+      "colorectal cancer",
+      "pancreatic cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "targeted_therapy",
+      "clinical_trial",
+      "RAS_pathway",
+      "HER2_amplified"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PIK3CA",
+        "alteration": null,
+        "pathway": "RAS/PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "BBO10203",
+        "compound_id": null,
+        "dependency_context": "HER2-amplified cancers",
+        "target_novelty": "undruggable_being_addressed"
+      },
+      {
+        "gene_or_protein": "RAS",
+        "alteration": null,
+        "pathway": "RAS/PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "BBO10203",
+        "compound_id": null,
+        "dependency_context": "HER2-amplified cancers",
+        "target_novelty": "undruggable_being_addressed"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Phospho-AKT",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "BBO10203 shows potent single-digit nanomolar complete suppression of phospho-AKT in HER2-amplified lines."
+      },
+      {
+        "name": "RAS isoform knockdown",
+        "type": "predictive",
+        "assay": "siRNA",
+        "finding": "Non-canonical RAS isoform RS2 knockdown reduces phospho-AKT, but combination with RS and RS2 is needed for maximal effect."
+      },
+      {
+        "name": "HER2 amplification",
+        "type": "predictive",
+        "assay": "genomic analysis",
+        "finding": "HER2-amplified lines are particularly sensitive to disruption of RAS-PI3K interaction."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HER2-amplified cell lines",
+        "genotype_or_key_features": "KYSC esophageal CDX, BT474, N87"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "RAS mutant cell lines",
+        "genotype_or_key_features": "KRAS G12D, PIK3CA mutants"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "RASless MEFs",
+        "genotype_or_key_features": "Engineered to express G12 mutants"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "BBO10203 is a covalent inhibitor that breaks the RAS-PI3K interaction, specifically targeting HER2-amplified cancers. It potently suppresses phospho-AKT signaling by inhibiting non-canonical RAS isoforms (RS2) and canonical RAS signaling. BBO10203 demonstrates strong monotherapy efficacy and combination potential with HER2-targeted agents, offering a new therapeutic strategy for HER2-amplified tumors.",
+    "readouts": [
+      "cell line screening",
+      "western_blot",
+      "siRNA knockdown",
+      "co-immunoprecipitation",
+      "xenograft tumor growth assay",
+      "CRISPR gene editing"
+    ],
+    "key_findings": [
+      "HER2-amplified cell lines are particularly sensitive to disruption of the RAS-PI3K interaction by BBO10203.",
+      "BBO10203 achieves potent single-digit nanomolar suppression of phospho-AKT in HER2-amplified lines.",
+      "Non-canonical RAS isoforms, particularly RS2, play a significant role in driving phospho-AKT signaling in HER2-amplified cells.",
+      "BBO10203 inhibits both non-canonical and canonical RAS signaling pathways.",
+      "BBO10203 shows strong monotherapy tumor regression in HER2-amplified KYSC esophageal CDX model.",
+      "BBO10203 demonstrates strong combination potential with HER2-targeted agents like tucatinib and trastuzumab.",
+      "BBO10203 outperforms tucatinib as a single agent in HER2-amplified N87 CDX model."
+    ],
+    "novelty_flag": "emerging_target",
+    "resistance_or_selectivity_notes": [
+      "Non-canonical RAS proteins play a large and important role in driving the majority of the phospho-AKT signaling, but canonical signaling is still important to inhibit.",
+      "HER2 mutant lines resistant to traditional therapies do not show as much combination benefit."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "tucatinib",
+        "rationale": "Orthogonal inhibition of HER2 signaling.",
+        "phenotype": "Strong regressions in BT474 cells and N87 CDX model.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "trastuzumab",
+        "rationale": "Orthogonal inhibition of HER2 signaling.",
+        "phenotype": "Strong regressions in BT474 cells and N87 CDX model.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "G12C inhibitors",
+        "rationale": "Vertical pathway inhibition.",
+        "phenotype": "Not specified",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "G12D inhibitors",
+        "rationale": "Vertical pathway inhibition.",
+        "phenotype": "Not specified",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "chemotherapy",
+        "rationale": "Combination in CRC.",
+        "phenotype": "Not specified",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "The exact mechanism for how the breaker interferes with the RS2-HER2 complex formation is an active area of investigation."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::jensen-paggacas::6",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Catalytic Inhibitors of the KAT2A/B Protein in Multiple Myeloma",
+    "speaker": {
+      "name": "Christine Jensen-Paggacas",
+      "affiliation": "Pfizer",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "multiple myeloma",
+      "AML"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "epigenetics",
+      "targeted_therapy",
+      "clinical_trial",
+      "catalytic_inhibitor"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KAT2A",
+        "alteration": null,
+        "pathway": "epigenetics",
+        "modality": "catalytic_inhibitor",
+        "compound_name": "KAT2I",
+        "compound_id": null,
+        "dependency_context": "Multiple Myeloma",
+        "target_novelty": "undruggable_being_addressed"
+      },
+      {
+        "gene_or_protein": "KAT2B",
+        "alteration": null,
+        "pathway": "epigenetics",
+        "modality": "catalytic_inhibitor",
+        "compound_name": "KAT2I",
+        "compound_id": null,
+        "dependency_context": "Multiple Myeloma",
+        "target_novelty": "undruggable_being_addressed"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "H3K9 acetylation",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "KAT2I treatment phenocopies the loss of H3K9 acetylation seen in KAT2A/B double knockout cells."
+      },
+      {
+        "name": "MYC target genes",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "KAT2I treatment leads to downregulation of MYC target genes."
+      },
+      {
+        "name": "E2F target genes",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "KAT2I treatment leads to downregulation of E2F target genes."
+      },
+      {
+        "name": "Interferon signatures",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "KAT2I treatment leads to upregulation of interferon signatures and ISGs."
+      },
+      {
+        "name": "IRF7",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "KAT2I treatment increases IRF7 and IRF9 protein levels."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "multiple myeloma cell lines",
+        "genotype_or_key_features": "Sensitive and insensitive lines tested."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KAT2A/B knockout cell lines",
+        "genotype_or_key_features": "Used to confirm H3K9 acetylation biomarker."
+      },
+      {
+        "model_type": "xenograft",
+        "name": "OPM2 tumor model",
+        "genotype_or_key_features": "Multiple myeloma"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "multiple myeloma syngeneic model",
+        "genotype_or_key_features": "Used for combination studies with immune therapies."
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Pfizer has developed KAT2I, a first-in-class catalytic inhibitor of KAT2A/B, targeting multiple myeloma. KAT2A/B are key components of the SAGA complex, driving oncogenic transcription. KAT2I treatment leads to downregulation of MYC and E2F targets, and upregulates interferon responses, sensitizing myeloma cells to immune killing. The compound shows robust efficacy as monotherapy and in combination with standard of care agents and T-cell engagers.",
+    "readouts": [
+      "DNA encoded library screening",
+      "biophysical assays",
+      "biochemical assays",
+      "western_blot",
+      "proteomics",
+      "RNA-seq",
+      "luciferase reporter assay",
+      "plasma exposure PK",
+      "combination matrix assay",
+      "synergy analysis",
+      "tumor growth inhibition assay",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Multiple myeloma cells show a strong dependency on the SAGA complex and KAT2A/B.",
+      "KAT2I is a potent, selective, and orally bioavailable catalytic inhibitor of KAT2A/B.",
+      "KAT2I treatment leads to dose-dependent reduction of H3K9 acetylation, mimicking genetic loss of KAT2A/B.",
+      "KAT2I shows broad activity across a panel of multiple myeloma cell lines.",
+      "KAT2I downregulates MYC and E2F target genes, contributing to tumor-intrinsic response.",
+      "KAT2I upregulates interferon signatures and ISGs, potentially sensitizing tumors to immune cell killing.",
+      "KAT2I demonstrates synergistic activity with lenalidomide and pomalidomide in vitro.",
+      "Combination of KAT2I with pomalidomide and dexamethasone shows benefit in the OPM2 xenograft model.",
+      "KAT2I enhances the efficacy of a BCMA CD3 bispecific antibody in a multiple myeloma syngeneic model."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "SAGA complex and KAT2A/B show selective dependencies in hematopoietic lineages, including multiple myeloma."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "lenalidomide",
+        "rationale": "Standard of care in multiple myeloma.",
+        "phenotype": "Synergistic scores observed in vitro.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "pomalidomide",
+        "rationale": "Standard of care in multiple myeloma.",
+        "phenotype": "Synergistic scores observed in vitro; combination benefit in OPM2 xenograft.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "dexamethasone",
+        "rationale": "Standard of care in multiple myeloma.",
+        "phenotype": "Combination benefit in OPM2 xenograft.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "BCMA CD3 bispecific antibody",
+        "rationale": "Enhance T-cell mediated killing.",
+        "phenotype": "Extended tumor growth delay and improved survival in syngeneic model.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Mechanism of IRF activation after KAT2A/B inhibition is under investigation, potentially involving non-resolution of R-loops."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "targeted-protein-degradation-and-non-cannonical-oncogenic-signaling::smith::7",
+    "session_title": "Targeted Protein Degradation",
+    "talk_title": "Discovery of a New Class of Mutant-Targeted Catalytic RAS Oncogene Inhibitors",
+    "speaker": {
+      "name": "Jacqueline Smith",
+      "affiliation": "Revolution Medicines",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic cancer",
+      "lung cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "targeted_therapy",
+      "clinical_trial",
+      "RAS_pathway",
+      "catalytic_inhibitor"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "RAS",
+        "alteration": "G12 mutants",
+        "pathway": "RAS/MAPK",
+        "modality": "catalytic_inhibitor",
+        "compound_name": "RMO-55",
+        "compound_id": null,
+        "dependency_context": "G12 mutant RAS cancers",
+        "target_novelty": "undruggable_being_addressed"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "RAS GTP levels",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "RMO-55 produces potent and near complete reduction in cellular RAS GTP levels."
+      },
+      {
+        "name": "Phospho-ERK",
+        "type": "pharmacodynamic",
+        "assay": "western_blot",
+        "finding": "RMO-55 leads to potent reduction in phospho-ERK levels."
+      },
+      {
+        "name": "Cell proliferation",
+        "type": "predictive",
+        "assay": "AUC reduction",
+        "finding": "RMO-55 robustly inhibits proliferation in G12 mutant cell lines, with greater effect than deraxasip."
+      },
+      {
+        "name": "KRAS amplification",
+        "type": "resistance",
+        "assay": "genomic analysis",
+        "finding": "RMO-55 shows activity in KRAS amplified models and overcomes resistance to deraxasip."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "RASless MEFs",
+        "genotype_or_key_features": "Engineered to express G12 mutants"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "G12 mutant cell lines",
+        "genotype_or_key_features": "Panel of over 800 cell lines profiled."
+      },
+      {
+        "model_type": "CDX",
+        "name": "G12D pancreatic model",
+        "genotype_or_key_features": "Pancreatic cancer"
+      },
+      {
+        "model_type": "CDX",
+        "name": "G12C non-small cell lung cancer model",
+        "genotype_or_key_features": "NSCLC"
+      },
+      {
+        "model_type": "CDX",
+        "name": "G12V colorectal model",
+        "genotype_or_key_features": "Colorectal cancer"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KRAS overexpressing cell lines",
+        "genotype_or_key_features": "Used to model KRAS amplification resistance."
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HaCaT keratinocyte cell line",
+        "genotype_or_key_features": "Normal skin cell line used for selectivity assessment."
+      },
+      {
+        "model_type": "PDX",
+        "name": "G12D PDAC",
+        "genotype_or_key_features": "Pancreatic ductal adenocarcinoma"
+      },
+      {
+        "model_type": "PDX",
+        "name": "G12C non-small cell lung cancer",
+        "genotype_or_key_features": "NSCLC"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "RMO-55 is a novel catalytic RAS inhibitor that mimics natural GAPs by stimulating GTP hydrolysis of oncogenic RAS G12 mutants, restoring them to the GDP state. This mechanism leads to potent inhibition of RAS signaling and cell proliferation, with a wider therapeutic window than steric inhibitors. RMO-55 demonstrates deep and durable tumor regressions in preclinical models and shows activity in settings of acquired resistance, supporting its clinical development.",
+    "readouts": [
+      "biochemical assay",
+      "GTP to GDP hydrolysis assay",
+      "RAS-RAF complex disruption assay",
+      "cellular RAS GTP level measurement",
+      "phospho-ERK measurement",
+      "cell proliferation assay",
+      "PK/PD analysis",
+      "tumor growth inhibition assay",
+      "tumor regression assay"
+    ],
+    "key_findings": [
+      "RMO-55 is a new class of mutant-targeted catalytic RAS inhibitor that stimulates GTP hydrolysis of G12 mutant RAS.",
+      "RMO-55 produces rapid and near-complete reduction in G12V GTP levels biochemically.",
+      "RMO-55 causes potent and near complete reduction in cellular RAS GTP levels and phospho-ERK.",
+      "RMO-55 robustly inhibits proliferation in G12 mutant cell lines, with greater efficacy than deraxasip.",
+      "RMO-55 shows a reduced effect on wild-type cell lines compared to deraxasip.",
+      "RMO-55 demonstrates potent inhibition of tumor RAS pathway signaling with significant selectivity over normal tissue.",
+      "RMO-55 drives deep and durable tumor regressions in G12D pancreatic, G12C NSCLC, and G12V colorectal models.",
+      "RMO-55 shows activity in KRAS amplified models and overcomes resistance to deraxasip.",
+      "RMO-55 restores tumor control in tumors that have acquired resistance to RAS on inhibitors."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "RMO-55 shows a reduced effect on wild-type cell lines compared to deraxasip.",
+      "RMO-55 shows activity in KRAS amplified models and overcomes resistance to deraxasip.",
+      "RMO-55 is active in settings of acquired resistance to RAS on multi-selective inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "deraxasip",
+        "rationale": "Investigating combination potential.",
+        "phenotype": "Not specified",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "The exact mechanism of how RMO-55 interferes with the complex formation is an active area of investigation.",
+      "Exploring resistance mechanisms to RMO-55, including sensitivity to SIPA expression levels."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

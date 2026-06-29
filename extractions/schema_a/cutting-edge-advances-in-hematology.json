@@ -1,0 +1,801 @@
+[
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::haber::1",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "Potentiating venetoclax response in AML with the NAMPT inhibitor OT-82",
+    "speaker": {
+      "name": "Michelle Haber",
+      "affiliation": "University of Sydney, Australia",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "metabolism",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NAMPT",
+        "alteration": "",
+        "pathway": "NAD_biosynthesis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "OT-82",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "relapsed/refractory AML leukemic stem cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "venetoclax",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "primary AML cells from 10 adult patients",
+        "genotype_or_key_features": "various, including TP53mut, FLT3mut"
+      },
+      {
+        "model_type": "PDX",
+        "name": "pediatric AML PDXs PRR485, AML49",
+        "genotype_or_key_features": "KMT2A rearranged, KRASmut, HSPC90mut"
+      },
+      {
+        "model_type": "single_mouse_trial",
+        "name": "16 AML PDXs (7 pediatric, 9 adult)",
+        "genotype_or_key_features": "heterogeneous adverse AML subtypes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "event-free survival",
+        "value": "significant extension vs control",
+        "confidence_interval": "",
+        "n": "n=16 PDXs",
+        "population": "AML PDX cohort",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      },
+      {
+        "metric": "ORM complete response rate",
+        "value": "high; OT-82 alone and combo",
+        "confidence_interval": "",
+        "n": "n=21 ALL PDXs (historical)",
+        "population": "pediatric ALL models",
+        "comparator": "",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "OT-82 inhibits NAMPT, reducing NAD biosynthesis and creating a metabolic vulnerability in venetoclax\u2011resistant AML cells; combined with venetoclax it restores apoptotic sensitivity and yields durable tumor regressions in diverse AML PDX models.",
+    "readouts": [
+      "LC50 assays",
+      "event-free survival curves",
+      "ORM response criteria",
+      "flow cytometry",
+      "in vivo tumor burden"
+    ],
+    "key_findings": [
+      "OT-82 showed the lowest LC50 among tested AML drugs across 10 adult AML samples, with a wide therapeutic window versus normal bone marrow cells.",
+      "In pediatric AML PDXs (PRR485, AML49), OT-82 alone extended event\u2011free survival, and the combination with venetoclax further improved survival without added benefit from azacitidine.",
+      "Across 16 heterogeneous AML PDXs, the venetoclax\u202f+\u202fOT\u201182 combination produced the most robust and durable responses, achieving maintained complete remissions.",
+      "Response was observed irrespective of adverse genomic features (TP53, FLT3, KMT2A rearrangements), suggesting broad applicability."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "No significant toxicity observed in normal bone marrow cells at concentrations lethal to AML cells.",
+      "Three PDXs were non\u2011responsive, all also venetoclax\u2011resistant, indicating possible intrinsic resistance mechanisms."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "venetoclax",
+        "rationale": "Target metabolic dependency (NAMPT) to overcome venetoclax resistance mediated by apoptotic rewiring.",
+        "phenotype": "Synergistic tumor regression and increased event\u2011free survival in AML PDXs.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "azacitidine",
+        "rationale": "Standard venetoclax\u2011based regimen for AML.",
+        "phenotype": "No additional benefit over venetoclax\u202f+\u202fOT\u201182 in PDX models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What molecular biomarkers predict response to OT\u201182\u2011based combinations in patients?",
+      "Can OT\u201182 be safely combined with venetoclax in early\u2011phase clinical trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::wu::2",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "Non\u2011canonical CAR T cell states associated with durable responses in multiple myeloma",
+    "speaker": {
+      "name": "Kai Wu",
+      "affiliation": "Fred Hutchinson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "multiple myeloma"
+    ],
+    "clinical_stage": "clinical_trial",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "single_cell",
+      "tumor_microenvironment",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCMA",
+        "alteration": "",
+        "pathway": "plasma cell antigen",
+        "modality": "CAR_T",
+        "compound_name": "anti\u2011BCMA CAR T (4\u20111BB\u03b6)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "multiple myeloma patients receiving BCMA CAR T",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "FLC levels",
+        "type": "predictive",
+        "assay": "serum free light chain",
+        "finding": "Transient responders showed rising FLC at 6\u201112\u202fmo, durable responders maintained low FLC"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "22 MM patients receiving 4 different BCMA CAR T products",
+        "genotype_or_key_features": "baseline and serial PBMC/bone marrow samples"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "CAR T infusion with longitudinal sampling",
+        "genotype_or_key_features": "PFS\u2011based grouping (TR vs DR)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "progression\u2011free survival",
+        "value": "median >12\u202fmo for durable responders, <12\u202fmo for transient responders",
+        "confidence_interval": "",
+        "n": "n=22 patients",
+        "population": "multiple myeloma receiving BCMA CAR T",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CAR T persistence",
+        "value": "significantly higher %CAR T cells at \u22653\u202fmo in durable responders",
+        "confidence_interval": "",
+        "n": "n=22",
+        "population": "DR vs TR groups",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "exhaustion score",
+        "value": "higher in TR CAR T cells, especially CD8 compartment",
+        "confidence_interval": "",
+        "n": "n=22",
+        "population": "CAR T cells",
+        "comparator": "DR vs TR",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Single\u2011cell multi\u2011omics of BCMA CAR T therapy revealed that durable responders harbor proliferative, early\u2011memory CAR T cells and a unique \u2018T persistor\u2019 state marked by AP\u20111 and NF\u2011\u03baB activation, low exhaustion, and bone\u2011marrow residency, which correlates with sustained CAR T persistence and improved clinical outcomes.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "scATAC\u2011seq",
+      "TCR sequencing",
+      "flow cytometry",
+      "exhaustion scoring"
+    ],
+    "key_findings": [
+      "Durable responders showed enrichment of proliferating and early\u2011memory CAR T cells early post\u2011infusion, whereas transient responders displayed higher CD8 exhaustion signatures.",
+      "A novel \u2018T persistor\u2019 CAR T state emerged at later time points in durable responders, characterized by high AP\u20111, NF\u2011\u03baB, cytokine (IFN\u2011\u03b3, TNF\u2011\u03b1, IL\u20112) expression and CXCR4/CD69 bone\u2011marrow residency markers.",
+      "Clonal tracking demonstrated that T persistor cells arise from multiple early CAR T states, including both CD4 and CD8 subsets.",
+      "Effective CAR T therapy reshaped the bone\u2011marrow microenvironment, reducing immunosuppressive monocyte signatures in durable responders."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Transient responders exhibited persistent CD8 exhaustion signatures and reduced CAR T persistence.",
+      "T persistor cells displayed low exhaustion despite long\u2011term residence, suggesting a selective survival program."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "FGFR1 inhibitor (from later talk)",
+        "rationale": "Enhance CAR T infiltration by modulating fibroblast\u2011derived TGF\u2011\u03b2",
+        "phenotype": "Increased CAR T circulation and tumor clearance in resistant PDX model",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals drive differentiation into the T persistor state?",
+      "Can pharmacologic modulation of AP\u20111/NF\u2011\u03baB pathways enhance CAR T durability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::nix::3",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "KatTCIP molecular glue recruiting P300/CBP to BCL6 induces death in DLBCL",
+    "speaker": {
+      "name": "Meredith Nix",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "diffuse large B\u2011cell lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "molecular_glue",
+      "targeted_therapy",
+      "epigenetics",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCL6",
+        "alteration": "",
+        "pathway": "transcriptional repression",
+        "modality": "molecular_glue",
+        "compound_name": "TCIP3",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high BCL6\u2011expressing DLBCL cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "P300",
+        "alteration": "",
+        "pathway": "histone acetyltransferase",
+        "modality": "molecular_glue",
+        "compound_name": "TCIP3",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "recruited to BCL6 loci",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CBP",
+        "alteration": "",
+        "pathway": "histone acetyltransferase",
+        "modality": "molecular_glue",
+        "compound_name": "TCIP3",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "recruited to BCL6 loci",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BCL6 expression level",
+        "type": "predictive",
+        "assay": "RNA\u2011seq / IHC",
+        "finding": "Cell lines with highest BCL6 were most sensitive to TCIP3 (IC50 0.8\u202fnM)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Karpas 422, SU\u2011DHQ5, other DLBCL lines",
+        "genotype_or_key_features": "high BCL6 expression"
+      },
+      {
+        "model_type": "CDX",
+        "name": "DLBCL cell line xenograft in mice",
+        "genotype_or_key_features": "BCL6\u2011high"
+      },
+      {
+        "model_type": "germinal_center B\u2011cell model",
+        "name": "sheep red blood cell immunized mice",
+        "genotype_or_key_features": "GC B cells enriched for BCL6"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor volume reduction",
+        "value": "near\u2011complete regression by day 11",
+        "confidence_interval": "",
+        "n": "n=5 mice",
+        "population": "DLBCL CDX",
+        "comparator": "vehicle",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "GC B\u2011cell depletion",
+        "value": "dose\u2011dependent loss up to near\u2011elimination at 5\u202fmg/kg BID",
+        "confidence_interval": "",
+        "n": "n=3 mice per dose",
+        "population": "germinal center B\u2011cell model",
+        "comparator": "vehicle",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "TCIP3 is a bivalent molecular glue that simultaneously binds the BCL6 BTB domain (via BI\u20113812) and the P300/CBP bromodomain (via GNE\u2011781), inducing a cooperative ternary complex that recruits acetyltransferase activity to BCL6 loci, leading to localized histone and BCL6 acetylation, transcriptional activation of cell\u2011death genes, and rapid apoptosis of BCL6\u2011dependent DLBCL cells.",
+    "readouts": [
+      "GFP reporter assay",
+      "cell viability (IC50)",
+      "apoptosis assays",
+      "p300 ChIP\u2011seq",
+      "H3K27ac ChIP\u2011seq",
+      "RNA\u2011seq",
+      "proteomics",
+      "in vivo tumor measurements"
+    ],
+    "key_findings": [
+      "TCIP3 forms a cooperative ternary complex between BCL6 and P300/CBP, confirmed by ITC and X\u2011ray crystallography.",
+      "TCIP3 induces potent GFP reporter activation and apoptosis in high\u2011BCL6 DLBCL lines with an IC50 of 0.8\u202fnM, outperforming BCL6 degraders.",
+      "ChIP\u2011seq shows selective recruitment of p300 and increased H3K27ac at BCL6 target sites without global acetylation loss.",
+      "In vivo, TCIP3 depletes germinal\u2011center B cells and drives near\u2011complete tumor regression in a DLBCL xenograft model with minimal toxicity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity driven by BCL6 expression; negative control compounds lacking either binder showed no activity.",
+      "No global HAT inhibition observed, indicating target\u2011specific action."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "BRD4\u2011recruiting TCIP (previous work)",
+        "rationale": "Compare efficacy of different transcriptional co\u2011activator recruitment",
+        "phenotype": "Similar potency; BRD4 TCIP induces faster cell death",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can KatTCIP be adapted to other oncogenic transcription factors?",
+      "What is the durability of response and potential resistance mechanisms in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::dicieri::4",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "FGFR1 inhibition remodels fibroblast\u2011derived TGF\u2011\u03b2 niche to enhance CAR\u2011T efficacy in DLBCL",
+    "speaker": {
+      "name": "Nicolas Dicieri",
+      "affiliation": "Cornell University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "diffuse large B\u2011cell lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "tumor_microenvironment",
+      "targeted_therapy",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FGFR1",
+        "alteration": "",
+        "pathway": "FGF signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "FGFR1 inhibitor (unspecified)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cancer\u2011associated fibroblasts in DLBCL TME",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TGF\u2011\u03b2",
+        "alteration": "",
+        "pathway": "immune suppression",
+        "modality": "cytokine",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "produced by CAFs",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MCP chemokines (CCL2/7/8)",
+        "type": "pharmacodynamic",
+        "assay": "RNA expression",
+        "finding": "Up\u2011regulated in CAFs after FGFR1 inhibition, correlating with macrophage infiltration"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "murine fibroblast reticular cells (SET20)",
+        "genotype_or_key_features": "FGFR1\u2011positive CAF model"
+      },
+      {
+        "model_type": "PDX",
+        "name": "CAR\u2011T resistant DLBCL PDX",
+        "genotype_or_key_features": "relapsed/refractory DLBCL"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "CAR\u2011T treated DLBCL patients (n\u224822)",
+        "genotype_or_key_features": "baseline FGFR1\u2011high CAF signature"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor burden (luciferase signal)",
+        "value": "significant reduction with FGFR1 inhibitor + CAR\u2011T vs CAR\u2011T alone",
+        "confidence_interval": "",
+        "n": "n=5 mice",
+        "population": "CAR\u2011T resistant DLBCL PDX",
+        "comparator": "CAR\u2011T alone",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "circulating CAR\u2011T cells",
+        "value": "marked increase in blood and spleen with combination therapy",
+        "confidence_interval": "",
+        "n": "n=5 mice",
+        "population": "CAR\u2011T resistant DLBCL PDX",
+        "comparator": "CAR\u2011T alone",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "FGFR1 inhibition in cancer\u2011associated fibroblasts suppresses TGF\u2011\u03b2 production and induces MCP chemokine secretion, leading to recruitment of macrophages and enhanced infiltration of CAR\u2011T cells; the remodeled microenvironment synergizes with anti\u2011CD19 CAR\u2011T to eradicate resistant DLBCL in vivo.",
+    "readouts": [
+      "qPCR for cytokines",
+      "flow cytometry of CAR\u2011T cells",
+      "bioluminescence imaging",
+      "macrophage immunohistochemistry",
+      "survival curves"
+    ],
+    "key_findings": [
+      "FGFR1 inhibition reduced CAF\u2011derived TGF\u2011\u03b2 and simultaneously increased CCL2/7/8 expression, driving macrophage recruitment.",
+      "Macrophage depletion partially reversed the anti\u2011lymphoma effect of FGFR1 inhibition, indicating a contributory role of macrophages.",
+      "Combination of FGFR1 inhibitor with anti\u2011CD19 CAR\u2011T markedly increased circulating CAR\u2011T cells and eliminated tumor burden in a resistant DLBCL PDX model.",
+      "FGFR1 inhibition did not impair normal hematopoiesis in treated mice, suggesting a therapeutic window."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "FGFR1 is selectively expressed on CAFs in the DLBCL niche, limiting off\u2011target effects.",
+      "No overt toxicity observed in normal tissues."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011CD19 CAR\u2011T",
+        "rationale": "Improve CAR\u2011T infiltration by alleviating CAF\u2011mediated immunosuppression",
+        "phenotype": "Complete tumor clearance and increased CAR\u2011T persistence",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will FGFR1 inhibition synergize with CAR\u2011T in other hematologic malignancies?",
+      "What biomarkers predict patients who will benefit from CAF\u2011targeted therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::yang::5",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "Condensate dynamics drive adaptive METTL3 inhibitor resistance",
+    "speaker": {
+      "name": "Xujing Yang",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "acute myeloid leukemia",
+      "pancreatic cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "targeted_therapy",
+      "epigenetics",
+      "RNA_modification",
+      "resistance_mechanisms",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "METTL3",
+        "alteration": "",
+        "pathway": "m6A RNA methylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "STORM (first\u2011gen) / STC\u201115 (clinical)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML and solid tumor cells dependent on m6A",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "YTHDC1",
+        "alteration": "",
+        "pathway": "m6A reader / nuclear condensate formation",
+        "modality": "protein target (inhibitor under development)",
+        "compound_name": "YTHDC1 inhibitor (unnamed)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cells with adaptive resistance to METTL3 inhibition",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "YTHDC1 protein level",
+        "type": "pharmacodynamic",
+        "assay": "Western blot / flow cytometry",
+        "finding": "Up\u2011regulated after METTL3 inhibitor treatment in AML and melanoma models"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "AML (MOLM\u201113, etc.), pancreatic cancer, melanoma lines",
+        "genotype_or_key_features": "various oncogenic backgrounds"
+      },
+      {
+        "model_type": "PDX",
+        "name": "AML PDX (STORM\u2011treated)",
+        "genotype_or_key_features": "patient\u2011derived AML"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "STC\u201115 Phase\u202f1 (ongoing)",
+        "genotype_or_key_features": "AML/MDS patients"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor burden (luciferase)",
+        "value": "synergistic reduction with YTHDC1 inhibitor + METTL3 inhibitor",
+        "confidence_interval": "",
+        "n": "n=5 mice",
+        "population": "AML PDX",
+        "comparator": "METTL3 inhibitor alone",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "survival extension",
+        "value": "85\u202fdays vs 50\u202fdays with combo vs METTL3 inhibitor alone",
+        "confidence_interval": "",
+        "n": "n=8 mice",
+        "population": "AML PDX",
+        "comparator": "METTL3 inhibitor alone",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "METTL3 inhibition reduces m6A on oncogenic transcripts (MYC, BCL2) but induces adaptive up\u2011regulation and nuclear condensate formation of the m6A reader YTHDC1; gel\u2011like YTHDC1 condensates sequester residual m6A\u2011modified RNAs, restoring translation of survival genes and conferring resistance, which can be overcome by YTHDC1 inhibition or venetoclax co\u2011treatment.",
+    "readouts": [
+      "CRISPR screens",
+      "polysome profiling",
+      "live\u2011cell condensate imaging",
+      "FRAP",
+      "RNA\u2011seq",
+      "proteomics",
+      "in vivo tumor imaging"
+    ],
+    "key_findings": [
+      "CRISPR screens identified YTHDC1 as a top sensitizer to METTL3 inhibition; its loss synergizes with METTL3 inhibitors in AML and melanoma.",
+      "METTL3 inhibition enlarges YTHDC1 nuclear condensates, shifting them to a less liquid, gel\u2011like state correlated with resistance.",
+      "Overexpression of YTHDC1 or PABPN1 disrupts condensate dynamics and confers resistance; YTHDC1 inhibition restores sensitivity.",
+      "Combining a YTHDC1 inhibitor or venetoclax with METTL3 inhibition yields strong synergistic anti\u2011tumor effects with minimal impact on normal CD34+ cells."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance linked to YTHDC1 condensate dynamics rather than genetic mutations.",
+      "Normal hematopoietic CD34+ cells remain sensitive to METTL3 inhibition, indicating a therapeutic window."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "YTHDC1 inhibitor",
+        "rationale": "Disrupt adaptive YTHDC1 condensates that rescue MYC/BCL2 translation",
+        "phenotype": "Restores METTL3 inhibitor efficacy in resistant models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "venetoclax",
+        "rationale": "Target BCL2 downstream of YTHDC1\u2011mediated rescue",
+        "phenotype": "Synergistic tumor regression and extended survival",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What are the molecular constituents of the gel\u2011like YTHDC1 condensates?",
+      "Can biomarkers of condensate dynamics predict patient response to METTL3 inhibitors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "STORM Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cutting-edge-advances-in-hematology::jost::6",
+    "session_title": "cutting-edge-advances-in-hematology",
+    "talk_title": "Lymphotoxin\u2011\u03b1 induces TRAF2 degradation and necroptotic death in AML",
+    "speaker": {
+      "name": "Jost",
+      "affiliation": "Medical University of Graz",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "acute myeloid leukemia"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_death",
+      "targeted_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Lymphotoxin\u2011\u03b1 (LT\u03b1)",
+        "alteration": "",
+        "pathway": "TNFR1 signaling",
+        "modality": "cytokine therapy",
+        "compound_name": "LT\u03b1 recombinant protein (modified)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells with low TRAF2",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TRAF2",
+        "alteration": "down\u2011regulation",
+        "pathway": "TNFR1 pro\u2011survival complex",
+        "modality": "protein degradation (indirect)",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TRAF2 protein level",
+        "type": "predictive",
+        "assay": "proteomics / Western blot",
+        "finding": "TRAF2 is repressed in >70% of AML patient samples across subtypes"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse model",
+        "name": "FLT3\u2011ITD driven AML (retroviral transplant) with TNF/LT\u03b1 knockout",
+        "genotype_or_key_features": "WT vs LT\u03b1\u2011/\u2011 vs TNF\u2011/\u2011"
+      },
+      {
+        "model_type": "PDX",
+        "name": "FLT3\u2011ITD AML patient\u2011derived xenograft",
+        "genotype_or_key_features": "complex karyotype, TP53 mutations"
+      },
+      {
+        "model_type": "primary AML samples",
+        "name": "bone marrow aspirates (n\u224830)",
+        "genotype_or_key_features": "various mutations (FLT3, DNMT3A, TP53, etc.)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival in mice",
+        "value": "no leukemia development up to 300\u202fdays with LT\u03b1 treatment",
+        "confidence_interval": "",
+        "n": "n=10 mice per group",
+        "population": "FLT3\u2011ITD AML mouse model",
+        "comparator": "vehicle",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "colony formation (in vitro)",
+        "value": "significant reduction after LT\u03b1 exposure",
+        "confidence_interval": "",
+        "n": "n=5 patient samples",
+        "population": "primary AML blasts",
+        "comparator": "untreated control",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "Recombinant lymphotoxin\u2011\u03b1 engages TNFR1 on AML cells, leading to depletion of the pro\u2011survival adaptor TRAF2, which shifts TNFR1 signaling toward necroptotic complex formation and cell death, while sparing normal hematopoietic progenitors that retain higher TRAF2 levels.",
+    "readouts": [
+      "colony\u2011forming assays",
+      "flow cytometry (CD34/CD38)",
+      "Western blot for TRAF2",
+      "survival curves in mice",
+      "proteomics of patient samples"
+    ],
+    "key_findings": [
+      "Genetic deletion of LT\u03b1 in FLT3\u2011ITD AML mice accelerates disease onset, indicating a tumor\u2011suppressive role for LT\u03b1.",
+      "Exogenous LT\u03b1 induces rapid death of primary AML blasts, including high\u2011risk TP53\u2011mutated samples, and promotes differentiation (loss of CD34, gain of CD38).",
+      "LT\u03b1 treatment eradicates leukemia in both syngeneic and immunodeficient PDX models without causing cytopenia or impairing normal hematopoiesis.",
+      "TRAF2 is markedly down\u2011regulated in AML patient samples across genetic subtypes, rendering leukemic cells uniquely sensitive to LT\u03b1\u2011mediated necroptosis."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity derives from low TRAF2 in AML versus normal cells; normal hematopoiesis retains TRAF2 and is resistant to LT\u03b1\u2011induced death."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "standard AML therapies (e.g., venetoclax)",
+        "rationale": "Potential additive cytotoxicity via distinct death pathways",
+        "phenotype": "Not yet tested",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can LT\u03b1 be engineered for improved pharmacokinetics and reduced immunogenicity?",
+      "Will chronic LT\u03b1 exposure affect immune homeostasis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Cycuria Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

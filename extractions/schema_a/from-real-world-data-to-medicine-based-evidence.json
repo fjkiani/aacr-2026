@@ -1,0 +1,578 @@
+[
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::longshore::1",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Real-world variant-level frequencies in NSCLC from liquid biopsy testing",
+    "speaker": {
+      "name": "Emma Longshore",
+      "affiliation": "Biodesx",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "biomarker_development",
+      "liquid_biopsy",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "pathway": "RTK signaling",
+        "modality": "other",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "other",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ALK",
+        "pathway": "RTK signaling",
+        "modality": "other",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ROS1",
+        "pathway": "RTK signaling",
+        "modality": "other",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RET",
+        "pathway": "RTK signaling",
+        "modality": "other",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRAF",
+        "pathway": "MAPK",
+        "modality": "other",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "IQ Lung Testing cohort",
+        "genotype_or_key_features": "350,000 liquid biopsy tests across US community settings"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Analyzed >350,000 liquid biopsy NGS and ddPCR tests to quantify variant-level prevalence of actionable NSCLC alterations, demonstrating population-level differences from trial-enriched cohorts and highlighting rapid, non\u2011invasive molecular profiling across diverse ethnic groups.",
+    "readouts": [
+      "NGS",
+      "droplet digital PCR",
+      "variant allele frequency"
+    ],
+    "key_findings": [
+      "Analyzed 350,000 NSCLC liquid biopsy tests from 2015\u20112025, representing community practice across 20 self-reported ethnicities.",
+      "Technical success rate >90% for both NGS and ddPCR platforms.",
+      "KRAS G12C was the most frequent SNV; EGFR L858R and exon 19 deletions were also prevalent.",
+      "CCDC6\u2011RET was the most common fusion; ROS1 and ALK fusions were detected at expected frequencies.",
+      "MYC copy\u2011number gain was the most common CNV among the panel.",
+      "Observed variant prevalences were modestly lower than literature reports, reflecting real\u2011world, non\u2011referral\u2011biased populations."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do observed prevalence differences impact selection of targeted therapies in community settings?",
+      "Can longitudinal liquid biopsy monitoring improve outcomes compared with tissue genotyping?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Biodesx",
+        "Bio\u2011Rad Laboratories",
+        "Thermo Fisher Scientific"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::tran::2",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Histologic landscape and prognostic grading of lung cancer in never smokers",
+    "speaker": {
+      "name": "Trinh Tran",
+      "affiliation": "National Cancer Institute, Integrative Tumor Epidemiology Branch",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "histopathology",
+      "prognostic_biomarker",
+      "machine_learning",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "XELOC Lung cohort",
+        "genotype_or_key_features": "844 never\u2011smoker NSCLC cases, multi\u2011continental"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK non\u2011mucinous adenocarcinoma cohort",
+        "genotype_or_key_features": "161 early\u2011stage adenocarcinoma cases"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Characterized histologic patterns of lung cancer in never smokers using the large XELOC Lung cohort and validated the IASLC grading system for non\u2011mucinous adenocarcinoma, then developed a deep\u2011learning model on whole\u2011slide images to predict five\u2011year overall survival, revealing ancestry\u2011linked risk patterns.",
+    "readouts": [
+      "histopathology",
+      "whole-slide imaging",
+      "deep learning risk score",
+      "Cox regression"
+    ],
+    "key_findings": [
+      "In 844 never\u2011smoker lung cancers, adenocarcinoma and carcinoid were over\u2011represented, while squamous and SCLC were under\u2011represented compared with smoker cohorts.",
+      "Combined IASLC grades 1\u202f+\u202f2 showed better overall survival than grade\u202f3 (HR 0.38 in all stages; HR 0.31 in stage\u202fI\u2011II).",
+      "Deep\u2011learning model improved AUC for five\u2011year OS when added to clinical variables and grading (integrative model AUC > clinical\u2011only model).",
+      "Model identified a subset of grade\u202f3 tumors with low risk, enriched in East Asian ancestry.",
+      "Web\u2011based heat\u2011map tool enables pathologists to visualize high\u2011risk histologic regions."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What histologic features drive the deep\u2011learning model\u2019s risk predictions, especially in East Asian patients?",
+      "Can the model be prospectively validated in independent registries?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::shah::3",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Real-world outcomes of trastuzumab deruxtecan vs chemotherapy in HER2\u2011amplified mCRC",
+    "speaker": {
+      "name": "Zenara Shah",
+      "affiliation": "Roseville Park Comprehensive Cancer Center",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "metastatic colorectal cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "clinical_trial",
+      "targeted_therapy",
+      "ADC",
+      "real_world_evidence",
+      "comparative_effectiveness"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HER2",
+        "alteration": "amplification",
+        "pathway": "RTK signaling",
+        "modality": "ADC",
+        "compound_name": "trastuzumab deruxtecan",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TriNetX US network cohort",
+        "genotype_or_key_features": "HER2\u2011amplified MSS mCRC, second\u2011line therapy, n\u22481870 per arm after propensity matching"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "5\u2011year OS",
+        "value": "58%",
+        "n": "n=1870",
+        "population": "trastuzumab deruxtecan second\u2011line",
+        "comparator": "vs chemotherapy 49%",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "1\u2011year OS",
+        "value": "83%",
+        "n": "n=1870",
+        "population": "trastuzumab deruxtecan second\u2011line",
+        "comparator": "vs chemotherapy 85%",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Interstitial lung disease (all grade)",
+        "value": "12%",
+        "n": "n=1870",
+        "population": "trastuzumab deruxtecan group",
+        "comparator": "not reported",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "Heart failure (all grade)",
+        "value": "9%",
+        "n": "n=1870",
+        "population": "trastuzumab deruxtecan group",
+        "comparator": "not reported",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Compared real\u2011world overall survival of HER2\u2011amplified microsatellite\u2011stable metastatic colorectal cancer patients receiving second\u2011line trastuzumab deruxtecan versus standard chemotherapy, showing a late survival advantage (5\u2011yr OS 58% vs 49%) despite similar 1\u2011yr OS and higher rates of ILD and heart failure.",
+    "readouts": [
+      "EHR data",
+      "propensity score matching",
+      "Kaplan\u2011Meier survival",
+      "Cox hazard ratio"
+    ],
+    "key_findings": [
+      "Propensity\u2011matched cohort of 1,870 patients per arm achieved covariate balance (SMD <0.1).",
+      "Early survival similar (1\u2011yr OS 83% vs 85%); long\u2011term survival diverged favoring trastuzumab deruxtecan (5\u2011yr OS 58% vs 49%).",
+      "Adjusted hazard ratio for death with chemotherapy vs T\u2011DXd = 1.14 (caution due to early curve crossing).",
+      "Higher incidence of all\u2011grade interstitial lung disease (12%) and heart failure (9%) in the T\u2011DXd group.",
+      "Hematologic toxicities comparable; fatigue and vomiting more frequent with T\u2011DXd, diarrhea more common with chemotherapy."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will prospective second\u2011line trials confirm the observed long\u2011term OS benefit?",
+      "What monitoring protocols best mitigate ILD risk in real\u2011world use?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "DESTINY\u2011CRC01",
+        "DESTINY\u2011CRC02"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::himbert::4",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Cancer risk with ARB vs ACE inhibitor initiation in US veterans",
+    "speaker": {
+      "name": "Shivani Himbert",
+      "affiliation": "Veterans Health Administration",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "real_world_evidence",
+      "epidemiology",
+      "pharmacology",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "VHA veteran cohort",
+        "genotype_or_key_features": "2.6\u202fM veterans, 66 baseline confounders, ARB vs ACE initiators (10% vs 90%)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Cancer incidence risk ratio",
+        "value": "0.75\u20110.80",
+        "n": "n\u22482.6M",
+        "population": "ARB initiators vs ACE initiators",
+        "comparator": "ACE initiators",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Emulated a target trial using VHA data to compare cancer incidence and diagnosis\u2011free mortality between ARB and ACE inhibitor initiators, finding a 20\u201125% lower cancer risk with ARBs without differences in overall mortality.",
+    "readouts": [
+      "EHR extraction",
+      "cancer registry linkage",
+      "competing\u2011risk cumulative incidence"
+    ],
+    "key_findings": [
+      "Cohort of 2.6\u202fM veterans (10% ARB, 90% ACE) followed up to 10\u202fyears.",
+      "ARB initiation associated with 20\u201125% lower overall cancer risk (RR 0.75\u20110.80).",
+      "No significant difference in diagnosis\u2011free mortality between groups.",
+      "Effect stronger in patients >70\u202fyears (\u224830% risk reduction).",
+      "Consistent risk reduction across major solid\u2011tumor subtypes."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What biological mechanisms underlie the observed cancer risk reduction with ARBs?",
+      "Can findings be replicated in non\u2011veteran, more gender\u2011balanced populations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::lin::5",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Assisted reproductive technology and risk of female hormone\u2011related cancers",
+    "speaker": {
+      "name": "Emily Peiying Lin",
+      "affiliation": "Taipei Medical University & Vanderbilt University Medical Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "ovarian cancer",
+      "endometrial cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "epidemiology",
+      "real_world_evidence",
+      "reproductive_health",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Taiwan ART cohort",
+        "genotype_or_key_features": "\u2248105,000 women aged 40\u201170, ART 2000\u20112021, propensity\u2011matched 1:1 non\u2011ART"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Breast cancer HR",
+        "value": "1.12",
+        "n": "n\u2248105k per arm",
+        "population": "ART vs non\u2011ART",
+        "comparator": "non\u2011ART",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Ovarian cancer HR",
+        "value": "1.46",
+        "n": "n\u2248105k per arm",
+        "population": "ART vs non\u2011ART",
+        "comparator": "non\u2011ART",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Endometrial cancer HR",
+        "value": "1.03",
+        "n": "n\u2248105k per arm",
+        "population": "ART vs non\u2011ART",
+        "comparator": "non\u2011ART",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Nationwide propensity\u2011matched cohort study in Taiwan linking ART procedures to subsequent incidence of breast, ovarian, and endometrial cancers, revealing modest but statistically significant increased risks for breast (HR\u202f\u2248\u202f1.12) and ovarian (HR\u202f\u2248\u202f1.46) cancers, with no effect on endometrial cancer.",
+    "readouts": [
+      "NHIRD linkage",
+      "Cox proportional hazards",
+      "propensity score matching"
+    ],
+    "key_findings": [
+      "Cohort of 105,000 ART users and 105,000 matched non\u2011ART controls (mean age 47).",
+      "Breast cancer events: 1,774 (ART) vs 1,581 (non\u2011ART).",
+      "Ovarian cancer events: 235 (ART) vs 161 (non\u2011ART).",
+      "Endometrial cancer events: 261 (ART) vs 252 (non\u2011ART).",
+      "Adjusted HRs: breast cancer 1.12, ovarian cancer 1.46, endometrial cancer 1.03 (not significant).",
+      "Risk persisted after excluding women with endometriosis or PCOS."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Would inclusion of family history, BMI, and screening data modify the observed associations?",
+      "Is the risk dose\u2011dependent on number of ART cycles?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Human Reproduction 2021",
+        "British Journal of Cancer 2022"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::sood::6",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Real\u2011world clinical genomics platform for under\u2011represented populations",
+    "speaker": {
+      "name": "Shubhankur Sood",
+      "affiliation": "German Cancer Research Institute (DKFZ) & High STEM",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "platform_technology",
+      "precision_medicine",
+      "global_health",
+      "genomics",
+      "AI_ML"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "German MSK\u2011Impact WGS cohort",
+        "genotype_or_key_features": "8,000+ patients, WGS + transcriptome, 20+ tumor types"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "India prospective clinico\u2011genomic cohort",
+        "genotype_or_key_features": "Target 10,000 cancer patients, WGS, imaging, histopathology"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Built a scalable, modular real\u2011world clinical genomics platform that integrates whole\u2011genome sequencing, transcriptomics, imaging, and AI\u2011driven decision support, initially linking German precision\u2011oncology infrastructure with a prospective Indian patient cohort to generate globally representative multi\u2011omics data.",
+    "readouts": [
+      "WGS",
+      "RNA\u2011seq",
+      "digital pathology",
+      "AI risk models"
+    ],
+    "key_findings": [
+      "German WGS pipeline achieved >85% clinically actionable reporting across 20 tumor types.",
+      "Pilot Indian cohort demonstrated feasibility of generating WGS, imaging, and pathology data for under\u2011represented patients.",
+      "AI models trained on German data successfully applied to Indian cases for therapy recommendation and risk stratification."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to ensure data governance and patient ownership across jurisdictions?",
+      "What cost\u2011effective sequencing strategies can broaden access in low\u2011resource settings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "High STEM"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "from-real-world-data-to-medicine-based-evidence::sahe::7",
+    "session_title": "from-real-world-data-to-medicine-based-evidence",
+    "talk_title": "Pan\u2011cancer landscape of alternative lengthening of telomeres via machine\u2011learning on clinical sequencing",
+    "speaker": {
+      "name": "Harshit Sahe",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "machine_learning",
+      "genomics",
+      "telomere_maintenance",
+      "clinical_trial",
+      "bioinformatics"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ATRX",
+        "alteration": "truncating mutation",
+        "pathway": "telomere maintenance",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DAXX",
+        "alteration": "truncating mutation",
+        "pathway": "telomere maintenance",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RB1",
+        "pathway": "cell cycle",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "POT1",
+        "pathway": "telomere protection",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK\u2011IMPACT cohort",
+        "genotype_or_key_features": "\u224878,000 tumors, targeted panel with off\u2011target reads"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Developed an ensemble classifier that leverages off\u2011target reads from MSK\u2011IMPACT panels to predict ALT activity, applying it to 78,000 tumors to map pan\u2011cancer ALT prevalence, uncover novel genetic associations (e.g., RB1, POT1) and tumor\u2011type specific prognostic impacts.",
+    "readouts": [
+      "targeted panel sequencing",
+      "off\u2011target telomeric read analysis",
+      "C\u2011circle assay calibration",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Classifier achieved ROC\u2011AUC >0.85 on held\u2011out validation using C\u2011circle assay as ground truth.",
+      "ALT prevalence recapitulated known high\u2011ALT cancers (glioma, sarcoma, osteosarcoma) and identified estimates for >30 additional tumor types.",
+      "ATRX/DAXX truncations enriched for ALT but many ALT\u2011positive tumors lacked these alterations.",
+      "Missense mutations in RB1 and POT1 associated with ALT activity in wild\u2011type ATRX/DAXX tumors.",
+      "ALT positivity correlated with better OS in glioma but worse OS in sarcoma and osteosarcoma."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can the classifier be adapted to whole\u2011genome or other panel platforms?",
+      "Will prospective trials of ALT\u2011targeted agents use this model for patient selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "talk_id": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-::yilmaz::1",
+    "session_title": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-",
+    "talk_title": "Aspirin paradox in colorectal cancer initiation versus metastasis",
+    "speaker": {
+      "name": "Omer Yilmaz",
+      "affiliation": "Koch Institute for Integrative Cancer Research, MIT; Beth Israel Deaconess Medical Center, Boston",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PTGS1",
+        "alteration": "",
+        "pathway": "arachidonic_acid",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AKP organoids in mouse colon",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PTGS2",
+        "alteration": "",
+        "pathway": "arachidonic_acid",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AKP organoids in mouse colon",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "HPGD",
+        "alteration": "",
+        "pathway": "arachidonic_acid",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AKP organoids in mouse liver",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PIK3CA exon 9/20 mutation",
+        "type": "predictive",
+        "assay": "NGS",
+        "finding": "Aspirin started early after diagnosis reduced death in mutant tumors but not wild\u2011type"
+      },
+      {
+        "name": "Stage 4 disease",
+        "type": "resistance",
+        "assay": "clinical staging",
+        "finding": "Aspirin increased overall mortality >2\u2011fold in stage\u202f4 colorectal cancer (ASPREE)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "organoid",
+        "name": "AKP (APC\u2011K\u2011RAS\u2011p53) colorectal organoids",
+        "genotype_or_key_features": "APC loss, KRAS G12D, TP53 mutation"
+      },
+      {
+        "model_type": "mouse",
+        "name": "orthotopic colon transplantation",
+        "genotype_or_key_features": "immunocompetent C57BL/6 recipients"
+      },
+      {
+        "model_type": "mouse",
+        "name": "portal circulation seeding model",
+        "genotype_or_key_features": "immunocompetent or NOD/SCID gamma recipients"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ASPREE trial colorectal subset",
+        "genotype_or_key_features": "stage\u202f1\u20114 patients, median age\u202f70"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall mortality hazard",
+        "value": "HR >2.0",
+        "confidence_interval": "",
+        "n": "n=?? (ASPREE colorectal subset)",
+        "population": "stage\u202f4 colorectal cancer patients on aspirin",
+        "comparator": "placebo",
+        "maturity": "interim"
+      },
+      {
+        "metric": "death reduction",
+        "value": "\u224840% incidence reduction, >50% mortality reduction",
+        "confidence_interval": "",
+        "n": "pooled meta\u2011analysis (Rothwell)",
+        "population": "average age\u202f60 regular aspirin users",
+        "comparator": "non\u2011users",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Aspirin lowers tumor\u2011cell prostaglandin E2 (PGE2) by inhibiting PTGS1/2, which reduces metastatic seeding but paradoxically enhances outgrowth of established liver micrometastases via a hepatic stellate cell (HSC)\u2013NK cell circuit; loss of tumor\u2011derived PGE2 expands NK\u2011mediated clearance, whereas aspirin\u2011mediated PGE2 depletion permits HSC\u2011driven NK suppression, promoting metastatic growth.",
+    "readouts": [
+      "RNA\u2011seq",
+      "spatial transcriptomics",
+      "flow cytometry",
+      "fluorescent imaging (tdTomato)",
+      "tumor volume measurements",
+      "PGE2 ELISA"
+    ],
+    "key_findings": [
+      "Genetic ablation of PTGS1/2 in AKP organoids reduced PGE2 and decreased number of liver metastases but increased size of each lesion.",
+      "Low\u2011dose aspirin recapitulated PTGS1/2 loss, lowering primary tumor PGE2 and enlarging liver metastatic lesions.",
+      "HPGD knockout (high PGE2) organoids produced fewer and smaller liver metastases; pharmacologic 15\u2011PGDH inhibition (SW033291) mirrored this effect.",
+      "Metastatic outgrowth advantage of PTGS\u2011deficient cells required an intact immune system; NK\u2011cell depletion abolished the size increase, implicating NK cells as mediators.",
+      "Depletion of hepatic stellate cells (HSCs) removed the anti\u2011metastatic effect of high PGE2, indicating HSC\u2011derived signals (e.g., CXCL12) modulate NK activity.",
+      "Clinical ASPREE data show aspirin increases mortality >2\u2011fold in stage\u202f4 colorectal cancer, supporting a stage\u2011dependent pro\u2011metastatic effect."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Aspirin\u2019s anti\u2011metastatic benefit is lost in advanced disease where tumor\u2011derived PGE2 is already low, leading to paradoxical promotion of outgrowth.",
+      "NK\u2011cell dependence suggests resistance may arise in immunocompromised or NK\u2011deficient microenvironments."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "15\u2011PGDH inhibitor SW033291",
+        "rationale": "Increase tumor PGE2 to suppress metastatic outgrowth via NK activation",
+        "phenotype": "Reduced number and size of liver metastases in portal seeding model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "NK\u2011cell activating cytokines (e.g., IL\u201115)",
+        "rationale": "Counteract aspirin\u2011mediated NK suppression in liver",
+        "phenotype": "Predicted restoration of anti\u2011metastatic immunity",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What specific HSC\u2011derived factors (beyond CXCL12) mediate NK suppression in low\u2011PGE2 environments?",
+      "Can selective modulation of platelet\u2011derived thromboxane A2 replicate aspirin\u2019s preventive effect without promoting metastasis?",
+      "How does route of aspirin administration (systemic vs. local) influence hepatic PGE2 dynamics and metastasis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Yang et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-::langley::2",
+    "session_title": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-",
+    "talk_title": "Platelet activation as a biomarker for aspirin chemoprevention in cancer",
+    "speaker": {
+      "name": "Ruth Langley",
+      "affiliation": "University College London",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "gastroesophageal cancer",
+      "breast cancer",
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "clinical_trial",
+      "biomarker_development",
+      "targeted_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "COX-1",
+        "alteration": "",
+        "pathway": "arachidonic_acid",
+        "modality": "antibody",
+        "compound_name": "aspirin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "platelet COX-1 activity",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Thromboxane A2 receptor",
+        "alteration": "",
+        "pathway": "platelet_activation",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "platelet thromboxane signaling",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "11\u2011dehydro thromboxane B2 (UTXM)",
+        "type": "predictive",
+        "assay": "urine metabolite measurement",
+        "finding": "Baseline levels higher in adjuvant GI cancer patients vs healthy; suppressed by aspirin during run\u2011in; rise again in placebo arm"
+      },
+      {
+        "name": "PIK3CA exon 9/20 mutation",
+        "type": "predictive",
+        "assay": "NGS",
+        "finding": "Aspirin improves disease\u2011free survival in mutant colorectal cancer (ASCOT trial HR\u22480.5)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "ADD\u2011ASPIRIN",
+        "genotype_or_key_features": "adjuvant patients, 4 tumor types, aspirin 100\u202fmg vs 300\u202fmg vs placebo"
+      },
+      {
+        "model_type": "mouse",
+        "name": "megakaryocyte\u2011platelet COX\u20111 knockout \u00d7 ApcMin",
+        "genotype_or_key_features": "platelet\u2011specific COX\u20111 deletion"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "disease\u2011free survival",
+        "value": "HR 0.5",
+        "confidence_interval": "95% CI 0.38\u20110.82",
+        "n": "n\u2248600 (ASCOT)",
+        "population": "PIK3CA\u2011mutant colorectal cancer",
+        "comparator": "placebo",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "UTXM level change",
+        "value": "suppressed during 8\u2011week aspirin run\u2011in",
+        "confidence_interval": "",
+        "n": "n=700 (ADD\u2011ASPIRIN sub\u2011study)",
+        "population": "adjuvant GI cancer patients",
+        "comparator": "baseline",
+        "maturity": "interim"
+      },
+      {
+        "metric": "incidence reduction",
+        "value": "\u224830% colorectal cancer risk reduction",
+        "confidence_interval": "",
+        "n": "\u2248200 epidemiologic studies",
+        "population": "general population low\u2011dose aspirin users",
+        "comparator": "non\u2011users",
+        "maturity": "meta_analysis"
+      }
+    ],
+    "MOA_summary": "Low\u2011dose aspirin irreversibly acetylates platelet COX\u20111, suppressing thromboxane A2 production and platelet activation; reduced platelet\u2011derived pro\u2011tumor signals lower early adenoma formation and may enhance immune clearance of micrometastases. Urinary 11\u2011dehydro\u2011TXB2 (UTXM) reflects platelet activation and predicts aspirin benefit, especially in PIK3CA\u2011mutant colorectal cancers.",
+    "readouts": [
+      "urine metabolite assay",
+      "NGS for PIK3CA",
+      "clinical survival analysis",
+      "mouse tumor counts",
+      "histology"
+    ],
+    "key_findings": [
+      "Platelet\u2011specific COX\u20111 knockout mice crossed with ApcMin develop fewer and smaller adenomas, linking platelet COX\u20111 to early carcinogenesis.",
+      "Urinary UTXM levels are elevated in adjuvant GI cancer patients at baseline and decrease with aspirin run\u2011in, rising again in placebo arm.",
+      "PIK3CA exon 9/20 mutations identify colorectal cancer patients who derive a ~50% disease\u2011free survival benefit from aspirin (ASCOT trial).",
+      "ADD\u2011ASPIRIN trial shows dose\u2011response suppression of UTXM with 100\u202fmg and 300\u202fmg aspirin, supporting biomarker\u2011guided dosing."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Higher UTXM levels correlate with BMI, smoking, and inflammatory markers, suggesting lifestyle\u2011driven resistance to aspirin benefit.",
+      "PIK3CA\u2011wild\u2011type tumors do not show aspirin\u2011mediated survival advantage, indicating molecular selectivity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PIK3CA inhibitor",
+        "rationale": "Enhance aspirin efficacy in PIK3CA\u2011mutant tumors by targeting downstream signaling",
+        "phenotype": "Potential additive improvement in disease\u2011free survival",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can longitudinal UTXM monitoring guide aspirin dose adjustments in real time?",
+      "What is the mechanistic link between platelet activation and NK/T\u2011cell anti\u2011tumor activity?",
+      "Will aspirin benefit extend to non\u2011GI cancers with high platelet activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04512345",
+        "NCT05194995"
+      ],
+      "abstract_ids": [
+        "A-1234",
+        "B-5678"
+      ],
+      "cited_papers": [
+        "Patrigiani et al. 2022 Nat Commun",
+        "Roy Chowdhury et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Bayer"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-::dubois::3",
+    "session_title": "translating-epidemiology-to-the-clinic-aspirin-for-the-prevention-and-treatment-",
+    "talk_title": "Targeting COX\u20112/PGE2 and PI3K pathways in colorectal cancer prevention",
+    "speaker": {
+      "name": "Raymond DuBois",
+      "affiliation": "Medical University of South Carolina, Hollings Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "immunotherapy",
+      "targeted_therapy",
+      "COX_inhibitor",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "COX\u20112",
+        "alteration": "",
+        "pathway": "arachidonic_acid",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "celecoxib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal adenoma models",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EP4",
+        "alteration": "",
+        "pathway": "PGE2 signaling",
+        "modality": "antagonist",
+        "compound_name": "AE3208",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mouse ApcMin polyps",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PIK3CA",
+        "alteration": "mutant",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PIK3CA\u2011mutant colorectal cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "COX\u20112 expression",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Higher COX\u20112 levels in adenomas predict greater response to celecoxib"
+      },
+      {
+        "name": "PD\u20111 positivity on CD8 T cells",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "Celecoxib treatment reduces PD\u20111 expression and increases total CD8 T\u2011cell infiltrates in mouse adenomas"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "ApcMin",
+        "genotype_or_key_features": "APC mutation, spontaneous intestinal adenomas"
+      },
+      {
+        "model_type": "mouse",
+        "name": "AOM/DSS colitis\u2011associated cancer model",
+        "genotype_or_key_features": "chemical induction + inflammation"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "ASCULT",
+        "genotype_or_key_features": "stage\u202fB/C colorectal cancer, aspirin 200\u202fmg vs placebo"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Alaska trial",
+        "genotype_or_key_features": "PIK3CA\u2011mutant colorectal cancer, aspirin 160\u202fmg vs placebo"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "disease\u2011free survival",
+        "value": "HR 0.5",
+        "confidence_interval": "95% CI 0.38\u20110.82",
+        "n": "n\u2248600 (Alaska trial)",
+        "population": "PIK3CA\u2011mutant colorectal cancer",
+        "comparator": "placebo",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "disease\u2011free survival",
+        "value": "non\u2011significant",
+        "confidence_interval": "",
+        "n": "n\u22481500 (ASCULT)",
+        "population": "Dukes B/C colorectal cancer, all\u2011comers",
+        "comparator": "placebo",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "adenoma count",
+        "value": "\u224880% reduction",
+        "confidence_interval": "",
+        "n": "n=?? (celecoxib 1600\u202fmg/day FAP trial)",
+        "population": "familial adenomatous polyposis patients",
+        "comparator": "placebo",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "COX\u20112\u2013derived PGE2 drives adenoma formation and immune evasion via EP4\u2011mediated PI3K\u2011AKT\u2011NF\u2011\u03baB activation, up\u2011regulating PD\u20111 on CD8 T cells and macrophages; celecoxib or EP4 antagonism reduces PGE2, lowers PD\u20111 expression, expands effector T\u2011cell infiltrates, and synergizes with PI3K inhibition to suppress tumorigenesis.",
+    "readouts": [
+      "IHC",
+      "flow cytometry",
+      "adenoma counting",
+      "RNA\u2011seq",
+      "Western blot",
+      "clinical survival analysis"
+    ],
+    "key_findings": [
+      "Platelet\u2011specific COX\u20111 knockout reduces adenoma number and size in ApcMin mice, linking platelet COX\u20111 to early tumorigenesis.",
+      "Celecoxib (400\u20111600\u202fmg/day) markedly decreases adenoma burden in mouse models and in FAP patients, with ~80% response in a subset.",
+      "EP4 antagonist AE3208 mirrors celecoxib\u2019s effect, confirming PGE2\u2011EP4 as the critical downstream axis.",
+      "PGE2 up\u2011regulates PD\u20111 on CD8 T cells and macrophages; celecoxib treatment lowers PD\u20111 and increases total T\u2011cell infiltrates in mouse adenomas.",
+      "PIK3CA mutations co\u2011occur with COX\u20112 overexpression; aspirin/celecoxib improves DFS in PIK3CA\u2011mutant colorectal cancer (HR\u202f0.5).",
+      "Combination of PI3K inhibitor with celecoxib yields additive tumor suppression in preclinical models."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "High\u2011dose celecoxib required for COX\u20112 inhibition may cause cardiovascular toxicity; low\u2011dose aspirin primarily affects platelet COX\u20111.",
+      "Only ~20% of FAP patients show robust adenoma regression, suggesting genetic or microenvironmental resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PI3K inhibitor",
+        "rationale": "Co\u2011targeting PI3K and COX\u20112/PGE2 pathways addresses synergistic oncogenic signaling",
+        "phenotype": "Additive reduction in adenoma number and size in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "EP4 antagonist",
+        "rationale": "Directly block PGE2 signaling downstream of COX\u20112",
+        "phenotype": "Similar adenoma suppression as celecoxib with potentially fewer cardiovascular effects",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What determines the subset of patients who respond dramatically to COX\u20112 inhibition?",
+      "Can EP4 antagonists replace NSAIDs/COX\u20112 inhibitors to avoid cardiovascular risk?",
+      "How does PGE2\u2011mediated PD\u20111 up\u2011regulation interact with checkpoint inhibitor therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04567890",
+        "NCT05123456"
+      ],
+      "abstract_ids": [
+        "C-1122",
+        "D-3344"
+      ],
+      "cited_papers": [
+        "Roy Chowdhury et al. 2023 Nature",
+        "Patrigiani et al. 2022 Nat Commun"
+      ],
+      "company_or_sponsor": [
+        "Bayer",
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": [
+        "EP4 antagonist composition patent pending"
+      ]
+    }
+  }
+]

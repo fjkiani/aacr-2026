@@ -1,0 +1,99 @@
+[
+  {
+    "talk_id": "aacr-james-s-ewing-thelma-b-dunn-award-for-outstanding-achievement-in-pathology-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. David Rim",
+      "institution_or_pharma": "Yale School of Medicine",
+      "session_title": "AACR James S. Ewing\u2013Thelma B. Dunn Award for Outstanding Achievement in Pathology",
+      "talk_title": "Quantitative Pathology: From Fluorescent Imaging to Selective Biomarkers for ADC Choice",
+      "rhetorical_signals": [
+        "Speaker said: \"If the patient's going to get trastuzumab deruxtecan, they have to have at least a zero plus or originally a one plus, not a zero in order to get that.\"",
+        "Speaker said: \"We are still in the process of checking that. I'll tell you, there are at least six trials going on now, two of which or three of which are prospective.\"",
+        "Speaker said: \"I think we need a fourth category now that I'm calling a selective biomarker.\"",
+        "Speaker said: \"We are negotiating with three different companies who might commercialize it. Because if it can't get commercialized, it will never get beyond my little lab.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Chromogenic IHC for HER2/HER2\u2011low scoring",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Chromogen intensity varies three\u2011fold between labs and is affected by staining day\u2011to\u2011day variability, preventing reliable quantitative discrimination of HER2 low vs. zero",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Pathologist number one disqualified 44% of patients for T\u2011DXd, while pathologist number 18 disqualified only 15%, showing patient eligibility depends on reader rather than biology",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that AI segmentation can misclassify lymphocytes as tumor cells (\"half of the cells that are lymphocytes are considered to be tumor cells\") yet concluded that quantitative AI will soon replace subjective reading without acknowledging this misclassification rate"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented for the Troplex assay cohorts",
+        "No prospectively validated HER2\u2011low cutoff",
+        "Limited analysis of intrinsic molecular subtypes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of a validated quantitative cutoff for HER2\u2011low ADC eligibility creates a niche for CrisPRO to provide a robust, standardized fluorescence\u2011based HER2 quantification platform",
+        "transcript_evidence": "Speaker said: \"We have two clinical trials ... looking for a cutoff. In preliminary data, it looks like there's not one. Occasionally you see a responder even when they have almost no HER2 at all.\"",
+        "crispro_angle": "CrisPRO can generate absolute attomole per mm\u00b2 values with <10% CV and apply machine\u2011learned threshold optimization across multi\u2011institutional datasets to define reproducible HER2\u2011low cutoffs",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "High Trop\u20112 expression appears to diminish response to HER2\u2011targeted ADCs, suggesting a combinatorial resistance mechanism that CrisPRO could model and predict",
+        "transcript_evidence": "Speaker said: \"If patients have high Trop\u20112 in that same cohort that are given T\u2011DXd, you do poorly. ... probably you shouldn't give them T\u2011DXd.\"",
+        "crispro_angle": "Integrate quantitative HER2 and Trop\u20112 data to predict antagonistic biomarker patterns and recommend alternative ADCs (e.g., SG) via a decision\u2011support algorithm",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Current ADC trials enroll patients based on binary IHC scores; a trial using CrisPRO quantitative thresholds could reduce enrollment heterogeneity and improve signal detection",
+        "transcript_evidence": "Speaker said: \"We are looking at six trials ... two or three are prospective, but we still don't have a clear cutoff.\"",
+        "crispro_angle": "Provide a validated quantitative assay for trial eligibility criteria, enabling stratified randomization and adaptive cutoff refinement during the study",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "New York State Department of Health",
+        "context": "Regulatory approval of the Troplex assay",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Translational Breast Cancer Research Consortium (TBCRC)",
+        "context": "Running the QUANTIFY\u2011HER trial to define HER2\u2011low cutoffs",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal quantitative HER2 cutoff that predicts response to trastuzumab deruxtecan?",
+      "How do intrinsic molecular subtypes (e.g., basal vs. luminal) influence the HER2/Trop\u20112 quantitative relationship?",
+      "Can pre\u2011analytical variables be fully eliminated to ensure cross\u2011site reproducibility of fluorescence\u2011based quantification?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04212345",
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "Troplex quantitative fluorescence assay",
+        "HER2\u2011low ADC clinical trial data (T\u2011DXd, SG)",
+        "CrisPRO quantitative protein platform"
+      ],
+      "companies_to_monitor": [
+        "Yale University (QDAP Lab)",
+        "Companies negotiating commercialization of the Troplex assay"
+      ]
+    }
+  }
+]

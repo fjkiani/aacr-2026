@@ -1,0 +1,196 @@
+[
+  {
+    "talk_id": "beyond-chromosomes-mechanisms-consequences-and-therapeutic-opportunities-of-extr::lai::1",
+    "session_title": "beyond-chromosomes-mechanisms-consequences-and-therapeutic-opportunities-of-extr",
+    "talk_title": "Micronuclei-mediated horizontal DNA transfer and ecDNA formation",
+    "speaker": {
+      "name": "Peter Lai",
+      "affiliation": "UT Southwestern",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "renal cell carcinoma",
+      "non-malignant"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "DNA_damage_repair",
+      "tumor_microenvironment",
+      "cell_cycle"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "DLD1",
+        "genotype_or_key_features": "human colon cancer, Y chromosome centromere can be turned off"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "RPE1",
+        "genotype_or_key_features": "non\u2011transformed retinal pigment epithelial cells"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "renal proximal tubule epithelial cells",
+        "genotype_or_key_features": "primary kidney epithelial cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Induced missegregation of a chromosome into micronuclei triggers chromothripsis, generating ecDNA fragments that can be transferred to neighboring cells via tunneling nanotubes; transferred DNA can integrate into recipient genomes, become transcriptionally active, and confer new phenotypes.",
+    "readouts": [
+      "DNA FISH",
+      "live cell imaging",
+      "fluorescence microscopy",
+      "flow cytometry",
+      "single\u2011cell RNA\u2011seq"
+    ],
+    "key_findings": [
+      "Targeted Y\u2011chromosome missegregation in DLD1 cells produces ~900\u202fkb ecDNA fragments that amplify a neomycin resistance marker.",
+      "Micronuclei formation leads to ~30% of cells containing micronuclei, of which ~4% show mismatched fluorescent labeling, indicating intercellular DNA transfer.",
+      "DNA transfer occurs via tunneling nanotubes; transfer events are observed in ~1\u20134% of micronuclei across multiple cell types.",
+      "Co\u2011culture experiments demonstrate that female recipient cells acquire neomycin resistance after receiving Y\u2011chromosome fragments from male donor cells.",
+      "Single\u2011cell RNA\u2011seq confirms transcription of transferred neomycin resistance gene and adjacent Y\u2011linked genes in recipient cells, confirming functional integration.",
+      "DNA transfer is enhanced by mitotic errors and DNA damage, but is independent of genomic instability alone."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can the frequency of intercellular DNA transfer be quantified in patient tumor samples?",
+      "Does chemotherapy\u2011induced DNA damage increase the rate of ecDNA transfer and contribute to secondary malignancies?",
+      "Can the cGAS\u2011STING pathway limit the survival of recipient cells after DNA transfer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "beyond-chromosomes-mechanisms-consequences-and-therapeutic-opportunities-of-extr::chang::2",
+    "session_title": "beyond-chromosomes-mechanisms-consequences-and-therapeutic-opportunities-of-extr",
+    "talk_title": "Retention elements enable ecDNA propagation and therapeutic targeting",
+    "speaker": {
+      "name": "Howard Chang",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroblastoma",
+      "glioblastoma",
+      "breast cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "targeted_therapy",
+      "combination_therapy",
+      "tumor_microenvironment"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRD4",
+        "alteration": "",
+        "pathway": "transcription",
+        "modality": "inhibitor",
+        "compound_name": "BET inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ecDNA\u2011positive tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MYC",
+        "alteration": "",
+        "pathway": "cell_cycle",
+        "modality": "ecDNA",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MYC\u2011amplified ecDNA tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "COLO 320DM",
+        "genotype_or_key_features": "MYC ecDNA with multiple retention elements"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "neuroblastoma PDX (MYCN ecDNA)",
+        "genotype_or_key_features": "MYCN amplification on ecDNA"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "neuroblastoma cohort (86 patients)",
+        "genotype_or_key_features": "MYCN ecDNA positive, pre\u2011treatment samples"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "significant reduction in tumor volume",
+        "confidence_interval": "",
+        "n": "multiple PDX models",
+        "population": "ecDNA\u2011positive xenografts",
+        "comparator": "HSR\u2011positive xenografts",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Retention elements on ecDNA bind mitotic chromosomes via mitotic bookmarking sites, enabling high\u2011efficiency hitchhiking; pharmacologic disruption of these elements impairs ecDNA tethering, induces micronucleation, and causes tumor regression in ecDNA\u2011driven xenografts.",
+    "readouts": [
+      "Hi\u2011C",
+      "chromatin immunoprecipitation",
+      "live\u2011cell imaging",
+      "FISH",
+      "single\u2011cell sequencing",
+      "PDX tumor growth assays"
+    ],
+    "key_findings": [
+      "Thousands of retention element sequences were identified genome\u2011wide using Retain\u2011seq, many of which overlap mitotic bookmark promoters.",
+      "A single retention element increases ecDNA retention by ~50%; multiple elements raise retention >95% in live\u2011cell imaging.",
+      "Mathematical modeling predicts >95% retention efficacy is required for long\u2011term ecDNA propagation, matching experimental data.",
+      "In neuroblastoma patients, presence of ecDNA within micronuclei correlates with improved overall survival compared to patients without such micronuclei.",
+      "An Econic Biosciences inhibitor that disrupts ecDNA\u2011chromosome tethering causes dramatic tumor regressions in ecDNA\u2011positive PDX models but not in HSR\u2011positive controls."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Loss of retention elements via DNA methylation reduces ecDNA tethering, suggesting epigenetic regulation of ecDNA stability."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "BET inhibitor",
+        "rationale": "BRD4 is required for ecDNA hub formation; combined inhibition may further destabilize ecDNA transcriptional advantage.",
+        "phenotype": "enhanced reduction of MYC expression and tumor growth inhibition",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can retention element methylation status predict ecDNA stability and patient prognosis?",
+      "What are the downstream effectors of the retention\u2011element\u2011mediated mitotic bookmarking mechanism?",
+      "Will systemic delivery of retention\u2011disrupting agents be tolerable in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Econic Biosciences"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

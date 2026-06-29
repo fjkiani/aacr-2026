@@ -1,0 +1,328 @@
+[
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::channing::1",
+    "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+    "talk_title": "Overview of RAS inhibitor landscape, resistance mechanisms and combination strategies",
+    "speaker": {
+      "name": "Channing",
+      "affiliation": "unknown",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "daraxasib",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [
+      {
+        "metric": "objective_response_rate",
+        "value": "40%",
+        "confidence_interval": "",
+        "n": "unspecified",
+        "population": "G12C inhibitor trials",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "duration_of_response",
+        "value": "<10 months",
+        "confidence_interval": "",
+        "n": "unspecified",
+        "population": "G12C inhibitor trials",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "KRAS G12C inhibitors achieve modest response rates (~40%) with limited duration (<10 months) due to primary and acquired resistance driven by MAPK pathway reactivation, secondary KRAS mutations, and non\u2011genetic transcriptional programs such as TEAD, MYC, and ERK activation.",
+    "readouts": [
+      "clinical_trial_data"
+    ],
+    "key_findings": [
+      "73 RAS inhibitors have entered clinical evaluation with ~150 actively recruiting trials as of 2026.",
+      "Median ORR for G12C inhibitors across trials is ~40% with median DOR <10 months.",
+      "Acquired resistance mechanisms are split roughly 50% genomic (e.g., MAPK pathway reactivating mutations) and 50% non\u2011genomic (transcriptional reprogramming).",
+      "Pan\u2011RAS inhibitors (e.g., daraxasib) show activity without reactivation of RAS alleles but face toxicity challenges."
+    ],
+    "novelty_flag": "unspecified",
+    "resistance_or_selectivity_notes": [
+      "Resistance often involves secondary mutations that reactivate MAPK signaling.",
+      "Non\u2011genetic mechanisms include TEAD, MYC, and ERK transcriptional programs."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EGFR inhibitor",
+        "rationale": "EGFR blockade synergizes with KRAS inhibition in colorectal cancer to overcome upstream signaling reactivation.",
+        "phenotype": "Improved response rates leading to FDA approval for KRAS\u2011mutant CRC",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How to best sequence or combine pan\u2011RAS inhibitors with EGFR or other RTK inhibitors to minimize toxicity?",
+      "Can transient ERK inhibition be timed to avoid on\u2011target toxicities while preventing rebound signaling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::lab)::2",
+    "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+    "talk_title": "BMAL2 as a KRAS\u2011linked hypoxia driver in pancreatic cancer",
+    "speaker": {
+      "name": "Alvaro (post\u2011doc, Ken Olive lab)",
+      "affiliation": "University of Texas Southwestern / Ken Olive Lab",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "translational",
+      "basic_science",
+      "epigenetics",
+      "tumor_microenvironment"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BMAL2",
+        "alteration": "",
+        "pathway": "hypoxia/HIF signaling",
+        "modality": "transcription_factor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS\u2011mutant pancreatic cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BMAL2 activity score",
+        "type": "exploratory",
+        "assay": "regulon activity from RNA\u2011seq",
+        "finding": "Higher BMAL2 activity correlates with KRAS activity and poor survival in PDA"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "laser capture microdissection cohort",
+        "genotype_or_key_features": "200+ PDA and precursor samples, epithelial compartment"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "PANC\u20111, PANTU\u2011902, others",
+        "genotype_or_key_features": "KRAS mutant pancreatic cancer lines"
+      },
+      {
+        "model_type": "organoid",
+        "name": "patient\u2011derived organoids",
+        "genotype_or_key_features": "KRAS mutant, BMAL2 KO or OE"
+      },
+      {
+        "model_type": "mouse",
+        "name": "KPC orthotopic model",
+        "genotype_or_key_features": "KRAS G12D; p53 R172H"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "BMAL2 functions as a KRAS\u2011responsive transcription factor that links KRAS signaling to hypoxia responses; it promotes EMT, cell proliferation, and glycolytic metabolism via interaction with HIF\u20111\u03b1/2\u03b1, and its loss delays tumor growth in orthotopic PDA models.",
+    "readouts": [
+      "RNA\u2011seq",
+      "single\u2011cell RNA\u2011seq",
+      "CRISPR KO/OE",
+      "immunofluorescence",
+      "metabolomics",
+      "in vivo survival"
+    ],
+    "key_findings": [
+      "Regulatory network analysis identified BMAL2 as the top KRAS\u2011associated master regulator across >200 PDA samples.",
+      "BMAL2 activity decreases after treatment with KRAS inhibitor RNC7977 in vitro and in KPC mouse tumors.",
+      "BMAL2 knockout reduces proliferation, EMT markers, and glycolysis; overexpression induces mesenchymal morphology and increases proliferation.",
+      "BMAL2 physically interacts with HIF\u20111\u03b1 under hypoxia, suggesting a complex that drives hypoxia\u2011responsive gene expression.",
+      "Orthotopic BMAL2\u2011KO tumors show prolonged mouse survival compared with controls."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "KRAS inhibitor (RNC7977)",
+        "rationale": "BMAL2 activity is KRAS\u2011dependent; combined inhibition may yield additive anti\u2011tumor effects.",
+        "phenotype": "Predicted synergistic reduction of proliferation and EMT",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "AXL inhibitor",
+        "rationale": "AXL is a BMAL2 target; dual targeting may enhance response.",
+        "phenotype": "Potential additive tumor regression",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Does BMAL2 contribute to acquired resistance to KRAS inhibitors in patients?",
+      "Can BMAL2 inhibition sensitize tumors to existing KRAS\u2011targeted therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::massali::3",
+    "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+    "talk_title": "Rewiring RTK signaling under RAS inhibition in pancreatic cancer",
+    "speaker": {
+      "name": "Sandra Massali",
+      "affiliation": "Johns Hopkins University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "combination_therapy",
+      "targeted_therapy",
+      "ADC",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "",
+        "pathway": "RTK/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "afatinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12 mutant PDAC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ERBB3",
+        "alteration": "",
+        "pathway": "RTK/MAPK",
+        "modality": "antibody",
+        "compound_name": "YW (anti\u2011neuregulin)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PDAC fibroblast\u2011derived neuregulin",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "HER2",
+        "alteration": "",
+        "pathway": "RTK/MAPK",
+        "modality": "ADC",
+        "compound_name": "T\u2011DXd (trastuzumab\u2011deruxtecan)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HER2\u2011low PDAC after RAS inhibition",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "PDAC PDX panel",
+        "genotype_or_key_features": "various KRAS mutations, basal\u2011like or classical subtypes"
+      },
+      {
+        "model_type": "organoid",
+        "name": "PDAC organoid biobank",
+        "genotype_or_key_features": "co\u2011culture with patient\u2011derived CAFs"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "RAS inhibition induces dynamic up\u2011regulation of RTKs (EGFR, HER2, ERBB3) in pancreatic cancer, altering receptor internalization and creating windows for ADC delivery; stromal fibroblasts secrete neuregulin to activate ERBB3, and combined RTK blockade enhances tumor regression.",
+    "readouts": [
+      "FRODO internalization assay",
+      "IHC",
+      "flow cytometry",
+      "organoid viability",
+      "PDX tumor growth",
+      "spatial transcriptomics"
+    ],
+    "key_findings": [
+      "RAS inhibition increases HER2 and ERBB3 protein levels in a subset of PDAC models, while EGFR remains stable.",
+      "Combining RAS inhibitors with HER2\u2011targeted ADC (T\u2011DXd) yields synergistic tumor regression in vitro and in PDX models.",
+      "Neuregulin\u20111 secreted by cancer\u2011associated fibroblasts drives ERBB3 activation; anti\u2011neuregulin antibody plus RAS inhibitor improves survival in murine PDAC.",
+      "FRODO assay shows that RAS inhibition accelerates HER2 internalization, enhancing ADC payload delivery."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "RTK up\u2011regulation may represent an adaptive resistance mechanism to RAS inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EGFR inhibitor (afatinib)",
+        "rationale": "EGFR remains a driver in KRAS G12\u2011mutant PDAC; concurrent inhibition prevents MAPK reactivation.",
+        "phenotype": "Improved tumor control in PDX models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Anti\u2011neuregulin antibody (YW)",
+        "rationale": "Blocks fibroblast\u2011derived ERBB3 activation that sustains growth under RAS inhibition.",
+        "phenotype": "Extended survival in KPC mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "HER2\u2011ADC (T\u2011DXd)",
+        "rationale": "RAS inhibition up\u2011regulates HER2, increasing ADC internalization and cytotoxicity.",
+        "phenotype": "Synergistic tumor regression in organoids and PDX",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How does stromal composition influence RTK dynamics and ADC efficacy?",
+      "Can sequential short\u2011course EGFR inhibition be used to prime ADC internalization while minimizing toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AstraZeneca",
+        "Breakthrough Cancer"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

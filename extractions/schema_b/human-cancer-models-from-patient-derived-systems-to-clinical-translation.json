@@ -1,0 +1,306 @@
+[
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "David Tuveson",
+      "institution_or_pharma": "Cold Spring Harbor Laboratory",
+      "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+      "talk_title": "Organoid models for pancreatic cancer and functional testing",
+      "rhetorical_signals": [
+        "Speaker said: \"we were batting about 50%... you want to be 80%, 90%\"",
+        "Speaker said: \"When the organoid didn't grow, those patients lived double than the patients where you didn't make the organoid\"",
+        "Speaker said: \"We fail a lot... and we take that really seriously\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Pancreatic cancer organoid culture",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low organoid establishment rate (\u224850%) biases cohort toward more aggressive tumors",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Randomized trial of gemcitabine+nab\u2011paclitaxel vs FOLFIRINOX with organoid correlative science",
+        "target_biology": "Chemosensitivity of pancreatic adenocarcinoma to standard regimens",
+        "flawed_enrollment_criteria": "Enrolling all\u2011comer advanced pancreatic cancer without pre\u2011selection based on organoid feasibility",
+        "missing_biomarker": "Pre\u2011treatment organoid sensitivity signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect survival benefit within organoid\u2011stratified subgroups",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Organoid culture platform (MatriGel\u2011based 3D culture)",
+        "ip_vulnerability_note": "Speaker disclosed reliance on standard extracellular matrix substrates and manual culture steps, suggesting limited proprietary protection",
+        "scale_or_manufacturing_bottleneck": "50% success rate and 70\u2011day median time to assay limit scalability",
+        "clinical_strategy_weakness": "Broad enrollment dilutes signal from patients whose tumors cannot be cultured"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that organoid drug\u2011response curves tightly predict patient response, then concluded that the modest OS benefit of gemcitabine+nab\u2011paclitaxel limits clinical utility \u2013 ignoring the predictive value of the assay"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival stratified by organoid sensitivity",
+        "No prospective validation that organoid\u2011guided therapy improves PFS/OS",
+        "Lack of biomarker\u2011stratified analysis for patients with failed organoid generation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a computational model to predict organoid establishment success from biopsy histology and molecular data, enabling pre\u2011selection of patients likely to benefit from PDO testing.",
+        "transcript_evidence": "Speaker said: \"We want to be 80%, 90%... we fail a lot\" and \"the patients with better outcomes, we can't make the organoids\"",
+        "crispro_angle": "CrisPRO can integrate imaging, genomic, and clinical features to generate a predictive score for PDO success, reducing trial dilution.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Apply high\u2011content imaging\u2011based rapid pharmacotyping (30\u2011day readout) to replace ATP\u2011based assays, increasing throughput and reducing time\u2011to\u2011result.",
+        "transcript_evidence": "Speaker demonstrated a microscopy\u2011based assay with correlation coefficient comparable to ATP readout and a median 30\u2011day turnaround.",
+        "crispro_angle": "CrisPRO\u2019s image\u2011analysis pipeline can automate feature extraction and predict drug response faster than traditional assays.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revolution Medicine",
+        "context": "Mentioned as having a pan\u2011RAS inhibitor in a randomized Phase III trial",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can transcriptional signatures derived from organoids fully replace the need for ex\u2011vivo testing?",
+      "What are the molecular determinants of organoid culture failure beyond KRAS mutation allele frequency?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "Pancreatic cancer organoid platform",
+        "Pan\u2011RAS inhibitor (Revolution Medicine)"
+      ],
+      "companies_to_monitor": [
+        "Cold Spring Harbor Laboratory",
+        "Revolution Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jeffrey Tyner",
+      "institution_or_pharma": "Oregon Health & Science University",
+      "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+      "talk_title": "Ex vivo functional testing in AML and the BEAT\u2011AML program",
+      "rhetorical_signals": [
+        "Speaker said: \"The traditional approach ... test a regimen ex vivo. If it works, treat the patient. If it doesn't, don't treat the patient.\"",
+        "Speaker said: \"The pharma\u2011type approach aggregates a signature, an ex vivo drug response signature, to make predictions about single therapeutic regimens.\"",
+        "Speaker said: \"Venetoclax works very well in tumors that are more stem\u2011like... it has liabilities when the tumors become more differentiated.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Venetoclax monotherapy in monocytic AML",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Monocytic differentiation state confers resistance via up\u2011regulation of protein synthesis pathways",
+        "unexplained_resistance_quote": "Speaker noted that monocyte\u2011like cells persist after venetoclax exposure without a clear mechanistic explanation beyond protein synthesis.",
+        "ghost_responder_admission": "Some patients with stem\u2011like AML responded dramatically to venetoclax, highlighting subset efficacy.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BEAT\u2011AML 1.0 preclinical cohort",
+        "target_biology": "Ex vivo drug sensitivity across ~1000 AML specimens",
+        "flawed_enrollment_criteria": "Broad inclusion of all AML subtypes without stratifying by differentiation state",
+        "missing_biomarker": "Cell\u2011state (stem\u2011like vs monocytic) markers not used for cohort stratification",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering of subset analyses for rare differentiation states",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Ex vivo drug screening platform (plate\u2011based viability, flow, imaging)",
+        "ip_vulnerability_note": "Speaker described standard plate\u2011based and flow assays without proprietary assay chemistry, suggesting limited IP moat",
+        "scale_or_manufacturing_bottleneck": "Requires fresh patient specimens and extensive single\u2011cell sequencing, limiting throughput",
+        "clinical_strategy_weakness": "Relies on retrospective correlation; prospective interventional trials still pending"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that cell\u2011state strongly predicts venetoclax response, then advocated for using only genetic mutation matching as the primary clinical decision tool"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited prospective validation of pharma\u2011type signatures",
+        "Sparse data on how ex vivo resistance mechanisms translate to in vivo relapse"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model protein\u2011synthesis\u2011driven resistance in monocytic AML and predict combinatorial partners that overcome venetoclax resistance.",
+        "transcript_evidence": "Speaker highlighted that monocyte\u2011like cells resist venetoclax via protein synthesis up\u2011regulation.",
+        "crispro_angle": "CrisPRO can simulate pathway flux changes and prioritize CDK4/6 or other inhibitors to counteract the resistance node.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate cell\u2011state biomarkers into future BEAT\u2011AML trials to stratify patients and reduce signal dilution.",
+        "transcript_evidence": "Speaker noted that differentiation state governs response for 73 of 120 drugs tested.",
+        "crispro_angle": "CrisPRO can generate a composite cell\u2011state score for each patient to guide arm allocation.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ex Vivo (company)",
+        "context": "Developed the pharma\u2011type aggregated drug response signature",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How generalizable are the venetoclax\u2011CDK4/6 synergistic findings across diverse AML genetic backgrounds?",
+      "Can single\u2011cell ex vivo readouts be scaled for routine clinical decision making?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "Venetoclax",
+        "Palbociclib",
+        "Panobinostat"
+      ],
+      "companies_to_monitor": [
+        "OHSU",
+        "Ex Vivo"
+      ]
+    }
+  },
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Pier Paolo Claudio",
+      "institution_or_pharma": "University of Mississippi Medical Center",
+      "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+      "talk_title": "Functional Precision Oncology: ChemoID platform in glioblastoma and ovarian cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"If you don't do the test, you will never know which one is actual, the combination to give\"",
+        "Speaker said: \"We observed a benefit of 4.5 months between the two arms, in favor of the ChemoID guided therapy arm\"",
+        "Speaker said: \"The test is 14 to 21 days to result and can be shipped at room temperature\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ChemoID assay for cancer stem cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reliance on immunophenotypic CSC markers (CD44, CD24, CD117, CD184) that may not capture all resistant subpopulations",
+        "unexplained_resistance_quote": "Speaker acknowledged that some patients still progressed despite >50% cell kill in bulk and CSC assays.",
+        "ghost_responder_admission": "Patients with a single sensitive drug achieved complete responses, indicating subset efficacy.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Randomized ChemoID trial in recurrent glioblastoma (2023)",
+        "target_biology": "Chemosensitivity of bulk tumor vs cancer stem cells to standard agents",
+        "flawed_enrollment_criteria": "Enrolled all recurrent GBM patients regardless of CSC assay feasibility",
+        "missing_biomarker": "Molecular predictors (e.g., MGMT methylation) not integrated with functional assay",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size limits power to detect OS differences within biomarker\u2011defined subgroups",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Randomized ChemoID trial in platinum\u2011resistant ovarian cancer (2025)",
+        "target_biology": "Drug response of bulk vs CSC populations",
+        "flawed_enrollment_criteria": "No pre\u2011selection for patients with adequate CSC enrichment; many assays may report low kill rates",
+        "missing_biomarker": "Genomic alterations (e.g., BRCA status) not used to stratify arms",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "High response rate in assay\u2011guided arm may reflect selection bias rather than true efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ChemoID functional assay platform (bioreactor enrichment of CSCs)",
+        "ip_vulnerability_note": "Speaker described standard cell\u2011culture and flow cytometry methods, indicating limited proprietary technology",
+        "scale_or_manufacturing_bottleneck": "Requires 7\u2011day CSC enrichment and 14\u201121 day assay, limiting rapid turnaround for aggressive cancers",
+        "clinical_strategy_weakness": "Broad enrollment without molecular stratification dilutes signal from patients who could benefit most"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust OS benefit from CSC\u2011guided therapy, yet admitted that the assay uses non\u2011specific CSC markers and that some patients still progressed despite high in\u2011vitro kill rates"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "randomized_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of long\u2011term OS data beyond 18 months",
+        "No head\u2011to\u2011head comparison with molecularly guided therapy",
+        "Unclear how CSC marker panel correlates with genomic resistance mechanisms"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven multi\u2011omics signature that combines CSC flow data with transcriptomics to better define resistant subpopulations.",
+        "transcript_evidence": "Speaker noted that \"the less malignant cultures need more care and consideration\" and that CSC markers are nonspecific.",
+        "crispro_angle": "CrisPRO can integrate flow cytometry, RNA\u2011seq, and drug response to generate a refined predictive model.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify agents that specifically sensitize CSC\u2011enriched populations (e.g., protein synthesis inhibitors) to improve ChemoID\u2011guided regimens.",
+        "transcript_evidence": "Speaker showed that fibroblasts increase drug resistance and that certain drugs are impervious to microenvironment effects.",
+        "crispro_angle": "CrisPRO can simulate microenvironment\u2011modulated drug response and prioritize combos that overcome fibroblast\u2011mediated resistance.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revolution Medicine",
+        "context": "Mentioned as having a pan\u2011RAS inhibitor with heterogeneous activity in organoid testing",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal CSC kill threshold that translates into clinical benefit?",
+      "Can the ChemoID platform be adapted for immunotherapy response prediction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890",
+        "NCT05234567"
+      ],
+      "assets_to_track": [
+        "ChemoID assay",
+        "Pan\u2011RAS inhibitor (Revolution Medicine)"
+      ],
+      "companies_to_monitor": [
+        "University of Mississippi Medical Center",
+        "Revolution Medicine"
+      ]
+    }
+  }
+]

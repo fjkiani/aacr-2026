@@ -1,0 +1,609 @@
+[
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Khalil Abdullah",
+      "institution_or_pharma": "University of Pittsburgh Medical Center",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "A Targetable Metabolite Increases Neuronal Hyperexcitability in a Glioma Microenvironment and Directs Tumor Growth",
+      "rhetorical_signals": [
+        "Speaker said: \"we haven't gotten there yet\" when asked about immunocompetent models",
+        "Speaker said: \"I can't quite pinpoint it yet in terms of gabapentin\" regarding gabapentin interpretation"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AGAT knockout strategy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "AGAT knockout reduces GAA secretion but does not affect tumor growth in extracranial sites, indicating limited impact on systemic disease",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Surgical window of opportunity trial (12 patients)",
+        "target_biology": "Modulation of GAA via ornithine supplementation and arginine-restricted diet",
+        "flawed_enrollment_criteria": "Enrolling all-comers without biomarker (GAA) stratification",
+        "missing_biomarker": "Baseline tumor GAA levels",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (12 patients) limits efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dietary modulation of GAA pathway",
+        "ip_vulnerability_note": "Relies on patient adherence to restrictive diet and supplementation, which may be difficult to standardize",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without molecular selection may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that GAA knockout improves mouse survival but then said \"they grow normally in a dish\" suggesting in vitro fitness is unchanged despite in vivo benefit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No biomarker-stratified analysis",
+        "No comparison to standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high intratumoral GAA levels to enrich for responders to ornithine/arginine diet",
+        "transcript_evidence": "Speaker said: \"we validated this with two additional independent cohorts\" and \"GAA is increased in high-grade glioma versus brain\"",
+        "crispro_angle": "CrisPRO can integrate metabolomic and transcriptomic data to develop a GAA\u2011high signature for patient selection",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: NCTxxxx for the surgical window trial",
+          "PubMed: studies linking GAA levels to glioma outcomes"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine dietary GAA modulation with existing glutamate\u2011targeting agents (e.g., glutaminase inhibitors) to enhance tumor control",
+        "transcript_evidence": "Audience question about combining with pegarginase and speaker noted linear pathway similarity",
+        "crispro_angle": "CrisPRO can model metabolic flux interactions to predict synergistic combinations",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: pegarginase trials",
+          "Preclinical data on glutaminase inhibition in glioma"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "pegarginase",
+        "context": "Discussed as a potential combination with GAA modulation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the mechanism of GAA\u2011induced neuronal hyperexcitability at the molecular level?",
+      "Will long\u2011term dietary restriction of arginine affect systemic metabolism or cause adverse effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTxxxx (surgical window trial)"
+      ],
+      "assets_to_track": [
+        "Ornithine supplementation formulations",
+        "Arginine\u2011restricted diet protocols"
+      ],
+      "companies_to_monitor": [
+        "Companies developing GAA\u2011targeted therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sergio Attanasio",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "Targeting Mitochondrial Complex I Overcomes Adaptive Response to Chemotherapy in Advanced Pancreatic Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we never work on the resistance because we are still working on...\"",
+        "Speaker said: \"IM accumulates based on potential, so maybe it's less toxic\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Complex I inhibitor IX",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "IX caused lactic acidosis due to potent inhibition of complex I without reversible accumulation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker minimized toxicity by stating IM is less potent but less toxic",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1/2 MD Anderson trial of lixumustat (IM-156) + gemcitabine/nab\u2011paclitaxel",
+        "target_biology": "Inhibit mitochondrial complex I to enhance chemotherapy",
+        "flawed_enrollment_criteria": "No biomarker (e.g., OXPHOS high signature) used to select patients",
+        "missing_biomarker": "OXPHOS activation signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort (18 patients) limits statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "IM\u2011156 (biguanide\u2011like complex I inhibitor)",
+        "ip_vulnerability_note": "Speaker disclosed that IM accumulates based on mitochondrial membrane potential, suggesting a reversible, less potent mechanism that may be circumvented by tumors with altered potential",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad dosing without patient stratification may dilute efficacy signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed preclinical data that IM eradicates relapse clones but concluded that the combination is safe despite limited long\u2011term toxicity data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized control arm",
+        "No biomarker\u2011driven patient selection",
+        "Limited long\u2011term safety data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate OXPHOS\u2011high biomarker to enrich for patients likely to benefit from complex I inhibition",
+        "transcript_evidence": "Speaker noted a signature that predicts sensitivity to chemotherapy and OXPHOS upregulation",
+        "crispro_angle": "CrisPRO can generate and validate an OXPHOS activation score for trial stratification",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA PDAC OXPHOS expression data",
+          "Prospective biomarker validation study"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage reversible, potential\u2011dependent accumulation of IM to claim a safety advantage over earlier complex I inhibitors",
+        "transcript_evidence": "Speaker said: \"IM accumulates based on potential, so maybe it's less toxic\"",
+        "crispro_angle": "CrisPRO can model mitochondrial potential dynamics to predict differential toxicity across compounds",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical studies comparing IM vs IX toxicity in high\u2011potential models"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "IX (previous complex I inhibitor)",
+        "context": "Discussed as discontinued due to toxicity",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What resistance mechanisms will emerge to IM\u2011based combination therapy?",
+      "Can IM be combined safely with KRAS inhibitors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTxxxx (MD Anderson IM\u2011156 trial)"
+      ],
+      "assets_to_track": [
+        "lixumustat (IM\u2011156)",
+        "complex I inhibitor pipelines"
+      ],
+      "companies_to_monitor": [
+        "Companies developing reversible complex I inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Gang Huang",
+      "institution_or_pharma": "Mays Cancer Center at UT Health",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "Estrogen Therapy Alleviates Cancer\u2011Associated Cachexia in Mouse Models of Both Sex",
+      "rhetorical_signals": [
+        "Speaker said: \"we believe this kind of new therapies maybe can help the cancer patient beyond kidney cancer\"",
+        "Speaker said: \"we don't know which estrogen receptor is responsible\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HIF2\u03b1 inhibitor rezotibib",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Rezotibib reduces EPO production, worsening anemia, which was not anticipated in the cachexia model",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted anemia worsened, indicating off\u2011target endocrine effect",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse studies of estrogen pellets",
+        "target_biology": "Estrogen replacement to reverse cachexia",
+        "flawed_enrollment_criteria": "No stratification by tumor genotype (e.g., LKB1 status) or sex hormone baseline",
+        "missing_biomarker": "Baseline circulating estrogen levels",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small group sizes, no power calculation",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Use of E2 slow\u2011release pellets",
+        "ip_vulnerability_note": "E2 is a generic hormone; formulation can be easily replicated, limiting proprietary advantage",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad hormonal therapy may have systemic side effects and lacks patient selection"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that HIF2\u03b1 inhibition rescues muscle/fat loss but then admitted it worsens anemia, contradicting the claim of overall benefit without adjunct therapy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human data",
+        "No long\u2011term safety of estrogen in male patients",
+        "No mechanistic dissection of ER\u03b1 vs ER\u03b2"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a transcriptomic signature of HIF\u2011driven cachexia to identify patients who may benefit from estrogen therapy",
+        "transcript_evidence": "Speaker presented RNA\u2011seq showing up\u2011regulation of hypoxia genes in KPL tumors",
+        "crispro_angle": "CrisPRO can integrate tumor and peripheral tissue RNA\u2011seq to generate a cachexia risk score",
+        "priority": "high",
+        "external_validation_needed": [
+          "Clinical datasets linking HIF signatures to cachexia outcomes",
+          "Serum metabolite panels for cachexia"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine estrogen therapy with HIF2\u03b1 inhibition plus EPO support to mitigate anemia",
+        "transcript_evidence": "Speaker noted need for EPO transfusion when using rezotibib",
+        "crispro_angle": "CrisPRO can model multi\u2011agent metabolic interactions to predict synergistic windows",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Trials of HIF2\u03b1 inhibitors with erythropoiesis agents"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "rezotibib",
+        "context": "HIF2\u03b1 inhibitor used in preclinical cachexia model",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Which estrogen receptor subtype mediates the anti\u2011cachexia effect?",
+      "Will estrogen therapy have adverse effects in male cancer patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "rezotibib",
+        "estrogen pellet formulations"
+      ],
+      "companies_to_monitor": [
+        "Companies developing HIF2\u03b1 inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Omid Hajihassani",
+      "institution_or_pharma": "Case Western Reserve University",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "A Ketogenic Diet Sensitizes Pancreatic Cancer to Metabolic Therapies",
+      "rhetorical_signals": [
+        "Speaker said: \"we still have tumor in the mice after 227 days\"",
+        "Speaker said: \"we haven't looked at immune cell localization yet\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Ketogenic diet alone",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Tumors adapt by up\u2011regulating glutamine uptake and TCA cycle flux, bypassing glucose restriction",
+        "unexplained_resistance_quote": "Speaker noted tumor persists after long\u2011term ketogenic diet",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse studies of ketogenic diet + glutamine inhibitors",
+        "target_biology": "Exploit glutamine dependence induced by ketogenic diet",
+        "flawed_enrollment_criteria": "No patient biomarker (e.g., glutamine transporter expression) to select responders",
+        "missing_biomarker": "GLS or SLC1A5 expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small animal cohort, no power analysis",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Ketogenic diet regimen",
+        "ip_vulnerability_note": "Dietary interventions are not patentable and can be replicated easily",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Patient adherence to strict macronutrient ratios is challenging"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ketogenic diet raises glutamine levels yet concluded that diet alone is insufficient, highlighting a paradox between metabolic adaptation and therapeutic efficacy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of human clinical data",
+        "No immune microenvironment analysis",
+        "No biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumors with high glutamine transporter (SLC1A5) expression to select for ketogenic\u2011diet plus glutamine inhibition",
+        "transcript_evidence": "Speaker reported up\u2011regulation of glutamine uptake channels under ketogenic diet",
+        "crispro_angle": "CrisPRO can integrate RNA\u2011seq and metabolomics to generate a glutamine\u2011dependency score",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA PDAC expression of SLC1A5",
+          "Clinical studies of ketogenic diet adherence"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine ketogenic diet with CB\u2011839 (glutaminase inhibitor) to block adaptive glutamine utilization",
+        "transcript_evidence": "Speaker used CBA39 and DON as glutamine inhibitors showing synergy",
+        "crispro_angle": "CrisPRO can model flux redistribution when glutaminase is inhibited under ketogenic conditions",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Phase I trials of CB\u2011839 in PDAC"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CB\u2011839 (CBA39)",
+        "context": "Glutamine inhibitor combined with ketogenic diet",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "DON",
+        "context": "Glutamine pathway inhibitor used in combination",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How does the ketogenic diet affect immune cell function within the tumor microenvironment?",
+      "What is the relative contribution of glutamate versus glutamine to TCA cycle flux under diet"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CB\u2011839",
+        "DON"
+      ],
+      "companies_to_monitor": [
+        "Companies developing ketogenic diet clinical programs"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Devashi Sen",
+      "institution_or_pharma": "Washington University School of Medicine",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "Metabolic Changes Associated with Senescence in CAFs Regulate Fibrosis in Pancreatic Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we haven't looked at that yet\" regarding AKG release",
+        "Speaker said: \"we are currently targeting IDH2/IDH3\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Senescent CAF\u2011derived collagen production",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Accumulation of \u03b1\u2011ketoglutarate in senescent CAFs may limit prolyl hydroxylase activity if not supplied, but the pathway's dependency is not yet proven",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse model using Ink\u2011Tag senescent cell depletion",
+        "target_biology": "Eliminate senescent CAFs to reduce fibrosis",
+        "flawed_enrollment_criteria": "No patient biomarker (e.g., P16+ \u03b1\u2011SMA+ CAF) to select for senescent\u2011CAF\u2011targeted therapy",
+        "missing_biomarker": "Circulating senescence\u2011associated secretory phenotype markers",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Mouse cohort size not disclosed, likely underpowered",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Targeting IDH2/IDH3 in senescent CAFs",
+        "ip_vulnerability_note": "IDH inhibitors are already in clinical use for other indications, reducing novelty",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad inhibition of IDH may affect normal cells and cause off\u2011target effects"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed increased \u03b1\u2011KG in senescent CAFs but concluded that targeting IDH2/3 will reduce collagen without demonstrating that \u03b1\u2011KG is the limiting substrate for hydroxylases"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "In vivo validation of IDH2/3 inhibition on tumor fibrosis",
+        "Human correlation of senescent CAF metabolic signature"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a senescent\u2011CAF metabolic signature (high \u03b1\u2011KG, PKM2/1 ratio) to identify PDAC patients who may benefit from IDH inhibition",
+        "transcript_evidence": "Speaker presented scRNA\u2011seq showing oxidative phosphorylation and glycolysis enrichment in senescent CAFs",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell transcriptomics to derive a senescent\u2011CAF score for patient selection",
+        "priority": "high",
+        "external_validation_needed": [
+          "PDAC patient scRNA\u2011seq datasets",
+          "Serum biomarkers of SASP"
+        ]
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Repurpose existing IDH2/3 inhibitors for stromal targeting in PDAC",
+        "transcript_evidence": "Speaker indicated ongoing work targeting IDH2/3 in senescent CAFs",
+        "crispro_angle": "CrisPRO can predict off\u2011target effects and optimal dosing for stromal versus tumor compartments",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Clinical trial data of IDH inhibitors in non\u2011hematologic cancers"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does inhibition of IDH2/3 in senescent CAFs affect tumor growth in vivo?",
+      "Is \u03b1\u2011KG accumulation extracellularly or retained within CAFs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IDH2/3 inhibitors (e.g., enasidenib)"
+      ],
+      "companies_to_monitor": [
+        "Companies with IDH inhibitor pipelines"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Myra Di Tano",
+      "institution_or_pharma": "Washington University School of Medicine",
+      "session_title": "metabolic-signaling-and-therapeutic-vulnerabilities-in-cancer",
+      "talk_title": "Targeting Metabolism in BRCA Deficient Tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"we observed an additive effect\" when combining mitapivat with PARP inhibitors",
+        "Speaker said: \"we haven't done the resistant models yet\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PKM2 activator (mitapivat) in BRCA\u2011wildtype tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of PKM1 upregulation in wildtype limits drug sensitivity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted selective cell death in BRCA2 knockout cells",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse study of mitapivat in BRCA\u2011deficient tumors",
+        "target_biology": "Activate PKM2 to induce mitochondrial ROS in BRCA\u2011deficient cells",
+        "flawed_enrollment_criteria": "No biomarker beyond BRCA status; does not account for PKM1 expression heterogeneity",
+        "missing_biomarker": "PKM1 protein level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small mouse cohort, no randomization",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Mitapivat (FDA\u2011approved PKM activator for anemia)",
+        "ip_vulnerability_note": "Repurposed drug with known safety profile, limiting exclusivity for oncology",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Efficacy appears limited to BRCA\u2011deficient context; narrow patient pool"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PKM2 activation causes mitochondrial dysfunction yet concluded that the drug is well\u2011tolerated with no weight loss in mice"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical data in BRCA\u2011mutated patients",
+        "Unclear mechanism linking PKM1 upregulation to ROS"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a PKM1\u2011high signature to select BRCA\u2011mutant patients likely to respond to PKM activators",
+        "transcript_evidence": "Speaker demonstrated upregulation of PKM1 in BRCA2 knockout tumors",
+        "crispro_angle": "CrisPRO can combine RNA\u2011seq and metabolomics to predict PKM1\u2011driven ROS susceptibility",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA BRCA\u2011mutant tumor PKM1 expression data",
+          "Prospective validation in patient\u2011derived xenografts"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine mitapivat with PARP inhibitors to achieve additive anti\u2011tumor activity in BRCA\u2011deficient cancers",
+        "transcript_evidence": "Speaker reported additive effect of mitapivat with PARP inhibition in vitro",
+        "crispro_angle": "CrisPRO can model synthetic lethality between PKM activation\u2011induced ROS and PARP blockade",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Clinical trial of mitapivat + olaparib in BRCA\u2011mutant cohort"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PARP inhibitors",
+        "context": "Discussed as potential combination partner",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will PKM1 overexpression alone be sufficient to sensitize BRCA\u2011wildtype tumors?",
+      "What is the role of mitophagy impairment in the observed cell death?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "mitapivat",
+        "PARP inhibitors (olaparib, talazoparib)"
+      ],
+      "companies_to_monitor": [
+        "Pharma companies developing PKM activators"
+      ]
+    }
+  }
+]

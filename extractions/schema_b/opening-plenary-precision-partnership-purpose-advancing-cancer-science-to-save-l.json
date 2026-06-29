@@ -1,0 +1,399 @@
+[
+  {
+    "talk_id": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Charles L. Sawyers",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l",
+      "talk_title": "How Cancer Cells Escape Targeted Therapy by Changing Identity",
+      "rhetorical_signals": [
+        "Speaker said: \"we realized that there's the problem of acquired resistance\"",
+        "Speaker noted: \"we can reverse that upregulation of ASCL1\"",
+        "Speaker admitted: \"we cannot currently target TIP60 with a chemical inhibitor\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Androgen receptor pathway inhibition (enzalutamide)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lineage plasticity driven by RB loss and extracellular matrix signaling leading to neuroendocrine transdifferentiation",
+        "unexplained_resistance_quote": "Speaker said: \"we don't fully understand why some tumors undergo complete lineage switch to neuroendocrine state\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "TIP60 acetyltransferase",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of selective small\u2011molecule inhibitors for TIP60 limits therapeutic exploitation of its neuroendocrine dependency",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that YAP/TEAD inhibition drives neuroendocrine transition, then concluded that targeting YAP/TEAD might be therapeutic, ignoring that inhibition actually accelerates the aggressive neuroendocrine phenotype"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy data for YAP/TEAD or Notch inhibitors in this context",
+        "No pharmacodynamic biomarkers linking organoid findings to patient outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could model the transcriptional rewiring (FOXA1, TEAD, YAP) that underlies lineage plasticity and predict combinatorial interventions to prevent neuroendocrine transition.",
+        "transcript_evidence": "Speaker described FOXA1 relocalization and TEAD binding changes driving the transition.",
+        "crispro_angle": "Use CrisPRO's network\u2011level simulation to identify upstream nodes whose modulation blocks the plasticity circuit.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived gene\u2011expression signature (e.g., ASCL1, YAP target loss) to stratify patients at risk of lineage switching before therapy.",
+        "transcript_evidence": "Speaker noted that only a subset of RB\u2011deleted tumors undergo neuroendocrine conversion.",
+        "crispro_angle": "Leverage CrisPRO to integrate multi\u2011omics data and generate a predictive risk score.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis",
+        "context": "Developing a YAP/TEAD interface inhibitor that could paradoxically accelerate neuroendocrine transition",
+        "sentiment": "critical"
+      },
+      {
+        "name": "CAR\u2011T cell programs (e.g., Carl June's group)",
+        "context": "Mentioned as potential downstream therapeutic modality for neuroendocrine cells",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What upstream signals trigger loss of extracellular matrix engagement in patients?",
+      "Can pharmacologic reversal of ASCL1 expression translate to durable tumor control in vivo?",
+      "Is TIP60 inhibition tolerable in patients and does it spare normal prostate tissue?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "YAP/TEAD inhibitors",
+        "Notch gamma\u2011secretase inhibitors",
+        "TIP60 degraders"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Carl H. June",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l",
+      "talk_title": "Beyond Blood: The Evolution of CAR T Therapy for Solid Malignancies",
+      "rhetorical_signals": [
+        "Speaker said: \"the disappointing aspect is that durability is limited\"",
+        "Speaker noted: \"we need a more rapid, iterative process\"",
+        "Speaker admitted: \"we have not yet achieved durable responses in solid tumors\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Autologous ex vivo CAR T cells for solid tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Poor infiltration into dense stromal microenvironment and rapid T\u2011cell exhaustion within solid tumors",
+        "unexplained_resistance_quote": "Speaker said: \"we see mixed responses where metastatic lesions respond but primary pancreatic tumor progresses\"",
+        "ghost_responder_admission": "Some patients achieved partial responses despite overall low durability",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Single\u2011gene knockout strategies (e.g., Tet2) in solid tumor CAR T cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Tet2 disruption improves blood\u2011cancer CARs but does not translate to solid\u2011tumor settings",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 2 claudin\u201118.2 CAR T trial in China",
+        "target_biology": "CAR T targeting claudin\u201118.2 in gastroesophageal cancer",
+        "flawed_enrollment_criteria": "Enrolled refractory patients without biomarker enrichment for high claudin\u201118.2 expression",
+        "missing_biomarker": "Quantitative claudin\u201118.2 expression threshold",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size limits power to detect durable benefit",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Autologous ex vivo CAR manufacturing platform",
+        "ip_vulnerability_note": "Speaker highlighted scale and complexity as a bottleneck, indicating limited proprietary advantage over emerging allogeneic or in vivo approaches",
+        "scale_or_manufacturing_bottleneck": "Manufacturing time, cost, and batch\u2011to\u2011batch variability",
+        "clinical_strategy_weakness": "Broad enrollment without stromal\u2011targeted combination dilutes signal in solid\u2011tumor trials"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented data showing that dual\u2011targeted CARs achieve high tumor control in glioblastoma, then concluded that CAR T therapy still lacks durable responses in solid tumors overall, ignoring the strong pre\u2011clinical efficacy shown"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term survival data for dual\u2011targeted CARs in glioblastoma",
+        "Mechanistic validation of FAP\u2011CAR synergy in human pancreatic cancer"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CrisPRO can predict synergistic stromal\u2011targeting combinations (e.g., FAP\u2011CAR followed by mesothelin\u2011CAR) to enhance infiltration.",
+        "transcript_evidence": "Speaker showed that sequential anti\u2011FAP then anti\u2011mesothelin CARs improved survival in mouse KPC model.",
+        "crispro_angle": "Simulate tumor\u2011microenvironment remodeling and identify optimal sequencing of cell\u2011therapy agents.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived NK\u2011cell enrichment signature to select glioblastoma patients likely to respond to intra\u2011cavitary CAR delivery.",
+        "transcript_evidence": "Speaker reported higher NK cell infiltration correlates with response in glioblastoma CAR trial.",
+        "crispro_angle": "Integrate spatial transcriptomics with network modeling to generate predictive biomarkers.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis",
+        "context": "Developing YAP/TEAD inhibitors mentioned as potential counter\u2011intuitive agents",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Bristol\u2011Myers Squibb (BMS) / Juno",
+        "context": "Referenced for DLL3\u2011directed T\u2011cell engager in neuroendocrine prostate cancer",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule for intra\u2011cavitary CAR delivery in glioblastoma?",
+      "Can the identified NK\u2011cell signature be prospectively validated as a predictive biomarker?",
+      "Will FAP\u2011CAR mediated stromal depletion synergize with checkpoint blockade in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04526899"
+      ],
+      "assets_to_track": [
+        "Claudin\u201118.2 CAR T product",
+        "Anti\u2011FAP CAR constructs",
+        "Dual\u2011targeted EGFRvIII/IL\u201113R\u03b12 CAR"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Bluebird Bio",
+        "Allogene Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Georg E. Winter",
+      "institution_or_pharma": "CeMM Research Center for Molecular Medicine / Aithera Research Institute",
+      "session_title": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l",
+      "talk_title": "Chemical Rewiring of Biological Circuits for Cancer Therapy: Targeted Protein Degradation and Beyond",
+      "rhetorical_signals": [
+        "Speaker said: \"the drawback of early PROTAC designs was limited efficacy that prevented in vivo application\"",
+        "Speaker noted: \"we still have FDA\u2011approved degraders in the clinic without really understanding how they work\"",
+        "Speaker admitted: \"we do not yet know how to systematically design molecular glues for many targets\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Early peptidic PROTACs",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Poor cell permeability and metabolic stability of peptide\u2011based bifunctional degraders",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker highlighted limited in vivo efficacy as a sign of pharmacokinetic issues",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "SERDs (e.g., fulvestrant) as degraders",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Degradation of ER is not required for anti\u2011estrogenic activity; SUMOylation is the critical effector",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PROTAC linker chemistry",
+        "ip_vulnerability_note": "Speaker disclosed detailed linker structures, suggesting limited novelty beyond known scaffolds",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on cereblon or VHL ligands may limit applicability to tissues with low expression of these E3s"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that SERDs induce ER SUMOylation and degradation, then concluded that degradation is inconsequential for efficacy, contradicting the earlier emphasis on degradation as the therapeutic mechanism"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Clinical validation of intermolecular bivalent gluing (IBG\u20111) in patients",
+        "In\u2011vivo relevance of inhibitor\u2011induced supercharging of native degradation pathways"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can model ternary complex formation for novel molecular glues (e.g., IBG\u20111) to prioritize chemotypes before synthesis.",
+        "transcript_evidence": "Speaker described discovery of DCAF16\u2011mediated degradation via intermolecular bivalent gluing.",
+        "crispro_angle": "Use CrisPRO's proximity\u2011network simulation to predict latent E3\u2011target interfaces.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could predict kinase conformations that become super\u2011charged for degradation, guiding design of inhibitors that avoid unwanted off\u2011target degradation.",
+        "transcript_evidence": "Speaker reported 450 cases where kinase inhibitors induced target destabilization via native ligases.",
+        "crispro_angle": "Integrate structural dynamics with degradation propensity scoring.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis",
+        "context": "Developed YAP/TEAD inhibitor discussed as a potential counter\u2011intuitive agent",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Alessio Ciulli (Dundee)",
+        "context": "Collaborated on IBG\u20111 studies revealing DCAF16 involvement",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can intermolecular bivalent gluing be generalized to other multi\u2011domain targets?",
+      "What determines whether a kinase inhibitor will supercharge native degradation versus cause off\u2011target toxicity?",
+      "How does SUMOylation mechanistically repress ER transcription beyond degradation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IBG\u20111 analogs",
+        "DHTC3 molecular glue",
+        "SERD compounds"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Almirall",
+        "Arvinas"
+      ]
+    }
+  },
+  {
+    "talk_id": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Regina Barzilay",
+      "institution_or_pharma": "Massachusetts Institute of Technology",
+      "session_title": "opening-plenary-precision-partnership-purpose-advancing-cancer-science-to-save-l",
+      "talk_title": "Rethinking Cancer Diagnosis and Treatment with AI from Molecular Mechanisms to Clinical Management",
+      "rhetorical_signals": [
+        "Speaker said: \"current density reporting provides only a 0.5 C\u2011index, essentially random\"",
+        "Speaker noted: \"Mirai achieves a 0.8 C\u2011index, far outperforming existing risk models\"",
+        "Speaker admitted: \"we still need prospective validation despite strong retrospective performance\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "AI risk\u2011stratification model (Mirai)",
+        "ip_vulnerability_note": "Model architecture and training data are publicly released, reducing proprietary moat",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on retrospective imaging cohorts; prospective utility still being established"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that AI can predict five\u2011year cancer risk from a single mammogram, yet also emphasized that current clinical practice still relies on low\u2011information density reporting, highlighting a gap between technological capability and implementation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term outcome data from ongoing prospective trials (e.g., MiPEBS, ADAPT)",
+        "Real\u2011world impact on mortality and over\u2011diagnosis rates"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate how integrating AI\u2011derived molecular pathway scores (from SPARK) could enrich enrollment criteria for targeted therapy trials.",
+        "transcript_evidence": "Speaker described SPARK linking pathology patches to 40 molecular programs for outcome prediction.",
+        "crispro_angle": "Model trial arms with pathway\u2011stratified cohorts to maximize statistical power.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can refine Mirai\u2019s risk scores by incorporating genomic and transcriptomic data to reduce false\u2011positive high\u2011risk classifications.",
+        "transcript_evidence": "Speaker highlighted that Mirai\u2019s top 2% risk group aligns with BRCA\u2011like risk levels.",
+        "crispro_angle": "Integrate multi\u2011omics networks to adjust AI risk thresholds.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "TeraQSIC",
+        "context": "Traditional questionnaire\u2011based risk model compared to Mirai",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Federal density reporting mandate",
+        "context": "Regulatory standard that provides low predictive value",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How will AI\u2011derived risk scores affect patient anxiety and clinical decision\u2011making?",
+      "What are the cost\u2011effectiveness implications of deploying Mirai at population scale?",
+      "Can generative models like MamaGen be validated for early detection without increasing false positives?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345",
+        "NCT06098765"
+      ],
+      "assets_to_track": [
+        "Mirai AI risk model",
+        "SPARK pathology\u2011to\u2011pathway pipeline",
+        "MamaGen generative imaging tool"
+      ],
+      "companies_to_monitor": [
+        "Google Health",
+        "IBM Watson Health",
+        "Tempus"
+      ]
+    }
+  }
+]

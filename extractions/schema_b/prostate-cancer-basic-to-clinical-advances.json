@@ -1,0 +1,343 @@
+[
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Arul Chinnaiyan",
+      "institution_or_pharma": "University of Michigan",
+      "session_title": "From Molecular Mechanisms to Therapeutic Opportunity in Prostate Cancer",
+      "talk_title": "Heterobifunctional reprogramming of androgen receptor complexes in prostate cancer (DALTACs)",
+      "rhetorical_signals": [
+        "Speaker said: we have not yet generated enzalutamide\u2011resistant PDX organoids",
+        "Speaker said: we have not done normal tissue toxicity studies yet"
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DALTAC heterobifunctional molecules targeting AR and p300/CBP",
+        "ip_vulnerability_note": "Efficacy appears limited to AR\u2011positive, p300\u2011dependent prostate cancer cells; AR\u2011negative or non\u2011prostate lineages are insensitive",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on AR positivity and high p300 expression, potentially diluting signal in heterogeneous patient populations"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that DELTACs increase AR chromatin recruitment but concluded that the compounds act as a \u2018molecular monkey wrench\u2019 to inhibit AR signaling, despite the apparent AR activation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo toxicity data in normal androgen\u2011dependent tissues",
+        "No efficacy data in enzalutamide\u2011resistant patient\u2011derived organoids"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumor subsets with sufficient AR and p300/CBP expression to predict DELTAC sensitivity",
+        "transcript_evidence": "Speaker said: the levels of AR and p300 are elevated... we are using models where AR is often amplified",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and proteomic data to define quantitative thresholds for AR/p300 co\u2011dependency",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Predict emergence of antigen loss or compensatory pathways (e.g., BRD4 displacement) that may confer resistance to DALTACs",
+        "transcript_evidence": "Speaker noted loss of BRD4 and Pol II at AR sites after DELTAC treatment",
+        "crispro_angle": "CrisPRO can model network rewiring after domain alteration to anticipate compensatory dependencies",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Arvinas",
+        "context": "Developed AR PROTAC degrader used as a reference for heterobifunctional strategies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Cellcentrix",
+        "context": "Developed p300/CBP bromodomain inhibitor that was paused due to tolerability",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Halda",
+        "context": "Created AR\u2011BRD4 heterobifunctional compound referenced as a parallel approach",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will DELTACs be safe in normal androgen\u2011dependent tissues such as seminal vesicle?",
+      "Can DELTACs overcome resistance mechanisms in enzalutamide\u2011resistant organoid models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DALTAC AR\u2011p300/CBP heterobifunctional molecules",
+        "Arvinas AR PROTACs",
+        "Halda AR\u2011BRD4 compounds"
+      ],
+      "companies_to_monitor": [
+        "Arvinas",
+        "Cellcentrix",
+        "Halda"
+      ]
+    }
+  },
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Johan de Bono",
+      "institution_or_pharma": "The Royal Marsden and ICR",
+      "session_title": "From Molecular Mechanisms to Therapeutic Opportunity in Prostate Cancer",
+      "talk_title": "Emerging therapeutic strategies in advanced prostate cancer",
+      "rhetorical_signals": [
+        "Speaker said: the drug has not reached MTD and is very well tolerated",
+        "Speaker said: we are confident the AR\u2011BRD4 glue will work even without castration"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AR degraders (BMS AR degrader)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity in AR splice\u2011variant disease",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Halda AR\u2011BRD4 phase I/II trial",
+        "target_biology": "Simultaneous disruption of AR and BRD4 transcriptional complexes",
+        "flawed_enrollment_criteria": "Enrolling heavily pre\u2011treated CRPC without biomarker selection for AR/BRD4 dependency",
+        "missing_biomarker": "AR splice\u2011variant status or BRD4 expression levels",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size, no control arm, risk of over\u2011interpreting PSA declines",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "gocatumig DLL3 T\u2011cell engager phase I/II",
+        "target_biology": "DLL3\u2011directed T\u2011cell engagement in neuroendocrine prostate cancer",
+        "flawed_enrollment_criteria": "No pre\u2011selection based on quantitative DLL3 expression despite heterogeneous antigen levels",
+        "missing_biomarker": "Standardized DLL3 IHC cutoff",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design, response attribution unclear",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Halda AR\u2011BRD4 heterobifunctional molecule",
+        "ip_vulnerability_note": "Compound also engages BRD2/3, raising potential off\u2011target effects",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad label without molecular selection may dilute efficacy signals"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "PSMA CD3 engagers (Janssen, Vir/Sanofi)",
+        "ip_vulnerability_note": "Masked constructs still generate anti\u2011drug antibodies and CRS in some patients",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires careful dosing schedules to balance efficacy and CRS"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented deep tumor regressions with the AR\u2011BRD4 glue yet concluded that the drug does not need to block AR signaling, despite data showing increased AR chromatin binding"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of randomized comparator arm",
+        "No biomarker\u2011stratified efficacy analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine AR\u2011BRD4 glue with PARP inhibition to exploit reported myeloid clearance and enhance response",
+        "transcript_evidence": "Speaker mentioned a paper under review showing PARP inhibition clears the myeloid compartment",
+        "crispro_angle": "CrisPRO can predict synergistic interactions between chromatin\u2011targeting glues and DNA\u2011damage response inhibitors",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop quantitative DLL3 thresholds to select patients for gocatumig therapy",
+        "transcript_evidence": "Speaker noted lack of strong association between DLL3 levels and response in the trial",
+        "crispro_angle": "CrisPRO can integrate IHC, transcriptomics, and spatial data to define predictive DLL3 expression cutoffs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "BMS AR degrader",
+        "context": "Discussed as the most promising AR degrader with activity in AR\u2011mutant disease",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Janssen PSMA CD3 engager",
+        "context": "Presented data on deep PSA declines and tumor regressions",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "AstraZeneca STEAP1/2 programs",
+        "context": "Mentioned as parallel cell\u2011surface targeting approaches",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the AR\u2011BRD4 glue retain activity in hormone\u2011sensitive metastatic disease without castration?",
+      "What is the optimal biomarker (AR splice\u2011variant, BRD4 expression) to enrich for responders?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "Halda AR\u2011BRD4 heterobifunctional molecule",
+        "gocatumig DLL3 T\u2011cell engager",
+        "Janssen PSMA CD3 masked engager"
+      ],
+      "companies_to_monitor": [
+        "Halda",
+        "Janssen",
+        "Sanofi",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Misha Beltran",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "From Molecular Mechanisms to Therapeutic Opportunity in Prostate Cancer",
+      "talk_title": "Therapeutic advances in neuroendocrine prostate cancer",
+      "rhetorical_signals": [
+        "Speaker said: DLL3 expression did not strongly correlate with response in our trial",
+        "Speaker said: EZH2 inhibition in neuroendocrine models actually pushes tumors toward a more neuroendocrine state"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DLL3\u2011directed T\u2011cell engagers",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Heterogeneous intra\u2011tumoral DLL3 expression leading to antigen loss after treatment",
+        "unexplained_resistance_quote": "Speaker said: we see overall lower levels of antigen suggesting a potential acquired resistance mechanism",
+        "ghost_responder_admission": "Speaker said: response rates were approaching 50% despite variable DLL3 levels",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "EZH2 inhibitors in NEPC",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "EZH2 inhibition up\u2011regulates neurogenesis genes and may drive further neuroendocrine differentiation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "gocatumig DLL3 T\u2011cell engager phase I/II",
+        "target_biology": "DLL3\u2011mediated T\u2011cell redirection in neuroendocrine prostate cancer",
+        "flawed_enrollment_criteria": "Enrolled patients based on histology without quantitative DLL3 enrichment",
+        "missing_biomarker": "Standardized DLL3 IHC cutoff or PET imaging for antigen burden",
+        "static_vs_dynamic_failure": "No serial monitoring of DLL3 loss during therapy",
+        "statistical_concern": "Single\u2011arm design, modest sample size",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DLL3\u2011targeted T\u2011cell engagers",
+        "ip_vulnerability_note": "Efficacy appears independent of DLL3 expression level, indicating antigen heterogeneity limits therapeutic window",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of robust companion diagnostic to select high\u2011DLL3 patients"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "EZH2 inhibitors for NEPC",
+        "ip_vulnerability_note": "May exacerbate neuroendocrine phenotype rather than reverse it",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Unclear patient subset that would benefit; risk of promoting terminal differentiation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that DLL3 expression is heterogeneous and not predictive of response yet concluded that DLL3\u2011targeted agents are promising for NEPC"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of correlation between DLL3 IHC/PET and clinical outcomes",
+        "No long\u2011term OS data for EZH2 inhibitor combinations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a CrisPRO\u2011driven composite biomarker integrating DLL3 IHC, PET imaging, and spatial transcriptomics to predict responder status",
+        "transcript_evidence": "Speaker said: DLL3 expression did not strongly correlate with response in our trial",
+        "crispro_angle": "CrisPRO can model spatial heterogeneity and predict antigen loss dynamics",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to identify tumors where EZH2 inhibition will drive neuroendocrine gene up\u2011regulation and avoid those patients",
+        "transcript_evidence": "Speaker said: EZH2 inhibition in neuroendocrine models up\u2011regulated neuronal transcription factors",
+        "crispro_angle": "Predict transcriptional rewiring after EZH2 blockade to flag high\u2011risk cases",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair DLL3 T\u2011cell engagers with agents that prevent antigen loss (e.g., epigenetic modulators) identified by CrisPRO simulations",
+        "transcript_evidence": "Speaker noted acquired resistance via lower DLL3 levels after treatment",
+        "crispro_angle": "Simulate combination effects on DLL3 expression stability",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "gocatumig (DLL3\u2011CD3\u2011albumin engager)",
+        "context": "Primary agent discussed for NEPC",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "AstraZeneca STEAP2 programs",
+        "context": "Mentioned as parallel cell\u2011surface targeting approaches",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Janssen KLK2 CD3 engager",
+        "context": "Cited as another successful T\u2011cell engager platform",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular features (beyond DLL3) predict durable responses to DLL3\u2011directed T\u2011cell engagers?",
+      "Can EZH2 inhibition be combined with other epigenetic agents to avoid forward neuroendocrine differentiation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "gocatumig DLL3 T\u2011cell engager",
+        "EZH2 inhibitors in NEPC trials",
+        "STEAP1/2 targeting agents"
+      ],
+      "companies_to_monitor": [
+        "Halda",
+        "AstraZeneca",
+        "Janssen"
+      ]
+    }
+  }
+]

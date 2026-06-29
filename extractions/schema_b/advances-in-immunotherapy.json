@@ -1,0 +1,444 @@
+[
+  {
+    "talk_id": "advances-in-immunotherapy::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Alberto Giovanni Leone",
+      "institution_or_pharma": "Fondazione Istituto Nazionale dei Tumori di Milano",
+      "session_title": "advances-in-immunotherapy",
+      "talk_title": "Final results of the INFINITY study investigating tremelimumab and durvalumab as definitive non-operative management for MSI-high gastric cancers",
+      "rhetorical_signals": [
+        "Speaker said: \"the optimal strategy for these patients in terms of treatment duration, treatment regimen, and treatment goal still needs to be established in larger randomized or adaptive trials.\"",
+        "Speaker said: \"Importantly, after the results of cohort one and following review by an independent data monitoring committee, patients with a T4 disease were excluded from enrollment in cohort two due to their low probability of achieving a clinical complete response after only three months of immunotherapy.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Tremelimumab plus durvalumab dual checkpoint regimen",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of efficacy in T4 disease and in patients with baseline myeloid-rich, EMT-associated tumor microenvironment",
+        "unexplained_resistance_quote": "Speaker noted that three out of four patients who did not achieve clinical complete response had a positive tissue-informed ctDNA at restaging, whereas only one patient had a ctDNA negative, but did not explain why ctDNA positivity persisted.",
+        "ghost_responder_admission": "Speaker highlighted that 13 out of 17 patients achieved clinical complete response, implying a subset of exceptional responders, but did not provide mechanistic explanation.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "INFINITY cohort two",
+        "target_biology": "Non-operative management of resectable MSI-high gastric/GEJ adenocarcinoma after dual checkpoint blockade",
+        "flawed_enrollment_criteria": "Exclusion of T4 disease after cohort one, small sample size (17 evaluable patients) limits generalizability and may dilute signal for higher-stage disease",
+        "missing_biomarker": "No prospective stratification by baseline myeloid infiltration or EMT signature despite exploratory transcriptomics indicating their relevance",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring beyond 2\u2011year surveillance; lack of dynamic resistance tracking",
+        "statistical_concern": "Single\u2011arm Phase\u202f2 with no control arm; underpowered to detect modest differences in survival endpoints",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dual CTLA\u20114 (tremelimumab) + PD\u2011L1 (durvalumab) regimen limited to MSI\u2011high gastric cancer",
+        "ip_vulnerability_note": "Speaker disclosed reliance on a single flat dose of tremelimumab (300\u202fmg) and a fixed durvalumab schedule, suggesting limited flexibility and potential for resistance in tumors with alternative immune evasion pathways",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad non\u2011operative approach without biomarker\u2011driven selection beyond MSI status may dilute clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high baseline myeloid infiltration and EMT programs in non\u2011responders, then concluded that non\u2011operative management is a viable option for \"carefully selected patients\" without specifying how to exclude the myeloid\u2011rich subgroup"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No randomized comparator arm",
+        "Limited long\u2011term overall survival beyond 2\u202fyears",
+        "No prospective biomarker stratification for myeloid/EMT signatures"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline myeloid infiltration and EMT signatures predict lack of clinical complete response but were not used for patient selection",
+        "transcript_evidence": "Speaker said: \"higher baseline myeloid infiltration was evident in tumor samples from non\u2011responders\"",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omic spatial data to develop a composite myeloid\u2011EMT biomarker to enrich future trials for responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Persistent ctDNA positivity despite dual checkpoint blockade suggests residual resistant clones",
+        "transcript_evidence": "Speaker noted that \"three out of four of these patients had a positive tissue\u2011informed ctDNA at the restaging\"",
+        "crispro_angle": "CrisPRO can model clonal evolution from ctDNA dynamics to predict emergent resistance pathways and suggest combination partners (e.g., anti\u2011CD39)",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Inclusion of dynamic on\u2011treatment ctDNA and immune profiling could prevent dilution of signal in heterogeneous MSI\u2011high cohort",
+        "transcript_evidence": "Speaker admitted that \"the trial did not include serial ctDNA beyond the 2\u2011year surveillance\"",
+        "crispro_angle": "CrisPRO can simulate adaptive trial designs that trigger early intervention based on ctDNA rise or myeloid activation",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Matterhorn study",
+        "context": "Referenced as a peri\u2011operative chemo\u2011immunotherapy trial that set a benchmark for pathologic response rates",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "NEUMIPIGAR trial",
+        "context": "Mentioned when discussing toxicity of dual checkpoint blockade with ipilimumab/nivolumab",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal duration of dual checkpoint therapy before deciding on non\u2011operative management?",
+      "Can baseline myeloid/EMT signatures be prospectively used to exclude patients unlikely to achieve clinical complete response?",
+      "How does the addition of chemotherapy to the STRIDE regimen affect efficacy and safety?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Tremelimumab",
+        "Durvalumab"
+      ],
+      "companies_to_monitor": [
+        "GSK (tremelimumab)",
+        "AstraZeneca (durvalumab)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-immunotherapy::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Fabrice Barlesi",
+      "institution_or_pharma": "Gustave Roussy / University of Paris",
+      "session_title": "advances-in-immunotherapy",
+      "talk_title": "Interim results from the phase 2 MATIS trial of IPH5201 (CD39 inhibitor) combined with durvalumab and platinum chemotherapy in resectable NSCLC",
+      "rhetorical_signals": [
+        "Speaker said: \"The primary endpoint of the study was the pathological complete response rate, safety, EFS, DFS, overall survival, feasibility of the surgery, major pathological response, overall response rate, PK, and anti\u2011drug antibodies were secondary endpoints.\"",
+        "Speaker said: \"The trial has no power to make definitive comparison or for formal hypothesis testing.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IPH5201 (CD39 inhibitor) + durvalumab + chemotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity in PD\u2011L1 low tumors and lack of clear correlation between CD39 expression and response",
+        "unexplained_resistance_quote": "Speaker noted that \"we did not see a clear correlation between CD39 level and response\" without providing mechanistic explanation.",
+        "ghost_responder_admission": "PCR rate of 27.5% suggests a subset of patients benefit, but no biomarker identified to define them.",
+        "hidden_tox_signal": "Grade\u202f3 adverse events in 55% of patients, including one postoperative pneumonia death, indicating a toxicity\u2011limited signal.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MATIS",
+        "target_biology": "CD39 blockade to enhance durvalumab\u2011chemo neoadjuvant efficacy in resectable NSCLC",
+        "flawed_enrollment_criteria": "Single\u2011arm design with heterogeneous stage\u202fII/III patients and mixed histologies (adenocarcinoma and squamous) dilutes signal; no PD\u2011L1 enrichment in initial cohort",
+        "missing_biomarker": "Prospective selection based on baseline CD39 density or PD\u2011L1 expression was not required",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample (40 patients) and no control arm; underpowered to detect modest improvements over historical 25% PCR benchmark",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Humanized Fc\u2011silent IgG1 CD39 antibody (IPH5201)",
+        "ip_vulnerability_note": "Speaker disclosed that the recommended Phase\u202f2 dose (3000\u202fmg) is high due to a sink effect, suggesting limited potency per unit dose",
+        "scale_or_manufacturing_bottleneck": "High dose requirement may increase COGS and manufacturing complexity",
+        "clinical_strategy_weakness": "Broad enrollment without PD\u2011L1 or CD39 enrichment may limit ability to demonstrate superiority over existing chemo\u2011immunotherapy"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust CD39\u2011positive Treg depletion across all dose levels, yet concluded that the regimen shows only modest efficacy (27.5% PCR) without explaining the disconnect"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Lack of pharmacokinetic exposure\u2011response analysis",
+        "No clear biomarker\u2011response correlation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline CD39 density and PD\u2011L1 expression did not predict response; a composite spatial biomarker could improve patient selection",
+        "transcript_evidence": "Speaker said: \"we did not see a clear correlation between CD39 level and response\"",
+        "crispro_angle": "CrisPRO can integrate multiplex IHC and spatial transcriptomics to derive a predictive CD39\u2011PD\u2011L1\u2011CD8 signature",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Modest efficacy suggests adding a second adenosine pathway inhibitor (e.g., anti\u2011CD73) could enhance response",
+        "transcript_evidence": "Discussant highlighted that \"blocking multiple steps of the ATP\u2011adenosine pathway may be more beneficial\"",
+        "crispro_angle": "CrisPRO can model synergistic effects of dual adenosine blockade and prioritize dosing schedules",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Adaptive enrichment design using early on\u2011treatment ctDNA and immune profiling to focus on PD\u2011L1 high/CD39 high patients",
+        "transcript_evidence": "Speaker noted that \"the trial has no power to make definitive comparison\"",
+        "crispro_angle": "CrisPRO can simulate adaptive randomization based on early biomarker readouts",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AEGEAN trial",
+        "context": "Referenced as a benchmark chemo\u2011immunotherapy study with durvalumab",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "CheckMate 816",
+        "context": "Cited for historical 25% PCR rate with chemo\u2011immunotherapy",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "NEOCOAST\u20112",
+        "context": "Discussed as a CD73\u2011targeting peri\u2011operative study",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will enrichment for PD\u2011L1 \u22651% improve PCR rates?",
+      "What is the exposure\u2011response relationship for the 3000\u202fmg dose?",
+      "Can combined CD39/CD73 inhibition overcome the modest activity observed?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345"
+      ],
+      "assets_to_track": [
+        "IPH5201",
+        "Durvalumab"
+      ],
+      "companies_to_monitor": [
+        "iNet Pharma",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-immunotherapy::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Bruno Boccorni",
+      "institution_or_pharma": "Beth Israel Deaconess Medical Center / Dana\u2011Farber Cancer Institute",
+      "session_title": "advances-in-immunotherapy",
+      "talk_title": "Preliminary Phase 1 results of the anti\u2011CCR8 antibody denicitug in advanced solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"The overall profile of denicitug was manageable. Grade 3 and serious adverse events did occur but were generally manageable with supportive care.\"",
+        "Speaker said: \"We put a lot of effort to try to understand the immunobiological effects of denicitug... we are not able to draw clear conclusions about the relationship between CCR8 expression and response at this stage.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Denicitug (anti\u2011CCR8 antibody)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Flat dose\u2011response and modest CD8 T\u2011cell activation despite near\u2011complete intratumoral Treg depletion",
+        "unexplained_resistance_quote": "Discussant noted: \"the modest increase in CD8 effector T cells despite T\u2011reg depletion suggests the complex TME may be limiting efficacy\" without mechanistic detail.",
+        "ghost_responder_admission": "Objective response rate of 8% indicates a small subset of responders, but no biomarker identified.",
+        "hidden_tox_signal": "Rash, pruritus, diarrhea observed in >5% of patients; discussant raised concern about rash\u2011associated symptoms (RAS) incidence.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Denicitug Phase 1 (dose escalation and biopsy cohort)",
+        "target_biology": "CCR8\u2011mediated Treg depletion to overcome checkpoint resistance",
+        "flawed_enrollment_criteria": "Heterogeneous tumor types and heavily pre\u2011treated patients (median 3 prior lines) obscure signal; no enrichment for high CCR8 expression",
+        "missing_biomarker": "Prospective selection based on baseline CCR8 density not required; lack of correlation analysis limits interpretability",
+        "static_vs_dynamic_failure": "No serial on\u2011treatment biopsies beyond 2 doses to track dynamic changes",
+        "statistical_concern": "Small sample (57 total, 52 efficacy\u2011evaluable) with no control arm; flat dose\u2011response hampers dose selection",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Afucosylated, Fc\u2011engineered anti\u2011CCR8 monoclonal antibody",
+        "ip_vulnerability_note": "Speaker admitted lack of PK/PD linearity data and flat efficacy across 10\u2011100\u202fmg doses, indicating limited differentiation from other CCR8 programs",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy shows modest activity; likely requires combination with PD\u20111/PD\u2011L1 inhibitors to achieve meaningful responses"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated near\u2011complete depletion of CCR8\u2011positive Tregs at the lowest dose (10\u202fmg) yet concluded that higher doses (30\u2011100\u202fmg) are still being explored without clear rationale"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No PK exposure\u2011response analysis",
+        "No clear biomarker\u2011response correlation",
+        "Limited data on peripheral Treg depletion and CD16 polymorphism impact"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline CCR8 expression did not predict response; a composite spatial biomarker incorporating CCR8 density, myeloid infiltration, and CD8 activation may improve selection",
+        "transcript_evidence": "Speaker noted: \"both responders and non\u2011responders had a wide range of CCR8 expression, including some undetectable levels in responders\"",
+        "crispro_angle": "CrisPRO can integrate multiplex IHC and single\u2011cell RNA\u2011seq to generate a predictive CCR8\u2011myeloid\u2011CD8 signature",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Modest monotherapy activity suggests combining denicitug with PD\u20111 blockade or adenosine pathway inhibitors",
+        "transcript_evidence": "Discussant suggested that \"strategies focusing on targeting a single node are going to have limited activity as single agents\"",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of CCR8 depletion plus PD\u20111 inhibition across tumor microenvironment models",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Adaptive enrichment trial enrolling only CCR8\u2011high tumors and incorporating early on\u2011treatment biopsies for dynamic Treg/CD8 monitoring",
+        "transcript_evidence": "Speaker admitted lack of clear CCR8\u2011response relationship and need for more homogeneous populations",
+        "crispro_angle": "CrisPRO can model adaptive randomization based on early biomarker shifts to optimize dose and patient selection",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AMG 355 (CTLA\u20114 antibody)",
+        "context": "Discussant compared rash incidence (RAS) with AMG 355 data",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Other CCR8 programs (various mAbs, small molecules, bispecifics)",
+        "context": "Discussant listed multiple CCR8 programs, noting several have been discontinued",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dose of denicitug given the flat efficacy across 10\u2011100\u202fmg?",
+      "Does CD16 polymorphism affect Treg depletion efficacy?",
+      "Can combination with PD\u20111 blockade improve response rates beyond 8%?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05678901"
+      ],
+      "assets_to_track": [
+        "Denicitug"
+      ],
+      "companies_to_monitor": [
+        "Gilead Sciences"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-immunotherapy::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Archana Balan",
+      "institution_or_pharma": "Johns Hopkins University / Sidney Kimmel Comprehensive Cancer Center",
+      "session_title": "advances-in-immunotherapy",
+      "talk_title": "Multi\u2011omic analysis of immunotherapy resistance in non\u2011small cell lung cancer (HUDSON trial)",
+      "rhetorical_signals": [
+        "Speaker said: \"These findings suggest that IO resistance is multifactorial, as cancer cells acquire a fitness advantage through differential activation of cancer hallmarks, cell states, and immune escape, pointing towards convergent evolution.\"",
+        "Speaker said: \"The evolutionary cost of IO resistance may reveal actionable vulnerabilities that require personalized combination strategies in the post\u2011IO setting to help overcome IO resistance.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current anti\u2011PD\u20111/PD\u2011L1 monotherapies",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of targeting of EMT\u2011driven lineage plasticity and metabolic reprogramming identified as key drivers of acquired resistance",
+        "unexplained_resistance_quote": "Speaker noted that \"acquired resistance was associated with upregulation of EMT and metabolic pathways\" without offering mechanistic interventions.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "HUDSON umbrella trial",
+        "target_biology": "Biomarker\u2011directed therapy for IO\u2011resistant NSCLC",
+        "flawed_enrollment_criteria": "Aggregated primary and acquired resistance groups without prospective stratification; use of unmatched pre\u2011 and post\u2011IO tumor samples limits longitudinal insight",
+        "missing_biomarker": "Integration of neoantigen load, TCR repertoire, and epigenetic (DNA methylation) data was not performed",
+        "static_vs_dynamic_failure": "Single time\u2011point post\u2011IO profiling; no serial sampling to track evolution of resistance mechanisms",
+        "statistical_concern": "Large heterogeneous cohort (951 patients) but analyses are largely descriptive; lack of powered comparative arms",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PD\u20111/PD\u2011L1 checkpoint inhibitors",
+        "ip_vulnerability_note": "Speaker highlighted that these agents fail to address EMT\u2011driven plasticity, metabolic rewiring, and myeloid\u2011mediated immune suppression uncovered in the HUDSON cohort",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on PD\u2011L1 expression alone for patient selection ignores the broader genomic and transcriptomic resistance landscape"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented high tumor mutation burden in the acquired resistance group as a potential therapeutic window, yet simultaneously concluded that \"the evolutionary cost of IO resistance may reveal actionable vulnerabilities\" without specifying how high TMB can be exploited."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No paired pre\u2011/post\u2011IO tumor samples for individual longitudinal analysis",
+        "Absence of epigenetic (DNA methylation) profiling",
+        "Lack of integrated neoantigen/TCR repertoire analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Integration of EMT, metabolic, and lineage plasticity signatures to stratify patients for combination therapies",
+        "transcript_evidence": "Speaker said: \"Acquired resistance was associated with upregulation of EMT and metabolic pathways\"",
+        "crispro_angle": "CrisPRO can combine bulk and single\u2011cell RNA\u2011seq with spatial profiling to generate a composite EMT\u2011Metabolic resistance score for trial enrichment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the FGF/mTOR proliferative signaling axis enriched in acquired resistance",
+        "transcript_evidence": "Speaker noted enrichment of mutations in the FGF and mTOR pathways in the acquired resistance group",
+        "crispro_angle": "CrisPRO can prioritize FGF/mTOR inhibitors as rational combination partners with PD\u20111 blockade in the identified genomic subset",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Prospective longitudinal sampling (paired pre\u2011/post\u2011IO biopsies) to capture dynamic evolution of EMT and immune states",
+        "transcript_evidence": "Speaker acknowledged that \"the study used unmatched pre\u2011 and post\u2011IO samples\"",
+        "crispro_angle": "CrisPRO can simulate adaptive trial designs that trigger combination escalation when EMT signatures rise",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "KRAS/STK11 co\u2011mutation studies",
+        "context": "Referenced as known drivers of primary resistance",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "KEAP1, JAK1/2, PTEN, \u03b2\u2011catenin mutation literature",
+        "context": "Cited as established genomic mechanisms of IO resistance",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How does epigenetic remodeling (DNA methylation) contribute to the observed EMT and metabolic reprogramming?",
+      "Can integration of neoantigen burden and TCR clonality improve prediction beyond TMB alone?",
+      "What combination strategies can effectively reverse the EMT\u2011driven immune exclusion phenotype?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "PD\u20111/PD\u2011L1 inhibitors",
+        "FGF/mTOR pathway inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Merck",
+        "Bristol\u2011Myers Squibb",
+        "Novartis"
+      ]
+    }
+  }
+]

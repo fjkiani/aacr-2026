@@ -1,0 +1,390 @@
+[
+  {
+    "talk_id": "mechanisms-of-immune-evasion-and-immune-dysregulation::qi::1",
+    "session_title": "mechanisms-of-immune-evasion-and-immune-dysregulation",
+    "talk_title": "Dendritic cell mitochondrial metabolism regulates anti-tumor immunity",
+    "speaker": {
+      "name": "Hongbo Qi",
+      "affiliation": "University of Pennsylvania",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "lung adenocarcinoma",
+      "osteosarcoma",
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "metabolism",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "OPA1",
+        "alteration": "",
+        "pathway": "mitochondrial_fusion",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cDC1 in tumor microenvironment",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NRF1",
+        "alteration": "",
+        "pathway": "mitochondrial_respiration",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cDC1 mitochondria regulation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse_model",
+        "name": "B16 melanoma",
+        "genotype_or_key_features": "cDC1 mitochondrial heterogeneity"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "lung cancer model",
+        "genotype_or_key_features": "cDC1 mitochondrial heterogeneity"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "osteosarcoma model",
+        "genotype_or_key_features": "cDC1 mitochondrial heterogeneity"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "pancreatic cancer model",
+        "genotype_or_key_features": "cDC1 mitochondrial heterogeneity"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Qi identified that cDC1 cells in tumors exist in two mitochondrial states; OPA1 drives mitochondrial fusion and high oxidative phosphorylation, enabling superior T cell priming. Loss of OPA1 impairs mitochondrial cristae, reduces oxidative phosphorylation, and diminishes anti\u2011tumor immunity. NRF1 acts downstream of OPA1 to regulate electron transport chain genes, and its overexpression partially rescues OPA1 deficiency.",
+    "readouts": [
+      "TMRM staining",
+      "Seahorse OCR assay",
+      "Tom20 immunofluorescence",
+      "flow cytometry for T cell proliferation",
+      "in vivo tumor growth assays",
+      "ATAC\u2011seq",
+      "RNA\u2011seq"
+    ],
+    "key_findings": [
+      "cDC1 cells display mitochondrial high and low populations across multiple tumor models (B16, lung, osteosarcoma, pancreatic).",
+      "Mitochondrial\u2011high cDC1 have higher oxidative phosphorylation, ATP production, and superior ability to prime CD8 T cells in vitro and in vivo.",
+      "Tumor progression shifts cDC1 toward the mitochondrial\u2011low, dysfunctional state, reducing T cell priming capacity.",
+      "Adoptive transfer of mitochondrial\u2011high cDC1 slows tumor growth and synergizes with anti\u2011PD\u2011L1, anti\u2011CTLA\u20114, and anti\u2011PD\u20111 therapies, leading to durable immunity upon rechallenge.",
+      "OPA1 is up\u2011regulated in tumor\u2011infiltrating cDC1; its conditional knockout impairs mitochondrial cristae, oxidative phosphorylation, and anti\u2011tumor immunity, leading to uncontrolled tumor growth in multiple models.",
+      "NRF1 expression is down\u2011regulated in OPA1\u2011deficient cDC1; NRF1 knockout phenocopies OPA1 loss, while NRF1 overexpression rescues mitochondrial function and T cell priming, dependent on intact electron transport chain."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u2011L1",
+        "rationale": "Checkpoint blockade may amplify T cell responses primed by metabolically fit cDC1",
+        "phenotype": "Complete tumor growth blockade in combination with mitochondrial\u2011high cDC1 adoptive transfer",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011CTLA\u20114",
+        "rationale": "Dual checkpoint inhibition enhances T cell activation alongside improved DC priming",
+        "phenotype": "Synergistic tumor control in mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream tumor microenvironment signals repress OPA1 expression in cDC1?",
+      "Can in vivo metabolic re\u2011programming of cDC1 (e.g., via micropinocytosis modulation) replace adoptive transfer?",
+      "Do other DC subsets (e.g., cDC2) exhibit similar mitochondrial heterogeneity and therapeutic potential?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mechanisms-of-immune-evasion-and-immune-dysregulation::nguyen::2",
+    "session_title": "mechanisms-of-immune-evasion-and-immune-dysregulation",
+    "talk_title": "BACH1 drives tumor\u2011intrinsic immune evasion in triple\u2011negative breast cancer",
+    "speaker": {
+      "name": "Long Nguyen",
+      "affiliation": "University of Chicago",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "triple-negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "transcription_factors",
+      "tumor_microenvironment",
+      "single_cell_RNAseq",
+      "spatial_biology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BACH1",
+        "alteration": "",
+        "pathway": "stress_response / metastasis",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TNBC cells under chronic hypoxia",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BACH1 activity signature (HRO genes)",
+        "type": "predictive",
+        "assay": "single\u2011cell RNA\u2011seq / bulk RNA\u2011seq",
+        "finding": "High BACH1 signature predicts non\u2011response to pembrolizumab + chemo and correlates with low TILs in I\u2011SPY and other TNBC cohorts"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse_model",
+        "name": "syngeneic TNBC transplant",
+        "genotype_or_key_features": "BACH1 knockout or overexpression"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "auto\u2011chthonous KRAS/NRAS\u2011induced lung/liver tumors",
+        "genotype_or_key_features": "BACH1 status manipulated"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "I\u2011SPY trial TNBC patients",
+        "genotype_or_key_features": "RNA\u2011seq with BACH1 HRO signature"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "response_rate",
+        "value": "significantly lower in high BACH1 tumors",
+        "confidence_interval": "",
+        "n": "n=?? (I\u2011SPY cohort)",
+        "population": "high\u2011risk TNBC patients receiving pembrolizumab + chemo",
+        "comparator": "low BACH1 signature tumors",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "TIL density",
+        "value": "inverse correlation with BACH1 activity",
+        "confidence_interval": "",
+        "n": "",
+        "population": "TNBC patient samples",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "BACH1 acts as a transcriptional repressor that silences type\u202fI interferon genes (e.g., IFI21) in TNBC cells; loss of BACH1 derepresses interferon signaling, increases CD8\u207a T\u2011cell infiltration and activation, reduces lung metastasis, and improves response to checkpoint blockade, whereas BACH1 overexpression promotes immune\u2011evasive, hypoxia\u2011driven cell states.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "spatial transcriptomics",
+      "flow cytometry (CD8, activation markers)",
+      "tumor growth curves",
+      "lung metastasis counts",
+      "cytokine ELISA",
+      "motif enrichment analysis"
+    ],
+    "key_findings": [
+      "A transition cell state (20\u201130% of tumor cells) links proliferative, invasive, and hypoxic clusters and predicts T\u2011cell exclusion in TNBC.",
+      "BACH1 is identified as a top regulator of this transition state; knockout reduces the transition population, overexpression expands it.",
+      "High BACH1 activity signature correlates with poor response to pembrolizumab\u202f+\u202fchemotherapy and low TILs in I\u2011SPY and other TNBC cohorts.",
+      "BACH1 knockout in mouse TNBC models increases CD8\u207a T\u2011cell infiltration, activation, and reduces lung metastasis; phenotype rescued by BACH1 re\u2011expression.",
+      "Mechanistically, BACH1 directly binds and represses IFI21 (type\u202fI IFN) locus; loss of BACH1 elevates type\u202fI IFN signaling, enhancing anti\u2011tumor immunity.",
+      "Combination of BACH1 loss with anti\u2011CTLA\u20114 yields superior tumor control compared with either alone, indicating synergy with checkpoint blockade."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Long\u2011term BACH1 knockout tumors eventually resume growth, suggesting compensatory pathways emerge.",
+      "BACH1\u2011deficient tumors show early T\u2011cell activation but later develop increased Treg/CTLA\u20114\u2011mediated resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011CTLA\u20114",
+        "rationale": "BACH1 loss increases T\u2011cell infiltration but may induce adaptive Treg/CTLA\u20114 resistance; blockade may sustain response",
+        "phenotype": "Enhanced tumor control in BACH1\u2011KO mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "heme supplementation (FDA\u2011approved heme analogs)",
+        "rationale": "BACH1 binds heme; pharmacologic heme may destabilize BACH1 and mimic knockout",
+        "phenotype": "Increased CD8\u207a T\u2011cell activation in early experiments",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Which additional stressors (e.g., low glucose, iron deprivation) modulate BACH1 activity in human TNBC?",
+      "Can pharmacologic BACH1 inhibitors be developed with acceptable toxicity given its developmental roles?",
+      "What are the downstream effectors of BACH1\u2011mediated immune evasion beyond type\u202fI IFN repression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mechanisms-of-immune-evasion-and-immune-dysregulation::wherry::3",
+    "session_title": "mechanisms-of-immune-evasion-and-immune-dysregulation",
+    "talk_title": "Temporal dynamics of PD\u20111 blockade reveal drug holidays and CD22 as a co\u2011inhibitory target",
+    "speaker": {
+      "name": "John Wherry",
+      "affiliation": "University of Pennsylvania",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "checkpoint_therapy",
+      "T_cell_exhaustion",
+      "basic_science",
+      "pharmacodynamics"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti\u2011PD\u20111 antibody (mouse)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "exhausted CD8 T cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD22",
+        "alteration": "",
+        "pathway": "negative_regulation_of_TCR_signaling",
+        "modality": "antibody",
+        "compound_name": "anti\u2011CD22 blocking antibody / PD\u20111\u00d7CD22 bispecific",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "progenitor exhausted T cells (Tpex)",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Ly108 (TCF\u20111) positive progenitor exhausted T cells",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "Preserved by drug holiday, depleted by continuous PD\u20111 blockade"
+      },
+      {
+        "name": "CD63\u207a CD45RA\u207b intermediate exhausted T cells",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "Higher frequencies after drug holiday or CD22 blockade"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse_model",
+        "name": "LCMV chronic infection",
+        "genotype_or_key_features": "PD\u20111 blockade short\u2011term vs long\u2011term vs drug holiday"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "AT3\u2011OVA flank tumor",
+        "genotype_or_key_features": "bispecific PD\u20111\u00d7CD22 vs monotherapies"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "T cell reinvigoration peak",
+        "value": "single peak after initial PD\u20111 blockade, similar magnitude after drug holiday re\u2011treatment",
+        "confidence_interval": "",
+        "n": "n\u224828 human patients (melanoma/NSCLC) observed",
+        "population": "patients receiving continuous anti\u2011PD\u20111 therapy",
+        "comparator": "baseline pre\u2011treatment",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "tumor control in AT3\u2011OVA model",
+        "value": "significant tumor growth delay with PD\u20111\u00d7CD22 bispecific vs anti\u2011PD\u20111 alone",
+        "confidence_interval": "",
+        "n": "n=?? mice per group",
+        "population": "flank AT3\u2011OVA tumors",
+        "comparator": "anti\u2011PD\u20111 monotherapy",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "Continuous PD\u20111 blockade chronically enhances TCR signaling in progenitor exhausted T cells, eroding their capacity to generate intermediate effector\u2011like exhausted cells and leading to functional decline. A drug holiday restores this capacity, allowing a second wave of reinvigoration. Long\u2011term PD\u20111 loss induces up\u2011regulation of CD22 on progenitor exhausted cells, providing an additional negative feedback; blocking CD22 (or using a PD\u20111\u00d7CD22 bispecific) restores intermediate exhausted cell expansion and improves viral control and tumor suppression.",
+    "readouts": [
+      "flow cytometry (Ly108, CD63, PD\u20111, CD22)",
+      "viral load quantification",
+      "tumor volume measurements",
+      "single\u2011cell RNA\u2011seq of Tpex cells",
+      "UMAP clustering",
+      "bispecific antibody binding assays"
+    ],
+    "key_findings": [
+      "Short\u2011term PD\u20111 blockade yields a transient T cell reinvigoration peak; continuous blockade does not improve long\u2011term outcomes compared with short\u2011term treatment.",
+      "A drug holiday (2\u2011week treatment, 2\u2011month washout, re\u2011treatment) produces a second robust reinvigoration, leading to better viral control in chronic LCMV infection.",
+      "Continuous PD\u20111 blockade depletes the intermediate exhausted T cell population (CD63\u207a) while preserving terminally exhausted cells.",
+      "Progenitor exhausted T cells exposed to long\u2011term PD\u20111 blockade up\u2011regulate CD22, a B\u2011cell inhibitory receptor that dampens TCR signaling.",
+      "Anti\u2011CD22 antibody or PD\u20111\u00d7CD22 bispecific restores intermediate exhausted cell expansion and improves disease control in both viral and tumor models.",
+      "Bispecific therapy outperforms either monotherapy in the AT3\u2011OVA tumor model, increasing T cell numbers, proliferation, and cytokine production."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Chronic PD\u20111 loss leads to adaptive resistance via CD22 up\u2011regulation on Tpex cells.",
+      "Long\u2011term PD\u20111 blockade skews differentiation toward terminal exhaustion, reducing therapeutic efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CD22 blockade (antibody or bispecific)",
+        "rationale": "Counteracts adaptive up\u2011regulation of CD22 after chronic PD\u20111 inhibition",
+        "phenotype": "Restores intermediate exhausted T cell pool and improves viral/tumor control",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "drug holiday schedule",
+        "rationale": "Allows progenitor exhausted cells to reset signaling equilibrium before re\u2011treatment",
+        "phenotype": "Second wave of T cell reinvigoration with improved functional outcomes",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal timing and duration of PD\u20111 drug holidays in patients?",
+      "How prevalent is CD22 expression on human progenitor exhausted T cells across cancer types?",
+      "Can CD22 ligands (sialic acids) be modulated to enhance the effect of CD22 blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

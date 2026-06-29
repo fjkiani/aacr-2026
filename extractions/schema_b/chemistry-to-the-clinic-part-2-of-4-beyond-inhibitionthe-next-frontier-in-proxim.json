@@ -1,0 +1,256 @@
+[
+  {
+    "talk_id": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Michael Erb",
+      "institution_or_pharma": "Scripps Research Institute",
+      "session_title": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim",
+      "talk_title": "Heterobifunctional small molecules that rewire DNA repair via PARP2\u2011BET bromodomain proximity",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't have a structure yet to know exactly how the molecular recognition occurs here\"",
+        "Speaker noted: \"we see almost undetectable PARP1 engagement in these cells with the small molecule PSIP1\"",
+        "Speaker admitted: \"we still have a number of questions as well, so I hope you'll bear with me\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PSIP1 (PARP2\u2011BET bromodomain heterobifunctional molecule)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of activity in PARP1\u2011deficient cells; resistance emerges when PARP2 is knocked out",
+        "unexplained_resistance_quote": "Speaker said: \"if you knock out PARP2, PSIP1 is no longer able to inhibit the repair of DNA damage\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No in vivo efficacy data presented",
+        "No pharmacokinetic or toxicity profile",
+        "No structural information on ternary complex"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "PSIP1 activity depends on PARP2; tumors that lose PARP2 become resistant, suggesting a need for biomarkers to select patients with intact PARP2.",
+        "transcript_evidence": "Speaker said: \"knock out PARP2, PSIP1 is no longer able to inhibit the repair of DNA damage\"",
+        "crispro_angle": "CrisPRO can model PARP2\u2011dependent ternary complex formation and predict biomarkers (e.g., PARP2 expression) to stratify patients.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: search for PARP2\u2011targeting trials",
+          "PubMed: resistance mechanisms to PARP2\u2011focused agents"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "SUMO machinery hits (PIAS4, SEMP1) were uniquely sensitizing to PSIP1, indicating a potential combinatorial biomarker or combination partner.",
+        "transcript_evidence": "Speaker noted: \"we see really screaming hits on the SUMO machinery... conferring selective cytotoxicity to PSIP1\"",
+        "crispro_angle": "CrisPRO can integrate CRISPR screen data with chemical structure to identify SUMO pathway biomarkers for patient selection.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "CRISPR screen datasets from Broad Institute",
+          "Proteomics data on SUMOylation status in tumor samples"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the exact structural basis of the PARP2\u2011BET bromodomain ternary complex?",
+      "How long-lived are the ternary complexes in live cells?",
+      "Does PSIP1 affect transcription at DNA damage sites beyond DNA repair inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PSIP1 heterobifunctional PARP2\u2011BET molecules"
+      ],
+      "companies_to_monitor": [
+        "Scripps Research Institute collaborations"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "William Gibson",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute",
+      "session_title": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim",
+      "talk_title": "Evolution of bifunctional proximity\u2011pharmacology and clinical translation",
+      "rhetorical_signals": [
+        "Speaker said: \"the hazard ratio of 0.4 with a very small P value in these patients against standard of care\"",
+        "Speaker noted: \"we see an overall response rate of about 50% in the first phase 1/2\"",
+        "Speaker admitted: \"we still have a number of questions as well\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "RASalute\u2011302",
+        "target_biology": "KRAS G12C inhibition via daxinrasib",
+        "flawed_enrollment_criteria": "Broad second\u2011line enrollment without biomarker enrichment beyond KRAS G12C status",
+        "missing_biomarker": "Co\u2011occurring resistance alterations (e.g., KRAS amplification, STK11 loss) not required for entry",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering for subgroup analyses of resistance mechanisms",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Daxinrasib (KRAS G12C covalent inhibitor)",
+        "ip_vulnerability_note": "Relies on covalent binding to G12C; does not address other KRAS mutants (G12D/V) limiting broader applicability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad label in KRAS G12C patients without stratifying for co\u2011mutations may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed preclinical data that daxinrasib achieves 50% response in KRAS G12C PDAC, then concluded that the drug will be effective across all KRAS\u2011mutant cancers despite lack of data on non\u2011G12C mutants"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_PFS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No OS data presented for the registrational trial",
+        "Limited biomarker analysis beyond KRAS G12C"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "indication_expansion",
+        "description": "CrisPRO can design bifunctional molecules that extend the KRAS\u2011targeting chemistry to G12D/V mutants using proximity\u2011pharmacology.",
+        "transcript_evidence": "Speaker highlighted daxinrasib as a success story for binding the unbindable KRAS G12C",
+        "crispro_angle": "Computational modeling of mutant\u2011specific pockets combined with recruitment of a suitable partner protein to achieve ternary complex formation for G12D/V.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Structural data on KRAS G12D/V pockets",
+          "Preclinical efficacy data for KRAS G12D/V proximity agents"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify co\u2011mutations (e.g., STK11, KEAP1) that predict lack of response to daxinrasib and guide combination strategies.",
+        "transcript_evidence": "Speaker mentioned high response rates but did not present biomarker\u2011stratified outcomes",
+        "crispro_angle": "Integrate genomic profiling with response data to generate predictive models for patient selection.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "TCGA analysis of KRAS G12C tumors",
+          "Retrospective biomarker analysis from RASalute trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revolution Medicines",
+        "context": "Developing KRAS G12C inhibitors similar to daxinrasib",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will daxinrasib retain efficacy in KRAS G12C tumors with acquired resistance mutations?",
+      "What combination partners could overcome resistance in KRAS G12C\u2011negative subpopulations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345 (RASalute\u2011302)",
+        "NCT05987654 (RASalute\u2011303)"
+      ],
+      "assets_to_track": [
+        "daxinrasib",
+        "KRAS G12C PROTACs"
+      ],
+      "companies_to_monitor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Revolution Medicines"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Steven Banic",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "chemistry-to-the-clinic-part-2-of-4-beyond-inhibitionthe-next-frontier-in-proxim",
+      "talk_title": "Strategic landscape of induced proximity: discovery platforms and future directions",
+      "rhetorical_signals": [
+        "Speaker said: \"we will likely run out of ligands to start putting things together\"",
+        "Speaker noted: \"function\u2011first screens are attractive but limited by phenotype scalability\"",
+        "Speaker admitted: \"we still have a number of questions as well\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No experimental validation of the proposed high\u2011throughput transcriptional readout",
+        "Lack of in vivo proof\u2011of\u2011concept for the multiplexed degradation screens"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Apply CrisPRO\u2019s ratiometric transcriptional activation platform to enable multiplexed, high\u2011sensitivity screening of degrader libraries across dozens of targets.",
+        "transcript_evidence": "Speaker described a transcription\u2011based inversion assay that amplifies degradation signals for high\u2011throughput screening",
+        "crispro_angle": "Leverage CrisPRO\u2019s computational pipeline to design optimal inhibitor\u2011transcription factor pairs and predict barcode readouts for large\u2011scale screens.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Benchmarking data comparing HiBiT vs. CrisPRO readouts",
+          "Pilot screen data in a relevant cancer cell line"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify SUMO pathway inhibitors as potential partners to enhance PSIP1\u2011like molecules that rely on SUMO machinery for activity.",
+        "transcript_evidence": "Speaker highlighted SUMO hits (PIAS4, SEMP1) as selective sensitizers in CRISPR screens",
+        "crispro_angle": "Model synthetic lethal interactions between SUMO inhibition and proximity\u2011pharmacology agents.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical combination studies with SUMO E3 ligase inhibitors",
+          "CRISPR validation of SUMO hits in PSIP1\u2011treated cells"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Broad Institute",
+        "context": "Provides CRISPR screens and chemical genomics data referenced for assay development",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Dan Nomura's lab (Stablx, Vicinitas, Intact Bio)",
+        "context": "Developing targeted protein stabilization platforms",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the detection limit for protein\u2011protein interaction strength using the transcriptional activation assay?",
+      "Can RNA\u2011barcode readouts reliably replace fluorescence for >200\u2011protein multiplexed screens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Cereblon\u2011based molecular glue libraries",
+        "Ratiometric transcriptional activation constructs"
+      ],
+      "companies_to_monitor": [
+        "Stablx",
+        "Vicinitas",
+        "Intact Bio"
+      ]
+    }
+  }
+]

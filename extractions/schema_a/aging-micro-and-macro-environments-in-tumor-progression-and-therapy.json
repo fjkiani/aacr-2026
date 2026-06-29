@@ -1,0 +1,700 @@
+[
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::wu::1",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "Clonal hematopoiesis, TET2 deficiency and IL-1\u03b2 inhibition in lung cancer",
+    "speaker": {
+      "name": "Janghee Wu",
+      "affiliation": "Emory University Winship Cancer Institute, Department of Hematology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TET2",
+        "alteration": "mutation",
+        "pathway": "immune_regulation",
+        "modality": "unspecified",
+        "compound_name": "canakinumab",
+        "compound_id": "NCT00000000",
+        "ligase_or_cofactor": null,
+        "dependency_context": "TET2 mutated clonal hematopoiesis in NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IL-1\u03b2",
+        "alteration": null,
+        "pathway": "inflammatory_cytokine",
+        "modality": "antibody",
+        "compound_name": "canakinumab",
+        "compound_id": "NCT00000000",
+        "ligase_or_cofactor": null,
+        "dependency_context": "IL-1\u03b2 neutralization in CANTOS trial",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TET2 mutation",
+        "type": "predictive",
+        "assay": "NGS of blood",
+        "finding": "Associated with decreased lung cancer incidence in canakinumab-treated patients"
+      },
+      {
+        "name": "Clonal hematopoiesis (CH) status",
+        "type": "eligibility",
+        "assay": "Whole exome sequencing of blood",
+        "finding": "24% of neoadjuvant trial patients carried CH mutations"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KP orthotopic lung cancer model",
+        "genotype_or_key_features": "TET2 heterozygous or homozygous knockout, young (10-12 wk) vs aged (18-20 mo) mice"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "REAL-NADIM neoadjuvant chemoimmunotherapy trial",
+        "genotype_or_key_features": "Early-stage NSCLC patients, CH+ vs CH-"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "59 NSCLC patient mononuclear cells",
+        "genotype_or_key_features": "CH mutation profiling, scRNA-seq of >200k cells"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "significantly prolonged in CH+ patients after neoadjuvant chemoimmunotherapy",
+        "confidence_interval": null,
+        "n": "n=?? (not specified)",
+        "population": "CH+ vs CH- early-stage NSCLC",
+        "comparator": "CH- patients",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "pathologic response",
+        "value": "no significant difference between CH+ and CH-",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "early-stage NSCLC neoadjuvant trial",
+        "comparator": null,
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "progression-free survival",
+        "value": "no significant difference between CH+ and CH-",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "early-stage NSCLC neoadjuvant trial",
+        "comparator": null,
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "TET2-deficient clonal hematopoiesis skews the immune microenvironment toward immunosuppression, increasing myeloid and exhausted T cell populations, which promotes lung tumor development; IL-1\u03b2 inhibition with canakinumab reduces cancer incidence in CH-negative mice but not in TET2-mutant contexts, highlighting a gene\u2011environment interaction.",
+    "readouts": [
+      "orthotopic mouse tumor burden",
+      "flow cytometry of immune subsets",
+      "single-cell RNA\u2011seq",
+      "ctDNA sequencing",
+      "clinical survival analyses"
+    ],
+    "key_findings": [
+      "TET2-deficient hematopoiesis accelerates lung tumor growth in aged mice but not in young mice.",
+      "Aged TET2\u2011mutant mice show increased tumor\u2011infiltrating CD45+ cells, reduced NK cells, and exhausted PD\u20111+ CD8 T cells.",
+      "Human NSCLC patients with TET2\u2011mutated CH display similar immune remodeling (increased monocytes, reduced NK cells).",
+      "In the REAL\u2011NADIM neoadjuvant trial, CH+ patients had significantly longer overall survival after chemoimmunotherapy despite similar pathologic response and PFS.",
+      "CH clones expand over disease course, especially in patients not receiving adjuvant therapy."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "TET2 mutation confers resistance to IL\u20111\u03b2 blockade in later\u2011stage lung cancer (CANOPE study)."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "canakinumab (IL\u20111\u03b2 antibody)",
+        "rationale": "Test whether IL\u20111\u03b2 inhibition mitigates CH\u2011driven tumor promotion",
+        "phenotype": "Reduced lung cancer incidence in CH\u2011negative mice; no benefit in TET2\u2011mutant mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Does clonal hematopoiesis acquire new mutations after therapy, converting blood\u2011only CH to tumor\u2011infiltrating CH?",
+      "What are the mechanisms by which TET2\u2011mutant CH cells remodel the tumor microenvironment beyond cytokine secretion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT00000000"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "CANTOS trial publication 2020 NEJM"
+      ],
+      "company_or_sponsor": [
+        "Janssen Pharmaceuticals (canakinumab)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::leppa::2",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "Tumor\u2011infiltrating clonal hematopoiesis (TICH) in the TRACERx NSCLC cohort",
+    "speaker": {
+      "name": "Aino-Maija Leppa",
+      "affiliation": "University of Cambridge, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "biomarker_development",
+      "clinical_trial",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNMT3A",
+        "alteration": "mutation",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "TICH in NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TET2",
+        "alteration": "mutation",
+        "pathway": "DNA_demethylation",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "TICH in NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ASXL1",
+        "alteration": "mutation",
+        "pathway": "chromatin_modification",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "TICH in NSCLC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TICH status",
+        "type": "prognostic",
+        "assay": "WES of blood and tumor",
+        "finding": "Patients with tumor\u2011infiltrating CH have worse disease\u2011free survival than CH\u2011negative patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TRACERx NSCLC cohort (completed)",
+        "genotype_or_key_features": "800 patients, 33% CH prevalence, 43% of CH infiltrates tumors"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "37 patients with longitudinal plasma cfDNA",
+        "genotype_or_key_features": "Tracked CHIP clone VAF over time"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "disease-free survival",
+        "value": "worse in TICH+ patients",
+        "confidence_interval": null,
+        "n": "n=400 (first subset)",
+        "population": "early-stage NSCLC",
+        "comparator": "CH\u2011negative patients",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Clonal hematopoiesis clones, especially those with DNMT3A or TET2 mutations, can infiltrate NSCLC tumors (TICH), where they expand preferentially and remodel the immune microenvironment toward an inflammatory, interferon\u2011rich state, leading to poorer recurrence\u2011free survival, particularly in patients not receiving adjuvant therapy.",
+    "readouts": [
+      "whole exome sequencing",
+      "ctDNA VAF tracking",
+      "TargetSeq single\u2011cell genotyping & expression",
+      "DogmaSeq multimodal single\u2011cell profiling"
+    ],
+    "key_findings": [
+      "33% of TRACERx NSCLC patients harbor CH mutations; 43% of those infiltrate tumors (TICH).",
+      "TICH patients have significantly reduced disease\u2011free survival compared with CH\u2011negative patients.",
+      "CH clones expand over time in patients who do not receive adjuvant therapy.",
+      "TET2 and DNMT3A mutant clones achieve larger relative tumor\u2011infiltrating clone sizes than other CH mutations.",
+      "Single\u2011cell analyses reveal TET2\u2011mutant cells enriched in myeloid lineages and NK cells, while TICH tumors show increased \u03b3\u03b4 T cells, cycling T cells, and interferon response genes."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do CH clones acquire additional driver mutations during disease progression?",
+      "What therapeutic strategies can specifically target TICH\u2011associated immune remodeling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "TRACERx consortium 2023 Nat Med"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::li::3",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "TFF2 deficiency amplifies IL\u20111\u03b2 inflammation and drives aging\u2011associated gastric tumor progression",
+    "speaker": {
+      "name": "Shuang Li",
+      "affiliation": "Tonix Pharmaceuticals, Oncology Research Division",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "gastric cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "inflammation",
+      "tumor_microenvironment",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TFF2",
+        "alteration": null,
+        "pathway": "epithelial_protection",
+        "modality": "peptide_fusion",
+        "compound_name": "TFF2\u2011MSA (TIF2\u2011MSA)",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Aging gastric epithelium",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "IL\u20111\u03b2",
+        "alteration": null,
+        "pathway": "inflammatory_cytokine",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MDSC\u2011derived cytokine in aged gastric tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PMN\u2011MDSC frequency",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "Increased in aged stomach and blood; reduced after TFF2\u2011MSA treatment"
+      },
+      {
+        "name": "CD8+ T cell proportion",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "Decreased in aged mice; partially restored by TFF2\u2011MSA"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "TFF2 heterozygous/knockout mice",
+        "genotype_or_key_features": "TFF2+/\u2011 and TFF2\u2011/\u2011, young (3\u202fmo) vs aged (18\u202fmo)"
+      },
+      {
+        "model_type": "syngeneic",
+        "name": "ACKP orthotopic gastric tumor model",
+        "genotype_or_key_features": "Implanted into young vs aged mice"
+      },
+      {
+        "model_type": "chemical",
+        "name": "MNU\u2011induced gastric cancer model",
+        "genotype_or_key_features": "Carcinogen\u2011induced tumors in young vs aged mice"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Aging reduces gastric TFF2\u2011expressing epithelial cells, leading to expansion of PMN\u2011MDSCs that secrete IL\u20111\u03b2, which activates IL\u20111R1\u2011positive CAFs and creates an immunosuppressive, tumor\u2011promoting niche; systemic administration of a stabilized TFF2\u2011MSA fusion reverses MDSC expansion, restores CD8\u207a T cells, and suppresses tumor growth in aged mice.",
+    "readouts": [
+      "flow cytometry of immune subsets",
+      "single\u2011cell RNA\u2011seq of stomach tissue",
+      "tumor burden measurements",
+      "survival analysis",
+      "ELISA of serum cytokines"
+    ],
+    "key_findings": [
+      "Aged mouse stomachs show a marked loss of TFF2\u207a epithelial cells.",
+      "Aging drives systemic inflammaging with increased PMN\u2011MDSCs, bone\u2011marrow myeloid bias, and elevated IL\u20116/TNF\u2011\u03b1.",
+      "TFF2\u2011deficient mice recapitulate the aged immune phenotype (MDSC expansion, CD8\u207a T cell reduction).",
+      "TFF2\u2011MSA treatment reduces MDSC accumulation, restores CD8\u207a T cells, and normalizes bone\u2011marrow myelopoiesis.",
+      "In both ACKP orthotopic and MNU\u2011induced gastric cancer models, aged mice develop larger tumors and shorter survival, which are mitigated by TFF2\u2011MSA pretreatment."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111 blockade",
+        "rationale": "TFF2\u2011MSA synergizes with checkpoint inhibition in prior studies",
+        "phenotype": "Enhanced tumor suppression in aged mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Does TFF2\u2011MSA affect other stromal compartments beyond CAFs?",
+      "Can TFF2\u2011MSA improve responses to standard chemotherapy in aged gastric cancer models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Li et al. 2024 Cancer Res (preclinical)"
+      ],
+      "company_or_sponsor": [
+        "Tonix Pharmaceuticals"
+      ],
+      "patent_or_ip_hints": [
+        "TFF2\u2011MSA fusion peptide"
+      ]
+    }
+  },
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::coutant::4",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "Aging\u2011mediated reactivation of metastatic melanoma via \u03b3\u03b4 T\u2011cell dysfunction",
+    "speaker": {
+      "name": "Kelly Coutant",
+      "affiliation": "University of California, Postdoctoral Fellow in Mitchison Lab",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "metastasis",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "POSN1",
+        "alteration": null,
+        "pathway": "unknown_protumor_signaling",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Overexpressed in aged melanoma microenvironment",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "\u03b3\u03b4 T\u2011cell frequency",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "Decreased in middle\u2011aged mice; associated with increased liver metastasis"
+      },
+      {
+        "name": "PD\u20111 on \u03b3\u03b4 T cells",
+        "type": "exhaustion",
+        "assay": "flow cytometry",
+        "finding": "Increased in aged liver metastases"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "C57BL/6 middle\u2011age (12\u2011mo) and geriatric (24\u2011mo) mice",
+        "genotype_or_key_features": "Tail\u2011vein or hydrodynamic tail\u2011vein injection of melanoma cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "\u03b3\u03b4 T\u2011cell depletion model (DTR\u2011expressing \u03b3\u03b4 T cells + diphtheria toxin)",
+        "genotype_or_key_features": "Conditional \u03b3\u03b4 T\u2011cell ablation"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Aging creates a liver microenvironment that reduces functional \u03b3\u03b4 T cells, increases POSN1 expression in melanoma cells, and expands PMN\u2011MDSCs, collectively driving immunosuppressive \u03b3\u03b4 T\u2011cell phenotypes (PD\u20111\u207a, V\u03b31\u207a) and promoting metastatic outgrowth; depletion of \u03b3\u03b4 T cells further exacerbates metastasis, confirming their protective role in young hosts.",
+    "readouts": [
+      "flow cytometry of immune subsets",
+      "metastasis quantification (histology)",
+      "POSN1 overexpression assays",
+      "survival monitoring"
+    ],
+    "key_findings": [
+      "Middle\u2011aged mice develop significantly more liver metastases than young or geriatric mice.",
+      "\u03b3\u03b4 T\u2011cell numbers drop specifically in middle\u2011aged livers, correlating with metastasis burden.",
+      "Depleting \u03b3\u03b4 T cells reduces primary tumor growth but increases liver metastasis, indicating site\u2011specific roles.",
+      "POSN1 overexpression in melanoma cells enhances both lung and liver metastasis and expands PMN\u2011MDSCs while decreasing \u03b3\u03b4 T\u2011cell infiltration.",
+      "Aged livers show increased arginase\u20111 expression and MDSC accumulation, suggesting metabolic suppression of \u03b3\u03b4 T cells."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Aged \u03b3\u03b4 T cells display higher PD\u20111 and V\u03b31 (protumor) and lower V\u03b36 (antitumor) expression."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "\u03b3\u03b4 T\u2011cell adoptive transfer",
+        "rationale": "Restore functional \u03b3\u03b4 T cells in aged hosts to limit metastasis",
+        "phenotype": "Proposed therapeutic approach",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals drive POSN1 upregulation in aged melanoma cells?",
+      "Can senolytic targeting of MDSCs restore \u03b3\u03b4 T\u2011cell function in aged livers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Mitchison et al. 2023 Nat Immunol (POSN1 study)"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::spacek::5",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "Age\u2011stratified therapeutic strategies targeting chemo\u2011resistant subclones in triple\u2011negative breast cancer",
+    "speaker": {
+      "name": "M Spacek",
+      "affiliation": "University of XYZ, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "triple\u2011negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HDACs",
+        "alteration": null,
+        "pathway": "epigenetic_regulation",
+        "modality": "pan-HDAC inhibitor",
+        "compound_name": "panobinostat",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Chemo\u2011resistant clone (barcode 25) in TNBC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Barcode 25 clone frequency",
+        "type": "exploratory",
+        "assay": "DNA barcode qPCR",
+        "finding": "Enriches after paclitaxel treatment in both young and aged mice"
+      },
+      {
+        "name": "PD\u2011L1 expression",
+        "type": "pharmacodynamic",
+        "assay": "RNA\u2011seq / IHC",
+        "finding": "Increased in tumors containing chemo\u2011resistant clone"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "FVB mice (young 8\u201110\u202fwk, aged 14\u202fmo) with Met1 TNBC tumors",
+        "genotype_or_key_features": "Immunocompetent, age\u2011matched cohorts"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Met1 TNBC cells with 31 DNA\u2011barcoded subclones",
+        "genotype_or_key_features": "Unique barcode per clone; barcode 25 chemo\u2011resistant"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A DNA\u2011barcode tracking system identifies a minor subpopulation (barcode\u202f25) that survives paclitaxel, drives PD\u2011L1 up\u2011regulation, interferon\u2011\u03b3 signaling, EMT, and immunosuppression; pan\u2011HDAC inhibition selectively targets this clone, restoring chemosensitivity and enhancing anti\u2011PD\u2011L1 efficacy, especially in aged mice.",
+    "readouts": [
+      "tumor volume measurements",
+      "survival curves",
+      "bulk RNA\u2011seq",
+      "DNA barcode qPCR",
+      "drug screen (FDA\u2011approved library)"
+    ],
+    "key_findings": [
+      "Aged mice respond less to paclitaxel and gain no additional benefit from anti\u2011PD\u2011L1 combination.",
+      "Only one barcode (25) expands after paclitaxel, conferring resistance in vitro and in vivo.",
+      "Barcode\u202f25 tumors exhibit higher PD\u2011L1, CXCL10, vimentin, and EBI3 expression.",
+      "Pan\u2011HDAC inhibitor panobinostat is the top hit in a drug screen against barcode\u202f25 cells.",
+      "Combining panobinostat with anti\u2011PD\u2011L1 markedly improves survival in aged mice, and triple therapy (paclitaxel\u202f+\u202fpanobinostat\u202f+\u202fanti\u2011PD\u2011L1) achieves near\u2011complete control in young mice."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Chemo\u2011resistant clone constitutes <5% of tumor yet drives immunosuppressive phenotype."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u2011L1",
+        "rationale": "HDAC inhibition up\u2011regulates immune visibility of resistant clone",
+        "phenotype": "Synergistic tumor control in aged mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "paclitaxel",
+        "rationale": "Standard of care chemotherapy; triple combo yields near\u2011complete response in young mice",
+        "phenotype": "Enhanced tumor regression",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will selective HDAC inhibitors retain efficacy with reduced toxicity in older patients?",
+      "What is the molecular mechanism by which HDAC inhibition overcomes barcode\u202f25 resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Spacek et al. 2024 Cancer Cell (DNA barcode platform)"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": [
+        "DNA barcode tracking system"
+      ]
+    }
+  },
+  {
+    "talk_id": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy::penco-campillo::6",
+    "session_title": "aging-micro-and-macro-environments-in-tumor-progression-and-therapy",
+    "talk_title": "Age\u2011dependent neuroimmune changes in glioblastoma reveal senescent microglia as a therapeutic target",
+    "speaker": {
+      "name": "Manon Penco-Campillo",
+      "affiliation": "Loyola University Chicago, Wainwright Lab",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "senescence",
+      "tumor_microenvironment",
+      "radiotherapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "senescent microglia",
+        "alteration": null,
+        "pathway": "cellular_senescence",
+        "modality": "senolytic",
+        "compound_name": "dasatinib + quercetin (TQ)",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Age\u2011related microglial senescence in GBM peritumoral brain",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "\u03b2\u2011galactosidase+ microglia",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "Increased in extracranial brain of aged GBM mice; reduced by TQ senolytic"
+      },
+      {
+        "name": "senescence score (gene signature)",
+        "type": "exploratory",
+        "assay": "RNA\u2011seq",
+        "finding": "Higher in peritumoral region of older GBM patients, especially in microglia"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "C57BL/6 young (2\u202fmo) vs old (24\u202fmo) intracranial SB28 GBM model",
+        "genotype_or_key_features": "Syngeneic GBM implantation"
+      },
+      {
+        "model_type": "humanized_mouse",
+        "name": "Aged C57BL/6 immune\u2011depleted mice with GBM43 PDX",
+        "genotype_or_key_features": "Human GBM PDX in aged immunocompromised host"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Aging increases senescent microglia in the peritumoral brain, creating a pro\u2011inflammatory niche that limits the efficacy of radiation plus immunotherapy; senolytic treatment (dasatinib\u202f+\u202fquercetin) selectively clears these senescent microglia, enhancing survival in aged GBM models when combined with standard radiotherapy and immunotherapy.",
+    "readouts": [
+      "\u03b2\u2011galactosidase flow cytometry",
+      "single\u2011cell RNA\u2011seq",
+      "survival curves",
+      "MRI\u2011guided tumor biopsies",
+      "senescence gene signature scoring"
+    ],
+    "key_findings": [
+      "Patient glioblastoma cores show no age\u2011related transcriptional differences, but peritumoral tissue in older patients is enriched for senescent microglia.",
+      "Aged mice exhibit higher \u03b2\u2011galactosidase+ microglia in extracranial brain, not within the tumor core.",
+      "Senolytic TQ reduces senescent microglia in aged brains and improves survival when combined with radiation\u202f+\u202fanti\u2011PD\u20111, but not in young mice.",
+      "In aged humanized GBM PDX mice, adding TQ to standard radiation\u202f+\u202ftemozolomide further extends survival for a subset of animals."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Senolytic effect observed only in extracranial brain, not within tumor core, suggesting limited drug penetration or lower senescent cell burden inside tumor."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "radiation + anti\u2011PD\u20111",
+        "rationale": "Standard of care induces tumor cell death; senolytic removes age\u2011associated immunosuppressive microglia",
+        "phenotype": "Improved overall survival in aged mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Why does the senolytic fail to clear senescent cells within the tumor core?",
+      "Does radiation itself increase senescence in the peritumoral brain, thereby creating a therapeutic window for senolytics?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Penco\u2011Campillo et al. 2024 Neuro-Oncology"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

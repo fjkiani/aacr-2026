@@ -1,0 +1,308 @@
+[
+  {
+    "talk_id": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Christine Brown",
+      "institution_or_pharma": "City of Hope",
+      "session_title": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous",
+      "talk_title": "Autologous Cell Therapy Landscape and Manufacturing Innovations",
+      "rhetorical_signals": [
+        "Speaker said: \"These are very labor-intensive and costly products. This one batch per patient limits scalability and access\"",
+        "Speaker said: \"We see a transition in many of these clinical trials... moving the manufacturing not from two weeks, but one to five days\"",
+        "Speaker said: \"When manufacturing is automated, it doesn't matter if you're working at night or the weekend\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Autologous CAR T manufacturing process",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Ex vivo culture induces T-cell differentiation and exhaustion, reducing fitness especially in heavily pre\u2011treated patients",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that prior lymphodepletion \"can be a limitation for more fragile or older patients\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Current autologous manufacturing platforms (e.g., Miltenyi Prodigy, Lonza Cocoon)",
+        "ip_vulnerability_note": "Speaker highlighted reliance on centralized facilities and batch\u2011per\u2011patient model, which limits scalability",
+        "scale_or_manufacturing_bottleneck": "Manufacturing capacity limited to 55\u201185 patient products per year at City of Hope",
+        "clinical_strategy_weakness": "Broad, non\u2011biomarker\u2011selected enrollment dilutes signal and raises cost"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that rapid 1\u20113 day manufacturing improves potency, yet concluded that \"autologous T\u2011cell therapy remains the most clinically validated platform\" without addressing the potency trade\u2011off"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No comparative efficacy data versus allogeneic or in vivo approaches",
+        "No overall survival or long\u2011term durability metrics presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of molecular selection for patients with high\u2011quality T cells; CrisPRO could identify pre\u2011leukapheresis biomarkers predicting product fitness",
+        "transcript_evidence": "Speaker said: \"the T cells that you isolate from the patient can have variable quality, particularly for heavily pre\u2011treated patients\"",
+        "crispro_angle": "Use computational modeling of patient immune profiles to predict autologous product potency and guide enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Current autologous trials lack adaptive dosing based on early expansion kinetics; CrisPRO could simulate optimal manufacturing timelines",
+        "transcript_evidence": "Speaker said: \"we've tested over 12 CAR T cell platforms for manufacturing processes\"",
+        "crispro_angle": "Apply predictive analytics to match manufacturing speed with disease burden, reducing time to infusion",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Kite",
+        "context": "Mentioned as developer of axicabtagene ciloleucel, a benchmark autologous product",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Adaptimmune",
+        "context": "Cited for TCR product targeting Mesothelin\u2011CG4 for sarcoma",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Iovance",
+        "context": "Cited for TIL product for melanoma",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How will rapid manufacturing impact long\u2011term persistence and relapse rates?",
+      "Can decentralized point\u2011of\u2011care manufacturing maintain consistent product quality?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Fast T\u2011CAR",
+        "Nex\u2011T",
+        "T\u2011Charge",
+        "DASH"
+      ],
+      "companies_to_monitor": [
+        "Solaris",
+        "Miltenyi",
+        "Lonza"
+      ]
+    }
+  },
+  {
+    "talk_id": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Zachary Roberts",
+      "institution_or_pharma": "Allogene",
+      "session_title": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous",
+      "talk_title": "Allogeneic CAR T\u2011Cell Therapy: Clinical Data and Next\u2011Generation Design",
+      "rhetorical_signals": [
+        "Speaker said: \"We have not seen a case of confirmed GVHD\"",
+        "Speaker said: \"Patients with the highest exposure to alo\u2011647 had the best CAR T\u2011cell expansion and persistence\"",
+        "Speaker said: \"In the MRD\u2011positive arm, 60% of patients became MRD\u2011negative versus 16.7% in the observation arm\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Allogeneic CAR T persistence",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Host immune rejection of donor CAR T cells despite CD52 knockout; reliance on deep lymphodepletion",
+        "unexplained_resistance_quote": "Speaker noted limited expansion in the first infant case without explaining underlying host\u2011vs\u2011graft mechanisms",
+        "ghost_responder_admission": "Speaker highlighted that 67% overall response rate was \"comparable\" to autologous, implying some non\u2011responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ALPHA III",
+        "target_biology": "Consolidation allogeneic CAR T in MRD\u2011positive LBCL after frontline therapy",
+        "flawed_enrollment_criteria": "Enrolling MRD\u2011positive patients regardless of residual disease burden may dilute signal if tumor burden is too low for robust expansion",
+        "missing_biomarker": "Baseline ctDNA quantitative threshold to stratify patients with ultra\u2011low disease burden",
+        "static_vs_dynamic_failure": "No serial CAR T expansion monitoring reported",
+        "statistical_concern": "Primary endpoint EFS may be underpowered with 220 patients given low event rate in MRD setting",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CD52 knockout + FC lymphodepletion platform (celma\u2011cel)",
+        "ip_vulnerability_note": "Efficacy hinges on achieving sufficient CD52 monoclonal exposure; variability in patient pharmacokinetics could limit consistency",
+        "scale_or_manufacturing_bottleneck": "Manufacturing 30,000\u201160,000 doses per year may be challenged by cell dose variability (120\u202fM vs 30\u202fM)",
+        "clinical_strategy_weakness": "Reliance on deep lymphodepletion (FC regimen) may limit use in community settings with comorbid patients"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed modest CAR expansion in low\u2011burden MRD patients yet concluded that \"no CRS or ICANS were observed, enabling fully outpatient dosing\" without addressing potential under\u2011activation risk"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term overall survival not reported",
+        "No head\u2011to\u2011head comparison with autologous CAR T",
+        "Limited data on durability beyond 9\u202fmonths"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Host\u2011vs\u2011graft rejection driven by residual TCR expression; CrisPRO could model optimal CD52 exposure and predict patients needing intensified lymphodepletion",
+        "transcript_evidence": "Speaker said: \"patients with the highest exposure to alo\u2011647 had the best CAR T\u2011cell expansion and persistence\"",
+        "crispro_angle": "Integrate PK/PD modeling to personalize FC regimen and CD52 antibody dosing",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of a quantitative ctDNA threshold to select MRD\u2011positive patients most likely to benefit",
+        "transcript_evidence": "Speaker noted a 200\u2011fold lower disease burden in MRD\u2011positive patients but did not define a cutoff for trial entry",
+        "crispro_angle": "Apply machine\u2011learning on ctDNA kinetics to define enrollment thresholds",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Allogeneic CAR T shows comparable ORR with no GVHD; CrisPRO can highlight safety advantage over autologous products",
+        "transcript_evidence": "Speaker said: \"We have not seen a case of confirmed GVHD\"",
+        "crispro_angle": "Quantify safety\u2011efficacy trade\u2011offs across platforms for payer messaging",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Kite",
+        "context": "Referenced for axicabtagene ciloleucel expansion benchmarks",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Caribou",
+        "context": "Discussed their CB\u2011011 product with beta\u20112 microglobulin knockout and HLA\u2011E transgene",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "MD Anderson (Rezvani)",
+        "context": "Mentioned NK cell work as an alternative allogeneic platform",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal CD52 monoclonal exposure window for maximal CAR T persistence?",
+      "Can the CD70 dagger technology be generalized across other tumor antigens without excessive toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT05312345"
+      ],
+      "assets_to_track": [
+        "celma\u2011cel",
+        "ALO329",
+        "CB\u2011011"
+      ],
+      "companies_to_monitor": [
+        "Allogene",
+        "Caribou",
+        "Foresight Diagnostics"
+      ]
+    }
+  },
+  {
+    "talk_id": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Alberto Diaco",
+      "institution_or_pharma": "Tessera Therapeutics",
+      "session_title": "cell-therapy-at-a-crossroads-exploring-the-evolving-landscape-between-autologous",
+      "talk_title": "In Vivo CAR T Engineering and GeneWriter Platform",
+      "rhetorical_signals": [
+        "Speaker said: \"We need a good specificity of the vector for your T cells\"",
+        "Speaker said: \"GeneWriter integration pattern resembles a random distribution, not gene\u2011biased like lentiviral vectors\"",
+        "Speaker said: \"We achieved around 25%\u201130% CAR\u2011positive T cells at peak of expansion around day 13, coinciding with complete tumor elimination in mouse model\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "GeneWriter random integration",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential insertion into essential genes leading to clonal outgrowth or oncogenic events",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker acknowledged risk of integration into important genes but argued lower bias than lentivirus",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GeneWriter LNP delivery system",
+        "ip_vulnerability_note": "Efficacy depends on achieving sufficient T\u2011cell tropism; transcript noted challenges of off\u2011target delivery to non\u2011T cells",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited data on durability for solid\u2011tumor indications; transient mRNA approach may require repeat dosing"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated robust in vivo expansion with the CD70 dagger (high Cmax) yet concluded that \"the magnitude of the allo response serves as fuel\" without addressing risk of excessive cytokine release"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human clinical data for GeneWriter platform",
+        "Durability of CAR expression beyond murine models not shown",
+        "Safety profile of random integration in patients remains unknown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "GeneWriter offers non\u2011viral, random integration with lower bias than lentivirus, potentially reducing insertional oncogenesis risk",
+        "transcript_evidence": "Speaker said: \"GeneWriter integration pattern resembles a random distribution, not gene\u2011biased like lentiviral vectors\"",
+        "crispro_angle": "Leverage CrisPRO's predictive modeling of integration site risk to further de\u2011risk GeneWriter designs",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair GeneWriter delivery with CD70 dagger technology to enhance expansion without deep lymphodepletion",
+        "transcript_evidence": "Speaker discussed CD70 dagger reducing need for lymphodepletion and GeneWriter providing durable integration",
+        "crispro_angle": "Model synergistic effects of dual engineering on expansion and safety",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Lentiviral vectors",
+        "context": "Compared against GeneWriter for integration bias",
+        "sentiment": "critical"
+      },
+      {
+        "name": "mRNA LNP vaccines",
+        "context": "Mentioned as contrast for systemic inflammatory response concerns",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the maximum transgene payload size that GeneWriter can reliably deliver in vivo?",
+      "Can GeneWriter achieve selective targeting of specific T\u2011cell subsets (e.g., stem\u2011cell memory) in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GeneWriter platform",
+        "CD70 dagger CAR"
+      ],
+      "companies_to_monitor": [
+        "Tessera Therapeutics"
+      ]
+    }
+  }
+]

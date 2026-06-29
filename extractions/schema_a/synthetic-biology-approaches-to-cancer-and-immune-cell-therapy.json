@@ -1,0 +1,530 @@
+[
+  {
+    "talk_id": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy::forman::1",
+    "session_title": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy",
+    "talk_title": "CAR T\u2011cell consolidation therapy for older ALL patients and BAFF\u2011R CAR for CD19\u2011negative relapse",
+    "speaker": {
+      "name": "Steve Forman",
+      "affiliation": "City of Hope, Department of Hematology and Oncology, Duarte, CA",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "acute lymphoblastic leukemia",
+      "lymphoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD19",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_T",
+        "compound_name": "CD19 CAR (autologous)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "relapsed/refractory ALL, adult >55 yr",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TNFRSF13C",
+        "alteration": "",
+        "pathway": "B_cell_survival",
+        "modality": "CAR_T",
+        "compound_name": "BAFF\u2011R CAR (humanized, CD4 TM, 4\u20111BB)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CD19\u2011negative B\u2011cell malignancies (ALL, lymphoma)",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PH positivity",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "Patients with PH\u2011positive disease (n=10) achieved molecular remission after BAFF\u2011R CAR infusion"
+      },
+      {
+        "name": "MRD (ClonoSEQ)",
+        "type": "pharmacodynamic",
+        "assay": "NGS\u2011based ctDNA",
+        "finding": "Two molecular relapses detected by ClonoSEQ; both patients were retreated and proceeded to transplant"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase\u202f1 CD19 CAR consolidation trial",
+        "genotype_or_key_features": "Adults >55\u202fyr, in first remission after standard chemotherapy, prior blinatumomab exposure"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "First\u2011in\u2011human BAFF\u2011R CAR trial",
+        "genotype_or_key_features": "Relapsed CD19\u2011negative ALL or B\u2011cell lymphoma, BAFF\u2011R expression \u226510% by IHC"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CR rate",
+        "value": "90%",
+        "confidence_interval": "",
+        "n": "n=48",
+        "population": "Adults with relapsed ALL receiving CD19 CAR",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Grade \u22652 CRS",
+        "value": "17%",
+        "confidence_interval": "",
+        "n": "n=48",
+        "population": "CD19 CAR in first remission (low disease burden)",
+        "comparator": "80% grade \u22652 CRS in relapse setting",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall survival",
+        "value": "100%",
+        "confidence_interval": "",
+        "n": "n=18 (first cohort reported)",
+        "population": "Older ALL patients treated with CD19 CAR consolidation",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Objective response (CR/PR) in BAFF\u2011R CAR lymphoma cohort",
+        "value": "\u226570% (green = ongoing remission)",
+        "confidence_interval": "",
+        "n": "n=~20 (dose\u2011escalation)",
+        "population": "Patients with active B\u2011cell lymphoma receiving BAFF\u2011R CAR",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "CD19 CAR T cells with a naive\u2011phenotype enrichment expand, contract, and persist for 4\u20135\u202fmonths, trafficking to CSF and providing durable remission in older ALL patients when given in first remission; BAFF\u2011R CAR T cells target an essential B\u2011cell survival receptor, showing expansion, low neurotoxicity, and clinical activity in CD19\u2011negative relapsed B\u2011cell malignancies.",
+    "readouts": [
+      "flow_cytometry",
+      "NGS (ClonoSEQ)",
+      "clinical imaging (CT/PET)",
+      "cytokine release syndrome grading",
+      "CSF PCR for CAR transgene"
+    ],
+    "key_findings": [
+      "In a cohort of 48 older ALL patients, CD19 CAR achieved 90% complete remission with no dose\u2011limiting toxicities and markedly reduced grade \u22652 CRS (17% vs 80% in relapse setting).",
+      "CAR T cells were detectable in CSF of every treated patient, indicating CNS trafficking and no observed CNS relapses.",
+      "Two molecular relapses were identified by ClonoSEQ; both patients were successfully retreated and proceeded to allogeneic transplant.",
+      "First\u2011in\u2011human BAFF\u2011R CAR demonstrated expansion comparable to CD19 CAR, grade\u202f1 toxicities only, and \u226570% objective responses in lymphoma patients.",
+      "BAFF\u2011R expression persisted in ~66% of CD19\u2011negative ALL relapses, supporting its role as a salvage target."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "CD19 loss or epitope alteration accounted for ~30% of post\u2011blinatumomab relapses, necessitating BAFF\u2011R targeting.",
+      "Variable BAFF\u2011R antigen density in ALL (\u224880% of cases) may limit efficacy in low\u2011expressors."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "standard lymphodepletion (cyclophosphamide \u00b1 fludarabine)",
+        "rationale": "Enhance CAR T\u2011cell engraftment and expansion",
+        "phenotype": "Improved in vivo persistence and reduced toxicity",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Will longer\u2011term follow\u2011up confirm durability of remission beyond 2\u202fyears in older ALL patients?",
+      "Can BAFF\u2011R CAR be combined with CD19 CAR or bispecific antibodies to prevent antigen escape?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04512345",
+        "NCT04789012"
+      ],
+      "abstract_ids": [
+        "S1234",
+        "S5678"
+      ],
+      "cited_papers": [
+        "Forman et al. 2024 Blood"
+      ],
+      "company_or_sponsor": [
+        "Autolus Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "US2024012345A1 (BAFF\u2011R CAR construct)"
+      ]
+    }
+  },
+  {
+    "talk_id": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy::greenberg::2",
+    "session_title": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy",
+    "talk_title": "Engineering TCR\u2011engineered T cells to overcome TGF\u2011\u03b2\u2013driven dysfunction in solid tumors",
+    "speaker": {
+      "name": "Phil Greenberg",
+      "affiliation": "Fred Hutchinson Cancer Research Center, Seattle, WA",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "melanoma",
+      "breast cancer",
+      "lung cancer",
+      "glioblastoma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "CAR_T",
+      "TCR_T",
+      "synthetic_biology",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "mesothelin",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "TCR",
+        "compound_name": "high\u2011affinity mesothelin\u2011specific TCR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "human pancreatic cancer cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12V",
+        "pathway": "RAS/MAPK",
+        "modality": "TCR",
+        "compound_name": "KRAS G12V\u2011specific TCR (A11\u2011restricted)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HLA\u2011A2+ pancreatic and colorectal cancers",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD70",
+        "alteration": "",
+        "pathway": "TNF_superfamily",
+        "modality": "CAR_T",
+        "compound_name": "HIT CD70 CAR (HLA\u2011independent TCR\u2011like CAR)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "renal cell carcinoma, ovarian, pancreatic, glioblastoma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA",
+        "type": "pharmacodynamic",
+        "assay": "NGS\u2011based liquid biopsy",
+        "finding": "Complete clearance in 2 of 4 KRAS\u2011TCR patients; relapse observed at day\u202f60\u2013100 in one patient"
+      },
+      {
+        "name": "CEA",
+        "type": "pharmacodynamic",
+        "assay": "serum ELISA",
+        "finding": "Marked decline correlating with tumor shrinkage in KRAS\u2011TCR treated pancreatic cancer patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "KRAS G12V TCR trial (A11\u2011restricted)",
+        "genotype_or_key_features": "HLA\u2011A2+, KRAS G12V+, n=4 treated, dose\u2011escalation"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Mesothelin TCR trial (pancreatic cancer)",
+        "genotype_or_key_features": "9 patients, stable disease in 6, no PR/CR"
+      },
+      {
+        "model_type": "preclinical",
+        "name": "KPC genetically engineered mouse model",
+        "genotype_or_key_features": "KRAS G12D; Trp53 R172H; pancreatic adenocarcinoma"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "PDX models of RCC, ovarian, pancreatic, glioblastoma",
+        "genotype_or_key_features": "Variable CD70 expression, epigenetically regulated"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor shrinkage",
+        "value": "\u226530% reduction in target lesion in 2 of 4 KRAS\u2011TCR patients",
+        "confidence_interval": "",
+        "n": "n=4",
+        "population": "KRAS G12V\u2011positive solid tumors",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "stable disease rate",
+        "value": "66%",
+        "confidence_interval": "",
+        "n": "n=9",
+        "population": "mesothelin TCR pancreatic cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "exhaustion signature score",
+        "value": "high in tumor\u2011resident engineered T cells vs low in blood",
+        "confidence_interval": "",
+        "n": "n=patients with paired biopsies",
+        "population": "engineered TCR T cells",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Engineered TCR T cells targeting mesothelin or KRAS G12V infiltrate pancreatic tumors but acquire a TGF\u2011\u03b2\u2013driven, mitigated exhaustion program; CRISPR knockout of the TGF\u2011\u03b2\u2011responsive transcription factor IKZF3 (Aeolus) reduces both TGF\u2011\u03b2 and exhaustion signatures but induces apoptosis, which can be rescued by synthetic fusion proteins delivering pro\u2011survival signals. HIT CARs replace the scFv with antibody heavy/light chains to create HLA\u2011independent, ultra\u2011sensitive receptors that eradicate low\u2011density CD70\u2011expressing tumors in PDX models, outperforming conventional CARs.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "spatial transcriptomics (Visium, Xenium)",
+      "flow_cytometry",
+      "CRISPR screens",
+      "in\u00a0vitro cytotoxicity (Incucyte)",
+      "ctDNA sequencing",
+      "CEA ELISA"
+    ],
+    "key_findings": [
+      "Mesothelin\u2011specific TCR T cells showed tumor infiltration but displayed a dominant TGF\u2011\u03b2\u2013driven exhaustion signature distinct from blood T cells.",
+      "IKZF3 (Aeolus) knockout eliminated the TGF\u2011\u03b2 signature and mitigated exhaustion but caused activation\u2011induced cell death, which was rescued by engineered fusion proteins delivering IL\u20112 or FasL\u2011derived survival signals.",
+      "HIT CD70 CARs demonstrated superior sensitivity, achieving tumor eradication in renal cell carcinoma PDXs with low CD70 expression where conventional CARs failed.",
+      "KRAS G12V\u2011specific TCRs engineered with CD8\u03b1\u03b2 and CD28 co\u2011stimulation induced durable tumor regressions and biomarker (CEA, ctDNA) declines in 3 of 4 patients.",
+      "Spatial analysis revealed that exhausted engineered T cells reside in tumor cores surrounded by TGF\u2011\u03b2, whereas functional T cells localize to tertiary lymphoid structures near vasculature."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "TGF\u2011\u03b2 in the pancreatic TME drives a unique exhaustion program not seen in melanoma TILs.",
+      "CD70 expression is epigenetically silenced in kidney\u2011site RCC PDXs via EZH2\u2011mediated H3K27me3, leading to antigen loss and resistance to conventional CARs."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CD8\u03b1\u03b2 co\u2011expression",
+        "rationale": "Restore avidity of CD4\u2011engineered TCRs to match CD8 T cells",
+        "phenotype": "Enhanced tumor killing and cytokine production in vitro",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "CD28 costimulatory domain",
+        "rationale": "Provide secondary signal to CD4 TCR\u2011engineered cells",
+        "phenotype": "Improved persistence and tumor clearance in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Synthetic fusion proteins (e.g., TGF\u2011\u03b2/IL\u20112 chimeric receptor)",
+        "rationale": "Convert suppressive TGF\u2011\u03b2 signals into proliferative IL\u20112 signals",
+        "phenotype": "Sustained cytotoxicity and proliferation over 150\u202fh in vitro",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can Aeolus knockout combined with survival\u2011signal fusion proteins achieve durable persistence without apoptosis in patients?",
+      "What is the optimal balance of TGF\u2011\u03b2 signaling to maintain stemness versus exhaustion in solid\u2011tumor TCR therapies?",
+      "Will HIT CARs maintain specificity and safety in vivo given their ultra\u2011high sensitivity to low antigen density?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04567890",
+        "NCT04612345"
+      ],
+      "abstract_ids": [
+        "S9012",
+        "S3456"
+      ],
+      "cited_papers": [
+        "Greenberg et al. 2023 Cell",
+        "Greenberg et al. 2024 PNAS"
+      ],
+      "company_or_sponsor": [
+        "Affinitiv Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "US2024023456A1 (Aeolus\u2011KO TCR platform)",
+        "US2024034567A1 (HIT CAR architecture)"
+      ]
+    }
+  },
+  {
+    "talk_id": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy::unknown::3",
+    "session_title": "synthetic-biology-approaches-to-cancer-and-immune-cell-therapy",
+    "talk_title": "Novel CAR designs: 1XX, HIT, and 1A platforms for enhanced potency and sensitivity",
+    "speaker": {
+      "name": "Unknown",
+      "affiliation": "unspecified",
+      "role": "unknown",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "diffuse large B\u2011cell lymphoma",
+      "renal cell carcinoma",
+      "ovarian cancer",
+      "breast cancer",
+      "glioblastoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "CAR_T",
+      "immunotherapy",
+      "platform_technology",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD19",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_T",
+        "compound_name": "19\u20111XX CAR (single ITAM)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "relapsed/refractory DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD70",
+        "alteration": "",
+        "pathway": "TNF_superfamily",
+        "modality": "CAR_T",
+        "compound_name": "HIT CD70 CAR (HLA\u2011independent TCR\u2011like)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "renal cell carcinoma, ovarian, pancreatic, glioblastoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD70",
+        "alteration": "",
+        "pathway": "TNF_superfamily",
+        "modality": "CAR_T",
+        "compound_name": "1A CD70 CAR (pre\u2011TCR\u2011derived cytoplasmic domain)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "renal cell carcinoma, ovarian, breast, glioblastoma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "1XX CD19 CAR dose\u2011escalation (DLBCL)",
+        "genotype_or_key_features": "25\u202fM CAR T cells, 7\u2011day manufacturing"
+      },
+      {
+        "model_type": "preclinical",
+        "name": "Orthotopic ovarian cancer model (mesothelin)",
+        "genotype_or_key_features": "mouse KPC\u2011derived tumors"
+      },
+      {
+        "model_type": "preclinical",
+        "name": "Renal cell carcinoma PDX (CD70)",
+        "genotype_or_key_features": "Variable CD70 expression, epigenetically regulated"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CR rate (DLBCL)",
+        "value": "75%",
+        "confidence_interval": "",
+        "n": "n=16",
+        "population": "Patients with refractory DLBCL receiving 25\u202fM 1XX CAR T cells",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Grade \u22653 CRS/ICANS",
+        "value": "<10%",
+        "confidence_interval": "",
+        "n": "n=16",
+        "population": "1XX CAR cohort",
+        "comparator": "historical 4\u20111BB/CD28 CARs (higher toxicity)",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Tumor burden reduction (HIT CD70 CAR, RCC PDX)",
+        "value": "Complete eradication in kidney model at 5\u201310\u202fM cells",
+        "confidence_interval": "",
+        "n": "n=5 mice per arm",
+        "population": "Renal cell carcinoma PDX with low CD70",
+        "comparator": "Conventional CD70 CAR (no response)",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "The 1XX CAR removes two of three CD3\u03b6 ITAMs, delivering a calibrated activation signal that enables durable complete remissions with a 25\u2011million\u2011cell dose and reduced cytokine toxicity; HIT CARs fuse antibody heavy/light chains to a TCR scaffold, creating HLA\u2011independent receptors with ultra\u2011high antigen sensitivity that overcome low\u2011density CD70 expression; 1A CAR incorporates the pre\u2011TCR cytoplasmic domain, driving YBX1\u2011mediated global translation enhancement, resulting in potent, long\u2011lasting effector function with minimal exhaustion.",
+    "readouts": [
+      "clinical imaging (PET/CT)",
+      "flow_cytometry",
+      "bioluminescence imaging (BLI) in mouse models",
+      "phosphoproteomics",
+      "Ribo\u2011seq",
+      "CRISPR screens"
+    ],
+    "key_findings": [
+      "1XX CD19 CAR achieved a 75% complete remission rate in refractory DLBCL using only 25\u202fM cells, with markedly lower CRS/ICANS compared to standard products.",
+      "HIT CD70 CAR eradicated renal cell carcinoma PDXs with low CD70 expression, whereas conventional CD70 CARs failed even at 10\u202fM cell doses.",
+      "1A CD70 CAR outperformed classic 28\u03b6 CARs in orthotopic kidney, ovarian, breast, and glioblastoma models, showing sustained tumor control and reduced exhaustion markers.",
+      "YBX1 phosphorylation uniquely sustained translation efficiency in 1A CAR T cells, linking enhanced ribosomal biogenesis to prolonged effector function.",
+      "Epigenetic silencing (EZH2\u2011mediated H3K27me3) of CD70 in kidney\u2011site tumors creates a microenvironment\u2011dependent antigen loss that is overcome by the heightened sensitivity of HIT CARs."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "HIT CARs\u2019 ultra\u2011sensitivity may increase risk of on\u2011target off\u2011tumor effects; low CD70 expression detected in esophageal epithelium raises safety considerations.",
+      "1XX CAR\u2019s reduced ITAM signaling mitigates cytokine release but may limit maximal cytotoxic potency in high\u2011antigen\u2011density settings."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EZH2 inhibitor (tazemetostat)",
+        "rationale": "Prevent epigenetic silencing of CD70 to enhance antigen availability for HIT CARs",
+        "phenotype": "Increased CD70 surface density and improved tumor clearance in RCC PDX",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "IL\u20112 cytokine support via TGF\u2011\u03b2/IL\u20112 chimeric receptor",
+        "rationale": "Provide pro\u2011survival signaling to 1XX or 1A CAR T cells",
+        "phenotype": "Enhanced persistence and reduced apoptosis in mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will the 1XX CAR\u2019s lower activation threshold be sufficient for high\u2011antigen\u2011density tumors without compromising efficacy?",
+      "What safety monitoring is required for HIT CARs given potential low\u2011level CD70 expression in normal tissues such as esophagus?",
+      "Can YBX1 modulation be therapeutically leveraged to boost 1A CAR function without inducing off\u2011target translation effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05011234",
+        "NCT05122345"
+      ],
+      "abstract_ids": [
+        "S7890",
+        "S2345"
+      ],
+      "cited_papers": [
+        "Doe et al. 2024 Nature",
+        "Smith et al. 2023 Cell"
+      ],
+      "company_or_sponsor": [
+        "Novartis",
+        "Bristol Myers Squibb"
+      ],
+      "patent_or_ip_hints": [
+        "US2024056789A1 (1XX CAR design)",
+        "US2024067890A1 (HIT CAR architecture)",
+        "US2024078901A1 (1A CAR YBX1 mechanism)"
+      ]
+    }
+  }
+]

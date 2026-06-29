@@ -1,0 +1,234 @@
+[
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::presenter::1",
+    "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+    "talk_title": "Slide Tags spatial transcriptomics and lineage tracing in tumor ecosystems",
+    "speaker": {
+      "name": "Unnamed Broad presenter",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "pancreatic ductal adenocarcinoma",
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "single_cell_omics",
+      "tumor_microenvironment",
+      "technology_development",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KP tracer lung tumor model",
+        "genotype_or_key_features": "KRAS-driven lung tumor with engineered barcodes"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "metastatic melanoma biopsies",
+        "genotype_or_key_features": "30 samples, diverse CNV clones"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Slide Tags uses photo-cleavable DNA barcodes on spatial arrays to label nuclei, providing true single-cell resolution spatial transcriptomics; combined with lineage barcoding and CNV detection to map tumor clone spatial niches and infer expansion dynamics.",
+    "readouts": [
+      "10x scRNA-seq",
+      "TCR sequencing",
+      "CNV profiling",
+      "spatial barcoded array imaging"
+    ],
+    "key_findings": [
+      "Slide Tags achieves true single-cell resolution with median >3,000 UMIs per cell, outperforming Visium HD in melanoma specimens.",
+      "Distinct transcriptional tumor cell states in melanoma correspond to spatially segregated CNV clones and differential immune neighborhoods.",
+      "Neural crest-like tumor state associates with SPP1+ macrophages and fibroblasts, showing reduced CD8 T\u2011cell clonality.",
+      "Lineage tracing in KP mouse tumors reveals spatially coherent subclones with active expansion linked to Arg1+ immunosuppressive macrophages and hypoxia.",
+      "Metastasis\u2011seeding subclones share hypoxic and immunosuppressive niche signatures with primary tumor regions."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "SPP1 protects neural crest\u2011like melanoma cells from interferon and TNF\u2011mediated killing.",
+      "Immune\u2011suppressive niches limit T\u2011cell clone expansion in specific tumor regions."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can T\u2011cell receptor specificities be matched to tumor subclone antigens in situ?",
+      "What are the precise molecular mechanisms by which SPP1 confers cytokine resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Tecan",
+        "10x Genomics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::pe'er::2",
+    "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+    "talk_title": "Decoding tissue architecture in pancreatic cancer using SEGER and Wormhole",
+    "speaker": {
+      "name": "Dana Pe'er",
+      "affiliation": "Sloan Kettering Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "technology_development",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Basal cell supermouse model",
+        "genotype_or_key_features": "Cre-inducible DTR cassette in basal PDAC cells"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Human PDAC specimens",
+        "genotype_or_key_features": "Various KRAS and TP53 statuses"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "SEGER assigns transcripts to nuclei using AI\u2011driven graph embeddings, eliminating segmentation errors; Wormhole transforms high\u2011dimensional niche matrices into a scalable latent space, enabling trajectory and interaction analysis of spatial neighborhoods.",
+    "readouts": [
+      "10x spatial transcriptomics",
+      "AI embedding",
+      "optimal transport",
+      "transformer models"
+    ],
+    "key_findings": [
+      "SEGER improves transcript\u2011to\u2011cell assignment over geometric methods, preserving continuous cell\u2011state manifolds.",
+      "Wormhole latent captures dominant variation as a gastric\u2011to\u2011progenitor axis and associated niche remodeling.",
+      "p53 loss sustains a progenitor\u2011like niche with immunosuppressive TNC fibroblasts and Arg1+ macrophages in early PDAC.",
+      "Ablation of basal cells (4% of tumor mass) triggers collapse of the entire tumor, accompanied by loss of immunosuppressive macrophages and fibroblasts and influx of T/NK cells.",
+      "CRISPR\u2011mediated deletion of CSF2 specifically in basal cells phenocopies basal cell ablation, implicating CSF2 as a master niche signal."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Basal cells act as niche architects; their removal destabilizes tumor ecosystem."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "KRAS inhibition",
+        "rationale": "KRAS\u2011dependent progenitor state maintenance; inhibition reduces progenitor niche.",
+        "phenotype": "Loss of progenitor cells and associated immunosuppressive niche.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can the Wormhole niche embedding be scaled to patient\u2011level analyses for prognostic stratification?",
+      "What upstream regulators control CSF2 expression in basal PDAC cells?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste::tirosh::3",
+    "session_title": "spatial-and-single-cell-omics-at-scale-technologies-for-decoding-cancer-ecosyste",
+    "talk_title": "Spatial transcriptomics and proteomics reveal organization of glioma and head\u2011and\u2011neck cancer",
+    "speaker": {
+      "name": "Itay Tirosh",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "IDH\u2011mutant glioma",
+      "head and neck squamous cell carcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "single_cell_omics",
+      "technology_development"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Glioblastoma cohort",
+        "genotype_or_key_features": "32 samples, IDH\u2011wt"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "IDH\u2011mutant glioma cohort",
+        "genotype_or_key_features": "34 samples, astrocytoma/oligodendroglioma"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Head and neck cancer cohort",
+        "genotype_or_key_features": "28 samples, diverse sites and genetics"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Combines Visium spatial transcriptomics (55\u202f\u00b5m spots) with CODEX multiplexed protein imaging to map cancer cell states and microenvironmental interactions, revealing spatial coherence, hypoxia\u2011driven layering in glioma and microenvironment\u2011dependent partial EMT patterns in head\u2011and\u2011neck cancer.",
+    "readouts": [
+      "Visium spatial transcriptomics",
+      "CODEX/PhenoCycler multiplexed imaging",
+      "RNA\u2011seq",
+      "protein panels"
+    ],
+    "key_findings": [
+      "In GBM, mesenchymal\u2011hypoxia tumor cells form spatially coherent patches; high hypoxia correlates with structured tissue organization.",
+      "GBM spatial layers: necrotic/hypoxic core \u2192 mesenchymal/hypoxia \u2192 inflammatory macrophages \u2192 vascular repair \u2192 neurodevelopmental tumor cells \u2192 normal brain parenchyma.",
+      "IDH\u2011mutant gliomas show less structure overall; low\u2011grade tumors retain normal white\u2011gray matter boundaries that act as barriers to malignant cell infiltration.",
+      "In head\u2011and\u2011neck cancer, partial EMT programs are either edge\u2011enriched (fibroblast\u2011derived TGF\u2011\u03b2) or core\u2011enriched (myeloid\u2011derived oncostatin\u202fM), influencing immune infiltration.",
+      "Oncostatin\u202fM and TGF\u2011\u03b2 both induce partial EMT genes in vitro, but spatial context determines dominant driver in vivo."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Partial EMT at tumor core associates with reduced lymphocyte infiltration, suggesting stronger immunosuppression."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Oncostatin M blockade",
+        "rationale": "Reduce core\u2011enriched partial EMT and restore immune infiltration",
+        "phenotype": "Predicted decrease in EMT gene expression in tumor core",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "TGF\u2011\u03b2 inhibition",
+        "rationale": "Target edge\u2011enriched EMT driven by fibroblasts",
+        "phenotype": "Reduced EMT at invasive front",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What determines whether a head\u2011and\u2011neck tumor adopts edge\u2011 vs core\u2011enriched EMT phenotypes?",
+      "Can the white\u2011gray matter barrier in low\u2011grade glioma be therapeutically reinforced to limit tumor spread?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

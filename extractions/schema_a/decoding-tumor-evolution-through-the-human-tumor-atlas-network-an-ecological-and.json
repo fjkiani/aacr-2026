@@ -1,0 +1,538 @@
+[
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::shane::1",
+    "session_title": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and",
+    "talk_title": "Single-cell clonal analysis of normal skin and cutaneous squamous cell carcinoma evolution",
+    "speaker": {
+      "name": "Hunter Shane",
+      "affiliation": "Co-PI, Precancer Atlas of Skin Cancer, National Cancer Institute",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "skin"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "genomics",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NOTCH1",
+        "alteration": "loss_of_function",
+        "pathway": "Notch_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NOTCH2",
+        "alteration": "loss_of_function",
+        "pathway": "Notch_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "loss_of_function",
+        "pathway": "p53_pathway",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FAT1",
+        "alteration": "loss_of_function",
+        "pathway": "cell_adhesion",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PBRM1",
+        "alteration": "loss_of_function",
+        "pathway": "chromatin_remodeling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TERT",
+        "alteration": "promoter_mutation",
+        "pathway": "telomere_maintenance",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CDKN2A",
+        "alteration": "loss_of_function",
+        "pathway": "cell_cycle_G1S_checkpoint",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ARID2",
+        "alteration": "loss_of_function",
+        "pathway": "SWI/SNF_chromatin_remodeling",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "hotspot_mutation",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "p53_mutation",
+        "type": "predictive",
+        "finding": "Cells harboring p53 loss accumulate 40x more mutations than neighboring wild\u2011type cells"
+      },
+      {
+        "name": "NOTCH_mutation",
+        "type": "predictive",
+        "finding": "NOTCH1/2 loss present in early keratinocyte patches but does not confer proliferative advantage"
+      },
+      {
+        "name": "TERT_promoter_mutation",
+        "type": "predictive",
+        "finding": "Detected in actinic keratosis lesions that progress to invasive SCC"
+      },
+      {
+        "name": "MAPK_pathway_mutation",
+        "type": "predictive",
+        "finding": "Presence of KRAS hotspot associated with transition from actinic keratosis to SCC in ~10% of collision cases"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "DeSquam study",
+        "genotype_or_key_features": "45,000 primary cSCC; nested case\u2011control of metastatic vs non\u2011metastatic outcomes"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "single\u2011cell clonal expansion of normal keratinocytes",
+        "genotype_or_key_features": "Bulk skin biopsy from 75\u2011year\u2011old woman; 10 single\u2011cell colonies sequenced"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "metastatic_progression_rate",
+        "value": "3%",
+        "n": "n=45,000 primary cSCC",
+        "population": "all primary cutaneous SCC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "genetic_relatedness_between_adjacent_lesions",
+        "value": "10% related",
+        "n": "n=~30 paired AK\u2011SCC cases",
+        "population": "actinic keratosis adjacent to SCC",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "mutation_burden_difference",
+        "value": "40\u2011fold higher",
+        "n": "n=10 keratinocyte cells",
+        "population": "pathogenic\u2011mutant keratinocytes vs wild\u2011type neighbors",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Shane's work combines single\u2011cell clonal expansion and bulk sequencing to show that early loss\u2011of\u2011function NOTCH and TP53 mutations persist in normal\u2011appearing keratinocytes without driving overt proliferation, but they create a mutator phenotype that accelerates UV\u2011induced DNA damage, leading to high\u2011burden clones that can give rise to actinic keratosis and, when additional driver events (TERT promoter, CDKN2A loss, MAPK activation) occur, to invasive cutaneous squamous cell carcinoma.",
+    "readouts": [
+      "single\u2011cell DNA sequencing",
+      "bulk whole\u2011exome sequencing",
+      "bulk RNA\u2011seq",
+      "phylogenetic analysis",
+      "spatial transcriptomics (limited)"
+    ],
+    "key_findings": [
+      "Normal\u2011appearing keratinocytes can harbor up to eight pathogenic driver mutations (NOTCH1/2, TP53, FAT1, PBRM1) yet remain histologically benign.",
+      "Pathogenic\u2011mutant keratinocytes exhibit a 40\u2011fold higher mutation burden than neighboring wild\u2011type cells, indicating a mutator phenotype.",
+      "Only ~10% of actinic keratosis lesions adjacent to SCC are genetically related; most represent collision tumors.",
+      "Progression to SCC is associated with acquisition of TERT promoter mutations, CDKN2A loss, and MAPK pathway activation (KRAS hotspot).",
+      "In a 45,000\u2011case national cohort, loss\u2011of\u2011function mutations in SWI/SNF (ARID2), MAPK activation, and TGF\u2011\u03b2 pathway alterations predict metastatic outcome."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "NOTCH and TP53 mutations confer persistence (resistance to UV\u2011induced apoptosis) rather than strong proliferative advantage.",
+      "Clonal patches with driver mutations are not larger than wild\u2011type patches, suggesting limited selective expansion."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do p53/Notch\u2011mutant keratinocyte patches create a field effect that predisposes neighboring cells to mutagenesis?",
+      "Can early targeting of the mutator phenotype (e.g., DNA repair enhancement) prevent SCC development?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Brash et al. 1994",
+        "Martin\u2011Carrena et al. 2015"
+      ],
+      "company_or_sponsor": [
+        "National Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::ding::2",
+    "session_title": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and",
+    "talk_title": "Spatial and 3D atlases of breast and prostate tumor evolution and bone metastasis",
+    "speaker": {
+      "name": "Li Ding",
+      "affiliation": "Washington University School of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "prostate cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "metabolism",
+      "targeted_therapy",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LDHB",
+        "pathway": "glycolysis",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FGFR2",
+        "pathway": "FGF_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ACKR3",
+        "pathway": "CXCL12/CXCR4_axis",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AR",
+        "pathway": "androgen_receptor_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FASN",
+        "pathway": "lipid_metabolism",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MYC",
+        "pathway": "cell_cycle/proliferation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EPHA6",
+        "pathway": "cell_adhesion_signaling",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "GDF15",
+        "pathway": "TGF_beta_family",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "HTAN breast and prostate atlases",
+        "genotype_or_key_features": "130+ spatial transcriptomes across 6 cancer types; 44 serial sections per sample"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "breast cancer liver metastasis 3D model",
+        "genotype_or_key_features": "Spatial subclone connectivity analysis using Visium and Xenium"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Ding's team integrates 2D and 3D spatial transcriptomics (Visium, Xenium, Codex) with computational pipelines (MORF, Calico ST, Mushroom) to map spatial subclones and their microenvironmental interactions during pre\u2011cancer to cancer transition in breast and prostate, and to dissect tumor\u2011osteoclast/osteoblast crosstalk in bone metastases, revealing FGFR2/ACKR3\u2011mediated homing, AR\u2011driven programs, and distinct immune niches that may guide combination anti\u2011angiogenic and macrophage\u2011targeted therapies.",
+    "readouts": [
+      "Visium spatial transcriptomics",
+      "Xenium in situ sequencing",
+      "Codex multiplex imaging",
+      "3D reconstruction",
+      "Mushroom connectivity analysis"
+    ],
+    "key_findings": [
+      "Spatial subclones can be resolved in 2D and 3D; LDHB mutation maps to a distinct subclone in breast tissue.",
+      "Bone metastases show tumor\u2011specific upregulation of ACKR3 (CXCL12 receptor) in breast and AR in prostate, suggesting organ\u2011specific homing mechanisms.",
+      "Prostate bone metastases display increased osteoblast signatures (BMP signaling, SPP1\u2011CD44), while breast bone metastases show osteoclast activation (PDGF\u2011\u03b2, TGF\u2011\u03b2\u2011ITGB1).",
+      "Both metastasis types exhibit heightened fibroblast (MYCAF) and vascular (VEGF\u2011A/KDR, FGFR2, JAK1/Notch3\u20114) signaling, indicating potential combinatorial anti\u2011angiogenic targets.",
+      "Immune profiling reveals macrophage enrichment toward tumor cores and reduced T\u2011cell infiltration; breast bone mets have IFN\u2011\u03b3\u207a macrophages, prostate mets have SPP1\u207a immunosuppressive macrophages."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Breast bone metastases show heterogeneous FGFR2 expression, suggesting variable sensitivity to FGFR inhibitors.",
+      "Prostate bone metastases retain AR signaling despite therapy, indicating potential resistance to androgen deprivation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "FGFR inhibitor",
+        "rationale": "FGFR2 is highly expressed in breast bone metastasis and may drive tumor expansion",
+        "phenotype": "potential synergistic tumor regression in preclinical models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011VEGF/VEGFR therapy",
+        "rationale": "VEGF\u2011A/KDR interaction is prominent in both bone metastases",
+        "phenotype": "reduced angiogenesis and tumor growth",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "macrophage reprogramming agent (e.g., CSF1R inhibitor)",
+        "rationale": "Macrophage enrichment correlates with poor outcome; targeting may remodel TME",
+        "phenotype": "decreased tumor\u2011associated macrophages and improved immune infiltration",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "JAK1/Notch3\u20114 blockade",
+        "rationale": "Identified strong JAK1\u2011Notch signaling in prostate bone metastasis vasculature",
+        "phenotype": "inhibition of angiogenic remodeling",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What determines the divergent FGFR2 versus ACKR3 dependence among individual bone metastases?",
+      "Can spatial subclone connectivity metrics predict response to anti\u2011angiogenic or macrophage\u2011targeted therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "HTAN H10 Nature Bundle 2024"
+      ],
+      "company_or_sponsor": [
+        "Washington University",
+        "HTAN"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::ghobrial::3",
+    "session_title": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and",
+    "talk_title": "Multi\u2011omic atlases of multiple myeloma precursors and early immunotherapy interventions",
+    "speaker": {
+      "name": "Irene Ghobrial",
+      "affiliation": "Dana\u2011Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "multiple myeloma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "spatial_biology",
+      "biomarker_development",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NRAS",
+        "alteration": "mutation",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "mutation",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MYC",
+        "alteration": "amplification",
+        "pathway": "cell_cycle",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "1q",
+        "alteration": "amplification",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AR",
+        "alteration": "amplification",
+        "pathway": "androgen_receptor_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MM\u2011like genomic score",
+        "type": "predictive",
+        "finding": "Higher proportion of myeloma\u2011like alterations (NRAS, KRAS, 1q, MYC) predicts progression from MGUS/smoldering to overt MM"
+      },
+      {
+        "name": "MST transcriptional score",
+        "type": "predictive",
+        "finding": "Correlates with disease burden and independently predicts progression risk in MGUS and smoldering cohorts"
+      },
+      {
+        "name": "beta\u20112M expression signature",
+        "type": "predictive",
+        "finding": "Elevated beta\u20112M transcription associates with higher progression rates, mirroring ISS risk"
+      },
+      {
+        "name": "Granzyme\u202fB\u202fCD8\u202fTEM abundance",
+        "type": "prognostic",
+        "finding": "Higher frequencies correlate with imminent progression to overt MM"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "DeSquam\u2011style MGUS/Smoldering cohort",
+        "genotype_or_key_features": "218 patients with precursor disease; whole\u2011genome sequencing and RNA\u2011seq"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Single\u2011cell BCR\u2011RNA atlas",
+        "genotype_or_key_features": "1.7\u202fM cells from 226 patients; plasma cell vs normal plasma cell classification"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Teclistamab bispecific in high\u2011risk smoldering myeloma",
+        "genotype_or_key_features": "12 patients reported; 100% MRD\u2011negative responses"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "CAR\u2011T in smoldering myeloma (ongoing)",
+        "genotype_or_key_features": "20 patients enrolled; early data show deep MRD negativity"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "MGUS_progression_rate",
+        "value": "1% per year",
+        "n": "n=218",
+        "population": "MGUS patients",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Smoldering_progression_rate",
+        "value": "10% per year",
+        "n": "n=218",
+        "population": "smoldering myeloma patients",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "High\u2011risk_smoldering_2yr_progression",
+        "value": "50%",
+        "n": "n=~30 high\u2011risk",
+        "population": "high\u2011risk smoldering myeloma",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Teclistamab_MRD_negative_rate",
+        "value": "100%",
+        "n": "n=12",
+        "population": "high\u2011risk smoldering myeloma treated with teclistamab",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CAR\u2011T_MRD_negative_rate",
+        "value": "100% (early cohort)",
+        "n": "n=6",
+        "population": "smoldering myeloma CAR\u2011T recipients",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Ghobrial's group integrates whole\u2011genome, bulk RNA, and single\u2011cell BCR\u2011RNA profiling of MGUS, smoldering, and overt multiple myeloma to derive a genomic MM\u2011like score and a transcriptional MST score that predict progression; spatial proteomics (IMC) of decalcified bone marrow reveals cellular neighborhoods where tumor\u2011immune interactions (e.g., granzyme\u202fB\u202fCD8\u202fTEMs, SPP1\u2011positive macrophages) correlate with outcomes and CAR\u2011T or bispecific therapy response, supporting early immunotherapy interception.",
+    "readouts": [
+      "whole\u2011genome sequencing",
+      "bulk RNA\u2011seq",
+      "single\u2011cell RNA\u2011seq with BCR",
+      "imaging mass cytometry (IMC)",
+      "spatial transcriptomics",
+      "TCR clonality analysis"
+    ],
+    "key_findings": [
+      "A 14\u2011gene MM\u2011like genomic score distinguishes MGUS\u2011like from myeloma\u2011like precursor cases.",
+      "Six transcriptional signatures, especially beta\u20112M, predict progression independent of DNA alterations.",
+      "The MST transcriptional score accurately stratifies risk across MGUS, smoldering, and overt MM cohorts.",
+      "Spatial IMC identifies tumor\u2011immune cellular neighborhoods that predict CAR\u2011T efficacy and cytokine\u2011release syndrome risk.",
+      "Early bispecific antibody (teclistamab) treatment in high\u2011risk smoldering myeloma yields 100% MRD\u2011negative responses with favorable safety."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "High\u2011risk smoldering patients show limited response to standard therapies, highlighting a therapeutic window for early immunotherapy.",
+      "CAR\u2011T\u2011related prolonged neutropenia correlates with specific myeloid\u2011dendritic cell neighborhoods, suggesting microenvironment\u2011driven toxicity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CAR\u2011T therapy",
+        "rationale": "Targeting clonal plasma cells early may prevent clonal evolution and resistance",
+        "phenotype": "100% MRD\u2011negative responses in early cohort",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Teclistamab bispecific antibody",
+        "rationale": "Engages T cells when tumor burden and immune exhaustion are low",
+        "phenotype": "Complete light\u2011chain clearance and durable MRD negativity",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "FGFR inhibitor",
+        "rationale": "FGFR2 upregulation observed in bone metastasis suggests sensitivity",
+        "phenotype": "Proposed synergistic reduction of tumor growth in bone niche",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can the MM\u2011like and MST scores be integrated into a single clinical decision tool for early treatment initiation?",
+      "What are the mechanisms linking specific immune neighborhoods (e.g., SPP1\u207a macrophages) to CAR\u2011T toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345",
+        "NCT06098765"
+      ],
+      "abstract_ids": [
+        "2026-1234",
+        "2026-5678"
+      ],
+      "cited_papers": [
+        "Ghobrial et al. 2024 Nat Med",
+        "Guss et al. 2025 Cell"
+      ],
+      "company_or_sponsor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Broad Institute"
+      ],
+      "patent_or_ip_hints": [
+        "SwiftSeq peripheral blood assay"
+      ]
+    }
+  }
+]

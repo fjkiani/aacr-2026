@@ -1,0 +1,236 @@
+[
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ed Reznik",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+      "talk_title": "Computational phenotyping of cancer cachexia using longitudinal EHR data",
+      "rhetorical_signals": [
+        "we have a poor mechanistic understanding",
+        "there's been numerous failed trials, and currently, there's no approved therapy in the US or EU",
+        "we have no statistically significant hits even before a P value correction",
+        "we don't have a good framework for teasing apart the role of therapy"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard binary cachexia definition (5% weight loss over 6 months)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Modeling cachexia as a binary event ignores time\u2011to\u2011event dynamics and censoring, obscuring genomic associations",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival or progression\u2011free survival data",
+        "Lack of prospective validation of CT\u2011based subtypes",
+        "No circulating PGE2 or systemic biomarker measurements"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for molecular biomarkers that distinguish the three CT\u2011based cachexia subtypes (A, B, C) to enable targeted interventions",
+        "transcript_evidence": "We arrived at three pretty clean clusters of data... type A patients have progressive increases in spleen and liver volume and do the worst overall survival",
+        "crispro_angle": "CrisPRO can integrate longitudinal imaging features with multi\u2011omics to derive predictive signatures for each anatomical subtype",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "P53 mutations are strongly associated with higher risk of cachexia across cancers",
+        "transcript_evidence": "When you do this across diseases, you find many genomic correlates of risk of cachexia, and the clear smoking gun is P53",
+        "crispro_angle": "CrisPRO can prioritize P53\u2011driven pathways and suggest combinatorial targets to mitigate cachexia in P53\u2011mutant tumors",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the underlying biological drivers that differentiate type A (organ enlargement) from type B (organ atrophy) cachexia?",
+      "Can pre\u2011cachexia biomarkers be identified that predict which patients will progress to each anatomical subtype?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PTGES",
+        "PTGS2",
+        "P53"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Richard Dunn",
+      "institution_or_pharma": "University of Rochester Medical Center",
+      "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+      "talk_title": "Observational study of cachexia phenotypes (UNCOVER & Lotus)",
+      "rhetorical_signals": [
+        "is cancer cachexia really one disease?",
+        "the goal will be to try to move away from this one\u2011size\u2011fits\u2011all treatment strategy",
+        "we hope that our longitudinal study can answer some of these key questions"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "UNCOVER / Lotus observational cohorts",
+        "target_biology": "Identification of cachexia subtypes across advanced lung, pancreatic, and colorectal cancers",
+        "flawed_enrollment_criteria": "Enrolling all advanced patients regardless of baseline weight loss or molecular biomarkers, potentially diluting subtype signals",
+        "missing_biomarker": "Baseline GDF15, IL\u20116, or other inflammatory markers not required for enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No pre\u2011specified power calculation for detecting multiple latent classes; risk of underpowering for rare subtypes",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Limited integration of body\u2011composition clusters with symptom clusters",
+        "No prospective interventional data linking identified phenotypes to therapeutic response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "High\u2011symptom burden cluster shows elevated GDF15 and inflammatory markers; need a predictive biomarker panel to prospectively assign patients to subtypes",
+        "transcript_evidence": "Patients with higher symptom burden are higher rates of elevation in GDF15 in the serum as well as higher inflammatory markers like IL6 and IL8",
+        "crispro_angle": "CrisPRO can develop a multi\u2011modal classifier (clinical, lab, imaging) to stratify patients before therapy",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Future interventional trials should enroll patients based on biomarker\u2011defined subtypes rather than all\u2011comers",
+        "transcript_evidence": "Current trials (e.g., ROMANA, POWER, olanzapine) use a one\u2011size\u2011fits\u2011all approach despite evidence of distinct cachexia phenotypes",
+        "crispro_angle": "CrisPRO can simulate enrichment strategies and estimate power gains from biomarker\u2011guided enrollment",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ponatugumab (anti\u2011GDF15)",
+        "context": "Phase II trial showing weight gain and symptom improvement in GDF15\u2011high patients",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How do symptom\u2011based clusters align with the CT\u2011based anatomical clusters described by Ed Reznik?",
+      "Will biomarker\u2011guided enrollment improve response rates in upcoming phase III cachexia trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GDF15",
+        "IL6",
+        "IL8",
+        "Ponatugumab"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Gonsalves",
+      "institution_or_pharma": "NYU Langone Health",
+      "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+      "talk_title": "Prostaglandin E2, dysbiosis, and immune checkpoint resistance in cachectic lung cancer",
+      "rhetorical_signals": [
+        "Many of them include pro\u2011inflammatory cytokines that are released from the tumor microenvironment",
+        "We identified many IL\u20116 family members that are uniquely enriched in the animals with cachexia",
+        "PGE2 levels are dramatically suppressed in the animals that receive the guide RNA versus animals that don't receive a control guide RNA",
+        "NSAIDs have had a long history in cachexia research... but adverse events limit their use"
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NSAID/COX\u20112 inhibition for cachexia",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Systemic COX inhibition causes GI bleeding and cardiovascular risk, limiting dose escalation needed for anti\u2011cachexia effect",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "NSAIDs have adverse events like GI toxicity and bleeding that limit their utility in cachexia patients",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of human interventional data linking PGE2 inhibition to improved ICI response",
+        "No measurement of systemic PGE2 levels in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting tumor\u2011derived PGE2 production (e.g., PTGES or PTGS2 inhibition) may reverse cachexia and improve checkpoint inhibitor efficacy",
+        "transcript_evidence": "Knockdown of PTGES prevents or delays the onset of cachexia in KRAS/LKB1 mice; PTGS2 knockout protects C26 mice from weight loss",
+        "crispro_angle": "CrisPRO can prioritize small\u2011molecule or CRISPR\u2011based strategies to suppress PGE2 synthesis and model downstream effects on immune activation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine PGE2 pathway inhibition with anti\u2011PD\u2011L1 therapy to overcome resistance in cachectic patients",
+        "transcript_evidence": "Cachectic mice show poor response to anti\u2011PD\u2011L1; PGE2\u2011high tumors have elevated neutrophil and macrophage suppressive populations",
+        "crispro_angle": "CrisPRO can simulate combination efficacy and predict synergistic biomarkers for trial design",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s integrative modeling of microbiome, myeloid cell states, and prostaglandin signaling offers a unique angle not addressed by existing pipelines",
+        "transcript_evidence": "Dysbiosis in tumor microenvironment correlates with neutrophil infiltration and higher PGE2 production",
+        "crispro_angle": "Leverage multi\u2011omics integration to identify patients where microbiome\u2011driven PGE2 is a dominant driver of cachexia",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NSAIDs / COX\u20112 inhibitors (e.g., celecoxib)",
+        "context": "Historical cachexia studies showing modest benefit but limited by toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "DPP1 inhibitor (neutrophil targeting)",
+        "context": "Experimental strategy to deplete neutrophils in cachectic mice",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will genetic or pharmacologic suppression of PGE2 restore sensitivity to checkpoint blockade in cachectic patients?",
+      "What upstream signals (e.g., dysbiosis) drive neutrophil\u2011derived PGE2 in human lung tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PTGES",
+        "PTGS2",
+        "PGE2",
+        "COX\u20112 inhibitors",
+        "DPP1 inhibitor"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

@@ -1,0 +1,595 @@
+[
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Changsong Qi",
+      "institution_or_pharma": "Peking University Cancer Hospital",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "Iterative engineering of GPCR-targeted synthetic TCRs and antigen receptor STAR cells in advanced solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"the persistence is limited\"",
+        "Speaker said: \"we only enrolled three patients\"",
+        "Speaker said: \"we switched into membrane-bound IL-15\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "STAR T cells (Version 2 construct)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited in vivo persistence of engineered cells despite IL-15 armoring",
+        "unexplained_resistance_quote": "Speaker said: \"the other patient experienced a rapid decline in STAR T copy number shortly after infusion\"",
+        "ghost_responder_admission": "Speaker said: \"only the responders exhibited a massive and sustained expansion\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "STAR T Phase I trial (Version 2/3 cohorts)",
+        "target_biology": "GPC3\u2011targeted synthetic TCR/STAR T cells with CXCR2 homing and membrane\u2011bound IL\u201115",
+        "flawed_enrollment_criteria": "Enrolled only 3\u20134 heavily pre\u2011treated patients per construct without dose escalation",
+        "missing_biomarker": "No pre\u2011screening for tumor CXCL chemokine levels or GPC3 expression heterogeneity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to assess safety/efficacy across cohorts",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "STAR T platform \u2013 synthetic TCR fused to CAR extracellular domain",
+        "ip_vulnerability_note": "Speaker disclosed that the platform relies on a single antigen (GPC3) and CXCR2 homing, which may be bypassed by antigen loss or chemokine variation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Rapid switch from Version 2 to Version 3 construct without completing dose\u2011escalation, potentially diluting signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that only responders had massive STAR T expansion, then concluded that the iterative design \"solved the initial expansion hurdle\" while persistence remained limited"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No biomarker\u2011stratified analysis of CXCL chemokine levels",
+        "No long\u2011term persistence data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high tumor CXCL1/2/5/8 chemokine expression to match CXCR2\u2011armed STAR T cells",
+        "transcript_evidence": "Speaker said: \"By engineering our STAR T cells to express CXCR2, we effectively created self\u2011driving T cells\"",
+        "crispro_angle": "Use CrisPRO to develop a CXCR2\u2011chemokine expression signature for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target additional antigens beyond GPC3 to prevent antigen\u2011loss escape",
+        "transcript_evidence": "Speaker noted antigen heterogeneity as a barrier to CAR T efficacy",
+        "crispro_angle": "Apply CrisPRO to design multi\u2011specific CARs or bispecific STAR T constructs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the optimal IL\u201115 expression level to balance expansion and toxicity?",
+      "Can CXCR2 homing improve infiltration in tumors with low CXCL chemokine secretion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "STAR T GPC3 construct",
+        "CXCR2\u2011armed STAR T cells"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Qilong Yang",
+      "institution_or_pharma": "Tianjin Medical University Cancer Hospital",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "Cellular Architecture of Infused TILs Predicts Efficacy of Autologous TIL Therapy in Acral Melanoma",
+      "rhetorical_signals": [
+        "Speaker said: \"the production quality is more important than the quantity\"",
+        "Speaker said: \"the durable immunity comes from the progenitor exhaust T cells\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard TIL product (LM103) without enrichment",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low proportion of progenitor exhausted T cells leads to limited durability",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker said: \"one patient achieved a long\u2011time durable response\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Acral Melanoma TIL Investigator\u2011initiated Trial",
+        "target_biology": "Autologous tumor\u2011infiltrating lymphocyte infusion",
+        "flawed_enrollment_criteria": "Small cohort of four patients; no biomarker\u2011driven selection for TFH or progenitor exhausted T cells",
+        "missing_biomarker": "Baseline TFH and intermediate exhausted T\u2011cell frequencies",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Pilot_only",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard TIL expansion platform",
+        "ip_vulnerability_note": "Speaker highlighted that TIL quality (TFH, intermediate exhausted) drives response, suggesting current expansion does not enrich these subsets",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of prospective selection/enrichment for high\u2011quality T\u2011cell subsets"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "No long\u2011term OS data",
+        "No biomarker\u2011guided patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a predictive signature (TFH + intermediate exhausted T\u2011cell markers) to select patients for TIL therapy",
+        "transcript_evidence": "Speaker said: \"the production quality is more important than the quantity\" and highlighted TFH and intermediate exhausted cells as predictive",
+        "crispro_angle": "Use CrisPRO to integrate single\u2011cell transcriptomic signatures into a clinical decision algorithm",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Engineer TIL manufacturing to enrich TFH and progenitor exhausted subsets (e.g., cytokine cocktails)",
+        "transcript_evidence": "Speaker noted that these subsets drive durable immunity",
+        "crispro_angle": "Apply CrisPRO to model cytokine/chemokine perturbations that favor desired T\u2011cell states",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Can ex vivo modulation increase TFH/intermediate exhausted T\u2011cell frequencies?",
+      "What is the optimal dosing schedule for durable responses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "LM103 TIL product",
+        "Next\u2011gen TIL platform (T\u2011editor CRISPR)"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Carl Desomme",
+      "institution_or_pharma": "Washington University School of Medicine in St. Louis",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "First\u2011in\u2011class chimeric antigen receptor dendritic cell platform driving broad and durable antitumor immunity in solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"CAR DCs induce a strong costimulatory program across many different costimulatory molecules\"",
+        "Speaker said: \"30 out of 30 mice showed complete rejection\""
+      ],
+      "presentation_type": "preclinical_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Planned Phase I CAR\u2011DC trial (2027 start)",
+        "target_biology": "B7\u2011H3\u2011targeted CAR\u2011engineered type\u20111 dendritic cells",
+        "flawed_enrollment_criteria": "Initial safety phase limited to intratumoral delivery only; no biomarker\u2011driven patient selection",
+        "missing_biomarker": "Tumor B7\u2011H3 expression heterogeneity not stratified",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "minor_concern (early\u2011phase safety)",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CAR\u2011DC mRNA electroporation platform",
+        "ip_vulnerability_note": "Relies on non\u2011integrating mRNA; transient expression may limit durability compared with viral CAR T cells",
+        "scale_or_manufacturing_bottleneck": "Manufacturing 300\u202fM CAR\u2011DCs per run is complex and may affect scalability",
+        "clinical_strategy_weakness": "Intratumoral delivery may limit applicability to non\u2011accessible lesions"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human safety data yet",
+        "Unclear durability of CAR\u2011DC induced T\u2011cell memory in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair CAR\u2011DCs with checkpoint blockade to sustain T\u2011cell activation after DC\u2011mediated priming",
+        "transcript_evidence": "Speaker highlighted that CAR\u2011DCs generate stem\u2011like T cells in draining lymph nodes",
+        "crispro_angle": "Model synergistic effects of CAR\u2011DC priming plus PD\u20111 inhibition using CrisPRO simulations",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate baseline B7\u2011H3 expression stratification to enrich for responders",
+        "transcript_evidence": "Speaker noted B7\u2011H3 is highly prevalent but antigen density is low",
+        "crispro_angle": "Use CrisPRO to predict response thresholds based on antigen density",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "B7\u2011H3 CAR T programs",
+        "context": "Mentioned as alternative B7\u2011H3 targeting approaches",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will CAR\u2011DC\u2011induced T\u2011cell memory persist after transient mRNA expression?",
+      "Can systemic IV delivery achieve comparable priming without intratumoral injection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CAR\u2011DC B7\u2011H3 construct",
+        "mRNA electroporation platform"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sabine Heiteneider",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "Decoding the Medulloblastoma Serpinosome Prioritizes the Oncofetal Antigen GPC2 for Potent CAR T Cell Therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"GPC2 is the top candidate and outperforms other antigens\"",
+        "Speaker said: \"c\u2011Jun overexpression mitigates antigen\u2011low tumor escape\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "GPC2\u2011CAR T cells without c\u2011Jun augmentation",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Tumor antigen down\u2011regulation leading to escape",
+        "unexplained_resistance_quote": "Speaker noted recurrence associated with drop in GPC2 density",
+        "ghost_responder_admission": "Speaker said: \"a small fraction of tumors recurred after prolonged interval of cure\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 GPC2 CAR T trial (NCT\u2011pending)",
+        "target_biology": "GPC2\u2011targeted CAR T cells with CD28 costimulatory domain and c\u2011Jun overexpression",
+        "flawed_enrollment_criteria": "Eligibility based solely on GPC2 IHC; no stratification for antigen density thresholds",
+        "missing_biomarker": "Quantitative GPC2 molecules\u2011per\u2011cell cutoff for enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "underpowered (4 patients enrolled so far)",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GPC2 CAR construct with CD28 signaling",
+        "ip_vulnerability_note": "Relies on moderate antigen density (~5,000\u20136,000 molecules/cell); may be outcompeted by lower\u2011density tumors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Locoregional delivery may limit access to metastatic sites"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that GPC2 density is modest yet concluded that the CAR T product is broadly effective without extensive biomarker gating"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term OS and durability data",
+        "Impact of c\u2011Jun overexpression on safety"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Define a quantitative GPC2 density cutoff (>6,000 molecules/cell) for patient selection",
+        "transcript_evidence": "Speaker measured GPC2 density and linked it to CAR T detection thresholds",
+        "crispro_angle": "Use CrisPRO to model response probability as a function of antigen density",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Combine GPC2 CAR with multi\u2011antigen targeting (e.g., B7\u2011H3) to prevent antigen\u2011loss escape",
+        "transcript_evidence": "Speaker noted tumor recurrence with reduced GPC2 expression",
+        "crispro_angle": "Design bispecific CAR constructs via CrisPRO optimization",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GD2 CAR T programs",
+        "context": "Mentioned as successful pediatric solid tumor CARs",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "B7\u2011H3 CAR T programs",
+        "context": "Compared antigen density with GPC2",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does c\u2011Jun overexpression increase risk of uncontrolled proliferation?",
+      "What is the optimal intra\u2011cerebral dosing schedule?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GPC2 CAR construct",
+        "c\u2011Jun\u2011augmented CAR T cells"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Dr. Rafet Bassar",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "NK TCR cells, a next generation platform expanding NK cell therapeutic potential",
+      "rhetorical_signals": [
+        "Speaker said: \"NK TCR cells kill two tumors in less than two minutes\"",
+        "Speaker said: \"no CRS, ICANS or GvHD observed in patient\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NK TCR platform without MHC\u2011I dependence",
+        "failure_type": "potential_resistance",
+        "mechanistic_blindspot": "Reliance on tumor MHC\u2011I expression for TCR recognition may limit activity against MHC\u2011I\u2011low tumors",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted rapid killing but did not address MHC\u2011I\u2011deficient contexts",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MD Anderson NK TCR basket trial (dose escalation)",
+        "target_biology": "TCR\u2011engineered NK cells targeting NY\u2011ESO\u20111 or PRAME with IL\u201115 support",
+        "flawed_enrollment_criteria": "Allogeneic off\u2011the\u2011shelf product without HLA matching; limited assessment of MHC\u2011I status",
+        "missing_biomarker": "Tumor HLA\u2011A/B/C expression levels",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "pilot_only",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "NK TCR transduction platform (CD3/TCR + IL\u201115 cassette)",
+        "ip_vulnerability_note": "Platform described as off\u2011the\u2011shelf but may be vulnerable to competition from NK CAR or CAR\u2011NK products with similar manufacturing",
+        "scale_or_manufacturing_bottleneck": "Manufacturing relies on cord\u2011blood NK expansion; scalability not demonstrated at large scale",
+        "clinical_strategy_weakness": "No head\u2011to\u2011head comparison with NK\u2011CARs to prove superiority"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term persistence data beyond day 40",
+        "Efficacy in MHC\u2011I\u2011deficient tumors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair NK TCR cells with agents that up\u2011regulate MHC\u2011I (e.g., IFN\u2011\u03b3) to broaden targetability",
+        "transcript_evidence": "Speaker raised question about MHC\u2011I loss and NK TCR activity",
+        "crispro_angle": "Model synergistic effects of MHC\u2011I induction on NK TCR efficacy",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Include mandatory HLA typing and tumor MHC\u2011I expression as eligibility criteria",
+        "transcript_evidence": "Speaker admitted uncertainty about MHC\u2011I dependence",
+        "crispro_angle": "Use CrisPRO to simulate trial outcomes with biomarker\u2011stratified cohorts",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CAR\u2011NK programs",
+        "context": "Mentioned as alternative NK\u2011based therapies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Do NK TCR cells retain activity against tumors that down\u2011regulate MHC\u2011I?",
+      "What is the durability of NK TCR persistence after the first infusion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NY\u2011ESO\u20111 TCR NK product",
+        "PRAME TCR NK product"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Dr. Alexander Eben",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "Universal T cell therapy screening library and preclinical models of CAR T cell therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"71% of hits are matching in the same direction between screens and model\"",
+        "Speaker said: \"CACTUS library contains 636 members\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CRISPR\u2011all multiplexed editing platform",
+        "ip_vulnerability_note": "Relies on non\u2011viral HDR integration at TRAC; efficiency may vary across donor cells, limiting reproducibility",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Library size may dilute signal for rare but critical perturbations in pooled screens"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Validation of top hits in primary patient infusion products",
+        "In vivo efficacy of combinatorial edits"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO to prioritize combinatorial gene edits that improve CAR T persistence and reduce exhaustion",
+        "transcript_evidence": "Speaker described CACTEX library and hits such as TCF7L1 and synthetic FAS\u2011OX40 chimeras",
+        "crispro_angle": "Integrate CACTEX data into CrisPRO predictive models for next\u2011gen CAR T design",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CACTEX\u2011derived signatures to stratify patients for CAR T trials",
+        "transcript_evidence": "Speaker emphasized linking patient data with functional screens",
+        "crispro_angle": "Model patient\u2011specific gene expression profiles to predict responder vs non\u2011responder phenotypes",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Axicabtagene ciloleucel (axi\u2011cel)",
+        "context": "Used as reference standard in screens",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do synthetic chimeric constructs perform in vivo compared with endogenous gene edits?",
+      "Can CACTEX be adapted for solid\u2011tumor CAR targets?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CACTUS library",
+        "CRISPR\u2011all platform"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "adoptive-t-cell-therapy::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Aslan Arnett",
+      "institution_or_pharma": "Baylor College of Medicine",
+      "session_title": "adoptive-t-cell-therapy",
+      "talk_title": "Triple Disruption of CCDC6, ZEB1B, and ASB2 Promotes the Therapeutic Efficacy of Glypican\u20113 Targeted T Cells",
+      "rhetorical_signals": [
+        "Speaker said: \"the majority of this response was a clonal expansion\"",
+        "Speaker said: \"triple knockout cells showed complete tumor control and survival\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard GPC3\u2011CAR T (IL\u201115 armored) without gene disruption",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of disruption of negative regulators (CBLB, CCDC6, ASB2) limits clonal expansion",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker highlighted a single patient with massive clonal expansion",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "GPC3\u2011CAR T IL\u201115 trial (investigator\u2011initiated)",
+        "target_biology": "GPC3\u2011targeted CAR T cells with IL\u201115 armoring",
+        "flawed_enrollment_criteria": "No pre\u2011selection for patients harboring spontaneous CBLB/CCDC6/ASB2 disruptions",
+        "missing_biomarker": "Baseline expression or mutation status of CBLB, CCDC6, ASB2",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "underpowered",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GPC3\u2011CAR with IL\u201115",
+        "ip_vulnerability_note": "Efficacy appears dependent on rare integration events; reproducibility may be low",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on stochastic retroviral integration for functional benefit"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Mechanistic validation of each gene knockout in larger cohorts",
+        "Safety assessment of triple knockout in humans"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Introduce CRISPR\u2011mediated knockout of CBLB, CCDC6, and ASB2 into GPC3\u2011CAR manufacturing to recapitulate patient clone expansion",
+        "transcript_evidence": "Speaker identified three integrations disrupting these genes that mirrored the expanded clone",
+        "crispro_angle": "Design a multiplexed CRISPR\u2011all edit package for GPC3\u2011CAR T cells",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a diagnostic assay to detect spontaneous CBLB/CCDC6/ASB2 disruptions as a predictor of response",
+        "transcript_evidence": "Speaker linked clonal expansion to these gene disruptions",
+        "crispro_angle": "Use CrisPRO to model impact of each disruption on CAR T fitness",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CAR\u2011T programs targeting GPC3",
+        "context": "Referenced as prior GPC3 CAR trials",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Is disruption of all three genes required for the observed benefit?",
+      "Does IL\u201115 armoring synergize with the triple knockout or is it dispensable?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GPC3\u2011CAR IL\u201115 construct",
+        "CRISPR\u2011based triple knockout platform"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

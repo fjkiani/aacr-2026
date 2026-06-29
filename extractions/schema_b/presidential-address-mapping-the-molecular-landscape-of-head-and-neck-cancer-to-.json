@@ -1,0 +1,126 @@
+[
+  {
+    "talk_id": "presidential-address-mapping-the-molecular-landscape-of-head-and-neck-cancer-to-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Lillian L. Siu",
+      "institution_or_pharma": "Princess Margaret Cancer Centre, University of Toronto",
+      "session_title": "presidential-address-mapping-the-molecular-landscape-of-head-and-neck-cancer-to-",
+      "talk_title": "Mapping the Molecular Landscape of Head and Neck Cancer to Inform Pan\u2011Tumor Targeting",
+      "rhetorical_signals": [
+        "Speaker said: \"we finished at around 50 patients, of which I'll give you some results\"",
+        "Speaker said: \"we were only able to enroll two patients, one randomized to active treatment and one did not\"",
+        "Speaker said: \"MRD is not MRD unless you really confirm that they do not have clinical radiological recurrence\"",
+        "Speaker said: \"we did not reach our enrollment goal of 200 patients\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Revagostumab (PD\u20111\u202f\u00d7\u202fT\u2011digit bispecific)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reliance on ctDNA positivity without robust confirmation of microscopic disease leads to enrollment of patients with overt macroscopic recurrence, limiting drug exposure to true MRD cases",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that only one patient received the bispecific and remained disease\u2011free for 22\u202fmonths, implying a rare exceptional responder",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MERIDIAN",
+        "target_biology": "ctDNA\u2011guided MRD interception in locally advanced head\u2011and\u2011neck cancer",
+        "flawed_enrollment_criteria": "Broad curative\u2011treatment cohort with requirement for PD\u2011L1 positivity but without pre\u2011screening for ctDNA detectability, leading to low MRD\u2011positive yield",
+        "missing_biomarker": "Real\u2011time ultra\u2011sensitive ctDNA assay (e.g., newer ultrasensitive assay not used in initial cohort)",
+        "static_vs_dynamic_failure": "No serial on\u2011treatment ctDNA monitoring beyond fixed landmark points, reducing ability to capture dynamic clearance",
+        "statistical_concern": "Planned 200 patients but enrolled ~50; underpowered to detect meaningful difference",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tumor\u2011informed ctDNA assay workflow (NeoGenomics RADAR)",
+        "ip_vulnerability_note": "Speaker disclosed reliance on a commercial vendor assay and noted limited sensitivity in head\u2011and\u2011neck, suggesting the core platform may be outperformed by more ultrasensitive technologies",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a fixed\u2011ratio 3:1 randomization to bispecific without adaptive enrichment based on real\u2011time MRD status dilutes signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that many ctDNA\u2011positive patients already had macroscopic recurrence, yet proceeded to randomize MRD\u2011positive patients to the bispecific arm, contradicting the earlier statement that MRD must be confirmed absent of radiologic disease"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited number of MRD\u2011positive patients (n\u22486) with efficacy readout",
+        "Absence of a biomarker\u2011stratified analysis beyond ctDNA positivity"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for an ultra\u2011sensitive, tumor\u2011agnostic ctDNA assay that can reliably detect MRD in head\u2011and\u2011neck cancers where current assays miss low\u2011fraction disease",
+        "transcript_evidence": "Speaker noted that \"the RADAR assay did quite well\" but also that \"we were not able to detect using that assay despite it being very sensitive\" in several relapsed patients",
+        "crispro_angle": "CrisPRO's computational spine can integrate ultra\u2011deep sequencing with machine\u2011learning\u2011based error suppression to push detection limits below 0.01% allele fraction",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify ctDNA\u2011negative but immunotherapy\u2011resistant patients via TCR repertoire and spatial transcriptomics signatures",
+        "transcript_evidence": "Speaker described divergent TCR richness correlating with ctDNA kinetics and a spatial transcriptomics immune\u2011suppressed signature",
+        "crispro_angle": "CrisPRO can model TCR diversity dynamics and spatial gene\u2011expression patterns to predict resistance beyond ctDNA alone",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Implement adaptive enrollment that only randomizes patients after confirmed MRD negativity for macroscopic disease and real\u2011time ctDNA clearance",
+        "transcript_evidence": "Speaker admitted that \"MRD is not MRD unless you really confirm\" and that the trial enrolled only two patients for randomization",
+        "crispro_angle": "CrisPRO can provide a real\u2011time decision engine linking assay results to eligibility, reducing dilution of therapeutic signal",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AstraZeneca",
+        "context": "Provider of the PD\u20111\u202f\u00d7\u202fT\u2011digit bispecific revagostumab used in MERIDIAN",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "NeoGenomics",
+        "context": "Commercial vendor of the RADAR tumor\u2011informed ctDNA assay",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "GlaxoSmithKline",
+        "context": "Partner for upcoming B7H3 antibody\u2011drug conjugate study in advanced head\u2011and\u2011neck cancer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Signatera (Natera)",
+        "context": "Referenced as a tumor\u2011informed assay used in the INSPIRE study",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal timing and frequency of ctDNA sampling to maximize MRD detection sensitivity?",
+      "Can ultra\u2011sensitive ctDNA assays reliably distinguish true microscopic disease from residual macroscopic lesions?",
+      "How generalizable are the spatial transcriptomics immune signatures across other tumor types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Revagostumab (PD\u20111\u202f\u00d7\u202fT\u2011digit bispecific)",
+        "B7H3 antibody\u2011drug conjugate (GSK)",
+        "NeoGenomics RADAR assay",
+        "Signatera assay"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "GlaxoSmithKline",
+        "NeoGenomics",
+        "Natera"
+      ]
+    }
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "talk_id": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Mark O'Connor",
+      "institution_or_pharma": "AstraZeneca",
+      "session_title": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-",
+      "talk_title": "Evolution of PARP inhibitors and lessons for synthetic lethality",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped OS data entirely, presented only PFS"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PARP inhibitors (e.g., rucaparib)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Incomplete PARP trapping leading to sub\u2011optimal tumor regression",
+        "unexplained_resistance_quote": "more than 90% of PARP inhibitor\u2011resistant models ... will actually reactivate HR function, and you'll see RAD51 foci",
+        "ghost_responder_admission": "some patients responded despite low dose, but overall cohort benefit was modest",
+        "hidden_tox_signal": "higher dose reductions and interruptions were needed for many patients due to toxicity",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase III olaparib maintenance trial in first\u2011line ovarian cancer",
+        "target_biology": "PARP inhibition in HR\u2011deficient tumors",
+        "flawed_enrollment_criteria": "Enrolling all HRD patients without stratifying by functional HRD status (e.g., RAD51 foci)",
+        "missing_biomarker": "Functional HRD assay (RAD51 foci) to exclude HR\u2011proficient tumors",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering of sub\u2011group analyses for different BRCA mutation types",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "First\u2011generation PARP1/2 inhibitors",
+        "ip_vulnerability_note": "Broad PARP trapping activity varies between agents, leading to differing therapeutic windows",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Dose reductions due to toxicity dilute signal and may limit long\u2011term efficacy"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed RAD51 foci data indicating HR re\u2011activation in resistant tumors, then concluded that PARP inhibitors remain broadly effective as monotherapy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_PFS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited functional HRD biomarker stratification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Functional HRD assays (e.g., RAD51 foci, STRIDE) could better select patients who will benefit from high\u2011trap PARP inhibitors.",
+        "transcript_evidence": "RAD51 foci expression indicating reactivation of HR in non\u2011responders; >90% of resistant models show RAD51 foci.",
+        "crispro_angle": "CrisPRO can integrate functional HRD signatures with genomic data to predict PARP trapping dependency.",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve HRD biomarker data from olaparib maintenance trials",
+          "PubMed: studies linking RAD51 foci to PARP inhibitor response"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine high\u2011trap PARP inhibitors with agents that prevent HR re\u2011activation (e.g., POLQ inhibitors) to overcome resistance.",
+        "transcript_evidence": "Resistant clones lost ability to trap PARP; loss of trapping correlated with resistance.",
+        "crispro_angle": "CrisPRO can model synthetic lethal networks to prioritize POLQ as a partner for PARP inhibition.",
+        "external_validation_needed": [
+          "Preclinical data on POLQ inhibition synergy with PARP trapping"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Rucaparib",
+        "context": "Compared for trapping potency and toxicity profile",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Talazoparib",
+        "context": "Highlighted as a strong trap with narrow therapeutic window",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Niraparib",
+        "context": "Noted for off\u2011target toxicities (hypertension, LFT elevations)",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal PARP inhibition threshold (time above IC95) needed for durable responses?",
+      "Can functional HRD assays replace static genomic scar assays in trial eligibility?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT01847274",
+        "NCT02032277"
+      ],
+      "assets_to_track": [
+        "olaparib",
+        "talazoparib",
+        "rucaparib",
+        "niraparib"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Clovis Oncology",
+        "Tesaro"
+      ]
+    }
+  },
+  {
+    "talk_id": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Steve Ballen",
+      "institution_or_pharma": "FogHorn Therapeutics",
+      "session_title": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-",
+      "talk_title": "Targeting ARID1A/ARID1B paralogs and SMARCA2/SMARCA4 synthetic lethality",
+      "rhetorical_signals": [
+        "Speaker said: ARID1B is probably one of the most challenging targets that I've worked on in my career",
+        "Skipped discussion of any in\u2011vivo efficacy data for ARID1B degraders"
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ARID1B degraders (VHL and cereblon series)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target neo\u2011substrate activity of cereblon degraders not fully explored in primary cells",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Hook effect observed with cereblon\u2011based degrader at higher concentrations",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ARID1B selective binders converted to degraders",
+        "ip_vulnerability_note": "Selectivity relies on binder chemistry; any loss of selectivity could lead to ARID1A degradation, reducing therapeutic index",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of demonstrated in\u2011vivo tumor regression data limits confidence in advancing to clinic"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "SMARCA2 inhibitor (LY4050784) in collaboration with Lilly",
+        "ip_vulnerability_note": "Efficacy appears limited to BRG1\u2011mutant tumors; narrow patient population",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on combination with PD\u20111 blockade adds complexity to trial design"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized high selectivity of ARID1B degraders (no ARID1A degradation) yet admitted a hook effect and potential off\u2011target neo\u2011substrates, which could compromise selectivity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011vivo efficacy or safety data for ARID1B degraders",
+        "Limited pharmacokinetic data for SMARCA2 inhibitor"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Use CrisPRO to redesign ARID1B binders to eliminate hook effect and improve degradation kinetics.",
+        "transcript_evidence": "Hook effect observed with cereblon\u2011based molecule; need for better potency/selectivity.",
+        "crispro_angle": "Computational protein\u2011ligand modeling can predict off\u2011target interactions and guide redesign.",
+        "external_validation_needed": [
+          "Structural data of ARID1B\u2011cereblon ternary complex",
+          "Cellular degradation assays in multiple tumor models"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic partners for SMARCA2 inhibition (e.g., ATR inhibitors) using synthetic lethal network analysis.",
+        "transcript_evidence": "SMARCA2 inhibition combined with PD\u20111 blockade showed complete responses in mouse model.",
+        "crispro_angle": "CrisPRO can map dependencies in BRG1\u2011deficient tumors to prioritize rational combos.",
+        "external_validation_needed": [
+          "Preclinical combination studies of SMARCA2 inhibitor with ATR or DNA\u2011PK inhibitors"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Lilly",
+        "context": "Collaboration on SMARCA2 inhibitor LY4050784",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "VHL and cereblon E3 ligase platforms",
+        "context": "Compared for potency and selectivity in degrader development",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will ARID1B degraders achieve sufficient tumor exposure and on\u2011target activity in vivo?",
+      "What biomarkers will predict response to SMARCA2 inhibition beyond BRG1 loss?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ARID1B degrader candidates",
+        "LY4050784 (SMARCA2 inhibitor)"
+      ],
+      "companies_to_monitor": [
+        "FogHorn Therapeutics",
+        "Eli Lilly"
+      ]
+    }
+  }
+]

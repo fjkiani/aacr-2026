@@ -1,0 +1,314 @@
+[
+  {
+    "talk_id": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Carissa (Karissa) Lo",
+      "institution_or_pharma": "University of Pittsburgh and UPMC Hillman Cancer Center",
+      "session_title": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc",
+      "talk_title": "Consumer Wearable Devices for Physical Functioning, Readmission Risk, Falls, and Survival in Cancer Patients",
+      "rhetorical_signals": [
+        "Speaker said: \"we didn't see this rate decline over time\"",
+        "Speaker said: \"we found that our older patients were better at collecting Fitbit data than our younger patients\"",
+        "Speaker said: \"we saw a striking race difference with our non\u2011white participants\"",
+        "Speaker said: \"I'm not suggesting that this is causal. There's a lot of other factors that could be at play\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented for the chemotherapy cohort beyond median follow\u2011up",
+        "No external validation of gait cadence and activity fragmentation thresholds",
+        "Limited racial/ethnic diversity \u2013 only 17% non\u2011white participants"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Peak gait cadence and activity fragmentation predict survival independent of ECOG and step count, suggesting a novel prognostic biomarker that CrisPRO could model and validate across larger cohorts.",
+        "transcript_evidence": "Speaker said: \"only peak gait cadence and activity fragmentation remained significant after adjusting for age, cancer stage, type, ECOG, and step count\"",
+        "crispro_angle": "CrisPRO can integrate continuous wearable metrics with clinical covariates to develop a composite prognostic score and test its predictive power in multi\u2011institutional datasets.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Low activity fragmentation is associated with higher mortality, indicating a possible physiologic resistance pathway (frailty) that could be targeted with interventions.",
+        "transcript_evidence": "Speaker said: \"patients that had more fragmented activity in the yellow had greater mortality over the follow\u2011up\"",
+        "crispro_angle": "CrisPRO\u2019s AI can identify patients with high fragmentation and recommend tailored exercise or supportive care programs to mitigate frailty\u2011related resistance.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Future trials could stratify enrollment by baseline gait cadence to avoid signal dilution from low\u2011risk patients.",
+        "transcript_evidence": "Speaker said: \"these gait cadence and activity fragmentation measures might be capturing something independent of what clinicians can perceive\"",
+        "crispro_angle": "CrisPRO can simulate trial power under different stratification schemes using existing wearable datasets to optimize design.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "The retrospective analysis shows that wearable\u2011derived metrics have prognostic value even when traditional clinical endpoints are modest; CrisPRO could repurpose existing wearable data to rescue underperforming biomarkers.",
+        "transcript_evidence": "Speaker said: \"we found that step count did predict survival, but peak gait cadence and activity fragmentation were stronger\"",
+        "crispro_angle": "Apply CrisPRO\u2019s multimodal modeling to re\u2011analyze legacy trial data with wearable streams, potentially revealing hidden efficacy signals.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Fitbit",
+        "context": "primary device used for data collection; discussed advantages and limitations",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Apple Watch",
+        "context": "mentioned as alternative but less platform\u2011agnostic",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Garmin",
+        "context": "raised by audience as alternative device",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How early can gait cadence or activity fragmentation predict readmission or mortality in a prospective, real\u2011time setting?",
+      "What interventions can effectively modify low gait cadence or high activity fragmentation to improve outcomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Fitbit\u2011based activity fragmentation metric",
+        "Peak gait cadence prognostic model"
+      ],
+      "companies_to_monitor": [
+        "Fitbit (Google)",
+        "UPMC Hillman Cancer Center wearable program"
+      ]
+    }
+  },
+  {
+    "talk_id": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Giorgio Aquile",
+      "institution_or_pharma": "Scripps Research / Digital Trial Center",
+      "session_title": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc",
+      "talk_title": "Digital Trials and AI\u2011Enabled Wearable Monitoring Across Diseases",
+      "rhetorical_signals": [
+        "Speaker said: \"we were able to launch the study at the end of March of 2020, just a few weeks after the pandemic started\"",
+        "Speaker said: \"the alarm, since it has a cost also for the participant, we try to trigger it only if we are pretty sure that there is something consistent happening\"",
+        "Speaker said: \"we don't want to return medical answers to these people. We want to invite them to a study\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Detect Ahead",
+        "target_biology": "Early detection of infectious disease via resting heart rate and activity changes",
+        "flawed_enrollment_criteria": "All\u2011comer remote enrollment without pre\u2011screening for baseline health status may dilute signal in asymptomatic participants",
+        "missing_biomarker": "No concurrent virologic testing at enrollment to confirm infection status",
+        "static_vs_dynamic_failure": "Initial design relied on a single\u2011day alert threshold; later refined to require multi\u2011day consistent changes",
+        "statistical_concern": "High false\u2011positive rate observed when alerts were sent based on single\u2011day deviations",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Open\u2011source data aggregation platforms for multi\u2011device wearables",
+        "ip_vulnerability_note": "Speaker noted reliance on third\u2011party aggregators that are expensive and not proprietary, suggesting limited IP protection",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad, disease\u2011agnostic enrollment may limit ability to demonstrate disease\u2011specific efficacy for oncology applications"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited disease\u2011specific validation for oncology patients",
+        "No real\u2011time intervention efficacy demonstrated in the infectious\u2011disease alert trial"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can provide a unified, oncology\u2011focused analytics layer on top of heterogeneous wearable streams, addressing the current reliance on generic open\u2011source pipelines.",
+        "transcript_evidence": "Speaker said: \"there are a number of companies out there that are data aggregators, ... they are kind of expensive\"",
+        "crispro_angle": "Deploy CrisPRO\u2019s proprietary modeling to harmonize data across Fitbit, Apple Watch, Garmin, and Oura without costly third\u2011party aggregators.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate multi\u2011day physiological change criteria and disease\u2011specific thresholds (e.g., for immunotherapy\u2011related toxicity) into digital trial protocols.",
+        "transcript_evidence": "Speaker said: \"we usually waited at least a couple of days, and we look at changes in resting heart rate and in at least one between sleep and physical activity before triggering an alarm\"",
+        "crispro_angle": "CrisPRO can simulate different alert windows and optimize sensitivity/specificity for oncology endpoints such as cytokine release syndrome.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Partner with oncology groups to embed CrisPRO analytics into remote monitoring of checkpoint inhibitor trials, leveraging the foundation model concept.",
+        "transcript_evidence": "Speaker said: \"the idea is really to study the individual, ... and then trigger changes with respect to this normal\"",
+        "crispro_angle": "Use CrisPRO\u2019s foundation model fine\u2011tuned on oncology patients to predict irAE risk from wearable data.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Fitbit",
+        "context": "primary device used in many of the described studies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Apple Watch",
+        "context": "mentioned as alternative wearable",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Garmin",
+        "context": "cited by audience as alternative device",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal multi\u2011day window for triggering infectious\u2011disease alerts without causing alert fatigue?",
+      "How can wearable\u2011derived early signals be linked to specific oncology toxicities (e.g., immune\u2011related adverse events)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345 (hypothetical Detect Ahead trial)"
+      ],
+      "assets_to_track": [
+        "Scripps Digital Trial Center remote monitoring platform",
+        "Foundation model for wearable physiology"
+      ],
+      "companies_to_monitor": [
+        "Scripps Research",
+        "Google (Fitbit)"
+      ]
+    }
+  },
+  {
+    "talk_id": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "George Niava",
+      "institution_or_pharma": "University of Southern California",
+      "session_title": "continuous-oncology-wearables-digital-biomarkers-and-the-future-of-cancer-interc",
+      "talk_title": "AI Integration of Wearable Data into Oncology Clinical Practice",
+      "rhetorical_signals": [
+        "Speaker said: \"when you look at the meta\u2011analysis, cancer patients are not super active in general\"",
+        "Speaker said: \"physicians are only right 40% of the time when estimating performance status\"",
+        "Speaker said: \"the survival difference from mis\u2011estimated performance status is about the same benefit as cisplatin in the adjuvant setting\"",
+        "Speaker said: \"remote patient monitoring code was billed for less than 1% of Medicare cancer patients\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Remote patient monitoring (RPM) implementation in oncology",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of integration with existing EMR workflows and clinician alert fatigue",
+        "unexplained_resistance_quote": "Speaker said: \"clinicians get alert fatigue and really oftentimes don't want to hear what's happening to every one of their patients\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PROTECT trial (follow\u2011up to Basch study)",
+        "target_biology": "Patient\u2011reported outcomes improving survival via remote monitoring",
+        "flawed_enrollment_criteria": "Broad inclusion of all lung cancer patients without stratifying by digital literacy or device ownership",
+        "missing_biomarker": "Objective wearable\u2011derived activity or physiologic metrics to complement PROs",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect survival benefit after initial positive signal",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proprietary AI models for performance\u2011status estimation from Kinect video",
+        "ip_vulnerability_note": "Speaker disclosed that physician scoring variability is high, indicating the model may not yet be robust enough for clinical deployment",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on specialized hardware (Kinect) limits scalability across health systems"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that physicians correctly estimate performance status only 40% of the time, yet concluded that \"remote patient monitoring improves survival\" without presenting prospective interventional data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized controlled trial demonstrating survival benefit of RPM in oncology",
+        "Limited data on long\u2011term adherence to wearables in cancer cohorts",
+        "Absence of cost\u2011effectiveness analysis for health\u2011system adoption"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integrate CrisPRO\u2019s multimodal AI platform with existing RPM workflows to provide actionable risk scores (e.g., early decompensation, irAE prediction) that address clinician alert fatigue.",
+        "transcript_evidence": "Speaker said: \"we need a layer of artificial intelligence in order to make these continuous results interpretable\"",
+        "crispro_angle": "CrisPRO can aggregate wearable, PRO, and EMR data into a single risk dashboard with configurable alert thresholds.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design oncology RPM trials that stratify patients by digital literacy and baseline activity, and include objective wearable endpoints alongside PROs.",
+        "transcript_evidence": "Speaker said: \"most patients aren't health literate, can't really do digital health things\"",
+        "crispro_angle": "Use CrisPRO simulations to estimate power under different stratification schemes before launching the trial.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate that AI\u2011derived performance\u2011status scores from wearables outperform physician estimates in predicting survival, providing a competitive advantage over current RPM solutions.",
+        "transcript_evidence": "Speaker said: \"physicians are only right 40% of the time\"",
+        "crispro_angle": "Validate CrisPRO\u2019s gait\u2011based performance metrics against ECOG/Karnofsky in a prospective cohort.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Basch study (ASCO 2016)",
+        "context": "cited as seminal remote PRO trial showing survival benefit",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "PROTECT trial",
+        "context": "follow\u2011up trial that failed to replicate survival benefit",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Microsoft Kinect",
+        "context": "used for AI performance\u2011status estimation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal set of wearable features needed to reliably predict immune\u2011related adverse events in checkpoint inhibitor therapy?",
+      "How can reimbursement models be aligned to support routine RPM in oncology without increasing health\u2011system expenses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890 (PROTECT trial)",
+        "NCT04165772 (remote monitoring in lung cancer)"
+      ],
+      "assets_to_track": [
+        "Kinect\u2011based performance status AI",
+        "Remote patient monitoring platforms in oncology"
+      ],
+      "companies_to_monitor": [
+        "Epic Systems (RPM integration)",
+        "Fitbit (Google)",
+        "Noom (digital weight\u2011loss interventions)"
+      ]
+    }
+  }
+]

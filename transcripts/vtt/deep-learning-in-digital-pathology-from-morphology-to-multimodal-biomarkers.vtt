@@ -1,0 +1,6221 @@
+WEBVTT
+
+1
+00:19:50.610 --> 00:19:51.270
+Good afternoon.
+
+2
+00:19:52.530 --> 00:19:56.490
+I hope, like me, everyone brought sunscreen here to sunny
+
+3
+00:19:56.590 --> 00:19:57.190
+San Diego.
+
+4
+00:19:58.290 --> 00:19:59.130
+Today's
+
+5
+00:20:00.750 --> 00:20:04.300
+methods workshop is titled "Deep Learning in Digital Pathology: From
+
+6
+00:20:04.370 --> 00:20:08.210
+Morphology to Digital Biomarkers." And we've designed a series of
+
+7
+00:20:08.290 --> 00:20:10.850
+talks that will walk you through both the
+
+8
+00:20:12.050 --> 00:20:15.870
+basics of applying digital deep learning methods,
+
+9
+00:20:16.170 --> 00:20:20.090
+contemporary AI methods for computer vision to digital pathology
+
+10
+00:20:20.170 --> 00:20:20.600
+substrate,
+
+11
+00:20:21.669 --> 00:20:25.540
+through to clinical application and the development of biomarkers, and then
+
+12
+00:20:25.610 --> 00:20:29.370
+onto the integration of multiple forms of data simultaneously
+
+13
+00:20:29.670 --> 00:20:31.530
+with digital pathology as the underpinning.
+
+14
+00:20:31.790 --> 00:20:35.690
+So we're really excited to share these complementary set of talks with you
+
+15
+00:20:35.730 --> 00:20:37.210
+today.
+
+16
+00:20:51.750 --> 00:20:54.929
+All right. My name is Alex Pearson. I'll be chairing the session.
+
+17
+00:20:55.850 --> 00:20:59.430
+And I'm a medical oncologist and computational scientist at University of Chicago.
+
+18
+00:21:00.390 --> 00:21:04.190
+The title of my talk is called "Fundamentals of Deep Learning for Digital
+
+19
+00:21:04.250 --> 00:21:04.810
+Pathology."
+
+20
+00:21:06.010 --> 00:21:08.340
+So today's talk, I want to cover the
+
+21
+00:21:09.590 --> 00:21:13.390
+basic concepts to give us a shared language and some
+
+22
+00:21:13.430 --> 00:21:16.940
+fundamentals about the topic of deep learning for digital pathology.
+
+23
+00:21:17.370 --> 00:21:21.120
+So I'm going to start with the broader context about why digital pathology is
+
+24
+00:21:21.150 --> 00:21:22.660
+important to us in cancer research.
+
+25
+00:21:23.590 --> 00:21:27.410
+I'm going to talk about the fundamentals of the data structure itself,
+
+26
+00:21:27.550 --> 00:21:31.480
+as well as key tasks we can hope to accomplish using deep learning
+
+27
+00:21:31.490 --> 00:21:32.510
+for digital pathology.
+
+28
+00:21:33.370 --> 00:21:37.350
+I'll next talk about some of the underlying methods
+
+29
+00:21:37.610 --> 00:21:41.390
+for deep learning models, as well as this emerging field of foundation
+
+30
+00:21:41.450 --> 00:21:44.810
+models that you'll hear a lot about at this year's AACR conference.
+
+31
+00:21:45.630 --> 00:21:49.530
+I'll touch on some of the most common use cases, where folks have been
+
+32
+00:21:49.550 --> 00:21:51.070
+thinking about deploying
+
+33
+00:21:52.570 --> 00:21:55.010
+deep learning-based models for digital pathology.
+
+34
+00:21:55.270 --> 00:21:58.990
+And then we'll talk a little bit about some of the potential pitfalls of which
+
+35
+00:21:59.029 --> 00:22:02.819
+there are many in AI for digital pathology,
+
+36
+00:22:02.950 --> 00:22:05.210
+as well as some considerations for deployment.
+
+37
+00:22:06.930 --> 00:22:10.290
+So starting with the broader context, why are we having this
+
+38
+00:22:10.930 --> 00:22:13.510
+session now? Well, I think the
+
+39
+00:22:14.590 --> 00:22:18.390
+structure, the rationale for why this
+
+40
+00:22:19.890 --> 00:22:23.650
+area is changing so quickly is that the field of clinical
+
+41
+00:22:23.710 --> 00:22:27.470
+pathology and cancer or oncologic pathology in
+
+42
+00:22:27.530 --> 00:22:28.230
+general as well,
+
+43
+00:22:29.110 --> 00:22:31.760
+is increasingly a digital field.
+
+44
+00:22:32.610 --> 00:22:35.940
+Storage costs on glass remain constant, if not increasing,
+
+45
+00:22:36.370 --> 00:22:40.350
+and there's an increasing access through institutional investment in whole slide
+
+46
+00:22:40.410 --> 00:22:44.050
+imaging, allowing the substrate of pathology to be
+
+47
+00:22:44.110 --> 00:22:45.490
+digitized at its source.
+
+48
+00:22:46.870 --> 00:22:47.190
+There's
+
+49
+00:22:48.050 --> 00:22:51.730
+more and more medical centers or healthcare systems
+
+50
+00:22:51.830 --> 00:22:55.450
+have a distributed model for surgical cases, in which
+
+51
+00:22:55.470 --> 00:22:59.210
+case a surgical center may be manned remotely by a
+
+52
+00:22:59.270 --> 00:23:03.130
+pathologist who is responsible for covering multiple sites, and
+
+53
+00:23:03.150 --> 00:23:06.650
+that's only possible with a distributed digital format.
+
+54
+00:23:07.990 --> 00:23:11.890
+Digital format also allows for a much improved or a
+
+55
+00:23:11.990 --> 00:23:15.730
+redundancy in data storage as opposed to glass, which
+
+56
+00:23:15.790 --> 00:23:18.970
+exists in only one context and can be destroyed, for example.
+
+57
+00:23:19.970 --> 00:23:23.110
+And there's increasingly an appetite for efficiency and
+
+58
+00:23:23.150 --> 00:23:25.110
+reproducibility in clinical pathology,
+
+59
+00:23:25.610 --> 00:23:29.190
+which argue for the use of automated
+
+60
+00:23:29.310 --> 00:23:31.630
+models like can be accomplished with deep learning.
+
+61
+00:23:32.690 --> 00:23:36.170
+So hematoxylin and eosin stained slides and digital
+
+62
+00:23:36.230 --> 00:23:40.130
+pathology in general is really a good substrate for building and deploying
+
+63
+00:23:40.190 --> 00:23:43.870
+AI models because the data is ubiquitous and global.
+
+64
+00:23:44.590 --> 00:23:47.690
+It's inexpensive to produce, it's biologically
+
+65
+00:23:47.770 --> 00:23:48.610
+expressive,
+
+66
+00:23:50.130 --> 00:23:53.450
+representing many different genotypes and phenotypes, and
+
+67
+00:23:53.610 --> 00:23:56.290
+it's already integrated into clinical practice.
+
+68
+00:23:56.450 --> 00:24:00.360
+So these are reasons why many in the community
+
+69
+00:24:00.430 --> 00:24:04.290
+have picked up on digital pathology as a good place to deploy AI
+
+70
+00:24:04.310 --> 00:24:04.670
+models.
+
+71
+00:24:06.449 --> 00:24:10.310
+I'll give an example here, but just in terms of the biological expressivity
+
+72
+00:24:10.810 --> 00:24:14.530
+and the context of the data, you can see that a single digital pathology
+
+73
+00:24:14.590 --> 00:24:18.370
+slide contains an incredible amount of information across many different
+
+74
+00:24:18.410 --> 00:24:22.090
+orders of magnitude of scale and results in
+
+75
+00:24:22.150 --> 00:24:26.050
+information about global morphologic features as well as
+
+76
+00:24:26.130 --> 00:24:27.410
+single cell interactions.
+
+77
+00:24:28.850 --> 00:24:30.970
+So let's talk a little bit about that data, just so we're
+
+78
+00:24:31.850 --> 00:24:35.566
+covering the fundamentals.Digital pathology exists in a
+
+79
+00:24:35.586 --> 00:24:37.066
+pyramidal structure, which
+
+80
+00:24:38.666 --> 00:24:42.106
+exists across many orders of magnitude of resolution.
+
+81
+00:24:42.686 --> 00:24:46.486
+And so we can get both global views of full tissue
+
+82
+00:24:46.946 --> 00:24:50.536
+scale samples in one-to-one resolution, as well as
+
+83
+00:24:50.786 --> 00:24:54.566
+very granular microscopic views of what's happening in
+
+84
+00:24:55.166 --> 00:24:58.986
+tumor microenvironments. So this data structure allows us to deploy
+
+85
+00:24:59.046 --> 00:25:02.866
+models at a variety of different scales or multiple scales at the same time in
+
+86
+00:25:02.906 --> 00:25:03.446
+some cases.
+
+87
+00:25:04.746 --> 00:25:08.166
+And the process by which the
+
+88
+00:25:08.206 --> 00:25:12.016
+glass digital pathology slide is digitized can
+
+89
+00:25:12.046 --> 00:25:15.506
+vary from institution to institution or even from lab to lab.
+
+90
+00:25:15.966 --> 00:25:18.976
+But fundamentally, it follows a similar process.
+
+91
+00:25:19.846 --> 00:25:20.215
+Stained
+
+92
+00:25:22.986 --> 00:25:26.946
+tissue on glass slides are digitized using, for example,
+
+93
+00:25:27.066 --> 00:25:28.266
+a whole slide image
+
+94
+00:25:29.766 --> 00:25:31.246
+microscope or digital slide scanner.
+
+95
+00:25:31.846 --> 00:25:34.506
+There may be an interaction with a pathologist to
+
+96
+00:25:35.306 --> 00:25:36.626
+QC to check the
+
+97
+00:25:38.146 --> 00:25:42.076
+digital image substrate, for example, or to provide some additional context or
+
+98
+00:25:42.126 --> 00:25:42.706
+annotation.
+
+99
+00:25:43.566 --> 00:25:43.686
+The
+
+100
+00:25:44.646 --> 00:25:48.466
+digital slide may be processed using one or more
+
+101
+00:25:48.566 --> 00:25:49.606
+subtypes of
+
+102
+00:25:51.866 --> 00:25:55.786
+image modification, and may be tiled or sliced
+
+103
+00:25:55.826 --> 00:25:59.566
+into more computationally tractable parts depending on the
+
+104
+00:25:59.626 --> 00:26:03.506
+algorithm. We'll talk a little bit more about how foundation models fit
+
+105
+00:26:03.586 --> 00:26:07.566
+in, but essentially at the point of the digital
+
+106
+00:26:07.666 --> 00:26:11.266
+substrate creation, then information can be
+
+107
+00:26:11.346 --> 00:26:14.786
+processed using one or more different concepts
+
+108
+00:26:15.286 --> 00:26:18.726
+and passed downstream to the end result analysis.
+
+109
+00:26:20.606 --> 00:26:24.326
+So there are many possible tasks that can be
+
+110
+00:26:24.366 --> 00:26:27.866
+accomplished using deep learning models for digital
+
+111
+00:26:27.946 --> 00:26:28.546
+pathology.
+
+112
+00:26:29.926 --> 00:26:33.426
+I've shown here an example wherein an input image
+
+113
+00:26:33.966 --> 00:26:37.706
+which might be representing a hematologic malignancy,
+
+114
+00:26:38.346 --> 00:26:42.086
+could be processed using, for example, a deep convolutional neural network model,
+
+115
+00:26:43.106 --> 00:26:43.466
+and
+
+116
+00:26:44.266 --> 00:26:47.166
+then a variety of different tasks could be accomplished.
+
+117
+00:26:47.626 --> 00:26:48.146
+For example,
+
+118
+00:26:49.046 --> 00:26:52.006
+we might seek to detect the presence of a
+
+119
+00:26:52.666 --> 00:26:53.326
+malignant cell,
+
+120
+00:26:54.266 --> 00:26:58.206
+or we could seek to segment or outline the area
+
+121
+00:26:58.346 --> 00:27:02.226
+of a nuclei or subcellular organelle.
+
+122
+00:27:03.086 --> 00:27:07.066
+We might seek to classify the image into one or more
+
+123
+00:27:07.106 --> 00:27:10.866
+classes, or two or more classes. In other words, a subtype
+
+124
+00:27:10.986 --> 00:27:14.446
+of malignant leukemia, or we might even augment the image,
+
+125
+00:27:14.626 --> 00:27:17.946
+meaning improve its detail and its
+
+126
+00:27:17.986 --> 00:27:21.746
+interpretability. And all of those contexts might be
+
+127
+00:27:21.786 --> 00:27:25.226
+explained using a parallel set of methods that allow better
+
+128
+00:27:25.286 --> 00:27:26.566
+interpretability.
+
+129
+00:27:28.046 --> 00:27:29.826
+So with these concepts in mind,
+
+130
+00:27:30.966 --> 00:27:34.166
+I want to talk a little bit more about the methods that underpin
+
+131
+00:27:34.206 --> 00:27:38.055
+this field of study, and this emerging field of
+
+132
+00:27:38.066 --> 00:27:41.946
+foundation models which are becoming increasingly used
+
+133
+00:27:42.046 --> 00:27:43.946
+in digital pathology and in other fields.
+
+134
+00:27:45.746 --> 00:27:49.486
+The key architectural components that have been used most frequently in digital
+
+135
+00:27:49.546 --> 00:27:53.526
+pathology are convolutional neural networks and vision transformers.
+
+136
+00:27:54.326 --> 00:27:58.316
+These are two separate computational tools that I'm illustrating
+
+137
+00:27:58.346 --> 00:27:58.476
+with
+
+138
+00:27:59.986 --> 00:28:00.546
+GIFs here.
+
+139
+00:28:01.506 --> 00:28:03.226
+On the left, the convolutional neural network
+
+140
+00:28:04.086 --> 00:28:07.226
+processes or passes the
+
+141
+00:28:07.626 --> 00:28:11.606
+intensity of pixels through a kernel function, which
+
+142
+00:28:11.666 --> 00:28:15.506
+multiplies each pixel by a weight and
+
+143
+00:28:15.726 --> 00:28:19.186
+then aggregates those weights in a subsequent layer of a
+
+144
+00:28:19.266 --> 00:28:20.906
+many-layered neural network.
+
+145
+00:28:22.086 --> 00:28:25.686
+The weights are iteratively updated over millions of iterations,
+
+146
+00:28:26.826 --> 00:28:28.826
+moving tiny amounts closer
+
+147
+00:28:30.006 --> 00:28:33.906
+to a place where it satisfies or approaches an objective
+
+148
+00:28:33.986 --> 00:28:35.866
+function or a loss function
+
+149
+00:28:36.706 --> 00:28:40.166
+which is housed in an equation at the far end of the neural network stack.
+
+150
+00:28:40.866 --> 00:28:44.106
+So over very long periods of time, or very many iterations, I should
+
+151
+00:28:44.146 --> 00:28:47.786
+say, the convolutional neural network learns how to
+
+152
+00:28:47.966 --> 00:28:51.886
+see, learns how to understand patterns underlying image features.
+
+153
+00:28:52.926 --> 00:28:56.506
+A vision transformer model, on the other hand, is a more contemporary model
+
+154
+00:28:57.106 --> 00:29:00.636
+and uses a more language-inspired concept
+
+155
+00:29:00.826 --> 00:29:03.986
+wherein an extracted
+
+156
+00:29:07.926 --> 00:29:10.976
+subcomponent of information from imaging features is
+
+157
+00:29:11.846 --> 00:29:13.806
+attached to a spatial label,
+
+158
+00:29:14.766 --> 00:29:17.086
+and then processed through a
+
+159
+00:29:17.966 --> 00:29:21.746
+format very similar to those that are used in contemporary large
+
+160
+00:29:21.786 --> 00:29:22.406
+language models.
+
+161
+00:29:23.306 --> 00:29:27.246
+Similarly, building a recognition of images
+
+162
+00:29:27.346 --> 00:29:28.806
+over very many iterations.
+
+163
+00:29:31.066 --> 00:29:34.766
+Vision transformer models are now being
+
+164
+00:29:34.806 --> 00:29:38.726
+integrated into a new class of models called foundation models,
+
+165
+00:29:39.406 --> 00:29:42.926
+which are unsupervised models which learn
+
+166
+00:29:44.426 --> 00:29:47.846
+a language to describe the variation space
+
+167
+00:29:48.926 --> 00:29:50.766
+in the digital pathology architecture.
+
+168
+00:29:51.346 --> 00:29:52.166
+So
+
+169
+00:29:53.026 --> 00:29:53.566
+the
+
+170
+00:29:54.686 --> 00:29:58.406
+architecture that is used to build a foundation model is designed
+
+171
+00:29:58.526 --> 00:29:59.546
+to encourage
+
+172
+00:30:00.406 --> 00:30:03.726
+two parallel vision transformer systems to
+
+173
+00:30:04.046 --> 00:30:07.966
+recognize and come to the same conclusions about a
+
+174
+00:30:08.046 --> 00:30:11.836
+set of related cropped images. And in
+
+175
+00:30:11.886 --> 00:30:13.956
+this way, over
+
+176
+00:30:14.686 --> 00:30:18.526
+many passes through the system, a
+
+177
+00:30:19.966 --> 00:30:23.646
+shared language is developed, where the student and teacher
+
+178
+00:30:23.726 --> 00:30:24.166
+have
+
+179
+00:30:26.666 --> 00:30:30.486
+established a learning without needing to be provided with explicit
+
+180
+00:30:30.566 --> 00:30:33.985
+labels. So this foundation model concept is very popular
+
+181
+00:30:34.026 --> 00:30:37.906
+because it allows us to generate a
+
+182
+00:30:37.986 --> 00:30:41.650
+set of... defining language-like
+
+183
+00:30:41.830 --> 00:30:45.680
+characteristics which describe the full
+
+184
+00:30:45.750 --> 00:30:47.550
+variation space of the
+
+185
+00:30:48.570 --> 00:30:48.920
+exposed
+
+186
+00:30:49.810 --> 00:30:51.710
+information. So
+
+187
+00:30:53.670 --> 00:30:57.350
+the downside of foundation models is that they require abundant amounts of
+
+188
+00:30:57.390 --> 00:31:01.170
+information. So this is a schema from the Virchow 2 foundation
+
+189
+00:31:01.250 --> 00:31:01.450
+model.
+
+190
+00:31:02.470 --> 00:31:06.290
+And it has required, or in this case, has been trained on
+
+191
+00:31:06.430 --> 00:31:10.170
+1.5 million hematoxylin and eosin stain slides from
+
+192
+00:31:10.250 --> 00:31:12.790
+120,000 patients worth of information.
+
+193
+00:31:12.830 --> 00:31:13.050
+That's a
+
+194
+00:31:14.090 --> 00:31:17.970
+huge amount of training information that requires
+
+195
+00:31:18.190 --> 00:31:21.910
+careful thought and organization in order to
+
+196
+00:31:22.250 --> 00:31:23.530
+be able to develop such a model.
+
+197
+00:31:25.750 --> 00:31:26.370
+There are many
+
+198
+00:31:27.350 --> 00:31:29.590
+pathology foundation models in existence now.
+
+199
+00:31:30.710 --> 00:31:33.310
+Many of them use shared underlying architectures.
+
+200
+00:31:34.210 --> 00:31:35.670
+And as you can see, they
+
+201
+00:31:37.310 --> 00:31:41.250
+vary in terms of the total number of slides that have been used for training.
+
+202
+00:31:42.070 --> 00:31:45.810
+I'll also note I've appended here two of the benchmarking
+
+203
+00:31:45.930 --> 00:31:49.370
+studies that have been accomplished to help compare the
+
+204
+00:31:49.410 --> 00:31:53.110
+performance and use characteristics of some of these foundation models.
+
+205
+00:31:53.930 --> 00:31:57.730
+And so I'll leave this up for a second for your
+
+206
+00:31:58.030 --> 00:31:59.590
+review and capture.
+
+207
+00:32:01.190 --> 00:32:04.840
+So to review, a foundation model
+
+208
+00:32:05.410 --> 00:32:09.030
+produces this dramatically reduced complexity feature
+
+209
+00:32:09.130 --> 00:32:12.710
+vector or encoding to represent the patterns of an image.
+
+210
+00:32:13.670 --> 00:32:17.230
+And so you could think of this as we do as the omics of digital
+
+211
+00:32:17.330 --> 00:32:20.630
+pathology data. And just to summarize, this complex
+
+212
+00:32:22.070 --> 00:32:25.790
+spatial data can be processed to a foundation model, returning a
+
+213
+00:32:25.850 --> 00:32:27.390
+vector of
+
+214
+00:32:28.530 --> 00:32:32.390
+variables which can then be fine-tuned using regression models or
+
+215
+00:32:32.430 --> 00:32:35.870
+machine learning models to a fine-tuned clinical application
+
+216
+00:32:35.970 --> 00:32:36.509
+downstream.
+
+217
+00:32:37.750 --> 00:32:41.660
+And just to say, this opportunity is a tie-in to one
+
+218
+00:32:41.690 --> 00:32:45.380
+of our later lectures from Professor Wang, and this is a really
+
+219
+00:32:45.450 --> 00:32:48.150
+useful way to integrate multiple data modes
+
+220
+00:32:48.190 --> 00:32:51.830
+simultaneously. All right, so let's talk about some use cases in
+
+221
+00:32:51.890 --> 00:32:55.130
+cancer for deep learning methods for pathology.
+
+222
+00:32:56.290 --> 00:33:00.130
+I think I'd be remiss without saying that our field has moved forward, and
+
+223
+00:33:00.190 --> 00:33:04.000
+just within the last year, there's now a FDA-cleared breakthrough
+
+224
+00:33:04.070 --> 00:33:07.470
+designation AI-based digital pathology tool, which is a
+
+225
+00:33:07.510 --> 00:33:11.030
+companion diagnostic for an antibody drug conjugate for Trop2.
+
+226
+00:33:11.790 --> 00:33:12.570
+And it requires
+
+227
+00:33:13.670 --> 00:33:17.530
+the algorithm itself, as well as a proprietary image management system,
+
+228
+00:33:17.930 --> 00:33:21.799
+digital pathology scanners of a certain make and model, as well as
+
+229
+00:33:22.150 --> 00:33:26.030
+a companion assay. So obviously a lot needs to go in for
+
+230
+00:33:26.210 --> 00:33:30.140
+a rigorous and reproducible digital pathology AI biomarker, but
+
+231
+00:33:30.140 --> 00:33:33.730
+this is really exciting for the field in that we now have
+
+232
+00:33:34.170 --> 00:33:37.010
+an AI model leading us to make
+
+233
+00:33:38.190 --> 00:33:39.660
+selections on behalf of our patients.
+
+234
+00:33:41.570 --> 00:33:42.090
+Outside of
+
+235
+00:33:43.490 --> 00:33:47.030
+the clinical use case, there's been abundant research in
+
+236
+00:33:47.910 --> 00:33:51.370
+AI for human disease. So just in terms of
+
+237
+00:33:51.390 --> 00:33:52.750
+pathology alone, this is a
+
+238
+00:33:53.630 --> 00:33:56.750
+review and meta-analysis of AI detection for
+
+239
+00:33:56.910 --> 00:34:00.540
+pathologic identification of
+
+240
+00:34:00.610 --> 00:34:01.990
+disease in any organ.
+
+241
+00:34:02.830 --> 00:34:06.310
+And this was almost 3,000 studies identified for this
+
+242
+00:34:06.350 --> 00:34:09.670
+meta-analysis. I'll note, and we'll touch on this in the future,
+
+243
+00:34:10.150 --> 00:34:13.950
+that the vast majority of these studies, even though there's a huge number of
+
+244
+00:34:14.011 --> 00:34:17.551
+applications, in the studies that exist, most had some
+
+245
+00:34:17.591 --> 00:34:20.799
+concern for the presence of bias. And so the
+
+246
+00:34:22.230 --> 00:34:26.120
+forward-looking application of these concepts needs to be handled with
+
+247
+00:34:26.150 --> 00:34:26.551
+caution.
+
+248
+00:34:28.770 --> 00:34:31.000
+One of the most appealing use cases
+
+249
+00:34:33.310 --> 00:34:36.571
+from my perspective as a researcher is this kind of superhuman
+
+250
+00:34:36.670 --> 00:34:39.130
+potential of identifying
+
+251
+00:34:40.690 --> 00:34:43.910
+concepts that might shortcut, might speed our
+
+252
+00:34:44.430 --> 00:34:48.011
+application of precision medicine to the clinic.
+
+253
+00:34:48.410 --> 00:34:51.210
+And so in work led by Jakob Kathe's group,
+
+254
+00:34:52.130 --> 00:34:53.140
+we sought to
+
+255
+00:34:54.190 --> 00:34:57.810
+identify whether or not we could find
+
+256
+00:34:57.890 --> 00:35:01.649
+mutation classes directly from the digital pathology
+
+257
+00:35:01.750 --> 00:35:05.450
+substrate. And indeed, there were many actionable genetic
+
+258
+00:35:05.770 --> 00:35:09.150
+mutations which were present in the most common subtypes of
+
+259
+00:35:09.190 --> 00:35:11.570
+cancers as represented
+
+260
+00:35:11.630 --> 00:35:15.470
+in the area under the receiver operator curve
+
+261
+00:35:15.530 --> 00:35:17.190
+on the tables listed here.
+
+262
+00:35:19.530 --> 00:35:22.510
+But we weren't yet able to deploy them
+
+263
+00:35:24.190 --> 00:35:28.020
+or identify them with enough accuracy to be ready for prime time and
+
+264
+00:35:28.070 --> 00:35:31.990
+clinical deployment. I think we were heartened by some of the titration studies
+
+265
+00:35:32.010 --> 00:35:35.790
+that have been done, for example, on the right, where when a deep learning
+
+266
+00:35:35.850 --> 00:35:39.770
+model is given more data, generally the model is able to
+
+267
+00:35:39.790 --> 00:35:43.050
+perform better, even when
+
+268
+00:35:44.230 --> 00:35:46.469
+validated on the same left out data set.
+
+269
+00:35:47.380 --> 00:35:49.610
+And so this gave us
+
+270
+00:35:50.930 --> 00:35:54.890
+an optimistic view that we may be able to accomplish this relevant
+
+271
+00:35:54.930 --> 00:35:58.370
+task in the future. And indeed, this is a preprint
+
+272
+00:35:58.930 --> 00:36:01.330
+link from the MSK group.
+
+273
+00:36:02.130 --> 00:36:05.850
+And they looked at a relevant or a parallel topic where
+
+274
+00:36:05.890 --> 00:36:09.450
+they evaluated the MSK Impact data set with more than
+
+275
+00:36:09.570 --> 00:36:10.680
+80,000 samples,
+
+276
+00:36:11.510 --> 00:36:15.490
+paired digital pathology and clinical genomics, and were able to achieve
+
+277
+00:36:15.550 --> 00:36:16.610
+some really, really
+
+278
+00:36:17.730 --> 00:36:19.090
+exciting performance
+
+279
+00:36:20.290 --> 00:36:23.930
+in terms of identifying some of the most common genetic alterations
+
+280
+00:36:24.330 --> 00:36:25.610
+in a variety of different cancers.
+
+281
+00:36:25.640 --> 00:36:28.390
+And this has been validated on external cohorts as well.
+
+282
+00:36:29.330 --> 00:36:33.170
+We're going to hear from Professor Campanella's talk about
+
+283
+00:36:33.250 --> 00:36:36.190
+what deployment of a genetic
+
+284
+00:36:37.690 --> 00:36:41.450
+identifier, a genetic mutation identifying deep learning
+
+285
+00:36:41.470 --> 00:36:42.710
+model looks like in
+
+286
+00:36:42.730 --> 00:36:45.938
+practice.So I think we
+
+287
+00:36:46.798 --> 00:36:50.597
+have and will continue to see a rapid growth both in the
+
+288
+00:36:50.638 --> 00:36:54.578
+research and clinical FDA approval domains leveraging digital
+
+289
+00:36:54.598 --> 00:36:55.118
+pathology.
+
+290
+00:36:56.398 --> 00:36:59.578
+All right. So let's talk a little bit about some of the pitfalls and some of the
+
+291
+00:36:59.638 --> 00:37:02.238
+potentials for deployment of deep learning models.
+
+292
+00:37:02.338 --> 00:37:02.758
+So this is
+
+293
+00:37:03.758 --> 00:37:06.338
+data from Fred Howard's lab at University of Chicago
+
+294
+00:37:07.338 --> 00:37:09.338
+and it's meant to provoke some thought.
+
+295
+00:37:09.758 --> 00:37:13.538
+These are models that were trained to predict ancestry
+
+296
+00:37:14.438 --> 00:37:17.998
+directly from the digital pathology slides of patients
+
+297
+00:37:19.758 --> 00:37:23.518
+from a variety of different ancestral backgrounds in a variety of different tumor
+
+298
+00:37:23.598 --> 00:37:23.898
+types.
+
+299
+00:37:24.858 --> 00:37:26.218
+And so these
+
+300
+00:37:27.218 --> 00:37:31.078
+models were able to predict the ancestry with really high
+
+301
+00:37:31.198 --> 00:37:35.178
+accuracy. So as a thought experiment, do you think this represents
+
+302
+00:37:35.238 --> 00:37:38.758
+the biological basis of potentially cancer disparities, something
+
+303
+00:37:38.818 --> 00:37:42.358
+identifiable in the tumor tissue that is
+
+304
+00:37:43.118 --> 00:37:44.838
+relevant and worth further study?
+
+305
+00:37:45.378 --> 00:37:45.658
+And
+
+306
+00:37:46.518 --> 00:37:49.238
+I'll say that we were initially really excited about this
+
+307
+00:37:50.218 --> 00:37:54.118
+until we realized that there were some idiosyncrasies with the
+
+308
+00:37:54.238 --> 00:37:56.878
+data that were biasing our models.
+
+309
+00:37:57.578 --> 00:38:01.278
+And indeed, these were models built on the Cancer Genome Atlas,
+
+310
+00:38:01.938 --> 00:38:05.838
+and there was this extremely strong association between the
+
+311
+00:38:05.898 --> 00:38:09.068
+donating sites in the Cancer Genome Atlas and the
+
+312
+00:38:10.498 --> 00:38:14.478
+ancestral origin. So almost all the Asian
+
+313
+00:38:14.498 --> 00:38:18.038
+American patients included in the Cancer Genome Atlas came from one site in the Bay
+
+314
+00:38:18.098 --> 00:38:21.538
+Area, and the plurality of African American
+
+315
+00:38:22.198 --> 00:38:26.168
+patients donated tumors came from University of Chicago and a few other
+
+316
+00:38:26.198 --> 00:38:30.078
+sites. And so the AI model was lazy and
+
+317
+00:38:30.138 --> 00:38:34.098
+was able to identify some of the associations that are
+
+318
+00:38:34.198 --> 00:38:35.978
+spurious and non-biological.
+
+319
+00:38:37.518 --> 00:38:41.478
+I'll say that it gets even trickier with contemporary deep learning
+
+320
+00:38:41.518 --> 00:38:45.458
+digital pathology models. This is some additional unpublished data
+
+321
+00:38:45.478 --> 00:38:48.418
+from our lab, and it shows a
+
+322
+00:38:49.218 --> 00:38:53.058
+precisely harmonized set of digital
+
+323
+00:38:53.098 --> 00:38:56.978
+pathology images where the same exact tiles are
+
+324
+00:38:57.078 --> 00:39:00.858
+captured on different slide scanners and then the
+
+325
+00:39:02.818 --> 00:39:06.798
+digital locations are precisely aligned and
+
+326
+00:39:06.938 --> 00:39:10.878
+the features are then extracted using the same set
+
+327
+00:39:10.898 --> 00:39:14.478
+of foundation models. What you're seeing here is the noise that is
+
+328
+00:39:14.538 --> 00:39:15.118
+induced
+
+329
+00:39:16.298 --> 00:39:20.278
+from the exact same source data and the exact same pipeline simply from the
+
+330
+00:39:20.318 --> 00:39:21.518
+microscope itself.
+
+331
+00:39:22.358 --> 00:39:23.298
+This is a
+
+332
+00:39:24.778 --> 00:39:25.418
+lot of noise
+
+333
+00:39:26.238 --> 00:39:28.898
+for something that we think of as just processing
+
+334
+00:39:28.938 --> 00:39:32.638
+information without a substantial amount of
+
+335
+00:39:32.698 --> 00:39:33.218
+alteration.
+
+336
+00:39:35.018 --> 00:39:38.638
+So I think this field of bias in
+
+337
+00:39:39.058 --> 00:39:42.338
+AI-based models is not new and has been identified
+
+338
+00:39:43.118 --> 00:39:44.678
+in a number of different contexts.
+
+339
+00:39:44.918 --> 00:39:47.128
+Judy Gichoya has done some amazing work
+
+340
+00:39:48.078 --> 00:39:51.878
+showing where bias can be introduced in a model everywhere from the data
+
+341
+00:39:51.918 --> 00:39:55.828
+collection to the implementation stage, and I think it's
+
+342
+00:39:55.838 --> 00:39:59.738
+a caution to all of us that the AI models that we're using
+
+343
+00:39:59.818 --> 00:40:03.738
+probably are picking up bias in every one of these places
+
+344
+00:40:03.798 --> 00:40:05.498
+and more that we haven't yet identified.
+
+345
+00:40:08.238 --> 00:40:12.198
+There are fortunately many different methods to
+
+346
+00:40:12.258 --> 00:40:15.638
+help mitigate some of this bias. I'll note some of them here.
+
+347
+00:40:15.898 --> 00:40:19.118
+Color normalization is a way to help
+
+348
+00:40:19.178 --> 00:40:22.958
+harmonize site-specific information, and batch effect
+
+349
+00:40:23.038 --> 00:40:24.338
+mitigation are methods
+
+350
+00:40:25.418 --> 00:40:26.558
+oftentimes borrowed from
+
+351
+00:40:27.698 --> 00:40:30.978
+the genomic literature to help harmonize the features
+
+352
+00:40:31.018 --> 00:40:34.958
+or the information that is processed via digital pathology in order
+
+353
+00:40:35.018 --> 00:40:37.238
+to make the models more comparable,
+
+354
+00:40:38.578 --> 00:40:42.478
+minimizing some of the noise that we have seen from different sites
+
+355
+00:40:42.538 --> 00:40:43.538
+in the past few slides.
+
+356
+00:40:45.478 --> 00:40:48.198
+One other way that I think is part of standard practice
+
+357
+00:40:48.278 --> 00:40:50.758
+is evaluating the model
+
+358
+00:40:51.578 --> 00:40:54.738
+or explanations of the model-based predictions.
+
+359
+00:40:54.758 --> 00:40:56.398
+And there's a series where
+
+360
+00:40:57.418 --> 00:41:01.118
+a typical standard practice would be returning to the
+
+361
+00:41:01.158 --> 00:41:05.078
+images themselves with some of these explainability methods and
+
+362
+00:41:05.118 --> 00:41:08.758
+making sure that the areas of attention that a model is applying
+
+363
+00:41:08.958 --> 00:41:12.878
+are not associated with things like pen marks
+
+364
+00:41:12.958 --> 00:41:15.358
+or stain characteristics, but rather
+
+365
+00:41:16.298 --> 00:41:19.458
+identifying biological class characteristics.
+
+366
+00:41:22.158 --> 00:41:25.668
+Our group has explored a concept where we've used
+
+367
+00:41:25.858 --> 00:41:27.078
+synthetic images
+
+368
+00:41:27.998 --> 00:41:31.698
+in order to explain and ensure that our models are
+
+369
+00:41:31.738 --> 00:41:35.438
+trustworthy. And I'll give an example of this on the right where
+
+370
+00:41:35.678 --> 00:41:39.198
+in a model trained to identify thyroid
+
+371
+00:41:40.278 --> 00:41:44.138
+neoplasm subtypes, we can embed, encode the same seed
+
+372
+00:41:44.198 --> 00:41:47.918
+image in information that represents either a BRAF-like
+
+373
+00:41:47.958 --> 00:41:51.628
+or RAS-like mutation pattern. And this
+
+374
+00:41:51.678 --> 00:41:55.538
+information contained enough visual cues
+
+375
+00:41:55.578 --> 00:41:58.778
+that we actually could train a series of human
+
+376
+00:41:58.858 --> 00:42:01.918
+pathologists to recognize these molecular states
+
+377
+00:42:02.538 --> 00:42:02.918
+and
+
+378
+00:42:05.998 --> 00:42:09.618
+after a period of training with the synthetic generative adversarial neural
+
+379
+00:42:09.658 --> 00:42:13.308
+network-based images, the human pathologists improved in their
+
+380
+00:42:13.318 --> 00:42:15.638
+performance of this task even
+
+381
+00:42:16.418 --> 00:42:19.838
+predicting the mutation class on glass slides.
+
+382
+00:42:19.918 --> 00:42:23.438
+So the encoding in synthetic
+
+383
+00:42:23.518 --> 00:42:27.118
+images contains a robust amount and reproducible amount of
+
+384
+00:42:27.138 --> 00:42:27.738
+information.
+
+385
+00:42:30.118 --> 00:42:33.798
+Other tools for deployment include a variety of different
+
+386
+00:42:33.858 --> 00:42:34.678
+pipelines that
+
+387
+00:42:35.558 --> 00:42:37.618
+are platforms that have end-to-end
+
+388
+00:42:38.418 --> 00:42:42.078
+deployment features. Our lab produced this SlideFlow
+
+389
+00:42:42.178 --> 00:42:46.038
+platform which includes all of the typical models
+
+390
+00:42:46.118 --> 00:42:49.630
+for batch mitigation... slide color
+
+391
+00:42:49.670 --> 00:42:53.490
+normalization and accommodates any number of different foundation models for
+
+392
+00:42:53.590 --> 00:42:56.690
+training, and allows for end-to-end deployment of
+
+393
+00:42:58.190 --> 00:43:02.070
+a digital pathology AI model on any new set
+
+394
+00:43:02.130 --> 00:43:03.490
+of tissue. So
+
+395
+00:43:04.710 --> 00:43:08.190
+just to give a sense of how close to deployment we are,
+
+396
+00:43:08.730 --> 00:43:12.310
+I'll show an example here of a full
+
+397
+00:43:12.430 --> 00:43:13.150
+end-to-end
+
+398
+00:43:15.010 --> 00:43:17.170
+desktop concept that we've been working on.
+
+399
+00:43:18.110 --> 00:43:22.070
+And so this is a modular format that we stitched together just to show
+
+400
+00:43:22.130 --> 00:43:25.830
+how the concepts could be deployed in real-world settings.
+
+401
+00:43:25.850 --> 00:43:29.670
+And you're going to see some more concepts of this in the next lecture.
+
+402
+00:43:29.710 --> 00:43:31.350
+But this uses this
+
+403
+00:43:33.010 --> 00:43:36.960
+purchasable desktop digital slide scanner, which is
+
+404
+00:43:37.290 --> 00:43:41.010
+made by a Finnish company. It has a really appealing open
+
+405
+00:43:41.070 --> 00:43:41.490
+API,
+
+406
+00:43:42.610 --> 00:43:46.580
+and it allows you to interact and select a sub-region that
+
+407
+00:43:46.610 --> 00:43:49.330
+you want to focus on for a digital pathology integration.
+
+408
+00:43:50.450 --> 00:43:53.870
+We've used this open API with our open source SlideFlow
+
+409
+00:43:53.970 --> 00:43:57.610
+software in order just to house and manage the
+
+410
+00:43:57.630 --> 00:44:01.060
+information. And to show the general applicability,
+
+411
+00:44:01.570 --> 00:44:05.010
+we pulled down an open source model that was published
+
+412
+00:44:05.730 --> 00:44:08.860
+by Yakub Cather's group to predict microsatellite instability,
+
+413
+00:44:09.760 --> 00:44:13.640
+and integrated that into this pipeline just to show how
+
+414
+00:44:13.650 --> 00:44:16.470
+the concept could be deployed. Now,
+
+415
+00:44:18.110 --> 00:44:22.090
+I think that it's worth saying here that we imagine a future state where the
+
+416
+00:44:22.150 --> 00:44:26.030
+same concept might have a suite or a zoo of different models that could
+
+417
+00:44:26.070 --> 00:44:29.250
+be integrated simultaneously, and you could select the one
+
+418
+00:44:30.170 --> 00:44:33.850
+that was most applicable, for example, for your patient.
+
+419
+00:44:34.240 --> 00:44:37.540
+And so, as a medical oncologist, I think about using
+
+420
+00:44:38.790 --> 00:44:41.410
+a desktop format so that we can avoid the
+
+421
+00:44:42.330 --> 00:44:45.850
+delays that come with institutional batched slide scanning,
+
+422
+00:44:45.930 --> 00:44:46.390
+potentially,
+
+423
+00:44:47.230 --> 00:44:50.430
+and speed the diagnostic information into the hands of
+
+424
+00:44:51.130 --> 00:44:51.430
+a
+
+425
+00:44:52.510 --> 00:44:55.870
+decision-making provider as quickly as possible.
+
+426
+00:44:55.910 --> 00:44:59.150
+So, in the time I've been talking,
+
+427
+00:44:59.290 --> 00:45:02.630
+the scanner has now completed its
+
+428
+00:45:02.750 --> 00:45:05.550
+high-resolution acquisition.
+
+429
+00:45:06.410 --> 00:45:10.270
+And it's stitching together the
+
+430
+00:45:11.430 --> 00:45:14.870
+portion of identified whole slide image, and allowing us to
+
+431
+00:45:15.510 --> 00:45:16.410
+then pass it,
+
+432
+00:45:17.250 --> 00:45:20.810
+the high-resolution image, on to the analytic deep learning based software.
+
+433
+00:45:20.890 --> 00:45:24.610
+So we can just drop the image into the
+
+434
+00:45:24.850 --> 00:45:25.370
+platform.
+
+435
+00:45:26.590 --> 00:45:29.950
+The area of tumor can then be identified and discriminated from
+
+436
+00:45:30.070 --> 00:45:32.610
+other artifacts, like the pen marks that you see.
+
+437
+00:45:33.450 --> 00:45:37.270
+And in the time I've been talking, the model can be run for inference.
+
+438
+00:45:37.330 --> 00:45:37.720
+And so this
+
+439
+00:45:38.670 --> 00:45:40.150
+was a microsatellite stable
+
+440
+00:45:42.470 --> 00:45:45.990
+sample, and in the time I've been talking, we have this molecular
+
+441
+00:45:46.030 --> 00:45:49.550
+inference returned in the digital pathology image.
+
+442
+00:45:49.590 --> 00:45:53.570
+So I think deployment of precision oncology
+
+443
+00:45:53.650 --> 00:45:57.310
+tools leveraging deep learning to identify relevant molecular subtypes
+
+444
+00:45:57.350 --> 00:45:59.570
+is within immediate reach.
+
+445
+00:46:00.790 --> 00:46:04.629
+So to summarize, digital pathology AI analysis methods combine innumerable simple
+
+446
+00:46:04.710 --> 00:46:07.410
+calculations in order to accomplish complex tasks.
+
+447
+00:46:08.130 --> 00:46:12.030
+Contemporary deep digital pathology models benefit from immense
+
+448
+00:46:12.090 --> 00:46:15.870
+training volumes but still need supervision fine-tuning to prevent biased
+
+449
+00:46:15.930 --> 00:46:19.550
+results. And deep learning models can be
+
+450
+00:46:19.610 --> 00:46:22.870
+applied to digital pathology to complete a huge number of downstream tasks.
+
+451
+00:46:23.590 --> 00:46:27.210
+So with that, I will conclude my first set of remarks,
+
+452
+00:46:27.750 --> 00:46:31.330
+and we have time for one question before we move to the
+
+453
+00:46:31.390 --> 00:46:33.050
+next speaker. Thanks.
+
+454
+00:46:34.370 --> 00:46:39.450
+You
+
+455
+00:46:39.490 --> 00:46:43.390
+can submit a question online or come to the podiums up here,
+
+456
+00:46:43.430 --> 00:46:45.570
+and make sure to speak into the podium so the online
+
+457
+00:46:47.530 --> 00:46:48.370
+participants can hear.
+
+458
+00:46:56.350 --> 00:46:56.530
+Hi.
+
+459
+00:46:56.970 --> 00:46:56.980
+Hi.
+
+460
+00:46:57.010 --> 00:47:00.550
+Hello. Very nice talk. So, I want to ask a question about the
+
+461
+00:47:00.650 --> 00:47:01.190
+CHOP2
+
+462
+00:47:02.190 --> 00:47:05.450
+companion diagnostic is still an IHC-based
+
+463
+00:47:05.750 --> 00:47:09.390
+product, right? So then, for the H&amp;E
+
+464
+00:47:09.610 --> 00:47:12.270
+only based methods,
+
+465
+00:47:12.670 --> 00:47:16.530
+in the future it will be a suggestive or
+
+466
+00:47:16.690 --> 00:47:19.250
+actually, for a more conclusive diagnostic
+
+467
+00:47:20.050 --> 00:47:23.730
+application like companion, you have to actually use IHC.
+
+468
+00:47:24.990 --> 00:47:25.160
+Well,
+
+469
+00:47:26.030 --> 00:47:28.650
+maybe. I will say that there's European CE marked
+
+470
+00:47:29.470 --> 00:47:31.380
+digital pathology tools that use H&amp;E-
+
+471
+00:47:31.560 --> 00:47:31.940
+Mm-hmm
+
+472
+00:47:32.090 --> 00:47:35.760
+... not IHC. And so this is an example of a
+
+473
+00:47:35.790 --> 00:47:39.700
+digital pathology tool that's not H&amp;E based, but rather IHC based,
+
+474
+00:47:40.430 --> 00:47:42.370
+and is FDA breakthrough designation.
+
+475
+00:47:42.430 --> 00:47:42.570
+So
+
+476
+00:47:43.450 --> 00:47:46.990
+I think that so long as the validation has been
+
+477
+00:47:47.030 --> 00:47:51.010
+completed, I don't think that there needs-- The analytics is what's been
+
+478
+00:47:51.090 --> 00:47:53.990
+done in terms of a pattern recognition perspective.
+
+479
+00:47:54.570 --> 00:47:58.510
+Thanks. And secondly, very quickly, so the biomarker for
+
+480
+00:47:58.550 --> 00:48:02.490
+the CHOP2-ADC is CHOP2. So it's
+
+481
+00:48:02.530 --> 00:48:06.230
+very straightforward, but it seems to be there's no learning needed here.
+
+482
+00:48:06.830 --> 00:48:10.670
+So do you think when we have a better data set and
+
+483
+00:48:10.730 --> 00:48:13.290
+so on, we actually can have a better biomarker?
+
+484
+00:48:13.790 --> 00:48:16.600
+Yeah. So I would argue that
+
+485
+00:48:17.710 --> 00:48:21.690
+one of the promises of digital pathology deep learning is that
+
+486
+00:48:21.710 --> 00:48:23.730
+it can improve the
+
+487
+00:48:25.230 --> 00:48:29.170
+reproducibility and accuracy even when there's a biological
+
+488
+00:48:29.270 --> 00:48:32.730
+correlate. So I didn't talk a lot about IHC based
+
+489
+00:48:33.710 --> 00:48:35.350
+deep learning models, but for example,
+
+490
+00:48:36.790 --> 00:48:37.650
+the concordance
+
+491
+00:48:38.610 --> 00:48:41.790
+for a deep learning model that uses
+
+492
+00:48:41.870 --> 00:48:45.850
+HER2 as an IHC substrate is better than
+
+493
+00:48:46.310 --> 00:48:50.030
+human scoring of HER2 when you look at
+
+494
+00:48:50.830 --> 00:48:53.982
+HER2 targeting endpoints. SoI think that
+
+495
+00:48:54.062 --> 00:48:58.282
+any
+
+496
+00:48:58.482 --> 00:49:02.402
+AI model potentially could improve the rigor
+
+497
+00:49:02.422 --> 00:49:06.302
+and reproducibility of the identification and
+
+498
+00:49:06.342 --> 00:49:09.762
+the relevant subpatterns that an IHC
+
+499
+00:49:09.882 --> 00:49:11.622
+biomarker can deliver.
+
+500
+00:49:12.422 --> 00:49:16.182
+I think it just requires an appropriate amount of information in order to
+
+501
+00:49:16.202 --> 00:49:18.582
+make that leap, make that association between the
+
+502
+00:49:19.462 --> 00:49:20.962
+endpoint and the data.
+
+503
+00:49:22.562 --> 00:49:22.962
+Okay, we have
+
+504
+00:49:23.882 --> 00:49:25.142
+35 seconds.
+
+505
+00:49:25.542 --> 00:49:29.462
+Okay. Quick question. Nice talk. So my
+
+506
+00:49:29.502 --> 00:49:33.462
+question is regarding the tumors
+
+507
+00:49:33.522 --> 00:49:37.062
+of unknown origin that are poorly differentiated.
+
+508
+00:49:37.762 --> 00:49:41.722
+Do you have any data regarding how digital pathology will help
+
+509
+00:49:42.322 --> 00:49:43.102
+on that?
+
+510
+00:49:43.282 --> 00:49:45.422
+I didn't show in my talk, but
+
+511
+00:49:45.482 --> 00:49:49.222
+a number of groups have published
+
+512
+00:49:49.482 --> 00:49:53.102
+papers on this topic. I think one that comes to mind is from Faisal
+
+513
+00:49:53.122 --> 00:49:56.782
+Mahmood's lab that has done this task of identifying
+
+514
+00:49:56.862 --> 00:50:00.662
+the tumor of origin using, I believe, a molecular
+
+515
+00:50:00.762 --> 00:50:04.702
+gold standard against a digital pathology substrate, and
+
+516
+00:50:04.762 --> 00:50:08.702
+showed that they were able to identify a putative tumor of origin in a
+
+517
+00:50:08.742 --> 00:50:12.502
+carcinoma of unknown primary with really appealing accuracy.
+
+518
+00:50:12.582 --> 00:50:16.322
+So I think you're spot on that this is a good place to
+
+519
+00:50:16.382 --> 00:50:17.412
+apply a deep learning model.
+
+520
+00:50:18.202 --> 00:50:19.282
+Thank you.
+
+521
+00:50:19.312 --> 00:50:20.162
+Thanks. All right. With that, we'll
+
+522
+00:50:21.362 --> 00:50:24.322
+pass the mic over to our second speaker.
+
+523
+00:50:24.402 --> 00:50:28.202
+So I'm pleased to introduce Gabriele Cambiamalla from Mount Sinai who will
+
+524
+00:50:28.422 --> 00:50:29.882
+talk about implementation in his talk.
+
+525
+00:50:30.152 --> 00:50:30.532
+Thank
+
+526
+00:50:30.532 --> 00:50:37.082
+you.
+
+527
+00:50:39.542 --> 00:50:41.202
+Alex is way taller than me.
+
+528
+00:50:44.542 --> 00:50:48.402
+Alex invited me today to talk about what we did about implementation of
+
+529
+00:50:48.482 --> 00:50:50.122
+AI models for pathology,
+
+530
+00:50:51.062 --> 00:50:53.762
+so I hope you will find this interesting.
+
+531
+00:50:55.882 --> 00:50:59.622
+So first I want to talk a little bit about the
+
+532
+00:50:59.682 --> 00:51:02.802
+current state of deployment of AI models.
+
+533
+00:51:02.822 --> 00:51:06.142
+I know Alex already went through a little bit, but I guess I want to give it my
+
+534
+00:51:06.202 --> 00:51:08.842
+spin. And then the
+
+535
+00:51:10.262 --> 00:51:13.822
+second half is going to be about what we did, and I hope that
+
+536
+00:51:14.582 --> 00:51:15.362
+stimulates your
+
+537
+00:51:17.642 --> 00:51:18.162
+ideas.
+
+538
+00:51:19.602 --> 00:51:19.762
+So
+
+539
+00:51:20.682 --> 00:51:24.362
+when I want to talk about pathology in the wild, I think we have to touch on
+
+540
+00:51:25.182 --> 00:51:26.082
+three main things,
+
+541
+00:51:26.962 --> 00:51:30.462
+digital pathology, computational pathology, and then the
+
+542
+00:51:30.642 --> 00:51:31.862
+regulatory aspect.
+
+543
+00:51:32.922 --> 00:51:35.522
+So in terms of digital pathology,
+
+544
+00:51:36.922 --> 00:51:38.242
+we know that
+
+545
+00:51:40.362 --> 00:51:44.222
+adoption of digital pathology maybe is not at the level
+
+546
+00:51:44.262 --> 00:51:47.862
+that we would like. So definitely there is still many more
+
+547
+00:51:49.622 --> 00:51:53.142
+hospitals that rely on microscopes and not on digital
+
+548
+00:51:53.151 --> 00:51:56.822
+pathology. So some data that was trying to gather
+
+549
+00:51:57.262 --> 00:51:57.922
+recent
+
+550
+00:51:59.902 --> 00:52:03.882
+publication where they estimate that fewer than 15%
+
+551
+00:52:04.002 --> 00:52:07.902
+of healthcare organizations are at any stage of
+
+552
+00:52:09.082 --> 00:52:11.982
+digital pathology adoption. So we're far from
+
+553
+00:52:14.502 --> 00:52:17.162
+being ubiquitous.
+
+554
+00:52:18.642 --> 00:52:22.582
+So it's important to consider if we don't have the digital component, then we
+
+555
+00:52:22.622 --> 00:52:23.662
+cannot deploy AI.
+
+556
+00:52:26.522 --> 00:52:29.822
+The second part is the actual products
+
+557
+00:52:29.982 --> 00:52:33.682
+potentially that we want to deploy, so the computational pathology
+
+558
+00:52:33.742 --> 00:52:34.262
+component.
+
+559
+00:52:35.082 --> 00:52:38.822
+And if you look through the life cycle now, there is a ton of
+
+560
+00:52:39.682 --> 00:52:43.122
+projects maybe at the pilot level, and as you
+
+561
+00:52:43.662 --> 00:52:47.392
+follow the life cycle, the numbers really
+
+562
+00:52:47.422 --> 00:52:48.322
+decrease rapidly.
+
+563
+00:52:50.662 --> 00:52:50.802
+So
+
+564
+00:52:52.122 --> 00:52:53.062
+I did a quick
+
+565
+00:52:54.362 --> 00:52:57.302
+PubMed query here for computational pathology.
+
+566
+00:52:57.402 --> 00:53:00.162
+It looks like the field is exploding.
+
+567
+00:53:00.502 --> 00:53:02.262
+It does feel that way as well,
+
+568
+00:53:04.162 --> 00:53:04.882
+which is great.
+
+569
+00:53:05.842 --> 00:53:09.582
+On the other hand, though, if we look at some publications about
+
+570
+00:53:09.681 --> 00:53:13.222
+adoption of these models,
+
+571
+00:53:13.842 --> 00:53:17.082
+we see a different picture. So in 2021, there was
+
+572
+00:53:17.142 --> 00:53:18.922
+one FDA approval
+
+573
+00:53:20.422 --> 00:53:21.872
+for AI in pathology.
+
+574
+00:53:22.932 --> 00:53:26.882
+And a more recent study on the right, we see maybe three,
+
+575
+00:53:27.702 --> 00:53:31.502
+and this is a bit old by now. Maybe there is a couple more in the last year.
+
+576
+00:53:33.762 --> 00:53:36.882
+But still quite far from what we see in other fields, for example.
+
+577
+00:53:37.202 --> 00:53:38.662
+So there's definitely a
+
+578
+00:53:39.742 --> 00:53:40.982
+huge bottleneck.
+
+579
+00:53:43.142 --> 00:53:46.602
+And then that gets compounded with the
+
+580
+00:53:46.682 --> 00:53:47.702
+regulatory
+
+581
+00:53:48.962 --> 00:53:52.312
+environment, which is a bit uncertain at the moment, I think,
+
+582
+00:53:53.322 --> 00:53:55.322
+or at least that's how I perceive it.
+
+583
+00:53:55.422 --> 00:53:57.972
+And if you have a different perspective, come talk.
+
+584
+00:53:59.482 --> 00:54:01.702
+I would like to hear your perspective.
+
+585
+00:54:03.982 --> 00:54:06.322
+And another thing,
+
+586
+00:54:07.242 --> 00:54:08.862
+it's guidelines, it's
+
+587
+00:54:10.342 --> 00:54:11.112
+regulation,
+
+588
+00:54:12.202 --> 00:54:13.682
+and there's been some
+
+589
+00:54:14.682 --> 00:54:18.642
+places, for example, in Europe where they're starting to provide
+
+590
+00:54:18.962 --> 00:54:21.782
+actual guidelines
+
+591
+00:54:22.682 --> 00:54:23.162
+for the
+
+592
+00:54:23.982 --> 00:54:27.682
+development and deployment of these AI models and
+
+593
+00:54:27.722 --> 00:54:30.962
+biomarkers from pathology.
+
+594
+00:54:31.042 --> 00:54:33.142
+Okay, so
+
+595
+00:54:33.962 --> 00:54:36.402
+we saw that AI adoption for pathology is low.
+
+596
+00:54:37.202 --> 00:54:40.802
+I guess I didn't show you,
+
+597
+00:54:40.922 --> 00:54:44.842
+but there's been many AI wins in pathology,
+
+598
+00:54:45.542 --> 00:54:48.982
+definitely a lot of publications here, like some of our publication
+
+599
+00:54:49.082 --> 00:54:51.562
+diagnostic and biomarker space. But
+
+600
+00:54:52.922 --> 00:54:56.602
+even in this conference, you're going to hear a lot of talks about
+
+601
+00:54:56.642 --> 00:54:57.742
+pathology and there is
+
+602
+00:54:59.002 --> 00:55:00.202
+many wins
+
+603
+00:55:01.502 --> 00:55:04.152
+in the field.So why?
+
+604
+00:55:06.672 --> 00:55:10.632
+And it gets even worse to me because we're facing
+
+605
+00:55:11.452 --> 00:55:12.612
+quite troubling
+
+606
+00:55:14.432 --> 00:55:15.272
+workforce
+
+607
+00:55:16.272 --> 00:55:17.792
+issues in pathology.
+
+608
+00:55:19.412 --> 00:55:21.492
+So there's a worldwide shortage of pathologists.
+
+609
+00:55:22.732 --> 00:55:26.472
+So not just some countries,
+
+610
+00:55:27.612 --> 00:55:30.072
+really worldwide, US, Canada, UK,
+
+611
+00:55:30.972 --> 00:55:34.402
+everywhere. The pathologist workforce is aging,
+
+612
+00:55:35.771 --> 00:55:38.332
+and the workloads are increasing.
+
+613
+00:55:38.872 --> 00:55:40.912
+Now there's more cancer incidents.
+
+614
+00:55:41.362 --> 00:55:45.342
+The complexity is increasing with precision oncology and all
+
+615
+00:55:45.342 --> 00:55:49.322
+the tests that they have to do. And this already is having negative effects on
+
+616
+00:55:49.372 --> 00:55:50.192
+healthcare delivery.
+
+617
+00:55:51.632 --> 00:55:55.512
+So burnout and the amount of time that people have to wait for
+
+618
+00:55:55.532 --> 00:55:59.212
+their results. Now, all of this, we're already seeing these
+
+619
+00:55:59.252 --> 00:55:59.672
+effects.
+
+620
+00:56:02.092 --> 00:56:04.572
+So AI could be a part of
+
+621
+00:56:05.552 --> 00:56:06.332
+the solution here.
+
+622
+00:56:07.652 --> 00:56:10.872
+And so one of the things that I guess I'm proposing today is that
+
+623
+00:56:13.472 --> 00:56:17.312
+to solve this bottleneck that we're seeing from development
+
+624
+00:56:17.372 --> 00:56:20.672
+into actual translation, one thing that we could do
+
+625
+00:56:21.532 --> 00:56:25.232
+to sort of open the floodgates is to have more prospective
+
+626
+00:56:25.272 --> 00:56:26.632
+validation that hopefully will
+
+627
+00:56:27.512 --> 00:56:30.902
+enable us to gather faster evidence for
+
+628
+00:56:30.952 --> 00:56:34.132
+regulators and then actually deploy these models because we know that some of these
+
+629
+00:56:34.172 --> 00:56:35.772
+models can be very beneficial.
+
+630
+00:56:37.472 --> 00:56:41.332
+Okay. So now I'm going to talk about the
+
+631
+00:56:41.972 --> 00:56:43.512
+actual model,
+
+632
+00:56:44.492 --> 00:56:48.332
+a bit about the deployment that we did in one of our studies
+
+633
+00:56:48.372 --> 00:56:49.072
+and how we
+
+634
+00:56:49.892 --> 00:56:50.472
+went about it.
+
+635
+00:56:52.452 --> 00:56:56.092
+So I want to go back again to the model life cycle
+
+636
+00:56:56.492 --> 00:56:59.412
+of pathology AI model, for
+
+637
+00:56:59.472 --> 00:57:03.132
+example. Of course, you want to do your training, you want to do your thorough
+
+638
+00:57:03.192 --> 00:57:06.992
+internal validation. Hopefully, you have some amazing
+
+639
+00:57:07.032 --> 00:57:10.212
+collaborators abroad like we do, and you're able to do external
+
+640
+00:57:11.852 --> 00:57:15.752
+validation. And I
+
+641
+00:57:15.812 --> 00:57:19.112
+guess between the external validation, then eventually
+
+642
+00:57:19.152 --> 00:57:22.892
+regulatory approval, which back in the day we thought, "Okay,
+
+643
+00:57:23.432 --> 00:57:26.532
+it's not really up to us, the researchers to focus on this.
+
+644
+00:57:26.632 --> 00:57:30.472
+There's going to be companies doing this, and they'll
+
+645
+00:57:30.512 --> 00:57:31.232
+worry about it."
+
+646
+00:57:32.552 --> 00:57:36.112
+I think things have changed, and we now are
+
+647
+00:57:37.332 --> 00:57:39.832
+proposing that we should do prospective validation
+
+648
+00:57:40.992 --> 00:57:44.692
+as part of the development
+
+649
+00:57:45.272 --> 00:57:46.352
+life cycle of the model.
+
+650
+00:57:47.692 --> 00:57:51.572
+And so this prospective validation has two components that I'm going to talk about
+
+651
+00:57:51.632 --> 00:57:55.232
+a little bit. The infrastructure side of things, the actual AI
+
+652
+00:57:55.292 --> 00:57:57.792
+models, your compute environment,
+
+653
+00:57:59.292 --> 00:58:02.152
+and how you run the silent trial,
+
+654
+00:58:03.892 --> 00:58:06.152
+and then the actual silent trial design.
+
+655
+00:58:07.212 --> 00:58:09.212
+Understanding your clinical niche,
+
+656
+00:58:10.472 --> 00:58:11.552
+simulating
+
+657
+00:58:12.392 --> 00:58:15.992
+your trial to fine-tune it,
+
+658
+00:58:16.012 --> 00:58:18.572
+essentially, and then actually running it.
+
+659
+00:58:20.912 --> 00:58:24.292
+Okay, so the first component is the deployment infrastructure.
+
+660
+00:58:25.412 --> 00:58:29.272
+I'm assuming you have a
+
+661
+00:58:29.292 --> 00:58:31.172
+good model that you want to deploy.
+
+662
+00:58:32.632 --> 00:58:36.412
+You obviously need to be deeply integrated with your
+
+663
+00:58:37.212 --> 00:58:37.672
+site's
+
+664
+00:58:39.812 --> 00:58:43.672
+data flows. On one end, you have to have access to the
+
+665
+00:58:43.772 --> 00:58:47.252
+LIS, the Laboratory Information System, so you can look for
+
+666
+00:58:47.392 --> 00:58:49.552
+cases that you need to run your model on.
+
+667
+00:58:50.012 --> 00:58:53.592
+You also need to have access to the digitized slides.
+
+668
+00:58:55.092 --> 00:58:58.912
+And it seems simple, but I don't know how many
+
+669
+00:58:58.952 --> 00:59:01.212
+people here could do this today.
+
+670
+00:59:02.052 --> 00:59:02.772
+Maybe not many.
+
+671
+00:59:03.712 --> 00:59:07.572
+And then on the other hand, you also need to have access to some
+
+672
+00:59:07.672 --> 00:59:10.652
+sort of compute. Maybe it's in the cloud, maybe you have a cluster
+
+673
+00:59:10.732 --> 00:59:14.672
+on-site. And essentially what you're doing is scanning your
+
+674
+00:59:14.792 --> 00:59:17.932
+LIS, finding cases that match your criteria,
+
+675
+00:59:18.672 --> 00:59:22.432
+getting those slides, and then orchestrating
+
+676
+00:59:22.971 --> 00:59:23.931
+these inference runs.
+
+677
+00:59:25.552 --> 00:59:29.432
+And a funny story. We did this for this paper that I'm going to talk about a
+
+678
+00:59:29.492 --> 00:59:33.212
+little bit. And we ran it, now we published it,
+
+679
+00:59:33.312 --> 00:59:36.532
+and a few months later, everything broke down because
+
+680
+00:59:37.232 --> 00:59:40.772
+it relied on a specific LIS and the institution made the decision of
+
+681
+00:59:41.092 --> 00:59:41.572
+changing it.
+
+682
+00:59:42.532 --> 00:59:46.112
+So now we spend a little bit more time in trying to
+
+683
+00:59:46.152 --> 00:59:48.452
+abstract all the core logic,
+
+684
+00:59:49.792 --> 00:59:52.472
+and so that this could be more portable.
+
+685
+00:59:53.172 --> 00:59:53.731
+And so
+
+686
+00:59:54.572 --> 00:59:57.712
+this is the version that now we're using ourselves and
+
+687
+00:59:59.072 --> 01:00:01.612
+that we use also with our partners
+
+688
+01:00:02.672 --> 01:00:05.012
+when we're going to deploy certain trials in the future.
+
+689
+01:00:05.152 --> 01:00:08.092
+So in theory, this should be more usable.
+
+690
+01:00:09.072 --> 01:00:09.332
+And
+
+691
+01:00:10.672 --> 01:00:14.232
+the logic of the course stays the same, but we develop different adapters for
+
+692
+01:00:14.672 --> 01:00:15.352
+different sites.
+
+693
+01:00:16.832 --> 01:00:17.052
+Okay,
+
+694
+01:00:17.872 --> 01:00:21.712
+so now an actual example, and I'm going to talk about this paper from last
+
+695
+01:00:21.812 --> 01:00:23.612
+year where we showed
+
+696
+01:00:24.492 --> 01:00:27.552
+how this model that we trained for predicting EGFR status
+
+697
+01:00:28.412 --> 01:00:30.212
+behaves when we deployed it.
+
+698
+01:00:31.332 --> 01:00:31.492
+So
+
+699
+01:00:35.132 --> 01:00:38.452
+this model, yes, predicts EGFR status for lung
+
+700
+01:00:38.462 --> 01:00:40.792
+adenocarcinoma from whole slide images.
+
+701
+01:00:41.412 --> 01:00:43.552
+We give it the slide, outputs a score.
+
+702
+01:00:44.772 --> 01:00:45.572
+I'm going to touch on
+
+703
+01:00:46.952 --> 01:00:49.752
+the progression now from the preliminary work that we had to do
+
+704
+01:00:50.632 --> 01:00:50.812
+to
+
+705
+01:00:51.632 --> 01:00:52.352
+be able to
+
+706
+01:00:53.352 --> 01:00:54.892
+feel confident that this would work,
+
+707
+01:00:56.312 --> 01:00:58.372
+the design of the trial,
+
+708
+01:00:59.772 --> 01:01:01.212
+simulation, then deployment.
+
+709
+01:01:02.212 --> 01:01:05.832
+Okay, so this is a summary of maybe four
+
+710
+01:01:05.912 --> 01:01:08.296
+years.Where
+
+711
+01:01:09.436 --> 01:01:13.176
+originally started maybe around 2019,
+
+712
+01:01:13.356 --> 01:01:14.096
+2018.
+
+713
+01:01:15.336 --> 01:01:19.206
+There was an NYU paper in 2018 showing some of
+
+714
+01:01:19.236 --> 01:01:21.086
+the earlier results on predicting
+
+715
+01:01:22.476 --> 01:01:26.456
+mutations from H&amp;E from the NYU team.
+
+716
+01:01:26.576 --> 01:01:26.896
+And
+
+717
+01:01:28.196 --> 01:01:31.876
+we said, "Okay, let's gather the best cohort." At the time it was MSK,
+
+718
+01:01:32.636 --> 01:01:35.616
+so we leveraged MSK Impact,
+
+719
+01:01:36.636 --> 01:01:37.696
+got a huge cohort,
+
+720
+01:01:38.616 --> 01:01:40.116
+and
+
+721
+01:01:41.076 --> 01:01:44.496
+gathered both internal and external data through collaborators in
+
+722
+01:01:44.576 --> 01:01:47.716
+different countries across the continents.
+
+723
+01:01:49.476 --> 01:01:53.096
+So that's the getting the data. The modeling component,
+
+724
+01:01:54.736 --> 01:01:58.356
+we developed this model here. It's very simple
+
+725
+01:01:59.036 --> 01:02:00.976
+structure. I guess you got a foundation model,
+
+726
+01:02:02.356 --> 01:02:04.176
+a slight aggregator, a classifier.
+
+727
+01:02:04.296 --> 01:02:07.816
+So you'll see these, I don't know, 1,000 papers every year like this.
+
+728
+01:02:08.336 --> 01:02:10.336
+I guess the main difference here is that we
+
+729
+01:02:11.556 --> 01:02:13.756
+fine-tuned everything end to end,
+
+730
+01:02:14.716 --> 01:02:17.336
+which is not commonly done. And I think
+
+731
+01:02:18.696 --> 01:02:22.606
+we were able to extract pretty significant gains in performance by doing
+
+732
+01:02:22.656 --> 01:02:22.876
+that.
+
+733
+01:02:24.596 --> 01:02:27.356
+And now we have a model. So we
+
+734
+01:02:28.336 --> 01:02:30.916
+do internal and external validation, and it looks pretty good.
+
+735
+01:02:32.676 --> 01:02:33.356
+So we see no
+
+736
+01:02:34.476 --> 01:02:35.956
+drop in performance, essentially.
+
+737
+01:02:37.136 --> 01:02:40.296
+And at this point, after many years, we're pretty happy.
+
+738
+01:02:40.426 --> 01:02:43.276
+And we said, "Okay, let's try to deploy."
+
+739
+01:02:46.196 --> 01:02:49.056
+And the first thing, and hopefully something that
+
+740
+01:02:50.076 --> 01:02:53.056
+you don't think about at this point, but at the very beginning, is
+
+741
+01:02:54.036 --> 01:02:55.956
+when and where do you want to deploy this?
+
+742
+01:02:55.996 --> 01:02:59.736
+So what's the clinical niche that you are inserting your model
+
+743
+01:02:59.816 --> 01:03:03.416
+into? And so in this particular case, it's kind of straightforward.
+
+744
+01:03:04.256 --> 01:03:08.196
+This is the gold standard lung adenocarcinoma workflow,
+
+745
+01:03:08.676 --> 01:03:10.866
+simplified. But essentially, if you're
+
+746
+01:03:11.736 --> 01:03:15.496
+diagnosed with lung adenocarcinoma, every guideline says
+
+747
+01:03:15.776 --> 01:03:19.276
+you have to do NGS to see if you have some of these
+
+748
+01:03:19.356 --> 01:03:22.646
+targetable mutations. Particularly, if you have EGFR, you should
+
+749
+01:03:23.196 --> 01:03:26.086
+undergo TKI therapy.
+
+750
+01:03:28.236 --> 01:03:31.816
+In practice, though, that's not what happens.
+
+751
+01:03:32.056 --> 01:03:34.036
+So in the low-resource setting,
+
+752
+01:03:36.716 --> 01:03:40.536
+what happens is that maybe you don't have access to NGS,
+
+753
+01:03:41.056 --> 01:03:44.116
+and then you will never get that TKI therapy.
+
+754
+01:03:44.816 --> 01:03:45.396
+This setting,
+
+755
+01:03:46.396 --> 01:03:49.996
+I'm not going to talk about this, but we are planning to touch on
+
+756
+01:03:50.076 --> 01:03:51.376
+this in the future.
+
+757
+01:03:53.096 --> 01:03:56.876
+On the other end of the spectrum, in high-resource
+
+758
+01:03:56.936 --> 01:04:00.656
+settings, you do have access to NGS, for example, MSK or Mount
+
+759
+01:04:00.716 --> 01:04:01.056
+Sinai.
+
+760
+01:04:03.496 --> 01:04:06.776
+On top of that, because the oncologists want to get results faster,
+
+761
+01:04:07.696 --> 01:04:07.836
+they
+
+762
+01:04:10.316 --> 01:04:11.606
+have developed rapid testing.
+
+763
+01:04:13.496 --> 01:04:16.356
+And the rapid testing has some pros.
+
+764
+01:04:16.416 --> 01:04:20.336
+Now, instead of waiting for a couple of weeks of the NGS, you get
+
+765
+01:04:20.376 --> 01:04:21.916
+some results in one to two days.
+
+766
+01:04:22.736 --> 01:04:26.636
+And if the test is specific enough, you may start TKI therapy earlier, for
+
+767
+01:04:26.676 --> 01:04:28.176
+example.
+
+768
+01:04:30.036 --> 01:04:33.616
+On the other hand, though, they systematically miss some mutation types
+
+769
+01:04:33.836 --> 01:04:35.736
+because some of these are PCR-based.
+
+770
+01:04:36.056 --> 01:04:38.976
+Most importantly, though, it exhausts tissue for NGS.
+
+771
+01:04:40.396 --> 01:04:43.796
+And in lung, now these biopsies are already tiny.
+
+772
+01:04:43.956 --> 01:04:45.856
+The tissue is scant, so
+
+773
+01:04:46.976 --> 01:04:48.616
+preserving tissue is very important.
+
+774
+01:04:49.626 --> 01:04:53.276
+And so if you don't have any more tissue for NGS, then they may have to
+
+775
+01:04:53.336 --> 01:04:56.116
+re-biopsy the patient, and in some cases,
+
+776
+01:04:57.696 --> 01:05:00.156
+they never undergo NGS. So this is very bad.
+
+777
+01:05:00.696 --> 01:05:04.436
+So a potential solution on where we thought we could insert an
+
+778
+01:05:04.496 --> 01:05:08.196
+AI model in the clinical workflow is to have a
+
+779
+01:05:08.216 --> 01:05:12.156
+computational biomarker, by definition non-exhaustive, and so
+
+780
+01:05:12.196 --> 01:05:14.276
+we could avoid these rapid tests,
+
+781
+01:05:15.676 --> 01:05:17.306
+or maybe replace them eventually.
+
+782
+01:05:20.776 --> 01:05:24.596
+Another part of understanding the clinical niche is that you have to understand
+
+783
+01:05:24.856 --> 01:05:26.476
+the clinical workflow at the site.
+
+784
+01:05:26.536 --> 01:05:29.536
+So this is, for example, a situation at MSK.
+
+785
+01:05:31.736 --> 01:05:35.476
+And it's important to understand to
+
+786
+01:05:35.556 --> 01:05:38.976
+know exactly where in the workflow the model would fit
+
+787
+01:05:40.056 --> 01:05:42.436
+and what would be the triggers that
+
+788
+01:05:44.356 --> 01:05:47.156
+start the inference of the model, for example.
+
+789
+01:05:48.376 --> 01:05:51.896
+So the way it works at MSK is that after a
+
+790
+01:05:51.996 --> 01:05:55.176
+diagnosis, there's going to be a separate molecular accession,
+
+791
+01:05:56.976 --> 01:06:00.336
+and that's where, in our trial design, we start the clock.
+
+792
+01:06:00.436 --> 01:06:03.496
+Now, the molecular accession triggers both the rapid test
+
+793
+01:06:04.016 --> 01:06:07.236
+workflow but also the NGS workflow.
+
+794
+01:06:07.316 --> 01:06:10.656
+And then we'll see in our cellin trial, this same
+
+795
+01:06:12.756 --> 01:06:13.956
+input will trigger our
+
+796
+01:06:14.836 --> 01:06:16.136
+computational biomarker.
+
+797
+01:06:18.616 --> 01:06:18.936
+Okay.
+
+798
+01:06:20.056 --> 01:06:21.216
+So now we had a model,
+
+799
+01:06:22.676 --> 01:06:25.876
+and with certain performance now, we want to deploy it.
+
+800
+01:06:26.996 --> 01:06:27.196
+How
+
+801
+01:06:30.196 --> 01:06:33.956
+does this actually happen? So we thought that we have essentially two
+
+802
+01:06:33.976 --> 01:06:36.236
+knobs at this point. We have a
+
+803
+01:06:37.796 --> 01:06:38.896
+high sensitivity
+
+804
+01:06:40.176 --> 01:06:41.986
+regime of the model and a high
+
+805
+01:06:42.576 --> 01:06:45.276
+specificity regime of the model.
+
+806
+01:06:46.156 --> 01:06:49.936
+So when the model score is low in the high
+
+807
+01:06:50.516 --> 01:06:54.456
+sensitivity MPV threshold, if the score is
+
+808
+01:06:54.516 --> 01:06:57.976
+lower than a certain threshold, then we say, "Okay, we're very sure
+
+809
+01:06:59.416 --> 01:07:01.616
+that this is negative," and vice versa.
+
+810
+01:07:02.856 --> 01:07:06.396
+Which means that essentially, if we want to simulate a deployment, we have two
+
+811
+01:07:06.916 --> 01:07:09.926
+main parameters here, and then we can plot everything on a
+
+812
+01:07:09.996 --> 01:07:13.700
+2DUh, space where we
+
+813
+01:07:13.760 --> 01:07:17.380
+have the MPV and the PPV
+
+814
+01:07:17.420 --> 01:07:18.150
+thresholds here.
+
+815
+01:07:19.180 --> 01:07:22.150
+And at the same time, we can then calculate interesting things.
+
+816
+01:07:22.220 --> 01:07:24.660
+For example, we can calculate the
+
+817
+01:07:26.080 --> 01:07:26.660
+negative,
+
+818
+01:07:28.380 --> 01:07:31.380
+the MPV and the PPV, but also the amount of
+
+819
+01:07:33.060 --> 01:07:36.840
+rapid tests that we would avoid. And this is what
+
+820
+01:07:37.720 --> 01:07:40.820
+you see here on the left at a global level.
+
+821
+01:07:41.470 --> 01:07:43.079
+Then, of course, we want to
+
+822
+01:07:46.300 --> 01:07:50.200
+overlay the gold standard workflow, which in
+
+823
+01:07:50.240 --> 01:07:50.900
+this case is
+
+824
+01:07:52.180 --> 01:07:53.200
+the rapid test.
+
+825
+01:07:54.770 --> 01:07:58.280
+And this is represented by these isolines in sort of
+
+826
+01:07:58.340 --> 01:08:00.019
+magenta and cyan.
+
+827
+01:08:01.240 --> 01:08:03.460
+And of course, we want to be at least as good, no?
+
+828
+01:08:03.660 --> 01:08:04.000
+So
+
+829
+01:08:04.920 --> 01:08:08.420
+you go to the top right corner there, and we
+
+830
+01:08:08.480 --> 01:08:09.330
+identify
+
+831
+01:08:09.860 --> 01:08:13.420
+arbitrarily
+
+832
+01:08:13.540 --> 01:08:13.880
+this
+
+833
+01:08:14.960 --> 01:08:18.360
+line in gold and certain thresholds along the
+
+834
+01:08:18.420 --> 01:08:20.960
+line where we're going to essentially
+
+835
+01:08:21.840 --> 01:08:25.101
+perform and report with the results.
+
+836
+01:08:26.400 --> 01:08:27.641
+And this is
+
+837
+01:08:28.860 --> 01:08:32.200
+also retrospective data. We called it the pre-trial data here.
+
+838
+01:08:33.900 --> 01:08:36.980
+So if we do that, then we can show
+
+839
+01:08:38.061 --> 01:08:41.740
+these performance metrics, assisted negative predictive
+
+840
+01:08:41.780 --> 01:08:45.740
+value, assisted positive predictive value, and rapid test
+
+841
+01:08:45.760 --> 01:08:47.500
+reduction in the
+
+842
+01:08:48.380 --> 01:08:51.101
+simulation with the retrospective data, pre-trial data.
+
+843
+01:08:51.610 --> 01:08:54.561
+Then we actually started the trial, as I mentioned before,
+
+844
+01:08:55.760 --> 01:08:58.940
+and these are the results that we got, essentially very similar,
+
+845
+01:09:00.221 --> 01:09:04.090
+which we were very happy about. And
+
+846
+01:09:04.340 --> 01:09:08.240
+from this, we gather that we can essentially reduce
+
+847
+01:09:08.260 --> 01:09:10.181
+by about 43%
+
+848
+01:09:12.440 --> 01:09:16.030
+the amount of rapid tests by keeping the same gold standard
+
+849
+01:09:16.120 --> 01:09:19.500
+performance characteristics of this workflow.
+
+850
+01:09:21.539 --> 01:09:23.960
+And we're also very happy that a few months later,
+
+851
+01:09:25.021 --> 01:09:28.740
+a completely different group performed sort of an independent
+
+852
+01:09:28.800 --> 01:09:30.580
+third-party validation of our model,
+
+853
+01:09:32.160 --> 01:09:35.561
+and the performance was pretty robust.
+
+854
+01:09:35.721 --> 01:09:36.160
+We were
+
+855
+01:09:37.061 --> 01:09:38.221
+very, very happy about that.
+
+856
+01:09:39.860 --> 01:09:41.920
+So for us, the next steps are going to be
+
+857
+01:09:43.061 --> 01:09:46.040
+run multi-center silent trials. So we're partnering,
+
+858
+01:09:47.120 --> 01:09:49.740
+building collaborations, and hopefully we can
+
+859
+01:09:50.540 --> 01:09:53.500
+run these silent trials for every single model that we're going to
+
+860
+01:09:53.540 --> 01:09:55.160
+develop in the future.
+
+861
+01:09:56.120 --> 01:09:58.540
+We're going to do this on additional biomarkers.
+
+862
+01:09:58.620 --> 01:10:01.980
+We're already working on a more comprehensive panel for lung and
+
+863
+01:10:02.480 --> 01:10:02.960
+other
+
+864
+01:10:03.760 --> 01:10:06.500
+somatic targetable alterations.
+
+865
+01:10:08.040 --> 01:10:11.620
+We're going to focus a lot on the low-resource settings, where this could be even
+
+866
+01:10:11.720 --> 01:10:12.800
+more beneficial.
+
+867
+01:10:14.140 --> 01:10:14.420
+And
+
+868
+01:10:15.240 --> 01:10:18.980
+I think we're actually try to seek approval for
+
+869
+01:10:18.990 --> 01:10:22.780
+deploying this in the clinic, at least in our hospitals
+
+870
+01:10:22.840 --> 01:10:26.430
+at Mount Sinai and at MSK as a
+
+871
+01:10:26.480 --> 01:10:27.800
+laboratory-developed test.
+
+872
+01:10:30.100 --> 01:10:30.580
+And
+
+873
+01:10:31.520 --> 01:10:33.060
+a quick summary, there is a
+
+874
+01:10:34.640 --> 01:10:38.160
+persistent gap between development and adoption of AI
+
+875
+01:10:38.200 --> 01:10:38.840
+models.
+
+876
+01:10:40.020 --> 01:10:41.960
+There is an urgent clinical need. I hope
+
+877
+01:10:43.760 --> 01:10:44.640
+that came across.
+
+878
+01:10:45.520 --> 01:10:49.329
+And one bottleneck certainly, I think, is validation, and
+
+879
+01:10:49.480 --> 01:10:52.900
+one way to overcome that could be
+
+880
+01:10:53.000 --> 01:10:56.650
+showing prospective data, and hopefully that will really
+
+881
+01:10:56.980 --> 01:10:59.160
+boost deployment in the future.
+
+882
+01:11:00.080 --> 01:11:01.760
+With that, I want to thank you for your attention.
+
+883
+01:11:08.680 --> 01:11:12.389
+Fantastic talk. Thank you. It really gives a
+
+884
+01:11:12.460 --> 01:11:15.620
+tangible sense of how close it could be to deploy
+
+885
+01:11:16.360 --> 01:11:18.320
+AI-based digital biomarkers in the clinic.
+
+886
+01:11:18.500 --> 01:11:22.200
+So we have time for questions. You can use the QR
+
+887
+01:11:22.260 --> 01:11:25.900
+code online or to ask the questions
+
+888
+01:11:25.940 --> 01:11:29.440
+online, which I'll moderate, or come up and visit one of the
+
+889
+01:11:29.679 --> 01:11:30.400
+microphones
+
+890
+01:11:31.580 --> 01:11:32.359
+on either side.
+
+891
+01:11:34.240 --> 01:11:37.620
+All right. Great talk. I was just wondering, did you
+
+892
+01:11:38.520 --> 01:11:41.080
+look at the cases where your model fails
+
+893
+01:11:41.880 --> 01:11:44.060
+and examine if there is
+
+894
+01:11:44.160 --> 01:11:47.920
+another mutation
+
+895
+01:11:48.000 --> 01:11:51.840
+that either interacts or causes the model to
+
+896
+01:11:53.760 --> 01:11:54.000
+make
+
+897
+01:11:54.880 --> 01:11:57.180
+erroneous detection?
+
+898
+01:11:58.540 --> 01:12:00.360
+In failed cases, what
+
+899
+01:12:01.880 --> 01:12:02.440
+other
+
+900
+01:12:03.540 --> 01:12:06.860
+mutation may be causing that, that is
+
+901
+01:12:06.920 --> 01:12:07.640
+interacting?
+
+902
+01:12:08.260 --> 01:12:10.880
+Thank you. Yeah, that is definitely very interesting, and
+
+903
+01:12:12.120 --> 01:12:13.140
+it's part of
+
+904
+01:12:14.000 --> 01:12:16.060
+the life cycle of the models.
+
+905
+01:12:19.580 --> 01:12:21.500
+For this, we were focusing on
+
+906
+01:12:23.760 --> 01:12:25.240
+clinical usability,
+
+907
+01:12:26.560 --> 01:12:30.500
+but I certainly hope that we are able to gain insight into
+
+908
+01:12:30.720 --> 01:12:34.700
+some biological mechanism. We didn't uncover
+
+909
+01:12:34.720 --> 01:12:38.240
+anything so far, but if we do, certainly that would be
+
+910
+01:12:38.580 --> 01:12:42.340
+amazing, and I think a lot of people are really interested in
+
+911
+01:12:42.400 --> 01:12:46.040
+using digital and computational pathology to uncover some biological
+
+912
+01:12:46.100 --> 01:12:48.540
+insight. And I think the next talk is going to be
+
+913
+01:12:50.400 --> 01:12:52.220
+very interesting for that.
+
+914
+01:12:59.160 --> 01:12:59.360
+Ben?
+
+915
+01:12:59.810 --> 01:13:01.660
+Hi, Benjamin Epkins, Princess Margaret.
+
+916
+01:13:02.480 --> 01:13:03.840
+Great talk. I was wondering,
+
+917
+01:13:04.900 --> 01:13:06.500
+Alex mentioned biases
+
+918
+01:13:07.440 --> 01:13:10.160
+and batch effects in his talk, and I think that's
+
+919
+01:13:11.060 --> 01:13:14.780
+something we should always look at, whether it's digital pathology or otherwise.
+
+920
+01:13:15.060 --> 01:13:18.000
+But in your case, especially in the deployment, how do you
+
+921
+01:13:18.788 --> 01:13:22.648
+Investigate that? How do you monitor and what do you do if you find a
+
+922
+01:13:22.668 --> 01:13:23.728
+bias or a batch effect?
+
+923
+01:13:24.008 --> 01:13:24.768
+Yeah, that's great.
+
+924
+01:13:26.248 --> 01:13:27.988
+Well, I'm going to do a little plug here.
+
+925
+01:13:28.148 --> 01:13:32.028
+Mount Sinai is the largest health system
+
+926
+01:13:32.088 --> 01:13:35.668
+in the New York Metro area, which is one of the most diverse
+
+927
+01:13:36.928 --> 01:13:39.288
+in the US, certainly. And so we have
+
+928
+01:13:41.728 --> 01:13:45.718
+the opportunity to really investigate these things, whereas in other
+
+929
+01:13:45.748 --> 01:13:48.668
+hospitals, maybe you don't have the data to look at this.
+
+930
+01:13:49.948 --> 01:13:53.228
+So some of the things we will usually do is to stratify by
+
+931
+01:13:53.308 --> 01:13:53.988
+different
+
+932
+01:13:54.828 --> 01:13:57.908
+variables and see if there is any disparity in the
+
+933
+01:13:58.828 --> 01:14:01.028
+performance. That's certainly something that
+
+934
+01:14:02.048 --> 01:14:04.248
+can be done. Another thing that we're
+
+935
+01:14:06.628 --> 01:14:09.888
+studying for a while, I guess, at this point is
+
+936
+01:14:11.228 --> 01:14:12.248
+try to understand
+
+937
+01:14:13.068 --> 01:14:17.028
+if there is at all any signal. Now, what Alex was
+
+938
+01:14:17.068 --> 01:14:20.868
+showing before, trying to predict maybe self-reported race
+
+939
+01:14:20.928 --> 01:14:24.308
+from the slide, and if that is possible, why?
+
+940
+01:14:24.748 --> 01:14:28.128
+Is it really biological? Is it different disease
+
+941
+01:14:28.208 --> 01:14:29.858
+presentation? That sort of thing.
+
+942
+01:14:30.668 --> 01:14:34.228
+And so I think Mount Sinai will have the opportunity to investigate, but
+
+943
+01:14:34.728 --> 01:14:36.088
+that's work in progress.
+
+944
+01:14:38.368 --> 01:14:39.148
+Thank
+
+945
+01:14:40.518 --> 01:14:40.638
+you. Please.
+
+946
+01:14:40.648 --> 01:14:44.608
+Hi, I'm Lodovica Zullo from Gustave Roussy. I have a question.
+
+947
+01:14:44.648 --> 01:14:48.608
+I've seen, at least to my knowledge, that most of the models that
+
+948
+01:14:48.648 --> 01:14:49.508
+try to predict
+
+949
+01:14:50.468 --> 01:14:53.998
+EGFR mutations reaches always a plateau at
+
+950
+01:14:54.228 --> 01:14:56.088
+0.85, 87, and
+
+951
+01:14:56.908 --> 01:15:00.408
+there is nothing that has ever improved this 0 curve.
+
+952
+01:15:00.888 --> 01:15:02.308
+Why do you think it happens?
+
+953
+01:15:03.628 --> 01:15:04.568
+First of all, I think
+
+954
+01:15:06.328 --> 01:15:08.028
+when you start,
+
+955
+01:15:09.808 --> 01:15:13.008
+I guess we shouldn't have any expectation that it should be possible at all.
+
+956
+01:15:14.048 --> 01:15:17.828
+So what's the maximum level of performance that we can get
+
+957
+01:15:18.168 --> 01:15:21.888
+from H&amp;E? Maybe we're reaching a plateau for this specific task,
+
+958
+01:15:23.748 --> 01:15:26.168
+and we don't understand why, really. No.
+
+959
+01:15:27.208 --> 01:15:30.068
+It's a really difficult question.
+
+960
+01:15:30.318 --> 01:15:30.808
+So I don't know,
+
+961
+01:15:32.068 --> 01:15:33.388
+and I don't think anybody knows.
+
+962
+01:15:34.008 --> 01:15:34.308
+Thank you.
+
+963
+01:15:34.348 --> 01:15:38.208
+And different tasks have different levels of performance, and some are easier,
+
+964
+01:15:38.308 --> 01:15:41.728
+some are harder. Maybe our modeling is not good enough, but maybe
+
+965
+01:15:42.348 --> 01:15:44.168
+the signal is just not there in the H&amp;E.
+
+966
+01:15:45.568 --> 01:15:45.888
+Thanks.
+
+967
+01:15:47.388 --> 01:15:51.308
+I think also, I'll just-- Gabriele, your AUROC
+
+968
+01:15:51.318 --> 01:15:54.028
+curves are pretty symmetrical. So, in the
+
+969
+01:15:54.108 --> 01:15:57.428
+situations where your model, where Eagle is
+
+970
+01:15:58.368 --> 01:15:58.908
+incorrect,
+
+971
+01:15:59.768 --> 01:16:02.647
+it's roughly symmetrical false positives and false negatives, right?
+
+972
+01:16:03.278 --> 01:16:05.388
+That was at least my interpretation.
+
+973
+01:16:05.448 --> 01:16:09.238
+So my point is there may be different biologies that would,
+
+974
+01:16:09.348 --> 01:16:13.008
+or different instances where the biology leads to a false
+
+975
+01:16:13.028 --> 01:16:16.688
+positive or a false negative in terms of genotype and phenotype being
+
+976
+01:16:16.728 --> 01:16:20.308
+associated or not associated. So it's going to be interesting to
+
+977
+01:16:21.448 --> 01:16:23.708
+learn more about that as the years come.
+
+978
+01:16:24.368 --> 01:16:25.768
+Yeah, there's plenty of work to do.
+
+979
+01:16:27.508 --> 01:16:27.788
+Please.
+
+980
+01:16:28.298 --> 01:16:31.677
+Thanks for the great talk. Michael Wiegert from Center for Tumor Diseases,
+
+981
+01:16:31.768 --> 01:16:32.228
+Heidelberg.
+
+982
+01:16:33.428 --> 01:16:36.938
+I was wondering what would be your ideal threshold for
+
+983
+01:16:37.128 --> 01:16:40.928
+benchmarking such an approach. Would it be
+
+984
+01:16:41.108 --> 01:16:43.408
+enough to make these retrospective silent
+
+985
+01:16:44.508 --> 01:16:48.488
+trials to convince people that this is enough, or would it
+
+986
+01:16:48.608 --> 01:16:51.868
+be non-inferiority trials?
+
+987
+01:16:53.048 --> 01:16:56.608
+Or would it be a prospective trial and show that these patients
+
+988
+01:16:57.188 --> 01:16:57.828
+even benefit?
+
+989
+01:16:58.688 --> 01:17:02.668
+Could you speculate on what we need as a benchmark to get this
+
+990
+01:17:04.808 --> 01:17:05.348
+into clinic?
+
+991
+01:17:05.788 --> 01:17:05.908
+Yeah.
+
+992
+01:17:08.008 --> 01:17:11.568
+That's the main question. What's enough, I think,
+
+993
+01:17:11.928 --> 01:17:13.427
+probably depends on the task.
+
+994
+01:17:14.508 --> 01:17:18.488
+I guess I didn't go into detail, but one of the slide was about the
+
+995
+01:17:18.528 --> 01:17:22.288
+guidelines from ESMO in Europe. And what they
+
+996
+01:17:22.368 --> 01:17:25.088
+say is that... Well, I guess I should describe it.
+
+997
+01:17:25.148 --> 01:17:27.128
+There is the class A, B, and C,
+
+998
+01:17:28.168 --> 01:17:28.488
+and
+
+999
+01:17:29.368 --> 01:17:32.908
+the EGFR one is B because it's a known
+
+1000
+01:17:33.668 --> 01:17:36.068
+biomarker. What changes is the input.
+
+1001
+01:17:36.087 --> 01:17:37.488
+Instead of using NGS,
+
+1002
+01:17:38.308 --> 01:17:38.708
+you use
+
+1003
+01:17:40.328 --> 01:17:44.308
+H&amp;E. And for those, because it's a known biomarker, they argue that
+
+1004
+01:17:44.348 --> 01:17:47.418
+you don't need a clinical trial because
+
+1005
+01:17:47.548 --> 01:17:50.688
+it's a
+
+1006
+01:17:50.748 --> 01:17:52.228
+well-established biomarker.
+
+1007
+01:17:53.508 --> 01:17:55.788
+Whereas if you go to the level C that they
+
+1008
+01:17:56.988 --> 01:18:00.488
+describe, it's completely novel, and they argue for that,
+
+1009
+01:18:01.008 --> 01:18:02.728
+maybe you do need a clinical trial.
+
+1010
+01:18:03.948 --> 01:18:07.828
+But I think the jury's still out, and that's going to probably be
+
+1011
+01:18:07.868 --> 01:18:09.708
+case by case. So
+
+1012
+01:18:10.888 --> 01:18:13.368
+our approach is that we're going to do as much
+
+1013
+01:18:15.168 --> 01:18:19.108
+validation as we can, both retrospective and prospective, as a silent trial,
+
+1014
+01:18:19.868 --> 01:18:22.288
+multicenter, hopefully, and let's see.
+
+1015
+01:18:22.828 --> 01:18:26.548
+We're just starting, I guess, so we'll see if it
+
+1016
+01:18:26.588 --> 01:18:27.128
+pans out.
+
+1017
+01:18:30.868 --> 01:18:31.268
+Terrific.
+
+1018
+01:18:32.248 --> 01:18:36.178
+Well, if there are no further questions, we can thank our speaker once again and
+
+1019
+01:18:36.208 --> 01:18:37.468
+move on to our third talk.
+
+1020
+01:18:42.548 --> 01:18:46.167
+All right. Our third speaker is Professor Lihua Wang
+
+1021
+01:18:46.208 --> 01:18:48.338
+from MD Anderson Cancer Center,
+
+1022
+01:18:49.368 --> 01:18:53.328
+who will give her talks on looking even further into the future
+
+1023
+01:18:53.688 --> 01:18:56.868
+on how we'll use digital pathology to cure cancer.
+
+1024
+01:18:57.788 --> 01:19:01.648
+Thank you so much, Alex, and good afternoon, everyone, and thank you
+
+1025
+01:19:01.708 --> 01:19:05.508
+so much for staying. And this is my
+
+1026
+01:19:05.568 --> 01:19:09.228
+disclosures, and I divided my talk in two parts.
+
+1027
+01:19:09.768 --> 01:19:10.388
+First, I'm-
+
+1028
+01:19:10.924 --> 01:19:14.244
+I'm going to talk about how to integrate AI pathology, spatial
+
+1029
+01:19:14.304 --> 01:19:15.804
+multi-omics, and
+
+1030
+01:19:16.624 --> 01:19:19.184
+then AI-enabled biomarker discovery.
+
+1031
+01:19:19.224 --> 01:19:23.144
+In the first part, I will be talking about how to leverage deeper
+
+1032
+01:19:23.224 --> 01:19:26.524
+learning-based approaches for spatial mixed data processing,
+
+1033
+01:19:27.103 --> 01:19:31.004
+multi-modal spatial data analysis, and integration in 2D and 3D.
+
+1034
+01:19:31.664 --> 01:19:35.244
+And for the second part, I will be talking about decoding
+
+1035
+01:19:35.564 --> 01:19:39.424
+the complex tissue architecture and how to translate
+
+1036
+01:19:39.504 --> 01:19:43.204
+our complex insights from the spatial tissues to
+
+1037
+01:19:43.264 --> 01:19:44.004
+biomarkers.
+
+1038
+01:19:45.364 --> 01:19:48.924
+And most of this is unpublished. So for the audience
+
+1039
+01:19:49.864 --> 01:19:53.353
+who might be less familiar with spatial multi-omics,
+
+1040
+01:19:54.184 --> 01:19:57.084
+here's what you're able to see. This is a sequence-based approach.
+
+1041
+01:19:57.584 --> 01:20:00.764
+On the left, you see the H&amp;E images that is paired with spatial
+
+1042
+01:20:00.804 --> 01:20:04.664
+transcriptomics. And you see the U map of the spatial transcriptomics
+
+1043
+01:20:04.724 --> 01:20:07.924
+data that reflects how similar they are of each spot.
+
+1044
+01:20:08.044 --> 01:20:10.124
+You see close to 10,000 spots here.
+
+1045
+01:20:10.624 --> 01:20:13.824
+On the right side is the high-resolution pathology annotation.
+
+1046
+01:20:14.224 --> 01:20:17.934
+So you see here the normal epithelium is in bright
+
+1047
+01:20:18.024 --> 01:20:21.924
+pink, and well-differentiated tumor cells in the light pink.
+
+1048
+01:20:22.124 --> 01:20:23.904
+The green cells are tumor cells,
+
+1049
+01:20:24.844 --> 01:20:28.584
+they are poorly differentiated. You also see some cells in blue, they are tumor
+
+1050
+01:20:28.644 --> 01:20:32.084
+cells at invasive front. So in this way, you can really
+
+1051
+01:20:32.204 --> 01:20:35.524
+align the molecular signals and in the natural
+
+1052
+01:20:36.144 --> 01:20:39.724
+tissue microenvironment and understand how these
+
+1053
+01:20:39.904 --> 01:20:43.554
+morphological features link with the expression profiles and
+
+1054
+01:20:43.784 --> 01:20:45.154
+other key signal pathways.
+
+1055
+01:20:46.864 --> 01:20:50.284
+So there are many methods have been developed to leverage AI
+
+1056
+01:20:50.304 --> 01:20:54.234
+pathology for spatial omics. So there are many methods
+
+1057
+01:20:54.244 --> 01:20:57.944
+for different purposes, and this is a very simple
+
+1058
+01:20:57.954 --> 01:21:00.344
+example, and you could leverage
+
+1059
+01:21:01.244 --> 01:21:04.404
+this useful application. You could leverage their deep
+
+1060
+01:21:04.704 --> 01:21:06.564
+learning-based approach
+
+1061
+01:21:07.464 --> 01:21:11.004
+to analyze images and to convert their
+
+1062
+01:21:11.764 --> 01:21:15.324
+pathology annotation as well as gene expression from spot
+
+1063
+01:21:15.424 --> 01:21:19.324
+level to pixel level to generate high-resolution
+
+1064
+01:21:19.864 --> 01:21:23.744
+images. And also for their sequencing-based
+
+1065
+01:21:23.884 --> 01:21:27.244
+spatial transcriptomics, you could leverage the CNN
+
+1066
+01:21:27.284 --> 01:21:31.154
+segmentation model to perform single-cell
+
+1067
+01:21:31.154 --> 01:21:33.524
+segmentation on the paired H&amp;E images.
+
+1068
+01:21:33.964 --> 01:21:37.544
+That will help you impute gene expression
+
+1069
+01:21:37.944 --> 01:21:41.454
+and to fill the gaps between the spots and convert their
+
+1070
+01:21:41.464 --> 01:21:45.234
+spot-level tissue maps to single-cell level spatial maps.
+
+1071
+01:21:45.804 --> 01:21:48.604
+And also for the high-resolution
+
+1072
+01:21:49.484 --> 01:21:53.464
+beam level spatial transcriptomics, such as Visum HD, you can do something
+
+1073
+01:21:53.584 --> 01:21:57.064
+similar. This will allow you to generate a
+
+1074
+01:21:57.144 --> 01:22:00.844
+single-cell level spatial high-resolution transcriptomics
+
+1075
+01:22:00.924 --> 01:22:04.444
+data. This will substantially enhance
+
+1076
+01:22:05.084 --> 01:22:08.424
+spatial architecture detection and downstream
+
+1077
+01:22:08.484 --> 01:22:09.224
+analysis.
+
+1078
+01:22:10.584 --> 01:22:14.304
+So I'd like to talk about something very new, and this is
+
+1079
+01:22:15.164 --> 01:22:18.844
+led by the spatial profiling group of our GIMMS 3D
+
+1080
+01:22:18.944 --> 01:22:22.184
+team, supported by NCI ATAN product
+
+1081
+01:22:22.744 --> 01:22:26.604
+and by Luisa and Dania,
+
+1082
+01:22:26.724 --> 01:22:30.424
+who are amazing pathologists. We generated
+
+1083
+01:22:31.324 --> 01:22:35.184
+the same sections, spatial transcriptomics, proteomics, and
+
+1084
+01:22:35.224 --> 01:22:38.934
+post H&amp;E images. So with
+
+1085
+01:22:38.984 --> 01:22:42.444
+histology, transcriptomics, proteomics in the same section.
+
+1086
+01:22:42.884 --> 01:22:46.824
+This provide a unique opportunity to integrate these modalities.
+
+1087
+01:22:47.564 --> 01:22:50.804
+And we could leverage their deep learning-based
+
+1088
+01:22:50.824 --> 01:22:54.114
+approaches to align the modalities.
+
+1089
+01:22:54.544 --> 01:22:57.964
+To first, we could align largely the
+
+1090
+01:22:58.004 --> 01:23:01.984
+compartments. So it is important to first align the compartment because the
+
+1091
+01:23:02.024 --> 01:23:06.014
+tissue could move, and they could detach, and
+
+1092
+01:23:07.124 --> 01:23:10.553
+the two modalities, even the same tissue section, they may not always
+
+1093
+01:23:10.664 --> 01:23:14.244
+match. And most critically is to align the
+
+1094
+01:23:14.284 --> 01:23:16.304
+modality at a single-cell resolution.
+
+1095
+01:23:16.924 --> 01:23:20.524
+And to achieve single-cell matching, distance
+
+1096
+01:23:20.544 --> 01:23:24.384
+alone is insufficient. You have to consider the
+
+1097
+01:23:24.464 --> 01:23:27.924
+distance, the similarity of cell typing
+
+1098
+01:23:28.284 --> 01:23:31.664
+from the two modalities, as well as the topology.
+
+1099
+01:23:31.784 --> 01:23:35.133
+So this will help us generate a cell-cell matching probability
+
+1100
+01:23:35.604 --> 01:23:39.144
+metrics to help align the data from two modalities at a
+
+1101
+01:23:39.224 --> 01:23:40.444
+single-cell resolution.
+
+1102
+01:23:41.304 --> 01:23:41.524
+And
+
+1103
+01:23:42.784 --> 01:23:46.644
+so I'm also going to share some very exciting progress we
+
+1104
+01:23:46.664 --> 01:23:50.004
+have made in the 3D. And tumor biology is
+
+1105
+01:23:50.024 --> 01:23:53.924
+inherently three-dimensional, and with 2D views,
+
+1106
+01:23:54.624 --> 01:23:58.024
+we're not able to capture the full picture of the
+
+1107
+01:23:58.064 --> 01:24:00.124
+complexity of the tumor ecosystem.
+
+1108
+01:24:01.124 --> 01:24:05.104
+So you could leverage this deeper learning approach and
+
+1109
+01:24:05.144 --> 01:24:07.964
+to learn across the tissue sections.
+
+1110
+01:24:08.304 --> 01:24:09.724
+So this will help you to
+
+1111
+01:24:10.964 --> 01:24:13.304
+register the serial sections.
+
+1112
+01:24:15.114 --> 01:24:19.104
+And we can generate 3D molecular
+
+1113
+01:24:19.184 --> 01:24:22.124
+maps of human tumors. This is a real human tumor.
+
+1114
+01:24:22.644 --> 01:24:26.044
+You can see 2 million cells. They are high resolution. You can look at every cell.
+
+1115
+01:24:26.104 --> 01:24:29.704
+You can look at the signals. Here you see B cell and the T cell, how they are
+
+1116
+01:24:29.714 --> 01:24:33.624
+aligned, and the key signals, CXCL13, CXCL5, that
+
+1117
+01:24:33.664 --> 01:24:36.804
+is important for tissue infrastructure formation.
+
+1118
+01:24:37.184 --> 01:24:40.524
+You can look at basically every single cell and other key signals.
+
+1119
+01:24:40.584 --> 01:24:43.264
+This will help us link the structure to function.
+
+1120
+01:24:44.304 --> 01:24:48.104
+And similarly, you can apply this approach and to infer the
+
+1121
+01:24:48.114 --> 01:24:51.604
+spatial compartment and register them across
+
+1122
+01:24:52.084 --> 01:24:55.944
+their serial sections. So in this way, we could get
+
+1123
+01:24:56.224 --> 01:24:59.344
+a very nice view of the tumor. Now you look at this
+
+1124
+01:24:59.944 --> 01:25:00.744
+tissue
+
+1125
+01:25:01.704 --> 01:25:05.544
+almost like a glass box. You can see through the
+
+1126
+01:25:05.584 --> 01:25:09.244
+tissue, look at the major compartment, their spatial relationships.
+
+1127
+01:25:10.084 --> 01:25:13.974
+This will help us understand the complex cell organization,
+
+1128
+01:25:13.984 --> 01:25:16.644
+and especially across different compartments
+
+1129
+01:25:17.284 --> 01:25:21.048
+andNo, the first part will be very
+
+1130
+01:25:21.088 --> 01:25:23.568
+short, and the main focus will be the second part.
+
+1131
+01:25:24.188 --> 01:25:27.468
+I'm going to switch the gears and talk about the second part.
+
+1132
+01:25:27.488 --> 01:25:31.388
+But for the first part, what you see largely is in the part of
+
+1133
+01:25:31.468 --> 01:25:35.448
+the Spiral. And if you are interested in learning
+
+1134
+01:25:35.508 --> 01:25:35.828
+more,
+
+1135
+01:25:36.968 --> 01:25:40.928
+my data scientist, Yinghe Liu, will be presenting Spiral on Tuesday
+
+1136
+01:25:41.608 --> 01:25:45.228
+afternoon, the poster number is 5505.
+
+1137
+01:25:45.308 --> 01:25:48.828
+And the second part, I'm going to talk about how to decode in tissue
+
+1138
+01:25:48.868 --> 01:25:52.807
+architecture and translates the insights into biomarkers.
+
+1139
+01:25:54.008 --> 01:25:57.388
+So basically, the spatial omics field
+
+1140
+01:25:57.848 --> 01:26:00.668
+is evolving amazingly fast.
+
+1141
+01:26:01.488 --> 01:26:04.468
+You see many new platforms, many new approaches.
+
+1142
+01:26:04.548 --> 01:26:06.868
+Almost every day, their papers come out.
+
+1143
+01:26:07.408 --> 01:26:11.348
+So with these latest approaches allow you to segment every
+
+1144
+01:26:11.388 --> 01:26:14.828
+single cell by leveraging multimodality,
+
+1145
+01:26:15.028 --> 01:26:17.528
+morphological markers,
+
+1146
+01:26:18.608 --> 01:26:20.548
+multimodal segmentation plus AI.
+
+1147
+01:26:20.958 --> 01:26:24.908
+So precisely segment every single cell and align the transcript within the
+
+1148
+01:26:24.947 --> 01:26:28.508
+cell. This will help you identify the identity of the cell,
+
+1149
+01:26:29.408 --> 01:26:32.928
+and what type of cell, and understand the
+
+1150
+01:26:32.948 --> 01:26:36.668
+phenotypical states. And with that, basically, you could
+
+1151
+01:26:36.808 --> 01:26:40.728
+go beyond and in this complex tissue, and you
+
+1152
+01:26:40.768 --> 01:26:44.468
+can see not only tumor cells, but you see their environments, and generally the
+
+1153
+01:26:44.528 --> 01:26:47.608
+high-resolution single-cell map of the tumor tissue.
+
+1154
+01:26:48.068 --> 01:26:51.868
+This will also allow you to understand how the cells are organized, how they
+
+1155
+01:26:51.928 --> 01:26:55.468
+interact, what are the signal flow between them, and
+
+1156
+01:26:55.588 --> 01:26:58.928
+identify the spatial features that matter in clinic.
+
+1157
+01:27:01.068 --> 01:27:04.848
+So I'd like to give you example, because this is a
+
+1158
+01:27:04.968 --> 01:27:08.668
+large tissue. It's basically one centimeter by one
+
+1159
+01:27:08.728 --> 01:27:09.328
+centimeter.
+
+1160
+01:27:10.148 --> 01:27:13.668
+The complexity exists but is hidden.
+
+1161
+01:27:14.188 --> 01:27:17.888
+I'd like to show you. At the bottom, you see there are many different cell types.
+
+1162
+01:27:17.988 --> 01:27:21.248
+Basically, with this ultra-highplex spatial
+
+1163
+01:27:21.268 --> 01:27:25.188
+transcriptomics, you could define 20 or 50 or even more
+
+1164
+01:27:25.608 --> 01:27:29.528
+cell types and cell states and better understand the complex tumor tissue.
+
+1165
+01:27:30.208 --> 01:27:33.468
+And let's look at one tissue, look at the tumor
+
+1166
+01:27:33.568 --> 01:27:37.528
+core. You don't need to look at that many colors. Just look at the pink colors.
+
+1167
+01:27:37.568 --> 01:27:41.048
+There's plasma cell, there's macrophages in orange, and CAF in yellow.
+
+1168
+01:27:41.528 --> 01:27:44.448
+In the tumor core, you see is a pretty much CAF.
+
+1169
+01:27:44.848 --> 01:27:46.647
+They are very close to the tumor cells.
+
+1170
+01:27:47.228 --> 01:27:50.948
+And I can also see the aggregates of the macrophages.
+
+1171
+01:27:51.508 --> 01:27:54.408
+And let's move to the tumor interface.
+
+1172
+01:27:54.688 --> 01:27:58.368
+You see aggregates of more macrophages here in this case.
+
+1173
+01:27:58.408 --> 01:28:01.888
+Let's look at the other case. For this case in the tumor core, you don't basically
+
+1174
+01:28:02.008 --> 01:28:03.508
+see the macrophages. You see
+
+1175
+01:28:04.488 --> 01:28:06.348
+a higher abundance of the CAF.
+
+1176
+01:28:07.088 --> 01:28:10.828
+But as the periphery, the interface, you see
+
+1177
+01:28:10.888 --> 01:28:13.188
+still a high abundance macrophages.
+
+1178
+01:28:14.168 --> 01:28:17.668
+So basically, why I want to show the macrophages, you guys
+
+1179
+01:28:17.928 --> 01:28:21.448
+maybe learn. So macrophage is becoming our emerging
+
+1180
+01:28:21.608 --> 01:28:25.468
+interesting target and platform for cell therapy, but we don't yet
+
+1181
+01:28:25.508 --> 01:28:29.028
+fully understand the spatial organization with the macrophages and their
+
+1182
+01:28:29.088 --> 01:28:30.248
+functional states.
+
+1183
+01:28:31.048 --> 01:28:32.988
+So this will allow us to define them.
+
+1184
+01:28:33.108 --> 01:28:36.647
+For this tissue, if you look at the map on the right side, I hope you can see the
+
+1185
+01:28:36.708 --> 01:28:40.408
+green color and red color. The green color, one type of
+
+1186
+01:28:40.448 --> 01:28:42.708
+macrophages, they are immunosuppressive.
+
+1187
+01:28:42.748 --> 01:28:45.488
+They are characterized by high expression of the TIM-2,
+
+1188
+01:28:45.828 --> 01:28:49.388
+CCL18, and they form aggregates in the tumor region.
+
+1189
+01:28:49.798 --> 01:28:53.328
+And about the green macrophages, a high expression CXCL9 and
+
+1190
+01:28:53.468 --> 01:28:56.408
+CXCL10. They are immune to military.
+
+1191
+01:28:56.768 --> 01:28:58.568
+They are largely at the tumor periphery.
+
+1192
+01:28:59.018 --> 01:29:02.978
+And if you quantify them, now you can see the TIM-2, the
+
+1193
+01:29:03.068 --> 01:29:06.108
+peak is in the tumor region. CXCL9 macrophages,
+
+1194
+01:29:06.228 --> 01:29:09.908
+you see the progressive decrease when they get into the tumor
+
+1195
+01:29:10.008 --> 01:29:13.968
+center. But on the other hand, you can see the FAP positive might have, it is
+
+1196
+01:29:14.008 --> 01:29:16.968
+progressive increase. Let's look at the other
+
+1197
+01:29:17.728 --> 01:29:21.478
+sample. You see a different type of macrophage that is CSF1R positive,
+
+1198
+01:29:21.908 --> 01:29:25.897
+is also immunosuppressive, characterized by high expression with
+
+1199
+01:29:25.908 --> 01:29:29.388
+CD163. And you can see the different
+
+1200
+01:29:30.308 --> 01:29:34.128
+spatial distribution pattern of these two different
+
+1201
+01:29:34.168 --> 01:29:38.108
+type of macrophages. One is scattered in the tumor region, the other
+
+1202
+01:29:38.268 --> 01:29:40.527
+form aggregates at the tumor interface.
+
+1203
+01:29:40.928 --> 01:29:44.888
+So this will give us a idea how the overall landscape of
+
+1204
+01:29:44.928 --> 01:29:47.148
+the macrophages in the tumor to
+
+1205
+01:29:48.688 --> 01:29:52.428
+help us better development the approaches to target these macrophages.
+
+1206
+01:29:53.188 --> 01:29:57.008
+When you look at this together, this different way of illustration, you
+
+1207
+01:29:57.208 --> 01:30:00.048
+see these two type of macrophages in the same tissue.
+
+1208
+01:30:00.588 --> 01:30:03.528
+They are spatially aggregated. They have different distribution patterns.
+
+1209
+01:30:05.328 --> 01:30:08.928
+So it is important to understand the entire
+
+1210
+01:30:09.628 --> 01:30:13.408
+spatial architecture, because in addition to the macrophages and the CAF, their T
+
+1211
+01:30:13.508 --> 01:30:17.478
+cell, their DC, their B cells, and many other
+
+1212
+01:30:17.488 --> 01:30:20.758
+cells. It's very complex tissue environment,
+
+1213
+01:30:21.348 --> 01:30:25.148
+and the single cell population will never able to give you a full picture.
+
+1214
+01:30:25.228 --> 01:30:28.688
+So people try to identify and define the spatial
+
+1215
+01:30:28.698 --> 01:30:32.648
+archetypes will give you a high level view of the tissue
+
+1216
+01:30:32.658 --> 01:30:35.308
+environment and correlate that with the clinical
+
+1217
+01:30:35.348 --> 01:30:38.548
+outcomes. So,
+
+1218
+01:30:39.928 --> 01:30:43.688
+in addition to the spatial organization, important, the critical part
+
+1219
+01:30:43.748 --> 01:30:47.188
+is understand the spatial interaction, the cell-cell
+
+1220
+01:30:47.328 --> 01:30:48.518
+interaction, because
+
+1221
+01:30:49.848 --> 01:30:51.248
+I feel like this is
+
+1222
+01:30:52.188 --> 01:30:55.968
+important to move beyond of the cell center review to
+
+1223
+01:30:56.008 --> 01:30:58.588
+understand how cell interact in the tissue.
+
+1224
+01:30:59.348 --> 01:31:00.108
+And because
+
+1225
+01:31:01.508 --> 01:31:04.688
+the tumor is not a random collection of cells.
+
+1226
+01:31:05.108 --> 01:31:08.448
+The cells talk to each other. They're sending or receiving signals
+
+1227
+01:31:08.548 --> 01:31:10.720
+consistently.And
+
+1228
+01:31:11.660 --> 01:31:15.000
+so the cell form niches, the functional niches,
+
+1229
+01:31:15.600 --> 01:31:19.240
+you see many of them in the tumor tissue.
+
+1230
+01:31:19.280 --> 01:31:23.020
+They may play different roles. They influence therapy
+
+1231
+01:31:23.080 --> 01:31:26.880
+response, disease progression. We don't yet fully understand them.
+
+1232
+01:31:26.960 --> 01:31:27.420
+They could be
+
+1233
+01:31:28.380 --> 01:31:32.190
+considered as a fundamental functional unit of the
+
+1234
+01:31:32.300 --> 01:31:36.220
+tissue. And if you are interested in learning more about this,
+
+1235
+01:31:36.840 --> 01:31:40.480
+just please read our review article in "Cancer Cell." I'm going to
+
+1236
+01:31:40.640 --> 01:31:44.320
+briefly highlight two of the special niches, and the
+
+1237
+01:31:44.380 --> 01:31:47.660
+first is the CAF. As we know,
+
+1238
+01:31:48.080 --> 01:31:51.940
+cancer-associated fibroblasts have been considered as a promising target
+
+1239
+01:31:52.020 --> 01:31:56.000
+for over a decade, but the effort targeting CAF as a
+
+1240
+01:31:56.060 --> 01:31:59.860
+whole has not really met our expectation because they are so
+
+1241
+01:31:59.900 --> 01:32:03.440
+highly diverse in their functional
+
+1242
+01:32:03.480 --> 01:32:04.500
+states. And
+
+1243
+01:32:05.440 --> 01:32:06.380
+so in this work,
+
+1244
+01:32:07.420 --> 01:32:11.160
+we have a talented postdoc, that was a data scientist, who defined
+
+1245
+01:32:11.740 --> 01:32:14.260
+four different spatial organizations of the CAF.
+
+1246
+01:32:14.800 --> 01:32:18.530
+They associate with clinical outcomes, so they are not only
+
+1247
+01:32:18.620 --> 01:32:22.100
+biologically relevant but also clinically relevant.
+
+1248
+01:32:22.720 --> 01:32:26.120
+And you can learn more about this work by reading this paper.
+
+1249
+01:32:26.600 --> 01:32:30.420
+And I want to also share that we're developing
+
+1250
+01:32:30.460 --> 01:32:31.520
+the AI model
+
+1251
+01:32:32.900 --> 01:32:36.580
+that can help us detect the CAF tumor niches
+
+1252
+01:32:36.620 --> 01:32:40.500
+directly from the H&amp;E images and quantify the abundance and distribution
+
+1253
+01:32:40.940 --> 01:32:43.960
+of these niches and understand
+
+1254
+01:32:45.040 --> 01:32:48.940
+this tumor. And another niche that I want to
+
+1255
+01:32:48.980 --> 01:32:51.740
+highlight is the tissue infrastructures. Why does it matter?
+
+1256
+01:32:52.300 --> 01:32:55.940
+Because it is closely associated with immunotherapy response.
+
+1257
+01:32:55.980 --> 01:32:59.360
+This is the work published in 2020 by our team, highlights
+
+1258
+01:32:59.820 --> 01:33:03.510
+its correlation with the therapy response, clinical outcomes.
+
+1259
+01:33:04.180 --> 01:33:08.060
+And to take that further, we developed this AI framework, can help
+
+1260
+01:33:08.180 --> 01:33:08.900
+us detect,
+
+1261
+01:33:09.700 --> 01:33:11.860
+segment, and phenotype TIS
+
+1262
+01:33:13.140 --> 01:33:14.700
+from the spatial transcriptomics.
+
+1263
+01:33:15.340 --> 01:33:18.830
+And this is very scalable, can be applied to a few hundred or
+
+1264
+01:33:18.920 --> 01:33:21.140
+thousands of images simultaneously.
+
+1265
+01:33:21.860 --> 01:33:22.080
+And
+
+1266
+01:33:23.140 --> 01:33:27.050
+we are building our all-in-one framework
+
+1267
+01:33:27.120 --> 01:33:30.930
+we call the Omni-TIS, that allow us to detect and
+
+1268
+01:33:31.040 --> 01:33:34.740
+phenotype TIS from different
+
+1269
+01:33:34.780 --> 01:33:38.620
+modalities. For example, spot level, spatial transcriptomics,
+
+1270
+01:33:38.800 --> 01:33:42.100
+single-cell level spatial transcriptomics, H&amp;E images.
+
+1271
+01:33:42.540 --> 01:33:46.060
+By putting all this together, I hope that it is useful for the community.
+
+1272
+01:33:46.500 --> 01:33:50.020
+This will also include modules for
+
+1273
+01:33:50.280 --> 01:33:54.040
+classification based on the maturization stage and the TIS-based
+
+1274
+01:33:54.120 --> 01:33:58.060
+patient stratification. The first part of this work has been accepted.
+
+1275
+01:33:58.140 --> 01:34:02.100
+Hopefully, we'll see it soon. And I want to show
+
+1276
+01:34:02.160 --> 01:34:05.880
+you a high-resolution single-cell level
+
+1277
+01:34:05.940 --> 01:34:08.640
+TIS map. This is what you see. This is a mature TIS.
+
+1278
+01:34:09.160 --> 01:34:12.220
+And you can learn
+
+1279
+01:34:12.360 --> 01:34:14.780
+where are these different types of cells.
+
+1280
+01:34:14.840 --> 01:34:18.140
+There's many different type of cells. It's not just B and T cells.
+
+1281
+01:34:19.420 --> 01:34:23.340
+So to make TIS and their multiple cell populations,
+
+1282
+01:34:23.700 --> 01:34:25.360
+they have different spatial locations.
+
+1283
+01:34:25.880 --> 01:34:28.560
+I'm not going to play the full video.
+
+1284
+01:34:28.980 --> 01:34:32.169
+And so just put it in a clinical context.
+
+1285
+01:34:32.870 --> 01:34:36.240
+This is in collaboration with our Allison study, Dr. Pamela Summer.
+
+1286
+01:34:36.740 --> 01:34:40.580
+And we analyzed this TIS responders, non-responders
+
+1287
+01:34:40.660 --> 01:34:42.400
+from patients with renal cell carcinoma.
+
+1288
+01:34:42.460 --> 01:34:45.880
+You can see this is a comparison, not only the density
+
+1289
+01:34:46.520 --> 01:34:49.990
+of the TIS are different between the responder, non-responders, but
+
+1290
+01:34:50.260 --> 01:34:52.980
+also you see the difference in maturization stage.
+
+1291
+01:34:53.900 --> 01:34:57.820
+You see quite different composition of
+
+1292
+01:34:57.880 --> 01:35:00.770
+the TIS states in addition to their
+
+1293
+01:35:01.780 --> 01:35:02.400
+density.
+
+1294
+01:35:03.440 --> 01:35:07.060
+So that is important. Also, I want to mention about the
+
+1295
+01:35:07.100 --> 01:35:10.780
+vascular structures. It is very important to understand vascular
+
+1296
+01:35:10.840 --> 01:35:11.460
+structures,
+
+1297
+01:35:12.540 --> 01:35:16.479
+but it is so complex. And I have a graduate
+
+1298
+01:35:16.560 --> 01:35:20.150
+student, Jiahui, he's building this AI model, very simple model,
+
+1299
+01:35:20.780 --> 01:35:24.000
+and to detect and phenotype these
+
+1300
+01:35:24.020 --> 01:35:27.350
+vascular structures in a big tissue like this one,
+
+1301
+01:35:28.020 --> 01:35:31.900
+can quickly identify where are those vessels and the different type of the
+
+1302
+01:35:31.979 --> 01:35:33.140
+vessels, and
+
+1303
+01:35:33.980 --> 01:35:36.940
+to learn the neighborhood of the vessels.
+
+1304
+01:35:37.020 --> 01:35:40.670
+So we are about to define different functional states of the vessels.
+
+1305
+01:35:40.740 --> 01:35:44.060
+For example, I select three regions. You see they're different.
+
+1306
+01:35:44.460 --> 01:35:48.420
+Some of them are stroma associated, some of them are immune enriched, and
+
+1307
+01:35:48.460 --> 01:35:51.380
+you see a lot is tumor associated in the tumor region.
+
+1308
+01:35:51.840 --> 01:35:55.290
+For the immune-enriched vascular structure, they are
+
+1309
+01:35:55.320 --> 01:35:58.460
+important for immune cell trafficking in the tumor,
+
+1310
+01:35:59.260 --> 01:36:01.480
+so it is critical to understand them.
+
+1311
+01:36:01.540 --> 01:36:04.960
+And lastly, I want to mention there are many, many AI models,
+
+1312
+01:36:05.480 --> 01:36:09.380
+and to allow you to do pseudo staining
+
+1313
+01:36:09.420 --> 01:36:13.050
+to impute gene expression, impute protein expression, and
+
+1314
+01:36:13.160 --> 01:36:17.040
+impute spatial niches. You can apply a simple model like
+
+1315
+01:36:17.060 --> 01:36:20.780
+this one. This is a uni-based model, allow you to just
+
+1316
+01:36:21.160 --> 01:36:21.680
+infer
+
+1317
+01:36:22.560 --> 01:36:26.020
+their spatial architecture from H&amp;E images.
+
+1318
+01:36:26.120 --> 01:36:29.900
+It works beautifully. And further, I think it is
+
+1319
+01:36:29.980 --> 01:36:33.460
+important to have a little bit granularity. This is what you see here.
+
+1320
+01:36:33.780 --> 01:36:37.140
+This is a TCGA samples, and we are able to
+
+1321
+01:36:37.200 --> 01:36:40.680
+define more kind of higher granular
+
+1322
+01:36:41.020 --> 01:36:44.620
+spatial architectures. For this one, you can see the tumor
+
+1323
+01:36:44.680 --> 01:36:48.170
+region. It's enriched with stroma cell, their
+
+1324
+01:36:48.280 --> 01:36:51.980
+CAF. And in this tumor, you see different
+
+1325
+01:36:51.990 --> 01:36:54.840
+distribution of the CAF from the other one.
+
+1326
+01:36:54.900 --> 01:36:58.490
+You may see some other colors, the cluster number eight, their
+
+1327
+01:36:58.640 --> 01:37:01.680
+bright red color, that is enriched with
+
+1328
+01:37:02.260 --> 01:37:04.740
+exhausted T cells in the tumor region.
+
+1329
+01:37:04.780 --> 01:37:08.500
+So this is able to capture this kind of details. And this one is different.
+
+1330
+01:37:08.560 --> 01:37:11.740
+In the tumor center, you see a lot of CAF, but it's different type of CAF.
+
+1331
+01:37:12.100 --> 01:37:14.390
+You see vascular structures in the tumor core.
+
+1332
+01:37:14.820 --> 01:37:17.480
+But in the periphery tumor, they are pretty cold.
+
+1333
+01:37:17.560 --> 01:37:19.800
+You don't see immune cells or stroma cells.
+
+1334
+01:37:20.160 --> 01:37:22.460
+This tells you different spatial architecture.
+
+1335
+01:37:22.920 --> 01:37:24.880
+So this level of details are important.
+
+1336
+01:37:26.500 --> 01:37:30.490
+Basically, I have one last slide to show youThis is in collaboration
+
+1337
+01:37:30.540 --> 01:37:31.660
+with Dr. Daphne Meru,
+
+1338
+01:37:32.620 --> 01:37:36.580
+a dear collaborator. So this is in our colon cancer liver
+
+1339
+01:37:36.640 --> 01:37:40.460
+mats. It's important to understand not only the big micro
+
+1340
+01:37:40.560 --> 01:37:42.940
+mats, but important is the minimal radio disease.
+
+1341
+01:37:42.960 --> 01:37:46.760
+You call it the small micro mats. As you see here, you could
+
+1342
+01:37:46.780 --> 01:37:49.020
+detect this at a single cell resolution.
+
+1343
+01:37:49.490 --> 01:37:53.160
+And to reach this sensitivity is critical for clinical application
+
+1344
+01:37:53.240 --> 01:37:56.720
+because patient with this MRD has poor survival.
+
+1345
+01:37:57.360 --> 01:37:59.240
+And to wrap it up,
+
+1346
+01:38:00.340 --> 01:38:01.439
+I want to leave you with these
+
+1347
+01:38:02.320 --> 01:38:02.860
+slides.
+
+1348
+01:38:03.860 --> 01:38:07.760
+It is the perfect time to leverage spatial omics and AI to
+
+1349
+01:38:08.440 --> 01:38:12.240
+build a global view of the tissue ecosystem, to understand
+
+1350
+01:38:12.280 --> 01:38:16.070
+how the cells are spatially organized, how they talk to each other.
+
+1351
+01:38:16.080 --> 01:38:18.680
+We don't yet fully understand their language, right?
+
+1352
+01:38:18.820 --> 01:38:22.100
+So how their spatial organization and interaction
+
+1353
+01:38:22.260 --> 01:38:24.420
+change in response to therapy,
+
+1354
+01:38:26.080 --> 01:38:30.000
+so that we can uncover the spatial principle
+
+1355
+01:38:30.740 --> 01:38:34.279
+that govern tumor cell behavior, therapy response.
+
+1356
+01:38:35.720 --> 01:38:39.660
+With that, I'd like to thank my team, especially the people
+
+1357
+01:38:39.700 --> 01:38:43.100
+listed here, my amazing team and wonderful collaborators.
+
+1358
+01:38:43.720 --> 01:38:43.940
+And
+
+1359
+01:38:44.800 --> 01:38:48.660
+the funding agency. I received very generous support from
+
+1360
+01:38:48.720 --> 01:38:52.200
+NCH Time Breast Cancer, our Allison
+
+1361
+01:38:52.240 --> 01:38:55.440
+Institute, Data Science Institute, PRSC,
+
+1362
+01:38:56.120 --> 01:38:59.440
+many others, and the patient and families.
+
+1363
+01:39:00.440 --> 01:39:02.920
+Thank you all so much. I want to
+
+1364
+01:39:03.520 --> 01:39:05.060
+highlight basically,
+
+1365
+01:39:07.080 --> 01:39:10.600
+so our GIMMS 3D team and Dr. Miao Li will be
+
+1366
+01:39:10.720 --> 01:39:14.710
+present on the AI pathology and the spatial omics on
+
+1367
+01:39:15.080 --> 01:39:18.760
+Monday. And our Dr. Ti Hong
+
+1368
+01:39:18.860 --> 01:39:22.140
+Huang will be talk further about the non-disruptive
+
+1369
+01:39:22.320 --> 01:39:25.340
+3D4D technology on Wednesday morning.
+
+1370
+01:39:25.400 --> 01:39:28.020
+I hope to see you guys there. Thank you so much.
+
+1371
+01:39:28.060 --> 01:39:29.540
+I'll be happy to take any questions.
+
+1372
+01:39:36.640 --> 01:39:38.040
+That's a fantastic talk.
+
+1373
+01:39:39.440 --> 01:39:43.280
+Graphically, visually, I think that you are owed a residency at the
+
+1374
+01:39:43.320 --> 01:39:45.680
+Sphere in Las Vegas. It's so beautiful.
+
+1375
+01:39:46.640 --> 01:39:50.160
+We have time for questions. How about up at the microphone?
+
+1376
+01:39:51.200 --> 01:39:55.120
+Hello. It was a great talk. I just wondering how much we
+
+1377
+01:39:55.280 --> 01:39:58.800
+learn from 3D, how much we have missed by 2D
+
+1378
+01:39:58.880 --> 01:39:59.440
+experiments?
+
+1379
+01:40:00.440 --> 01:40:01.420
+That's a great question.
+
+1380
+01:40:02.400 --> 01:40:06.280
+That's also the question I ask my team and myself,
+
+1381
+01:40:06.760 --> 01:40:08.980
+and it is very complex tissue ecosystem.
+
+1382
+01:40:09.040 --> 01:40:09.680
+For example,
+
+1383
+01:40:10.760 --> 01:40:14.460
+TIs. Let's use TIs as example. You see TIs within the 2D
+
+1384
+01:40:14.520 --> 01:40:17.560
+tissue section, you see them small or big, they are separated.
+
+1385
+01:40:18.000 --> 01:40:21.660
+But when you look at the 3D, I'm not sure if you pay attention to the red color
+
+1386
+01:40:22.260 --> 01:40:22.580
+and
+
+1387
+01:40:23.700 --> 01:40:27.160
+we have this 3D of the TIs in that video I played.
+
+1388
+01:40:27.600 --> 01:40:30.980
+You see some of them are interconnected like a mountain.
+
+1389
+01:40:31.520 --> 01:40:33.740
+And that will basically give me
+
+1390
+01:40:34.660 --> 01:40:38.440
+some idea. And when we quantify TIs and the
+
+1391
+01:40:38.480 --> 01:40:42.110
+correlate with clinical outcomes, we typically count the number of
+
+1392
+01:40:42.140 --> 01:40:45.400
+TIs, or we quantify their proportion of the
+
+1393
+01:40:47.100 --> 01:40:50.100
+size of the TIs. But that may not be really
+
+1394
+01:40:51.660 --> 01:40:54.520
+they're reliable in term of their clinical biomarkers.
+
+1395
+01:40:55.300 --> 01:40:59.240
+Let me think about maybe their spatial volume of the
+
+1396
+01:40:59.320 --> 01:41:03.300
+TIs matters because it's aggregates of T cells and B
+
+1397
+01:41:03.400 --> 01:41:07.200
+cells, right? I think that is simple example, but there are many
+
+1398
+01:41:07.560 --> 01:41:08.780
+other, I think,
+
+1399
+01:41:09.960 --> 01:41:13.589
+populations in the microenvironments there, especially the
+
+1400
+01:41:13.620 --> 01:41:17.520
+vascular structures. I think 3D is unique and
+
+1401
+01:41:17.620 --> 01:41:19.720
+a powerful way to understand that.
+
+1402
+01:41:21.500 --> 01:41:23.960
+Good. We'll go to the west microphone for the next question.
+
+1403
+01:41:24.780 --> 01:41:27.940
+Hello. That was a beautiful question.
+
+1404
+01:41:27.960 --> 01:41:28.860
+Apologies if...
+
+1405
+01:41:29.700 --> 01:41:33.680
+Beautiful presentation, I'm sorry. Apologies if my question is a little bit naive.
+
+1406
+01:41:34.200 --> 01:41:37.540
+So for the cell annotation, do you use any
+
+1407
+01:41:37.620 --> 01:41:41.380
+in-house list of biomarkers for annotate the
+
+1408
+01:41:41.880 --> 01:41:44.820
+cell origin, or you use databases?
+
+1409
+01:41:45.980 --> 01:41:49.729
+Can you specify the platform as we use different approaches for the
+
+1410
+01:41:49.779 --> 01:41:51.260
+data from different platform.
+
+1411
+01:41:52.080 --> 01:41:55.460
+Okay. For the spatial transcriptomics.
+
+1412
+01:41:56.260 --> 01:41:56.520
+Okay.
+
+1413
+01:41:57.640 --> 01:42:01.480
+For the single cell resolution, you just treat that as their
+
+1414
+01:42:01.580 --> 01:42:05.090
+single cell sequencing. Because you have pretty good gene
+
+1415
+01:42:05.220 --> 01:42:08.640
+coverage, you can define the cell
+
+1416
+01:42:08.700 --> 01:42:12.640
+populations, the major cell population very easy, and for the
+
+1417
+01:42:12.700 --> 01:42:16.480
+cell states, for example, you can define six or eight different type of T
+
+1418
+01:42:16.580 --> 01:42:20.340
+cells. That will also feasible
+
+1419
+01:42:20.440 --> 01:42:23.760
+based on their expression of the canonical markers.
+
+1420
+01:42:24.480 --> 01:42:28.280
+And one way is to define based on their
+
+1421
+01:42:28.500 --> 01:42:30.820
+knowledge, the other is transfer learning.
+
+1422
+01:42:31.380 --> 01:42:35.220
+So by integrating your spatial data with single cell sequencing data that is
+
+1423
+01:42:35.420 --> 01:42:38.140
+carefully annotated, you could transfer the label.
+
+1424
+01:42:38.760 --> 01:42:42.620
+You could also transfer the label from single cell sequencing to the spot level
+
+1425
+01:42:42.720 --> 01:42:46.340
+or even beam level with transcriptomics and learn
+
+1426
+01:42:46.420 --> 01:42:46.740
+that.
+
+1427
+01:42:47.920 --> 01:42:51.500
+There's many different approaches, we could discuss
+
+1428
+01:42:51.540 --> 01:42:52.360
+offline.
+
+1429
+01:42:52.400 --> 01:42:53.820
+Okay. Thank you. Appreciate it.
+
+1430
+01:42:54.040 --> 01:42:57.630
+But that's a critical part. If you mess up a cell typing,
+
+1431
+01:42:58.760 --> 01:43:01.120
+the downstream will be totally different.
+
+1432
+01:43:02.380 --> 01:43:03.500
+Great. Let's go over to this.
+
+1433
+01:43:03.760 --> 01:43:04.000
+Thanks.
+
+1434
+01:43:04.800 --> 01:43:06.540
+Fabulous. I have two short questions.
+
+1435
+01:43:06.660 --> 01:43:07.200
+One is,
+
+1436
+01:43:08.600 --> 01:43:12.280
+so you said these images contain signaling information that you can
+
+1437
+01:43:12.340 --> 01:43:16.240
+extract. So for example, if you treat cancer patients with RAS
+
+1438
+01:43:16.300 --> 01:43:18.800
+inhibitor and so on, could you actually see the
+
+1439
+01:43:19.220 --> 01:43:22.440
+signaling being inhibited?
+
+1440
+01:43:22.460 --> 01:43:25.340
+That's a great question, and depends on the modality.
+
+1441
+01:43:25.400 --> 01:43:28.360
+You can leverage the transcriptomics, proteomics,
+
+1442
+01:43:28.400 --> 01:43:31.428
+metabolomicsAnd epigenetics.
+
+1443
+01:43:31.468 --> 01:43:31.618
+Mm-hmm.
+
+1444
+01:43:32.848 --> 01:43:36.788
+And also, I think the resolution and the courage are
+
+1445
+01:43:37.188 --> 01:43:38.288
+the key factors.
+
+1446
+01:43:39.528 --> 01:43:43.488
+That's the key factors determining how much information you can gather
+
+1447
+01:43:43.588 --> 01:43:45.088
+from these spatial modalities.
+
+1448
+01:43:46.308 --> 01:43:50.288
+Typically, especially with the emerging whole transcriptomics
+
+1449
+01:43:50.308 --> 01:43:54.028
+platform, you could capture a few thousand transcripts.
+
+1450
+01:43:55.148 --> 01:43:59.078
+Some of them are highly relevant, and a part of the key signals will
+
+1451
+01:43:59.128 --> 01:44:02.388
+allow you to infer their key signaling
+
+1452
+01:44:02.428 --> 01:44:06.158
+pathways, like what I showed is SIXL13, SIXL5,
+
+1453
+01:44:06.488 --> 01:44:09.828
+but there are many other ligand receptors.
+
+1454
+01:44:09.938 --> 01:44:12.168
+They are included in their panel design.
+
+1455
+01:44:12.228 --> 01:44:14.548
+You can also design your custom panel.
+
+1456
+01:44:15.228 --> 01:44:18.908
+And I think one really limited modality will be,
+
+1457
+01:44:19.388 --> 01:44:19.448
+I
+
+1458
+01:44:20.648 --> 01:44:23.208
+hope to see improvement is the cytokine.
+
+1459
+01:44:24.248 --> 01:44:28.168
+I hope in the near future we can see a more robust platform to
+
+1460
+01:44:28.208 --> 01:44:32.068
+capture those cytokines. That is important for us to understand the
+
+1461
+01:44:32.088 --> 01:44:33.248
+cell-cell interactions.
+
+1462
+01:44:33.688 --> 01:44:37.668
+Yeah. We developed 100 reagents for cytokine IHC, but later
+
+1463
+01:44:37.728 --> 01:44:40.348
+I can discuss. Second question is
+
+1464
+01:44:41.548 --> 01:44:43.568
+spatial proteomics, right? So
+
+1465
+01:44:44.488 --> 01:44:48.088
+how correlative are they with transcripts, and could you
+
+1466
+01:44:48.768 --> 01:44:52.608
+resolve also subcellular localizations of these proteins, for example,
+
+1467
+01:44:52.648 --> 01:44:56.388
+signaling the receptor cluster at one part of the-
+
+1468
+01:44:57.268 --> 01:45:00.548
+That's another great question. If you look at RNA and protein, they are not always
+
+1469
+01:45:00.568 --> 01:45:03.068
+consistent, but they are complementary.
+
+1470
+01:45:03.088 --> 01:45:06.848
+For example, CD31, you see the beautiful protein, and with
+
+1471
+01:45:06.858 --> 01:45:09.388
+spatial protein, you can capture vascular structures.
+
+1472
+01:45:09.448 --> 01:45:13.378
+But for transcripts, you're not able to find a single transcript that's
+
+1473
+01:45:13.488 --> 01:45:15.928
+unique to identify endothelial cells.
+
+1474
+01:45:16.448 --> 01:45:20.308
+And vice versa. You can leverage spatial transcriptomics
+
+1475
+01:45:20.388 --> 01:45:24.308
+that's not available at a protein level because
+
+1476
+01:45:24.328 --> 01:45:27.688
+it's limited by the antibody availability. They are complementary.
+
+1477
+01:45:27.768 --> 01:45:31.668
+I hope to leverage multiple modalities, of course, that has to fit your budget.
+
+1478
+01:45:33.428 --> 01:45:36.368
+Let's go to the west microphone.
+
+1479
+01:45:36.448 --> 01:45:37.518
+Very nice talk, Lingua.
+
+1480
+01:45:38.407 --> 01:45:42.048
+I was thinking that, two questions, one is related to the
+
+1481
+01:45:42.088 --> 01:45:43.648
+proteomics, and
+
+1482
+01:45:44.568 --> 01:45:47.788
+without that information or without the other modalities,
+
+1483
+01:45:48.728 --> 01:45:52.578
+is it possible to come up with an incomplete biological
+
+1484
+01:45:52.668 --> 01:45:56.588
+understanding? And the other question is, we all know that even the
+
+1485
+01:45:56.608 --> 01:45:58.537
+gastric cancer you're doing within H10,
+
+1486
+01:45:59.568 --> 01:46:02.458
+how difficult it is to understand the
+
+1487
+01:46:04.448 --> 01:46:08.048
+cell fate over time, right? So is it
+
+1488
+01:46:08.088 --> 01:46:11.428
+possible to stitch together your spatial
+
+1489
+01:46:11.448 --> 01:46:15.388
+transcriptomics data from different patients that were driven
+
+1490
+01:46:15.468 --> 01:46:19.188
+by, I don't know, maybe the same gene or something like that, same
+
+1491
+01:46:19.248 --> 01:46:19.868
+mutation,
+
+1492
+01:46:20.988 --> 01:46:24.588
+to come up with an understanding of
+
+1493
+01:46:24.688 --> 01:46:26.648
+how the evolution took place?
+
+1494
+01:46:27.648 --> 01:46:30.148
+Great questions. I appreciate the insights.
+
+1495
+01:46:30.688 --> 01:46:34.658
+So, yes, we have to leverage additional modalities that I didn't
+
+1496
+01:46:34.688 --> 01:46:38.628
+show you. For example, the mutation analysis and
+
+1497
+01:46:38.828 --> 01:46:40.088
+for the spatial,
+
+1498
+01:46:41.828 --> 01:46:44.648
+either RNA or protein, you need to understand the
+
+1499
+01:46:45.188 --> 01:46:48.388
+evolution of their tumor cells and tumor cell clones.
+
+1500
+01:46:48.968 --> 01:46:52.788
+And for the context of the hereditary gastric cancer, what we did
+
+1501
+01:46:52.988 --> 01:46:56.368
+is in the adjacent tissue section, we did
+
+1502
+01:46:56.508 --> 01:46:59.908
+multiple laser microdissection to capture
+
+1503
+01:47:00.428 --> 01:47:04.348
+20 or 40 foci, including the precursor lesions, invasive tumor
+
+1504
+01:47:04.358 --> 01:47:05.448
+niche from their
+
+1505
+01:47:07.028 --> 01:47:10.628
+episadial to the submucosal layer, to the muscle layer
+
+1506
+01:47:11.068 --> 01:47:12.308
+to capture the different
+
+1507
+01:47:13.128 --> 01:47:16.768
+tumor cell populations. This will allow us to understand their
+
+1508
+01:47:16.848 --> 01:47:19.368
+evolution to build the phylogenetic tree.
+
+1509
+01:47:19.468 --> 01:47:23.228
+For example, in their entire gastric, they all have the
+
+1510
+01:47:23.248 --> 01:47:26.528
+germline CDH1 mutations. They are all high risk.
+
+1511
+01:47:26.728 --> 01:47:30.688
+Why that particular foci transform into
+
+1512
+01:47:32.808 --> 01:47:36.708
+signet ring cell carcinoma, and why that foci
+
+1513
+01:47:36.948 --> 01:47:39.788
+will invade deeper into the muscle layer?
+
+1514
+01:47:40.348 --> 01:47:43.948
+I think to integrate their spatial genomics and transcriptomics,
+
+1515
+01:47:44.008 --> 01:47:45.868
+proteomics will be the key to
+
+1516
+01:47:45.908 --> 01:47:49.668
+generate these deep insights.
+
+1517
+01:47:49.988 --> 01:47:52.868
+Of course, it's about discovery for the downstream as
+
+1518
+01:47:52.878 --> 01:47:55.848
+spatial perturbation, organoids, mouse models.
+
+1519
+01:47:55.888 --> 01:47:59.668
+The validation is a key step
+
+1520
+01:48:01.848 --> 01:48:03.148
+basically to convert
+
+1521
+01:48:04.128 --> 01:48:05.838
+correlative to causal
+
+1522
+01:48:07.128 --> 01:48:09.248
+inference. I think that's a critical step.
+
+1523
+01:48:09.328 --> 01:48:10.188
+Right. Thank you.
+
+1524
+01:48:11.968 --> 01:48:13.748
+Last question for the session.
+
+1525
+01:48:13.928 --> 01:48:14.658
+No pressure.
+
+1526
+01:48:15.768 --> 01:48:19.688
+So I was wondering, we always talk about biomarkers from those
+
+1527
+01:48:19.698 --> 01:48:22.728
+spatial data in 3D and more complicated.
+
+1528
+01:48:22.768 --> 01:48:24.938
+Beyond colocalization of cell types,
+
+1529
+01:48:25.848 --> 01:48:29.468
+do you have a generalizable approach to take the
+
+1530
+01:48:29.608 --> 01:48:33.578
+spatial information and distill it into a number we can use as
+
+1531
+01:48:33.688 --> 01:48:36.048
+a biomarker? What's your approach here?
+
+1532
+01:48:36.268 --> 01:48:39.108
+Great question. I think we have a couple of papers coming out.
+
+1533
+01:48:39.188 --> 01:48:42.448
+I hope that will change the way how we think about the biomarker.
+
+1534
+01:48:43.128 --> 01:48:46.788
+So typically, we see a single gene or protein or a gene
+
+1535
+01:48:46.848 --> 01:48:48.768
+signature or other special features.
+
+1536
+01:48:49.408 --> 01:48:52.028
+I feel like we could leverage the spatial
+
+1537
+01:48:53.088 --> 01:48:56.668
+features and at a higher level to build our
+
+1538
+01:48:57.188 --> 01:49:01.108
+composite signature, and that maybe work
+
+1539
+01:49:01.188 --> 01:49:02.348
+even more robust
+
+1540
+01:49:03.548 --> 01:49:07.428
+in terms of the biomarkers. Of course, has to be clinically
+
+1541
+01:49:07.468 --> 01:49:08.768
+employable.
+
+1542
+01:49:10.028 --> 01:49:13.408
+Think about, is there a way how we can translate
+
+1543
+01:49:14.008 --> 01:49:15.828
+simply to the clinic?
+
+1544
+01:49:16.848 --> 01:49:18.148
+I feel like that's a great question.
+
+1545
+01:49:18.188 --> 01:49:22.048
+That's definitely the field I think we are heading to with spatial
+
+1546
+01:49:22.088 --> 01:49:22.748
+multi-omics.
+
+1547
+01:49:24.108 --> 01:49:25.888
+Thank you so much for all of the questions.
+
+1548
+01:49:26.788 --> 01:49:29.228
+Well, what a great way to end. Thanks again.
+
+1549
+01:49:29.288 --> 01:49:31.468
+Let's thank our speakers again and conclude the session.
+
+1550
+01:49:31.588 --> 01:49:31.928
+Thank
+
+1551
+01:49:31.988 --> 01:49:36.048
+you
+
+1552
+01:49:36.058 --> 01:49:39.868
+all. That's great. Fantastic. I know all the
+
+1553
+01:49:39.908 --> 01:49:41.928
+questions. A lot of great questions.
+
+1554
+01:49:44.128 --> 01:49:44.498
+Am I in
+
+1555
+01:49:54.788 --> 01:50:19.638
+that?

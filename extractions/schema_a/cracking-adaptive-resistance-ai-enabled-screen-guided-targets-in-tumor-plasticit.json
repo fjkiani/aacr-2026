@@ -1,0 +1,558 @@
+[
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::tong::1",
+    "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+    "talk_title": "AI\u2011Guided Discovery and Targeting of Plexin B2 in Circulating Tumor Cell Clusters",
+    "speaker": {
+      "name": "Fangjia Tong",
+      "affiliation": "Northwestern University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "immunotherapy",
+      "targeted_therapy",
+      "AI_ML",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PLEXIN B2",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "antibody",
+        "compound_name": "anti\u2011plexin B2 monoclonal antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CTC clusters in triple\u2011negative breast cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PLEXIN B2 expression",
+        "type": "predictive",
+        "finding": "High plexin B2 in CTC clusters correlates with reduced distant metastasis\u2011free survival (HR 1.8, p=0.02)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "BALB/c spontaneous metastasis model",
+        "genotype_or_key_features": "4T1 breast cancer cells, plexin B2 knockout vs control"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Patient blood CTC cohort (CellSearch)",
+        "genotype_or_key_features": "n=45 triple\u2011negative breast cancer patients"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "AI\u2011driven ranking (R\u2011score) identified plexin B2 as a top adhesion molecule driving homotypic and heterotypic CTC cluster formation; neutralizing antibodies block plexin B2, reducing cluster size and number, decreasing lung metastasis in mice, and correlating with improved patient outcomes.",
+    "readouts": [
+      "flow cytometry",
+      "CellSearch CTC enumeration",
+      "in vivo bioluminescence imaging",
+      "H&E lung metastasis quantification",
+      "AI\u2011based structural modeling",
+      "molecular docking scores"
+    ],
+    "key_findings": [
+      "R\u2011score prioritized plexin B2 among 30 adhesion proteins as the top CTC\u2011cluster driver.",
+      "Genetic knockout of plexin B2 in 4T1 cells reduces lung micro\u2011metastases by ~70% (p<0.001).",
+      "Anti\u2011plexin B2 antibodies decrease both homotypic tumor\u2011tumor and heterotypic tumor\u2011myeloid clusters in vitro.",
+      "Single\u2011dose anti\u2011plexin B2 treatment in BALB/c mice cuts metastatic burden by 60% (p<0.01).",
+      "High plexin B2 expression in patient CTC clusters associates with worse distant metastasis\u2011free survival."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Antibody cross\u2011reacts with mouse plexin B2, enabling preclinical testing; no off\u2011target toxicity observed in normal tissues."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Standard chemotherapy (e.g., paclitaxel)",
+        "rationale": "Potential additive effect by reducing CTC\u2011mediated dissemination",
+        "phenotype": "Preliminary in vivo data suggest enhanced tumor control (not yet quantified)",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can anti\u2011plexin B2 therapy overcome resistance to existing ADCs in patients with low nectin\u20114?",
+      "What is the durability of the anti\u2011cluster effect after repeated dosing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::chen::2",
+    "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+    "talk_title": "SWALL\u20111 Controls Epigenetic Methylation, Mitochondrial Metabolism, and Antitumor Immunity in IDH\u2011Mutant Gliomas",
+    "speaker": {
+      "name": "Henry Chen",
+      "affiliation": "Johns Hopkins University",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "metabolism",
+      "tumor_microenvironment",
+      "AI_ML",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SWELL1 (LRRC8A)",
+        "alteration": "",
+        "pathway": "volume\u2011regulated anion channel (VRAC)",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "IDH1\u2011R132H mutant glioma cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SWELL1 expression",
+        "type": "predictive",
+        "finding": "IDH\u2011mutant gliomas show ~1\u2011fold higher SWELL1 mRNA vs wild\u2011type (TCGA)."
+      },
+      {
+        "name": "D\u20112HG extracellular level",
+        "type": "pharmacodynamic",
+        "finding": "SWELL1 knockout reduces extracellular D\u20112HG by ~45% in vitro."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "U87 IDH1\u2011R132H",
+        "genotype_or_key_features": "CRISPR\u2011engineered IDH1 R132H"
+      },
+      {
+        "model_type": "patient_derived",
+        "name": "TS603 IDH\u2011mut glioma cells",
+        "genotype_or_key_features": "endogenous IDH1 mutation"
+      },
+      {
+        "model_type": "mouse",
+        "name": "orthotopic IDH\u2011mut glioma xenograft",
+        "genotype_or_key_features": "SWELL1 knockout vs control"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "SWELL1 forms the LRRC8A\u2011C VRAC complex that mediates passive export of the oncometabolite D\u20112HG from IDH\u2011mutant glioma cells; loss of SWELL1 reduces extracellular D\u20112HG, enhances cGAS\u2011STING activation, increases CD8\u207a T\u2011cell infiltration, and suppresses tumor proliferation via hyper\u2011methylation of MYC/SOX2 pathways and impaired mitochondrial respiration.",
+    "readouts": [
+      "LC\u2011MS D\u20112HG quantification",
+      "siRNA/CRISPR screens",
+      "flow cytometry (CD86, CD8, IFN\u2011\u03b3)",
+      "ATAC\u2011seq",
+      "RNA\u2011seq",
+      "Seahorse OCR/ECAR",
+      "survival curves in mice"
+    ],
+    "key_findings": [
+      "SWELL1 knockdown decreases extracellular D\u20112HG release by ~40% without affecting LDH release.",
+      "LRRC8C knockdown reduces D\u20112HG release ~25%; LRRC8D knockdown increases release, indicating subunit specificity.",
+      "SWELL1\u2011KO IDH\u2011mut glioma xenografts show prolonged mouse survival (median 45 vs 30 days, p=0.004).",
+      "SWELL1 loss leads to increased microglial CD86\u207a activation and CD8\u207a T\u2011cell IFN\u2011\u03b3\u207a frequency.",
+      "SWELL1\u2011KO cells accumulate intracellular D\u20112HG (~2\u2011fold) and display increased H3K27me3 and DNA hyper\u2011methylation, down\u2011regulating MYC and SOX2."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "SWELL1 is ubiquitously expressed; tumor specificity derives from reliance on D\u20112HG export in IDH\u2011mut context."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111 blockade",
+        "rationale": "SWELL1 loss enhances antitumor immunity via cGAS\u2011STING",
+        "phenotype": "Synergistic tumor control in orthotopic models (not yet quantified)",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Will pharmacologic inhibition of VRAC recapitulate genetic SWELL1 loss?",
+      "Can SWELL1 expression serve as a biomarker for response to IDH inhibitors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::lu::3",
+    "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+    "talk_title": "Lineage Plasticity Drives Antibody\u2011Drug Conjugate Resistance in Bladder Cancer",
+    "speaker": {
+      "name": "Xiao Chenluo Lu",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "bladder cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "cancer_vaccines",
+      "ADC",
+      "transcriptional_regulation",
+      "combination_therapy",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NECTIN\u20114",
+        "alteration": "",
+        "pathway": "cell adhesion",
+        "modality": "antibody",
+        "compound_name": "enfortumab vedotin",
+        "compound_id": "NCT03288545",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Urothelial carcinoma, luminal subtype",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DL3",
+        "alteration": "",
+        "pathway": "unknown",
+        "modality": "antibody",
+        "compound_name": "anti\u2011DL3 ADC (experimental)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Neuroendocrine/sarcomatoid bladder cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "NECTIN\u20114 expression",
+        "type": "predictive",
+        "finding": "High NECTIN\u20114 tumors have median EV treatment duration 9.2 months vs 3.1 months for low\u2011expressors (p=0.001)."
+      },
+      {
+        "name": "ASCL1 activity",
+        "type": "resistance",
+        "finding": "ASCL1 overexpression suppresses NECTIN\u20114 transcription in HT1376 cells (\u221270% mRNA, p<0.01)."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "300\u2011patient bladder tumor cohort (MSK)",
+        "genotype_or_key_features": "Urothelial vs variant histology, NECTIN\u20114 IHC"
+      },
+      {
+        "model_type": "spatial_transcriptomics",
+        "name": "Mixed\u2011histology bladder tumor",
+        "genotype_or_key_features": "Squamous and neuroendocrine regions"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HT1376 (luminal), ASCL1/NEUROD1 overexpression",
+        "genotype_or_key_features": "TP53 & RB1 mutant"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "EV treatment duration",
+        "value": "9.2 months",
+        "confidence_interval": "",
+        "n": "n=78 high\u2011NECTIN\u20114",
+        "population": "high NECTIN\u20114 bladder cancer",
+        "comparator": "low NECTIN\u20114",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "EV treatment duration",
+        "value": "3.1 months",
+        "confidence_interval": "",
+        "n": "n=45 low\u2011NECTIN\u20114",
+        "population": "low NECTIN\u20114 bladder cancer",
+        "comparator": "high NECTIN\u20114",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Lineage plasticity driven by ASCL1/NEUROD1 reprogramming suppresses NECTIN\u20114 expression, rendering enfortumab vedotin ineffective; variant histology tumors up\u2011regulate alternative surface antigens such as DL3, offering new ADC targets for combination therapy.",
+    "readouts": [
+      "RNA\u2011seq",
+      "IHC",
+      "spatial transcriptomics",
+      "swimmer plots",
+      "cell viability assays"
+    ],
+    "key_findings": [
+      "ASCL1/NEUROD1 overexpression in HT1376 cells reduces NECTIN\u20114 mRNA by 70% and abolishes EV\u2011mediated cytotoxicity.",
+      "Spatial transcriptomics shows NECTIN\u20114 loss confined to neuroendocrine regions, while DL3 is up\u2011regulated there.",
+      "Patients with NECTIN\u20114\u2011low variant histology have significantly shorter EV treatment duration.",
+      "Proposed combination of NECTIN\u20114 ADC with DL3\u2011targeted ADC could address heterogeneous antigen expression."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Plasticity\u2011mediated antigen loss is reversible in vitro upon ASCL1 knockdown, suggesting epigenetic regulation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "DL3\u2011targeted ADC",
+        "rationale": "Compensate for NECTIN\u20114 loss in neuroendocrine/sarcomatoid subclones",
+        "phenotype": "Predicted synergistic tumor control in mixed\u2011histology models",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can epigenetic drugs restore NECTIN\u20114 expression in resistant tumors?",
+      "What is the optimal sequencing of dual\u2011ADC therapy to prevent clonal escape?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT03288545"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::zhang::4",
+    "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+    "talk_title": "eIF4A1 Inhibition Suppresses AML via Serine Biosynthesis Blockade",
+    "speaker": {
+      "name": "Xiaoxu Zhang",
+      "affiliation": "City of Hope",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "translation",
+      "metabolism",
+      "protein_degradation",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "eIF4A1",
+        "alteration": "",
+        "pathway": "translation initiation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "zoledronate",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells with high eIF4A1 expression",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MCL1",
+        "alteration": "",
+        "pathway": "apoptosis regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MCL1 inhibitor (experimental)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells sensitized by eIF4A1 inhibition",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PHGDH expression",
+        "type": "pharmacodynamic",
+        "finding": "eIF4A1 knockout reduces PHGDH mRNA by 65% (p<0.001)."
+      },
+      {
+        "name": "Serine levels",
+        "type": "pharmacodynamic",
+        "finding": "Intracellular serine drops 45% after zoledronate treatment."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MOLM\u201113 AML",
+        "genotype_or_key_features": "high eIF4A1"
+      },
+      {
+        "model_type": "PDX",
+        "name": "AML PDX (patient\u2011derived)",
+        "genotype_or_key_features": "primary AML blasts"
+      },
+      {
+        "model_type": "mouse",
+        "name": "immunocompetent bone marrow transplant model",
+        "genotype_or_key_features": "eIF4A1 knockdown AML"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Zoledronate inhibits eIF4A1, destabilizing YB\u20111\u2011bound mRNAs such as PHGDH, leading to reduced serine biosynthesis, impaired oxidative phosphorylation, and AML cell death; combined with MCL1 inhibition yields synergistic cytotoxicity.",
+    "readouts": [
+      "RNA\u2011seq",
+      "proteomics",
+      "metabolomics",
+      "CRISPR screen",
+      "cell viability (IC50)",
+      "mouse survival"
+    ],
+    "key_findings": [
+      "eIF4A1 is the most overexpressed translation initiation factor in AML vs normal hematopoietic cells.",
+      "eIF4A1 knockout prolongs survival in immunocompetent AML mouse model (median 60 vs 38 days, p=0.003).",
+      "Zoledronate kills AML cell lines with nanomolar IC50 while sparing normal CD34\u207a cells.",
+      "PHGDH down\u2011regulation mediates serine depletion; overexpression rescues growth inhibition.",
+      "CRISPR screen identifies YB\u20111 and MCL1 as top sensitizers; zoledronate + MCL1 inhibitor shows >2\u2011fold synergy (CI<0.5)."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Zoledronate shows minimal toxicity to normal hematopoietic cells; selectivity linked to AML\u2011specific eIF4A1 dependence."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MCL1 inhibitor",
+        "rationale": "MCL1 knockdown sensitizes AML to eIF4A1 inhibition",
+        "phenotype": "Synergistic reduction of AML viability (CI 0.4)",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "YB\u20111 inhibitor",
+        "rationale": "YB\u20111 is a co\u2011factor for eIF4A1\u2011mediated mRNA stability",
+        "phenotype": "Enhanced AML cell death in vitro",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will zoledronate retain selectivity in a broader panel of normal tissues in vivo?",
+      "Can eIF4A1 inhibition overcome resistance to standard AML therapies (e.g., venetoclax)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::ghia::5",
+    "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+    "talk_title": "Targeting Rho1/2 to Overcome ADC Resistance in Triple\u2011Negative Breast Cancer",
+    "speaker": {
+      "name": "Emanuela Ghia",
+      "affiliation": "University of Rochester",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "triple\u2011negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "ADC",
+      "targeted_therapy",
+      "cancer_stem_cells",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "RHO1",
+        "alteration": "",
+        "pathway": "Rho GTPase signaling",
+        "modality": "antibody",
+        "compound_name": "anti\u2011RHO1 monoclonal antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RHO1\u2011positive TNBC stem\u2011like cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "RHO2",
+        "alteration": "",
+        "pathway": "Rho GTPase signaling",
+        "modality": "antibody",
+        "compound_name": "anti\u2011RHO2 monoclonal antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RHO2\u2011positive TNBC stem\u2011like cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "RHO2 expression",
+        "type": "predictive",
+        "finding": "70% of HR\u2011negative breast cancers express surface RHO2 by CITE\u2011seq."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "TNBC PDX (RHO2+)",
+        "genotype_or_key_features": "patient\u2011derived xenograft, high RHO2"
+      },
+      {
+        "model_type": "limiting_dilution_assay",
+        "name": "RHO2+ sorted cells",
+        "genotype_or_key_features": "5,000 cells injected generate tumors; RHO2\u2011 cells do not"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Anti\u2011RHO1/2 antibodies bind surface oncogenic embryonic proteins re\u2011expressed in TNBC stem\u2011like cells, suppressing stemness signatures, NF\u2011\u03baB signaling, and NRF2\u2011driven antioxidant response, thereby sensitizing cells to the redox\u2011modulating agent APR\u2011246.",
+    "readouts": [
+      "CITE\u2011seq",
+      "tumorsphere assay",
+      "Western blot (p\u2011p65, NQO1)",
+      "in vivo tumor growth curves",
+      "IC50 shift with APR\u2011246"
+    ],
+    "key_findings": [
+      "RHO2+ sorted TNBC cells generate tumors at 5,000 cells; RHO2\u2011 cells fail to engraft.",
+      "Anti\u2011RHO2 treatment reduces NF\u2011\u03baB p\u2011p65 and NQO1 levels in vitro.",
+      "Combination of anti\u2011RHO2 antibody with APR\u2011246 lowers APR\u2011246 IC50 by 2.5\u2011fold in TNBC cell lines.",
+      "In vivo, anti\u2011RHO2 alone modestly slows tumor growth; combined with APR\u2011246 yields significant tumor regression (p<0.01)."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "RHO1/2 are embryonic proteins absent in adult normal tissues, suggesting a favorable therapeutic window."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "APR\u2011246 (p53 reactivator)",
+        "rationale": "RHO2 blockade lowers NRF2 activity, increasing ROS susceptibility to APR\u2011246",
+        "phenotype": "Enhanced tumor regression in TNBC PDX (p<0.01)",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the ligand (if any) that drives RHO1/2 signaling in TNBC?",
+      "Can anti\u2011RHO antibodies be humanized for clinical development?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

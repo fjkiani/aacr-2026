@@ -1,0 +1,168 @@
+[
+  {
+    "talk_id": "agentic-ai-as-the-oncologist-clinical-decision-support-and-human-ai-collaboratio::comaniciu::1",
+    "session_title": "Agentic AI as the Oncologist: Clinical Decision Support and Human AI Collaboration",
+    "talk_title": "Agentic AI for Radiation Oncology: Imaging, Planning, and Operational Optimization",
+    "speaker": {
+      "name": "Dr. Dorin Comaniciu",
+      "affiliation": "Siemens Healthineers, Senior Vice President and Chief Expert for Healthcare AI",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI",
+      "platform_technology",
+      "radiotherapy",
+      "clinical_trial",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "AI-driven imaging reconstruction (DeepResolve) accelerates MRI acquisition by 73% and has processed >44\u202fM scans; AI auto\u2011contouring covers >200 organs at risk; end\u2011to\u2011end AI radiation\u2011therapy planning generates deliverable plans in under a second; an operational\u2011twin AI schedules patients, machines, and staff in real time to reduce treatment delays.",
+    "readouts": [
+      "MRI k\u2011space reconstruction",
+      "deep learning auto\u2011contouring",
+      "radiation\u2011therapy plan optimization",
+      "AI scheduling simulation"
+    ],
+    "key_findings": [
+      "DeepResolve AI reconstruction makes MRI scans up to 73% faster, enabling >44\u202fM AI\u2011reconstructed scans in 2.5\u202fyears.",
+      "Regulatory\u2011approved auto\u2011contouring system identifies >200 organs at risk and clinical target volumes across disease sites.",
+      "AI\u2011driven radiation\u2011therapy planning produces a full treatment plan in <1\u202fsecond on standard hardware for head\u2011and\u2011neck cases.",
+      "Operational\u2011twin AI scheduling integrates patient demand, machine capacity, and clinical priority to generate optimized appointment recommendations in one click."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Siemens Healthineers"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "agentic-ai-as-the-oncologist-clinical-decision-support-and-human-ai-collaboratio::hwang::2",
+    "session_title": "Agentic AI as the Oncologist: Clinical Decision Support and Human AI Collaboration",
+    "talk_title": "4D Oncology Platform: Real\u2011Time ADC Evaluation and Agentic AI Treatment Selection",
+    "speaker": {
+      "name": "Dr. Taehyong Hwang",
+      "affiliation": "Vanderbilt University Medical Center, Founding Director, Center of Molecular Artificial Intelligence",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "gastric cancer",
+      "breast cancer",
+      "HER2\u2011positive cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "ADC",
+      "targeted_therapy",
+      "biomarker_development",
+      "AI_ML",
+      "spatial_biology",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HER2",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "ADC",
+        "compound_name": "HER2\u2011ADC",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HER2\u2011positive tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Trop2",
+        "alteration": "",
+        "pathway": "cell surface antigen",
+        "modality": "ADC",
+        "compound_name": "Trop2\u2011ADC",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Trop2\u2011expressing tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "",
+        "pathway": "FGF signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "FGFR2 inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "FGFR2\u2011amplified gastric cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_derived_organoid",
+        "name": "patient tumor organoid",
+        "genotype_or_key_features": "HER2\u2011positive, FGFR2\u2011b expression, variable lysosome activity"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "NCI Cancer Moonshot gastric cancer cohort",
+        "genotype_or_key_features": "stage IV gastric cancer, n=~30"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Agentic AI integrates pathology, NCCN/ESMO guidelines, and real\u2011time organoid drug testing to prioritize FDA\u2011approved ADCs and targeted agents; live imaging of drug internalization, lysosomal cleavage, and payload release reveals functional resistance (e.g., lack of lysosome for Trop2\u2011ADC) and guides selection of HER2\u2011ADC or FGFR2\u2011targeted therapy within 30\u202fdays.",
+    "readouts": [
+      "multiplex IHC",
+      "spatial multimodal genomics (G4X)",
+      "live\u2011cell fluorescence imaging of ADC internalization",
+      "microfluidic tumor\u2011on\u2011chip assays",
+      "scRNA\u2011seq of organoid response"
+    ],
+    "key_findings": [
+      "Deep\u2011learning AI suggested FGFR2 IHC staining in addition to standard HER2, leading to identification of an off\u2011label FGFR2\u2011targetable lesion.",
+      "Organoid assay showed Trop2\u2011ADC failed to kill patient tumor due to absent lysosomal activity, despite target expression.",
+      "HER2\u2011ADC demonstrated robust tumor cell killing in organoid within 24\u202fh, confirming efficacy before patient treatment.",
+      "The platform generated a ranked list of 56 FDA\u2011approved ADCs and predicted penetration, toxicity, and resistance mechanisms for each within 30\u202fdays.",
+      "Agentic AI integrated guideline\u2011based recommendations with experimental data to produce a treatment plan that was reviewed by the tumor board."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Trop2\u2011ADC resistance attributed to tumor cells lacking functional lysosomes, preventing linker cleavage and payload release."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "FGFR2 inhibitor",
+        "rationale": "FGFR2b overexpression identified by AI\u2011driven IHC suggests sensitivity to FGFR2\u2011targeted therapy in HER2\u2011negative gastric cancer.",
+        "phenotype": "Potential synergistic effect when combined with HER2\u2011ADC in heterogeneous tumors",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How will regulatory pathways accommodate AI\u2011generated, patient\u2011specific organoid drug\u2011response data for clinical decision making?",
+      "Can the 4D monitoring platform be scaled to routine use across multiple cancer types beyond gastric and breast cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "LG AI Research",
+        "Vanderbilt University Medical Center"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

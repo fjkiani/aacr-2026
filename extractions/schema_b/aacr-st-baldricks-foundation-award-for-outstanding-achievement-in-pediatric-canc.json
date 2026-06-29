@@ -1,0 +1,124 @@
+[
+  {
+    "talk_id": "aacr-st-baldricks-foundation-award-for-outstanding-achievement-in-pediatric-canc::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Kimberly Stegmaier",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "aacr-st-baldricks-foundation-award-for-outstanding-achievement-in-pediatric-canc",
+      "talk_title": "Award Lecture \u2013 Transformative Discoveries in Pediatric Precision Oncology",
+      "rhetorical_signals": [
+        "Speaker said: \"These transcription factors are such important drivers, and they make for very challenging drug targets.\"",
+        "Speaker said: \"These diseases have a low mutational burden, so generally, they've not been responsive to immune checkpoint inhibitors.\"",
+        "Speaker said: \"These are rare and ultra\u2011rare cancers, so there's a lack of market incentive for developing drugs.\"",
+        "Speaker said: \"We don't yet know all the rules, right? Those are both nuclear proteins. They're good ligands. Could you imagine a ligand for a target that's highly expressed, for example, in Ewing or neuroblastoma that we have a ligand for that's nuclear and hooking that up to something that recruits BRD4?\""
+      ],
+      "presentation_type": "award_lecture"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Transcription factor fusions (e.g., EWS\u2011FLI1)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Goldilocks dependency on precise fusion expression levels limits therapeutic window for inhibitors",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "PROTACs / molecular glues for EWS\u2011FLI1",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Lack of high\u2011affinity ligand for the fusion protein hampers degrader design",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that precise dosage of EWS\u2011FLI1 is essential for tumor survival (Goldilocks phenomenon) but concluded that \"targeted protein degradation\" of the fusion is a viable therapeutic strategy, despite the lack of a suitable ligand."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data for TRIM8 inhibition or UGT3A2\u2011targeted agents",
+        "No in\u2011human safety or pharmacokinetic data for the bifunctional degrader screens"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "STAG2 loss predicts poor prognosis and metastatic disease in Ewing sarcoma but is not yet used to stratify patients in trials.",
+        "transcript_evidence": "Speaker said: \"We made an observation ... that the patients who had tumors that had an absence of STAG2 protein had a higher incidence of metastatic disease.\"",
+        "crispro_angle": "CrisPRO can integrate STAG2 status with transcriptomic signatures to define high\u2011risk subcohorts for targeted trials.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Goldilocks dependency on EWS\u2011FLI1 levels suggests that modest over\u2011expression is lethal; a CRISPR\u2011based synthetic lethality screen could identify modulators of fusion dosage.",
+        "transcript_evidence": "Speaker said: \"If you fully repress it, it's very deleterious. If you overexpress it ... that is also equally deleterious.\"",
+        "crispro_angle": "CrisPRO\u2019s computational spine can model dosage\u2011sensitive networks to prioritize genes whose perturbation pushes fusion levels beyond the lethal window.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "UGT3A2 is uniquely over\u2011expressed in Ewing and required for activity of the R112 compound; inhibiting UGT3A2 may synergize with existing agents.",
+        "transcript_evidence": "Speaker said: \"UGT3A2 is wildly overexpressed in Ewing. It's a direct target of the fusion. It's not expressed in most cancers, and we think a really interesting mechanism.\"",
+        "crispro_angle": "CrisPRO can predict metabolic dependencies downstream of UGT3A2 and suggest rational drug combinations.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Early PROTAC attempts for EWS\u2011FLI1 lacked suitable ligands; computational design of novel ligands could revive this approach.",
+        "transcript_evidence": "Speaker said: \"We still have to find that [ligand]. But there are a number of molecules that are in the clinic now...\"",
+        "crispro_angle": "CrisPRO\u2019s AI\u2011driven ligand design platform can generate candidate binders for fusion oncoproteins.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Future trials could stratify by STAG2 status, TRIM8 dependency, or UGT3A2 expression to enrich for responders.",
+        "transcript_evidence": "Speaker said: \"We identified TRIM8 as a selective dependency in Ewing sarcoma...\"",
+        "crispro_angle": "CrisPRO can simulate enrichment scenarios and power calculations for biomarker\u2011driven trial arms.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Broad Institute DepMap",
+        "context": "Described as the source of the pediatric dependency map and collaborative partner.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sanger Institute",
+        "context": "Mentioned as another group doing DepMap\u2011like work.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "AstraZeneca",
+        "context": "Former trainee Alex Song now at AstraZeneca; implied future collaboration on TRIM8 work.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the precise molecular mechanisms by which UGT3A2 mediates sensitivity to the R112 compound?",
+      "Can a high\u2011affinity small\u2011molecule ligand be discovered for the EWS\u2011FLI1 fusion to enable effective PROTACs?",
+      "What are the rules governing successful bifunctional degrader design for nuclear transcription factor fusions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TRIM8 inhibitor programs",
+        "UGT3A2\u2011targeted small molecules",
+        "EWS\u2011FLI1 PROTAC candidates"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Broad Institute",
+        "Sanger Institute"
+      ]
+    }
+  }
+]

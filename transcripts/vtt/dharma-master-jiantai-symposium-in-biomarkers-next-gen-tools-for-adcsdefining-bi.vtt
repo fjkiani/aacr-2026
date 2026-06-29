@@ -1,0 +1,5757 @@
+WEBVTT
+
+1
+00:00:00.060 --> 00:00:00.160
+So,
+
+2
+00:00:00.980 --> 00:00:04.300
+good morning, everyone. I'm Barbara Pistilli, medical
+
+3
+00:00:04.320 --> 00:00:07.420
+oncologist at Gustave Roussy, France.
+
+4
+00:00:08.260 --> 00:00:11.960
+And I'm truly pleased to welcome you today to
+
+5
+00:00:12.020 --> 00:00:15.960
+this Dharma Master Jian Tai Symposium in Biomarkers,
+
+6
+00:00:16.700 --> 00:00:20.240
+Next Generation Tools for ADC, Defining
+
+7
+00:00:20.320 --> 00:00:23.500
+Biomarkers of Response through Technological
+
+8
+00:00:23.580 --> 00:00:24.400
+Innovation.
+
+9
+00:00:25.460 --> 00:00:25.740
+And
+
+10
+00:00:27.980 --> 00:00:31.300
+so the main topics that we are going to discuss
+
+11
+00:00:32.220 --> 00:00:36.100
+in this symposium are, first of all, how we can
+
+12
+00:00:36.860 --> 00:00:40.440
+measure the target expression in a more reproducible way.
+
+13
+00:00:41.380 --> 00:00:44.740
+Second point, how we can include the computational
+
+14
+00:00:44.820 --> 00:00:48.560
+pathology, and particularly also the multimodal frameworks
+
+15
+00:00:49.460 --> 00:00:52.620
+in the generation of more accurate
+
+16
+00:00:52.660 --> 00:00:56.000
+biomarkers for predicting the response to the ADC.
+
+17
+00:00:56.800 --> 00:01:00.540
+And finally, there is also the clinical perspective that will be my
+
+18
+00:01:00.800 --> 00:01:04.761
+perspective, and in which I will discuss how we
+
+19
+00:01:04.800 --> 00:01:08.180
+can move the ADC biomarkers from the
+
+20
+00:01:08.200 --> 00:01:12.180
+exploratory setting in which we are right now to a more
+
+21
+00:01:12.200 --> 00:01:15.380
+validated biomarkers that we can use in our clinical
+
+22
+00:01:15.460 --> 00:01:19.320
+practice to provide a more accurate selection of ADC
+
+23
+00:01:19.380 --> 00:01:20.440
+for each patient.
+
+24
+00:01:22.460 --> 00:01:26.240
+I'm really pleased to share this session
+
+25
+00:01:26.460 --> 00:01:28.560
+with an outstanding panel,
+
+26
+00:01:29.500 --> 00:01:33.480
+Professor David Reim, that is Professor of Pathology and of
+
+27
+00:01:33.520 --> 00:01:35.220
+Medicine at Yale School.
+
+28
+00:01:36.380 --> 00:01:40.200
+And Professor Reim is also the
+
+29
+00:01:40.400 --> 00:01:43.720
+lead of a lab that has already produced
+
+30
+00:01:44.260 --> 00:01:48.160
+different type of quantitative approaches for measuring
+
+31
+00:01:48.200 --> 00:01:51.490
+target expression, but also different new
+
+32
+00:01:51.580 --> 00:01:55.200
+technology for the prediction of response to multiple targeted
+
+33
+00:01:55.300 --> 00:01:58.840
+therapy and immunotherapy. And then Professor Maria
+
+34
+00:01:58.860 --> 00:02:02.180
+Bakolopoulou, that is Assistant Professor in Applied
+
+35
+00:02:02.280 --> 00:02:05.700
+Mathematics at CentraleSupélec, France,
+
+36
+00:02:05.860 --> 00:02:09.081
+University of Paris-Saclay. And Maria's
+
+37
+00:02:09.160 --> 00:02:13.120
+main research interest is in
+
+38
+00:02:13.160 --> 00:02:17.120
+the development of computational methods for image perception,
+
+39
+00:02:17.420 --> 00:02:19.460
+focusing on medical application.
+
+40
+00:02:20.740 --> 00:02:21.790
+I would like also
+
+41
+00:02:23.320 --> 00:02:26.920
+to remind that this session is named in honor
+
+42
+00:02:27.020 --> 00:02:28.900
+of Dharma Master Jian Tai,
+
+43
+00:02:29.900 --> 00:02:32.480
+and through the support of an endowment.
+
+44
+00:02:33.120 --> 00:02:36.580
+Dharma Master Jian Tai was a brave young abbess
+
+45
+00:02:37.200 --> 00:02:39.900
+who dedicated her life to Dharma teaching.
+
+46
+00:02:41.280 --> 00:02:44.890
+She was a never smoker, who was diagnosed with lung cancer.
+
+47
+00:02:45.720 --> 00:02:49.700
+Although not available to her at the time, targeted
+
+48
+00:02:49.800 --> 00:02:52.640
+treatments are now available for the mutation that was
+
+49
+00:02:52.980 --> 00:02:56.520
+identified in Dharma Master Jian Tai's cancer.
+
+50
+00:02:57.600 --> 00:03:01.400
+According to her wishes and the memory of Dharma Master
+
+51
+00:03:01.480 --> 00:03:04.440
+Jian Tai, her family established an
+
+52
+00:03:04.500 --> 00:03:07.940
+endowment to support the Dharma Master Jian Tai
+
+53
+00:03:08.020 --> 00:03:11.660
+Advances in Lung Cancer Research session, Dharma
+
+54
+00:03:11.720 --> 00:03:15.400
+Master Jian Tai Symposium in Targeted Therapy, and Dharma
+
+55
+00:03:15.520 --> 00:03:19.040
+Master Jian Tai Symposium in Biomarkers, like the one of
+
+56
+00:03:19.140 --> 00:03:19.520
+today.
+
+57
+00:03:20.520 --> 00:03:21.560
+The family's goal
+
+58
+00:03:22.420 --> 00:03:24.299
+is to foster cancer research
+
+59
+00:03:25.200 --> 00:03:29.080
+that leads to new drug development so that patients with
+
+60
+00:03:29.140 --> 00:03:33.120
+cancer will live longer, have better quality of life,
+
+61
+00:03:33.680 --> 00:03:36.200
+and potentially reach a cure in select cases.
+
+62
+00:03:37.260 --> 00:03:41.180
+So thank you very much, and I would like to introduce the first
+
+63
+00:03:41.280 --> 00:03:42.680
+speaker, Professor Reim.
+
+64
+00:03:56.480 --> 00:04:00.440
+Okay, I'd like to start up by thanking the organizers for inviting
+
+65
+00:04:00.460 --> 00:04:03.800
+me to give this session today. And what I'm going to talk about today
+
+66
+00:04:03.860 --> 00:04:04.460
+is
+
+67
+00:04:05.700 --> 00:04:09.200
+bringing quantification to pathology in the context of
+
+68
+00:04:09.320 --> 00:04:12.100
+determining which ADCs patients should receive.
+
+69
+00:04:15.480 --> 00:04:17.601
+These are my disclosures, and I would note that
+
+70
+00:04:18.620 --> 00:04:22.430
+it's important to note that some of these disclosures are financial support from my
+
+71
+00:04:22.520 --> 00:04:26.140
+lab, and in fact, we have mutual interests with many pharma and biotech
+
+72
+00:04:26.180 --> 00:04:27.740
+companies. And as you can see,
+
+73
+00:04:29.000 --> 00:04:32.280
+much of the work I'm going to discuss today has been funded by biotech.
+
+74
+00:04:33.900 --> 00:04:37.100
+We'll talk about the conventional pathology and immunohistochemistry with
+
+75
+00:04:37.160 --> 00:04:39.500
+chromagens. That is what we do today.
+
+76
+00:04:40.000 --> 00:04:43.380
+And then a quantitative approach with a low CV, since the
+
+77
+00:04:43.500 --> 00:04:46.180
+conventional approach has quite a high coefficient of variation.
+
+78
+00:04:46.700 --> 00:04:50.320
+Then I want to talk about selective biomarkers, which is, I think,
+
+79
+00:04:50.420 --> 00:04:54.200
+a new class of biomarkers that will be really important as more and
+
+80
+00:04:54.240 --> 00:04:57.840
+more drugs are approved in the same setting. And then finally, some next steps.
+
+81
+00:04:59.530 --> 00:05:01.620
+So there's the guy that started it. This is Clive Taylor.
+
+82
+00:05:02.180 --> 00:05:05.960
+And the story goes that he wanted to look at a particular
+
+83
+00:05:05.980 --> 00:05:09.840
+protein on a tissue slide, and so he did what we now call
+
+84
+00:05:09.860 --> 00:05:13.820
+immunofluorescence. And he brought it over to his mentor, and his mentor said,
+
+85
+00:05:13.870 --> 00:05:16.460
+"Yeah, Clive, this is great, but I can't see the surrounding tissue.
+
+86
+00:05:16.850 --> 00:05:20.660
+I need the context." So Clive went back and learned how to
+
+87
+00:05:20.700 --> 00:05:24.610
+use chromagens and began what we now know as immunohistochemistry, which is
+
+88
+00:05:24.620 --> 00:05:28.080
+chromagenic. And in fact, this was back in 1974 that this
+
+89
+00:05:28.640 --> 00:05:31.940
+occurred, and you can see that's sort of the timeline of changes in
+
+90
+00:05:31.980 --> 00:05:33.400
+immunohistochemistry since then.
+
+91
+00:05:33.900 --> 00:05:37.440
+Heat-induced antigen retrieval, polymer-based amplification, et cetera.
+
+92
+00:05:39.840 --> 00:05:41.100
+And this is what it was designed for.
+
+93
+00:05:41.130 --> 00:05:44.940
+It was designed for telling whether something is or is not expressing a protein,
+
+94
+00:05:44.960 --> 00:05:48.560
+not on a binary level. So if it's p63 positive,
+
+95
+00:05:48.920 --> 00:05:51.420
+it's a squamous cell carcinoma and TTF-1 negative.
+
+96
+00:05:51.820 --> 00:05:55.700
+If it's TTF-1 positive, then it's an adenocarcinoma, and it helps to
+
+97
+00:05:55.760 --> 00:05:59.610
+see all some synapsin staining. And if it's chromogranin positive,
+
+98
+00:05:59.680 --> 00:06:02.720
+then you can call it a small cell, but these are chromogranin negative.
+
+99
+00:06:03.100 --> 00:06:06.830
+And that's what IHC was designed for, and in fact, has been used for
+
+100
+00:06:07.100 --> 00:06:10.960
+pretty much. But then what happened is that we decided that we would use it in a
+
+101
+00:06:11.000 --> 00:06:14.760
+continuous basis and try to use it to score or assess levels.
+
+102
+00:06:15.170 --> 00:06:18.880
+And so this was the original score, zero, one, two, three, and
+
+103
+00:06:18.920 --> 00:06:22.620
+then to many more. This shows you two
+
+104
+00:06:22.660 --> 00:06:26.220
+things, that you can still see that binary event between positive and
+
+105
+00:06:26.660 --> 00:06:28.100
+not too positive or negative.
+
+106
+00:06:29.300 --> 00:06:32.260
+But then what happened is we tried to splice this
+
+107
+00:06:32.340 --> 00:06:36.172
+or-Stagger this and make this way more granular
+
+108
+00:06:36.212 --> 00:06:39.132
+than the technology is capable of with the new
+
+109
+00:06:39.212 --> 00:06:42.872
+anti-HER2 ADCs, where we had to separate zero from one.
+
+110
+00:06:43.472 --> 00:06:44.072
+Can we do that?
+
+111
+00:06:45.332 --> 00:06:49.132
+Well, here's the ASCO/CAP guidelines for how we're supposed to
+
+112
+00:06:49.152 --> 00:06:52.932
+score. And the ASCO/CAP, in their wisdom, called both zero and one
+
+113
+00:06:53.012 --> 00:06:56.732
+negative, because the assay was tell the positives from the negatives, and there
+
+114
+00:06:56.752 --> 00:07:00.692
+was even a special trick called fish for the equivocales that you
+
+115
+00:07:00.732 --> 00:07:04.372
+could use to mediate. But there's no trick to get zeros from
+
+116
+00:07:04.452 --> 00:07:07.952
+ones. And in fact, the ASCO/CAP and the
+
+117
+00:07:08.172 --> 00:07:11.572
+leaders of that organization didn't think that we could tell those apart.
+
+118
+00:07:11.652 --> 00:07:15.371
+But now we have to, as zeros get no ADC
+
+119
+00:07:15.452 --> 00:07:18.232
+and one plus gets trastuzumab drugs Tecan.
+
+120
+00:07:19.672 --> 00:07:23.282
+So can you tell them apart? This is from the guidelines that they give to
+
+121
+00:07:23.292 --> 00:07:25.492
+pathologists to learn how to do this.
+
+122
+00:07:25.532 --> 00:07:26.092
+And this is
+
+123
+00:07:27.092 --> 00:07:31.012
+from Pathway, a Roche Ventana pathway, anti-HER2 antibody
+
+124
+00:07:31.232 --> 00:07:34.092
+4B5 that I'm going to show a little bit later as well.
+
+125
+00:07:34.552 --> 00:07:36.532
+And this is an IHC, either one or zero.
+
+126
+00:07:37.322 --> 00:07:41.052
+And here's the other one, either a one or zero. I'll go back and forth a few times.
+
+127
+00:07:41.092 --> 00:07:43.172
+This is a one or zero. This is a one or zero.
+
+128
+00:07:43.232 --> 00:07:46.212
+Now, I realize there might not be a lot of pathologists in the audience, but even
+
+129
+00:07:46.252 --> 00:07:46.752
+if there were,
+
+130
+00:07:48.672 --> 00:07:51.752
+I think that this is impossible. I can't tell them apart, and I can't tell them
+
+131
+00:07:51.792 --> 00:07:53.752
+apart with any kind of reproducibility.
+
+132
+00:07:53.812 --> 00:07:57.182
+So we asked the question, can real pathologists in the real world tell them apart?
+
+133
+00:07:57.732 --> 00:08:01.502
+So we took 118 pathologists from multiple institutions around the country,
+
+134
+00:08:02.012 --> 00:08:02.122
+all
+
+135
+00:08:03.752 --> 00:08:06.532
+sign-out pathologists, that is, people in clinical practice.
+
+136
+00:08:06.922 --> 00:08:10.192
+And we showed them 170 cases of breast cancer stained with
+
+137
+00:08:10.272 --> 00:08:12.032
+IHC for HER2.
+
+138
+00:08:13.032 --> 00:08:16.742
+You can see if you're pathologist number one, 45 or 45% of the
+
+139
+00:08:16.812 --> 00:08:18.712
+patients don't qualify for T-DXd.
+
+140
+00:08:19.152 --> 00:08:22.772
+But if you're pathologist number 18, only 15% of the patients don't qualify.
+
+141
+00:08:23.272 --> 00:08:26.692
+So the patient gets drugged on the basis of their pathologist.
+
+142
+00:08:27.162 --> 00:08:29.912
+I don't think that should happen. I think it should be on the basis of their tumor.
+
+143
+00:08:30.412 --> 00:08:33.712
+And overall, we found a concordance of only around 29% or
+
+144
+00:08:33.913 --> 00:08:37.192
+30% if you looked at just zero versus one.
+
+145
+00:08:38.072 --> 00:08:41.312
+So it's not just us. A study in Japan was done with
+
+146
+00:08:41.393 --> 00:08:44.752
+144 pathologists on 20 cases. Their overall agreement was
+
+147
+00:08:44.952 --> 00:08:48.932
+63%. A study was done in Australia, nine pathologists with 60
+
+148
+00:08:49.032 --> 00:08:51.152
+cases. Their overall agreement was 80%.
+
+149
+00:08:51.952 --> 00:08:55.832
+And the best study done by 77 pathologists in Europe, led by
+
+150
+00:08:55.872 --> 00:08:59.852
+Joe Rusoff and Beppe Viale, showed that for the zeros and
+
+151
+00:08:59.932 --> 00:09:03.732
+ones, they could get around 82% concordance or 81%
+
+152
+00:09:03.772 --> 00:09:07.072
+concordance. And they could train.
+
+153
+00:09:07.112 --> 00:09:09.621
+They said, "Oh, we'll just need to train the pathologists how to do this." Well,
+
+154
+00:09:09.692 --> 00:09:13.612
+training doesn't work. You can't train a pathologist to do this any more than
+
+155
+00:09:13.652 --> 00:09:17.592
+you can train me to fly when I jump off the stage. It's not humanly possible.
+
+156
+00:09:17.742 --> 00:09:20.461
+And that's what they showed here, that there was no difference before and after
+
+157
+00:09:20.492 --> 00:09:23.472
+training. No significant difference before and after training.
+
+158
+00:09:23.512 --> 00:09:27.082
+You'll note one thing, that for the positives, we're really good at that.
+
+159
+00:09:27.442 --> 00:09:29.152
+That's what the assay was designed for.
+
+160
+00:09:29.252 --> 00:09:32.832
+So we can tell the threes from the not threes, but we're not so good at telling the
+
+161
+00:09:32.852 --> 00:09:35.992
+zeros from the ones. So is 80% good enough?
+
+162
+00:09:36.012 --> 00:09:39.872
+Well, if I'm the patient, it's not. How do we do with biomarkers in other spaces?
+
+163
+00:09:39.912 --> 00:09:42.552
+So this is EGFR mutation in lung cancer.
+
+164
+00:09:42.612 --> 00:09:46.532
+This was done by 10 different groups 10 times and repeated
+
+165
+00:09:47.452 --> 00:09:49.852
+with different operators, different instruments, and different days.
+
+166
+00:09:50.352 --> 00:09:54.181
+And the average agreement is 99%. That's what patients
+
+167
+00:09:54.252 --> 00:09:55.412
+deserve. And so we need to
+
+168
+00:09:56.292 --> 00:09:58.532
+up our game a little bit, level up, as our kids say,
+
+169
+00:09:59.772 --> 00:10:02.832
+to get to the point where we can have at least an agreement of
+
+170
+00:10:03.012 --> 00:10:05.121
+95%, if not 99%.
+
+171
+00:10:06.552 --> 00:10:09.332
+So just a little nomenclature. I'm going to talk about reading.
+
+172
+00:10:09.432 --> 00:10:12.621
+That's what pathologists do. It's the subjective but expert interpretation of
+
+173
+00:10:12.672 --> 00:10:16.432
+information on a histology slide and measurement, the quantitative
+
+174
+00:10:16.492 --> 00:10:19.872
+objective determination of amounts or concentrations on a
+
+175
+00:10:19.892 --> 00:10:21.132
+histopathology slide.
+
+176
+00:10:22.112 --> 00:10:25.692
+How do we do that? Well, reading we talked about. That's the pathologist's opinion.
+
+177
+00:10:25.732 --> 00:10:29.562
+And you saw that that can pretty much be around the 80 percentile for this
+
+178
+00:10:29.572 --> 00:10:33.102
+particular question. For other questions, like how much immune cells there
+
+179
+00:10:33.172 --> 00:10:37.052
+are in lung cancer in immunotherapy
+
+180
+00:10:37.112 --> 00:10:40.681
+candidate patients, the agreement is closer to 50%.
+
+181
+00:10:40.892 --> 00:10:44.652
+So reading is not a great way to assess protein
+
+182
+00:10:44.692 --> 00:10:48.432
+concentration on slides. One way we could do it is circle the region of interest
+
+183
+00:10:48.442 --> 00:10:52.032
+and just look at the intensity of the chromagen. And that's actually been done.
+
+184
+00:10:52.052 --> 00:10:55.832
+But the chromagens are not linear and they're almost binary and they're not
+
+185
+00:10:55.852 --> 00:10:57.682
+reproducible, and we'll talk about that in a minute.
+
+186
+00:10:58.102 --> 00:10:59.912
+And the other way is to phenotype and count.
+
+187
+00:11:00.012 --> 00:11:03.932
+So you can segment, find the cells with human intervention, teach software to find
+
+188
+00:11:03.972 --> 00:11:06.212
+the cells, and then count the cells that are positive.
+
+189
+00:11:06.612 --> 00:11:10.302
+But again, you're using a positive-negative threshold, which is binary, and that's
+
+190
+00:11:10.332 --> 00:11:13.542
+not how biology works. Biology is a continuous platform,
+
+191
+00:11:13.632 --> 00:11:17.492
+continuous expression of various proteins and other
+
+192
+00:11:17.512 --> 00:11:21.342
+biomolecules. And so the best way, in my opinion, to do it is measurement, and
+
+193
+00:11:21.372 --> 00:11:23.792
+measurement is intensity divided by area.
+
+194
+00:11:23.852 --> 00:11:27.512
+So to illustrate this, this is a made-up slide of a patient with
+
+195
+00:11:27.522 --> 00:11:29.612
+various cells at various gray intensities.
+
+196
+00:11:30.132 --> 00:11:34.052
+If your cutoff is zero gray intensity, then you only have three of those.
+
+197
+00:11:34.072 --> 00:11:37.502
+But if your cutoff is 15, then you'd have 50% positive.
+
+198
+00:11:37.572 --> 00:11:40.992
+But if your cutoff is 35%, you'd have 30% positive.
+
+199
+00:11:41.092 --> 00:11:44.832
+So this isn't a great way to score. We built a
+
+200
+00:11:45.252 --> 00:11:48.952
+semi-continuous scoring system called the H-score, which is a
+
+201
+00:11:48.992 --> 00:11:51.922
+continuous method for analysis of IHC, where you have the
+
+202
+00:11:54.272 --> 00:11:57.552
+ordinal score times the percentage of cells that show that ordinal score.
+
+203
+00:11:57.592 --> 00:12:01.172
+This is from McCarty in 1994. But the problem is that if the
+
+204
+00:12:01.192 --> 00:12:04.332
+intensity is a little different or the judgment is a little different, you'll be
+
+205
+00:12:04.412 --> 00:12:07.872
+off by a factor of two or three or even more.
+
+206
+00:12:07.892 --> 00:12:11.232
+And this is actually a proof of that. This is a paper from David Dobbs et al.
+
+207
+00:12:11.292 --> 00:12:14.872
+that just was published in "Lancet." And each one of these dots represents a
+
+208
+00:12:14.952 --> 00:12:16.832
+different CLIA lab, mostly in Europe.
+
+209
+00:12:17.412 --> 00:12:20.982
+And so if you're this lab, your lower limit of detection is about
+
+210
+00:12:21.112 --> 00:12:21.712
+30,000
+
+211
+00:12:23.532 --> 00:12:27.352
+molecules per cell. But if you're this lab, you can't detect anything less than
+
+212
+00:12:27.552 --> 00:12:31.372
+90,000. So these are all CLIA labs that are certified labs,
+
+213
+00:12:31.752 --> 00:12:35.592
+and they're all using the test exactly according to the label, the FDA protocol
+
+214
+00:12:35.652 --> 00:12:39.462
+for this. And they're still variable over a scale of almost a half an
+
+215
+00:12:39.652 --> 00:12:42.321
+order of magnitude or more than that, three times.
+
+216
+00:12:42.742 --> 00:12:46.282
+And so this is why I don't think chromagen should be used for quantification, is
+
+217
+00:12:46.312 --> 00:12:50.284
+that we're just not reproducible for chromagens.So what we
+
+218
+00:12:50.324 --> 00:12:53.664
+can do is we can make a quantitative assay, but we're going to have to jump to
+
+219
+00:12:53.704 --> 00:12:55.624
+fluorescence. So how do we do that?
+
+220
+00:12:55.664 --> 00:12:59.424
+Well, this is a summary slide of all the things.
+
+221
+00:12:59.444 --> 00:13:02.904
+We start with a cell line array. These are all cell lines that have had the amount
+
+222
+00:13:02.944 --> 00:13:06.444
+of protein determined by mass spec, and then the area determined.
+
+223
+00:13:06.484 --> 00:13:06.664
+So the
+
+224
+00:13:08.144 --> 00:13:12.084
+mass spec gives us attomoles per microgram, and then we can convert
+
+225
+00:13:12.144 --> 00:13:15.784
+that to attomoles per square millimeter by assessing the area of each
+
+226
+00:13:15.824 --> 00:13:19.744
+cell and then putting that together into a standard curve, just like
+
+227
+00:13:19.824 --> 00:13:23.584
+college biochemistry. And we can have the attomoles per millimeter on this
+
+228
+00:13:23.624 --> 00:13:27.484
+side and then the signal on this side. How do we get the signal?
+
+229
+00:13:27.524 --> 00:13:31.284
+Well, we do quantitative fluorescence, just like immunohistochemistry, but with
+
+230
+00:13:31.324 --> 00:13:33.964
+fluorophores and tyramide signal amplification.
+
+231
+00:13:34.404 --> 00:13:37.974
+So we can look at the fluorescent signal only within the cytokeratin-positive
+
+232
+00:13:38.044 --> 00:13:41.944
+pixels. Cytokeratin-positive pixels gives us the area, and the sum of
+
+233
+00:13:41.984 --> 00:13:45.934
+the intensity is our average Q score, which can then be converted to an attomoles
+
+234
+00:13:45.984 --> 00:13:49.644
+per square millimeter. It turns out we can't just directly compare the
+
+235
+00:13:49.724 --> 00:13:53.624
+attomoles because different biologic targets have different levels.
+
+236
+00:13:53.684 --> 00:13:57.164
+So what we propose to do is compare the percentiles in a
+
+237
+00:13:57.204 --> 00:14:00.664
+population. And this is the work of Jack Robinson in my lab, and
+
+238
+00:14:00.964 --> 00:14:01.284
+others.
+
+239
+00:14:02.704 --> 00:14:04.304
+Here's how it works in the actual CLIA lab.
+
+240
+00:14:04.344 --> 00:14:07.724
+We have a CLIA lab called Quantitative Diagnostics and Anatomic Pathology.
+
+241
+00:14:08.184 --> 00:14:11.864
+So you can send us your slide, and we'll batch stain it with up to nine
+
+242
+00:14:11.964 --> 00:14:15.564
+slides per tray. There's 10 slide tray holders in the Leica bond,
+
+243
+00:14:16.004 --> 00:14:18.404
+and one of those slides is going to be that cell line control.
+
+244
+00:14:18.484 --> 00:14:20.824
+So one cell line control for every tray.
+
+245
+00:14:20.864 --> 00:14:24.824
+Maybe someday we'll put one on every slide, but right now one per 10 is about where
+
+246
+00:14:24.844 --> 00:14:28.174
+we're working. The biopsies scanned in attomoles per square millimeter are
+
+247
+00:14:28.204 --> 00:14:31.664
+calculated in the background. Then a critical piece happens.
+
+248
+00:14:31.694 --> 00:14:33.644
+The pathologist circles the critical part.
+
+249
+00:14:33.724 --> 00:14:37.704
+But the pathologist doesn't usually read fluorescence, so we've computationally
+
+250
+00:14:37.744 --> 00:14:41.304
+converted the fluorescent image into something that looks like a conventional
+
+251
+00:14:41.324 --> 00:14:44.004
+DAB-based or chromogen-based IHC.
+
+252
+00:14:44.424 --> 00:14:47.834
+And then the pathologist can circle the region of interest, thereby not measuring
+
+253
+00:14:48.584 --> 00:14:51.764
+normal ducts or stroma that has no epithelium in it and
+
+254
+00:14:52.324 --> 00:14:55.764
+leading to a more accurate measurement, and also giving the pathologist confidence
+
+255
+00:14:55.804 --> 00:14:58.404
+that what they're measuring is actually what they're supposed to be measuring, that
+
+256
+00:14:58.464 --> 00:15:02.004
+is, the malignant tumor. You can see the weakness of this technology is
+
+257
+00:15:02.044 --> 00:15:05.784
+illustrated here. The level of HER2 in this region of the
+
+258
+00:15:05.844 --> 00:15:09.244
+slide is different than the risk level in this region of the slide, and that's
+
+259
+00:15:09.284 --> 00:15:12.184
+inherent heterogeneity. And we haven't figured that out yet.
+
+260
+00:15:12.204 --> 00:15:13.964
+We're working on it, but we haven't figured that out yet.
+
+261
+00:15:14.044 --> 00:15:16.884
+So for now, we just average across the entire section.
+
+262
+00:15:18.264 --> 00:15:19.984
+When you do that, you get a result like this.
+
+263
+00:15:20.064 --> 00:15:23.964
+This is 316 core biopsies from breast cancer patients actually seen
+
+264
+00:15:24.024 --> 00:15:27.424
+in our clinic between 2022 and 2023.
+
+265
+00:15:27.904 --> 00:15:31.544
+And this was the IHC score that resulted in them getting trastuzumab or not and
+
+266
+00:15:31.564 --> 00:15:34.724
+getting them categorized by what type of therapy they would get.
+
+267
+00:15:35.104 --> 00:15:36.044
+And you can see the three
+
+268
+00:15:36.884 --> 00:15:40.784
+pluses and two plus amplifies, the reds and oranges are all pretty much on the top.
+
+269
+00:15:40.824 --> 00:15:43.444
+We're good at that. But we're not so good at the lows.
+
+270
+00:15:43.464 --> 00:15:46.684
+The zeroes are green, and the one pluses are blue.
+
+271
+00:15:47.064 --> 00:15:50.724
+And you can see that they're essentially interchangeable on the bottom level of the
+
+272
+00:15:50.733 --> 00:15:54.624
+scale. This is actually now published, and I'll show you the
+
+273
+00:15:54.644 --> 00:15:58.404
+publication in a minute. But if you do two at once, you can see an
+
+274
+00:15:58.464 --> 00:16:01.673
+interesting thing, an almost inverse relationship between
+
+275
+00:16:01.704 --> 00:16:05.644
+Trop-2 and HER2. And so the patients with low Trop-2
+
+276
+00:16:05.654 --> 00:16:09.524
+are down here, but they have high HER2, and then there's patients
+
+277
+00:16:09.564 --> 00:16:12.784
+with high Trop-2 and low HER2 down over here.
+
+278
+00:16:14.424 --> 00:16:18.344
+How accurate is the assay? Well, it's a CLIA lab assay, and it's an analytic assay,
+
+279
+00:16:18.804 --> 00:16:22.534
+so we can actually calculate the LOD and the LOQ, limit of detection and limit of
+
+280
+00:16:22.584 --> 00:16:26.114
+quantification. And we can calculate the CV, both inter-assay,
+
+281
+00:16:26.504 --> 00:16:30.364
+three days with a minimum of a week washout, three different days, or intra-assay
+
+282
+00:16:30.404 --> 00:16:33.964
+with different operators and different trays of the Leica bond, and they're all
+
+283
+00:16:33.984 --> 00:16:37.934
+below 10%. So this assay is now New
+
+284
+00:16:37.944 --> 00:16:41.654
+York State Department of Health approved and approved in our CLIA lab at Yale, and
+
+285
+00:16:41.684 --> 00:16:45.624
+we're working on licensing the assay so it can be used more broadly than just in
+
+286
+00:16:45.664 --> 00:16:46.964
+my little QDAT lab.
+
+287
+00:16:48.564 --> 00:16:52.124
+This is the publication of the prospective assessment that was published in
+
+288
+00:16:52.164 --> 00:16:54.904
+"Laboratory Investigation." And this is how the assay is built.
+
+289
+00:16:54.944 --> 00:16:58.684
+It's now open source, and all the software associated with it is open
+
+290
+00:16:58.744 --> 00:17:00.064
+source downloadable on GitHub.
+
+291
+00:17:01.844 --> 00:17:05.825
+So the next step is selective markers, and I think selective markers are really the
+
+292
+00:17:05.904 --> 00:17:09.884
+strength of measurement. Because ultimately, we know that there's
+
+293
+00:17:09.924 --> 00:17:12.264
+a diagnostic biomarker. I showed you that in the beginning.
+
+294
+00:17:12.325 --> 00:17:13.624
+That's what Clive Taylor invented.
+
+295
+00:17:14.024 --> 00:17:16.864
+Then there's prognostic biomarkers, and there aren't many of those.
+
+296
+00:17:16.904 --> 00:17:17.004
+But
+
+297
+00:17:18.045 --> 00:17:21.904
+perhaps the best example is Oncotype. That can tell you who does not need drug.
+
+298
+00:17:21.964 --> 00:17:25.144
+So prognostic markers say that the standard of care is good enough.
+
+299
+00:17:25.164 --> 00:17:27.704
+And so we won't see those from pharma companies anytime soon.
+
+300
+00:17:28.164 --> 00:17:31.024
+But the predictive markers are what the pharma companies have brought to us.
+
+301
+00:17:31.404 --> 00:17:34.684
+And each one, the clinical trial, a predictive marker is a companion
+
+302
+00:17:34.744 --> 00:17:37.384
+diagnostic. But I think what we need is beyond that.
+
+303
+00:17:37.434 --> 00:17:39.844
+I would argue that we need a selective biomarker now.
+
+304
+00:17:40.284 --> 00:17:42.344
+In fact, selective biomarkers have been around.
+
+305
+00:17:42.404 --> 00:17:44.424
+That's when you do a 400-gene panel.
+
+306
+00:17:44.904 --> 00:17:48.484
+You're selecting which gene mutation is present and which drug you should give on
+
+307
+00:17:48.504 --> 00:17:52.034
+the basis of that mutation. I believe it's time to move that to protein,
+
+308
+00:17:52.484 --> 00:17:56.404
+but it's harder in protein because you have to measure it with a low CV.
+
+309
+00:17:57.814 --> 00:18:01.804
+So there's about 260 known antigens being clinically tested, and when I
+
+310
+00:18:01.824 --> 00:18:05.454
+presented this a couple of days ago, someone told me, "No, there's 400." So there's
+
+311
+00:18:05.504 --> 00:18:09.004
+a lot either way. There's a lot of ADCs in clinical trials, which mean
+
+312
+00:18:09.344 --> 00:18:13.104
+soon there will be multiple targets for the same clinical setting.
+
+313
+00:18:13.144 --> 00:18:15.744
+In fact, there already is in advanced breast cancer.
+
+314
+00:18:15.784 --> 00:18:18.904
+You can get either a cetuximab govitecan or trastuzumab
+
+315
+00:18:18.924 --> 00:18:21.844
+deruxtecan in advanced second-line setting.
+
+316
+00:18:22.604 --> 00:18:24.144
+So how do you know which one to give first?
+
+317
+00:18:24.184 --> 00:18:26.064
+Well, I would argue this is what you should do.
+
+318
+00:18:26.104 --> 00:18:29.964
+You should measure in attomoles per square millimeter, both HER2 and
+
+319
+00:18:30.004 --> 00:18:33.294
+Trop-2, then proportion them in the population.
+
+320
+00:18:33.344 --> 00:18:37.164
+And this patient would get T-DXd first because they are relatively low
+
+321
+00:18:37.224 --> 00:18:38.824
+Trop-2 and much higher
+
+322
+00:18:39.804 --> 00:18:42.964
+HER2, even though the actual attomoles per square millimeter aren't that much
+
+323
+00:18:43.004 --> 00:18:43.364
+different.
+
+324
+00:18:44.784 --> 00:18:47.704
+This is what the plot looks like and the inverse relationship that I think is
+
+325
+00:18:47.744 --> 00:18:51.724
+really important that will be generalizable, and I'll show more of this later
+
+326
+00:18:51.784 --> 00:18:54.764
+on in the talk. But in each case, you standardize them.
+
+327
+00:18:54.864 --> 00:18:58.584
+So you can have attomoles on each axis and then have each
+
+328
+00:18:58.644 --> 00:19:02.204
+patient represent a dot and figure out where your patient is in the
+
+329
+00:19:02.684 --> 00:19:05.524
+scatter plot in order to decide which drug to give
+
+330
+00:19:05.564 --> 00:19:09.548
+first.So does it work? Well, we're still in
+
+331
+00:19:09.588 --> 00:19:12.728
+the process of proving that. This is a preliminary retrospective study that we've
+
+332
+00:19:12.768 --> 00:19:15.647
+done at Yale with 65 cases, which isn't very much.
+
+333
+00:19:16.048 --> 00:19:19.288
+All received T-DXd in the second-line or higher setting, and they were
+
+334
+00:19:19.348 --> 00:19:23.188
+all run by the Troplex assay to measure Trop-2 and HER2 on each
+
+335
+00:19:23.248 --> 00:19:27.148
+case. And this is what we found, that most of the three pluses are up here, as
+
+336
+00:19:27.188 --> 00:19:30.868
+you'd expect, but there's occasionally a fair number of two pluses down here in a
+
+337
+00:19:30.908 --> 00:19:33.358
+relatively low range, and then the zeros and ones.
+
+338
+00:19:33.768 --> 00:19:37.088
+Surprisingly, there's some zeros and ones even in the pretty high range, which we
+
+339
+00:19:37.108 --> 00:19:38.388
+don't completely understand yet
+
+340
+00:19:39.607 --> 00:19:43.448
+other than it might be that the IHC
+
+341
+00:19:43.508 --> 00:19:46.848
+is not so good on really small pieces of tissue, which is what you have on a small
+
+342
+00:19:46.888 --> 00:19:48.728
+biopsy in the metastatic setting.
+
+343
+00:19:50.168 --> 00:19:54.068
+Well, here, with only 65, we just divided the population of HER2
+
+344
+00:19:54.128 --> 00:19:54.568
+positive
+
+345
+00:19:55.388 --> 00:19:59.228
+or HER2 animals per square millimeter at the median, and you can see
+
+346
+00:19:59.288 --> 00:20:03.128
+that the high levels above the median has a 12.8-month median
+
+347
+00:20:03.528 --> 00:20:06.488
+time to next treatment compared to the low levels, only a
+
+348
+00:20:06.528 --> 00:20:09.188
+7.5-month time to next treatment.
+
+349
+00:20:11.308 --> 00:20:15.068
+So we just finished and haven't analyzed the data yet, the rest of the
+
+350
+00:20:15.128 --> 00:20:18.668
+cohort. Now we have 150 cases, and it looks almost
+
+351
+00:20:18.688 --> 00:20:22.548
+exactly the same in terms of dividing by quartiles for overall
+
+352
+00:20:22.608 --> 00:20:25.828
+survival and dividing by time to next treatment.
+
+353
+00:20:26.208 --> 00:20:29.928
+That is that the highest level do the best and the lowest levels do the worst.
+
+354
+00:20:30.628 --> 00:20:34.428
+But since we were using the Troplex assay, we could also
+
+355
+00:20:34.828 --> 00:20:38.688
+look at Trop-2. And this is completely unexpected, and I'm not sure if I
+
+356
+00:20:38.708 --> 00:20:42.608
+believe it myself or not yet, but if you have high Trop-2, you do poorly
+
+357
+00:20:42.668 --> 00:20:46.228
+on T-DXd. I'm not sure why that is, but maybe there's some
+
+358
+00:20:46.288 --> 00:20:48.428
+interaction between Trop-2 and HER2.
+
+359
+00:20:48.468 --> 00:20:51.288
+But it emphasizes the importance of a selective biomarker.
+
+360
+00:20:51.708 --> 00:20:53.088
+That is, if you know that you're going to
+
+361
+00:20:54.048 --> 00:20:57.528
+give one or the other, you want your biomarker to reflect the biology of the
+
+362
+00:20:57.568 --> 00:21:01.238
+patient's tumor. And if it's high Trop-2, probably is
+
+363
+00:21:01.368 --> 00:21:05.048
+not only a good idea to give trastuzumab deruxtecan but a bad
+
+364
+00:21:05.128 --> 00:21:05.888
+idea
+
+365
+00:21:07.368 --> 00:21:11.108
+because if it's high Trop-2, they won't respond to trastuzumab deruxtecan.
+
+366
+00:21:12.428 --> 00:21:16.387
+This also bore out in the 150 cases where patients that have the
+
+367
+00:21:16.448 --> 00:21:19.528
+highest level of Trop-2 do really quite poorly
+
+368
+00:21:20.128 --> 00:21:23.088
+on
+
+369
+00:21:23.108 --> 00:21:26.308
+T-DXd. And this is a similar pattern on time to treatment.
+
+370
+00:21:26.628 --> 00:21:29.928
+Data still to be completed, but just as a glimpse.
+
+371
+00:21:31.508 --> 00:21:35.428
+So in the prospective study, 6% of the cases have levels of
+
+372
+00:21:35.448 --> 00:21:39.148
+HER2 that are below the LOD. Those are the true negatives,
+
+373
+00:21:39.528 --> 00:21:42.808
+and there are patients out there that have no target for HER2.
+
+374
+00:21:43.108 --> 00:21:46.268
+But not 40% or 20%, but closer to
+
+375
+00:21:46.448 --> 00:21:50.218
+6% with an analytic assay. And so those are
+
+376
+00:21:50.228 --> 00:21:54.188
+probably the true nulls. Seventy-one percent of the patients at Yale that were
+
+377
+00:21:54.228 --> 00:21:56.068
+called IHC equals zero had
+
+378
+00:21:57.608 --> 00:22:00.328
+analytic measures above the limit of quantification.
+
+379
+00:22:00.348 --> 00:22:03.568
+That means there may be a fair number of patients out there that should be getting
+
+380
+00:22:03.608 --> 00:22:07.548
+T-DXd that aren't because they have target present, but by IHC,
+
+381
+00:22:07.628 --> 00:22:10.128
+we didn't think they did by a subjective test.
+
+382
+00:22:11.628 --> 00:22:14.688
+The retrospective study showed a difference in median survival, and the
+
+383
+00:22:14.728 --> 00:22:18.588
+retrospective study also showed a curious result where high Trop-2 are less
+
+384
+00:22:18.648 --> 00:22:20.508
+likely to benefit from T-DXd.
+
+385
+00:22:22.388 --> 00:22:25.388
+So the last thing in the last minute or so, I want to talk about next steps.
+
+386
+00:22:25.848 --> 00:22:28.927
+And the next steps are illustrated in this work that is coming out today.
+
+387
+00:22:28.988 --> 00:22:32.288
+That's what the QR code is about looking at HER3, another
+
+388
+00:22:33.488 --> 00:22:35.308
+ADC target for the drug pertuzumab.
+
+389
+00:22:35.968 --> 00:22:38.808
+And this is work done by Mengni He in my lab.
+
+390
+00:22:39.548 --> 00:22:42.588
+And what you can see is she looked at a bunch of different targets.
+
+391
+00:22:42.628 --> 00:22:44.308
+This is not in breast now, this is head and neck.
+
+392
+00:22:44.728 --> 00:22:48.548
+But a bunch of targets for ADCs, and you can see the distribution,
+
+393
+00:22:48.688 --> 00:22:52.428
+sometimes almost an inverse relationship, sometimes
+
+394
+00:22:52.508 --> 00:22:55.328
+clearly a lot of one, but not much of the other at all.
+
+395
+00:22:55.368 --> 00:22:57.728
+In only a few cases is there any of the other.
+
+396
+00:22:57.748 --> 00:23:01.728
+In this case, HER3 and HER2. And this is the example of head and
+
+397
+00:23:01.768 --> 00:23:02.008
+neck
+
+398
+00:23:02.908 --> 00:23:06.888
+squamous cell carcinoma. And here's an example in non-small cell lung carcinoma.
+
+399
+00:23:07.248 --> 00:23:11.028
+Right now, we only give T-DXd to HER2 patients that have a mutation in
+
+400
+00:23:11.048 --> 00:23:14.828
+ERBB2 gene. But you can see that if you look at the HER2
+
+401
+00:23:14.888 --> 00:23:18.558
+in lung cancers, there's actually quite a dynamic range of
+
+402
+00:23:18.588 --> 00:23:22.288
+HER2 in lung cancer, and probably more patients would respond than the
+
+403
+00:23:22.408 --> 00:23:25.108
+2% that are currently given the drug because they have the mutation.
+
+404
+00:23:25.688 --> 00:23:28.688
+But you can compare these in all these multiple target assays.
+
+405
+00:23:29.068 --> 00:23:32.748
+And ultimately, where we're going with this is to have-- And these are assays that
+
+406
+00:23:32.768 --> 00:23:36.188
+we'll have in our lab where you can measure in animals per square millimeter.
+
+407
+00:23:36.688 --> 00:23:39.468
+We already have the first three. Nectin-4 is right around the corner,
+
+408
+00:23:40.408 --> 00:23:43.738
+as is cMet. HER3 and FolR1 are a little further out.
+
+409
+00:23:44.468 --> 00:23:48.038
+But we hope to be able to ultimately triplex them, so you can have instead of just
+
+410
+00:23:48.048 --> 00:23:51.868
+two markers, you could have a choice of three different ADCs, any
+
+411
+00:23:51.888 --> 00:23:52.788
+three of the above.
+
+412
+00:23:54.828 --> 00:23:58.048
+What about in the future? Well, this is our list of future targets that we're
+
+413
+00:23:58.088 --> 00:23:59.808
+working on. Some of them we're pretty far along.
+
+414
+00:24:00.228 --> 00:24:01.708
+Some of them we haven't even yet begun.
+
+415
+00:24:02.128 --> 00:24:06.028
+But I think that you can anticipate a time where there might be 10 or 20
+
+416
+00:24:06.088 --> 00:24:09.168
+different ADCs in the neoadjuvant setting. Which one are you going to use?
+
+417
+00:24:09.788 --> 00:24:13.448
+Well, I think that's the need for a selective marker, and I would propose that this
+
+418
+00:24:13.508 --> 00:24:15.528
+approach can be used to find a selective marker.
+
+419
+00:24:16.488 --> 00:24:19.768
+This is the group whose work I get to speak for.
+
+420
+00:24:20.128 --> 00:24:23.928
+My lab group, and highlighted the people who mainly were working on the projects we
+
+421
+00:24:23.968 --> 00:24:24.438
+talked about,
+
+422
+00:24:25.348 --> 00:24:28.408
+and my collaborators inside and outside of Yale.
+
+423
+00:24:28.988 --> 00:24:29.748
+And this is the group
+
+424
+00:24:30.828 --> 00:24:34.428
+at our most recent holiday party. The work that I mostly showed you was
+
+425
+00:24:34.468 --> 00:24:38.088
+from Mengni He, Jack Robbins, and Nae Chan.
+
+426
+00:24:38.468 --> 00:24:38.748
+Thank you.
+
+427
+00:24:45.848 --> 00:24:46.648
+I don't know if we're going to take-
+
+428
+00:24:46.988 --> 00:24:47.808
+Any question?
+
+429
+00:24:51.268 --> 00:24:54.788
+Can I start with a question? Or maybe over there? Yes, of course.
+
+430
+00:24:55.628 --> 00:24:58.868
+David, this is fantastic work. I really like the quantitative approaches you're
+
+431
+00:24:58.908 --> 00:25:02.418
+taking to the histology. There was some data presented last year at
+
+432
+00:25:03.068 --> 00:25:06.348
+ASCO where some folks from Johns Hopkins were characterizing the
+
+433
+00:25:06.368 --> 00:25:09.708
+internalization, actually, of these proteins versus just what's present
+
+434
+00:25:09.808 --> 00:25:11.068
+on the surface.
+
+435
+00:25:11.636 --> 00:25:15.196
+So I'm kind of curious if you have any interpretations on
+
+436
+00:25:15.296 --> 00:25:18.166
+how internalization of some of these ADC targets
+
+437
+00:25:19.156 --> 00:25:20.335
+impact your assay.
+
+438
+00:25:21.136 --> 00:25:25.126
+So that's a great question, because how important is internalization
+
+439
+00:25:25.136 --> 00:25:26.686
+versus just the target being present?
+
+440
+00:25:27.066 --> 00:25:30.296
+There's almost no doubt that the target presence is not the only factor.
+
+441
+00:25:30.316 --> 00:25:34.116
+In fact, for Trop-2, it's clear that even if you have a lot of target present,
+
+442
+00:25:34.146 --> 00:25:36.096
+there's only still a 30% response rate.
+
+443
+00:25:36.596 --> 00:25:39.536
+But the internalization is a different variable and much harder to measure.
+
+444
+00:25:39.976 --> 00:25:42.236
+And if you're going to measure it in a CLIA lab, look what we're doing now.
+
+445
+00:25:42.276 --> 00:25:44.276
+We're doing IHC. That's grade school stuff.
+
+446
+00:25:44.796 --> 00:25:47.856
+And so we need to move to more and more sophisticated assays.
+
+447
+00:25:47.886 --> 00:25:51.576
+And I would bet-- I'm not familiar with that study, but I'll bet internalization is
+
+448
+00:25:51.616 --> 00:25:52.376
+pretty hard to measure.
+
+449
+00:25:53.336 --> 00:25:53.506
+Thanks.
+
+450
+00:25:54.676 --> 00:25:54.956
+Please.
+
+451
+00:25:56.596 --> 00:25:58.316
+Hi, Anna Berry from Pfizer.
+
+452
+00:25:59.296 --> 00:26:03.256
+I have a practical question. Your technique looks to be
+
+453
+00:26:03.356 --> 00:26:07.216
+specific to one instrument. I wonder, do you have an
+
+454
+00:26:07.296 --> 00:26:11.096
+idea of who has that instrument, and do you have plans to
+
+455
+00:26:11.156 --> 00:26:13.156
+make it available on multiple instruments?
+
+456
+00:26:13.436 --> 00:26:16.506
+Thank you for asking that question because I didn't integrate that into the talk.
+
+457
+00:26:17.076 --> 00:26:20.586
+But there's a lot of the work that I showed, I showed in the beginning that some of
+
+458
+00:26:20.676 --> 00:26:22.336
+this work is sponsored by Leica Danaher.
+
+459
+00:26:22.996 --> 00:26:26.136
+And so they're going to build it on their platform with their instrument, with
+
+460
+00:26:26.156 --> 00:26:30.086
+their juice. We're working on that now, and there's two other companies whose names
+
+461
+00:26:30.216 --> 00:26:34.016
+I can't mention who are also working toward licensing this technology.
+
+462
+00:26:34.076 --> 00:26:34.916
+That's amazing.
+
+463
+00:26:36.416 --> 00:26:36.886
+A follow-up.
+
+464
+00:26:38.116 --> 00:26:41.516
+When you're saying Leica is working on it, would it work on the instrument somebody
+
+465
+00:26:41.556 --> 00:26:43.576
+might already own, or would it be a new instrument?
+
+466
+00:26:43.676 --> 00:26:47.396
+No, it's the Leica bond that's in about 15% of the labs around the
+
+467
+00:26:47.436 --> 00:26:51.036
+country. It doesn't work on Ventana, the Roche platform, for
+
+468
+00:26:51.116 --> 00:26:52.536
+various reasons, but it could.
+
+469
+00:26:53.976 --> 00:26:55.316
+Microphone on my right, please.
+
+470
+00:26:56.156 --> 00:26:56.776
+Excellent work.
+
+471
+00:26:57.816 --> 00:27:01.736
+I noted that you looked at percentiles when you're comparing and trying to optimize
+
+472
+00:27:01.756 --> 00:27:05.456
+for patient therapy. When expression levels can differ by orders of magnitude
+
+473
+00:27:05.496 --> 00:27:08.556
+between the various TAAs, how do you think about
+
+474
+00:27:09.456 --> 00:27:12.976
+using percentile for a specific TAA rather than absolute abundance?
+
+475
+00:27:13.396 --> 00:27:16.676
+That's a great question because we don't know whether absolute abundance is more
+
+476
+00:27:16.696 --> 00:27:20.116
+important than percentile. That is, it might be you just need a certain number of
+
+477
+00:27:20.155 --> 00:27:23.436
+molecules to see any kind of response. We don't know that yet.
+
+478
+00:27:23.456 --> 00:27:27.406
+But we're in three different prospective clinical trials and two retrospective
+
+479
+00:27:27.496 --> 00:27:29.796
+trials, and hopefully we'll be able to find that answer.
+
+480
+00:27:29.856 --> 00:27:33.836
+That is: is there a threshold in animals per square millimeter, and is that more
+
+481
+00:27:33.876 --> 00:27:37.256
+important, or is the percentile in the population more important for matching
+
+482
+00:27:37.296 --> 00:27:39.596
+patients to drug?
+
+483
+00:27:40.256 --> 00:27:40.556
+Please.
+
+484
+00:27:41.516 --> 00:27:45.076
+Thank you for the great talk. I'm Yajun Zhu from UCLA Pathology.
+
+485
+00:27:45.256 --> 00:27:48.696
+I have a question regarding the timing of the biopsy.
+
+486
+00:27:49.106 --> 00:27:52.996
+We know that a lot of clinical trials actually starting from their
+
+487
+00:27:53.536 --> 00:27:56.416
+later lines, like third line or second lines.
+
+488
+00:27:56.836 --> 00:28:00.796
+So do you think the original tissue, the scoring system, the
+
+489
+00:28:00.836 --> 00:28:04.456
+biomarker evaluation on the original tissue can representative for
+
+490
+00:28:05.056 --> 00:28:08.536
+the second-line or third-line tumor status?
+
+491
+00:28:08.836 --> 00:28:09.196
+Thank you.
+
+492
+00:28:09.256 --> 00:28:10.316
+So that's a great question.
+
+493
+00:28:11.136 --> 00:28:14.926
+And the QuantifiHER Trial, which is one of the prospective
+
+494
+00:28:14.996 --> 00:28:18.766
+trials that's run by the Translational Breast Cancer Research Consortium, is going
+
+495
+00:28:18.796 --> 00:28:22.706
+to look at that question. That is, which specimen is most important?
+
+496
+00:28:23.196 --> 00:28:27.056
+Some preliminary data suggests that if you don't have a specimen that's
+
+497
+00:28:27.116 --> 00:28:30.196
+most proximate to the treatment, you're not going to get the right answer.
+
+498
+00:28:30.256 --> 00:28:34.056
+That is, looking at the original biopsy and then having a patient metastasize four
+
+499
+00:28:34.116 --> 00:28:37.755
+years later, you better look at the metastasis because their status may well have
+
+500
+00:28:37.816 --> 00:28:38.736
+changed in that time.
+
+501
+00:28:40.216 --> 00:28:43.316
+Thank you. Do you think there is any liquid biopsy
+
+502
+00:28:43.636 --> 00:28:46.016
+technology that can fill that gap?
+
+503
+00:28:47.176 --> 00:28:50.656
+Well, someday maybe we'll be able to do it with radiology, but we can't right now.
+
+504
+00:28:51.176 --> 00:28:54.616
+And so what we've seen is just people doing biopsies of
+
+505
+00:28:54.836 --> 00:28:58.496
+various-- Our favorite is the liver biopsy and a liver MET because those are easy
+
+506
+00:28:58.536 --> 00:29:00.216
+to work with. But we can get bone
+
+507
+00:29:01.036 --> 00:29:03.166
+biopsies to work. They just have to be treated with a very
+
+508
+00:29:04.536 --> 00:29:07.236
+special decalcification method so that they're not
+
+509
+00:29:07.856 --> 00:29:09.496
+artifactually destroying the antigen.
+
+510
+00:29:10.576 --> 00:29:10.956
+Thank you.
+
+511
+00:29:13.336 --> 00:29:17.056
+Hi, Dr. Ring. Thank you for the fantastic presentation.
+
+512
+00:29:17.616 --> 00:29:21.256
+My question for you is for those surface marker
+
+513
+00:29:22.076 --> 00:29:24.276
+about the cleavage or shedding.
+
+514
+00:29:25.916 --> 00:29:29.656
+It's kind of a lot of happening. So I just wondering, when you select the
+
+515
+00:29:29.716 --> 00:29:33.576
+antibody for detection for these surface markers, so
+
+516
+00:29:34.356 --> 00:29:38.336
+do you take into consideration about the epitope this
+
+517
+00:29:38.416 --> 00:29:40.196
+antibody was targeting?
+
+518
+00:29:40.796 --> 00:29:44.616
+So that's an excellent question. And just about all diagnostic antibodies are to
+
+519
+00:29:44.656 --> 00:29:47.356
+the cytoplasmic domain of transmembrane proteins.
+
+520
+00:29:47.876 --> 00:29:51.656
+And the reason for that is the cytoplasmic domain is not glycosylated, and
+
+521
+00:29:51.696 --> 00:29:54.556
+glycosylation foils antigen retrieval.
+
+522
+00:29:54.956 --> 00:29:58.416
+So glycosylation is very non-uniform in terms of antigen retrieval.
+
+523
+00:29:58.816 --> 00:30:02.216
+So just about every antibody, even though we know the extracellular domain is the
+
+524
+00:30:02.276 --> 00:30:06.136
+action end, we look at the cytoplasmic domain because that's more stable and more
+
+525
+00:30:06.176 --> 00:30:08.236
+reproducible to look at.
+
+526
+00:30:08.336 --> 00:30:10.196
+So you recommend to use the
+
+527
+00:30:11.616 --> 00:30:14.396
+intracellular domain antibody targeting?
+
+528
+00:30:14.556 --> 00:30:18.476
+They tend to be more reproducible and more reliable just because
+
+529
+00:30:18.516 --> 00:30:19.986
+they don't tend to be glycosylated.
+
+530
+00:30:20.036 --> 00:30:23.656
+You can't glycosylate the intracellular cytoplasmic domain.
+
+531
+00:30:24.016 --> 00:30:27.796
+It's only the extracellular domain that's glycosylated, and that really plays havoc
+
+532
+00:30:27.856 --> 00:30:30.096
+on reproducibility for antigen retrieval.
+
+533
+00:30:30.956 --> 00:30:31.296
+Thank you.
+
+534
+00:30:31.896 --> 00:30:33.406
+So last question. Yes, please.
+
+535
+00:30:33.436 --> 00:30:37.296
+Just follow up on that question. Last year, there was some data
+
+536
+00:30:37.336 --> 00:30:41.016
+presenting even in our DXD
+
+537
+00:30:41.056 --> 00:30:44.956
+patient, the breast cancer patient that
+
+538
+00:30:44.996 --> 00:30:48.656
+were treated with the DXD. Even from the 3+
+
+539
+00:30:48.696 --> 00:30:52.256
+patient, we had responder and non-responder, and some IF data
+
+540
+00:30:52.296 --> 00:30:56.136
+basically showed that there are some very fine
+
+541
+00:30:56.196 --> 00:31:00.136
+differences in terms of the expression, which was not detected by
+
+542
+00:31:00.256 --> 00:31:04.216
+IHC, but by IF, we could see that, that there is a change
+
+543
+00:31:04.316 --> 00:31:08.256
+in even membranous staining. It's more diffused a little
+
+544
+00:31:08.316 --> 00:31:11.256
+bit in the non-responder compared to the responder.
+
+545
+00:31:11.636 --> 00:31:15.396
+So those may be the limitation that we have right now with the
+
+546
+00:31:15.496 --> 00:31:19.276
+IHC, but I'm wondering if there are methodologies or there
+
+547
+00:31:19.296 --> 00:31:22.886
+are kind of thoughts to how we can really elaborate on that one.
+
+548
+00:31:23.216 --> 00:31:26.476
+So it's pretty clear that there's factors other than the target that affect
+
+549
+00:31:26.556 --> 00:31:30.456
+response to therapy. But what you're talking about, I think, is
+
+550
+00:31:30.496 --> 00:31:33.976
+heterogeneity or even intra or intercellular heterogeneity,
+
+551
+00:31:34.416 --> 00:31:35.856
+and that's a really hard challenge.
+
+552
+00:31:35.916 --> 00:31:39.556
+We're working on it, but it's a really hard challenge. Can fluorescence do that?
+
+553
+00:31:39.636 --> 00:31:43.616
+Yes, theoretically, we could. And Jack's second aim of his thesis is
+
+554
+00:31:43.656 --> 00:31:47.356
+to look at heterogeneity and expression on quantitative
+
+555
+00:31:47.396 --> 00:31:50.946
+fluorescence on the membrane and between cells, since there's the
+
+556
+00:31:51.016 --> 00:31:54.076
+bystander effect. But we don't have an answer for you
+
+557
+00:31:54.116 --> 00:31:55.236
+today.
+
+558
+00:31:56.136 --> 00:31:59.596
+Thank you. Thanks again, Professor Rimmele, for the outstanding talk.
+
+559
+00:32:00.136 --> 00:32:01.816
+So I think that we can move on
+
+560
+00:32:02.976 --> 00:32:06.816
+from the pathologist perspective, and we can move on with the
+
+561
+00:32:06.856 --> 00:32:09.916
+mathematician perspective, Professor Bakolopoulou.
+
+562
+00:32:10.396 --> 00:32:14.016
+Computational methods and integration of multi-omics data for
+
+563
+00:32:14.136 --> 00:32:15.736
+predicting ADC activity.
+
+564
+00:32:16.776 --> 00:32:20.096
+Thank you very much, Barbara, for the introduction and for the
+
+565
+00:32:20.136 --> 00:32:23.476
+invitation in this very interesting session.
+
+566
+00:32:24.076 --> 00:32:28.056
+So today, I will discuss
+
+567
+00:32:28.096 --> 00:32:31.896
+with you the mathematician perspective, and we will
+
+568
+00:32:31.936 --> 00:32:35.776
+discuss about computational methods, and in particular, how also we can
+
+569
+00:32:35.816 --> 00:32:39.036
+integrate multi-omics in the context of
+
+570
+00:32:39.356 --> 00:32:41.176
+ADC activity prediction.
+
+571
+00:32:42.016 --> 00:32:45.196
+So I don't have any disclosure for this presentation.
+
+572
+00:32:45.236 --> 00:32:48.876
+So we know that cancer data can span in different kind
+
+573
+00:32:49.036 --> 00:32:52.596
+of scales, and every scale can bring different kind of aspect for the
+
+574
+00:32:52.656 --> 00:32:56.536
+disease. So we can actually monitor the mutational
+
+575
+00:32:56.616 --> 00:33:00.086
+burden and the cancer drivers, the protein activity, and
+
+576
+00:33:00.176 --> 00:33:03.836
+signaling pathways. We can actually try to model the tumor
+
+577
+00:33:03.896 --> 00:33:07.836
+microenvironment and its heterogeneity, the tumor localization
+
+578
+00:33:07.856 --> 00:33:11.416
+and staging, as well as the patient clinical data and
+
+579
+00:33:11.516 --> 00:33:14.956
+overall the treatment outcomes that we want to identify.
+
+580
+00:33:15.576 --> 00:33:19.256
+So from all these different scales, what I will focus today, and
+
+581
+00:33:19.316 --> 00:33:22.646
+after David's talk, is I will focus actually on the tissue,
+
+582
+00:33:23.196 --> 00:33:26.776
+which is actually histology. Which can be the link between the tissue
+
+583
+00:33:26.876 --> 00:33:30.836
+structure and the molecular traits that they can actually help us
+
+584
+00:33:30.915 --> 00:33:32.096
+with the outcomes.
+
+585
+00:33:33.476 --> 00:33:36.596
+And in a lot of kind of presentations through these days
+
+586
+00:33:37.416 --> 00:33:40.996
+in the conference, we saw that tumor cell plasticity
+
+587
+00:33:41.456 --> 00:33:45.276
+and, in general, the genomic instability can actually introduce
+
+588
+00:33:45.316 --> 00:33:49.196
+some tumor heterogeneity. And this heterogeneity can
+
+589
+00:33:49.276 --> 00:33:53.016
+be the intertumoral. That means that we can have different kind of
+
+590
+00:33:53.076 --> 00:33:57.016
+molecular alternations as, for example, the HER2 for the
+
+591
+00:33:57.076 --> 00:34:00.776
+breast cancer or the EGFR for the lung cancer, and general
+
+592
+00:34:00.816 --> 00:34:04.376
+microsatellite instability. Or it can also introduce
+
+593
+00:34:04.436 --> 00:34:08.296
+intratumoral heterogeneity, which actually here we want to
+
+594
+00:34:08.336 --> 00:34:12.256
+model more or less spatial organization of
+
+595
+00:34:12.296 --> 00:34:16.056
+the tumoral cells, the composition of the tumoral microenvironment,
+
+596
+00:34:16.116 --> 00:34:18.616
+and general genetic heterogeneity.
+
+597
+00:34:19.136 --> 00:34:22.897
+And we know that this heterogeneity, it actually affects a lot the
+
+598
+00:34:23.516 --> 00:34:26.897
+prognosis of the patients and the therapy response.
+
+599
+00:34:26.937 --> 00:34:30.576
+So for us, that we are working on the precision medicine, what we are trying to do
+
+600
+00:34:30.636 --> 00:34:33.857
+is actually deliver the right-- find a way or
+
+601
+00:34:34.377 --> 00:34:38.256
+create models that they can actually deliver the right
+
+602
+00:34:38.357 --> 00:34:40.756
+treatment to the right patients in the right time
+
+603
+00:34:42.536 --> 00:34:46.336
+. And in order to work on this, there are, these days, quite
+
+604
+00:34:46.417 --> 00:34:50.336
+some translational clinical trials that they are trying
+
+605
+00:34:50.377 --> 00:34:53.957
+to collect a huge amount of multimodal
+
+606
+00:34:54.036 --> 00:34:57.436
+data from imaging to multi-omics, to clinical
+
+607
+00:34:57.496 --> 00:35:01.436
+information. And all this, we are trying actually to build models
+
+608
+00:35:01.476 --> 00:35:05.296
+that they can associate them or combine them in
+
+609
+00:35:06.016 --> 00:35:08.576
+understanding also this data in a good way for
+
+610
+00:35:09.656 --> 00:35:13.286
+clinical outcomes. However, these clinical trials,
+
+611
+00:35:13.336 --> 00:35:16.836
+even if they are very good, they are a very challenging
+
+612
+00:35:16.916 --> 00:35:20.736
+context of the AI algorithms, and this is for multiple reasons.
+
+613
+00:35:21.376 --> 00:35:25.296
+Some of them is that, first of all, we don't have prior knowledge about the drugs
+
+614
+00:35:25.336 --> 00:35:28.856
+and the biology, especially for the ADC actually
+
+615
+00:35:28.956 --> 00:35:29.516
+landscape.
+
+616
+00:35:30.416 --> 00:35:34.176
+We have actually limiting number, usually,
+
+617
+00:35:34.296 --> 00:35:38.076
+of data and patients that we can use in order to train these models,
+
+618
+00:35:38.576 --> 00:35:42.395
+and this actually can limit a lot what we can actually extract
+
+619
+00:35:42.436 --> 00:35:46.396
+from them. And finally, interpretability is something that we are
+
+620
+00:35:46.456 --> 00:35:50.336
+really looking for when we are talking about models that they can take
+
+621
+00:35:50.416 --> 00:35:54.316
+some decisions, and this is actually something that is not forgiven when
+
+622
+00:35:54.336 --> 00:35:57.676
+it comes to AI algorithms, so we need really to work on it.
+
+623
+00:35:58.836 --> 00:36:02.206
+And one of the first actually proof of concepts or
+
+624
+00:36:03.076 --> 00:36:06.806
+trials that we have involved, for ADC, it is actually
+
+625
+00:36:06.856 --> 00:36:10.336
+the DAISY trial, which is actually a phase two
+
+626
+00:36:10.476 --> 00:36:14.396
+clinical trial on metastatic breast cancer patients that they have been treated
+
+627
+00:36:14.436 --> 00:36:17.916
+with a TDX drug. And here, we had actually
+
+628
+00:36:17.976 --> 00:36:21.736
+identified three different cohorts of patients, depending on the
+
+629
+00:36:21.776 --> 00:36:25.136
+HER2 expression level. And depending on this
+
+630
+00:36:25.756 --> 00:36:29.316
+expression, the treatment outcomes were very different for these
+
+631
+00:36:29.336 --> 00:36:32.396
+patients that they have treated with this ADC
+
+632
+00:36:32.416 --> 00:36:35.576
+drug. And for our actual study, we
+
+633
+00:36:36.496 --> 00:36:39.616
+focused on the cohort that had an overexpression of the
+
+634
+00:36:39.656 --> 00:36:43.576
+HER2 in order, more or less, to address the question
+
+635
+00:36:43.656 --> 00:36:47.266
+or to find in which extent the HER2 spatial
+
+636
+00:36:47.336 --> 00:36:50.636
+distribution can influence the drug efficacy.
+
+637
+00:36:51.736 --> 00:36:55.596
+And in order to address this, we worked with the IHC slides
+
+638
+00:36:55.716 --> 00:36:59.516
+from the DAISY trial. And what we did is that we creating an
+
+639
+00:36:59.676 --> 00:37:02.736
+fully automatic pipeline on which we can take the
+
+640
+00:37:04.656 --> 00:37:08.516
+slide, we can actually segment the tissue, and then follow
+
+641
+00:37:08.656 --> 00:37:12.596
+a quite standard nowadays process on which we can actually
+
+642
+00:37:12.636 --> 00:37:13.506
+take the tissue,
+
+643
+00:37:15.076 --> 00:37:18.836
+extract small regions of this tissue, and then use some kind
+
+644
+00:37:18.916 --> 00:37:22.496
+of deep learning representations in order, more or
+
+645
+00:37:22.556 --> 00:37:25.476
+less, to extract some information and some
+
+646
+00:37:25.936 --> 00:37:28.656
+morphological features from these
+
+647
+00:37:28.716 --> 00:37:32.232
+regions.And what we did actually in this study is that
+
+648
+00:37:32.272 --> 00:37:36.032
+we went with an unsupervised method in order, more or less,
+
+649
+00:37:36.072 --> 00:37:40.012
+to cluster this representation that we were getting from the deep
+
+650
+00:37:40.072 --> 00:37:43.832
+learning models in different clusters and see or study
+
+651
+00:37:43.912 --> 00:37:47.412
+how these clusters are associated with the clinical outcome and the
+
+652
+00:37:47.812 --> 00:37:49.212
+distribution in the slide.
+
+653
+00:37:50.272 --> 00:37:54.172
+So what indeed we noticed is that one of these cluster,
+
+654
+00:37:54.652 --> 00:37:58.592
+it had actually an association with the treatment resistance,
+
+655
+00:37:58.632 --> 00:38:01.862
+so we can have quite a significant difference between the two
+
+656
+00:38:01.951 --> 00:38:02.912
+different
+
+657
+00:38:04.492 --> 00:38:08.392
+groups of responders. And in order, more or less, to understand the
+
+658
+00:38:08.412 --> 00:38:12.252
+spatial distribution on the HER2 in this case, we actually tried to
+
+659
+00:38:12.292 --> 00:38:16.092
+create some more interpretable features in order to understand how the
+
+660
+00:38:16.152 --> 00:38:19.292
+cells are actually distributed on this region.
+
+661
+00:38:19.752 --> 00:38:23.252
+And what we did is that we developed an algorithm that it was able to
+
+662
+00:38:23.292 --> 00:38:27.012
+segment the cells in this IHC and more or
+
+663
+00:38:27.112 --> 00:38:30.842
+less quantify the numbers of cells that they were inside the cluster of
+
+664
+00:38:30.912 --> 00:38:34.872
+interest. And what we saw is that more or less the cluster
+
+665
+00:38:34.912 --> 00:38:38.182
+that we have identified, it had a moderate cell density,
+
+666
+00:38:38.752 --> 00:38:42.592
+and also it had a very low HER2 staining with respect to the DAB
+
+667
+00:38:42.612 --> 00:38:43.452
+intensity.
+
+668
+00:38:44.532 --> 00:38:47.652
+In order to dive a little bit more and understand more of this finding,
+
+669
+00:38:47.772 --> 00:38:51.722
+pathologists did a manual annotation of this cluster, and they
+
+670
+00:38:51.772 --> 00:38:55.452
+noticed that they actually consist of fibroblast and immune cells.
+
+671
+00:38:56.232 --> 00:38:59.852
+So more or less, this finding, they have
+
+672
+00:39:00.112 --> 00:39:02.672
+ended up to a publication that actually
+
+673
+00:39:03.672 --> 00:39:07.632
+shows some kind of insights about the HER2 spatial distribution and
+
+674
+00:39:07.732 --> 00:39:08.372
+how this
+
+675
+00:39:11.192 --> 00:39:13.832
+contribute to the role of the resistance to the drug.
+
+676
+00:39:15.512 --> 00:39:19.272
+And since we have this pipeline, we challenge it in two
+
+677
+00:39:19.342 --> 00:39:23.072
+different trials, again, for ADC, the ICARUS breast and the ICARUS
+
+678
+00:39:23.452 --> 00:39:26.692
+lung trials, on where again, we tried the same
+
+679
+00:39:26.752 --> 00:39:30.232
+unsupervised pipeline. This time we had some amelioration on the
+
+680
+00:39:30.252 --> 00:39:33.512
+computational side. We added some additional features for the
+
+681
+00:39:33.532 --> 00:39:36.932
+representation of the regions. We also added
+
+682
+00:39:36.972 --> 00:39:38.742
+information that comes both from
+
+683
+00:39:39.612 --> 00:39:43.592
+IHC and H&amp;E by integrating types of cells
+
+684
+00:39:43.612 --> 00:39:47.532
+that we have segmented on the H&amp;E slides and also integrating
+
+685
+00:39:47.652 --> 00:39:51.492
+prior information coming from the DAB staining that we knew that
+
+686
+00:39:51.712 --> 00:39:54.452
+it is actually something that is important for the
+
+687
+00:39:55.312 --> 00:39:58.852
+prediction. And again, you can find these
+
+688
+00:39:58.912 --> 00:40:02.392
+results in these two papers that they have been published the last two
+
+689
+00:40:02.492 --> 00:40:02.912
+years.
+
+690
+00:40:04.472 --> 00:40:08.412
+And you know also in the keynotes in the
+
+691
+00:40:08.512 --> 00:40:09.292
+morning, one,
+
+692
+00:40:10.492 --> 00:40:14.312
+in the AI community, we have experience in paradigm shift on the way that we are
+
+693
+00:40:14.332 --> 00:40:18.172
+doing AI. And in particular in digital pathology, we have
+
+694
+00:40:18.232 --> 00:40:22.092
+a very big boom of some models that they are
+
+695
+00:40:22.152 --> 00:40:25.592
+available now for us to use. And these models, they are called
+
+696
+00:40:25.672 --> 00:40:29.472
+foundation models, and they are models that they have been trained on a huge
+
+697
+00:40:29.572 --> 00:40:32.572
+pool of data that they are unsupervised.
+
+698
+00:40:33.042 --> 00:40:36.692
+And their promise is that they can give us actually representations
+
+699
+00:40:36.892 --> 00:40:40.392
+of regions on the slide that can be actually
+
+700
+00:40:40.492 --> 00:40:44.282
+useful for a variety of tasks. And most of
+
+701
+00:40:44.332 --> 00:40:48.192
+these models, actually, they have been trained mainly in a
+
+702
+00:40:48.212 --> 00:40:50.552
+pool of data that contains H&amp;E slides.
+
+703
+00:40:51.032 --> 00:40:54.192
+Some of them, they can have also IHC, but the main pool is
+
+704
+00:40:55.032 --> 00:40:58.912
+H&amp;E. So since we had these advances, we try to see
+
+705
+00:40:58.992 --> 00:41:02.872
+how we can use them in the pipeline that we had already
+
+706
+00:41:02.881 --> 00:41:06.792
+developed. But this time working not on the IHC, but on
+
+707
+00:41:06.852 --> 00:41:10.412
+an H&amp;E slide. So we did exactly the same, but this
+
+708
+00:41:10.492 --> 00:41:11.972
+time the clustering
+
+709
+00:41:12.812 --> 00:41:16.792
+was performed on the representations that we got from the H&amp;E
+
+710
+00:41:16.872 --> 00:41:18.992
+using the UNIC2H
+
+711
+00:41:20.052 --> 00:41:23.932
+model. And here we have some preliminary results on
+
+712
+00:41:23.972 --> 00:41:27.792
+which we saw some kind of association with respect to responders
+
+713
+00:41:27.912 --> 00:41:31.772
+and non-responders. So we had some clusters that they were really popping up with
+
+714
+00:41:31.792 --> 00:41:35.752
+respect to response. However, in this case, the
+
+715
+00:41:36.112 --> 00:41:39.872
+type of cells that we had in these clusters, they were much more mixed.
+
+716
+00:41:40.292 --> 00:41:43.572
+And this is something that we need more or less to interpret a little bit more in
+
+717
+00:41:43.632 --> 00:41:46.872
+order to have more insights about how we can use this
+
+718
+00:41:48.392 --> 00:41:49.152
+in this setting.
+
+719
+00:41:51.041 --> 00:41:54.712
+And what I have discussed to you on the computational side until this
+
+720
+00:41:54.792 --> 00:41:57.272
+time is focusing on unsupervised techniques.
+
+721
+00:41:57.432 --> 00:42:01.392
+However, in digital pathology, one of the main methodology that
+
+722
+00:42:01.472 --> 00:42:05.452
+we are using, it is actually following a supervised setting, which again, we
+
+723
+00:42:05.492 --> 00:42:07.072
+have the digital pathology slide.
+
+724
+00:42:07.192 --> 00:42:10.192
+We crop different small regions on the slide.
+
+725
+00:42:10.612 --> 00:42:14.492
+We use a foundation model or a deep learning model to represent these
+
+726
+00:42:14.532 --> 00:42:18.212
+patches. And then these representations, they are more or less
+
+727
+00:42:18.282 --> 00:42:22.272
+somehow aggregated and merged in order to create an
+
+728
+00:42:22.332 --> 00:42:25.652
+overall representation of the slide and perform the final
+
+729
+00:42:25.672 --> 00:42:29.532
+prediction. And what is happening here on the aggregator
+
+730
+00:42:29.732 --> 00:42:33.532
+or on this merged information, most of the times people are
+
+731
+00:42:33.592 --> 00:42:37.572
+following an attention mechanism on which more or less it can give us
+
+732
+00:42:37.612 --> 00:42:41.362
+the importance of each of these regions for the final prediction.
+
+733
+00:42:41.892 --> 00:42:45.712
+And indeed, this attention mechanism, it is used for a lot of studies as
+
+734
+00:42:45.772 --> 00:42:49.732
+an additional interpretability result in order not
+
+735
+00:42:49.772 --> 00:42:53.432
+only to have the performance of the model, but also
+
+736
+00:42:54.092 --> 00:42:57.572
+where the model is focusing on to do this prediction.
+
+737
+00:42:58.232 --> 00:43:01.752
+However, there are a lot of studies that show that different methods can have
+
+738
+00:43:01.772 --> 00:43:02.792
+actually different
+
+739
+00:43:03.792 --> 00:43:05.272
+regions that they are focusing on.
+
+740
+00:43:05.712 --> 00:43:09.692
+And also these regions, sometimes they cannot give the real regions of interest,
+
+741
+00:43:09.772 --> 00:43:13.552
+but regions that somehow they are important
+
+742
+00:43:13.952 --> 00:43:15.672
+for the particular kind of model.
+
+743
+00:43:17.012 --> 00:43:20.712
+So in our team, we are really working on this,
+
+744
+00:43:20.852 --> 00:43:21.092
+and
+
+745
+00:43:22.092 --> 00:43:25.312
+this year we developed the first method that tries to
+
+746
+00:43:25.432 --> 00:43:26.252
+actually
+
+747
+00:43:27.392 --> 00:43:30.872
+integrate counterfactual intervention in the attention mechanism,
+
+748
+00:43:31.532 --> 00:43:35.252
+on where here we are just following the same pipeline as I discussed with you
+
+749
+00:43:35.292 --> 00:43:38.712
+already. But instead of having only one branch that calculate this
+
+750
+00:43:38.732 --> 00:43:42.592
+attention of the slide, we have added a second branch on
+
+751
+00:43:42.672 --> 00:43:46.452
+which we try to perturbate the attention regions in order, more or
+
+752
+00:43:46.512 --> 00:43:50.384
+less, to... see which of these regions will change
+
+753
+00:43:50.404 --> 00:43:54.214
+the final prediction. And with that strategy, what
+
+754
+00:43:54.324 --> 00:43:57.424
+we are actually hoping is that we will have some
+
+755
+00:43:58.204 --> 00:44:01.864
+more faithful attentions, that they will really focus on the regions of
+
+756
+00:44:01.944 --> 00:44:02.524
+interest.
+
+757
+00:44:03.444 --> 00:44:04.384
+So having this,
+
+758
+00:44:06.544 --> 00:44:10.054
+in the paper, we tested it on variety of
+
+759
+00:44:10.564 --> 00:44:14.024
+public databases from TCGA, for lung, breast.
+
+760
+00:44:14.604 --> 00:44:17.834
+And what we saw is that first of all, we can integrate it on a lot of
+
+761
+00:44:18.504 --> 00:44:20.664
+supervised method, which is very important
+
+762
+00:44:20.724 --> 00:44:23.984
+from the computational side.
+
+763
+00:44:24.864 --> 00:44:26.594
+On the same time, we don't really
+
+764
+00:44:27.884 --> 00:44:31.544
+hurt the performance with respect to the prediction.
+
+765
+00:44:31.564 --> 00:44:35.524
+And also what we notice is that we have actually predictions that they
+
+766
+00:44:35.564 --> 00:44:39.544
+are much more targeted and much more important for the
+
+767
+00:44:39.604 --> 00:44:40.104
+final
+
+768
+00:44:41.244 --> 00:44:41.704
+score.
+
+769
+00:44:43.164 --> 00:44:46.664
+So having this method, what we did is that we actually
+
+770
+00:44:46.704 --> 00:44:50.464
+evaluated, again, in the ICARUS study.
+
+771
+00:44:51.684 --> 00:44:55.604
+And what we saw is that by taking the attentions that we get from this
+
+772
+00:44:55.664 --> 00:44:58.984
+method, we were able, again, to have two clusters that we can have
+
+773
+00:44:59.064 --> 00:45:02.704
+significant difference between responders and non-responders.
+
+774
+00:45:03.284 --> 00:45:06.624
+And when we were trying to get and understand more what
+
+775
+00:45:07.244 --> 00:45:11.024
+are these attention focusing on, we
+
+776
+00:45:11.184 --> 00:45:14.684
+identify that depending on the group of
+
+777
+00:45:14.744 --> 00:45:15.384
+interest,
+
+778
+00:45:16.344 --> 00:45:20.204
+some of the attentions, they were really focusing either on neoplastic or
+
+779
+00:45:20.264 --> 00:45:23.884
+epithelial cells. And these two, they were actually
+
+780
+00:45:23.944 --> 00:45:27.444
+significantly different between the two different groups.
+
+781
+00:45:29.064 --> 00:45:30.044
+And on the same time,
+
+782
+00:45:30.864 --> 00:45:33.784
+and again, all these are some preliminary results that we have
+
+783
+00:45:34.604 --> 00:45:38.524
+currently, are actually, we monitor and we saw that indeed,
+
+784
+00:45:38.554 --> 00:45:42.324
+the attentions that we get, they have a bigger impact on the
+
+785
+00:45:42.384 --> 00:45:45.724
+final prediction, particularly when we are starting
+
+786
+00:45:45.844 --> 00:45:49.204
+dropping or removing some of these very important regions.
+
+787
+00:45:49.694 --> 00:45:52.504
+And this is happening on the general kind of
+
+788
+00:45:54.384 --> 00:45:58.104
+attention region, but also if we take one of the
+
+789
+00:45:58.163 --> 00:46:01.964
+cluster that has been actually associated with respect to the responder
+
+790
+00:46:03.064 --> 00:46:05.434
+group. So you can see that our method, the
+
+791
+00:46:06.924 --> 00:46:08.464
+performance is really
+
+792
+00:46:08.784 --> 00:46:12.224
+changing if we start
+
+793
+00:46:12.244 --> 00:46:15.244
+removing a percentage of the attended regions.
+
+794
+00:46:17.304 --> 00:46:21.064
+Okay. And in my title, actually, I said that I will
+
+795
+00:46:21.084 --> 00:46:24.664
+discuss about computational methods, but also about multimodal
+
+796
+00:46:24.704 --> 00:46:28.404
+integration. And indeed, currently, there is actually a
+
+797
+00:46:28.504 --> 00:46:32.364
+trend in the community on where we are trying to talk about models that they are
+
+798
+00:46:32.424 --> 00:46:35.944
+more or less general. And with that we mean that
+
+799
+00:46:35.984 --> 00:46:39.184
+they will be able actually to process on the same time,
+
+800
+00:46:39.504 --> 00:46:42.984
+multiple type of inputs that comes from images, from
+
+801
+00:46:43.104 --> 00:46:45.784
+signal, from tabular data, from
+
+802
+00:46:47.024 --> 00:46:50.694
+multi-omics. And they will be able actually to understand all this
+
+803
+00:46:50.724 --> 00:46:54.524
+data, integrate them, and perform variety of tasks
+
+804
+00:46:54.564 --> 00:46:56.474
+for the clinical practice.
+
+805
+00:46:57.964 --> 00:47:01.764
+However, even if this is something that we are really looking for,
+
+806
+00:47:01.884 --> 00:47:04.284
+there are a lot of challenges in order to make it work.
+
+807
+00:47:04.344 --> 00:47:05.554
+The first one is how we can
+
+808
+00:47:07.544 --> 00:47:11.114
+train them at scale, since that, as we discussed,
+
+809
+00:47:11.224 --> 00:47:14.964
+sometimes the trials, they can be very limited with respect to data and
+
+810
+00:47:15.904 --> 00:47:19.284
+amount of patients that we have. How we can do the
+
+811
+00:47:19.324 --> 00:47:23.044
+verification, because again, interpretability is something that is very
+
+812
+00:47:23.084 --> 00:47:27.043
+important, and it is not forgiven when it comes to this kind
+
+813
+00:47:27.384 --> 00:47:28.964
+of models.
+
+814
+00:47:30.264 --> 00:47:33.984
+They discuss in one of the keynotes today about the
+
+815
+00:47:34.024 --> 00:47:37.104
+problems of LLMs and so on. And finally,
+
+816
+00:47:37.904 --> 00:47:41.724
+how we can actually validate and ensure that these models, they can be interesting.
+
+817
+00:47:41.844 --> 00:47:45.624
+So actually, the tasks that we will validate them, it is also something that we
+
+818
+00:47:45.644 --> 00:47:45.894
+need to
+
+819
+00:47:47.784 --> 00:47:48.564
+understand.
+
+820
+00:47:49.984 --> 00:47:53.844
+So on this axis, last year, we had actually proposed a method
+
+821
+00:47:53.904 --> 00:47:57.684
+that was able to integrate multiple modalities, and in particular, it was
+
+822
+00:47:57.744 --> 00:48:01.724
+able to combine histology data with multi-omics
+
+823
+00:48:01.824 --> 00:48:05.744
+data. And what actually we did is that we used a
+
+824
+00:48:05.784 --> 00:48:09.404
+kind of deep learning representation, similar than the ones that we
+
+825
+00:48:09.444 --> 00:48:13.104
+discussed in order to represent the regions of the slide.
+
+826
+00:48:13.724 --> 00:48:17.704
+We actually merged this with some graph neural networks
+
+827
+00:48:17.764 --> 00:48:21.684
+in order to take into account the spatial relation of these patches in the
+
+828
+00:48:21.764 --> 00:48:25.424
+slide. And when it came to the multi-omics
+
+829
+00:48:25.564 --> 00:48:29.344
+data, then we used some variational autoencoder representations in
+
+830
+00:48:29.404 --> 00:48:30.424
+order to be able to
+
+831
+00:48:31.444 --> 00:48:35.044
+represent and encode all the information that comes from all these
+
+832
+00:48:35.124 --> 00:48:39.084
+different types of data. And for
+
+833
+00:48:39.144 --> 00:48:43.044
+the mixture of the two, we used the mixture of expert model, which actually can
+
+834
+00:48:43.184 --> 00:48:44.004
+able to
+
+835
+00:48:44.964 --> 00:48:48.584
+combine all this information, and on the same time, provide the
+
+836
+00:48:48.684 --> 00:48:51.344
+weight with respect which actually,
+
+837
+00:48:53.004 --> 00:48:56.064
+modality is more important for the particular prediction.
+
+838
+00:48:56.604 --> 00:49:00.124
+And again, since we are working with clinical data,
+
+839
+00:49:00.924 --> 00:49:04.544
+being also robust with respect to missing modalities is something that is very
+
+840
+00:49:04.564 --> 00:49:08.464
+important, so we integrated techniques in order to be sure that we will be
+
+841
+00:49:08.544 --> 00:49:12.464
+able to train and be robust in the case one or more of the modalities
+
+842
+00:49:12.804 --> 00:49:14.664
+it is missing during the inference.
+
+843
+00:49:15.844 --> 00:49:19.584
+And again, in the paper, we did quite some
+
+844
+00:49:19.644 --> 00:49:22.004
+validation with different types of tasks.
+
+845
+00:49:22.184 --> 00:49:25.644
+We tested with respect to mutation
+
+846
+00:49:25.704 --> 00:49:28.424
+prediction, survival analysis, and so on.
+
+847
+00:49:28.544 --> 00:49:32.524
+And what we saw is that our method, it is indeed quite state-of-the-art
+
+848
+00:49:32.564 --> 00:49:36.464
+and contains a lot of information, and on the same time, it is
+
+849
+00:49:36.564 --> 00:49:40.304
+able to combine and show which regions are more important for which
+
+850
+00:49:40.344 --> 00:49:44.304
+task by showing, for example, regions of the slide,
+
+851
+00:49:44.374 --> 00:49:48.244
+that they are actually correlated with particular kind of gene expressions
+
+852
+00:49:48.804 --> 00:49:49.044
+and
+
+853
+00:49:50.204 --> 00:49:53.544
+on all the other panel of data that we're given as an
+
+854
+00:49:53.604 --> 00:49:57.564
+input.And all this actually,
+
+855
+00:49:58.504 --> 00:50:02.044
+we are very happy to test them and
+
+856
+00:50:02.444 --> 00:50:06.404
+use them in one of the big projects that is starting now,
+
+857
+00:50:06.904 --> 00:50:10.644
+and I think Barbara will give more details later, which is a
+
+858
+00:50:10.704 --> 00:50:11.304
+European
+
+859
+00:50:12.224 --> 00:50:15.924
+project that is able to really focus on creating a
+
+860
+00:50:16.004 --> 00:50:19.984
+score that will be able to predict in a holistic way the ADC
+
+861
+00:50:20.044 --> 00:50:23.684
+efficacy. And our actual role here in the
+
+862
+00:50:23.784 --> 00:50:25.164
+project with respect to
+
+863
+00:50:26.284 --> 00:50:29.984
+this initiative will be actually to create all these kind of computational
+
+864
+00:50:30.064 --> 00:50:33.944
+methods that they will be able to monitor and encode all
+
+865
+00:50:33.964 --> 00:50:37.304
+this information that comes from digital pathology,
+
+866
+00:50:38.024 --> 00:50:41.224
+multiplexing fluorescence, radiology,
+
+867
+00:50:41.804 --> 00:50:45.744
+genomics and PDOs. And we'll be able
+
+868
+00:50:45.864 --> 00:50:49.544
+to provide something that will be able to give us more insight
+
+869
+00:50:49.624 --> 00:50:52.944
+about the ADC resistance. And of course, in
+
+870
+00:50:53.004 --> 00:50:56.224
+this case, we will focus more on the
+
+871
+00:50:56.264 --> 00:51:00.234
+interpretability and the efficacy of the generalizability of
+
+872
+00:51:00.544 --> 00:51:04.324
+the model as well as the modularity in the sense
+
+873
+00:51:04.384 --> 00:51:05.084
+that since we
+
+874
+00:51:06.104 --> 00:51:09.924
+are talking about a lot of data, how we can handle missing modalities
+
+875
+00:51:10.044 --> 00:51:13.544
+will be something that we will really focusing on.
+
+876
+00:51:13.884 --> 00:51:17.374
+And all this, again, it will be in order to generate a
+
+877
+00:51:17.384 --> 00:51:21.324
+companion biomarker for ADC prediction and understand more what
+
+878
+00:51:21.344 --> 00:51:23.384
+is happening with ADC interactions.
+
+879
+00:51:24.484 --> 00:51:26.844
+So this is actually ongoing work that
+
+880
+00:51:27.704 --> 00:51:31.324
+it started actually this year, and we are very excited to be part of.
+
+881
+00:51:32.354 --> 00:51:35.684
+And with that, I would like to conclude my talk for
+
+882
+00:51:36.084 --> 00:51:39.964
+today. And what I would like to mention from my side as a
+
+883
+00:51:40.044 --> 00:51:43.744
+biomathematician and engineer is that we have this kind of
+
+884
+00:51:43.784 --> 00:51:47.724
+paradigm shift with the use of foundation model to be integrated more and
+
+885
+00:51:47.804 --> 00:51:51.504
+more on our methods, which is something that it is very good from my
+
+886
+00:51:51.544 --> 00:51:55.344
+perspective because we can give us the opportunity to work with limited
+
+887
+00:51:55.384 --> 00:51:59.024
+amount of data. We will not have to have so many data to train
+
+888
+00:51:59.184 --> 00:52:02.404
+them. They will be pre-trained. And also they
+
+889
+00:52:03.264 --> 00:52:05.403
+give us actually the promise of having
+
+890
+00:52:06.623 --> 00:52:10.174
+models that they will be able to be generalized in different problems and
+
+891
+00:52:10.284 --> 00:52:13.764
+tasks. And of course, in our group, we are really working on
+
+892
+00:52:13.804 --> 00:52:17.644
+interpretability and how we can actually pay, understand, and pay
+
+893
+00:52:17.684 --> 00:52:21.264
+more attention to find real relations
+
+894
+00:52:21.324 --> 00:52:25.084
+between data and not causal relations that can
+
+895
+00:52:25.564 --> 00:52:28.984
+lead to particular prediction. And how we can actually
+
+896
+00:52:29.024 --> 00:52:32.973
+integrate all this and apply all this with all this kind of merged
+
+897
+00:52:33.044 --> 00:52:34.944
+modalities that we have on the imaging
+
+898
+00:52:36.244 --> 00:52:38.934
+perspective, like spatial proteomics, transcriptomics.
+
+899
+00:52:39.444 --> 00:52:43.004
+It's something that we are really working on together with the
+
+900
+00:52:43.044 --> 00:52:46.544
+robustness and generalization with respect to
+
+901
+00:52:47.604 --> 00:52:50.684
+drug discovery and biomarker discovery.
+
+902
+00:52:51.504 --> 00:52:55.284
+And with that, I would like to thank you and thank also the entire team for all the
+
+903
+00:52:55.324 --> 00:52:57.744
+work that it does towards
+
+904
+00:52:58.684 --> 00:53:01.464
+developing methods for cancer treatment.
+
+905
+00:53:01.724 --> 00:53:04.723
+And if you have any questions, I will be very happy to address.
+
+906
+00:53:05.804 --> 00:53:06.304
+Thank you.
+
+907
+00:53:13.144 --> 00:53:13.764
+Questions?
+
+908
+00:53:16.184 --> 00:53:19.284
+Thanks so much for your excellent talk. I'm Jenny Liu.
+
+909
+00:53:19.354 --> 00:53:22.984
+I'm a medical oncologist in early phase clinical trials.
+
+910
+00:53:23.604 --> 00:53:27.104
+I work a lot with ADC sponsors, largely
+
+911
+00:53:27.204 --> 00:53:30.904
+biotech, and globally there's now over 500
+
+912
+00:53:30.984 --> 00:53:33.823
+trials that are running- ... ADCs.
+
+913
+00:53:34.384 --> 00:53:38.344
+One of the challenges is a lot of these companies do not have the
+
+914
+00:53:38.404 --> 00:53:42.104
+resources to do complex AI, digital
+
+915
+00:53:42.164 --> 00:53:46.104
+pathology and multi-omics. Is there a way that we
+
+916
+00:53:46.144 --> 00:53:50.044
+can utilize AI and potentially federated learning
+
+917
+00:53:50.054 --> 00:53:53.924
+to allow individual sponsors to share their data so
+
+918
+00:53:53.964 --> 00:53:57.544
+that we can develop predictive and selective biomarker
+
+919
+00:53:57.644 --> 00:54:00.024
+algorithms for the field overall?
+
+920
+00:54:00.764 --> 00:54:02.324
+Yeah, very good question, actually.
+
+921
+00:54:02.374 --> 00:54:06.364
+Indeed, and this is actually one of the limitations that we had
+
+922
+00:54:06.524 --> 00:54:10.384
+in the days, is that the number of patients that we had, they were very limited, so
+
+923
+00:54:10.404 --> 00:54:13.454
+we couldn't really do very fancy AI things.
+
+924
+00:54:14.284 --> 00:54:18.024
+Indeed, I think that trying to combine information
+
+925
+00:54:18.094 --> 00:54:19.904
+coming from different kind of
+
+926
+00:54:20.764 --> 00:54:24.564
+sources, it's the key in order to develop more methods.
+
+927
+00:54:24.604 --> 00:54:28.344
+This can be in the context of federated learning on where you have the
+
+928
+00:54:28.404 --> 00:54:32.184
+model and you're trying more or less, without having access or
+
+929
+00:54:32.224 --> 00:54:36.084
+download the data, use the information that you have there.
+
+930
+00:54:36.104 --> 00:54:39.284
+We can see also other techniques, like for example, we can
+
+931
+00:54:39.904 --> 00:54:43.364
+try to see if we can share not the initial data, but some
+
+932
+00:54:43.424 --> 00:54:46.904
+representations of this data that they can be also integrated on
+
+933
+00:54:47.324 --> 00:54:51.284
+more complex pipelines. But I completely agree with you that
+
+934
+00:54:51.364 --> 00:54:55.164
+trying to set up in a
+
+935
+00:54:55.204 --> 00:54:59.164
+very good way a collaborative platform to
+
+936
+00:54:59.264 --> 00:55:02.984
+combine all this information, it is something that it is needed to
+
+937
+00:55:03.004 --> 00:55:04.204
+understand more things.
+
+938
+00:55:04.484 --> 00:55:04.924
+Thank you.
+
+939
+00:55:07.304 --> 00:55:07.844
+Okay.
+
+940
+00:55:09.113 --> 00:55:11.804
+Thank you. Thank you very much, Professor Bakolopoulos.
+
+941
+00:55:11.904 --> 00:55:13.664
+So I think we can move on.
+
+942
+00:55:16.264 --> 00:55:20.004
+So I'm
+
+943
+00:55:20.044 --> 00:55:23.224
+going to provide the clinician perspective, of course.
+
+944
+00:55:26.044 --> 00:55:27.384
+These are my disclosure.
+
+945
+00:55:28.504 --> 00:55:32.444
+And in terms of clinician perspective, what
+
+946
+00:55:32.504 --> 00:55:35.504
+I would like to discuss is how we can move from
+
+947
+00:55:35.544 --> 00:55:39.304
+exploratory to validated biomarkers for a more
+
+948
+00:55:39.344 --> 00:55:43.104
+precision ADC development in the next future, thanks to the
+
+949
+00:55:43.164 --> 00:55:47.024
+technologies that we have seen, for example, in the two prior talks.
+
+950
+00:55:47.624 --> 00:55:50.664
+And to do this, I would like to address three main questions.
+
+951
+00:55:50.904 --> 00:55:51.714
+The first one is,
+
+952
+00:55:52.584 --> 00:55:56.234
+given the multidimensional mechanism of action of ADC, if
+
+953
+00:55:56.324 --> 00:55:59.104
+ADC are targeted therapy, what's the target?
+
+954
+00:55:59.744 --> 00:56:01.804
+Second question, what are the technologies?
+
+955
+00:56:01.864 --> 00:56:05.334
+Which technologies we can use and how we can integrate
+
+956
+00:56:05.384 --> 00:56:08.544
+them? And last question, how we can move
+
+957
+00:56:09.104 --> 00:56:09.844
+towards
+
+958
+00:56:10.964 --> 00:56:14.704
+validated biomarkers that can allow a more accurate
+
+959
+00:56:14.804 --> 00:56:18.384
+ADC selection for each patient, thanks to dedicated
+
+960
+00:56:18.644 --> 00:56:22.500
+clinical trials.So starting from the
+
+961
+00:56:22.540 --> 00:56:26.500
+first question, if ADC are targeted therapy, what's the target?
+
+962
+00:56:27.660 --> 00:56:31.640
+I think that the multidimensional mechanism
+
+963
+00:56:31.650 --> 00:56:32.960
+of action of ADC
+
+964
+00:56:33.800 --> 00:56:37.260
+lead us to understand what are the components that are
+
+965
+00:56:37.300 --> 00:56:41.100
+involved in the ADC response. And of course, I would like
+
+966
+00:56:41.200 --> 00:56:44.920
+to start from the target antigen, because I think it's the most important
+
+967
+00:56:45.040 --> 00:56:47.980
+part, at least in the response to the ADC.
+
+968
+00:56:48.620 --> 00:56:52.500
+And it's the most important part also because preclinical and
+
+969
+00:56:52.520 --> 00:56:56.400
+clinical study across different type of ADC have shown a
+
+970
+00:56:56.480 --> 00:56:59.580
+lack of ADC activity if the target is not or low
+
+971
+00:56:59.660 --> 00:57:03.480
+expressed. I reported here a couple of example for
+
+972
+00:57:03.500 --> 00:57:07.340
+HER2. T-DXd, trastuzumab deruxtecan, showed
+
+973
+00:57:07.700 --> 00:57:11.380
+activity in HER2 low models but not in HER2 negative models.
+
+974
+00:57:11.970 --> 00:57:15.510
+And in the DESI trial, we showed no or very few
+
+975
+00:57:15.680 --> 00:57:19.440
+T-DXd staining in the tumor sample that were HER2
+
+976
+00:57:19.480 --> 00:57:20.840
+immunohistochemistry zero.
+
+977
+00:57:22.109 --> 00:57:26.060
+And on the other side of the slide, you can see a very elegant study that has been
+
+978
+00:57:26.480 --> 00:57:30.320
+recently published by another group, in which they looked
+
+979
+00:57:30.420 --> 00:57:33.880
+at the Trop-2 expression and the response to datopotumab
+
+980
+00:57:33.900 --> 00:57:37.680
+deruxtecan in PDX obtained from patients with
+
+981
+00:57:37.720 --> 00:57:41.380
+advanced breast cancer. And the authors showed that
+
+982
+00:57:41.440 --> 00:57:45.040
+Trop-2 negative PDX didn't respond to dato-DXd.
+
+983
+00:57:46.840 --> 00:57:50.380
+However, if the target is expressed, we have seen that is
+
+984
+00:57:50.760 --> 00:57:54.740
+very important the way in which we measure the target, and of course we need
+
+985
+00:57:54.800 --> 00:57:58.280
+more quantitative and reproducible assessment.
+
+986
+00:57:58.940 --> 00:58:02.880
+But it's also important to measure some other features of the
+
+987
+00:58:02.900 --> 00:58:05.900
+target that go beyond the target expression.
+
+988
+00:58:06.420 --> 00:58:09.040
+For example, the target internalization capability.
+
+989
+00:58:10.060 --> 00:58:13.440
+We have analyzed the Trop-2 internalization capability in the
+
+990
+00:58:13.480 --> 00:58:16.820
+ICARUS-Lango-1 study that has been published in Cancer Cell a
+
+991
+00:58:16.900 --> 00:58:20.840
+couple of days ago. And in this study,
+
+992
+00:58:20.920 --> 00:58:24.480
+we have seen that Trop-2 subcellular localization varied
+
+993
+00:58:24.520 --> 00:58:28.500
+across the cell lines. And through kinetic uptake assay,
+
+994
+00:58:28.600 --> 00:58:32.540
+we could observe that cell lines that presented the most rapid
+
+995
+00:58:32.600 --> 00:58:35.840
+uptake of the ADC were the ones with the greatest
+
+996
+00:58:35.920 --> 00:58:39.620
+sensitivity to dato-DXd. And we could confirm in some
+
+997
+00:58:39.660 --> 00:58:43.120
+way these findings in the patient samples.
+
+998
+00:58:43.180 --> 00:58:46.960
+So we analyzed through an unsupervised clustering algorithm
+
+999
+00:58:47.000 --> 00:58:50.920
+already shown by Maria before, the tumor sample of these
+
+1000
+00:58:51.000 --> 00:58:54.720
+patients collected at baseline, and we observed a
+
+1001
+00:58:54.780 --> 00:58:58.060
+more uniform cytoplasmic distribution of
+
+1002
+00:58:58.080 --> 00:59:01.740
+Trop-2. That means a low Trop-2 variance, a
+
+1003
+00:59:01.800 --> 00:59:05.580
+low difference between the membrane and the cytoplasm
+
+1004
+00:59:06.140 --> 00:59:10.080
+in the tumor samples of the patients that responded the more to the
+
+1005
+00:59:10.120 --> 00:59:13.600
+treatment. So this finding suggests that the Trop-2
+
+1006
+00:59:13.640 --> 00:59:17.520
+internalization capability can matter in terms of response, at
+
+1007
+00:59:17.580 --> 00:59:18.840
+least to dato-DXd.
+
+1008
+00:59:20.350 --> 00:59:24.300
+And another feature that we have to take
+
+1009
+00:59:24.360 --> 00:59:28.100
+into account is also the intratumor heterogeneity of the target.
+
+1010
+00:59:28.600 --> 00:59:30.090
+And in this trial with
+
+1011
+00:59:31.000 --> 00:59:34.840
+the trastuzumab deruxtecan, we analyzed particularly
+
+1012
+00:59:34.900 --> 00:59:38.780
+the samples of the patient, the HER2 distribution in the sample of
+
+1013
+00:59:38.840 --> 00:59:41.380
+the patients with HER2 positive breast cancer.
+
+1014
+00:59:41.960 --> 00:59:45.700
+And as shown already by Maria before, we found that the HER2
+
+1015
+00:59:45.740 --> 00:59:49.340
+intratumoral distribution can affect the response to the treatment,
+
+1016
+00:59:49.840 --> 00:59:53.600
+and particularly that the prevalence of cluster Cs was found in the
+
+1017
+00:59:53.660 --> 00:59:57.340
+tumor that didn't respond to trastuzumab deruxtecan.
+
+1018
+00:59:57.790 --> 01:00:01.780
+And this cluster zero was characterized by the prevalence of
+
+1019
+01:00:01.800 --> 01:00:04.600
+HER2 zero tumor cell fibroblasts and
+
+1020
+01:00:04.660 --> 01:00:08.280
+immunocells. And some quite similar results have been
+
+1021
+01:00:08.540 --> 01:00:12.180
+recently reported in another study, FASCINATE-n trial, a
+
+1022
+01:00:12.240 --> 01:00:16.080
+neoadjuvant study with another ADC targeting
+
+1023
+01:00:16.100 --> 01:00:19.820
+HER2, trastuzumab rezsitecan. And again, the authors used
+
+1024
+01:00:19.940 --> 01:00:23.340
+computational pathology to evaluate the
+
+1025
+01:00:23.400 --> 01:00:26.460
+intratumor spatial distribution of the target.
+
+1026
+01:00:28.380 --> 01:00:32.140
+So for sure the target antigen matters in the response of the
+
+1027
+01:00:32.300 --> 01:00:36.080
+ADC. But beyond the target abundance, the question is
+
+1028
+01:00:36.300 --> 01:00:40.140
+how much also the tumor microenvironment depending factors can
+
+1029
+01:00:40.160 --> 01:00:43.960
+govern the ADC activity, and particularly the intratumor
+
+1030
+01:00:44.040 --> 01:00:47.360
+distribution and the immunomodulation.
+
+1031
+01:00:47.400 --> 01:00:51.100
+And indeed, we try to address a little bit this question
+
+1032
+01:00:51.320 --> 01:00:54.780
+in ICARUS-Bresto-1 study that we published last year,
+
+1033
+01:00:55.400 --> 01:00:59.160
+in which we analyzed the tumor sample collected at baseline,
+
+1034
+01:00:59.240 --> 01:01:03.040
+but also on treatment from patients with advanced breast
+
+1035
+01:01:03.120 --> 01:01:06.300
+cancer that were treated with patritumab deruxtecan.
+
+1036
+01:01:06.980 --> 01:01:10.240
+And again, with an unsupervised clustering
+
+1037
+01:01:10.280 --> 01:01:13.360
+algorithm, we could analyze the overlapped,
+
+1038
+01:01:13.800 --> 01:01:16.900
+stained and H&amp;E slide in order to
+
+1039
+01:01:16.940 --> 01:01:20.420
+capture the tumor microenvironment architecture
+
+1040
+01:01:20.500 --> 01:01:23.020
+relative to their HER3-positive tumor cells.
+
+1041
+01:01:23.570 --> 01:01:27.540
+And what we found was a prevalence of the cluster zero in
+
+1042
+01:01:27.760 --> 01:01:31.520
+the tumor sample of patient that responded the most to the
+
+1043
+01:01:31.580 --> 01:01:34.200
+treatment. And this cluster zero, as per
+
+1044
+01:01:34.320 --> 01:01:38.100
+pathologist review, was composed of
+
+1045
+01:01:38.620 --> 01:01:42.220
+a moderate number of HER3 positive cells surrounded by
+
+1046
+01:01:42.240 --> 01:01:46.100
+connective tissue with few immunocells and no necrotic areas.
+
+1047
+01:01:46.540 --> 01:01:49.300
+So raising a little bit the hypothesis that this type of
+
+1048
+01:01:49.460 --> 01:01:53.320
+tumor microenvironment architecture could facilitate
+
+1049
+01:01:53.400 --> 01:01:55.600
+the intratumor distribution of the ADC.
+
+1050
+01:01:56.260 --> 01:01:59.800
+And then with the imaging mass cytometry, we also analyzed the on-treatment
+
+1051
+01:01:59.940 --> 01:02:03.640
+samples, and we could find that the on-treatment
+
+1052
+01:02:03.740 --> 01:02:06.580
+samples that presented a higher proportion of
+
+1053
+01:02:07.020 --> 01:02:10.740
+HER3-DXd, so ADC-positive tumor cells,
+
+1054
+01:02:10.860 --> 01:02:14.820
+were the ones that responded more to the treatment with
+
+1055
+01:02:14.880 --> 01:02:18.760
+patritumab deruxtecan. And the bulk arena sequencing analysis
+
+1056
+01:02:18.880 --> 01:02:22.780
+in some way confirmed this finding, because
+
+1057
+01:02:22.820 --> 01:02:26.680
+differential gene expression analysis showed a higher number of
+
+1058
+01:02:26.720 --> 01:02:30.380
+upregulated genes in the HER3-DXd positive tumor as
+
+1059
+01:02:30.420 --> 01:02:33.040
+compared to the HER3-DXd negative tumor.
+
+1060
+01:02:33.520 --> 01:02:37.400
+So this finding in some way suggests that the tumor
+
+1061
+01:02:37.440 --> 01:02:41.120
+microenvironment can affect the intratumor distribution of the
+
+1062
+01:02:41.200 --> 01:02:44.520
+ADC, and finally the tumor cell uptake of the
+
+1063
+01:02:45.360 --> 01:02:49.104
+ADC and the response to the treatment.But also
+
+1064
+01:02:49.144 --> 01:02:52.384
+in ICARUS Breast and ICARUS Lung study, we could
+
+1065
+01:02:52.404 --> 01:02:55.784
+demonstrate that the immunomodulation of the tumor microenvironment
+
+1066
+01:02:55.844 --> 01:02:58.924
+seems to be associated with the response to the treatment.
+
+1067
+01:02:59.544 --> 01:03:02.944
+Indeed, we showed by bulk RNA sequencing the
+
+1068
+01:03:02.964 --> 01:03:06.344
+activation of immuno-related pathways, both in patients treated with
+
+1069
+01:03:06.424 --> 01:03:10.264
+dato-DXd and patients treated with HER3-DXd.
+
+1070
+01:03:10.684 --> 01:03:13.844
+And in the ICARUS Lung 1 study also, we've shown
+
+1071
+01:03:14.064 --> 01:03:17.944
+a significant improvement of some
+
+1072
+01:03:17.984 --> 01:03:21.924
+specific immunocells in the patients that responded to the treatment by
+
+1073
+01:03:21.964 --> 01:03:23.204
+imaging mass cytometry.
+
+1074
+01:03:24.264 --> 01:03:28.244
+So I would say the target antigen for sure it matters, but maybe there
+
+1075
+01:03:28.304 --> 01:03:30.384
+is also a role of the tumor microenvironment.
+
+1076
+01:03:30.914 --> 01:03:34.784
+And now what about the payload? And particularly, what about the tumor histology
+
+1077
+01:03:34.804 --> 01:03:38.304
+and genomic characteristics that can affect the payload
+
+1078
+01:03:38.504 --> 01:03:39.084
+activity?
+
+1079
+01:03:39.984 --> 01:03:43.404
+I have reported in the slide some example.
+
+1080
+01:03:43.924 --> 01:03:47.604
+Of course, there are many others. But the first example comes
+
+1081
+01:03:47.724 --> 01:03:51.464
+from the TOP1 mutation, because there are a number of
+
+1082
+01:03:51.564 --> 01:03:55.084
+study that are starting to show that the presence of
+
+1083
+01:03:55.104 --> 01:03:58.264
+TOP1 mutation can be associated with the resistance to
+
+1084
+01:03:58.284 --> 01:04:01.764
+ADC with the topoisomerase 1 inhibitor payload.
+
+1085
+01:04:02.384 --> 01:04:05.924
+We have to take into account that this mutation are quite rare.
+
+1086
+01:04:06.844 --> 01:04:09.704
+There are also some evidence about the loss of
+
+1087
+01:04:09.764 --> 01:04:13.564
+SLUFN11 in the tumor samples that can be resistant to
+
+1088
+01:04:13.684 --> 01:04:16.564
+ADC with the topoisomerase 1 inhibitor payload.
+
+1089
+01:04:16.584 --> 01:04:19.224
+And indeed, we demonstrated this also in the ICARUS
+
+1090
+01:04:19.304 --> 01:04:23.264
+Lung 1 study, in which we showed
+
+1091
+01:04:23.344 --> 01:04:23.724
+that
+
+1092
+01:04:24.624 --> 01:04:27.944
+the tumor of the patients that responded to the treatment
+
+1093
+01:04:28.404 --> 01:04:32.344
+presented a higher proportion of SLUFN11 positive
+
+1094
+01:04:32.464 --> 01:04:36.364
+tumor cells. And we finding in preclinical model
+
+1095
+01:04:36.484 --> 01:04:39.524
+that indeed, when we selectively
+
+1096
+01:04:39.534 --> 01:04:43.384
+inactivated SLUFN11 in cell lines that were
+
+1097
+01:04:43.464 --> 01:04:46.964
+highly sensitive to dato-DXd, we observed a markedly
+
+1098
+01:04:47.024 --> 01:04:50.804
+reduction in the sensitivity in the cytotoxic response to the
+
+1099
+01:04:50.884 --> 01:04:54.744
+treatment. And finally, there is a growing
+
+1100
+01:04:54.784 --> 01:04:58.744
+number of study, I would say, that are looking also at the ATP
+
+1101
+01:04:58.824 --> 01:05:02.264
+binding cassette, so the flux transporter of the
+
+1102
+01:05:02.344 --> 01:05:02.844
+payload,
+
+1103
+01:05:03.844 --> 01:05:07.484
+with some evidence on the possible association with the resistance to the
+
+1104
+01:05:07.584 --> 01:05:10.984
+payload. Here an example on the ABCC1
+
+1105
+01:05:11.184 --> 01:05:14.764
+overexpression that seems to be associated with resistance to
+
+1106
+01:05:14.824 --> 01:05:15.524
+DXd.
+
+1107
+01:05:16.564 --> 01:05:20.424
+So with all these findings in mind, I think
+
+1108
+01:05:20.444 --> 01:05:24.264
+that the definition of ADC as a potential
+
+1109
+01:05:24.324 --> 01:05:26.744
+target expression is a little bit challenged.
+
+1110
+01:05:27.304 --> 01:05:30.984
+And what I would like to think and to conceptualize is more that
+
+1111
+01:05:31.344 --> 01:05:34.804
+the ADC can be potentially considered as a tumor
+
+1112
+01:05:34.864 --> 01:05:38.204
+ecosystem targeting therapy, in which the biomarkers
+
+1113
+01:05:38.804 --> 01:05:42.404
+have to consider not only the target expression, internalization
+
+1114
+01:05:42.484 --> 01:05:46.354
+capability, but also the tumor microenvironment characteristic, and
+
+1115
+01:05:46.404 --> 01:05:47.844
+also the payload fate.
+
+1116
+01:05:49.413 --> 01:05:52.264
+And so if we want to capture, to embrace this
+
+1117
+01:05:52.724 --> 01:05:56.354
+complexity, I think that we need to integrate different tools and
+
+1118
+01:05:56.424 --> 01:06:00.344
+technology in order to capture the multiple possible
+
+1119
+01:06:00.424 --> 01:06:03.044
+determinants of the response to the ADC.
+
+1120
+01:06:04.224 --> 01:06:07.904
+And so what are the technologies that we can take into account?
+
+1121
+01:06:08.364 --> 01:06:12.154
+I think that the two prior talks have really clarified
+
+1122
+01:06:12.264 --> 01:06:15.924
+what is the potential of the quantitative assay, but also
+
+1123
+01:06:16.184 --> 01:06:19.484
+of the computational pathology to obtain a more
+
+1124
+01:06:19.524 --> 01:06:23.244
+comprehensive target antigen characterization, but also to
+
+1125
+01:06:23.264 --> 01:06:27.224
+obtain a more comprehensive characterization of the ADC
+
+1126
+01:06:27.234 --> 01:06:30.324
+pharmacodynamic within the tumor and the tumor microenvironment.
+
+1127
+01:06:31.014 --> 01:06:34.364
+However, I would like also to spend some words on the molecular nuclear
+
+1128
+01:06:34.544 --> 01:06:37.984
+imaging and CTC because I believe that there is some
+
+1129
+01:06:38.084 --> 01:06:41.744
+room for these technologies, particularly in the prediction of
+
+1130
+01:06:41.804 --> 01:06:43.184
+response to this drug.
+
+1131
+01:06:44.524 --> 01:06:48.484
+So molecular nuclear imaging is a combination of imaging
+
+1132
+01:06:48.504 --> 01:06:52.444
+technology and molecular biology, and ZEPHIR has been a sort
+
+1133
+01:06:52.524 --> 01:06:55.884
+of proof of concept study about the role of molecular nuclear
+
+1134
+01:06:55.904 --> 01:06:59.404
+imaging in the ADC field. In this study, the
+
+1135
+01:06:59.484 --> 01:07:02.844
+authors elegantly showed that 89 zirconium
+
+1136
+01:07:02.884 --> 01:07:06.573
+trastuzumab PET scan could first of
+
+1137
+01:07:06.724 --> 01:07:10.654
+all capture their true heterogeneity across the different tumor
+
+1138
+01:07:10.684 --> 01:07:14.464
+sites and predicted the response to the ADC that in this case was
+
+1139
+01:07:14.544 --> 01:07:18.424
+TDM1. And indeed, they showed a negative
+
+1140
+01:07:18.504 --> 01:07:22.144
+predictive value of 84% that raised to
+
+1141
+01:07:22.164 --> 01:07:26.064
+100% if the HER2 PET
+
+1142
+01:07:26.144 --> 01:07:28.984
+scan was combined with FDG PET scan.
+
+1143
+01:07:30.184 --> 01:07:33.944
+And since that study, there are now multiple
+
+1144
+01:07:33.964 --> 01:07:37.924
+study that are evaluating different antibody with different
+
+1145
+01:07:38.004 --> 01:07:41.984
+radiotracer in order to capture the target heterogeneity across
+
+1146
+01:07:42.054 --> 01:07:45.764
+the different tumor sites and predict the response to the
+
+1147
+01:07:45.774 --> 01:07:49.484
+ADC. In this slide, I have reported only some example
+
+1148
+01:07:50.024 --> 01:07:50.164
+of
+
+1149
+01:07:51.524 --> 01:07:55.244
+ongoing study that are evaluating new radiotracer for
+
+1150
+01:07:55.364 --> 01:07:58.764
+HER2, Trop-2, and Nectin-4 and trying to
+
+1151
+01:07:58.804 --> 01:08:02.464
+understand what is the potential of this technology to predict the
+
+1152
+01:08:02.524 --> 01:08:03.784
+response to the ADC.
+
+1153
+01:08:05.304 --> 01:08:09.204
+But I think that another evolution of the molecular imaging that can be
+
+1154
+01:08:09.244 --> 01:08:13.224
+particularly interesting in the ADC field is also the possibility of
+
+1155
+01:08:13.324 --> 01:08:16.945
+radiolabeling not only the naked antibody but also the
+
+1156
+01:08:16.985 --> 01:08:20.864
+ADC in order to investigate in vivo the ADC distribution
+
+1157
+01:08:20.884 --> 01:08:22.844
+across the different tumor sites.
+
+1158
+01:08:23.445 --> 01:08:27.084
+And I have reported here a couple of example, a
+
+1159
+01:08:27.105 --> 01:08:30.844
+preclinical study that showed a successfully radiolabeling of
+
+1160
+01:08:30.905 --> 01:08:34.744
+sagituzumab govitican, but particularly this ongoing
+
+1161
+01:08:34.824 --> 01:08:38.624
+study, very interesting ongoing study that is using 89
+
+1162
+01:08:38.684 --> 01:08:41.884
+zirconium patritumab deruxtecan in order to
+
+1163
+01:08:42.704 --> 01:08:46.405
+capture the HER3 expression across the different
+
+1164
+01:08:46.464 --> 01:08:50.144
+tumor sites, and particularly also the ADC distribution
+
+1165
+01:08:50.784 --> 01:08:54.632
+across the different localization.And then
+
+1166
+01:08:54.672 --> 01:08:57.992
+also the CTC. As I mentioned before, I think that the
+
+1167
+01:08:58.432 --> 01:09:01.293
+CTC can provide a multidimensional
+
+1168
+01:09:02.192 --> 01:09:05.932
+measurement that can be particularly useful in the ADC field.
+
+1169
+01:09:06.552 --> 01:09:10.532
+And there are already some studies that have started to investigate,
+
+1170
+01:09:10.652 --> 01:09:14.472
+to interrogate the role of the CTC in the ADC
+
+1171
+01:09:14.532 --> 01:09:18.472
+field. In ICARUS Bresto-1 study, so again in patients treated
+
+1172
+01:09:18.512 --> 01:09:21.772
+with patritumab deruxtecan for metastatic breast cancer,
+
+1173
+01:09:22.333 --> 01:09:26.072
+we characterized the ER3 positive CTC by
+
+1174
+01:09:26.132 --> 01:09:29.342
+FACS in order to understand if we could detect the
+
+1175
+01:09:30.052 --> 01:09:33.972
+ER3 positive CTC, first of all, and also to understand if the
+
+1176
+01:09:34.032 --> 01:09:37.892
+ER3 positive CTC could predict the response to the treatment.
+
+1177
+01:09:38.522 --> 01:09:42.032
+This is a very small sample size. However, we couldn't find any
+
+1178
+01:09:42.052 --> 01:09:45.672
+differences between the responders and no responders to the treatment.
+
+1179
+01:09:46.262 --> 01:09:50.052
+And on the other side of the slide, you can see also that there is another
+
+1180
+01:09:50.172 --> 01:09:53.852
+study that has recently characterized Trop-2 and
+
+1181
+01:09:53.992 --> 01:09:57.912
+positive and HER2 positive CTC in patients treated with the antibody drug
+
+1182
+01:09:57.972 --> 01:10:01.712
+conjugates. Again, in order to capture the target
+
+1183
+01:10:01.732 --> 01:10:04.732
+heterogeneity and predict the response to the ADC.
+
+1184
+01:10:05.272 --> 01:10:09.072
+And here the author could demonstrate a limited concordance
+
+1185
+01:10:09.132 --> 01:10:12.832
+between the target expression on the CTC and on the tumor
+
+1186
+01:10:12.892 --> 01:10:16.252
+biopsy, and also a poor association with the clinical
+
+1187
+01:10:16.312 --> 01:10:20.192
+response. So some, I would say, first negative
+
+1188
+01:10:20.292 --> 01:10:24.192
+results, but I think that there is still some room for
+
+1189
+01:10:24.212 --> 01:10:27.992
+the CTC in the ADC field, and particularly with the new
+
+1190
+01:10:28.052 --> 01:10:31.492
+technologies that can characterize
+
+1191
+01:10:31.892 --> 01:10:35.632
+the single CTC by integrating genomic,
+
+1192
+01:10:35.752 --> 01:10:39.672
+transcriptomic, and proteomic, and can potentially provide a sort of
+
+1193
+01:10:40.352 --> 01:10:44.192
+real-time ADC pharmacodynamic biomarker in which
+
+1194
+01:10:44.252 --> 01:10:47.952
+we can measure directly the target engagement, the DNA
+
+1195
+01:10:48.012 --> 01:10:51.512
+damage response, and the gene expression modulation.
+
+1196
+01:10:53.092 --> 01:10:57.012
+So coming back to our framework for the precision medicine
+
+1197
+01:10:57.052 --> 01:11:00.272
+development of the ADC, we have seen there are several
+
+1198
+01:11:00.292 --> 01:11:03.891
+technologies that we can consider, that we can take into
+
+1199
+01:11:03.912 --> 01:11:04.432
+account.
+
+1200
+01:11:05.312 --> 01:11:08.212
+But the question is also how we can integrate all this
+
+1201
+01:11:08.292 --> 01:11:12.012
+technology and select the most appropriate technology,
+
+1202
+01:11:12.052 --> 01:11:15.532
+integrating them in order to obtain composite biomarker
+
+1203
+01:11:15.972 --> 01:11:18.532
+to better predict the response to the ADC.
+
+1204
+01:11:19.232 --> 01:11:23.112
+And I think that one of the model proposed before by Maria,
+
+1205
+01:11:23.181 --> 01:11:26.822
+that is the multimodal Castomics developed by Centrale
+
+1206
+01:11:26.892 --> 01:11:30.672
+Supelec, is only one among many other that are available
+
+1207
+01:11:30.752 --> 01:11:33.672
+and that are able to integrate
+
+1208
+01:11:33.772 --> 01:11:37.572
+histopathology images, but also multi-omics
+
+1209
+01:11:37.632 --> 01:11:41.272
+data in order to have a more comprehensive characterization of the
+
+1210
+01:11:41.332 --> 01:11:45.192
+tumor and potentially the potential of
+
+1211
+01:11:45.712 --> 01:11:49.162
+better predicting the response to this type of treatment.
+
+1212
+01:11:50.352 --> 01:11:54.212
+But beyond the definition of this composite biomarker,
+
+1213
+01:11:54.592 --> 01:11:58.192
+I think that we have also to move forward with a validation of the
+
+1214
+01:11:58.212 --> 01:11:58.901
+biomarker.
+
+1215
+01:11:59.772 --> 01:12:03.352
+The study that I have shown so far are study that are very limited
+
+1216
+01:12:03.372 --> 01:12:07.252
+exploratory trial, so with a very limited sample
+
+1217
+01:12:07.352 --> 01:12:11.112
+size, for the majority are retrospective, and most of
+
+1218
+01:12:11.192 --> 01:12:14.681
+them rely on a multidimensional tumor feature.
+
+1219
+01:12:15.012 --> 01:12:18.552
+So we need more prospective study that can incorporate
+
+1220
+01:12:18.672 --> 01:12:22.212
+composite biomarker in patients treated with ADC.
+
+1221
+01:12:22.232 --> 01:12:25.752
+And this is, I think, the mandatory step in order to arrive, to
+
+1222
+01:12:25.792 --> 01:12:29.692
+provide, to implement this biomarker in the clinical practice,
+
+1223
+01:12:30.132 --> 01:12:33.752
+and finally, to select the most accurate ADC for each
+
+1224
+01:12:33.852 --> 01:12:34.472
+patient.
+
+1225
+01:12:35.792 --> 01:12:39.192
+So the final question is, which kind of study design we can
+
+1226
+01:12:39.232 --> 01:12:42.732
+consider to move forward from the exploratory to the
+
+1227
+01:12:42.772 --> 01:12:46.572
+validated biomarker? I think that if we want to
+
+1228
+01:12:46.612 --> 01:12:49.252
+translate this tumor ecosystem
+
+1229
+01:12:50.012 --> 01:12:53.582
+targeted therapy paradigm that I have
+
+1230
+01:12:53.652 --> 01:12:57.452
+considered before into multidimensional biomarker, we have
+
+1231
+01:12:57.512 --> 01:13:01.352
+to rely on three main study design.
+
+1232
+01:13:01.892 --> 01:13:05.802
+First of all, to include more longitudinal tumor biopsy and
+
+1233
+01:13:05.832 --> 01:13:09.592
+liquid biopsy in early phase trial with ADC,
+
+1234
+01:13:10.292 --> 01:13:13.972
+because we need to collect very early in the ADC development,
+
+1235
+01:13:14.392 --> 01:13:17.812
+translational insights, and particularly on the ADC
+
+1236
+01:13:17.852 --> 01:13:21.192
+pharmacodynamic that can inform further
+
+1237
+01:13:21.232 --> 01:13:25.112
+study in which we can integrate with the multidimensional
+
+1238
+01:13:25.192 --> 01:13:28.572
+model different type of data, and finally
+
+1239
+01:13:28.632 --> 01:13:32.192
+obtain through machine learning model, composite predictive
+
+1240
+01:13:32.312 --> 01:13:35.952
+signature that can be used for selecting
+
+1241
+01:13:35.992 --> 01:13:39.492
+patient to receive a specific ADC in platform
+
+1242
+01:13:39.652 --> 01:13:41.812
+study for a precision enrollment.
+
+1243
+01:13:41.932 --> 01:13:45.172
+That means allocate the patient to receive the ADC
+
+1244
+01:13:45.492 --> 01:13:47.672
+according to this composite biomarker.
+
+1245
+01:13:48.042 --> 01:13:51.952
+And I think that this kind of framework can finally lead to have
+
+1246
+01:13:52.512 --> 01:13:56.372
+ADC that are more personalized therapy, to have more rational
+
+1247
+01:13:56.472 --> 01:14:00.192
+combination of ADC with other therapy, immunotherapy, targeted
+
+1248
+01:14:00.272 --> 01:14:04.072
+therapy, and finally, to enhance the efficacy and the safety of this
+
+1249
+01:14:04.112 --> 01:14:04.812
+compound.
+
+1250
+01:14:06.332 --> 01:14:09.392
+So in terms of early clinical trials with the
+
+1251
+01:14:09.932 --> 01:14:13.532
+longitudinal biopsy, I think that there are at least some
+
+1252
+01:14:13.772 --> 01:14:17.652
+study that have demonstrated the value of this kind of approach
+
+1253
+01:14:17.692 --> 01:14:18.452
+that have
+
+1254
+01:14:20.452 --> 01:14:24.342
+enriched our knowledge in terms of understanding some
+
+1255
+01:14:24.392 --> 01:14:27.932
+potential biomarker that are related to the response of the
+
+1256
+01:14:27.952 --> 01:14:31.882
+ADC. Some of the trial that I cited before, but also, for
+
+1257
+01:14:31.932 --> 01:14:35.632
+example, TOT-HER3 study of the SALTI group that
+
+1258
+01:14:35.712 --> 01:14:39.392
+looked at the patients treated with the TRDX-T in
+
+1259
+01:14:40.532 --> 01:14:43.392
+a window of opportunity study with longitudinal
+
+1260
+01:14:43.412 --> 01:14:47.292
+biopsy.But there are also already some studies that
+
+1261
+01:14:47.352 --> 01:14:51.272
+are starting to consider multidimensional
+
+1262
+01:14:51.312 --> 01:14:53.332
+model, multidimensional framework,
+
+1263
+01:14:54.172 --> 01:14:58.092
+in which different kind of data are integrated in
+
+1264
+01:14:58.132 --> 01:15:00.512
+order to predict the response to the ADC.
+
+1265
+01:15:00.992 --> 01:15:04.582
+For example, this multimodal framework that is proposed
+
+1266
+01:15:04.852 --> 01:15:08.672
+in the FASCINATE and trial published last year in "Cancer
+
+1267
+01:15:08.792 --> 01:15:12.392
+Cell." There is also this ADC treatment response
+
+1268
+01:15:12.472 --> 01:15:16.392
+score that is based on a multivariate gene expression
+
+1269
+01:15:16.412 --> 01:15:20.112
+analysis that concerns the target expression, but also the
+
+1270
+01:15:20.132 --> 01:15:22.412
+tumor proliferation and the tumor adhesion.
+
+1271
+01:15:22.892 --> 01:15:26.732
+And I think that another important study in this setting is the OASIS
+
+1272
+01:15:26.872 --> 01:15:30.592
+study that we are conducting Europe that is funded by a
+
+1273
+01:15:30.612 --> 01:15:34.032
+European grant. And this is a multiparametric
+
+1274
+01:15:34.052 --> 01:15:37.992
+approach that wants to define what are the
+
+1275
+01:15:38.032 --> 01:15:41.361
+key components of the response, resistance, and
+
+1276
+01:15:41.412 --> 01:15:45.032
+toxicity of the ADC by integrating advanced
+
+1277
+01:15:45.112 --> 01:15:49.072
+molecular nuclear imaging, but also tumor proteomic,
+
+1278
+01:15:49.212 --> 01:15:52.562
+genomic, transcriptomic, CTC patient-derived
+
+1279
+01:15:52.652 --> 01:15:55.552
+organoids to finally have a multi-omic
+
+1280
+01:15:55.632 --> 01:15:59.452
+prediction score that can support the clinician in the
+
+1281
+01:15:59.532 --> 01:16:03.512
+future to select the most appropriate ADC for each patient.
+
+1282
+01:16:05.142 --> 01:16:08.712
+This study is already recruiting in the first part, that is
+
+1283
+01:16:09.112 --> 01:16:12.572
+the prospective and the retrospective part across the different
+
+1284
+01:16:12.952 --> 01:16:16.332
+countries in Europe. And finally, there are already some
+
+1285
+01:16:16.492 --> 01:16:20.192
+study that have started to include
+
+1286
+01:16:20.232 --> 01:16:23.732
+patient according to specific biomarker to
+
+1287
+01:16:23.752 --> 01:16:26.632
+receive a given ADC or another one.
+
+1288
+01:16:27.072 --> 01:16:30.592
+One example is ADC MATCH study that is
+
+1289
+01:16:30.632 --> 01:16:34.552
+currently ongoing, in which the patient are selected to receive, for
+
+1290
+01:16:34.592 --> 01:16:38.542
+example, trastuzumab deruxtecan, sacituzumab govitecan, and fortumab
+
+1291
+01:16:38.542 --> 01:16:40.852
+vedotin, according to a
+
+1292
+01:16:41.792 --> 01:16:44.492
+proteomic and transcriptomic profiling of the tumor.
+
+1293
+01:16:45.032 --> 01:16:47.292
+And we have figured out to
+
+1294
+01:16:48.552 --> 01:16:52.452
+use this kind of approach also in the OASIS part two, in which the
+
+1295
+01:16:52.522 --> 01:16:56.472
+patient will be enrolled to receive a specific ADC
+
+1296
+01:16:56.532 --> 01:17:00.472
+according to the results of the composite biomarker that we will generate
+
+1297
+01:17:00.512 --> 01:17:01.352
+in the part one.
+
+1298
+01:17:02.952 --> 01:17:06.592
+So in conclusion, I think that ADC are
+
+1299
+01:17:06.652 --> 01:17:10.532
+likely to act as more tumor ecosystem targeting therapy
+
+1300
+01:17:10.632 --> 01:17:14.592
+rather than simple targeted therapy with an activity that is
+
+1301
+01:17:14.652 --> 01:17:17.712
+driven, of course, by the target, but
+
+1302
+01:17:18.472 --> 01:17:21.792
+also by multidimensional biological determinants that are
+
+1303
+01:17:22.292 --> 01:17:26.212
+also related to the tumor histology genomic characteristics, but also
+
+1304
+01:17:26.232 --> 01:17:29.912
+to the tumor microenvironment. The integration of advanced
+
+1305
+01:17:30.152 --> 01:17:33.972
+technologies is essential to capture this complexity
+
+1306
+01:17:33.982 --> 01:17:37.772
+and identify actionable biomarker for a more
+
+1307
+01:17:37.832 --> 01:17:40.072
+ADC precision medicine development.
+
+1308
+01:17:40.692 --> 01:17:44.232
+And I think that we need also dedicated clinical trials to
+
+1309
+01:17:44.252 --> 01:17:48.192
+validate this multidimensional biomarker and enable, in the
+
+1310
+01:17:48.272 --> 01:17:51.232
+future, a real-time patient ADC matching.
+
+1311
+01:17:51.942 --> 01:17:55.672
+And with this, I would like to thank all the people, all the
+
+1312
+01:17:55.772 --> 01:17:59.712
+colleague that work on the OASIS program, and also
+
+1313
+01:17:59.772 --> 01:18:03.592
+all my colleagues that work in the different ADC program at
+
+1314
+01:18:03.672 --> 01:18:06.172
+Gustave Roussy. And thank you very much for your attention.
+
+1315
+01:18:13.312 --> 01:18:14.112
+Any question?
+
+1316
+01:18:26.432 --> 01:18:28.332
+Thank you for your great presentation.
+
+1317
+01:18:29.232 --> 01:18:32.932
+So my question is how long does it take to
+
+1318
+01:18:34.372 --> 01:18:38.352
+make this multidimensional biomarker analysis
+
+1319
+01:18:38.672 --> 01:18:42.132
+before deciding which kind of treatment
+
+1320
+01:18:44.132 --> 01:18:47.852
+it will be better to give to each patient?
+
+1321
+01:18:47.952 --> 01:18:51.472
+Because the patient is there and is waiting for the
+
+1322
+01:18:51.572 --> 01:18:52.172
+treatment.
+
+1323
+01:18:53.032 --> 01:18:55.392
+Thank you for this question, and this is one of
+
+1324
+01:18:56.352 --> 01:19:00.012
+the major point of discussion when we
+
+1325
+01:19:00.052 --> 01:19:02.272
+built this OASIS program, because
+
+1326
+01:19:03.352 --> 01:19:07.232
+we truly believe that the possibility to have a biomarker that can
+
+1327
+01:19:07.272 --> 01:19:10.571
+be used in real time is one of the major point.
+
+1328
+01:19:11.832 --> 01:19:12.552
+So what we
+
+1329
+01:19:13.412 --> 01:19:17.132
+are considering are technologies that can be performed in real
+
+1330
+01:19:17.252 --> 01:19:20.572
+time. So technologies such as tumor
+
+1331
+01:19:22.512 --> 01:19:26.292
+genomic and transcriptomic profiling and proteomic profiling is
+
+1332
+01:19:26.332 --> 01:19:27.092
+something that
+
+1333
+01:19:28.092 --> 01:19:31.892
+in this program we are currently trying to perform in about three,
+
+1334
+01:19:32.012 --> 01:19:35.412
+four weeks. So if we can keep this kind of
+
+1335
+01:19:36.112 --> 01:19:39.952
+timeframe, I think that in the future is something that is feasible.
+
+1336
+01:19:41.212 --> 01:19:44.652
+The question is more about the scalability of this kind of approach.
+
+1337
+01:19:45.062 --> 01:19:45.692
+And what
+
+1338
+01:19:46.532 --> 01:19:50.192
+I mean is in the next future, of course, not all the
+
+1339
+01:19:50.232 --> 01:19:54.072
+centers in the world will be able to provide this type of approach
+
+1340
+01:19:54.132 --> 01:19:57.672
+to all the patients. And this is something that we have to think about.
+
+1341
+01:19:58.052 --> 01:20:00.982
+So to understand how we can create networks,
+
+1342
+01:20:01.112 --> 01:20:04.432
+collaboration among main centers and
+
+1343
+01:20:05.272 --> 01:20:07.932
+a sort of hub which network
+
+1344
+01:20:08.632 --> 01:20:12.532
+hospitals, satellite hospitals can eventually send the
+
+1345
+01:20:12.592 --> 01:20:15.912
+samples and have the response in a time that
+
+1346
+01:20:15.972 --> 01:20:19.952
+is useful for the patients to be selected for the right
+
+1347
+01:20:20.032 --> 01:20:20.632
+treatment.
+
+1348
+01:20:25.212 --> 01:20:27.052
+Thank you for your great presentation.
+
+1349
+01:20:28.032 --> 01:20:31.732
+So right now, the clinical trial on treatment
+
+1350
+01:20:31.812 --> 01:20:35.532
+biopsy tend to be more and more liquid biopsy, but not tissue
+
+1351
+01:20:35.592 --> 01:20:39.112
+biopsy. Given the concordance of the
+
+1352
+01:20:39.772 --> 01:20:43.632
+liquid biopsy and the relative poor
+
+1353
+01:20:43.712 --> 01:20:47.580
+and then the limitlimitation of the LOD.
+
+1354
+01:20:47.940 --> 01:20:48.220
+So
+
+1355
+01:20:49.160 --> 01:20:52.480
+from clinical perspective, I'm just wondering,
+
+1356
+01:20:53.360 --> 01:20:56.720
+how can we learn from the disease progress or
+
+1357
+01:20:56.760 --> 01:20:58.480
+resistance mechanism?
+
+1358
+01:20:59.740 --> 01:21:01.800
+Yeah, that's a very good question.
+
+1359
+01:21:01.900 --> 01:21:02.520
+So
+
+1360
+01:21:03.500 --> 01:21:07.440
+in Gustavo Rossi, we have conducted, and we are still conducting
+
+1361
+01:21:07.500 --> 01:21:11.240
+several study with the on-treatment biopsy, but I'm not
+
+1362
+01:21:11.360 --> 01:21:15.180
+saying that we can propose on-treatment biopsy to all our patients,
+
+1363
+01:21:15.760 --> 01:21:18.240
+in the future and particularly in clinical practice.
+
+1364
+01:21:19.220 --> 01:21:22.940
+I believe that the on-treatment biopsy can be particularly
+
+1365
+01:21:23.040 --> 01:21:26.620
+useful in early phase trial with a new
+
+1366
+01:21:26.660 --> 01:21:30.560
+compound in order to understand the pharmacodynamic of the
+
+1367
+01:21:30.640 --> 01:21:34.600
+drug, and particularly the interaction with the tumor and the tumor
+
+1368
+01:21:34.620 --> 01:21:38.060
+microenvironment. As far as concern to move this
+
+1369
+01:21:38.260 --> 01:21:41.800
+evidence of the on-treatment biopsy to the clinical practice,
+
+1370
+01:21:42.460 --> 01:21:44.960
+I really believe that in the
+
+1371
+01:21:45.920 --> 01:21:46.920
+future, this type of
+
+1372
+01:21:48.060 --> 01:21:51.960
+multimodal framework can really pick up the important
+
+1373
+01:21:52.020 --> 01:21:55.900
+information that we have and that can be transferred
+
+1374
+01:21:56.080 --> 01:22:00.060
+into a biomarker that can be applied to the clinical practice.
+
+1375
+01:22:00.200 --> 01:22:02.480
+I will explain myself a little more.
+
+1376
+01:22:02.920 --> 01:22:06.620
+There are some biomarkers that are present on the on-treatment
+
+1377
+01:22:06.680 --> 01:22:10.640
+biopsy that potentially can be found in the CTC in the
+
+1378
+01:22:10.680 --> 01:22:14.060
+future if we arrive to develop CTC that
+
+1379
+01:22:14.200 --> 01:22:17.660
+become a sort of pharmacodynamic biomarker.
+
+1380
+01:22:17.980 --> 01:22:21.940
+If we are able to understand in the CTC, if the ADC has been
+
+1381
+01:22:22.000 --> 01:22:25.780
+internalized, the target has been engaged, there is a response
+
+1382
+01:22:25.840 --> 01:22:29.700
+of the CTC to the treatment. So I think that the on-treatment
+
+1383
+01:22:29.710 --> 01:22:32.140
+tumor biopsy can be easily
+
+1384
+01:22:33.640 --> 01:22:37.320
+replaced in the future, potentially replaced in the future.
+
+1385
+01:22:37.360 --> 01:22:38.920
+I'm not sure that is going to be easy.
+
+1386
+01:22:39.580 --> 01:22:43.040
+Potentially replaced in the future by liquid biopsy, not only
+
+1387
+01:22:43.080 --> 01:22:44.620
+ctDNA, but also CTC.
+
+1388
+01:22:48.860 --> 01:22:49.100
+Hi.
+
+1389
+01:22:49.940 --> 01:22:51.900
+One more very practical question.
+
+1390
+01:22:52.780 --> 01:22:56.520
+These things sound amazing, and I can't wait to get my hands on all these
+
+1391
+01:22:56.580 --> 01:22:59.560
+tools. However, in the near future,
+
+1392
+01:23:00.800 --> 01:23:03.900
+when we do have the very old-fashioned, outdated IHC,
+
+1393
+01:23:04.900 --> 01:23:08.660
+should we be approaching that differently rather than just
+
+1394
+01:23:08.720 --> 01:23:12.460
+looking at H-score? Should we look at size of the
+
+1395
+01:23:12.520 --> 01:23:16.200
+tumor foci? Obviously, we should look at the
+
+1396
+01:23:16.260 --> 01:23:19.000
+microenvironment, but should we look at size of the foci?
+
+1397
+01:23:19.080 --> 01:23:22.660
+Should we look at the total amount of staining in the entire tumor
+
+1398
+01:23:22.800 --> 01:23:26.580
+mass, not just the tumor cells? Is there a
+
+1399
+01:23:26.600 --> 01:23:30.320
+way for us to improve on just doing H-score for evaluation of
+
+1400
+01:23:30.380 --> 01:23:31.289
+ADC samples?
+
+1401
+01:23:31.740 --> 01:23:35.560
+Okay. I think that Professor Rim is the most appropriate
+
+1402
+01:23:35.780 --> 01:23:37.600
+speaker to address this question.
+
+1403
+01:23:38.360 --> 01:23:41.800
+So that's a great question. When you take a standard
+
+1404
+01:23:41.840 --> 01:23:42.380
+biopsy,
+
+1405
+01:23:43.480 --> 01:23:47.060
+you're probably looking at 0.01% of the tumor.
+
+1406
+01:23:47.780 --> 01:23:51.340
+And so it's not going to be representative, and I don't think much is
+
+1407
+01:23:51.440 --> 01:23:54.360
+gained by changing what we do with an H-score.
+
+1408
+01:23:55.120 --> 01:23:58.760
+I'm anxiously watching what happens with circulating
+
+1409
+01:24:00.280 --> 01:24:02.040
+free DNA or circulating methods,
+
+1410
+01:24:02.860 --> 01:24:06.440
+because that may be more representative than the small amount we get in tumors.
+
+1411
+01:24:11.620 --> 01:24:12.060
+Okay.
+
+1412
+01:24:12.140 --> 01:24:13.690
+If I can ask a question as well.
+
+1413
+01:24:13.780 --> 01:24:14.280
+Of course.
+
+1414
+01:24:15.280 --> 01:24:19.200
+What's your vision for how these multimodal markers get into a CLIA
+
+1415
+01:24:19.280 --> 01:24:19.560
+lab?
+
+1416
+01:24:21.600 --> 01:24:22.060
+Say again.
+
+1417
+01:24:22.380 --> 01:24:26.140
+What's your vision for how these multimodal markers get into a
+
+1418
+01:24:26.200 --> 01:24:29.870
+lab where they have to pass all the certifications that are
+
+1419
+01:24:29.900 --> 01:24:31.280
+required for reproducibility?
+
+1420
+01:24:33.460 --> 01:24:36.980
+Yes. This is another tough point that we have to consider in
+
+1421
+01:24:37.680 --> 01:24:41.380
+our Oasis program or in other programs that are currently
+
+1422
+01:24:41.400 --> 01:24:42.970
+ongoing with the similar approach.
+
+1423
+01:24:44.040 --> 01:24:47.900
+This is a question that we have not faced yet, but
+
+1424
+01:24:47.980 --> 01:24:51.700
+we are going to face hopefully in the future if this model
+
+1425
+01:24:51.800 --> 01:24:54.020
+finally demonstrated to be
+
+1426
+01:24:55.100 --> 01:24:56.920
+interesting to select the patient.
+
+1427
+01:24:57.600 --> 01:25:01.599
+And this is another aspect of the scalability that I was mentioning
+
+1428
+01:25:01.660 --> 01:25:05.500
+before. We have to understand how this kind of
+
+1429
+01:25:06.860 --> 01:25:09.560
+approach and this kind of model can be reproduced in
+
+1430
+01:25:09.980 --> 01:25:13.690
+other hospital and in other
+
+1431
+01:25:13.780 --> 01:25:17.020
+countries. This is a further step of
+
+1432
+01:25:17.100 --> 01:25:19.440
+Oasis that we are not facing yet.
+
+1433
+01:25:19.860 --> 01:25:21.920
+Thank you.
+
+1434
+01:25:24.740 --> 01:25:24.920
+So,
+
+1435
+01:25:26.400 --> 01:25:27.320
+I think that
+
+1436
+01:25:28.200 --> 01:25:31.980
+we don't have any more question. So I would like to thank
+
+1437
+01:25:32.140 --> 01:25:35.340
+this outstanding panel for the very
+
+1438
+01:25:36.840 --> 01:25:39.920
+impressive, I would say, presentation.
+
+1439
+01:25:40.300 --> 01:25:42.900
+Thank you very much and enjoy the rest of the meeting.

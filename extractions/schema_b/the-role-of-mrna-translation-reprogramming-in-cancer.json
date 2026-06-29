@@ -1,0 +1,274 @@
+[
+  {
+    "talk_id": "the-role-of-mrna-translation-reprogramming-in-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ivan Topisirovic",
+      "institution_or_pharma": "McGill University",
+      "session_title": "the-role-of-mrna-translation-reprogramming-in-cancer",
+      "talk_title": "Translational rheostat drives cancer metastasis",
+      "rhetorical_signals": [
+        "Speaker said: we thought that if you get rid of something that's a tumor suppressor, metastasis should go up, not down",
+        "Speaker said: we don't fully understand why some patients escaped"
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "4E-BP1",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Paradoxical up\u2011regulation of weak\u2011mRNA translation (e.g., pannexin\u20111) by a translational suppressor whose mechanism is not explained",
+        "unexplained_resistance_quote": "We still don't understand the precise mechanism of how these mRNAs, such as the one encoding pannexin, are upregulated under these conditions.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that 4E\u2011BP1 acts as a tumor suppressor for primary tumor growth, then concluded that 4E\u2011BP1 stimulates metastasis \u2013 contradictory roles for the same protein"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human clinical data presented",
+        "Mechanistic details of 4E\u2011BP1\u2011dependent translation up\u2011regulation are missing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "4E\u2011BP1 status (high vs low) could stratify patients at risk of metastasis despite primary\u2011tumor suppression",
+        "transcript_evidence": "Speaker said: we thought that if you get rid of something that's a tumor suppressor, metastasis should go up, not down",
+        "crispro_angle": "CrisPRO can model 4E\u2011BP1\u2011dependent translatome signatures to predict metastatic propensity",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting pannexin\u20111 or its upstream translational control may block the early metastatic steps driven by 4E\u2011BP1",
+        "transcript_evidence": "Speaker said: when we deplete pannexin 1, this invasive advantage of cells that are 4E\u2011BP1 proficient was actually diminished",
+        "crispro_angle": "CrisPRO can identify small\u2011molecule inhibitors that disrupt the 4E\u2011BP1\u2011pannexin\u20111 translational axis",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Pre\u2011clinical models should test graded mTOR inhibition (Goldilocks zone) rather than maximal inhibition to avoid inadvertently promoting metastasis",
+        "transcript_evidence": "Speaker said: strong inhibition of mTORc1 sort of decreased the invasion potential of the 4E\u2011BP1 proficient cells",
+        "crispro_angle": "CrisPRO can simulate dose\u2011response of mTOR signaling on the 4E\u2011BP1 rheostat to guide optimal trial dosing",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the molecular mechanism by which 4E\u2011BP1\u2011dependent weak\u2011mRNA translation is paradoxically enhanced?",
+      "Why does the 4E\u2011BP1\u20114Alanine mutant fail to rescue metastasis despite being constitutively active?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Pannexin\u20111 inhibitors",
+        "4E\u2011BP1 modulators"
+      ],
+      "companies_to_monitor": [
+        "Companies developing mTOR pathway modulators"
+      ]
+    }
+  },
+  {
+    "talk_id": "the-role-of-mrna-translation-reprogramming-in-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Ole Larsson",
+      "institution_or_pharma": "Karolinska Institute",
+      "session_title": "the-role-of-mrna-translation-reprogramming-in-cancer",
+      "talk_title": "Dicodon organization links tRNA modification to cancer proteome",
+      "rhetorical_signals": [
+        "Speaker said: we only explained about 15% of the regulation with single codon usage, suggesting missing mechanisms",
+        "Speaker said: the more dicodons that an mRNA had, the less efficient translation initiation it has"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ELP3\u2011dependent tRNA U34 modification",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Dicodon context and spacing effects on elongation are not fully captured by current models",
+        "unexplained_resistance_quote": "We still don't have a quantitative measurement for how dicodon distance influences translation elongation.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011vivo validation of dicodon\u2011driven translation effects",
+        "Lack of therapeutic agents targeting the ELP3 pathway"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "High ELP3 expression or presence of specific dicodon signatures could identify tumors dependent on tRNA modification",
+        "transcript_evidence": "Speaker said: reduction of ELP3 expression reduced proliferation in transformed cells but not in non\u2011transformed cells",
+        "crispro_angle": "CrisPRO can score dicodon patterns across patient transcriptomes to flag ELP3\u2011dependent cancers",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Inhibiting the U34 tRNA modification pathway may sensitize cancer cells to existing therapies",
+        "transcript_evidence": "Speaker said: reduction of the modification at the U34 position leads to poor elongation of mRNAs enriched for those codons",
+        "crispro_angle": "CrisPRO can predict which oncogenic mRNAs become vulnerable when U34 modification is blocked",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s ability to model dicodon\u2011distance effects surpasses simple codon\u2011usage models used by competitors",
+        "transcript_evidence": "Speaker said: including dicodons doubled the amount of regulation we could explain compared to single codons",
+        "crispro_angle": "Leverage CrisPRO\u2019s higher\u2011order sequence modeling to uncover hidden translational dependencies",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does the physical distance between dicodons mechanistically affect ribosome dynamics?",
+      "Are there additional RNA\u2011binding proteins that recognize dicodon clusters?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ELP3 inhibitors",
+        "tRNA\u2011modifying enzyme modulators"
+      ],
+      "companies_to_monitor": [
+        "Biotech firms developing epitranscriptomic drugs"
+      ]
+    }
+  },
+  {
+    "talk_id": "the-role-of-mrna-translation-reprogramming-in-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Davide Ruggiero",
+      "institution_or_pharma": "UCSF",
+      "session_title": "the-role-of-mrna-translation-reprogramming-in-cancer",
+      "talk_title": "Selective translation drives drug tolerance in breast cancer",
+      "rhetorical_signals": [
+        "Speaker said: mRNA level can predict only around 30% of the cancer proteome",
+        "Speaker said: we see a beautiful correlation between the KMK2D protein and the eIF4A protein"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Calcium signaling (verapamil) as monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Calcium channel blockade alone does not eradicate therapy\u2011surviving cells; dependence on KMK2D\u2011driven translation remains",
+        "unexplained_resistance_quote": "Verapamil alone doesn't do much; only in combination with fulvestrant does it show a strong effect",
+        "ghost_responder_admission": "Some tolerant cells still survive with calcium blockade alone",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Zotatifin as single agent in some contexts",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects of eIF4A inhibition not discussed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Zotatifin alone has limited effect in some PDX models compared with combination",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Fulvestrant + Verapamil pre\u2011clinical PDX study",
+        "target_biology": "Hormone\u2011therapy tolerance mediated by CaMK2D translation",
+        "flawed_enrollment_criteria": "No biomarker (KMK2D protein) stratification of tumors before randomization",
+        "missing_biomarker": "KMK2D protein expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort size; no power calculation reported",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Reliance on eIF4A inhibition (zotatifin) for targeting translation",
+        "ip_vulnerability_note": "If alternative eIF4A inhibitors or resistance mechanisms emerge, the therapeutic advantage may erode",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy with calcium channel blockers shows limited efficacy; combination strategies increase complexity"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ER\u03b1 is a transcription factor, then concluded that its RNA\u2011binding activity (a non\u2011transcriptional function) is essential for drug tolerance \u2013 contradictory emphasis on transcription vs. translation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term survival data for combination therapy not presented",
+        "No clinical trial (Phase\u202fII/III) data yet"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "KMK2D protein levels could be used to select patients likely to benefit from zotatifin or verapamil combinations",
+        "transcript_evidence": "Speaker said: increased KMK2D protein correlated with worse outcome in 400 ER\u03b1\u2011positive breast cancer patients",
+        "crispro_angle": "CrisPRO can integrate proteomic and transcriptomic data to develop a KMK2D\u2011based predictive score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the ER\u03b1\u2011eIF4A\u2011KMK2D translational loop may overcome early drug tolerance",
+        "transcript_evidence": "Speaker said: ER\u03b1 directly binds KMK2D 3'UTR and interacts with eIF4A, driving translation in tolerant cells",
+        "crispro_angle": "CrisPRO can model 5'\u20113' UTR looping to identify other mRNAs dependent on this axis for therapeutic targeting",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine eIF4A inhibitor zotatifin with calcium channel blocker verapamil to simultaneously block two nodes of the tolerance program",
+        "transcript_evidence": "Speaker said: combination of zotatifin with fulvestrant showed very strong tumor blockage in PDX models",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of dual\u2011target translation inhibition",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate KMK2D protein measurement as a stratification biomarker in upcoming Phase\u202fII trials of zotatifin in ER+ breast cancer",
+        "transcript_evidence": "Speaker said: KMK2D protein, not mRNA, predicts poor outcome after hormone therapy",
+        "crispro_angle": "CrisPRO can generate assay designs linking protein\u2011level biomarkers to translational signatures",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "zotatifin",
+        "context": "clinical eIF4A inhibitor tested in breast cancer trials",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What other mRNAs besides KMK2D are driven by the ER\u03b1\u2011eIF4A loop in tolerant cells?",
+      "Can direct KMK2D kinase inhibitors provide superior efficacy to translation\u2011targeting agents?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04565772"
+      ],
+      "assets_to_track": [
+        "zotatifin",
+        "verapamil in oncology trials",
+        "KMK2D protein assays"
+      ],
+      "companies_to_monitor": [
+        "Company developing zotatifin (e.g., LEO Pharma)",
+        "Pharma pursuing ELP3 or tRNA\u2011modifying enzyme programs"
+      ]
+    }
+  }
+]

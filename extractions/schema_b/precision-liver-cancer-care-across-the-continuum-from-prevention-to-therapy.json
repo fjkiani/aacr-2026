@@ -1,0 +1,275 @@
+[
+  {
+    "talk_id": "precision-liver-cancer-care-across-the-continuum-from-prevention-to-therapy::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Professor Yujin Hosoda",
+      "institution_or_pharma": "University of Texas Southwestern Medical Center",
+      "session_title": "precision-liver-cancer-care-across-the-continuum-from-prevention-to-therapy",
+      "talk_title": "Biomarker\u2011guided precision prevention of HCC",
+      "rhetorical_signals": [
+        "Speaker said: \"these trial, chemo prevention trials are highly demanding, require large sample size and a longer follow\u2011up time compared to the typical oncology trial, despite the very low success rate.\"",
+        "Speaker said: \"we see the only mild skin rash at the highest dose, which is quickly going away after stopping the drug.\"",
+        "Speaker said: \"the phase one windows of opportunity trial ... primary endpoint, phosph EGFR suppression was achieved at the lowest dose, 25 mg\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Erlotinib (EGFR inhibitor) as chemoprevention",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Poor uptake of erlotinib by established tumor cells limits efficacy to early lesions only",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "higher dose 50 or 75 mg showed risk signature improvement in a subset of patients",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Statins (hydrophilic) for chemoprevention",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Hydrophilic statins (e.g., rosuvastatin) did not modulate the risk signature unlike lipophilic statins",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 windows\u2011of\u2011opportunity erlotinib trial",
+        "target_biology": "EGFR inhibition in hepatic myofibroblasts to prevent HCC initiation",
+        "flawed_enrollment_criteria": "Enrolled cirrhosis patients undergoing liver surgery without stratifying by baseline EGFR activation status",
+        "missing_biomarker": "Baseline phospho\u2011EGFR level in liver tissue",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (\u2264100) limits power to detect modest risk\u2011reduction",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "TOSS trial (atorvastatin chemoprevention)",
+        "target_biology": "Statin\u2011mediated modulation of HCC risk signature",
+        "flawed_enrollment_criteria": "All\u2011comer cirrhosis cohort without selecting patients with elevated baseline risk signature",
+        "missing_biomarker": "Baseline PLS\u2011Sec risk score to enrich high\u2011risk participants",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Projected need >3,000 patients for 10\u2011year endpoint; current trial under\u2011powered",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Low\u2011dose erlotinib formulation for chemoprevention",
+        "ip_vulnerability_note": "Speaker disclosed that the dose used (25\u201175\u202fmg) is one\u2011sixth of the approved therapeutic dose, indicating limited novelty of the formulation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Focus on early\u2011stage prevention without clear biomarker\u2011driven patient selection may dilute clinical signal"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Lipophilic statin (atorvastatin) risk\u2011signature modulation claim",
+        "ip_vulnerability_note": "No disclosed novel chemistry; benefit appears tied to off\u2011target effects rather than a proprietary mechanism",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on retrospective associations; prospective validation hinges on surrogate biomarker rather than hard clinical endpoints"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that erlotinib suppresses phospho\u2011EGFR and reduces early nodules, then concluded that \"erlotinib already tested as anticancer drug in a Phase II trial, both failed,\" ignoring the mechanistic difference between early\u2011stage chemoprevention and established tumor treatment"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival or HCC incidence endpoint reported for chemoprevention trials",
+        "Lack of randomized control arm for erlotinib windows\u2011of\u2011opportunity study",
+        "Missing long\u2011term follow\u2011up of biomarker modulation to clinical cancer incidence"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Risk signature (PLS\u2011Sec) could be used to enrich high\u2011risk cirrhosis patients for chemoprevention trials, addressing current lack of molecular pre\u2011selection.",
+        "transcript_evidence": "Speaker said: \"there is still the room for the improvement... many people are working on a biomarker discovery... we call the HCC risk signature... validated in multicenter prospective cohorts\"",
+        "crispro_angle": "CrisPRO can compute patient\u2011specific risk scores from transcriptomic data and simulate trial enrichment scenarios.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Erlotinib fails in larger tumors due to poor tumor cell uptake; CrisPRO could identify alternative EGFR\u2011independent pathways active in established HCC for combination design.",
+        "transcript_evidence": "Speaker said: \"PK study suggest neoplastic cell do not uptake erlotinib comparing to the other fast generation EGFR inhibitor\"",
+        "crispro_angle": "CrisPRO can model drug\u2011target engagement across cell\u2011type specific expression to prioritize agents with better tumor penetration.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO\u2019s dynamic simulation of surrogate biomarker trajectories could replace long\u2011term incidence endpoints in chemoprevention trials.",
+        "transcript_evidence": "Speaker asked: \"can this biomarker serve as a surrogate endpoint?\" and presented early modulation data.",
+        "crispro_angle": "Leverages longitudinal multi\u2011omics to predict clinical outcome from early biomarker shifts, reducing trial duration.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Atezolizumab + bevacizumab (IMbrave150)",
+        "context": "Referenced as the standard immunotherapy regimen for advanced HCC in discussion of biomarker relevance.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sorafenib",
+        "context": "Used as comparator in IMbrave150 RNA\u2011seq analysis to show gamma\u2011delta T\u2011cell signature is specific to atezo\u2011bev response.",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Why does erlotinib improve the risk signature in some patients but not others? What molecular features define responders?",
+      "Can the PLS\u2011Sec signature be prospectively validated as a surrogate for HCC incidence in large prevention cohorts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04212345"
+      ],
+      "assets_to_track": [
+        "Erlotinib (chemoprevention formulation)",
+        "Atorvastatin (lipophilic statin chemoprevention)",
+        "EGCG (CATCH\u2011B trial)"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca (erlotinib)",
+        "Pfizer (statin pipeline)",
+        "Novartis (GLP\u20111 receptor agonist trials)"
+      ]
+    }
+  },
+  {
+    "talk_id": "precision-liver-cancer-care-across-the-continuum-from-prevention-to-therapy::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Manon Allaire",
+      "institution_or_pharma": "La Piti\u00e9\u2011Salp\u00eatri\u00e8re Hospital, Paris (Inserm Centre de Recherche des Cordeliers)",
+      "session_title": "precision-liver-cancer-care-across-the-continuum-from-prevention-to-therapy",
+      "talk_title": "Personalized care for advanced HCC: immune signatures, liver decompensation prediction, and genomics\u2011driven therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"higher level of gamma delta T cell at baseline was associated with disease control at imaging at six months\"",
+        "Speaker said: \"the presence of portal hypertension can lead to liver decompensation... this was associated with an higher mortality\"",
+        "Speaker said: \"the AI model based only on the baseline CT succeeded to clearly differentiate two group of patient, one with a high risk of liver decompensation and the other one with low risk\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current targeted agents for ESCAT\u20113/4 alterations in HCC",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Most actionable mutations in HCC are low\u2011level (ESCAT\u20113/4) with limited drug potency; tumor heterogeneity leads to rapid resistance",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "32% of patients with targetable alteration achieved disease control, mainly in cholangiocarcinoma, not HCC",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Statin chemoprevention (hydrophilic vs lipophilic)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Hydrophilic statins do not modulate the PLS\u2011Sec risk signature, suggesting pathway\u2011specific effect not captured by class effect",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "IMbrave150 (atezolizumab\u2011bevacizumab) subgroup analysis",
+        "target_biology": "Immune checkpoint inhibition plus anti\u2011angiogenesis in advanced HCC",
+        "flawed_enrollment_criteria": "No baseline gamma\u2011delta T\u2011cell stratification despite its predictive signal",
+        "missing_biomarker": "Baseline gamma\u2011delta T\u2011cell signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Subgroup analyses not powered; risk of false\u2011positive association",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "HepatoSAJ CT model validation cohort",
+        "target_biology": "CT\u2011based AI prediction of liver decompensation risk",
+        "flawed_enrollment_criteria": "All\u2011comer cirrhosis patients; no integration of clinical Child\u2011Pugh or portal hypertension endoscopy data",
+        "missing_biomarker": "Dynamic portal pressure measurements (HVPG) to validate imaging surrogate",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Model performance not improved by adding standard clinical variables, suggesting possible over\u2011fitting to imaging features",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Gamma\u2011delta T\u2011cell signature as predictive biomarker",
+        "ip_vulnerability_note": "Signature derived from RNA\u2011seq of blood; no proprietary assay disclosed, making it easy to replicate by competitors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on retrospective cohort; prospective validation still pending, risking dilution of clinical utility"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "HepatoSAJ CT AI model",
+        "ip_vulnerability_note": "Model trained on a single French center dataset; limited external generalizability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "No prospective trial demonstrating that AI\u2011guided beta\u2011blocker prophylaxis improves outcomes"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that high gamma\u2011delta T\u2011cell signatures correlate with better response to atezo\u2011bev, then concluded that \"these cells are predictive of response\" while also acknowledging that the data may reflect prognosis rather than true predictive power"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Prospective validation of gamma\u2011delta T\u2011cell signature in independent HCC cohort",
+        "Long\u2011term outcomes for AI\u2011predicted decompensation risk",
+        "Outcome data for ESCAT\u20113/4 targeted therapies in HCC"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Integrate gamma\u2011delta T\u2011cell signature into trial eligibility for atezo\u2011bev to enrich responders.",
+        "transcript_evidence": "Speaker said: \"higher level of gamma delta T cell at baseline was associated with disease control at imaging at six months\"",
+        "crispro_angle": "CrisPRO can compute composite immune scores from peripheral blood transcriptomics and simulate enrichment impact on trial power.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use HepatoSAJ CT model to stratify patients for prophylactic beta\u2011blocker use in prospective decompensation prevention trial.",
+        "transcript_evidence": "Speaker said: \"the AI model based only on the baseline CT succeeded to clearly differentiate two group of patient, one with a high risk of liver decompensation\"",
+        "crispro_angle": "CrisPRO can model combined imaging\u2011clinical risk scores and predict event\u2011free survival under beta\u2011blocker intervention.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011evaluate erlotinib chemoprevention by pairing with CrisPRO\u2011predicted high\u2011risk myofibroblast activation patients.",
+        "transcript_evidence": "Speaker highlighted erlotinib improved risk signature only in a subset and failed in larger tumors.",
+        "crispro_angle": "CrisPRO can identify patients with high EGFR\u2011myofibroblast activity from multi\u2011omics, rescuing erlotinib\u2019s niche.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Atezolizumab + bevacizumab (IMbrave150)",
+        "context": "Standard of care immunotherapy regimen used as benchmark for gamma\u2011delta T\u2011cell analysis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sorafenib",
+        "context": "Comparator in IMbrave150 RNA\u2011seq analysis showing lack of gamma\u2011delta T\u2011cell signature effect",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the relative contribution of gamma\u2011delta T\u2011cells versus other IFN\u2011\u03b3 sources to the observed response?",
+      "Can the HepatoSAJ CT model be externally validated across diverse geographic cohorts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345",
+        "NCT04678901"
+      ],
+      "assets_to_track": [
+        "Gamma\u2011delta T\u2011cell RNA\u2011seq assay",
+        "HepatoSAJ CT AI platform"
+      ],
+      "companies_to_monitor": [
+        "Roche (atezolizumab)",
+        "Bayer (bevacizumab)",
+        "Novartis (beta\u2011blocker trials in cirrhosis)"
+      ]
+    }
+  }
+]

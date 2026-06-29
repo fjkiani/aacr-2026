@@ -1,0 +1,569 @@
+[
+  {
+    "talk_id": "integrative-computational-approaches::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Kevin Boehm",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Advances on Representation Learning and Digital Pathology",
+      "rhetorical_signals": [
+        "Speaker said: \"we set out to control for detailed tumor subtype, harnessing a large dataset, to identify what role digital pathology has as a complement to, rather than just as a surrogate for, clinical sequencing\"",
+        "Speaker noted: \"Most molecular alterations don't associate with characteristic phenotypes, but about 4% do\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Digital pathology inference of molecular alterations",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited phenotype-genotype correlation for >96% of molecular features",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "AEON and Paladin deep learning models trained on H&E images",
+        "ip_vulnerability_note": "Speaker disclosed reliance on a forked version of the CLAM package and custom preprocessing, suggesting limited proprietary protection",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad label approach without biomarker stratification may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that most molecular alterations lack a phenotype on H&E (observation) yet positioned digital pathology as a complementary diagnostic tool (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited external validation beyond TCGA and one curated cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Only ~4% of molecular alterations show a detectable phenotype on H&E, indicating a need for more sensitive biomarker integration.",
+        "transcript_evidence": "Speaker said: \"Most molecular alterations don't associate with characteristic phenotypes, but about 4% do\"",
+        "crispro_angle": "CrisPRO can integrate multi-omics signatures to predict phenotype-genotype links beyond visual pathology.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine AEON predictions with genomic classifiers (e.g., GDENS) to improve subtype accuracy.",
+        "transcript_evidence": "Speaker compared AEON to GDENS and noted performance gains with multimodal integration.",
+        "crispro_angle": "CrisPRO platform can fuse imaging and sequencing data to generate unified predictive models.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GDENS",
+        "context": "Genomic classifier used as benchmark for subtype inference",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "DeepHistology",
+        "context": "Baseline model that Paladin outperformed",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can allele\u2011specific mutations be distinguished by the H&E\u2011based models?",
+      "How will the models perform on prospective clinical cohorts with diverse treatment regimens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AEON",
+        "Paladin",
+        "GDENS"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Julia Lowe",
+      "institution_or_pharma": "Duke University",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Multi\u2011omic Model for Glioblastoma Recurrence Prediction",
+      "rhetorical_signals": [
+        "Speaker said: \"the goal of my project is to incorporate information from all of these modalities, but focus my algorithm on the types of data that is routinely collectible\"",
+        "Speaker admitted: \"It's not something that we've looked at yet. It's definitely on the list\" when asked about allele\u2011specific mutations"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "UniHeal foundation model fine\u2011tuning pipeline",
+        "ip_vulnerability_note": "Model relies on publicly available Uni2 architecture; no disclosed novel IP",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Small pilot cohort (19 patients) limits generalizability"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "pilot_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No external validation cohort",
+        "Limited treatment heterogeneity (only 4 patients received PD\u20111 inhibitor)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need to predict recurrence using only H&E and MRI when spatial omics are unavailable.",
+        "transcript_evidence": "Speaker emphasized democratizing use of spatial modalities by inferring gene/protein patterns from histopathology.",
+        "crispro_angle": "CrisPRO can generate predictive signatures from routine imaging linked to underlying molecular programs.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s ability to integrate heterogeneous modalities (MRI, histology, limited spatial data) to improve recurrence prediction.",
+        "transcript_evidence": "Speaker described multi\u2011modal integration framework with attention heads for recurrence prediction.",
+        "crispro_angle": "CrisPRO\u2019s modular architecture can ingest MRI radiomics and pathology embeddings jointly.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will the model perform across diverse GBM treatment regimens?",
+      "Can the attention maps be validated against independent spatial transcriptomics?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "UniHeal foundation model",
+        "SlideFlow tiling pipeline"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Faming Zhao",
+      "institution_or_pharma": "Oregon Health & Science University",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Single\u2011cell and Spatial Atlas of Prostate Cancer Progression",
+      "rhetorical_signals": [
+        "Speaker said: \"we provide a unified single\u2011cell and spatial framework to map cellular ecosystem across PCa progression\"",
+        "Speaker noted: \"SP1 macrophage are associated with poor clinical outcomes\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SP1 macrophage targeting",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects of anti\u2011SP1 therapy not explored in normal tissues",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker described pre\u2011clinical efficacy but did not discuss safety profile",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Pre\u2011clinical SP1 inhibition study",
+        "target_biology": "SP1 macrophage mediated immunosuppression in bone metastasis",
+        "flawed_enrollment_criteria": "Mouse model only; no patient stratification by SP1 expression",
+        "missing_biomarker": "Baseline SP1 macrophage levels in patients",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small animal cohort, no power calculation reported",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SP1 macrophage antibody/CRISPR approach",
+        "ip_vulnerability_note": "No disclosed novel IP; relies on standard CRISPR knockout strategies",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad targeting of SP1 may affect normal macrophage functions"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed SP1 macrophage enrichment correlates with poor outcome (observation) yet proposed systemic SP1 inhibition without addressing potential systemic immune effects (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of human clinical trial data for anti\u2011SP1 therapy",
+        "No validation of SP1 targeting in diverse patient cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Develop CrisPRO\u2011guided small\u2011molecule or peptide inhibitors that selectively disrupt SP1\u2011macrophage signaling while sparing normal macrophages.",
+        "transcript_evidence": "Speaker highlighted SP1 macrophage as a promising therapeutic target but noted pre\u2011clinical status only.",
+        "crispro_angle": "CrisPRO can model SP1\u2011related regulatory networks to identify druggable nodes with minimal off\u2011target risk.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair SP1 inhibition with TGF\u2011\u03b2 blockade to overcome compensatory immunosuppressive pathways.",
+        "transcript_evidence": "Speaker discussed TGF\u2011\u03b2 signaling from AC\u2011like cells to macrophages.",
+        "crispro_angle": "CrisPRO can predict synergistic effects of combined pathway inhibition using integrated multi\u2011omics data.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the safety profile of systemic SP1 inhibition in humans?",
+      "Can SP1 macrophage levels be reliably measured in patient biopsies for stratification?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SP1 macrophage targeting constructs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Ksenia Sokolova",
+      "institution_or_pharma": "Princeton Precision Health",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Deep Learning Profiling for Regulatory Somatic Variants Across Clonal Cancer Evolution",
+      "rhetorical_signals": [
+        "Speaker said: \"severity of the regulatory score is important for the survival and progression\"",
+        "Speaker noted: \"regulatory variant count itself is not significant\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Regulatory variant severity scoring",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Model does not account for epigenetic context or 3D genome architecture",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SAIE framework for sequence\u2011class prediction",
+        "ip_vulnerability_note": "Built on publicly available deep\u2011learning models; limited proprietary claims",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on bulk sequencing; may miss low\u2011frequency subclonal events"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated strong association between regulatory disruption severity and outcome (observation) yet suggested the approach can be applied pan\u2011cancer without accounting for tumor\u2011type specific regulatory landscapes (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited functional validation of predicted regulatory effects",
+        "No prospective clinical trial testing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to prioritize regulatory variants that drive resistance and design CRISPR\u2011based interventions.",
+        "transcript_evidence": "Speaker highlighted that later clonal variants have higher regulatory scores and may drive progression.",
+        "crispro_angle": "CrisPRO can simulate the impact of editing specific regulatory sites on downstream expression programs.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate regulatory disruption scores as stratification biomarkers in upcoming trials.",
+        "transcript_evidence": "Speaker showed severity score predicts progression\u2011free interval across TCGA and ICGC cohorts.",
+        "crispro_angle": "CrisPRO can generate patient\u2011specific disruption profiles for enrollment criteria.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NetMHC 2.0 Pan",
+        "context": "Mentioned as a benchmark for MHC\u2011II binding, not directly related but cited in discussion",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do regulatory disruption scores perform in prospective cohorts with treatment heterogeneity?",
+      "Can the model be extended to incorporate chromatin accessibility data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SAIE framework",
+        "Regulatory disruption scoring pipeline"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Chibawanye Ene",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Spatial Multi\u2011omics for Glioblastoma Cell\u2011Based Therapy and Intra\u2011operative Decision Making",
+      "rhetorical_signals": [
+        "Speaker said: \"mass spectrometry can distinguish IDH\u2011wildtype glioblastoma intra\u2011operatively\"",
+        "Speaker admitted: \"we are still in exploratory analysis and need validation for MS\u2011Pen signatures\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Genetically engineered macrophages (CRISPR\u2011KO TGF\u2011\u03b2R)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects on systemic macrophage function not evaluated",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted only pre\u2011clinical mouse data showing survival benefit",
+        "hidden_tox_signal": "No safety data presented for engineered macrophages",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Upcoming engineered macrophage trial (not yet NCT listed)",
+        "target_biology": "Resistance of glioblastoma to therapy via TGF\u2011\u03b2 mediated immunosuppression",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven selection for tumors with high mesenchymal or AC\u2011like signatures",
+        "missing_biomarker": "Baseline MS\u2011Pen metabolic signature or SP1 macrophage level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early\u2011phase trial without power calculation disclosed",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MasSpec Pen intra\u2011operative metabolomics",
+        "ip_vulnerability_note": "Technology is collaborative with Baylor; limited exclusive IP disclosed",
+        "scale_or_manufacturing_bottleneck": "Requires specialized intra\u2011operative equipment and trained personnel",
+        "clinical_strategy_weakness": "Relies on metabolic signatures that may vary across patients and institutions"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that mesenchymal\u2011like cells are enriched in hypoxic cores (observation) yet suggested intra\u2011operative metabolic detection can guide resection without confirming that metabolites uniquely map to those cell states (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of prospective validation of MS\u2011Pen signatures in patients",
+        "No clinical safety data for engineered macrophages"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Use CrisPRO to integrate spatial transcriptomics, metabolomics, and proteomics for robust intra\u2011operative decision support.",
+        "transcript_evidence": "Speaker described multi\u2011omics integration to identify metabolic signatures of plasticity\u2011associated states.",
+        "crispro_angle": "CrisPRO can fuse heterogeneous spatial layers into a unified predictive model for resection guidance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair engineered macrophages with metabolic inhibitors identified by CrisPRO to enhance anti\u2011tumor immunity.",
+        "transcript_evidence": "Speaker highlighted TGF\u2011\u03b2 mediated immunosuppression and metabolic niches.",
+        "crispro_angle": "CrisPRO can predict synergistic metabolic\u2011immune interventions.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How reproducible are the MS\u2011Pen metabolic signatures across surgical centers?",
+      "What is the optimal threshold for metabolic signature\u2011guided resection to balance safety and efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MasSpec Pen",
+        "Engineered macrophage CRISPR constructs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Ye Zhang",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "ADT Norm: Non\u2011parametric Normalization for Single\u2011Cell Proteomics Across Technologies",
+      "rhetorical_signals": [
+        "Speaker said: \"We propose this model called ADT Norm... to align all those background signal, all those valley, and all those positive signal\"",
+        "Speaker admitted: \"there are biological variation that get rid of because... if your goal is cell type annotation you may lose activation signals\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ADT Norm batch correction",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Potential loss of biologically relevant activation states during aggressive background alignment",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ADT Norm non\u2011parametric alignment algorithm",
+        "ip_vulnerability_note": "Method described in a Nature Communications paper; no clear patent claim",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Normalization may obscure subtle disease\u2011related protein expression changes"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ADT Norm improves batch mixing (observation) yet cautioned that it may remove biologically meaningful activation differences (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited demonstration on clinical outcome prediction",
+        "No assessment of impact on downstream therapeutic biomarker discovery"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Integrate ADT Norm into multi\u2011center proteomics trials to ensure consistent cell\u2011type annotation across sites.",
+        "transcript_evidence": "Speaker highlighted batch effects across datasets and the need for non\u2011parametric alignment.",
+        "crispro_angle": "CrisPRO can incorporate ADT Norm as a preprocessing step within its multi\u2011omics pipeline.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Recover lost activation signals by applying CrisPRO\u2019s variance\u2011preserving de\u2011convolution after ADT Norm.",
+        "transcript_evidence": "Speaker noted loss of activation information post\u2011normalization.",
+        "crispro_angle": "CrisPRO can model residual biological variance to re\u2011extract activation signatures.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "SeR normalization",
+        "context": "Baseline method for ADT count scaling",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How does ADT Norm perform on rare cell populations with low marker expression?",
+      "Can the method be extended to integrate CyTOF and imaging mass cytometry data without loss of spatial context?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ADT Norm software",
+        "AI agent for parameter tuning"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Kamal Laughal",
+      "institution_or_pharma": "TGen",
+      "session_title": "integrative-computational-approaches",
+      "talk_title": "Foundation\u2011Model\u2011Based Prediction of MHC\u2011II Peptide Binding",
+      "rhetorical_signals": [
+        "Speaker said: \"we achieve state\u2011of\u2011the\u2011art performance using only ~2% of the training data\"",
+        "Speaker admitted: \"AlphaFold sometimes hallucinates peptide orientation for HLA\u2011DP\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AlphaFold3 structural predictions for HLA\u2011DP peptide orientation",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Incorrect peptide orientation leading to reduced binding prediction accuracy",
+        "unexplained_resistance_quote": "Speaker noted unexpected orientation reduces AUC for HLA\u2011DP alleles",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PepSeq multiplexed binding assay",
+        "ip_vulnerability_note": "Proprietary assay but limited to DRB1 alleles in current dataset",
+        "scale_or_manufacturing_bottleneck": "Requires specialized peptide library synthesis and sequencing",
+        "clinical_strategy_weakness": "Training data biased toward DRB1, limiting generalizability to rare HLA\u2011II alleles"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated high AUC for DRB1 alleles (observation) yet suggested the model is ready for rare HLA\u2011II prediction without additional data (conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited PepSeq data for HLA\u2011DP and HLA\u2011DQ alleles",
+        "No prospective validation in patient cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Use CrisPRO to re\u2011train orientation\u2011aware models for HLA\u2011DP peptides, correcting AlphaFold hallucinations.",
+        "transcript_evidence": "Speaker highlighted orientation errors reducing predictive performance for HLA\u2011DP.",
+        "crispro_angle": "CrisPRO can incorporate orientation constraints into graph neural networks.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine PepSeq\u2011derived binding data with CrisPRO\u2019s expression\u2011aware modeling to predict immunogenicity.",
+        "transcript_evidence": "Speaker discussed need for antigen availability and expression data.",
+        "crispro_angle": "CrisPRO integrates gene expression with binding predictions for holistic immune response modeling.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NetMHC\u20112.0 Pan",
+        "context": "Benchmark model compared against the new GNN approach",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Maria",
+        "context": "State\u2011of\u2011the\u2011art deep learning model that underperformed in benchmarks",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How will the model perform on HLA\u2011II alleles with no PepSeq training data?",
+      "Can orientation correction be generalized across all HLA\u2011II loci?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PepSeq assay",
+        "AlphaFold3 for peptide\u2011MHC complexes"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

@@ -1,0 +1,316 @@
+[
+  {
+    "talk_id": "advanced-antibody-conjugate-and-targeted-therapeutic-platforms::chen::1",
+    "talk_metadata": {
+      "speaker_name": "Daniel Chen",
+      "institution_or_pharma": "Synthetic Lab Design",
+      "session_title": "Advanced Antibody Conjugate and Targeted Therapeutic Platforms",
+      "talk_title": "The SynthBody Platform: A multifunctional, multivalent, multispecific antibody drug conjugate platform",
+      "rhetorical_signals": [
+        "Speaker said: 'we use this as essentially our North Star'",
+        "Speaker said: 'if you're going to only pay attention to a single slide in the entire talk, this is the one to pay attention to'",
+        "Speaker said: 'we can make synbodies that have absolutely terrible PK, but we've also learned to make these molecules with really excellent PK'"
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Monospecific ADCs (non-HER2 targets)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of high-density antigen expression (unlike HER2) and failure to utilize cooperative binding to increase internalization and payload delivery",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Traditional IgG-based ADCs",
+        "ip_vulnerability_note": "Speaker claims traditional ADCs are limited by a lack of 'combinatorial synthetic targets' and lack the geometric reach to organize proteins not in proximity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on single-target expression levels rather than multi-tiered logic gate control"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No human clinical data presented",
+        "No long-term toxicity data beyond basic body weight loss in animals"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Developing multi-tiered logic-gated ADCs to simulate 'HER2-high' expression levels on targets with lower density",
+        "transcript_evidence": "we could create a novel platform that would essentially create combinatorial synthetic targets to behave like HER2 high",
+        "crispro_angle": "Use computational spine to identify optimal combinatorial target sets and geometric configurations for logic-gated binding",
+        "external_validation_needed": [
+          "PubMed: cooperative binding kinetics of multivalent VHH constructs"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "belantamab",
+        "context": "Used as a benchmark for potency and toxicity (ocular tox)",
+        "sentiment": "critical"
+      },
+      {
+        "name": "polatuzumab",
+        "context": "Used as a benchmark for CD79B targeting",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "How to ensure non-immunogenicity of complex multivalent constructs in humans"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SynthBody Y6",
+        "SynthBody X8",
+        "SynthBody X12"
+      ],
+      "companies_to_monitor": [
+        "Synthetic Lab Design"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-antibody-conjugate-and-targeted-therapeutic-platforms::hart::2",
+    "talk_metadata": {
+      "speaker_name": "Felix Hart",
+      "institution_or_pharma": "Merck",
+      "session_title": "Advanced Antibody Conjugate and Targeted Therapeutic Platforms",
+      "talk_title": "M7437: A novel anti-LY6E ADC using a Top1 inhibitor payload",
+      "rhetorical_signals": [
+        "Speaker said: 'we may not have to rely on a biomarker-based patient stratification or selection'",
+        "Speaker said: 'it's a bit difficult to discriminate how much would be added on from the LY6E expression' (regarding bone marrow tox)"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "M7437",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential for target-mediated drug disposition (TMDD) due to LY6E expression on NK and B cells",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Hematological toxicities (lymphocytes, neutrophils, reticulocytes) observed in cynomolgus monkeys",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "target_biology": "LY6E expression in solid tumors",
+        "flawed_enrollment_criteria": "Potential 'unselected approach' without biomarker stratification",
+        "missing_biomarker": "LY6E expression levels (speaker suggests they may not be needed)",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human efficacy data yet",
+        "No data on LY6E knockout phenotype in bone marrow"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identifying the exact threshold of LY6E expression required for efficacy to avoid 'unselected' trial failure",
+        "transcript_evidence": "this indicates the potential for an unselected approach and that we may not have to rely on a biomarker-based patient stratification",
+        "crispro_angle": "Analyze PDX and patient data to define a precise LY6E expression cutoff for response",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: monitor M7437 phase 1 results"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "9b12 MMAE",
+        "context": "Benchmark molecule; M7437 showed superior activity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "DATO-DXd",
+        "context": "Compared in SCLC/squamous models; M7437 showed superior activity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Rina-S",
+        "context": "Compared in ovarian cancer models",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Ralu-DXd",
+        "context": "Compared in ovarian cancer models",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Enhertu / T-DXd",
+        "context": "M7437 showed efficacy in a model with primary resistance to Enhertu",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Whether bone marrow toxicity is driven by LY6E expression on immune cells or the exatecan payload itself"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "M7437"
+      ],
+      "companies_to_monitor": [
+        "Merck"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-antibody-conjugate-and-targeted-therapeutic-platforms::obrien::3",
+    "talk_metadata": {
+      "speaker_name": "Neil O'Brien",
+      "institution_or_pharma": "UCLA / Toral Biotherapeutics",
+      "session_title": "Advanced Antibody Conjugate and Targeted Therapeutic Platforms",
+      "talk_title": "Preclinical evaluation of target-mediated clearance and alternative payloads in cadherin 17-directed antibody drug conjugates",
+      "rhetorical_signals": [
+        "Speaker said: 'we got an early signal in patients that we started to see higher than expected... clearance'",
+        "Speaker said: 'unfortunately, we saw the exact same effect' (regarding payload switch not fixing PK)"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TORL-3600 (Cadherin 17 ADC)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Target-mediated clearance (TMC) due to high expression of Cadherin 17 in normal colon and small intestine (antigen sink)",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "MMAE payload in CRC",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "P-gp efflux pumps in colorectal cancer cells actively remove MMAE, rendering the ADC inactive",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical efficacy data reported",
+        "Lack of human P-gp expression data to validate payload choice"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Overcoming P-gp mediated resistance in CRC by switching to Top1 inhibitors (exatecan)",
+        "transcript_evidence": "in this environment of high P-gp expressing colorectal cancer models, exetecan or topoisomerase inhibitors like exetecan would be the way to go",
+        "crispro_angle": "Use P-gp expression as a predictive biomarker to stratify patients for Top1 vs MMAE payloads",
+        "external_validation_needed": [
+          "PubMed: P-gp expression levels in CRC subtypes"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to mitigate the fundamental PK liability imposed by the tissue sink of Cadherin 17 in normal gut tissue"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TORL-3600"
+      ],
+      "companies_to_monitor": [
+        "Toral Biotherapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-antibody-conjugate-and-targeted-therapeutic-platforms::bennett::4",
+    "talk_metadata": {
+      "speaker_name": "Gavin Bennett",
+      "institution_or_pharma": "Bicycle Therapeutics",
+      "session_title": "Advanced Antibody Conjugate and Targeted Therapeutic Platforms",
+      "talk_title": "Nuzepha (nuzephatide pepidotin): A bicycle drug conjugate targeting EphA2",
+      "rhetorical_signals": [
+        "Speaker said: 'the preliminary safety profile is completely differentiated from previous FA2 targeting conjugates'",
+        "Speaker said: 'I think that the demonstration is that half-life is adequate'"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Antibody-based EphA2 conjugates",
+        "ip_vulnerability_note": "Antibodies have long half-lives and poor penetration, leading to systemic toxicity (coagulopathy/hemorrhage) and narrow therapeutic windows",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Maintaining high systemic concentrations of antibody-based ADCs increases toxicity risk"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparative data",
+        "Limited data on long-term durability of response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Using small bicyclic peptides to achieve rapid tumor penetration and fast renal clearance to widen the therapeutic window",
+        "transcript_evidence": "a very short delivery... enables you really to open that window between efficacy and toxicity",
+        "crispro_angle": "Computational design of high-affinity bicyclic peptides for targets where antibody-based ADCs are too toxic",
+        "external_validation_needed": [
+          "PubMed: PK of bicyclic peptides vs antibodies in solid tumors"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "EphA2 antibody-based conjugates",
+        "context": "Mentioned as having significant hematological toxicity (coagulopathy, hemorrhage)",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Whether episodic delivery is sufficient for all EphA2-expressing tumor types"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Nuzepha (nuzephatide pepidotin)"
+      ],
+      "companies_to_monitor": [
+        "Bicycle Therapeutics"
+      ]
+    }
+  }
+]

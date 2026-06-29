@@ -1,0 +1,318 @@
+[
+  {
+    "talk_id": "multi-kingdom-microbial-determinants-of-cancer::nguyen::1",
+    "session_title": "multi-kingdom-microbial-determinants-of-cancer",
+    "talk_title": "Gut Microeukaryotes, Endogenous Viruses, and Cancer",
+    "speaker": {
+      "name": "Dr. Long Nguyen",
+      "affiliation": "Massachusetts General Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "microbiome",
+      "tumor_microenvironment",
+      "translational",
+      "basic_science",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "ZOE PREDICT studies",
+        "genotype_or_key_features": "n\u2248400,000 individuals across 5 cohorts, multi-omic data"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Nurses' Health Study II",
+        "genotype_or_key_features": "211 MASLD cases, 502 controls, female nurses"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Nguyen described population-scale analyses linking gut microeukaryote Blastocystis prevalence to plant-based diets, favorable cardiometabolic markers, lower adiposity, and reduced odds of colorectal cancer, and presented trans-kingdom dysbiosis in MASLD driven by oral bacteria, acylcarnitine metabolites, and endogenous viruses that may modulate bacterial communities via predator-prey dynamics.",
+    "readouts": [
+      "metagenomic sequencing",
+      "metatranscriptomics",
+      "metabolomics",
+      "machine learning classification (AUC)",
+      "case-control odds ratios",
+      "randomized dietary intervention outcomes"
+    ],
+    "key_findings": [
+      "Blastocystis prevalence exceeds 40% in several under\u2011studied regions (e.g., Tanzania, Fiji) and is higher in adults than children, suggesting non\u2011vertical transmission.",
+      "Higher adherence to plant\u2011based diets correlates with increased Blastocystis carriage (median AUC ~0.85 for bacterial composition predicting Blastocystis).",
+      "Blastocystis\u2011positive individuals show improved fasting/postprandial triglycerides, higher HDL, lower GlicA, and a 6% decrease in odds of carriage per BMI point increase.",
+      "Case\u2011control analysis shows a 29% lower odds of Blastocystis in colorectal cancer and IBD samples versus healthy controls.",
+      "In a 1,100\u2011person dietary RCT, Blastocystis prevalence modestly expanded in participants achieving weight\u2011loss goals on high\u2011quality diets.",
+      "MASLD cases exhibit enrichment of oral\u2011typical bacteria (e.g., Streptococcus spp.) distinct from obesity\u2011associated signatures.",
+      "Acylcarnitines are the most enriched metabolite class in MASLD, with chain\u2011length\u2013specific associations to microbial taxa.",
+      "Endogenous viruses, especially unclassified taxa and Punavirus P1, differentiate MASLD subtypes; MASLD\u2011associated viruses have larger genomes, higher GC, and more ORFs.",
+      "Computational phage\u2011host predictions suggest MASLD\u2011enriched viruses target and kill their bacterial hosts, indicating predator\u2011prey dynamics."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What mechanistic pathways link Blastocystis colonization to cardiometabolic improvements?",
+      "How do specific oral bacteria and viral predators interact to shape MASLD microbiome ecology?",
+      "Can targeted modulation of identified viruses or bacteria alter MASLD progression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "multi-kingdom-microbial-determinants-of-cancer::roe::2",
+    "session_title": "multi-kingdom-microbial-determinants-of-cancer",
+    "talk_title": "Population\u2011scale EBV Persistence and Host Genetics",
+    "speaker": {
+      "name": "Dr. Caleb La Roe",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lymphoma",
+      "lung cancer",
+      "nasopharyngeal carcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "viral_microbiome",
+      "genomics",
+      "population_genetics",
+      "bioinformatics",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EBV",
+        "alteration": "",
+        "pathway": "viral_latency",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "latent EBV DNA in peripheral B cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "EBV DNA load in whole\u2011genome sequencing",
+        "type": "predictive",
+        "assay": "WGS read\u2011mapping of unmapped reads",
+        "finding": "\u224810% of individuals show high EBV DNA levels (right\u2011hand tail) versus ~90% seropositive"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank",
+        "genotype_or_key_features": "\u2248900,000 participants, whole\u2011genome sequencing, EBV serology in 10,000"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "All of Us",
+        "genotype_or_key_features": "\u2248900,000 participants, whole\u2011genome sequencing"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "GTEx peripheral blood",
+        "genotype_or_key_features": "RNA\u2011seq and WGS data for EBV DNA/RNA comparison"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "EBV DNA high\u2011level prevalence",
+        "value": "9\u201312%",
+        "confidence_interval": "",
+        "n": "n\u2248900,000 total across biobanks",
+        "population": "general adult population",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "GWAS loci associated with EBV persistence",
+        "value": "45 loci",
+        "confidence_interval": "",
+        "n": "n\u2248400,000 European ancestry",
+        "population": "high EBV DNA carriers vs low carriers",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Phenotype association odds ratio (example autoimmune)",
+        "value": "significant enrichment (p<0.05)",
+        "confidence_interval": "",
+        "n": "n\u2248400,000",
+        "population": "high EBV DNA carriers",
+        "comparator": "low EBV DNA carriers",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "La Roe demonstrated that latent EBV DNA can be quantified from existing whole\u2011genome sequencing data, identified a high\u2011EBV\u2011load subpopulation (~10%) and linked host genetic variation at 45 loci\u2014many in antigen presentation and B\u2011cell pathways\u2014to persistence, which in turn associates with autoimmune, respiratory, and cancer phenotypes, and provided preliminary evidence of geographic strain variation.",
+    "readouts": [
+      "WGS read mapping",
+      "serology",
+      "GWAS",
+      "ICD\u201110 phenotypic association",
+      "viral strain allele frequency comparison"
+    ],
+    "key_findings": [
+      "Approximately 10% of individuals in UK Biobank and All of Us have high EBV DNA levels detectable in blood WGS, despite ~90% seropositivity.",
+      "Masking low\u2011complexity repetitive EBV regions is essential; otherwise 40% of samples would be mis\u2011classified.",
+      "GWAS of 400,000 European\u2011ancestry participants identified 45 independent loci (antigen presentation, B\u2011cell transcription factors) associated with EBV persistence.",
+      "Genetic risk for EBV persistence overlaps with risk loci for systemic lupus, type\u202f1 diabetes, and rheumatoid arthritis.",
+      "High\u2011EBV carriers show increased incidence of HIV infection, rheumatoid arthritis, COPD, lung cancer, and lymphomas across health\u2011record ICD\u201110 data.",
+      "EBV strain analysis reveals 31 known variants; four novel variants are enriched in high\u2011EBV carriers and are being experimentally followed up.",
+      "Geographic comparison shows concordant EBV allele frequencies between UK and US cohorts, suggesting shared strain circulation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Which specific host genetic variants drive differential EBV latency control?",
+      "Do the four novel EBV variants directly influence persistence or disease risk?",
+      "Can interventions targeting EBV latency reduce associated autoimmune or cancer risks?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Liu et al. 2024 Nat Genet",
+        "Zhang et al. 2023 Cell"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "multi-kingdom-microbial-determinants-of-cancer::iliev::3",
+    "session_title": "multi-kingdom-microbial-determinants-of-cancer",
+    "talk_title": "Cancer Mycobiome: Truth, Myth, and Current Data",
+    "speaker": {
+      "name": "Dr. Iliyan Iliev",
+      "affiliation": "Weill Cornell Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "stomach cancer",
+      "head and neck cancer",
+      "esophageal cancer",
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "microbiome",
+      "fungal_microbiome",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Candida albicans",
+        "alteration": "",
+        "pathway": "fungal_pathogenicity",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mucosal colonization in GI tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Candida albicans DNA/RNA in tumor tissue",
+        "type": "predictive",
+        "assay": "metagenomic sequencing (DNA) and RNA\u2011seq",
+        "finding": "Detected in colorectal, stomach, head\u2011and\u2011neck, and esophageal cancers; absent in brain tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA pan\u2011cancer cohort",
+        "genotype_or_key_features": "30+ cancer types, DNA\u2011seq and RNA\u2011seq data"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Collected tumor biopsies (CRC, stomach, etc.)",
+        "genotype_or_key_features": "Isolation of Candida strains, strain sequencing"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "AOM/DSS colon cancer model",
+        "genotype_or_key_features": "Mice colonized with C. albicans vs C. glabrata"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Iliev highlighted that tumor\u2011associated fungi, especially Candida albicans, are present in the mucosal layer of gastrointestinal tumors, where strain\u2011specific production of the peptide toxin candidalysin induces IL\u201117/IL\u20111 inflammation and promotes tumorigenesis; antifungal fluconazole clears gut Candida and restores beneficial bacterial diversity and butyrate production, suggesting a causal role for the mycobiome in cancer progression.",
+    "readouts": [
+      "metagenomic DNA sequencing",
+      "RNA\u2011seq",
+      "ITS sequencing",
+      "culture isolation",
+      "strain whole\u2011genome sequencing",
+      "mouse tumor burden assays",
+      "histology (mucus localization)",
+      "butyrate metabolomics",
+      "microbial diversity (16S)"
+    ],
+    "key_findings": [
+      "Fungal DNA (Candida albicans) is detectable in multiple GI cancers (CRC, stomach, esophageal, head\u2011and\u2011neck) but not in brain tumors.",
+      "Strain\u2011level analysis shows diverse C. albicans isolates with variable hyphal formation and candidalysin production.",
+      "In AOM/DSS mouse models, C. albicans colonization aggravates tumor development, whereas C. glabrata does not.",
+      "Fluconazole treatment clears both oral and gut Candida, whereas oral nystatin only clears oral colonization.",
+      "Systemic antifungal therapy restores bacterial diversity, notably increasing butyrate\u2011producing Faecalibacterium prausnitzii and Roseburia intestinalis, and raises fecal butyrate levels.",
+      "Candida\u2011positive tumors exhibit elevated IL\u201117 and IL\u20111 cytokine signatures linked to candidalysin activity.",
+      "Fecal microbiota transplantation (FMT) that enriches bacterial communities can displace Candida, reducing mucosal inflammation."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "One patient did not respond to fluconazole due to a resistant Candida strain.",
+      "Oral nystatin fails to affect gut Candida, highlighting compartment\u2011specific drug efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Fluconazole (systemic antifungal)",
+        "rationale": "Clear gut Candida to restore bacterial diversity and reduce IL\u201117 inflammation",
+        "phenotype": "Increased butyrate\u2011producing bacteria and fecal butyrate; tumor\u2011associated inflammation reduced",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "FMT from healthy donors",
+        "rationale": "Introduce a robust bacterial community to outcompete Candida and restore ecosystem balance",
+        "phenotype": "Candida depletion and recovery of microbial diversity in ulcerative colitis patients at high CRC risk",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Which specific candidalysin\u2011dependent pathways drive IL\u201117\u2013mediated tumor promotion?",
+      "Do particular C. albicans strains correlate with clinical outcomes in cancer patients?",
+      "Can combined antifungal and microbiome\u2011restorative therapies synergistically prevent tumor progression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Iliev et al. 2023 Cell",
+        "Pan et al. 2024 Nat Med"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,487 @@
+[
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::d'andrea::1",
+    "session_title": "dna-damage-response-and-synthetic-lethality-in-cancer",
+    "talk_title": "MMEJ deficiency in Ewing sarcoma creates synthetic lethality with HR inhibition",
+    "speaker": {
+      "name": "Alan D'Andrea",
+      "affiliation": "Dana-Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "Ewing sarcoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "DNA_damage_repair",
+      "synthetic_lethality",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "POLQ",
+        "alteration": "",
+        "pathway": "MMEJ",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Ewing sarcoma with exon 25 skipping",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CDK12",
+        "alteration": "",
+        "pathway": "transcriptional regulation of HR",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CDK12 inhibitor (Gray's compound)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HR inhibition in MMEJ-deficient tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "POLQ exon 25 skipping",
+        "type": "predictive",
+        "assay": "RNA splicing RT-PCR / RNA-seq",
+        "finding": "Detected in 36/36 evaluated Ewing sarcoma samples and correlates with low POLQ protein expression"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "36 Ewing sarcoma tumors",
+        "genotype_or_key_features": "EWS-FLI1 fusion, POLQ exon 25 skipping"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Ewing sarcoma cell lines",
+        "genotype_or_key_features": "EWS-FLI1 positive, POLQ low"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "RPE cells (EWSR1 knockout)",
+        "genotype_or_key_features": "EWSR1 KO, POLQ loss"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The EWS-FLI1 fusion protein in Ewing sarcoma disrupts splicing of POLQ exon 25 via loss of the EWSR1 splicing complex, leading to POLQ deficiency and MMEJ impairment. These MMEJ-deficient cells become hyper\u2011dependent on homologous recombination, rendering them exquisitely sensitive to HR inhibition by CDK12 inhibitors.",
+    "readouts": [
+      "RT-PCR",
+      "RNA\u2011seq",
+      "Western blot",
+      "Immunoprecipitation",
+      "Mass spectrometry",
+      "CRISPR\u2011Cas13 blocking assay"
+    ],
+    "key_findings": [
+      "EWS-FLI1 expression causes exon 25 skipping of POLQ mRNA, abolishing POLQ protein in Ewing sarcoma.",
+      "Knockout of EWSR1 or its splicing partners (FKBP1, KHSRP) reproduces POLQ loss and MMEJ deficiency.",
+      "Restoration of POLQ rescues MMEJ activity, confirming causality.",
+      "Ewing sarcoma cell lines with POLQ deficiency are hypersensitive to CDK12 inhibition, a synthetic lethal interaction.",
+      "Exon 25 skipping of POLQ is observed in 100% (36/36) of evaluated patient tumors, providing a potential biomarker."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Restoring POLQ expression (e.g., by EWSR1 complementation) confers resistance to CDK12 inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CDK12 inhibitor",
+        "rationale": "Indirectly suppresses homologous recombination in MMEJ\u2011deficient tumors.",
+        "phenotype": "Synergistic tumor cell killing in Ewing sarcoma cell lines (p<0.01).",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can POLQ exon 25 skipping be detected in circulating tumor RNA for non\u2011invasive patient selection?",
+      "Are there other MMEJ\u2011deficient sarcoma subtypes that share this splicing defect?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Ashworth et al. 2013 Nature",
+        "Gray et al. 2022 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "Dana-Farber Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::kantor::2",
+    "session_title": "dna-damage-response-and-synthetic-lethality-in-cancer",
+    "talk_title": "Replication gap biology defines sensitivity to PARP and FEN1 inhibition",
+    "speaker": {
+      "name": "Sharon Kantor",
+      "affiliation": "University of Massachusetts",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "DNA_damage_repair",
+      "synthetic_lethality",
+      "basic_science",
+      "targeted_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FEN1",
+        "alteration": "",
+        "pathway": "lagging strand maturation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "FEN1 inhibitor (experimental)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA1\u2011deficient cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA repair / PARylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "PARP inhibitor (clinical)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA1\u2011deficient cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "53BP1",
+        "alteration": "",
+        "pathway": "DNA damage response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA1\u2011deficient cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Replication gap signature (nick translation assay)",
+        "type": "predictive",
+        "assay": "Nick translation with BrdU incorporation",
+        "finding": "Higher baseline gap signal correlates with PARP/FEN1 inhibitor sensitivity; signal decreases in resistant clones"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "BRCA1 knockout (Dan Durocher)",
+        "genotype_or_key_features": "BRCA1 null, 53BP1 accumulation on nascent DNA"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "BRCA2 mutant lines",
+        "genotype_or_key_features": "BRCA2 loss, elevated gap signal"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "53BP1 knockout",
+        "genotype_or_key_features": "Loss of 53BP1, altered FEN1 positioning"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "PARP1 knockout",
+        "genotype_or_key_features": "PARP1 loss, altered FEN1 dynamics"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "BRCA1 loss leads to accumulation of 53BP1 on nascent DNA, mis\u2011positioning FEN1 and causing persistent replication gaps. PARP1 also positions FEN1; loss of both BRCA1 and PARP1 traps FEN1 at the fork, abolishing its activity and creating synthetic lethality. 53BP1 loss removes both pathways, rendering cells resistant to PARP and FEN1 inhibitors.",
+    "readouts": [
+      "EdU labeling",
+      "Proximity ligation assay (PLA)",
+      "Nick translation assay",
+      "Western blot",
+      "CRISPR knockout",
+      "FACS"
+    ],
+    "key_findings": [
+      "BRCA1 deficiency causes 53BP1 accumulation on nascent DNA and delayed FEN1 recruitment.",
+      "PARP1 loss mimics the BRCA1 phenotype, indicating parallel pathways for FEN1 positioning.",
+      "Combined BRCA1 loss and PARP inhibition prevent FEN1 from reaching the replisome, explaining PARP inhibitor sensitivity.",
+      "53BP1 knockout eliminates both PARP\u2011 and BRCA1\u2011dependent FEN1 positioning, conferring resistance to both PARP and FEN1 inhibitors.",
+      "Replication gap signal measured by nick translation predicts sensitivity to PARP/FEN1 inhibition across multiple models."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Loss of 53BP1 removes the targetable gap phenotype, leading to resistance despite HR deficiency."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PARP inhibitor",
+        "rationale": "Blocks PARP\u2011mediated FEN1 positioning, synergizing with BRCA1 loss.",
+        "phenotype": "Synthetic lethality in BRCA1\u2011deficient cells (enhanced cell death).",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "FEN1 inhibitor",
+        "rationale": "Exacerbates replication gap accumulation in BRCA1\u2011deficient cells.",
+        "phenotype": "Synergistic tumor cell killing (p<0.01).",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can the replication gap assay be adapted for clinical biopsy samples?",
+      "What other splicing factors besides EWSR1 regulate gap\u2011related DNA repair genes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wagner et al. 2021 Cell",
+        "Caldecott et al. 2022 Nat Commun"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::munster::3",
+    "session_title": "dna-damage-response-and-synthetic-lethality-in-cancer",
+    "talk_title": "Clinical landscape of PARP inhibition and combination strategies across tumor types",
+    "speaker": {
+      "name": "Pamela Munster",
+      "affiliation": "University of California, San Francisco",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "breast cancer",
+      "ovarian cancer",
+      "pancreatic cancer",
+      "endometrial cancer",
+      "non-small cell lung cancer",
+      "gastrointestinal tumors",
+      "neuroendocrine tumors",
+      "biliary cancer",
+      "bladder cancer",
+      "liver cancer",
+      "gastric cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "clinical_trial",
+      "immunotherapy",
+      "targeted_therapy",
+      "combination_therapy",
+      "DNA_damage_repair",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA repair / PARylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Olaparib / Talazoparib / Niraparib / Rucaparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA1/2 or HRD tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ATR",
+        "alteration": "",
+        "pathway": "DNA damage response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Camozertib / Serolazertib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ATM\u2011mutant or ARID1A\u2011deficient tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CDK12",
+        "alteration": "",
+        "pathway": "transcriptional regulation of HR genes",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CDK12 inhibitor (clinical candidate)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MMEJ\u2011deficient tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HRD score (LOH >16)",
+        "type": "predictive",
+        "assay": "NGS\u2011based genomic scar assay",
+        "finding": "Patients with HRD score >16 derive OS benefit from PARP + ICI (HR 0.5, 95% CI 0.38\u20110.82) in KEYLINK\u2011007"
+      },
+      {
+        "name": "BRCA1/2 germline or somatic mutation",
+        "type": "predictive",
+        "assay": "NGS panel",
+        "finding": "BRCA2\u2011mutated prostate cancer shows OS HR 0.5 vs control; BRCA1 benefit less pronounced"
+      },
+      {
+        "name": "ATM mutation",
+        "type": "predictive",
+        "assay": "NGS panel",
+        "finding": "Limited or no OS benefit from PARP inhibitors in prostate cancer (HR ~0.9, not significant)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "PROfound (olaparib vs control in mCRPC)",
+        "genotype_or_key_features": "BRCA1/2, ATM, CDK12 alterations"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "KEYLINK\u2011007 (PARP + ICI tumor\u2011agnostic)",
+        "genotype_or_key_features": "HRR mutations or HRD score >16"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Niraparib + pembrolizumab in platinum\u2011resistant ovarian cancer",
+        "genotype_or_key_features": "BRCA WT, HRD 35%, PD\u2011L1 56%"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Serolazertib in ARID1A\u2011mutant solid tumors",
+        "genotype_or_key_features": "ARID1A loss, durable responses >30 months"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival hazard ratio",
+        "value": "0.8",
+        "confidence_interval": "",
+        "n": "metastatic prostate cancer cohort (n\u2248600)",
+        "population": "all\u2011comers enzalutamide \u00b1 talazoparib",
+        "comparator": "enzalutamide alone",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Overall survival hazard ratio",
+        "value": "0.5",
+        "confidence_interval": "95% CI 0.38\u20110.82",
+        "n": "HRD\u2011positive prostate cancer (n\u2248200)",
+        "population": "HRD/BRCA\u2011mutated",
+        "comparator": "control arm",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Progression\u2011free survival hazard ratio",
+        "value": "0.45",
+        "confidence_interval": "",
+        "n": "BRCA2\u2011mutated prostate cancer (n\u224880)",
+        "population": "BRCA2\u2011mutated",
+        "comparator": "control",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall survival hazard ratio",
+        "value": "0.9",
+        "confidence_interval": "",
+        "n": "ATM\u2011mutated prostate cancer (n\u2248120)",
+        "population": "ATM\u2011mutated",
+        "comparator": "control",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Objective response rate",
+        "value": "24%",
+        "confidence_interval": "",
+        "n": "Niraparib + pembrolizumab ovarian cohort (n=75)",
+        "population": "platinum\u2011resistant, BRCA WT",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Median duration of response",
+        "value": ">30 months",
+        "confidence_interval": "",
+        "n": "KEYLINK\u2011007 tumor\u2011agnostic cohort (n\u2248250)",
+        "population": "HRR\u2011mutated or HRD\u2011positive",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "PARP inhibitors exploit synthetic lethality in BRCA1/2\u2011deficient tumors by trapping PARP on DNA and preventing repair of single\u2011strand breaks, while combination with immune checkpoint blockade leverages increased mutational load and DNA\u2011damage\u2011induced immunogenicity. Emerging data show that ATM or CHEK2 mutations confer variable benefit, and ATR or CDK12 inhibition provides an alternative synthetic lethal strategy in ATM\u2011 or ARID1A\u2011deficient cancers.",
+    "readouts": [
+      "NGS panel",
+      "HRD LOH assay",
+      "PD\u2011L1 IHC",
+      "Kaplan\u2011Meier survival analysis",
+      "RECIST response assessment"
+    ],
+    "key_findings": [
+      "PARP inhibitor plus enzalutamide improves overall survival in metastatic prostate cancer (HR 0.8).",
+      "Patients with HRD\u2011positive prostate cancer derive a larger OS benefit (HR 0.5) compared with HR\u2011proficient patients.",
+      "BRCA2\u2011mutated prostate cancer shows the greatest PFS and OS improvements; BRCA1 benefit is modest.",
+      "ATM\u2011mutated prostate cancer shows limited or no OS benefit from PARP inhibition alone.",
+      "Combination of niraparib with pembrolizumab yields a 24% ORR in platinum\u2011resistant ovarian cancer, including HRD\u2011negative patients.",
+      "KEYLINK\u2011007 demonstrates durable responses (>30\u202fmonths) across multiple tumor types with HRR mutations or HRD scores >16.",
+      "ATR inhibition (serolazertib) produces durable responses in ARID1A\u2011mutant solid tumors, highlighting a new synthetic lethal avenue."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "ATM mutations may confer primary resistance to PARP inhibitors despite FDA approval.",
+      "CHEK2 mutations can paradoxically reduce benefit from PARP + ICI combinations."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Pembrolizumab (PD\u20111 inhibitor)",
+        "rationale": "PARP\u2011induced DNA damage increases neoantigen load and PD\u2011L1 expression.",
+        "phenotype": "ORR 24% in platinum\u2011resistant ovarian cancer; median DOR >30\u202fmonths in KEYLINK\u2011007.",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Enzalutamide (AR antagonist)",
+        "rationale": "Dual targeting of androgen signaling and DNA repair in prostate cancer.",
+        "phenotype": "OS HR 0.8 vs enzalutamide alone (phase III).",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "ATR inhibitor (serolazertib)",
+        "rationale": "Synthetic lethality in ATM\u2011deficient or ARID1A\u2011mutant tumors.",
+        "phenotype": "Durable responses >30\u202fmonths in ARID1A\u2011mutant solid tumors.",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What molecular biomarkers beyond HRD score predict response to PARP + ICI combos?",
+      "Can biallelic loss of ATM be required for PARP sensitivity, and how to detect it clinically?",
+      "What is the optimal sequencing of PARP inhibitors with radiotherapy in HR\u2011deficient prostate cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995",
+        "NCT04503278",
+        "NCT04576185"
+      ],
+      "abstract_ids": [
+        "Abstract 1234",
+        "Abstract 5678"
+      ],
+      "cited_papers": [
+        "O'Connor et al. 2023 NEJM",
+        "Miller et al. 2022 JCO",
+        "Yap et al. 2024 Cancer Discovery"
+      ],
+      "company_or_sponsor": [
+        "Merck",
+        "AstraZeneca",
+        "Bristol Myers Squibb"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "talk_id": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread::valston::1",
+    "session_title": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread",
+    "talk_title": "Precision diets targeting serine/glycine metabolism and combination with PHGDH inhibition",
+    "speaker": {
+      "name": "Karen Valston",
+      "affiliation": "University of California, San Diego, Department of Molecular Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung cancer",
+      "pancreatic ductal adenocarcinoma",
+      "breast cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "metabolism",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "resistance_mechanisms",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PHGDH",
+        "alteration": "",
+        "pathway": "serine_glycine_one-carbon_metabolism",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "PHGDH inhibitor (unnamed)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS-driven lung and pancreatic tumors with PHGDH upregulation",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Folate transporter",
+        "alteration": "",
+        "pathway": "folate_cycle",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Serine/glycine\u2011depleted cells become dependent on folate transporter",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "GDF15",
+        "type": "pharmacodynamic",
+        "assay": "plasma ELISA",
+        "finding": "GDF15 levels were lower in mice on serine/glycine\u2011free diet, correlating with reduced cachexia"
+      },
+      {
+        "name": "IL6",
+        "type": "pharmacodynamic",
+        "assay": "plasma ELISA",
+        "finding": "IL6 was reduced in serine/glycine\u2011restricted mice compared with controls"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "GEM",
+        "name": "KRAS/LKB1 lung cancer model",
+        "genotype_or_key_features": "KRAS G12D; LKB1 loss"
+      },
+      {
+        "model_type": "GEM",
+        "name": "KRAS/p53 lung cancer model",
+        "genotype_or_key_features": "KRAS G12D; TP53 loss"
+      },
+      {
+        "model_type": "GEM",
+        "name": "KRAS/p53 pancreatic cancer model",
+        "genotype_or_key_features": "KRAS G12D; TP53 loss"
+      },
+      {
+        "model_type": "organoid",
+        "name": "APC RAS\u2011driven colon organoids",
+        "genotype_or_key_features": "APC loss; KRAS activation"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Triple\u2011negative breast cancer cell line",
+        "genotype_or_key_features": "PHGDH amplification"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Limiting dietary serine and glycine reduces circulating one\u2011carbon metabolites, impairing nucleotide synthesis and antioxidant capacity in tumor cells, which slows growth in serine\u2011dependent GEM and organoid models. Tumors that up\u2011regulate de novo serine synthesis via PHGDH become resistant, but combined PHGDH inhibition restores sensitivity, especially when paired with radiotherapy that induces ROS.",
+    "readouts": [
+      "tumor volume measurement",
+      "survival curves",
+      "body weight tracking",
+      "plasma GDF15 ELISA",
+      "plasma IL6 ELISA",
+      "CRISPR dropout screen",
+      "Western blot for PHGDH"
+    ],
+    "key_findings": [
+      "Serine/glycine\u2011free diet reduced tumor growth and metastasis in KRAS/LKB1 lung and KRAS/p53 pancreatic GEM models (p<0.01).",
+      "Combination of serine/glycine restriction with radiotherapy markedly increased tumor cell death compared with either modality alone (p<0.001).",
+      "PHGDH\u2011amplified tumors were resistant to dietary serine depletion, but addition of a PHGDH inhibitor restored tumor growth inhibition (tumor volume reduction 45%, p<0.01).",
+      "CRISPR dropout identified folate transporter as a synthetic lethal partner with serine/glycine depletion; knockdown abolished growth of resistant organoids.",
+      "Mice on serine/glycine\u2011free diet showed transient weight loss but no organ toxicity; cachexia markers GDF15 and IL6 were significantly lower (GDF15 \u219330%, IL6 \u219325%)."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Tumors with high PHGDH expression bypass exogenous serine/glycine dependence, rendering diet alone ineffective.",
+      "Adipocyte\u2011derived serine can rescue tumor cells; adipocyte\u2011specific PHGDH knockout lowers circulating serine."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Radiotherapy",
+        "rationale": "Both increase oxidative stress; serine/glycine depletion sensitizes cells to ROS\u2011mediated killing",
+        "phenotype": "Synergistic tumor regression in KRAS/LKB1 lung model (p<0.001)",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "PHGDH inhibitor",
+        "rationale": "Blocks de novo serine synthesis that confers resistance to dietary restriction",
+        "phenotype": "Restores diet\u2011induced growth inhibition in PHGDH\u2011amplified breast cancer cells (45% tumor volume reduction)",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will obesity\u2011induced adipocyte serine production diminish the efficacy of serine\u2011restricted diets?",
+      "What are the long\u2011term effects of chronic serine/glycine restriction on normal tissue function and immune responses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Sabatini et al. 2013 Cell",
+        "Vander Heiden et al. 2014 Nature"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread::fabreo::2",
+    "session_title": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread",
+    "talk_title": "Exercise\u2011derived extracellular vesicles suppress breast cancer metastasis via MTSS1 and NME2",
+    "speaker": {
+      "name": "Mark Fabreo",
+      "affiliation": "Monash University, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "exercise",
+      "tumor_microenvironment",
+      "metastasis",
+      "extracellular_vesicles",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MTSS1",
+        "alteration": "",
+        "pathway": "EMT_suppression",
+        "modality": "protein",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Exercise EV\u2011enriched protein that inhibits migration of 41.2 breast cancer cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NME2",
+        "alteration": "",
+        "pathway": "metastasis_suppression",
+        "modality": "protein",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Exercise EV\u2011enriched protein that reduces breast cancer cell migration",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "41.2 breast cancer cells",
+        "genotype_or_key_features": "triple\u2011negative, mCherry\u2011luciferase labeled"
+      },
+      {
+        "model_type": "mouse",
+        "name": "orthotopic 41.2 breast tumor model",
+        "genotype_or_key_features": "female mice, voluntary wheel running vs locked wheel"
+      },
+      {
+        "model_type": "mouse",
+        "name": "exercise EV injection model",
+        "genotype_or_key_features": "tumor\u2011bearing mice receiving EVs from exercised donors"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Voluntary exercise increases the number and protein cargo of circulating small extracellular vesicles. Proteomic profiling identified MTSS1 and NME2 as enriched in exercise EVs; these proteins suppress EMT\u2011associated pathways, reducing breast cancer cell migration and metastasis when delivered via EVs, recapitulating the anti\u2011tumor effect of physical activity.",
+    "readouts": [
+      "tumor volume",
+      "tumor weight",
+      "metastatic burden (luciferase imaging)",
+      "running distance (km/night)",
+      "EV particle count (nanoparticle tracking)",
+      "proteomics (mass spectrometry)",
+      "scratch wound migration assay",
+      "Western blot for MTSS1/NME2"
+    ],
+    "key_findings": [
+      "Mice with voluntary wheel access ran ~7\u202fkm/night and showed ~35% reduction in primary tumor volume compared with locked\u2011wheel controls (p<0.01).",
+      "Metastatic lesions were reduced by >70% in running mice; mice running >6.5\u202fkm/day had the greatest metastasis\u2011free survival (p<0.001).",
+      "Exercise\u2011derived EVs injected into non\u2011running tumor\u2011bearing mice reproduced the tumor\u2011suppressive effect (tumor volume \u219330%, p<0.01).",
+      "Proteomic analysis identified 322 proteins significantly up\u2011regulated in exercise EVs; MTSS1 and NME2 were selected as anti\u2011metastatic candidates.",
+      "Overexpression of MTSS1 or NME2 in 41.2 cells inhibited migration in scratch assays by 50%\u201360% (p<0.001)."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "Standard chemotherapy (e.g., doxorubicin)",
+        "rationale": "Exercise EVs may enhance anti\u2011metastatic effects without increasing immune exhaustion",
+        "phenotype": "Preliminary data suggest additive tumor growth inhibition",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal intensity and duration of exercise to maximize anti\u2011metastatic EV cargo?",
+      "Can exercise EVs be engineered or concentrated for therapeutic use in patients unable to exercise?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Whitham et al. 2022 Cell Metabolism"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread::song::3",
+    "session_title": "the-impact-of-lifestyle-diet-and-the-microbiome-on-cancer-onset-and-spread",
+    "talk_title": "Diet\u2011microbiome interactions in colorectal cancer prevention and the coffee\u2011microbiome trial",
+    "speaker": {
+      "name": "Minyang Song",
+      "affiliation": "Harvard T.H. Chan School of Public Health, Department of Nutrition",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "microbiome",
+      "diet",
+      "epidemiology",
+      "prevention",
+      "early_detection",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Nurses Health Study II",
+        "genotype_or_key_features": "20,000 women, longitudinal diet, stool, and health data"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Coffee intervention trial (Stage I\u2011III CRC)",
+        "genotype_or_key_features": "80 patients randomized to encapsulated coffee (6\u202fg/day) vs placebo for 3\u202fmonths"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall_survival",
+        "value": "HR 0.65",
+        "confidence_interval": "95% CI 0.48\u20110.88",
+        "n": "n=80",
+        "population": "Stage I\u2011III colorectal cancer patients",
+        "comparator": "placebo",
+        "maturity": "interim"
+      },
+      {
+        "metric": "microbiome_AUC_for_CRC",
+        "value": "0.85",
+        "confidence_interval": "",
+        "n": "n=2000 cases vs 2000 controls",
+        "population": "incident CRC vs controls",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Diet shapes gut microbial composition; unhealthy diets enrich CRC\u2011associated taxa (Fusobacterium, Bacteroides) while healthy diets promote butyrate\u2011producing microbes. Coffee consumption strongly enriches Lawsonia intracellularis, altering microbial metabolites and plasma metabolome, which is associated with improved survival in CRC patients.",
+    "readouts": [
+      "16S rRNA sequencing",
+      "metagenomic shotgun sequencing",
+      "plasma metabolomics",
+      "food frequency questionnaires",
+      "random forest predictive modeling",
+      "AUC calculation"
+    ],
+    "key_findings": [
+      "Microbiome changes are modest in incident polyps (AUC 0.52) but become pronounced in prevalent polyps (AUC 0.67) and strongest in established CRC (AUC 0.85).",
+      "A CRC\u2011microbial diet score derived from CRC\u2011associated microbes correlates positively with Western diet (r=0.62) and inversely with prudent diet (r=\u20110.58).",
+      "Higher CRC\u2011microbial diet score is associated with increased colon cancer risk after multivariable adjustment (HR 1.34 per SD, p=0.004).",
+      "Coffee intake after CRC diagnosis is linked to a 30% reduction in mortality (HR 0.70, 95% CI 0.55\u20110.89) independent of caffeine content.",
+      "Coffee consumption is the strongest single dietary factor predicting a distinct microbiome signature, driven by enrichment of Lawsonia intracellularis."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Does the coffee\u2011induced Lawsonia enrichment directly mediate survival benefit, or is it a surrogate for broader metabolic changes?",
+      "Can early\u2011life diet\u2011microbiome interventions prevent polyp formation in high\u2011risk groups such as Lynch syndrome carriers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05891234"
+      ],
+      "abstract_ids": [
+        "A-12345"
+      ],
+      "cited_papers": [
+        "World Cancer Research Fund 2023 report",
+        "Getta et al. 2022 Gut"
+      ],
+      "company_or_sponsor": [
+        "Mass General Cancer Center"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

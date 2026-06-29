@@ -1,0 +1,226 @@
+[
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jason Pitt",
+      "institution_or_pharma": "Broad Institute",
+      "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+      "talk_title": "Representation learning over cancer genomes, scaling petabytes to predictions",
+      "rhetorical_signals": [
+        "Speaker said: \"It's important to recognize that identifying the cause of something is different from predicting an outcome.\"",
+        "Speaker said: \"We think that the HR Difuse model itself ... does perform better than both these models by a fair margin.\"",
+        "Speaker said: \"We are a bit shocked by how well we're able to do here... approaching 0.75 in terms of F1.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation of HRDfuse predictions",
+        "Limited assessment of non\u2011BRCA associated cancers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "HRDfuse improves HRD detection in non\u2011BRCA associated cancers where existing tools (HRDetect, CORG) underperform.",
+        "transcript_evidence": "Speaker said: \"When we look at non\u2011BRCA associated cancers ... we see a big performance difference here\" and \"HRDfuse does perform better than both these models by a fair margin\".",
+        "crispro_angle": "CrisPRO can leverage the multi\u2011view neural representation to further refine HRD prediction across diverse tumor types, addressing the gap in current signature\u2011based tools.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "HRDetect",
+        "context": "Benchmarking tool for HRD prediction",
+        "sentiment": "critical"
+      },
+      {
+        "name": "CORG",
+        "context": "Random forest\u2011based HRD classifier used for comparison",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Why does HRDfuse performance drop in certain non\u2011BRCA cancers?",
+      "Can the model be extended to predict other therapy responses beyond platinum?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "HRDfuse",
+        "HRDetect",
+        "CORG"
+      ],
+      "companies_to_monitor": [
+        "Broad Institute"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Marcin Imielinski",
+      "institution_or_pharma": "NYU Grossman School of Medicine",
+      "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+      "talk_title": "Dimensional structural chromosome instability in human cancers",
+      "rhetorical_signals": [
+        "Speaker said: \"We think HSRs are actually really interesting because they're good news...\"",
+        "Speaker said: \"We call this method JAVEL ... state\u2011of\u2011the\u2011art approach that takes into account rearrangements and copy number as input and outputs what I think is a state\u2011of\u2011the\u2011art copy number profiles.\"",
+        "Speaker said: \"We estimate about 30 dimensions of structural SIN across thousands of cancers, and some of these may provide insight into targetable synthetic lethalities detectable only with whole\u2011genome sequencing.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Limited validation of HSR vs ecDNA distinction in patient samples",
+        "Unclear clinical impact of many newly defined structural signatures"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Structural SIN signatures (e.g., BFB, Typhonis) correlate with synthetic lethal vulnerabilities, offering combination therapy targets.",
+        "transcript_evidence": "Speaker said: \"We found a large number of correlations between the burden of these structural SIN signatures and specific... vulnerabilities to individual therapies.\"",
+        "crispro_angle": "CrisPRO can integrate structural graph features with functional genomics data to prioritize drug combinations for tumors harboring specific SIN signatures.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate HSR status as a stratification biomarker for HER2\u2011targeted trials, since HSR\u2011mediated HER2 amplifications may respond differently than ecDNA\u2011mediated amplifications.",
+        "transcript_evidence": "Speaker said: \"If a cancer cell amplifies HER2 on an ecDNA, it's more likely to develop resistance... but if we can detect the subset of HER2 amplifications that are chromosomally integrated, those tumors would have a harder time evading therapy.\"",
+        "crispro_angle": "CrisPRO can provide robust HSR detection pipelines to enable biomarker\u2011driven enrollment.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amplicon Architect",
+        "context": "Tool for ecDNA detection compared against the author's HSR pipeline",
+        "sentiment": "critical"
+      },
+      {
+        "name": "gGenome",
+        "context": "Graph\u2011genome analysis suite used for structural event detection",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Can long\u2011read or Hi\u2011C technologies definitively resolve HSR vs ecDNA origins?",
+      "What is the therapeutic relevance of Typhonis\u2011derived HSRs in acral melanoma?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "JAVEL",
+        "gGenome",
+        "Amplicon Architect"
+      ],
+      "companies_to_monitor": [
+        "NYU",
+        "Broad Institute"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Gadi Getz",
+      "institution_or_pharma": "Mass General Hospital and Broad Institute",
+      "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+      "talk_title": "Systematic analysis of >8,000 TCGA whole genomes",
+      "rhetorical_signals": [
+        "Speaker said: \"There is a new sequencing artifact ... we call that a vapor trail and we developed a tool to filter it.\"",
+        "Speaker said: \"We find many more mutations in GC\u2011rich regions that were missed by the older PEACOG data.\"",
+        "Speaker said: \"We identified novel non\u2011coding drivers and structural variation drivers, some of which are completely new.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PEACOG low\u2011coverage WGS",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "30\u201150X coverage missed mutations in GC\u2011rich promoters and first exons",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PCR\u2011plus whole\u2011genome sequencing pipelines",
+        "ip_vulnerability_note": "Speaker highlighted loss of mutations in GC\u2011rich regions due to PCR amplification, indicating a technical limitation of the approach.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on low\u2011coverage, PCR\u2011based WGS limited driver discovery and biomarker detection."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No functional validation of many novel non\u2011coding and SV drivers",
+        "Limited prospective clinical outcome linkage for newly identified drivers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011process PEACOG samples with PCR\u2011free 80X WGS to recover missed driver mutations for previously failed biomarker programs.",
+        "transcript_evidence": "Speaker said: \"We have deeper coverage, PCR\u2011free ... we are fixing the problem of lack of coverage in important genes.\"",
+        "crispro_angle": "CrisPRO can re\u2011analyze existing raw data with its pipeline to rescue missed variants and re\u2011prioritize targets.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use newly identified non\u2011coding promoter mutations (e.g., TERT, albumin) as stratification biomarkers for targeted trials.",
+        "transcript_evidence": "Speaker said: \"The top mutated base in TCGA is one of the TERT promoter mutations...\"",
+        "crispro_angle": "CrisPRO\u2019s regulatory\u2011region annotation can rapidly flag promoter hotspots for trial enrollment criteria.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PEACOG",
+        "context": "Earlier low\u2011coverage TCGA whole\u2011genome effort",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Genomics England",
+        "context": "Reference for mutational signature work cited in background",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What proportion of the novel SV drivers are true oncogenic events versus artifacts?",
+      "How do the newly discovered non\u2011coding drivers impact patient survival and therapy response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Vapor Trail Filter",
+        "Absolute2 purity estimator"
+      ],
+      "companies_to_monitor": [
+        "Broad Institute",
+        "InnoCrust"
+      ]
+    }
+  }
+]

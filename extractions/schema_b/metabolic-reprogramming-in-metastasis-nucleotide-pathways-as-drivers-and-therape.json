@@ -1,0 +1,321 @@
+[
+  {
+    "talk_id": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Matuszewski",
+      "institution_or_pharma": "Harvard Medical School / MGH",
+      "session_title": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape",
+      "talk_title": "One Gene at a Time: Metabolic Adaptations Driving Metastasis",
+      "rhetorical_signals": [
+        "Speaker said: \"We haven't studied its role in metastasis before.\"",
+        "Speaker said: \"Massive upregulation in both the liver and the lung mets\"",
+        "Speaker said: \"We see no effect on 2D if we eliminate [GSTT1], but colonies disappear in 3D\"",
+        "Speaker said: \"We are still looking for the endogenous substrate for GSTT1\"",
+        "Speaker said: \"We still don't know how nuclear formaldehyde is detoxified\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No in vivo efficacy data for anti\u2011GSTT1 antibodies",
+        "No pharmacokinetic or toxicity data for candidate antibodies",
+        "No human biomarker validation for GSTT1 or SLC30A4 expression in circulating tumor cells"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "GSTT1 is exclusively expressed in metastatic lesions and absent in primary tumors, representing a metastasis\u2011specific biomarker that could be used to select patients for targeted therapy.",
+        "transcript_evidence": "Speaker said: \"Massive upregulation in both the liver and the lung mets\" and \"no expression in the primary tumors\"",
+        "crispro_angle": "CrisPRO can develop a predictive model linking GSTT1 expression patterns to metastatic risk using transcriptomic and imaging data.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Serine addiction mediated by SLC30A4 transporter in metastatic PDAC suggests targeting serine uptake or downstream metabolism to overcome resistance to standard therapies.",
+        "transcript_evidence": "Speaker said: \"Metastatic cells cannot grow if you don't have exogenous serine\" and \"overexpression of SLC30A4 increases serine uptake\"",
+        "crispro_angle": "CrisPRO can model serine flux and predict combinatorial interventions (e.g., serine\u2011depleting diets or transporter antibodies) that sensitize tumors.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Antibodies against GSTT1 are in early development but lack preclinical efficacy data; CrisPRO could prioritize antibody formats and dosing regimens to accelerate validation.",
+        "transcript_evidence": "Speaker said: \"We are moving with three of these top antibodies now, and hopefully to convince some companies to give us millions so we can develop these antibodies\"",
+        "crispro_angle": "CrisPRO can simulate antibody\u2011target engagement and predict optimal affinity/half\u2011life parameters for anti\u2011GSTT1 therapeutics.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "MAT2A nuclear translocation in metastasis reveals a novel subcellular compartmentalization that could be exploited by CrisPRO\u2019s spatial\u2011omics integration to identify druggable interfaces.",
+        "transcript_evidence": "Speaker said: \"We saw MAT2A in the cytoplasm in primary tumors, but clearly moving into the nucleus in the metastatic cells\"",
+        "crispro_angle": "CrisPRO can integrate subcellular proteomics with metabolic modeling to pinpoint inhibitors that block nuclear MAT2A activity.",
+        "priority": "low"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Twist Biosciences",
+        "context": "collaborating to develop antibodies against SLC30A4",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "DepMap",
+        "context": "used to identify PDAC\u2011specific dependencies such as MAT2A",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What transcription factors drive the up\u2011regulation of GSTT1, SLC30A4, and MAT2A during metastatic colonization?",
+      "Can GSTT1\u2011targeting antibodies eradicate dormant disseminated tumor cells in vivo?",
+      "What is the endogenous substrate of GSTT1 that mediates fibronectin glutathionylation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GSTT1 antibody programs",
+        "SLC30A4 (SLT3A1) antibody candidates",
+        "MAT2A nuclear localization inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Twist Biosciences",
+        "Companies developing serine\u2011transport inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Pankaj Singh",
+      "institution_or_pharma": "University of Oklahoma Health Sciences Center",
+      "session_title": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape",
+      "talk_title": "Targeting Purine Metabolism to Inhibit Metastatic PDAC",
+      "rhetorical_signals": [
+        "Speaker said: \"IMPDH2 is significantly induced in multiple PDAC cohorts and correlates with poor prognosis\"",
+        "Speaker said: \"MPA as a mono\u2011agent showed no efficacy in a neoadjuvant trial of 12 patients\"",
+        "Speaker said: \"Combination of MPA with sulfasalazine or RSL3 sensitized resistant cells in vitro and reduced liver metastases in mice\"",
+        "Speaker said: \"We observed increased glutathione metabolism and GPX4 dependency in MPA\u2011resistant cells\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Mycophenolic acid (MPA) monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of targeting of compensatory glutathione metabolism and ferroptosis resistance pathways",
+        "unexplained_resistance_quote": "Speaker said: \"Prolonged exposure to MPA induces an anti\u2011proliferative response in PDAC cells\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT??? (neoadjuvant MPA trial, 2013)",
+        "target_biology": "IMPDH2 inhibition to block de novo purine synthesis",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comer PDAC patients without biomarker selection for IMPDH2 high expression",
+        "missing_biomarker": "IMPDH2 expression level or purine\u2011metabolism signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (12 patients) limits power to detect efficacy",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Preclinical splenic injection metastasis model (no NCT)",
+        "target_biology": "Combination of IMPDH inhibition (MPA) with ferroptosis inducers",
+        "flawed_enrollment_criteria": "Used only liver colonization model; did not assess other metastatic sites",
+        "missing_biomarker": "Baseline GPX4 or SLC7A11 expression to stratify responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No formal power calculation reported for metastasis burden endpoints",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MPA (mycophenolic acid) \u2013 non\u2011selective IMPDH inhibitor",
+        "ip_vulnerability_note": "Existing FDA\u2011approved drug with known off\u2011target immunosuppressive effects limits therapeutic window for cancer",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy approach without biomarker\u2011driven patient selection dilutes signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high IMPDH2 expression in metastatic lesions but concluded that MPA monotherapy is ineffective, ignoring the biomarker\u2011positive subgroup that might benefit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for combination therapy",
+        "Lack of pharmacodynamic biomarkers in patients",
+        "No comparison to standard of care chemotherapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "IMPDH2 high\u2011expressing PDAC patients could be selected for MPA\u2011based combination therapy.",
+        "transcript_evidence": "Speaker said: \"IMPDH2 is significantly induced in multiple cohorts and correlates with poor prognosis\"",
+        "crispro_angle": "CrisPRO can build a predictive classifier integrating IMPDH2 mRNA/protein levels with clinical outcomes to enrich future trials.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Ferroptosis inducers (e.g., sulfasalazine, RSL3) synergize with IMPDH inhibition to overcome resistance.",
+        "transcript_evidence": "Speaker said: \"Combination of MPA with sulfasalazine or RSL3 sensitized resistant cells and reduced liver metastases\"",
+        "crispro_angle": "CrisPRO can simulate metabolic flux under combined IMPDH and GPX4 inhibition to optimize dosing schedules.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011driven phase 2 trial enrolling only IMPDH2\u2011high metastatic PDAC patients and stratifying by GPX4/SLC7A11 expression.",
+        "transcript_evidence": "Speaker noted lack of biomarker selection as a limitation of prior neoadjuvant trial.",
+        "crispro_angle": "CrisPRO can generate adaptive trial simulations to estimate power given the proposed enrichment criteria.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mycophenolic acid (MPA)",
+        "context": "Existing FDA\u2011approved IMPDH inhibitor used as monotherapy",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Sulfasalazine",
+        "context": "FDA\u2011approved drug repurposed to target SLC7A11 in combination with MPA",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "RSL3",
+        "context": "Tool compound inhibiting GPX4, used to sensitize cells to MPA",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will IMPDH2 inhibition be effective in KRAS\u2011inhibitor\u2011treated patients?",
+      "What is the optimal schedule for combining MPA with ferroptosis inducers?",
+      "Do other metastatic sites (lung, peritoneum) show the same purine\u2011dependency phenotype?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT01821057 (historical neoadjuvant MPA trial)",
+        "Any upcoming trial identifiers for IMPDH2\u2011targeted combos"
+      ],
+      "assets_to_track": [
+        "MPA (mycophenolic acid) clinical development",
+        "Sulfasalazine repurposing programs",
+        "GPX4 inhibitors in oncology pipelines"
+      ],
+      "companies_to_monitor": [
+        "Pharma companies with IMPDH inhibitors (e.g., Novartis, Roche)",
+        "Ferroptosis\u2011focused biotech firms"
+      ]
+    }
+  },
+  {
+    "talk_id": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Raul Ramos",
+      "institution_or_pharma": "University of Texas Southwestern Medical Center",
+      "session_title": "metabolic-reprogramming-in-metastasis-nucleotide-pathways-as-drivers-and-therape",
+      "talk_title": "NUDT5\u2011PPAT Interaction Controls Purine Pathway Choice and Thiopurine Sensitivity",
+      "rhetorical_signals": [
+        "Speaker said: \"NUDT5 physically interacts with PPAT and this interaction is critical for shutting off the de novo pathway\"",
+        "Speaker said: \"The R70A mutation in NUDT5 abolishes PPAT binding and confers resistance to 6\u2011thioguanine\"",
+        "Speaker said: \"NUDT5 induces PPAT tetramerization, reducing its enzymatic activity\"",
+        "Speaker said: \"Patients with an enhancer variant that lowers NUDT5 expression have lower 6\u2011MP dose intensity\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NUDT5\u2011PPAT regulatory axis",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of understanding of the biochemical trigger that promotes NUDT5\u2011mediated PPAT tetramerization",
+        "unexplained_resistance_quote": "Speaker said: \"We don't know what the biochemical trigger is for NUDT5 to bind PPAT\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "NUDT5 as a therapeutic target",
+        "ip_vulnerability_note": "Current data show that catalytic activity is dispensable; targeting protein\u2011protein interaction may be challenging",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "No small\u2011molecule inhibitors of the NUDT5\u2011PPAT interface are available, limiting translational potential"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that NUDT5 catalytic activity is irrelevant for thiopurine sensitivity, yet earlier literature suggested its ADP\u2011ribose hydrolase function was key"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo tumor models testing NUDT5\u2011PPAT disruption",
+        "Absence of structural data for the PPAT\u2011NUDT5 complex",
+        "Lack of patient\u2011level correlation beyond one ALL cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can model the PPAT tetramer\u2011dimer equilibrium and predict small molecules or peptides that stabilize the inactive tetramer via the NUDT5 interface.",
+        "transcript_evidence": "Speaker said: \"NUDT5 induces PPAT tetramerization\" and \"R70A mutation abolishes binding and resistance\"",
+        "crispro_angle": "Leverage CrisPRO\u2019s protein\u2011protein interaction simulation to design disruptors of the NUDT5\u2011PPAT binding pocket.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "NUDT5 expression levels predict thiopurine toxicity in ALL patients; a predictive model could guide dose intensity.",
+        "transcript_evidence": "Speaker said: \"Patients with lower NUDT5 expression have lower 6\u2011MP dose intensity\"",
+        "crispro_angle": "Integrate enhancer genotype and NUDT5 expression into a decision\u2011support tool for personalized thiopurine dosing.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a trial combining thiopurines with agents that promote PPAT tetramerization (e.g., allosteric modulators) in NUDT5\u2011high tumors.",
+        "transcript_evidence": "Speaker highlighted that PPAT activity is suppressed when NUDT5 binds, enhancing thiopurine efficacy.",
+        "crispro_angle": "Use CrisPRO to simulate metabolic flux under combined PPAT tetramerization and thiopurine treatment to estimate response rates.",
+        "priority": "low"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mycophenolic acid (MPA)",
+        "context": "Mentioned as an IMPDH inhibitor with limited efficacy, contrasted with thiopurine mechanism",
+        "sentiment": "critical"
+      },
+      {
+        "name": "6\u2011thioguanine (6TG)",
+        "context": "Used as a probe to identify NUDT5\u2011PPAT pathway",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What cellular signal (e.g., purine nucleotide levels, PRPP depletion) triggers NUDT5 to bind PPAT?",
+      "Does the NUDT5\u2011PPAT interaction differ across tissue types or cancer subtypes?",
+      "Can pharmacologic stabilization of PPAT tetramers be achieved without affecting NUDT5 catalytic activity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NUDT5\u2011PPAT interaction assays",
+        "Allosteric modulators of PPAT oligomerization",
+        "Thiopurine pharmacogenomics datasets"
+      ],
+      "companies_to_monitor": [
+        "Companies developing PPAT or NUDT5 modulators",
+        "Pharma pursuing thiopurine optimization"
+      ]
+    }
+  }
+]

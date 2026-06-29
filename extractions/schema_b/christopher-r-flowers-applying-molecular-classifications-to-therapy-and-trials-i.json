@@ -1,0 +1,141 @@
+[
+  {
+    "talk_id": "christopher-r-flowers-applying-molecular-classifications-to-therapy-and-trials-i::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Christopher R. Flowers",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "christopher-r-flowers-applying-molecular-classifications-to-therapy-and-trials-i",
+      "talk_title": "Applying Molecular Classifications to Therapy and Trials in Diffuse Large B\u2011Cell Lymphoma",
+      "rhetorical_signals": [
+        "Speaker said: \"the only positive one of those trials being a Phase II clinical trial and then had a confirmatory Phase III trial that turned out to be a negative trial.\"",
+        "Speaker said: \"the Hans algorithm ... has about 20% misclassification of lymphomas in the modern era when that's used.\"",
+        "Speaker said: \"we have not seen toxicity with this agent and are looking to move it forward to complete the Phase 1 clinical trial\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Polatuzumab\u2011R\u2011CHOP (POLARIX) regimen",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Benefit appears confined to ABC subtype; trial used broad enrollment without molecular pre\u2011selection, masking limited efficacy.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted dramatic benefit in ABC subgroup while presenting overall hazard ratio 0.73.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Hans immunohistochemistry algorithm",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "20% misclassification rate; does not capture true gene\u2011expression\u2011based cell\u2011of\u2011origin subtypes.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "POLARIX",
+        "target_biology": "Add polatuzumab to R\u2011CHOP to improve PFS in DLBCL",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comers based on International Prognostic Index without molecular (gene\u2011expression) stratification.",
+        "missing_biomarker": "Gene\u2011expression\u2011based ABC vs GCB classification (LymphGen) to enrich for responsive subgroup.",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary endpoint PFS surrogate may mask lack of OS benefit; hazard ratio modest (0.73).",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Tafasitamab\u202f+\u202fLenalidomide\u202f+\u202fR\u2011CHOP vs placebo\u202f+\u202fR\u2011CHOP",
+        "target_biology": "Immunomodulatory + anti\u2011CD20 backbone",
+        "flawed_enrollment_criteria": "Retained historic 37 eligibility criteria before consensus reduction to 13, potentially excluding real\u2011world patients.",
+        "missing_biomarker": "Molecular subtype (ABC/GCB) and dark\u2011zone signature to guide therapy choice.",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Polatuzumab\u2011based ADC platform",
+        "ip_vulnerability_note": "Speaker disclosed that benefit is limited to a molecular subset, suggesting the ADC core may not overcome biology\u2011driven resistance.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad first\u2011line use without biomarker enrichment dilutes signal."
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Hans IHC algorithm",
+        "ip_vulnerability_note": "Speaker highlighted 20% misclassification, indicating the assay lacks the precision needed for targeted therapy selection.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a sub\u2011optimal diagnostic tool limits ability to match patients to optimal regimens."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed overall POLARIX hazard ratio 0.73 (suggesting a new standard of care) but then emphasized that the benefit is driven almost entirely by the ABC subtype, contradicting the claim of a universal improvement."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented for POLARIX.",
+        "Lack of biomarker\u2011stratified efficacy for many trials.",
+        "Absence of prospective validation of the new surrogate PFS endpoint in randomized phase III settings."
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "POLARIX and other frontline trials enrolled unselected DLBCL patients; CrisPRO could provide rapid gene\u2011expression\u2011based ABC/GCB classification to enrich future trials.",
+        "transcript_evidence": "Speaker noted that benefit was dramatic only in the ABC subgroup while the trial enrolled all\u2011comers.",
+        "crispro_angle": "CrisPRO\u2019s computational pipeline can generate a 10\u2011day turnaround gene\u2011expression classifier to select ABC patients for ADC or CAR\u2011T studies.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Spatial transcriptomics revealed plasticity between ABC and GCB phenotypes; CrisPRO can model clonal dynamics from cfDNA to anticipate lineage switching.",
+        "transcript_evidence": "Speaker described \u201ctremendous plasticity across diffuse large B\u2011cell lymphoma\u201d and the need for early molecular signals.",
+        "crispro_angle": "CrisPRO can integrate cfDNA mutational signatures with spatial data to predict emergent resistant clones.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Reduce over\u2011restrictive eligibility criteria while embedding molecular stratification to improve accrual and signal detection.",
+        "transcript_evidence": "Speaker discussed the reduction from 37 to 13 essential criteria and the impact of eligibility on minority enrollment.",
+        "crispro_angle": "CrisPRO can simulate trial power under various biomarker\u2011driven enrollment scenarios to optimize design.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Epizyme",
+        "context": "Company that shelved a SETD2 inhibitor after acquisition.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Axicell (axi\u2011cel) CAR\u2011T",
+        "context": "Referenced as successful in ZUMA\u20117 second\u2011line trial.",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How can spatial transcriptomics\u2011derived lymphoma archetypes be prospectively validated as predictive biomarkers in frontline trials?",
+      "What quantitative cfDNA components best reflect early eradication of specific subclones in DLBCL?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT03274492 (POLARIX)",
+        "NCT04576171 (tafasi\u2011lenalidomide\u2011R\u2011CHOP trial)"
+      ],
+      "assets_to_track": [
+        "Polatuzumab vedotin",
+        "Tafasitamab",
+        "Lenalidomide",
+        "Axi\u2011cel CAR\u2011T"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson",
+        "Epizyme",
+        "Genentech",
+        "Bristol Myers Squibb"
+      ]
+    }
+  }
+]

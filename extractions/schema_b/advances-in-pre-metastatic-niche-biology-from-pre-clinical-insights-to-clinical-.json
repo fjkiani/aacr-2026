@@ -1,0 +1,215 @@
+[
+  {
+    "talk_id": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Yibin Kang",
+      "institution_or_pharma": "Princeton",
+      "session_title": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-",
+      "talk_title": "Co-evolution of tumor and the stroma microenvironment during bone metastasis",
+      "rhetorical_signals": [
+        "Speaker said: \"chemotherapy induce JAG1 expressing in osteoblast, and that protect tumor cell from chemotherapy-induced cell death.\"",
+        "Speaker said: \"Combined treatment leads to nearly 100% reduction of bone metastasis.\"",
+        "Speaker said: \"We don't think you can use those marker to assess the bone metastasis degree.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "JAG1 neutralizing antibody (15d11)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential redundancy with other Notch ligands not addressed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Combined treatment nearly 100% reduction, but single agents only 10% decrease",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "JAG1 neutralizing antibody targeting both tumor- and osteoblast-derived JAG1",
+        "ip_vulnerability_note": "Speaker disclosed that the antibody binds a shared ligand, suggesting limited specificity to tumor source",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on combination with chemotherapy may limit monotherapy applicability"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No OS or PFS data in humans",
+        "No biomarker\u2011stratified analysis of CCR3\u2011targeted blockade"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a clinical assay for the triple\u2011positive IMAC markers (VCAN1, CD163, CCR3) to identify patients at risk of bone metastasis",
+        "transcript_evidence": "Speaker said: \"Those are markers that exist in normal bone marrow as well... we don't think you can use those marker to assess the bone metastasis degree.\"",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell niche labeling data to define a composite IMAC signature predictive of bone metastatic risk",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target CCR3\u2011mediated recruitment of IMACs to block the iron\u2011rich niche that supports tumor survival under hypoxia",
+        "transcript_evidence": "Speaker said: \"One of the potential is to try to target CCR3, because that seems to be specifically used by MACC or IMAC to be recruited to niche.\"",
+        "crispro_angle": "CrisPRO can model CCR3\u2011ligand interactions and predict small\u2011molecule or antibody inhibitors that disrupt IMAC recruitment",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine a CCR3 antagonist with standard chemotherapy to prevent JAG1\u2011mediated chemoresistance in bone metastasis",
+        "transcript_evidence": "Speaker said: \"Combined treatment leads to nearly 100% reduction of bone metastasis.\"",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of CCR3 blockade plus chemotherapy on tumor\u2011bone niche dynamics",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011enriched early\u2011phase trial enrolling patients with high IMAC recruitment signatures to test CCR3 blockade",
+        "transcript_evidence": "Speaker said: \"We want to block this recruitment of IMAC away from EBI to the bone metastasis because we need them for red blood cell formation.\"",
+        "crispro_angle": "CrisPRO can stratify patients based on IMAC spatial transcriptomics to enrich for those most likely to benefit",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen",
+        "context": "Collaboration on development of JAG1 neutralizing antibody 15d11",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can the triple\u2011positive IMAC markers be developed into a clinically actionable diagnostic test?",
+      "What are the downstream signaling pathways activated by CCR3 that drive IMAC recruitment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "15d11 JAG1 antibody",
+        "CCR3 antagonists"
+      ],
+      "companies_to_monitor": [
+        "Amgen"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Divi Yi",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-",
+      "talk_title": "Disrupting the soil: targeting the pre\u2011metastatic niche",
+      "rhetorical_signals": [
+        "Speaker said: \"We call it seed and soil 2.0.\"",
+        "Speaker said: \"REG inhibitor has been developed... Phase 1/2 trial shows 70% partial response and 24% complete response.\"",
+        "Speaker said: \"VCAM immunoPET can detect pre\u2011metastatic niche before standard MRI can do.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "REG inhibitor",
+        "failure_type": "unknown",
+        "mechanistic_blindspot": "Potential off\u2011target effects on normal tissue REG signaling not explored",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Phase 1/2 trial shows impressive early efficacy but long\u2011term durability not yet known",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ADORATION trial (Phase 1/2)",
+        "target_biology": "REG\u2011ACE100 interaction driving immunosuppressive niche in brain metastasis",
+        "flawed_enrollment_criteria": "Broad inclusion of brain metastasis patients without biomarker\u2011selected REG\u2011high subgroup",
+        "missing_biomarker": "REG expression level in tumor or niche",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early efficacy signals based on small cohort; may be underpowered for survival endpoints",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Anti\u2011VCAM immunoPET/\u03b1\u2011particle conjugate",
+        "ip_vulnerability_note": "Speaker disclosed that VCAM is up\u2011regulated in multiple organ pre\u2011metastatic niches, suggesting limited organ specificity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on VCAM expression may dilute signal in organs where VCAM is also induced by inflammation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that VCAM is a universal pre\u2011metastatic niche marker across bone, brain, and lung, then concluded that targeting VCAM will be an effective organ\u2011agnostic therapy \u2014 ignoring the risk of off\u2011target effects in inflamed non\u2011cancerous tissues"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term OS data for REG inhibitor",
+        "Lack of comparative arm with standard of care",
+        "No validation of VCAM PET specificity in inflammatory diseases"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a REG expression assay to select patients for the REG inhibitor trial",
+        "transcript_evidence": "Speaker said: \"REG expressed in cancer cells can bind to ACE100 proteins... leading to immunosuppressive niche\"",
+        "crispro_angle": "CrisPRO can integrate tumor transcriptomics to generate a REG\u2011high signature for patient enrichment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine REG inhibitor with immune checkpoint blockade to overcome M2\u2011macrophage mediated suppression",
+        "transcript_evidence": "Speaker said: \"REG inhibitor reduces M2\u2011like macrophage and MDSCs, meanwhile enhances CD8 T cell.\"",
+        "crispro_angle": "CrisPRO can model synergistic immune activation when REG inhibition is paired with anti\u2011PD\u20111",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s computational spine to predict additional VCAM\u2011linked niche molecules for more selective imaging agents",
+        "transcript_evidence": "Speaker said: \"VCAM is up\u2011regulated on luminal surface of endothelial cells in response to tumor\u2011derived inflammatory signals.\"",
+        "crispro_angle": "CrisPRO can prioritize alternative endothelial targets with higher tumor\u2011specificity than VCAM",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011driven early\u2011phase trial using VCAM\u2011PET to enroll patients with imaging\u2011confirmed pre\u2011metastatic niche",
+        "transcript_evidence": "Speaker said: \"ImmunoPET can detect pre\u2011metastatic niche before standard MRI can do.\"",
+        "crispro_angle": "CrisPRO can simulate enrichment impact of imaging\u2011based eligibility on trial power",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Lyden lab",
+        "context": "Pioneered EV\u2011mediated organotropism studies (e.g., CEACAM1/MIP for brain metastasis)",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Leyden lab",
+        "context": "Developed exosome\u2011based detection of pre\u2011metastatic niche signatures",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the durability of responses to REG inhibition beyond early trial follow\u2011up?",
+      "Can VCAM\u2011targeted \u03b1\u2011particle therapy spare inflamed non\u2011cancerous tissues?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT0XXXXXXX"
+      ],
+      "assets_to_track": [
+        "REG inhibitor",
+        "anti\u2011VCAM immunoPET",
+        "REG\u2011ACE100 interaction assays"
+      ],
+      "companies_to_monitor": [
+        "Companies developing VCAM\u2011targeted radiopharmaceuticals"
+      ]
+    }
+  }
+]

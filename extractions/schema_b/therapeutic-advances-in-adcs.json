@@ -1,0 +1,395 @@
+[
+  {
+    "talk_id": "therapeutic-advances-in-adcs::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Elizabeth Lee",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "Therapeutic Advances in Antibody Drug Conjugates",
+      "talk_title": "CTEP Trial Number 10355: Phase 1 trial of DS-8201A and olaparib in HER2-expressing malignancies",
+      "rhetorical_signals": [
+        "Speaker said: \"All pneumonitis events were low grade and occurred across dosing schedules, tumor types, and levels of HER2 expression.\"",
+        "Speaker said: \"We observed a confirmed complete response and 12 confirmed partial responses.\"",
+        "Speaker said: \"The majority of patients had wild-type BRCA by local germline and somatic testing.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DS-8201A + olaparib combination",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Hematologic toxicity not fully mitigated despite gap schedule",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Confirmed complete response and partial responses observed in a heavily pretreated cohort",
+        "hidden_tox_signal": "Grade 3/4 neutropenia, anemia, and thrombocytopenia were markedly attenuated but still present",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CTEP 10355",
+        "target_biology": "HER2-targeted TOP1 inhibitor payload combined with PARP inhibition",
+        "flawed_enrollment_criteria": "Enrolled HER2 IHC 1+ patients without biomarker enrichment, potentially diluting signal",
+        "missing_biomarker": "No stratification by BRCA mutation or HRD status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single-arm dose escalation, no comparator arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DS-8201A (trastuzumab deruxtecan) TOP1 payload",
+        "ip_vulnerability_note": "Relies on HER2 expression; activity seen even at HER2 IHC 1+ suggesting limited specificity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Combination with PARP inhibitor adds hematologic toxicity, limiting broader use"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed deep tumor reductions across HER2 low (IHC 1+) patients, then concluded that the regimen is broadly feasible without biomarker selection"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No randomized comparator",
+        "Limited biomarker stratification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of HRD/BRCA status stratification limits ability to identify patients who may benefit most from PARP inhibition",
+        "transcript_evidence": "Speaker noted only one patient was BRCA mutant and did not analyze outcomes by BRCA status",
+        "crispro_angle": "CrisPRO could integrate genomic HRD scores to select patients with synthetic lethality potential",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Staggered schedule reduces overlapping myelosuppression, suggesting potential to combine with other agents that have non-overlapping toxicities",
+        "transcript_evidence": "Discussant highlighted reduced hematologic AEs with gap schedule olaparib",
+        "crispro_angle": "CrisPRO can model optimal sequencing windows for ADC and targeted agents",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan (T-DXd)",
+        "context": "Primary ADC under investigation",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "AstraZeneca",
+        "context": "Funding acknowledgment",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Why do some HER2 IHC 1+ patients achieve deep responses while others do not?",
+      "What is the optimal duration of olaparib dosing to balance efficacy and toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT10355"
+      ],
+      "assets_to_track": [
+        "DS-8201A",
+        "olaparib"
+      ],
+      "companies_to_monitor": [
+        "Daiichi Sankyo",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "therapeutic-advances-in-adcs::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Jian",
+      "institution_or_pharma": "CSPC Pharmaceutical Group",
+      "session_title": "Therapeutic Advances in Antibody Drug Conjugates",
+      "talk_title": "First-in-human study of SOS 6010, an EGFR-targeted ADC in advanced nasopharyngeal carcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"The OR is 31.5% and the 4.8 milligram per kilogram group achieved a higher OR of 36.4%\"",
+        "Speaker said: \"Most common Grade 3 TEAEs were hematological toxicity\"",
+        "Speaker said: \"No clear signal was observed between EGFR expression and the response rate\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SOS 6010 (EGFR ADC)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Hematologic toxicity inherent to TOP1 payload not fully mitigated by linker design",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Higher OR in EGFR monoclonal antibody\u2011na\u00efve subgroup",
+        "hidden_tox_signal": "Grade 3/4 hematologic events in 61% of patients",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "SYS6010 Phase 1",
+        "target_biology": "EGFR-targeted TOP1 inhibitor ADC",
+        "flawed_enrollment_criteria": "Allowed enrollment regardless of EGFR expression level, potentially diluting efficacy signal",
+        "missing_biomarker": "No requirement for high EGFR IHC or quantitative EGFR expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single-arm design without control arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EGFR ADC with cleavable linker and TOP1 payload",
+        "ip_vulnerability_note": "Speaker disclosed high DAR and cleavable linker, which are shared features across many EGFR ADCs",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "High hematologic toxicity may limit combination possibilities"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented high ORR in EGFR\u2011na\u00efve patients but concluded that EGFR expression level does not affect response"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No biomarker\u2011response correlation",
+        "Limited long\u2011term safety"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of EGFR expression\u2011based selection; data suggest better responses in EGFR\u2011na\u00efve patients",
+        "transcript_evidence": "Speaker noted higher ORR in EGFR monoclonal antibody\u2011na\u00efve subgroup",
+        "crispro_angle": "CrisPRO can develop predictive models integrating EGFR IHC, prior EGFR\u2011mAb exposure, and genomic data",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "High hematologic toxicity suggests need for non\u2011overlapping partners such as immune checkpoint inhibitors with distinct safety profiles",
+        "transcript_evidence": "Discussant mentioned ongoing combination with PD\u20111 inhibitor",
+        "crispro_angle": "CrisPRO can simulate synergistic schedules minimizing overlapping myelosuppression",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan",
+        "context": "Mentioned as comparator ADC with HER2 target",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Why do EGFR\u2011na\u00efve patients show higher response despite EGFR being the target?",
+      "Can a more stable linker reduce hematologic toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SOS 6010"
+      ],
+      "companies_to_monitor": [
+        "CSPC Pharmaceutical Group"
+      ]
+    }
+  },
+  {
+    "talk_id": "therapeutic-advances-in-adcs::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Tao Zhu",
+      "institution_or_pharma": "Zhejiang Cancer Hospital",
+      "session_title": "Therapeutic Advances in Antibody Drug Conjugates",
+      "talk_title": "First-in-human Phase 1 trial of QLS-5132, a claudin\u20116 targeting ADC in platinum\u2011resistant ovarian cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We observed one DLT ... Grade 4 platelet count decrease, fully recovered to baseline\"",
+        "Speaker said: \"ORR was 55.6% at the 4.8 mg/kg dose\"",
+        "Speaker said: \"No significant correlation between CLDN6 expression and response was seen\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "QLS-5132 (claudin\u20116 ADC)",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Lack of correlation between CLDN6 expression and response suggests target may not be primary driver",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Two patients with undetectable CLDN6 achieved PR",
+        "hidden_tox_signal": "Grade 3/4 hematologic toxicities in 32.1% of patients",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "QLS-5132 Phase 1",
+        "target_biology": "Claudin\u20116 targeted TOP1 inhibitor ADC",
+        "flawed_enrollment_criteria": "Enrolled all comers with PROC regardless of CLDN6 expression, potentially diluting efficacy",
+        "missing_biomarker": "No pre\u2011selection for high CLDN6 expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (28 patients) without control arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Claudin\u20116 ADC with hydrazonic linker and TOP1 payload",
+        "ip_vulnerability_note": "Linker and payload are similar to other TOP1 ADCs, offering limited differentiation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Efficacy appears dose\u2011dependent but target expression not predictive, limiting biomarker\u2011driven development"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker reported high ORR (55%) yet admitted no correlation between CLDN6 expression and response"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "No long\u2011term OS data",
+        "Unclear predictive biomarker"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a predictive model for response beyond CLDN6 expression, incorporating genomic and tumor microenvironment features",
+        "transcript_evidence": "Speaker noted lack of correlation between CLDN6 levels and response",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics to identify hidden predictive signatures",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Two CLDN6\u2011negative responders suggest alternative uptake mechanisms that could be exploited",
+        "transcript_evidence": "Two patients with undetectable CLDN6 achieved PR",
+        "crispro_angle": "CrisPRO can model off\u2011target internalization pathways for ADCs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "TORAL\u2011123 (claudin\u20116 ADC with MMAE payload)",
+        "context": "Compared ORR and toxicity profile",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What drives response in CLDN6\u2011negative tumors?",
+      "Would a biomarker\u2011selected cohort improve ORR and safety?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "QLS-5132"
+      ],
+      "companies_to_monitor": [
+        "Zhejiang Cancer Hospital",
+        "Partner biotech developing claudin\u20116 ADCs"
+      ]
+    }
+  },
+  {
+    "talk_id": "therapeutic-advances-in-adcs::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Runbo Zhong",
+      "institution_or_pharma": "Shanghai Chest Hospital",
+      "session_title": "Therapeutic Advances in Antibody Drug Conjugates",
+      "talk_title": "ARTEMIS\u2011101: Phase 1 study of REVSYBOO (tagretucumab) plus atezolizumab in pre\u2011treated advanced non\u2011squamous NSCLC",
+      "rhetorical_signals": [
+        "Speaker said: \"The combination achieved a confirmed ORR of 47.1% and a median PFS of 14 months\"",
+        "Speaker said: \"Grade 3 or higher TRAEs occurred in 70% of the patients, predominantly hematological toxicities\"",
+        "Speaker said: \"Efficacy was consistent across B7\u2011H3 expression levels and independent of prior immunotherapy exposure\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "REVSYBOO (B7\u2011H3 ADC) + atezolizumab",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High hematologic toxicity (70% grade \u22653) not fully mitigated by schedule",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Patients with prior immunotherapy still achieved responses",
+        "hidden_tox_signal": "Grade 3/4 hematologic events in 70% of cohort",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ARTEMIS\u2011101",
+        "target_biology": "B7\u2011H3 targeting TOP1 inhibitor ADC combined with PD\u2011L1 blockade",
+        "flawed_enrollment_criteria": "Mixed PD\u2011L1 expression and prior immunotherapy exposure without stratification, potentially confounding efficacy assessment",
+        "missing_biomarker": "No prospective selection based on B7\u2011H3 intensity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small expansion cohort (34 efficacy evaluable) without control arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "B7\u2011H3 ADC with tropomodulin\u20111 inhibitor payload",
+        "ip_vulnerability_note": "Payload and linker are shared among several B7\u2011H3 ADCs in development, limiting IP moat",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "High hematologic toxicity may limit combination with other myelosuppressive agents"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker reported consistent efficacy across B7\u2011H3 expression levels yet emphasized need for biomarker\u2011driven development"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited data on PD\u2011L1 negative subgroup",
+        "Long\u2011term OS not mature"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of B7\u2011H3 expression\u2011based selection despite variable response",
+        "transcript_evidence": "Speaker noted efficacy across B7\u2011H3 levels",
+        "crispro_angle": "CrisPRO can model quantitative B7\u2011H3 scoring to identify high\u2011benefit subpopulations",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "High hematologic toxicity suggests exploring non\u2011myelosuppressive partners (e.g., targeted agents) to improve tolerability",
+        "transcript_evidence": "Discussant highlighted need for biomarker\u2011selected trials",
+        "crispro_angle": "CrisPRO can simulate safety profiles of alternative combos",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "YL201 (B7\u2011H3 ADC)",
+        "context": "Compared efficacy and toxicity",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Risdiplam (Risres)",
+        "context": "Mentioned as same class ADC",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does B7\u2011H3 expression truly predict benefit, or is response driven by PD\u2011L1 status?",
+      "What is the durability of response in PD\u2011L1 negative patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "REVSYBOO (tagretucumab)",
+        "atezolizumab"
+      ],
+      "companies_to_monitor": [
+        "Shanghai Chest Hospital",
+        "Sponsor of REVSYBOO"
+      ]
+    }
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "talk_id": "cancer-predisposition-syndromes::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sharon Savage",
+      "institution_or_pharma": "National Cancer Institute",
+      "session_title": "cancer-predisposition-syndromes",
+      "talk_title": "Cancer and Telomere Disorders",
+      "rhetorical_signals": [
+        "Speaker said: \"the risk of cancer was about three-fold higher than in the general population\"",
+        "Speaker said: \"the most common solid tumor in TBDs is head and neck squamous cell carcinoma... risk was about 50-fold higher\"",
+        "Speaker said: \"we don't really know what the short answer is... we don't really know how to treat these cancers\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "standard chemotherapy (platinum-based)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "patients with telomere biology disorders have bone marrow failure that makes them intolerant to DNA-damaging agents",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: \"doses were adjusted, outcomes were still poor, side effects were really bad\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No clinical trial data for cancer treatment in TBD patients",
+        "Limited data on prospective monitoring of somatic mutations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of prospective monitoring of clonal hematopoiesis mutations to predict cancer risk in TBD patients.",
+        "transcript_evidence": "Speaker said: \"we are working hard as a field to identify the regulatory pathways driving clonal transformation so that we can identify patients at risk of cancer development\"",
+        "crispro_angle": "CrisPRO could integrate longitudinal ctDNA sequencing to detect emerging somatic mutations and flag high-risk individuals for early intervention.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Standard platinum chemotherapy fails due to toxicity; opportunity to repurpose low-dose DNA repair\u2011targeted agents guided by CRISPR\u2011based synthetic lethality screens.",
+        "transcript_evidence": "Speaker said: \"we don't really know what to do with these patients who develop cancers... doses were adjusted, outcomes were still poor\"",
+        "crispro_angle": "CrisPRO can predict synthetic lethal partners of telomere maintenance defects to identify tolerable drug combos.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the optimal surveillance interval and modality for early detection of head and neck SCC in TBD patients?",
+      "Which somatic mutations most strongly predict progression to AML/MDS in this population?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cancer-predisposition-syndromes::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Faye Kastrinos",
+      "institution_or_pharma": "Columbia University",
+      "session_title": "cancer-predisposition-syndromes",
+      "talk_title": "Lynch Syndrome: Identification, Risk Modeling, and Screening Strategies",
+      "rhetorical_signals": [
+        "Speaker said: \"Lynch syndrome is the most common inherited GI cancer syndrome... prevalence is 1 in 350\"",
+        "Speaker said: \"the uptake of cascade testing at best is only 40%\"",
+        "Speaker said: \"we see a striking difference, particularly in PMS2, where cancer risks deviate only after age 60\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "current universal colonoscopy screening schedule",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "one-size-fits-all colonoscopy intervals ignore genotype-specific cancer risk trajectories",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that many carriers have low adherence to colonoscopy (65%) leading to interval cancers",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Modeling study of genotype\u2011specific colonoscopy intervals",
+        "target_biology": "genotype\u2011specific colorectal cancer risk in Lynch syndrome",
+        "flawed_enrollment_criteria": "Assumes uniform risk across all MMR gene carriers",
+        "missing_biomarker": "genotype (MSH2, MLH1, MSH6, PMS2) stratification",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underestimates benefit for high\u2011risk genotypes and overestimates for low\u2011risk genotypes",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Universal annual colonoscopy recommendation",
+        "ip_vulnerability_note": "Speaker highlighted that genotype\u2011specific intervals (e.g., every 3 years for PMS2) could reduce burden and improve adherence",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad colonoscopy schedule dilutes signal for low\u2011risk carriers and strains resources"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high prevalence of MSI\u2011high tumors in Lynch carriers but concluded that universal MSI\u2011high screening alone will miss carriers with MSI\u2011intermediate or stable tumors"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Performance characteristics of stool\u2011based FIT and blood\u2011based multi\u2011cancer early detection tests in Lynch syndrome are not established",
+        "Limited real\u2011world data on adherence to modified colonoscopy intervals"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for genotype\u2011specific risk scores to guide colonoscopy frequency.",
+        "transcript_evidence": "Speaker said: \"we see striking differences... PMS2 carriers have low risk until after age 60\"",
+        "crispro_angle": "CrisPRO can integrate germline genotype with age\u2011specific incidence data to generate personalized surveillance schedules.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integration of non\u2011invasive FIT or blood\u2011based multi\u2011cancer tests with colonoscopy for low\u2011adherence carriers.",
+        "transcript_evidence": "Speaker said: \"modeling shows colonoscopy every four years interdigitated with FIT improves quality\u2011adjusted life years\"",
+        "crispro_angle": "CrisPRO can model optimal test intervals and predict cost\u2011effectiveness for each genotype.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design trials that stratify participants by MMR gene (MLH1, MSH2, MSH6, PMS2) rather than lumping all Lynch carriers together.",
+        "transcript_evidence": "Speaker highlighted that current guidelines historically treated all genotypes the same until recent updates.",
+        "crispro_angle": "CrisPRO can simulate power calculations for genotype\u2011stratified arms to avoid dilution of therapeutic signal.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PREM5 model",
+        "context": "used for predicting likelihood of Lynch syndrome based on family history",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "FIT (fecal immunochemical test)",
+        "context": "modeled as adjunct to colonoscopy for surveillance",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Multi\u2011target stool DNA",
+        "context": "mentioned as expensive and less favorable than FIT",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the real\u2011world performance of blood\u2011based multi\u2011cancer early detection assays in PMS2 carriers?",
+      "How can health systems improve cascade testing uptake beyond 40%?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Aspirin chemoprevention trials in Lynch syndrome",
+        "FIT and blood\u2011based MCED test validation studies"
+      ],
+      "companies_to_monitor": [
+        "Exact Sciences (FIT and stool DNA)",
+        "Grail (blood\u2011based MCED)"
+      ]
+    }
+  }
+]

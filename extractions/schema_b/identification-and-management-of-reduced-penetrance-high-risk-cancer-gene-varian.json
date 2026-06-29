@@ -1,0 +1,268 @@
+[
+  {
+    "talk_id": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Tuva Pal",
+      "institution_or_pharma": "Vanderbilt",
+      "session_title": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian",
+      "talk_title": "Inherited cancer risk on a continuum",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw an 84\u2011year\u2011old with metastatic breast cancer who tested positive for a BRCA2 variant that ClinVar lists as pathogenic but notes it may be hypomorphic\"",
+        "Speaker said: \"we have 16 consensus variants in BRCA1/2 classified as reduced penetrance across Myriad and Ambry\"",
+        "Speaker said: \"the ACMG guidelines were designed for highly penetrant variants and are not optimal for reduced penetrance\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective outcome data for reduced penetrance variants",
+        "Lack of standardized risk estimates per variant"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for computational models to stratify reduced penetrance BRCA variants beyond binary ClinVar labels",
+        "transcript_evidence": "Speaker said: \"we need a terminology that tells us we need to dig deeper when we see variants in ClinVar\"",
+        "crispro_angle": "CrisPRO can integrate functional assay scores with population data to generate quantitative risk scores for hypomorphic variants",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage large\u2011scale multiplexed functional assays (MAVEs) to identify intermediate activity variants",
+        "transcript_evidence": "Speaker said: \"functional studies... are trying to figure out what these variants are doing\"",
+        "crispro_angle": "CrisPRO's variant activity modeling can prioritize variants for functional validation",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Myriad",
+        "context": "collaborated on consensus reduced penetrance variant list",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Ambry",
+        "context": "collaborated on consensus reduced penetrance variant list",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "ClinVar",
+        "context": "discussed inconsistent classifications of the same variant",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How should risk\u2011reducing mastectomy recommendations be calibrated for specific reduced penetrance BRCA variants?",
+      "What is the optimal integration of polygenic risk scores with reduced penetrance variant data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BRCA2 reduced penetrance consensus variant list",
+        "CANrisk version 4"
+      ],
+      "companies_to_monitor": [
+        "Myriad Genetics",
+        "Ambry Genetics"
+      ]
+    }
+  },
+  {
+    "talk_id": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Alvaro Monteiro",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian",
+      "talk_title": "Functional analysis of reduced penetrance variants",
+      "rhetorical_signals": [
+        "Speaker said: \"we can use large\u2011scale functional analysis to identify a large number of reduced penetrance variants in the population\"",
+        "Speaker said: \"the VARcall model transforms protein activity from an assay into the probability of pathogenicity\"",
+        "Speaker said: \"we still lack calibrated thresholds to translate activity into clinical risk\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "VARcall functional assay pipeline",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "uncertain activity\u2011to\u2011risk calibration for hypomorphic variants",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Functional assay readout platform",
+        "ip_vulnerability_note": "Speaker disclosed detailed description of the VARcall mixture model, suggesting the core statistical framework is publicly known",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on in\u2011vitro activity without validated clinical thresholds may limit translational impact"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that many variants fall in the intermediate activity range, then concluded that \"we can already identify reduced penetrance pathogenic variants\" without having calibrated risk thresholds"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation of VARcall risk predictions",
+        "Lack of correlation between assay activity and actual cancer incidence"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Apply CrisPRO's computational spine to map intermediate activity scores to predicted cancer risk",
+        "transcript_evidence": "Speaker said: \"we need quantitative way to do functional analysis and map activity to risk\"",
+        "crispro_angle": "CrisPRO can generate calibrated risk models by integrating functional scores with epidemiologic data",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design prospective studies that enroll carriers of intermediate\u2011activity variants to validate risk predictions",
+        "transcript_evidence": "Speaker said: \"we lack calibrated thresholds to translate activity into clinical risk\"",
+        "crispro_angle": "CrisPRO can stratify participants for such trials based on predicted risk tiers",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Jay Shendure lab (Greg Findley)",
+        "context": "provided large\u2011scale variant activity data referenced in the talk",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Fergus Couch",
+        "context": "collaborated on functional risk calibration efforts",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What activity threshold corresponds to a clinically actionable risk level?",
+      "How do tissue\u2011specific modifiers (e.g., heat shock proteins) affect assay readouts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "VARcall model publications",
+        "Enigma consortium functional datasets"
+      ],
+      "companies_to_monitor": [
+        "Myriad Genetics",
+        "Ambry Genetics"
+      ]
+    }
+  },
+  {
+    "talk_id": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Bryson Catona",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "identification-and-management-of-reduced-penetrance-high-risk-cancer-gene-varian",
+      "talk_title": "Clinical management challenges of reduced penetrance pathogenic variants",
+      "rhetorical_signals": [
+        "Speaker said: \"management of reduced penetrance variants is very difficult and will require extensive discussion\"",
+        "Speaker said: \"if you have a phenotype\u2011directed approach it makes management easier, but that is a rarity\"",
+        "Speaker said: \"for the MSH6 missense variant we found no statistically increased risk of any Lynch syndrome cancer\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "MSH6 missense variant (specific allele not named)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "lack of functional validation to explain low cancer risk despite pathogenic classification",
+        "unexplained_resistance_quote": "Speaker said: \"there were lower rates of most cancers... and a larger percentage were unaffected\"",
+        "ghost_responder_admission": "Speaker said: \"some patients carried the variant and remained cancer\u2011free\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Lynch syndrome cancer risk stratification by variant",
+        "flawed_enrollment_criteria": "Current guidelines enroll all carriers of pathogenic MSH6 variants without accounting for reduced penetrance sub\u2011alleles",
+        "missing_biomarker": "Variant\u2011specific risk calibration (e.g., functional activity, polygenic risk)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering to detect differences for low\u2011frequency reduced penetrance alleles",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Guideline\u2011driven management algorithms",
+        "ip_vulnerability_note": "Speaker highlighted that NCCN and other guidelines do not yet incorporate reduced penetrance variant data, creating a strategic gap",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad, non\u2011stratified surveillance intervals may dilute signal for low\u2011risk carriers"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented data showing no increased cancer risk for a specific MSH6 missense variant, then concluded that \"guidelines will need to continue to address management of these reduced penetrance variants\" without offering a concrete revised recommendation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No functional assay data for the MSH6 missense variant",
+        "Absence of long\u2011term outcome data for carriers under modified surveillance"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a computational risk score for Lynch syndrome variants integrating functional, epidemiologic, and polygenic data",
+        "transcript_evidence": "Speaker said: \"we need more variant\u2011specific cancer risk data\"",
+        "crispro_angle": "CrisPRO can combine variant activity predictions with population risk to generate personalized surveillance recommendations",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Create a registry\u2011based trial that tests extended colonoscopy intervals for carriers of low\u2011risk MSH6 variants",
+        "transcript_evidence": "Speaker said: \"consider extending colonoscopy to the longest interval allowed (every three years) for this variant\"",
+        "crispro_angle": "Use CrisPRO risk tiers to define inclusion criteria and monitor outcomes",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NCCN",
+        "context": "guidelines currently lack reduced penetrance variant recommendations",
+        "sentiment": "critical"
+      },
+      {
+        "name": "ClinVar",
+        "context": "multiple conflicting classifications for the same MSH6 variant",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Should prophylactic hysterectomy be omitted for carriers of the low\u2011penetrance MSH6 variant?",
+      "How can polygenic risk scores be calibrated for reduced penetrance Lynch syndrome alleles?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MSH6 missense variant risk analysis",
+        "Lynch syndrome surveillance guideline updates"
+      ],
+      "companies_to_monitor": [
+        "Myriad Genetics",
+        "Ambry Genetics"
+      ]
+    }
+  }
+]

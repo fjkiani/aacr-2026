@@ -1,0 +1,499 @@
+[
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Peng Li",
+      "institution_or_pharma": "Memorial Sloan Kettering",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Evasion of Hepatic ILC1 Immunosurveillance Drives Breast Cancer Liver Metastasis",
+      "rhetorical_signals": [
+        "Speaker said: \"the exact mechanism, we haven't figured it out, but the result is the stereotactic disease is decreased and restore the ILC population.\"",
+        "Speaker said: \"we haven't shown here, but we also use the genetic knockout to confirm this conclusion.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DR5 (TNFRSF10B) loss in cancer cells",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Tumor cells can lose DR5 locus, escaping ILC1-mediated TRAIL killing",
+        "unexplained_resistance_quote": "Speaker admitted: \"we don't fully understand why some patients escaped\" (implied by lack of DR5 data)",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human clinical trial data presented",
+        "Mechanistic link between high\u2011fat diet and IL\u201115 reduction not fully shown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the DR5\u2011TRAIL axis or restoring DR5 expression could overcome ILC1 resistance in liver metastasis.",
+        "transcript_evidence": "Speaker noted that DR5 loss correlates with liver metastasis and that TRAIL\u2011DR5 interaction mediates ILC1 surveillance.",
+        "crispro_angle": "CrisPRO could model DR5 pathway dependencies and predict combinatorial agents that up\u2011regulate DR5 or mimic TRAIL signaling.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with low hepatic ILC1 numbers or DR5 loss for tailored therapies.",
+        "transcript_evidence": "Speaker highlighted that high\u2011fat diet reduces liver ILC1s and DR5 loss predicts worse survival.",
+        "crispro_angle": "Use CrisPRO to integrate spatial transcriptomics and genomic loss data to define a biomarker panel.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise mechanism by which high\u2011fat diet reduces IL\u201115 production in macrophages?",
+      "Can pharmacologic activation of ILC1s or restoration of DR5 improve outcomes in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ILC1\u2011targeted agonists",
+        "TRAIL\u2011based therapeutics"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sepideh Gholamin",
+      "institution_or_pharma": "Cold Spring Harbor Laboratory / Surgical Oncology",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Neutrophil Extracellular Trap Inhibition Mitigates the Tumor Necrosis and Metastasis in Colorectal Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we haven't figured it out, but the result is the stereotactic disease is decreased and restore the ILC population.\"",
+        "Speaker said: \"I consider it not a very clean drug. So it's a little dirty drug because it has different mechanisms.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NET formation (PAD4/GRANULE release)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "NETs promote necrosis and EMT, creating a pro\u2011metastatic niche",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Disulfiram preclinical colorectal cancer model",
+        "target_biology": "Inhibition of NET release via PAD4 inhibition",
+        "flawed_enrollment_criteria": "Preclinical mouse model without biomarker\u2011selected patients; no stratification by NET levels",
+        "missing_biomarker": "Baseline circulating NET markers (e.g., citrullinated histone H3)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Pilot\u2011only sample size; no power calculation reported",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that NETs drive necrosis and metastasis, then concluded that NET inhibition combined with chemotherapy could prevent metastasis, despite lacking data on established metastatic disease."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical trial data with disulfiram in CRC patients",
+        "Lack of mechanistic link between NETs and specific EMT drivers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine NET inhibition (e.g., PAD4 inhibitors) with standard chemotherapy to reduce necrosis\u2011driven metastasis.",
+        "transcript_evidence": "Speaker demonstrated that disulfiram plus FOLFOX reduced liver metastases in mice.",
+        "crispro_angle": "CrisPRO can predict synergistic drug pairs targeting NET formation and DNA damage pathways.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Select patients with high circulating NET markers for NET\u2011targeted therapy.",
+        "transcript_evidence": "Speaker reported elevated NET markers (citH3, MPO) in CRC patients versus healthy controls.",
+        "crispro_angle": "Use CrisPRO to integrate proteomic NET signatures with response models.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Disulfiram (Antabuse)",
+        "context": "FDA\u2011approved aldehyde dehydrogenase inhibitor repurposed to block NETs",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does NET inhibition affect established liver metastases or only prevent seeding?",
+      "What is the contribution of histamine\u2011mediated vascular permeability versus NETs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PAD4 inhibitors",
+        "Disulfiram clinical trials in oncology"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca (PAD4 programs)",
+        "Novartis (NET targeting)"
+      ]
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Mariam Belabed",
+      "institution_or_pharma": "Mount Sinai",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Metabolic Reuse of Tumor\u2011Derived Signals Coordinates Dendritic Cell Function",
+      "rhetorical_signals": [
+        "Speaker said: \"we found that dendritic cells, when they uptake this ODC1 knockout tumor debris, the uptake is affected.\"",
+        "Speaker said: \"we were surprised to see that treating the cells with statins reduced the maturation.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Polyamine transport in dendritic cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of redundancy in polyamine uptake pathways limits DC activation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      },
+      {
+        "failing_compound_or_target": "Statin use",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Statins inhibit cholesterol synthesis needed for DC lipid nanodomain formation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that statins reduced DC maturation, suggesting a potential off\u2011target effect in patients.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Polyamine transporter inhibitor AMTX",
+        "ip_vulnerability_note": "Speaker disclosed detailed mechanism of AMTX, revealing that inhibition is not DC\u2011specific and may affect other immune cells.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Targeting a metabolic pathway that is broadly expressed could cause off\u2011target immunosuppression."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that cholesterol accumulation drives DC maturation, then concluded that statins (cholesterol synthesis inhibitors) would be detrimental, despite statins being widely used clinically."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "In vivo validation of polyamine rescue in tumor models",
+        "Human translational data linking patient cholesterol levels to DC function"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Enhance polyamine delivery to DCs or bypass transporter inhibition to restore antigen uptake.",
+        "transcript_evidence": "Speaker demonstrated that AMTX treatment impaired DC uptake of tumor debris.",
+        "crispro_angle": "CrisPRO can design small molecules or nanoparticle carriers that selectively increase polyamine availability in DCs.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients on statins who may have impaired DC vaccine responses.",
+        "transcript_evidence": "Speaker observed that statin treatment reduced CCR7 and other maturation markers.",
+        "crispro_angle": "CrisPRO can integrate patient medication data with DC functional assays to predict vaccine efficacy.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AMTX (polyamine transporter inhibitor)",
+        "context": "Used to block polyamine uptake in DCs",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Statins",
+        "context": "Common cholesterol\u2011lowering drugs that inadvertently suppress DC maturation",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can exogenous polyamine supplementation rescue DC function in vivo?",
+      "What is the impact of systemic cholesterol modulation on tumor\u2011specific immunity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Polyamine transporter inhibitors",
+        "DC vaccine platforms"
+      ],
+      "companies_to_monitor": [
+        "Novartis (DC vaccine)",
+        "Bristol\u2011Myers Squibb (cholesterol metabolism programs)"
+      ]
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Bo Zhu",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Spatial Rewiring of IL\u20111\u03b2 Network Limiting Therapeutic Efficiency in Advanced Non\u2011Squamous Carcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"the anti\u2011IL1\u03b2 treatment can significantly increase IL1\u03b2 expression\"",
+        "Speaker said: \"the IL1\u03b2 blockade predominantly disrupted epithelial IL1\u03b2 net at a precancer stage\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IL\u20111\u03b2 blockade (canakinumab)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Spatial rewiring leads to fibroblast\u2011driven resistance in advanced disease",
+        "unexplained_resistance_quote": "Speaker noted paradoxical increase of IL1\u03b2 after blockade without explaining why.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CANPREVENT (MD Anderson)",
+        "target_biology": "IL\u20111\u03b2 signaling in non\u2011small cell lung cancer",
+        "flawed_enrollment_criteria": "Enrolled patients across stages without biomarker\u2011guided selection; mixed pre\u2011cancer and advanced disease cohorts",
+        "missing_biomarker": "Baseline IL1R1 expression on epithelial vs fibroblast compartments",
+        "static_vs_dynamic_failure": "No serial biopsies to track IL1\u03b2 network rewiring",
+        "statistical_concern": "Underpowered for stage\u2011stratified efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Canakinumab (anti\u2011IL1\u03b2 antibody)",
+        "ip_vulnerability_note": "Speaker showed that antibody treatment raises circulating IL1\u03b2, suggesting a feedback loop that may limit durability.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of spatially informed patient selection leads to diluted signal in advanced disease."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that IL\u20111\u03b2 blockade increases IL\u20111\u03b2 ligand levels yet concluded the therapy is effective in early disease, ignoring the paradoxical ligand surge."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Human spatial transcriptomics (Xenium) data not fully presented",
+        "Lack of clinical outcome correlation with IL1R1 fibroblast signatures"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate spatial biomarker (IL1R1+ fibroblast density) to stratify patients for IL\u20111\u03b2 blockade.",
+        "transcript_evidence": "Speaker identified fibroblast\u2011associated IL1R1 network as resistant node in advanced stage.",
+        "crispro_angle": "CrisPRO can model spatial network dynamics to predict optimal combination (e.g., IL\u20111\u03b2 + fibroblast\u2011targeted agents).",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine IL\u20111\u03b2 blockade with fibroblast\u2011targeted therapies (e.g., FAP\u2011CAR T or CAF inhibitors).",
+        "transcript_evidence": "Speaker suggested targeting fibroblast\u2011associated IL1\u03b2 net may overcome resistance.",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of dual targeting on tumor growth curves.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Canakinumab",
+        "context": "IL\u20111\u03b2 neutralizing antibody evaluated in CANPREVENT and other trials",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the cellular source of the paradoxical IL\u20111\u03b2 increase after antibody treatment?",
+      "Can real\u2011time imaging of IL1\u03b2\u2011IL1R1 interactions predict response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT02828618",
+        "NCT04576186"
+      ],
+      "assets_to_track": [
+        "Canakinumab",
+        "FAP\u2011targeted agents"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Genentech"
+      ]
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Mika Poblete",
+      "institution_or_pharma": "University of Virginia",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Gut Commensal Dysbiosis Modulates the Lung Microenvironment to Promote Breast Tumor Metastasis in a Mast Cell\u2011Dependent Axis",
+      "rhetorical_signals": [
+        "Speaker said: \"ketotifen treatment ... significantly improved the survival of mice with pre\u2011existing dysbiosis\"",
+        "Speaker said: \"we have increased IL\u20116 at a tissue\u2011wide level within the lungs of mice with dysbiosis\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Mast cell activation (via IL\u20116)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Mast\u2011cell derived IL\u20116 drives STAT3 activation in fibroblasts and endothelial cells, creating a pro\u2011metastatic niche",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that increased mast cells correlated with worse survival, implying a subset effect.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human clinical correlation between gut dysbiosis and lung mast cell infiltration",
+        "Potential confounding effect of antibiotics on lung microbiome not controlled"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use circulating mast cell markers (e.g., tryptase) or IL\u20116 levels to identify patients at risk of lung metastasis after dysbiosis.",
+        "transcript_evidence": "Speaker linked mast cell numbers with survival and IL\u20116/STAT3 activation in lungs.",
+        "crispro_angle": "CrisPRO can integrate microbiome, cytokine, and mast cell data to generate a risk score.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine mast cell stabilizers (ketotifen) with standard endocrine therapy for HR\u2011positive breast cancer to prevent lung metastasis.",
+        "transcript_evidence": "Ketotifen improved survival in dysbiotic mice.",
+        "crispro_angle": "Model synergistic effects of mast cell inhibition with hormone therapy on metastatic outgrowth.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ketotifen",
+        "context": "Mast cell stabilizer used in preclinical model",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Cromolyn",
+        "context": "Alternative mast cell stabilizer mentioned as future option",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does gut\u2011derived bile acid signaling mediate mast cell activation in the lung?",
+      "What is the impact of lung microbiome alterations independent of gut dysbiosis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Ketotifen clinical trials in oncology",
+        "IL\u20116/STAT3 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Bristol\u2011Myers Squibb (IL\u20116 pathway)",
+        "GSK (mast cell drugs)"
+      ]
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Takeshi Tanaka",
+      "institution_or_pharma": "Cedar Sinai",
+      "session_title": "inflammation-and-immunity-in-cancer-progression",
+      "talk_title": "Mild Interferon\u2011\u03b3 Signaling Regulates Immune Suppression and Fibrotic Tumor Microenvironment in Pancreatic Cancer Liver Metastasis",
+      "rhetorical_signals": [
+        "Speaker said: \"systemic interferon\u2011\u03b3 blockade ... significantly increased both tumor number and tumor burden\"",
+        "Speaker said: \"loss of interferon\u2011\u03b3 signaling shifts the tumor microenvironment from an inflammatory to a fibrotic and immunosuppressive state\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Interferon\u2011\u03b3 signaling in myeloid cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Loss of IFN\u2011\u03b3R2 in macrophages drives SPP1\u2011high, ECM\u2011producing phenotype",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human interventional data restoring IFN\u2011\u03b3 signaling",
+        "Unclear whether fibrosis is directly driven by macrophage SPP1 or secondary to T cell loss"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Restore IFN\u2011\u03b3 signaling in macrophages (e.g., agonistic IFN\u2011\u03b3R2 antibodies) to prevent SPP1\u2011high fibrotic TAMs.",
+        "transcript_evidence": "Speaker showed myeloid\u2011specific IFN\u2011\u03b3R2 knockout increased fibrosis and tumor burden.",
+        "crispro_angle": "CrisPRO can predict downstream effects of IFN\u2011\u03b3R2 activation on TAM transcriptional programs.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use SPP1\u2011high TAM signature as a biomarker for patients who may benefit from IFN\u2011\u03b3 pathway agonists.",
+        "transcript_evidence": "SPP1\u2011high macrophages expanded in IFN\u2011\u03b3R2 knockout tumors.",
+        "crispro_angle": "Integrate single\u2011cell SPP1 expression with clinical outcomes via CrisPRO.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Can exogenous IFN\u2011\u03b3 rescue the fibrotic phenotype without causing systemic toxicity?",
+      "What is the relative contribution of resident Kupffer cells vs monocyte\u2011derived TAMs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IFN\u2011\u03b3R2 agonists",
+        "SPP1 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Merck (IFN\u2011\u03b3 therapeutics)",
+        "Roche (fibrosis programs)"
+      ]
+    }
+  }
+]

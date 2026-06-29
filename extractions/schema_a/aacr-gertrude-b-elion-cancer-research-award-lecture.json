@@ -1,0 +1,139 @@
+[
+  {
+    "talk_id": "aacr-gertrude-b-elion-cancer-research-award-lecture::li::1",
+    "session_title": "aacr-gertrude-b-elion-cancer-research-award-lecture",
+    "talk_title": "Chromatin priming drives early onset of BRCA1\u2011heterozygous basal\u2011like breast cancer",
+    "speaker": {
+      "name": "Carmen Li",
+      "affiliation": "University of Pennsylvania, Department of Cancer Biology, Basser Center for BRCA",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "heterozygous loss",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "p53",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AP1 (c-Jun, JunD, FOSL2)",
+        "pathway": "MAPK_signaling",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "WNT10A",
+        "pathway": "WNT_signaling",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "RUNX1",
+        "pathway": "transcriptional_regulation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RUNX2",
+        "pathway": "transcriptional_regulation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CBFB",
+        "pathway": "transcriptional_regulation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "GEM",
+        "name": "BRCA1 heterozygous mammary gland mouse model",
+        "genotype_or_key_features": "BRCA1 flox/+, p53 flox/+, Cre\u2011induced deletion; also PTEN CRISPR version"
+      },
+      {
+        "model_type": "organoid",
+        "name": "tumor organoids from BRCA1\u2011/\u2011;p53\u2011/\u2011 mice",
+        "genotype_or_key_features": "derived from basal\u2011like tumors, used for WNT10A knockdown/overexpression"
+      },
+      {
+        "model_type": "preclinical",
+        "name": "pre\u2011malignant alveolar cell organoid model",
+        "genotype_or_key_features": "normal AB cells from WT or heterozygous mice acutely infected with lenti\u2011Cre"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Li's group generated a BRCA1\u2011heterozygous mouse model that reveals early chromatin accessibility changes in alveolar luminal progenitor cells, priming AP1\u2011dependent transcriptional programs and WNT10A activation. Partial inhibition of AP1 delays tumor onset, while WNT10A overexpression accelerates basal\u2011like tumor formation, establishing these pathways as early drivers of hereditary breast cancer.",
+    "readouts": [
+      "ATAC-seq",
+      "single\u2011cell RNA\u2011seq",
+      "immunohistochemistry",
+      "lentiviral dominant\u2011negative Jun construct",
+      "tumor latency curves",
+      "organoid sphere formation assays",
+      "knockdown/overexpression functional assays"
+    ],
+    "key_findings": [
+      "BRCA1\u2011heterozygous mice develop basal\u2011like mammary tumors ~20 weeks earlier than WT mice after Cre\u2011mediated BRCA1 loss.",
+      "ATAC\u2011seq of normal alveolar cells shows a distinct subcluster with intermediate chromatin openness that aligns with tumor profiles.",
+      "AP1 (c\u2011Jun, JunD, FOSL2) motifs are enriched in these open regions; c\u2011Jun protein is up\u2011regulated in early lesions.",
+      "Dominant\u2011negative Jun expression delays tumor formation only in heterozygous mice, indicating AP1 dependency.",
+      "WNT10A locus exhibits increased accessibility and expression; WNT10A knockdown impairs organoid growth and in\u2011vivo tumorigenicity.",
+      "WNT10A overexpression accelerates tumor onset and raises tumor grade in mouse cohorts.",
+      "RUNX/CBFB transcription factors are up\u2011regulated in pre\u2011malignant and tumor cells; CBFB and RUNX2 knockdown reduces proliferation of derived cancer cell lines."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "AP1 inhibition selectively delays tumorigenesis in BRCA1\u2011heterozygous background but not in WT, suggesting a context\u2011specific dependency."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "dominant\u2011negative Jun lentivirus",
+        "rationale": "Block AP1 transcriptional activity to test dependency in early tumorigenesis",
+        "phenotype": "Delayed tumor onset in heterozygous mice, no effect in WT",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "WNT10A knockdown (shRNA) in organoids",
+        "rationale": "Assess requirement of WNT10A for tumor cell fitness",
+        "phenotype": "Reduced sphere formation and tumor growth in mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream stress signals trigger AP1 activation in BRCA1\u2011heterozygous alveolar cells?",
+      "Can pharmacologic AP1 or WNT10A inhibition prevent tumor onset in high\u2011risk BRCA1 carriers?",
+      "How do physiological stressors (pregnancy, obesity, aging) interact with chromatin priming to modulate risk?",
+      "What is the contribution of stromal/immune compartments to the early chromatin changes observed?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "GSK"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

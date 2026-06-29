@@ -1,0 +1,389 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CompetitiveIntelExtraction_v2",
+  "description": "Per-speaker competitive intelligence extraction from AACR 2026 talks. Identifies clinical failures, trial design flaws, mechanistic blindspots, and strategic opportunities. CRITICAL RULES: (1) All fields must be grounded in transcript evidence \u2014 no speculation. (2) All array fields must be present but MAY be [] if no evidence exists. (3) Do NOT invent vulnerabilities or opportunities not supported by the transcript. (4) rhetorical_signals must contain direct quotes or close paraphrases, never labels.",
+  "type": "object",
+  "properties": {
+    "talk_id": {
+      "type": "string",
+      "description": "Must match the talk_id from Schema A for the same talk."
+    },
+    "talk_metadata": {
+      "type": "object",
+      "properties": {
+        "speaker_name": {
+          "type": "string",
+          "description": "Full name of the speaker \u2014 must match Schema A speaker.name for the same talk."
+        },
+        "institution_or_pharma": {
+          "type": "string",
+          "description": "Institution or company \u2014 must match Schema A speaker.affiliation."
+        },
+        "session_title": {
+          "type": "string",
+          "description": "Title of the parent session \u2014 must match Schema A session_title."
+        },
+        "talk_title": {
+          "type": "string",
+          "description": "Title of this specific talk \u2014 must match Schema A talk_title."
+        },
+        "rhetorical_signals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Direct quoted phrases or close paraphrases from the transcript that reveal hedging, overconfidence, narrative pivoting, or data omission. Each entry must be a specific quote or paraphrase \u2014 NOT a label. e.g. 'Speaker said: we don't fully understand why some patients escaped' or 'Skipped OS data entirely, presented only PFS'. Leave empty array if no signals detected."
+        },
+        "presentation_type": {
+          "type": "string",
+          "enum": [
+            "clinical_trial_readout",
+            "translational_science",
+            "basic_science",
+            "platform_showcase",
+            "award_lecture",
+            "panel_discussion",
+            "industry_pitch",
+            "unknown"
+          ],
+          "description": "Type of presentation: clinical_trial_readout = Phase 1-3 data; translational_science = bench-to-bedside; basic_science = mechanistic/preclinical; platform_showcase = technology demo; award_lecture = career retrospective; industry_pitch = company presenting pipeline asset; panel_discussion = no primary data."
+        }
+      },
+      "required": [
+        "speaker_name",
+        "institution_or_pharma",
+        "session_title",
+        "talk_title",
+        "rhetorical_signals",
+        "presentation_type"
+      ]
+    },
+    "vulnerability_identified": {
+      "type": "array",
+      "description": "Explicit or implicit admissions of failure, resistance, or clinical dead-ends. Only populate if there is actual transcript evidence.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "failing_compound_or_target": {
+            "type": "string",
+            "description": "The specific drug, target, or approach that is failing or has limitations."
+          },
+          "failure_type": {
+            "type": "string",
+            "enum": [
+              "primary_resistance",
+              "acquired_resistance",
+              "toxicity_limiting",
+              "insufficient_efficacy",
+              "biomarker_failure",
+              "manufacturing_failure",
+              "partial_response_only",
+              "unknown"
+            ],
+            "description": "Category of failure."
+          },
+          "mechanistic_blindspot": {
+            "type": "string",
+            "description": "Biological pathway, paralog redundancy, or feedback loop the speaker is ignoring or has not addressed. Must be mechanistically specific \u2014 not generic."
+          },
+          "unexplained_resistance_quote": {
+            "type": "string",
+            "description": "Direct quote or close paraphrase where the speaker admits tumor escape without explanation. Leave null if not present."
+          },
+          "ghost_responder_admission": {
+            "type": "string",
+            "description": "Mention of 'exceptional responders', 'subset efficacy', or 'some patients responded' in an otherwise failed/mediocre cohort. Quote or paraphrase. Leave null if not present."
+          },
+          "hidden_tox_signal": {
+            "type": "string",
+            "description": "Minimization of dose-limiting toxicities, narrow therapeutic windows, or off-target effects. Quote or paraphrase. Leave null if not present."
+          },
+          "evidence_strength": {
+            "type": "string",
+            "enum": [
+              "explicit_admission",
+              "implied_by_data_gap",
+              "implied_by_hedging",
+              "inferred_from_design"
+            ],
+            "description": "How strongly the transcript supports this vulnerability."
+          }
+        },
+        "required": [
+          "failing_compound_or_target",
+          "failure_type",
+          "mechanistic_blindspot",
+          "evidence_strength"
+        ]
+      }
+    },
+    "trial_dilution_risk": {
+      "type": "array",
+      "description": "Trial design flaws that risk diluting signal or guaranteeing failure. Only populate if the speaker described a trial design with identifiable flaws.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trial_name_or_nct": {
+            "type": "string",
+            "description": "Trial name or NCT number if mentioned."
+          },
+          "target_biology": {
+            "type": "string",
+            "description": "The biological hypothesis being tested."
+          },
+          "flawed_enrollment_criteria": {
+            "type": "string",
+            "description": "Specific flaw: e.g. 'Enrolling all-comers by histology rather than molecular subtype', 'No ctDNA pre-screening', 'Mixed MMRd and MMRp patients in same arm'."
+          },
+          "missing_biomarker": {
+            "type": "string",
+            "description": "The specific molecular biomarker that should stratify patients but is absent from the design."
+          },
+          "static_vs_dynamic_failure": {
+            "type": "string",
+            "description": "Failure to track dynamic resistance (e.g. no on-treatment ctDNA, no serial biopsies). Leave null if not applicable."
+          },
+          "statistical_concern": {
+            "type": "string",
+            "description": "Underpowering, inappropriate endpoint, or other statistical design flaw. Leave null if not applicable."
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "fatal_to_trial",
+              "significant_risk",
+              "minor_concern"
+            ],
+            "description": "Estimated impact on trial success."
+          }
+        },
+        "required": [
+          "target_biology",
+          "flawed_enrollment_criteria",
+          "missing_biomarker",
+          "severity"
+        ]
+      }
+    },
+    "competitive_moat_weakness": {
+      "type": "array",
+      "description": "Structural vulnerabilities in the competitor's platform, chemistry, or clinical strategy revealed in the talk.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "vulnerable_ip_or_chemistry": {
+            "type": "string",
+            "description": "What specific chemistry, platform, or IP is vulnerable. e.g. 'Covalent KRAS G12C inhibitor \u2014 only works on G12C, not G12D or G12V'."
+          },
+          "ip_vulnerability_note": {
+            "type": "string",
+            "description": "What the speaker revealed about their chemistry or platform that suggests circumventability. Based only on what was said \u2014 no patent analysis. e.g. 'Speaker disclosed the linker chemistry in detail, suggesting the core scaffold is the only novel element'."
+          },
+          "scale_or_manufacturing_bottleneck": {
+            "type": "string",
+            "description": "Manufacturing, COGS, or scalability limitations mentioned. Leave null if not mentioned."
+          },
+          "clinical_strategy_weakness": {
+            "type": "string",
+            "description": "Weakness in their clinical development strategy. e.g. 'Pursuing broad label rather than biomarker-selected population \u2014 will dilute signal'."
+          }
+        },
+        "required": [
+          "vulnerable_ip_or_chemistry",
+          "ip_vulnerability_note"
+        ]
+      }
+    },
+    "cognitive_dissonance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific contradictions between the speaker's high-resolution science and their low-resolution clinical conclusions. Each entry must cite both the scientific observation and the contradictory conclusion. e.g. 'Speaker showed CD8 T cell exhaustion in 80% of tumors by scRNA-seq, then concluded that checkpoint blockade alone should be sufficient \u2014 ignoring the exhaustion data'."
+    },
+    "data_maturity_assessment": {
+      "type": "object",
+      "description": "Assessment of how mature and reliable the evidence base is.",
+      "properties": {
+        "overall_maturity": {
+          "type": "string",
+          "enum": [
+            "mature_randomized_OS",
+            "mature_randomized_PFS",
+            "single_arm_phase2",
+            "early_phase1",
+            "preclinical_only",
+            "mixed"
+          ],
+          "description": "Highest level of evidence presented."
+        },
+        "sample_size_adequacy": {
+          "type": "string",
+          "enum": [
+            "adequately_powered",
+            "underpowered",
+            "pilot_only",
+            "not_applicable"
+          ],
+          "description": "Whether the sample sizes support the conclusions drawn."
+        },
+        "follow_up_adequacy": {
+          "type": "string",
+          "enum": [
+            "mature",
+            "immature",
+            "not_reported",
+            "not_applicable"
+          ],
+          "description": "Whether follow-up duration is sufficient for the endpoints claimed."
+        },
+        "key_data_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific data that was conspicuously absent. e.g. 'No OS data presented', 'No biomarker-stratified analysis', 'No comparison to standard of care'."
+        }
+      },
+      "required": [
+        "overall_maturity",
+        "sample_size_adequacy",
+        "follow_up_adequacy"
+      ]
+    },
+    "crispro_opportunity": {
+      "type": "array",
+      "description": "Strategic opportunities for CrisPRO platform based on what was presented. Grounded in transcript evidence; flag what external data would be needed to confirm.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "opportunity_type": {
+            "type": "string",
+            "enum": [
+              "biomarker_stratification_gap",
+              "resistance_mechanism_addressable",
+              "combination_partner",
+              "failed_asset_salvage",
+              "platform_superiority_angle",
+              "trial_design_improvement",
+              "indication_expansion"
+            ],
+            "description": "Category of opportunity."
+          },
+          "description": {
+            "type": "string",
+            "description": "Specific description of the opportunity grounded in what the speaker said."
+          },
+          "transcript_evidence": {
+            "type": "string",
+            "description": "Direct quote or close paraphrase from the transcript that supports this opportunity."
+          },
+          "crispro_angle": {
+            "type": "string",
+            "description": "How CrisPRO's computational spine or biomarker platform specifically addresses this gap."
+          },
+          "external_validation_needed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "External data sources needed to confirm this opportunity. e.g. ['ClinicalTrials.gov: check enrollment criteria for NCT04165772', 'PubMed: resistance mechanisms for KRAS G12C inhibitors', 'SEC filings: pipeline status for Amgen sotorasib']."
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ],
+            "description": "Estimated strategic priority based on transcript evidence alone."
+          }
+        },
+        "required": [
+          "opportunity_type",
+          "description",
+          "transcript_evidence",
+          "crispro_angle",
+          "priority"
+        ]
+      }
+    },
+    "cited_competitors": {
+      "type": "array",
+      "description": "Named competing programs, companies, or drugs mentioned in the talk.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Company, drug, or program name."
+          },
+          "context": {
+            "type": "string",
+            "description": "How they were mentioned \u2014 favorably, critically, or neutrally."
+          },
+          "sentiment": {
+            "type": "string",
+            "enum": [
+              "favorable",
+              "critical",
+              "neutral",
+              "comparative"
+            ],
+            "description": "How the competitor was framed: favorable = speaker praised them, critical = speaker highlighted their failures/limitations, neutral = factual mention, comparative = used as benchmark."
+          }
+        },
+        "required": [
+          "name",
+          "context",
+          "sentiment"
+        ]
+      }
+    },
+    "unresolved_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Explicit scientific or clinical questions the speaker raised but did not answer. High-value for identifying research gaps."
+    },
+    "external_follow_up": {
+      "type": "object",
+      "description": "Pointers for downstream enrichment agents.",
+      "properties": {
+        "nct_numbers_to_check": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "NCT numbers mentioned \u2014 check ClinicalTrials.gov for enrollment criteria, status, and results."
+        },
+        "assets_to_track": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Drug names or programs to track in pipeline databases (Citeline, Evaluate, GlobalData)."
+        },
+        "companies_to_monitor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Companies whose pipeline status should be checked."
+        }
+      }
+    }
+  },
+  "required": [
+    "talk_id",
+    "talk_metadata",
+    "vulnerability_identified",
+    "trial_dilution_risk",
+    "competitive_moat_weakness",
+    "cognitive_dissonance",
+    "data_maturity_assessment",
+    "crispro_opportunity"
+  ],
+  "additionalProperties": false
+}

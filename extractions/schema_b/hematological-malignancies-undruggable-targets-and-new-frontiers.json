@@ -1,0 +1,304 @@
+[
+  {
+    "talk_id": "hematological-malignancies-undruggable-targets-and-new-frontiers::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Pickman",
+      "institution_or_pharma": "Children's Hospital Dana-Farber",
+      "session_title": "hematological-malignancies-undruggable-targets-and-new-frontiers",
+      "talk_title": "Functional genomic and drug screening approaches for precision medicine in acute leukemia",
+      "rhetorical_signals": [
+        "Speaker said: we had a patient who was treated, who had GLIS2 rearranged AML and was treated with ruxolitinib and had a response initially but then progressed.",
+        "Speaker said: the STRO-02 compound is no longer available, but this research led to the development of FLT1 CAR T."
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "RZ2994 (SHMT1/2 inhibitor)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Redundancy with other one\u2011carbon enzymes such as MTHFD2 limits single\u2011target inhibition of SHMT1/2",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Ruxolitinib in GLIS2\u2011rearranged AML",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Loss of RASA2 leads to MAPK pathway activation that bypasses JAK inhibition",
+        "unexplained_resistance_quote": "We had a patient who was treated... had a response initially but then progressed.",
+        "ghost_responder_admission": "some patients responded initially",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "RZ2994 SHMT1/2 inhibitor",
+        "ip_vulnerability_note": "Speaker disclosed poor drug availability and need for optimization, indicating limited chemistry tractability.",
+        "scale_or_manufacturing_bottleneck": "poor availability prevented clinical development",
+        "clinical_strategy_weakness": "Targeting a pathway already hit by methotrexate may dilute incremental benefit"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "STRO-02 FLT1\u2011ADC",
+        "ip_vulnerability_note": "Compound discontinued despite preclinical efficacy, suggesting manufacturing or commercial viability issues.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single ADC limits options once compound is unavailable"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data for SHMT1/2 inhibitors",
+        "No long\u2011term survival data for Ruxolitinib in GLIS2 AML",
+        "Lack of comparative arm for FLT1\u2011CAR T"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with GLIS2 rearrangements and JAK2 dependency to prospectively select ruxolitinib or next\u2011generation JAK inhibitors.",
+        "transcript_evidence": "Work from Kim Stadlinger's group identified JAK2 dependency in GLIS2\u2011rearranged AML.",
+        "crispro_angle": "CrisPRO can integrate fusion detection with downstream pathway activation scores to flag JAK\u2011dependent cases for targeted therapy.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target MAPK reactivation (e.g., RASA2 loss) that mediates resistance to JAK inhibition.",
+        "transcript_evidence": "CRISPR screen identified RASA2 loss leading to ERK/MEK activation and ruxolitinib resistance.",
+        "crispro_angle": "CrisPRO can predict combinatorial vulnerabilities (JAK + MEK inhibition) based on synthetic lethal networks.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage macropinocytosis\u2011based nanobody drug conjugates to deliver payloads selectively to KRAS/NRAS\u2011mutant myeloma cells.",
+        "transcript_evidence": "Monobody\u2011MMAE showed selective uptake and tumor shrinkage in KRAS/NRAS mutant myeloma mouse models.",
+        "crispro_angle": "CrisPRO's computational spine can model macropinocytosis\u2011driven delivery efficiency across RAS\u2011mutant subtypes.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Raize Therapeutics",
+        "context": "Developed RZ2994 SHMT1/2 inhibitor used in preclinical T\u2011ALL studies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sutro Biopharma",
+        "context": "Developed STRO\u201102 FLT1\u2011ADC originally for ovarian cancer",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the molecular mechanisms underlying the eventual progression after initial ruxolitinib response in GLIS2 AML?",
+      "Can SHMT1/2 inhibition be achieved with alternative chemotypes that overcome the availability issues of RZ2994?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "RZ2994",
+        "STRO-02",
+        "FLT1 CAR\u2011T program",
+        "Macropinocytosis nanobody\u2011MMAE"
+      ],
+      "companies_to_monitor": [
+        "Raize Therapeutics",
+        "Sutro Biopharma",
+        "Tescat"
+      ]
+    }
+  },
+  {
+    "talk_id": "hematological-malignancies-undruggable-targets-and-new-frontiers::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Jen Woyach",
+      "institution_or_pharma": "Ohio State University Comprehensive Cancer Center",
+      "session_title": "hematological-malignancies-undruggable-targets-and-new-frontiers",
+      "talk_title": "BTK inhibitor resistance in CLL and therapeutic sequencing",
+      "rhetorical_signals": [
+        "Speaker said: the covalent BTK inhibitors are extremely effective in CLL and really have revolutionized the way that we treat this disease",
+        "Speaker said: we do see that the BCR score is even a little bit higher at relapse, suggesting that repeated targeting of BTK may be effective if you have a drug that can overcome these resistance mutations."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Covalent BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Reliance on C481 cysteine binding; mutations at C481S, T474I, L528W prevent irreversible covalent attachment",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients achieve long PFS but eventually progress due to mutations",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Non\u2011covalent BTK inhibitor pirtobrutinib",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Emergence of non\u2011C481 BTK mutations (T474I, L528W) that reduce binding of reversible inhibitors",
+        "unexplained_resistance_quote": "most of the patients had acquired mutations in BTK at non\u2011C481 sites",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "BTK degraders (Bexarotenoag, BGB16673)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "A428D mutation collapses degrader binding pocket, conferring resistance to all current BTK kinase inhibitors and degraders",
+        "unexplained_resistance_quote": "this mutation actually unfortunately interferes with the binding pocket and collapses that binding pocket a little bit",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ELEVATE RR",
+        "target_biology": "BTK inhibition in relapsed/refractory CLL",
+        "flawed_enrollment_criteria": "Enrolled patients without pre\u2011screening for BTK/PLC\u03b32 mutation status, mixing mutation\u2011positive and -negative cohorts",
+        "missing_biomarker": "Baseline BTK C481S or PLC\u03b32 mutation profiling",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring to track emerging resistance mutations during therapy",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "BRU\u2011IN\u2011314",
+        "target_biology": "Frontline BTK inhibition (pirtobrutinib vs ibrutinib)",
+        "flawed_enrollment_criteria": "Included treatment\u2011na\u00efve patients without stratification by IGHV status or baseline BTK mutation burden",
+        "missing_biomarker": "Baseline IGHV mutation status and BTK/PLC\u03b32 sequencing",
+        "static_vs_dynamic_failure": "Short follow\u2011up prevents assessment of long\u2011term resistance emergence",
+        "statistical_concern": "Underpowered to detect differences in rare resistance mutations",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Covalent BTK inhibitor scaffold (C481 binding)",
+        "ip_vulnerability_note": "Speaker highlighted that resistance arises via C481S and other gatekeeper mutations, indicating the chemical core is easily circumvented.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use of covalent inhibitors without mutation\u2011guided sequencing dilutes signal and accelerates resistance."
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Non\u2011covalent BTK inhibitor pirtobrutinib",
+        "ip_vulnerability_note": "Although selective, resistance emerges through non\u2011C481 BTK mutations (T474I, L528W) that reduce binding affinity.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited data on long\u2011term durability; sequencing after covalent inhibitor may already select for resistant clones."
+      },
+      {
+        "vulnerable_ip_or_chemistry": "BTK degraders (Bexarotenoag, BGB16673)",
+        "ip_vulnerability_note": "A428D mutation interferes with degrader binding pocket, representing a potential escape route for all current degrader platforms.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Degraders are still investigational and may not be available when resistance emerges."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that covalent BTK inhibitors achieve median PFS of 8.9 years in frontline CLL, then concluded that continuous dosing inevitably leads to resistance mutations, suggesting a paradox between long durable responses and the inevitability of resistance."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_PFS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No OS data for newer non\u2011covalent inhibitors",
+        "Limited long\u2011term follow\u2011up for BTK degraders",
+        "Absence of prospective mutation\u2011guided sequencing arms"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement routine baseline and longitudinal BTK/PLC\u03b32 sequencing to guide upfront choice of covalent vs non\u2011covalent BTK inhibitor.",
+        "transcript_evidence": "Speaker noted that mutations can be detected 9\u201312 months prior to clinical relapse, suggesting a window for intervention.",
+        "crispro_angle": "CrisPRO can integrate NGS data with kinetic modeling to predict emergence of specific resistance mutations and recommend optimal sequencing.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Combine BTK inhibition with downstream MAPK pathway blockade to overcome RASA2\u2011loss mediated resistance.",
+        "transcript_evidence": "CRISPR screen identified RASA2 loss leading to ERK/MEK activation and ruxolitinib resistance.",
+        "crispro_angle": "CrisPRO can prioritize rational combination partners (e.g., BTK + MEK inhibitors) based on synthetic lethality networks.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Add BCL2 inhibitor venetoclax to BTK inhibitor regimens to delay emergence of BTK/PLC\u03b32 mutations.",
+        "transcript_evidence": "Fixed\u2011duration ibrutinib\u202f+\u202fvenetoclax trials showed low mutation rates at relapse.",
+        "crispro_angle": "CrisPRO can model clonal dynamics under dual inhibition to estimate remission durability.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design MRD\u2011adapted, mutation\u2011guided BTK inhibitor trials that stop therapy when deep MRD is achieved and monitor ctDNA for early resistance.",
+        "transcript_evidence": "Speaker discussed risk\u2011adapted, MRD\u2011adapted approaches and the need for serial mutation monitoring.",
+        "crispro_angle": "CrisPRO can simulate trial outcomes under different stopping rules and biomarker thresholds.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Develop next\u2011generation BTK degraders that retain activity against A428D mutation.",
+        "transcript_evidence": "A428D mutation interferes with binding pocket of current degraders, representing a salvage target.",
+        "crispro_angle": "CrisPRO can perform in\u2011silico scaffold hopping to design degraders that accommodate A428D structural changes.",
+        "priority": "low"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Pharmacyclics (ibrutinib)",
+        "context": "Provided patient samples for mutation analysis at relapse",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "AstraZeneca (acalabrutinib)",
+        "context": "Compared head\u2011to\u2011head with ibrutinib in ELEVATE RR trial",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "BeiGene (zanubrutinib)",
+        "context": "Evaluated in SEQUOIA and Australian relapse study",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Pirtobrutinib (J&J)",
+        "context": "FDA\u2011approved non\u2011covalent BTK inhibitor discussed as next line therapy",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Nemtabrutinib (Novartis)",
+        "context": "Phase III non\u2011covalent BTK inhibitor with pan\u2011Src activity",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will frontline use of pirtobrutinib alter the spectrum or timing of resistance mutations compared with covalent inhibitors?",
+      "Can dual covalent/non\u2011covalent BTK inhibition (rockbrutinib) provide longer remission than sequential monotherapy?",
+      "What is the optimal duration of fixed\u2011duration BTK\u2011based regimens to balance efficacy and resistance emergence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04575658"
+      ],
+      "assets_to_track": [
+        "ibrutinib",
+        "acalabrutinib",
+        "zanubrutinib",
+        "pirtobrutinib",
+        "nemtabrutinib",
+        "Bexarotenoag",
+        "BGB16673",
+        "rockbrutinib"
+      ],
+      "companies_to_monitor": [
+        "Pharmacyclics",
+        "AstraZeneca",
+        "BeiGene",
+        "J&J",
+        "Novartis",
+        "Roche"
+      ]
+    }
+  }
+]

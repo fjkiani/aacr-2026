@@ -1,0 +1,188 @@
+[
+  {
+    "talk_id": "senescence-in-cancer-identifying-measuring-and-targeting-a-double-edged-sword::elisseeff::1",
+    "session_title": "senescence-in-cancer-identifying-measuring-and-targeting-a-double-edged-sword",
+    "talk_title": "Defining senescence, senotypes and implications for cancer",
+    "speaker": {
+      "name": "Jennifer Elisseeff",
+      "affiliation": "Johns Hopkins University, Department of Biomedical Engineering",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "p16-Cre senescence reporter mouse",
+        "genotype_or_key_features": "CD29+ CD45- stromal cells, CD31+ endothelial cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "ACL injury model with B16 melanoma",
+        "genotype_or_key_features": "articular injury prior to tumor injection"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The talk described how senescent cells adopt distinct senotypes in different tissue niches, identified via p16-Cre reporter mice and single-cell RNA\u2011seq, and how these senotypes influence wound healing, fibrosis, and tumor immune microenvironment, including vascular remodeling and T\u2011cell infiltration.",
+    "readouts": [
+      "beta-gal staining",
+      "p16 IHC",
+      "single-cell RNA\u2011seq",
+      "spatial transcriptomics",
+      "flow cytometry"
+    ],
+    "key_findings": [
+      "Senescent cells in fibrosis models are primarily stromal (CD29+ CD45-), with distinct vascular and fibroblastic senotypes identified by bulk and single\u2011cell sequencing.",
+      "Arthritic (ACL) injury before B16 tumor implantation reduces tumor growth and markedly increases response to checkpoint blockade, associated with increased CD8+ T\u2011cell infiltration and enhanced vascular P\u2011selectin expression.",
+      "Genetic ablation of p16\u2011positive senescent cells (Incakat model) abolishes the vascular and T\u2011cell infiltration phenotype and eliminates the immunotherapy benefit, indicating senescent cells are necessary for the observed anti\u2011tumor effect."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What specific SASP components from senescent pericytes and endothelial cells drive the enhanced T\u2011cell trafficking?",
+      "How do different senotypes temporally evolve during wound healing versus chronic disease?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "senescence-in-cancer-identifying-measuring-and-targeting-a-double-edged-sword::schmidt::2",
+    "session_title": "senescence-in-cancer-identifying-measuring-and-targeting-a-double-edged-sword",
+    "talk_title": "Redox\u2011based pan\u2011senolytic Senlytic and its preclinical cancer prevention potential",
+    "speaker": {
+      "name": "Clemens Schmidt",
+      "affiliation": "Charit\u00e9 \u2013 Universit\u00e4tsmedizin Berlin, Max Delbr\u00fcck Center for Molecular Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "lymphoma",
+      "RAS\u2011driven cancers"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "senolytics",
+      "metabolism",
+      "chemical_biology",
+      "cancer_prevention",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NADH",
+        "alteration": "",
+        "pathway": "redox_metabolism",
+        "modality": "other",
+        "compound_name": "Senlytic",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "senescent cells with high NADH/low GSH",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "BRAF\u2011induced nevus model",
+        "genotype_or_key_features": "LSL\u2011BRAF V600E; Cre\u2011ER; p53 WT"
+      },
+      {
+        "model_type": "mouse",
+        "name": "NMU\u2011induced RAS mutation model",
+        "genotype_or_key_features": "C57BL/6 wild\u2011type vs Suv39h1\u2011/\u2011"
+      },
+      {
+        "model_type": "mouse",
+        "name": "p53\u2011proficient lymphoma TIS model",
+        "genotype_or_key_features": "p53 WT lymphoma cells treated with chemotherapy"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "survival_extension",
+        "value": "median survival increased from 30 to 45 days",
+        "confidence_interval": "",
+        "n": "n=10 per group",
+        "population": "p53\u2011proficient lymphoma\u2011bearing mice receiving chemotherapy + Senlytic",
+        "comparator": "chemotherapy alone",
+        "maturity": "interim"
+      },
+      {
+        "metric": "nevus_regression",
+        "value": "80% reduction in pigmented lesions",
+        "confidence_interval": "",
+        "n": "n=8 mice",
+        "population": "BRAF\u2011nevus mice treated with Senlytic",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Senlytic is a redox\u2011activated pro\u2011drug that exploits the elevated NADH/low GSH ratio and labile iron in senescent cells to generate hydroxyl radicals via Fenton chemistry, inducing ferroptosis and apoptosis selectively in p53\u2011competent senescent cells across multiple senescence inducers.",
+    "readouts": [
+      "ROS assays (lysosomal, mitochondrial)",
+      "lipid peroxidation (BODIPY\u2011C11)",
+      "cell viability (dose\u2011response curves)",
+      "p16 IHC",
+      "H3K9me3 staining"
+    ],
+    "key_findings": [
+      "Senlytic shows >10\u2011fold senolytic index over proliferating cells across replicative, oncogene\u2011induced, therapy\u2011induced, and virus\u2011induced senescence models.",
+      "In vivo, Senlytic clears p16\u2011positive senescent cells in aged mouse lungs, reducing collagen cuff formation without measurable toxicity.",
+      "Senlytic administered after chemotherapy eliminates therapy\u2011induced senescent lymphoma cells, extending mouse survival, but is ineffective in p53\u2011deficient tumors.",
+      "In a BRAF\u2011nevus mouse model, Senlytic reduces nevi and delays melanoma onset, demonstrating cancer\u2011preventive potential by targeting OIS lesions.",
+      "Senlytic prevents NMU\u2011induced RAS\u2011driven T\u2011cell lymphomagenesis in wild\u2011type mice, indicating that removal of incipient senescent lesions blocks tumor formation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Senlytic requires functional p53 to induce senescence; p53\u2011null cells are resistant.",
+      "Senolytic activity is abolished by iron chelation (desferrioxamine) or overexpression of catalase, confirming dependence on iron\u2011mediated ROS."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "standard chemotherapy (e.g., doxorubicin)",
+        "rationale": "Chemotherapy induces senescence; Senlytic then eliminates senescent tumor cells to prevent relapse.",
+        "phenotype": "Extended survival and reduced tumor regrowth in lymphoma model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "BRAF inhibitor (targeted therapy)",
+        "rationale": "BRAF\u2011driven nevi become senescent; Senlytic clears these lesions to prevent progression to melanoma.",
+        "phenotype": "80% reduction in pigmented lesions, delayed melanoma onset",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal dosing interval for Senlytic in humans to balance clearance of detrimental senescent cells while preserving beneficial acute senescence?",
+      "Can Senlytic be combined with immune checkpoint blockade to enhance anti\u2011tumor immunity in senescence\u2011rich tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Free University Berlin (collaboration)",
+        "Max Delbr\u00fcck Center"
+      ],
+      "patent_or_ip_hints": [
+        "Senlytic compound series"
+      ]
+    }
+  }
+]

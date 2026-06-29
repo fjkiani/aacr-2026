@@ -1,0 +1,305 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Osar",
+      "institution_or_pharma": "Dana-Farber Cancer Institute / Harvard Medical School",
+      "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+      "talk_title": "Mechanisms of response and resistance to the DLL3 bispecific T\u2011cell engager tarlatamab in small\u2011cell lung cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we really need larger numbers\"",
+        "Speaker said: \"we don't know at what level that is\"",
+        "Speaker said: \"we have one case, so we think it's less frequent where there's isolated DLL3 loss\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "tarlatamab (DLL3\u2011CD3 bispecific T\u2011cell engager)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Subtype plasticity from ASCL1 to neuroD1 leading to DLL3 down\u2011regulation",
+        "unexplained_resistance_quote": "we saw neuroD1 turn on and DLL3 go down at acquired resistance, but we don't yet know the exact mechanism",
+        "ghost_responder_admission": "80% of ASCL1 patients responded, but neuroD1 patients responded poorly despite high DLL3",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Standard\u2011of\u2011care tarlatamab cohort (46 patients)",
+        "target_biology": "DLL3\u2011mediated T\u2011cell killing in ASCL1\u2011high SCLC",
+        "flawed_enrollment_criteria": "Enrolled all comers without prospective molecular subtype selection (ASCL1 vs neuroD1 vs POU2F3)",
+        "missing_biomarker": "Baseline ASCL1/neuroD1 subtype assignment",
+        "static_vs_dynamic_failure": "No serial ctDNA or plasma monitoring of subtype switching beyond the limited plasma ChIP\u2011seq snapshots",
+        "statistical_concern": "Sample size small for subgroup analyses; underpowered to detect subtype\u2011specific efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DLL3 bispecific T\u2011cell engager (tarlatamab)",
+        "ip_vulnerability_note": "Efficacy depends on DLL3 expression; neuroD1\u2011driven subtype switch and DLL3 loss render the drug ineffective",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad second\u2011line indication without biomarker\u2011driven patient selection dilutes signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that neuroD1 up\u2011regulation correlates with resistance, then concluded that DLL3 expression alone predicts response \u2013 ignoring the neuroD1\u2011driven escape"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited longitudinal biomarker tracking of subtype switching",
+        "No randomized comparator arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a rapid plasma\u2011based assay (e.g., APEX) to assign ASCL1 vs neuroD1 subtype before tarlatamab initiation",
+        "transcript_evidence": "Speaker said: \"the signatures associated with response were related to many different genes expressed in the ASCL1 subtype\"",
+        "crispro_angle": "CrisPRO can integrate cfChIP\u2011seq and RNA inference to deliver real\u2011time subtype scores for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target neuroD1\u2011driven transcriptional program (e.g., with BET or CDK7 inhibitors) to prevent DLL3 loss",
+        "transcript_evidence": "Speaker showed that neuroD1 overexpression caused early resistance in mouse models",
+        "crispro_angle": "CrisPRO can predict neuroD1\u2011dependent regulatory networks and suggest combination partners",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine tarlatamab with a GABA\u2011receptor antagonist or depolarization blocker to sustain DLL3 expression",
+        "transcript_evidence": "Speaker noted that GABAergic signaling was a major driver of depolarization and resistance",
+        "crispro_angle": "CrisPRO can model synergistic effects of T\u2011cell engagers with neuro\u2011modulatory agents",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen sotorasib",
+        "context": "mentioned as an example of a targeted therapy that was unavailable for the namesake patient",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular mechanism links neuroD1 activation to DLL3 transcriptional silencing?",
+      "Can DLL3 expression be re\u2011induced after neuroD1\u2011driven resistance?",
+      "What is the timing of subtype switching during therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "tarlatamab",
+        "DLL3 bispecific T\u2011cell engagers from other companies"
+      ],
+      "companies_to_monitor": [
+        "Amgen",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Lauren Byers",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+      "talk_title": "Surface\u2011targeting ADCs and emerging therapeutic strategies in small\u2011cell lung cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"the first time I saw this data, it actually gave me goosebumps\"",
+        "Speaker said: \"we don't have any data so far on that, but I think it's a good question\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CES6 ADC (ABBV\u2011706)",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Low SLFN11 expression predicts reduced DNA\u2011damage response to Top1 payloads",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients had dramatic responses while others did not, without clear biomarker explanation",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CES6 ADC early\u2011phase trial (ABBV\u2011706)",
+        "target_biology": "CES6 surface antigen targeting with Top1\u2011linked payload",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comer SCLC patients without SLFN11 or CES6 expression stratification",
+        "missing_biomarker": "SLFN11 status and quantitative CES6 IHC",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort; response rates reported without a control arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CES6 ADC platform",
+        "ip_vulnerability_note": "Relies on a single surface antigen; loss or low expression of CES6 would abrogate activity",
+        "scale_or_manufacturing_bottleneck": "ADC conjugation yields can be variable, affecting COGS",
+        "clinical_strategy_weakness": "Developed as second\u2011line monotherapy; no biomarker\u2011driven patient selection"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "B7H3 ADCs (multiple sponsors)",
+        "ip_vulnerability_note": "B7H3 expression is heterogeneous across subtypes, especially low in POU2F3 tumors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential off\u2011target toxicity due to B7H3 expression on normal tissues"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted high response rates and rapid symptom relief, yet admitted lack of biomarker data and limited OS follow\u2011up"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparison to standard chemotherapy",
+        "Absence of biomarker\u2011stratified efficacy analysis",
+        "Long\u2011term safety and durability not reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement SLFN11 IHC or RNA assay to select patients most likely to benefit from Top1\u2011payload ADCs",
+        "transcript_evidence": "Speaker noted that SLFN11 has been used in several trials to identify patients for specific therapeutics",
+        "crispro_angle": "CrisPRO can integrate SLFN11 expression with tumor genomics to generate a predictive score for ADC response",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine CES6 ADC with ATR inhibitor to overcome resistance in SLFN11\u2011low tumors",
+        "transcript_evidence": "Speaker mentioned data showing ATR inhibition may enhance response in low\u2011SLFN11 settings",
+        "crispro_angle": "CrisPRO can model synthetic lethality between DNA\u2011damage payloads and ATR blockade",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011driven basket trial that enrolls patients based on ASCL1 vs neuroD1 subtype and surface antigen expression",
+        "transcript_evidence": "Speaker discussed subtype\u2011specific expression of DLL3, CES6, and B7H3",
+        "crispro_angle": "CrisPRO can provide real\u2011time subtype classification from cfRNA to guide trial enrollment",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen (tarlatamab)",
+        "context": "mentioned as the most advanced DLL3\u2011targeted bispecific T\u2011cell engager",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Roche (B7H3 ADCs)",
+        "context": "referenced as another surface\u2011targeting ADC in development",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal sequencing of ADCs with existing chemotherapy or immunotherapy?",
+      "How does CES6 expression change after prior DLL3\u2011targeted therapy?",
+      "Can SLFN11 be pharmacologically up\u2011regulated to sensitize tumors to ADCs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ABBV\u2011706 (CES6 ADC)",
+        "B7H3 ADC programs",
+        "tarlatamab"
+      ],
+      "companies_to_monitor": [
+        "AbbVie",
+        "Amgen",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Hamsa Venkatesh",
+      "institution_or_pharma": "Harvard Medical School / Brigham and Women's Hospital",
+      "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+      "talk_title": "Neural circuitry drives small\u2011cell lung cancer growth in brain metastases and primary lung",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't know at what level that is\" regarding DLL3 silencing",
+        "Speaker said: \"we have not specifically looked at that so far, but I think that's an interesting question\" about Z6 cleavage"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Neuronal activity\u2011driven tumor proliferation",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Depolarization via GABAergic signaling in SCLC cells with high intracellular chloride",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "None (preclinical mechanistic study)",
+        "ip_vulnerability_note": "Findings rely on neuronal circuitry; no drug platform disclosed",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Translating optogenetic or neuronal modulation to patients is currently infeasible"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human validation of levetiracetam efficacy",
+        "Lack of pharmacodynamic biomarkers linking neuronal activity to tumor growth in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Test levetiracetam (or other anti\u2011epileptics) in combination with DLL3\u2011targeted therapies to block activity\u2011mediated resistance",
+        "transcript_evidence": "Speaker showed that levetiracetam dramatically reduced tumor burden in mouse models",
+        "crispro_angle": "CrisPRO can model synergistic effects of neuronal activity inhibitors with T\u2011cell engagers or ADCs",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a plasma\u2011based assay to detect GABAergic signaling signatures as a predictive biomarker for activity\u2011driven growth",
+        "transcript_evidence": "Speaker demonstrated that GABAergic depolarization drives proliferation in vitro and in vivo",
+        "crispro_angle": "CrisPRO can integrate cfRNA/neurotransmitter\u2011related gene signatures to identify patients likely to benefit from neuronal blockade",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Levetiracetam (Keppra)",
+        "context": "used experimentally to inhibit neuronal activity in mouse models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule of levetiracetam to achieve tumor suppression without CNS side effects?",
+      "Do peripheral nerve fibers in the lung microenvironment similarly drive SCLC growth in patients?",
+      "Can GABAergic signaling biomarkers be detected in patient plasma or CSF?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Levetiracetam",
+        "Potential neuro\u2011modulatory agents for cancer"
+      ],
+      "companies_to_monitor": [
+        "UCB (manufacturer of levetiracetam)",
+        "Companies developing CNS\u2011active repurposed oncology agents"
+      ]
+    }
+  }
+]

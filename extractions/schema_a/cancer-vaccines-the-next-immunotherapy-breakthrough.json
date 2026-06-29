@@ -1,0 +1,525 @@
+[
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::wu::1",
+    "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+    "talk_title": "Personalized Neoantigen Vaccines in Glioblastoma and the Impact of Tumor Intrinsic Programs",
+    "speaker": {
+      "name": "Cathy Wu",
+      "affiliation": "Dana-Farber Brigham",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "translational",
+      "spatial_biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "pembrolizumab",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "neoantigens",
+        "pathway": "cell_surface_antigen",
+        "modality": "peptide_vaccine",
+        "compound_name": "not specified",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Mesenchymal transcriptional subtype",
+        "type": "predictive",
+        "assay": "RNA sequencing",
+        "finding": "Mesenchymal phenotype associated with greater T cell infiltration, higher HLA class I expression, and better response to ICB monotherapy."
+      },
+      {
+        "name": "HLA class I expression",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Higher expression correlated with better response in mesenchymal subtype."
+      },
+      {
+        "name": "Dexamethasone use",
+        "type": "resistance",
+        "assay": "clinical record",
+        "finding": "Dexamethasone use was associated with flatlined immune stimulation and failure to mount circulating T cell responses."
+      },
+      {
+        "name": "ex vivo T cell responses",
+        "type": "predictive",
+        "assay": "ELISpot",
+        "finding": "Degree of ex vivo T cell responses was predictive of overall survival (Cox regression analysis)."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "GBM ICB cohort",
+        "genotype_or_key_features": "n=181 patients, newly diagnosed and recurrent GBM"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "four-cohort GBM study",
+        "genotype_or_key_features": "n=40 patients, varying timing of pembrolizumab relative to vaccine"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "well in excess of historic control",
+        "n": "not specified",
+        "population": "MGMT methylated, Temodar-treated group",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The speaker investigated personalized peptide vaccines in glioblastoma, finding that the mesenchymal transcriptional subtype is a key predictor of response due to higher HLA class I expression and T cell infiltration. The study explored the timing of anti-PD-1 therapy, suggesting that pretreatment with pembrolizumab followed by vaccine may be superior to vaccine followed by pembrolizumab. Additionally, Temozolomide was found to improve outcomes by depleting circulating Tregs and promoting antigen-specific T cell responses.",
+    "readouts": [
+      "RNA-seq",
+      "IHC",
+      "ELISpot",
+      "bulk TCR sequencing",
+      "single-nuclear sequencing",
+      "GSEA",
+      "spatial transcriptomics",
+      "long-read sequencing"
+    ],
+    "key_findings": [
+      "Mesenchymal subtype in GBM is associated with higher HLA class I expression and better response to ICB monotherapy.",
+      "Dexamethasone treatment suppresses the ability of patients to mount circulating T cell responses following vaccination.",
+      "In a 40-patient trial, the cohort receiving pembrolizumab before the vaccine showed better outcomes than those receiving pembrolizumab after the vaccine.",
+      "Temozolomide-treated patients showed improved overall survival and decreased Treg upregulation following neoantigen vaccination.",
+      "Vaccine-reactive T cell clonotypes were detectable in post-treatment tumors and were predominantly CD4+ cells.",
+      "Spatial analysis demonstrated co-localization of neoantigen-specific T cells (e.g., NSUN5) with their corresponding antigens."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Shift away from the mesenchymal transcriptional programs serves as a mode of acquired resistance to ICB monotherapy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "pembrolizumab",
+        "rationale": "Test the optimal timing of checkpoint blockade relative to vaccination to maximize T cell priming and memory.",
+        "phenotype": "Pre-treatment with pembrolizumab followed by vaccine appeared superior to vaccine followed by pembrolizumab.",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "Temozolomide",
+        "rationale": "Alkylating agent that may deplete Tregs and promote antigen-specific responses.",
+        "phenotype": "Improved overall survival and decreased Treg upregulation post-vaccination.",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Whether the observed CD4+ responses can directly kill tumor cells or if they primarily support CD8+ responses."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::griffin::2",
+    "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+    "talk_title": "Mechanisms by which mRNA Vaccines Augment Response to Immune Checkpoint Blockade",
+    "speaker": {
+      "name": "Adam Griffin",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "NSCLC",
+      "melanoma",
+      "osteosarcoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "translational",
+      "AI_ML"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "ICI",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Spike protein",
+        "pathway": "viral_antigen",
+        "modality": "mRNA_vaccine",
+        "compound_name": "COVID-19 mRNA vaccine",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PD-L1 expression",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Patients receiving COVID vaccine within 100 days prior to biopsy had 30% higher PD-L1 expression on tumors; 20% increase in likelihood of >50% PD-L1 expression."
+      },
+      {
+        "name": "Interferon alpha",
+        "type": "pharmacodynamic",
+        "assay": "cytokine panel",
+        "finding": "mRNA vaccine induced an 86-fold to 865-fold increase in interferon alpha in healthy volunteers."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MD Anderson retrospective cohort",
+        "genotype_or_key_features": "Stage III/IV NSCLC and Stage IV melanoma patients"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16-F0 melanoma and Lewis lung carcinoma",
+        "genotype_or_key_features": "Tumors >100mm3"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Healthy volunteers",
+        "genotype_or_key_features": "n=not specified, healthy adults"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "significantly improved",
+        "n": "not specified",
+        "population": "NSCLC patients receiving COVID vaccine within 100 days of ICI",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The speaker proposes that mRNA vaccines, even those not targeting tumor antigens (like the COVID-19 vaccine), can sensitize tumors to ICI by triggering an MDA5-mediated surge in interferon alpha. This systemic interferon alpha activates myeloid cells (DCs and macrophages), which then prime anti-tumor T cells that infiltrate the tumor and secrete interferon gamma, leading to compensatory PD-L1 upregulation and subsequent sensitivity to PD-1 blockade.",
+    "readouts": [
+      "overall survival",
+      "progression-free survival",
+      "NeuLISA Seq",
+      "flow_cytometry",
+      "IHC",
+      "cytokine panel"
+    ],
+    "key_findings": [
+      "Retrospective pan-tumor analysis showed patients receiving the COVID mRNA vaccine within 30 days prior to ICI had significantly longer survival.",
+      "In mouse models, the COVID vaccine sensitized B16-F0 and Lewis lung carcinoma to ICI via an interferon alpha-dependent mechanism.",
+      "Blocking interferon alpha completely abrogated the benefit of the COVID vaccine in mouse models.",
+      "The mRNA-LNP complex activates the MDA5 receptor, bypassing the TLR7 silencing provided by N1-methylpseudouridine.",
+      "Human data showed a 30% increase in tumor PD-L1 expression in patients vaccinated prior to biopsy.",
+      "A prospective Phase II/III trial is being planned to test this universal priming effect."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "Immune Checkpoint Inhibitors (ICI)",
+        "rationale": "Use mRNA vaccines as a universal adjuvant to prime the immune system and 'warm' cold tumors.",
+        "phenotype": "Synergistic tumor regression in mouse models and improved OS in retrospective human cohorts.",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Whether a universal vaccine is superior to a personalized vaccine in specific clinical contexts."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nature Biomedical Engineering 2023"
+      ],
+      "company_or_sponsor": [
+        "BioNTech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::seder::3",
+    "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+    "talk_title": "Optimizing Peptide Vaccines and Adoptive Cell Therapy through Stem-like T Cell Generation",
+    "speaker": {
+      "name": "Robert Seder",
+      "affiliation": "Vaccine Research Center, NIH",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "melanoma",
+      "GI tumors"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "CAR_T",
+      "combination_therapy",
+      "translational",
+      "spatial_biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Toll-like receptor 7/8",
+        "pathway": "innate_immune_activation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Toll 7/8 agonist",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PI3K delta",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "PI3K delta inhibitor",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PD-L1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti-PD-L1",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TCF7 / SLAMF6",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "Expression of stem-like genes (TCF7, SLAMF6) in CD8 T cells is associated with superior tumor protection."
+      },
+      {
+        "name": "CHIL3",
+        "type": "resistance",
+        "assay": "UMAP/RNA-seq",
+        "finding": "Reduction of a specific CHIL3+ monocyte subset in the TME is required for IV vaccine efficacy and is dependent on type I interferon."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MC38 colon carcinoma",
+        "genotype_or_key_features": "Colorectal cancer model"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16 melanoma",
+        "genotype_or_key_features": "OVA-expressing B16"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "GI tumor cohort",
+        "genotype_or_key_features": "Metastatic GI tumors, n=not specified, 20% response rate to TIL therapy"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The speaker developed a nanoparticle peptide vaccine platform using a Toll 7/8 agonist and a cathepsin-cleavable linker to improve antigen solubility and cross-priming. IV administration of this vaccine induces stem-like CD8 T cells (TCF7+) and systemic type I interferon, which remodels the TME by depleting CHIL3+ monocytes. Furthermore, using a PI3K delta inhibitor during TIL expansion preserves T cell stemness, which, when combined with vaccination, leads to superior tumor control compared to effector-like cells.",
+    "readouts": [
+      "RNA-seq",
+      "UMAP",
+      "Visium_spatial_transcriptomics",
+      "flow_cytometry",
+      "TCR sequencing"
+    ],
+    "key_findings": [
+      "IV administration of the nanoparticle vaccine induced stem-like CD8 T cells and systemic type I interferon, whereas subcutaneous administration induced effector cells and provided no protection.",
+      "Protection from IV vaccination was completely abrogated by depleting type I interferon, which specifically reduced a CHIL3+ monocyte population in the TME.",
+      "PI3K delta inhibition during T cell expansion preserved stem-like characteristics (TCF1+, CCR7+, CD62L+), which were significantly more effective in tumor regression when combined with vaccination.",
+      "Combination of stem-like ACT and vaccination led to massive immune infiltration and shifted the tumor transcriptome toward an interferon-gamma reactive state.",
+      "Blocking either interferon gamma or the interferon alpha/beta receptor completely abrogated the protection provided by stem-like ACT + vaccine."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Effector-like cells (KLRG1+, Granzyme+) were less effective than stem-like cells for long-term protection."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti-PD-L1",
+        "rationale": "Stem-like T cells require checkpoint blockade to fully realize their effector potential.",
+        "phenotype": "Enhanced tumor control in MC38 models.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Vaccination",
+        "rationale": "Vaccination boosts the transferred stem-like T cells and remodels the TME to be more permissive.",
+        "phenotype": "Synergistic survival and tumor regression in B16 models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "The durability of the protection provided by PI3K delta inhibitor-treated stem-like cells over time."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Genentech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::balachandran::4",
+    "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+    "talk_title": "Inducing De Novo CD8 and CD4 T Cell Immunity in Pancreatic Cancer",
+    "speaker": {
+      "name": "Vinod Balachandran",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "session_chair_with_data"
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "cancer_vaccines",
+      "combination_therapy",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "neoantigens",
+        "pathway": "cell_surface_antigen",
+        "modality": "mRNA_vaccine",
+        "compound_name": "autogene cevumar\u00e1n",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PD-L1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "PD-L1 blocking antibody",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Neoantigen quality (biophysical characteristics)",
+        "type": "predictive",
+        "assay": "computational model",
+        "finding": "Tumors enriched in high-quality (not quantity) neoantigens were associated with longer survival."
+      },
+      {
+        "name": "Vaccine-induced T cell response",
+        "type": "predictive",
+        "assay": "CloneTract (TCR sequencing)",
+        "finding": "Vaccine responders had a median recurrence-free survival that was not reached at 36 months vs non-responders."
+      },
+      {
+        "name": "Wild-type epitope cross-reactivity",
+        "type": "prognostic",
+        "assay": "CloneMap",
+        "finding": "Cross-reactivity of vaccine-induced clones to the wild-type epitope correlates with enhanced longevity in vivo."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "autogene cevumar\u00e1n trial",
+        "genotype_or_key_features": "Resected primary PDAC patients"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "PDAC survivor cohort",
+        "genotype_or_key_features": "Short vs long-term survivors"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "recurrence-free survival",
+        "value": "not reached",
+        "n": "not specified",
+        "population": "vaccine responders",
+        "maturity": "updated"
+      },
+      {
+        "metric": "recurrence-free survival",
+        "value": "1 year",
+        "n": "not specified",
+        "population": "non-responders",
+        "maturity": "updated"
+      },
+      {
+        "metric": "overall survival",
+        "value": "7 of 8 alive",
+        "n": "n=8",
+        "population": "vaccine responders",
+        "maturity": "updated"
+      },
+      {
+        "metric": "overall survival",
+        "value": "2 of 8 alive",
+        "n": "n=8",
+        "population": "non-responders",
+        "maturity": "updated"
+      },
+      {
+        "metric": "T cell response rate",
+        "value": "50%",
+        "n": "not specified",
+        "population": "unselected PDAC patients",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The speaker developed a personalized RNA vaccine (autogene cevumar\u00e1n) for PDAC, targeting high-quality neoantigens. The vaccine induces de novo, long-lived CD8+ and CD4+ Th1 effector T cells. These responses correlate with delayed recurrence and improved overall survival, with CD4+ cells appearing transiently in the blood but expanding in recurrent tumors and supporting CD8+ longevity.",
+    "readouts": [
+      "longitudinal TCR sequencing",
+      "CloneTract",
+      "CloneSearch",
+      "CloneMap",
+      "single-cell TCR sequencing"
+    ],
+    "key_findings": [
+      "Personalized RNA vaccines induced neoantigen-specific T cells in 50% of unselected PDAC patients.",
+      "Vaccine-induced CD8 T cells showed exceptional longevity, with a median estimated lifespan of 7.7 years.",
+      "At 6-year follow-up, vaccine responders had significantly better overall survival (7/8 alive) compared to non-responders (2/8 alive).",
+      "97.5% of induced CD8 and 100% of induced CD4 clones were absent in pre-vaccination tissues, proving de novo induction.",
+      "Induced CD4 T cells transition to a Th1 effector-like phenotype (granzyme+, T-bet+) and are clonally expanded in recurrent tumors.",
+      "Cross-reactivity to the wild-type epitope correlates with enhanced T cell longevity in vivo."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance occurs due to the outgrowth of cancer clones that are not targeted by the vaccine."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD-L1 blocking antibody",
+        "rationale": "Prevent checkpoint-mediated inhibition of vaccine-induced T cells.",
+        "phenotype": "Improved recurrence-free survival in responders.",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Whether the induced CD4 T cells can directly kill tumor cells or if they are purely supportive of CD8 T cells."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "BioNTech",
+        "GenTech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::kata::1",
+    "session_title": "ai-in-biomarker-discovery-and-drug-development",
+    "talk_title": "Multimodal and Agentic AI in Biomarker Discovery",
+    "speaker": {
+      "name": "Jakob Kata",
+      "affiliation": "University of Dresden and University of Heidelberg, Germany",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "biomarker_development",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Kata described the evolution from classical machine learning to deep learning and foundation models for cancer biomarker development, defining three classes of AI\u2011based biomarkers (quantification, indirect inference, and outcome prediction) and introduced AI agents that can autonomously integrate multimodal clinical data to generate diagnostic and therapeutic recommendations.",
+    "readouts": [],
+    "key_findings": [
+      "Class A AI biomarkers replicate human scoring (e.g., PD\u2011L1 IHC) with higher reproducibility.",
+      "Class B AI biomarkers infer genetic alterations (e.g., MSI, EGFR mutations) from pathology images for pre\u2011screening.",
+      "Class C AI biomarkers predict treatment outcomes directly from multimodal data, enabling new clinical decision tools."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::behanie::2",
+    "session_title": "ai-in-biomarker-discovery-and-drug-development",
+    "talk_title": "AI\u2011Enabled Clinical Stage Programs at Recursion",
+    "speaker": {
+      "name": "Tirup Behanie",
+      "affiliation": "Recursion Pharmaceuticals, VP of Translational Strategy",
+      "role": "industry_presenter",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "ovarian cancer",
+      "colorectal cancer",
+      "familial adenomatous polyposis"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "AI_ML",
+      "biomarker_development",
+      "clinical_trial",
+      "translational",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "RBM39",
+        "alteration": "",
+        "pathway": "RNA_splicing",
+        "modality": "degrader",
+        "compound_name": "REC-1245",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MSI\u2011high tumors (ovarian, other high\u2011genomic\u2011instability cancers)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CDK7",
+        "alteration": "",
+        "pathway": "cell_cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "REC-617",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer with high CDK7 expression",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MEK1/2",
+        "alteration": "",
+        "pathway": "MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "REC-4881",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "familial adenomatous polyposis (APC\u2011loss) patients",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MSI\u2011high status",
+        "type": "eligibility",
+        "assay": "IHC / NGS",
+        "finding": "MSI\u2011high ovarian models showed dose\u2011dependent RBM39 degradation and greater sensitivity to REC\u20111245"
+      },
+      {
+        "name": "CDK7 expression",
+        "type": "exploratory",
+        "assay": "IHC / RNA\u2011seq",
+        "finding": "High CDK7 expression correlated with poorer overall survival in thousands of Tempus patient records"
+      },
+      {
+        "name": "Polyp burden change",
+        "type": "pharmacodynamic",
+        "assay": "endoscopic measurement",
+        "finding": "75% of FAP patients responded with median 43% reduction after 12 weeks of REC\u20114881; 82% maintained response (53% reduction) 12 weeks off therapy"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "xenograft",
+        "name": "MSI\u2011high ovarian PDX",
+        "genotype_or_key_features": "MSI\u2011high, DDR\u2011deficient"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "DAHLIA (REC\u20111245) Phase 1/2",
+        "genotype_or_key_features": "Patients with MSI\u2011high or high genomic instability tumors"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "ELUCIDATE (REC\u2011617) Phase 1/2",
+        "genotype_or_key_features": "Advanced solid tumors; ovarian cancer cohort"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "TIPelo (REC\u20114881) Phase 1/2",
+        "genotype_or_key_features": "FAP patients (APC loss), n=??"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Response rate",
+        "value": "75%",
+        "confidence_interval": "",
+        "n": "n=?? (FAP cohort)",
+        "population": "FAP patients treated 12 weeks with REC\u20114881",
+        "comparator": "historical natural history (average 60% polyp increase)",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Median polyp burden reduction",
+        "value": "43%",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "FAP patients after 12 weeks REC\u20114881",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Durable response off therapy",
+        "value": "53% reduction",
+        "confidence_interval": "",
+        "n": "n=?? (82% of responders)",
+        "population": "FAP patients 12 weeks off REC\u20114881",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Partial response",
+        "value": "1 patient",
+        "confidence_interval": "",
+        "n": "n=1 ovarian cancer patient in ELUCIDATE",
+        "population": "Ovarian cancer cohort receiving REC\u2011617",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Recursion leveraged AI\u2011driven phenomaps to identify RBM39 as a functional analog of CDK12, enabling rapid degrader development (REC\u20111245) that exploits splicing defects in MSI\u2011high, genomically unstable tumors; AI\u2011guided design produced a CDK7 inhibitor (REC\u2011617) optimized for ovarian cancer vulnerability; and AI\u2011derived repurposing identified a MEK1/2 inhibitor (REC\u20114881) that reduces polyp burden in APC\u2011loss FAP patients.",
+    "readouts": [
+      "dose\u2011response curves",
+      "tumor growth inhibition in xenografts",
+      "polyp burden measurements",
+      "genomic instability metrics",
+      "clinical trial imaging"
+    ],
+    "key_findings": [
+      "RBM39 degradation by REC\u20111245 showed dose\u2011dependent activity in MSI\u2011high ovarian models and correlated with genomic instability across multiple preclinical models.",
+      "REC\u20111245 entered the DAHLIA Phase 1/2 trial targeting MSI\u2011high and other high\u2011instability tumor types, with dose escalation ongoing.",
+      "REC\u2011617 demonstrated in vitro ovarian cell line growth inhibition and in vivo tumor regressions; causal modeling of >10,000 Tempus records linked high CDK7 expression to poor survival, guiding ovarian cancer selection.",
+      "A partial response was observed in an ovarian cancer patient treated with REC\u2011617 in the ELUCIDATE trial.",
+      "REC\u20114881 achieved a 75% response rate and 43% median polyp burden reduction after 12 weeks in FAP patients, with 82% maintaining response (53% reduction) after a drug\u2011free interval."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "RBM39 degraders may be more selective than CDK12 inhibitors that also hit CDK13, potentially improving therapeutic window."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "standard of care chemotherapy",
+        "rationale": "to enhance efficacy in ovarian cancer beyond monotherapy",
+        "phenotype": "planned combination cohorts in ELUCIDATE",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What biomarker thresholds (e.g., MSI\u2011high vs. quantitative genomic instability scores) best predict response to RBM39 degradation?",
+      "Will CDK7 expression become a prospective selection marker for REC\u2011617 based on larger patient datasets?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT??? (DAHLIA trial identifier not provided)",
+        "NCT??? (ELUCIDATE trial identifier not provided)",
+        "NCT??? (TIPelo trial identifier not provided)"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Recursion Pharmaceuticals",
+        "Tempus",
+        "Amsterdam UMC"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::reis-filho::3",
+    "session_title": "ai-in-biomarker-discovery-and-drug-development",
+    "talk_title": "AI Transformation of Pharmaceutical R&D at AstraZeneca",
+    "speaker": {
+      "name": "George Reis-Filho",
+      "affiliation": "AstraZeneca, Chief AI and Science Innovation",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "biomarker_development",
+      "clinical_trial",
+      "translational",
+      "targeted_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Trop2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "antibody",
+        "compound_name": "Tropionlongo",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NSCLC non\u2011squamous tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Normalized membrane ratio (NMR)",
+        "type": "predictive",
+        "assay": "quantitative continuous scoring on pathology images",
+        "finding": "NMR correlates with Trop2 internalization and predicts response to Trop2\u2011targeted ADCs in NSCLC"
+      }
+    ],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Reis\u2011Filho outlined AstraZeneca's strategy to fine\u2011tune large multimodal foundation models with proprietary oncology data, enabling AI\u2011driven patient selection (e.g., Trop2 NMR) and accelerating ADC development, while highlighting the shift from handcrafted annotation to foundation\u2011model\u2011based quantification that reduced annotation effort from 40,000 to <5 hours.",
+    "readouts": [
+      "pathology image continuous scoring",
+      "AI\u2011derived embeddings",
+      "clinical trial endpoints (not detailed)"
+    ],
+    "key_findings": [
+      "A quantitative continuous scoring system can measure subcellular Trop2 expression and derive a normalized membrane ratio that serves as a surrogate for ADC internalization.",
+      "Development of the Trop2 ADC biomarker required ~40,000 pathologist annotation hours for one indication; foundation models can reduce this to <5 hours or eliminate it.",
+      "AstraZeneca is building multimodal foundation models through partnerships (Tempus, Pathos, Model AI) to improve patient selection across diverse therapeutic classes."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can multimodal foundation models integrate time\u2011dimension data to improve longitudinal patient selection?",
+      "What validation frameworks are needed to satisfy regulators for AI\u2011derived biomarkers with limited explainability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AstraZeneca",
+        "Tempus",
+        "Pathos",
+        "Model AI"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

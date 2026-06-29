@@ -1,0 +1,46 @@
+[
+  {
+    "talk_id": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll::kampen::1",
+    "session_title": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll",
+    "talk_title": "Implementation of the Genie Data Model at Providence Cancer Institute",
+    "speaker": {
+      "name": "Jake Van Kampen",
+      "affiliation": "Providence Cancer Institute",
+      "role": "clinician_investigator",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "platform_technology",
+      "translational",
+      "AI_ML",
+      "data_integration",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "The GP3 pipeline programmatically extracts source attributes from Providence's Snowflake clinical data warehouse, maps them to the Genie Data Model (GDM) via SQL transformations, validates and stages the data, and exports it for downstream use, dramatically reducing manual abstraction time and improving data quality.",
+    "readouts": [],
+    "key_findings": [
+      "Programmatic extraction reduced case abstraction time from ~8 hours per case to minutes for thousands of patients.",
+      "Automated schema validation and record-level consistency checks identified implausible values (e.g., out-of-range weights) for rapid correction.",
+      "Lineage parsing of SQL code automatically documented source provenance for each GDM attribute, facilitating reproducibility.",
+      "AI-assisted coding (GitHub Copilot) accelerated development of mapping scripts and improved code quality.",
+      "The pipeline achieved near\u2011real\u2011time generation of GDM\u2011aligned tables, enabling rapid data sharing across sites."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

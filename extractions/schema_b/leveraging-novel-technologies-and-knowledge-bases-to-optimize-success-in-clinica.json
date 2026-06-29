@@ -1,0 +1,163 @@
+[
+  {
+    "talk_id": "leveraging-novel-technologies-and-knowledge-bases-to-optimize-success-in-clinica::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Laura Mangravite",
+      "institution_or_pharma": "Digitalis Commons",
+      "session_title": "leveraging-novel-technologies-and-knowledge-bases-to-optimize-success-in-clinica",
+      "talk_title": "Systems Design Challenges in Clinical Trial Enrollment",
+      "rhetorical_signals": [
+        "Speaker said: \"It's a systems design problem.\"",
+        "Speaker said: \"Each of these solutions exposes each patient to some trials and each trial to some patients, but we don't have a many-to-many opportunity here.\"",
+        "Speaker said: \"The buyer determines optimization. ... unless the patient is paying, there's no guarantee that the system is being optimized for the patient's needs.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "many-to-many trial-patient matching platform",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "partial visibility \u2013 solutions only create one-to-many links rather than true many-to-many exposure",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "single-sided matching algorithms that expose only a subset of trials to each patient",
+        "ip_vulnerability_note": "Speaker highlighted that current platforms only match patients to trials within a limited network, leaving many trials invisible.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Buyer\u2011driven optimization leads to solutions that prioritize sponsor or hospital system needs over patient\u2011centric trial access"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No quantitative data on enrollment impact of proposed platforms",
+        "No real\u2011world validation of many\u2011to\u2011many matching"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can provide a true many\u2011to\u2011many matching engine that links every patient to every eligible trial using a unified knowledge graph, addressing the partial visibility gap described.",
+        "transcript_evidence": "Speaker said: \"Each of these solutions exposes each patient to some trials and each trial to some patients, but we don't have a many-to-many opportunity here.\"",
+        "crispro_angle": "CrisPRO's computational spine can ingest heterogeneous trial registries and patient EHR data to generate a comprehensive bipartite graph, enabling exhaustive matching rather than siloed one\u2011to\u2011many links.",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: extract structured eligibility criteria for all active oncology trials",
+          "Citeline: compare enrollment rates before and after implementing a many\u2011to\u2011many matching layer"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How can the industry create a scalable many\u2011to\u2011many matching infrastructure without prohibitive cost?",
+      "What incentive models will align sponsors, health systems, and patients to adopt truly patient\u2011centric matching platforms?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "leveraging-novel-technologies-and-knowledge-bases-to-optimize-success-in-clinica::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Debra Schrag",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "leveraging-novel-technologies-and-knowledge-bases-to-optimize-success-in-clinica",
+      "talk_title": "Clinical Trial Nudges: Lessons from a Randomized Implementation Study",
+      "rhetorical_signals": [
+        "Speaker said: \"Unfortunately, it did not work. ... It didn't increase clinical trial accrual.\"",
+        "Speaker said: \"We saw a couple of percentage point advantage ... but it was only a couple.\"",
+        "Speaker said: \"AI can do provisional screening but cannot guarantee dynamic eligibility like a pregnancy test on enrollment day.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "clinical trial nudge intervention",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "nudge delivered via email at static time points without integration into EHR workflow",
+        "unexplained_resistance_quote": "Speaker said: \"It didn't work. ... It wasn't that the technology failed, it was that the delivery method didn't move the needle.\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Nudge Trial (randomized 2:1)",
+        "target_biology": "Improve patient accrual to oncology trials via clinician email nudges",
+        "flawed_enrollment_criteria": "N/A (trial design flaw) \u2013 nudges sent without real\u2011time eligibility verification or EHR integration",
+        "missing_biomarker": "Dynamic eligibility data (e.g., pregnancy status) not captured at enrollment",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA or dynamic labs to confirm eligibility at enrollment",
+        "statistical_concern": "Potential underpowering to detect modest accrual gains",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "email\u2011based clinical decision support nudges",
+        "ip_vulnerability_note": "Speaker noted that simple email nudges, even when integrated, failed to increase accrual, indicating a weak platform for influencing clinician behavior.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of seamless EHR integration and real\u2011time eligibility confirmation limits impact"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No data on long\u2011term retention or patient\u2011reported outcomes",
+        "No comparison to a fully integrated EHR\u2011based nudge system"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CrisPRO can embed nudges directly into the EHR workflow with real\u2011time eligibility checks, eliminating static email delivery and capturing dynamic criteria such as pregnancy status.",
+        "transcript_evidence": "Speaker said: \"AI can do provisional screening but cannot guarantee dynamic eligibility like a pregnancy test on enrollment day.\"",
+        "crispro_angle": "CrisPRO's real\u2011time inference engine can pull up\u2011to\u2011date lab and imaging data to validate eligibility at the moment of enrollment, triggering actionable prompts within the clinician's chart.",
+        "external_validation_needed": [
+          "EHR integration case studies showing reduced time\u2011to\u2011enrollment",
+          "Comparative trial of email vs. EHR\u2011embedded nudges"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can provide a unified, patient\u2011centric matching platform that combines trial availability, dynamic eligibility, and immediate scheduling actions, addressing the fragmented nudge ecosystem described.",
+        "transcript_evidence": "Speaker said: \"We need to integrate the matching with the next steps... video consent, nurse call, schedule screening telehealth.\"",
+        "crispro_angle": "CrisPRO can orchestrate end\u2011to\u2011end workflows\u2014match, consent, scheduling\u2014through API\u2011driven automation, reducing reliance on multiple point solutions.",
+        "external_validation_needed": [
+          "Pilot implementation metrics on enrollment acceleration"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What specific EHR integration features are most effective at converting a nudge into actual enrollment?",
+      "How can dynamic eligibility data be reliably captured without adding clinician burden?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Clinical trial nudge platforms",
+        "AI\u2011driven eligibility screening tools"
+      ],
+      "companies_to_monitor": [
+        "Digital health firms offering trial matching nudges"
+      ]
+    }
+  }
+]

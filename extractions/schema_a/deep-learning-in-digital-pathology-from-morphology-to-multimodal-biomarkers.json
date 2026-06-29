@@ -1,0 +1,208 @@
+[
+  {
+    "talk_id": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers::pearson::1",
+    "session_title": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers",
+    "talk_title": "Fundamentals of Deep Learning for Digital Pathology",
+    "speaker": {
+      "name": "Alex Pearson",
+      "affiliation": "University of Chicago, Department of Medical Oncology and Computational Science",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Pearson described the architecture of convolutional neural networks and vision transformers applied to whole slide H&E images, and introduced foundation models that learn a language-like embedding from 1.5 million slides (120,000 patients). These embeddings can be fine\u2011tuned for downstream tasks such as mutation prediction, tumor detection, and segmentation, while highlighting bias sources (e.g., ancestry prediction from TCGA site effects) and mitigation strategies (color normalization, batch correction, synthetic image explainability).",
+    "readouts": [
+      "whole_slide_imaging",
+      "CNN",
+      "vision_transformer",
+      "synthetic_GAN_images",
+      "explainability_heatmaps"
+    ],
+    "key_findings": [
+      "Trained a pathology foundation model on 1.5\u202fmillion H&E slides from 120\u202fk patients, generating a reduced\u2011dimensional feature vector for each image.",
+      "Demonstrated that foundation models can achieve high accuracy on tasks such as ancestry prediction, but identified spurious site\u2011related biases in TCGA data.",
+      "Showed that synthetic GAN\u2011generated images can be used to train pathologists to recognize molecular patterns (e.g., BRAF\u2011like vs RAS\u2011like) improving human prediction performance.",
+      "Presented an FDA\u2011cleared breakthrough\u2011designated AI tool for Trop2\u2011ADC companion diagnostics, illustrating clinical translation of digital pathology AI."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers::cambiamalla::2",
+    "session_title": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers",
+    "talk_title": "Implementation of AI Models for Pathology: Prospective Validation and Clinical Deployment",
+    "speaker": {
+      "name": "Gabriele Cambiamalla",
+      "affiliation": "Mount Sinai, Department of Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "translational",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "",
+        "pathway": "RTK_signaling",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung adenocarcinoma H&E slides",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "EGFR mutation status",
+        "type": "predictive",
+        "assay": "H&E\u2011based deep learning score",
+        "finding": "Model achieved comparable PPV/NPV to rapid PCR tests and enabled a 43% reduction in rapid test utilization while preserving diagnostic accuracy"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "EGFR H&E prediction model",
+        "genotype_or_key_features": "trained on MSK Impact cohort (tens of thousands of slides) with internal and external validation"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "rapid_test_reduction_rate",
+        "value": "43%",
+        "confidence_interval": "",
+        "n": "n=~2,000 cases (retrospective pre\u2011trial cohort)",
+        "population": "lung adenocarcinoma patients undergoing molecular accession",
+        "comparator": "standard rapid PCR test workflow",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Cambiamalla presented a prospectively validated AI model that infers EGFR mutation status directly from H&E whole\u2011slide images, allowing the model to act as a non\u2011exhaustive computational biomarker; by setting high\u2011sensitivity or high\u2011specificity thresholds the workflow can safely triage patients away from rapid PCR testing, reducing unnecessary assays by 43% without loss of diagnostic performance.",
+    "readouts": [
+      "whole_slide_imaging",
+      "deep_learning_inference",
+      "ROC_analysis",
+      "prospective silent trial"
+    ],
+    "key_findings": [
+      "Developed an end\u2011to\u2011end EGFR prediction pipeline using a foundation model fine\u2011tuned on >80,000 H&E slides from MSK Impact.",
+      "Internal and external validation showed no performance drop compared with the original research cohort.",
+      "Prospective silent trial demonstrated a 43% reduction in rapid EGFR PCR tests while maintaining equivalent PPV and NPV to the gold\u2011standard workflow.",
+      "Independent third\u2011party validation confirmed robust performance across institutions.",
+      "Proposed scaling the silent\u2011trial framework to multi\u2011center deployments for additional lung cancer biomarkers and low\u2011resource settings."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "Rapid PCR EGFR test",
+        "rationale": "Use AI model as a triage tool to avoid unnecessary rapid PCR when model predicts negative with high confidence",
+        "phenotype": "43% reduction in rapid test usage while preserving diagnostic accuracy",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers::wang::3",
+    "session_title": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers",
+    "talk_title": "AI\u2011Enabled Spatial Multi\u2011Omics: From 2D Tissue Maps to 3D Biomarkers",
+    "speaker": {
+      "name": "Lihua Wang",
+      "affiliation": "MD Anderson Cancer Center, Department of Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "AI_ML",
+      "biomarker_development",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "Spiral multimodal alignment framework",
+        "genotype_or_key_features": "integrates H&E, spatial transcriptomics, spatial proteomics on identical tissue sections"
+      },
+      {
+        "model_type": "other",
+        "name": "Omni\u2011TIS detection pipeline",
+        "genotype_or_key_features": "detects and phenotypes tumor\u2011infiltrating stromal (TIS) niches from H&E, spatial RNA, and protein data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Wang described deep\u2011learning pipelines that align H&E images with spatial transcriptomics and proteomics at single\u2011cell resolution, register serial sections into 3D tumor maps, and extract spatial niches (e.g., CAF subtypes, macrophage phenotypes, vascular structures, TIS) which can be quantified and linked to clinical outcomes such as immunotherapy response.",
+    "readouts": [
+      "spatial_transcriptomics",
+      "spatial_proteomics",
+      "Visium_HD",
+      "CNN_segmentation",
+      "3D_registration",
+      "single_cell_spatial_maps"
+    ],
+    "key_findings": [
+      "Generated multimodal 3D maps of human tumors comprising >2\u202fmillion cells, revealing spatial gradients of CXCL13 and CXCL5 signals.",
+      "Identified four distinct CAF spatial organizations that correlate with patient survival.",
+      "Discovered two macrophage phenotypes (TIM\u20112\u207a immunosuppressive vs CXCL9\u207a immune\u2011active) with divergent spatial distributions across tumor cores and peripheries.",
+      "Developed Omni\u2011TIS framework that quantifies mature vs immature tumor\u2011infiltrating stromal niches and predicts response to checkpoint blockade in renal cell carcinoma.",
+      "Demonstrated that 3D reconstruction of TIS structures changes perceived volume and may improve biomarker robustness compared with 2D counts."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does 3D spatial architecture improve predictive power over traditional 2D metrics for immunotherapy response?",
+      "What is the optimal way to distill high\u2011dimensional spatial features into a single clinically actionable biomarker?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

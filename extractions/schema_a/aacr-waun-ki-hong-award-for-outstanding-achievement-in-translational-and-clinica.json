@@ -1,0 +1,129 @@
+[
+  {
+    "talk_id": "aacr-waun-ki-hong-award-for-outstanding-achievement-in-translational-and-clinica::allen::1",
+    "session_title": "aacr-waun-ki-hong-award-for-outstanding-achievement-in-translational-and-clinica",
+    "talk_title": "Computational Oncology: Molecular Logic of Cancer Development, Immunotherapy Response, and Resistance",
+    "speaker": {
+      "name": "Eli Van Allen",
+      "affiliation": "Dana-Farber Cancer Institute, Division of Population Sciences; Harvard Medical School",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "kidney cancer",
+      "melanoma",
+      "bladder cancer",
+      "breast cancer",
+      "pediatric solid tumors"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "computational_biology",
+      "AI_ML",
+      "biomarker_development",
+      "translational",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PBRM1",
+        "alteration": "loss_of_function",
+        "pathway": "chromatin_remodeling",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "PBRM1-mutant renal cell carcinoma treated with immune checkpoint blockade",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "BRCA2",
+        "alteration": "germline_mutation",
+        "pathway": "DNA_repair",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "advanced prostate cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MDM4",
+        "alteration": "amplification",
+        "pathway": "p53_regulation",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "lethal prostate cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PBRM1 loss-of-function mutation",
+        "type": "predictive",
+        "assay": "NGS panel",
+        "finding": "Associated with higher response rates to nivolumab in renal cell carcinoma (signal observed in discovery cohort and Checkpoint 025 trial, but not consistent across all studies)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Checkpoint 025",
+        "genotype_or_key_features": "Renal cell carcinoma patients progressing on VEGF-TKI, randomized to nivolumab vs everolimus; PBRM1 status assessed"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "PBRM1 knockout cell lines",
+        "genotype_or_key_features": "CRISPR-mediated loss of PBRM1 to assess endogenous retrovirus expression"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Prostate cancer exome cohort",
+        "genotype_or_key_features": "100 \u2192 1,000 exomes, germline and somatic data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Van Allen's work integrates germline, somatic, and immune genomic data using interpretable AI and computational pathology to define molecular logic that drives oncogenesis, immunotherapy response, and therapeutic resistance. By mapping regulatory non\u2011coding mutations, germline risk alleles, and chromatin remodeler alterations (e.g., PBRM1), his algorithms predict patient outcomes and uncover novel dependencies such as MDM4 in lethal prostate cancer.",
+    "readouts": [
+      "NGS",
+      "whole_exome_sequencing",
+      "single_cell_RNA-seq",
+      "spatial_transcriptomics",
+      "H&E imaging",
+      "computational_pathology",
+      "deep_learning_models",
+      "CRISPR_screen"
+    ],
+    "key_findings": [
+      "Developed a novel algorithm to detect recurrent non\u2011coding regulatory mutations, exemplified by functional validation of a breast cancer XPP1\u2011proximal region.",
+      "Demonstrated germline BRCA2 enrichment in advanced prostate cancer and extended germline risk analysis to CHEK2, DNA\u2011repair genes, and structural variants in pediatric solid tumors.",
+      "Identified loss\u2011of\u2011function mutations in PBRM1 as a predictive biomarker for response to nivolumab in renal cell carcinoma, with replication in the Checkpoint 025 trial (nivolumab arm only).",
+      "Created an interpretable deep\u2011learning pathology pipeline that quantifies tumor grade heterogeneity and immune cell features, improving response prediction over single\u2011gene biomarkers in the same renal cell carcinoma cohort.",
+      "Built the \u201cPeanut\u201d biologically\u2011engineered neural network to classify primary versus lethal prostate cancer, uncovering a novel association with MDM4 amplification that is being pursued for therapeutic targeting."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "PBRM1 association with ICB response was strong in early cohorts but attenuated in later studies, suggesting context\u2011dependent resistance mechanisms linked to prior VEGF\u2011TKI exposure.",
+      "MDM4 amplification emerged as a novel driver of lethal prostate cancer, indicating a potential resistance pathway to standard androgen\u2011targeted therapies."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can germline structural variants be systematically incorporated into clinical decision\u2011making pipelines?",
+      "What are the optimal methods to ensure interpretability and trustworthiness of agentic AI models in oncology?",
+      "How should heterogeneous data quality be weighted when training large\u2011scale foundation models for precision medicine?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

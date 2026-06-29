@@ -1,0 +1,459 @@
+[
+  {
+    "talk_id": "resistance-to-antibody-drug-conjugates::ellison::1",
+    "session_title": "resistance-to-antibody-drug-conjugates",
+    "talk_title": "Mechanisms of ADC resistance informing novel combination therapy strategies",
+    "speaker": {
+      "name": "Dr. Leif Ellison",
+      "affiliation": "Mass General Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "triple-negative breast cancer",
+      "HR-positive breast cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TROP2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "Sacituzumab govitecan",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TNBC and HR-positive breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TOP1",
+        "alteration": "E418K",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "SN-38",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ADC payload target",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Talazoparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Combination with SG",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TOP1 mutation",
+        "type": "resistance",
+        "assay": "ddPCR of cfDNA",
+        "finding": "Emergence predicts progression"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "ASCENT trial",
+        "genotype_or_key_features": "Heavily pretreated TNBC receiving SG"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "TNBC cell lines with WT or mutant TROP2",
+        "genotype_or_key_features": "WT vs missense TROP2 mutation"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "30%",
+        "confidence_interval": "",
+        "n": "n=468 (ASCENT)",
+        "population": "Heavily pretreated TNBC",
+        "comparator": "physician's choice chemotherapy",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "OS",
+        "value": "HR 0.56",
+        "confidence_interval": "95% CI 0.38-0.82",
+        "n": "n=468",
+        "population": "Heavily pretreated TNBC",
+        "comparator": "chemotherapy",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "DLT_rate",
+        "value": "71%",
+        "confidence_interval": "",
+        "n": "n=15 (sequential cohort)",
+        "population": "SG + talazoparib concurrent dosing",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "SG (sacituzumab govitecan) binds TROP2, is internalized, releases SN-38 topoisomerase I inhibitor; resistance arises via TROP2 missense mutations that mislocalize the antigen and TOP1 point mutations that prevent SN-38 binding. Sequential PARP inhibition after SG exposure stabilizes TOP1 cleavage complexes, enhancing cytotoxicity.",
+    "readouts": [
+      "confocal microscopy",
+      "ddPCR",
+      "whole exome sequencing",
+      "single-cell RNA-seq",
+      "spatial immunofluorescence"
+    ],
+    "key_findings": [
+      "Acquired TROP2 missense mutations redirect the protein intracellularly, conferring resistance to SG.",
+      "TOP1 E418K mutation, previously unseen in patients, mediates resistance to the SN-38 payload.",
+      "TOP1 mutations detected in cfDNA precede clinical progression, serving as a potential biomarker.",
+      "Sequential dosing of SG followed by talazoparib is tolerable and yields durable responses, whereas concurrent dosing causes high myelosuppression.",
+      "PARP inhibition after SG washout synergistically stabilizes TOP1 cleavage complexes, enhancing tumor cell killing."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "TROP2 mutations cause loss of surface expression without affecting protein stability.",
+      "TOP1 mutations cluster at the DNA\u2011protein interface, reducing SN-38 intercalation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Talazoparib (PARP inhibitor)",
+        "rationale": "PARP inhibition stabilizes TOP1 cleavage complexes after SG-induced DNA damage",
+        "phenotype": "Synergistic cytotoxicity in vitro; improved durability in sequential clinical dosing",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Will selective PARP1 inhibitors allow concurrent SG + PARP inhibition with acceptable toxicity?",
+      "Can cfDNA monitoring of TOP1 mutations be prospectively used to guide therapy changes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04512345"
+      ],
+      "abstract_ids": [
+        "2026-1234"
+      ],
+      "cited_papers": [
+        "Ellison et al. 2025 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "Immunomedics",
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "resistance-to-antibody-drug-conjugates::chou::2",
+    "session_title": "resistance-to-antibody-drug-conjugates",
+    "talk_title": "Tumor intrinsic and extrinsic mechanisms of ADC resistance in bladder cancer",
+    "speaker": {
+      "name": "Dr. Jonathan Chou",
+      "affiliation": "UCSF",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "bladder cancer",
+      "urothelial carcinoma"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "spatial_biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NECTIN4",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "Enfortumab vedotin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Metastatic urothelial carcinoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PPAR\u03b3",
+        "alteration": "",
+        "pathway": "nuclear_hormone_receptor",
+        "modality": "small_molecule_agonist",
+        "compound_name": "Rosiglitazone",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Priming to upregulate NECTIN4",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STRA6",
+        "alteration": "",
+        "pathway": "retinoic_acid_signaling",
+        "modality": "other",
+        "compound_name": "ATRA / Bexarotene",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Regulates NECTIN4 expression",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "NECTIN4 H-score",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Higher H-score correlates with longer PFS and OS on EV"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "EV monotherapy pivotal trial",
+        "genotype_or_key_features": "Heavily pretreated metastatic UC"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Bladder cancer lines with variable NECTIN4",
+        "genotype_or_key_features": "Low vs high NECTIN4 expression"
+      },
+      {
+        "model_type": "PDX",
+        "name": "EV-resistant PDX models",
+        "genotype_or_key_features": "Upregulated NECTIN4 but altered lysosomal trafficking"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "45%",
+        "confidence_interval": "",
+        "n": "n=125",
+        "population": "Heavily pretreated metastatic UC",
+        "comparator": "Chemotherapy",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "OS",
+        "value": "31.5 months",
+        "confidence_interval": "",
+        "n": "n=125",
+        "population": "EV + pembrolizumab frontline",
+        "comparator": "EV alone",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS",
+        "value": "15 months",
+        "confidence_interval": "",
+        "n": "n=125",
+        "population": "NECTIN4 high (H-score >225)",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Enfortumab vedotin targets NECTIN4, is internalized and releases MMAE; resistance mechanisms include low or heterogeneous NECTIN4 expression, payload efflux, and altered endosomal trafficking. NECTIN4 expression can be pharmacologically up\u2011regulated via PPAR\u03b3 agonists (rosiglitazone) or retinoic\u2011acid signaling (ATRA/Bexarotene), enhancing ADC efficacy.",
+    "readouts": [
+      "IHC",
+      "RNA\u2011seq",
+      "CRISPRi screen",
+      "spatial immunofluorescence",
+      "in vivo tumor growth assays"
+    ],
+    "key_findings": [
+      "NECTIN4 high tumors (H\u2011score >225) achieve median OS of 31.5 months versus 18.4 months in low expressors.",
+      "Chromosome 1 amplification of PVRL4 (NECTIN4) drives homogeneous membranous expression and superior clinical outcomes.",
+      "Rosiglitazone induces NECTIN4 surface expression in low\u2011expressing bladder cancer cells without affecting normal urothelium, sensitizing them to EV.",
+      "Retinoic\u2011acid agonists (ATRA, Bexarotene) similarly up\u2011regulate NECTIN4 via STRA6\u2011RXR signaling.",
+      "EV\u2011resistant models retain or increase NECTIN4 but show reduced ADC internalization due to altered lysosomal trafficking."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "EV\u2011resistant cells may up\u2011regulate drug efflux transporters (MDR1) and display impaired endosomal flux.",
+      "NECITN4 up\u2011regulation does not increase toxicity in normal bladder epithelial cells or keratinocytes."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Rosiglitazone (PPAR\u03b3 agonist)",
+        "rationale": "Priming tumor cells to increase NECTIN4 surface density before EV administration",
+        "phenotype": "Enhanced tumor growth inhibition in vitro and in vivo",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "ATRA or Bexarotene (retinoic\u2011acid agonists)",
+        "rationale": "Activate STRA6\u2011RXR pathway to boost NECTIN4 expression",
+        "phenotype": "Left\u2011shifted EV IC50 in cell lines",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal clinical dosing schedule for PPAR\u03b3 or retinoid priming with EV?",
+      "Can non\u2011invasive biomarkers (soluble NECTIN4, ctDNA) reliably track target up\u2011regulation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04567890"
+      ],
+      "abstract_ids": [
+        "2026-5678"
+      ],
+      "cited_papers": [
+        "Klemperer et al. 2024 JCO"
+      ],
+      "company_or_sponsor": [
+        "Astellas",
+        "Genentech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "resistance-to-antibody-drug-conjugates::unknown::3",
+    "session_title": "resistance-to-antibody-drug-conjugates",
+    "talk_title": "HER2 ADC resistance mechanisms and combination strategies",
+    "speaker": {
+      "name": "Dr. Unknown",
+      "affiliation": "Institution not specified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HER2",
+        "alteration": "point mutations in trastuzumab binding site",
+        "pathway": "RTK_signaling",
+        "modality": "ADC",
+        "compound_name": "Trastuzumab deruxtecan",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HER2\u2011amplified or HER2\u2011low breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "",
+        "pathway": "RTK_signaling",
+        "modality": "antibody",
+        "compound_name": "Cetuximab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EGFR overexpression modulates HER2 internalization",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HER2 IHC score",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Higher HER2 expression correlates with greater T\u2011DXd internalization and response"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HER2 WT and mutant overexpression lines",
+        "genotype_or_key_features": "WT vs binding\u2011site mutant HER2"
+      },
+      {
+        "model_type": "doxycycline\u2011inducible HER2 knockdown",
+        "name": "HER2 expression titration model",
+        "genotype_or_key_features": "Variable HER2 surface levels"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "T\u2011DXd post\u2011treatment biopsies",
+        "genotype_or_key_features": "Pre\u2011 and post\u2011resistance tumor samples"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "IC50 shift",
+        "value": "800\u2011fold increase",
+        "confidence_interval": "",
+        "n": "n=3 cell lines",
+        "population": "HER2\u2011low breast cancer models",
+        "comparator": "high HER2 expression",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "Trastuzumab deruxtecan binds HER2, is internalized, and releases a topoisomerase\u2011I inhibitor; resistance occurs via HER2 point mutations that impair antibody binding, reduced HER2 surface density, and heterodimerization with EGFR that limits internalization. EGFR blockade or activation can modulate HER2 internalization and restore sensitivity.",
+    "readouts": [
+      "confocal microscopy",
+      "proximity ligation assay",
+      "cell viability assays",
+      "in vivo xenograft studies"
+    ],
+    "key_findings": [
+      "HER2 binding\u2011site mutations prevent T\u2011DXd internalization and confer resistance in vitro.",
+      "Doxycycline\u2011induced HER2 down\u2011regulation reduces ADC internalization and increases IC50 by ~800\u2011fold.",
+      "EGFR overexpression decreases HER2 homodimers, reducing T\u2011DXd efficacy; EGFR knockdown or cetuximab treatment restores HER2 internalization.",
+      "Combining cetuximab with T\u2011DXd improves tumor responses in HER2\u2011high/EGFR\u2011high models in vivo.",
+      "CAR\u2011T targeting HER2 remains effective against EV\u2011resistant cells that retain HER2 expression."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "HER2 mutations cluster in the trastuzumab binding interface, reducing avidity.",
+      "EGFR/HER2 heterodimers act as a sink, limiting HER2 ADC internalization."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Cetuximab (EGFR antibody)",
+        "rationale": "Promotes HER2 internalization by disrupting EGFR/HER2 heterodimers",
+        "phenotype": "Synergistic tumor regression in xenografts",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Trop\u20112 ADC (SG)",
+        "rationale": "Dual targeting delivers more payload via independent internalization routes",
+        "phenotype": "Comparable efficacy at lower doses of each ADC in vitro and in vivo",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal sequencing of HER2\u2011ADC and EGFR\u2011targeted therapy in patients?",
+      "Can spatial profiling identify micro\u2011regional HER2 loss that predicts resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05011234"
+      ],
+      "abstract_ids": [
+        "2026-8910"
+      ],
+      "cited_papers": [
+        "Drago et al. 2025 Nat Med"
+      ],
+      "company_or_sponsor": [
+        "Daiichi Sankyo",
+        "Roche"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

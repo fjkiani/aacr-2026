@@ -1,0 +1,597 @@
+[
+  {
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ryan Herency",
+      "institution_or_pharma": "Discovery Medicine",
+      "session_title": "advances-in-therapeutic-antibodies",
+      "talk_title": "BIGHAT-299: First-in-class CCAM6-directed TCE for diverse solid malignancies",
+      "rhetorical_signals": [
+        "Speaker said: \"the problem that's derailed a number of prior attempts to drug this target is expression in the myeloid tree\"",
+        "Speaker said: \"we are very proudly proceeding quickly towards the clinic. IND is expected in the second half of this year\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Prior CCAM6-directed ADCs and TCEs (Genentech DM1 ADC, Bayer tinirelimab)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "High-affinity binding to CCAM6 on mature neutrophils causing peripheral antigen sink and dose\u2011limiting cytopenias",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted substantial on\u2011target cytopenias that are dose\u2011limiting because of an overwhelming peripheral antigen sink",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BIGHAT-299 IND\u2011enabling study (no NCT provided)",
+        "target_biology": "CCAM6\u2011directed T\u2011cell engager with conditional activity based on antigen density",
+        "flawed_enrollment_criteria": "Enrolling all patients with CCAM6\u2011positive solid tumors without stratifying by neutrophil CCAM6 expression levels",
+        "missing_biomarker": "Quantitative peripheral neutrophil CCAM6 density to predict on\u2011target toxicity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CCAM6\u2011directed TCE platform",
+        "ip_vulnerability_note": "Speaker disclosed that the CCAM6 binder is a fully human VHH with weak affinity (3\u202f\u00b5M KD) and relies on engineered geometry; the core scaffold is not protected by novel IP beyond the VHH sequence",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad indication enrollment may dilute signal given heterogeneous CCAM6 expression across tumor types"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that BIGHAT\u2011299 has a 1,000\u2011fold differential IC50 between cancer cells and neutrophils, then concluded that the asset offers a \"credible first\u2011in\u2011class opportunity\" despite acknowledging peripheral antigen sink issues in prior programs"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human Phase\u202f1 safety or PK data presented",
+        "No biomarker\u2011stratified efficacy data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for quantitative peripheral neutrophil CCAM6 expression to predict toxicity and select patients",
+        "transcript_evidence": "Speaker noted substantial on\u2011target cytopenias due to peripheral antigen sink on mature neutrophils",
+        "crispro_angle": "CrisPRO could model CCAM6 density distributions and predict safe dosing windows",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Potential escape via down\u2011regulation of CCAM6 on tumor cells",
+        "transcript_evidence": "Speaker set a breakpoint at 80,000 copies per cell based on biopsy data",
+        "crispro_angle": "CrisPRO can simulate tumor heterogeneity and identify combination strategies to prevent antigen loss",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Genentech",
+        "context": "Developed a DM1 CCAM6 ADC that failed due to peripheral neutrophil toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Bayer",
+        "context": "Advanced tinirelimab (CCAM6 TCE) that failed with similar toxicity",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal CCAM6 density on tumor cells required for durable clinical responses?",
+      "Will CCAM6 expression on normal epithelial tissues cause off\u2011target effects at therapeutic doses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BIGHAT\u2011299",
+        "Genentech CCAM6\u2011ADC",
+        "Bayer tinirelimab"
+      ],
+      "companies_to_monitor": [
+        "Discovery Medicine",
+        "Genentech",
+        "Bayer"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jason Dukes",
+      "institution_or_pharma": "NARA Bio",
+      "session_title": "advances-in-therapeutic-antibodies",
+      "talk_title": "ENA\u2011101: First\u2011in\u2011class bispecific T\u2011cell engager targeting DART\u2011fox peptide\u2011HLA",
+      "rhetorical_signals": [
+        "Speaker said: \"We believe this is a really promising target, has all the hallmarks of a target that you'd want to pursue with sensitive T cell engager type molecules\"",
+        "Speaker said: \"We have identified no risk peptides to date with that approach\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Peptide\u2011HLA targeting bispecifics (general class)",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Dependence on HLA\u2011A3 prevalence (~20\u201130% of population) limits patient eligibility",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that \"10%\u201120% of all new cancer diagnoses\" could be addressed, implying a subset response",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ENA\u2011101 IND\u2011enabling preclinical program (no NCT disclosed)",
+        "target_biology": "Bispecific T\u2011cell engager against DART\u2011fox peptide presented by HLA\u2011A3",
+        "flawed_enrollment_criteria": "No pre\u2011screening for HLA\u2011A3 status in early studies could dilute efficacy signal",
+        "missing_biomarker": "HLA\u2011A3 genotype",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TCR\u2011mimetic antibody against DART\u2011fox A3/HLA\u2011A3",
+        "ip_vulnerability_note": "Speaker disclosed detailed affinity maturation and binding data, suggesting the core scaffold is conventional IgG with engineered CDRs",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single HLA allele limits market size and may require extensive HLA typing"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated sub\u201110\u202fpM killing potency in vitro yet emphasized that \"the evidence of the DART\u2011fox expression in major solid tumors gives us routes towards recruiting all comers\" despite HLA\u2011A3 restriction"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in vivo efficacy data presented",
+        "No safety data in animal models"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO model to predict peptide\u2011HLA presentation levels across tumor types and HLA\u2011A3 carriers",
+        "transcript_evidence": "Speaker noted HLA\u2011A3 prevalence of 20\u201130% and variable peptide density (hundreds to low thousands copies per cell)",
+        "crispro_angle": "CrisPRO can integrate proteomic and HLA\u2011binding predictions to prioritize patients",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic partners (e.g., checkpoint inhibitors) to broaden efficacy beyond HLA\u2011A3 restricted cohort",
+        "transcript_evidence": "Speaker highlighted synergy with existing immunotherapies in discussion",
+        "crispro_angle": "CrisPRO can simulate combination effects on T\u2011cell activation thresholds",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Atezolizumab",
+        "context": "Mentioned as a checkpoint inhibitor that could be combined with ENA\u2011101",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will ENA\u2011101 trigger off\u2011target T\u2011cell activation against other peptide\u2011HLA complexes?",
+      "What is the durability of responses in HLA\u2011A3 positive patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ENA\u2011101"
+      ],
+      "companies_to_monitor": [
+        "NARA Bio"
+      ]
+    }
+  },
+  {
+    "trial_name_or_nct": "Preclinical NSG xenograft studies (no NCT)",
+    "target_biology": "Peptide\u2011linked NRP1 antibody delivering viral epitopes for TCR\u2011engineered T\u2011cell killing",
+    "flawed_enrollment_criteria": "Model uses NRP1\u2011high tumor lines; does not account for heterogeneous or low NRP1 expression in patients",
+    "missing_biomarker": "Quantitative tumor NRP1 density threshold for efficacy",
+    "static_vs_dynamic_failure": null,
+    "statistical_concern": null,
+    "severity": "significant_risk",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::3"
+  },
+  {
+    "vulnerable_ip_or_chemistry": "5D6 peptide\u2011linked antibody platform",
+    "ip_vulnerability_note": "Speaker disclosed the binding domain (B1B2) and linker chemistry, indicating a conventional antibody scaffold with a cleavable linker",
+    "scale_or_manufacturing_bottleneck": null,
+    "clinical_strategy_weakness": "Reliance on pre\u2011existing viral memory T\u2011cells; patient HLA\u2011A2 restriction limits applicability",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::4"
+  },
+  {
+    "overall_maturity": "preclinical_only",
+    "sample_size_adequacy": "pilot_only",
+    "follow_up_adequacy": "not_applicable",
+    "key_data_gaps": [
+      "No in vivo efficacy data in immunocompetent models",
+      "No assessment of HLA\u2011A2 prevalence in target population"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::5"
+  },
+  {
+    "opportunity_type": "resistance_mechanism_addressable",
+    "description": "Model heterogeneity in NRP1 expression and protease activity to predict which tumors will present sufficient peptide",
+    "transcript_evidence": "Speaker noted variability in NRP1 levels and asked about low\u2011NRP1 tumors",
+    "crispro_angle": "CrisPRO can simulate protease\u2011driven linker cleavage and peptide loading across tumor sub\u2011clones",
+    "priority": "medium",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::6"
+  },
+  {
+    "opportunity_type": "trial_design_improvement",
+    "description": "Incorporate HLA\u2011A2 typing and NRP1 expression thresholds into future trial eligibility",
+    "transcript_evidence": "Speaker highlighted that normal NRP1\u2011expressing cells were not killed, suggesting a need for biomarker selection",
+    "crispro_angle": "CrisPRO can model patient\u2011level biomarker distributions to optimize inclusion criteria",
+    "priority": "high",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::7"
+  },
+  {
+    "name": "DEC\u2011205 platform (Ralph Steinman)",
+    "context": "Historical precedent for antibody\u2011mediated cross\u2011presentation",
+    "sentiment": "neutral",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::8"
+  },
+  {
+    "nct_numbers_to_check": [],
+    "assets_to_track": [
+      "5D6\u2011NLV",
+      "5D6\u2011CG1"
+    ],
+    "companies_to_monitor": [
+      "MD Anderson"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::9"
+  },
+  {
+    "speaker_name": "Aaron Springer",
+    "institution_or_pharma": "Voro (PrimeBody platform)",
+    "session_title": "advances-in-therapeutic-antibodies",
+    "talk_title": "Tumor\u2011activated PrimeBody platform enables more potent CD47 targeting",
+    "rhetorical_signals": [
+      "Speaker said: \"We see no anemia\" despite using a high\u2011affinity CD47 binder",
+      "Speaker said: \"Our linkers show at least three\u2011fold increased activity over clinical benchmarks across all indications\""
+    ],
+    "presentation_type": "clinical_trial_readout",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::10"
+  },
+  {
+    "failing_compound_or_target": "Legacy CD47 antibodies (e.g., migrolimab)",
+    "failure_type": "toxicity_limiting",
+    "mechanistic_blindspot": "Ubiquitous CD47 expression creates a massive tissue sink and on\u2011target anemia",
+    "unexplained_resistance_quote": null,
+    "ghost_responder_admission": null,
+    "hidden_tox_signal": "Speaker highlighted anemia as the primary dose\u2011limiting toxicity of existing CD47 programs",
+    "evidence_strength": "explicit_admission",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::11"
+  },
+  {
+    "trial_name_or_nct": "VORA101 preclinical efficacy studies (no NCT)",
+    "target_biology": "High\u2011affinity SIRP\u03b1 CD47 binder with masked activation in tumor microenvironment",
+    "flawed_enrollment_criteria": "Preclinical models do not stratify tumors by protease activity that drives linker cleavage",
+    "missing_biomarker": "Tumor protease expression profile to ensure selective unmasking",
+    "static_vs_dynamic_failure": null,
+    "statistical_concern": null,
+    "severity": "minor_concern",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::12"
+  },
+  {
+    "vulnerable_ip_or_chemistry": "PrimeBody masking/linker technology",
+    "ip_vulnerability_note": "Speaker disclosed detailed affinity\u2011based mask and protease\u2011cleavable linker designs, suggesting a conventional protein engineering approach",
+    "scale_or_manufacturing_bottleneck": null,
+    "clinical_strategy_weakness": "Reliance on tumor\u2011specific protease activity may limit applicability across low\u2011protease tumors",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::13"
+  },
+  {
+    "overall_maturity": "preclinical_only",
+    "sample_size_adequacy": "pilot_only",
+    "follow_up_adequacy": "not_applicable",
+    "key_data_gaps": [
+      "No human safety or PK data for VORA101",
+      "Unclear durability of masking in chronic dosing"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::14"
+  },
+  {
+    "opportunity_type": "trial_design_improvement",
+    "description": "Model tumor protease expression to select indications where linker cleavage is maximized",
+    "transcript_evidence": "Speaker selected indications based on protease dysregulation and macrophage presence",
+    "crispro_angle": "CrisPRO can integrate protease expression datasets to rank indication suitability",
+    "priority": "high",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::15"
+  },
+  {
+    "opportunity_type": "failed_asset_salvage",
+    "description": "Apply PrimeBody masking to other high\u2011affinity CD47 antibodies that failed due to anemia",
+    "transcript_evidence": "Speaker noted that legacy CD47 programs suffer from tissue sink and anemia",
+    "crispro_angle": "CrisPRO can predict masking efficiency for existing CD47 binders",
+    "priority": "medium",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::16"
+  },
+  {
+    "name": "Migrolimab",
+    "context": "Head\u2011to\u2011head preclinical comparison showing anemia with migrolimab but not with PrimeBody",
+    "sentiment": "critical",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::17"
+  },
+  {
+    "name": "Avaracept (ALX\u2011148)",
+    "context": "Referenced as a high\u2011affinity SIRP\u03b1 fusion with a null Fc that required combination with trastuzumab",
+    "sentiment": "neutral",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::18"
+  },
+  {
+    "nct_numbers_to_check": [],
+    "assets_to_track": [
+      "VORA101",
+      "Migrolimab",
+      "ALX\u2011148"
+    ],
+    "companies_to_monitor": [
+      "Voro",
+      "Roche",
+      "Altor"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::19"
+  },
+  {
+    "speaker_name": "Emma Stewart",
+    "institution_or_pharma": "Evolve Immune",
+    "session_title": "advances-in-therapeutic-antibodies",
+    "talk_title": "Integrated CD2 costimulation on CD3 T\u2011cell engagers (Evolve\u2011104)",
+    "rhetorical_signals": [
+      "Speaker said: \"CD2 is highly expressed on >80% of tumor\u2011infiltrating T cells\"",
+      "Speaker said: \"Affinity\u2011tuned Evolve outperformed conventional bispecifics in vitro and in vivo\""
+    ],
+    "presentation_type": "clinical_trial_readout",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::20"
+  },
+  {
+    "failing_compound_or_target": "Conventional CD3\u2011only T\u2011cell engagers",
+    "failure_type": "insufficient_efficacy",
+    "mechanistic_blindspot": "Lack of co\u2011stimulatory signal (signal\u202f2) leading to suboptimal T\u2011cell activation and exhaustion",
+    "unexplained_resistance_quote": null,
+    "ghost_responder_admission": null,
+    "hidden_tox_signal": null,
+    "evidence_strength": "explicit_admission",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::21"
+  },
+  {
+    "trial_name_or_nct": "Evolve\u2011104 Phase\u202f1 trial (NCT not disclosed)",
+    "target_biology": "Trispecific T\u2011cell engager with CD3, tumor antigen (ULBP256), and CD2 co\u2011stimulation",
+    "flawed_enrollment_criteria": "Potential inclusion of patients with low CD58 (CD2 ligand) expression could dilute signal",
+    "missing_biomarker": "Tumor CD58 expression level",
+    "static_vs_dynamic_failure": null,
+    "statistical_concern": null,
+    "severity": "significant_risk",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::22"
+  },
+  {
+    "vulnerable_ip_or_chemistry": "CD2\u2011CD58 co\u2011stimulatory module",
+    "ip_vulnerability_note": "Speaker described the CD2 agonist as a conventional antibody fragment; core scaffold may be less protected by novel IP",
+    "scale_or_manufacturing_bottleneck": null,
+    "clinical_strategy_weakness": "Potential CRS amplification due to added CD2 activation",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::23"
+  },
+  {
+    "overall_maturity": "single_arm_phase2",
+    "sample_size_adequacy": "adequately_powered",
+    "follow_up_adequacy": "immature",
+    "key_data_gaps": [
+      "Long\u2011term safety and CRS profile not yet reported",
+      "Efficacy in HLA\u2011diverse patient populations not shown"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::24"
+  },
+  {
+    "opportunity_type": "combination_partner",
+    "description": "Model synergistic effects of CD2 co\u2011stimulation with checkpoint inhibitors to mitigate CRS",
+    "transcript_evidence": "Speaker noted that CD2 is highly expressed across TILs and improves activation",
+    "crispro_angle": "CrisPRO can simulate cytokine release dynamics with varying CD2 affinity",
+    "priority": "high",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::25"
+  },
+  {
+    "opportunity_type": "biomarker_stratification_gap",
+    "description": "Identify tumors with high CD58 expression for optimal response to Evolve\u2011104",
+    "transcript_evidence": "Speaker highlighted CD2/CD58 as the key co\u2011stimulatory axis",
+    "crispro_angle": "CrisPRO can integrate tumor RNA\u2011seq data to predict CD58 levels",
+    "priority": "medium",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::26"
+  },
+  {
+    "name": "Conventional CD3\u2011only bispecifics",
+    "context": "Compared head\u2011to\u2011head with Evolve platform in vitro and in vivo",
+    "sentiment": "critical",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::27"
+  },
+  {
+    "nct_numbers_to_check": [
+      "NCTxxxxxxx"
+    ],
+    "assets_to_track": [
+      "Evolve\u2011104"
+    ],
+    "companies_to_monitor": [
+      "Evolve Immune"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::28"
+  },
+  {
+    "speaker_name": "Jennifer Hibel",
+    "institution_or_pharma": "Crossbow Therapeutics / MD Anderson",
+    "session_title": "advances-in-therapeutic-antibodies",
+    "talk_title": "Preclinical evaluation and safety of CVX250, a bispecific T\u2011cell engager targeting Cathepsin\u202fG peptide\u2011HLA in AML",
+    "rhetorical_signals": [
+      "Speaker said: \"We observed robust killing even at 33 copies per cell\"",
+      "Speaker said: \"We saw no meaningful cytokine induction compared to positive controls\""
+    ],
+    "presentation_type": "clinical_trial_readout",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::29"
+  },
+  {
+    "failing_compound_or_target": "Peptide\u2011HLA bispecifics in AML (general class)",
+    "failure_type": "biomarker_failure",
+    "mechanistic_blindspot": "Dependence on HLA\u2011A0201 (~40% of US population) limits patient eligibility",
+    "unexplained_resistance_quote": null,
+    "ghost_responder_admission": "Speaker noted activity down to 33 peptide copies per cell, implying a subset response",
+    "hidden_tox_signal": null,
+    "evidence_strength": "implied_by_hedging",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::30"
+  },
+  {
+    "trial_name_or_nct": "CVX250 Phase\u202f1 AML trial (no NCT disclosed)",
+    "target_biology": "Bispecific T\u2011cell engager targeting CG1 peptide presented by HLA\u2011A0201 on AML cells",
+    "flawed_enrollment_criteria": "Enrolling all HLA\u2011A0201 positive AML patients without pre\u2011screening for CG1 peptide density",
+    "missing_biomarker": "Quantitative CG1/HLA copy number on patient blasts",
+    "static_vs_dynamic_failure": null,
+    "statistical_concern": null,
+    "severity": "significant_risk",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::31"
+  },
+  {
+    "vulnerable_ip_or_chemistry": "TCR\u2011mimetic bispecific targeting CG1/HLA\u2011A0201",
+    "ip_vulnerability_note": "Speaker disclosed that the Fc contains a silencing LALA\u2011KA mutation but still shows weak Fc\u03b3R2A binding at high concentrations, indicating conventional IgG scaffold",
+    "scale_or_manufacturing_bottleneck": null,
+    "clinical_strategy_weakness": "Reliance on a single peptide\u2011HLA restricts market size",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::32"
+  },
+  {
+    "overall_maturity": "single_arm_phase2",
+    "sample_size_adequacy": "underpowered",
+    "follow_up_adequacy": "immature",
+    "key_data_gaps": [
+      "No in vivo efficacy data in AML mouse models presented",
+      "No assessment of off\u2011target activity in Fc\u03b3R2A\u2011expressing cells beyond platelets"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::33"
+  },
+  {
+    "opportunity_type": "biomarker_stratification_gap",
+    "description": "Develop a CrisPRO model to predict CG1 peptide presentation levels across AML sub\u2011types",
+    "transcript_evidence": "Speaker highlighted variability from 15 to ~8,000 predicted copies per cell",
+    "crispro_angle": "CrisPRO can integrate proteomics and HLA\u2011binding predictions to prioritize patients",
+    "priority": "high",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::34"
+  },
+  {
+    "opportunity_type": "failed_asset_salvage",
+    "description": "Apply masking or affinity tuning to improve safety of other peptide\u2011HLA bispecifics that showed Fc\u03b3R2A binding",
+    "transcript_evidence": "Speaker noted weak Fc\u03b3R2A interaction at high concentrations",
+    "crispro_angle": "CrisPRO can simulate Fc engineering impacts on off\u2011target binding",
+    "priority": "medium",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::35"
+  },
+  {
+    "name": "Tebentafusp",
+    "context": "Mentioned as an example of a peptide\u2011HLA bispecific with uniform antigen expression",
+    "sentiment": "neutral",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::36"
+  },
+  {
+    "nct_numbers_to_check": [],
+    "assets_to_track": [
+      "CVX250"
+    ],
+    "companies_to_monitor": [
+      "Crossbow Therapeutics"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::37"
+  },
+  {
+    "speaker_name": "Jenny Go",
+    "institution_or_pharma": "Resers Therapeutics",
+    "session_title": "advances-in-therapeutic-antibodies",
+    "talk_title": "First\u2011in\u2011class monoclonal antibody targeting TM4SF5 in gastrointestinal cancers",
+    "rhetorical_signals": [
+      "Speaker said: \"TM4SF5 is highly expressed in GI cancers and drives an immunosuppressive TME\"",
+      "Speaker said: \"RCT1213 achieved ~80% tumor growth inhibition, comparable to atezolizumab/bevacizumab\""
+    ],
+    "presentation_type": "clinical_trial_readout",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::38"
+  },
+  {
+    "failing_compound_or_target": "Conventional antibodies against TM4SF5 (none existing)",
+    "failure_type": "unknown",
+    "mechanistic_blindspot": "Difficulty in generating antibodies that recognize native conformation of a tetraspanin; potential off\u2011target binding to other tetraspanins",
+    "unexplained_resistance_quote": null,
+    "ghost_responder_admission": null,
+    "hidden_tox_signal": null,
+    "evidence_strength": "implied_by_hedging",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::39"
+  },
+  {
+    "trial_name_or_nct": "RCT1213 preclinical efficacy studies (no NCT)",
+    "target_biology": "Monoclonal antibody against extracellular loops of TM4SF5",
+    "flawed_enrollment_criteria": "Potential inclusion of patients without confirmed TM4SF5 overexpression could dilute efficacy",
+    "missing_biomarker": "Quantitative TM4SF5 expression threshold for patient selection",
+    "static_vs_dynamic_failure": null,
+    "statistical_concern": null,
+    "severity": "significant_risk",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::40"
+  },
+  {
+    "vulnerable_ip_or_chemistry": "RCT1213 VLP\u2011derived antibody against TM4SF5",
+    "ip_vulnerability_note": "Speaker described using a virus\u2011like lipoparticle for immunization, suggesting a conventional IgG scaffold; core epitope is conformational and may be difficult to protect by patents",
+    "scale_or_manufacturing_bottleneck": null,
+    "clinical_strategy_weakness": "Target is a tetraspanin with potential expression in normal tissues; safety margin not yet demonstrated",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::41"
+  },
+  {
+    "overall_maturity": "single_arm_phase2",
+    "sample_size_adequacy": "adequately_powered",
+    "follow_up_adequacy": "immature",
+    "key_data_gaps": [
+      "No safety data in non\u2011human primates",
+      "No clinical data on TM4SF5 expression heterogeneity in patients"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::42"
+  },
+  {
+    "opportunity_type": "biomarker_stratification_gap",
+    "description": "Model TM4SF5 expression across GI tumor cohorts to define a cutoff for patient enrollment",
+    "transcript_evidence": "Speaker presented survival differences between high and low TM4SF5 expression groups",
+    "crispro_angle": "CrisPRO can integrate TCGA RNA\u2011seq and proteomics to predict high\u2011expressor subpopulations",
+    "priority": "high",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::43"
+  },
+  {
+    "opportunity_type": "combination_partner",
+    "description": "Predict synergistic benefit of RCT1213 with checkpoint inhibitors (e.g., atezolizumab) across TM4SF5\u2011high tumors",
+    "transcript_evidence": "Speaker reported triple combination achieving complete responses in preclinical models",
+    "crispro_angle": "CrisPRO can simulate immune\u2011modulatory effects of TM4SF5 blockade plus ICI",
+    "priority": "medium",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::44"
+  },
+  {
+    "name": "Atezolizumab",
+    "context": "Used as a comparator in HCC xenograft model",
+    "sentiment": "neutral",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::45"
+  },
+  {
+    "name": "Bevacizumab",
+    "context": "Combined with atezolizumab in HCC model",
+    "sentiment": "neutral",
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::46"
+  },
+  {
+    "nct_numbers_to_check": [],
+    "assets_to_track": [
+      "RCT1213"
+    ],
+    "companies_to_monitor": [
+      "Resers Therapeutics"
+    ],
+    "talk_id": "advances-in-therapeutic-antibodies::unknown::47"
+  }
+]

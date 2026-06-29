@@ -1,0 +1,363 @@
+[
+  {
+    "talk_id": "advancing-precision-approaches-to-head-and-neck-cancers::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Barbara Bertness",
+      "institution_or_pharma": "Yale School of Medicine",
+      "session_title": "advancing-precision-approaches-to-head-and-neck-cancers",
+      "talk_title": "Precision Approaches to HPV-Independent Head and Neck Cancer",
+      "rhetorical_signals": [
+        "Speaker said: for those who express really essentially no PD-L1, it's deleterious to use pembrolizumab alone",
+        "Speaker said: we gave chemotherapy and cetuximab together in cycle one, that led to an objective response rate of 33%, when we added erlotinib in cycle two, this increased the response rate to 62.5%",
+        "Speaker said: the pan\u2011HER inhibitor afatinib trials have really failed to show much of an advance over cetuximab alone"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Cetuximab (EGFR monoclonal antibody)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Nuclear EGFR is not accessible to cetuximab, allowing continued signaling despite surface EGFR blockade",
+        "unexplained_resistance_quote": "I highlighted that nuclear EGFR sort of hides from cetuximab",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Cetuximab + Erlotinib + Chemotherapy Phase II (reported by Aarti Batia)",
+        "target_biology": "EGFR inhibition combined with chemotherapy",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comer HPV\u2011negative patients without selecting for nuclear EGFR or PD\u2011L1 status",
+        "missing_biomarker": "Nuclear EGFR localization or PD\u2011L1 CPS \u22651",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design, no randomized comparator, limited power to detect OS benefit",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Bispecific EGFR/TGF\u2011\u03b2 (ficaserafusp) and EGFR/LGR5 (pitaseptumab) platforms",
+        "ip_vulnerability_note": "Speaker disclosed that monotherapy response rates were <5%, indicating the core bispecific scaffold provides limited activity without PD\u20111 blockade",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad label combinations with pembrolizumab before establishing biomarker\u2011selected efficacy"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed nuclear EGFR persisting after cetuximab (observation) and then concluded that adding erlotinib fully abrogates EGFR signaling (contradiction to the persistence data)",
+      "Speaker presented high response rates (54%\u201366%) for bispecifics plus pembrolizumab (observation) while acknowledging that adaptive resistance mechanisms will still emerge (contradiction)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for bispecific combinations",
+        "No randomized comparator arm for the erlotinib\u2011added regimen",
+        "Lack of biomarker\u2011stratified efficacy beyond PD\u2011L1"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with nuclear EGFR or low PD\u2011L1 who are unlikely to benefit from cetuximab\u2011based regimens and direct them to bispecific or Aurora\u2011WEE1 combos.",
+        "transcript_evidence": "Speaker highlighted that nuclear EGFR persists after cetuximab and that PD\u2011L1\u2011negative patients do not benefit from pembrolizumab alone.",
+        "crispro_angle": "CrisPRO can integrate spatial proteomics and transcriptomics to flag nuclear EGFR signatures and predict lack of response to surface EGFR antibodies.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine EGFR bispecifics with Aurora\u2011WEE1 synthetic lethal strategy to overcome EMT\u2011driven resistance.",
+        "transcript_evidence": "Speaker described that Aurora inhibition synergizes with WEE1 inhibition especially in EGFR\u2011resistant models.",
+        "crispro_angle": "CrisPRO can model pathway cross\u2011talk to prioritize Aurora\u2011WEE1 as a rational partner for EGFR bispecifics in p53\u2011mutant HPV\u2011negative tumors.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design biomarker\u2011enriched, randomized phase III trials for ficaserafusp\u202f+\u202fpembrolizumab versus pembrolizumab alone, stratifying by PD\u2011L1 CPS and nuclear EGFR status.",
+        "transcript_evidence": "Speaker noted the ongoing FORTIFY\u2011HN01 trial lacks biomarker enrichment beyond PD\u2011L1.",
+        "crispro_angle": "CrisPRO can simulate enrichment scenarios to estimate power gains from adding nuclear EGFR or TGF\u2011\u03b2 signature filters.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cetuximab",
+        "context": "Standard EGFR\u2011targeted antibody used as backbone in multiple trials",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Pembrolizumab",
+        "context": "PD\u20111 inhibitor combined with EGFR\u2011targeted agents",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Afatinib",
+        "context": "Pan\u2011HER inhibitor that failed to improve outcomes over cetuximab",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Amivantamab",
+        "context": "EGFR/MET bispecific with activity in refractory disease",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What precise biomarkers will predict which patients derive durable benefit from EGFR bispecifics?",
+      "Can nuclear EGFR be reliably quantified in routine pathology to guide therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Ficaserafusp",
+        "Pitaseptumab",
+        "Amivantamab",
+        "VIC\u20111911 (Aurora inhibitor)",
+        "Davisertib (WEE1 inhibitor)"
+      ],
+      "companies_to_monitor": [
+        "Roche",
+        "Genentech",
+        "J&J"
+      ]
+    }
+  },
+  {
+    "talk_id": "advancing-precision-approaches-to-head-and-neck-cancers::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dale Yarbrough",
+      "institution_or_pharma": "University of North Carolina",
+      "session_title": "advancing-precision-approaches-to-head-and-neck-cancers",
+      "talk_title": "HPV\u2011Associated Head and Neck Cancer Subtypes and Radiation Sensitivity",
+      "rhetorical_signals": [
+        "Speaker said: the low\u2011risk subtype is intrinsically sensitive to radiation",
+        "Speaker said: the high\u2011risk subtype behaves very differently and is not appropriate for de\u2011escalation",
+        "Speaker said: the trial of birinapant plus chemoradiation resulted in worse survival than chemoradiation alone"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Birinapant (SMAC mimetic) + chemoradiation",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "SMAC mimetic activation of NF\u2011\u03baB was assumed to sensitize tumors, but the trial showed detrimental survival, indicating unappreciated pro\u2011tumor NF\u2011\u03baB signaling",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "TrialNEX (birinapant + chemoradiation)",
+        "target_biology": "NF\u2011\u03baB activation to sensitize high\u2011risk HPV+ tumors to radiation",
+        "flawed_enrollment_criteria": "Enrolled all HPV\u2011positive patients without stratifying by TRAF3/CYLD mutation status or NF\u2011\u03baB activation state",
+        "missing_biomarker": "TRAF3 or CYLD mutation/NF\u2011\u03baB activation signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design with historical control, underpowered to detect harm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Entolimod (TLR5 agonist) as a radiation sensitizer",
+        "ip_vulnerability_note": "Speaker noted pre\u2011clinical efficacy but no clinical data yet; the platform relies on a single TLR5 mechanism that may be bypassed by downstream resistance",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a single\u2011agent radiation sensitizer without companion biomarker for high\u2011risk subtype"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that NF\u2011\u03baB activation (by TRAF3/CYLD loss) correlates with radiation sensitivity (observation) yet concluded that high\u2011risk tumors require intensified local therapy (contradiction without a clear mechanistic bridge)",
+      "Speaker presented pre\u2011clinical success of TLR5 agonist entolimod (observation) while acknowledging that no clinical trial data exist yet (contradiction in therapeutic readiness)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation of NF\u2011\u03baB\u2011based subtype stratification",
+        "Lack of randomized data for entolimod in humans",
+        "Absence of biomarker\u2011guided enrollment in the birinapant trial"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven classifier combining TRAF3/CYLD mutation status, NF\u2011\u03baB transcriptional signature, and HPV integration patterns to prospectively select low\u2011risk patients for radiation de\u2011escalation.",
+        "transcript_evidence": "Speaker emphasized that low\u2011risk subtype shows markedly better survival and intrinsic radiation sensitivity.",
+        "crispro_angle": "CrisPRO can integrate genomic, epigenomic, and transcriptomic data to generate a robust risk score for trial enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair entolimod (TLR5 agonist) with checkpoint inhibition or DNA\u2011damage response inhibitors in high\u2011risk HPV+ tumors identified by NF\u2011\u03baB activation.",
+        "transcript_evidence": "Speaker demonstrated that NF\u2011\u03baB activation sensitizes high\u2011risk tumors to radiation and suggested that additional agents may be needed.",
+        "crispro_angle": "CrisPRO can predict synergistic pathways downstream of TLR5 activation to prioritize combination partners.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a randomized phase II trial of radiation de\u2011escalation versus standard radiation, stratified by the CrisPRO\u2011derived low\u2011risk signature.",
+        "transcript_evidence": "Speaker noted that past de\u2011escalation trials failed because they treated HPV\u2011positive disease as a single entity.",
+        "crispro_angle": "CrisPRO can simulate enrichment effects to justify sample size and endpoint selection.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Birinapant",
+        "context": "SMAC mimetic tested with chemoradiation in high\u2011risk HPV+ patients",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Entolimod",
+        "context": "TLR5 agonist shown to sensitize high\u2011risk tumors to radiation in mouse models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal cutoff for NF\u2011\u03baB transcriptional activity to define low\u2011 vs high\u2011risk subtypes?",
+      "Can circulating tumor DNA reflect TRAF3/CYLD mutation status for non\u2011invasive stratification?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Birinapant",
+        "Entolimod"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "advancing-precision-approaches-to-head-and-neck-cancers::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Ari Rosenberg",
+      "institution_or_pharma": "University of Chicago",
+      "session_title": "advancing-precision-approaches-to-head-and-neck-cancers",
+      "talk_title": "Minimal Residual Disease and Treatment Optimization in Head and Neck Cancer",
+      "rhetorical_signals": [
+        "Speaker said: MRD\u2011positive patients are almost guaranteed to develop recurrence at some point",
+        "Speaker said: the lead time for ctDNA detection can be prolonged, with a patient showing MRD three months post\u2011treatment and recurring two years later",
+        "Speaker said: we need randomized data to ultimately demonstrate benefit of MRD\u2011guided interventions"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current MRD surveillance assays (tumor\u2011informed and tumor\u2011agnostic)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited sensitivity leads to false\u2011negative MRD results, especially in early post\u2011treatment time points",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Patients with MRD clearance after one cycle of neoadjuvant chemo had favorable PFS, but some still recurred later",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "SYNERGY trial (adaptive ctDNA\u2011guided chemo\u2011immunotherapy)",
+        "target_biology": "Use ctDNA dynamics to de\u2011escalate or continue chemotherapy with pembrolizumab",
+        "flawed_enrollment_criteria": "Relies on a single early ctDNA time point without confirming tissue\u2011informed mutation panel for all patients",
+        "missing_biomarker": "Comprehensive tumor\u2011informed assay to capture low\u2011frequency clones",
+        "static_vs_dynamic_failure": "Only two ctDNA checkpoints (after 1 and 2 cycles) may miss late\u2011emerging resistance",
+        "statistical_concern": "Adaptive design without a fixed control arm may limit interpretability of OS benefit",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "TrialNEX (birinapant + chemoradiation) referenced by Dale Yarbrough",
+        "target_biology": "NF\u2011\u03baB activation to sensitize high\u2011risk HPV+ tumors",
+        "flawed_enrollment_criteria": "No stratification by NF\u2011\u03baB activation status",
+        "missing_biomarker": "TRAF3/CYLD mutation or NF\u2011\u03baB signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm, underpowered, resulted in worse survival",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tumor\u2011informed ctDNA assays (e.g., personalized NGS panels)",
+        "ip_vulnerability_note": "Speaker noted that many patients lack sufficient tumor tissue, limiting assay deployment",
+        "scale_or_manufacturing_bottleneck": "Personalized assay turnaround time and cost",
+        "clinical_strategy_weakness": "Reliance on tissue\u2011informed assays reduces applicability in non\u2011surgical head\u2011and\u2011neck cases"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented high positive predictive value of MRD positivity for recurrence (observation) yet admitted that in some adjuvant trials MRD turned positive only concurrently with gross recurrence, indicating limited lead\u2011time (contradiction)",
+      "Speaker advocated for MRD\u2011guided de\u2011escalation (observation) while also stating that randomized trials are still needed to prove benefit (contradiction between clinical action and evidence level)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective randomized trials confirming MRD\u2011guided de\u2011escalation",
+        "Limited data on tumor\u2011agnostic methylation assays in HPV\u2011negative disease",
+        "Unclear optimal surveillance schedule for MRD"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO multi\u2011omic MRD classifier that combines tumor\u2011informed mutation data with methylation signatures to improve early detection in patients lacking tissue.",
+        "transcript_evidence": "Speaker highlighted false\u2011negatives in tumor\u2011agnostic assays and the need for improved sensitivity.",
+        "crispro_angle": "CrisPRO can integrate low\u2011frequency variant detection with epigenetic markers to boost assay performance without requiring tumor tissue.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair MRD\u2011guided de\u2011escalation with LAG\u20113 inhibition (e.g., fianlimab) for MRD\u2011positive patients after definitive therapy.",
+        "transcript_evidence": "Speaker described an ongoing phase\u202f2 trial of cemiplimab\u202f\u00b1\u202ffianlimab in MRD\u2011positive patients.",
+        "crispro_angle": "CrisPRO can predict which MRD\u2011positive clones express LAG\u20113 ligands, prioritizing patients for the combination.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a randomized, biomarker\u2011stratified phase\u202fIII trial where MRD\u2011negative patients receive de\u2011escalated radiation (36\u202fGy) and MRD\u2011positive patients receive standard therapy, using CrisPRO risk scores for enrollment.",
+        "transcript_evidence": "Speaker cited multiple de\u2011escalation studies that lacked biomarker enrichment and emphasized need for randomized data.",
+        "crispro_angle": "CrisPRO can simulate enrichment impact on power and define optimal MRD thresholds for trial arms.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cemiplimab",
+        "context": "PD\u20111 inhibitor tested in MRD\u2011positive patients",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Fianlimab",
+        "context": "LAG\u20113 inhibitor combined with cemiplimab in MRD\u2011positive cohort",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Birinapant",
+        "context": "SMAC mimetic trial mentioned as a failed approach",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal ctDNA assay (tumor\u2011informed vs tumor\u2011agnostic) for early post\u2011operative MRD detection in HPV\u2011negative disease?",
+      "How many serial MRD time points are needed to achieve reliable lead\u2011time without over\u2011testing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "Cemiplimab",
+        "Fianlimab",
+        "Birinapant",
+        "Entolimod"
+      ],
+      "companies_to_monitor": [
+        "Regeneron",
+        "Novartis",
+        "AstraZeneca"
+      ]
+    }
+  }
+]

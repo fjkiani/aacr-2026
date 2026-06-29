@@ -1,0 +1,407 @@
+[
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Channing",
+      "institution_or_pharma": "Academic",
+      "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+      "talk_title": "Overview of RAS inhibitor landscape and resistance mechanisms",
+      "rhetorical_signals": [
+        "Speaker said: \"the responses to RAS inhibitors are limited in terms of the response rate as well as the duration of response\"",
+        "Speaker said: \"we are dealing with issues of primary resistance as well as acquired resistance\"",
+        "Speaker said: \"we see that DNA alterations are found in about 50% of patients, but also non-genetic alterations are seen in another 50%\"",
+        "Speaker said: \"I think my bias is always to do concurrent, to not let the train leave the station and then try to catch it after it's left\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "G12C inhibitors",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Non-genetic transcriptional mechanisms of resistance not fully addressed",
+        "unexplained_resistance_quote": "Speaker said: \"we see that DNA alterations are found in about 50% of patients, but also non-genetic alterations are seen in another 50%\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Pan\u2011RAS inhibitors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of reactivation of RAS alleles leading to alternative effector mutations",
+        "unexplained_resistance_quote": "Speaker said: \"for the pan\u2011RAS activity, we see no reactivation of RAS, and instead mutations that prevent effector inhibitor binding\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "G12C inhibitor trials (generic)",
+        "target_biology": "KRAS G12C inhibition",
+        "flawed_enrollment_criteria": "Enrolling all\u2011comers without biomarker stratification for co\u2011occurring MAPK pathway alterations",
+        "missing_biomarker": "Baseline MAPK pathway activation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Response rates ~40% with median duration <10\u202fmonths may reflect underpowered subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "G12C covalent inhibitors",
+        "ip_vulnerability_note": "Speaker highlighted that resistance emerges via secondary KRAS mutations reactivating the pathway, suggesting the covalent scaffold can be bypassed",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment dilutes signal; lack of biomarker\u2011guided combination strategies"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ERK signaling is suppressed by RAS inhibitor in on\u2011treatment biopsies, then concluded that concurrent ERK inhibition may be unnecessary despite acknowledging ERK reactivation as a common resistance mechanism"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for most early\u2011phase RAS inhibitor studies",
+        "Lack of biomarker\u2011stratified response analyses",
+        "Limited longitudinal ctDNA tracking of resistance"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Non\u2011genetic transcriptional resistance (TEAD, MYC, ERK) could be targeted by CrisPRO\u2011derived transcriptional signatures to identify patients who may benefit from orthogonal combinations.",
+        "transcript_evidence": "Speaker said: \"we identified TEAD, MYC and ERK transcription factor\u2011based mechanisms of resistance\"",
+        "crispro_angle": "Use CrisPRO to model the shared 300\u2011gene core network and predict combinatorial targets that disrupt the transcriptional resistance program.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of pre\u2011treatment MAPK pathway activation biomarkers limits patient selection for G12C inhibitors.",
+        "transcript_evidence": "Speaker said: \"we see that DNA alterations are found in about 50% of patients, but also non\u2011genetic alterations are seen in another 50%\"",
+        "crispro_angle": "Apply CrisPRO to integrate genomic and transcriptomic data to generate a composite MAPK activation score for enrollment.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Daraxasib",
+        "context": "Mentioned as a wild\u2011type and mutant RAS inhibitor that defied pre\u2011clinical expectations",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "MRTX1133",
+        "context": "Cited as a KRAS G12D inhibitor in preclinical models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the precise non\u2011genetic mechanisms driving resistance in the 50% of patients without DNA alterations?",
+      "Can dynamic ctDNA monitoring improve early detection of emerging MAPK reactivation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "Daraxasib",
+        "MRTX1133",
+        "BMS\u2011986504 (PMT5 inhibitor)"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicines",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Alvaro (post\u2011doc in Ken Olive's lab)",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute / Harvard",
+      "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+      "talk_title": "BMAL2 as a KRAS\u2011linked hypoxia driver in pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"BMAL2 was the top regulatory protein associated with KRAS activity\"",
+        "Speaker said: \"BMAL2 knockout reduces proliferation and EMT, while overexpression drives mesenchymal phenotype\"",
+        "Speaker said: \"BMAL2 knockout cells remain sensitive to RAS inhibitors, suggesting distinct resistance mechanisms\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BMAL2\u2011driven hypoxia program",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "BMAL2 upregulation sustains HIF\u20112\u03b1 signaling and EMT despite KRAS inhibition",
+        "unexplained_resistance_quote": "Speaker said: \"we haven't checked if BMAL2 is affected in resistant tumors; single\u2011cell data suggest it goes up again in the resistant group\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BMAL2 as a transcriptional regulator",
+        "ip_vulnerability_note": "Speaker disclosed that BMAL2 shares homology with HIF\u20111\u03b2/2\u03b2, indicating potential redundancy with HIF pathways that could be bypassed",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "No current clinical agents directly target BMAL2; reliance on indirect KRAS inhibition may leave this pathway unchecked"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that BMAL2 knockout reduces EMT and proliferation, yet predicted that combining BMAL2 inhibition with KRAS inhibitors would be additive without providing pre\u2011clinical combination data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of in vivo combination studies with KRAS inhibitors",
+        "No assessment of BMAL2 status in patient resistance biopsies"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "CrisPRO can model BMAL2\u2011driven transcriptional networks to identify downstream druggable nodes (e.g., glycolysis enzymes) for combination with KRAS inhibitors.",
+        "transcript_evidence": "Speaker said: \"metabolomics showed glycolysis as top differential pathway in BMAL2 knockout under hypoxia\"",
+        "crispro_angle": "Predict metabolic vulnerabilities created by BMAL2 loss and prioritize agents that target glycolysis in KRAS\u2011inhibited tumors.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a BMAL2 activity signature to stratify patients who may benefit from KRAS plus hypoxia\u2011targeted therapy.",
+        "transcript_evidence": "Speaker said: \"BMAL2 activity correlates with KRAS activity across pancreatic, lung and colorectal cancers\"",
+        "crispro_angle": "Use CrisPRO to integrate BMAL2 regulon with clinical outcomes to define a predictive biomarker.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revolution Medicines RNC7977",
+        "context": "Used as KRAS inhibitor to validate BMAL2 down\u2011regulation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does BMAL2 up\u2011regulation directly cause resistance to KRAS inhibitors in patients?",
+      "What is the functional relationship between BMAL2 and HIF\u20112\u03b1 in resistant tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "RNC7977",
+        "BMAL2 inhibitors (pre\u2011clinical)"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicines"
+      ]
+    }
+  },
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Sandra Massali",
+      "institution_or_pharma": "Johns Hopkins University",
+      "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+      "talk_title": "RTK rewiring and ADC internalization as resistance mechanisms",
+      "rhetorical_signals": [
+        "Speaker said: \"RTK activity and expression drive resistance to RAS inhibition\"",
+        "Speaker said: \"combination of EGFR inhibition with KRAS inhibitor is approved for colorectal cancer\"",
+        "Speaker said: \"HER2 internalization can be enhanced by irreversible TKIs to improve ADC efficacy\"",
+        "Speaker said: \"we observed that RAS inhibitor increases HER2 and ER3 expression over time\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HER2\u2011targeted ADC (T\u2011DxD) in pancreatic cancer",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low HER2 expression and poor internalization in pancreatic tumor cells",
+        "unexplained_resistance_quote": "Speaker said: \"T\u2011DxD shows response in many cancers but not in pancreatic cancer despite similar HER2 levels\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Combination of KRAS inhibitor with EGFR inhibitor (generic)",
+        "target_biology": "Concurrent blockade of KRAS and EGFR signaling",
+        "flawed_enrollment_criteria": "Enrolling all KRAS\u2011mutant patients regardless of EGFR dependency or allele (G12 vs Q61)",
+        "missing_biomarker": "Baseline EGFR dependency or KRAS allele\u2011specific sensitivity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "HER2 ADC platform",
+        "ip_vulnerability_note": "Speaker revealed that internalization dynamics, not just target expression, limit efficacy, suggesting the scaffold can be circumvented by modulating trafficking",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on HER2 expression without ensuring adequate receptor internalization"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that HER2 expression increases after KRAS inhibition but concluded that HER2 ADCs are ineffective in pancreatic cancer, ignoring the potential to exploit the induced expression for better internalization"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of in vivo validation of HER2 internalization\u2011enhancing combos",
+        "No clinical data linking RTK up\u2011regulation to patient outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can predict RTK internalization kinetics from transcriptomic signatures to select ADCs with optimal payload delivery in KRAS\u2011inhibited tumors.",
+        "transcript_evidence": "Speaker said: \"we can see that RAS inhibitor increases the expression of receptors, but not all of them. EGFR stays steady, HER2 and ER3 are dynamically different\"",
+        "crispro_angle": "Model receptor trafficking networks to identify agents that boost internalization, enabling superior ADC design.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify small\u2011molecule TKIs that promote HER2/ER3 internalization as partners for HER2\u2011ADC therapy in pancreatic cancer.",
+        "transcript_evidence": "Speaker said: \"irreversible TKI that displays HSP90 allows HER2 internalization\"",
+        "crispro_angle": "Use CrisPRO to simulate kinase inhibition effects on RTK dimerization and endocytic pathways.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "T\u2011DxD (HER2 ADC)",
+        "context": "Discussed as ineffective in pancreatic cancer despite HER2 expression",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Afatinib",
+        "context": "Mentioned as toxic EGFR inhibitor used in combination strategies",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can sequential EGFR inhibition followed by ADC delivery achieve comparable efficacy with reduced toxicity?",
+      "What are the stromal contributions to RTK expression dynamics after KRAS inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "T\u2011DxD",
+        "Irreversible HER2 TKIs"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Andy Aguirre",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute",
+      "session_title": "ras-inhibitors-mechanisms-of-resistance-and-drug-combinations",
+      "talk_title": "Mechanisms of resistance to RAS inhibition in pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"near doubling of overall survival, hazard ratio of 0.4\"",
+        "Speaker said: \"about 60% of patients we identified a putative mechanism of resistance in ctDNA\"",
+        "Speaker said: \"two\u2011thirds of those patients had mutant KRAS amplification\"",
+        "Speaker said: \"we see suppressed MAPK signaling at resistance across subtypes\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Duraxinrasib (pan\u2011RAS inhibitor)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Mutant KRAS amplification as a genetic bypass; non\u2011genetic mechanisms remain undefined",
+        "unexplained_resistance_quote": "Speaker said: \"in about 40% of patients we weren't able to identify a mechanism of resistance\"",
+        "ghost_responder_admission": "Some patients achieve deep, durable responses while others progress quickly",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Duraxinrasib phase\u202fIII (generic)",
+        "target_biology": "Pan\u2011RAS inhibition in second\u2011line pancreatic cancer",
+        "flawed_enrollment_criteria": "Broad enrollment without stratifying by KRAS allele type (G12D vs Q61) or baseline MAPK activity",
+        "missing_biomarker": "Baseline KRAS allele\u2011specific dependency and MAPK pathway activation score",
+        "static_vs_dynamic_failure": "No serial ctDNA or on\u2011treatment biopsies for all patients",
+        "statistical_concern": "Potential dilution of OS benefit due to heterogeneous responder population",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Pan\u2011RAS inhibitor scaffold",
+        "ip_vulnerability_note": "Speaker noted that wild\u2011type KRAS inhibition may limit therapeutic window and drive selection for mutant allele amplification",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Concurrent use of chemotherapy may be needed but not yet optimized"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented suppressed MAPK signaling in resistant tumors yet concluded that MAPK pathway remains a viable target for combination without providing functional validation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_OS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Mechanistic basis for the 40% ctDNA\u2011negative resistance cases",
+        "Functional validation of KRAS amplification as driver of resistance"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model the impact of KRAS amplification on downstream signaling and predict combination partners that suppress the amplified output.",
+        "transcript_evidence": "Speaker said: \"two\u2011thirds of those patients had mutant KRAS amplification\"",
+        "crispro_angle": "Simulate dosage\u2011dependent KRAS signaling to identify optimal inhibitor concentrations or orthogonal targets (e.g., PRMT5).",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a composite biomarker (KRAS allele, MAPK activity, mucin\u2011secretory program) to select patients for KRAS inhibitor versus combination therapy.",
+        "transcript_evidence": "Speaker said: \"we see a conserved secretory epithelial program across subtypes at resistance\"",
+        "crispro_angle": "Integrate multi\u2011omics to generate a predictive score for response vs resistance.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MRTX1133 (KRAS G12D inhibitor)",
+        "context": "Cited as preclinical agent showing durable responses in mouse models",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Revolution Medicines",
+        "context": "Provided duraxinrasib and supported the clinical trial",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What non\u2011genetic pathways sustain tumor growth despite suppressed MAPK signaling?",
+      "Can early ctDNA monitoring of KRAS amplification predict imminent clinical progression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "Duraxinrasib",
+        "MRTX1133",
+        "PRMT5 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicines",
+        "Mirati Therapeutics"
+      ]
+    }
+  }
+]

@@ -1,0 +1,6393 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:03.960
+Welcome everyone to the session on foundation models in
+
+2
+00:00:03.980 --> 00:00:04.400
+pathology.
+
+3
+00:00:05.780 --> 00:00:07.360
+It's one o'clock, so we will get started.
+
+4
+00:00:08.840 --> 00:00:12.200
+Great to see everyone here, and I would like to start with thanking the
+
+5
+00:00:12.260 --> 00:00:15.320
+organization for inviting us to give this session.
+
+6
+00:00:17.040 --> 00:00:20.980
+So my name is Jeroen van der Laak. I'm a professor of computational pathology at
+
+7
+00:00:21.040 --> 00:00:24.160
+the Radboud University Medical Center in Nijmegen, the Netherlands.
+
+8
+00:00:25.500 --> 00:00:29.320
+I have a background in computer science, so I will not be very good in medical
+
+9
+00:00:29.400 --> 00:00:31.520
+stuff, but more in AI-related stuff.
+
+10
+00:00:32.741 --> 00:00:36.300
+And today with me is Dr. Jana Lipkova.
+
+11
+00:00:37.480 --> 00:00:41.300
+Jana started her career at the ETH in
+
+12
+00:00:41.380 --> 00:00:42.280
+Zurich, Switzerland.
+
+13
+00:00:43.880 --> 00:00:46.700
+She has her PhD in Munich, in Germany, in computer science.
+
+14
+00:00:47.640 --> 00:00:50.500
+And she was a postdoc at
+
+15
+00:00:51.660 --> 00:00:54.540
+Faisal Mahmood's lab in Harvard in Boston.
+
+16
+00:00:55.380 --> 00:00:59.080
+And now she's working as an assistant professor at University of California,
+
+17
+00:00:59.160 --> 00:00:59.580
+Irvine,
+
+18
+00:01:00.480 --> 00:01:04.340
+and she is with the Departments of Pathology and of Biomedical Engineering.
+
+19
+00:01:05.560 --> 00:01:07.640
+Nothing important that I forgot, I hope.
+
+20
+00:01:07.900 --> 00:01:08.340
+Nothing.
+
+21
+00:01:08.600 --> 00:01:08.880
+Okay.
+
+22
+00:01:09.780 --> 00:01:12.460
+And next to Jana is Professor Jakob Kater.
+
+23
+00:01:14.740 --> 00:01:16.660
+I think he's well known at this conference.
+
+24
+00:01:18.220 --> 00:01:21.560
+Professor Kater is Professor of Clinical Artificial Intelligence at the
+
+25
+00:01:22.120 --> 00:01:23.880
+Technical University of Dresden in Germany,
+
+26
+00:01:24.700 --> 00:01:28.520
+and he's also Senior Physician in Medical Oncology at University Hospital in
+
+27
+00:01:28.640 --> 00:01:29.220
+Dresden.
+
+28
+00:01:30.280 --> 00:01:33.060
+So he has a dual title as an MD and an MSC.
+
+29
+00:01:34.500 --> 00:01:36.240
+So I'm really happy to be able to
+
+30
+00:01:37.100 --> 00:01:38.980
+present today, the three of us.
+
+31
+00:01:40.100 --> 00:01:43.900
+And the way we will do this is I will give a brief introduction on the
+
+32
+00:01:43.920 --> 00:01:44.260
+topic
+
+33
+00:01:45.140 --> 00:01:49.020
+of foundation models in pathology and more broadly in medical imaging.
+
+34
+00:01:50.040 --> 00:01:53.590
+Then Jana will take over and she will talk about survival
+
+35
+00:01:53.640 --> 00:01:56.320
+prediction, so the use of foundation models for survival prediction.
+
+36
+00:01:57.080 --> 00:02:00.620
+And lastly, Professor Kater will take over and talk about
+
+37
+00:02:00.960 --> 00:02:03.040
+foundation models for cancer research.
+
+38
+00:02:06.220 --> 00:02:07.080
+Okay.
+
+39
+00:02:12.760 --> 00:02:16.720
+So my disclosures you can see here, and probably most importantly
+
+40
+00:02:17.180 --> 00:02:20.940
+I have a spinoff company which is called Aiosyn, which produces AI
+
+41
+00:02:21.080 --> 00:02:22.520
+products for pathologists.
+
+42
+00:02:24.460 --> 00:02:24.600
+Now,
+
+43
+00:02:26.010 --> 00:02:29.360
+very briefly to start off, I think everyone here knows what pathology is about.
+
+44
+00:02:29.380 --> 00:02:33.120
+Pathology is about tissue and doing diagnostics on
+
+45
+00:02:33.180 --> 00:02:36.560
+tissue sections. So what you can see here is very briefly, and I guess it's
+
+46
+00:02:37.600 --> 00:02:41.500
+very well known for most of you. What you can see is if we take a biopsy, we
+
+47
+00:02:41.540 --> 00:02:44.680
+can put it in paraffin. We embed it in paraffin.
+
+48
+00:02:45.180 --> 00:02:48.460
+We can take very thin sections, and those sections can be stained.
+
+49
+00:02:49.400 --> 00:02:53.340
+And as you are probably also aware of these days, there is a transition ongoing
+
+50
+00:02:53.380 --> 00:02:57.000
+in pathology, going from microscopes, traditional
+
+51
+00:02:57.040 --> 00:02:59.670
+microscopes, and a pathologist looking through an optical microscope.
+
+52
+00:03:00.440 --> 00:03:04.300
+And we are transitioning to what is shown here on the slides, scanners and
+
+53
+00:03:04.360 --> 00:03:07.300
+digital pathology. Which means a pathologist is no longer looking through a
+
+54
+00:03:07.340 --> 00:03:10.200
+microscope, but actually they are looking at a digital screen.
+
+55
+00:03:10.980 --> 00:03:14.800
+Now I think it's good to realize that this is a transition that's ongoing,
+
+56
+00:03:14.940 --> 00:03:17.260
+has been ongoing for maybe 15 years.
+
+57
+00:03:18.340 --> 00:03:21.440
+Still, most pathologists in the world are not digitized.
+
+58
+00:03:22.120 --> 00:03:25.100
+I think in the US it's less than 10% of the pathologists that uses digital
+
+59
+00:03:25.120 --> 00:03:28.920
+pathology. And the consequence, obviously, of that is that if you want to use any
+
+60
+00:03:28.960 --> 00:03:32.940
+kind of AI technology, fancy computational technologies, you will not
+
+61
+00:03:32.980 --> 00:03:36.960
+be able to do so. So this is a very important prerequisite that is still not
+
+62
+00:03:37.000 --> 00:03:40.840
+really being met at this time. So there is still quite a bit of work to be done.
+
+63
+00:03:42.240 --> 00:03:46.040
+Just to give you a feel for why this is so difficult and why it's so expensive.
+
+64
+00:03:47.220 --> 00:03:51.100
+One digitized biopsy has the same amount of data, gives us the same amount of data
+
+65
+00:03:51.140 --> 00:03:54.520
+as, for instance, three to five minutes of an HD movie.
+
+66
+00:03:54.620 --> 00:03:56.520
+So pathology has a lot of information.
+
+67
+00:03:56.540 --> 00:04:00.269
+It's very rich images, very rich data, but also it means that
+
+68
+00:04:00.300 --> 00:04:03.640
+it's a lot of data. So storing this and dealing with this data is actually quite
+
+69
+00:04:03.660 --> 00:04:04.160
+cumbersome.
+
+70
+00:04:05.660 --> 00:04:09.480
+Now, just to give you a feel of what AI could do, and this is work that we did in
+
+71
+00:04:09.540 --> 00:04:12.700
+our group, but many groups in the world did this kind of analysis.
+
+72
+00:04:14.400 --> 00:04:17.940
+We produce AI that is capable of analyzing prostate
+
+73
+00:04:18.140 --> 00:04:20.661
+cancer biopsies and
+
+74
+00:04:21.899 --> 00:04:23.960
+aiding a pathologist in grading those biopsies.
+
+75
+00:04:24.100 --> 00:04:27.700
+So it means that the AI is capable of finding visual patterns in these
+
+76
+00:04:27.740 --> 00:04:31.400
+images and is capable of assigning a grade to those
+
+77
+00:04:31.440 --> 00:04:31.840
+patterns.
+
+78
+00:04:32.820 --> 00:04:36.540
+And we have shown that actually you can produce AI that is at a
+
+79
+00:04:36.600 --> 00:04:40.360
+very high level of performance doing this.
+
+80
+00:04:40.420 --> 00:04:43.430
+Now, the downside is, and this is one of the studies that we did,
+
+81
+00:04:44.240 --> 00:04:47.110
+this is an international competition, the Panda Challenge that we organized a
+
+82
+00:04:47.120 --> 00:04:51.000
+couple of years ago. And what you can see here is that, for instance, to be
+
+83
+00:04:51.080 --> 00:04:55.000
+able to do this kind of challenge, to build this AI, we needed more
+
+84
+00:04:55.020 --> 00:04:58.360
+than 12,000 prostate biopsies, and we have more than
+
+85
+00:04:58.620 --> 00:05:02.480
+5,600 reviews by pathologists. So
+
+86
+00:05:02.540 --> 00:05:06.050
+you can build AI that is at a very high level of performance.
+
+87
+00:05:06.240 --> 00:05:09.380
+The price you pay is you need a lot of data. This is really truly big data.
+
+88
+00:05:10.430 --> 00:05:10.640
+And
+
+89
+00:05:12.060 --> 00:05:15.000
+what you can achieve then, and please don't go into too much detail, but these are
+
+90
+00:05:15.040 --> 00:05:15.220
+the
+
+91
+00:05:16.600 --> 00:05:19.620
+different AI algorithms in the challenge that we did and the competition that we
+
+92
+00:05:19.640 --> 00:05:19.820
+did.
+
+93
+00:05:20.980 --> 00:05:22.480
+What you can see here is that the
+
+94
+00:05:23.720 --> 00:05:27.680
+pinkish bars is that is the quadratic weighted Kappa
+
+95
+00:05:28.320 --> 00:05:31.240
+comparing the AI model to a panel of expert pathologists.
+
+96
+00:05:31.850 --> 00:05:35.700
+And what you can see is these Kappas go all the way up to .93, which is extremely
+
+97
+00:05:35.740 --> 00:05:38.420
+high. This is as good as any pathologist can be.
+
+98
+00:05:40.280 --> 00:05:44.080
+So if we have enough data, we can produce AI that is at an extremely high level.
+
+99
+00:05:45.040 --> 00:05:47.800
+What you can also see in this graph is the pink bars are
+
+100
+00:05:49.140 --> 00:05:53.000
+the algorithms tested on data that resembles the data it was trained on,
+
+101
+00:05:53.280 --> 00:05:54.760
+so what we call in-distribution data.
+
+102
+00:05:55.680 --> 00:05:59.620
+The purplish bars is a different cohort of
+
+103
+00:05:59.660 --> 00:06:03.420
+casesWhich is slightly different from the data that the
+
+104
+00:06:03.840 --> 00:06:07.320
+algorithms were trained on. And what you can see here is that generalizability of
+
+105
+00:06:07.340 --> 00:06:09.980
+these algorithms, as we call it, is not perfect.
+
+106
+00:06:10.040 --> 00:06:13.760
+So if I build an algorithm on certain data, I take it to slightly
+
+107
+00:06:13.800 --> 00:06:16.060
+different data, it could be that my performance degrades.
+
+108
+00:06:16.780 --> 00:06:19.070
+And this is one of the problems that we always have with AI, right?
+
+109
+00:06:19.140 --> 00:06:23.060
+Generalizability is not always perfect. And we'll get back to that later.
+
+110
+00:06:24.840 --> 00:06:25.540
+Now, just
+
+111
+00:06:27.040 --> 00:06:30.260
+a brief sidestep. So medical data is very diverse, right?
+
+112
+00:06:30.280 --> 00:06:34.160
+You know that we can have pathology images, we can have MRIs, we can have CTs, we
+
+113
+00:06:34.180 --> 00:06:35.920
+have lots of different modalities of data.
+
+114
+00:06:36.820 --> 00:06:40.780
+And basically what we aim to do in our research and in our developments,
+
+115
+00:06:41.480 --> 00:06:45.400
+we would love to be able to combine all these different modalities and
+
+116
+00:06:45.480 --> 00:06:49.470
+have some common ground where we can, let's say, analyze data,
+
+117
+00:06:49.660 --> 00:06:53.580
+combine data. So we need some kind of common language in between these
+
+118
+00:06:53.620 --> 00:06:57.420
+different sources of data. We also have genomics. We have patient records.
+
+119
+00:06:58.000 --> 00:07:00.520
+These are very different data, and we would like to have some kind of
+
+120
+00:07:00.560 --> 00:07:03.400
+representation of data that makes it easier to combine the data.
+
+121
+00:07:04.600 --> 00:07:08.300
+So we make a small sidestep. What we typically do in AI
+
+122
+00:07:08.440 --> 00:07:08.920
+is we
+
+123
+00:07:09.940 --> 00:07:12.960
+build representations of data, of data points,
+
+124
+00:07:14.660 --> 00:07:18.620
+like you can see here. And this is if you use a large language model, an LLM,
+
+125
+00:07:18.780 --> 00:07:21.500
+ChatGPT or Claude or one of these.
+
+126
+00:07:23.020 --> 00:07:23.330
+Every
+
+127
+00:07:24.360 --> 00:07:25.040
+data item
+
+128
+00:07:26.140 --> 00:07:29.800
+will be translated into what we call an embedding or feature representation,
+
+129
+00:07:30.240 --> 00:07:31.560
+which means we translate it into a
+
+130
+00:07:32.400 --> 00:07:36.280
+vector of numbers. And in this case, woman could be some kind of vector
+
+131
+00:07:36.320 --> 00:07:39.300
+of numbers, and suppose we would also have a man.
+
+132
+00:07:39.920 --> 00:07:43.400
+And this is a bit artificial, but you could think of, we have many different
+
+133
+00:07:43.420 --> 00:07:47.260
+characteristics of these data points that can be stored because they're relevant.
+
+134
+00:07:47.340 --> 00:07:48.510
+For instance, in this case, you could say,
+
+135
+00:07:49.380 --> 00:07:53.000
+how much does it resemble a living being? How much is it flying, human?
+
+136
+00:07:53.300 --> 00:07:57.280
+What is the gender? So we can store data points
+
+137
+00:07:57.340 --> 00:08:00.480
+in this large vector, and you can imagine that it's large
+
+138
+00:08:01.340 --> 00:08:05.240
+array of numbers. You can also see this mathematically as a point in a
+
+139
+00:08:05.280 --> 00:08:08.760
+high dimensional space. It's a bit sometimes difficult
+
+140
+00:08:08.800 --> 00:08:12.720
+to visualize that. But actually, what we typically do is
+
+141
+00:08:12.760 --> 00:08:16.400
+we take data points, and we put them in a vector of 700
+
+142
+00:08:16.440 --> 00:08:19.460
+numbers, which basically means we have 700 dimensional space.
+
+143
+00:08:19.729 --> 00:08:22.820
+Now, that's a lot, way too much to comprehend.
+
+144
+00:08:23.820 --> 00:08:27.460
+But what you will often see in many of these examples is that we then project a
+
+145
+00:08:27.560 --> 00:08:31.300
+space onto a plane, just to give you a bit of a feel for how well
+
+146
+00:08:31.640 --> 00:08:32.760
+separations are possible.
+
+147
+00:08:33.841 --> 00:08:37.180
+So, for instance, what we can say now is we have a way of
+
+148
+00:08:37.240 --> 00:08:40.660
+representing the concept of a man, a woman, a king, a queen,
+
+149
+00:08:41.400 --> 00:08:43.680
+and these can show up as points in the space.
+
+150
+00:08:44.720 --> 00:08:48.060
+And if two points are closer together, it means they also resemble each other
+
+151
+00:08:48.080 --> 00:08:48.320
+better.
+
+152
+00:08:49.280 --> 00:08:53.120
+And if you do it as well, you can also start to even use these numbers to
+
+153
+00:08:53.400 --> 00:08:56.620
+make calculations. So, for instance, what you could say now is if I have a queen,
+
+154
+00:08:56.760 --> 00:08:57.600
+the concept of a queen,
+
+155
+00:08:58.620 --> 00:09:02.280
+I take out gender, so I subtract woman from it, but I add man.
+
+156
+00:09:02.540 --> 00:09:06.000
+I will arrive at a king because I changed the gender of the
+
+157
+00:09:06.320 --> 00:09:08.859
+queen to become male, and now it's a king.
+
+158
+00:09:09.240 --> 00:09:13.020
+So if you make these representations well, what you can do is actually they make
+
+159
+00:09:13.060 --> 00:09:14.600
+sense, right? You can start to work with these.
+
+160
+00:09:15.900 --> 00:09:19.630
+And moreover, what we can do is we can add context, and this is what happens a lot,
+
+161
+00:09:19.700 --> 00:09:21.260
+for instance, in large language models.
+
+162
+00:09:21.920 --> 00:09:25.900
+So suppose we would have the concept of a fruit and of technology, and now I
+
+163
+00:09:25.940 --> 00:09:29.580
+have an apple in the context of what are the health benefits of
+
+164
+00:09:29.620 --> 00:09:29.960
+apple.
+
+165
+00:09:31.000 --> 00:09:34.320
+Now, this would mean that the context tells me that in this case, apple is
+
+166
+00:09:34.340 --> 00:09:38.160
+something close to fruit, while if I would have a context like what is the share
+
+167
+00:09:38.220 --> 00:09:41.720
+price of Apple, it would probably be something like technology.
+
+168
+00:09:42.200 --> 00:09:43.720
+So we can use context to
+
+169
+00:09:44.560 --> 00:09:46.200
+change these representations slightly.
+
+170
+00:09:46.780 --> 00:09:50.340
+It also means if I am in pathology, I have part of an image, some region of an
+
+171
+00:09:50.360 --> 00:09:54.300
+image. Regions around it in the tissue can help
+
+172
+00:09:54.340 --> 00:09:56.720
+me to understand what that region is about, right?
+
+173
+00:09:56.800 --> 00:10:00.780
+So also there, the context can help me to understand how to use that
+
+174
+00:10:01.280 --> 00:10:01.660
+embedding.
+
+175
+00:10:04.080 --> 00:10:07.680
+Now, this was about text. A similar thing we started to do
+
+176
+00:10:07.840 --> 00:10:10.080
+already 10, 15 years ago with images.
+
+177
+00:10:10.260 --> 00:10:13.940
+So we can also have representations of images, which are pretty much the same as I
+
+178
+00:10:13.980 --> 00:10:17.240
+just showed you for these words. So what we can do is we can
+
+179
+00:10:17.460 --> 00:10:21.400
+train a neural network in this case, and a neural network can pick up
+
+180
+00:10:21.480 --> 00:10:22.800
+all kinds of visual features
+
+181
+00:10:23.620 --> 00:10:26.640
+and result in an embedding in this high dimensional space.
+
+182
+00:10:27.020 --> 00:10:29.860
+And you can use that, let's say, that high dimensional space then to do, for
+
+183
+00:10:29.880 --> 00:10:31.300
+instance, image classification.
+
+184
+00:10:32.060 --> 00:10:34.340
+So in this case, we would find all kinds of visual features.
+
+185
+00:10:34.540 --> 00:10:37.940
+We would get a point in the space, and that point in the space could help us to
+
+186
+00:10:37.960 --> 00:10:41.300
+decide that this is Tweety. So again, here you can use these
+
+187
+00:10:41.520 --> 00:10:42.340
+embeddings to
+
+188
+00:10:44.740 --> 00:10:47.600
+analyze images, to analyze data points, and to represent data points.
+
+189
+00:10:49.820 --> 00:10:53.240
+Now, one of the problems, I already mentioned it briefly, is
+
+190
+00:10:53.300 --> 00:10:54.030
+generalization.
+
+191
+00:10:55.160 --> 00:10:56.270
+Because if we would
+
+192
+00:10:57.500 --> 00:11:01.400
+train a model like I just showed you, we have some embedding in the space,
+
+193
+00:11:02.640 --> 00:11:06.520
+then the embedding could be very much specific to the data that we use
+
+194
+00:11:06.640 --> 00:11:07.260
+to train it on.
+
+195
+00:11:08.110 --> 00:11:11.660
+And this is a very nice study that shows that here they produced
+
+196
+00:11:11.740 --> 00:11:12.160
+AI
+
+197
+00:11:12.980 --> 00:11:16.860
+that can predict the subtype of breast cancer.
+
+198
+00:11:17.040 --> 00:11:20.180
+So it can distinguish between lobular and ductal carcinomas.
+
+199
+00:11:21.240 --> 00:11:25.100
+And what they did was they trained an AI system on data, which is
+
+200
+00:11:25.300 --> 00:11:28.220
+predominantly of white females. So I think
+
+201
+00:11:28.260 --> 00:11:32.080
+70% is white, 5% is Asian, and
+
+202
+00:11:32.100 --> 00:11:35.020
+15%, 16%, I think, is Black females.
+
+203
+00:11:36.100 --> 00:11:39.880
+Now, what happens is that the AI, because it's trained on this
+
+204
+00:11:39.940 --> 00:11:43.820
+biased dataset, the AI will be better capable
+
+205
+00:11:43.880 --> 00:11:47.580
+of doing the task for white females than it will be for Asian females.
+
+206
+00:11:48.280 --> 00:11:51.840
+Because it has seen many more examples for whites.
+
+207
+00:11:52.860 --> 00:11:55.960
+And as a result, what happens is, if you look at the top of this figure, the
+
+208
+00:11:56.080 --> 00:11:59.440
+ResNet, so this is fully trained on these data.
+
+209
+00:12:00.140 --> 00:12:04.040
+What you can see is that the performance for whites is
+
+210
+00:12:04.560 --> 00:12:08.520
+over 0.9, 0.93, 0.92, while for Asians, it's
+
+211
+00:12:08.560 --> 00:12:12.310
+only 0.85So what you can see is because dataset is
+
+212
+00:12:12.350 --> 00:12:16.250
+biased, it's skewed, you can see the performance actually is also better
+
+213
+00:12:16.290 --> 00:12:16.770
+for white.
+
+214
+00:12:17.690 --> 00:12:21.650
+Now, if we go to the right in this bar, we can see CTranspath, and we can
+
+215
+00:12:21.750 --> 00:12:25.690
+see Uni. Now, these are examples of foundation models, the topic of today.
+
+216
+00:12:26.610 --> 00:12:29.930
+And what you can clearly see here is that CTranspath does a much better job.
+
+217
+00:12:30.170 --> 00:12:33.850
+It's less sensitive to this bias in the data. It's actually more robust.
+
+218
+00:12:34.710 --> 00:12:37.490
+And CTranspath and Uni are foundation models.
+
+219
+00:12:37.710 --> 00:12:41.690
+So they have been trained slightly differently than just task specific, what I
+
+220
+00:12:41.730 --> 00:12:42.510
+showed you so far.
+
+221
+00:12:44.550 --> 00:12:48.250
+So if we look at what happened in AI over the last 20,
+
+222
+00:12:48.410 --> 00:12:52.250
+30 years, in the 2000s, in machine learning, this
+
+223
+00:12:52.270 --> 00:12:55.300
+feature space that I told you about, this embedding space, we would really
+
+224
+00:12:56.270 --> 00:12:59.030
+let's say build it ourselves. We would think about the features ourselves.
+
+225
+00:12:59.090 --> 00:13:00.690
+We would manually derive these features.
+
+226
+00:13:01.510 --> 00:13:05.170
+In the 2010s, we would have deep learning, where we would use networks to learn
+
+227
+00:13:05.210 --> 00:13:07.330
+features. But they were very much task specific.
+
+228
+00:13:08.050 --> 00:13:12.040
+In the 2020s, we have foundation models, and foundation models try to build these
+
+229
+00:13:12.130 --> 00:13:12.590
+features
+
+230
+00:13:13.990 --> 00:13:17.970
+in a task independent manner. And I will show you how this works.
+
+231
+00:13:18.130 --> 00:13:20.910
+So rather than having an image and training
+
+232
+00:13:21.950 --> 00:13:25.670
+an AI system to do a specific task, what we now do is we
+
+233
+00:13:25.930 --> 00:13:29.770
+learn to extract representations that are very generic, that can be used
+
+234
+00:13:29.810 --> 00:13:33.130
+for many downstream tasks. So we just want to
+
+235
+00:13:33.510 --> 00:13:37.390
+translate this small image into, again, this kind of an embedding, so a vector of
+
+236
+00:13:37.450 --> 00:13:37.810
+numbers.
+
+237
+00:13:38.930 --> 00:13:42.770
+And these numbers should describe in very general sense what we are
+
+238
+00:13:42.810 --> 00:13:45.430
+looking at. So the shapes, the texture, the edges.
+
+239
+00:13:45.950 --> 00:13:49.210
+So it should describe in a very generic sense what is this image about.
+
+240
+00:13:49.610 --> 00:13:53.330
+And then that description, these characteristics can be used for any kind of
+
+241
+00:13:53.370 --> 00:13:57.060
+downstream task, for tumor detection, grading, but also outcome
+
+242
+00:13:57.130 --> 00:13:58.050
+prediction, for instance.
+
+243
+00:14:01.710 --> 00:14:03.460
+And I will not go into a lot of detail, but
+
+244
+00:14:04.330 --> 00:14:06.050
+this is what we call self-supervised learning.
+
+245
+00:14:06.070 --> 00:14:08.050
+It's the same thing that happened to ChatGPT.
+
+246
+00:14:08.270 --> 00:14:12.010
+You all probably know that ChatGPT just took loads of texts from the
+
+247
+00:14:12.050 --> 00:14:15.830
+internet, analyzed these texts without having a clear task in mind, and
+
+248
+00:14:15.890 --> 00:14:19.570
+just found all kinds of, let's say, patterns in the text that it can
+
+249
+00:14:19.669 --> 00:14:23.390
+use for downstream tasks, like generating new texts, understanding
+
+250
+00:14:23.470 --> 00:14:23.770
+text.
+
+251
+00:14:24.570 --> 00:14:28.370
+Now, the same happens here. We train our AI model on
+
+252
+00:14:28.390 --> 00:14:32.230
+pathology data without a specific task. We give it a dummy task.
+
+253
+00:14:32.790 --> 00:14:36.530
+But we give it a task that is very hard and that forces it to learn
+
+254
+00:14:36.610 --> 00:14:40.550
+many generic aspects of the data without having a specific task
+
+255
+00:14:40.590 --> 00:14:44.370
+in mind. If you're interested, you can look up the papers. It's very technical.
+
+256
+00:14:45.750 --> 00:14:49.350
+And if you have done this, you have a very generic representation of your data.
+
+257
+00:14:49.450 --> 00:14:51.890
+Then, for instance, what you can do is what is called few-shot learning.
+
+258
+00:14:52.570 --> 00:14:55.630
+So now I have let's say different types of kidney cancer.
+
+259
+00:14:56.290 --> 00:14:59.370
+What I can do is I can take a couple of examples of kidney cancer and see where
+
+260
+00:14:59.410 --> 00:15:01.270
+they end up in this high dimensional space.
+
+261
+00:15:01.930 --> 00:15:05.490
+And if I have three different types of kidney cancer, I take, in this case, three
+
+262
+00:15:05.530 --> 00:15:09.269
+examples of each. So I have some points in the space that are here, some points
+
+263
+00:15:09.370 --> 00:15:13.010
+that are here. Now, if I have a new cancer, what I can do is I can just
+
+264
+00:15:13.050 --> 00:15:16.650
+calculate its place in this space and then see is it closer to this or closer to
+
+265
+00:15:16.690 --> 00:15:20.250
+this point. So rather than having to take 10,000
+
+266
+00:15:21.170 --> 00:15:24.970
+examples, as I showed you for prostate cancer grading, in this case, I can
+
+267
+00:15:25.030 --> 00:15:28.990
+just take a couple of examples, and because I have such a rich embedding already,
+
+268
+00:15:29.050 --> 00:15:32.570
+I have this self-supervised system, I can already do great things
+
+269
+00:15:33.090 --> 00:15:34.350
+just with very little data points.
+
+270
+00:15:36.230 --> 00:15:38.690
+Now, this is what was done in this study.
+
+271
+00:15:38.750 --> 00:15:42.480
+So this is a study where they compared on one hand doing this, let's say,
+
+272
+00:15:43.030 --> 00:15:47.010
+task specific learning with lots of cases, thousands of cases, and they compare it
+
+273
+00:15:47.050 --> 00:15:48.490
+to the use of a foundation model.
+
+274
+00:15:49.470 --> 00:15:53.190
+And what they found was, and please have a look at this graph.
+
+275
+00:15:53.390 --> 00:15:56.650
+So here you can see on the X-axis, you see the amount of training data.
+
+276
+00:15:56.910 --> 00:16:00.690
+So they have thousands of cases. On the Y-axis, you can see the quality of the
+
+277
+00:16:00.770 --> 00:16:02.590
+AI that they built in this case.
+
+278
+00:16:03.510 --> 00:16:06.430
+What you can see is the blue line is just the task specific learning.
+
+279
+00:16:06.510 --> 00:16:07.890
+So this is what I showed you before.
+
+280
+00:16:07.930 --> 00:16:11.390
+You train a model to really perform this one task as good as you can.
+
+281
+00:16:12.310 --> 00:16:16.110
+And what you can see is this model, the blue line, is quite poor with
+
+282
+00:16:16.150 --> 00:16:20.130
+little data, but it has a steep curve, and if you provide it
+
+283
+00:16:20.150 --> 00:16:23.910
+with enough data, like 30% of the total here, you get a very high level of
+
+284
+00:16:23.950 --> 00:16:24.470
+performance.
+
+285
+00:16:25.630 --> 00:16:28.370
+The other two are based on foundation models.
+
+286
+00:16:28.540 --> 00:16:31.929
+And what you can see is that with very little data, as little as 1% of your
+
+287
+00:16:32.770 --> 00:16:36.110
+entire cohort, you can already have quite good performance.
+
+288
+00:16:37.230 --> 00:16:41.050
+Still, what is also clear in this chart is that if you
+
+289
+00:16:41.110 --> 00:16:44.820
+have enough data, the task specific model still outperforms the
+
+290
+00:16:44.870 --> 00:16:48.630
+foundation model. So if you have a lot of data, then a foundation model
+
+291
+00:16:48.670 --> 00:16:52.230
+may be less relevant because you can train it on a task
+
+292
+00:16:52.250 --> 00:16:53.470
+specific manner.
+
+293
+00:16:54.790 --> 00:16:58.410
+And the conclusion in this paper was that foundation models do great with little
+
+294
+00:16:58.450 --> 00:17:02.310
+data. If you have enough data, a task specific model could do better.
+
+295
+00:17:03.230 --> 00:17:06.690
+And what they found here was, especially for specific very rare pathologies, the
+
+296
+00:17:06.730 --> 00:17:08.171
+foundation model didn't do so well.
+
+297
+00:17:09.381 --> 00:17:13.190
+And one point that we may discuss later maybe is one of the
+
+298
+00:17:13.210 --> 00:17:16.421
+drawbacks of foundation models is because they're huge models, they're pre-trained,
+
+299
+00:17:16.450 --> 00:17:20.330
+and they're very large. In this case, the foundation model took up 35
+
+300
+00:17:20.370 --> 00:17:22.730
+times more energy than a task specific model.
+
+301
+00:17:22.970 --> 00:17:25.911
+So that's also a point to take into account, I guess.
+
+302
+00:17:27.310 --> 00:17:31.270
+Now, one of the great things about foundation models is that we don't have
+
+303
+00:17:31.290 --> 00:17:33.610
+to stick with just vision, as I showed you.
+
+304
+00:17:33.930 --> 00:17:35.390
+I told you we have these representations,
+
+305
+00:17:36.250 --> 00:17:39.850
+and what we can do is we can actually start to combine images with
+
+306
+00:17:40.070 --> 00:17:43.150
+text. In this case, they used text captions. They used images.
+
+307
+00:17:44.050 --> 00:17:47.990
+And what we can start doing now is we can build these self-supervised models, but
+
+308
+00:17:48.040 --> 00:17:49.750
+then we can take the texts,
+
+309
+00:17:50.770 --> 00:17:54.430
+combine the different embeddings, and use one embedding to make
+
+310
+00:17:54.630 --> 00:17:57.510
+the other one, let's say, more precise, as I showed you.
+
+311
+00:17:57.670 --> 00:17:59.570
+So you can use one as a context for the other.
+
+312
+00:18:00.450 --> 00:18:04.130
+So what they do here is they built these embeddings, and then they start to combine
+
+313
+00:18:04.150 --> 00:18:07.470
+these different modalities, and they refine their embeddings.
+
+314
+00:18:07.550 --> 00:18:09.290
+They refine their system.
+
+315
+00:18:10.390 --> 00:18:14.210
+And the great thing is now you can benefit not just from having the images, but
+
+316
+00:18:14.270 --> 00:18:17.140
+having a combination of an image with, for instance, a pathology
+
+317
+00:18:17.210 --> 00:18:20.954
+reportThis is still not task
+
+318
+00:18:20.964 --> 00:18:22.834
+specific. It's still very generic.
+
+319
+00:18:22.894 --> 00:18:23.574
+So it means that
+
+320
+00:18:24.414 --> 00:18:27.494
+we don't need any kind of labels. We can train
+
+321
+00:18:27.834 --> 00:18:31.604
+self-supervised this kind of a model with just pathology images and
+
+322
+00:18:32.094 --> 00:18:35.654
+maybe associated reports. And so we can have the AI
+
+323
+00:18:35.834 --> 00:18:39.794
+learn a lot of interesting features, interesting, let's
+
+324
+00:18:39.814 --> 00:18:43.694
+say, relationships, by just feeding it with lots of images and
+
+325
+00:18:43.754 --> 00:18:45.354
+lots of corresponding reports.
+
+326
+00:18:47.834 --> 00:18:47.994
+And
+
+327
+00:18:49.054 --> 00:18:52.974
+there are many of these models today. So this is one very recent, MuSi.
+
+328
+00:18:53.854 --> 00:18:57.174
+In this case, you can see they did this self-supervised training with
+
+329
+00:18:57.434 --> 00:18:58.534
+reports and with
+
+330
+00:18:59.574 --> 00:18:59.914
+slides.
+
+331
+00:19:00.794 --> 00:19:04.174
+And you can see actually that MuSi, in this case, it's not the largest model.
+
+332
+00:19:04.214 --> 00:19:07.374
+In terms of parameters, it's actually quite small.
+
+333
+00:19:08.294 --> 00:19:11.894
+And it has a very high score. And just to show you
+
+334
+00:19:12.394 --> 00:19:15.874
+a couple of tasks that it can do. So they
+
+335
+00:19:15.914 --> 00:19:19.874
+tested it on many different tasks, and for instance, it's very good
+
+336
+00:19:19.954 --> 00:19:22.644
+at predicting KRAS mutations from H&amp;E slides.
+
+337
+00:19:23.354 --> 00:19:26.124
+So basically what it means is we can give it an H&amp;E stained slide,
+
+338
+00:19:26.954 --> 00:19:30.274
+no fancy stainings, no fancy molecular analysis,
+
+339
+00:19:31.054 --> 00:19:31.814
+and it can already
+
+340
+00:19:33.034 --> 00:19:36.174
+predict quite well whether the tumor has a KRAS mutation.
+
+341
+00:19:36.294 --> 00:19:39.654
+So you can see here it has an F1 score of 0.85.
+
+342
+00:19:40.294 --> 00:19:41.054
+It can also do
+
+343
+00:19:42.034 --> 00:19:45.914
+histological grading. It can find other kinds of mutations.
+
+344
+00:19:47.034 --> 00:19:50.954
+So these foundation models can be a great foundation to build all these downstream
+
+345
+00:19:51.734 --> 00:19:53.554
+tasks that we may go into later.
+
+346
+00:19:55.134 --> 00:19:58.954
+Another one you can see here. So this is predicting response of
+
+347
+00:19:58.994 --> 00:20:00.294
+lung cancer to immune therapy.
+
+348
+00:20:01.174 --> 00:20:05.064
+What you can see here is if you do only images alone, you can see that it's
+
+349
+00:20:05.094 --> 00:20:08.314
+doable, but it's not performing great.
+
+350
+00:20:08.354 --> 00:20:10.654
+If you do it only on a pathology report, it's a bit less.
+
+351
+00:20:10.754 --> 00:20:14.344
+But if you combine the image and the report, then you can see that the combination
+
+352
+00:20:14.374 --> 00:20:17.494
+of the two is much stronger, and you can get to quite decent performance even
+
+353
+00:20:18.314 --> 00:20:21.974
+of 0.75, which is still not great, but you could see it's
+
+354
+00:20:22.334 --> 00:20:23.354
+definitely better than it was.
+
+355
+00:20:25.334 --> 00:20:25.474
+Now,
+
+356
+00:20:26.714 --> 00:20:27.094
+one thing
+
+357
+00:20:27.934 --> 00:20:31.164
+that is very important, and we may also touch upon that later in later
+
+358
+00:20:31.334 --> 00:20:31.963
+presentations,
+
+359
+00:20:33.534 --> 00:20:36.194
+foundation models are not always completely robust.
+
+360
+00:20:36.654 --> 00:20:37.054
+And
+
+361
+00:20:38.154 --> 00:20:42.134
+it means that what I set out to try and explain to you is
+
+362
+00:20:42.154 --> 00:20:44.834
+a foundation model can work with less data.
+
+363
+00:20:45.654 --> 00:20:49.394
+And because it was trained on a very large variety of data, you would like it to be
+
+364
+00:20:49.414 --> 00:20:51.394
+more robust than task-specific models.
+
+365
+00:20:51.554 --> 00:20:55.434
+So I showed you if we build a task-specific model and we try it out
+
+366
+00:20:55.514 --> 00:20:59.334
+on new data, it might not perform as well as it did on the data it was
+
+367
+00:20:59.374 --> 00:21:03.354
+trained on. And one of the great promises of foundation models, because it is
+
+368
+00:21:03.434 --> 00:21:06.994
+trained on a very large diversity of data, is that it will
+
+369
+00:21:07.034 --> 00:21:10.974
+generalize better because it has seen a lot of different training data.
+
+370
+00:21:13.154 --> 00:21:16.514
+The variability in the training data actually is a very important topic,
+
+371
+00:21:17.234 --> 00:21:21.174
+which has been shown. So we trained on much data, but the variability in
+
+372
+00:21:21.214 --> 00:21:24.674
+this data basically decides a lot about how good
+
+373
+00:21:24.874 --> 00:21:26.254
+the foundation model is.
+
+374
+00:21:27.154 --> 00:21:30.814
+And what was done in this study is they defined some measure of
+
+375
+00:21:30.854 --> 00:21:34.764
+foundation model robustness. So they define how robust is the foundation model.
+
+376
+00:21:36.154 --> 00:21:39.454
+And what they found was that, well, that's not surprising.
+
+377
+00:21:39.574 --> 00:21:42.174
+If you have more data that the model was trained on,
+
+378
+00:21:43.094 --> 00:21:47.054
+robustness goes up. So you can see that the models that were trained on many data
+
+379
+00:21:47.634 --> 00:21:49.084
+have also higher robustness.
+
+380
+00:21:50.074 --> 00:21:53.374
+What you can also very nicely see here is the blue ones are just
+
+381
+00:21:54.194 --> 00:21:57.874
+visual models. The orange ones are a combination of image and
+
+382
+00:21:57.894 --> 00:22:00.974
+text. And what you can see is that if you add text,
+
+383
+00:22:01.254 --> 00:22:05.114
+with less data, you can still go to a very robust model.
+
+384
+00:22:05.774 --> 00:22:09.683
+As I showed you before, if you combine text reports or captions with
+
+385
+00:22:09.734 --> 00:22:12.994
+the images, you get to a more robust model, to a better
+
+386
+00:22:13.614 --> 00:22:14.274
+performing model.
+
+387
+00:22:17.574 --> 00:22:20.924
+But what I also showed, and this is a bit of a complicated graph, but what I also
+
+388
+00:22:20.934 --> 00:22:24.903
+showed is that if you have these biases in your data, then a model that is
+
+389
+00:22:24.954 --> 00:22:26.994
+less robust also generalizes less.
+
+390
+00:22:27.264 --> 00:22:30.774
+So robustness of the model is very important because, as I showed you in the
+
+391
+00:22:30.794 --> 00:22:34.654
+beginning, if we have this, let's say, this training with breast cancer where we
+
+392
+00:22:34.753 --> 00:22:35.224
+have many
+
+393
+00:22:36.994 --> 00:22:40.294
+white patients and a minority of Asian patients,
+
+394
+00:22:40.974 --> 00:22:43.954
+we know that it will not function as well on these Asian patients.
+
+395
+00:22:44.584 --> 00:22:47.994
+And that is shown here very much. If you use a foundation model, you could do much
+
+396
+00:22:48.074 --> 00:22:51.914
+better. Generalizability could be much better, but only if your
+
+397
+00:22:52.174 --> 00:22:56.074
+model is robust enough. So it's very important that your model has a high quality
+
+398
+00:22:56.134 --> 00:22:57.794
+and is trained on very diverse data.
+
+399
+00:23:00.834 --> 00:23:01.014
+Now
+
+400
+00:23:02.134 --> 00:23:05.454
+I come to the end. So what can we do? And very brief,
+
+401
+00:23:07.054 --> 00:23:08.614
+let's say, overview of what could be done.
+
+402
+00:23:09.154 --> 00:23:12.334
+For instance, what you could do now, this is with ChatGPT, you could just have an
+
+403
+00:23:12.394 --> 00:23:16.174
+image and ChatGPT without training it specifically for pathology, you could ask it
+
+404
+00:23:16.634 --> 00:23:18.934
+segment tumor and tumor associated stroma.
+
+405
+00:23:19.854 --> 00:23:22.254
+And it can actually do quite a decent job.
+
+406
+00:23:22.354 --> 00:23:26.054
+Here, this is ChatGPT out of the box, and you can see it can distinguish
+
+407
+00:23:26.094 --> 00:23:26.814
+stroma and tumor.
+
+408
+00:23:27.654 --> 00:23:30.574
+If we then compare it to what a pathologist drew, you can see it's
+
+409
+00:23:31.194 --> 00:23:33.054
+okay-ish, but it's not great, right?
+
+410
+00:23:33.154 --> 00:23:37.094
+It does something meaningful, but it's
+
+411
+00:23:37.134 --> 00:23:39.234
+by far not good enough for any kind of practical
+
+412
+00:23:40.394 --> 00:23:40.974
+application.
+
+413
+00:23:42.214 --> 00:23:45.314
+Another nice one here, we gave it a lung biopsy, and we ask
+
+414
+00:23:46.494 --> 00:23:48.314
+the chatbot, this is a pathology chatbot,
+
+415
+00:23:49.794 --> 00:23:53.374
+"Can you say something about the chances that this patient is going to
+
+416
+00:23:53.414 --> 00:23:54.774
+respond to immune therapy?"
+
+417
+00:23:55.804 --> 00:23:59.754
+And what you can see then is that the chatbot analyzes
+
+418
+00:23:59.794 --> 00:24:02.534
+the image and actually comes up with very good
+
+419
+00:24:04.074 --> 00:24:07.114
+advice because it says, "Well, basically, no, I can't.
+
+420
+00:24:07.254 --> 00:24:09.354
+I need PD-L1 staining or maybe I need
+
+421
+00:24:10.334 --> 00:24:14.294
+tumor mutational burden analysis for this, because on the basis of this image, I
+
+422
+00:24:14.334 --> 00:24:16.374
+cannot do it." So it advises us to
+
+423
+00:24:17.754 --> 00:24:18.554
+take the next steps.
+
+424
+00:24:19.394 --> 00:24:22.374
+So this could be the future, a chatbot where you can talk to pathologists.
+
+425
+00:24:22.534 --> 00:24:23.754
+We will talk about this
+
+426
+00:24:23.814 --> 00:24:27.958
+later.One
+
+427
+00:24:27.978 --> 00:24:29.538
+of the things, if you're interested, is
+
+428
+00:24:30.738 --> 00:24:33.258
+one of the things I am involved in myself is BigPicture.
+
+429
+00:24:33.438 --> 00:24:37.338
+BigPicture is a very large European project where we try to collect lots of
+
+430
+00:24:37.358 --> 00:24:40.538
+data because, as I've showed you today, if you want to build foundation models, you
+
+431
+00:24:40.598 --> 00:24:44.398
+need many data, very diverse data, and BigPicture is one of the
+
+432
+00:24:44.418 --> 00:24:48.238
+projects where we try to collect as much data and as much variety data as
+
+433
+00:24:48.318 --> 00:24:51.558
+we can. So if you're interested in building AI and
+
+434
+00:24:53.298 --> 00:24:55.938
+moving forward with that, please have a look at our website.
+
+435
+00:24:56.028 --> 00:24:57.518
+BigPicture aims exactly to do this.
+
+436
+00:24:59.618 --> 00:25:03.398
+These are my sponsors, people that pay for our
+
+437
+00:25:03.438 --> 00:25:05.058
+research, and this is my research group.
+
+438
+00:25:06.818 --> 00:25:10.298
+We have a few minutes if there are any burning questions, and otherwise, at the end
+
+439
+00:25:10.318 --> 00:25:13.278
+of the session, we will still have a panel discussion where you can also put your
+
+440
+00:25:13.318 --> 00:25:17.278
+questions. But if there are any questions now, specifically about what
+
+441
+00:25:17.358 --> 00:25:18.438
+I just showed you, then please
+
+442
+00:25:19.378 --> 00:25:23.018
+let me know. You could use the QR code that I shared in the
+
+443
+00:25:23.038 --> 00:25:25.978
+beginning, or you could just stand up and use the microphones.
+
+444
+00:25:27.678 --> 00:25:31.088
+But what I can do is I can share the QR code once more for you,
+
+445
+00:25:32.178 --> 00:25:33.177
+I hope. Yeah.
+
+446
+00:25:34.298 --> 00:25:35.698
+Okay, thanks for the add-on.
+
+447
+00:25:42.098 --> 00:25:42.978
+Hi. Really cool talk.
+
+448
+00:25:43.918 --> 00:25:47.858
+I imagine if you were to put implicit biases in your algorithms,
+
+449
+00:25:48.038 --> 00:25:48.638
+for instance,
+
+450
+00:25:49.758 --> 00:25:53.298
+spherical equivariance with your tumor pathology images,
+
+451
+00:25:54.118 --> 00:25:55.558
+so the rotation doesn't matter,
+
+452
+00:25:57.078 --> 00:25:59.718
+that might help with training in making it more robust.
+
+453
+00:25:59.858 --> 00:26:01.718
+Or even if you were to inject noise
+
+454
+00:26:02.618 --> 00:26:05.528
+into the tumor pathology images, that might help robustness.
+
+455
+00:26:05.558 --> 00:26:09.198
+Are these things that you have explored at all?
+
+456
+00:26:11.418 --> 00:26:13.798
+Yeah, basically that's all of the standard techniques that we always use.
+
+457
+00:26:14.058 --> 00:26:16.978
+So we artificially change the images during training.
+
+458
+00:26:18.158 --> 00:26:21.958
+That helps definitely to generalize, but it's not enough to solve all of these
+
+459
+00:26:22.018 --> 00:26:22.378
+problems.
+
+460
+00:26:22.818 --> 00:26:23.398
+Got it. Thank you.
+
+461
+00:26:24.738 --> 00:26:28.618
+Hello, I'm Carlos from Tempos. I was wondering when you're using tile level
+
+462
+00:26:28.658 --> 00:26:32.638
+embeddings, what is the percentage of tiles that are important for prediction?
+
+463
+00:26:33.158 --> 00:26:36.318
+So when you look at the attention weights, if you're using some kind of
+
+464
+00:26:36.897 --> 00:26:40.758
+multiple instance learning, what do you see depending on the task?
+
+465
+00:26:41.538 --> 00:26:44.888
+Sorry, the sound is not really good for me. Can you repeat the question? Sorry.
+
+466
+00:26:44.938 --> 00:26:48.358
+Yeah, sure. So let's say you're doing multiple instance learning for a prediction
+
+467
+00:26:48.458 --> 00:26:52.438
+task using tile level data. So when you
+
+468
+00:26:52.478 --> 00:26:56.158
+look at the attention weights that you get there from this task, what is the
+
+469
+00:26:56.178 --> 00:26:59.938
+proportion of tiles that are actually important for the prediction task?
+
+470
+00:27:00.638 --> 00:27:03.778
+Ooh, that's a very tough question to answer in a very
+
+471
+00:27:04.738 --> 00:27:05.438
+general sense.
+
+472
+00:27:05.878 --> 00:27:06.038
+Okay.
+
+473
+00:27:06.778 --> 00:27:10.578
+I think we have very good techniques now to really figure
+
+474
+00:27:10.618 --> 00:27:14.478
+out which information is relevant, but of course, you will need some
+
+475
+00:27:14.918 --> 00:27:16.818
+decent amount of signal to be able to pick that up.
+
+476
+00:27:17.178 --> 00:27:17.298
+Mm-hmm.
+
+477
+00:27:17.548 --> 00:27:18.597
+But I think actually that,
+
+478
+00:27:19.638 --> 00:27:23.358
+yeah, probably you could get quite far, but it's a very hard
+
+479
+00:27:23.398 --> 00:27:25.538
+question to answer in a very general sense.
+
+480
+00:27:25.778 --> 00:27:26.338
+Okay. Thank you.
+
+481
+00:27:29.418 --> 00:27:32.158
+Okay, thanks. We don't have any questions online, I guess.
+
+482
+00:27:33.058 --> 00:27:33.648
+Okay. Then I--
+
+483
+00:27:34.738 --> 00:27:35.138
+Jana?
+
+484
+00:27:41.378 --> 00:27:49.118
+Hey,
+
+485
+00:27:49.178 --> 00:27:51.738
+everyone. Thank you for the opportunity to present.
+
+486
+00:27:52.978 --> 00:27:55.658
+So there are some disclosures. And
+
+487
+00:27:57.098 --> 00:28:00.598
+so I divided talk in three parts. First is a very short introduction to the
+
+488
+00:28:00.678 --> 00:28:03.398
+foundational models. There are going to be a little bit of overlap, but just to
+
+489
+00:28:03.438 --> 00:28:04.898
+make sure we are all on the same page.
+
+490
+00:28:05.527 --> 00:28:08.638
+And then we're going to look a lot on the benchmarking of foundational models with
+
+491
+00:28:08.718 --> 00:28:11.258
+special focus on prognostic predictions.
+
+492
+00:28:11.858 --> 00:28:15.078
+And then I show you some of our recent work, how we are trying to improve the
+
+493
+00:28:15.098 --> 00:28:16.698
+foundational models for prognosis.
+
+494
+00:28:18.518 --> 00:28:22.398
+So this is how typical deep learning pipeline look like before foundational
+
+495
+00:28:22.458 --> 00:28:25.148
+models in the natural images. So you have your image as a first step.
+
+496
+00:28:25.198 --> 00:28:26.798
+You're going to extract features from the images.
+
+497
+00:28:27.278 --> 00:28:29.078
+You end up with the feature vector, as we just saw.
+
+498
+00:28:29.238 --> 00:28:32.858
+And on the top of the feature vector, you're going to train your prediction model.
+
+499
+00:28:34.498 --> 00:28:37.898
+And in the natural images, what we did before foundational model, it's so-called
+
+500
+00:28:37.998 --> 00:28:41.538
+end-to-end learning. It means the model has to learn how to extract the features,
+
+501
+00:28:41.598 --> 00:28:45.317
+how to make the predictions. It has to learn all these components together.
+
+502
+00:28:46.778 --> 00:28:47.898
+And you saw that
+
+503
+00:28:48.758 --> 00:28:52.478
+AI is very good with image analysis, and this model get fantastic
+
+504
+00:28:52.558 --> 00:28:56.518
+performance, but they were trained on set of millions of images, so it's really
+
+505
+00:28:56.618 --> 00:28:59.938
+large scale data. When we move to pathology,
+
+506
+00:29:00.658 --> 00:29:03.318
+someone mentioned the multiple instance learning. This is how we handle the images.
+
+507
+00:29:03.398 --> 00:29:06.518
+The images are huge. So we segment the tissue in the image.
+
+508
+00:29:06.558 --> 00:29:09.698
+We divide the image into patches. Then we're going to extract features from the
+
+509
+00:29:09.738 --> 00:29:13.178
+patches, and then we do some other operation, how to integrate information from the
+
+510
+00:29:13.198 --> 00:29:16.198
+patches to build slide level representation, and we're going to do the predictions.
+
+511
+00:29:17.178 --> 00:29:20.458
+Now, because we don't have millions of pathology images, we cannot really train
+
+512
+00:29:20.498 --> 00:29:23.098
+this model end to end, and usually we don't do that.
+
+513
+00:29:23.538 --> 00:29:25.908
+So the idea was to use transfer learning, and
+
+514
+00:29:26.758 --> 00:29:30.538
+the observation is if you train your model on natural images, the early layers of
+
+515
+00:29:30.578 --> 00:29:34.438
+this network's going to learn specific general image features like
+
+516
+00:29:34.518 --> 00:29:38.478
+the color, shapes, intensities, and the later layer learn features that are
+
+517
+00:29:38.658 --> 00:29:41.178
+relevant for the prediction of cats and dogs and other
+
+518
+00:29:42.118 --> 00:29:45.958
+task. So what we do, we cut off the later layers,
+
+519
+00:29:46.038 --> 00:29:49.898
+and we use the earlier layers to extract features, and we use it as a
+
+520
+00:29:50.278 --> 00:29:51.958
+feature encoder for the histology images.
+
+521
+00:29:51.998 --> 00:29:55.718
+So we leverage the information from the natural images to learn image features, and
+
+522
+00:29:55.758 --> 00:29:59.428
+then we can extract features from the histopathology images, and we just
+
+523
+00:29:59.518 --> 00:30:03.298
+modify. So this is how we were able to train the models on
+
+524
+00:30:03.318 --> 00:30:07.178
+histology images that reach human level performance for a lot of task.
+
+525
+00:30:07.638 --> 00:30:10.558
+But these models were trained on something of order of ten thousands of images.
+
+526
+00:30:10.658 --> 00:30:13.738
+So for instance, Paige AI Prostate was trained on 60,000 images.
+
+527
+00:30:13.798 --> 00:30:16.118
+It's the model that reached the first FDA approval.
+
+528
+00:30:16.818 --> 00:30:19.517
+But we didn't need millions of images, but just ten thousands of
+
+529
+00:30:19.578 --> 00:30:22.986
+images.One observation is this
+
+530
+00:30:23.026 --> 00:30:26.865
+transfer learning is great, but there is still a big difference between
+
+531
+00:30:26.946 --> 00:30:29.326
+pictures of cats and dogs and cancer.
+
+532
+00:30:29.406 --> 00:30:33.146
+So the models still need a relatively large amount of data to learn tissue-specific
+
+533
+00:30:33.206 --> 00:30:37.066
+features. So if we can pre-train the models on histology-specific data,
+
+534
+00:30:37.326 --> 00:30:40.686
+maybe we have better features, and we can do better transfer learning.
+
+535
+00:30:41.226 --> 00:30:44.706
+Of course, we don't have millions of labeled histology images, but we have a large
+
+536
+00:30:44.766 --> 00:30:48.096
+amount of unlabeled images, and this is where the self-supervised learning is
+
+537
+00:30:48.126 --> 00:30:48.706
+coming to game.
+
+538
+00:30:49.626 --> 00:30:53.466
+So the objective of self-supervised learning is to learn specific tissue
+
+539
+00:30:53.526 --> 00:30:57.106
+representations that can be used for many different tasks.
+
+540
+00:30:57.146 --> 00:30:59.766
+And we saw it from York. This is like a simplified version.
+
+541
+00:31:00.406 --> 00:31:03.126
+You train this model doing different prediction tasks.
+
+542
+00:31:03.186 --> 00:31:04.926
+For instance, this is a very simplified cartoon.
+
+543
+00:31:04.966 --> 00:31:07.786
+You can take the image, you remove part of the image, and you train the model to
+
+544
+00:31:07.826 --> 00:31:09.306
+predict the missing part of the image.
+
+545
+00:31:10.646 --> 00:31:13.956
+This doesn't have any clinical meaning, but it forces the model to learn features
+
+546
+00:31:13.986 --> 00:31:15.026
+that are specific
+
+547
+00:31:15.926 --> 00:31:18.946
+for histology data. It helps the model to understand what does it mean to be
+
+548
+00:31:18.986 --> 00:31:19.746
+histology tissue.
+
+549
+00:31:20.896 --> 00:31:24.606
+And then we can use this pre-trained encoder to extract features from the images.
+
+550
+00:31:25.206 --> 00:31:29.186
+And encoders trained in this way, this
+
+551
+00:31:29.226 --> 00:31:30.526
+is what we call the foundation model.
+
+552
+00:31:31.486 --> 00:31:34.286
+And depending on the type of encoders we have, we're going to have different types
+
+553
+00:31:34.326 --> 00:31:37.806
+of foundational models. So we have patch level foundational models, which give you
+
+554
+00:31:37.846 --> 00:31:41.646
+features for individual patches in the image, or we can also have a slide-level
+
+555
+00:31:41.686 --> 00:31:45.366
+foundational models that give you a single feature vector for the whole slide
+
+556
+00:31:45.406 --> 00:31:48.666
+image. So they already agglomerate information from individual patches and give you
+
+557
+00:31:48.706 --> 00:31:50.866
+a single vector for a whole slide image.
+
+558
+00:31:51.896 --> 00:31:52.416
+And these
+
+559
+00:31:53.406 --> 00:31:54.986
+foundational model works only with the images.
+
+560
+00:31:55.046 --> 00:31:56.886
+So they're like unimodal foundational models.
+
+561
+00:31:56.966 --> 00:31:59.986
+But then we also have multimodal foundational models. We already saw the figure.
+
+562
+00:32:01.106 --> 00:32:05.076
+Here, the idea is we want to combine images and additional modality,
+
+563
+00:32:05.186 --> 00:32:08.086
+usually text, and we use it to learn better feature
+
+564
+00:32:08.106 --> 00:32:12.066
+representation. So I will spend a little bit more because I will get
+
+565
+00:32:12.106 --> 00:32:16.006
+back to this later. So usually, we use CLIP-style methods.
+
+566
+00:32:16.506 --> 00:32:17.826
+So there is this contrastive learning.
+
+567
+00:32:17.906 --> 00:32:21.766
+So the idea is the model have to learn text representation and image
+
+568
+00:32:21.826 --> 00:32:25.746
+representation jointly in a way that it's going to map them in a feature space.
+
+569
+00:32:25.806 --> 00:32:29.126
+So you want to find such a representation that a text and
+
+570
+00:32:29.205 --> 00:32:32.886
+an image are close to the feature space, or images with similar text
+
+571
+00:32:32.926 --> 00:32:34.686
+descriptions should be closer in a feature space.
+
+572
+00:32:35.326 --> 00:32:38.796
+So basically, use the text information to learn better feature representations, and
+
+573
+00:32:38.826 --> 00:32:40.466
+then again, you can use it as a feature encoder.
+
+574
+00:32:41.226 --> 00:32:45.146
+And in pathology, we have majority models going to be a combination of
+
+575
+00:32:45.186 --> 00:32:48.106
+images and text. So it's like visual language models, but we also have a
+
+576
+00:32:48.826 --> 00:32:51.946
+foundational model that were trained using images and transcriptomics data.
+
+577
+00:32:52.486 --> 00:32:55.106
+So there is, for instance, Tango model using the same approach.
+
+578
+00:32:57.866 --> 00:33:01.646
+So as we saw, foundational models help us to train more accurate models using less
+
+579
+00:33:01.666 --> 00:33:04.286
+training data and also more robust predictions.
+
+580
+00:33:04.766 --> 00:33:06.866
+So I will go very quickly because we already saw it.
+
+581
+00:33:06.886 --> 00:33:10.626
+This slide basically show in yellow is the ResNet, is the
+
+582
+00:33:10.666 --> 00:33:13.336
+baseline model, and all others are foundational models.
+
+583
+00:33:13.386 --> 00:33:15.906
+So you can see large improvement in the performance.
+
+584
+00:33:17.186 --> 00:33:21.086
+They are more data efficient, so you can see performance foundational models with
+
+585
+00:33:21.546 --> 00:33:25.286
+really small amount of data, like having 10 or 20 samples, it's already
+
+586
+00:33:25.326 --> 00:33:28.186
+sufficient to gain really high performance for certain tasks.
+
+587
+00:33:29.106 --> 00:33:31.906
+And this is another example that they can also reduce bias.
+
+588
+00:33:31.986 --> 00:33:35.956
+So here, different color correspond to different demographic subgroups.
+
+589
+00:33:36.566 --> 00:33:39.986
+And the last three are models using foundational models as a baseline.
+
+590
+00:33:40.026 --> 00:33:43.206
+So you can see there is less variability between the different demographic
+
+591
+00:33:43.286 --> 00:33:43.726
+subgroups.
+
+592
+00:33:45.966 --> 00:33:49.686
+This is a bit outdated landscape of foundational models in pathology.
+
+593
+00:33:49.766 --> 00:33:51.246
+At some point, I stopped updating it.
+
+594
+00:33:51.866 --> 00:33:55.786
+But you can see the first models came in 2021, and since then, many more models
+
+595
+00:33:55.826 --> 00:33:56.466
+have been added.
+
+596
+00:33:57.286 --> 00:34:00.326
+And just to appreciate the scale of the data they were trained.
+
+597
+00:34:00.786 --> 00:34:04.196
+So PyCon is our smallest model that was trained on something like 6,000 images,
+
+598
+00:34:04.306 --> 00:34:07.426
+which is as large as Giraffe, if you would stack the slides on the top of each
+
+599
+00:34:07.466 --> 00:34:11.446
+other. VirWho was trained on 1.5 million images, so it's going to be
+
+600
+00:34:11.506 --> 00:34:14.066
+as big as four Eiffel Towers. So it's a lot of data.
+
+601
+00:34:15.566 --> 00:34:17.386
+And different models use more data.
+
+602
+00:34:17.417 --> 00:34:20.806
+And basically, you can see every few months, new foundational model is being
+
+603
+00:34:20.826 --> 00:34:23.546
+published, each claim that it's superior to the previous one.
+
+604
+00:34:24.346 --> 00:34:27.006
+So you as a user may be asking, which one should you use?
+
+605
+00:34:27.926 --> 00:34:30.526
+And this is where the benchmarks in pathology came in.
+
+606
+00:34:31.086 --> 00:34:34.976
+The first benchmark was by Gabriel Campanella, where he compared a
+
+607
+00:34:35.006 --> 00:34:38.136
+few different foundational models on cancer detection and biomarker prediction
+
+608
+00:34:38.226 --> 00:34:42.026
+task. And here you can clearly see the blue is the ResNet performance
+
+609
+00:34:42.086 --> 00:34:45.926
+model. So you can see that the foundational model outperformed the ResNet 50
+
+610
+00:34:46.506 --> 00:34:46.946
+strongly.
+
+611
+00:34:47.746 --> 00:34:49.627
+They also showed that there was no clear winner.
+
+612
+00:34:49.687 --> 00:34:51.786
+So in different tasks, the different models performed better.
+
+613
+00:34:52.566 --> 00:34:55.746
+But what was interesting to see that larger models are not necessarily the best
+
+614
+00:34:55.806 --> 00:34:59.346
+one. Sometimes the PyCon, which was trained with 6,000 images, it's better than
+
+615
+00:34:59.386 --> 00:35:01.466
+VirWho with 3 millions images.
+
+616
+00:35:02.366 --> 00:35:05.946
+Then there was another benchmark from Jakob group, which was exhaustive,
+
+617
+00:35:06.286 --> 00:35:08.246
+like 20 models or something.
+
+618
+00:35:09.126 --> 00:35:12.946
+And this is just overview of the four best performing models, and they saw that
+
+619
+00:35:13.506 --> 00:35:17.426
+CONCH, which is the multimodal model combining images and text, was usually
+
+620
+00:35:17.486 --> 00:35:18.506
+better than the other models.
+
+621
+00:35:19.386 --> 00:35:22.406
+And this benchmark provided also more insights on the architecture.
+
+622
+00:35:22.546 --> 00:35:26.456
+So they showed that having more slides or more parameters does
+
+623
+00:35:26.586 --> 00:35:30.226
+at some point will reach a plateau, and adding more data doesn't necessarily help.
+
+624
+00:35:30.706 --> 00:35:34.506
+But they show that having more patients or different anatomical
+
+625
+00:35:34.586 --> 00:35:34.986
+sites
+
+626
+00:35:36.246 --> 00:35:37.466
+still improve the model. So
+
+627
+00:35:38.346 --> 00:35:39.326
+rather than having
+
+628
+00:35:40.266 --> 00:35:43.046
+larger models, we want to have better data.
+
+629
+00:35:43.096 --> 00:35:46.226
+So more patients, more anatomical sites is better than number of slides.
+
+630
+00:35:47.026 --> 00:35:50.226
+And these benchmarks, what is important, they were tested on private data, so it's
+
+631
+00:35:50.286 --> 00:35:51.546
+independent evaluation.
+
+632
+00:35:52.366 --> 00:35:55.166
+But we still have a few questions, like how we can move forward.
+
+633
+00:35:55.846 --> 00:35:59.786
+So all these benchmarks were doing mainly binary classification or classification
+
+634
+00:35:59.846 --> 00:36:03.626
+tasks. So one question was, how does it translate to other more complex tasks like
+
+635
+00:36:04.086 --> 00:36:07.846
+a survival prediction? What about generalization to external cohorts?
+
+636
+00:36:08.106 --> 00:36:11.726
+Differences between unimodal, multimodal slide versus patch level models.
+
+637
+00:36:11.786 --> 00:36:14.526
+And also now, because these are private cohorts,
+
+638
+00:36:15.366 --> 00:36:18.686
+if you develop new foundational models, we don't know anymore how to compare with
+
+639
+00:36:18.726 --> 00:36:21.566
+the previous one. So we were thinking it would be good to have some public
+
+640
+00:36:21.626 --> 00:36:25.606
+benchmark.And we develop our own benchmark, which we
+
+641
+00:36:25.866 --> 00:36:29.606
+then call PATOS, and it's focused on survival prediction in
+
+642
+00:36:29.626 --> 00:36:33.276
+oncology, because for survival prediction, it's difficult to build large cohorts.
+
+643
+00:36:33.286 --> 00:36:37.026
+So the question is: Can we benefit from foundational
+
+644
+00:36:37.086 --> 00:36:39.306
+models having better performance on smaller cohorts?
+
+645
+00:36:39.986 --> 00:36:42.466
+So this framework, we look at 13 different cancer types.
+
+646
+00:36:42.566 --> 00:36:45.846
+We have a mix of different models like unimodal, multimodal, patch level versus
+
+647
+00:36:45.856 --> 00:36:49.366
+slide level, and we also look at generalization to external cohorts.
+
+648
+00:36:50.246 --> 00:36:53.146
+And it's going to be public, so you can use the same split, same configuration.
+
+649
+00:36:53.186 --> 00:36:55.946
+So when you develop new foundational model, you just compare with the previous
+
+650
+00:36:56.026 --> 00:36:56.266
+ones.
+
+651
+00:36:57.226 --> 00:36:59.726
+And we're looking at a few different tasks.
+
+652
+00:36:59.806 --> 00:37:03.126
+One is cancer-specific models, like here you're going to train single model for
+
+653
+00:37:03.166 --> 00:37:06.846
+each disease. Like for the brain cancer, you're going to train model for brain
+
+654
+00:37:06.886 --> 00:37:09.766
+cancer survival, and then inference time, you use the same model to predict
+
+655
+00:37:09.826 --> 00:37:11.346
+survival for the brain cancer patients.
+
+656
+00:37:12.336 --> 00:37:15.366
+We also look at feasibility of having pan-cancer generalized models.
+
+657
+00:37:15.426 --> 00:37:17.306
+It's like, can we have one model for everything?
+
+658
+00:37:17.386 --> 00:37:21.166
+So we train one model across all the different cancer types, and then you can apply
+
+659
+00:37:21.206 --> 00:37:23.806
+the same model to all the different cancer types.
+
+660
+00:37:23.846 --> 00:37:26.946
+And here the idea is there may be some shared hallmarks of cancer that the model
+
+661
+00:37:27.066 --> 00:37:30.106
+can learn, and it can help you to generalize across different cancer types.
+
+662
+00:37:31.326 --> 00:37:32.806
+And we look at different performances.
+
+663
+00:37:32.866 --> 00:37:36.306
+This is average seen next across, I think, 50 different tasks
+
+664
+00:37:37.166 --> 00:37:38.746
+and generalization to external cohorts.
+
+665
+00:37:39.586 --> 00:37:42.886
+And one thing that you can see here, now you have to really read which one is the
+
+666
+00:37:43.026 --> 00:37:46.706
+ResNet as the baseline. So there is not that much improvement in survival
+
+667
+00:37:46.746 --> 00:37:50.546
+prediction over the ResNet 50. But still we see that, for instance, CONJ is
+
+668
+00:37:50.586 --> 00:37:53.206
+doing better than the other models, but there are no big differences between
+
+669
+00:37:53.246 --> 00:37:56.026
+foundational models. So one observation was
+
+670
+00:37:56.846 --> 00:37:59.046
+that larger foundation models were not necessarily better.
+
+671
+00:37:59.126 --> 00:38:00.566
+There is no clear winner,
+
+672
+00:38:01.926 --> 00:38:05.026
+although CONJ was the best performing, but we think it's maybe because of the data
+
+673
+00:38:05.086 --> 00:38:05.726
+diversity.
+
+674
+00:38:06.726 --> 00:38:09.466
+We also look what is the difference between slide-level versus patch-level
+
+675
+00:38:09.546 --> 00:38:13.386
+foundational models. And we saw that patch-level models actually are better than--
+
+676
+00:38:14.066 --> 00:38:17.866
+for survival prediction, they do better than slide-level models.
+
+677
+00:38:17.896 --> 00:38:21.766
+And we think it's because the models have more flexibility to look at the different
+
+678
+00:38:21.786 --> 00:38:24.906
+tissue regions rather than having single vector, which may be a bit
+
+679
+00:38:24.926 --> 00:38:28.806
+constraining. If you look at the difference between unimodal versus
+
+680
+00:38:28.866 --> 00:38:32.506
+multimodal model, there was no statistical difference for survival prediction
+
+681
+00:38:32.666 --> 00:38:34.226
+using these 10 models that we are looking at.
+
+682
+00:38:35.086 --> 00:38:38.926
+And we think this is a bit surprising because you would hope that maybe tangle with
+
+683
+00:38:38.966 --> 00:38:41.766
+the transcriptomics data going to help with the survival prediction.
+
+684
+00:38:42.386 --> 00:38:45.686
+The problem is that the way the foundational models are built, they don't
+
+685
+00:38:46.066 --> 00:38:47.946
+leverage the prognostic information.
+
+686
+00:38:48.026 --> 00:38:51.546
+Also, you have images and you have the text, but there is no additional prognostic
+
+687
+00:38:51.606 --> 00:38:55.566
+information. So even though these multimodal models perform better
+
+688
+00:38:55.606 --> 00:38:58.626
+for classification tasks, they don't provide that much benefit for prognostic
+
+689
+00:38:58.686 --> 00:39:00.086
+predictions. And we get back to that.
+
+690
+00:39:01.466 --> 00:39:04.736
+And we saw that in comparison between pan-cancer model and
+
+691
+00:39:04.806 --> 00:39:07.946
+cancer-specific model, the pan-cancer model perform a little bit better, so it was
+
+692
+00:39:08.306 --> 00:39:12.066
+feasible to have single model for all the applications.
+
+693
+00:39:12.446 --> 00:39:15.446
+One small thing you can do with this pan-cancer model, since you have one model
+
+694
+00:39:15.506 --> 00:39:19.166
+train on all the data, now you can apply it to any cancer type you
+
+695
+00:39:19.206 --> 00:39:23.046
+have. You can look how this model perform on out-of-distribution cancer.
+
+696
+00:39:23.146 --> 00:39:26.636
+So like we train the model on 10 most common cancer type, and we want to know how
+
+697
+00:39:26.646 --> 00:39:29.126
+they generalize to cancers that were not part of the model training.
+
+698
+00:39:29.166 --> 00:39:32.066
+You can think about rare diseases. How does the model generalize?
+
+699
+00:39:32.806 --> 00:39:36.546
+This is more like an interesting observation. So this is the ResNet 50.
+
+700
+00:39:36.606 --> 00:39:37.706
+It doesn't do very well on
+
+701
+00:39:38.706 --> 00:39:40.906
+out-of-distribution cases, and this is good. We will expect that.
+
+702
+00:39:42.346 --> 00:39:45.746
+There is little bit of mix of performance on the out-of-distribution cases for
+
+703
+00:39:46.486 --> 00:39:48.946
+some of the models have better than random performance.
+
+704
+00:39:49.626 --> 00:39:52.666
+And then for the slide-level foundational models, because we have single feature
+
+705
+00:39:52.726 --> 00:39:54.516
+vector, we can train them having more
+
+706
+00:39:55.446 --> 00:39:58.696
+larger patch size and better-- I'm sorry, larger batch size and more
+
+707
+00:40:00.366 --> 00:40:02.926
+better loss function. So this is going to be-- Oops.
+
+708
+00:40:03.666 --> 00:40:07.146
+This is performance having larger batch size and different loss function.
+
+709
+00:40:07.186 --> 00:40:10.346
+And you can start to see that even though the model never saw some of these
+
+710
+00:40:10.866 --> 00:40:14.156
+out-of-distribution cases, it was able to generalize it, like interesting
+
+711
+00:40:14.226 --> 00:40:16.086
+observation toward having generalized models.
+
+712
+00:40:16.526 --> 00:40:19.966
+Not something to be used in practice, but interesting that we can generalize across
+
+713
+00:40:20.006 --> 00:40:20.526
+diseases.
+
+714
+00:40:22.846 --> 00:40:24.306
+One way-- oh, this is kind of important.
+
+715
+00:40:24.746 --> 00:40:28.566
+So we were also looking at interpretability of the models having this
+
+716
+00:40:28.586 --> 00:40:32.546
+attention heat map. So here this colorful map tell us what are the
+
+717
+00:40:32.566 --> 00:40:34.926
+prognostic regions for each model prediction.
+
+718
+00:40:35.666 --> 00:40:39.326
+And one take home message here is you can see the heat maps are not the same across
+
+719
+00:40:39.366 --> 00:40:41.886
+the foundational models, even though we are doing the same task.
+
+720
+00:40:42.315 --> 00:40:46.146
+So this is maybe something to be cautious about because people consider to
+
+721
+00:40:46.226 --> 00:40:49.886
+use the high attention regions for biomarker
+
+722
+00:40:49.926 --> 00:40:53.906
+exploration, but it depend on the choice of foundational model.
+
+723
+00:40:54.436 --> 00:40:57.945
+So this is something we still maybe need to be careful about.
+
+724
+00:40:59.786 --> 00:41:03.586
+The observation was, this is example of this out-of-distribution
+
+725
+00:41:03.686 --> 00:41:07.406
+cases where the model was trained and some models like CONJ and Virchow, they were
+
+726
+00:41:07.466 --> 00:41:10.926
+still able to find a tumor region, even though the model never saw this type of
+
+727
+00:41:10.946 --> 00:41:13.066
+cancer. But it's interesting observation.
+
+728
+00:41:13.826 --> 00:41:15.596
+But we have to be careful with interpretability.
+
+729
+00:41:18.006 --> 00:41:20.546
+Another way to do interpretability is to look at the UMAPs.
+
+730
+00:41:20.826 --> 00:41:23.526
+So here we take features extracted from the data,
+
+731
+00:41:24.746 --> 00:41:28.466
+from the raw models, not trained for any specific task, and you can color it by the
+
+732
+00:41:28.506 --> 00:41:31.186
+different cancer types. And we see that foundational models, they're doing very
+
+733
+00:41:31.266 --> 00:41:33.906
+well separating different diseases in different subtypes.
+
+734
+00:41:34.546 --> 00:41:37.966
+But now if you color it with respect to survival, you see it's very random.
+
+735
+00:41:38.006 --> 00:41:41.406
+They are not better than ResNet. So this is what we saw the
+
+736
+00:41:41.646 --> 00:41:45.186
+improvements on survival prediction wasn't so great with
+
+737
+00:41:45.226 --> 00:41:48.886
+foundational model as we saw for the classification task, and it's because these
+
+738
+00:41:48.946 --> 00:41:51.246
+feature don't carry additional prognostic information.
+
+739
+00:41:52.186 --> 00:41:53.446
+So we decide to address it.
+
+740
+00:41:55.246 --> 00:41:59.145
+We propose our own model. It's called Surfer because it's from California.
+
+741
+00:41:59.466 --> 00:42:02.706
+Surfer is foundational model that is optimized for prognostic predictions,
+
+742
+00:42:02.966 --> 00:42:06.866
+and it's a clip-and-sell model that's going to combine, again, images and text.
+
+743
+00:42:07.606 --> 00:42:11.526
+But in contrast to previous models like CONJ, which combine histology image
+
+744
+00:42:11.586 --> 00:42:14.906
+and text that describe the same image, so it's like pathology report,
+
+745
+00:42:15.526 --> 00:42:19.166
+Surfer is going to combine images with the text, but the text contain
+
+746
+00:42:19.786 --> 00:42:22.446
+patient outcomes. So we have information on survival treatment
+
+747
+00:42:22.486 --> 00:42:26.182
+response.Also the idea is we want to inject this
+
+748
+00:42:26.202 --> 00:42:29.622
+prognostic information in the text description so the model can use it to learn
+
+749
+00:42:29.662 --> 00:42:31.322
+different prognostic features in the images.
+
+750
+00:42:32.122 --> 00:42:35.922
+If you just use the CONV on its native way, it's a little bit tricky
+
+751
+00:42:35.962 --> 00:42:37.842
+because it tries to push images
+
+752
+00:42:38.782 --> 00:42:42.202
+with similar text together. But
+
+753
+00:42:42.722 --> 00:42:44.662
+CLIP on its own doesn't have a notion of the time.
+
+754
+00:42:44.722 --> 00:42:48.002
+It doesn't know that patient with survival of six months and eight months should be
+
+755
+00:42:48.042 --> 00:42:51.942
+close in a feature space versus someone who has survival six months versus 20
+
+756
+00:42:51.982 --> 00:42:53.402
+months should be more far in space.
+
+757
+00:42:53.962 --> 00:42:57.582
+So we introduced this version of SoftCLIP, which is like a weighted version of
+
+758
+00:42:57.682 --> 00:43:01.582
+CLIP, which introduces additional weightening based on the distance in the feature
+
+759
+00:43:01.682 --> 00:43:05.202
+space. And it is to help the model to account for
+
+760
+00:43:05.262 --> 00:43:08.782
+discontinuity of time. So patients who have similar survival now are going to be
+
+761
+00:43:08.902 --> 00:43:12.582
+pushed closer together in a feature space, and those that have dissimilar survival
+
+762
+00:43:12.622 --> 00:43:15.902
+will be pushed far away. And in this way, we can also now include patients with
+
+763
+00:43:15.942 --> 00:43:18.242
+censored information because we just know when the
+
+764
+00:43:20.802 --> 00:43:24.742
+patient was last observed, but we can still use it to push them apart from a
+
+765
+00:43:24.802 --> 00:43:26.382
+patient that had very short survival.
+
+766
+00:43:27.142 --> 00:43:29.202
+So this is the outline of the SURFER model.
+
+767
+00:43:30.162 --> 00:43:34.082
+As a proof of concept, we trained SURFER using Titan as a
+
+768
+00:43:34.102 --> 00:43:37.622
+backbone. So Titan is a vision language foundational model, which gives
+
+769
+00:43:37.722 --> 00:43:41.492
+slide-level representation. So the SURFER uses Titan as a backbone,
+
+770
+00:43:42.222 --> 00:43:45.772
+and it was trained on set of approximately 15,000 whole slide images from
+
+771
+00:43:45.782 --> 00:43:49.382
+TCGA and from NIH-PLCO trial.
+
+772
+00:43:49.462 --> 00:43:53.122
+And so if we look at the UMAPs between
+
+773
+00:43:53.382 --> 00:43:57.282
+Titan versus SURFER colored with respect to the different cancer type, they are all
+
+774
+00:43:57.322 --> 00:44:00.702
+similar. So SURFER is still able to separate different disease subtypes, so we
+
+775
+00:44:00.742 --> 00:44:02.122
+didn't mess up the features too much.
+
+776
+00:44:02.842 --> 00:44:06.782
+But now if we start looking at the features for a specific cancer, and we color
+
+777
+00:44:06.802 --> 00:44:08.222
+them with respect to the survival.
+
+778
+00:44:08.862 --> 00:44:12.592
+So on the top you can see we have bladder cancer and
+
+779
+00:44:12.662 --> 00:44:13.412
+colorectal cancer,
+
+780
+00:44:14.302 --> 00:44:15.882
+and at the top is performance with the SURFER.
+
+781
+00:44:15.942 --> 00:44:19.822
+And you see there is no notion of the different risk groups for the patient
+
+782
+00:44:19.902 --> 00:44:23.102
+with the same cancer type. But with the SURFER, because of this SoftCLIP
+
+783
+00:44:23.122 --> 00:44:26.782
+pre-training, you can see a nice gradient of the different risk groups with
+
+784
+00:44:27.442 --> 00:44:31.202
+respect to survival. So the model was able to find and stratify the patient with
+
+785
+00:44:31.222 --> 00:44:33.622
+the same disease given the different risk groups.
+
+786
+00:44:33.641 --> 00:44:36.282
+So it's like we are starting to learn some prognostic features.
+
+787
+00:44:36.732 --> 00:44:39.922
+And then having better features, of course, you can translate it, and once you
+
+788
+00:44:39.962 --> 00:44:43.762
+train the downstream models for survival prediction, it results in better
+
+789
+00:44:43.962 --> 00:44:47.342
+survival prediction. So here in purple is Titan and dark is
+
+790
+00:44:47.382 --> 00:44:51.062
+SURFER. So we could reach better survival performance.
+
+791
+00:44:52.182 --> 00:44:55.802
+I don't claim that SURFER is the best solution.
+
+792
+00:44:55.862 --> 00:44:59.591
+This is just the idea. Maybe we can benefit and improve the self-supervised
+
+793
+00:44:59.662 --> 00:45:03.352
+learning and look at it slightly different to learn better prognostic features or
+
+794
+00:45:03.442 --> 00:45:05.922
+features relevant for different outcomes.
+
+795
+00:45:07.302 --> 00:45:09.222
+So this would be just to summarize.
+
+796
+00:45:09.282 --> 00:45:12.942
+So what we saw, foundational models allow us to train more accurate and
+
+797
+00:45:12.962 --> 00:45:15.202
+robust models while using less training data.
+
+798
+00:45:15.982 --> 00:45:19.472
+We saw for developing foundational models, having more data doesn't
+
+799
+00:45:19.482 --> 00:45:20.282
+necessarily mean
+
+800
+00:45:21.522 --> 00:45:25.222
+better performance, but having better quality of the data, more patients, more
+
+801
+00:45:25.442 --> 00:45:27.442
+diseases led to better representation.
+
+802
+00:45:28.052 --> 00:45:31.462
+And we also saw that existing foundational models, they didn't perform so well for
+
+803
+00:45:31.502 --> 00:45:34.402
+prognostic predictions. They are very good at separating patients with different
+
+804
+00:45:34.442 --> 00:45:38.102
+disease type, but they don't stratify a patient with the same disease type with
+
+805
+00:45:38.182 --> 00:45:41.302
+respect to the risk because there was no prognostic information included.
+
+806
+00:45:42.482 --> 00:45:45.482
+And also one of these motivations, maybe we can move beyond standard
+
+807
+00:45:45.502 --> 00:45:49.442
+self-supervised learning and try to inject additional information to learn
+
+808
+00:45:49.482 --> 00:45:52.642
+better features maybe relevant for the prognostic.
+
+809
+00:45:52.922 --> 00:45:56.822
+So again, I don't claim SURFER is the best direction, but it's suggestions maybe
+
+810
+00:45:56.842 --> 00:45:59.902
+we can start looking at different ways to better leverage the data.
+
+811
+00:45:59.942 --> 00:46:03.502
+Maybe it's not really self-supervised, but semi-self-supervised because we kind of
+
+812
+00:46:03.542 --> 00:46:04.492
+inject the survival there.
+
+813
+00:46:05.702 --> 00:46:07.742
+So maybe there is a space for other advances.
+
+814
+00:46:08.662 --> 00:46:12.182
+And to move forward, of course, there is need for transparency.
+
+815
+00:46:12.222 --> 00:46:14.592
+We have all these foundational models we don't know what they were trained on.
+
+816
+00:46:15.482 --> 00:46:18.502
+They may be sensitive to different scanner types, different disease types, so it's
+
+817
+00:46:18.522 --> 00:46:20.282
+like we would need more transparency.
+
+818
+00:46:20.782 --> 00:46:22.882
+Having benchmarks is super helpful.
+
+819
+00:46:22.942 --> 00:46:26.342
+It'll help us to understand what works for different data, what doesn't work,
+
+820
+00:46:26.842 --> 00:46:28.942
+how to improve this model to move forward.
+
+821
+00:46:29.382 --> 00:46:33.042
+Having private benchmark, like what Jacob and Gabriel did, is super helpful because
+
+822
+00:46:33.062 --> 00:46:36.822
+it's independent testing, but also having public benchmark as our partners can be
+
+823
+00:46:36.862 --> 00:46:40.561
+helpful because now if you develop own foundational models, you can just compare
+
+824
+00:46:40.602 --> 00:46:43.402
+with the other models and see how they are doing.
+
+825
+00:46:43.442 --> 00:46:46.342
+And the big question is how do we translate all of this to clinical practice?
+
+826
+00:46:46.622 --> 00:46:48.422
+How do we benefit from these foundational models?
+
+827
+00:46:48.482 --> 00:46:49.822
+What are the regulatory approvals?
+
+828
+00:46:50.282 --> 00:46:53.502
+And I don't know, but Jacob's going to tell us more about it, so I'm curious about
+
+829
+00:46:53.542 --> 00:46:56.682
+it. And with this, I want to thank you for your attention.
+
+830
+00:47:06.882 --> 00:47:10.662
+Thank you very much for this wonderful overview. And I have one question.
+
+831
+00:47:11.102 --> 00:47:14.922
+So one thing I'm curious is that in order to train a vision
+
+832
+00:47:14.962 --> 00:47:18.842
+language model, we typically need a pair of an image
+
+833
+00:47:18.962 --> 00:47:20.502
+and a corresponding text, right?
+
+834
+00:47:20.942 --> 00:47:21.082
+Yes.
+
+835
+00:47:21.442 --> 00:47:25.402
+But a whole slide image consists of hundreds of image patches
+
+836
+00:47:25.442 --> 00:47:27.562
+and possibly with a single caption.
+
+837
+00:47:27.662 --> 00:47:31.242
+So I was wondering how can we train vision language model with this
+
+838
+00:47:31.262 --> 00:47:34.222
+contrasted learning in case of a whole slide image?
+
+839
+00:47:34.942 --> 00:47:36.222
+Yeah, that is a very good question.
+
+840
+00:47:36.302 --> 00:47:39.992
+So especially for the survival prediction, you don't know which patches are
+
+841
+00:47:40.142 --> 00:47:41.742
+relevant. They may have different risk.
+
+842
+00:47:42.302 --> 00:47:46.202
+So we use Titan as a backbone. So we extract the features using the Titan
+
+843
+00:47:46.242 --> 00:47:50.122
+as a baseline information, so we end up with a slide level representation, and then
+
+844
+00:47:50.162 --> 00:47:54.142
+we use the SURFER, the SoftCLIP model, to refine the features to
+
+845
+00:47:54.182 --> 00:47:57.382
+make them prognostic relevant. But for instance,
+
+846
+00:47:58.982 --> 00:48:02.622
+Tangle model, which is using histology and transcriptomics data, they
+
+847
+00:48:02.662 --> 00:48:06.272
+introduced a way basically the multiple instance learning can be part of your
+
+848
+00:48:06.522 --> 00:48:08.832
+self-supervised pre-training, and then you end up with a slide level
+
+849
+00:48:08.862 --> 00:48:12.442
+representation. So this is like an out of step we were going to expand the SURFER,
+
+850
+00:48:12.822 --> 00:48:15.302
+but right now we just use slide level representation as a backbone.
+
+851
+00:48:16.062 --> 00:48:16.902
+Oh, thank you very much.
+
+852
+00:48:17.102 --> 00:48:17.321
+Mm-hmm.
+
+853
+00:48:21.102 --> 00:48:24.982
+Hi. Just out of curiosity, do you calculate the cosine similarity
+
+854
+00:48:25.042 --> 00:48:27.122
+between the embeddings across the different models?
+
+855
+00:48:28.902 --> 00:48:30.662
+We did not, but it's a good question.
+
+856
+00:48:31.722 --> 00:48:31.962
+Thank you.
+
+857
+00:48:32.022 --> 00:48:34.321
+Just to see how similar they are. But yeah, thank you.
+
+858
+00:48:34.722 --> 00:48:36.162
+Thank you. Thank you for suggestion.
+
+859
+00:48:37.542 --> 00:48:41.162
+Thank you for the great talk. So there are some recent work
+
+860
+00:48:41.402 --> 00:48:44.202
+showing foundation models can carry batch effect.
+
+861
+00:48:44.862 --> 00:48:48.782
+May not surprising because they often train using all
+
+862
+00:48:48.802 --> 00:48:51.842
+the imaging data from one institute or one hospital.
+
+863
+00:48:52.262 --> 00:48:56.042
+So you do see that foundation model can separate different cancer types
+
+864
+00:48:56.602 --> 00:48:59.582
+much cleaner in the TCGA data. Is that possible?
+
+865
+00:48:59.742 --> 00:49:03.502
+Those TCGA data, each cancer type came from different institute or
+
+866
+00:49:03.942 --> 00:49:05.602
+potential batch effect or-
+
+867
+00:49:06.202 --> 00:49:09.872
+Yes. Usually, the features you learn with foundation model
+
+868
+00:49:10.122 --> 00:49:13.972
+generalize the world. They also first pre-train a large amount of data,
+
+869
+00:49:14.142 --> 00:49:18.131
+not always from the single center, and it translate the world
+
+870
+00:49:18.142 --> 00:49:19.942
+and generalize also to data from other hospitals.
+
+871
+00:49:19.962 --> 00:49:22.402
+That's why we have such a good performance with foundation models.
+
+872
+00:49:22.442 --> 00:49:26.162
+So I don't think it's learning the specific of the cohort, but for instance,
+
+873
+00:49:26.222 --> 00:49:30.022
+people show that the foundation models are kind of sensitive to the
+
+874
+00:49:30.062 --> 00:49:32.622
+type of scanners that were used across different hospitals.
+
+875
+00:49:32.702 --> 00:49:36.102
+So if you scan the same slide with different scanners and you use four or five
+
+876
+00:49:36.142 --> 00:49:38.962
+different foundational models, and you look at them in the feature space, you can
+
+877
+00:49:39.062 --> 00:49:42.572
+see different blobs. So there is some impact on how the data were
+
+878
+00:49:42.642 --> 00:49:45.842
+pre-trained, and usually we don't know what the data were used for the training of
+
+879
+00:49:45.882 --> 00:49:49.262
+the scanner. So there are some hidden things that we still need to figure out.
+
+880
+00:49:49.322 --> 00:49:52.502
+But in terms of cancer prediction, I think they're generalizing pretty well.
+
+881
+00:49:52.562 --> 00:49:56.102
+But there are all these hidden other stuff that we may not be aware that they are
+
+882
+00:49:56.142 --> 00:49:56.522
+still there.
+
+883
+00:49:57.402 --> 00:49:58.021
+All right. Thank you.
+
+884
+00:49:59.782 --> 00:50:01.182
+Hey. Great talk, Jana.
+
+885
+00:50:01.472 --> 00:50:01.472
+Thank you.
+
+886
+00:50:01.502 --> 00:50:03.102
+Alex from University of Chicago.
+
+887
+00:50:04.022 --> 00:50:08.002
+I'm curious about your intuition on additional modes of data that
+
+888
+00:50:08.042 --> 00:50:11.882
+you'll add to the foundation model training. SURFER's fantastic. That's super cool.
+
+889
+00:50:11.942 --> 00:50:15.772
+But I wonder if you think that we're going to need to add molecular
+
+890
+00:50:15.902 --> 00:50:19.442
+subtypes, demographic information to get the maximum
+
+891
+00:50:19.542 --> 00:50:23.182
+impact, and if that's the case, are we going to run into this challenge where
+
+892
+00:50:23.202 --> 00:50:26.862
+there's combinations that aren't experienced
+
+893
+00:50:27.782 --> 00:50:29.722
+in the foundation model training? So I'd like to hear your thoughts.
+
+894
+00:50:30.402 --> 00:50:31.822
+Yeah, no, that's a very good question.
+
+895
+00:50:33.442 --> 00:50:36.602
+In the ideal world, if you have all the information, yes, that would be fantastic.
+
+896
+00:50:36.642 --> 00:50:37.241
+It's going to help.
+
+897
+00:50:38.182 --> 00:50:42.022
+In practice, it's hard to know. Also, like now with the SURFER, we are
+
+898
+00:50:42.062 --> 00:50:44.202
+thinking, should we include treatment response?
+
+899
+00:50:44.232 --> 00:50:46.842
+Should we resistance, all that information.
+
+900
+00:50:47.282 --> 00:50:51.082
+So I still don't know where is the line, but in general, more
+
+901
+00:50:51.122 --> 00:50:55.102
+information works better, and I think if you have enough data, it can help.
+
+902
+00:50:55.522 --> 00:50:59.151
+It can also be that your model is just ignoring some text information because it's
+
+903
+00:50:59.182 --> 00:51:01.682
+just not helping or it's not discriminative enough.
+
+904
+00:51:02.822 --> 00:51:03.102
+Yeah.
+
+905
+00:51:04.182 --> 00:51:07.702
+That was basically my question. But I guess, I was going to ask in the
+
+906
+00:51:07.762 --> 00:51:11.382
+context of precision medicine in clinical
+
+907
+00:51:11.462 --> 00:51:13.162
+trials, if you're trying to
+
+908
+00:51:14.202 --> 00:51:17.682
+identify patients, stratify a group for a
+
+909
+00:51:17.822 --> 00:51:21.662
+response to a particular type of new drug that you would be testing.
+
+910
+00:51:21.862 --> 00:51:25.842
+What factors and what advice would you have for either utilizing
+
+911
+00:51:25.862 --> 00:51:29.151
+and leveraging some of these models or even developing something in-house that was
+
+912
+00:51:29.182 --> 00:51:32.922
+kind of tied to that idea of which parts of that multimodal
+
+913
+00:51:32.982 --> 00:51:36.822
+data really are something to focus on and make sure is balanced
+
+914
+00:51:36.882 --> 00:51:37.482
+ahead of time?
+
+915
+00:51:39.442 --> 00:51:43.422
+I don't know if I really understand all your question in detail, but, yes.
+
+916
+00:51:43.462 --> 00:51:47.322
+So we're also expanding SURFER to see how it can be used to predict
+
+917
+00:51:47.342 --> 00:51:50.242
+treatment response, and of course, it's just so much you can predict from the
+
+918
+00:51:50.302 --> 00:51:52.552
+diagnostic images, right? There are a lot of other things happening.
+
+919
+00:51:53.122 --> 00:51:55.862
+But the fact that the model can already depict some different prognostic
+
+920
+00:51:55.882 --> 00:51:59.642
+information from the diagnostic images can be very helpful for stratifying patients
+
+921
+00:51:59.662 --> 00:52:00.442
+for clinical trial
+
+922
+00:52:01.362 --> 00:52:04.622
+or just for helping with selection of the treatment.
+
+923
+00:52:04.642 --> 00:52:08.022
+And I think the next step is build more advanced model that can be
+
+924
+00:52:08.282 --> 00:52:09.622
+adaptively adjusted.
+
+925
+00:52:10.602 --> 00:52:14.342
+Once new information came about a patient, maybe you can refine the risk prediction
+
+926
+00:52:14.402 --> 00:52:17.382
+because there is just so much you can predict from histology from the time of
+
+927
+00:52:17.442 --> 00:52:19.942
+diagnosis. The patient has a treatment, all the other things happening.
+
+928
+00:52:20.022 --> 00:52:23.302
+So I think this is like a first shot, and then we can build on the top of it.
+
+929
+00:52:23.842 --> 00:52:26.482
+But I'm not sure if I fully answered your question, but we can do it afterwards.
+
+930
+00:52:27.082 --> 00:52:30.762
+No, that helped. You basically answered my question when you answered his
+
+931
+00:52:30.802 --> 00:52:31.722
+question, so thank you.
+
+932
+00:52:31.942 --> 00:52:32.222
+Thank you.
+
+933
+00:52:47.011 --> 00:52:47.862
+Thank you very much.
+
+934
+00:52:49.422 --> 00:52:51.002
+Let me try to pull up.
+
+935
+00:52:54.862 --> 00:52:56.242
+Or can you pull up my slides?
+
+936
+00:52:59.822 --> 00:53:00.322
+Thank you.
+
+937
+00:53:03.842 --> 00:53:04.062
+Next.
+
+938
+00:53:04.122 --> 00:53:17.462
+Can
+
+939
+00:53:17.522 --> 00:53:18.622
+you pull up the slide first?
+
+940
+00:53:21.562 --> 00:53:22.082
+Yeah.
+
+941
+00:53:22.142 --> 00:53:23.222
+Let's go.
+
+942
+00:53:30.282 --> 00:53:30.542
+Yeah.
+
+943
+00:53:36.042 --> 00:53:37.402
+There we are. Thank you very much.
+
+944
+00:53:39.882 --> 00:53:43.582
+Hello, everybody. Thank you very much for being here in our session.
+
+945
+00:53:43.642 --> 00:53:46.062
+Thank you to these excellent speakers.
+
+946
+00:53:47.622 --> 00:53:51.382
+My name is Jakob Kata. I was part of the organizing
+
+947
+00:53:51.462 --> 00:53:55.162
+committee of this year's ACR. I'm responsible for the
+
+948
+00:53:55.222 --> 00:53:58.522
+AI track, and I'm very, very happy that we managed to
+
+949
+00:53:58.642 --> 00:54:02.582
+get many high-profile AI sessions in this
+
+950
+00:54:02.862 --> 00:54:06.642
+year's conference program. I think ultimately, the whole conference should probably
+
+951
+00:54:06.682 --> 00:54:09.742
+be about AI, right? But maybe I'm biased.
+
+952
+00:54:10.562 --> 00:54:11.642
+So thanks for
+
+953
+00:54:12.522 --> 00:54:16.362
+your support and for being here. Tomorrow morning, we will have another AI
+
+954
+00:54:16.402 --> 00:54:18.742
+plenary session at 8:00 a.m., which I'm looking forward to.
+
+955
+00:54:19.122 --> 00:54:20.902
+But now let's speak about
+
+956
+00:54:21.882 --> 00:54:24.962
+pathology foundation models, and the title that
+
+957
+00:54:26.182 --> 00:54:30.062
+I gave my talk is not entirely correct because we've heard a lot
+
+958
+00:54:30.122 --> 00:54:33.952
+about the technical basics and how we train and how
+
+959
+00:54:34.042 --> 00:54:37.452
+we use foundation models in the two excellent previous
+
+960
+00:54:37.562 --> 00:54:41.286
+talks. So now I want toSpeak to another topic
+
+961
+00:54:41.386 --> 00:54:44.686
+which is: what can we use these models for?
+
+962
+00:54:44.806 --> 00:54:48.726
+And this is relevant for cancer research, but also for clinical
+
+963
+00:54:48.826 --> 00:54:52.706
+application. So let's get started. These are my disclosures.
+
+964
+00:54:54.506 --> 00:54:58.066
+And I want to take this opportunity to take a
+
+965
+00:54:58.186 --> 00:55:02.166
+step back to make very explicit the evolution
+
+966
+00:55:02.206 --> 00:55:06.066
+of artificial intelligence in cancer research that we have witnessed
+
+967
+00:55:06.126 --> 00:55:09.726
+over the last decades. It all started in the stone
+
+968
+00:55:09.826 --> 00:55:13.046
+ages, right, in the 2000s or even before,
+
+969
+00:55:13.406 --> 00:55:16.646
+with methods that we now call classical machine learning methods.
+
+970
+00:55:16.726 --> 00:55:20.526
+If you have tabular data or you have features derived
+
+971
+00:55:20.586 --> 00:55:23.286
+from image data or other more complex data, you can train
+
+972
+00:55:24.486 --> 00:55:25.346
+these methods
+
+973
+00:55:26.306 --> 00:55:29.166
+for classification, segmentation, prediction tasks.
+
+974
+00:55:29.546 --> 00:55:33.486
+They work pretty well. They still have their role to play today,
+
+975
+00:55:33.906 --> 00:55:37.646
+but they don't work for the real-world messy, complex
+
+976
+00:55:37.786 --> 00:55:40.806
+image data that we encounter in cancer research.
+
+977
+00:55:41.026 --> 00:55:44.086
+These are methods that you can basically use in Microsoft Excel or on your
+
+978
+00:55:45.026 --> 00:55:48.786
+calculator, and they're still very important, but we have to have
+
+979
+00:55:48.846 --> 00:55:51.646
+more complex methods to deal with more complex data.
+
+980
+00:55:52.256 --> 00:55:55.966
+And these methods came along in the form of deep
+
+981
+00:55:56.046 --> 00:55:59.546
+learning in the 2010s, specifically in 2012, when the first
+
+982
+00:55:59.626 --> 00:56:02.886
+convolutional neural networks had their success stories.
+
+983
+00:56:03.256 --> 00:56:07.006
+And this enabled us, for the first time, to analyze
+
+984
+00:56:07.046 --> 00:56:10.046
+pathology slides really robustly.
+
+985
+00:56:10.426 --> 00:56:11.026
+And
+
+986
+00:56:12.306 --> 00:56:15.626
+deep learning methods, of course, deep neural networks, you need a lot of data to
+
+987
+00:56:15.666 --> 00:56:19.446
+train them, and then you can solve any pathology image analysis problem that you're
+
+988
+00:56:19.486 --> 00:56:23.406
+interested in. But this data abundance was the main
+
+989
+00:56:23.506 --> 00:56:26.426
+practical limitation that held the field back.
+
+990
+00:56:26.526 --> 00:56:30.006
+And I think the technology of foundation models
+
+991
+00:56:30.166 --> 00:56:33.606
+fundamentally changed this because with the foundation model, as we have heard
+
+992
+00:56:33.746 --> 00:56:36.866
+beautifully articulated in the previous talks, you
+
+993
+00:56:37.346 --> 00:56:39.146
+train one big model
+
+994
+00:56:40.126 --> 00:56:43.506
+one time, and then you can use it many times for many downstream tasks.
+
+995
+00:56:43.686 --> 00:56:47.326
+Sure, you need a lot of images. Sure, you need a lot of
+
+996
+00:56:47.466 --> 00:56:51.306
+energy to train this model. But once you have it, it's frozen
+
+997
+00:56:51.406 --> 00:56:53.266
+forever. It's there. You can use it forever.
+
+998
+00:56:53.556 --> 00:56:57.546
+And you don't need so much downstream data every time you want to solve a
+
+999
+00:56:57.586 --> 00:57:01.566
+new task in a new cancer type. And that is the beauty of foundation models, and
+
+1000
+00:57:01.626 --> 00:57:03.806
+that's why they have been so transformative in pathology
+
+1001
+00:57:03.926 --> 00:57:07.246
+image analysis in cancer research.
+
+1002
+00:57:07.546 --> 00:57:11.406
+Another type of foundation models is large language models,
+
+1003
+00:57:11.506 --> 00:57:15.466
+right? Everybody knows them. Everybody uses ChatGPT, Claude, or
+
+1004
+00:57:15.526 --> 00:57:19.396
+all these models. They're also foundation models that have been trained with
+
+1005
+00:57:19.396 --> 00:57:21.426
+self-supervised learning on language.
+
+1006
+00:57:21.435 --> 00:57:24.166
+And this happened more or less in parallel, right?
+
+1007
+00:57:24.206 --> 00:57:27.036
+And now these models are also becoming very useful.
+
+1008
+00:57:27.506 --> 00:57:31.486
+One reason why they're becoming useful in cancer research is because you can
+
+1009
+00:57:31.646 --> 00:57:35.606
+build AI agents around them, and I will show you some examples for
+
+1010
+00:57:35.686 --> 00:57:39.526
+that. But before we go into the future-looking things, let
+
+1011
+00:57:39.586 --> 00:57:43.226
+me focus again on the foundation models, on the image analysis, and what we can do
+
+1012
+00:57:43.286 --> 00:57:43.586
+with them.
+
+1013
+00:57:45.026 --> 00:57:48.486
+In terms of applications, what do we want to use image
+
+1014
+00:57:48.506 --> 00:57:51.646
+analysis in cancer research and oncology for?
+
+1015
+00:57:52.006 --> 00:57:55.556
+Well, for many years, the answer was object detection,
+
+1016
+00:57:55.906 --> 00:57:59.506
+cancer detection, right? In colonoscopy videos, we want to
+
+1017
+00:57:59.546 --> 00:58:02.106
+detect polyps. In mammography
+
+1018
+00:58:03.626 --> 00:58:06.126
+x-ray images, we want to detect breast cancer.
+
+1019
+00:58:06.506 --> 00:58:09.726
+In pathology slides, we want to detect prostate cancer.
+
+1020
+00:58:10.046 --> 00:58:13.826
+So we want to detect cancer, and this works so well that
+
+1021
+00:58:13.966 --> 00:58:17.906
+basically in all these examples that I just gave you, these models have reached
+
+1022
+00:58:17.946 --> 00:58:21.546
+human expert performance. You can train a model that's as good as any human
+
+1023
+00:58:21.606 --> 00:58:25.166
+expert. It's consistent. It has been shown repeatedly in large prospective
+
+1024
+00:58:25.206 --> 00:58:27.685
+randomized trials to hundreds of thousands of people.
+
+1025
+00:58:28.206 --> 00:58:31.186
+This technology is robust. The problem is solved, right?
+
+1026
+00:58:31.246 --> 00:58:35.096
+If you have enough data and one specific question for tumor detection
+
+1027
+00:58:35.466 --> 00:58:39.046
+problem, problem solved. Of course, it does not solve all of our problems in the
+
+1028
+00:58:39.086 --> 00:58:40.806
+real world because there's more than
+
+1029
+00:58:41.606 --> 00:58:45.046
+just a small number of tumor types and
+
+1030
+00:58:45.646 --> 00:58:47.656
+there's many challenges. I will speak to that later.
+
+1031
+00:58:47.736 --> 00:58:49.406
+But from a technical perspective, these
+
+1032
+00:58:50.446 --> 00:58:53.546
+things are now very well manageable.
+
+1033
+00:58:54.586 --> 00:58:58.465
+That's why we can also look at more complicated tasks, and
+
+1034
+00:58:58.526 --> 00:59:02.166
+that's what our research group did for many years now.
+
+1035
+00:59:02.226 --> 00:59:06.086
+This is an ancient paper from our group where for the first time
+
+1036
+00:59:06.206 --> 00:59:10.026
+we looked at different questions in pathology
+
+1037
+00:59:10.066 --> 00:59:13.286
+image analysis. Can we predict molecular
+
+1038
+00:59:13.366 --> 00:59:16.766
+alterations directly from pathology slides?
+
+1039
+00:59:16.826 --> 00:59:20.746
+So this is a more challenging problem than making a diagnosis of
+
+1040
+00:59:20.786 --> 00:59:24.716
+cancer because you cannot even be sure that the information
+
+1041
+00:59:24.786 --> 00:59:28.746
+is represented in the image. But what we saw in this study
+
+1042
+00:59:28.766 --> 00:59:32.386
+and in what others have shown in hundreds of other studies is
+
+1043
+00:59:32.426 --> 00:59:36.186
+that many molecular alterations leave a
+
+1044
+00:59:36.246 --> 00:59:39.906
+unique footprint in the tumor morphology, that you can
+
+1045
+00:59:40.046 --> 00:59:42.246
+infer them just by looking at the morphology.
+
+1046
+00:59:42.706 --> 00:59:46.666
+And this is not perfect, but it's good enough to be useful in many cases,
+
+1047
+00:59:46.746 --> 00:59:48.586
+for example, for pre-screening.
+
+1048
+00:59:50.686 --> 00:59:54.566
+Another example, a lot of work has been done with-- What I showed you here
+
+1049
+00:59:54.626 --> 00:59:56.506
+was microsatellite instability.
+
+1050
+00:59:56.566 --> 00:59:59.446
+Another example is homologous recombination deficiency.
+
+1051
+00:59:59.926 --> 01:00:03.766
+These are gene signatures that basically mess
+
+1052
+01:00:03.866 --> 01:00:06.306
+up with the tumor genome at many
+
+1053
+01:00:07.406 --> 01:00:11.376
+levels and therefore also leave a footprint in the tumor morphology,
+
+1054
+01:00:11.486 --> 01:00:14.186
+which you can infer with pathology image analysis.
+
+1055
+01:00:14.866 --> 01:00:17.406
+This even goes for other more complex
+
+1056
+01:00:18.386 --> 01:00:21.346
+genetic or molecular changes in the tumor.
+
+1057
+01:00:21.426 --> 01:00:22.226
+For example,
+
+1058
+01:00:23.606 --> 01:00:27.286
+transcriptomic signatures that are correlated to
+
+1059
+01:00:27.346 --> 01:00:30.786
+patient outcomes. We know, for example, in breast cancer, there is
+
+1060
+01:00:30.826 --> 01:00:33.966
+established risk scores such as Oncotype DX, MammaPrint,
+
+1061
+01:00:34.626 --> 01:00:34.866
+that
+
+1062
+01:00:36.586 --> 01:00:36.766
+are
+
+1063
+01:00:37.586 --> 01:00:40.266
+related to clinical outcomes of these patients, but
+
+1064
+01:00:41.506 --> 01:00:44.586
+you need to measure basically the tumor transcriptome.
+
+1065
+01:00:44.946 --> 01:00:48.886
+Well, here in this work and in many other studies that came out
+
+1066
+01:00:49.266 --> 01:00:52.346
+in this fieldAnd it was shown that
+
+1067
+01:00:53.506 --> 01:00:57.505
+just the tumor morphology is enough to infer
+
+1068
+01:00:57.866 --> 01:00:59.606
+these signatures from morphology.
+
+1069
+01:00:59.666 --> 01:01:03.006
+Sure, it's not perfect, but it's good enough to be useful in many cases.
+
+1070
+01:01:03.046 --> 01:01:06.806
+This is joint work by Kevin Boom and Omar Elnahas who are here in the audience.
+
+1071
+01:01:06.826 --> 01:01:09.296
+So if you have any questions, you can approach them
+
+1072
+01:01:10.126 --> 01:01:10.616
+directly.
+
+1073
+01:01:12.106 --> 01:01:14.826
+What this also enables us to do is to
+
+1074
+01:01:15.606 --> 01:01:17.586
+undertake explainability
+
+1075
+01:01:18.766 --> 01:01:22.746
+analysis in these tumors and try to understand which cellular
+
+1076
+01:01:22.886 --> 01:01:26.486
+patterns are related to these molecular changes.
+
+1077
+01:01:26.566 --> 01:01:30.486
+And for example, here you can see we can even train generative models
+
+1078
+01:01:30.546 --> 01:01:33.866
+to generate low-risk or high-risk
+
+1079
+01:01:34.706 --> 01:01:38.626
+image areas. And you can see that we can then look at these images and
+
+1080
+01:01:39.526 --> 01:01:41.886
+draw conclusions from it. For example, one
+
+1081
+01:01:42.866 --> 01:01:46.486
+of these classes has maybe more stroma or less stroma, or more
+
+1082
+01:01:46.646 --> 01:01:50.506
+vessels or more lymphocytes or more myeloid cells, et cetera.
+
+1083
+01:01:50.586 --> 01:01:54.566
+So we can inform all of these biological hypothesis just
+
+1084
+01:01:54.606 --> 01:01:57.266
+by training these models on pathology slides.
+
+1085
+01:01:59.126 --> 01:02:02.506
+All of this has been enabled and facilitated
+
+1086
+01:02:03.406 --> 01:02:06.726
+massively by foundation models. In the past, when in
+
+1087
+01:02:06.846 --> 01:02:10.746
+2019 we did the first studies, we had to train each model from scratch
+
+1088
+01:02:10.756 --> 01:02:14.406
+to predict these properties of tumors from images.
+
+1089
+01:02:14.526 --> 01:02:18.286
+Now it's much easier. We can start at a much higher level.
+
+1090
+01:02:18.366 --> 01:02:20.826
+We just start with a foundation model, right?
+
+1091
+01:02:20.866 --> 01:02:21.326
+And then we
+
+1092
+01:02:22.646 --> 01:02:25.806
+train another model on top of it. So you need much less data.
+
+1093
+01:02:25.846 --> 01:02:29.546
+It's much better generalizable, it's much faster. You need much less compute.
+
+1094
+01:02:29.586 --> 01:02:33.546
+It's just now becoming very easy to do this.
+
+1095
+01:02:33.856 --> 01:02:35.746
+And this is a figure that I adapted from
+
+1096
+01:02:36.846 --> 01:02:38.966
+Jana's paper without asking. Sorry, Jana.
+
+1097
+01:02:39.006 --> 01:02:41.826
+I hope that's okay because I think it
+
+1098
+01:02:42.306 --> 01:02:46.266
+visualizes the concepts again that I want to repeat here about foundation models.
+
+1099
+01:02:46.326 --> 01:02:49.246
+Which concepts are relevant here? You have data.
+
+1100
+01:02:49.286 --> 01:02:53.026
+You train a model to compress the data. What you get is an embedding.
+
+1101
+01:02:53.296 --> 01:02:56.686
+It's just a list of numbers, and with this list of numbers, it's much easier to
+
+1102
+01:02:56.746 --> 01:03:00.505
+work with this than with an original image, which has many millions
+
+1103
+01:03:02.406 --> 01:03:06.146
+of pixels. These foundation models can be easily
+
+1104
+01:03:06.326 --> 01:03:07.366
+generalized to
+
+1105
+01:03:08.166 --> 01:03:10.506
+go from unimodal to multimodal foundation models.
+
+1106
+01:03:10.546 --> 01:03:12.926
+That's another advantage, right?
+
+1107
+01:03:12.966 --> 01:03:16.786
+And then if you have multimodal foundation models, you have one representation
+
+1108
+01:03:16.846 --> 01:03:19.566
+for multiple data modalities, which can be very powerful.
+
+1109
+01:03:19.926 --> 01:03:23.806
+Powerful for what? For many downstream tasks, and I put some of
+
+1110
+01:03:23.846 --> 01:03:26.826
+these tasks here, and we've seen them in the previous talks.
+
+1111
+01:03:27.266 --> 01:03:30.806
+What you can easily do with these foundation model embeddings is
+
+1112
+01:03:31.806 --> 01:03:34.126
+solve the example applications that I've shown you before.
+
+1113
+01:03:34.466 --> 01:03:38.326
+Prediction, prognostication, inference of molecular
+
+1114
+01:03:38.366 --> 01:03:42.166
+alterations from morphology. But also you can retrieve
+
+1115
+01:03:42.246 --> 01:03:46.186
+similar patients. All these patients live in a high-dimensional
+
+1116
+01:03:46.286 --> 01:03:48.526
+space that's defined by your foundation model
+
+1117
+01:03:49.846 --> 01:03:53.446
+feature space. And then you can retrieve the closest patients,
+
+1118
+01:03:53.586 --> 01:03:57.446
+patients like me, right? You can also retrieve closest patients for
+
+1119
+01:03:57.466 --> 01:03:58.946
+potential clinical trial matching.
+
+1120
+01:03:59.026 --> 01:04:02.796
+You can retrieve patients or work in this embedding
+
+1121
+01:04:02.846 --> 01:04:05.326
+space to generate virtual trial arms.
+
+1122
+01:04:05.726 --> 01:04:09.706
+So there's a lot of downstream tasks that go beyond these predictive
+
+1123
+01:04:09.766 --> 01:04:13.586
+tasks that I showed you. So foundation models are really cool
+
+1124
+01:04:13.806 --> 01:04:16.886
+and everybody's using them, and there's no way to not use them when you're
+
+1125
+01:04:17.706 --> 01:04:19.446
+working with pathology images
+
+1126
+01:04:20.626 --> 01:04:22.846
+nowadays. We've benchmarked them in our team.
+
+1127
+01:04:22.886 --> 01:04:23.986
+This study has been shown
+
+1128
+01:04:25.506 --> 01:04:26.486
+much more elegantly by
+
+1129
+01:04:27.426 --> 01:04:31.276
+the previous speakers. And I think benchmarking is something that's very
+
+1130
+01:04:31.326 --> 01:04:33.616
+important, that's generally underappreciated.
+
+1131
+01:04:34.066 --> 01:04:37.706
+As we have more and more models out there, benchmarking on
+
+1132
+01:04:37.846 --> 01:04:38.746
+private data
+
+1133
+01:04:39.566 --> 01:04:39.786
+with
+
+1134
+01:04:40.726 --> 01:04:43.986
+reasonable use case, with relevant use cases becomes even
+
+1135
+01:04:44.086 --> 01:04:45.046
+more
+
+1136
+01:04:46.286 --> 01:04:46.886
+important.
+
+1137
+01:04:48.346 --> 01:04:51.946
+Now, there is a paradox. This technology is extremely
+
+1138
+01:04:52.066 --> 01:04:52.566
+powerful.
+
+1139
+01:04:53.606 --> 01:04:56.166
+It's not so difficult to train it. We know that it can
+
+1140
+01:04:57.246 --> 01:05:00.906
+solve many questions that are clinically interesting,
+
+1141
+01:05:00.926 --> 01:05:04.406
+but at the same time, almost nobody's using it, right?
+
+1142
+01:05:04.466 --> 01:05:08.086
+Let's be honest. We've heard less than 10% of pathology slides in the
+
+1143
+01:05:08.146 --> 01:05:11.126
+US are read digitally. I think it's even less.
+
+1144
+01:05:11.205 --> 01:05:14.286
+I think it's even less than 5% in Europe.
+
+1145
+01:05:14.706 --> 01:05:18.206
+It's very good in some countries, but very bad in other countries.
+
+1146
+01:05:18.626 --> 01:05:21.906
+Overall, of course, most pathology slides are not
+
+1147
+01:05:21.926 --> 01:05:25.866
+digital, and therefore these methods cannot be used in
+
+1148
+01:05:25.906 --> 01:05:29.846
+clinical routine. And I think it's these barriers here that's just from
+
+1149
+01:05:29.886 --> 01:05:33.106
+an article that we wrote a while ago about barriers to implementation, which I
+
+1150
+01:05:33.126 --> 01:05:34.446
+think is still valid.
+
+1151
+01:05:36.026 --> 01:05:39.846
+Now we are not facing so much of a scientific problem anymore.
+
+1152
+01:05:39.886 --> 01:05:41.906
+We're just facing an implementation problem.
+
+1153
+01:05:41.926 --> 01:05:45.466
+And sometimes for scientists tackling these boring
+
+1154
+01:05:45.526 --> 01:05:49.306
+implementation problems, it's not very appealing, but I think it's what we
+
+1155
+01:05:49.406 --> 01:05:53.046
+have to do to really reap the benefits of this
+
+1156
+01:05:53.056 --> 01:05:54.246
+technology in
+
+1157
+01:05:55.126 --> 01:05:56.406
+patient care ultimately,
+
+1158
+01:05:57.386 --> 01:06:00.946
+and in cancer research. And I hope we can have some
+
+1159
+01:06:01.006 --> 01:06:02.136
+discussions about this
+
+1160
+01:06:03.486 --> 01:06:06.466
+in the panel discussion. We are seeing some
+
+1161
+01:06:06.546 --> 01:06:10.506
+encouraging signals, though. This is a study
+
+1162
+01:06:10.926 --> 01:06:14.686
+led by Gabriele Campanella from New York, where
+
+1163
+01:06:14.706 --> 01:06:18.646
+last year they published a beautiful study, and many
+
+1164
+01:06:18.706 --> 01:06:22.626
+people who are here in the room were involved with this study, where they
+
+1165
+01:06:22.726 --> 01:06:26.636
+ran an actual trial, a prospective evaluation,
+
+1166
+01:06:26.766 --> 01:06:30.336
+to use this technology for screening of molecular
+
+1167
+01:06:30.386 --> 01:06:32.336
+alterations from pathology slides.
+
+1168
+01:06:32.366 --> 01:06:36.066
+In this case, predicting EGFR mutations in lung
+
+1169
+01:06:36.146 --> 01:06:38.946
+cancer just based on the pathology slides.
+
+1170
+01:06:39.256 --> 01:06:42.465
+And it worked pretty well even in this prospective study.
+
+1171
+01:06:42.486 --> 01:06:42.686
+And
+
+1172
+01:06:43.546 --> 01:06:47.506
+I recommend you to read this paper. I think it's very elegant.
+
+1173
+01:06:47.536 --> 01:06:51.466
+The study design is very elegant, and they can make very
+
+1174
+01:06:51.626 --> 01:06:53.606
+good statements, very strong statements here.
+
+1175
+01:06:54.486 --> 01:06:57.626
+It reduced the number of rapid molecular tests by
+
+1176
+01:06:57.946 --> 01:07:01.806
+43% while maintaining the current clinical performance.
+
+1177
+01:07:01.866 --> 01:07:04.606
+So it's not a perfect test, but it can be useful,
+
+1178
+01:07:05.406 --> 01:07:09.206
+especially in settings that are not as well-resourced as
+
+1179
+01:07:10.366 --> 01:07:11.946
+here, Memorial Sloan,
+
+1180
+01:07:12.946 --> 01:07:16.910
+where this study was conducted.Now,
+
+1181
+01:07:17.890 --> 01:07:21.350
+why is this technology not being used widely?
+
+1182
+01:07:21.830 --> 01:07:25.570
+Well, I spoke to the implementation hurdles, digitalization.
+
+1183
+01:07:25.960 --> 01:07:28.230
+Another problem is that
+
+1184
+01:07:29.050 --> 01:07:32.050
+even if all the infrastructure is there, the
+
+1185
+01:07:32.110 --> 01:07:36.050
+clinicians have to use it and have to want it, right?
+
+1186
+01:07:36.670 --> 01:07:38.190
+Otherwise, it's not going to be used.
+
+1187
+01:07:38.290 --> 01:07:41.210
+So I'm very happy and proud to present
+
+1188
+01:07:41.270 --> 01:07:45.230
+this work which we did last year in our
+
+1189
+01:07:45.570 --> 01:07:49.440
+European professional society, ESMO, European Society of
+
+1190
+01:07:49.510 --> 01:07:53.250
+Medical Oncology, where among oncologists and
+
+1191
+01:07:53.270 --> 01:07:55.090
+pathologists and other experts, we
+
+1192
+01:07:55.970 --> 01:07:59.780
+had an expert panel that formulated a
+
+1193
+01:07:59.830 --> 01:08:03.170
+classification of these AI-based biomarkers, a
+
+1194
+01:08:03.230 --> 01:08:06.140
+taxonomy, and then provided
+
+1195
+01:08:06.170 --> 01:08:09.590
+recommendations for how biomarkers should be
+
+1196
+01:08:09.650 --> 01:08:12.150
+validated. Looking at hundreds of
+
+1197
+01:08:13.110 --> 01:08:16.870
+studies out there and dozens of products, basically this is what the
+
+1198
+01:08:17.730 --> 01:08:18.690
+panel came up with.
+
+1199
+01:08:19.550 --> 01:08:22.950
+Class A biomarkers, class B biomarkers, and Class C
+
+1200
+01:08:23.030 --> 01:08:26.910
+biomarkers. Class A would be using AI methods for
+
+1201
+01:08:27.090 --> 01:08:29.090
+quantification of known biomarkers, right?
+
+1202
+01:08:29.150 --> 01:08:32.130
+Imagine a PD-L1-stained immunohistochemistry slide.
+
+1203
+01:08:32.490 --> 01:08:35.230
+Usually, a human would read it, which is obviously
+
+1204
+01:08:36.750 --> 01:08:39.610
+faulty in many situations, right?
+
+1205
+01:08:39.670 --> 01:08:43.610
+So you can train an AI model to do this, which can be very consistent,
+
+1206
+01:08:43.690 --> 01:08:46.630
+et cetera. So here you're just replacing the
+
+1207
+01:08:47.410 --> 01:08:51.250
+readout, which is very simple and it
+
+1208
+01:08:51.311 --> 01:08:53.490
+only needs analytical validation.
+
+1209
+01:08:53.851 --> 01:08:57.351
+Class B is AI for indirect measure of
+
+1210
+01:08:57.391 --> 01:09:01.030
+existing biomarkers. Imagine this trial that I showed you
+
+1211
+01:09:01.790 --> 01:09:05.570
+where EGFR mutations were predicted from pathology
+
+1212
+01:09:05.630 --> 01:09:09.210
+slides. Well, here you're measuring a known biomarker with a
+
+1213
+01:09:09.271 --> 01:09:13.080
+different method, with a different data type than you would usually do, and this
+
+1214
+01:09:13.110 --> 01:09:15.391
+needs a little bit more validation.
+
+1215
+01:09:15.431 --> 01:09:19.250
+Class C is novel biomarkers, where imagine you
+
+1216
+01:09:19.290 --> 01:09:23.250
+have clinical trial data where you have response of patients to
+
+1217
+01:09:23.290 --> 01:09:27.070
+a certain treatment, and you take the pathology slides, you use a foundation model
+
+1218
+01:09:27.080 --> 01:09:30.650
+to extract the features. You train a model on these features to predict the
+
+1219
+01:09:30.690 --> 01:09:33.630
+response, to predict, for example, PCR, to predict
+
+1220
+01:09:35.450 --> 01:09:39.190
+resist at first staging, right? Here you have a new
+
+1221
+01:09:39.230 --> 01:09:42.950
+biomarker, and this is the situation where you
+
+1222
+01:09:43.010 --> 01:09:46.410
+need most evidence, probably prospective evidence.
+
+1223
+01:09:46.510 --> 01:09:50.431
+So we are hoping that this guidance will help
+
+1224
+01:09:50.570 --> 01:09:50.891
+us
+
+1225
+01:09:52.510 --> 01:09:54.770
+take up these methods in clinical
+
+1226
+01:09:55.330 --> 01:09:59.290
+applications. What is next? I want to spend
+
+1227
+01:09:59.350 --> 01:10:03.300
+just the last two, three minutes on an outlook to conclude
+
+1228
+01:10:03.590 --> 01:10:07.550
+this session, and I'm showing again a timeline which is organized in a slightly
+
+1229
+01:10:07.610 --> 01:10:08.110
+different way.
+
+1230
+01:10:09.830 --> 01:10:13.310
+And just on the left-hand side is what I mentioned in the
+
+1231
+01:10:13.610 --> 01:10:14.650
+presentation so far.
+
+1232
+01:10:15.990 --> 01:10:19.550
+Applications of AI in oncology and in cancer
+
+1233
+01:10:19.630 --> 01:10:23.270
+research is in the easiest case, it's diagnostic
+
+1234
+01:10:23.310 --> 01:10:25.070
+AI systems, right? In the
+
+1235
+01:10:26.450 --> 01:10:29.930
+slightly more difficult case is predicting biomarkers
+
+1236
+01:10:29.990 --> 01:10:33.940
+from digital data. But what
+
+1237
+01:10:34.010 --> 01:10:37.810
+these two applications have in common is that you train one
+
+1238
+01:10:37.850 --> 01:10:41.590
+AI model for one task, right? You train one model on
+
+1239
+01:10:41.670 --> 01:10:45.640
+lung cancer slides to predict EGFR mutations, and the model can only
+
+1240
+01:10:45.750 --> 01:10:49.510
+do this. This is not a model that you can talk to and ask
+
+1241
+01:10:49.630 --> 01:10:49.870
+for
+
+1242
+01:10:51.070 --> 01:10:53.310
+tourism advice for San Diego, right?
+
+1243
+01:10:53.670 --> 01:10:57.270
+But on the right-hand side, you're seeing completely
+
+1244
+01:10:57.310 --> 01:11:00.790
+different applications, generalist AI models, and this is of course where the field
+
+1245
+01:11:00.830 --> 01:11:04.310
+is moving towards, because large language models have the
+
+1246
+01:11:04.590 --> 01:11:08.130
+incredible emerging properties
+
+1247
+01:11:08.210 --> 01:11:11.310
+that they have understood language, but also
+
+1248
+01:11:11.750 --> 01:11:15.310
+semantics and world knowledge, and you can basically ask
+
+1249
+01:11:15.350 --> 01:11:19.230
+them many things if you employ them in a
+
+1250
+01:11:19.270 --> 01:11:22.990
+chatbot. And if you go even beyond that, you can connect large
+
+1251
+01:11:23.050 --> 01:11:26.770
+language models to any tool, to any other software, for example, a
+
+1252
+01:11:26.790 --> 01:11:30.510
+browser, web browser or your computer or the command line
+
+1253
+01:11:30.570 --> 01:11:34.210
+interface. So large language models can conduct multi-step
+
+1254
+01:11:34.250 --> 01:11:37.650
+procedures. This is very
+
+1255
+01:11:37.690 --> 01:11:40.750
+powerful, and you can use it for many applications.
+
+1256
+01:11:41.210 --> 01:11:45.130
+One application that we use it for in my lab is
+
+1257
+01:11:45.190 --> 01:11:46.950
+for tumor board agents. In
+
+1258
+01:11:48.090 --> 01:11:51.720
+a tumor board for a patient, you have pathology slides,
+
+1259
+01:11:52.130 --> 01:11:55.310
+but you also have radiology images at multiple time points.
+
+1260
+01:11:55.350 --> 01:11:59.310
+You have the patient history, you have laboratory values, you have genomic data.
+
+1261
+01:11:59.850 --> 01:12:03.570
+So you could be tempted to train one giant
+
+1262
+01:12:03.650 --> 01:12:07.510
+multimodal model on all of these data to predict which treatment is the
+
+1263
+01:12:07.550 --> 01:12:10.850
+best. Don't do this, right? It's not feasible,
+
+1264
+01:12:11.270 --> 01:12:14.810
+because the problem is very complicated and very high
+
+1265
+01:12:14.850 --> 01:12:18.030
+dimensional. But you can solve this through an agent.
+
+1266
+01:12:18.080 --> 01:12:21.990
+If you use a large language model that understands the problem and has access
+
+1267
+01:12:22.050 --> 01:12:25.570
+to pathology image analysis tools, radiology image analysis tools,
+
+1268
+01:12:26.530 --> 01:12:29.450
+and these tools probably include foundation models, right?
+
+1269
+01:12:30.370 --> 01:12:34.250
+To literature databases, to PubMed, to the internet, whatever,
+
+1270
+01:12:34.350 --> 01:12:38.150
+to a calculator, then you can use
+
+1271
+01:12:38.190 --> 01:12:42.070
+this setup to solve complex oncology cases just
+
+1272
+01:12:42.110 --> 01:12:45.970
+like we do in a tumor board. And in fact, this is what we showed here for a
+
+1273
+01:12:46.030 --> 01:12:47.490
+set of cancer cases,
+
+1274
+01:12:48.490 --> 01:12:50.990
+benchmarking this against human oncologists.
+
+1275
+01:12:51.490 --> 01:12:53.690
+Nowadays, we even have to say human oncologists, right?
+
+1276
+01:12:53.770 --> 01:12:57.610
+So against oncologists, and it performed
+
+1277
+01:12:58.390 --> 01:13:01.610
+pretty well. And you can go one step further,
+
+1278
+01:13:02.270 --> 01:13:05.410
+because it's not just a tumor board that can
+
+1279
+01:13:05.490 --> 01:13:09.086
+be potentiallyAutomated by an agent
+
+1280
+01:13:09.186 --> 01:13:12.726
+system, it's basically everything in a hospital that
+
+1281
+01:13:12.806 --> 01:13:13.666
+happens
+
+1282
+01:13:14.846 --> 01:13:18.816
+through a human that uses a computer. And that's a lot, right?
+
+1283
+01:13:19.046 --> 01:13:22.666
+Actually, most of what we do in the hospital is a human using a computer,
+
+1284
+01:13:22.726 --> 01:13:26.566
+ordering a lab test, looking at a lab result, ordering imaging.
+
+1285
+01:13:26.966 --> 01:13:30.486
+So we built an electronic-- We basically took an electronic medical
+
+1286
+01:13:30.546 --> 01:13:34.506
+record environment, and we built an agent that can
+
+1287
+01:13:34.606 --> 01:13:38.506
+navigate this environment and can extract any information
+
+1288
+01:13:38.526 --> 01:13:41.506
+that it needs and can order any test that it needs.
+
+1289
+01:13:41.596 --> 01:13:45.506
+And then we can visualize the path that
+
+1290
+01:13:45.546 --> 01:13:49.126
+an agent, the diagnostic and therapy path that an agent
+
+1291
+01:13:49.206 --> 01:13:52.526
+takes when it's confronted with a certain patient and how it
+
+1292
+01:13:52.606 --> 01:13:56.506
+solves problems. For example, here, a patient that ultimately has a
+
+1293
+01:13:56.526 --> 01:14:00.466
+pulmonary embolism, and we again benchmarked that against
+
+1294
+01:14:00.546 --> 01:14:04.106
+many human doctors, and it performed quite well.
+
+1295
+01:14:04.166 --> 01:14:07.766
+And this is in press. So I think the
+
+1296
+01:14:07.846 --> 01:14:11.505
+future is, of course, use foundation models whenever you have complex
+
+1297
+01:14:11.566 --> 01:14:15.376
+data, but also use agents, and I think at next
+
+1298
+01:14:15.486 --> 01:14:17.986
+year's ACR, we will hear much more about this
+
+1299
+01:14:18.306 --> 01:14:21.346
+technology. With that, I want to end my talk.
+
+1300
+01:14:21.446 --> 01:14:23.766
+Thank you very much for staying here up until the very end.
+
+1301
+01:14:23.906 --> 01:14:27.846
+I want to say thank you to my research team, and now I think we have
+
+1302
+01:14:27.886 --> 01:14:30.666
+some time for a discussion and questions. Thank you very much.
+
+1303
+01:14:37.526 --> 01:14:40.046
+Maybe first, are there questions for Dr.
+
+1304
+01:14:40.226 --> 01:14:41.946
+Katter about his presentation?
+
+1305
+01:14:43.206 --> 01:14:43.706
+We share.
+
+1306
+01:14:44.806 --> 01:14:45.326
+Thank you.
+
+1307
+01:14:48.096 --> 01:14:48.786
+Dr. Kanter.
+
+1308
+01:14:48.846 --> 01:14:49.106
+Please.
+
+1309
+01:14:52.626 --> 01:14:54.686
+My name is Andre.
+
+1310
+01:14:56.546 --> 01:15:00.146
+It's a pleasure to be a listener on
+
+1311
+01:15:00.286 --> 01:15:04.266
+your conference room. Really interesting topic about
+
+1312
+01:15:04.326 --> 01:15:05.286
+AI and
+
+1313
+01:15:06.406 --> 01:15:09.086
+how they can
+
+1314
+01:15:10.406 --> 01:15:11.386
+help us with
+
+1315
+01:15:12.206 --> 01:15:15.326
+all of the stuff that's going on around with our health.
+
+1316
+01:15:17.426 --> 01:15:19.786
+It's not really a question, actually.
+
+1317
+01:15:20.386 --> 01:15:24.226
+It's a recommendation to have
+
+1318
+01:15:25.426 --> 01:15:29.046
+a meeting with Andre Dobry.
+
+1319
+01:15:29.086 --> 01:15:31.226
+D-O-B-R-Y.
+
+1320
+01:15:32.286 --> 01:15:35.726
+His lab in California
+
+1321
+01:15:35.986 --> 01:15:37.746
+making really good
+
+1322
+01:15:40.206 --> 01:15:41.806
+AI robots. They
+
+1323
+01:15:42.806 --> 01:15:45.246
+literally doing that by themself and-
+
+1324
+01:15:45.946 --> 01:15:47.106
+Thank you very much. Thank you.
+
+1325
+01:15:47.286 --> 01:15:47.526
+Sure.
+
+1326
+01:15:47.746 --> 01:15:48.006
+Thank you.
+
+1327
+01:15:49.326 --> 01:15:49.466
+Good.
+
+1328
+01:15:49.526 --> 01:15:52.966
+Jacob, great talk. I was wondering in terms of
+
+1329
+01:15:53.046 --> 01:15:56.946
+guardrails, so I think we face two main issues
+
+1330
+01:15:57.006 --> 01:16:00.065
+when we develop those agentic AI systems.
+
+1331
+01:16:00.206 --> 01:16:01.726
+One, we don't really know
+
+1332
+01:16:02.626 --> 01:16:05.086
+in a quantitative manner the performance of humans.
+
+1333
+01:16:05.306 --> 01:16:05.406
+Yeah.
+
+1334
+01:16:05.826 --> 01:16:09.526
+So it's hard to know where to put the bar in terms of AI performance.
+
+1335
+01:16:09.926 --> 01:16:13.746
+But also those agents, how do you put guardrails on
+
+1336
+01:16:13.806 --> 01:16:16.886
+them to make sure that there is human oversight?
+
+1337
+01:16:16.966 --> 01:16:19.306
+So given your experience, can you comment on that?
+
+1338
+01:16:20.946 --> 01:16:24.526
+Thank you, Ben. And this is an unsolved problem.
+
+1339
+01:16:24.586 --> 01:16:28.406
+This whole era of agents is just getting started, and we saw
+
+1340
+01:16:28.486 --> 01:16:32.406
+that if you naively put an agent and give it complete control over
+
+1341
+01:16:32.426 --> 01:16:35.186
+an electronic medical record, it does a good job.
+
+1342
+01:16:35.506 --> 01:16:39.006
+But please don't do this. Right? So it could
+
+1343
+01:16:39.566 --> 01:16:41.226
+go horribly wrong.
+
+1344
+01:16:42.526 --> 01:16:44.686
+It's feasible, but we have to put guardrails.
+
+1345
+01:16:45.826 --> 01:16:46.126
+When I
+
+1346
+01:16:46.946 --> 01:16:50.926
+saw these data, basically, I thought which guardrails actually exist
+
+1347
+01:16:50.986 --> 01:16:52.326
+for humans, right?
+
+1348
+01:16:53.146 --> 01:16:57.035
+But there's a lot of guardrails in place for humans, and
+
+1349
+01:16:57.066 --> 01:17:00.706
+we have to build a whole system including social
+
+1350
+01:17:00.726 --> 01:17:02.386
+control and including a lot of things,
+
+1351
+01:17:04.046 --> 01:17:07.535
+medical professional ethics, and we have to rebuild all this
+
+1352
+01:17:07.566 --> 01:17:11.346
+for agents. So until we figure this out, we cannot safely deploy this
+
+1353
+01:17:12.186 --> 01:17:13.126
+technology. Yeah.
+
+1354
+01:17:13.766 --> 01:17:17.166
+And are you going to benchmark humans the same way you benchmark the agents?
+
+1355
+01:17:17.546 --> 01:17:18.346
+Exactly. Right. So
+
+1356
+01:17:19.406 --> 01:17:22.666
+when we do this, we find out that humans also hallucinate
+
+1357
+01:17:23.926 --> 01:17:27.806
+quite a bit and do shortcut learning and all the things that
+
+1358
+01:17:27.866 --> 01:17:30.766
+can go wrong in agents, well, some of them can also go wrong in humans.
+
+1359
+01:17:30.806 --> 01:17:34.486
+So I think it's actually quite funny that having this
+
+1360
+01:17:34.546 --> 01:17:37.706
+technology also allows us to reflect
+
+1361
+01:17:38.166 --> 01:17:40.826
+again on what it means to be a human
+
+1362
+01:17:41.666 --> 01:17:43.206
+doctor or a human.
+
+1363
+01:17:45.506 --> 01:17:49.326
+Maybe before we go to the next question, Jacob, how does it work in
+
+1364
+01:17:49.966 --> 01:17:51.626
+the sense of regulatory approval?
+
+1365
+01:17:52.206 --> 01:17:55.866
+Because I know AI and regulatory approval is a tough one.
+
+1366
+01:17:56.066 --> 01:17:56.166
+Yeah.
+
+1367
+01:17:57.326 --> 01:18:00.706
+Especially in Europe, I think. But I can imagine for agents it's even more
+
+1368
+01:18:00.746 --> 01:18:01.206
+difficult.
+
+1369
+01:18:01.726 --> 01:18:02.186
+Yeah. So
+
+1370
+01:18:03.266 --> 01:18:07.226
+it's very important for everybody who uses this technology to be aware of
+
+1371
+01:18:07.966 --> 01:18:10.706
+some regulatory principles. But I think it's very easy.
+
+1372
+01:18:10.776 --> 01:18:14.606
+If you have an AI model that is trained on one type of data to solve
+
+1373
+01:18:14.706 --> 01:18:15.386
+one task,
+
+1374
+01:18:16.306 --> 01:18:20.166
+that is a medical device in the European Union and in the
+
+1375
+01:18:20.206 --> 01:18:23.726
+US, it probably requires FDA approval in the US.
+
+1376
+01:18:23.806 --> 01:18:27.736
+It probably requires a CE mark of some sorts in the European
+
+1377
+01:18:27.766 --> 01:18:29.906
+Union. But there's pathways for this, right?
+
+1378
+01:18:29.966 --> 01:18:32.926
+And many of these products have come to the market and have obtained this
+
+1379
+01:18:32.966 --> 01:18:36.486
+regulatory approval. So, this process is long and painful and
+
+1380
+01:18:37.046 --> 01:18:40.526
+costly, but it can be done, and people have done it, so it can be figured out.
+
+1381
+01:18:41.046 --> 01:18:43.866
+When it comes to chatbots, it's much more difficult, right?
+
+1382
+01:18:44.346 --> 01:18:48.126
+There's tons of chatbots on the market, and all the vendors basically say,
+
+1383
+01:18:48.186 --> 01:18:51.986
+I'm simplifying a bit here, right, but most of them say it's not a medical device
+
+1384
+01:18:52.006 --> 01:18:53.706
+because it does not provide decision support.
+
+1385
+01:18:53.736 --> 01:18:57.666
+It's just a literature research tool, so just use it at your own risk,
+
+1386
+01:18:57.726 --> 01:18:58.106
+right? So,
+
+1387
+01:18:59.566 --> 01:19:01.126
+there's a bit of a gray area.
+
+1388
+01:19:02.506 --> 01:19:06.176
+When it comes to agents, it's-I believe completely
+
+1389
+01:19:06.226 --> 01:19:09.646
+unsolved. An agent would
+
+1390
+01:19:09.706 --> 01:19:12.546
+probably be a medical device, but how would you
+
+1391
+01:19:13.606 --> 01:19:16.086
+obtain CE mark for an autonomous agent?
+
+1392
+01:19:17.486 --> 01:19:20.886
+I don't know. And I'm not sure that even the current
+
+1393
+01:19:20.946 --> 01:19:22.286
+regulatory frameworks
+
+1394
+01:19:23.246 --> 01:19:24.046
+are sufficient
+
+1395
+01:19:24.886 --> 01:19:28.786
+for this. So obviously, that's a conversation that we have to have
+
+1396
+01:19:29.686 --> 01:19:31.566
+with regulators and society.
+
+1397
+01:19:32.186 --> 01:19:34.446
+Yeah. Good point. Okay, next.
+
+1398
+01:19:35.226 --> 01:19:39.146
+Sure. I love this session. Thank you for the enthusiasm, especially because it
+
+1399
+01:19:39.186 --> 01:19:42.325
+was based on rigor as well, and not just the hype.
+
+1400
+01:19:43.706 --> 01:19:47.336
+I want to channel your comment about infrastructure because I couldn't agree more,
+
+1401
+01:19:47.386 --> 01:19:49.926
+and I face this kind of thing on a regular basis.
+
+1402
+01:19:50.586 --> 01:19:54.426
+I work for a research foundation that put infrastructure at the
+
+1403
+01:19:54.486 --> 01:19:58.396
+center of the portfolio of projects that it funds with this very
+
+1404
+01:19:58.446 --> 01:19:59.526
+intention in mind.
+
+1405
+01:20:00.366 --> 01:20:03.586
+I'd like to hear what your thoughts are on that and whether or not you're heartened
+
+1406
+01:20:03.666 --> 01:20:07.516
+by other developments like seeing this organization
+
+1407
+01:20:07.546 --> 01:20:10.526
+named Radial recently, which came out with a $500
+
+1408
+01:20:10.566 --> 01:20:11.666
+million
+
+1409
+01:20:12.986 --> 01:20:16.586
+campaign to actually do this unglamorous part of
+
+1410
+01:20:16.646 --> 01:20:20.466
+infrastructure so that science and AI, in a sense, could be done
+
+1411
+01:20:20.506 --> 01:20:20.746
+better.
+
+1412
+01:20:23.426 --> 01:20:24.106
+Yes. I
+
+1413
+01:20:25.726 --> 01:20:28.016
+would love to hear what Jeroen has to say about this.
+
+1414
+01:20:28.306 --> 01:20:31.706
+When you say $500 million, our European minds
+
+1415
+01:20:31.786 --> 01:20:35.526
+are exploding. So typically, we
+
+1416
+01:20:35.586 --> 01:20:37.946
+operate on a much smaller
+
+1417
+01:20:38.806 --> 01:20:42.686
+scale. But ultimately, I do believe, yes, we have
+
+1418
+01:20:42.726 --> 01:20:44.426
+to renovate our whole infrastructure.
+
+1419
+01:20:44.586 --> 01:20:46.506
+Huge investments are going to be needed for this.
+
+1420
+01:20:46.876 --> 01:20:50.846
+We have to justify such investments towards society, like why are we spending
+
+1421
+01:20:50.886 --> 01:20:53.186
+all this money for this infrastructure and not for other things?
+
+1422
+01:20:53.766 --> 01:20:57.546
+I think the potential benefits of these AI technologies
+
+1423
+01:20:57.766 --> 01:21:01.626
+justify this investment, but it's up to us to provide the
+
+1424
+01:21:01.666 --> 01:21:05.466
+empirical evidence for this and to show that this technology is actually
+
+1425
+01:21:05.566 --> 01:21:09.316
+useful. Therefore, we should make these investments because it provides,
+
+1426
+01:21:09.346 --> 01:21:12.506
+ultimately, a benefit. Jeroen, what do you think?
+
+1427
+01:21:12.546 --> 01:21:15.586
+Yeah. To me, it often feels like it's a catch-22 situation.
+
+1428
+01:21:15.886 --> 01:21:18.646
+What we see a lot is in many hospitals that
+
+1429
+01:21:19.826 --> 01:21:23.226
+people are interested in AI. They are not interested yet in
+
+1430
+01:21:23.266 --> 01:21:25.416
+investing until they really see the added value.
+
+1431
+01:21:25.826 --> 01:21:27.806
+You're only going to invest
+
+1432
+01:21:28.706 --> 01:21:30.566
+if you see proof that it's going to help you.
+
+1433
+01:21:31.456 --> 01:21:34.426
+The proof is not there because people are not really using it in daily practice.
+
+1434
+01:21:34.666 --> 01:21:38.306
+So it's a catch-22 where we want to start doing studies.
+
+1435
+01:21:38.346 --> 01:21:41.856
+And I think I fully agree, we need much more investments in
+
+1436
+01:21:41.906 --> 01:21:43.766
+infrastructure, but it is very difficult.
+
+1437
+01:21:45.406 --> 01:21:45.606
+Yeah.
+
+1438
+01:21:48.126 --> 01:21:51.466
+I also have a somewhat infrastructure-related question.
+
+1439
+01:21:52.586 --> 01:21:54.166
+I think the microphone is not working.
+
+1440
+01:21:54.966 --> 01:21:55.446
+Can you hear me?
+
+1441
+01:21:55.786 --> 01:21:55.966
+Yeah.
+
+1442
+01:21:56.046 --> 01:21:59.366
+Is that better? Okay. Also kind of infrastructure related.
+
+1443
+01:22:00.826 --> 01:22:04.726
+Dr. Lupka mentioned, not just needing more slides, but also
+
+1444
+01:22:04.746 --> 01:22:07.026
+needing more patients and,
+
+1445
+01:22:08.526 --> 01:22:12.006
+I guess, just more diverse training data.
+
+1446
+01:22:12.086 --> 01:22:16.066
+If you guys could just comment on federated learning, especially with patient
+
+1447
+01:22:16.106 --> 01:22:19.166
+data and medical data, and balancing
+
+1448
+01:22:19.986 --> 01:22:23.846
+having more data to train on and having it be decentralized, but then
+
+1449
+01:22:23.926 --> 01:22:27.866
+also having, I guess, higher risk in terms of data
+
+1450
+01:22:27.926 --> 01:22:29.026
+security and privacy.
+
+1451
+01:22:32.066 --> 01:22:35.126
+I'm not sure if I catch everything, but I heard federated learning.
+
+1452
+01:22:36.466 --> 01:22:39.646
+No, definitely. So having more data would be very helpful, and we have to work
+
+1453
+01:22:39.666 --> 01:22:43.446
+together if we want to have these general models apply to more patients, better
+
+1454
+01:22:43.526 --> 01:22:46.846
+performance. And federated learning can be a really good way to overcome all these
+
+1455
+01:22:46.886 --> 01:22:48.686
+barriers with the different data sharing.
+
+1456
+01:22:49.226 --> 01:22:52.095
+So I'm not sure if I'm touching to everything what your queries, but...
+
+1457
+01:22:52.206 --> 01:22:55.956
+In terms of data privacy and security, if you're dealing with medical data, if
+
+1458
+01:22:56.006 --> 01:22:59.306
+there are just, on a practical level, more concerns with
+
+1459
+01:22:59.546 --> 01:23:02.446
+federated learning over a more centralized approach.
+
+1460
+01:23:03.526 --> 01:23:04.506
+Yeah. Data privacy, it's
+
+1461
+01:23:06.466 --> 01:23:10.106
+very important, especially also with this model, sometimes you maybe can
+
+1462
+01:23:10.506 --> 01:23:13.346
+predict patient ancestry from the histology images.
+
+1463
+01:23:13.366 --> 01:23:16.926
+So we don't even know what the models are learning, and it can hurt the patient
+
+1464
+01:23:16.986 --> 01:23:20.966
+privacy in some way. So I think we need to invest
+
+1465
+01:23:21.005 --> 01:23:23.806
+better way for the privacy, for the federated learning.
+
+1466
+01:23:24.575 --> 01:23:28.506
+We're just learning how to work with this large data, and we probably have
+
+1467
+01:23:28.546 --> 01:23:32.486
+to rebuild everything, find the best way to handle it so it benefit people rather
+
+1468
+01:23:32.526 --> 01:23:33.746
+than cause harm.
+
+1469
+01:23:36.266 --> 01:23:37.806
+Maybe there is a question
+
+1470
+01:23:38.926 --> 01:23:39.646
+from the audience
+
+1471
+01:23:40.666 --> 01:23:42.846
+through the QR code. Maybe, Jana, you want to take that as well?
+
+1472
+01:23:43.666 --> 01:23:47.546
+So the question is: What's the current major obstacle to train these pathology
+
+1473
+01:23:47.626 --> 01:23:51.266
+foundation models? Are we short of data? What about data quality?
+
+1474
+01:23:52.226 --> 01:23:54.506
+So what do you see as the biggest hurdle?
+
+1475
+01:23:55.306 --> 01:23:58.576
+Yeah. So what we saw from the benchmarks, like what Jakob did and other groups,
+
+1476
+01:23:59.586 --> 01:24:02.206
+we kind of already reach a plateau in terms of number data.
+
+1477
+01:24:02.226 --> 01:24:05.566
+Like adding another million of data, it's probably not going to give us much more
+
+1478
+01:24:05.606 --> 01:24:05.986
+benefit.
+
+1479
+01:24:07.186 --> 01:24:11.076
+We saw that having better data in the sense more diverse diseases, more scanners,
+
+1480
+01:24:11.146 --> 01:24:14.566
+different patients helps. And I think the next step is to
+
+1481
+01:24:15.226 --> 01:24:17.286
+search for different ways to leverage the data.
+
+1482
+01:24:17.666 --> 01:24:20.766
+I think it's just so much we can do with the uni-modal self-supervised learning,
+
+1483
+01:24:20.846 --> 01:24:24.506
+where we try to play all this pretext task and maybe include additional
+
+1484
+01:24:24.546 --> 01:24:26.946
+information in the text, like as we try with the server.
+
+1485
+01:24:27.066 --> 01:24:30.186
+And there are probably better ways how we can leverage the data, and it's more on
+
+1486
+01:24:30.726 --> 01:24:34.626
+model design advances that we need, rather than scanning
+
+1487
+01:24:34.646 --> 01:24:36.666
+another million slides and so on.
+
+1488
+01:24:38.306 --> 01:24:38.926
+Mm-hmm.
+
+1489
+01:24:40.266 --> 01:24:42.886
+Okay. Next question. It's a bit hard to see.
+
+1490
+01:24:42.926 --> 01:24:43.226
+All right.
+
+1491
+01:24:44.246 --> 01:24:47.786
+Thank you. Good talk. Yi Shang Lee and postdoc from Dana-Farber.
+
+1492
+01:24:48.866 --> 01:24:51.646
+I do genetically engineered mouse model.
+
+1493
+01:24:52.226 --> 01:24:55.386
+I wonder if you could comment on the value or
+
+1494
+01:24:55.446 --> 01:24:59.066
+limitations of mouse model, which is
+
+1495
+01:24:59.106 --> 01:25:01.586
+autonomous
+
+1496
+01:25:02.586 --> 01:25:03.726
+model tumors,
+
+1497
+01:25:04.906 --> 01:25:07.266
+in training of the foundation models.
+
+1498
+01:25:08.486 --> 01:25:09.886
+How can we help with
+
+1499
+01:25:10.706 --> 01:25:11.586
+the training? Thank you.
+
+1500
+01:25:12.586 --> 01:25:13.166
+You want this one?
+
+1501
+01:25:16.676 --> 01:25:20.356
+Yeah. So the question is, I think, can we use data from mouse models as well for
+
+1502
+01:25:20.376 --> 01:25:21.176
+foundation models, right?
+
+1503
+01:25:22.576 --> 01:25:22.816
+Yes.
+
+1504
+01:25:23.136 --> 01:25:23.396
+Yeah.
+
+1505
+01:25:25.076 --> 01:25:26.096
+Yeah, I think it's a good question.
+
+1506
+01:25:26.176 --> 01:25:26.276
+I
+
+1507
+01:25:27.096 --> 01:25:29.235
+don't think there's a lot of study, to be honest, in that.
+
+1508
+01:25:29.916 --> 01:25:31.076
+But I could imagine that
+
+1509
+01:25:33.516 --> 01:25:37.036
+organs from mice are to some extent, of course, they resemble
+
+1510
+01:25:37.356 --> 01:25:41.306
+human organs as well. So I could imagine in your self-supervised learning,
+
+1511
+01:25:41.396 --> 01:25:45.316
+your pre-training, actually, this data could come in very handy, but I have
+
+1512
+01:25:45.356 --> 01:25:47.036
+no clue whether this was studied already.
+
+1513
+01:25:47.056 --> 01:25:50.636
+But I could imagine that tissue structures to some extent are the same, so they
+
+1514
+01:25:50.676 --> 01:25:52.486
+could actually add a lot of variability to that.
+
+1515
+01:25:53.226 --> 01:25:54.156
+I'm sure if you have any-
+
+1516
+01:25:54.356 --> 01:25:57.596
+I think an important point is that the magic of these
+
+1517
+01:25:57.616 --> 01:26:00.416
+technologies comes with the scale, right?
+
+1518
+01:26:00.476 --> 01:26:03.766
+These human pathology foundation models have been trained, as we saw in Jana's
+
+1519
+01:26:03.816 --> 01:26:06.696
+talk, with hundreds of thousands, millions of slides.
+
+1520
+01:26:06.816 --> 01:26:07.036
+And
+
+1521
+01:26:07.936 --> 01:26:10.976
+we have actually in the lab done some attempts for
+
+1522
+01:26:11.156 --> 01:26:13.766
+mouse-based studies of this sort,
+
+1523
+01:26:13.876 --> 01:26:17.396
+and what we found is that it's much easier to get the
+
+1524
+01:26:17.416 --> 01:26:21.176
+required patient numbers compared to the mouse numbers.
+
+1525
+01:26:21.396 --> 01:26:22.006
+That's
+
+1526
+01:26:22.996 --> 01:26:24.636
+just a very practical
+
+1527
+01:26:25.456 --> 01:26:28.576
+thing. And then the other thing is that ultimately, of course, the justification
+
+1528
+01:26:28.636 --> 01:26:32.456
+for all of this is to apply it for us as a clinical group,
+
+1529
+01:26:32.516 --> 01:26:36.316
+the motivation is to apply it in the clinics where we have then,
+
+1530
+01:26:39.676 --> 01:26:42.356
+of course, humans. But I think
+
+1531
+01:26:44.016 --> 01:26:47.456
+it would be possible by collecting and aggregating
+
+1532
+01:26:48.156 --> 01:26:52.116
+large data sets, even from pre-clinical models, to learn much more about
+
+1533
+01:26:52.156 --> 01:26:54.836
+these data sets and learn much more about the diseases
+
+1534
+01:26:55.736 --> 01:26:59.316
+that are represented there, and we should probably make
+
+1535
+01:26:59.696 --> 01:27:00.636
+such efforts.
+
+1536
+01:27:02.376 --> 01:27:06.056
+I like the questions a lot. Maybe one way to think about is we could
+
+1537
+01:27:06.236 --> 01:27:10.216
+use the animal models maybe to enhance the maybe rare diseases in the pre-training
+
+1538
+01:27:10.256 --> 01:27:13.076
+or use it to fine-tune the models for the rare diseases.
+
+1539
+01:27:13.116 --> 01:27:17.096
+Or in the terms of toxicology, like treatment response or
+
+1540
+01:27:18.036 --> 01:27:21.656
+for specific questions that you use in pharmacology, maybe for screening of the
+
+1541
+01:27:21.696 --> 01:27:23.996
+drugs. These are data we don't do on the patients, right?
+
+1542
+01:27:24.336 --> 01:27:27.676
+So this is where maybe animal models can enhance our cohorts and the models.
+
+1543
+01:27:28.876 --> 01:27:31.356
+Yeah, very interesting. So I work in small cell lung cancer.
+
+1544
+01:27:31.416 --> 01:27:35.246
+I saw you on your slides, small cell lung cancer is defined as rare, but
+
+1545
+01:27:35.396 --> 01:27:38.796
+I view small cell lung cancer gems, which I always see.
+
+1546
+01:27:38.896 --> 01:27:42.296
+So it will be very interesting to explore this.
+
+1547
+01:27:42.456 --> 01:27:43.556
+We can talk afterwards.
+
+1548
+01:27:44.036 --> 01:27:44.296
+Thank you.
+
+1549
+01:27:46.516 --> 01:27:50.096
+Hi, Scott Anderson from Leica Biosystems. Really good discussion.
+
+1550
+01:27:50.436 --> 01:27:51.256
+I was wondering how
+
+1551
+01:27:52.616 --> 01:27:56.276
+you guys perceive these foundational models playing a role when it comes
+
+1552
+01:27:56.316 --> 01:28:00.236
+to special IHC stains and computational pathology.
+
+1553
+01:28:02.476 --> 01:28:02.736
+What,
+
+1554
+01:28:05.176 --> 01:28:05.356
+please?
+
+1555
+01:28:05.376 --> 01:28:06.786
+Sorry, I didn't get that.
+
+1556
+01:28:06.836 --> 01:28:08.376
+Yeah, special stains, right?
+
+1557
+01:28:10.256 --> 01:28:10.415
+Yes.
+
+1558
+01:28:10.496 --> 01:28:14.256
+So the question is whether we can also include special stains
+
+1559
+01:28:14.456 --> 01:28:15.816
+different from, I guess, H&amp;E.
+
+1560
+01:28:16.416 --> 01:28:20.236
+Yes, but also from a workflow perspective, would you see
+
+1561
+01:28:20.536 --> 01:28:24.396
+in the future, these underlying models being
+
+1562
+01:28:24.776 --> 01:28:28.716
+supplemented by special stains and computational analysis
+
+1563
+01:28:28.776 --> 01:28:32.246
+of those special stains? We're thinking of a full digital
+
+1564
+01:28:32.336 --> 01:28:33.316
+workflow.
+
+1565
+01:28:33.376 --> 01:28:36.696
+Yeah, I think definitely. Of course, scoring of special stains is definitely
+
+1566
+01:28:36.716 --> 01:28:39.256
+something that you could do with AI in general, I think.
+
+1567
+01:28:40.036 --> 01:28:43.336
+And one of the use cases that we study a lot is also can we--
+
+1568
+01:28:43.996 --> 01:28:47.236
+For instance, immunochemistry, we order only in specific cases, right?
+
+1569
+01:28:47.316 --> 01:28:48.836
+We don't do it routinely for everything.
+
+1570
+01:28:49.936 --> 01:28:53.056
+So what you can also do is you can optimize your workflows by, for instance, having
+
+1571
+01:28:53.136 --> 01:28:56.796
+automated ordering of immunochemistry for specific
+
+1572
+01:28:56.836 --> 01:29:00.346
+cases. And of course, also the scoring of immunochemistry or other
+
+1573
+01:29:00.456 --> 01:29:04.156
+stainings can be done by AI in general, I think.
+
+1574
+01:29:04.316 --> 01:29:05.536
+It's a very good point, yeah.
+
+1575
+01:29:07.656 --> 01:29:11.476
+Yeah. So what we have-- Sorry. What we have seen is the
+
+1576
+01:29:11.536 --> 01:29:14.196
+more diverse your training data is, the better these models get.
+
+1577
+01:29:14.236 --> 01:29:17.866
+So if you can get your hands on very diverse special stains,
+
+1578
+01:29:17.936 --> 01:29:21.876
+then put them in the mix for the training data, and it will improve the performance
+
+1579
+01:29:22.416 --> 01:29:26.316
+as a rule of thumb, as we have seen. However, these foundation
+
+1580
+01:29:26.396 --> 01:29:29.776
+models are even very powerful outside of the domain they were trained on.
+
+1581
+01:29:29.836 --> 01:29:33.756
+So, for example, UNIPathology Foundation model from Faisal
+
+1582
+01:29:33.795 --> 01:29:36.406
+Mahmood's lab, which was trained on human H&amp;E
+
+1583
+01:29:37.416 --> 01:29:40.716
+was also used for plant pathology studies, right?
+
+1584
+01:29:40.756 --> 01:29:44.576
+And it works pretty well. So they encode very rich,
+
+1585
+01:29:44.936 --> 01:29:48.596
+useful features even beyond the immediate training domain.
+
+1586
+01:29:48.976 --> 01:29:52.896
+So if you have a bunch of plant pathology images
+
+1587
+01:29:53.376 --> 01:29:55.396
+or any
+
+1588
+01:29:56.336 --> 01:30:00.226
+special stains of human tissue, just try to use one of the foundation models,
+
+1589
+01:30:00.276 --> 01:30:02.536
+and you might be pleasantly surprised.
+
+1590
+01:30:04.416 --> 01:30:04.576
+So,
+
+1591
+01:30:05.616 --> 01:30:09.236
+for the sake of time, I'm afraid that if you have any more questions, please
+
+1592
+01:30:09.296 --> 01:30:13.136
+address us after the session, but we ran out of time, and I understand that we are
+
+1593
+01:30:13.176 --> 01:30:17.136
+not allowed to go over time. So please come up and discuss
+
+1594
+01:30:17.176 --> 01:30:18.956
+your questions if you're interested.
+
+1595
+01:30:19.856 --> 01:30:22.636
+I would like to thank everyone here for your attendance.
+
+1596
+01:30:22.676 --> 01:30:24.136
+It was a very informative session.
+
+1597
+01:30:24.216 --> 01:30:27.736
+I would like to thank my co-speakers, co-panelists,
+
+1598
+01:30:28.656 --> 01:30:30.496
+and well, enjoy the conference.

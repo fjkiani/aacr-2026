@@ -1,0 +1,320 @@
+[
+  {
+    "talk_id": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o::chambu::1",
+    "session_title": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o",
+    "talk_title": "Gapless But Not Global: Ancestry-Enriched Functional Sequence Missing from Human Reference Genomes",
+    "speaker": {
+      "name": "Naisha Chambu",
+      "affiliation": "Feinstein Institute for Medical Research",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "platform_technology",
+      "genomics",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HLA",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "not specified",
+        "genotype_or_key_features": "African ancestry-enriched contigs from asthma cohort (n\u2248910)"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The study aligns African ancestry-enriched contigs (~300 Mb) to gapless T2T-CHM13 and HPRC pangenome assemblies, revealing that many unmapped sequences map to centromeric, HLA, and CpG island regions, contain predicted coding and regulatory elements, and are transcriptionally active in normal and cancer RNA\u2011seq datasets, highlighting reference bias that can miss clinically relevant variants.",
+    "readouts": [
+      "RNA-seq",
+      "WGS",
+      "contig alignment metrics",
+      "gene set enrichment analysis"
+    ],
+    "key_findings": [
+      "40% of African ancestry-enriched contigs map nearly perfectly to T2T\u2011CHM13; ~80% map reasonably well.",
+      "94% of mapped contigs overlap centromeric or satellite repeat regions, with notable enrichment in the HLA locus.",
+      "Gene set enrichment shows over\u2011representation of MHC complex proteins and neuronal signaling genes.",
+      "92% of contigs align to at least one HPRC assembly, with significant enrichment to African and admixed American references.",
+      "10.5 Mb of non\u2011repeat sequence shows transcriptional activity in 1000\u202fGenomes cell lines, TCGA cancer cohorts, and Davis lab datasets.",
+      "Unmapped contigs (\u22481.5\u202fMb) contain predicted CpG islands, protein domains, and exhibit expression in breast cancer samples."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do the newly identified functional sequences impact somatic variant calling and neoantigen prediction in diverse patient cohorts?",
+      "What is the clinical relevance of the non\u2011repeat, transcriptionally active contigs for cancer risk and treatment response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "2018 African pangenome reference paper"
+      ],
+      "company_or_sponsor": [
+        "McMillen Center for the Study of the Non\u2011Coding Cancer Genome"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o::jordan::2",
+    "session_title": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o",
+    "talk_title": "Epigenetics, Ancestry, and Cancer Disparity: Nature and Nurture Interplay",
+    "speaker": {
+      "name": "King Jordan",
+      "affiliation": "Georgia Institute of Technology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "head and neck squamous cell carcinoma",
+      "kidney cancer",
+      "skin cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "epigenetics",
+      "biomarker_development",
+      "clinical_trial",
+      "translational",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PAQR6",
+        "alteration": "",
+        "pathway": "progesterone_signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry breast cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PAQR6 expression",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "Upregulated in African ancestry breast cancer; associated with higher mortality (HR significant)."
+      },
+      {
+        "name": "PAQR6 promoter methylation",
+        "type": "pharmacodynamic",
+        "assay": "DNA methylation array",
+        "finding": "Hypomethylation correlates with increased PAQR6 expression and worse survival in African ancestry patients."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA pan\u2011cancer cohort",
+        "genotype_or_key_features": "33 tumor types, ~11,000 patients, self\u2011identified race/ethnicity and genetically inferred ancestry"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "hazard ratio",
+        "value": "HR 1.45",
+        "confidence_interval": "95% CI 1.12\u20111.88",
+        "n": "n=5,200 breast cancer patients",
+        "population": "African ancestry vs European ancestry breast cancer",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Genetic ancestry correlates more strongly than self\u2011identified race with breast cancer survival disparities; differential expression of PAQR6, driven by promoter hypomethylation in African ancestry tumors, mediates increased mortality, illustrating that epigenetic regulation links ancestry\u2011related environmental exposures to clinical outcomes.",
+    "readouts": [
+      "RNA-seq",
+      "DNA methylation array",
+      "Cox proportional hazards modeling",
+      "PCA of ancestry"
+    ],
+    "key_findings": [
+      "Genetic ancestry provides higher resolution than self\u2011identified race for modeling survival disparities in four cancers (breast, HNSCC, kidney, skin).",
+      "Somatic mutation profiles showed no ancestry\u2011specific driver mutations or survival interactions.",
+      "Differential expression analysis identified seven genes whose ancestry\u2011specific expression interacts with survival; five are in breast cancer, including PAQR6.",
+      "PAQR6 is up\u2011regulated in African ancestry breast tumors and its promoter is hypomethylated, linking epigenetic activation to poorer outcomes.",
+      "Multivariable Cox models using continuous ancestry metrics detect more significant survival associations than categorical self\u2011identified race."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can targeting PAQR6 or its downstream progesterone signaling mitigate ancestry\u2011linked survival disparities?",
+      "What specific environmental exposures drive the observed hypomethylation in African ancestry patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Jordan et al. 2024 Nat Commun"
+      ],
+      "company_or_sponsor": [
+        "National Institute on Minority Health and Health Disparities"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o::yates::3",
+    "session_title": "minorities-in-cancer-research-scientific-symposium-ancestry-informed-precision-o",
+    "talk_title": "Translating Genomic Equity: Infrastructure for Global Precision Oncology",
+    "speaker": {
+      "name": "Clayton Yates",
+      "affiliation": "Johns Hopkins School of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "single_cell",
+      "AI_ML",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TNFRSF9",
+        "alteration": "",
+        "pathway": "immune_co-stimulation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry prostate cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PTEN",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry prostate cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TNFRSF9 expression signature",
+        "type": "predictive",
+        "assay": "serum proteomics (Olink)",
+        "finding": "Predicts lethal prostate cancer in African ancestry patients with 78.2% accuracy."
+      },
+      {
+        "name": "PTEN loss signature",
+        "type": "predictive",
+        "assay": "serum proteomics (Olink)",
+        "finding": "Combined with NCCN risk score improves prediction to 90% accuracy for African ancestry patients."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NCI Maryland Cohort",
+        "genotype_or_key_features": "\u2248185 prostate cancer patients, high vs low African ancestry, multi\u2011omics (exposomics, GWAS, proteomics, scRNA\u2011seq, spatial transcriptomics)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "prediction accuracy",
+        "value": "78.2%",
+        "confidence_interval": "",
+        "n": "n=150 African ancestry patients",
+        "population": "prostate cancer, treatment\u2011na\u00efve",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "combined model accuracy",
+        "value": "90%",
+        "confidence_interval": "",
+        "n": "n=150 African ancestry patients",
+        "population": "prostate cancer, treatment\u2011na\u00efve",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Integrating ancestry\u2011informed serum proteomics, single\u2011cell immune profiling, and spatial transcriptomics reveals an inflammation\u2011driven, myeloid\u2011rich tumor microenvironment in African ancestry prostate cancers; a TNFRSF9/PTEN signature predicts lethal disease, and deep\u2011learning pathology (CODA) links histologic patterns to immune infiltration, enabling ancestry\u2011specific risk stratification.",
+    "readouts": [
+      "Olink proteomics",
+      "scRNA\u2011seq",
+      "single\u2011cell ATAC\u2011seq",
+      "CIBERSORT deconvolution",
+      "Visium spatial transcriptomics",
+      "deep learning H&E analysis (CODA)",
+      "Cox regression"
+    ],
+    "key_findings": [
+      "Serum cytokine profiling shows elevated CXCL1, CXCL5, and macrophage recruitment proteins in African ancestry individuals.",
+      "A two\u2011gene signature (TNFRSF9, PTEN) predicts lethal prostate cancer in African ancestry patients with 78.2% accuracy; combined with NCCN risk score reaches 90% accuracy.",
+      "Neighborhood deprivation index (NDI) correlates with heightened inflammatory cytokines, linking social determinants to molecular risk.",
+      "Single\u2011cell PBMC analysis identifies expanded CD16+ monocytes and exhausted CD8+ TEM cells (LAG\u20113+) in African ancestry subjects.",
+      "Tumor deconvolution and spatial profiling reveal increased myeloid\u2011derived suppressor cells and M1/M2 macrophage polarization in African ancestry tumors.",
+      "Deep\u2011learning model (CODA) accurately maps immune cell infiltration on H&E, showing higher inflammatory cell density in African ancestry prostate tumors."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Exhausted CD8+ TEM cells co\u2011express LAG\u20113, suggesting potential resistance to checkpoint blockade.",
+      "Chronic inflammation may drive M2 polarization, creating an immunosuppressive niche despite overall immune infiltration."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "LAG\u20113 inhibitor",
+        "rationale": "Target exhausted CD8+ T cells prevalent in African ancestry tumors",
+        "phenotype": "Potentially restores cytotoxic activity and improves survival",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "CXCR2 antagonist",
+        "rationale": "Blocks CXCL1/CXCL5 mediated neutrophil recruitment",
+        "phenotype": "Reduces pro\u2011tumor inflammation in high\u2011NDI patients",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How does chronic environmental inflammation translate into epigenetic reprogramming of immune cells in African ancestry patients?",
+      "Can integrating dietary and exposomic data improve the predictive power of the ancestry\u2011specific signatures?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Yates et al. 2024 Nat Med"
+      ],
+      "company_or_sponsor": [
+        "NCI",
+        "Johns Hopkins"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

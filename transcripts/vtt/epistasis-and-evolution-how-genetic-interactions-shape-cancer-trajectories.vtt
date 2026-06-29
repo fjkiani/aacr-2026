@@ -1,0 +1,6661 @@
+WEBVTT
+
+1
+00:00:00.060 --> 00:00:03.690
+Hello, and welcome to the educational session on epistasis and
+
+2
+00:00:03.740 --> 00:00:07.620
+evolution, how genetic interactions shape cancer trajectories.
+
+3
+00:00:07.760 --> 00:00:10.000
+I'm really pleased to see everyone here today.
+
+4
+00:00:10.820 --> 00:00:13.660
+We have a good lineup of speakers to talk about the topic.
+
+5
+00:00:14.620 --> 00:00:17.500
+I just want to remind everyone about the way that this is scheduled.
+
+6
+00:00:17.540 --> 00:00:21.360
+We're going to each have 20 minutes to talk for the
+
+7
+00:00:21.440 --> 00:00:23.700
+speakers with five minutes for questions afterwards.
+
+8
+00:00:23.720 --> 00:00:27.570
+So please do ask your questions in the five minutes, but if you're thinking about a
+
+9
+00:00:27.600 --> 00:00:31.500
+complex question or a simple question, maybe the simple questions during the
+
+10
+00:00:31.580 --> 00:00:34.780
+five minutes afterward, because we're going to have a panel discussion at the end.
+
+11
+00:00:34.880 --> 00:00:38.660
+So if it's a broader, more theoretical, longer question, you may want to
+
+12
+00:00:38.680 --> 00:00:42.460
+reserve that for the panel discussion at the end of the session, okay?
+
+13
+00:00:42.960 --> 00:00:44.500
+Thanks very much again for your attention here.
+
+14
+00:00:45.200 --> 00:00:47.530
+I'm just going to move right along then
+
+15
+00:00:48.600 --> 00:00:50.080
+to our first speaker,
+
+16
+00:00:51.140 --> 00:00:51.880
+Jaime Aranzo,
+
+17
+00:00:52.840 --> 00:00:56.120
+who has done some excellent work on epistasis and evolution and will be
+
+18
+00:00:56.160 --> 00:00:58.740
+explaining some of that to you today.
+
+19
+00:01:00.360 --> 00:01:00.879
+Come on up, Jaime.
+
+20
+00:01:01.680 --> 00:01:02.360
+Welcome him, please.
+
+21
+00:01:14.840 --> 00:01:18.520
+All right. So good morning, and thank you for the
+
+22
+00:01:18.540 --> 00:01:20.960
+introduction and for putting together this session.
+
+23
+00:01:22.400 --> 00:01:26.340
+Today, I'm going to talk about genetic interactions in cancer, how to detect
+
+24
+00:01:26.380 --> 00:01:28.480
+them, how to model them, and why we should care.
+
+25
+00:01:30.840 --> 00:01:34.320
+As you probably know, cancer is an evolutionary process that happens
+
+26
+00:01:34.380 --> 00:01:38.000
+within our bodies and during our lifetime.
+
+27
+00:01:38.040 --> 00:01:39.880
+The process starts when a cell
+
+28
+00:01:40.860 --> 00:01:44.460
+acquires a mutation that provides it a fitness advantage
+
+29
+00:01:44.540 --> 00:01:48.360
+over the adjacent cells. So the cell is going to
+
+30
+00:01:48.380 --> 00:01:51.860
+proliferate, it's going to become locally abundant, and it's going to establish a
+
+31
+00:01:51.880 --> 00:01:53.380
+population of cells with a mutation.
+
+32
+00:01:54.320 --> 00:01:57.980
+Okay, the population can accumulate further mutations, and sometimes in the end,
+
+33
+00:01:58.020 --> 00:02:00.640
+that eventually may end up leading to cancer.
+
+34
+00:02:02.180 --> 00:02:05.900
+These mutations that promote cancer progression are called drivers,
+
+35
+00:02:06.800 --> 00:02:10.000
+and they tend to occur in specific genes that we call cancer genes.
+
+36
+00:02:11.300 --> 00:02:12.000
+An important
+
+37
+00:02:12.860 --> 00:02:16.080
+detail is that driver mutations are a minority.
+
+38
+00:02:16.380 --> 00:02:19.900
+So most of the mutations are neutral or even slightly
+
+39
+00:02:19.940 --> 00:02:22.600
+deleterious from the perspective of tumor progression.
+
+40
+00:02:23.360 --> 00:02:24.900
+We call those passengers.
+
+41
+00:02:27.180 --> 00:02:29.080
+So I probably don't need to convince you that
+
+42
+00:02:30.080 --> 00:02:32.840
+identifying and quantifying drivers is relevant.
+
+43
+00:02:33.730 --> 00:02:37.000
+They're going to give us information about the genetic basis for cancer,
+
+44
+00:02:37.740 --> 00:02:41.540
+and they can also help us identify potential therapeutical targets.
+
+45
+00:02:42.260 --> 00:02:44.080
+But it is a challenging task,
+
+46
+00:02:44.960 --> 00:02:46.660
+mostly because they are the minority.
+
+47
+00:02:48.540 --> 00:02:50.560
+So how can we infer driver mutations?
+
+48
+00:02:51.280 --> 00:02:53.520
+There are several approaches to that.
+
+49
+00:02:53.560 --> 00:02:56.440
+The one I'm going to present is, I like it especially because it
+
+50
+00:02:56.500 --> 00:02:59.829
+uses methods and ideas from evolutionary genetics.
+
+51
+00:03:00.700 --> 00:03:04.420
+So the idea is that we start from a very large collection of cancer sequencing data
+
+52
+00:03:04.880 --> 00:03:07.680
+for the cancer type of interest.
+
+53
+00:03:09.040 --> 00:03:12.860
+From that collection, we are going to extract synonymous mutations, and we are
+
+54
+00:03:12.900 --> 00:03:15.000
+going to use those mutations to
+
+55
+00:03:15.800 --> 00:03:19.140
+build a mathematical model, a null model of
+
+56
+00:03:19.460 --> 00:03:23.000
+mutations. So with that model, with that statistical model, we
+
+57
+00:03:23.040 --> 00:03:26.780
+can estimate the expected number of
+
+58
+00:03:26.800 --> 00:03:30.390
+mutations that we will see in a tumor in the absence of
+
+59
+00:03:30.440 --> 00:03:33.180
+selection. And that's why we're using synonymous mutations.
+
+60
+00:03:33.240 --> 00:03:36.740
+We assume that they are silent, and because of that, they are not subject to
+
+61
+00:03:36.780 --> 00:03:37.200
+selection.
+
+62
+00:03:38.460 --> 00:03:42.380
+Now, we can also estimate the number of non-synonymous mutations that we would
+
+63
+00:03:42.400 --> 00:03:44.520
+expect in the absence of selection.
+
+64
+00:03:45.060 --> 00:03:46.920
+And then what we do is to compare that number
+
+65
+00:03:48.040 --> 00:03:51.980
+with the observed number of non-synonymous substitutions or mutations in
+
+66
+00:03:52.020 --> 00:03:52.380
+general.
+
+67
+00:03:53.360 --> 00:03:55.000
+And then we calculate the difference,
+
+68
+00:03:55.800 --> 00:03:59.720
+and the difference is equal to the number of mutations that have reached detectable
+
+69
+00:03:59.760 --> 00:04:01.980
+frequencies in our sample because of selection.
+
+70
+00:04:02.920 --> 00:04:04.460
+And within our evolutionary framework,
+
+71
+00:04:05.760 --> 00:04:08.800
+mutations subject to positive selection are the driver mutations.
+
+72
+00:04:09.120 --> 00:04:09.340
+So we
+
+73
+00:04:11.180 --> 00:04:13.940
+can not only say if there are driver mutations in a gene or not, we can actually
+
+74
+00:04:14.080 --> 00:04:17.120
+quantify how many or how often we find them per sample.
+
+75
+00:04:18.140 --> 00:04:21.760
+This is implemented in a software called the NDSCV that was developed by Iñigo
+
+76
+00:04:21.800 --> 00:04:24.420
+Martín-Correa from Sanger Institute. So this is not our work.
+
+77
+00:04:28.040 --> 00:04:28.200
+But
+
+78
+00:04:29.560 --> 00:04:32.180
+also, you probably know driver mutations do not act alone.
+
+79
+00:04:32.540 --> 00:04:36.220
+Okay, so we have the drivers, but we know that often we need more than one
+
+80
+00:04:36.260 --> 00:04:40.040
+driver to induce cancer, and actually, very often, drivers work
+
+81
+00:04:40.080 --> 00:04:42.480
+together. This is a classical example, MYC and K-RAS.
+
+82
+00:04:43.060 --> 00:04:45.580
+So if both of them are together, they can promote tumors.
+
+83
+00:04:45.840 --> 00:04:47.780
+If we only have one, normally nothing happens.
+
+84
+00:04:48.440 --> 00:04:52.420
+And that's a classical example of genetic epistasis in cancer.
+
+85
+00:04:53.260 --> 00:04:55.140
+So the idea of epistasis is that the effect of
+
+86
+00:04:55.940 --> 00:04:59.740
+a mutation depends on what other mutations are present in a
+
+87
+00:04:59.780 --> 00:05:00.060
+cell.
+
+88
+00:05:01.380 --> 00:05:05.120
+We can formalize this mathematically. I'm going to show it more graphically.
+
+89
+00:05:05.960 --> 00:05:09.420
+So this will be the idea. Imagine that we have two genes, gene A and gene B, both
+
+90
+00:05:09.460 --> 00:05:13.400
+are cancer genes. And then we look at what's the tumorigenic potential
+
+91
+00:05:13.420 --> 00:05:16.600
+of mutations in gene A, this one here. Can you see there?
+
+92
+00:05:17.380 --> 00:05:21.040
+Yeah. So if there are only genes in this particular example, if there are mutations
+
+93
+00:05:21.050 --> 00:05:24.520
+in gene A, nothing happens. The tumorigenic potential doesn't increase.
+
+94
+00:05:24.840 --> 00:05:28.560
+But if we have mutations in A and B, then the cell becomes very tumorigenic.
+
+95
+00:05:29.220 --> 00:05:32.440
+So the effect of this mutation in A depends on whether we have mutations in B or
+
+96
+00:05:32.500 --> 00:05:32.700
+not.
+
+97
+00:05:33.860 --> 00:05:37.700
+We call this positive epistasis, and in terms of selection, what we
+
+98
+00:05:37.740 --> 00:05:41.660
+would find is that selection for mutations in A only happens if
+
+99
+00:05:41.720 --> 00:05:44.960
+there are also selections in B. We have conditional selection.
+
+100
+00:05:46.220 --> 00:05:49.740
+The same for negative epistasis. In this case, mutations in A are tumorigenic,
+
+101
+00:05:49.840 --> 00:05:51.440
+but if there are also mutations in B,
+
+102
+00:05:52.370 --> 00:05:53.520
+it doesn't work so well for the cell.
+
+103
+00:05:54.280 --> 00:05:57.380
+That's negative epistasis, and in terms of selection, we will see that
+
+104
+00:05:57.920 --> 00:06:01.640
+selection for drivers in gene A is conditional to having also
+
+105
+00:06:01.680 --> 00:06:05.516
+drivers in gene BAnd just as a note,
+
+106
+00:06:05.936 --> 00:06:07.936
+synthetic lethality will be an extreme case of this.
+
+107
+00:06:07.996 --> 00:06:10.236
+It's when we have double mutation, it's lethal for the tumor.
+
+108
+00:06:12.116 --> 00:06:13.316
+So now we have this
+
+109
+00:06:14.196 --> 00:06:18.106
+mathematical theory of how epistasis relates to conditional selection, we can
+
+110
+00:06:18.156 --> 00:06:22.116
+actually design an algorithm to quantify epistasis.
+
+111
+00:06:22.776 --> 00:06:26.516
+It is the following. We start again with a large data set of
+
+112
+00:06:26.556 --> 00:06:30.396
+cancer sequences. We are using The Cancer Genome Atlas.
+
+113
+00:06:30.456 --> 00:06:34.196
+And then what we're going to do is to stratify our data set in two groups.
+
+114
+00:06:34.976 --> 00:06:38.936
+One that has mutations in a given gene, we call it the split gene, will be B in the
+
+115
+00:06:39.036 --> 00:06:39.736
+previous example.
+
+116
+00:06:40.576 --> 00:06:44.095
+And then for each group, we are going to estimate selection,
+
+117
+00:06:45.356 --> 00:06:48.136
+using the strategy that I presented before, the NDSCV.
+
+118
+00:06:49.836 --> 00:06:53.146
+And we apply that to a query gene, the gene A in the previous example.
+
+119
+00:06:53.776 --> 00:06:56.056
+And then we compare the number of drivers
+
+120
+00:06:56.896 --> 00:06:57.676
+in both groups.
+
+121
+00:06:58.516 --> 00:07:02.076
+Okay? If that difference is positive, it means that there is positive epistasis
+
+122
+00:07:02.116 --> 00:07:06.016
+between mutations in genes A and B. There is synergy between those two genes.
+
+123
+00:07:07.136 --> 00:07:10.716
+And if the difference is negative, it means that there is negative epistasis, so
+
+124
+00:07:10.756 --> 00:07:12.736
+there is interference between those two genes.
+
+125
+00:07:13.836 --> 00:07:17.716
+We put together this algorithm in an R package called cosalliance that you
+
+126
+00:07:17.756 --> 00:07:21.646
+can find in GitHub. And there is also, we published a tutorial, and
+
+127
+00:07:21.696 --> 00:07:24.936
+if you want to use it and have difficulties, you can feel free to contact me.
+
+128
+00:07:26.176 --> 00:07:26.336
+So
+
+129
+00:07:28.376 --> 00:07:32.296
+let's put this into practice, and let's see what we can learn about epistasis in
+
+130
+00:07:32.336 --> 00:07:32.696
+cancer.
+
+131
+00:07:34.296 --> 00:07:38.276
+One of the things what we found is that positive and negative epistasis is quite
+
+132
+00:07:38.316 --> 00:07:42.016
+abundant. And actually, positive epistasis is more frequent than
+
+133
+00:07:42.036 --> 00:07:43.896
+negative epistasis. We see a lot of synergy.
+
+134
+00:07:45.256 --> 00:07:48.936
+Also, when we compare among different cancer types, we see that there is some
+
+135
+00:07:48.956 --> 00:07:52.916
+variability, but in general, between one-quarter and one-half of
+
+136
+00:07:52.976 --> 00:07:56.396
+driver mutations are affected by positive
+
+137
+00:07:56.436 --> 00:08:00.426
+epistasis. So this is important, qualitatively and
+
+138
+00:08:00.496 --> 00:08:01.236
+quantitatively.
+
+139
+00:08:02.636 --> 00:08:04.616
+But we can go a bit farther than that.
+
+140
+00:08:05.416 --> 00:08:09.016
+We can build epistasis networks. So I'm going to describe what it is.
+
+141
+00:08:09.736 --> 00:08:12.555
+Here, each circle will represent a cancer gene.
+
+142
+00:08:13.436 --> 00:08:17.196
+The size is proportional to how often that cancer gene has driver
+
+143
+00:08:17.216 --> 00:08:19.036
+mutations in a particular cancer type,
+
+144
+00:08:20.036 --> 00:08:23.956
+and the arrows show if there is positive, green, or negative, purple,
+
+145
+00:08:24.336 --> 00:08:24.996
+epistasis.
+
+146
+00:08:26.696 --> 00:08:30.656
+This may remind you of analysis of co-occurrence and mutual
+
+147
+00:08:30.696 --> 00:08:34.437
+exclusivity in cancer, and that's because it has something to do with
+
+148
+00:08:34.516 --> 00:08:38.427
+that. There is a difference. We are building these networks using
+
+149
+00:08:38.456 --> 00:08:42.236
+this idea of conditional selection, and that helps us control
+
+150
+00:08:42.297 --> 00:08:46.096
+for confounding variables like mutational load, difference in
+
+151
+00:08:46.116 --> 00:08:49.976
+mutational profiles, and we can also identify asymmetric relationships.
+
+152
+00:08:50.816 --> 00:08:51.916
+I will talk about that later.
+
+153
+00:08:53.076 --> 00:08:56.196
+Also, something that I want to point out in this figure, this is quite
+
+154
+00:08:56.216 --> 00:09:00.136
+representative, is that these networks typically are something that we call sign
+
+155
+00:09:00.176 --> 00:09:03.716
+modular. So you can identify modules like these three genes here,
+
+156
+00:09:04.696 --> 00:09:08.536
+or these four genes here, of genes that are synergistically with
+
+157
+00:09:08.556 --> 00:09:08.976
+each other,
+
+158
+00:09:10.576 --> 00:09:13.756
+and they are antagonistic with the genes from different modules.
+
+159
+00:09:14.536 --> 00:09:16.736
+And that has interesting implications.
+
+160
+00:09:17.836 --> 00:09:19.056
+So this is as a cartoon.
+
+161
+00:09:19.936 --> 00:09:23.716
+In a real example, this will be the network for low-grade glioma, and I
+
+162
+00:09:23.836 --> 00:09:27.376
+will show you these modules that I just described. Here, we have three genes.
+
+163
+00:09:27.856 --> 00:09:30.116
+They are all connected by positive interactions.
+
+164
+00:09:31.576 --> 00:09:35.316
+Then we have two genes here, will be a second module, third module
+
+165
+00:09:35.376 --> 00:09:38.476
+here, and then four and five are two isolated genes.
+
+166
+00:09:39.476 --> 00:09:42.616
+The idea of this modular structure is that,
+
+167
+00:09:43.736 --> 00:09:47.656
+once you have mutations in a given module, selection is going to promote
+
+168
+00:09:48.836 --> 00:09:51.596
+other mutations in the same module, and it's going to go against mutations in
+
+169
+00:09:51.616 --> 00:09:55.156
+different modules. So if you look at a particular tumor in a particular patient,
+
+170
+00:09:55.496 --> 00:09:58.956
+you will typically find mutations only in one of these modules of the network.
+
+171
+00:09:59.896 --> 00:10:03.716
+And because of that, we can classify a tumor based on which genes of the
+
+172
+00:10:03.736 --> 00:10:06.976
+epistasis network are being active or have mutated.
+
+173
+00:10:08.076 --> 00:10:10.776
+Once we have that, we can, for example, compare the survival.
+
+174
+00:10:11.556 --> 00:10:15.486
+This is the data for this particular tumor, and we see that different modules of
+
+175
+00:10:15.516 --> 00:10:18.736
+the epistasis network are associated with significantly different survival.
+
+176
+00:10:19.516 --> 00:10:23.236
+So this is helpful because it tells us that it's not just individual genes.
+
+177
+00:10:23.456 --> 00:10:27.436
+We can use sets of genes to make better predictions about patient survival.
+
+178
+00:10:28.356 --> 00:10:31.936
+First message to take home, mutational profiles associated with network
+
+179
+00:10:31.996 --> 00:10:34.156
+modules are informative of patient survival.
+
+180
+00:10:37.716 --> 00:10:41.616
+We can go a step further. We can look at other tumors, and we can identify
+
+181
+00:10:41.636 --> 00:10:43.556
+these modules and see what else can we learn.
+
+182
+00:10:44.176 --> 00:10:44.536
+So here,
+
+183
+00:10:45.376 --> 00:10:49.356
+I want to point out something that came out to-- we realized when we were
+
+184
+00:10:49.376 --> 00:10:53.096
+looking at these networks, is that the modules of the network typically have a
+
+185
+00:10:53.116 --> 00:10:56.976
+correspondence with genes that are associated with specific
+
+186
+00:10:57.276 --> 00:11:00.596
+molecular subtypes or well-characterized clinical subtypes of tumor.
+
+187
+00:11:01.096 --> 00:11:04.376
+For example, for endometrial cancer on the left, we have this module here.
+
+188
+00:11:04.796 --> 00:11:07.676
+If we look at the genes in that module, those are the genes that are typically
+
+189
+00:11:07.756 --> 00:11:11.216
+mutated in endometrioid type 1 endometrial cancers.
+
+190
+00:11:12.576 --> 00:11:16.116
+These other two genes are the typical markers of copy number high
+
+191
+00:11:16.396 --> 00:11:19.776
+subtype. And for colorectal cancer, we have the same.
+
+192
+00:11:19.816 --> 00:11:23.736
+This will be the module associated with a canonical pathway to colorectal cancer.
+
+193
+00:11:24.746 --> 00:11:26.116
+This other module is associated with
+
+194
+00:11:27.376 --> 00:11:28.956
+consensus molecular subtype 1.
+
+195
+00:11:30.456 --> 00:11:34.256
+So there seems to be this association, and now when we try to zoom out
+
+196
+00:11:34.436 --> 00:11:38.216
+and go into some more conceptual question, is if you think of tumors
+
+197
+00:11:38.396 --> 00:11:42.036
+in different patients and you think of them as evolutionary processes,
+
+198
+00:11:42.636 --> 00:11:44.516
+they are completely independent processes.
+
+199
+00:11:44.696 --> 00:11:48.116
+So a tumor in a person and a different person, those have happened
+
+200
+00:11:48.336 --> 00:11:51.636
+independently. Mutations have been accumulated independently.
+
+201
+00:11:51.656 --> 00:11:54.036
+Those are completely independent evolutionary
+
+202
+00:11:55.856 --> 00:11:59.436
+trajectories. However, the fact that we can
+
+203
+00:11:59.476 --> 00:12:02.936
+define clinical and molecular subtypes means that they actually
+
+204
+00:12:02.976 --> 00:12:06.576
+converge towards some specific phenotypes.So for an
+
+205
+00:12:06.616 --> 00:12:07.776
+evolutionary biologist like me,
+
+206
+00:12:09.176 --> 00:12:12.496
+that's quite interesting because that's an example of evolutionary
+
+207
+00:12:12.516 --> 00:12:16.166
+convergence. We see independent processes leading to the same
+
+208
+00:12:16.236 --> 00:12:16.656
+outcomes.
+
+209
+00:12:17.616 --> 00:12:20.376
+And the formal question here is: why does it happen?
+
+210
+00:12:20.656 --> 00:12:22.956
+What is driving this evolutionary convergence of cancer?
+
+211
+00:12:23.956 --> 00:12:27.016
+Now, our hypothesis is that the key is this modular
+
+212
+00:12:27.536 --> 00:12:30.456
+architecture of epistasis network. Okay?
+
+213
+00:12:30.496 --> 00:12:34.056
+We hypothesize that when you have a modular epistasis network,
+
+214
+00:12:34.596 --> 00:12:38.016
+evolutionary processes on those networks are going to be canalized towards specific
+
+215
+00:12:38.025 --> 00:12:41.536
+phenotypes, which would correspond, in the case of cancer, to consensus molecular
+
+216
+00:12:41.556 --> 00:12:42.886
+subtypes or clinical subtypes.
+
+217
+00:12:44.516 --> 00:12:45.836
+To test that hypothesis,
+
+218
+00:12:46.756 --> 00:12:50.716
+we did some mathematical models. So we started with
+
+219
+00:12:50.796 --> 00:12:54.276
+the empirical epistasis networks and also with toy ones.
+
+220
+00:12:55.136 --> 00:12:58.336
+We basically simulated the process by which cells accumulate mutations, then there
+
+221
+00:12:58.356 --> 00:13:02.036
+is selection, and in the end, what we have for each realization of the model is a
+
+222
+00:13:02.076 --> 00:13:02.456
+matrix
+
+223
+00:13:03.416 --> 00:13:06.976
+with the genes in the columns and the different replicates in our
+
+224
+00:13:07.336 --> 00:13:11.096
+in silico tumors in the rows, and then we know which genes are mutated in
+
+225
+00:13:11.336 --> 00:13:14.756
+which tumors. Then we can run a PCA and see if there are
+
+226
+00:13:15.916 --> 00:13:17.416
+classes of tumors, like different groups.
+
+227
+00:13:17.476 --> 00:13:19.076
+This is basically we are trying to
+
+228
+00:13:20.136 --> 00:13:21.016
+replicate this idea of
+
+229
+00:13:22.096 --> 00:13:25.716
+investigating possible subtypes from our in silico data.
+
+230
+00:13:27.006 --> 00:13:30.876
+And what we found is that for some structures of the network, we
+
+231
+00:13:30.916 --> 00:13:33.756
+can recover different well-determined
+
+232
+00:13:34.736 --> 00:13:36.956
+subtypes, and that happens when the network has these
+
+233
+00:13:37.836 --> 00:13:40.396
+kind of structures here. So it's basically signed modular.
+
+234
+00:13:41.056 --> 00:13:43.556
+This will be more or less what we see in real tumors.
+
+235
+00:13:45.236 --> 00:13:46.786
+So I think interesting here is that
+
+236
+00:13:47.696 --> 00:13:51.536
+actually in these networks, the first mutation determines which
+
+237
+00:13:51.576 --> 00:13:53.116
+module of the network is going to be mutated.
+
+238
+00:13:53.456 --> 00:13:57.176
+So if the first mutation falls here on the left module, for example,
+
+239
+00:13:57.996 --> 00:14:01.396
+the tumor is going to evolve to this subtype, to the left subtype.
+
+240
+00:14:01.476 --> 00:14:05.316
+If the first mutation falls here, just by chance, the tumor is going to
+
+241
+00:14:05.376 --> 00:14:06.916
+evolve to this right subtype,
+
+242
+00:14:07.976 --> 00:14:11.536
+which means that just by knowing very early
+
+243
+00:14:11.596 --> 00:14:15.396
+mutations, we can predict what subtype of tumor is going to
+
+244
+00:14:15.436 --> 00:14:18.816
+evolve, assuming that that lineage actually evolves into cancer.
+
+245
+00:14:20.156 --> 00:14:23.936
+So that will be the second take-home message, is that early
+
+246
+00:14:23.956 --> 00:14:27.816
+mutations in these pretumoral lesions can help predict
+
+247
+00:14:28.296 --> 00:14:31.925
+future tumor subtypes. And that's, again, because of this
+
+248
+00:14:32.196 --> 00:14:35.976
+particular structure of epistasis networks in cancer.
+
+249
+00:14:39.286 --> 00:14:40.066
+And then I will
+
+250
+00:14:42.016 --> 00:14:44.856
+go back to this idea of asymmetry in epistasis.
+
+251
+00:14:45.956 --> 00:14:49.836
+So as I mentioned before, because we use conditional selection to
+
+252
+00:14:49.856 --> 00:14:52.836
+infer epistasis, we can actually infer asymmetric relationships.
+
+253
+00:14:53.816 --> 00:14:57.656
+Some of them, like this here on the top, are symmetric, so APC and TP53
+
+254
+00:14:57.736 --> 00:15:01.556
+in colon cancer. In principle, both are synergistic with each other.
+
+255
+00:15:02.656 --> 00:15:03.556
+So it doesn't matter
+
+256
+00:15:04.536 --> 00:15:08.016
+if the mutation occurs first in APC or in TP53, the
+
+257
+00:15:08.116 --> 00:15:10.456
+synergistic effect is going to work more or less the same.
+
+258
+00:15:12.236 --> 00:15:14.796
+And then we have other cases, like these ones that I'm showing at the bottom,
+
+259
+00:15:16.316 --> 00:15:17.876
+where the epistasis is clearly asymmetric.
+
+260
+00:15:18.516 --> 00:15:20.816
+So, say, a mutation in TP53
+
+261
+00:15:21.676 --> 00:15:25.516
+critically increases the effect of mutations on this RB1 gene in
+
+262
+00:15:25.536 --> 00:15:27.656
+glioblastoma, but not vice versa.
+
+263
+00:15:28.096 --> 00:15:31.016
+If we have first the mutation in this RB1 gene,
+
+264
+00:15:31.876 --> 00:15:33.876
+then that doesn't really modify the
+
+265
+00:15:34.796 --> 00:15:36.166
+tumorigenic effect of TP53,
+
+266
+00:15:37.196 --> 00:15:38.546
+which is the same for many other genes.
+
+267
+00:15:39.836 --> 00:15:41.156
+This asymmetry is actually
+
+268
+00:15:42.136 --> 00:15:45.956
+establishing some sort of logical ordering for
+
+269
+00:15:46.016 --> 00:15:49.476
+mutations. So the idea is that if we have a mutation first in this first gene,
+
+270
+00:15:49.896 --> 00:15:52.136
+then mutations in these genes are going to have an effect.
+
+271
+00:15:52.556 --> 00:15:53.616
+If it's in the other
+
+272
+00:15:54.636 --> 00:15:56.356
+direction, doesn't really matter.
+
+273
+00:15:57.496 --> 00:15:58.136
+And because of that,
+
+274
+00:15:59.696 --> 00:16:03.656
+what we concluded is that asymmetry in the epistasis network is informative of
+
+275
+00:16:03.716 --> 00:16:05.056
+the order in which mutations happen.
+
+276
+00:16:05.336 --> 00:16:09.096
+So we tested that with genetic mutation data, which is this
+
+277
+00:16:09.106 --> 00:16:12.016
+figure on the right, and we saw that this idea is true.
+
+278
+00:16:12.776 --> 00:16:16.606
+So basically, the directionality of the epistasis network is informative
+
+279
+00:16:16.696 --> 00:16:19.376
+of the temporal sequence in which mutations occur.
+
+280
+00:16:19.806 --> 00:16:23.656
+It's basically telling us that there is a primary cancer gene and then a
+
+281
+00:16:23.716 --> 00:16:24.696
+secondary cancer gene.
+
+282
+00:16:26.396 --> 00:16:29.196
+That's about the directionality of the interactions.
+
+283
+00:16:29.716 --> 00:16:33.496
+We can also look at the position of a gene in the epistasis network.
+
+284
+00:16:35.296 --> 00:16:37.756
+So this is also a theoretical
+
+285
+00:16:39.056 --> 00:16:40.856
+work that we did a couple of years ago.
+
+286
+00:16:41.936 --> 00:16:45.916
+And here we study basically how does the position of
+
+287
+00:16:45.936 --> 00:16:49.096
+a gene in the network affect its tumorigenic potential.
+
+288
+00:16:50.216 --> 00:16:54.076
+In this particular case, we are studying a scenario in which the tumor
+
+289
+00:16:54.156 --> 00:16:56.516
+can also accumulate slightly deleterious mutations.
+
+290
+00:16:57.006 --> 00:17:00.666
+And because of that, basically, there is tug-of-war between driver mutations and
+
+291
+00:17:00.716 --> 00:17:04.096
+passenger mutations. You need to accumulate drivers fast enough to actually escape
+
+292
+00:17:04.176 --> 00:17:06.237
+this deleterious effect of passengers.
+
+293
+00:17:06.636 --> 00:17:10.216
+Otherwise, the tumor doesn't progress, which is a model that has been proposed to
+
+294
+00:17:10.237 --> 00:17:14.216
+explain why many healthy tissues or just
+
+295
+00:17:14.257 --> 00:17:17.206
+regular tissue have driver mutations and they never progress to cancer.
+
+296
+00:17:18.487 --> 00:17:22.237
+And what we found is that actually cancer happens when you have a mutation
+
+297
+00:17:22.316 --> 00:17:25.196
+in key genes of the epistasis network,
+
+298
+00:17:25.977 --> 00:17:29.636
+especially in genes that occupy central positions of the network.
+
+299
+00:17:30.656 --> 00:17:31.646
+So this is telling us that
+
+300
+00:17:33.436 --> 00:17:36.996
+the position that the gene occupies in the epistasis network is relevant, and
+
+301
+00:17:37.056 --> 00:17:41.016
+actually those that are hubs, that are here in central positions,
+
+302
+00:17:41.376 --> 00:17:45.316
+are acting as gatekeepers. It's not the same to get an early mutation in a
+
+303
+00:17:45.336 --> 00:17:46.996
+peripheral gene than in a central gene.
+
+304
+00:17:47.696 --> 00:17:51.116
+So again, by determining the structure of epistasis network, we can identify which
+
+305
+00:17:51.276 --> 00:17:53.156
+genes are these potential gatekeepers.
+
+306
+00:17:53.956 --> 00:17:57.756
+This is all based on simulations. We are now
+
+307
+00:17:57.816 --> 00:18:01.796
+working on verifying this with actual data from cancer models
+
+308
+00:18:01.836 --> 00:18:02.276
+in mouse.
+
+309
+00:18:04.036 --> 00:18:07.036
+So the third message would be that the structure of epistasis network reveals
+
+310
+00:18:07.056 --> 00:18:10.996
+central gatekeeper genes.And, well, I'm
+
+311
+00:18:11.156 --> 00:18:14.236
+a bit quick today, so with this, I'm getting to the
+
+312
+00:18:15.216 --> 00:18:17.496
+final conclusion. We'll have more time for discussion, so that's good.
+
+313
+00:18:18.576 --> 00:18:21.376
+The first idea that epistasis is pervasive in cancer evolution.
+
+314
+00:18:22.006 --> 00:18:24.466
+This epistasis network organizing modules,
+
+315
+00:18:25.776 --> 00:18:29.506
+which are groups of genes that act in synergy to promote cancer progression
+
+316
+00:18:29.776 --> 00:18:33.036
+and have widespread antagonism between genes of different
+
+317
+00:18:34.616 --> 00:18:34.996
+modules.
+
+318
+00:18:36.916 --> 00:18:38.796
+The epistasis networks are informative.
+
+319
+00:18:40.116 --> 00:18:43.536
+They are informative of different patient survival, so we can get better
+
+320
+00:18:43.556 --> 00:18:47.536
+predictions by looking at sets of genes instead of at individual genes.
+
+321
+00:18:49.816 --> 00:18:53.276
+By mapping early mutations to their corresponding network modules,
+
+322
+00:18:53.816 --> 00:18:55.516
+we can predict future properties for the tumor.
+
+323
+00:18:55.836 --> 00:18:59.436
+Particularly, we can predict which is the future subtype that will evolve from that
+
+324
+00:18:59.836 --> 00:19:01.216
+pretumoral population.
+
+325
+00:19:02.156 --> 00:19:05.236
+And finally, central genes in the epistasis network act as gatekeepers,
+
+326
+00:19:05.976 --> 00:19:09.116
+so determining the network can help us identify key genes.
+
+327
+00:19:10.476 --> 00:19:14.466
+Yes, I want to thank my team and my funding agencies, and
+
+328
+00:19:14.516 --> 00:19:15.676
+we'll be happy to take any questions.
+
+329
+00:19:22.256 --> 00:19:25.096
+Thank you. If you have questions, please walk up to the microphones.
+
+330
+00:19:27.056 --> 00:19:27.295
+Hi.
+
+331
+00:19:28.216 --> 00:19:32.116
+Is it working? Yeah. Thank you for the talk, very didactic.
+
+332
+00:19:33.736 --> 00:19:35.496
+I have a question about the software you're using.
+
+333
+00:19:36.376 --> 00:19:40.336
+Can you use it for epistasis between mutations and
+
+334
+00:19:40.436 --> 00:19:42.736
+epigenetic changes, like
+
+335
+00:19:44.056 --> 00:19:46.656
+areas of the genome that are open or not open, things-
+
+336
+00:19:46.736 --> 00:19:50.276
+Yes. So the method is based on stratifying your dataset in two groups.
+
+337
+00:19:52.676 --> 00:19:55.116
+You can use any criterion to stratify your dataset.
+
+338
+00:19:55.136 --> 00:19:58.336
+We use high mutations in a split gene or not, but you can use having
+
+339
+00:19:58.516 --> 00:20:00.226
+epigenetic modification or not,
+
+340
+00:20:01.716 --> 00:20:04.256
+being exposed to some risk factors or not.
+
+341
+00:20:04.796 --> 00:20:06.656
+The thing is that then you can do it bidirectionally.
+
+342
+00:20:06.716 --> 00:20:10.656
+So you will split based on that, and you study the effect of that variable, let's
+
+343
+00:20:10.706 --> 00:20:14.616
+say, epigenetic modifications on the genetic aspect
+
+344
+00:20:14.656 --> 00:20:15.716
+of the somatic mutations.
+
+345
+00:20:17.576 --> 00:20:20.696
+The way we implemented it, and actually the way we designed it, I
+
+346
+00:20:22.236 --> 00:20:23.856
+can't think of an obvious way to do it the opposite.
+
+347
+00:20:23.956 --> 00:20:27.616
+So to study how somatic mutation affects selection
+
+348
+00:20:27.656 --> 00:20:29.516
+on epigenetic modifications.
+
+349
+00:20:30.656 --> 00:20:32.476
+I will have to think about that. It's not trivial.
+
+350
+00:20:32.536 --> 00:20:36.296
+But the other way, from epigenetics to selection on somatic mutations, yes,
+
+351
+00:20:36.336 --> 00:20:37.736
+it's trivial.
+
+352
+00:20:38.596 --> 00:20:39.616
+Actually, the way the
+
+353
+00:20:40.796 --> 00:20:43.276
+tool is implemented, it's very easy.
+
+354
+00:20:45.576 --> 00:20:48.576
+Thank you for a great talk. Very cool. I'm Song Yang from Stanford.
+
+355
+00:20:49.176 --> 00:20:53.116
+So I have two questions. The first one is, this model can
+
+356
+00:20:53.136 --> 00:20:56.746
+consider the functional impact on protein for each of the mutations?
+
+357
+00:20:56.856 --> 00:21:00.756
+So the missense mutation can have a different impact on
+
+358
+00:21:01.096 --> 00:21:02.356
+protein, right? So-
+
+359
+00:21:02.536 --> 00:21:04.356
+Mm-hmm. So pardon, can
+
+360
+00:21:05.276 --> 00:21:06.306
+you repeat the first-
+
+361
+00:21:06.476 --> 00:21:09.916
+So if this model can consider the
+
+362
+00:21:10.096 --> 00:21:11.516
+functional impact on-
+
+363
+00:21:11.596 --> 00:21:11.756
+Ah
+
+364
+00:21:11.856 --> 00:21:15.516
+... gene structure or protein. So there are many missense
+
+365
+00:21:15.556 --> 00:21:17.856
+mutation which can have a different impact on-
+
+366
+00:21:17.916 --> 00:21:21.596
+Yes. So actually, something that I didn't mention is when we are stratifying the
+
+367
+00:21:21.616 --> 00:21:24.876
+dataset based on the presence or absence of mutations, we are taking into account
+
+368
+00:21:25.556 --> 00:21:27.656
+the effect. So basically, we are putting on one side
+
+369
+00:21:29.576 --> 00:21:30.516
+tumors that have
+
+370
+00:21:31.516 --> 00:21:35.436
+high effect mutations, and on the other group, tumors that have synonymous
+
+371
+00:21:35.476 --> 00:21:37.706
+mutations, no mutations, or low effect mutations.
+
+372
+00:21:38.096 --> 00:21:41.596
+So that can be taken into account when you stratify your dataset.
+
+373
+00:21:42.376 --> 00:21:46.326
+As for the effect, you don't really have to because
+
+374
+00:21:46.896 --> 00:21:49.566
+what you are quantifying is directly how many more mutations you see that you would
+
+375
+00:21:49.596 --> 00:21:53.096
+expect by chance. And that's giving you already a measurement of, if those
+
+376
+00:21:53.116 --> 00:21:55.956
+mutations you see them and you don't expect to see them, it's because they are
+
+377
+00:21:55.976 --> 00:21:56.596
+doing something.
+
+378
+00:21:58.816 --> 00:22:02.576
+Yeah. My next question is, how about this copy
+
+379
+00:22:02.616 --> 00:22:06.476
+number variation affecting many driver mutation at once?
+
+380
+00:22:06.576 --> 00:22:10.256
+Like a deletion in specific arm of chromosome can delete
+
+381
+00:22:10.296 --> 00:22:13.716
+tens of tumor suppressor gene at once.
+
+382
+00:22:13.836 --> 00:22:16.756
+So can this kind of be affected, this network?
+
+383
+00:22:17.156 --> 00:22:20.596
+Mm-hmm. Yeah, so that's a really good point.
+
+384
+00:22:21.976 --> 00:22:23.056
+I don't think we've looked at that.
+
+385
+00:22:23.096 --> 00:22:26.036
+However, there are some papers on that.
+
+386
+00:22:26.076 --> 00:22:29.116
+For example, I can think of Solid Park, who has looked at
+
+387
+00:22:29.996 --> 00:22:33.576
+genetic interactions between somatic mutations and copy number variation.
+
+388
+00:22:34.396 --> 00:22:38.176
+Of course, the effect in some cases, this is really fascinating, copy
+
+389
+00:22:38.236 --> 00:22:42.176
+number variations can modify the sign of epistasis between two
+
+390
+00:22:42.236 --> 00:22:45.696
+somatic mutations. So you can find some mutations that are synergistic or
+
+391
+00:22:45.736 --> 00:22:49.376
+antagonistic, and then if you have a copy number variation in a third gene, then
+
+392
+00:22:49.386 --> 00:22:52.376
+the sign of the interaction between these two genes changes.
+
+393
+00:22:52.406 --> 00:22:55.616
+So maybe we can take just one quick question from the right-hand side of the room,
+
+394
+00:22:56.176 --> 00:22:59.076
+and then please reserve your question for the panel discussion at the end.
+
+395
+00:23:00.336 --> 00:23:03.936
+Hi. Hi, I'm Kaylee in Dr. Alice Rodney's lab.
+
+396
+00:23:04.556 --> 00:23:07.536
+I maybe just missed it. In the inputs, is this
+
+397
+00:23:08.036 --> 00:23:11.496
+single-cell based data or bulk?
+
+398
+00:23:12.936 --> 00:23:13.156
+Bulk.
+
+399
+00:23:13.476 --> 00:23:16.016
+It's bulk sequencing data, yes.
+
+400
+00:23:16.456 --> 00:23:17.155
+Bulk sequencing?
+
+401
+00:23:17.356 --> 00:23:17.556
+Yeah.
+
+402
+00:23:18.156 --> 00:23:20.066
+How do you suspect potentially-
+
+403
+00:23:21.576 --> 00:23:22.085
+How what?
+
+404
+00:23:22.156 --> 00:23:24.206
+... a single cell could potentially influence that?
+
+405
+00:23:24.336 --> 00:23:28.196
+Just thinking if these alterations are actually happening in the same cell for
+
+406
+00:23:28.376 --> 00:23:29.916
+that gene network to be happening.
+
+407
+00:23:34.556 --> 00:23:38.536
+Well, one of the problems we have when we work with bulk data is
+
+408
+00:23:38.556 --> 00:23:41.716
+that we have to decide if a mutation is frequent enough to consider that
+
+409
+00:23:41.776 --> 00:23:45.676
+it's basically not rich fixation, but its frequency is higher
+
+410
+00:23:45.696 --> 00:23:46.916
+than you would expect just by chance,
+
+411
+00:23:48.296 --> 00:23:51.016
+or its frequency is just compatible with just neutral
+
+412
+00:23:51.036 --> 00:23:54.236
+diversification of a population.
+
+413
+00:23:55.356 --> 00:23:58.056
+So probably with single-cell data, we could address this in a more
+
+414
+00:23:58.936 --> 00:24:02.916
+systematic way. We could actually develop a theory to decide
+
+415
+00:24:02.976 --> 00:24:05.716
+if, for a given mutation at a given abundance,
+
+416
+00:24:07.036 --> 00:24:08.876
+its abundance is compatible with a just
+
+417
+00:24:09.976 --> 00:24:13.956
+random mutation background in the TC or actually subject to selection.
+
+418
+00:24:14.016 --> 00:24:17.835
+So I think it could actually be used to really improve the performance of the
+
+419
+00:24:17.876 --> 00:24:21.488
+method.But we haven't really
+
+420
+00:24:22.188 --> 00:24:25.968
+started working on it yet. But I think it's a logical next step now that single
+
+421
+00:24:26.008 --> 00:24:28.628
+cell data are becoming actually available.
+
+422
+00:24:29.048 --> 00:24:30.808
+Thanks for all these excellent questions.
+
+423
+00:24:32.668 --> 00:24:36.068
+All right. I would just like to introduce our next speaker,
+
+424
+00:24:37.608 --> 00:24:38.888
+Jorge Alfaro-Murillo,
+
+425
+00:24:40.148 --> 00:24:42.928
+at Universidad de Costa Rica.
+
+426
+00:24:44.088 --> 00:24:47.718
+And the title of Jorge's talk for you today is Quantifying
+
+427
+00:24:47.768 --> 00:24:51.688
+Epistasis and Evolutionary Trajectories in Cancer.
+
+428
+00:24:56.468 --> 00:24:56.908
+Thank you,
+
+429
+00:24:57.868 --> 00:24:58.168
+Jeff,
+
+430
+00:24:59.828 --> 00:25:02.648
+for the invitation. Thank you all for being here.
+
+431
+00:25:03.688 --> 00:25:04.148
+And
+
+432
+00:25:05.988 --> 00:25:09.648
+yes, I'm going to start just by mentioning
+
+433
+00:25:10.468 --> 00:25:11.998
+again about driver genes,
+
+434
+00:25:13.368 --> 00:25:16.668
+just because this is actually what we're looking for.
+
+435
+00:25:16.888 --> 00:25:18.468
+It's actually what drives cancer, right?
+
+436
+00:25:18.548 --> 00:25:19.348
+So,
+
+437
+00:25:21.528 --> 00:25:24.048
+Jaime already told you about driver genes.
+
+438
+00:25:24.528 --> 00:25:28.328
+This is the first publication about driver genes, where
+
+439
+00:25:28.368 --> 00:25:31.168
+they identify 719
+
+440
+00:25:31.928 --> 00:25:35.528
+cancer-driving genes, and the list has been
+
+441
+00:25:35.568 --> 00:25:38.708
+updated since its publication in
+
+442
+00:25:38.828 --> 00:25:42.548
+2018, but there hasn't been that many genes added.
+
+443
+00:25:42.808 --> 00:25:43.108
+So
+
+444
+00:25:43.988 --> 00:25:44.968
+as Jaime was saying,
+
+445
+00:25:45.928 --> 00:25:49.068
+one of the most important thing is that the most
+
+446
+00:25:49.728 --> 00:25:53.508
+genes or most mutations, we believe that they don't cause anything.
+
+447
+00:25:53.788 --> 00:25:57.718
+They're just either damaging for the cells, and we don't see them,
+
+448
+00:25:58.508 --> 00:26:01.988
+or they're just there for the ride, considered passengers.
+
+449
+00:26:02.668 --> 00:26:03.248
+But one of the
+
+450
+00:26:04.168 --> 00:26:07.188
+most important things I want you to get out of this talk is that
+
+451
+00:26:08.548 --> 00:26:12.428
+it's not an either/or. It's not that you have driver genes
+
+452
+00:26:12.548 --> 00:26:16.228
+or passenger genes, but it's also important to see how much of a
+
+453
+00:26:16.268 --> 00:26:20.148
+driver something is. So besides identifying one, you should
+
+454
+00:26:20.188 --> 00:26:23.988
+be able to compare them. You should be able to say, this one
+
+455
+00:26:24.068 --> 00:26:28.008
+is giving more advantage to the cancer
+
+456
+00:26:28.368 --> 00:26:31.948
+than this one, and by how much. And that's what we want to get out of
+
+457
+00:26:32.508 --> 00:26:36.438
+our framework. We want to get this selection coefficient that allows us
+
+458
+00:26:36.468 --> 00:26:38.008
+to compare mutations between each other.
+
+459
+00:26:38.448 --> 00:26:39.918
+Allows us to say, "This one is
+
+460
+00:26:41.488 --> 00:26:45.468
+giving twice as much advantage to the cancer as this other
+
+461
+00:26:45.508 --> 00:26:45.648
+one."
+
+462
+00:26:46.748 --> 00:26:50.648
+And in a particular talk that we have
+
+463
+00:26:50.728 --> 00:26:54.568
+today in epistasis, that's also important to say, okay,
+
+464
+00:26:54.668 --> 00:26:58.388
+now that you have one mutation, how does that impact how much
+
+465
+00:26:58.688 --> 00:26:59.828
+of a driver something is?
+
+466
+00:27:00.808 --> 00:27:00.988
+Okay.
+
+467
+00:27:02.408 --> 00:27:06.348
+So that's one of the most important things to get out from today.
+
+468
+00:27:08.188 --> 00:27:12.088
+The most common current practice with
+
+469
+00:27:12.168 --> 00:27:15.968
+epistasis is to try to see co-occurrence and
+
+470
+00:27:16.228 --> 00:27:19.808
+mutual exclusivity. So probably you've seen this kind of
+
+471
+00:27:20.108 --> 00:27:23.948
+way of presenting data where you put every single tumor that you
+
+472
+00:27:23.988 --> 00:27:27.748
+have on your data as a column, and then you see
+
+473
+00:27:27.868 --> 00:27:31.488
+which ones of those have
+
+474
+00:27:31.548 --> 00:27:34.328
+mutations inside of each one of the genes.
+
+475
+00:27:35.128 --> 00:27:38.828
+And then you can see, for example, in this case that I took
+
+476
+00:27:39.408 --> 00:27:41.028
+just colon adenocarcinoma,
+
+477
+00:27:42.348 --> 00:27:46.248
+and you see that whenever you have KRAS, those patients tend to not
+
+478
+00:27:46.308 --> 00:27:49.788
+have BRAF. And
+
+479
+00:27:50.168 --> 00:27:53.788
+that's why you generally say, okay, you have mutual
+
+480
+00:27:53.848 --> 00:27:57.628
+exclusivity there, and there must be an epistatic effect that is
+
+481
+00:27:57.648 --> 00:27:59.988
+preventing KRAS from occurring with BRAF.
+
+482
+00:28:00.708 --> 00:28:02.628
+Or in the case of APC and KRAS,
+
+483
+00:28:04.008 --> 00:28:07.908
+it's more likely than not that whenever you have APC, you
+
+484
+00:28:07.968 --> 00:28:09.868
+have KRAS than not having
+
+485
+00:28:10.708 --> 00:28:12.568
+KRAS. So that could be
+
+486
+00:28:13.448 --> 00:28:15.348
+probably something that it's hinting at
+
+487
+00:28:16.788 --> 00:28:18.528
+synergistic epistatic effect.
+
+488
+00:28:20.228 --> 00:28:21.908
+So that is the standard approach.
+
+489
+00:28:22.828 --> 00:28:26.778
+And as I said, that could be interpreted as evidence for synergistic or
+
+490
+00:28:26.868 --> 00:28:28.348
+antagonistic interactions.
+
+491
+00:28:29.628 --> 00:28:31.248
+But I want to
+
+492
+00:28:32.088 --> 00:28:34.748
+give this talk more or less trying to consider actually
+
+493
+00:28:35.828 --> 00:28:39.588
+if it could actually be telling us that, or if there could other
+
+494
+00:28:41.748 --> 00:28:45.568
+things be going on there. Because co-occurrence
+
+495
+00:28:45.688 --> 00:28:48.988
+tells you that mutations appear together, but not why they appear together.
+
+496
+00:28:49.608 --> 00:28:51.948
+It could be because just mutations
+
+497
+00:28:51.988 --> 00:28:54.828
+occur very often.
+
+498
+00:28:56.328 --> 00:29:00.188
+And so it cannot separate the mutagenic environment from selection.
+
+499
+00:29:00.348 --> 00:29:03.988
+So something that is highly mutable in a
+
+500
+00:29:04.028 --> 00:29:04.888
+particular
+
+501
+00:29:06.108 --> 00:29:09.448
+cancer, that will co-occur with almost everything.
+
+502
+00:29:10.968 --> 00:29:14.928
+And then the other thing that already Jaime was pointing out is you don't
+
+503
+00:29:14.968 --> 00:29:18.648
+have any directionality. You don't know which mutation came first,
+
+504
+00:29:19.368 --> 00:29:23.218
+and if it is something where A gives you an advantage of
+
+505
+00:29:23.408 --> 00:29:27.388
+getting B or the other way around. If B gives you an advantage of getting
+
+506
+00:29:27.448 --> 00:29:27.568
+A.
+
+507
+00:29:29.188 --> 00:29:33.128
+And the other thing about co-occurrence and mutual exclusivity is
+
+508
+00:29:33.168 --> 00:29:37.028
+that it's purely pairwise. So you cannot scale that to
+
+509
+00:29:37.048 --> 00:29:38.468
+consider triplets of genes.
+
+510
+00:29:40.308 --> 00:29:43.868
+And besides, you cannot formally test whether different
+
+511
+00:29:43.908 --> 00:29:47.308
+epistatic effects occurred in different kinds
+
+512
+00:29:47.348 --> 00:29:50.868
+of populations. So I'll be
+
+513
+00:29:50.928 --> 00:29:54.788
+introducing here a little bit of what Jeff is going to talk about in the
+
+514
+00:29:54.828 --> 00:29:58.698
+next talk. He's going to be talking about smokers and nonsmokers,
+
+515
+00:29:58.768 --> 00:30:01.708
+but just want you to keep that in mind.
+
+516
+00:30:02.748 --> 00:30:06.668
+So generally, we'll start here,
+
+517
+00:30:06.728 --> 00:30:09.108
+the model. I'll just show you the model in general.
+
+518
+00:30:10.148 --> 00:30:11.968
+We have what is called a substitution rate.
+
+519
+00:30:12.028 --> 00:30:14.788
+So you don't have a mutation, and then you observe it in tumors.
+
+520
+00:30:15.308 --> 00:30:19.228
+So in order to observe it in tumors, then the mutation has to be occurring at
+
+521
+00:30:19.268 --> 00:30:22.888
+a certain rate. And that rate is going to be
+
+522
+00:30:23.028 --> 00:30:26.856
+combiningThe mutation rate, so
+
+523
+00:30:26.916 --> 00:30:30.756
+how often things actually occur in the cell with this
+
+524
+00:30:30.796 --> 00:30:32.556
+part of fixation, which is the selection.
+
+525
+00:30:33.396 --> 00:30:36.456
+Okay. And whenever you introduce another gene,
+
+526
+00:30:37.196 --> 00:30:39.376
+then you can check
+
+527
+00:30:40.236 --> 00:30:43.776
+if these two rates at which things are occurring,
+
+528
+00:30:44.356 --> 00:30:45.816
+if they are different from each other.
+
+529
+00:30:46.516 --> 00:30:49.656
+So if the presence of B changes how
+
+530
+00:30:50.356 --> 00:30:54.116
+often you get to AB compared to whenever you don't have
+
+531
+00:30:55.096 --> 00:30:55.196
+B.
+
+532
+00:30:56.096 --> 00:31:00.056
+But of course, what I want you to remember is that these rates at
+
+533
+00:31:00.096 --> 00:31:03.936
+which you're observing, they have both the mutation rate and the
+
+534
+00:31:03.956 --> 00:31:07.596
+fixation. So we have to separate those to be able to actually
+
+535
+00:31:08.176 --> 00:31:09.976
+be talking actually about epistasis.
+
+536
+00:31:10.036 --> 00:31:13.516
+So generally it occurs when these things are different, but not necessarily.
+
+537
+00:31:15.236 --> 00:31:19.056
+Okay, so in general, so if you're
+
+538
+00:31:19.096 --> 00:31:22.596
+considering just two genes, you're going to have four different ways of
+
+539
+00:31:23.256 --> 00:31:26.836
+going through here. You can either gain A and then
+
+540
+00:31:27.096 --> 00:31:31.056
+gain B, or B and then A, and that gives you four substitution rates.
+
+541
+00:31:31.596 --> 00:31:35.096
+And each rate what is going to capture is how fast that step occurs in the
+
+542
+00:31:35.116 --> 00:31:37.716
+evolutionary process. And as I said, that includes
+
+543
+00:31:38.456 --> 00:31:41.335
+mutation and the part of selection.
+
+544
+00:31:42.856 --> 00:31:46.776
+So in our model, the mathematical model, what we're going to do is just estimate
+
+545
+00:31:46.786 --> 00:31:50.156
+those four rates jointly from tumor sample counts.
+
+546
+00:31:50.376 --> 00:31:53.216
+And I'll explain very briefly about how we do that.
+
+547
+00:31:54.016 --> 00:31:57.196
+First, I want you to consider what would happen if you have more genes in a
+
+548
+00:31:57.236 --> 00:32:01.036
+network. So if you have three genes, you have plenty
+
+549
+00:32:01.076 --> 00:32:04.896
+more. You have 12 substitution rates and six different evolutionary
+
+550
+00:32:04.936 --> 00:32:06.836
+pathways where you can go to
+
+551
+00:32:07.896 --> 00:32:11.456
+having the three mutations, and this gets exponentially more
+
+552
+00:32:11.496 --> 00:32:13.356
+complicated as you add more genes.
+
+553
+00:32:13.436 --> 00:32:13.576
+So
+
+554
+00:32:14.496 --> 00:32:18.096
+already with four genes it's very complicated, all the different pathways
+
+555
+00:32:18.136 --> 00:32:22.116
+that you can take. And this grows exponentially, and the bad thing about
+
+556
+00:32:22.176 --> 00:32:26.036
+this is that whenever something grows exponentially, your data doesn't grow
+
+557
+00:32:26.076 --> 00:32:29.936
+exponentially. So your data generally grows
+
+558
+00:32:29.976 --> 00:32:33.695
+linearly, so you wait a couple of months, and then you have instead of 500 samples,
+
+559
+00:32:33.936 --> 00:32:34.576
+600 samples.
+
+560
+00:32:35.596 --> 00:32:36.985
+But if you have to estimate,
+
+561
+00:32:38.216 --> 00:32:41.856
+if you just put another two to the n here, then things get out of hand.
+
+562
+00:32:41.936 --> 00:32:42.076
+So
+
+563
+00:32:42.896 --> 00:32:46.776
+that's the bad thing about this. But, yeah, we're
+
+564
+00:32:46.836 --> 00:32:50.016
+going to eventually get more data to be able to get more
+
+565
+00:32:50.876 --> 00:32:51.756
+genes at the same time.
+
+566
+00:32:54.136 --> 00:32:57.616
+Just very briefly, I'll tell you a little bit about our model for those
+
+567
+00:32:57.736 --> 00:33:00.796
+interested in the actual mathematical model part.
+
+568
+00:33:02.416 --> 00:33:05.536
+What we do is we try to keep a
+
+569
+00:33:07.396 --> 00:33:11.116
+model that allows us to identify when you have a different somatic
+
+570
+00:33:11.296 --> 00:33:13.736
+genotype at a specific time.
+
+571
+00:33:14.576 --> 00:33:17.936
+And what we do is we assume constant substitution rates from
+
+572
+00:33:18.396 --> 00:33:18.716
+jumps.
+
+573
+00:33:19.936 --> 00:33:22.796
+So those arrows that I showed you before, we assume that those are going to be
+
+574
+00:33:22.836 --> 00:33:26.796
+constant all the time. And what that gives us in mathematics is
+
+575
+00:33:26.836 --> 00:33:30.296
+something called a continuous Markov chain that you can do
+
+576
+00:33:31.076 --> 00:33:32.276
+mathematical
+
+577
+00:33:34.596 --> 00:33:38.576
+formulas and can actually get results from
+
+578
+00:33:38.596 --> 00:33:42.536
+there. So, important thing here is that we're considering only one
+
+579
+00:33:42.576 --> 00:33:43.656
+gene can mutate at a time.
+
+580
+00:33:44.476 --> 00:33:48.176
+So note this effects where you have something that completely
+
+581
+00:33:48.256 --> 00:33:51.416
+changes at a time, but this can be applied for
+
+582
+00:33:51.896 --> 00:33:52.336
+SMBs.
+
+583
+00:33:53.996 --> 00:33:56.856
+And in the math part, what we do is we
+
+584
+00:33:57.476 --> 00:34:01.456
+compute a recursive formula for
+
+585
+00:34:01.496 --> 00:34:03.146
+this thing, the probabilities.
+
+586
+00:34:04.016 --> 00:34:07.736
+And then with that formula, then what we can do is just
+
+587
+00:34:08.417 --> 00:34:09.816
+get input of standard
+
+588
+00:34:10.836 --> 00:34:14.516
+tumor genomic data, and the output is going to be those substitution rates.
+
+589
+00:34:14.696 --> 00:34:18.556
+And we still are not done because, as I said, those substitution rates
+
+590
+00:34:18.957 --> 00:34:22.156
+have the mutation and the selection, and we have to
+
+591
+00:34:22.736 --> 00:34:25.596
+remove the mutation in order to get the
+
+592
+00:34:25.616 --> 00:34:27.156
+selection rate.
+
+593
+00:34:29.437 --> 00:34:29.676
+So
+
+594
+00:34:30.776 --> 00:34:34.736
+formally what we have is number of tumor samples in each one of the somatic
+
+595
+00:34:34.746 --> 00:34:38.316
+genotypes, and we consider all the possible somatic genotypes.
+
+596
+00:34:39.036 --> 00:34:42.857
+And that allows us to build with the formulas that we get from before, that allows
+
+597
+00:34:42.917 --> 00:34:46.115
+us to build a likelihood, and then it's just a standard
+
+598
+00:34:46.516 --> 00:34:50.377
+maximize the likelihood kind of approach, or if you want to get more fancy, you
+
+599
+00:34:50.437 --> 00:34:53.836
+do Bayesian analysis so you can get posteriors out of this.
+
+600
+00:34:55.156 --> 00:34:58.636
+No special data are required beyond routine tumor sequencing data.
+
+601
+00:34:59.076 --> 00:35:02.796
+So TCGA, ARC, Project Genie, anything like that, institutional
+
+602
+00:35:02.876 --> 00:35:06.536
+cohorts, all of those are usable, and you get back the
+
+603
+00:35:06.816 --> 00:35:10.716
+substitution rates. And then now what you do is you remove from
+
+604
+00:35:10.756 --> 00:35:13.816
+the substitution rate, this part that is the mutation rate,
+
+605
+00:35:14.956 --> 00:35:17.236
+which actually I'm calling the mutation rate, but it's
+
+606
+00:35:19.256 --> 00:35:21.636
+better defined as a neutral fixation rate
+
+607
+00:35:22.636 --> 00:35:26.556
+for that gene or variant. So it's something that you
+
+608
+00:35:26.636 --> 00:35:27.216
+get out of
+
+609
+00:35:28.076 --> 00:35:28.676
+other tools,
+
+610
+00:35:29.776 --> 00:35:32.476
+something like BNDS that Jaime was talking about.
+
+611
+00:35:32.916 --> 00:35:34.876
+We have another tool called SigMutCel.
+
+612
+00:35:35.496 --> 00:35:39.296
+That is a signature base estimation that uses
+
+613
+00:35:39.336 --> 00:35:43.296
+also covariates. DNDS also uses covariates to get the best
+
+614
+00:35:43.336 --> 00:35:47.236
+mutation rate possible. And then when you remove this from the
+
+615
+00:35:48.636 --> 00:35:52.556
+substitution rates, then you're going to obtain finally the selection, and that's
+
+616
+00:35:52.596 --> 00:35:56.526
+what you're interested in. So if something is larger than one,
+
+617
+00:35:56.736 --> 00:36:00.556
+then you have a driver there, a
+
+618
+00:36:00.596 --> 00:36:03.236
+positive acceleration, but you can also compare them between each other.
+
+619
+00:36:03.316 --> 00:36:06.876
+So if something is twice as much of a driver compared to another
+
+620
+00:36:07.296 --> 00:36:07.876
+mutation.
+
+621
+00:36:09.356 --> 00:36:11.926
+You also see whenever you have something that is
+
+622
+00:36:11.956 --> 00:36:15.936
+counter-selected, and you have a way of saying
+
+623
+00:36:16.116 --> 00:36:19.436
+if something is actually neutral, so completely passenger.
+
+624
+00:36:21.136 --> 00:36:23.416
+So as you can see, co-occurrence
+
+625
+00:36:23.556 --> 00:36:26.672
+wouldoccur
+
+626
+00:36:27.892 --> 00:36:31.732
+either because this is very large for both of them,
+
+627
+00:36:32.092 --> 00:36:35.052
+so that wouldn't be an epistatic effect.
+
+628
+00:36:35.112 --> 00:36:38.472
+So what's important with epistatic effects is
+
+629
+00:36:38.872 --> 00:36:40.412
+actually the ones that are driven
+
+630
+00:36:41.252 --> 00:36:42.452
+only by selection.
+
+631
+00:36:44.472 --> 00:36:47.532
+Okay, so let's go back to this, the actual data that we have.
+
+632
+00:36:47.712 --> 00:36:51.332
+So now how do we split that in terms
+
+633
+00:36:51.412 --> 00:36:55.372
+of the model? So the first thing is to obtain those substitution rates.
+
+634
+00:36:55.592 --> 00:36:59.392
+So what I'm going to be looking at here is each one of the somatic
+
+635
+00:36:59.432 --> 00:37:03.232
+genotypes. So these very few patients, one or two or
+
+636
+00:37:03.272 --> 00:37:07.212
+three, maybe, that have the three mutations at the same time, I'm going to
+
+637
+00:37:07.252 --> 00:37:10.952
+put those into one category. All of these that have APC and
+
+638
+00:37:10.992 --> 00:37:14.812
+KRAS but not BRF, I put those in a
+
+639
+00:37:14.852 --> 00:37:18.372
+different category, and so on and so forth for each one of the different
+
+640
+00:37:19.592 --> 00:37:20.112
+subtypes.
+
+641
+00:37:21.032 --> 00:37:25.012
+So that's how it would look like with TCGA COAD data
+
+642
+00:37:25.032 --> 00:37:28.752
+that I just showed you. So for some of them, you don't
+
+643
+00:37:28.812 --> 00:37:30.352
+have any of those three mutations.
+
+644
+00:37:31.002 --> 00:37:34.902
+And most of the time, what you get is a lot of mutations on the first
+
+645
+00:37:35.832 --> 00:37:38.992
+categories that have BRF, but not KRAS or APC,
+
+646
+00:37:40.212 --> 00:37:40.972
+and sometimes,
+
+647
+00:37:41.892 --> 00:37:45.852
+a little bit more on genes that co-occur together, APC and KRAS, you have
+
+648
+00:37:45.952 --> 00:37:46.492
+plenty here.
+
+649
+00:37:47.712 --> 00:37:51.532
+And then as you go to the right of these kind of graphs, then you see
+
+650
+00:37:51.632 --> 00:37:52.332
+less and less
+
+651
+00:37:53.552 --> 00:37:54.912
+tumors that have
+
+652
+00:37:56.392 --> 00:37:57.332
+most of the mutations.
+
+653
+00:37:58.312 --> 00:38:01.952
+So what you do is you feed that into our mathematical model,
+
+654
+00:38:02.252 --> 00:38:04.612
+and what's going to give you is those arrows.
+
+655
+00:38:04.642 --> 00:38:08.452
+So the width of the arrows here is going to be the substitution rate.
+
+656
+00:38:09.052 --> 00:38:09.572
+And you see
+
+657
+00:38:10.712 --> 00:38:13.352
+at which rate you're going faster from here to here.
+
+658
+00:38:13.692 --> 00:38:15.192
+So here you're going very fast,
+
+659
+00:38:16.402 --> 00:38:17.312
+here not so much.
+
+660
+00:38:18.522 --> 00:38:20.392
+And that is the substitution rate.
+
+661
+00:38:20.622 --> 00:38:24.432
+And then what you do is now you remove from those substitution rates the
+
+662
+00:38:24.472 --> 00:38:27.512
+part that is just purely mutation, that is neutral.
+
+663
+00:38:29.132 --> 00:38:32.872
+The way that we did this in the first paper was we just fit the
+
+664
+00:38:33.232 --> 00:38:36.292
+neutral mutation rates that we had from different things.
+
+665
+00:38:36.432 --> 00:38:38.572
+Actually, the first time we just used the NDS.
+
+666
+00:38:39.172 --> 00:38:41.492
+So the NDS gives you neutral mutation rates.
+
+667
+00:38:42.112 --> 00:38:45.152
+So this would be the neutral mutation rates.
+
+668
+00:38:45.592 --> 00:38:49.412
+What we're doing now, we thought more about it, is
+
+669
+00:38:49.792 --> 00:38:53.612
+that we actually consider that these neutral mutation rates can
+
+670
+00:38:53.672 --> 00:38:56.312
+change because you have mutations in other genes.
+
+671
+00:38:56.832 --> 00:39:00.552
+So not only you have this epistatic effect,
+
+672
+00:39:01.132 --> 00:39:04.542
+well it's not an epistatic effect, but you have this effect of mutations
+
+673
+00:39:04.912 --> 00:39:07.832
+influence not only the selection, but they can also
+
+674
+00:39:07.912 --> 00:39:11.472
+influence the mutation as well. So what we do
+
+675
+00:39:11.532 --> 00:39:15.112
+now is we consider how many mutations you see in
+
+676
+00:39:15.121 --> 00:39:18.752
+these different somatic genotypes.
+
+677
+00:39:19.292 --> 00:39:22.292
+So you consider the average tumor mutation burden.
+
+678
+00:39:22.392 --> 00:39:25.512
+You see here at the beginning, people are not having as many mutations.
+
+679
+00:39:25.972 --> 00:39:29.792
+So what we do is we use these average tumor mutation burdens to
+
+680
+00:39:29.852 --> 00:39:32.292
+adjust the jumps of the neutral mutation rates.
+
+681
+00:39:32.852 --> 00:39:36.752
+So instead of just considering that all the rates never
+
+682
+00:39:36.792 --> 00:39:40.752
+change, what we see is that whenever you're in these categories
+
+683
+00:39:40.792 --> 00:39:41.012
+here,
+
+684
+00:39:42.652 --> 00:39:44.992
+these jumps are going to happen more often
+
+685
+00:39:46.192 --> 00:39:49.732
+than whenever you were here. So we adjust those neutral mutation rates.
+
+686
+00:39:50.332 --> 00:39:53.572
+Okay, now and then we take them out of the substitution rates, and this is
+
+687
+00:39:54.152 --> 00:39:57.472
+actually where you finish, where you have only the selection coefficients.
+
+688
+00:39:58.002 --> 00:40:01.792
+And then this is where the epistatic effects are actually going to be revealed.
+
+689
+00:40:02.952 --> 00:40:06.322
+And then you can start asking yourself the questions that you were asking
+
+690
+00:40:06.352 --> 00:40:09.942
+before. So whenever we were considering, okay, what's
+
+691
+00:40:10.232 --> 00:40:13.692
+happening that we don't see BRF and KRAS together?
+
+692
+00:40:14.172 --> 00:40:17.712
+Then you can see that whenever you
+
+693
+00:40:17.772 --> 00:40:21.212
+jump to KRAS, the selection towards BRF,
+
+694
+00:40:21.772 --> 00:40:21.852
+it
+
+695
+00:40:22.752 --> 00:40:23.912
+almost disappears. So
+
+696
+00:40:25.412 --> 00:40:26.752
+that means that KRAS has a
+
+697
+00:40:27.632 --> 00:40:31.252
+very strong antagonistic effect against BRF, and
+
+698
+00:40:31.612 --> 00:40:34.292
+the same is true the other way around, but not so much.
+
+699
+00:40:34.352 --> 00:40:35.952
+So whenever you jump to BRF,
+
+700
+00:40:36.812 --> 00:40:39.672
+the KRAS selection, it also
+
+701
+00:40:39.732 --> 00:40:43.132
+diminishes compared to whenever you didn't have the mutation,
+
+702
+00:40:44.192 --> 00:40:44.392
+but
+
+703
+00:40:45.772 --> 00:40:47.732
+it's still there. So most of the
+
+704
+00:40:48.632 --> 00:40:52.252
+reason why you don't see that often would be because of this path.
+
+705
+00:40:52.672 --> 00:40:53.562
+Getting KRAS has a
+
+706
+00:40:54.812 --> 00:40:56.592
+large antagonistic effect against BRF.
+
+707
+00:40:57.392 --> 00:41:01.092
+And you actually see that APC and KRAS, they don't influence
+
+708
+00:41:01.152 --> 00:41:05.012
+each other that much. I'm sure that if I
+
+709
+00:41:05.032 --> 00:41:08.722
+would show you the results with confidence intervals, you'd
+
+710
+00:41:08.772 --> 00:41:12.572
+actually be able to see that these actually might be significant or
+
+711
+00:41:12.612 --> 00:41:16.312
+not. But the result is not as striking as the other way.
+
+712
+00:41:16.432 --> 00:41:20.372
+So this is happening more because APC and KRAS
+
+713
+00:41:20.412 --> 00:41:22.252
+are both happening very often, that you
+
+714
+00:41:23.352 --> 00:41:26.932
+see them co-occurring, and not so much because they
+
+715
+00:41:27.032 --> 00:41:29.052
+actually help each other.
+
+716
+00:41:30.532 --> 00:41:31.712
+Okay. So
+
+717
+00:41:32.612 --> 00:41:36.302
+besides that, I want you to see that you can also
+
+718
+00:41:36.432 --> 00:41:40.132
+start to formalize and actually do statistical
+
+719
+00:41:40.172 --> 00:41:41.292
+tests
+
+720
+00:41:42.972 --> 00:41:46.952
+just because you have actual coefficients, and then you can compare, so
+
+721
+00:41:47.172 --> 00:41:47.992
+you can just
+
+722
+00:41:49.232 --> 00:41:49.432
+put
+
+723
+00:41:50.372 --> 00:41:54.312
+null hypothesis of saying, okay, like this jump, is it actually
+
+724
+00:41:54.332 --> 00:41:58.242
+equal to one? And that's just going to be using
+
+725
+00:41:58.272 --> 00:42:02.162
+Wilk's theorem and likelihood ratio test with chi-squares that
+
+726
+00:42:02.212 --> 00:42:04.952
+allow you to compare things. And you can also
+
+727
+00:42:05.972 --> 00:42:09.912
+have a formal test for saying if there's an epistatic effect
+
+728
+00:42:09.932 --> 00:42:11.992
+or not. You can compare
+
+729
+00:42:13.052 --> 00:42:16.612
+just these two arrows, so from normal to A or just B to AB,
+
+730
+00:42:17.292 --> 00:42:20.532
+if they're different from each other with null hypothesis.
+
+731
+00:42:21.332 --> 00:42:21.752
+And
+
+732
+00:42:22.672 --> 00:42:26.132
+in the next talk, Jeff is going to talk more about how actually you can compare
+
+733
+00:42:26.192 --> 00:42:27.512
+between different populations as well.
+
+734
+00:42:27.972 --> 00:42:31.332
+So you can split the two populations into smokers and non-smokers and
+
+735
+00:42:31.392 --> 00:42:35.344
+actually see, is there an epistatic effect?That is different
+
+736
+00:42:35.444 --> 00:42:36.664
+from smokers and non-smokers.
+
+737
+00:42:38.744 --> 00:42:39.064
+Okay.
+
+738
+00:42:39.944 --> 00:42:40.304
+So
+
+739
+00:42:41.444 --> 00:42:42.524
+just in general, I just
+
+740
+00:42:43.864 --> 00:42:47.644
+want you to take from this what is the framework, what does it
+
+741
+00:42:47.684 --> 00:42:50.044
+tell our researchers and clinicians.
+
+742
+00:42:50.784 --> 00:42:53.904
+You can actually see dominant paths towards oncogenesis.
+
+743
+00:42:53.964 --> 00:42:56.484
+So you can see out of
+
+744
+00:42:57.744 --> 00:43:01.604
+these kind of things, where you go more often, and you can
+
+745
+00:43:01.644 --> 00:43:05.624
+actually compute those with mathematical formulas of which one is the path that
+
+746
+00:43:06.264 --> 00:43:07.184
+occurs more often.
+
+747
+00:43:08.524 --> 00:43:09.244
+And that
+
+748
+00:43:10.504 --> 00:43:11.844
+it's going to be able to
+
+749
+00:43:13.044 --> 00:43:16.224
+give you some advantage with interventions as well.
+
+750
+00:43:17.024 --> 00:43:19.104
+You can see where there's antagonistic
+
+751
+00:43:19.124 --> 00:43:22.904
+epistasis, and just with data, you
+
+752
+00:43:22.944 --> 00:43:24.804
+don't need to be doing
+
+753
+00:43:26.444 --> 00:43:26.804
+cell
+
+754
+00:43:28.064 --> 00:43:30.804
+synthetic lethality with cell lines hypothesis.
+
+755
+00:43:32.544 --> 00:43:36.184
+You can also see synergistic epistatic effects that
+
+756
+00:43:36.784 --> 00:43:38.684
+will predict when things will co-occur,
+
+757
+00:43:39.844 --> 00:43:41.964
+and that could inform combinatory
+
+758
+00:43:43.004 --> 00:43:44.264
+therapy vulnerability.
+
+759
+00:43:45.764 --> 00:43:49.304
+Population level tests that Jeff is going to talk more about later.
+
+760
+00:43:50.944 --> 00:43:54.424
+And it's just rich prognosis in general, and it's genotype
+
+761
+00:43:54.604 --> 00:43:56.184
+specific selection coefficients.
+
+762
+00:43:56.244 --> 00:43:59.704
+It's not only two genes, it's also the
+
+763
+00:43:59.764 --> 00:44:03.154
+ordering and it's also what specific genotype, if there's a
+
+764
+00:44:03.684 --> 00:44:05.464
+third gene involved.
+
+765
+00:44:07.124 --> 00:44:10.744
+And yeah, so that's what I want you to all get out of
+
+766
+00:44:10.784 --> 00:44:14.204
+this, that you don't need to do co-occurrence and mutual exclusivity.
+
+767
+00:44:14.924 --> 00:44:18.704
+You can just use our model, and that's going to give you
+
+768
+00:44:19.284 --> 00:44:23.064
+whatever you get from co-occurrence and mutual exclusivity and much
+
+769
+00:44:23.104 --> 00:44:26.784
+more. And you just need exactly the same kind of
+
+770
+00:44:26.824 --> 00:44:27.624
+data.
+
+771
+00:44:30.304 --> 00:44:32.924
+So with that, I would like to conclude.
+
+772
+00:44:33.464 --> 00:44:34.824
+This is the paper that
+
+773
+00:44:36.184 --> 00:44:39.184
+we published recently with the first methods.
+
+774
+00:44:39.764 --> 00:44:41.304
+If you want to get it.
+
+775
+00:44:42.344 --> 00:44:44.764
+And this is the signature-based mutation rate estimation,
+
+776
+00:44:45.824 --> 00:44:49.684
+and selection inference that I mentioned about how to
+
+777
+00:44:49.784 --> 00:44:51.064
+actually get those mutation rates.
+
+778
+00:44:51.804 --> 00:44:55.344
+So, it's built on Python, and there's plenty of
+
+779
+00:44:55.384 --> 00:44:57.024
+tutorials there of how to get those.
+
+780
+00:44:57.724 --> 00:45:01.644
+And any questions, if we don't have time today, you
+
+781
+00:45:01.704 --> 00:45:03.484
+can email me at
+
+782
+00:45:04.584 --> 00:45:07.864
+jorgealfaro@ucr.ac.cr.
+
+783
+00:45:09.184 --> 00:45:10.324
+All right. Thank you very much.
+
+784
+00:45:15.224 --> 00:45:17.004
+Please come to the microphones with questions.
+
+785
+00:45:17.064 --> 00:45:20.904
+And also remember, if you don't get your question in now, you should be able to
+
+786
+00:45:20.944 --> 00:45:21.304
+get it
+
+787
+00:45:22.164 --> 00:45:23.484
+during the panel discussion.
+
+788
+00:45:36.274 --> 00:45:38.854
+Hi. Thank you very much. Sherman Mayo.
+
+789
+00:45:39.304 --> 00:45:41.844
+So I'm wondering how you think about biallelic
+
+790
+00:45:42.704 --> 00:45:43.424
+changes.
+
+791
+00:45:44.224 --> 00:45:47.724
+If you have a heterozygous mutation, it could code for an
+
+792
+00:45:47.804 --> 00:45:50.484
+immunogenic protein, and maybe that
+
+793
+00:45:51.764 --> 00:45:55.524
+affects it. Or if you have a heterozygous mutation, maybe that
+
+794
+00:45:55.584 --> 00:45:58.984
+gene is now prone to biallelic loss through its own
+
+795
+00:45:59.044 --> 00:46:02.734
+intrinsic structure. So I'm just wondering how that
+
+796
+00:46:02.764 --> 00:46:05.664
+plays into this model. Thank you.
+
+797
+00:46:07.024 --> 00:46:10.204
+Yes. So far, I don't think we have considered that.
+
+798
+00:46:11.844 --> 00:46:15.744
+But yeah, it's something that is definitely worth considering.
+
+799
+00:46:17.004 --> 00:46:18.024
+What we have done,
+
+800
+00:46:19.464 --> 00:46:19.884
+I guess
+
+801
+00:46:21.564 --> 00:46:25.244
+maybe ties into that, is whenever we're calculating the
+
+802
+00:46:25.284 --> 00:46:28.664
+mutation rates, we are considering also gene
+
+803
+00:46:28.704 --> 00:46:32.464
+expression as the covariates. And gene expression
+
+804
+00:46:33.184 --> 00:46:35.764
+changes a little bit whenever you have that.
+
+805
+00:46:36.584 --> 00:46:40.224
+So it is considering that, but only in the part that we're
+
+806
+00:46:40.264 --> 00:46:43.884
+calculating the mutation rate, not yet on the selection, and
+
+807
+00:46:44.764 --> 00:46:47.824
+should be something that we should be considering. Thank you.
+
+808
+00:46:48.764 --> 00:46:52.424
+Maybe I'll just add a gloss that it shouldn't be too difficult to do that.
+
+809
+00:46:52.464 --> 00:46:53.484
+We just haven't done it.
+
+810
+00:46:53.744 --> 00:46:54.024
+Yeah.
+
+811
+00:46:54.104 --> 00:46:57.664
+Like the theory as it works, you could basically call each
+
+812
+00:46:57.824 --> 00:47:00.024
+allele kind of a gene in that network and
+
+813
+00:47:00.924 --> 00:47:01.464
+map it through.
+
+814
+00:47:02.924 --> 00:47:03.924
+Hi. Excellent talk.
+
+815
+00:47:04.824 --> 00:47:06.523
+My name is Mariana. I'm coming from Yale.
+
+816
+00:47:06.624 --> 00:47:10.614
+I was just curious if you had implemented this pipeline to look at
+
+817
+00:47:10.624 --> 00:47:14.564
+treatment status and sort of different treatments that patients get in the context
+
+818
+00:47:14.604 --> 00:47:18.284
+of maybe resistance, because I feel like the mutations can be different
+
+819
+00:47:18.364 --> 00:47:21.324
+along the trajectory without treatment compared to once you start-
+
+820
+00:47:21.704 --> 00:47:21.844
+Right
+
+821
+00:47:21.964 --> 00:47:22.674
+... adding those pressures.
+
+822
+00:47:22.784 --> 00:47:26.344
+Yeah. You're completely right. Yeah, most of the time what we do is
+
+823
+00:47:26.404 --> 00:47:30.244
+actually more try to consider the first stage where treatment has not been
+
+824
+00:47:30.284 --> 00:47:32.904
+introduced, so we actually filter for those.
+
+825
+00:47:32.924 --> 00:47:36.524
+But there's work from Jeff's lab that has
+
+826
+00:47:36.544 --> 00:47:40.504
+considered different stages. So it's more or less what Jeff is
+
+827
+00:47:40.544 --> 00:47:43.844
+going to talk about right now, where you just split the population and then
+
+828
+00:47:43.924 --> 00:47:47.624
+consider them as different things, and then you can consider the mutation rates as
+
+829
+00:47:47.684 --> 00:47:51.304
+different as well. Which is also very important because,
+
+830
+00:47:51.724 --> 00:47:55.484
+yes, as you're saying, the treatment is going to impact a lot the
+
+831
+00:47:55.504 --> 00:47:58.544
+mutation rates. So that is very important. Yes.
+
+832
+00:47:58.584 --> 00:48:02.574
+I'll refer you to a poster by Kira Glasmaker, which is exactly on
+
+833
+00:48:02.604 --> 00:48:04.064
+that stage specific question.
+
+834
+00:48:05.044 --> 00:48:05.234
+Thank you.
+
+835
+00:48:05.234 --> 00:48:05.514
+Over here.
+
+836
+00:48:05.584 --> 00:48:09.464
+Hi. Great talk. I was wondering if you have any insight on how to incorporate copy
+
+837
+00:48:09.524 --> 00:48:11.794
+number alterations into this and potentially-
+
+838
+00:48:11.794 --> 00:48:11.794
+Yes
+
+839
+00:48:11.794 --> 00:48:13.953
+... if there are any interactions that you think would be important.
+
+840
+00:48:14.004 --> 00:48:17.864
+Yes. We are working on that, and I think a paper should be published
+
+841
+00:48:18.064 --> 00:48:19.644
+very soon. Yeah. And
+
+842
+00:48:20.664 --> 00:48:23.064
+I'm actually working besides that on
+
+843
+00:48:25.064 --> 00:48:27.703
+in this part of calculating the mutation rate, the Sigmod cell.
+
+844
+00:48:29.024 --> 00:48:31.884
+The methods are there, well, more or less.
+
+845
+00:48:32.524 --> 00:48:36.424
+I'm working on actually getting mutation rates out of any possible,
+
+846
+00:48:37.544 --> 00:48:40.800
+not only copy number variations, but also indels and...
+
+847
+00:48:41.200 --> 00:48:44.880
+anything like that, because we have signatures from each one of those, and that's
+
+848
+00:48:44.940 --> 00:48:48.749
+actually what we're using as the baseline for computing the
+
+849
+00:48:48.800 --> 00:48:49.400
+mutation rates.
+
+850
+00:48:49.660 --> 00:48:49.880
+Thank you.
+
+851
+00:48:49.900 --> 00:48:53.360
+And I'll refer you to a poster by Mia Lu, who's actually right next to you
+
+852
+00:48:54.200 --> 00:48:57.880
+which will be on copy number inference of selection coefficients.
+
+853
+00:48:58.020 --> 00:49:00.220
+Not exactly epistasis yet, but hopefully soon.
+
+854
+00:49:02.880 --> 00:49:03.280
+All right.
+
+855
+00:49:04.560 --> 00:49:05.300
+Oh, okay.
+
+856
+00:49:07.040 --> 00:49:08.460
+My question is,
+
+857
+00:49:10.060 --> 00:49:13.900
+I guess I'm not understanding, can't you just sort of
+
+858
+00:49:13.960 --> 00:49:17.740
+infer the order of mutation acquisition by variant allele
+
+859
+00:49:17.820 --> 00:49:18.420
+frequency?
+
+860
+00:49:19.360 --> 00:49:23.300
+If you've got the first mutation is going to be a higher
+
+861
+00:49:23.360 --> 00:49:26.560
+variant allele frequency, and then the other one's going to be a subclone
+
+862
+00:49:26.640 --> 00:49:27.060
+typically.
+
+863
+00:49:28.320 --> 00:49:29.720
+Yes, probably you can.
+
+864
+00:49:31.260 --> 00:49:34.740
+Again, what we also want to get at is not only the order,
+
+865
+00:49:35.480 --> 00:49:39.200
+but how that order is important in terms of the selection as well.
+
+866
+00:49:39.880 --> 00:49:42.700
+So yeah, that's actually what we want.
+
+867
+00:49:42.740 --> 00:49:46.440
+But as we were saying, yeah, that's something that we should be taking into
+
+868
+00:49:46.460 --> 00:49:48.660
+account, and it's more or less because
+
+869
+00:49:49.760 --> 00:49:53.410
+it hasn't been priority yet or maybe we're just starting
+
+870
+00:49:53.440 --> 00:49:56.180
+with the simpler version. But yeah, you're right.
+
+871
+00:49:56.200 --> 00:49:58.960
+It's something that we should be considering as well. Thank you.
+
+872
+00:49:59.200 --> 00:49:59.400
+Thank you.
+
+873
+00:50:00.620 --> 00:50:00.800
+Okay.
+
+874
+00:50:02.300 --> 00:50:02.670
+Thanks again.
+
+875
+00:50:03.840 --> 00:50:07.660
+Thanks again, Jorge and Jaime. And now I will
+
+876
+00:50:07.720 --> 00:50:09.680
+close this out and then we'll have a panel discussion.
+
+877
+00:50:19.640 --> 00:50:23.320
+Ah, there's the title. All right, so the title of my talk is, "Tobacco
+
+878
+00:50:23.440 --> 00:50:27.120
+Smoking and the Somatic Selective Epistasis in
+
+879
+00:50:27.180 --> 00:50:31.030
+Lung Adenocarcinoma." And I'm going to add a complication
+
+880
+00:50:31.080 --> 00:50:34.860
+to everything that has been talked about before, which is that in
+
+881
+00:50:34.900 --> 00:50:38.640
+addition to somatic differences in terms of genetic
+
+882
+00:50:38.720 --> 00:50:42.520
+changes affecting the selection coefficient for a particular variant, the
+
+883
+00:50:43.400 --> 00:50:47.200
+microenvironment of that tumor also is going to affect the selection coefficients
+
+884
+00:50:47.220 --> 00:50:48.780
+that we get. So whenever we talk about
+
+885
+00:50:49.640 --> 00:50:53.540
+some selection coefficient on KRAS or P53 or APC, that's
+
+886
+00:50:53.560 --> 00:50:57.140
+really an average selection coefficient, depending on the tumor microenvironment of
+
+887
+00:50:57.200 --> 00:51:00.600
+every different patient. And in particular, in this talk, I'm only going to
+
+888
+00:51:01.200 --> 00:51:04.620
+talk about one covariate, which is
+
+889
+00:51:05.560 --> 00:51:09.160
+smoking, and look at the differences in selection that occur
+
+890
+00:51:09.180 --> 00:51:12.240
+in lung cancer when it is exposed to smoking and not.
+
+891
+00:51:14.120 --> 00:51:18.090
+For the first part of the talk, I'll be talking
+
+892
+00:51:18.120 --> 00:51:21.660
+about these gene by environment interactions and much the same
+
+893
+00:51:22.080 --> 00:51:23.500
+line of thought that has been talked about
+
+894
+00:51:24.620 --> 00:51:25.120
+so far.
+
+895
+00:51:26.500 --> 00:51:29.460
+And then I'm going to talk, I have quite a few slides at the end about the clinical
+
+896
+00:51:29.520 --> 00:51:31.020
+implications, which may be of interest.
+
+897
+00:51:32.460 --> 00:51:36.200
+All right, so gene-environment interactions and epistasis shape the
+
+898
+00:51:36.240 --> 00:51:38.340
+evolutionary trajectories of lung adenocarcinoma.
+
+899
+00:51:39.620 --> 00:51:43.220
+Tobacco smoke is classically viewed as a mutagen.
+
+900
+00:51:43.360 --> 00:51:46.600
+We usually think about it as causing mutations, and that's the problem.
+
+901
+00:51:46.620 --> 00:51:48.700
+But it also alters the lung microenvironment.
+
+902
+00:51:48.740 --> 00:51:52.610
+If you've ever seen a smoker's lung, it's very different from a normal lung, and
+
+903
+00:51:52.660 --> 00:51:56.290
+that translates all the way down to the cellular level.
+
+904
+00:51:56.340 --> 00:52:00.230
+And so it probably changes some of the selection coefficients on genes.
+
+905
+00:52:00.230 --> 00:52:04.200
+At least that's the hypothesis we were working at when we looked at this project.
+
+906
+00:52:04.980 --> 00:52:07.020
+So it should shape the selection on mutations.
+
+907
+00:52:07.780 --> 00:52:11.440
+Disentangling the mutation rates from the selection reveals that the
+
+908
+00:52:11.480 --> 00:52:15.160
+differences in driver mutation prevalence between smokers and non-smokers
+
+909
+00:52:15.220 --> 00:52:18.969
+often reflect gene by environment interactions, not just mutagenesis
+
+910
+00:52:19.120 --> 00:52:19.940
+differences between
+
+911
+00:52:21.100 --> 00:52:25.020
+smokers and non-smokers. And smoking-dependent epistatic interactions
+
+912
+00:52:25.440 --> 00:52:29.380
+among driver mutations can play key roles in constraining or enabling
+
+913
+00:52:29.400 --> 00:52:30.409
+evolutionary trajectories.
+
+914
+00:52:31.440 --> 00:52:34.980
+So we wanted to look at lung adenocarcinoma because it provides substantial
+
+915
+00:52:35.040 --> 00:52:38.540
+power for understanding the effect of smoking on oncogenesis.
+
+916
+00:52:39.260 --> 00:52:43.000
+If you look at the four major lung cancer types, large
+
+917
+00:52:43.020 --> 00:52:44.420
+cell, squamous cell,
+
+918
+00:52:45.620 --> 00:52:48.550
+small cell, and adenocarcinoma, we have
+
+919
+00:52:49.780 --> 00:52:53.680
+the most non-smokers and the largest population in lung adenocarcinoma.
+
+920
+00:52:53.720 --> 00:52:56.740
+So we thought it would give us the best comparison by environment
+
+921
+00:52:57.159 --> 00:53:01.140
+within a cancer type. So that's what I'll
+
+922
+00:53:01.159 --> 00:53:04.660
+talk about today. And just to start with the overall
+
+923
+00:53:04.720 --> 00:53:08.680
+landscape, again, this is the average selection coefficient across all environments
+
+924
+00:53:08.720 --> 00:53:08.830
+and
+
+925
+00:53:10.100 --> 00:53:12.560
+somatic genetic contexts.
+
+926
+00:53:13.620 --> 00:53:15.000
+This is what we find.
+
+927
+00:53:17.480 --> 00:53:21.440
+And here we're just looking at the prevalence, so just how often do we
+
+928
+00:53:21.460 --> 00:53:24.940
+see P53 or KRAS or KEAP1 or STK11 or
+
+929
+00:53:25.000 --> 00:53:27.900
+SMARCA4 or ATM, RBM10 or EGFR?
+
+930
+00:53:29.120 --> 00:53:32.890
+And you can see between smokers, so ever and
+
+931
+00:53:32.960 --> 00:53:36.880
+never smokers, the ever smokers are in teal, and the never smokers are
+
+932
+00:53:36.960 --> 00:53:37.670
+in this
+
+933
+00:53:38.600 --> 00:53:39.800
+red color.
+
+934
+00:53:41.340 --> 00:53:42.340
+There's not
+
+935
+00:53:43.360 --> 00:53:46.960
+much difference between P53, but there's a big difference between
+
+936
+00:53:47.040 --> 00:53:47.560
+KRAS.
+
+937
+00:53:48.600 --> 00:53:51.800
+So KRAS is seen much more in smokers than non-smokers.
+
+938
+00:53:52.720 --> 00:53:56.480
+Also KEAP1, STK11, and even SMARCA4 to some degree,
+
+939
+00:53:56.980 --> 00:53:59.420
+are seen much more in smokers than in non-smokers.
+
+940
+00:53:59.540 --> 00:54:03.420
+But if we go all the way down to EGFR, you see the opposite pattern, where
+
+941
+00:54:03.460 --> 00:54:07.250
+non-smokers have EGFR mutations at much higher rates
+
+942
+00:54:07.300 --> 00:54:11.280
+than smokers. So one question is, is this just the product of
+
+943
+00:54:11.290 --> 00:54:15.140
+mutation rate differences? Because smoking is a major
+
+944
+00:54:15.180 --> 00:54:18.340
+mutagen, maybe it just mutates KRAS a lot more.
+
+945
+00:54:20.640 --> 00:54:22.430
+Or is this actually the product of selection?
+
+946
+00:54:23.040 --> 00:54:24.810
+Is there a difference in the lung microenvironment?
+
+947
+00:54:25.640 --> 00:54:28.950
+So those are the ones we're going to highlight in the rest of this talk, so keep
+
+948
+00:54:28.980 --> 00:54:32.604
+track of them.And later I'll talk about some of the clinical
+
+949
+00:54:32.644 --> 00:54:34.124
+implications of these mutations as well.
+
+950
+00:54:34.464 --> 00:54:38.104
+So mutation prevalence, what I just showed you, reflects the cellular
+
+951
+00:54:38.164 --> 00:54:40.804
+mutation rate and selection for survival and proliferation.
+
+952
+00:54:40.864 --> 00:54:42.824
+So you might have this prevalence.
+
+953
+00:54:43.484 --> 00:54:47.134
+If you look at the prevalence of P53 and CSMD3, for instance, they're both
+
+954
+00:54:47.424 --> 00:54:50.734
+reasonably prevalent. But if you then do this
+
+955
+00:54:50.784 --> 00:54:54.124
+deconvolution we've all talked about today to try to understand how much
+
+956
+00:54:54.164 --> 00:54:58.084
+mutation is responsible for each one, you see that CSMD3 is mostly
+
+957
+00:54:58.104 --> 00:55:00.824
+present because it just happens so frequently in cells.
+
+958
+00:55:01.364 --> 00:55:03.024
+Because it's a
+
+959
+00:55:03.904 --> 00:55:07.724
+low expressed long gene, you get a lot of mutations in CSMD3.
+
+960
+00:55:08.464 --> 00:55:11.624
+Whereas P53, on the other hand, has a much lower mutation rate than
+
+961
+00:55:11.684 --> 00:55:15.444
+CSMD3, and so the strength of selection you would
+
+962
+00:55:15.504 --> 00:55:17.524
+infer based on this difference in prevalence.
+
+963
+00:55:18.804 --> 00:55:19.814
+You have very
+
+964
+00:55:21.384 --> 00:55:24.664
+opposing inferences about what's causing those mutations.
+
+965
+00:55:25.484 --> 00:55:29.204
+And this has long been known in terms of detecting these genes as
+
+966
+00:55:29.224 --> 00:55:32.404
+drivers or not, but it's really important for the quantitative estimation as
+
+967
+00:55:33.564 --> 00:55:35.164
+Dr. Morello was talking about just a moment ago.
+
+968
+00:55:35.664 --> 00:55:35.863
+So,
+
+969
+00:55:37.004 --> 00:55:40.524
+let's look at the results. If we look at gene mutation rates by smoker status,
+
+970
+00:55:41.084 --> 00:55:41.364
+we do
+
+971
+00:55:42.404 --> 00:55:43.484
+indeed see that
+
+972
+00:55:46.104 --> 00:55:49.984
+different genes have different rates of mutation in ever smokers on the
+
+973
+00:55:50.084 --> 00:55:53.644
+Y-axis compared to the rate in never smokers on the X-axis.
+
+974
+00:55:54.364 --> 00:55:56.924
+Generally, they're significantly elevated in smokers.
+
+975
+00:55:56.944 --> 00:56:00.744
+Smoking is a mutagen. But different genes actually have different
+
+976
+00:56:00.804 --> 00:56:04.544
+degrees of elevation due to mutation, which is why we need to
+
+977
+00:56:04.584 --> 00:56:08.184
+properly deconvolve that mutation for the separate populations of
+
+978
+00:56:08.224 --> 00:56:12.114
+smokers and non-smokers. We can't assume the same mutation rate, of course, between
+
+979
+00:56:12.144 --> 00:56:13.064
+these two populations.
+
+980
+00:56:14.084 --> 00:56:14.854
+And in particular,
+
+981
+00:56:15.724 --> 00:56:19.624
+there's some remarkable results where ALK and GNAS have much higher mutation
+
+982
+00:56:19.644 --> 00:56:23.264
+rates in smokers, and that's important to keep track of because if we see elevated
+
+983
+00:56:23.384 --> 00:56:27.264
+prevalence of ALK and GNAS mutations, that may be just due to
+
+984
+00:56:27.304 --> 00:56:31.244
+mutation. It may have nothing to do with whether it actually cause
+
+985
+00:56:31.264 --> 00:56:32.984
+proliferation or survival in cells better.
+
+986
+00:56:33.864 --> 00:56:37.544
+All right. And the two that I'm going to talk about a lot are EGFR
+
+987
+00:56:38.064 --> 00:56:41.124
+and KRAS, and you can see that both of these are elevated
+
+988
+00:56:42.104 --> 00:56:43.204
+in smokers.
+
+989
+00:56:44.284 --> 00:56:45.884
+This is interesting in particular.
+
+990
+00:56:45.964 --> 00:56:47.274
+EGFR is elevated
+
+991
+00:56:48.104 --> 00:56:48.704
+in smokers.
+
+992
+00:56:49.613 --> 00:56:52.604
+And if you think back to that previous slide, EGFR was
+
+993
+00:56:52.724 --> 00:56:54.644
+actually less frequent
+
+994
+00:56:55.484 --> 00:56:56.124
+in smokers.
+
+995
+00:56:57.724 --> 00:57:00.884
+So I'll let you think for a moment what that means about the relative selection or
+
+996
+00:57:00.964 --> 00:57:02.924
+mutation rates, and I'll show you the result.
+
+997
+00:57:07.204 --> 00:57:07.464
+So,
+
+998
+00:57:09.424 --> 00:57:12.964
+in a moment. And what we're going to do also
+
+999
+00:57:13.004 --> 00:57:16.173
+to add the complication that this session is about is we're going to look at how
+
+1000
+00:57:16.204 --> 00:57:19.354
+epistasis can further differentiate these adaptive landscapes of ever
+
+1001
+00:57:19.444 --> 00:57:23.344
+smoker and never smoker tumors. So on the left, you
+
+1002
+00:57:23.384 --> 00:57:27.204
+just see this diagram. These individuals are labeled for having P53 in
+
+1003
+00:57:27.244 --> 00:57:31.044
+purple or KRAS mutations in green, and some individuals
+
+1004
+00:57:31.124 --> 00:57:34.264
+have both, some individuals have none, and some individuals have one or the other.
+
+1005
+00:57:34.924 --> 00:57:38.524
+And then we can divide those into the never smokers and the ever smokers,
+
+1006
+00:57:38.984 --> 00:57:42.934
+and the patterns of what is mutated and what is not mutated are different in
+
+1007
+00:57:42.944 --> 00:57:46.724
+these two populations. And then we can construct
+
+1008
+00:57:46.734 --> 00:57:48.234
+these diagrams that
+
+1009
+00:57:49.744 --> 00:57:52.104
+Dr. Alfaro-Morro was just explaining to you,
+
+1010
+00:57:53.304 --> 00:57:55.604
+of interactive... of
+
+1011
+00:57:56.604 --> 00:57:59.354
+sort of like no mutations to one mutation,
+
+1012
+00:58:00.224 --> 00:58:04.164
+to both mutations. And then we can do our analysis that we just
+
+1013
+00:58:04.224 --> 00:58:04.664
+described.
+
+1014
+00:58:05.724 --> 00:58:09.594
+So, if you do this on ever and never smoker, you can see that
+
+1015
+00:58:09.624 --> 00:58:13.584
+ever and never smoker status and prior somatic alterations do affect the
+
+1016
+00:58:13.624 --> 00:58:17.044
+evolutionary trajectory. So up here, on the
+
+1017
+00:58:17.184 --> 00:58:19.724
+left-hand side, these are the fixation rates
+
+1018
+00:58:20.584 --> 00:58:22.444
+or the substitution rates. That's
+
+1019
+00:58:23.444 --> 00:58:27.184
+accounting for both mutation and selection in never smokers and smokers.
+
+1020
+00:58:27.244 --> 00:58:31.204
+And what you can see is that, for instance, KRAS rates in general are
+
+1021
+00:58:31.264 --> 00:58:35.164
+lower in the never smokers. That's not
+
+1022
+00:58:35.224 --> 00:58:38.144
+a big surprise given the prevalence differences. Our method should infer that.
+
+1023
+00:58:39.604 --> 00:58:42.444
+And then we look at the underlying mutation rates.
+
+1024
+00:58:42.824 --> 00:58:45.384
+You can see the mutation rates are definitely higher in smokers.
+
+1025
+00:58:46.224 --> 00:58:49.584
+And then if we look at selection, you see there are differences in selection, in
+
+1026
+00:58:49.624 --> 00:58:50.684
+particular
+
+1027
+00:58:54.084 --> 00:58:56.884
+between KRAS, which is much higher
+
+1028
+00:58:57.744 --> 00:59:00.604
+selected apparently in smokers than in non-smokers.
+
+1029
+00:59:01.664 --> 00:59:03.484
+And then we'll quantify that in just a moment.
+
+1030
+00:59:03.944 --> 00:59:04.184
+So,
+
+1031
+00:59:05.124 --> 00:59:08.944
+what we find is that this pairwise epistasis is common in ever smokers.
+
+1032
+00:59:09.044 --> 00:59:11.784
+So it's a little bit of a complicated diagram, so let me walk you through it.
+
+1033
+00:59:12.104 --> 00:59:15.884
+We're looking at a particular gene, and then we're asking, what is the
+
+1034
+00:59:15.924 --> 00:59:19.464
+mutation rate or the selection for a gene X
+
+1035
+00:59:19.504 --> 00:59:21.544
+mutation? That is this mutation on the left.
+
+1036
+00:59:21.584 --> 00:59:24.844
+What's the selection for this mutation after somatic
+
+1037
+00:59:25.324 --> 00:59:26.644
+mutation of gene Z? So,
+
+1038
+00:59:27.844 --> 00:59:31.813
+after mutation of KRAS, what's the selection for P53,
+
+1039
+00:59:32.044 --> 00:59:35.844
+et cetera? And what we find is, this is a whole lot of mutations here at zero.
+
+1040
+00:59:36.444 --> 00:59:40.284
+So what we find is that for both P53 and KRAS, they
+
+1041
+00:59:40.324 --> 00:59:42.584
+are antagonized by most prior mutations.
+
+1042
+00:59:42.684 --> 00:59:46.324
+In other words, you get some other mutation first, you don't get P53 or KRAS.
+
+1043
+00:59:46.684 --> 00:59:49.044
+So that's why that is in a mechanistic
+
+1044
+00:59:49.384 --> 00:59:53.064
+sense, why P53 and KRAS are
+
+1045
+00:59:53.624 --> 00:59:55.984
+origin genes. They're genes that happen early.
+
+1046
+00:59:56.364 --> 01:00:00.344
+Because if you get those other mutations, we can't say from our analysis
+
+1047
+01:00:00.384 --> 01:00:04.154
+today why it is, but I would speculate that the problem is those other mutations
+
+1048
+01:00:04.244 --> 01:00:07.264
+kill the cells unless you've already got a P53 or KRAS mutation.
+
+1049
+01:00:07.704 --> 01:00:11.664
+And so you don't get that trajectory of those other mutations and then KRAS
+
+1050
+01:00:11.674 --> 01:00:15.324
+or P53. You only get KRAS or P53 first, then these other mutations.
+
+1051
+01:00:16.704 --> 01:00:18.524
+All right. So that's
+
+1052
+01:00:19.404 --> 01:00:23.284
+that kind of example. The opposite example I'll show you for SDK
+
+1053
+01:00:23.344 --> 01:00:26.904
+11, where it's benefited by prior KRAS or KEAP1
+
+1054
+01:00:26.984 --> 01:00:30.634
+mutations. So, you can see here, KRAS and
+
+1055
+01:00:30.704 --> 01:00:31.664
+KEAP1 mutations
+
+1056
+01:00:32.484 --> 01:00:36.404
+increase compared to the SDK 11 without either of them rate
+
+1057
+01:00:36.424 --> 01:00:40.144
+of mutation. So KRAS and KEAP1 are synergistically
+
+1058
+01:00:40.204 --> 01:00:42.664
+increasing the rate of SDK 11 as a
+
+1059
+01:00:42.704 --> 01:00:46.480
+mutation.Now, it can get even more complicated.
+
+1060
+01:00:46.800 --> 01:00:50.730
+So if you look at epistatic interactions, they sometimes differ between
+
+1061
+01:00:50.780 --> 01:00:53.610
+ever smokers and never smokers, the interactions themselves.
+
+1062
+01:00:54.220 --> 01:00:57.600
+So here we have our typical gene-by-gene epistatic
+
+1063
+01:00:57.640 --> 01:01:01.340
+interaction. So this whole plot down here is a plot of
+
+1064
+01:01:01.420 --> 01:01:05.280
+selection for BRAF mutations, and this is how strong that
+
+1065
+01:01:05.320 --> 01:01:07.740
+selection is. Here we have the wild type.
+
+1066
+01:01:08.140 --> 01:01:11.260
+So in a wild type, what's the selection for a BRAF mutation? And this is it.
+
+1067
+01:01:12.240 --> 01:01:15.420
+In a PI3 kinase mutant, here's the selection, and this is it.
+
+1068
+01:01:15.860 --> 01:01:16.820
+The confidence interval there.
+
+1069
+01:01:18.440 --> 01:01:19.240
+On the other hand,
+
+1070
+01:01:20.240 --> 01:01:23.920
+if we take the wild type and mutant,
+
+1071
+01:01:25.640 --> 01:01:27.160
+and look at the selection for
+
+1072
+01:01:28.460 --> 01:01:32.080
+BRAF mutations, you see that we get basically the same
+
+1073
+01:01:32.140 --> 01:01:34.400
+pattern by wild type and mutant,
+
+1074
+01:01:35.260 --> 01:01:38.700
+regardless of whether you are a smoker or a
+
+1075
+01:01:38.780 --> 01:01:41.960
+non-smoker. So essentially, there's a G-by-G interaction.
+
+1076
+01:01:42.020 --> 01:01:44.420
+It's just the genes that matter here. The environment doesn't.
+
+1077
+01:01:45.500 --> 01:01:49.039
+But this second column shows you an example of a gene-by-environment interaction,
+
+1078
+01:01:49.179 --> 01:01:52.310
+G-by-E, where selection for KEAP1 mutations is happening.
+
+1079
+01:01:52.700 --> 01:01:55.460
+And if we look at a smoker, the selection is strongest.
+
+1080
+01:01:55.880 --> 01:01:59.600
+In an EGFR mutant of that smoker, the selection is slightly weaker.
+
+1081
+01:02:00.040 --> 01:02:03.820
+But if you go to the never smokers, the selection is weaker than either of these.
+
+1082
+01:02:04.760 --> 01:02:08.660
+And although we can't tell statistically significantly, but it looks like maybe
+
+1083
+01:02:08.720 --> 01:02:10.720
+a little bit weaker in EGFR mutant even.
+
+1084
+01:02:11.800 --> 01:02:14.320
+And then we get some very odd combinations.
+
+1085
+01:02:14.360 --> 01:02:18.080
+The best way for us to explain the data here is that there's a
+
+1086
+01:02:18.120 --> 01:02:21.600
+G-by-E interaction, but also a G-by-G interaction, and also a G-by-G-by-E
+
+1087
+01:02:21.640 --> 01:02:25.420
+interaction, because we have statistical significance for the
+
+1088
+01:02:25.520 --> 01:02:25.940
+wild type
+
+1089
+01:02:27.160 --> 01:02:29.060
+smoker being different from P53 mutant,
+
+1090
+01:02:29.940 --> 01:02:33.320
+being different from either of the non-smoker selection
+
+1091
+01:02:33.440 --> 01:02:35.380
+intensities. And the wild type
+
+1092
+01:02:36.280 --> 01:02:36.980
+non-smoker
+
+1093
+01:02:38.720 --> 01:02:42.440
+selection for EGFR is different from the selection for
+
+1094
+01:02:43.040 --> 01:02:47.020
+EGFR in the case of a P53
+
+1095
+01:02:47.060 --> 01:02:50.400
+mutant. So every one of these categories, it's different.
+
+1096
+01:02:50.900 --> 01:02:53.780
+And so that requires a lot of different interactions to explain.
+
+1097
+01:02:54.780 --> 01:02:57.540
+Okay, so these higher order interactions are important because they guide
+
+1098
+01:02:57.600 --> 01:03:00.340
+evolutionary trajectories, as was mentioned in the previous talks.
+
+1099
+01:03:01.340 --> 01:03:05.220
+And what we see here is an interesting case where we have a sub-additive
+
+1100
+01:03:05.260 --> 01:03:08.740
+effect on PI3 kinase mutation. So
+
+1101
+01:03:09.020 --> 01:03:12.950
+PI3 kinase mutation are these arrows heading upward,
+
+1102
+01:03:13.740 --> 01:03:17.000
+that are all green here. And the point is that
+
+1103
+01:03:18.620 --> 01:03:19.679
+the
+
+1104
+01:03:22.760 --> 01:03:23.640
+rates are
+
+1105
+01:03:25.060 --> 01:03:28.840
+lower after KRAS compared to from KEAP1.
+
+1106
+01:03:29.200 --> 01:03:30.680
+So we have a pretty complex
+
+1107
+01:03:31.860 --> 01:03:35.720
+relationship among the rates of PI3 kinase mutations, depending
+
+1108
+01:03:35.760 --> 01:03:39.480
+upon the original context. And this is for selection in
+
+1109
+01:03:39.600 --> 01:03:40.680
+smokers in particular.
+
+1110
+01:03:41.680 --> 01:03:43.820
+So I want to come to a bunch of conclusions for you.
+
+1111
+01:03:43.840 --> 01:03:46.800
+I have quite a few text slides here, so hang with me while I talk through them.
+
+1112
+01:03:47.520 --> 01:03:50.620
+The scientific conclusions of what I just talked about are that the adaptive
+
+1113
+01:03:50.680 --> 01:03:53.920
+landscape of lung adenocarcinoma is substantially
+
+1114
+01:03:53.960 --> 01:03:57.060
+different between ever smokers and never smokers.
+
+1115
+01:03:57.090 --> 01:03:59.040
+And I didn't have the slide here,
+
+1116
+01:03:59.880 --> 01:04:03.280
+but you can actually see differences in the amount of synergism and the
+
+1117
+01:04:03.340 --> 01:04:06.220
+amount of antagonism between the two as well.
+
+1118
+01:04:07.100 --> 01:04:10.860
+So certain mutations, just to get granular, KRAS and
+
+1119
+01:04:10.940 --> 01:04:14.700
+KEAP1 and SDK11 are stronger drivers of tumor growth in
+
+1120
+01:04:14.760 --> 01:04:18.720
+ever smoker LUAD. That is, smoking tends to increase the
+
+1121
+01:04:18.760 --> 01:04:21.209
+selection for KRAS, KEAP1 and SDK11.
+
+1122
+01:04:21.680 --> 01:04:25.620
+For others, like EGFR, PI3 kinase, and SMAD4, they're
+
+1123
+01:04:25.690 --> 01:04:28.560
+stronger drivers in never smoker lung adenocarcinoma.
+
+1124
+01:04:30.580 --> 01:04:34.120
+Pairwise and higher order epistatic interactions are prevalent in
+
+1125
+01:04:34.140 --> 01:04:38.120
+LUAD and further differentiate the adaptive landscape of smokers.
+
+1126
+01:04:38.220 --> 01:04:42.020
+So we really need to think about the order of mutations in order to understand how
+
+1127
+01:04:42.060 --> 01:04:45.650
+this trajectory happens. And what we need to follow on with that is that
+
+1128
+01:04:46.200 --> 01:04:48.870
+treatments should consider not only mutations in isolation,
+
+1129
+01:04:49.720 --> 01:04:53.590
+but the entire genetic architecture of the tumor in terms of where is
+
+1130
+01:04:53.620 --> 01:04:57.480
+this patient along this trajectory, and that's how we should think about how
+
+1131
+01:04:57.540 --> 01:04:59.200
+we treat tumors.
+
+1132
+01:05:00.320 --> 01:05:04.160
+Measures of selection contextualized by the surrounding genotype
+
+1133
+01:05:04.240 --> 01:05:08.160
+and environment should inform precision oncology and therapeutic development.
+
+1134
+01:05:08.200 --> 01:05:09.660
+It's important to track these things.
+
+1135
+01:05:11.080 --> 01:05:13.070
+So, second slide of scientific conclusions.
+
+1136
+01:05:13.280 --> 01:05:16.760
+P53 and KRAS were widely antagonized by other driver
+
+1137
+01:05:16.770 --> 01:05:20.580
+mutations, and this is consistent with their early clonal emergence during lung
+
+1138
+01:05:20.640 --> 01:05:21.550
+adenocarcinoma.
+
+1139
+01:05:22.710 --> 01:05:26.680
+And also, it supports their frequently primary role
+
+1140
+01:05:26.740 --> 01:05:27.770
+in tumor initiation.
+
+1141
+01:05:29.120 --> 01:05:33.010
+In terms of preclinical validation, preclinical work that validates what
+
+1142
+01:05:33.820 --> 01:05:36.400
+I just told you from our tumor data analysis.
+
+1143
+01:05:37.400 --> 01:05:41.260
+Our preclinical work is consistent with
+
+1144
+01:05:41.280 --> 01:05:44.900
+our finding that KRAS mutations synergistically enhance selection for
+
+1145
+01:05:45.000 --> 01:05:48.890
+KEAP1 and SDK11 mutations. Prior studies
+
+1146
+01:05:49.020 --> 01:05:52.900
+also show that KEAP1 loss accelerates LUAD progression
+
+1147
+01:05:52.920 --> 01:05:55.580
+in KRAS mutant mouse tumors.
+
+1148
+01:05:57.780 --> 01:06:01.760
+More preclinical validation. KEAP1 loss compensates
+
+1149
+01:06:01.780 --> 01:06:04.620
+for the deleterious effects of KRAS SDK11
+
+1150
+01:06:04.700 --> 01:06:06.100
+co-mutation.
+
+1151
+01:06:10.040 --> 01:06:12.620
+I just want to talk a bit about clinical alignment with trials.
+
+1152
+01:06:13.080 --> 01:06:16.980
+So, it turns out that mutations of KEAP1 and/or SDK11
+
+1153
+01:06:17.120 --> 01:06:20.700
+worsen survival and treatment response in KRAS
+
+1154
+01:06:20.760 --> 01:06:24.680
+mutant lung adenocarcinoma. That's consistent with the epistasis
+
+1155
+01:06:24.880 --> 01:06:28.820
+inference that we get. And also, these mutations
+
+1156
+01:06:28.860 --> 01:06:29.980
+worsen survival and treatment
+
+1157
+01:06:31.180 --> 01:06:34.940
+response in KRAS mutant non-small cell lung cancer in general.
+
+1158
+01:06:35.540 --> 01:06:39.142
+Many papers supporting this result.A little more clinical
+
+1159
+01:06:39.192 --> 01:06:41.472
+alignment, experimental and observational.
+
+1160
+01:06:41.892 --> 01:06:45.872
+Our analyses also identified synergies between EGFR and other drivers,
+
+1161
+01:06:46.032 --> 01:06:48.002
+RBM10 and catenin B1
+
+1162
+01:06:48.992 --> 01:06:52.982
+in nonsmoker LUAD, and RB1 in both nonsmoker and
+
+1163
+01:06:53.032 --> 01:06:56.522
+ever smoker LUAD. These interactions are corroborated by experimental and clinical
+
+1164
+01:06:56.612 --> 01:06:59.952
+studies that show that RBM10 mutations promote
+
+1165
+01:06:59.992 --> 01:07:03.752
+EGFR mutant LUAD and confer resistance to EGFR
+
+1166
+01:07:03.772 --> 01:07:07.542
+TKIs. So that's consistent with our inferences that RBM10 is
+
+1167
+01:07:07.552 --> 01:07:10.152
+synergistic with EGFR mutant LUAD.
+
+1168
+01:07:10.932 --> 01:07:14.802
+Catenin B1 mutations are enriched in advanced EGFR mutant and
+
+1169
+01:07:15.512 --> 01:07:18.872
+nonsmall cell lung cancer and are associated with
+
+1170
+01:07:18.912 --> 01:07:22.732
+metastasis and TKI resistance. And lastly, RB1 mutations
+
+1171
+01:07:22.792 --> 01:07:26.652
+in EGFR mutant LUAD mediate histological transformation to small cell
+
+1172
+01:07:26.732 --> 01:07:28.052
+lung cancer. So,
+
+1173
+01:07:29.462 --> 01:07:33.432
+the synergistic selection of RB1 mutations in the context
+
+1174
+01:07:33.492 --> 01:07:36.732
+of EGFR makes total sense with that as well.
+
+1175
+01:07:39.132 --> 01:07:42.952
+Further clinical alignment. Current non-small cell lung
+
+1176
+01:07:43.052 --> 01:07:46.312
+cancer treatment guidelines for EGFR TKIs do not account for co-occurring
+
+1177
+01:07:46.352 --> 01:07:46.962
+mutations.
+
+1178
+01:07:48.052 --> 01:07:52.032
+However, our findings suggest that concurrent mutations could serve as biomarkers
+
+1179
+01:07:52.072 --> 01:07:55.952
+of treatment response. Antagonistic epistasis between EGFR
+
+1180
+01:07:56.052 --> 01:07:56.382
+and
+
+1181
+01:07:57.332 --> 01:08:00.452
+KRAS or KEAP1 implies that the efficiency of EGFR
+
+1182
+01:08:00.492 --> 01:08:04.252
+TKIs may be reduced in tumors that harbor these
+
+1183
+01:08:04.292 --> 01:08:08.152
+concurrent alterations, and the prediction aligns with
+
+1184
+01:08:08.192 --> 01:08:12.092
+clinical observations. So KRAS mutations decrease survival
+
+1185
+01:08:12.132 --> 01:08:15.992
+in patients with EGFR mutant LUAD patients treated with EGFR
+
+1186
+01:08:16.052 --> 01:08:19.992
+TKIs, and also KEAP1 mutations reduced
+
+1187
+01:08:20.052 --> 01:08:23.312
+EGFR TKI efficiency in EGFR mutant lung cancer.
+
+1188
+01:08:23.413 --> 01:08:25.772
+So this precision medicine
+
+1189
+01:08:26.612 --> 01:08:30.333
+really does tell you a lot about prognosis, and the interactions between these
+
+1190
+01:08:30.392 --> 01:08:33.612
+genes tell you a lot that needs to be kept track of.
+
+1191
+01:08:34.052 --> 01:08:36.913
+It's not just is the gene there or not, it's what
+
+1192
+01:08:37.772 --> 01:08:41.192
+else is there that determines whether it's going to
+
+1193
+01:08:41.253 --> 01:08:45.092
+be effective in that way. A little bit more clinical alignment.
+
+1194
+01:08:47.592 --> 01:08:51.272
+In accordance with the inferred mutually synergistic effect of
+
+1195
+01:08:51.293 --> 01:08:55.152
+mutations of KEAP1 and STK11 in ever smoker LUAD,
+
+1196
+01:08:55.753 --> 01:08:59.132
+co-mutation of KEAP1 and STK11 promotes cell
+
+1197
+01:08:59.152 --> 01:08:59.833
+proliferation
+
+1198
+01:09:02.192 --> 01:09:05.552
+and worsens survival in non-small cell lung cancer
+
+1199
+01:09:05.692 --> 01:09:06.932
+independently of KRAS,
+
+1200
+01:09:07.833 --> 01:09:10.352
+all consistent with the epistatic results that we obtained.
+
+1201
+01:09:12.373 --> 01:09:14.753
+Clinical alignment in terms of trials, a little bit more.
+
+1202
+01:09:14.812 --> 01:09:18.442
+Clinical trials for lung cancer therapies often do not
+
+1203
+01:09:18.472 --> 01:09:20.333
+assess the influence of smoking status.
+
+1204
+01:09:21.192 --> 01:09:24.192
+So many clinical trials for lung cancer
+
+1205
+01:09:25.032 --> 01:09:28.952
+don't look at that as a covariate that they need to account for
+
+1206
+01:09:29.793 --> 01:09:31.922
+and frequently do not even collect the usage history,
+
+1207
+01:09:33.472 --> 01:09:37.253
+perhaps due to a conception that tobacco smoke has a negligible effect on
+
+1208
+01:09:37.312 --> 01:09:37.913
+outcomes.
+
+1209
+01:09:38.852 --> 01:09:42.833
+But this lack of assessment and tracking really must change because these two
+
+1210
+01:09:42.852 --> 01:09:46.373
+diseases are considerably different because of the dramatic physiological
+
+1211
+01:09:46.392 --> 01:09:49.632
+differences that smoking induces on the lung that change the
+
+1212
+01:09:50.413 --> 01:09:52.472
+genetic trajectories that this cancer can follow.
+
+1213
+01:09:53.992 --> 01:09:57.472
+These findings that I've showed you today reveal that tobacco smoke profoundly
+
+1214
+01:09:57.512 --> 01:10:01.482
+reshapes the evolutionary trajectory of lung adenocarcinoma and necessitates
+
+1215
+01:10:01.532 --> 01:10:05.052
+a more systematic incorporation of smoking history into trial
+
+1216
+01:10:05.112 --> 01:10:08.692
+design and treatment decision-making, particularly for targeted
+
+1217
+01:10:08.752 --> 01:10:09.272
+therapies.
+
+1218
+01:10:11.472 --> 01:10:15.332
+And the substantially stronger selection for EGFR mutations in
+
+1219
+01:10:15.412 --> 01:10:19.172
+never smoker LUAD implies that EGFR tyrosine kinase
+
+1220
+01:10:19.212 --> 01:10:22.672
+inhibitors should yield greater clinical benefit in never smokers.
+
+1221
+01:10:24.572 --> 01:10:28.312
+Indeed, a retrospective analysis of patients with EGFR mutant
+
+1222
+01:10:28.472 --> 01:10:32.232
+LUAD found that the objective response rate of patients receiving EGFR
+
+1223
+01:10:32.272 --> 01:10:35.742
+TKIs declined from 73% among never smokers to
+
+1224
+01:10:35.772 --> 01:10:39.652
+46% among individuals with over 10 pack years of smoking history.
+
+1225
+01:10:39.772 --> 01:10:43.532
+So that finding is already validated with
+
+1226
+01:10:43.572 --> 01:10:43.852
+data.
+
+1227
+01:10:44.932 --> 01:10:48.752
+Similar patterns have been reported in additional retrospective studies of
+
+1228
+01:10:48.772 --> 01:10:52.352
+lung adenocarcinoma and across non-small cell lung cancer more
+
+1229
+01:10:52.392 --> 01:10:52.812
+broadly.
+
+1230
+01:10:54.912 --> 01:10:56.892
+And that's the end of my presentation.
+
+1231
+01:10:57.512 --> 01:11:01.452
+I have just four and a half minutes for direct questions to me, and then we'll
+
+1232
+01:11:01.512 --> 01:11:02.852
+move into our panel phase.
+
+1233
+01:11:03.872 --> 01:11:04.132
+Yes.
+
+1234
+01:11:07.272 --> 01:11:07.452
+Thanks.
+
+1235
+01:11:11.492 --> 01:11:11.612
+So
+
+1236
+01:11:12.452 --> 01:11:14.912
+very cool talk. I'm Matt Leventhal from Boston.
+
+1237
+01:11:15.192 --> 01:11:15.352
+Hi.
+
+1238
+01:11:16.252 --> 01:11:16.532
+And
+
+1239
+01:11:18.372 --> 01:11:21.982
+what is the kind of landscape of folks having looked at
+
+1240
+01:11:22.192 --> 01:11:24.512
+PARP inhibition in smokers with lung cancer?
+
+1241
+01:11:24.572 --> 01:11:25.652
+Because the implication here
+
+1242
+01:11:26.492 --> 01:11:30.392
+is that you get rid of your cell cycle and DNA damage
+
+1243
+01:11:30.472 --> 01:11:34.272
+checkpoints, and that they're more effective in driving evolution in the
+
+1244
+01:11:34.332 --> 01:11:37.632
+ever smokers. So I'm curious if people have looked then, if synthetic
+
+1245
+01:11:37.672 --> 01:11:41.392
+lethality with PARP inhibition is especially effective in ever
+
+1246
+01:11:41.432 --> 01:11:41.992
+smokers.
+
+1247
+01:11:42.852 --> 01:11:44.612
+That sounds like a fabulous question.
+
+1248
+01:11:44.692 --> 01:11:48.552
+I have no answer for you because I've never looked into PARP inhibition in smokers.
+
+1249
+01:11:49.372 --> 01:11:53.272
+But in principle, we can look at different populations with PARP and with
+
+1250
+01:11:53.332 --> 01:11:56.132
+bioPARP. There's tons of questions we could ask along those lines.
+
+1251
+01:11:57.192 --> 01:12:00.272
+And also look at different DNA damage
+
+1252
+01:12:01.672 --> 01:12:05.572
+phenotypes or genotypes as well, and that could also illuminate
+
+1253
+01:12:05.612 --> 01:12:08.872
+these kinds of questions. There's a ton of ways you can sort of look at this data,
+
+1254
+01:12:09.022 --> 01:12:12.872
+and I think a ton of ways where looking at this data can be extremely informative
+
+1255
+01:12:12.972 --> 01:12:16.492
+about which clinical courses to try and take.
+
+1256
+01:12:17.692 --> 01:12:21.452
+If you have a hypothesis and you haven't used the tumor data to ask the
+
+1257
+01:12:21.492 --> 01:12:23.512
+question beforehand, why haven't you?
+
+1258
+01:12:24.052 --> 01:12:27.892
+Because you can, and it probably will tell you the answer long before
+
+1259
+01:12:27.972 --> 01:12:31.642
+you can get a clinical trial done, and it will tell you how strong that result is
+
+1260
+01:12:31.672 --> 01:12:35.532
+going to be. So let's use this data to tell us which ways we
+
+1261
+01:12:35.552 --> 01:12:37.552
+need to go in these studies.
+
+1262
+01:12:37.572 --> 01:12:37.772
+Thank you.
+
+1263
+01:12:40.740 --> 01:12:41.660
+Thank you. Great talk.
+
+1264
+01:12:42.480 --> 01:12:45.610
+I had a question on whether or not you've tried to integrate proteomics
+
+1265
+01:12:45.680 --> 01:12:49.480
+data into some of these states. Just observing
+
+1266
+01:12:49.520 --> 01:12:53.420
+from one state to another, if you can segregate your data well enough, can
+
+1267
+01:12:53.460 --> 01:12:57.100
+you see the difference in proteomic changes when you acquire that second
+
+1268
+01:12:57.140 --> 01:12:59.700
+mutation in different groups? Have you tried that?
+
+1269
+01:12:59.780 --> 01:13:03.640
+Have you looked into adding one more omics layer based off of
+
+1270
+01:13:03.680 --> 01:13:05.120
+your groups in epistasis?
+
+1271
+01:13:05.240 --> 01:13:07.880
+I'm delighted to hear your enthusiasm. No, we haven't.
+
+1272
+01:13:08.160 --> 01:13:11.730
+This is the only population difference study that we've done with this technique so
+
+1273
+01:13:11.880 --> 01:13:14.900
+far. So we have not done that, but it totally makes sense.
+
+1274
+01:13:14.960 --> 01:13:18.530
+If there's any particular marker you think really distinguishes different
+
+1275
+01:13:18.560 --> 01:13:22.089
+populations that are experiencing a different cancer evolutionary trajectory,
+
+1276
+01:13:23.000 --> 01:13:26.949
+I think using that to separate those two populations and examine how that
+
+1277
+01:13:26.960 --> 01:13:30.400
+trajectory differs and looking at the implications for clinical
+
+1278
+01:13:31.260 --> 01:13:33.000
+outcomes is a really bright idea.
+
+1279
+01:13:33.440 --> 01:13:34.080
+Great. Thank you.
+
+1280
+01:13:37.680 --> 01:13:38.280
+Hi. Hello.
+
+1281
+01:13:39.220 --> 01:13:39.760
+I need to
+
+1282
+01:13:40.600 --> 01:13:42.480
+confirm if I am understanding or not.
+
+1283
+01:13:43.540 --> 01:13:45.160
+So looks like the
+
+1284
+01:13:47.780 --> 01:13:51.560
+smokers have a completely different microenvironment because of the
+
+1285
+01:13:51.580 --> 01:13:55.300
+chronic inflammation. Are you saying that that
+
+1286
+01:13:55.340 --> 01:13:59.120
+microenvironment needs different
+
+1287
+01:13:59.180 --> 01:13:59.800
+mutations
+
+1288
+01:14:00.640 --> 01:14:04.500
+compared to non-smokers? A different mutation and a different
+
+1289
+01:14:04.580 --> 01:14:05.150
+trajectory-
+
+1290
+01:14:05.580 --> 01:14:05.680
+Yeah
+
+1291
+01:14:05.700 --> 01:14:08.360
+... because the environment is selecting differently? Is that what you're saying?
+
+1292
+01:14:08.600 --> 01:14:12.160
+Absolutely, 100%. And I just want to apologize because one of my slides
+
+1293
+01:14:12.180 --> 01:14:15.460
+apparently didn't come through. I don't think you've noticed, but there was a blank
+
+1294
+01:14:15.560 --> 01:14:19.400
+slide in the middle there, and it was one of the coolest slides on here, which
+
+1295
+01:14:19.460 --> 01:14:23.340
+is the comparison between smokers and non-smokers in the total effect size of
+
+1296
+01:14:23.380 --> 01:14:27.170
+these mutations. The other slides sort of got the message across, but
+
+1297
+01:14:27.200 --> 01:14:29.620
+they show you that the ultimate result,
+
+1298
+01:14:30.460 --> 01:14:33.940
+in comparing smokers and non-smokers for KRAS, is to
+
+1299
+01:14:33.960 --> 01:14:36.190
+diminish the effect of the mutation.
+
+1300
+01:14:36.780 --> 01:14:40.440
+But essentially, EGFR is just not selected at all in smokers.
+
+1301
+01:14:40.930 --> 01:14:43.920
+So if you think about that, that's very interesting because smoking is actually
+
+1302
+01:14:43.960 --> 01:14:46.940
+prophylactic for EGFR-driven lung cancer.
+
+1303
+01:14:48.000 --> 01:14:48.620
+That's amazing.
+
+1304
+01:14:50.040 --> 01:14:53.320
+However, of course, you don't want to smoke because it's
+
+1305
+01:14:53.460 --> 01:14:57.380
+mutagenic and it also increases the structure selection for KRAS.
+
+1306
+01:14:57.440 --> 01:14:57.540
+So
+
+1307
+01:14:58.460 --> 01:14:59.820
+if you want to choose a trajectory,
+
+1308
+01:15:01.280 --> 01:15:05.200
+your trajectory is a lot better in the never smoker category.
+
+1309
+01:15:08.140 --> 01:15:11.210
+All right. Thank you, Jeff, for putting together such a wonderful session.
+
+1310
+01:15:11.210 --> 01:15:12.940
+My name's Hunter Shane from UCSF.
+
+1311
+01:15:13.780 --> 01:15:17.640
+And I think my question honestly could go to any of the speakers if when you get up
+
+1312
+01:15:17.660 --> 01:15:18.360
+there you want to anyway.
+
+1313
+01:15:18.400 --> 01:15:21.380
+Can you hold on for one second then? Because we have just 12 seconds left.
+
+1314
+01:15:21.540 --> 01:15:22.760
+Why don't we invite the other speakers up-
+
+1315
+01:15:22.820 --> 01:15:22.830
+Yeah, perfect
+
+1316
+01:15:22.830 --> 01:15:24.440
+... and we'll start our panel session with your question.
+
+1317
+01:15:32.060 --> 01:15:33.600
+So I'll start talking while you get seated.
+
+1318
+01:15:34.860 --> 01:15:38.340
+You all showed this wonderful data where you mathematically
+
+1319
+01:15:38.680 --> 01:15:41.240
+inferred the various routes to cancer.
+
+1320
+01:15:42.920 --> 01:15:43.010
+And
+
+1321
+01:15:43.980 --> 01:15:45.950
+in all the examples you showed, it looks pretty compelling.
+
+1322
+01:15:46.940 --> 01:15:50.820
+There are growing databases of somatic mutations in normal
+
+1323
+01:15:50.860 --> 01:15:53.780
+tissues. I was thinking, Jeff, during your talk, there's a prominent study from
+
+1324
+01:15:54.360 --> 01:15:58.179
+Yoshida et al. that looked at clonal expansions of lung
+
+1325
+01:15:58.220 --> 01:16:01.220
+epithelial cells. And so I'm curious, for instance,
+
+1326
+01:16:02.400 --> 01:16:05.920
+do you see some of the same mutations that you predict are
+
+1327
+01:16:06.560 --> 01:16:10.220
+under stronger selection in a smoking environment, in the normal
+
+1328
+01:16:10.320 --> 01:16:13.840
+epithelia of lung tissue? And the same question could apply to
+
+1329
+01:16:14.160 --> 01:16:17.920
+colon or any of these contexts. Have you guys looked at all these normal
+
+1330
+01:16:18.020 --> 01:16:21.920
+sequencing databases to confirm your mathematical predictions?
+
+1331
+01:16:22.200 --> 01:16:24.340
+Yeah. I'll start with that answer, which is that,
+
+1332
+01:16:25.180 --> 01:16:27.140
+yes, we do see many of the same mutations.
+
+1333
+01:16:27.240 --> 01:16:27.600
+So,
+
+1334
+01:16:28.880 --> 01:16:31.869
+I'm not sure if it's the same talk. There was a lot of authors on some of those
+
+1335
+01:16:31.869 --> 01:16:35.440
+normal studies papers, but a talk by James DeGregori at the last
+
+1336
+01:16:35.560 --> 01:16:37.800
+ASDR meetings, talked about the
+
+1337
+01:16:38.620 --> 01:16:42.580
+sequencing with very high depth, very high accuracy, sequencing normal
+
+1338
+01:16:42.620 --> 01:16:46.600
+cells, which is much harder than with tumor cells because tumor cells sort
+
+1339
+01:16:46.620 --> 01:16:49.869
+of all have a common ancestor and are homogeneous in some ways in their
+
+1340
+01:16:49.880 --> 01:16:53.800
+genetics. Normal cells are from a lot of different stem cell
+
+1341
+01:16:53.840 --> 01:16:57.710
+lineages, so you have to sequence with much more precision and at much
+
+1342
+01:16:57.760 --> 01:17:00.670
+more granular level to get the normal data you're referring to.
+
+1343
+01:17:01.800 --> 01:17:04.940
+And when you do those studies, you see KRAS,
+
+1344
+01:17:05.520 --> 01:17:08.680
+P53. You see basically all of the cancer genes that we talked about
+
+1345
+01:17:09.300 --> 01:17:13.080
+mutated at some frequency. What you probably don't see is the
+
+1346
+01:17:13.780 --> 01:17:17.260
+further trajectory, like multiple mutations that are eventually leading to the
+
+1347
+01:17:17.300 --> 01:17:21.220
+cancer. I think there was a further question to your-- There's more
+
+1348
+01:17:21.280 --> 01:17:23.080
+to your question, and I have missed it.
+
+1349
+01:17:23.240 --> 01:17:24.760
+Yeah, no, it's just more in general,
+
+1350
+01:17:25.860 --> 01:17:27.920
+are your mathematical inferences validated?
+
+1351
+01:17:28.040 --> 01:17:28.620
+If you--
+
+1352
+01:17:29.460 --> 01:17:29.700
+Like in the-
+
+1353
+01:17:29.760 --> 01:17:29.880
+Oh
+
+1354
+01:17:30.000 --> 01:17:30.400
+... talk.
+
+1355
+01:17:31.820 --> 01:17:34.440
+You don't see a lot of APC-only driven colon cancers.
+
+1356
+01:17:34.640 --> 01:17:34.800
+Yeah.
+
+1357
+01:17:35.560 --> 01:17:39.040
+But you would expect to see APC mutant colonic epithelial cells.
+
+1358
+01:17:39.080 --> 01:17:42.780
+And of course, in that specific example, an APC mutation would result in a
+
+1359
+01:17:43.240 --> 01:17:46.900
+polyp probably. But are some of these inferred
+
+1360
+01:17:46.960 --> 01:17:50.210
+intermediates, are they supported in some of the normal sequencing studies that are
+
+1361
+01:17:50.680 --> 01:17:51.200
+coming out?
+
+1362
+01:17:51.900 --> 01:17:55.540
+Yeah. So I just want to comment that you can ask that question with the normal
+
+1363
+01:17:55.620 --> 01:17:59.340
+sequencing studies, and it's wonderful because you're directly asking the question
+
+1364
+01:17:59.360 --> 01:17:59.800
+of data.
+
+1365
+01:18:00.700 --> 01:18:04.060
+You can actually even ask that question of some bulk tumor
+
+1366
+01:18:04.100 --> 01:18:05.840
+data for normal and
+
+1367
+01:18:07.320 --> 01:18:08.760
+tumor data. And there's a
+
+1368
+01:18:09.780 --> 01:18:13.550
+normal neoplasia, so to speak, that is clonal growths that are not
+
+1369
+01:18:13.600 --> 01:18:14.090
+cancerous.
+
+1370
+01:18:15.060 --> 01:18:18.040
+And you can look at those and compare them to tumors.
+
+1371
+01:18:18.060 --> 01:18:21.740
+And when you do that, you see that some differences, in fact,
+
+1372
+01:18:21.860 --> 01:18:22.300
+are...
+
+1373
+01:18:23.100 --> 01:18:27.080
+Some things are selected in that early phase and are not selected
+
+1374
+01:18:27.140 --> 01:18:29.420
+or even possibly negatively selected in the later phase.
+
+1375
+01:18:29.500 --> 01:18:32.980
+The great example of this that has been talked about a lot is Notch 1 in
+
+1376
+01:18:33.000 --> 01:18:36.740
+esophageal cancer. Inigo Martin-Carina had a paper where that was
+
+1377
+01:18:36.780 --> 01:18:40.668
+basically speculated in humans. Then just recently a paper came out...
+
+1378
+01:18:40.728 --> 01:18:44.477
+showing in a mouse model that that's true, and then we have a paper that's
+
+1379
+01:18:44.528 --> 01:18:48.448
+making its way through that shows that in humans it's true based on the human tumor
+
+1380
+01:18:48.528 --> 01:18:51.168
+sequence data. And you can see that, that's a
+
+1381
+01:18:51.208 --> 01:18:53.068
+poster by
+
+1382
+01:18:54.048 --> 01:18:57.028
+Kira Glasmacher, who's here, if you're interested in that.
+
+1383
+01:18:58.748 --> 01:19:01.148
+Hi. Thanks for the excellent talks. I'm Charlotte Grieco.
+
+1384
+01:19:01.248 --> 01:19:03.668
+I'm a PhD student and clinician with Charlie Swanton.
+
+1385
+01:19:04.428 --> 01:19:07.668
+And I wondered about whether you'd thought about the impact of germline alterations
+
+1386
+01:19:07.728 --> 01:19:10.908
+on the host selective environment of these tumors, and is that something that you
+
+1387
+01:19:10.928 --> 01:19:13.948
+can model at all? Because it's often overlooked in these never smoking lung
+
+1388
+01:19:13.988 --> 01:19:14.388
+cancers.
+
+1389
+01:19:15.708 --> 01:19:18.208
+I have something to say, but I want to give you a chance to first.
+
+1390
+01:19:19.528 --> 01:19:20.568
+I didn't hear well.
+
+1391
+01:19:20.598 --> 01:19:21.978
+Well, the question was, have you thought about
+
+1392
+01:19:22.968 --> 01:19:26.808
+starting with thinking about germline as well as somatic mutations in their
+
+1393
+01:19:26.868 --> 01:19:27.408
+interactions?
+
+1394
+01:19:27.848 --> 01:19:28.828
+Yes. So we
+
+1395
+01:19:29.848 --> 01:19:33.808
+actually started looking at that, then we had to stop due to complications in
+
+1396
+01:19:34.148 --> 01:19:37.768
+with staff and funding. But yes, that's an ongoing project.
+
+1397
+01:19:37.848 --> 01:19:40.628
+Unfortunately, I can't give you any preliminary results yet.
+
+1398
+01:19:42.708 --> 01:19:46.458
+We've also looked at that some. In principle, there's not all that
+
+1399
+01:19:46.488 --> 01:19:49.988
+much difference in how we look at it compared to the somatic evolution.
+
+1400
+01:19:51.128 --> 01:19:55.048
+The problem is that, you may remember the point that, as
+
+1401
+01:19:55.088 --> 01:19:58.808
+the more mutations you look at, the more pathways are there, and it sort of
+
+1402
+01:19:58.848 --> 01:20:00.148
+blows up and becomes problematic.
+
+1403
+01:20:01.528 --> 01:20:05.468
+Similarly, or it's not exactly the same problem, but another problem is
+
+1404
+01:20:05.508 --> 01:20:09.488
+that with germline mutations, most of the ones that have a significant phenotypic
+
+1405
+01:20:09.508 --> 01:20:11.938
+effect or cancer effect are at low frequency.
+
+1406
+01:20:12.368 --> 01:20:16.298
+So in most tumor sample data that you look at, you get very few
+
+1407
+01:20:16.348 --> 01:20:19.988
+of the original mutation, germline mutation, and with very few of the original
+
+1408
+01:20:20.008 --> 01:20:23.978
+germline mutation, there's very little you can infer about epistasis, because
+
+1409
+01:20:23.978 --> 01:20:25.318
+if you have four or five tumors,
+
+1410
+01:20:26.168 --> 01:20:30.148
+you can't really figure out whether it's an abnormal frequency of various somatic
+
+1411
+01:20:30.208 --> 01:20:33.968
+mutation combinations. So there's a nexus here, which is really
+
+1412
+01:20:33.988 --> 01:20:37.938
+problematic, but as we get these really, really big data sets, I think we're
+
+1413
+01:20:37.948 --> 01:20:41.008
+going to be able to start addressing that question much better than we have in the
+
+1414
+01:20:41.048 --> 01:20:44.288
+past. Unfortunately, NIH put out this big germline
+
+1415
+01:20:44.328 --> 01:20:47.828
+somatic effort, they put a bunch of funding into it
+
+1416
+01:20:47.968 --> 01:20:50.668
+before we had data sets that were big enough to answer the question.
+
+1417
+01:20:51.067 --> 01:20:51.908
+So we got a lot of...
+
+1418
+01:20:53.728 --> 01:20:56.588
+Everyone did a good job for what they were doing, but we really didn't have the
+
+1419
+01:20:56.608 --> 01:20:58.628
+data to answer the question when they put a push out on that.
+
+1420
+01:20:58.688 --> 01:21:01.768
+So we need another push on it probably in the next two or three years.
+
+1421
+01:21:02.488 --> 01:21:03.508
+We can all pray that happens.
+
+1422
+01:21:03.968 --> 01:21:05.768
+Cool. Wow. We'll watch this space, I guess.
+
+1423
+01:21:05.828 --> 01:21:06.408
+Yeah.
+
+1424
+01:21:06.428 --> 01:21:06.538
+Thanks.
+
+1425
+01:21:10.468 --> 01:21:13.808
+Hi. Christine Chaffa from Garvan Institute, Australia.
+
+1426
+01:21:13.898 --> 01:21:17.748
+I know you haven't necessarily done a lot of the RNA sequencing
+
+1427
+01:21:17.788 --> 01:21:21.417
+yet, but thinking about where these convergence lies,
+
+1428
+01:21:21.888 --> 01:21:25.558
+so when you have a different... When
+
+1429
+01:21:25.988 --> 01:21:29.948
+Jaime started to talk about modules, I do wonder,
+
+1430
+01:21:30.048 --> 01:21:33.948
+antagonistic or synergistic, I wonder if we bring that up to
+
+1431
+01:21:34.008 --> 01:21:36.968
+the signaling level, whether you start to think about
+
+1432
+01:21:37.388 --> 01:21:41.348
+different combinations of mutations that are converging at
+
+1433
+01:21:41.388 --> 01:21:44.398
+a signaling level on the same pathway.
+
+1434
+01:21:44.948 --> 01:21:48.908
+So, we can sequence and get different events or
+
+1435
+01:21:48.948 --> 01:21:52.428
+different types of mutations in particular patients, but I wonder
+
+1436
+01:21:52.488 --> 01:21:56.468
+whether completely different mutational trajectories might end
+
+1437
+01:21:56.528 --> 01:22:00.238
+up at a signaling level converging, on the same signaling
+
+1438
+01:22:00.288 --> 01:22:03.028
+process, and so we can start to think about commonalities that way.
+
+1439
+01:22:03.808 --> 01:22:04.128
+Yeah. So
+
+1440
+01:22:05.228 --> 01:22:08.828
+what I showed about the correspondence between
+
+1441
+01:22:08.908 --> 01:22:11.428
+network modules and consensus molecular subtypes,
+
+1442
+01:22:13.528 --> 01:22:17.408
+actually, many of these consensus molecular subtypes are based on transcription
+
+1443
+01:22:17.468 --> 01:22:21.228
+levels. So we did not actually take the transcription data
+
+1444
+01:22:21.308 --> 01:22:23.528
+and compare it with the module. We just took the
+
+1445
+01:22:24.308 --> 01:22:27.668
+available classification at the TCEA, about
+
+1446
+01:22:28.188 --> 01:22:31.448
+some people who have classified the subtypes, and then we looked if there was
+
+1447
+01:22:31.468 --> 01:22:35.428
+correspondence. Because we could actually now, with more data, do it
+
+1448
+01:22:35.448 --> 01:22:39.328
+on our own, just basically go to the transcriptional profiles and see if
+
+1449
+01:22:39.388 --> 01:22:43.387
+there is closer similarity between members of the same
+
+1450
+01:22:43.468 --> 01:22:43.748
+module.
+
+1451
+01:22:44.548 --> 01:22:47.888
+I would expect that that's going to be the case, because we see
+
+1452
+01:22:47.908 --> 01:22:51.468
+correspondence using classifications that other people have done.
+
+1453
+01:22:52.288 --> 01:22:56.228
+We haven't tried yet, but I would expect that there is, yes, based on what
+
+1454
+01:22:56.308 --> 01:22:59.958
+we saw with these consensus molecular subtypes that are based on transcriptomics
+
+1455
+01:23:00.128 --> 01:23:00.768
+done by other people.
+
+1456
+01:23:01.928 --> 01:23:05.807
+And I didn't talk about it in my talk, but we did look at transcriptomics between
+
+1457
+01:23:05.848 --> 01:23:07.168
+the smokers and non-smokers,
+
+1458
+01:23:08.088 --> 01:23:11.128
+and there's a really strong correspondence between EMT,
+
+1459
+01:23:12.188 --> 01:23:16.178
+and where EMT gets induced and doesn't, that aligns up very much
+
+1460
+01:23:16.208 --> 01:23:19.148
+with the phenomenological differences in terms of the
+
+1461
+01:23:19.188 --> 01:23:20.708
+selection
+
+1462
+01:23:22.208 --> 01:23:24.768
+for or against EGFR in particular.
+
+1463
+01:23:25.268 --> 01:23:29.068
+So you can do that on the environmental side, but I bet you could do it just as
+
+1464
+01:23:29.088 --> 01:23:31.048
+easily on the genetic side, although we haven't done that.
+
+1465
+01:23:31.268 --> 01:23:31.968
+Yeah. Cool. Thanks.
+
+1466
+01:23:34.068 --> 01:23:34.548
+Over here.
+
+1467
+01:23:35.128 --> 01:23:37.108
+Thank you for the session. It's very meaningful.
+
+1468
+01:23:37.308 --> 01:23:41.248
+This is Fulvio D'Angelo from University of Miami, and I really like your
+
+1469
+01:23:41.328 --> 01:23:45.308
+model. I think it's great. I just was wondering if you
+
+1470
+01:23:45.348 --> 01:23:49.048
+could implement multiple level of complexity in this
+
+1471
+01:23:49.108 --> 01:23:50.768
+model. For example, the type-
+
+1472
+01:23:50.778 --> 01:23:52.618
+Could you just move a little closer to the microphone? I can't hear you.
+
+1473
+01:23:52.648 --> 01:23:56.408
+Yes. Sorry. If you could implement additional
+
+1474
+01:23:56.448 --> 01:24:00.228
+level of complexity in this model, for example, the type of mutation.
+
+1475
+01:24:00.478 --> 01:24:03.668
+If it's a missense, it's a frame shift, it's an in-frame mutation.
+
+1476
+01:24:05.428 --> 01:24:09.388
+If it's a passenger mutation or it's a driver mutation.
+
+1477
+01:24:09.398 --> 01:24:09.398
+Yeah.
+
+1478
+01:24:09.408 --> 01:24:13.268
+Because, for example, if you have a passenger mutation by
+
+1479
+01:24:13.308 --> 01:24:17.128
+itself, is not pathogenic, but if co-occur
+
+1480
+01:24:17.188 --> 01:24:20.908
+with the other passenger or driver mutation can have an
+
+1481
+01:24:20.928 --> 01:24:24.348
+effect. So I was wondering if we could add this
+
+1482
+01:24:24.608 --> 01:24:26.568
+additional level of complexity in the model.
+
+1483
+01:24:27.648 --> 01:24:30.868
+I was also wondering about the subclonality of the mutation.
+
+1484
+01:24:31.308 --> 01:24:35.228
+So if a mutation is subclonal or
+
+1485
+01:24:35.248 --> 01:24:38.968
+is truncal in the tumor, if this can affect
+
+1486
+01:24:39.288 --> 01:24:42.608
+the epistasis of the tumor.
+
+1487
+01:24:44.036 --> 01:24:44.986
+Yes, we are
+
+1488
+01:24:46.356 --> 01:24:47.496
+doing progress on that area.
+
+1489
+01:24:49.036 --> 01:24:52.956
+The key point is the first part I show you where you actually
+
+1490
+01:24:52.996 --> 01:24:56.436
+get the substitution rates, that's no problem. You can put whatever you want.
+
+1491
+01:24:56.676 --> 01:24:57.436
+You can put
+
+1492
+01:24:59.236 --> 01:25:02.596
+missense mutations, you can put indels, you can put copy numbers.
+
+1493
+01:25:03.876 --> 01:25:07.416
+That's not going to be a problem. What is more challenging is actually
+
+1494
+01:25:07.496 --> 01:25:11.196
+getting a baseline mutation rate for those other types of
+
+1495
+01:25:11.236 --> 01:25:14.456
+mutations, because with the NDS,
+
+1496
+01:25:15.675 --> 01:25:19.076
+what Jaime's been using, what you need is synonymous mutations.
+
+1497
+01:25:19.556 --> 01:25:23.116
+What we're actually using with the new method is
+
+1498
+01:25:23.156 --> 01:25:26.256
+considering the fact that we have so many passenger genes,
+
+1499
+01:25:26.856 --> 01:25:30.796
+passenger mutations. So we use the fact that we have so
+
+1500
+01:25:30.916 --> 01:25:34.156
+many more of those, and we actually use those to infer
+
+1501
+01:25:34.476 --> 01:25:36.236
+the baseline mutation rates.
+
+1502
+01:25:37.356 --> 01:25:41.196
+So we are making progress on that into incorporating
+
+1503
+01:25:41.236 --> 01:25:42.296
+other types of mutations.
+
+1504
+01:25:43.996 --> 01:25:47.156
+And I think we should get there soon enough.
+
+1505
+01:25:47.795 --> 01:25:51.396
+And then to your second question, that was about
+
+1506
+01:25:51.416 --> 01:25:52.016
+clonality.
+
+1507
+01:25:53.216 --> 01:25:56.636
+Yeah, it could be a little bit challenging just because of the type of data that we
+
+1508
+01:25:56.696 --> 01:26:00.576
+have. Most of the time we only know that there's a mutation and not so
+
+1509
+01:26:00.656 --> 01:26:03.236
+much how much of it there is.
+
+1510
+01:26:05.316 --> 01:26:09.036
+If we could have... Oh, actually, we have looked into that,
+
+1511
+01:26:09.316 --> 01:26:12.416
+but the other way around, where we
+
+1512
+01:26:13.656 --> 01:26:17.536
+have some tools. Do you remember who published that tool that we were
+
+1513
+01:26:17.656 --> 01:26:21.576
+using to try to see if a mutation happened earlier than another one?
+
+1514
+01:26:21.656 --> 01:26:25.036
+Yeah. There are tools that probably many of you have heard of.
+
+1515
+01:26:25.096 --> 01:26:25.696
+There's a...
+
+1516
+01:26:26.596 --> 01:26:29.896
+Sorry, his first name is Peter. Peter Van Loo has done some work on this, along
+
+1517
+01:26:29.916 --> 01:26:31.076
+with many other collaborators with him.
+
+1518
+01:26:32.076 --> 01:26:34.116
+And we have done some integration.
+
+1519
+01:26:34.156 --> 01:26:36.716
+That was actually related to a question that was asked earlier also.
+
+1520
+01:26:36.816 --> 01:26:40.596
+Some integration of that, because obviously it's relevant to which the order of
+
+1521
+01:26:40.636 --> 01:26:44.596
+these things. And so you can basically incorporate that into the
+
+1522
+01:26:44.616 --> 01:26:48.466
+kind of analysis we're due to add a little bit of informational
+
+1523
+01:26:48.616 --> 01:26:51.886
+strength to the inference. And actually, it is very useful
+
+1524
+01:26:51.976 --> 01:26:53.115
+because
+
+1525
+01:26:54.596 --> 01:26:58.016
+our method has a lot of informational strengths in some areas, and it's a little
+
+1526
+01:26:58.036 --> 01:27:01.476
+bit weaker in others. And it's very complementary, that data, to what we
+
+1527
+01:27:01.516 --> 01:27:05.326
+do. The one thing that maybe you should be aware about that
+
+1528
+01:27:05.336 --> 01:27:09.126
+data is, though, that there's a lot less of it than it looks like when you look at
+
+1529
+01:27:09.156 --> 01:27:11.905
+those papers, because not that the... The papers are completely right.
+
+1530
+01:27:11.976 --> 01:27:13.376
+There's nothing wrong with what they're saying.
+
+1531
+01:27:13.396 --> 01:27:17.116
+But in terms of actually informing some trajectory like this, there's usually
+
+1532
+01:27:17.156 --> 01:27:21.076
+maybe four or five tumors where you actually can say one is before the other.
+
+1533
+01:27:21.096 --> 01:27:23.436
+And so the amount of that data is not that big.
+
+1534
+01:27:23.716 --> 01:27:26.936
+Nonetheless, since it's so complementary, I think it's worthwhile for us to
+
+1535
+01:27:26.976 --> 01:27:28.896
+integrate it. We are working toward that.
+
+1536
+01:27:28.936 --> 01:27:31.846
+We basically have done it, but we just haven't gotten that work
+
+1537
+01:27:32.776 --> 01:27:33.796
+spun out into papers yet.
+
+1538
+01:27:34.576 --> 01:27:34.876
+Thank you.
+
+1539
+01:27:35.416 --> 01:27:35.696
+Thank you.
+
+1540
+01:27:37.796 --> 01:27:41.245
+Great section. And I have a question about have you taken into
+
+1541
+01:27:41.356 --> 01:27:45.316
+consideration of other demographic factors in
+
+1542
+01:27:45.336 --> 01:27:48.936
+your model, for example, like patients' age, sex, and how long they
+
+1543
+01:27:48.996 --> 01:27:49.356
+smoke?
+
+1544
+01:27:51.516 --> 01:27:55.416
+Yeah. I'll refer you to Yihong Lu, who's two people to the right of you right
+
+1545
+01:27:55.456 --> 01:27:59.296
+now. She'll wave at you. She's got a poster on age and selection.
+
+1546
+01:27:59.336 --> 01:27:59.756
+And we have
+
+1547
+01:28:00.576 --> 01:28:04.476
+basically a mathematical model, which Jorge was actually helpful with
+
+1548
+01:28:04.536 --> 01:28:04.876
+as well,
+
+1549
+01:28:05.936 --> 01:28:09.666
+that allows us to look on a continuous scale at age and how that affects
+
+1550
+01:28:09.716 --> 01:28:12.476
+selection across the age of the patient.
+
+1551
+01:28:12.556 --> 01:28:16.426
+And there are some dramatic differences in some genes, and in other genes, there's
+
+1552
+01:28:16.456 --> 01:28:20.156
+no difference whatsoever. So really interesting results that you can see on a
+
+1553
+01:28:20.196 --> 01:28:21.556
+poster by Yihong Lu.
+
+1554
+01:28:27.916 --> 01:28:28.296
+Do we-
+
+1555
+01:28:28.636 --> 01:28:31.696
+Okay, I have actually two quick questions, which maybe other people can listen to
+
+1556
+01:28:31.716 --> 01:28:34.016
+what they want. Jaime, I just wanted you to clarify.
+
+1557
+01:28:34.056 --> 01:28:37.476
+I think I know the answer, but when you're
+
+1558
+01:28:38.716 --> 01:28:42.696
+looking at the modules, can you just clarify what defines
+
+1559
+01:28:42.736 --> 01:28:46.606
+those modules? As in, like all of the things on one side versus all on the other
+
+1560
+01:28:46.676 --> 01:28:49.196
+things on the other side of these gaps?
+
+1561
+01:28:49.816 --> 01:28:53.436
+Yeah. So we define a module as a set of genes that are connected
+
+1562
+01:28:53.476 --> 01:28:55.876
+by a synergistic epistasis
+
+1563
+01:28:58.896 --> 01:29:01.575
+with each other, and then they have negative interactions with the rest.
+
+1564
+01:29:02.016 --> 01:29:02.216
+Okay.
+
+1565
+01:29:02.375 --> 01:29:04.416
+Now, the definition is not just
+
+1566
+01:29:05.396 --> 01:29:09.076
+hard boundary. We actually use a stochastic, sorry, a statistic framework.
+
+1567
+01:29:09.116 --> 01:29:11.936
+So we calculate the probability to have a positive interaction and the probability
+
+1568
+01:29:11.996 --> 01:29:15.486
+to have a negative interaction, and these are more statistically likely
+
+1569
+01:29:15.496 --> 01:29:19.436
+to... So basically, a module is a set of genes that are connected by positive
+
+1570
+01:29:19.496 --> 01:29:21.836
+interactions more likely than you would expect by chance.
+
+1571
+01:29:22.216 --> 01:29:26.036
+Okay. And the follow-up of that is you mentioned that this has effect on
+
+1572
+01:29:26.056 --> 01:29:27.036
+survival outcomes.
+
+1573
+01:29:27.156 --> 01:29:27.316
+Mm-hmm.
+
+1574
+01:29:27.516 --> 01:29:31.276
+How does that relate to the set of genes in a module or the set of genes in another
+
+1575
+01:29:31.316 --> 01:29:34.936
+module? You mean that if the genes in one module are
+
+1576
+01:29:34.976 --> 01:29:37.885
+mutated, that has one survival outcome, and the genes in the other, the other?
+
+1577
+01:29:37.956 --> 01:29:38.956
+Is that what you mean by that?
+
+1578
+01:29:39.016 --> 01:29:39.556
+Yes, that's it.
+
+1579
+01:29:39.716 --> 01:29:41.326
+Okay, great. That wasn't-
+
+1580
+01:29:41.436 --> 01:29:45.236
+Well, we find this, that if you look at an individual tumor,
+
+1581
+01:29:45.556 --> 01:29:49.456
+mutations tend to be... You can clearly assign that tumor to one of the
+
+1582
+01:29:49.496 --> 01:29:52.136
+modules of the network. You don't see distributed mutation in different modules.
+
+1583
+01:29:52.176 --> 01:29:54.216
+They tend to come, most of them, from the same module.
+
+1584
+01:29:54.606 --> 01:29:57.876
+And that way, you can assign a tumor or a patient to a given module of the network,
+
+1585
+01:29:58.036 --> 01:29:59.316
+and then for that, you calculate.
+
+1586
+01:29:59.356 --> 01:30:02.776
+So if you look at, say, the KM plot, the Kaplan-Meier plot
+
+1587
+01:30:02.876 --> 01:30:03.476
+afterwards-
+
+1588
+01:30:03.716 --> 01:30:03.856
+Mm-hmm
+
+1589
+01:30:04.016 --> 01:30:05.616
+... those two modules will have differing-
+
+1590
+01:30:05.876 --> 01:30:06.096
+Yes
+
+1591
+01:30:06.156 --> 01:30:07.676
+... survival. Okay, very interesting.
+
+1592
+01:30:07.776 --> 01:30:08.556
+So
+
+1593
+01:30:09.356 --> 01:30:10.296
+I have one other question,
+
+1594
+01:30:11.356 --> 01:30:15.316
+which is just, could you talk a little bit about how you extended
+
+1595
+01:30:15.376 --> 01:30:18.885
+from the pairwise framework, which I think is how your method mostly
+
+1596
+01:30:18.916 --> 01:30:19.476
+works-
+
+1597
+01:30:19.486 --> 01:30:19.486
+Yes
+
+1598
+01:30:19.486 --> 01:30:21.076
+... to those larger networks, right?
+
+1599
+01:30:21.136 --> 01:30:24.556
+So the math you showed was the difference between two
+
+1600
+01:30:24.696 --> 01:30:25.316
+interactors.
+
+1601
+01:30:25.416 --> 01:30:27.556
+The networks are actually pairwise networks.
+
+1602
+01:30:27.596 --> 01:30:29.436
+If you see, there are links connecting two genes.
+
+1603
+01:30:31.396 --> 01:30:33.816
+In
+
+1604
+01:30:34.636 --> 01:30:36.576
+theory, extending that to higher the interactions is
+
+1605
+01:30:37.896 --> 01:30:41.656
+theoretically is trivial. It's just instead of stratifying based on presence and
+
+1606
+01:30:41.696 --> 01:30:45.546
+absence of one gene, you have two genes, and you have both are present, both are
+
+1607
+01:30:45.556 --> 01:30:47.916
+absent, one class, one or the other. You have four groups.
+
+1608
+01:30:47.936 --> 01:30:51.116
+You stratify based on those four groups, and you calculate everything again.
+
+1609
+01:30:51.136 --> 01:30:52.766
+The problem is that now you need to-
+
+1610
+01:30:53.204 --> 01:30:54.484
+Split your data set in four groups.
+
+1611
+01:30:55.124 --> 01:30:57.664
+Fewer data, inferring the model becomes a problem.
+
+1612
+01:30:57.744 --> 01:30:57.884
+Yeah.
+
+1613
+01:30:58.284 --> 01:30:58.464
+Yeah.
+
+1614
+01:30:58.884 --> 01:30:59.304
+Exactly.
+
+1615
+01:31:00.304 --> 01:31:03.404
+Same problem we encounter. Yep. Oh, I see a question. Please.
+
+1616
+01:31:03.724 --> 01:31:06.744
+Yeah. Wonderful session, Sherman.
+
+1617
+01:31:07.104 --> 01:31:10.364
+Mayo, thank you. I'm wondering if you have done any work
+
+1618
+01:31:10.424 --> 01:31:12.484
+to micro-dissect
+
+1619
+01:31:13.344 --> 01:31:16.464
+things like precursors and understand
+
+1620
+01:31:17.864 --> 01:31:19.724
+which are progressing and which are not.
+
+1621
+01:31:19.844 --> 01:31:23.744
+So I study breast cancer. You see a lot of DCIS,
+
+1622
+01:31:23.864 --> 01:31:27.764
+then you see invasive breast cancer probably arising from one of the
+
+1623
+01:31:27.844 --> 01:31:31.404
+ducts, whether we really demonstrate it spatially or not,
+
+1624
+01:31:31.864 --> 01:31:32.684
+proximity.
+
+1625
+01:31:33.544 --> 01:31:37.444
+Could we understand where the blocks are in progression
+
+1626
+01:31:37.504 --> 01:31:41.424
+and facilitators of progression by doing some of that work?
+
+1627
+01:31:41.494 --> 01:31:44.614
+And how much have you done to look at that? Thanks.
+
+1628
+01:31:47.424 --> 01:31:51.224
+So integrating that with this epistatic network stuff we've done,
+
+1629
+01:31:51.444 --> 01:31:55.364
+we haven't exactly done, because I don't have a good reason
+
+1630
+01:31:55.444 --> 01:31:56.564
+for why. I wish I had
+
+1631
+01:31:57.544 --> 01:31:59.264
+1,000 people to work on the work we're doing.
+
+1632
+01:31:59.284 --> 01:31:59.384
+But
+
+1633
+01:32:01.944 --> 01:32:03.224
+I think it's a really interesting question.
+
+1634
+01:32:03.904 --> 01:32:07.724
+I will comment that, as I mentioned a little bit earlier, we have done
+
+1635
+01:32:07.804 --> 01:32:09.984
+stuff on the stage-specific progression from
+
+1636
+01:32:11.044 --> 01:32:14.944
+these neoplastic DCIS, et cetera, to later stages.
+
+1637
+01:32:15.624 --> 01:32:17.624
+And we have a model that allows us to ask,
+
+1638
+01:32:18.784 --> 01:32:22.604
+what is the selection coefficient in the neoplasia and how does it differ from the
+
+1639
+01:32:22.664 --> 01:32:24.364
+selection coefficient to a primary tumor?
+
+1640
+01:32:24.744 --> 01:32:28.474
+And as I mentioned to a previous question, we do see big differences between
+
+1641
+01:32:28.544 --> 01:32:32.424
+those. So sometimes the neoplasia is very strongly selected for and actually
+
+1642
+01:32:32.484 --> 01:32:36.464
+is kind of protective of later. A good example of that is KLF4
+
+1643
+01:32:36.584 --> 01:32:37.684
+in pancreatic cancer,
+
+1644
+01:32:38.724 --> 01:32:42.224
+and NOTCH1 in esophageal cancer, both of which we've worked on in the lab.
+
+1645
+01:32:42.264 --> 01:32:45.784
+We have papers in the works showing that.
+
+1646
+01:32:45.824 --> 01:32:49.724
+It just comes to mind because when you study cancer, you don't see the one
+
+1647
+01:32:49.764 --> 01:32:50.404
+minus N.
+
+1648
+01:32:50.944 --> 01:32:51.324
+Yeah.
+
+1649
+01:32:51.444 --> 01:32:53.824
+The not cancer and what didn't progress.
+
+1650
+01:32:54.464 --> 01:32:54.664
+That's right.
+
+1651
+01:32:54.744 --> 01:32:56.624
+Why this is very interesting. Thank you.
+
+1652
+01:32:56.984 --> 01:32:57.404
+Very good.
+
+1653
+01:32:57.984 --> 01:33:01.504
+Yeah. And I wouldn't be surprised if the epistatic landscape
+
+1654
+01:33:01.544 --> 01:33:03.424
+changes during tumor evolution.
+
+1655
+01:33:04.544 --> 01:33:06.284
+I was recently... I don't think it's published.
+
+1656
+01:33:06.384 --> 01:33:10.354
+I know that Franz Supek, with one of his students, has been studying that, how
+
+1657
+01:33:10.364 --> 01:33:13.904
+epistatis changes over in early cancer and late cancer, and they found some
+
+1658
+01:33:13.944 --> 01:33:15.784
+interesting differences.
+
+1659
+01:33:17.524 --> 01:33:21.484
+I know that because it was a PhD defense of one of his students,
+
+1660
+01:33:21.984 --> 01:33:23.204
+but I don't think they published it yet.
+
+1661
+01:33:23.524 --> 01:33:23.784
+Okay.
+
+1662
+01:33:25.724 --> 01:33:28.504
+So looks like we're out of questions, and we're pretty much out of time.
+
+1663
+01:33:28.664 --> 01:33:32.344
+So thank you very much for attending this session, and
+
+1664
+01:33:33.064 --> 01:33:36.424
+listening to all of the outstanding research here.
+
+1665
+01:33:36.944 --> 01:33:40.364
+And please have an excellent rest of your ACR meetings.

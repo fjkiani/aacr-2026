@@ -1,0 +1,184 @@
+[
+  {
+    "talk_id": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice::faris::1",
+    "session_title": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice",
+    "talk_title": "Multiplexed functional assay of BRCA2 missense variants in HAP1 cells",
+    "speaker": {
+      "name": "Faris",
+      "affiliation": "unknown",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "ovarian cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "variant_interpretation"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA2",
+        "alteration": "missense",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "DNA repair viability assay in HAP1 haploid cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HAP1",
+        "genotype_or_key_features": "haploid human leukemia line, BRCA2 endogenous locus edited"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A multiplexed assay of variant effects (MAVE) was performed in haploid HAP1 cells where BRCA2 missense variants were introduced at the endogenous locus; cells were cultured and viability ratios (day 5 vs day 14) were sequenced to generate functional scores that distinguish loss\u2011of\u2011function (pathogenic strong) from benign variants, enabling calibration to ACMG classification and risk association.",
+    "readouts": [
+      "deep sequencing",
+      "cell viability ratio",
+      "functional score calculation (VarCall, Enrich2)"
+    ],
+    "key_findings": [
+      "502 missense variants (\u224810\u201111% of all missense) were classified as pathogenic strong, far exceeding the 30\u201150 pathogenic missense in ClinVar.",
+      "Sensitivity and specificity of the BRCA2 MAVE against known standards were 93\u201195% across multiple metrics.",
+      "Integration of functional scores with ACMG criteria reduced VUS from ~7,000 to 608 variants (\u224890% reclassification).",
+      "Combined analysis of two independent BRCA2 MAVEs (HAP1 and mouse ESC) using an integrated VarCall model captured ~95% of variants and further reduced VUS to 396.",
+      "Case\u2011control analysis of pathogenic\u2011strong missense variants yielded an odds ratio of 4.5 for breast/ovarian cancer risk, comparable to truncating mutations (OR ~5.5).",
+      "Demonstrated that combining MAVEs improves variant classification accuracy and clinical utility."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do functional scores translate across different cell types (e.g., primary mammary epithelial cells vs HAP1)?",
+      "Can replication\u2011fork specific assays be integrated to capture BRCA2 functions beyond homologous recombination?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice::kitzman::2",
+    "session_title": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice",
+    "talk_title": "Saturation MAVE of Lynch syndrome mismatch\u2011repair genes and clinical risk integration",
+    "speaker": {
+      "name": "Jacob Kitzman",
+      "affiliation": "University of Michigan",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "endometrial cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "variant_interpretation"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MSH2",
+        "alteration": "missense",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "6\u2011thioguanine resistance assay in haploid cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MLH1",
+        "alteration": "missense",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "6\u2011thioguanine resistance assay in haploid cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MSH6",
+        "alteration": "missense",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "6\u2011thioguanine resistance assay in haploid cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PMS2",
+        "alteration": "missense",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "6\u2011thioguanine resistance assay in haploid cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "haploid human cell line (e.g., HAP1)",
+        "genotype_or_key_features": "knockout of each MMR gene, transduced with variant libraries"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "All of Us biobank cohort",
+        "genotype_or_key_features": "population\u2011scale genotype data linked to colorectal and endometrial cancer outcomes"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Saturation MAVE libraries covering >73,000 missense variants across the four Lynch\u2011syndrome mismatch\u2011repair genes were introduced into haploid cells; 6\u2011thioguanine treatment selects for loss\u2011of\u2011function variants, and deep sequencing quantifies variant depletion, producing functional scores that correlate with clinical pathogenicity and cancer risk.",
+    "readouts": [
+      "6\u2011thioguanine resistance (cell viability)",
+      "deep sequencing of variant barcodes",
+      "functional loss\u2011of\u2011function scoring"
+    ],
+    "key_findings": [
+      "Generated functional maps for >73,000 missense variants across MSH2, MLH1, MSH6, and PMS2.",
+      "Proline substitution patterns validated assay performance, showing expected loss\u2011of\u2011function in ordered protein regions.",
+      "47 of 48 clinically classified missense variants (independent of functional evidence) were concordant with MAVE results, providing strong evidence for assay reliability.",
+      "Retrospective reclassification of 10 individuals in Ambry Genetics database as Lynch syndrome carriers based on MAVE data.",
+      "Population\u2011scale analysis linked loss\u2011of\u2011function missense scores to increased colorectal cancer risk, recapitulating known penetrance differences (high for MLH1/MSH2, lower for MSH6/PMS2).",
+      "AlphaMissense predictor overestimates pathogenicity (\u224840% vs 12% loss\u2011of\u2011function by MAVE) highlighting need for calibration.",
+      "Pairwise double\u2011mutant screens revealed epistatic interactions where a mildly deleterious variant (e.g., K618A in MLH1) amplifies the functional impact of other missense changes."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to systematically capture and interpret phased double\u2011mutant haplotypes in clinical sequencing data?",
+      "What is the contribution of non\u2011viability phenotypes (e.g., replication\u2011fork stress) to pathogenicity that may be missed by the 6\u2011TG assay?",
+      "Can functional scores be integrated with polygenic risk scores to refine individual cancer risk predictions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

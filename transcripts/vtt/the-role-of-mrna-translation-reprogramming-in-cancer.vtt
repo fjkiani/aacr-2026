@@ -1,0 +1,5773 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:02.160
+I think we're ready. I'm getting thumbs up.
+
+2
+00:00:02.360 --> 00:00:06.200
+So I would like to thank the organizers for allowing us to
+
+3
+00:00:06.240 --> 00:00:07.540
+present the work
+
+4
+00:00:08.800 --> 00:00:08.960
+of
+
+5
+00:00:10.000 --> 00:00:11.840
+my lab, which is, I'm Ivan Topisirovic.
+
+6
+00:00:11.900 --> 00:00:13.780
+I come from McGill University
+
+7
+00:00:15.120 --> 00:00:19.020
+from Canada, and here we have Professor Larsson
+
+8
+00:00:19.060 --> 00:00:21.980
+and Ruggiero, who come from Karolinska Institute and
+
+9
+00:00:22.280 --> 00:00:26.220
+UCSF respectively. And I would like to thank the
+
+10
+00:00:26.260 --> 00:00:29.330
+organizers for giving us the opportunity, because we've been working on this for
+
+11
+00:00:29.360 --> 00:00:32.980
+quite a bit, which is how mRNA translation is dysregulated in
+
+12
+00:00:33.020 --> 00:00:33.520
+cancer.
+
+13
+00:00:34.340 --> 00:00:38.220
+And again, this session is going to be, when we say translation, is going to be
+
+14
+00:00:38.260 --> 00:00:42.060
+mostly from mRNA to the protein, not from the bench to the bedside, so I hope
+
+15
+00:00:42.800 --> 00:00:45.360
+people just won't get up now and leave. It happens.
+
+16
+00:00:46.460 --> 00:00:50.340
+But we'll try to convince you that translation is a very important process, and as
+
+17
+00:00:50.380 --> 00:00:52.720
+you all know, it's a fundamental process
+
+18
+00:00:53.880 --> 00:00:56.710
+that plays a major role in regulation of gene expression,
+
+19
+00:00:57.520 --> 00:00:58.300
+whereby
+
+20
+00:00:59.500 --> 00:01:02.820
+mRNA translation decides what the composition of the
+
+21
+00:01:03.600 --> 00:01:07.120
+proteome is going to be in the cells, pretty much as much as
+
+22
+00:01:07.160 --> 00:01:09.320
+transcription, although this has been
+
+23
+00:01:10.260 --> 00:01:12.480
+historically sort of lesser-knowledged.
+
+24
+00:01:13.300 --> 00:01:14.120
+And in addition,
+
+25
+00:01:15.320 --> 00:01:18.680
+protein synthesis or mRNA translation is also highly
+
+26
+00:01:18.740 --> 00:01:22.340
+energy-consuming process. So you can imagine that a cancer
+
+27
+00:01:22.440 --> 00:01:26.050
+cell that's frequently exposed to the lack of nutrients and
+
+28
+00:01:26.140 --> 00:01:28.650
+oxygen, so it's hard for it to make energy,
+
+29
+00:01:29.940 --> 00:01:33.920
+needs to somehow figure out a way to make enough protein, enough
+
+30
+00:01:34.100 --> 00:01:36.400
+biomass to support neoplastic growth.
+
+31
+00:01:36.920 --> 00:01:39.130
+And thus, it's not surprising that
+
+32
+00:01:41.520 --> 00:01:43.460
+translation is dysregulated in cancer.
+
+33
+00:01:43.520 --> 00:01:45.060
+As a matter of fact, the first
+
+34
+00:01:46.020 --> 00:01:49.240
+evidence for this comes 130 years ago from
+
+35
+00:01:50.000 --> 00:01:53.940
+Giuseppe Pianezzi's observation that malignant cells can be
+
+36
+00:01:53.980 --> 00:01:57.860
+distinguished, the non-malignant cells, by having this hypertrophic
+
+37
+00:01:57.920 --> 00:02:01.660
+and irregularly shaped nuclei, and that's because they make more
+
+38
+00:02:01.720 --> 00:02:05.240
+ribosomes in general than the normal cells to support making this
+
+39
+00:02:05.280 --> 00:02:08.600
+biomass to fuel neoplastic growth.
+
+40
+00:02:09.021 --> 00:02:10.301
+And today, we know that
+
+41
+00:02:11.560 --> 00:02:15.010
+most of the tumor suppressors, such as PTEN and p53, and
+
+42
+00:02:15.060 --> 00:02:16.920
+oncogenes such as Myc and KRAS,
+
+43
+00:02:18.200 --> 00:02:21.480
+actually impinge on translational machinery and directly or
+
+44
+00:02:21.560 --> 00:02:22.200
+indirectly
+
+45
+00:02:23.000 --> 00:02:26.640
+perturb the translatome in order to establish malignant
+
+46
+00:02:26.680 --> 00:02:27.260
+proteomes.
+
+47
+00:02:28.560 --> 00:02:32.460
+And in addition to this role in making more biomass,
+
+48
+00:02:32.800 --> 00:02:36.560
+now we also know that translation can be selectively regulated,
+
+49
+00:02:37.160 --> 00:02:38.660
+and this is going to be the major
+
+50
+00:02:40.100 --> 00:02:40.440
+sort of
+
+51
+00:02:41.600 --> 00:02:44.080
+theme here between three of our talks.
+
+52
+00:02:44.640 --> 00:02:48.480
+And this is achieved through interactions of the motifs or
+
+53
+00:02:48.720 --> 00:02:52.180
+features that are found in mRNA molecules, as
+
+54
+00:02:52.240 --> 00:02:53.070
+well as
+
+55
+00:02:53.880 --> 00:02:57.700
+trans factors, including translation factors as well as RNA
+
+56
+00:02:57.720 --> 00:03:00.480
+binding proteins and some auxiliary factors.
+
+57
+00:03:01.260 --> 00:03:05.140
+And the complexity here is enormous, which provides cells with the
+
+58
+00:03:05.180 --> 00:03:09.150
+sufficient flexibility to survive and adapt to stress,
+
+59
+00:03:09.280 --> 00:03:11.940
+which of course is relevant to cancer.
+
+60
+00:03:12.060 --> 00:03:12.350
+And
+
+61
+00:03:13.840 --> 00:03:17.560
+the reason for this is that all the mRNAs in the
+
+62
+00:03:17.660 --> 00:03:21.090
+cell need to compete for limiting amounts of translational
+
+63
+00:03:21.140 --> 00:03:24.720
+machinery, and based on these features, as
+
+64
+00:03:24.980 --> 00:03:28.940
+is presented in this graph that's taken from Gene Graphs Review,
+
+65
+00:03:30.200 --> 00:03:33.640
+some of them are very good in being
+
+66
+00:03:33.700 --> 00:03:37.620
+translated, so they're very good in getting to translational machinery, and
+
+67
+00:03:37.640 --> 00:03:38.560
+they're called strong
+
+68
+00:03:39.420 --> 00:03:43.340
+mRNAs, or designed here as strong mRNAs, and they happen to encode
+
+69
+00:03:43.580 --> 00:03:47.360
+proteins that have
+
+70
+00:03:47.420 --> 00:03:51.160
+housekeeping functions, and they are the ones that are
+
+71
+00:03:51.180 --> 00:03:53.380
+translated in most of the non-transformed cells.
+
+72
+00:03:54.500 --> 00:03:56.860
+Evolution, somehow, we're still not
+
+73
+00:03:58.140 --> 00:03:58.840
+sure how,
+
+74
+00:04:00.240 --> 00:04:03.860
+made it as such that mRNAs that are needed to
+
+75
+00:04:03.900 --> 00:04:07.500
+support neoplastic growth are more weak than these
+
+76
+00:04:07.640 --> 00:04:10.380
+mRNAs because their features actually
+
+77
+00:04:11.260 --> 00:04:15.180
+impede efficient translation, so the strong mRNAs
+
+78
+00:04:15.220 --> 00:04:18.280
+can actually out-compete them from the translational machinery.
+
+79
+00:04:18.860 --> 00:04:22.710
+And to this end, cancer cells need to increase the availability of
+
+80
+00:04:22.760 --> 00:04:26.330
+translational machinery in order to support translation of these weak
+
+81
+00:04:26.400 --> 00:04:29.280
+mRNAs that you can see here encode all these
+
+82
+00:04:30.440 --> 00:04:34.400
+tumor-promoting proteins. And this, as you can see
+
+83
+00:04:34.460 --> 00:04:37.720
+here, gives you sufficient therapeutic window
+
+84
+00:04:37.980 --> 00:04:41.210
+whereby you can restrict the availability of translational
+
+85
+00:04:41.240 --> 00:04:44.500
+machinery and selectively affect synthesis of
+
+86
+00:04:45.400 --> 00:04:49.340
+oncogenic proteins while not affecting the
+
+87
+00:04:49.400 --> 00:04:53.240
+synthesis of housekeeping proteins, which allows
+
+88
+00:04:53.280 --> 00:04:56.420
+selective eradication of cancer cells in preclinical models.
+
+89
+00:04:57.520 --> 00:05:00.100
+Professor Ruggiero here will talk about
+
+90
+00:05:01.020 --> 00:05:03.700
+these type of things. So without any further ado,
+
+91
+00:05:04.540 --> 00:05:08.210
+we have three talks today. I'll start by talking about translational
+
+92
+00:05:08.260 --> 00:05:11.560
+rheostat that we recently discovered that we think drives cancer
+
+93
+00:05:11.580 --> 00:05:12.320
+metastasis.
+
+94
+00:05:13.360 --> 00:05:15.980
+Then Olle Larsson from Karolinska Institute
+
+95
+00:05:16.940 --> 00:05:20.280
+will talk about how elongation is regulated through
+
+96
+00:05:20.320 --> 00:05:24.240
+modifications of tRNAs and codon composition of
+
+97
+00:05:24.260 --> 00:05:27.740
+the mRNAs. And then finally, Professor Ruggiero is going to tell us
+
+98
+00:05:27.940 --> 00:05:31.700
+about how drug tolerance in cancer is linked to this
+
+99
+00:05:31.760 --> 00:05:33.360
+selective protein synthesis.
+
+100
+00:05:34.220 --> 00:05:35.980
+So then without any further ado,
+
+101
+00:05:37.480 --> 00:05:41.400
+I will get into, see I don't know how to do this, to my
+
+102
+00:05:41.500 --> 00:05:41.820
+talk.
+
+103
+00:05:49.460 --> 00:05:51.299
+It's stuck on the...
+
+104
+00:05:52.760 --> 00:05:55.900
+I can give a chalk talk. Ah, there you go. Thank you. Thank you very much.
+
+105
+00:05:56.740 --> 00:05:58.140
+I must have pressed something wrong.
+
+106
+00:05:59.460 --> 00:05:59.700
+So,
+
+107
+00:06:00.640 --> 00:06:04.520
+I'm going to be talking about this recent discovery of ours where
+
+108
+00:06:04.560 --> 00:06:05.220
+we believe
+
+109
+00:06:05.280 --> 00:06:09.048
+thatTranslation
+
+110
+00:06:09.328 --> 00:06:13.308
+is dynamically regulated throughout the tumor evolution to allow tumor
+
+111
+00:06:13.348 --> 00:06:14.568
+cells to metastasize.
+
+112
+00:06:15.868 --> 00:06:16.848
+And I have
+
+113
+00:06:16.908 --> 00:06:20.848
+nothing to disclose when it comes
+
+114
+00:06:20.888 --> 00:06:24.708
+to this research. And I will start by acknowledging the people in the lab that
+
+115
+00:06:24.748 --> 00:06:27.547
+actually do the work that I so ungratefully take credit for.
+
+116
+00:06:28.948 --> 00:06:32.528
+And what we're interested in the lab and what's linked to
+
+117
+00:06:32.728 --> 00:06:36.088
+processes such as metastasis is how cells adapt to stress.
+
+118
+00:06:36.808 --> 00:06:39.548
+And as we all know, cells sense their environment.
+
+119
+00:06:40.468 --> 00:06:43.748
+This leads to activation of signaling pathways, leading to
+
+120
+00:06:43.768 --> 00:06:47.648
+perturbations in the proteome and metabolome, which if optimal, will allow cells to
+
+121
+00:06:47.688 --> 00:06:48.788
+adapt and survive,
+
+122
+00:06:49.648 --> 00:06:52.648
+and if not, this will lead to triggering
+
+123
+00:06:52.688 --> 00:06:56.448
+of some sort of cell death, elimination of these
+
+124
+00:06:56.468 --> 00:06:56.808
+cells.
+
+125
+00:06:58.248 --> 00:07:02.148
+So one of the major ways how protein synthesis is
+
+126
+00:07:02.208 --> 00:07:06.188
+linked to the surrounding environment of the cell is mediated
+
+127
+00:07:06.228 --> 00:07:08.948
+through the mechanistic target of rapamycin complex one,
+
+128
+00:07:10.388 --> 00:07:12.798
+signaling pathway. And this kinase
+
+129
+00:07:13.648 --> 00:07:16.968
+is a central sensor of the changes in the
+
+130
+00:07:16.988 --> 00:07:20.888
+environment, including nutrients, oxygen, energy status in the
+
+131
+00:07:20.928 --> 00:07:23.988
+cell, and so on. And based on that, it
+
+132
+00:07:25.768 --> 00:07:29.388
+stimulates anabolic processes such as lipid synthesis and protein
+
+133
+00:07:29.448 --> 00:07:33.088
+synthesis that we're going to talk about, and inhibits catabolic
+
+134
+00:07:33.108 --> 00:07:34.968
+processes such as autophagy. So,
+
+135
+00:07:35.888 --> 00:07:39.628
+under conditions when cells are deprived of nutrients,
+
+136
+00:07:39.808 --> 00:07:43.078
+oxygen, or where energy status of the cells is unfavorable,
+
+137
+00:07:44.668 --> 00:07:48.588
+the family of the small translational inhibitors that are called
+
+138
+00:07:48.628 --> 00:07:52.228
+4E binding proteins, that you can see here in green, and in mammals, there are
+
+139
+00:07:52.248 --> 00:07:53.788
+three of them, one, two, and three,
+
+140
+00:07:55.248 --> 00:07:58.668
+bind to the cytosolic cap binding protein,
+
+141
+00:07:59.748 --> 00:08:03.528
+called eIF4E. Once you stimulate the cells with
+
+142
+00:08:03.608 --> 00:08:07.488
+nutrients or oxygen or if the energy status
+
+143
+00:08:07.548 --> 00:08:08.108
+recovers,
+
+144
+00:08:08.988 --> 00:08:12.668
+mTORC1 is activated. This leads to phosphorylation of 4E-BPs that
+
+145
+00:08:12.688 --> 00:08:16.638
+inactivates them, leading to their dissociation from the
+
+146
+00:08:16.748 --> 00:08:17.307
+eIF4E,
+
+147
+00:08:18.448 --> 00:08:22.288
+thus allowing the assembly of the eIF4F complex and recruitment of
+
+148
+00:08:22.328 --> 00:08:26.148
+the mRNA to the ribosome. And this is a pretty well-understood
+
+149
+00:08:26.168 --> 00:08:28.308
+process that is
+
+150
+00:08:30.088 --> 00:08:33.348
+dysregulated in many of cancers because mTORC1 is
+
+151
+00:08:33.528 --> 00:08:36.509
+upregulated in almost all the malignancies.
+
+152
+00:08:37.588 --> 00:08:41.578
+So it's not surprising that eIF4E promotes
+
+153
+00:08:41.629 --> 00:08:45.488
+malignant transformation and tumor growth, and this has been shown by
+
+154
+00:08:45.528 --> 00:08:49.468
+Nahum Sonenberg first in the 1990 cell lines, and then here
+
+155
+00:08:49.508 --> 00:08:53.228
+with the present professor
+
+156
+00:08:53.268 --> 00:08:54.988
+Ruggiero, who showed this in vivo.
+
+157
+00:08:55.488 --> 00:08:59.388
+So if you have more eIF4E, cells become malignant, and these tumors
+
+158
+00:08:59.408 --> 00:09:00.168
+grow faster.
+
+159
+00:09:01.968 --> 00:09:02.188
+So
+
+160
+00:09:03.568 --> 00:09:05.808
+when Fedja Jovanovic came to the lab,
+
+161
+00:09:07.048 --> 00:09:10.948
+we had a student before him, Sophie, who decided that she wants to go to
+
+162
+00:09:10.968 --> 00:09:14.608
+medical school, so she said she wanted a project that's relatively
+
+163
+00:09:14.688 --> 00:09:16.248
+simple and straightforward.
+
+164
+00:09:17.548 --> 00:09:21.368
+And the project was to show that 4E-BPs will
+
+165
+00:09:21.408 --> 00:09:25.048
+basically act as tumor suppressors, which was known, but that they will
+
+166
+00:09:25.148 --> 00:09:25.408
+also
+
+167
+00:09:26.288 --> 00:09:27.488
+suppress metastasis,
+
+168
+00:09:28.348 --> 00:09:31.708
+which was expected because it was thought that eIF4E
+
+169
+00:09:31.948 --> 00:09:35.528
+promotes metastasis. So if you have an oncogene, the inhibitor of the
+
+170
+00:09:35.568 --> 00:09:39.008
+oncogene should block both primary tumor growth and metastasis.
+
+171
+00:09:39.738 --> 00:09:40.988
+And we teamed with
+
+172
+00:09:42.728 --> 00:09:46.268
+Ursina Sigler and Lee Marie Post ви's lab, and also Pasha
+
+173
+00:09:46.308 --> 00:09:50.048
+Woronov's lab, and Gio Mattia here in Pasha's lab, did a lot of work
+
+174
+00:09:50.108 --> 00:09:50.308
+here.
+
+175
+00:09:51.488 --> 00:09:55.348
+So, as I said, the project was supposed to be quite simple, and the idea
+
+176
+00:09:55.408 --> 00:09:59.238
+was if we cross the 4E-BP knockout mice with
+
+177
+00:09:59.248 --> 00:10:01.448
+polyoma middle T breast cancer,
+
+178
+00:10:03.168 --> 00:10:07.028
+polyoma middle T mouse that's a standardly used breast cancer model,
+
+179
+00:10:08.328 --> 00:10:12.068
+we expected to get larger tumors, and that
+
+180
+00:10:12.128 --> 00:10:16.028
+happened, but we also expected to get more metastasis, which actually
+
+181
+00:10:16.068 --> 00:10:19.728
+didn't happen at all. And there was almost no metastasis there, which was
+
+182
+00:10:19.788 --> 00:10:20.808
+highly surprising.
+
+183
+00:10:21.668 --> 00:10:25.007
+We thought that if you get rid of something that's a tumor suppressor,
+
+184
+00:10:25.108 --> 00:10:27.148
+metastasis should go up, not down, right?
+
+185
+00:10:27.928 --> 00:10:28.368
+And then,
+
+186
+00:10:29.388 --> 00:10:32.528
+of course, the first thing we thought of, that something inadvertent happened in
+
+187
+00:10:32.588 --> 00:10:33.267
+this
+
+188
+00:10:34.128 --> 00:10:37.888
+4E-BP1, two double knockout mice, or their crosses with polyoma middle T.
+
+189
+00:10:38.508 --> 00:10:41.788
+And to check whether this is the case, Fedja
+
+190
+00:10:41.828 --> 00:10:45.668
+reexpressed 4E-BP1 in this 4E-BP1 and two
+
+191
+00:10:46.208 --> 00:10:48.668
+double knockout cells, as you can see here,
+
+192
+00:10:49.868 --> 00:10:53.588
+and this was sufficient to recover metastatic potential of the cells.
+
+193
+00:10:54.468 --> 00:10:58.088
+So it became sort of apparent at this point that 4E-BP1 is
+
+194
+00:10:58.128 --> 00:11:02.028
+likely to stimulate metastasis rather to prevent it, although it
+
+195
+00:11:02.148 --> 00:11:05.998
+prevents primary tumor growth, or it slows down primary tumor growth, I should
+
+196
+00:11:06.068 --> 00:11:06.288
+say.
+
+197
+00:11:07.408 --> 00:11:10.248
+So then the question, of course, was, was this
+
+198
+00:11:11.328 --> 00:11:14.448
+cancer cells themselves or something within
+
+199
+00:11:14.568 --> 00:11:17.168
+the tumor niche or microenvironment?
+
+200
+00:11:18.248 --> 00:11:19.598
+And for that,
+
+201
+00:11:20.868 --> 00:11:24.798
+we did a very simple experiment where we took the wild-type cells and put them
+
+202
+00:11:24.848 --> 00:11:27.908
+in wild-type or a 4E-BP double knockout mice.
+
+203
+00:11:28.438 --> 00:11:32.128
+And there, there was no difference in metastasis, thus indicating that the observed
+
+204
+00:11:32.168 --> 00:11:36.128
+phenotypes are cell-autonomous, so that there is something in
+
+205
+00:11:36.188 --> 00:11:39.608
+cancer cells that prevents them from metastasizing if they don't
+
+206
+00:11:39.668 --> 00:11:42.728
+express 4E-BP1.
+
+207
+00:11:44.588 --> 00:11:44.888
+And
+
+208
+00:11:46.008 --> 00:11:47.028
+interestingly, so
+
+209
+00:11:47.988 --> 00:11:51.948
+this didn't work if you would constitutively activate 4E-BP1 and make it
+
+210
+00:11:52.088 --> 00:11:55.908
+stuck to eIF4E, which we did here with this 4Alanine mutant, where all the
+
+211
+00:11:56.008 --> 00:11:59.968
+mTORC1 sites are mutated to alanine, so this mutant is constitutively active
+
+212
+00:11:59.988 --> 00:12:00.488
+and bound,
+
+213
+00:12:01.568 --> 00:12:05.428
+to eIF4E no matter what mTORC1 activity is.
+
+214
+00:12:05.968 --> 00:12:09.308
+And here you can see that the wild type was much better in
+
+215
+00:12:09.328 --> 00:12:13.048
+recovering the metastasis in the lungs than the
+
+216
+00:12:13.228 --> 00:12:16.388
+4Alanine mutant, thus indicating, or at least
+
+217
+00:12:16.428 --> 00:12:20.048
+suggestingThat mTOR signaling needs to
+
+218
+00:12:20.088 --> 00:12:21.508
+tune 4E-BP1,
+
+219
+00:12:22.528 --> 00:12:26.348
+rather than just 4E-BP1 being constitutively activated, and this
+
+220
+00:12:26.388 --> 00:12:26.748
+starts
+
+221
+00:12:27.728 --> 00:12:30.208
+making us think about this kind of rheostat model.
+
+222
+00:12:30.948 --> 00:12:34.388
+But before we got there, we needed to sort of
+
+223
+00:12:34.428 --> 00:12:36.908
+dissect which step of metastatic cascade
+
+224
+00:12:37.788 --> 00:12:40.228
+4E-BP1 plays a major role in.
+
+225
+00:12:41.028 --> 00:12:44.908
+And I won't dwell on this because this is familiar to most
+
+226
+00:12:44.948 --> 00:12:48.708
+of you, but there is a number of steps that cancer cells need to
+
+227
+00:12:49.428 --> 00:12:53.168
+go through and overcome a variety of challenges in order
+
+228
+00:12:53.288 --> 00:12:57.208
+to disseminate to these distant tissues
+
+229
+00:12:57.588 --> 00:12:58.568
+and develop
+
+230
+00:12:59.388 --> 00:13:00.228
+metastasis.
+
+231
+00:13:01.388 --> 00:13:01.688
+So
+
+232
+00:13:03.008 --> 00:13:06.608
+we start looking at the steps in
+
+233
+00:13:06.628 --> 00:13:08.048
+metastatic cascades where
+
+234
+00:13:08.908 --> 00:13:12.148
+metastatic cascade with 4E-BP1 could act.
+
+235
+00:13:13.168 --> 00:13:14.668
+And first,
+
+236
+00:13:15.828 --> 00:13:19.588
+it was decided that we should maybe check whether the outgrowth of the
+
+237
+00:13:20.528 --> 00:13:23.788
+tumor cells in the metastatic site is affected.
+
+238
+00:13:23.888 --> 00:13:26.588
+For this, we use the tail vein injections.
+
+239
+00:13:27.228 --> 00:13:30.808
+So this way, you sort of surpass all the early steps in
+
+240
+00:13:30.848 --> 00:13:34.568
+metastatic cascade, and you inject a lot of cells in the tail vein of the mouse.
+
+241
+00:13:34.708 --> 00:13:38.018
+They colonize the lungs. And then
+
+242
+00:13:39.608 --> 00:13:39.688
+we
+
+243
+00:13:41.088 --> 00:13:42.688
+quantify the number of metastases.
+
+244
+00:13:42.808 --> 00:13:46.788
+And as you can see here, there was not much difference there, thus indicating that
+
+245
+00:13:47.608 --> 00:13:51.048
+4E-BP1 doesn't play a major role in metastatic outgrowth.
+
+246
+00:13:52.548 --> 00:13:53.088
+In turn,
+
+247
+00:13:54.368 --> 00:13:58.028
+we observed differences in invasion and
+
+248
+00:13:58.048 --> 00:14:01.668
+anoikis resistance. Anoikis is a program cell death
+
+249
+00:14:02.448 --> 00:14:05.428
+mechanism that's triggered upon detachment of the cells.
+
+250
+00:14:05.488 --> 00:14:08.808
+And these are two very early steps in metastasis.
+
+251
+00:14:09.548 --> 00:14:13.408
+And you can see that 4E-BP1 status in the cells
+
+252
+00:14:13.548 --> 00:14:17.058
+was a determinant there, whereby the cells that were
+
+253
+00:14:17.188 --> 00:14:21.028
+4E-BP1 proficient invaded more, and they were
+
+254
+00:14:21.048 --> 00:14:22.668
+also, as you can see here,
+
+255
+00:14:23.788 --> 00:14:27.688
+more resistant to anoikis, as you
+
+256
+00:14:27.748 --> 00:14:30.828
+can see here. And also importantly, you can see that
+
+257
+00:14:31.768 --> 00:14:35.208
+mTOR signaling under the conditions of detachment,
+
+258
+00:14:36.068 --> 00:14:37.128
+which is here,
+
+259
+00:14:38.008 --> 00:14:41.868
+is reduced, as you can see, by phosphorylation of these downstream substrates
+
+260
+00:14:41.928 --> 00:14:43.288
+of mTORC1.
+
+261
+00:14:44.448 --> 00:14:48.288
+So we decided then to see what the mechanism here could
+
+262
+00:14:48.348 --> 00:14:51.388
+be. And to do so, we compared the
+
+263
+00:14:52.028 --> 00:14:55.748
+transcript and wide changes in translation, that are also known
+
+264
+00:14:55.808 --> 00:14:57.148
+as translatome,
+
+265
+00:14:58.188 --> 00:15:01.288
+between the attached and detached cells that are either
+
+266
+00:15:01.948 --> 00:15:05.788
+4E-BP1 deficient or proficient. And this led
+
+267
+00:15:05.828 --> 00:15:08.698
+us to another surprise. So not only that 4E-BP1,
+
+268
+00:15:10.228 --> 00:15:13.668
+that it didn't make much sense that 4E-BP1 as tumor
+
+269
+00:15:13.748 --> 00:15:17.548
+suppressor is increasing the number of metastases or is actually
+
+270
+00:15:17.588 --> 00:15:21.148
+required for metastasis. 4E-BP1 is also a translational
+
+271
+00:15:21.208 --> 00:15:25.088
+suppressor, but we could see actually translational upregulation
+
+272
+00:15:25.268 --> 00:15:29.188
+of a number of mRNAs, most of which were involved in
+
+273
+00:15:29.228 --> 00:15:33.128
+the processes that are actually implicated in the early steps of
+
+274
+00:15:33.148 --> 00:15:36.688
+metastasis, such as migration, invasion, and anoikis
+
+275
+00:15:36.748 --> 00:15:40.248
+resistance. And one of those was pannexin 1,
+
+276
+00:15:40.908 --> 00:15:44.648
+that plays a major role in the matrix cell contacts
+
+277
+00:15:44.848 --> 00:15:48.088
+and interactions through ATP and calcium signaling.
+
+278
+00:15:48.968 --> 00:15:52.768
+So Pedja went to test what else could be
+
+279
+00:15:52.828 --> 00:15:56.428
+there, and here it was observed that
+
+280
+00:15:57.348 --> 00:16:00.708
+mRNAs that the translation upregulated upon detachment
+
+281
+00:16:01.448 --> 00:16:04.848
+in 4E-BP1 proficient cells, so those whose translation is
+
+282
+00:16:05.688 --> 00:16:06.868
+4E-BP1 dependent,
+
+283
+00:16:08.148 --> 00:16:10.248
+and their synthesis is upregulated,
+
+284
+00:16:11.208 --> 00:16:14.978
+actually have much longer five prime UTRs,
+
+285
+00:16:15.148 --> 00:16:19.008
+as you can see here. And they also have a
+
+286
+00:16:19.068 --> 00:16:22.137
+higher proportion of upstream open reading frames that are relatively
+
+287
+00:16:22.188 --> 00:16:23.128
+well-established
+
+288
+00:16:24.348 --> 00:16:27.828
+translational control elements in their five prime untranslated
+
+289
+00:16:27.888 --> 00:16:28.388
+regions.
+
+290
+00:16:29.208 --> 00:16:32.768
+So this led us to think that these features of the mRNAs
+
+291
+00:16:32.868 --> 00:16:36.068
+somehow make these
+
+292
+00:16:37.188 --> 00:16:40.187
+transcripts translation upregulated under conditions
+
+293
+00:16:41.308 --> 00:16:44.588
+where 4E-BP is actually activated and translation should be
+
+294
+00:16:44.888 --> 00:16:45.488
+inhibited.
+
+295
+00:16:47.348 --> 00:16:51.248
+And then it was decided that we should validate pannexin
+
+296
+00:16:51.568 --> 00:16:55.268
+1, and you can see that the protein levels of pannexin 1 are
+
+297
+00:16:55.348 --> 00:16:59.328
+upregulated in the cells that are 4E-BP1 proficient compared
+
+298
+00:16:59.388 --> 00:17:03.328
+to those that lack 4E-BP1. There are two
+
+299
+00:17:03.408 --> 00:17:07.229
+bands here because there is a cleavage product that's recognized with these
+
+300
+00:17:07.238 --> 00:17:08.368
+antibodies, so they're both
+
+301
+00:17:10.648 --> 00:17:14.588
+originating from pannexin. And there was no change in the RNA
+
+302
+00:17:14.608 --> 00:17:17.278
+levels of pannexin, thus further suggesting that this
+
+303
+00:17:18.189 --> 00:17:22.168
+increase in pannexin 1 protein levels is indeed occurring at the level
+
+304
+00:17:22.229 --> 00:17:26.148
+of mRNA translation. And then if you deplete
+
+305
+00:17:26.158 --> 00:17:29.858
+pannexin 1, this invasive advantage of
+
+306
+00:17:29.988 --> 00:17:33.728
+cells that are 4E-BP1 proficient was actually diminished,
+
+307
+00:17:35.348 --> 00:17:39.228
+whereas pannexin 1 didn't have that much effect on the cells that didn't
+
+308
+00:17:39.268 --> 00:17:42.548
+express 4E-BP1. So this indicated that
+
+309
+00:17:43.068 --> 00:17:43.888
+4E-BP1,
+
+310
+00:17:44.908 --> 00:17:48.888
+pannexin axis is involved in stimulation of these early
+
+311
+00:17:48.928 --> 00:17:49.368
+steps
+
+312
+00:17:50.268 --> 00:17:53.808
+or stimulation of progression of cells through the early steps of metastatic
+
+313
+00:17:53.828 --> 00:17:54.428
+cascade.
+
+314
+00:17:56.228 --> 00:18:00.148
+But we still couldn't understand what's going on and why
+
+315
+00:18:00.328 --> 00:18:04.248
+4LN mutant that's constitutively active didn't work better than the
+
+316
+00:18:04.288 --> 00:18:04.948
+wild type.
+
+317
+00:18:05.868 --> 00:18:08.608
+And this led us to think about this rheostat model.
+
+318
+00:18:09.188 --> 00:18:13.048
+But it's easy to think, it's much harder to prove, but Pedja
+
+319
+00:18:13.108 --> 00:18:16.748
+is excellent. So he came up with this experiment
+
+320
+00:18:17.408 --> 00:18:20.952
+whereby he would sort of dosemTOR
+
+321
+00:18:20.962 --> 00:18:24.832
+signaling by stimulating cells with serum and then monitoring what
+
+322
+00:18:24.892 --> 00:18:27.272
+happens to pannexin-1 protein levels.
+
+323
+00:18:27.832 --> 00:18:31.272
+And you can see here when he starts adding serum,
+
+324
+00:18:31.892 --> 00:18:35.472
+that pannexin-1 peaks before mTOR signaling
+
+325
+00:18:35.552 --> 00:18:39.372
+is maximally activated, thus indicating that
+
+326
+00:18:39.452 --> 00:18:42.432
+this translational increase in pannexin-1
+
+327
+00:18:43.192 --> 00:18:43.952
+requires
+
+328
+00:18:44.932 --> 00:18:45.652
+not too much,
+
+329
+00:18:46.552 --> 00:18:50.492
+but a little bit of mTOR signaling, some
+
+330
+00:18:50.512 --> 00:18:52.772
+sort of a Goldilocks zone, if you will, and so on.
+
+331
+00:18:53.512 --> 00:18:57.452
+When you continue stimulating cells with serum and further induce mTOR
+
+332
+00:18:57.492 --> 00:18:57.972
+signaling,
+
+333
+00:18:58.892 --> 00:19:02.132
+the pannexin-1 levels go down, and then if you inhibit
+
+334
+00:19:02.812 --> 00:19:06.312
+mTOR signaling by this mTORc1-specific inhibitor,
+
+335
+00:19:07.472 --> 00:19:09.552
+pannexin-1 is reduced again.
+
+336
+00:19:10.492 --> 00:19:13.992
+And then he did a similar experiment with mTOR inhibitors, where he just dosed the
+
+337
+00:19:14.012 --> 00:19:16.572
+levels of mTOR inhibitors, and he observed the same thing.
+
+338
+00:19:18.132 --> 00:19:21.852
+In this concentration gradient, there was a dose of
+
+339
+00:19:21.972 --> 00:19:25.852
+mTORc1 that induced pannexin-1, and before and after,
+
+340
+00:19:26.452 --> 00:19:28.032
+the levels of pannexin-1 were lower.
+
+341
+00:19:28.132 --> 00:19:31.492
+So, this led us also to think that
+
+342
+00:19:32.232 --> 00:19:36.152
+just inhibiting mTORc1 may not stimulate metastasis, which
+
+343
+00:19:36.192 --> 00:19:37.192
+would be
+
+344
+00:19:38.392 --> 00:19:42.132
+sort of advantageous considering that some of these drugs are in the clinic.
+
+345
+00:19:42.822 --> 00:19:46.492
+And indeed, that happens if you put mTOR inhibitors and
+
+346
+00:19:46.532 --> 00:19:48.872
+inhibit mTORc1 almost completely.
+
+347
+00:19:48.972 --> 00:19:50.742
+So strong inhibition of mTORc1
+
+348
+00:19:52.852 --> 00:19:56.632
+sort of decreased the invasion potential of the 4E-BP1
+
+349
+00:19:56.672 --> 00:19:58.792
+proficient cells, as you can see here.
+
+350
+00:19:59.672 --> 00:20:03.512
+So this led us to this model whereby the stressors that
+
+351
+00:20:03.572 --> 00:20:07.172
+act across metastatic cascade, of which there are many,
+
+352
+00:20:07.952 --> 00:20:11.732
+tune mTORc1 activity to the point that the
+
+353
+00:20:11.772 --> 00:20:15.712
+translatomes are going to be remodeled in 4E-BP1-dependent manner in a way
+
+354
+00:20:15.752 --> 00:20:19.432
+that favors metastasis. And this also
+
+355
+00:20:19.472 --> 00:20:22.532
+allows cells to switch between proliferative and
+
+356
+00:20:23.032 --> 00:20:25.032
+metastatic proteomes, if you will,
+
+357
+00:20:26.092 --> 00:20:29.852
+because proliferation needs to stop in order for
+
+358
+00:20:29.892 --> 00:20:33.252
+cells to migrate, invade, and survive in oicus,
+
+359
+00:20:35.132 --> 00:20:35.892
+meaning survive in
+
+360
+00:20:37.352 --> 00:20:41.132
+the circulation. And then it needs to be reactivated once they
+
+361
+00:20:41.172 --> 00:20:45.092
+go to the secondary site and need to grow metastasis or secondary
+
+362
+00:20:45.132 --> 00:20:45.492
+tumors.
+
+363
+00:20:46.372 --> 00:20:49.952
+And we do think that this is a major
+
+364
+00:20:50.732 --> 00:20:54.472
+mechanism that's implicated in metastasis, and we think that this is
+
+365
+00:20:54.532 --> 00:20:58.492
+how protein synthesis is implicated in this process.
+
+366
+00:20:58.652 --> 00:21:02.052
+Of course, we still don't understand the precise mechanism.
+
+367
+00:21:02.822 --> 00:21:05.972
+Maybe I shouldn't have said, of course, but we don't understand the precise
+
+368
+00:21:06.072 --> 00:21:10.012
+mechanism of how these mRNAs, such
+
+369
+00:21:10.092 --> 00:21:13.552
+as the one encoding pannexin, are upregulated under these
+
+370
+00:21:13.592 --> 00:21:15.832
+conditions. But we are working on it.
+
+371
+00:21:16.432 --> 00:21:16.732
+And
+
+372
+00:21:18.332 --> 00:21:21.632
+in the sake of time, I won't get to this last point here.
+
+373
+00:21:21.642 --> 00:21:24.992
+It turns out, which was the third surprise in this project,
+
+374
+00:21:25.652 --> 00:21:29.512
+that these effects are specific to 4E-BP1 and not its
+
+375
+00:21:29.572 --> 00:21:33.432
+very close parallel, 4E-BP2, whereby it was thought that these two
+
+376
+00:21:33.512 --> 00:21:37.332
+proteins have completely redundant functions and can
+
+377
+00:21:37.472 --> 00:21:38.652
+substitute for each other.
+
+378
+00:21:39.852 --> 00:21:40.792
+But in conclusion,
+
+379
+00:21:41.712 --> 00:21:41.772
+I
+
+380
+00:21:42.832 --> 00:21:45.652
+would say that-- And this all come from Peija.
+
+381
+00:21:45.732 --> 00:21:48.872
+I did very little here. This was all driven by him.
+
+382
+00:21:48.992 --> 00:21:52.212
+He's an extraordinarily talented PhD student.
+
+383
+00:21:54.012 --> 00:21:57.872
+That although 4E-BP1s may be tumor suppressive when it comes
+
+384
+00:21:57.932 --> 00:21:59.932
+to primary tumors, they
+
+385
+00:21:59.992 --> 00:22:03.772
+stimulate metastasis,
+
+386
+00:22:04.392 --> 00:22:05.592
+so there is this kind of
+
+387
+00:22:06.692 --> 00:22:10.352
+antagonistic pleiotropism. You need 4E-BP1s
+
+388
+00:22:10.652 --> 00:22:14.612
+not to be very active when the primary tumor grows, but then you have to tune them
+
+389
+00:22:14.712 --> 00:22:15.052
+down
+
+390
+00:22:15.872 --> 00:22:17.932
+in order for cells to metastasize.
+
+391
+00:22:19.352 --> 00:22:22.852
+We think that this rheostat that's dialed by
+
+392
+00:22:22.932 --> 00:22:25.292
+mTORc1 and centered on 4E-BP1,
+
+393
+00:22:26.412 --> 00:22:30.212
+enables cells to switch from proliferative to metastatic states, and this
+
+394
+00:22:30.232 --> 00:22:32.192
+doesn't require any changes in
+
+395
+00:22:33.992 --> 00:22:37.732
+genomes of the cancer cells that would make them stuck in one or the other
+
+396
+00:22:37.871 --> 00:22:41.272
+state, but allows them to sort of exhibit enough
+
+397
+00:22:41.311 --> 00:22:43.902
+plasticity in order to move through metastatic cascade.
+
+398
+00:22:45.112 --> 00:22:48.582
+And finally, we think that this occurs by
+
+399
+00:22:48.672 --> 00:22:52.552
+upregulation, by paradoxical upregulation, I should say,
+
+400
+00:22:53.112 --> 00:22:54.532
+of the mRNAs
+
+401
+00:22:55.392 --> 00:22:58.492
+that's 4E-BP1 dependent. And with that,
+
+402
+00:22:59.532 --> 00:23:03.212
+I would like just to thank all the collaborators and the
+
+403
+00:23:03.292 --> 00:23:05.072
+people that gave us funding to do this
+
+404
+00:23:06.072 --> 00:23:09.432
+research. And I'm going to take questions, if any.
+
+405
+00:23:09.472 --> 00:23:11.692
+Thank you very much.
+
+406
+00:23:15.832 --> 00:23:16.632
+Nice work. So,
+
+407
+00:23:17.812 --> 00:23:20.752
+maybe I missed it, but did you see any changes in
+
+408
+00:23:20.832 --> 00:23:24.432
+translation of EMT markers?
+
+409
+00:23:24.932 --> 00:23:28.772
+Looking at epithelial-mesenchymal transition, like Twist and Snail and things like
+
+410
+00:23:28.812 --> 00:23:28.912
+that.
+
+411
+00:23:29.812 --> 00:23:31.232
+We've seen some.
+
+412
+00:23:32.332 --> 00:23:33.692
+I believe we've seen Nanog,
+
+413
+00:23:34.672 --> 00:23:38.452
+and we've seen one of the Hox genes, and
+
+414
+00:23:38.552 --> 00:23:39.532
+Sox2 as well.
+
+415
+00:23:40.672 --> 00:23:40.682
+Okay.
+
+416
+00:23:40.732 --> 00:23:44.712
+So they were also upregulated. But there's work before that shows that
+
+417
+00:23:45.632 --> 00:23:49.192
+actually inhibition of 4E-BP1
+
+418
+00:23:49.352 --> 00:23:53.112
+or, sorry, stimulation of 4E-BP through inhibition of
+
+419
+00:23:53.272 --> 00:23:57.232
+mTOR and activation of integrated stress response would actually favor translation
+
+420
+00:23:57.252 --> 00:24:00.412
+of such mRNAs that are involved in EMT.
+
+421
+00:24:00.472 --> 00:24:02.212
+But what we believe it's also that
+
+422
+00:24:03.352 --> 00:24:05.372
+a slight change in mTOR activity
+
+423
+00:24:06.272 --> 00:24:10.152
+could change this. So once the cells get to the secondary site, you
+
+424
+00:24:10.192 --> 00:24:13.812
+can turn off this program and activate the other program, right?
+
+425
+00:24:13.872 --> 00:24:17.852
+And then stochasticity and low efficiency of metastasis would come
+
+426
+00:24:17.972 --> 00:24:21.432
+from, I guess, the fact that mTOR signaling has to be at the right level
+
+427
+00:24:21.852 --> 00:24:23.232
+throughout this whole thing. Yes.
+
+428
+00:24:23.940 --> 00:24:27.580
+Yeah. And then also, it was sort of interesting because you saw an
+
+429
+00:24:27.660 --> 00:24:30.040
+increase in survival under anoikis conditions.
+
+430
+00:24:30.390 --> 00:24:30.390
+Yeah.
+
+431
+00:24:30.400 --> 00:24:30.980
+But then when you
+
+432
+00:24:32.000 --> 00:24:34.840
+injected these cells into the tail vein,
+
+433
+00:24:35.960 --> 00:24:38.340
+it seemed like they were surviving at the same rates.
+
+434
+00:24:38.580 --> 00:24:42.550
+Were you getting both like same number of nodules and same size or were
+
+435
+00:24:42.550 --> 00:24:43.320
+they changing?
+
+436
+00:24:43.340 --> 00:24:47.220
+We do, but tail vein is a bit of cheating because you put millions of cells
+
+437
+00:24:47.300 --> 00:24:51.120
+in. And then from the tail end to the lungs, they usually get there because they
+
+438
+00:24:51.160 --> 00:24:53.480
+travel as clumps and whatnot. So I think that
+
+439
+00:24:54.380 --> 00:24:58.040
+that's inherently, that anoikis is sort of overcome by the
+
+440
+00:24:58.080 --> 00:24:58.460
+model.
+
+441
+00:24:59.780 --> 00:25:01.780
+Yeah. Thank you. Thank you very much.
+
+442
+00:25:04.300 --> 00:25:07.440
+Yeah. Very nice work, Ivan. Congratulation.
+
+443
+00:25:08.220 --> 00:25:12.140
+I have two quick questions. Did you see any difference in the expression
+
+444
+00:25:12.180 --> 00:25:13.880
+of metalloprotease or
+
+445
+00:25:15.520 --> 00:25:17.840
+protein that are implicated in invasion?
+
+446
+00:25:18.300 --> 00:25:20.400
+The MMP3 was upregulated-
+
+447
+00:25:20.500 --> 00:25:20.529
+Okay
+
+448
+00:25:20.620 --> 00:25:22.940
+... in the 4EBP1 cells when they detached.
+
+449
+00:25:23.560 --> 00:25:24.840
+And concerning panexin,
+
+450
+00:25:25.700 --> 00:25:29.179
+I don't know it very well. Is there drugs that target this protein?
+
+451
+00:25:29.600 --> 00:25:33.520
+I think that there's some in development, but I don't think that any
+
+452
+00:25:33.560 --> 00:25:37.140
+of them are even close to the clinic because panexin is this strange thing that's
+
+453
+00:25:37.180 --> 00:25:40.440
+like panexin, but it doesn't align, so it doesn't make a channel.
+
+454
+00:25:41.120 --> 00:25:44.840
+So it's still debatable what panexin 1 in some ways does, but it does make
+
+455
+00:25:44.900 --> 00:25:48.620
+cells leak ATP and calcium, and because of that,
+
+456
+00:25:48.760 --> 00:25:52.720
+there's some indications in neurodegenerative diseases where I
+
+457
+00:25:52.800 --> 00:25:56.620
+think they're trying to make these inhibitors, but I think they're very far from.
+
+458
+00:25:57.460 --> 00:25:57.700
+Thank you.
+
+459
+00:25:57.760 --> 00:25:58.340
+Thank you very much.
+
+460
+00:25:59.960 --> 00:26:02.990
+Do you think it's possible you're switching from 4E-dependent to
+
+461
+00:26:03.100 --> 00:26:05.540
+4E-independent translation?
+
+462
+00:26:06.300 --> 00:26:10.260
+That's what we think, and we went after eIF3 and eF5 and all kinds of
+
+463
+00:26:10.300 --> 00:26:13.900
+things that were knocked down. I didn't have time to show, but can show later.
+
+464
+00:26:14.600 --> 00:26:16.580
+And it turns out that they don't affect this.
+
+465
+00:26:16.660 --> 00:26:17.760
+I think that somehow,
+
+466
+00:26:18.760 --> 00:26:22.160
+tuning the levels of 4F makes these RNAs more
+
+467
+00:26:22.220 --> 00:26:23.960
+translatable, which we don't understand.
+
+468
+00:26:24.020 --> 00:26:26.980
+And obviously, because the upstream open reading frames, we looked whether there's
+
+469
+00:26:27.020 --> 00:26:30.240
+any difference in the introduction of eIF2 phosphorylation integrated stress
+
+470
+00:26:30.280 --> 00:26:33.440
+response, but we couldn't see any differences between the two.
+
+471
+00:26:33.519 --> 00:26:34.049
+But it's still
+
+472
+00:26:35.060 --> 00:26:36.840
+the major headache that we're having. Yes.
+
+473
+00:26:37.240 --> 00:26:41.100
+That's why Pedja cannot graduate for the year now trying to figure this out.
+
+474
+00:26:41.720 --> 00:26:44.580
+Yes, last question, please. Oh. Okay.
+
+475
+00:26:45.980 --> 00:26:47.279
+If you're quick, you can do both.
+
+476
+00:26:48.360 --> 00:26:48.460
+Go.
+
+477
+00:26:49.560 --> 00:26:52.940
+So I'm not in the field, but I'm curious about this Goldilocks situation.
+
+478
+00:26:54.260 --> 00:26:56.960
+Do you know anything about it in terms of the intra-tumoral
+
+479
+00:26:57.700 --> 00:27:01.320
+distribution? If there is a population of cells that has low mTOR
+
+480
+00:27:01.360 --> 00:27:04.920
+activity, then another one that has high activity, meaning that one portion of the
+
+481
+00:27:04.940 --> 00:27:07.300
+tumor proliferates and the other one is more invasive.
+
+482
+00:27:09.900 --> 00:27:13.720
+We have a secondary goal here, which is to develop reporters that will detect
+
+483
+00:27:13.760 --> 00:27:15.860
+these metastatic cells very early.
+
+484
+00:27:16.540 --> 00:27:20.480
+So put them in a tumor and see which ones light up so we can isolate them
+
+485
+00:27:20.500 --> 00:27:24.140
+and answer this question. But I'm pretty sure, there's heterogeneity in mTOR
+
+486
+00:27:24.260 --> 00:27:28.020
+activity in the tumor for sure because some cells get more
+
+487
+00:27:28.620 --> 00:27:31.920
+nutrients than others, more oxygen, so yeah. For sure. Yeah.
+
+488
+00:27:32.780 --> 00:27:33.520
+Okay, last.
+
+489
+00:27:34.760 --> 00:27:37.520
+That was a great talk, actually. Congratulations.
+
+490
+00:27:38.280 --> 00:27:39.610
+I'm just curious that,
+
+491
+00:27:40.500 --> 00:27:44.020
+is there an overlapping role between EB1 and
+
+492
+00:27:44.460 --> 00:27:44.620
+2?
+
+493
+00:27:45.520 --> 00:27:46.400
+Just out of curiosity.
+
+494
+00:27:46.680 --> 00:27:49.840
+We thought that they're going to be redundant, so that's why we never did the
+
+495
+00:27:49.860 --> 00:27:53.770
+experiment with 4E-BP2. But then Pedja made a terrible mistake
+
+496
+00:27:53.820 --> 00:27:55.300
+and did the experiment with 4E-BP2.
+
+497
+00:27:55.420 --> 00:27:59.320
+So if you put back 4E-BP2, it's going to work exactly the same
+
+498
+00:27:59.360 --> 00:28:01.930
+as 4E-BP1 when it comes to tumor cell proliferation.
+
+499
+00:28:02.700 --> 00:28:04.480
+But when you put back 4E-BP2,
+
+500
+00:28:05.720 --> 00:28:09.420
+it has no effect on metastasis, so cells cannot metastasis at all.
+
+501
+00:28:09.540 --> 00:28:13.260
+So there is a difference, and now there's old work from
+
+502
+00:28:13.300 --> 00:28:16.820
+McCarty's group. Tuschka is, I think, first author, EMBO paper from
+
+503
+00:28:16.830 --> 00:28:18.000
+'97, I believe.
+
+504
+00:28:20.000 --> 00:28:22.560
+When the papers were still hard copies, you know what I mean?
+
+505
+00:28:22.660 --> 00:28:24.720
+And the editors were a bit better, I would say.
+
+506
+00:28:25.320 --> 00:28:28.980
+But the idea there was that there's slight
+
+507
+00:28:29.140 --> 00:28:32.940
+differences between certain motifs within
+
+508
+00:28:32.960 --> 00:28:36.080
+4E-BP1 and 2 that could explain maybe this way.
+
+509
+00:28:36.140 --> 00:28:39.580
+So we are trying to switch them as they did back in the day,
+
+510
+00:28:39.860 --> 00:28:43.400
+in this yeast reconstitute system, and we're hoping to find something
+
+511
+00:28:43.460 --> 00:28:47.280
+here. And again, I shouldn't take any congratulations for this work
+
+512
+00:28:47.320 --> 00:28:51.040
+because the only thing I was saying is that nothing makes sense, and Pedja should
+
+513
+00:28:51.060 --> 00:28:53.440
+really be congratulated and the other people in the lab.
+
+514
+00:28:54.020 --> 00:28:57.040
+And with that, thank you all. So next we have
+
+515
+00:29:01.440 --> 00:29:05.260
+Professor Ole Larsen, who decided to take his tag
+
+516
+00:29:05.360 --> 00:29:08.240
+off, but I know him. It's Ole Larsen there.
+
+517
+00:29:09.300 --> 00:29:12.440
+And he's going to be talking about the dicodon
+
+518
+00:29:12.540 --> 00:29:16.300
+organization and how it links the RNA modification to
+
+519
+00:29:16.760 --> 00:29:18.720
+cancer cell proteome. All yours.
+
+520
+00:29:20.200 --> 00:29:23.880
+Right. So thank you very much to the organizers for
+
+521
+00:29:24.120 --> 00:29:27.260
+the invitation to come here and present some of our work that
+
+522
+00:29:27.860 --> 00:29:28.220
+is
+
+523
+00:29:29.840 --> 00:29:32.100
+completely unpublished, so this is really new stuff.
+
+524
+00:29:34.800 --> 00:29:36.340
+So I have no disclosures.
+
+525
+00:29:37.900 --> 00:29:39.940
+So Ivan already showed you this
+
+526
+00:29:41.300 --> 00:29:45.200
+kind of figure that outlines the different steps of the gene expression
+
+527
+00:29:46.160 --> 00:29:50.060
+pathway. So what I would like to emphasize again is that each of these
+
+528
+00:29:50.120 --> 00:29:53.520
+mechanisms will, under certain conditions,
+
+529
+00:29:53.560 --> 00:29:57.100
+contribute to establishment of the proteome.
+
+530
+00:29:57.600 --> 00:30:01.040
+And we often talk about the translate, which is really the
+
+531
+00:30:01.940 --> 00:30:05.700
+sort of the subset of the mRNAs that are efficiently translated.
+
+532
+00:30:09.060 --> 00:30:12.280
+So when translation is regulated,
+
+533
+00:30:12.720 --> 00:30:16.700
+this has two effects. So one effect
+
+534
+00:30:16.760 --> 00:30:20.480
+you can think about is if you have different genes within the same
+
+535
+00:30:20.520 --> 00:30:24.420
+cells. So different genes, they will not produce necessarily the same number
+
+536
+00:30:24.480 --> 00:30:28.460
+of proteins per mRNA molecule. So this sort
+
+537
+00:30:28.800 --> 00:30:32.660
+of allows the translation process to control
+
+538
+00:30:32.700 --> 00:30:35.440
+relative protein production within a
+
+539
+00:30:35.500 --> 00:30:39.272
+cell.But what we more often talk about, and what
+
+540
+00:30:39.712 --> 00:30:43.332
+Ivan was also talking about, is the dynamic regulation, where you can
+
+541
+00:30:43.412 --> 00:30:46.792
+change the translation of individual mRNAs to tune
+
+542
+00:30:46.852 --> 00:30:47.432
+protein
+
+543
+00:30:48.332 --> 00:30:48.752
+levels.
+
+544
+00:30:49.632 --> 00:30:53.392
+And this happens then, for example, between different disease context, but
+
+545
+00:30:53.452 --> 00:30:56.902
+also, of course, during normal physiological responses.
+
+546
+00:30:59.372 --> 00:31:02.992
+Ivan was talking about translation initiation,
+
+547
+00:31:03.852 --> 00:31:07.332
+but usually you talk about three different steps
+
+548
+00:31:07.492 --> 00:31:11.312
+during and the translation process, where initiation involves the
+
+549
+00:31:11.552 --> 00:31:14.812
+association with ribosomes with the mRNA,
+
+550
+00:31:15.392 --> 00:31:18.952
+their scanning, and identification of the start
+
+551
+00:31:19.012 --> 00:31:22.472
+site. This is then followed by the elongation phase, when
+
+552
+00:31:22.532 --> 00:31:24.941
+the protein is synthesized, and
+
+553
+00:31:25.972 --> 00:31:27.152
+finally termination.
+
+554
+00:31:29.972 --> 00:31:30.432
+A key
+
+555
+00:31:32.152 --> 00:31:36.092
+molecule during the elongation phase is the tRNA, and
+
+556
+00:31:36.132 --> 00:31:40.092
+I would just like to remind you that most amino
+
+557
+00:31:40.132 --> 00:31:44.092
+acids can be decoded by
+
+558
+00:31:44.572 --> 00:31:46.752
+more than one tRNA.
+
+559
+00:31:47.572 --> 00:31:51.052
+So this means that you can actually generate identical
+
+560
+00:31:51.372 --> 00:31:54.712
+protein sequence with different codons.
+
+561
+00:31:56.212 --> 00:32:00.122
+So today, my focus will be on the elongation
+
+562
+00:32:00.192 --> 00:32:03.652
+process, but I'm also going to talk about how the
+
+563
+00:32:03.692 --> 00:32:07.492
+elongation process interacts with the initiation process.
+
+564
+00:32:10.172 --> 00:32:14.152
+So tRNAs, it's a fascinating molecule that I never thought I
+
+565
+00:32:14.172 --> 00:32:16.452
+would study, but I ended up studying it anyways.
+
+566
+00:32:17.502 --> 00:32:21.472
+And it's heavily modified, and these modifications, they affect the
+
+567
+00:32:21.552 --> 00:32:25.172
+stability of the tRNA, but also, for example, the
+
+568
+00:32:25.192 --> 00:32:28.932
+translational fidelity, and therefore, these modifications are
+
+569
+00:32:29.012 --> 00:32:32.972
+thought to have an important role in maintaining the dynamics
+
+570
+00:32:33.012 --> 00:32:34.232
+of the elongation process.
+
+571
+00:32:35.192 --> 00:32:36.672
+I'm going to focus on one
+
+572
+00:32:37.532 --> 00:32:40.852
+modification at the U34 position,
+
+573
+00:32:41.332 --> 00:32:44.092
+which occurs in a subset of tRNAs that
+
+574
+00:32:45.392 --> 00:32:47.752
+decode these codons, as you can see here.
+
+575
+00:32:48.392 --> 00:32:51.312
+This modification is mediated by
+
+576
+00:32:52.292 --> 00:32:54.992
+a pathway that I will refer to as the
+
+577
+00:32:56.172 --> 00:32:57.162
+ELP3 pathway.
+
+578
+00:32:58.601 --> 00:33:02.112
+And what you can see is that this leads to the addition of a
+
+579
+00:33:02.192 --> 00:33:06.172
+relatively bulky modification at this U34 position
+
+580
+00:33:06.192 --> 00:33:06.452
+here.
+
+581
+00:33:08.032 --> 00:33:11.952
+So we became interested in this by coincidence when
+
+582
+00:33:12.012 --> 00:33:15.532
+we saw that ELP3 is actually regulated
+
+583
+00:33:16.812 --> 00:33:18.752
+via estrogen receptor signaling.
+
+584
+00:33:19.272 --> 00:33:22.852
+So here you can see that depending on the activity of the estrogen
+
+585
+00:33:22.912 --> 00:33:26.652
+receptor, ELP3 protein level is increased
+
+586
+00:33:27.092 --> 00:33:27.972
+or decreased.
+
+587
+00:33:28.972 --> 00:33:32.592
+And this also leads to changes in these
+
+588
+00:33:32.612 --> 00:33:36.592
+modifications, as exemplified over here, where you can
+
+589
+00:33:36.652 --> 00:33:40.332
+see that treatment with fulvestrant decreases
+
+590
+00:33:40.392 --> 00:33:43.272
+the proportion of modified
+
+591
+00:33:43.332 --> 00:33:46.672
+tRNA at the U34 position within the cell.
+
+592
+00:33:47.792 --> 00:33:51.312
+So what we asked-- Of course, this is a complex
+
+593
+00:33:52.192 --> 00:33:55.872
+experimental system where when you stimulate with estradiol
+
+594
+00:33:55.912 --> 00:33:57.101
+to modulate
+
+595
+00:33:58.152 --> 00:33:59.952
+estrogen receptor alpha activity.
+
+596
+00:34:00.392 --> 00:34:04.052
+So we used a more simple model system where we just
+
+597
+00:34:04.112 --> 00:34:04.652
+changed
+
+598
+00:34:05.872 --> 00:34:07.472
+the-- So we asked what
+
+599
+00:34:08.292 --> 00:34:10.632
+this pathway more specifically does
+
+600
+00:34:11.513 --> 00:34:12.592
+in cancer
+
+601
+00:34:14.212 --> 00:34:17.832
+cells, and we focused on hormone-dependent cancers.
+
+602
+00:34:18.872 --> 00:34:19.053
+So
+
+603
+00:34:20.152 --> 00:34:23.973
+first of all, you can see here that in this cell line over here, which
+
+604
+00:34:24.033 --> 00:34:27.533
+is non-transformed, the expression of ELP3
+
+605
+00:34:27.632 --> 00:34:30.982
+is lower relative to these cancer cell lines.
+
+606
+00:34:31.033 --> 00:34:33.882
+And you can see that you can reduce the expression
+
+607
+00:34:34.812 --> 00:34:38.732
+using CRISPR methods, and that this results in, again, a
+
+608
+00:34:38.772 --> 00:34:42.412
+reduction, but not elimination of the modification at the
+
+609
+00:34:42.493 --> 00:34:43.712
+U34 position.
+
+610
+00:34:45.652 --> 00:34:49.272
+While this doesn't affect the proliferation in the
+
+611
+00:34:49.312 --> 00:34:50.462
+non-transformed cells,
+
+612
+00:34:51.352 --> 00:34:52.612
+it reduces
+
+613
+00:34:53.692 --> 00:34:56.332
+proliferation in the transformed cells.
+
+614
+00:34:56.832 --> 00:35:00.212
+And you can also see this in, for example, colony formation assays
+
+615
+00:35:01.012 --> 00:35:03.052
+or organoid models of the same
+
+616
+00:35:04.472 --> 00:35:04.952
+biology.
+
+617
+00:35:05.952 --> 00:35:09.872
+So we wanted to understand what this modification actually does
+
+618
+00:35:10.392 --> 00:35:14.352
+in this context. So to do this, we took cell
+
+619
+00:35:14.392 --> 00:35:18.072
+lines that either express ELP3 or not, and we
+
+620
+00:35:18.132 --> 00:35:21.562
+used a combination of proteomics and a method called polysome
+
+621
+00:35:21.572 --> 00:35:25.192
+profiling that you can use to profile translation.
+
+622
+00:35:25.212 --> 00:35:29.012
+So during polysome profiling, you collect mRNA that has
+
+623
+00:35:29.092 --> 00:35:32.952
+many ribosomes associated with them, and then you quantify
+
+624
+00:35:32.992 --> 00:35:36.792
+them. And then you can compare this to the total RNA level in the cell to
+
+625
+00:35:36.852 --> 00:35:39.632
+see if the translation has changed of these mRNAs.
+
+626
+00:35:40.872 --> 00:35:44.792
+So when we looked at protein levels, as expected, we could
+
+627
+00:35:44.892 --> 00:35:48.712
+identify a reduction of ELP3 and also many other
+
+628
+00:35:48.732 --> 00:35:52.432
+proteins. So then we used the polysome profiling
+
+629
+00:35:52.472 --> 00:35:56.432
+data to try to understand the mechanisms that underlies the
+
+630
+00:35:56.452 --> 00:36:00.312
+reduction in protein levels. So here is a plot where you
+
+631
+00:36:00.392 --> 00:36:04.332
+compare the total mRNA changes depending on
+
+632
+00:36:04.372 --> 00:36:07.992
+the ELP3 versus the levels of the translated
+
+633
+00:36:08.292 --> 00:36:10.142
+mRNA or the polysome-associated RNA.
+
+634
+00:36:11.132 --> 00:36:15.072
+The blue dots here are the mRNAs that encode the proteins that
+
+635
+00:36:15.112 --> 00:36:18.992
+were reduced, and as you can see, they are all, or
+
+636
+00:36:19.212 --> 00:36:22.252
+not all, but most of them are above this diagonal.
+
+637
+00:36:22.592 --> 00:36:25.692
+So what this means is that these mRNAs
+
+638
+00:36:25.812 --> 00:36:29.452
+actually have more ribosomes
+
+639
+00:36:29.532 --> 00:36:32.112
+associated with them than you would expect.
+
+640
+00:36:32.792 --> 00:36:35.572
+Nevertheless, they actually make less protein.
+
+641
+00:36:36.172 --> 00:36:39.632
+So this is consistent with a block of elongation.
+
+642
+00:36:40.172 --> 00:36:44.144
+If you compare it to the data that Ivan was showing-This
+
+643
+00:36:44.224 --> 00:36:47.424
+actually, if the regulation is at the level of initiation,
+
+644
+00:36:47.984 --> 00:36:50.683
+you actually expect to see more proteins if the--
+
+645
+00:36:51.704 --> 00:36:54.084
+So you can probably appreciate the complexity here.
+
+646
+00:36:55.724 --> 00:36:59.604
+So the idea why this happens is that if an
+
+647
+00:36:59.763 --> 00:37:03.004
+mRNA has codons with a high
+
+648
+00:37:03.104 --> 00:37:06.624
+requirement for these modified tRNAs, then
+
+649
+00:37:07.824 --> 00:37:11.504
+reduction of these modified tRNAs would lead to poor
+
+650
+00:37:12.384 --> 00:37:13.064
+elongation of these
+
+651
+00:37:14.784 --> 00:37:15.204
+mRNAs.
+
+652
+00:37:16.124 --> 00:37:18.344
+So we tested this simple hypothesis,
+
+653
+00:37:19.304 --> 00:37:20.344
+and here you can see
+
+654
+00:37:21.344 --> 00:37:25.184
+codon usage in proteins that were upregulated versus
+
+655
+00:37:25.244 --> 00:37:29.224
+those that were downregulated. And then for individual amino acids, you can
+
+656
+00:37:29.284 --> 00:37:33.044
+see that this codon here that
+
+657
+00:37:33.084 --> 00:37:36.944
+requires a U34 modified tRNA is
+
+658
+00:37:37.024 --> 00:37:40.824
+more commonly used in the proteins that were downregulated
+
+659
+00:37:40.884 --> 00:37:44.404
+versus those that were up. So we could have stopped here
+
+660
+00:37:44.464 --> 00:37:47.644
+essentially and said that we can explain the changes in
+
+661
+00:37:48.844 --> 00:37:52.304
+the proteome, depending on tRNA modification by simply these
+
+662
+00:37:52.344 --> 00:37:56.124
+codons. But the problem with this is that we don't really have a
+
+663
+00:37:56.204 --> 00:37:58.064
+quantitative measurement for this.
+
+664
+00:37:58.624 --> 00:38:02.544
+So we went on and used a method that
+
+665
+00:38:02.584 --> 00:38:06.404
+we developed in collaboration with Ivan and his
+
+666
+00:38:06.484 --> 00:38:06.724
+lab,
+
+667
+00:38:07.664 --> 00:38:11.324
+called PosNet. So what PosNet does is that it uses
+
+668
+00:38:11.464 --> 00:38:15.024
+many features in the RNA and tries to
+
+669
+00:38:15.064 --> 00:38:18.724
+quantify their individual contribution to the regulation, but
+
+670
+00:38:18.824 --> 00:38:21.924
+also how much of the regulation they actually explain.
+
+671
+00:38:22.824 --> 00:38:25.564
+So when we applied this, we noticed that when we
+
+672
+00:38:25.624 --> 00:38:29.544
+included these codons,
+
+673
+00:38:29.944 --> 00:38:33.184
+we could actually only explain 15% of the regulation.
+
+674
+00:38:34.324 --> 00:38:37.484
+And this is sort of illustrated here by this network that shows the
+
+675
+00:38:37.524 --> 00:38:38.404
+different
+
+676
+00:38:39.204 --> 00:38:42.844
+features of the RNA that contribute to the regulation and also
+
+677
+00:38:42.884 --> 00:38:46.684
+their sort of co-occurrences, because that's another problem when studying
+
+678
+00:38:46.724 --> 00:38:50.344
+these effects in translation. So
+
+679
+00:38:50.984 --> 00:38:51.884
+15%
+
+680
+00:38:53.044 --> 00:38:56.464
+was much less than we typically observe when we do this kind of modeling.
+
+681
+00:38:56.524 --> 00:39:00.174
+So it really suggested that there might be something different than
+
+682
+00:39:00.264 --> 00:39:03.964
+just simply the codon usage. And what we
+
+683
+00:39:04.004 --> 00:39:07.134
+thought was that maybe it is something in the
+
+684
+00:39:07.584 --> 00:39:10.894
+vicinity of the codons that also contributes
+
+685
+00:39:10.944 --> 00:39:14.824
+to the regulation. So the most simple thing you can think
+
+686
+00:39:14.924 --> 00:39:18.704
+of is actually a dicodon. So it's a combination of two
+
+687
+00:39:18.744 --> 00:39:22.284
+codons, and of course, there are many combinations, but they're easy to study.
+
+688
+00:39:22.944 --> 00:39:26.504
+So then we used another model here where we also introduced
+
+689
+00:39:26.704 --> 00:39:30.464
+dicodons, and what we could see was that with the dicodons,
+
+690
+00:39:30.884 --> 00:39:34.644
+we actually doubled the amount of regulation that we could
+
+691
+00:39:34.684 --> 00:39:38.024
+explain. And we identified the number of dicodons that both
+
+692
+00:39:38.064 --> 00:39:41.664
+associated with more protein and/or less
+
+693
+00:39:41.724 --> 00:39:45.524
+protein. Interestingly, in this model, we
+
+694
+00:39:45.564 --> 00:39:49.544
+can also look at how much each of the features that we
+
+695
+00:39:49.564 --> 00:39:53.364
+identify contribute to the regulation independently
+
+696
+00:39:53.464 --> 00:39:55.304
+of all the other features in the model.
+
+697
+00:39:55.724 --> 00:39:59.464
+So here, when you look at the single codons, you can see that they can actually not
+
+698
+00:39:59.504 --> 00:40:02.024
+explain anything independently of the other
+
+699
+00:40:03.004 --> 00:40:05.864
+features or almost nothing. This is in contrast to the
+
+700
+00:40:05.924 --> 00:40:09.444
+dicodons that seem to be better at independently
+
+701
+00:40:09.484 --> 00:40:10.744
+explaining the regulation.
+
+702
+00:40:12.324 --> 00:40:15.444
+Among the proteins that were
+
+703
+00:40:15.824 --> 00:40:18.944
+reduced, there were six dicodons, and
+
+704
+00:40:18.984 --> 00:40:22.804
+notably, they all have one codon that
+
+705
+00:40:22.844 --> 00:40:26.784
+requires a U34 modified tRNA
+
+706
+00:40:27.184 --> 00:40:27.864
+to be
+
+707
+00:40:29.004 --> 00:40:29.624
+translated.
+
+708
+00:40:32.564 --> 00:40:33.504
+When we looked at
+
+709
+00:40:34.384 --> 00:40:38.224
+the number of such dicodons, you could see that the more of
+
+710
+00:40:38.284 --> 00:40:42.104
+these six dicodons that you have, the more likely you
+
+711
+00:40:42.184 --> 00:40:46.044
+are to see reduced protein levels, but you can also see
+
+712
+00:40:46.124 --> 00:40:48.304
+that the effect seems to be relatively modest.
+
+713
+00:40:49.364 --> 00:40:50.144
+Nevertheless,
+
+714
+00:40:51.704 --> 00:40:53.924
+there are many of these
+
+715
+00:40:55.104 --> 00:40:58.484
+mRNAs that have multiple dicodons.
+
+716
+00:40:59.184 --> 00:41:02.864
+But interestingly, in contrast to just the
+
+717
+00:41:03.204 --> 00:41:03.844
+U34
+
+718
+00:41:05.163 --> 00:41:06.104
+codons that sort of
+
+719
+00:41:07.264 --> 00:41:10.404
+correlate with the length of the coding sequence, so if you have a longer coding
+
+720
+00:41:10.464 --> 00:41:11.764
+sequence, you will have more of these
+
+721
+00:41:12.984 --> 00:41:16.924
+single codons. The dicodons don't correspond to the length of the coding
+
+722
+00:41:16.984 --> 00:41:17.424
+sequence.
+
+723
+00:41:19.004 --> 00:41:22.904
+So therefore, we thought that maybe there is another factor here,
+
+724
+00:41:23.004 --> 00:41:24.984
+which is the distance between the dicodons.
+
+725
+00:41:25.494 --> 00:41:28.544
+And what we could see was that when we looked at those
+
+726
+00:41:29.684 --> 00:41:33.524
+mRNAs that had the dicodons closest, we could see a more
+
+727
+00:41:33.624 --> 00:41:37.204
+strong reduction in protein levels than those that had the
+
+728
+00:41:37.244 --> 00:41:38.564
+dicodons far apart.
+
+729
+00:41:40.284 --> 00:41:44.204
+And this is illustrated here. So actually this subset here, the
+
+730
+00:41:44.224 --> 00:41:46.804
+dicodons are very close. So they're only 18 nucleotides
+
+731
+00:41:47.404 --> 00:41:51.034
+apart, median. So this suggests that it's
+
+732
+00:41:51.304 --> 00:41:55.144
+not just the dicodons, it's really the context that they
+
+733
+00:41:55.204 --> 00:41:55.644
+are in.
+
+734
+00:41:56.824 --> 00:42:00.564
+And of course, when you look at this, you
+
+735
+00:42:00.624 --> 00:42:01.364
+realize that
+
+736
+00:42:02.844 --> 00:42:06.564
+although there is a sort of statistical difference here,
+
+737
+00:42:07.124 --> 00:42:11.004
+there's a lot of variation. So we thought that maybe these contexts can
+
+738
+00:42:11.044 --> 00:42:14.804
+help us to understand why some of the mRNAs here are more
+
+739
+00:42:15.704 --> 00:42:16.644
+affected than others.
+
+740
+00:42:17.664 --> 00:42:21.604
+So to do this, again, we used this modeling, but
+
+741
+00:42:21.644 --> 00:42:25.464
+we used the local sequence features, so meaning the features
+
+742
+00:42:25.564 --> 00:42:29.544
+that are around these dicodons. So interestingly,
+
+743
+00:42:29.764 --> 00:42:33.684
+we could of course find some features that
+
+744
+00:42:33.744 --> 00:42:34.684
+related to the
+
+745
+00:42:35.744 --> 00:42:39.344
+elongation process and features in the coding
+
+746
+00:42:39.404 --> 00:42:41.924
+sequence. But we also found many
+
+747
+00:42:42.904 --> 00:42:46.604
+features that were in the 5 prime UTR, which was kind of unexpected
+
+748
+00:42:46.664 --> 00:42:48.024
+because we were looking at
+
+749
+00:42:48.064 --> 00:42:51.878
+elongation.So we wondered,
+
+750
+00:42:52.458 --> 00:42:56.448
+does this mean that mRNAs that have these dicodons, do
+
+751
+00:42:56.488 --> 00:42:59.868
+they also have a sort of distinct translation initiation
+
+752
+00:42:59.908 --> 00:43:03.648
+activity? And what we could see was that the more
+
+753
+00:43:03.688 --> 00:43:07.348
+dicodons that an mRNA had, the
+
+754
+00:43:07.428 --> 00:43:10.928
+less efficient translation initiation it has.
+
+755
+00:43:11.038 --> 00:43:14.468
+So these mRNAs seem to be protected
+
+756
+00:43:14.528 --> 00:43:18.348
+against having too many ribosomes loaded on the mRNA at the
+
+757
+00:43:18.388 --> 00:43:21.928
+same time. And Ivan talked about the length of
+
+758
+00:43:21.968 --> 00:43:25.808
+the 5' UTR. Indeed, we could see that those mRNAs that
+
+759
+00:43:25.888 --> 00:43:29.528
+have several of these dicodons, they also had
+
+760
+00:43:29.688 --> 00:43:33.308
+longer 5' UTRs, which is typically associated with less efficient
+
+761
+00:43:33.468 --> 00:43:34.108
+translation.
+
+762
+00:43:36.588 --> 00:43:38.228
+When we look at the function of the
+
+763
+00:43:41.868 --> 00:43:45.728
+proteins that are encoded by mRNAs that have these dicodons, they are
+
+764
+00:43:45.788 --> 00:43:46.088
+really
+
+765
+00:43:47.108 --> 00:43:51.008
+enriched in cell cycle-related genes, and you can see that this
+
+766
+00:43:51.028 --> 00:43:54.908
+is conserved between human, mouse, and also yeast,
+
+767
+00:43:55.488 --> 00:43:56.187
+and notably,
+
+768
+00:43:57.648 --> 00:44:00.208
+many of them have to do with the mitotic
+
+769
+00:44:01.068 --> 00:44:04.558
+process. So therefore, we wondered whether the proliferative
+
+770
+00:44:04.668 --> 00:44:08.188
+phenotype we saw when we removed the
+
+771
+00:44:08.788 --> 00:44:11.988
+reduced expression of ELP3 was related to
+
+772
+00:44:12.528 --> 00:44:16.468
+mitotic defects. And indeed, you can see that in cells
+
+773
+00:44:16.588 --> 00:44:17.048
+lacking
+
+774
+00:44:18.808 --> 00:44:22.108
+ELP3, you can see a larger proportion of mitotic
+
+775
+00:44:22.148 --> 00:44:25.148
+defects. So this seems to confirm that
+
+776
+00:44:26.308 --> 00:44:29.908
+reduction of this tRNA modification lead to errors in the
+
+777
+00:44:30.008 --> 00:44:33.608
+elongation process that might really affect these kind of mRNAs.
+
+778
+00:44:35.608 --> 00:44:39.048
+Also, what is expected if you have an elongation
+
+779
+00:44:40.868 --> 00:44:44.548
+problem in the cell is that you would see ribosome
+
+780
+00:44:44.568 --> 00:44:48.288
+collisions more commonly, and this leads to activation
+
+781
+00:44:48.368 --> 00:44:51.388
+of the integrated stress response, which
+
+782
+00:44:53.588 --> 00:44:57.578
+includes both a global suppression of translation and also activation of
+
+783
+00:44:57.868 --> 00:44:58.868
+a set of genes that
+
+784
+00:44:59.707 --> 00:45:00.368
+act as
+
+785
+00:45:01.308 --> 00:45:03.028
+effectors during the stress response.
+
+786
+00:45:04.008 --> 00:45:07.768
+So we wondered whether this response was activated in
+
+787
+00:45:08.728 --> 00:45:12.308
+cells that could not modify tRNA as efficiently.
+
+788
+00:45:12.788 --> 00:45:16.108
+And indeed, as you can see here, as judged by the phosphorylation of
+
+789
+00:45:16.168 --> 00:45:19.908
+EF2alpha, as well as the expression of ATD4, indeed,
+
+790
+00:45:20.368 --> 00:45:23.428
+cells that lack ELP3 expression, they have activated
+
+791
+00:45:23.508 --> 00:45:25.728
+integrated stress response.
+
+792
+00:45:26.688 --> 00:45:30.368
+So we wonder whether this would also then affect the phenotype that we saw, but
+
+793
+00:45:30.428 --> 00:45:31.298
+surprisingly,
+
+794
+00:45:32.208 --> 00:45:36.108
+instead of showing increased expression of the genes that
+
+795
+00:45:36.168 --> 00:45:40.008
+are in this translational signature, we actually saw
+
+796
+00:45:40.048 --> 00:45:42.747
+reduced levels of the corresponding proteins.
+
+797
+00:45:43.688 --> 00:45:47.268
+It was highly unexpected, and we could see that
+
+798
+00:45:47.888 --> 00:45:51.548
+they seem to show the same type of pattern as we observed
+
+799
+00:45:51.608 --> 00:45:54.968
+initially, meaning that they actually seem to be blocked in
+
+800
+00:45:55.008 --> 00:45:56.228
+elongation.
+
+801
+00:45:57.208 --> 00:46:01.108
+So they had higher association with polysomes, but you didn't see
+
+802
+00:46:01.128 --> 00:46:03.328
+the same effect at the level of the protein.
+
+803
+00:46:04.008 --> 00:46:07.648
+And we think we can explain this by the fact that they
+
+804
+00:46:07.788 --> 00:46:11.688
+also have higher frequencies of these
+
+805
+00:46:11.708 --> 00:46:15.268
+dicodons. So this would position
+
+806
+00:46:15.348 --> 00:46:18.048
+tRNA-dependent regulation
+
+807
+00:46:18.928 --> 00:46:19.308
+upstream,
+
+808
+00:46:21.328 --> 00:46:25.268
+that this will determine the protein output also during the
+
+809
+00:46:25.308 --> 00:46:27.288
+integrated stress response.
+
+810
+00:46:29.428 --> 00:46:30.788
+To look at this in more detail,
+
+811
+00:46:31.788 --> 00:46:33.248
+we took two genes
+
+812
+00:46:34.608 --> 00:46:36.108
+and asked whether
+
+813
+00:46:37.068 --> 00:46:40.848
+these patches where we see these dicodons could
+
+814
+00:46:40.868 --> 00:46:43.527
+explain their distinct regulation patterns.
+
+815
+00:46:43.568 --> 00:46:47.368
+So we had one gene here, STIC2, both of
+
+816
+00:46:47.408 --> 00:46:49.668
+these showed reduced protein levels.
+
+817
+00:46:49.788 --> 00:46:53.678
+This in presence of increased polysome association, and
+
+818
+00:46:53.688 --> 00:46:57.328
+TMT6 didn't show this. So here we would expect an
+
+819
+00:46:57.348 --> 00:47:00.027
+elongation effect, and here we did not.
+
+820
+00:47:00.608 --> 00:47:02.528
+We took different regions from these genes,
+
+821
+00:47:03.948 --> 00:47:06.628
+a region containing the dicodons, and then
+
+822
+00:47:07.928 --> 00:47:11.688
+a controlled region that was, in this case, just
+
+823
+00:47:11.768 --> 00:47:15.348
+upstream, and in this case, it was a bit downstream to avoid
+
+824
+00:47:15.408 --> 00:47:18.648
+having other features here that might affect translation.
+
+825
+00:47:20.528 --> 00:47:23.908
+What we could see was that these
+
+826
+00:47:24.008 --> 00:47:27.368
+mRNAs, despite showing very different modes of
+
+827
+00:47:27.408 --> 00:47:29.428
+regulation, they had similar
+
+828
+00:47:30.508 --> 00:47:31.588
+frequencies of
+
+829
+00:47:32.948 --> 00:47:35.908
+codons that require U34 modified tRNAs.
+
+830
+00:47:36.108 --> 00:47:36.468
+So the
+
+831
+00:47:37.328 --> 00:47:41.168
+single codon usage was very similar despite having these
+
+832
+00:47:41.188 --> 00:47:41.968
+differences in
+
+833
+00:47:43.468 --> 00:47:44.528
+dicodon usage.
+
+834
+00:47:45.808 --> 00:47:48.928
+To do this, we took these sequences here
+
+835
+00:47:49.788 --> 00:47:52.888
+and cloned them in between two reporters.
+
+836
+00:47:53.028 --> 00:47:56.548
+So when you express this, if this sequence in the
+
+837
+00:47:57.388 --> 00:47:57.948
+region here
+
+838
+00:47:58.988 --> 00:48:02.798
+suppresses elongation, you will see less of the mCherry
+
+839
+00:48:02.868 --> 00:48:06.588
+reporter relative to GFP. And indeed, for the
+
+840
+00:48:06.628 --> 00:48:10.408
+gene where we expected an elongation effect, we saw a dramatic
+
+841
+00:48:10.468 --> 00:48:14.348
+reduction in mCherry expression, but this was not the case
+
+842
+00:48:14.428 --> 00:48:15.908
+for the gene where we saw this
+
+843
+00:48:17.008 --> 00:48:20.988
+pattern that suggests regulation via mRNA levels.
+
+844
+00:48:21.028 --> 00:48:22.308
+Moreover, when we
+
+845
+00:48:23.128 --> 00:48:26.728
+expressed these cells in cells with or without ELP3,
+
+846
+00:48:27.128 --> 00:48:31.048
+we could see that ELP3 modulated the mCherry
+
+847
+00:48:31.068 --> 00:48:34.968
+expression for the STIC2
+
+848
+00:48:35.028 --> 00:48:35.308
+gene,
+
+849
+00:48:37.468 --> 00:48:38.048
+and this
+
+850
+00:48:40.108 --> 00:48:42.468
+dicodon region, but not the control region.
+
+851
+00:48:43.348 --> 00:48:46.648
+So this leads us to propose a model that
+
+852
+00:48:47.988 --> 00:48:51.068
+combines translation efficiency with
+
+853
+00:48:51.648 --> 00:48:54.708
+elongation efficiency, here exemplified by ELP3.
+
+854
+00:48:55.448 --> 00:48:59.248
+So the elongation effectIn this model will only
+
+855
+00:48:59.348 --> 00:49:02.848
+happen when initiation efficiency is high,
+
+856
+00:49:03.248 --> 00:49:05.527
+but elongation efficiency is low.
+
+857
+00:49:06.128 --> 00:49:09.828
+So we think that this might explain the selectivity of cancer
+
+858
+00:49:09.948 --> 00:49:13.348
+cells, because typically cancer cells have elevated
+
+859
+00:49:13.648 --> 00:49:17.298
+initiation, and therefore, they probably have a higher requirement
+
+860
+00:49:17.668 --> 00:49:19.108
+for efficient elongation.
+
+861
+00:49:20.128 --> 00:49:23.308
+So with that, I would like to thank the people who did the work, Jana,
+
+862
+00:49:24.188 --> 00:49:28.028
+and also I would like to emphasize that this is a collaboration with
+
+863
+00:49:28.068 --> 00:49:30.028
+Luke Fuerix's lab, who's sitting right there.
+
+864
+00:49:30.488 --> 00:49:34.208
+And if you're interested, there is a bioRxiv manuscript available.
+
+865
+00:49:34.448 --> 00:49:34.748
+Thank you.
+
+866
+00:49:40.608 --> 00:49:41.108
+Questions?
+
+867
+00:49:42.948 --> 00:49:46.728
+I guess I can ask one. So when you say elongation, do you know
+
+868
+00:49:46.788 --> 00:49:47.668
+whether this is in--
+
+869
+00:49:48.908 --> 00:49:52.888
+What translon is it? Is it in upstream open reading frames of these genes, or is it
+
+870
+00:49:52.928 --> 00:49:56.528
+in the major coding sequence of the genes? How to distinguish between these two?
+
+871
+00:49:57.568 --> 00:49:59.708
+I guess we know that they have more than
+
+872
+00:50:00.988 --> 00:50:03.108
+three ribosomes associated with them.
+
+873
+00:50:03.368 --> 00:50:07.168
+But of course, if they were all in the upstream, we wouldn't know.
+
+874
+00:50:07.568 --> 00:50:11.478
+But on the other hand, when we take these reporters,
+
+875
+00:50:11.828 --> 00:50:13.428
+we can sort of reproduce the effect.
+
+876
+00:50:13.588 --> 00:50:15.728
+So at least for these genes where we did it, it's not.
+
+877
+00:50:15.848 --> 00:50:17.148
+Right. You know it's good.
+
+878
+00:50:18.668 --> 00:50:19.948
+Yes. Fascinating
+
+879
+00:50:20.928 --> 00:50:21.248
+work.
+
+880
+00:50:22.588 --> 00:50:25.268
+I saw that you worked on prostate cancer cell lines.
+
+881
+00:50:25.968 --> 00:50:28.948
+So did you look at the expression of ELP1 in
+
+882
+00:50:29.608 --> 00:50:30.668
+cancer patients,
+
+883
+00:50:31.988 --> 00:50:34.788
+of your protein in cancer patients versus...
+
+884
+00:50:37.228 --> 00:50:39.928
+There are some. ELP1, I don't know, but ELP3.
+
+885
+00:50:40.248 --> 00:50:41.068
+Yeah. Three, sorry.
+
+886
+00:50:41.208 --> 00:50:45.028
+Yeah. There are some studies, and it's in
+
+887
+00:50:45.068 --> 00:50:47.738
+certain cancers, yes, it's increased.
+
+888
+00:50:48.248 --> 00:50:50.558
+In prostate cancer, I have to admit, I don't remember.
+
+889
+00:50:51.088 --> 00:50:51.368
+Okay.
+
+890
+00:50:51.428 --> 00:50:53.488
+Yes. In breast, yes.
+
+891
+00:50:53.688 --> 00:50:54.448
+Okay. Thank you.
+
+892
+00:50:58.028 --> 00:51:01.928
+Let's see. Online, there's no. Okay, let's then thank Dr. Larsson.
+
+893
+00:51:05.208 --> 00:51:07.168
+And last but not the least, we have
+
+894
+00:51:08.027 --> 00:51:10.028
+Dr. Davide Ruggiero,
+
+895
+00:51:11.168 --> 00:51:15.128
+who's going to tell us how selective translation affects drug tolerance in
+
+896
+00:51:15.228 --> 00:51:16.128
+cancers.
+
+897
+00:51:16.268 --> 00:51:19.428
+All right. So thank you for sticking around.
+
+898
+00:51:19.908 --> 00:51:22.078
+Thank you, Van, for organizing this
+
+899
+00:51:23.028 --> 00:51:23.968
+exciting meeting.
+
+900
+00:51:25.588 --> 00:51:29.208
+So my lab has been interested for a long time in understanding how
+
+901
+00:51:29.348 --> 00:51:33.228
+post-transcriptional regulation really shape the proteome, either in
+
+902
+00:51:33.348 --> 00:51:37.308
+health and disease and specifically in the cancer context.
+
+903
+00:51:38.008 --> 00:51:41.148
+Today, I'll tell you actually an unpublished story about the
+
+904
+00:51:41.168 --> 00:51:44.868
+importance of translation selectivity in the
+
+905
+00:51:44.908 --> 00:51:47.108
+early steps of drug tolerance.
+
+906
+00:51:48.088 --> 00:51:51.908
+So these are my disclosure because I told you that I'm showing
+
+907
+00:51:51.948 --> 00:51:55.888
+you all unpublished data, so I appreciate no photo, no
+
+908
+00:51:57.048 --> 00:51:58.688
+posts or whatever you're taking.
+
+909
+00:51:59.728 --> 00:52:02.508
+So actually, I'm going to start with this slide.
+
+910
+00:52:02.988 --> 00:52:06.588
+That the slide actually is the unfortunately realization
+
+911
+00:52:07.188 --> 00:52:10.428
+that mRNA level is not a good
+
+912
+00:52:10.568 --> 00:52:12.668
+predictor of a protein abundance.
+
+913
+00:52:13.588 --> 00:52:17.288
+So I'm trying to tell you that already normal growing
+
+914
+00:52:17.348 --> 00:52:21.028
+cells, the mRNA level can predict only for around
+
+915
+00:52:21.168 --> 00:52:24.088
+40% of the proteome. What is more
+
+916
+00:52:24.628 --> 00:52:28.108
+important, interesting, and essential, especially for this
+
+917
+00:52:28.188 --> 00:52:31.928
+session, that even if you do an analysis on pan
+
+918
+00:52:32.048 --> 00:52:34.448
+cancers, it's an atlas of many cancers.
+
+919
+00:52:35.288 --> 00:52:37.848
+mRNA level can predict only almost
+
+920
+00:52:37.988 --> 00:52:41.838
+30% of the cancer proteome. So what
+
+921
+00:52:41.868 --> 00:52:45.708
+I'm trying to tell you that all the mRNA, single cell C, RNA,
+
+922
+00:52:45.748 --> 00:52:49.668
+whatever, it just tell you a little bit of
+
+923
+00:52:49.728 --> 00:52:53.148
+what the cancer proteome is actually shaped.
+
+924
+00:52:53.748 --> 00:52:57.238
+And what I'm saying is that the post-transcriptional
+
+925
+00:52:57.308 --> 00:53:01.088
+mechanism, specifically translation, we believe are critical
+
+926
+00:53:01.788 --> 00:53:05.008
+to really shape the cancer proteome in almost each
+
+927
+00:53:05.148 --> 00:53:07.108
+step of cancer evolution.
+
+928
+00:53:08.668 --> 00:53:12.248
+And this importance of translation control in the cancer
+
+929
+00:53:12.328 --> 00:53:15.947
+proteome, you already heard today two talks, is
+
+930
+00:53:16.228 --> 00:53:18.868
+even more important during stress.
+
+931
+00:53:19.648 --> 00:53:22.628
+You already heard it from a great talk of Ivan and all of that.
+
+932
+00:53:22.968 --> 00:53:25.928
+So think about cancer cells are the best survivor, right?
+
+933
+00:53:26.728 --> 00:53:27.748
+So they survive
+
+934
+00:53:28.748 --> 00:53:31.148
+low nutrient, hypoxia,
+
+935
+00:53:31.968 --> 00:53:34.668
+oxidative stress. We try to kill them.
+
+936
+00:53:35.628 --> 00:53:38.468
+The immune attack with therapy. No matter what,
+
+937
+00:53:39.368 --> 00:53:43.228
+they survive. They find a way to be
+
+938
+00:53:43.268 --> 00:53:44.748
+alive and carry on,
+
+939
+00:53:45.568 --> 00:53:49.308
+basically on making tumors. Now, why in this
+
+940
+00:53:49.388 --> 00:53:51.508
+context, the translation
+
+941
+00:53:52.988 --> 00:53:54.308
+bring a lot of benefits?
+
+942
+00:53:55.188 --> 00:53:57.848
+Here there are three bullet points. One, speed.
+
+943
+00:53:58.688 --> 00:54:02.457
+You can change the protein abundance when the mRNA is already
+
+944
+00:54:02.588 --> 00:54:05.088
+there in milliseconds, in seconds. Right?
+
+945
+00:54:05.508 --> 00:54:09.048
+Transcription takes much longer, hours and much longer, right?
+
+946
+00:54:09.188 --> 00:54:09.848
+So speed,
+
+947
+00:54:10.708 --> 00:54:11.728
+rapid response,
+
+948
+00:54:12.648 --> 00:54:15.608
+selectivity. You already heard so far
+
+949
+00:54:15.968 --> 00:54:19.908
+how translation is no one unit. It's always selectivity.
+
+950
+00:54:19.988 --> 00:54:23.808
+The cancer cells are instructed to say which mRNA need to
+
+951
+00:54:23.928 --> 00:54:27.808
+translate in time and space during their tumor evolution.
+
+952
+00:54:28.568 --> 00:54:28.828
+Three,
+
+953
+00:54:30.268 --> 00:54:34.208
+mRNA storage on demand. There are so many mRNA in the cytoplasm,
+
+954
+00:54:34.348 --> 00:54:38.168
+and they are not translated. They are there, boom, ready to go and to be translated
+
+955
+00:54:38.768 --> 00:54:42.608
+on demand to use specifically to this rapid response.
+
+956
+00:54:42.848 --> 00:54:43.228
+All right?
+
+957
+00:54:44.088 --> 00:54:47.168
+So all of this basically is extremely important.
+
+958
+00:54:47.188 --> 00:54:50.208
+As I said, if you think about the early steps
+
+959
+00:54:50.868 --> 00:54:54.748
+of drug tolerance, and today I'll tell you again, a completely
+
+960
+00:54:54.868 --> 00:54:55.848
+unpublished story.
+
+961
+00:54:57.308 --> 00:54:59.028
+It is in the context of breast cancer.
+
+962
+00:54:59.248 --> 00:55:02.968
+You already heard talk about the important transition control in breast
+
+963
+00:55:03.028 --> 00:55:03.388
+cancer.
+
+964
+00:55:04.188 --> 00:55:08.068
+So these are cells that are exposed to high
+
+965
+00:55:08.148 --> 00:55:11.468
+dose of hormone therapiesAnd there are some
+
+966
+00:55:11.748 --> 00:55:15.628
+population of the cells that started to be tolerant.
+
+967
+00:55:15.848 --> 00:55:19.818
+All right? So these cells has been given different names, persistent
+
+968
+00:55:19.908 --> 00:55:23.528
+cells, dormancy. We really didn't care so much
+
+969
+00:55:24.168 --> 00:55:27.088
+how to call. We really care about the mechanism, right?
+
+970
+00:55:27.648 --> 00:55:28.408
+In fact, actually
+
+971
+00:55:29.408 --> 00:55:32.428
+for our study, we call TSC for
+
+972
+00:55:32.528 --> 00:55:34.728
+therapy-surviving cancer cells. All right?
+
+973
+00:55:35.408 --> 00:55:39.008
+So now how the cells rapidly start to tolerate
+
+974
+00:55:39.188 --> 00:55:43.048
+some of this drug exposure. That's been associated with
+
+975
+00:55:43.348 --> 00:55:47.148
+change in epigenetic, change in metabolism, change in transcription.
+
+976
+00:55:47.308 --> 00:55:51.188
+But the truth is that still we don't know what is the cause by which the
+
+977
+00:55:51.248 --> 00:55:55.208
+cells start to become tolerant and eventually become
+
+978
+00:55:55.488 --> 00:55:59.428
+full resistance to drug therapy and carry on, on the tumor
+
+979
+00:55:59.488 --> 00:56:02.928
+evolution. All right? So that is our major question,
+
+980
+00:56:03.188 --> 00:56:05.068
+how these therapy surviving cells
+
+981
+00:56:05.928 --> 00:56:09.908
+basically tolerate acute stress, and how this process,
+
+982
+00:56:10.228 --> 00:56:12.988
+that is the key, right, can be druggable.
+
+983
+00:56:13.668 --> 00:56:17.408
+So one of the major point and a major problem of curing cancer is
+
+984
+00:56:17.468 --> 00:56:21.448
+actually drug resistance. And that is a point that for us is
+
+985
+00:56:21.468 --> 00:56:25.328
+very important to understand how translation control in this context can be
+
+986
+00:56:25.408 --> 00:56:25.888
+druggable.
+
+987
+00:56:26.768 --> 00:56:30.708
+So we did this in the context of a large subset of
+
+988
+00:56:30.828 --> 00:56:34.628
+breast cancer. This is like breast cancer associated with the deregulation of the
+
+989
+00:56:34.668 --> 00:56:37.948
+estrogen receptor alpha that account for almost
+
+990
+00:56:38.168 --> 00:56:42.028
+75% of breast cancer case. ER alpha, as you know,
+
+991
+00:56:42.068 --> 00:56:45.528
+is a transcription factor, bind estrogen, go in the
+
+992
+00:56:45.568 --> 00:56:49.558
+nucleus, increase the transcription of many mRNA important
+
+993
+00:56:49.558 --> 00:56:53.228
+for breast cancer, okay? And of course, as a
+
+994
+00:56:53.238 --> 00:56:57.188
+transcription factor, the ability to bind the estrogen, this has led to
+
+995
+00:56:57.268 --> 00:57:01.048
+actually different therapies. One is, of course, tamoxifen, is a
+
+996
+00:57:01.068 --> 00:57:04.868
+drug that compete with estrogen, bind ER alpha,
+
+997
+00:57:05.508 --> 00:57:09.428
+block ER alpha transcription activity, and this is still one of the
+
+998
+00:57:09.468 --> 00:57:12.867
+first line therapy for ER alpha positive breast cancer
+
+999
+00:57:13.088 --> 00:57:16.908
+patients. On the other side, there's also another
+
+1000
+00:57:16.968 --> 00:57:20.248
+drugs that we also use in our context. It's called fulvestrant.
+
+1001
+00:57:20.748 --> 00:57:24.628
+And fulvestrant actually still block ER alpha transcription activity, but
+
+1002
+00:57:24.668 --> 00:57:28.588
+partially also degrade ER alpha. And this also is also used
+
+1003
+00:57:28.608 --> 00:57:32.488
+as other first or second-line therapy, usually for patients
+
+1004
+00:57:32.528 --> 00:57:35.948
+that become actually resistant to tamoxifen. So why I'm telling you this?
+
+1005
+00:57:36.008 --> 00:57:39.828
+Because we use these two hormone therapies to, once again, to
+
+1006
+00:57:39.848 --> 00:57:43.688
+understand how ER alpha positive
+
+1007
+00:57:43.788 --> 00:57:47.658
+breast cancer tolerate high dose exposure to this
+
+1008
+00:57:47.708 --> 00:57:48.448
+hormone therapy.
+
+1009
+00:57:49.428 --> 00:57:53.048
+And this work is being done by an amazing talent
+
+1010
+00:57:53.108 --> 00:57:56.547
+postdoc that is sitting here without the hat.
+
+1011
+00:57:56.668 --> 00:58:00.548
+It's Ashish Norhan that really did all the work that actually I'm
+
+1012
+00:58:00.588 --> 00:58:01.268
+showing you today.
+
+1013
+00:58:02.368 --> 00:58:05.888
+So Ashish did basically, this is the flow through of the
+
+1014
+00:58:05.898 --> 00:58:09.888
+experiment. So we used cells that were either naive to hormone
+
+1015
+00:58:09.908 --> 00:58:13.228
+therapy, such as MCF7, T47D,
+
+1016
+00:58:13.748 --> 00:58:16.488
+or cells that were already tamoxifen resistant,
+
+1017
+00:58:16.988 --> 00:58:20.888
+MCF7-TAMR, or the cells that actually Ash
+
+1018
+00:58:20.898 --> 00:58:24.508
+will give to us. These are cells where the ER alpha is mutated, and
+
+1019
+00:58:24.548 --> 00:58:26.728
+all these are tamoxifen resistance.
+
+1020
+00:58:27.208 --> 00:58:31.048
+So he cultured the cells, and what I'm showing you today, all the
+
+1021
+00:58:31.088 --> 00:58:34.728
+experiment has been done upon the exposure and high
+
+1022
+00:58:34.828 --> 00:58:38.408
+dose of fulvestrant for either 9 or 15 days.
+
+1023
+00:58:38.628 --> 00:58:42.608
+Okay? And see after this time, which cells
+
+1024
+00:58:42.708 --> 00:58:46.348
+remain in the dishes, either here or here, and
+
+1025
+00:58:46.628 --> 00:58:50.408
+how the cells that actually once again started to
+
+1026
+00:58:50.448 --> 00:58:54.048
+survive and tolerate to high exposure of fulvestrant,
+
+1027
+00:58:54.448 --> 00:58:58.108
+what is the gene expression that account for their tolerance?
+
+1028
+00:58:58.338 --> 00:59:01.408
+All right? So to do this, what we did,
+
+1029
+00:59:02.888 --> 00:59:06.698
+these are again, MCF7-TAMR treated with fulvestrant,
+
+1030
+00:59:07.348 --> 00:59:11.138
+not treated, means no TSC, or that one that remain on the dishes,
+
+1031
+00:59:11.268 --> 00:59:14.688
+so the TSCs. And we did RNA-seq. We did
+
+1032
+00:59:14.728 --> 00:59:16.848
+ribosome profiling in these cells.
+
+1033
+00:59:16.988 --> 00:59:18.928
+You already heard what is ribosome profiling.
+
+1034
+00:59:19.088 --> 00:59:22.868
+You assess translation efficiency and mass spec.
+
+1035
+00:59:23.548 --> 00:59:23.748
+Now,
+
+1036
+00:59:24.828 --> 00:59:28.668
+the cells are under high stress, right?
+
+1037
+00:59:29.267 --> 00:59:32.608
+And indeed, you expect that there is some decrease in overall protein synthesis
+
+1038
+00:59:32.648 --> 00:59:36.388
+that we see that. But the coolest thing that there were specific
+
+1039
+00:59:36.428 --> 00:59:39.408
+mRNAs, that they were translationally
+
+1040
+00:59:39.488 --> 00:59:43.168
+upregulated, and actually when we compare mass
+
+1041
+00:59:43.228 --> 00:59:46.628
+spec with RNA-seq, we didn't see so much agreement.
+
+1042
+00:59:46.708 --> 00:59:50.108
+We found better agreement between the translateome and the
+
+1043
+00:59:50.128 --> 00:59:54.088
+proteomics. An interesting thing are this group
+
+1044
+00:59:54.268 --> 00:59:57.628
+of mRNA that are translationally specifically
+
+1045
+00:59:57.708 --> 01:00:01.628
+upregulating these TSC cells, and their protein abundance
+
+1046
+01:00:01.708 --> 01:00:04.128
+by mass spec was also upregulated.
+
+1047
+01:00:04.928 --> 01:00:06.928
+So when we did the GO term of this
+
+1048
+01:00:08.988 --> 01:00:12.888
+gene, we were also very surprised to see this GO term categories,
+
+1049
+01:00:12.948 --> 01:00:16.868
+because all of these are associated with things that are
+
+1050
+01:00:16.948 --> 01:00:18.468
+studied more in neurobiology.
+
+1051
+01:00:19.268 --> 01:00:20.388
+Calcium signal,
+
+1052
+01:00:21.208 --> 01:00:24.708
+axon guidance, tight junction, CPGMP.
+
+1053
+01:00:24.808 --> 01:00:28.468
+So we were really surprised, but in the same time interested, it's like
+
+1054
+01:00:28.608 --> 01:00:32.548
+why early step of drug tolerance has
+
+1055
+01:00:32.558 --> 01:00:35.568
+something to do with things related with neurobiologies.
+
+1056
+01:00:36.248 --> 01:00:40.038
+And this was a little bit more clear when we found that one of the
+
+1057
+01:00:40.068 --> 01:00:43.988
+best hits that is present in actually many of these GO
+
+1058
+01:00:44.008 --> 01:00:46.108
+terms was CaMK2D.
+
+1059
+01:00:47.628 --> 01:00:50.988
+So CaMK2D is a critical calcium calmodulin
+
+1060
+01:00:51.168 --> 01:00:54.768
+kinase. It's activated by calcium and calmodulin.
+
+1061
+01:00:55.068 --> 01:00:58.858
+It plays an important role to activate localized
+
+1062
+01:00:58.888 --> 01:01:02.728
+translation during synaptic
+
+1063
+01:01:02.848 --> 01:01:04.988
+activation and long-term memory.
+
+1064
+01:01:05.708 --> 01:01:09.638
+So what I'm trying to tell you is that indeed, this is a process that
+
+1065
+01:01:10.028 --> 01:01:13.428
+we know already that extremely important for
+
+1066
+01:01:13.528 --> 01:01:17.388
+neuronal activation, this localized translation, because obviously this
+
+1067
+01:01:17.408 --> 01:01:21.276
+has to occur in milliseconds.This is they cannot wait for
+
+1068
+01:01:21.316 --> 01:01:25.156
+mRNA coming from millimeters away from the soma to arrive here.
+
+1069
+01:01:25.736 --> 01:01:29.136
+CaMK2D plays an important role in this translation
+
+1070
+01:01:29.196 --> 01:01:33.056
+regulation. So we really started to hypothesize that this
+
+1071
+01:01:33.616 --> 01:01:37.156
+early step in drug tolerance really hijacks this
+
+1072
+01:01:37.716 --> 01:01:41.296
+localized translation mechanism that usually is, in the normal
+
+1073
+01:01:41.396 --> 01:01:44.196
+context, used in synaptic plasticity.
+
+1074
+01:01:45.916 --> 01:01:49.136
+Now, we started to understand whether this was real in vivo.
+
+1075
+01:01:49.296 --> 01:01:53.136
+And we use here two PDX ER alpha positive,
+
+1076
+01:01:53.796 --> 01:01:57.076
+and we can see that upon treatment with fulvestrant, you see
+
+1077
+01:01:57.196 --> 01:02:00.856
+CaMK2D nicely goes up and it goes up, we know at the
+
+1078
+01:02:00.916 --> 01:02:03.706
+translation level, no transcription, no stability.
+
+1079
+01:02:04.076 --> 01:02:07.936
+So that was actually real already in a more physiologic in vivo
+
+1080
+01:02:07.976 --> 01:02:09.176
+breast cancer context.
+
+1081
+01:02:10.476 --> 01:02:14.336
+Sorry, I go back. So obviously, we started to understand how we
+
+1082
+01:02:14.396 --> 01:02:14.776
+can
+
+1083
+01:02:15.576 --> 01:02:19.336
+block this calcium activation and see whether or
+
+1084
+01:02:19.416 --> 01:02:22.916
+not it may have an effect in tumorigenesis or
+
+1085
+01:02:22.976 --> 01:02:26.216
+this early step of drug tolerance.
+
+1086
+01:02:27.116 --> 01:02:29.116
+So we thought actually to repurpose.
+
+1087
+01:02:29.496 --> 01:02:32.956
+And drugs that actually you can buy very easily with a simple
+
+1088
+01:02:33.016 --> 01:02:36.936
+prescription, and many people use this drug for lower blood
+
+1089
+01:02:36.976 --> 01:02:40.836
+pressures. So this is called verapamil, I'll call vera.
+
+1090
+01:02:41.256 --> 01:02:44.936
+That is actually is a blocking of an, calcium channel.
+
+1091
+01:02:45.016 --> 01:02:48.736
+We thought, "Why we don't repurpose this for cancer for other
+
+1092
+01:02:48.796 --> 01:02:49.276
+purpose?"
+
+1093
+01:02:50.626 --> 01:02:54.516
+So first of all, we did an ex vivo system
+
+1094
+01:02:54.656 --> 01:02:58.456
+where we use other verapamil or, for example, another calcium
+
+1095
+01:02:58.536 --> 01:03:02.136
+chelator. And we already saw that in this context, we
+
+1096
+01:03:02.156 --> 01:03:04.356
+reduce the number of TSC in culture.
+
+1097
+01:03:04.416 --> 01:03:07.316
+So already we knew that these things was working.
+
+1098
+01:03:07.636 --> 01:03:11.476
+But in vivo, we want to understand, can we really use this almost in a
+
+1099
+01:03:11.536 --> 01:03:14.036
+preclinical setting? So we use again,
+
+1100
+01:03:14.856 --> 01:03:17.836
+different PDX, again, the alpha positive.
+
+1101
+01:03:18.476 --> 01:03:18.716
+And,
+
+1102
+01:03:19.876 --> 01:03:23.756
+after we gave fulvestrant for almost 20
+
+1103
+01:03:23.796 --> 01:03:27.496
+days, and then we stratify in three groups, the mice.
+
+1104
+01:03:28.196 --> 01:03:31.936
+Mice that were first of all exposed for 20 days fulvestrant, and then
+
+1105
+01:03:32.056 --> 01:03:33.636
+were carry on to give a fulvestrant.
+
+1106
+01:03:34.296 --> 01:03:38.096
+One that was given only verapamil, and one was all together the
+
+1107
+01:03:38.116 --> 01:03:40.836
+combination. And this was the cool result.
+
+1108
+01:03:41.716 --> 01:03:43.556
+In fact, if you use with verapamil,
+
+1109
+01:03:45.196 --> 01:03:48.916
+with use fulvestrant, as expected, you see a cytostatic effect of the
+
+1110
+01:03:48.956 --> 01:03:52.836
+PDX. But after 45 days, if you keep going
+
+1111
+01:03:52.996 --> 01:03:56.876
+to give fulvestrant, this tumor start to basically regrow.
+
+1112
+01:03:56.936 --> 01:04:00.725
+With the idea that indeed here you reach for these tolerant cells, and
+
+1113
+01:04:00.756 --> 01:04:04.535
+eventually this tumor carry on. As a single agent, verapamil
+
+1114
+01:04:04.676 --> 01:04:07.796
+doesn't do much. But the coolest thing is in
+
+1115
+01:04:07.836 --> 01:04:10.656
+combination, you see a beautiful effect.
+
+1116
+01:04:11.256 --> 01:04:15.176
+So almost again in vivo showing that the increase
+
+1117
+01:04:15.436 --> 01:04:18.956
+of these tolerant cells still relying on calcium
+
+1118
+01:04:19.036 --> 01:04:22.896
+signaling, and can be used, this one, as actually therapy.
+
+1119
+01:04:23.356 --> 01:04:23.696
+All right?
+
+1120
+01:04:25.836 --> 01:04:29.516
+Now, another important aspect of cells that
+
+1121
+01:04:29.636 --> 01:04:33.316
+start to become tolerant to drug is actually the
+
+1122
+01:04:33.336 --> 01:04:37.296
+acquisition of metastasis. This is happening in many patients
+
+1123
+01:04:37.356 --> 01:04:41.236
+that are right in the clinic after becoming resistant to hormone therapy and are
+
+1124
+01:04:41.416 --> 01:04:45.156
+very bad breast cancer actually progression with
+
+1125
+01:04:45.196 --> 01:04:47.576
+metastasis. So we try to understand,
+
+1126
+01:04:48.976 --> 01:04:52.436
+and whether or not are the tolerant cells that actually we
+
+1127
+01:04:52.476 --> 01:04:56.096
+characterize with the high social fulvestrant also acquire metastatic
+
+1128
+01:04:56.136 --> 01:04:57.876
+potential. And what Ashish did,
+
+1129
+01:04:58.696 --> 01:05:02.156
+did an amazing experiment where injecting the
+
+1130
+01:05:02.216 --> 01:05:05.956
+heart, the no TSC or the TSC cells with
+
+1131
+01:05:06.116 --> 01:05:10.076
+either CaMK2D or after he knocked down 6% of CaMK2D,
+
+1132
+01:05:10.696 --> 01:05:13.496
+and check actually what happened in the metastasis,
+
+1133
+01:05:14.456 --> 01:05:17.956
+and that experiment also give rise an exciting result.
+
+1134
+01:05:18.496 --> 01:05:21.616
+The no TSC cells actually they don't do much metastasis.
+
+1135
+01:05:22.216 --> 01:05:25.936
+But the coolest thing is our TSC cells, these tolerant cells start to
+
+1136
+01:05:25.976 --> 01:05:29.586
+actually acquire metastatic potentials and go in the
+
+1137
+01:05:29.676 --> 01:05:32.736
+site that actually are really relevant in patient samples,
+
+1138
+01:05:33.256 --> 01:05:37.186
+liver or brain. So again, we are characterizing this
+
+1139
+01:05:37.195 --> 01:05:41.135
+population of cells start to be tolerant to hormone therapy
+
+1140
+01:05:41.176 --> 01:05:43.436
+and also acquire metastatic potential.
+
+1141
+01:05:43.946 --> 01:05:47.656
+And the most important thing, that this metastatic potential is
+
+1142
+01:05:47.696 --> 01:05:51.676
+directly functioning to CaMK2D expression, because when he knock
+
+1143
+01:05:51.716 --> 01:05:55.476
+down CaMK2D, you really block completely metastasis.
+
+1144
+01:05:55.736 --> 01:05:55.976
+Okay?
+
+1145
+01:05:57.456 --> 01:06:01.356
+So after this, of course, the bigger question is about how in this
+
+1146
+01:06:01.436 --> 01:06:02.856
+context, right? We
+
+1147
+01:06:03.836 --> 01:06:06.775
+keep talking about translation specificity. That is the cool part.
+
+1148
+01:06:06.956 --> 01:06:10.256
+How in this moment of drug
+
+1149
+01:06:10.376 --> 01:06:14.156
+tolerance, the cells that high stress still
+
+1150
+01:06:14.376 --> 01:06:16.616
+increase the translation of a specific mRNAs?
+
+1151
+01:06:17.336 --> 01:06:20.456
+I diverge a little bit here. I want to get confused because I told you that ER
+
+1152
+01:06:20.516 --> 01:06:22.616
+alpha is a transcription factor. Yes, it is.
+
+1153
+01:06:23.176 --> 01:06:27.116
+But few years ago, actually, we discovered that ER alpha is also an RNA
+
+1154
+01:06:27.136 --> 01:06:30.916
+binding protein. Bind the 3'UTR of
+
+1155
+01:06:31.016 --> 01:06:32.016
+specific mRNAs,
+
+1156
+01:06:32.836 --> 01:06:36.236
+and we also show that it's important this RNA binding
+
+1157
+01:06:36.256 --> 01:06:39.896
+activity for tumorigenesis independent from its
+
+1158
+01:06:39.936 --> 01:06:43.216
+transcription activity. In fact, this is only one
+
+1159
+01:06:43.816 --> 01:06:47.376
+data that I'm showing you. This is a xenograft where we engineer RNA
+
+1160
+01:06:47.476 --> 01:06:51.216
+binding mutant cells. So we mutated the RNA
+
+1161
+01:06:51.276 --> 01:06:55.016
+binding domain, so we characterize the RNA binding domain, and then the
+
+1162
+01:06:55.076 --> 01:06:57.036
+cells actually fail to form a tumor.
+
+1163
+01:06:57.596 --> 01:07:01.356
+So obviously, our question here is, okay, ER alpha is also an
+
+1164
+01:07:01.416 --> 01:07:05.196
+important RNA binding protein. How this plays a role in this
+
+1165
+01:07:05.256 --> 01:07:08.736
+early step of drug tolerance? And how this is related, for example, to
+
+1166
+01:07:08.776 --> 01:07:12.020
+CaMK2D?And we were very excited to find
+
+1167
+01:07:12.700 --> 01:07:13.020
+that
+
+1168
+01:07:14.440 --> 01:07:18.360
+ER alpha bind in beautiful size in the KMK2d 3'
+
+1169
+01:07:18.880 --> 01:07:21.700
+UTR. This is an RNA clip that we already published.
+
+1170
+01:07:22.120 --> 01:07:25.980
+We analyzed the data, and we were very excited that ER alpha directly bind
+
+1171
+01:07:26.100 --> 01:07:29.780
+the 3' UTR of KMK2d. We also show that the
+
+1172
+01:07:29.800 --> 01:07:33.120
+cells that now, where ER alpha can no longer bind RNA,
+
+1173
+01:07:33.740 --> 01:07:35.940
+make less of these tolerant cells.
+
+1174
+01:07:36.260 --> 01:07:39.879
+Again, showing that ER alpha RNA binding activity is
+
+1175
+01:07:39.940 --> 01:07:42.500
+important for this drug tolerance step.
+
+1176
+01:07:43.120 --> 01:07:46.780
+And we can rescue this defect if you overexpress
+
+1177
+01:07:47.300 --> 01:07:50.120
+the KMK2d with alpha prime or 3' UTR.
+
+1178
+01:07:50.580 --> 01:07:54.440
+So again, linking functionally the ER alpha RNA bind
+
+1179
+01:07:54.480 --> 01:07:56.220
+activity with KMK2d.
+
+1180
+01:07:57.180 --> 01:08:01.120
+Now, 3' UTR, it's an important regulatory element to the mRNA.
+
+1181
+01:08:01.620 --> 01:08:04.660
+It's important for localization, stability, and we know that it's actually
+
+1182
+01:08:04.780 --> 01:08:08.600
+important for translation. Often, it's important for translation because there is
+
+1183
+01:08:08.660 --> 01:08:12.380
+an interaction between the 3' UTR and the 5' UTR that you already
+
+1184
+01:08:12.440 --> 01:08:14.979
+heard today, how important for translation.
+
+1185
+01:08:15.080 --> 01:08:18.561
+So we also ask, what happened in the 5' UTR of KMK2d?
+
+1186
+01:08:19.750 --> 01:08:23.700
+And we did an analysis where we found that the 5'
+
+1187
+01:08:24.181 --> 01:08:28.101
+UTR of KMK2d is enriched in sequence
+
+1188
+01:08:28.160 --> 01:08:28.360
+or
+
+1189
+01:08:29.380 --> 01:08:32.840
+specific polypurine or specific
+
+1190
+01:08:32.851 --> 01:08:36.830
+putative G-quadruplex. All features that
+
+1191
+01:08:36.940 --> 01:08:40.380
+make an mRNA to be translationally sensitive
+
+1192
+01:08:40.700 --> 01:08:44.260
+to an RNA-like case, eIF4A, that you already heard
+
+1193
+01:08:44.860 --> 01:08:48.280
+in the previous talk. Because all these features make
+
+1194
+01:08:48.440 --> 01:08:52.141
+the 5' UTR very structured.
+
+1195
+01:08:52.641 --> 01:08:56.141
+And usually these are, again, you heard already,
+
+1196
+01:08:56.420 --> 01:09:00.181
+mRNA that are low translated normal cells.
+
+1197
+01:09:00.380 --> 01:09:04.141
+Instead, the cancer cell love to have more of these
+
+1198
+01:09:04.280 --> 01:09:07.620
+RNA cases for A to increase the translation of this mRNA.
+
+1199
+01:09:08.641 --> 01:09:08.900
+So,
+
+1200
+01:09:09.721 --> 01:09:13.380
+what I'm trying to tell you here, that the idea so far is that ER
+
+1201
+01:09:13.460 --> 01:09:17.330
+alpha bind the 3' UTR of KMK2d. And we thought that,
+
+1202
+01:09:17.420 --> 01:09:20.579
+again, eIF4A must be involved in the 5'
+
+1203
+01:09:20.660 --> 01:09:24.540
+UTR on translating KMK2d. Believe it or
+
+1204
+01:09:24.601 --> 01:09:28.380
+not, we went back to our previous data, and now
+
+1205
+01:09:28.620 --> 01:09:32.400
+this is a cytoplasmic ER alpha interactome that we pulled down the ER
+
+1206
+01:09:32.440 --> 01:09:34.780
+alpha from the cytoplasm. We did the mass spec.
+
+1207
+01:09:35.260 --> 01:09:38.929
+ER alpha interacted with the few translation factor, and eIF4A was the
+
+1208
+01:09:39.000 --> 01:09:42.860
+best. In fact, Ashish confirmed this by
+
+1209
+01:09:42.900 --> 01:09:46.561
+IP. In other MCF7, and even there's a
+
+1210
+01:09:46.641 --> 01:09:50.181
+stronger interaction between ER alpha and eIF4A in
+
+1211
+01:09:50.240 --> 01:09:54.160
+MCF7 tamoxifen resistant. Again, with the idea that more cells start to
+
+1212
+01:09:54.200 --> 01:09:58.060
+be drug resistant and tolerant, and this interaction, ER
+
+1213
+01:09:58.100 --> 01:10:02.060
+alpha 4A is important. So of course, again, the idea
+
+1214
+01:10:02.140 --> 01:10:05.980
+is that you need the 5' and the 3' UTR,
+
+1215
+01:10:06.260 --> 01:10:10.000
+okay? To increase the translation of KMK2d in these
+
+1216
+01:10:10.520 --> 01:10:14.500
+tolerant cells. And what Ashish did is another amazing
+
+1217
+01:10:14.880 --> 01:10:18.600
+experiment where he engineered all these RNA
+
+1218
+01:10:18.700 --> 01:10:22.260
+construct, where luciferase is flanked by the wild
+
+1219
+01:10:22.360 --> 01:10:25.980
+type KMK2d 5' UTR, or the 3' UTR wild
+
+1220
+01:10:26.060 --> 01:10:29.920
+type, or where he mutated the ER alpha binding site,
+
+1221
+01:10:30.100 --> 01:10:32.860
+or where he revert the 3' UTR as a control.
+
+1222
+01:10:33.440 --> 01:10:37.279
+And the coolest thing you can see here that only he transfected RNA,
+
+1223
+01:10:37.420 --> 01:10:41.360
+and only in the tolerant cells you see a beautiful
+
+1224
+01:10:41.400 --> 01:10:44.770
+increase in translation when you have 5' and 3' UTR.
+
+1225
+01:10:45.220 --> 01:10:48.900
+So what I'm trying to tell you is that this really points to a picture that there
+
+1226
+01:10:48.940 --> 01:10:52.600
+is a loop in mRNA. This is very well known to
+
+1227
+01:10:52.660 --> 01:10:56.390
+increase the translation of mRNA between the 3' and the 5'
+
+1228
+01:10:56.680 --> 01:11:00.640
+UTR. And two trans factor, ER alpha on the 3'
+
+1229
+01:11:00.880 --> 01:11:04.869
+UTR, eIF4A on the 5' UTR help to loop this mRNA and
+
+1230
+01:11:04.880 --> 01:11:07.470
+to increase the translation of this KMK2d in
+
+1231
+01:11:07.820 --> 01:11:10.760
+the tolerant cells.
+
+1232
+01:11:12.020 --> 01:11:15.460
+Now, why we were excited to see eIF4A involvement?
+
+1233
+01:11:15.760 --> 01:11:18.400
+I told you already that the eIF4A is an oncogene.
+
+1234
+01:11:18.460 --> 01:11:22.140
+I already told you that eIF4A is an oncogene because cancer cell
+
+1235
+01:11:22.260 --> 01:11:26.000
+love to have 4A to increase the translation
+
+1236
+01:11:26.200 --> 01:11:30.050
+of mRNA that have the structure. And we know that many mRNA that have
+
+1237
+01:11:30.100 --> 01:11:33.860
+the structure are things that cancer cell love to increase
+
+1238
+01:11:33.940 --> 01:11:35.860
+actually the translation. Because encode for
+
+1239
+01:11:37.340 --> 01:11:41.200
+oncogene, survival factor, growth factor, all of these led
+
+1240
+01:11:41.300 --> 01:11:45.120
+actually to the development of the first clinical inhibitor
+
+1241
+01:11:45.180 --> 01:11:47.820
+for eIF4A. This is called zotatifin.
+
+1242
+01:11:47.860 --> 01:11:51.240
+Is a molecular glue that actually glue eIF4A on the
+
+1243
+01:11:51.360 --> 01:11:55.260
+specific polypurine on the 5' UTR of mRNA that are
+
+1244
+01:11:55.320 --> 01:11:59.000
+also present in the KMK2d. And this zotatifin has been
+
+1245
+01:11:59.040 --> 01:12:02.640
+already tested in different clinical trial, give some promising
+
+1246
+01:12:02.820 --> 01:12:04.120
+actually result,
+
+1247
+01:12:05.820 --> 01:12:09.620
+also in breast cancer. So we thought that, well, if this
+
+1248
+01:12:09.640 --> 01:12:13.480
+drug tolerance phenotype rely on eIF4A, so this should
+
+1249
+01:12:13.600 --> 01:12:17.120
+be also sensitive to zotatifin. That was our, of course,
+
+1250
+01:12:17.160 --> 01:12:20.940
+important aspect to find drug ability of this step.
+
+1251
+01:12:21.840 --> 01:12:25.080
+And the result, again, they're very, very positive.
+
+1252
+01:12:25.200 --> 01:12:28.320
+We give zotatifin, we see less TSC cells.
+
+1253
+01:12:29.020 --> 01:12:32.540
+An important thing that the decrease in TSC cell
+
+1254
+01:12:32.760 --> 01:12:36.460
+number by zotatifin can be rescued by KMK2d
+
+1255
+01:12:36.560 --> 01:12:39.300
+only with the coding sequence but not with the 5' UTR.
+
+1256
+01:12:39.780 --> 01:12:43.680
+Linking indeed because of course with the 5' UTR, zotatifin still can block
+
+1257
+01:12:43.720 --> 01:12:45.040
+the translation of this construct.
+
+1258
+01:12:45.400 --> 01:12:49.260
+So this link at least in part the therapeutic
+
+1259
+01:12:49.400 --> 01:12:52.960
+benefit of zotatifin on killing these tolerant cells
+
+1260
+01:12:53.280 --> 01:12:57.000
+with the translation of KMK2d. But of course, how in vivo is
+
+1261
+01:12:57.040 --> 01:13:01.000
+important. And we did the same series experiment in xenograft,
+
+1262
+01:13:01.120 --> 01:13:04.720
+in PDX, already show you in the context of rapamycin, where we
+
+1263
+01:13:05.600 --> 01:13:09.440
+pre-treated in this all context for 20 days cells
+
+1264
+01:13:09.520 --> 01:13:13.300
+with fulvestrant to increase the tolerant number of the cells.
+
+1265
+01:13:13.720 --> 01:13:15.200
+And then we stratified in three groups.
+
+1266
+01:13:15.740 --> 01:13:19.540
+And here is interesting because now zotatifin alone in this
+
+1267
+01:13:19.560 --> 01:13:21.040
+context as a single
+
+1268
+01:13:21.960 --> 01:13:25.640
+agent already has an effect in blocking these
+
+1269
+01:13:25.720 --> 01:13:29.700
+tumors. But nicely when you combine with
+
+1270
+01:13:29.740 --> 01:13:33.400
+fulvestrant, you have a very strong tumor blockage,
+
+1271
+01:13:33.960 --> 01:13:37.718
+especially in PDX or in xenograft.So we were very excited to
+
+1272
+01:13:37.788 --> 01:13:41.568
+again develop, and we are actually bringing this to the clinic
+
+1273
+01:13:41.988 --> 01:13:45.808
+to take zotatifin as a new point,
+
+1274
+01:13:46.048 --> 01:13:47.908
+a new drug for, of course,
+
+1275
+01:13:50.348 --> 01:13:53.428
+killing and breaking tolerance of breast cancer.
+
+1276
+01:13:54.168 --> 01:13:58.008
+Last slide, we collaborate with Anna Bosch in Sweden.
+
+1277
+01:13:58.768 --> 01:14:02.088
+We analyzed 400 ER alpha breast cancer patients.
+
+1278
+01:14:02.228 --> 01:14:06.188
+And again, we were very excited to see that if you check mRNA
+
+1279
+01:14:06.228 --> 01:14:08.188
+or KMK2D, it doesn't tell you anything.
+
+1280
+01:14:08.308 --> 01:14:12.008
+KMK2D mRNA protein is completely discordance.
+
+1281
+01:14:12.448 --> 01:14:15.948
+But there was a beautiful correlation between the KMK2D protein and the
+
+1282
+01:14:16.008 --> 01:14:19.908
+EF4A protein. Again, sustaining and corroborating
+
+1283
+01:14:20.188 --> 01:14:23.868
+also in patients that indeed this can be a key node
+
+1284
+01:14:23.908 --> 01:14:27.688
+for increase in KMK2D and other mRNA in this early
+
+1285
+01:14:27.748 --> 01:14:31.108
+step of drug tolerance. And then, of course, we saw that
+
+1286
+01:14:31.408 --> 01:14:35.328
+increased KMK2D increase metastasis, and this is the most important
+
+1287
+01:14:35.368 --> 01:14:39.118
+curve, where these are 400 patients stratified for low or
+
+1288
+01:14:39.248 --> 01:14:41.998
+high KMK2D after hormone therapy.
+
+1289
+01:14:42.168 --> 01:14:46.128
+And the patient that have high KMK2D did much worse compared to
+
+1290
+01:14:46.168 --> 01:14:50.028
+what have a low KMK2D. So we're really excited to potentially use
+
+1291
+01:14:50.048 --> 01:14:53.828
+this as a new biomarker and to understand how actually also
+
+1292
+01:14:53.848 --> 01:14:54.488
+therapy can
+
+1293
+01:14:55.588 --> 01:14:58.748
+be stratified in this context of all these patients.
+
+1294
+01:14:59.348 --> 01:15:00.138
+The last slides,
+
+1295
+01:15:01.468 --> 01:15:05.448
+just summarize. We really think that we are discovering that this
+
+1296
+01:15:05.968 --> 01:15:09.928
+early step of tolerance cells hijack once
+
+1297
+01:15:09.988 --> 01:15:13.648
+again a neuronal-like translation control.
+
+1298
+01:15:13.668 --> 01:15:17.468
+This is used again to rapidly activate
+
+1299
+01:15:17.508 --> 01:15:20.148
+neurons. We think that this is, again,
+
+1300
+01:15:21.048 --> 01:15:24.908
+very provocative, but can be very important once again, even to think
+
+1301
+01:15:24.968 --> 01:15:28.688
+about as a memory. We actually follow
+
+1302
+01:15:28.698 --> 01:15:32.678
+thinking about whether this translational in this tolerant cells has
+
+1303
+01:15:32.928 --> 01:15:36.268
+true translation activation as a neuron, as a memory
+
+1304
+01:15:36.368 --> 01:15:40.248
+rememberer. You know what I mean? How the cells can be actually exposed
+
+1305
+01:15:40.288 --> 01:15:43.728
+to drugs. We are very excited because we found that this can be
+
+1306
+01:15:43.808 --> 01:15:46.487
+drugable with verapamil or with zotatifin.
+
+1307
+01:15:46.547 --> 01:15:50.408
+And we also developing right now an inhibitor
+
+1308
+01:15:50.448 --> 01:15:54.128
+for KMK2D kinase that can be even more, of course,
+
+1309
+01:15:54.308 --> 01:15:57.268
+specialized to kill actually these cells. All right?
+
+1310
+01:15:57.948 --> 01:15:59.908
+And this is the lab. I already
+
+1311
+01:16:00.808 --> 01:16:04.228
+acknowledge Ashish, that has been really the driving
+
+1312
+01:16:04.308 --> 01:16:06.348
+force. Many UCSF
+
+1313
+01:16:07.308 --> 01:16:11.128
+collaborator, Anna, and many other people that actually helped to
+
+1314
+01:16:11.168 --> 01:16:12.828
+develop throughout the years this
+
+1315
+01:16:13.688 --> 01:16:16.088
+translation inhibitor that we already brought to the clinic.
+
+1316
+01:16:16.168 --> 01:16:17.188
+Thanks for your attention.
+
+1317
+01:16:21.388 --> 01:16:23.688
+Thank you, Davide. Questions for Davide?
+
+1318
+01:16:28.708 --> 01:16:28.968
+Go ahead.
+
+1319
+01:16:29.168 --> 01:16:32.988
+Hi, I'm Sandra Ortiz. I work at the Cancer Research Center in Lyon.
+
+1320
+01:16:33.668 --> 01:16:37.608
+Great talk. Thank you so much. I was wondering whether you know if
+
+1321
+01:16:37.648 --> 01:16:41.488
+there are specific characteristics of the sequences of the mRNAs that are
+
+1322
+01:16:41.568 --> 01:16:43.448
+translated during drug persistence.
+
+1323
+01:16:43.848 --> 01:16:47.518
+You show this looping between the five prime and three prime UTR,
+
+1324
+01:16:48.028 --> 01:16:48.588
+but are there
+
+1325
+01:16:49.828 --> 01:16:51.648
+sequence specific characteristics?
+
+1326
+01:16:51.688 --> 01:16:54.788
+Yeah, no, it's a very good point. So I didn't show you for...
+
+1327
+01:16:54.918 --> 01:16:58.028
+So actually, after we did the ribosome
+
+1328
+01:16:58.088 --> 01:17:01.808
+profiling, so we checked the 5' UTR of
+
+1329
+01:17:01.868 --> 01:17:03.668
+these genes that were upregulated.
+
+1330
+01:17:04.188 --> 01:17:08.048
+So the first thing we saw, not only in KMK2D, but also in other
+
+1331
+01:17:08.168 --> 01:17:10.888
+mRNA, this polypurine G-quadruplex.
+
+1332
+01:17:11.048 --> 01:17:14.948
+So again, with the idea that obviously it's not only KMK2D can be a
+
+1333
+01:17:14.968 --> 01:17:18.768
+target of zotatifin. In fact, actually, we also did the ribosome profiling
+
+1334
+01:17:18.828 --> 01:17:21.488
+upon zotatifin, and there is a beautiful overlapping.
+
+1335
+01:17:21.948 --> 01:17:25.208
+So that is the major thing that definitely was clear.
+
+1336
+01:17:25.268 --> 01:17:29.148
+But we are still actually analyzing if there is something else related to, again,
+
+1337
+01:17:29.248 --> 01:17:31.748
+E4E or some structure, right? But
+
+1338
+01:17:33.668 --> 01:17:37.288
+all the sequence that are very well known to be associated with E4A
+
+1339
+01:17:38.188 --> 01:17:40.148
+are one of the strongest, yeah.
+
+1340
+01:17:40.208 --> 01:17:43.488
+Okay. And I was wondering whether if you do, I don't know, gene ontology of
+
+1341
+01:17:43.568 --> 01:17:47.388
+these sequence specific modulators, whether they
+
+1342
+01:17:47.408 --> 01:17:49.508
+belong to a particular pathway that
+
+1343
+01:17:50.528 --> 01:17:53.108
+is related to survival or...
+
+1344
+01:17:54.288 --> 01:17:58.208
+As I said, like you heard before. So in general, for example,
+
+1345
+01:17:58.288 --> 01:18:02.188
+this sequence at this polypurine stretch, this possible
+
+1346
+01:18:02.248 --> 01:18:06.168
+G-quadruplex, this structure. So we know very well that actually
+
+1347
+01:18:06.248 --> 01:18:09.668
+many survival pathway oncogene
+
+1348
+01:18:09.728 --> 01:18:13.438
+themself. We recently published a story on the
+
+1349
+01:18:13.688 --> 01:18:17.028
+androgen receptor alpha. It actually has a
+
+1350
+01:18:17.288 --> 01:18:21.198
+very huge complex 5' UTR, is actually sensitive
+
+1351
+01:18:21.308 --> 01:18:23.757
+to zotatifin. Yeah, no, it makes sense, right?
+
+1352
+01:18:23.788 --> 01:18:27.368
+Because these are sequence structure that restrain
+
+1353
+01:18:27.588 --> 01:18:30.178
+increased translation in a very normal context.
+
+1354
+01:18:30.508 --> 01:18:32.348
+The cancer cell need to be the opposite.
+
+1355
+01:18:32.648 --> 01:18:35.428
+So that's why they love a lot of this RNA helicase.
+
+1356
+01:18:35.488 --> 01:18:35.928
+Thank you so much.
+
+1357
+01:18:36.008 --> 01:18:36.228
+Sure.
+
+1358
+01:18:38.208 --> 01:18:38.928
+Elegant work.
+
+1359
+01:18:39.748 --> 01:18:43.628
+I wonder if you can share your insights on the different effect
+
+1360
+01:18:43.728 --> 01:18:47.668
+of Vera alone and Zota alone on the
+
+1361
+01:18:47.708 --> 01:18:48.668
+tumor size
+
+1362
+01:18:49.828 --> 01:18:51.068
+in your xenograft model.
+
+1363
+01:18:51.508 --> 01:18:54.708
+Yeah, no, it's a good point. First of all, we didn't know if Vera was going to
+
+1364
+01:18:54.748 --> 01:18:58.068
+work. Actually, we are very excited because as I said, it's very simple drugs.
+
+1365
+01:18:58.628 --> 01:19:01.608
+So I think the Vera works better in combination because
+
+1366
+01:19:02.688 --> 01:19:06.628
+if you keep going and give it for sessions, you keep basically
+
+1367
+01:19:06.688 --> 01:19:08.248
+increasing these tolerant cells.
+
+1368
+01:19:08.368 --> 01:19:11.208
+And the cells of the tumor start to become more and more,
+
+1369
+01:19:12.188 --> 01:19:16.158
+basically addicted to calcium. And that's why Vera is going
+
+1370
+01:19:16.168 --> 01:19:18.288
+to work, right? This in combination.
+
+1371
+01:19:18.988 --> 01:19:22.748
+Zotatifin, again, and going back to the question that
+
+1372
+01:19:22.788 --> 01:19:26.728
+addressed before, obviously target, for example, KMK2D, but I
+
+1373
+01:19:26.748 --> 01:19:30.328
+already can tell you that target also other oncogenic mRNA in that
+
+1374
+01:19:30.448 --> 01:19:30.868
+context.
+
+1375
+01:19:30.908 --> 01:19:31.158
+Mm-hmm.
+
+1376
+01:19:31.158 --> 01:19:34.208
+So that's why as a single agent is the strongest, right?
+
+1377
+01:19:34.328 --> 01:19:37.128
+But also in combination, you saw the data is very, very
+
+1378
+01:19:37.848 --> 01:19:38.348
+profound.
+
+1379
+01:19:39.028 --> 01:19:39.388
+Thank you.
+
+1380
+01:19:39.548 --> 01:19:39.828
+Sure.
+
+1381
+01:19:40.748 --> 01:19:40.948
+Paul.
+
+1382
+01:19:41.956 --> 01:19:45.756
+Do you know if the SERM resistant ER mutations, do they still
+
+1383
+01:19:45.796 --> 01:19:46.196
+bind
+
+1384
+01:19:47.056 --> 01:19:49.096
+the mRNA in your model?
+
+1385
+01:19:49.976 --> 01:19:50.836
+Which resistance, sorry?
+
+1386
+01:19:50.876 --> 01:19:51.676
+The SERM.
+
+1387
+01:19:53.536 --> 01:19:56.296
+When you give resistance to SERMs, the ER gets mutated.
+
+1388
+01:19:57.096 --> 01:20:00.316
+So do you know if the mutations are still capable of binding-
+
+1389
+01:20:01.036 --> 01:20:02.456
+Oh, in the ER alpha you mean?
+
+1390
+01:20:02.596 --> 01:20:03.216
+Yeah.
+
+1391
+01:20:03.256 --> 01:20:05.236
+Yeah. Definitely still bind RNA.
+
+1392
+01:20:06.776 --> 01:20:10.656
+The mutation bind RNAs. We already showed that, for example,
+
+1393
+01:20:11.196 --> 01:20:13.456
+when the ER alpha in the cytoplasm, you give,
+
+1394
+01:20:14.296 --> 01:20:15.645
+whatever, Tamoxifen or other
+
+1395
+01:20:16.616 --> 01:20:20.296
+analog still bind RNA. So that actually to me makes
+
+1396
+01:20:20.336 --> 01:20:23.996
+sense, because actually all these drugs in general kill the
+
+1397
+01:20:24.056 --> 01:20:25.596
+transcription activity of ER alpha.
+
+1398
+01:20:25.656 --> 01:20:29.196
+But we know the ER alpha is still important for breast cancer tumor even when you
+
+1399
+01:20:29.216 --> 01:20:31.636
+become resistant. So how does this?
+
+1400
+01:20:31.676 --> 01:20:35.396
+That's why I think the RNA binding activity translation will make
+
+1401
+01:20:35.496 --> 01:20:36.316
+completely sense.
+
+1402
+01:20:37.956 --> 01:20:39.996
+Beautiful story. Thanks for sharing.
+
+1403
+01:20:40.416 --> 01:20:42.816
+I had a question about ER
+
+1404
+01:20:43.636 --> 01:20:46.636
+alpha binding to EIF4A.
+
+1405
+01:20:46.816 --> 01:20:46.935
+Sure.
+
+1406
+01:20:47.256 --> 01:20:49.416
+I might have missed a little bit of the detail.
+
+1407
+01:20:49.656 --> 01:20:53.236
+Could you elaborate on how ER alpha
+
+1408
+01:20:53.356 --> 01:20:56.856
+increase or modulate the activity of EIF4A?
+
+1409
+01:20:57.776 --> 01:21:01.376
+Yeah, I didn't show so much details. I only told you that bind directly.
+
+1410
+01:21:01.996 --> 01:21:05.796
+ER alpha, EIF4A. Okay? And I show you,
+
+1411
+01:21:06.196 --> 01:21:06.256
+we
+
+1412
+01:21:07.376 --> 01:21:10.636
+found this actually before through a proteomics.
+
+1413
+01:21:10.856 --> 01:21:14.376
+After we pulled down the ER alpha, we did this by IP.
+
+1414
+01:21:15.176 --> 01:21:18.176
+And Ashish also basically did all
+
+1415
+01:21:18.476 --> 01:21:22.296
+mutagenesis analysis where we know actually which
+
+1416
+01:21:22.376 --> 01:21:26.216
+domain of ER alpha bind which domain of EIF4A.
+
+1417
+01:21:26.656 --> 01:21:28.916
+So there is actually direct interaction. It's pretty cool.
+
+1418
+01:21:29.916 --> 01:21:33.376
+Does it increase the protein expression of
+
+1419
+01:21:33.436 --> 01:21:34.256
+EIF4A?
+
+1420
+01:21:35.136 --> 01:21:37.456
+Oh, if increase the protein expression in EIF4A.
+
+1421
+01:21:38.376 --> 01:21:40.416
+We didn't see much that.
+
+1422
+01:21:40.566 --> 01:21:40.566
+Okay.
+
+1423
+01:21:40.576 --> 01:21:41.756
+Although I remember
+
+1424
+01:21:43.276 --> 01:21:47.076
+that actually years ago someone was published that ER
+
+1425
+01:21:47.136 --> 01:21:48.936
+alpha is a transcription factor.
+
+1426
+01:21:49.716 --> 01:21:49.726
+Mm-hmm.
+
+1427
+01:21:50.356 --> 01:21:54.226
+Increase the transcription of a specific translation factor.
+
+1428
+01:21:54.276 --> 01:21:55.756
+I don't remember if 4A was there.
+
+1429
+01:21:57.176 --> 01:22:00.116
+But yeah, we don't know. It's also possible that it might be linked through
+
+1430
+01:22:01.096 --> 01:22:02.116
+increase in transcription. Yeah.
+
+1431
+01:22:02.676 --> 01:22:05.766
+So you think it's more likely it's the binding itself improves the-
+
+1432
+01:22:05.796 --> 01:22:09.176
+Yeah. ER alpha bind directly EIF4A.
+
+1433
+01:22:09.796 --> 01:22:13.726
+That's why these two proteins really
+
+1434
+01:22:13.776 --> 01:22:17.416
+come together and increase this beautiful translation
+
+1435
+01:22:17.456 --> 01:22:20.316
+specificity in this context. It's a protein-protein interaction.
+
+1436
+01:22:20.876 --> 01:22:21.516
+Great. Thank you.
+
+1437
+01:22:21.696 --> 01:22:21.936
+Sure.
+
+1438
+01:22:23.836 --> 01:22:25.216
+All right. Thank you.
+
+1439
+01:22:25.496 --> 01:22:28.226
+Thank you, everyone. And again, thanks
+
+1440
+01:22:29.116 --> 01:22:31.296
+to the organizers that they organized this
+
+1441
+01:22:32.216 --> 01:22:36.096
+session on protein synthesis that we all think three of us don't need convincing
+
+1442
+01:22:36.105 --> 01:22:39.415
+to say that it should be within hallmarks of cancer and so on.
+
+1443
+01:22:39.936 --> 01:22:41.156
+Okay. Thank you all very much.

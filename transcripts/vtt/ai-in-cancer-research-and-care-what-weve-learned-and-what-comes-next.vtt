@@ -1,0 +1,6545 @@
+WEBVTT
+
+1
+00:00:01.340 --> 00:00:05.320
+Welcome to the special session on AI in cancer research
+
+2
+00:00:05.360 --> 00:00:07.900
+and care, what we've learned and what comes next.
+
+3
+00:00:08.740 --> 00:00:12.340
+Congratulations for your resilience. It's almost the end of the meeting.
+
+4
+00:00:13.420 --> 00:00:16.240
+And condolences for the people who have a talk tomorrow.
+
+5
+00:00:16.300 --> 00:00:19.980
+It's getting harder and harder to have a full room, but I really appreciate your
+
+6
+00:00:20.320 --> 00:00:20.960
+coming today.
+
+7
+00:00:22.480 --> 00:00:24.180
+Let me see.
+
+8
+00:00:33.560 --> 00:00:36.160
+Can you try to find the slide deck and put it on screen, please?
+
+9
+00:00:37.060 --> 00:00:38.400
+Perfect. Thank you very much.
+
+10
+00:00:41.000 --> 00:00:44.440
+So AI has been a really hot topic at the meeting,
+
+11
+00:00:44.880 --> 00:00:47.060
+whether it's in the plenary, special
+
+12
+00:00:48.000 --> 00:00:51.620
+sessions, or mini symposium. And so there are a few
+
+13
+00:00:52.100 --> 00:00:53.040
+key points that
+
+14
+00:00:54.560 --> 00:00:56.880
+kind of emerge from all those talks.
+
+15
+00:00:58.480 --> 00:01:02.420
+The one is that AI is spanning all kind of activities, whether it's
+
+16
+00:01:03.340 --> 00:01:06.140
+fundamental research, translational research, clinical application.
+
+17
+00:01:07.120 --> 00:01:11.050
+It's been the case in the past, but I think now we really reach a level
+
+18
+00:01:11.080 --> 00:01:14.140
+of maturity that was not seen before.
+
+19
+00:01:14.240 --> 00:01:18.060
+And the question is almost not so much like how do I build an AI model and
+
+20
+00:01:18.120 --> 00:01:21.990
+what can it do? But rather I deployed my AI models, how do I
+
+21
+00:01:22.160 --> 00:01:26.020
+properly assess and evaluate the performance of the model?
+
+22
+00:01:26.140 --> 00:01:29.640
+How do I optimize, maximize the benefit for the
+
+23
+00:01:29.680 --> 00:01:31.250
+researchers, the clinicians, and the patients?
+
+24
+00:01:31.340 --> 00:01:35.160
+So I think the field is maturing, which is a good
+
+25
+00:01:35.180 --> 00:01:35.420
+thing.
+
+26
+00:01:36.540 --> 00:01:39.680
+But there are a lot of challenges ahead, and we're probably going to discuss many
+
+27
+00:01:39.740 --> 00:01:43.240
+of those today, including how do I evaluate using benchmark?
+
+28
+00:01:43.660 --> 00:01:47.220
+How do I get the data I need to build the best AI model and deploy
+
+29
+00:01:48.500 --> 00:01:49.220
+it in the clinic?
+
+30
+00:01:51.000 --> 00:01:54.600
+Agentic AI, digital pathology, spatial biology, those are
+
+31
+00:01:55.220 --> 00:01:58.720
+really, really hot topic, and it keeps evolving, but I suspect
+
+32
+00:01:58.780 --> 00:02:02.500
+Agentic AI is going to be even more prominent in the next
+
+33
+00:02:02.580 --> 00:02:06.380
+iteration of the annual meeting. And so with
+
+34
+00:02:06.440 --> 00:02:09.120
+that, I'll just going to let the panel
+
+35
+00:02:10.660 --> 00:02:11.640
+discussion start.
+
+36
+00:02:13.100 --> 00:02:16.940
+Feel free to basically ask questions online if you
+
+37
+00:02:16.980 --> 00:02:19.720
+can, but you can also just go to the microphone.
+
+38
+00:02:19.760 --> 00:02:23.560
+We'll make sure we pause during the discussion so that you in the audience
+
+39
+00:02:23.570 --> 00:02:26.420
+can ask your most exciting question.
+
+40
+00:02:27.320 --> 00:02:30.700
+With that, I'll pass it to Christina, if you want to kick us off.
+
+41
+00:02:35.360 --> 00:02:38.480
+Yeah. So I think we've had really an amazing...
+
+42
+00:02:38.640 --> 00:02:42.400
+This is the most AI and data science we've had at an annual meeting.
+
+43
+00:02:42.540 --> 00:02:46.370
+I think it's actually very hard to keep up, and Ben has summarized some of
+
+44
+00:02:46.420 --> 00:02:50.010
+the topics that have emerged. But I personally think one
+
+45
+00:02:50.060 --> 00:02:50.450
+that
+
+46
+00:02:51.820 --> 00:02:55.620
+always comes up and is hard to show a presentation on because we
+
+47
+00:02:55.700 --> 00:02:57.960
+still lack data, is about the benchmarks.
+
+48
+00:02:58.640 --> 00:02:59.040
+And
+
+49
+00:03:00.060 --> 00:03:03.760
+we're in an era where it's easier and easier to train models, although we frankly
+
+50
+00:03:03.840 --> 00:03:07.120
+still lack much of the data we would like, multimodal, spatial,
+
+51
+00:03:07.700 --> 00:03:11.470
+and longitudinal. And I think as we think about
+
+52
+00:03:11.480 --> 00:03:14.590
+benchmarks, I kind of want to have a discussion with this group because I think if
+
+53
+00:03:14.620 --> 00:03:18.430
+we set the bar high to think about what we need for benchmarks, it can
+
+54
+00:03:18.500 --> 00:03:20.140
+help guide the discussion about what's going to be needed.
+
+55
+00:03:20.180 --> 00:03:23.600
+But the benchmarks that we need to evaluate the
+
+56
+00:03:23.640 --> 00:03:25.180
+performance of
+
+57
+00:03:26.240 --> 00:03:30.140
+our AI tools is one that needs more discussion,
+
+58
+00:03:30.190 --> 00:03:34.060
+and I think it varies pretty dramatically if it's for a clinical task where we
+
+59
+00:03:34.080 --> 00:03:37.600
+might have a binary outcome, a response, yes/no, a
+
+60
+00:03:37.640 --> 00:03:39.460
+pathologic complete response, yes/no,
+
+61
+00:03:41.000 --> 00:03:44.920
+versus in the biomedical discovery setting, where it's really
+
+62
+00:03:44.980 --> 00:03:47.980
+harder to say what is a gain. A gain in knowledge.
+
+63
+00:03:48.140 --> 00:03:50.120
+Have we learned some new biology?
+
+64
+00:03:51.240 --> 00:03:55.030
+Are we advancing in scientific reasoning which might
+
+65
+00:03:55.080 --> 00:03:58.040
+actually be the highest bar for these agentic frameworks.
+
+66
+00:03:58.049 --> 00:04:01.380
+So I guess I want to start, and I'm going to actually turn it to the clinician on
+
+67
+00:04:01.420 --> 00:04:04.980
+the panel as the starting point to say can you, Alex, maybe
+
+68
+00:04:05.020 --> 00:04:08.780
+share your perspective about what you think we need to be doing as a
+
+69
+00:04:08.820 --> 00:04:12.620
+community for benchmarks, and where are we at, and what is missing?
+
+70
+00:04:14.940 --> 00:04:17.120
+Great. Thank you. My name is Alex Pearson.
+
+71
+00:04:17.180 --> 00:04:21.041
+I'm a physician scientist at University of Chicago, and I'm a medical oncologist,
+
+72
+00:04:22.019 --> 00:04:25.540
+as well as a AI researcher. So, yeah,
+
+73
+00:04:26.360 --> 00:04:29.940
+one of the challenges I think for benchmarking has been that
+
+74
+00:04:30.740 --> 00:04:34.640
+for, say, the last decade, the value of data was so
+
+75
+00:04:34.700 --> 00:04:38.680
+high, right? I think if you had a data set that was
+
+76
+00:04:38.800 --> 00:04:41.800
+worth benchmarking on, it was probably worth
+
+77
+00:04:42.480 --> 00:04:44.700
+keeping to yourself to publish on, right?
+
+78
+00:04:44.760 --> 00:04:48.520
+To train a model on your own. And I think that
+
+79
+00:04:49.640 --> 00:04:53.460
+there are pros and cons, but I think that the relative value of
+
+80
+00:04:53.500 --> 00:04:57.180
+data are decreasing dramatically, effectively,
+
+81
+00:04:57.320 --> 00:05:00.880
+as more and more groups are aggregating very large data sets and making them
+
+82
+00:05:00.940 --> 00:05:04.890
+available. But oftentimes, I think, as many of the panel members know,
+
+83
+00:05:05.080 --> 00:05:08.140
+that those very large data sets are not
+
+84
+00:05:08.160 --> 00:05:12.140
+necessarily annotated with the quality endpoints that are most
+
+85
+00:05:12.180 --> 00:05:14.120
+important for us as clinicians. So
+
+86
+00:05:14.980 --> 00:05:15.280
+I think
+
+87
+00:05:16.520 --> 00:05:18.120
+that there is probably benchmarks,
+
+88
+00:05:19.060 --> 00:05:22.500
+as you alluded to, in a variety of different contexts.
+
+89
+00:05:22.660 --> 00:05:25.940
+We want to be able to have benchmarks that
+
+90
+00:05:27.960 --> 00:05:31.080
+render the clinical tasks that are most useful.
+
+91
+00:05:31.580 --> 00:05:34.980
+For example, diagnosing breast cancer on mammograms.
+
+92
+00:05:36.760 --> 00:05:40.640
+And I think we also need to develop some technical benchmarks that allow
+
+93
+00:05:40.700 --> 00:05:44.640
+us to compare against some of these very complex modeling frameworks,
+
+94
+00:05:44.720 --> 00:05:45.860
+like is the
+
+95
+00:05:47.380 --> 00:05:51.220
+manifold that's created in a foundation model well-posed to
+
+96
+00:05:51.300 --> 00:05:55.280
+adapt or to reflect the variations within data of a lot of
+
+97
+00:05:55.320 --> 00:05:56.840
+different types? And so,
+
+98
+00:05:57.760 --> 00:05:59.080
+I think that the
+
+99
+00:06:00.980 --> 00:06:04.480
+former may be actually even more challenging because
+
+100
+00:06:05.300 --> 00:06:08.780
+coming up with data sets with a true clinical gold
+
+101
+00:06:08.900 --> 00:06:11.010
+standard... can be very challenging.
+
+102
+00:06:11.390 --> 00:06:15.310
+Knowing that a patient hasn't ever recurred requires
+
+103
+00:06:15.970 --> 00:06:19.930
+decades of follow-up, potentially, and can be very time-consuming
+
+104
+00:06:19.980 --> 00:06:22.510
+and costly for that annotation process.
+
+105
+00:06:22.610 --> 00:06:26.229
+So I'm optimistic. I think that the
+
+106
+00:06:26.290 --> 00:06:29.660
+quality and volume of data that are becoming available to us is increasing
+
+107
+00:06:29.750 --> 00:06:31.350
+dramatically, public data.
+
+108
+00:06:32.270 --> 00:06:36.250
+And I would hope that there
+
+109
+00:06:36.270 --> 00:06:40.150
+are ongoing investments in the
+
+110
+00:06:40.170 --> 00:06:42.010
+building of that data, just like there are
+
+111
+00:06:42.990 --> 00:06:46.890
+increasing opportunities to publish those data with new journals now that are
+
+112
+00:06:46.950 --> 00:06:50.720
+just data set focused. So those are my thoughts.
+
+113
+00:06:51.070 --> 00:06:52.250
+So we shouldn't hoard our data.
+
+114
+00:06:52.590 --> 00:06:53.250
+No.
+
+115
+00:06:53.950 --> 00:06:55.790
+Right. Maybe would you like to introduce yourself?
+
+116
+00:06:55.890 --> 00:06:58.690
+Yeah, absolutely. Hi, everyone. I'm Danielle Bern 人 .
+
+117
+00:06:58.830 --> 00:07:00.270
+I'm a physician scientist as well.
+
+118
+00:07:00.310 --> 00:07:04.290
+I'm a radiation oncologist and AI researcher with a focus on
+
+119
+00:07:04.330 --> 00:07:06.270
+natural language processing
+
+120
+00:07:10.110 --> 00:07:11.520
+of the electronic health records.
+
+121
+00:07:12.570 --> 00:07:16.160
+So I completely agree with what's just been said about the importance of
+
+122
+00:07:16.190 --> 00:07:18.890
+benchmarking, and the need for new
+
+123
+00:07:20.030 --> 00:07:22.710
+technologic approaches for benchmarking,
+
+124
+00:07:23.810 --> 00:07:27.730
+especially as we are moving towards these really large
+
+125
+00:07:27.790 --> 00:07:31.770
+foundation models where we're not going to likely achieve
+
+126
+00:07:32.130 --> 00:07:36.090
+an interpretable model. In my opinion, I
+
+127
+00:07:36.110 --> 00:07:37.850
+think it's a reasonable trade-off to accept a
+
+128
+00:07:38.870 --> 00:07:42.590
+non-interpretable model as long as you have evidence that it provides
+
+129
+00:07:42.870 --> 00:07:45.990
+benefit. But that raises the bar and raises the need for benchmarks
+
+130
+00:07:48.250 --> 00:07:49.350
+more than ever before.
+
+131
+00:07:50.170 --> 00:07:52.150
+Another kind of challenge that I think about
+
+132
+00:07:53.210 --> 00:07:56.850
+with the newer class of models, which are both
+
+133
+00:07:57.090 --> 00:08:00.930
+very performant and also not trained for any
+
+134
+00:08:00.990 --> 00:08:04.830
+one particular task, and may not even be trained for a clinical task, but
+
+135
+00:08:05.690 --> 00:08:07.990
+we're still using to generalize the clinical tasks.
+
+136
+00:08:08.530 --> 00:08:11.090
+Like the general large language models that we're using to
+
+137
+00:08:12.090 --> 00:08:14.450
+draft patient notes with ambient documentation,
+
+138
+00:08:15.250 --> 00:08:19.150
+is that we can't rely on our previous, traditional machine learning
+
+139
+00:08:19.530 --> 00:08:23.290
+assumptions that we have this model that we've trained, we've
+
+140
+00:08:23.670 --> 00:08:24.610
+done supervised
+
+141
+00:08:27.010 --> 00:08:30.850
+learning on a labeled data set, so we can say, "We can
+
+142
+00:08:30.890 --> 00:08:34.290
+expect the performance will be X
+
+143
+00:08:34.410 --> 00:08:37.730
+in distribution data set that reflects the training data
+
+144
+00:08:37.850 --> 00:08:41.770
+set." And we can also expect that it's going to degrade as we
+
+145
+00:08:41.810 --> 00:08:44.370
+deploy it on increasingly different data sets.
+
+146
+00:08:44.890 --> 00:08:48.770
+Now, every data set is out of distribution, and when you
+
+147
+00:08:49.610 --> 00:08:53.170
+get to the zero few shot prompting
+
+148
+00:08:53.230 --> 00:08:54.870
+approaches, the
+
+149
+00:08:55.810 --> 00:08:57.660
+performance, it's hard to
+
+150
+00:08:59.610 --> 00:09:03.410
+know whether you can assume that your performance will be similar to
+
+151
+00:09:04.270 --> 00:09:08.260
+even related queries that you input previously, because
+
+152
+00:09:08.290 --> 00:09:12.110
+we don't completely know the interaction with how small changes in the
+
+153
+00:09:13.230 --> 00:09:16.390
+context and prompting might lead to very different
+
+154
+00:09:17.210 --> 00:09:19.270
+outputs. So it's really challenging.
+
+155
+00:09:21.190 --> 00:09:24.950
+I think another important point that has come up a few
+
+156
+00:09:25.030 --> 00:09:28.930
+times in a lot of the AI talks that I've seen at this ACR is
+
+157
+00:09:28.970 --> 00:09:32.930
+this idea that we have models that will do this type of reasoning that
+
+158
+00:09:33.010 --> 00:09:36.770
+might exceed what a single human is able to
+
+159
+00:09:39.190 --> 00:09:42.929
+oversee, which kind of gets to this question of
+
+160
+00:09:43.030 --> 00:09:46.950
+superhuman intelligence. Now, I think superhuman is used in a very
+
+161
+00:09:47.070 --> 00:09:50.970
+futuristic way, that we're going to have this AGI that's going to
+
+162
+00:09:50.990 --> 00:09:54.250
+outperform everything. But in some very narrow tasks, models really are
+
+163
+00:09:54.750 --> 00:09:57.290
+better than most humans. They are very good at
+
+164
+00:09:57.330 --> 00:10:00.750
+compressing knowledge and act as
+
+165
+00:10:01.170 --> 00:10:04.200
+very, in some cases, very robust information retrievers.
+
+166
+00:10:04.260 --> 00:10:07.490
+So a model can tell me the brand
+
+167
+00:10:07.550 --> 00:10:11.430
+generic names of drugs better than any physician I know is able
+
+168
+00:10:11.510 --> 00:10:14.130
+to do. But how do you oversee something like that?
+
+169
+00:10:14.179 --> 00:10:17.399
+I think that's where we get into similar to this technical question of we need
+
+170
+00:10:17.410 --> 00:10:18.010
+newer methods to
+
+171
+00:10:19.690 --> 00:10:23.340
+oversee the reasoning pathways of these models
+
+172
+00:10:23.370 --> 00:10:27.369
+and oversee their stepwise actions, because it's
+
+173
+00:10:27.470 --> 00:10:30.950
+easier to oversee stepwise actions than it might be to oversee the final
+
+174
+00:10:31.030 --> 00:10:32.690
+output.
+
+175
+00:10:32.710 --> 00:10:35.930
+That's great. And maybe we'll turn it to you, Charlotte, and maybe you can speak to
+
+176
+00:10:35.970 --> 00:10:39.770
+some of the also basic sort of fundamental discovery
+
+177
+00:10:39.870 --> 00:10:43.210
+science that requires different flavors of benchmarks.
+
+178
+00:10:44.210 --> 00:10:47.760
+So I'm Charlotte Brunner. I'm an assistant professor at EPFL, and so I'm actually
+
+179
+00:10:47.790 --> 00:10:51.580
+jointly affiliated with School of Computer Science and School of
+
+180
+00:10:51.730 --> 00:10:53.250
+Life Sciences or the Cancer Institute.
+
+181
+00:10:53.880 --> 00:10:57.760
+And so very much on the benchmarking, I think what we are trying now
+
+182
+00:10:57.810 --> 00:11:01.350
+in cancer biology, biology in general, is to mirror the
+
+183
+00:11:01.390 --> 00:11:04.070
+success that we've seen in vision and in language.
+
+184
+00:11:04.120 --> 00:11:07.990
+And I think we shouldn't forget the somehow decades of effort that
+
+185
+00:11:08.050 --> 00:11:11.930
+have gone there into AI architecture development, setting up
+
+186
+00:11:12.030 --> 00:11:14.530
+benchmarks, and in particular, setting up data sets
+
+187
+00:11:15.390 --> 00:11:19.260
+that can be used. And the challenge we face
+
+188
+00:11:19.310 --> 00:11:21.790
+or the difficulty we face in biology is just
+
+189
+00:11:23.190 --> 00:11:25.510
+on a different scale and on a different level.
+
+190
+00:11:26.110 --> 00:11:29.710
+So we all know that we need to have a multimodal profile of a patient to
+
+191
+00:11:29.750 --> 00:11:31.770
+understand the underlying biology.
+
+192
+00:11:31.790 --> 00:11:35.370
+On the other hand, we never have a data set where we actually have all modalities
+
+193
+00:11:35.410 --> 00:11:39.100
+available. We are collecting more and more multimodal data sets, but then we have
+
+194
+00:11:39.130 --> 00:11:41.010
+those of very few patients.
+
+195
+00:11:41.950 --> 00:11:45.930
+So in our setup of benchmarks and models
+
+196
+00:11:45.990 --> 00:11:49.530
+and model design, I think we really need to come to the realization
+
+197
+00:11:49.570 --> 00:11:53.190
+that we need new architectures that are suitable for the
+
+198
+00:11:53.510 --> 00:11:56.810
+data structures that we have that are just very different what we had so far,
+
+199
+00:11:57.530 --> 00:12:00.750
+and that our benchmarks need to be very particular.
+
+200
+00:12:00.810 --> 00:12:04.654
+SoIf we ask questions, when does multimodality
+
+201
+00:12:04.694 --> 00:12:08.374
+help? Or which modality helps us to ask which type of
+
+202
+00:12:08.414 --> 00:12:11.684
+questions? We need to set up tasks that reflect that, because
+
+203
+00:12:12.354 --> 00:12:12.654
+if
+
+204
+00:12:13.674 --> 00:12:17.434
+we are operating in a space where we will have always missing data and super
+
+205
+00:12:17.494 --> 00:12:21.394
+unpaired levels of modalities, it is very easy to fall into the
+
+206
+00:12:21.414 --> 00:12:25.374
+trap of asking very simple question for which one modality
+
+207
+00:12:25.434 --> 00:12:27.514
+is actually sufficient to answer them.
+
+208
+00:12:27.614 --> 00:12:31.094
+So it's an additional exercise to really come up with
+
+209
+00:12:31.194 --> 00:12:35.094
+benchmarks that are hard enough and kind of reflect the clinical reality that we
+
+210
+00:12:35.234 --> 00:12:35.464
+have,
+
+211
+00:12:36.274 --> 00:12:39.654
+where you need to integrate several modalities.
+
+212
+00:12:39.774 --> 00:12:43.254
+I think that to say we don't have any multimodal models in
+
+213
+00:12:43.294 --> 00:12:47.134
+biology. So we have models that are
+
+214
+00:12:47.254 --> 00:12:51.094
+unimodal, and then we have late fusion schemes where we basically
+
+215
+00:12:51.214 --> 00:12:54.014
+have a layer that tries to integrate those modalities.
+
+216
+00:12:54.034 --> 00:12:57.954
+We have very little models that are really truly multimodal, that then
+
+217
+00:12:58.014 --> 00:13:01.674
+have also the capacity or should have the capacity to really
+
+218
+00:13:01.794 --> 00:13:05.554
+capture what information do we get from modality A versus
+
+219
+00:13:05.614 --> 00:13:07.894
+modality B, which we will probably not achieve.
+
+220
+00:13:07.934 --> 00:13:07.994
+And
+
+221
+00:13:08.814 --> 00:13:12.594
+just last comment, if we look at the evolution of language
+
+222
+00:13:12.674 --> 00:13:15.894
+models like GPT, they actually have moved
+
+223
+00:13:15.954 --> 00:13:19.874
+from rather late fusion schemes where we had an image encoder and a
+
+224
+00:13:19.914 --> 00:13:22.054
+text encoder, to models that are really trained
+
+225
+00:13:23.514 --> 00:13:24.534
+fully multimodal.
+
+226
+00:13:25.354 --> 00:13:26.254
+But then we have
+
+227
+00:13:27.214 --> 00:13:29.934
+text and we have image perfectly paired.
+
+228
+00:13:30.614 --> 00:13:34.134
+Also modalities that overlap fairly well, while in biology we have
+
+229
+00:13:34.174 --> 00:13:38.134
+modalities that capture this part of reality and that part of the underlying ground
+
+230
+00:13:38.154 --> 00:13:41.394
+truth, and here we have information A and here we have information B.
+
+231
+00:13:41.734 --> 00:13:45.194
+That requires new benchmark, new architectures, new ideas,
+
+232
+00:13:45.894 --> 00:13:46.394
+many things.
+
+233
+00:13:47.114 --> 00:13:49.054
+That's great. So Ben, you're not off the hook.
+
+234
+00:13:52.234 --> 00:13:56.094
+So I think one aspect of benchmarks that's often not
+
+235
+00:13:56.134 --> 00:13:59.894
+really talked about is as soon as a benchmark is released, it's going to be gamed
+
+236
+00:14:00.554 --> 00:14:04.414
+in the sense that we're going to try a lot to optimize that
+
+237
+00:14:04.514 --> 00:14:06.014
+benchmark and we're going to succeed.
+
+238
+00:14:06.034 --> 00:14:08.914
+And sometimes those successes are just pure random chance.
+
+239
+00:14:08.994 --> 00:14:12.174
+If you try a thousand things, one will stick.
+
+240
+00:14:12.814 --> 00:14:14.914
+And so a benchmark needs to evolve.
+
+241
+00:14:15.274 --> 00:14:18.274
+It has to have new data every time or
+
+242
+00:14:19.354 --> 00:14:23.294
+in a frequent basis to make sure that the community does not basically overfit
+
+243
+00:14:23.334 --> 00:14:26.014
+a given benchmark. And so I have a question for the panel.
+
+244
+00:14:26.574 --> 00:14:29.914
+If you had to choose one way to build a
+
+245
+00:14:29.954 --> 00:14:33.934
+benchmarks to evaluate a field, would it be that you
+
+246
+00:14:33.974 --> 00:14:37.894
+organize competitions or would it be that you have a completely open benchmarks
+
+247
+00:14:37.994 --> 00:14:41.954
+and you have those tier of data that are released over time so that you
+
+248
+00:14:42.114 --> 00:14:45.054
+can always have some new data to test your model on?
+
+249
+00:14:45.874 --> 00:14:48.894
+What would be, just one word, competition or open
+
+250
+00:14:48.934 --> 00:14:50.594
+benchmark?
+
+251
+00:14:52.334 --> 00:14:53.574
+Charlotte, what do you think?
+
+252
+00:14:54.294 --> 00:14:56.314
+It's hard to say. I think depends on the context.
+
+253
+00:14:56.634 --> 00:14:58.894
+Ah. You're a real scientist.
+
+254
+00:15:00.054 --> 00:15:02.934
+I feel like you would say challenge, so I'm going to say open.
+
+255
+00:15:03.454 --> 00:15:04.934
+Just spark some controversy here.
+
+256
+00:15:05.044 --> 00:15:05.194
+Okay.
+
+257
+00:15:06.874 --> 00:15:07.854
+I'm going to go with challenge.
+
+258
+00:15:08.674 --> 00:15:10.334
+Yeah, I agree. Challenge.
+
+259
+00:15:11.294 --> 00:15:15.274
+Yeah. So challenge are a lot harder to organize, but I think they put the
+
+260
+00:15:15.294 --> 00:15:16.574
+bar very, very high.
+
+261
+00:15:18.134 --> 00:15:21.474
+But open benchmarks really let everyone play at any
+
+262
+00:15:21.534 --> 00:15:24.734
+time on a dataset, but they tend to be overfitted very quickly.
+
+263
+00:15:25.974 --> 00:15:28.814
+Yeah. And another challenge with the open benchmarks, I think ideally it would be
+
+264
+00:15:29.774 --> 00:15:32.174
+fantastic, but we are struggling with these--
+
+265
+00:15:33.634 --> 00:15:37.224
+Not struggling, but models are coming out from companies that have
+
+266
+00:15:37.674 --> 00:15:40.454
+huge access to very large amounts of data and very ultimate
+
+267
+00:15:40.494 --> 00:15:44.354
+compute, and releasing updated version of the model so rapidly that
+
+268
+00:15:44.414 --> 00:15:47.234
+it's so hard to keep up to date with new
+
+269
+00:15:48.514 --> 00:15:49.074
+sets of
+
+270
+00:15:50.274 --> 00:15:53.534
+subset of benchmark datasets that are unlikely to be contaminated.
+
+271
+00:15:54.074 --> 00:15:55.894
+The leakage, I think is the biggest concern.
+
+272
+00:15:55.934 --> 00:15:59.923
+And I think this is why this is actually, I think, a problem for the global
+
+273
+00:15:59.974 --> 00:16:03.354
+community, is we really have to start thinking about how to do this.
+
+274
+00:16:03.414 --> 00:16:06.614
+And Ben and I have been in many discussions over the past few days about setting up
+
+275
+00:16:06.694 --> 00:16:10.654
+a challenge that would involve the international community to
+
+276
+00:16:10.694 --> 00:16:14.454
+do this. And that's not a actually trivial task because it depends
+
+277
+00:16:14.534 --> 00:16:18.134
+inherently on the data. And so I think this is a very timely discussion.
+
+278
+00:16:18.213 --> 00:16:18.414
+But
+
+279
+00:16:19.254 --> 00:16:23.114
+we see how quickly even some of the virtual cell challenges where the letterboards
+
+280
+00:16:23.154 --> 00:16:23.273
+were
+
+281
+00:16:24.814 --> 00:16:26.854
+hacked, or you can decide how you want to say that.
+
+282
+00:16:26.974 --> 00:16:30.794
+But I think for biomedicine, we have to think about this from a
+
+283
+00:16:30.874 --> 00:16:31.374
+very
+
+284
+00:16:32.414 --> 00:16:33.734
+systematic perspective.
+
+285
+00:16:34.314 --> 00:16:37.574
+But I mean that also then ultimately, I think one of the bottlenecks of virtual
+
+286
+00:16:37.634 --> 00:16:40.654
+cell challenges was the metrics that we are using, right?
+
+287
+00:16:40.724 --> 00:16:40.724
+Right.
+
+288
+00:16:40.734 --> 00:16:40.894
+And
+
+289
+00:16:42.254 --> 00:16:42.514
+so
+
+290
+00:16:43.494 --> 00:16:47.474
+in, I think one of the successful challenges that has probably been to
+
+291
+00:16:47.514 --> 00:16:50.514
+solve the protein folding team, the protein folding challenge.
+
+292
+00:16:50.594 --> 00:16:54.494
+So there we had, I don't know how many iterations before actually Alphafold
+
+293
+00:16:54.714 --> 00:16:56.914
+1 and Alphafold 2 and Alphafold 3 were submitted.
+
+294
+00:16:57.514 --> 00:16:59.374
+But a metric that
+
+295
+00:17:00.974 --> 00:17:03.054
+to some degree was, I think, faithful enough.
+
+296
+00:17:03.234 --> 00:17:07.075
+In biology, in single cell biology, here we are struggling a lot for the
+
+297
+00:17:07.094 --> 00:17:09.354
+perturbation analysis to define good metrics.
+
+298
+00:17:09.694 --> 00:17:09.894
+Yes.
+
+299
+00:17:10.654 --> 00:17:14.545
+So if we are organizing it in a challenge setup, we also put a lot
+
+300
+00:17:14.575 --> 00:17:16.075
+of responsibility on those
+
+301
+00:17:16.934 --> 00:17:20.594
+that are organizing the challenge to redefine the form of ground truth or the
+
+302
+00:17:20.694 --> 00:17:23.914
+metric that we are comparing against us to, which
+
+303
+00:17:25.154 --> 00:17:26.734
+is a research question in itself.
+
+304
+00:17:30.154 --> 00:17:33.674
+I was going to say that if
+
+305
+00:17:34.154 --> 00:17:37.914
+I wear my clinician hat, I would hope that something analogous would
+
+306
+00:17:37.994 --> 00:17:40.514
+also happen on AI for medical devices.
+
+307
+00:17:41.034 --> 00:17:44.334
+We don't have a way to benchmark what is
+
+308
+00:17:44.394 --> 00:17:47.054
+increasingly competitive subfields.
+
+309
+00:17:47.874 --> 00:17:51.654
+And you would love there to be, maybe it's not a
+
+310
+00:17:51.754 --> 00:17:53.413
+challenge in so much as it's a
+
+311
+00:17:55.294 --> 00:17:56.413
+curated
+
+312
+00:17:56.994 --> 00:18:00.442
+modelEnclave that
+
+313
+00:18:00.542 --> 00:18:04.142
+allows evaluation of proprietary
+
+314
+00:18:04.182 --> 00:18:07.802
+models in a closed situation. But I think that
+
+315
+00:18:08.142 --> 00:18:11.982
+as the preponderance of digital health tools expands, sometimes
+
+316
+00:18:12.022 --> 00:18:15.742
+with very little evidence in terms of efficacy, but yet
+
+317
+00:18:16.322 --> 00:18:18.322
+the capability of billing our insurance,
+
+318
+00:18:19.322 --> 00:18:23.242
+I think we should demand that for those models that actually include AI
+
+319
+00:18:23.322 --> 00:18:26.822
+components or a neural network or a model-based
+
+320
+00:18:26.922 --> 00:18:30.622
+infrastructure, that there is some accountability for those technical aspects.
+
+321
+00:18:30.682 --> 00:18:33.912
+So I see that in parallel to this kind of scientific
+
+322
+00:18:35.042 --> 00:18:38.542
+benchmarking, but I think it's also really important to keep in mind as the
+
+323
+00:18:39.282 --> 00:18:42.302
+community of creators of the model infrastructure.
+
+324
+00:18:43.022 --> 00:18:45.402
+And I wonder if we can turn to you and ask, because I think
+
+325
+00:18:46.762 --> 00:18:50.542
+radiology imaging, to me, seems like a great place to
+
+326
+00:18:50.582 --> 00:18:51.772
+start on the
+
+327
+00:18:52.722 --> 00:18:56.642
+clinical side because we have standardized devices, the outputs, and yet
+
+328
+00:18:57.302 --> 00:18:59.942
+if I talk to any of my radiology colleagues, they're like, "Oh, it's still the Wild
+
+329
+00:19:00.002 --> 00:19:03.762
+West. We have a new tool every day." Can you speak to your
+
+330
+00:19:03.802 --> 00:19:07.622
+perspective on this and where you think we're at, and if there really are
+
+331
+00:19:08.002 --> 00:19:11.802
+opportunities to set up the sort of gold standard data sets that we could
+
+332
+00:19:11.862 --> 00:19:12.882
+use for this?
+
+333
+00:19:14.462 --> 00:19:18.362
+Yeah, absolutely. I think in radiology, we have seen some recent
+
+334
+00:19:18.462 --> 00:19:22.282
+successes. In the field of radiology, there have been
+
+335
+00:19:22.342 --> 00:19:25.902
+actually large randomized controlled trials out of Europe
+
+336
+00:19:25.962 --> 00:19:28.542
+showing the benefit of AI-assisted
+
+337
+00:19:28.862 --> 00:19:32.302
+mammography screening. That's the real gold standard.
+
+338
+00:19:32.622 --> 00:19:36.082
+If we can hold these models to the same bar that we hold
+
+339
+00:19:36.642 --> 00:19:40.542
+new management strategies to and show that it actually improves a hard patient
+
+340
+00:19:40.642 --> 00:19:42.302
+outcome, that's what we ultimately want to see.
+
+341
+00:19:42.462 --> 00:19:46.282
+Now, of course, the models are advancing much faster than we are able
+
+342
+00:19:46.422 --> 00:19:49.982
+to run clinical trials, and we already have this very resource-constrained setting
+
+343
+00:19:50.002 --> 00:19:52.862
+where it's difficult to run trials, even
+
+344
+00:19:54.242 --> 00:19:58.162
+a new registration trial. It's just not going to be feasible to run
+
+345
+00:19:58.222 --> 00:19:59.822
+large randomized trials for every different
+
+346
+00:20:01.402 --> 00:20:01.942
+AI model.
+
+347
+00:20:04.522 --> 00:20:08.462
+For radiology, I think, starting in settings where you
+
+348
+00:20:08.522 --> 00:20:12.142
+have what is as close to the next gold standard as
+
+349
+00:20:12.202 --> 00:20:15.842
+possible in cancer is paired imaging and
+
+350
+00:20:16.162 --> 00:20:19.182
+tissue biopsy is a good place to start.
+
+351
+00:20:19.222 --> 00:20:22.242
+There are differences in how pathologists
+
+352
+00:20:22.302 --> 00:20:24.042
+might
+
+353
+00:20:25.382 --> 00:20:29.102
+make diagnoses based on an H&amp;E slide,
+
+354
+00:20:29.442 --> 00:20:31.222
+but it's fairly close to gold standard.
+
+355
+00:20:31.742 --> 00:20:35.242
+Now, in radiation oncology, we're actually using AI quite a bit.
+
+356
+00:20:35.502 --> 00:20:39.391
+We're using it for automated treatment planning and tumor auto segmentation,
+
+357
+00:20:39.482 --> 00:20:43.402
+which is where we contour targets
+
+358
+00:20:43.522 --> 00:20:46.882
+and normal tissues and use that to plan our radiation beams.
+
+359
+00:20:47.482 --> 00:20:47.762
+The
+
+360
+00:20:48.602 --> 00:20:52.302
+auto contouring, which is now widely rolled out for
+
+361
+00:20:52.422 --> 00:20:55.162
+normal tissues in treatment planning systems,
+
+362
+00:20:57.962 --> 00:21:01.882
+we don't have very large benchmarking strategies, but it
+
+363
+00:21:01.902 --> 00:21:05.542
+is considered fairly low risk. It has received quite a bit of
+
+364
+00:21:05.602 --> 00:21:09.162
+uptake. Interestingly, there is not a lot of evidence showing that it
+
+365
+00:21:09.202 --> 00:21:12.462
+provides value to the clinic or to the patient.
+
+366
+00:21:12.542 --> 00:21:15.762
+We did a very small randomized controlled trial where
+
+367
+00:21:15.842 --> 00:21:18.682
+we looked at using
+
+368
+00:21:18.962 --> 00:21:22.652
+AI-assisted heart contouring for breast planning and
+
+369
+00:21:22.742 --> 00:21:26.451
+just wanted to see if it improved the efficiency of our radiation
+
+370
+00:21:26.522 --> 00:21:28.921
+planners. And in fact, it didn't, which is really surprising.
+
+371
+00:21:29.122 --> 00:21:32.402
+But people are using it anyways. It probably reduces cognitive
+
+372
+00:21:33.962 --> 00:21:36.702
+burden and hopefully could, at minimum,
+
+373
+00:21:38.862 --> 00:21:42.822
+help address the challenges with burnout,
+
+374
+00:21:42.962 --> 00:21:46.482
+which downstream has effects on patients because then the more
+
+375
+00:21:46.642 --> 00:21:48.882
+clinicians burn out, the less access to care they have.
+
+376
+00:21:50.162 --> 00:21:54.042
+Similar with radiation planning, we don't have a lot of existing
+
+377
+00:21:54.122 --> 00:21:57.712
+benchmarks, and this is a setting where it'd be very
+
+378
+00:21:57.722 --> 00:22:01.502
+difficult to create a real human benchmark because where we're
+
+379
+00:22:01.582 --> 00:22:05.342
+using the radiation auto planning most frequently is in
+
+380
+00:22:05.522 --> 00:22:09.442
+daily adaptive treatment where we're adapting
+
+381
+00:22:09.462 --> 00:22:13.342
+the radiation plan, and we need AI to do that because there is no way that
+
+382
+00:22:13.362 --> 00:22:14.462
+a human could do it
+
+383
+00:22:15.282 --> 00:22:18.461
+in a short enough time that a patient could lay on the table waiting for the plan
+
+384
+00:22:18.502 --> 00:22:22.422
+to be ready. And so there, there are trials going on
+
+385
+00:22:22.462 --> 00:22:26.282
+to see if this approach does either reduce the toxicity or improve
+
+386
+00:22:26.402 --> 00:22:26.922
+efficacy.
+
+387
+00:22:28.462 --> 00:22:30.302
+But to follow up on your point,
+
+388
+00:22:31.142 --> 00:22:35.002
+we're never going to have enough resources to run trials for all the AI
+
+389
+00:22:35.042 --> 00:22:36.462
+tools we want to deploy in the clinic.
+
+390
+00:22:36.562 --> 00:22:36.702
+So
+
+391
+00:22:37.862 --> 00:22:41.602
+we're going to need benchmarks that are fast to run in
+
+392
+00:22:41.742 --> 00:22:43.842
+many, many cases, probably the vast majority of cases.
+
+393
+00:22:44.182 --> 00:22:45.682
+So my question for the panel is,
+
+394
+00:22:46.682 --> 00:22:47.182
+should we
+
+395
+00:22:48.542 --> 00:22:51.082
+let every institution build their own benchmark?
+
+396
+00:22:51.522 --> 00:22:55.342
+Should we get an institution like ACR or ASCO or
+
+397
+00:22:55.382 --> 00:22:59.302
+both to be the broker for those benchmarks, or
+
+398
+00:22:59.402 --> 00:23:03.182
+should we let the FDA or Health Canada or whatever the equivalent in
+
+399
+00:23:03.202 --> 00:23:06.422
+Europe and Asia to set those benchmarks so that they can
+
+400
+00:23:06.462 --> 00:23:10.022
+approve the tools with metrics they
+
+401
+00:23:10.202 --> 00:23:13.962
+trust and value? It's an open question for the panel.
+
+402
+00:23:16.042 --> 00:23:18.102
+I'll take a stab.
+
+403
+00:23:19.022 --> 00:23:21.142
+I guess I'd argue the analogy in
+
+404
+00:23:22.322 --> 00:23:26.042
+current anatomic pathology is that every institution
+
+405
+00:23:26.102 --> 00:23:29.202
+currently develops their own benchmark.
+
+406
+00:23:29.542 --> 00:23:33.302
+A CLIA certified lab-developed assay is one where an
+
+407
+00:23:33.342 --> 00:23:34.682
+institution can show
+
+408
+00:23:35.902 --> 00:23:39.622
+equivalency to an existing benchmarked and
+
+409
+00:23:40.422 --> 00:23:43.662
+gold standard method, and then use that and bill it to insurance.
+
+410
+00:23:43.702 --> 00:23:47.582
+And I think that that model is one that regulatorily
+
+411
+00:23:48.382 --> 00:23:51.862
+seems currently too applicable to AI models,
+
+412
+00:23:51.942 --> 00:23:55.782
+candidly. And also, I think is feasible for deployment, where you
+
+413
+00:23:55.822 --> 00:23:59.482
+have some sort of maybe central evaluation of models
+
+414
+00:23:59.602 --> 00:23:59.942
+by
+
+415
+00:24:00.962 --> 00:24:01.102
+a
+
+416
+00:24:03.218 --> 00:24:04.258
+By an honest broker
+
+417
+00:24:05.078 --> 00:24:06.958
+entity that is able to
+
+418
+00:24:07.778 --> 00:24:11.398
+adjudicate the performance of the central model, and then the model could be
+
+419
+00:24:11.458 --> 00:24:15.298
+fine-tuned to institutional idiosyncrasies to help
+
+420
+00:24:15.338 --> 00:24:19.138
+mitigate drift or biasing components
+
+421
+00:24:19.178 --> 00:24:21.818
+based on specific hardware, for example.
+
+422
+00:24:21.858 --> 00:24:25.718
+So that's my two cents, that we can borrow from the pathology community
+
+423
+00:24:25.798 --> 00:24:25.998
+and
+
+424
+00:24:26.858 --> 00:24:30.638
+use that kind of existing trustworthy infrastructure for adaptation.
+
+425
+00:24:31.778 --> 00:24:32.398
+What do you think, Danielle?
+
+426
+00:24:33.938 --> 00:24:35.598
+Yeah, I think it's a really good question. It's a hard question.
+
+427
+00:24:35.658 --> 00:24:35.718
+I
+
+428
+00:24:37.178 --> 00:24:40.468
+think we should certainly allow institutions to create their own benchmarks that
+
+429
+00:24:40.478 --> 00:24:43.578
+they feel is fit for purpose for their institution.
+
+430
+00:24:43.618 --> 00:24:43.738
+But
+
+431
+00:24:44.858 --> 00:24:45.078
+it
+
+432
+00:24:46.478 --> 00:24:50.278
+isn't sufficient because the smaller institutions, even
+
+433
+00:24:50.378 --> 00:24:54.298
+large institutions, are already struggling and will increasingly struggle
+
+434
+00:24:54.338 --> 00:24:58.078
+to build up the infrastructure to
+
+435
+00:24:58.158 --> 00:25:00.578
+oversee and evaluate all those strategies.
+
+436
+00:25:00.598 --> 00:25:01.308
+So I think
+
+437
+00:25:02.158 --> 00:25:05.998
+at minimum to ensure that we have fairly equitable
+
+438
+00:25:06.118 --> 00:25:09.738
+access to technologies, it would be ideal to have an
+
+439
+00:25:09.798 --> 00:25:10.618
+independent
+
+440
+00:25:12.078 --> 00:25:15.678
+broker play a
+
+441
+00:25:15.698 --> 00:25:19.278
+role in evaluating at least the medium or higher risk
+
+442
+00:25:20.878 --> 00:25:23.938
+AI models. Now, who should that be? It's really hard to say.
+
+443
+00:25:23.978 --> 00:25:27.418
+Is it the FDA? Is it the NCI? Is it a professional
+
+444
+00:25:27.438 --> 00:25:30.038
+society? I don't know the answer to that.
+
+445
+00:25:31.618 --> 00:25:35.558
+Likely, I think the best would be a collaboration between
+
+446
+00:25:35.568 --> 00:25:39.548
+the professional societies and regulatory bodies, and it's going
+
+447
+00:25:39.558 --> 00:25:43.318
+to require quite a bit of multidisciplinary
+
+448
+00:25:43.358 --> 00:25:46.278
+collaboration, perhaps more than we've seen previously with
+
+449
+00:25:47.718 --> 00:25:49.038
+regulatory approaches, because
+
+450
+00:25:49.898 --> 00:25:53.818
+you need quite a bit of deep data science and computer science expertise
+
+451
+00:25:54.118 --> 00:25:57.218
+paired with clinical expertise to design these types of benchmarks, and I don't
+
+452
+00:25:57.228 --> 00:26:00.317
+think we have the expertise sitting in one body alone.
+
+453
+00:26:04.058 --> 00:26:07.378
+I'm not the right person to answer, so just two thoughts.
+
+454
+00:26:07.438 --> 00:26:11.078
+In the machine learning community, it has been mostly community-driven, right?
+
+455
+00:26:11.118 --> 00:26:12.607
+So this has actually been initiatives
+
+456
+00:26:17.318 --> 00:26:17.528
+by
+
+457
+00:26:18.998 --> 00:26:22.338
+labs that has been picked up and continued and really
+
+458
+00:26:22.658 --> 00:26:26.518
+evolved into community efforts. And I think that's great and actually the
+
+459
+00:26:26.578 --> 00:26:30.518
+most valuable resource for research, because then also everybody can
+
+460
+00:26:30.558 --> 00:26:34.418
+contribute and advance. If we are talking about models that are
+
+461
+00:26:34.478 --> 00:26:38.258
+supposed to be in a deployment or enter the clinic, I think
+
+462
+00:26:38.298 --> 00:26:41.788
+here we are opening a completely different box of what
+
+463
+00:26:41.798 --> 00:26:45.678
+benchmarking even means, because we are actually entering a
+
+464
+00:26:45.698 --> 00:26:49.638
+field where we not only need to assess performance, but also risk and
+
+465
+00:26:50.118 --> 00:26:53.618
+bugs and how can a model be hijacked and what form of
+
+466
+00:26:53.678 --> 00:26:57.098
+hallucinations. And so here benchmarking actually also means to
+
+467
+00:26:58.178 --> 00:27:01.638
+understand what are the constraints and the limits of the model, and
+
+468
+00:27:02.178 --> 00:27:04.738
+we actually have no clue on how to do that in the first place.
+
+469
+00:27:05.167 --> 00:27:09.078
+So I think for research purposes, understanding what the
+
+470
+00:27:09.118 --> 00:27:12.978
+models are capable of purely in performance, it is probably actually
+
+471
+00:27:13.018 --> 00:27:16.918
+valuable to keep this also an open effort that everyone can
+
+472
+00:27:16.958 --> 00:27:20.428
+contribute in the machine learning community with open publishing and
+
+473
+00:27:21.518 --> 00:27:23.458
+open contributions and open source.
+
+474
+00:27:23.518 --> 00:27:26.718
+It has been, I think, one of the most successful strategies.
+
+475
+00:27:27.198 --> 00:27:30.558
+But there, the deployment has never been as close, right?
+
+476
+00:27:30.698 --> 00:27:33.898
+As what we are facing now in the clinic and in cancer research.
+
+477
+00:27:34.898 --> 00:27:37.738
+I think it's a very interesting discussion because it really illuminates that there
+
+478
+00:27:37.758 --> 00:27:41.648
+are many stakeholders involved in this, and increasingly, as you point out,
+
+479
+00:27:41.718 --> 00:27:42.648
+some of these
+
+480
+00:27:43.578 --> 00:27:45.978
+apps are being pushed even towards patients, right?
+
+481
+00:27:46.158 --> 00:27:50.058
+So, as we have more of a consumer health component to all
+
+482
+00:27:50.098 --> 00:27:53.978
+of this, that changes the calculus as well, and I think the
+
+483
+00:27:53.998 --> 00:27:54.827
+whole message here is,
+
+484
+00:27:55.918 --> 00:27:58.858
+first of all, it's clear we are not all the way there with the research, so we have
+
+485
+00:27:58.878 --> 00:28:01.298
+to continue that community effort.
+
+486
+00:28:01.338 --> 00:28:05.058
+And I think the more open source it can be, the greater trust
+
+487
+00:28:05.278 --> 00:28:07.058
+we will probably all have in it as well.
+
+488
+00:28:07.098 --> 00:28:10.418
+I think there's an issue of trust and transparency,
+
+489
+00:28:10.498 --> 00:28:14.318
+reproducibility, traceability of what we're doing and seeing how we're
+
+490
+00:28:14.378 --> 00:28:18.288
+improving. So I think on the research side, we have to have that, and I think
+
+491
+00:28:18.298 --> 00:28:21.327
+we actually need a research component to continue to fuel what's happening
+
+492
+00:28:21.338 --> 00:28:24.278
+clinically because the data, the models are shifting.
+
+493
+00:28:25.258 --> 00:28:27.578
+But there we also need some regulation, right?
+
+494
+00:28:27.678 --> 00:28:31.398
+And figuring out the risk benefit, I think, is so important because
+
+495
+00:28:32.058 --> 00:28:35.868
+there's arguments that you could say in very low-resource environments, we have
+
+496
+00:28:35.898 --> 00:28:39.478
+none of these tools, and gosh, wouldn't it be better to be
+
+497
+00:28:39.538 --> 00:28:42.918
+closer to the right-- There's an argument to be made about how we
+
+498
+00:28:42.958 --> 00:28:46.777
+deploy any of this, and I think that's one of the really exciting
+
+499
+00:28:47.378 --> 00:28:49.798
+applications of AI to democratize it.
+
+500
+00:28:49.818 --> 00:28:53.768
+But if we get it wrong, if it's biased or otherwise, we know it can
+
+501
+00:28:53.798 --> 00:28:57.628
+also induce harm. So it's a really, I
+
+502
+00:28:57.678 --> 00:28:57.998
+think,
+
+503
+00:28:59.478 --> 00:29:02.527
+pivotal time for the field to think about this, and I think it will take the
+
+504
+00:29:02.558 --> 00:29:03.068
+academic
+
+505
+00:29:03.878 --> 00:29:07.378
+communities as well as the professional societies, regulatory
+
+506
+00:29:07.398 --> 00:29:10.608
+bodies to think on this. And we all
+
+507
+00:29:11.098 --> 00:29:13.418
+perhaps have a role in shaping that future.
+
+508
+00:29:14.678 --> 00:29:17.898
+Yeah. I really like the comment on open community.
+
+509
+00:29:17.998 --> 00:29:21.558
+I think we have a lot to learn from the computer science community, but our risk is
+
+510
+00:29:21.618 --> 00:29:24.658
+different, so we're going to have to probably have a hybrid solution.
+
+511
+00:29:24.958 --> 00:29:27.738
+So I would like to pause here for a second or two.
+
+512
+00:29:28.338 --> 00:29:31.718
+If there are any questions in the audience, don't hesitate to
+
+513
+00:29:32.158 --> 00:29:34.418
+stand up and go to the microphone.
+
+514
+00:29:35.318 --> 00:29:38.418
+Any questions online?
+
+515
+00:29:39.478 --> 00:29:41.158
+No, there are no questions online.
+
+516
+00:29:42.358 --> 00:29:43.258
+So yeah, go ahead.
+
+517
+00:29:43.658 --> 00:29:43.898
+Hello.
+
+518
+00:29:46.298 --> 00:29:49.578
+Correct me if I am wrong, but I got the impression that there are
+
+519
+00:29:49.738 --> 00:29:53.678
+many foundational models out there developed by individual
+
+520
+00:29:53.778 --> 00:29:56.858
+companies, individual institutions, universities, et cetera.
+
+521
+00:29:58.498 --> 00:29:59.518
+Do we need one
+
+522
+00:30:00.978 --> 00:30:02.598
+model for biomedical research
+
+523
+00:30:04.006 --> 00:30:07.566
+... developed, trained with the best data, the cleanest
+
+524
+00:30:07.646 --> 00:30:08.076
+data,
+
+525
+00:30:09.226 --> 00:30:11.546
+maybe by a public consortium like
+
+526
+00:30:12.406 --> 00:30:14.246
+the human genome was back in the day?
+
+527
+00:30:14.376 --> 00:30:18.266
+Do you think we need one model instead of so many?
+
+528
+00:30:19.506 --> 00:30:22.686
+So do we need one model to rule them all?
+
+529
+00:30:24.226 --> 00:30:25.256
+It's right now.
+
+530
+00:30:25.256 --> 00:30:28.826
+Yeah. There is so much overlap on the panel. I think we only need one of us.
+
+531
+00:30:29.486 --> 00:30:33.166
+So no, it's a valid question in terms of
+
+532
+00:30:33.206 --> 00:30:37.066
+investment, right? In pathology,
+
+533
+00:30:37.166 --> 00:30:39.966
+Alex, how many foundation models are there in pathology?
+
+534
+00:30:40.306 --> 00:30:41.446
+So many. So many.
+
+535
+00:30:41.566 --> 00:30:42.266
+Can you count them?
+
+536
+00:30:43.106 --> 00:30:43.746
+Probably like-
+
+537
+00:30:44.086 --> 00:30:45.946
+15 good open source-
+
+538
+00:30:46.006 --> 00:30:46.206
+Yeah
+
+539
+00:30:46.215 --> 00:30:47.946
+... foundation models. So yeah.
+
+540
+00:30:47.986 --> 00:30:51.706
+But there is also a concept in computer science, which is there is no free
+
+541
+00:30:51.766 --> 00:30:54.966
+lunch. So not a single model can always win.
+
+542
+00:30:55.926 --> 00:30:59.366
+But there is a trade-off. As a community, do we keep
+
+543
+00:30:59.446 --> 00:31:01.946
+investing in building those, let's say,
+
+544
+00:31:02.966 --> 00:31:06.826
+pathology foundation models, or do we create coalition, or do
+
+545
+00:31:06.866 --> 00:31:10.846
+we let it loose and let model Darwinism operate?
+
+546
+00:31:11.366 --> 00:31:13.946
+So maybe we can have perspective from the whole panel.
+
+547
+00:31:15.086 --> 00:31:18.496
+In the end, it's a decision of everyone else if they want to build another
+
+548
+00:31:18.506 --> 00:31:20.826
+foundation model, right? I think ultimately,
+
+549
+00:31:21.726 --> 00:31:25.546
+probably we get to a realization in which domains are we pretty good, and we should
+
+550
+00:31:25.626 --> 00:31:29.236
+always have several models because there will be just not one model that kind of
+
+551
+00:31:29.286 --> 00:31:32.526
+fits all purposes. So there will always be multiple models.
+
+552
+00:31:32.606 --> 00:31:33.256
+And then,
+
+553
+00:31:34.206 --> 00:31:37.466
+I think at some point, everybody realizes that it's somehow time to move on.
+
+554
+00:31:37.486 --> 00:31:41.226
+Okay, so we've been pretty good at H&amp;E models, and even there we are
+
+555
+00:31:41.246 --> 00:31:45.086
+probably not at the end, right? But how can we integrate other spatial aspects?
+
+556
+00:31:45.186 --> 00:31:48.636
+And so I think it's very natural that the community moves to the most exciting and
+
+557
+00:31:48.666 --> 00:31:50.886
+most challenging questions.
+
+558
+00:31:51.106 --> 00:31:52.146
+Okay.
+
+559
+00:31:52.206 --> 00:31:56.006
+Yeah. No, I agree. I think at some point, it becomes also diminishing returns.
+
+560
+00:31:56.086 --> 00:31:59.376
+And I think the question that many people have, and we could have maybe a thread
+
+561
+00:31:59.426 --> 00:32:01.266
+about this if it's of interest, but
+
+562
+00:32:02.366 --> 00:32:06.246
+the sort of trade-offs in terms of fine-tuning models for particular tasks that
+
+563
+00:32:06.286 --> 00:32:09.466
+we might want to use them for. I think we don't really have
+
+564
+00:32:10.086 --> 00:32:13.806
+fully multimodal models the way we all would envision them because we
+
+565
+00:32:13.866 --> 00:32:17.166
+don't have multimodal data the way we would dream of.
+
+566
+00:32:17.626 --> 00:32:21.546
+So then it becomes a wonderful question of
+
+567
+00:32:21.606 --> 00:32:25.206
+how much gain or bang for buck do you get from additional modalities.
+
+568
+00:32:25.246 --> 00:32:29.006
+We had some of this in our session in this very same room just a few hours ago.
+
+569
+00:32:29.046 --> 00:32:31.555
+So I think lots to be contemplated there.
+
+570
+00:32:32.946 --> 00:32:34.006
+Maybe just one more remark.
+
+571
+00:32:35.126 --> 00:32:37.606
+In this AI virtual cell paper that we wrote two...
+
+572
+00:32:38.446 --> 00:32:41.266
+or a year and a half ago, we actually had a section.
+
+573
+00:32:41.286 --> 00:32:45.086
+Will there be one AI virtual cell? And the answer is no, because there will be
+
+574
+00:32:45.106 --> 00:32:47.266
+private instances and public models, right?
+
+575
+00:32:47.306 --> 00:32:51.096
+And so there we already kind of came to the conclusion that
+
+576
+00:32:51.146 --> 00:32:55.066
+also for different components, there will be multiple model, which then makes
+
+577
+00:32:55.106 --> 00:32:58.806
+it also more challenging to, of course, build models that integrate many
+
+578
+00:32:59.066 --> 00:33:01.606
+aspects because we have many different model choices.
+
+579
+00:33:02.206 --> 00:33:02.446
+But
+
+580
+00:33:04.386 --> 00:33:04.526
+yeah.
+
+581
+00:33:04.536 --> 00:33:04.536
+Yeah.
+
+582
+00:33:04.536 --> 00:33:07.686
+Yeah. I agree with everything that's been-- I guess I'll answer from a more social
+
+583
+00:33:07.726 --> 00:33:08.466
+perspective.
+
+584
+00:33:09.466 --> 00:33:10.376
+I think it's
+
+585
+00:33:13.326 --> 00:33:14.106
+beneficial
+
+586
+00:33:14.926 --> 00:33:17.055
+for the community and for society to have
+
+587
+00:33:18.126 --> 00:33:21.146
+a multitude of models being developed and
+
+588
+00:33:24.066 --> 00:33:28.046
+many groups pushing towards advancing the next model
+
+589
+00:33:28.146 --> 00:33:29.206
+iteration.
+
+590
+00:33:30.666 --> 00:33:34.446
+Creating a single model, even if it's kind of housed within
+
+591
+00:33:34.566 --> 00:33:36.096
+a fairly
+
+592
+00:33:37.426 --> 00:33:39.476
+neutral broker, I think is a fairly
+
+593
+00:33:39.886 --> 00:33:42.546
+potentially dangerous situation.
+
+594
+00:33:42.766 --> 00:33:44.986
+So I think, as much as we can encourage
+
+595
+00:33:46.406 --> 00:33:49.766
+open models where possible, that's not possible with a lot of
+
+596
+00:33:50.646 --> 00:33:54.226
+private protected health data.
+
+597
+00:33:55.086 --> 00:33:58.936
+And many different communities building models, the better,
+
+598
+00:33:59.106 --> 00:34:02.526
+both in terms of making sure the models become better and better over time
+
+599
+00:34:03.106 --> 00:34:06.186
+and ensuring that everyone continues to have
+
+600
+00:34:06.786 --> 00:34:08.866
+access to well-performing models.
+
+601
+00:34:10.346 --> 00:34:14.207
+I'll say one other opportunity I think for
+
+602
+00:34:14.246 --> 00:34:18.086
+us as a community is that the foundation models that do exist have, by and large,
+
+603
+00:34:18.147 --> 00:34:20.167
+not been intentionally designed, right?
+
+604
+00:34:20.286 --> 00:34:20.586
+They are
+
+605
+00:34:22.566 --> 00:34:26.546
+compiled out of institutions of convenience, and they are
+
+606
+00:34:26.627 --> 00:34:30.326
+not designed to represent the most common ways where
+
+607
+00:34:30.366 --> 00:34:33.366
+data may be acquired in future instances.
+
+608
+00:34:33.406 --> 00:34:37.366
+And so this is really-- I think this is a challenge because when we think
+
+609
+00:34:37.426 --> 00:34:38.187
+about deployment,
+
+610
+00:34:39.906 --> 00:34:43.667
+the majority of data passed through a foundation model may be
+
+611
+00:34:43.726 --> 00:34:47.226
+technically out of domain because it hasn't been collected on the right microscope
+
+612
+00:34:47.266 --> 00:34:49.846
+or it hasn't been processed with the right
+
+613
+00:34:50.746 --> 00:34:52.886
+capture technology in the operating room.
+
+614
+00:34:52.986 --> 00:34:56.526
+So I think there is opportunity for us as a community to say, if we're going to
+
+615
+00:34:56.546 --> 00:34:59.946
+invest in some additional foundation model development, what are
+
+616
+00:35:00.006 --> 00:35:03.306
+the points of metadata that need to be
+
+617
+00:35:03.326 --> 00:35:05.146
+represented in the model development?
+
+618
+00:35:05.226 --> 00:35:06.806
+And Caroline Chung really
+
+619
+00:35:08.786 --> 00:35:11.846
+talks about this a lot, and I think it's a really good point to think about.
+
+620
+00:35:12.626 --> 00:35:16.426
+What are the components, what are the elements
+
+621
+00:35:16.506 --> 00:35:20.326
+that will be reflected in the encodings from a foundation model that
+
+622
+00:35:20.386 --> 00:35:23.866
+need to be built representatively over the
+
+623
+00:35:23.906 --> 00:35:26.086
+population of anticipated future deployment?
+
+624
+00:35:26.436 --> 00:35:30.246
+And I think those components, as well as the model architecture size and
+
+625
+00:35:30.286 --> 00:35:32.326
+scope, are not currently
+
+626
+00:35:33.386 --> 00:35:35.526
+built into the model joint development.
+
+627
+00:35:36.566 --> 00:35:40.466
+I'll be the cynic in the room. As long as journals publish them, there will
+
+628
+00:35:40.526 --> 00:35:40.966
+be more.
+
+629
+00:35:42.546 --> 00:35:44.106
+So question from the audience.
+
+630
+00:35:44.866 --> 00:35:46.746
+Thank you very much. Excellent panel.
+
+631
+00:35:47.266 --> 00:35:50.206
+I have a question for which I don't have an answer.
+
+632
+00:35:50.246 --> 00:35:53.186
+I'm wrestling with the question. I'd love to hear your thoughts.
+
+633
+00:35:53.326 --> 00:35:56.906
+I recently updated my phone, and the first thing that Android asked
+
+634
+00:35:56.946 --> 00:35:59.366
+me is, do you want to connect MyChart?
+
+635
+00:35:59.486 --> 00:36:03.156
+Do you want to connect CVS, Walgreens, your Apple Watch,
+
+636
+00:36:03.346 --> 00:36:07.226
+all the other things? So it basically started asking if I wanted to have
+
+637
+00:36:07.406 --> 00:36:11.166
+all my data as a patient centralized inside the
+
+638
+00:36:11.186 --> 00:36:14.990
+Android platform. Which reaches about two billion people, right?The
+
+639
+00:36:15.050 --> 00:36:18.630
+second question was: who do you want me to give access to?
+
+640
+00:36:18.970 --> 00:36:22.210
+I have access to Anthropic Healthcare,
+
+641
+00:36:22.550 --> 00:36:26.330
+ChatGPT Health, and it asked me, "These yes, these no."
+
+642
+00:36:27.110 --> 00:36:30.930
+So the question for the panel is, in this new environment that it
+
+643
+00:36:30.970 --> 00:36:33.730
+looks like Android is deploying.
+
+644
+00:36:34.590 --> 00:36:38.090
+And basically where they are giving the patient a
+
+645
+00:36:38.250 --> 00:36:42.130
+key for the data vault. Which we said it's a
+
+646
+00:36:42.770 --> 00:36:46.150
+key component. What do you think are the new opportunities for us
+
+647
+00:36:46.730 --> 00:36:47.430
+as a community?
+
+648
+00:36:49.630 --> 00:36:49.930
+Thank you.
+
+649
+00:36:51.050 --> 00:36:51.170
+Well-
+
+650
+00:36:51.250 --> 00:36:52.010
+I don't have the answer.
+
+651
+00:36:53.070 --> 00:36:56.870
+I'll start. As a physician, I will say, I'm
+
+652
+00:36:56.910 --> 00:37:00.810
+going to try not to name any names. But let me just say that the worst
+
+653
+00:37:00.870 --> 00:37:04.650
+part of my clinical job is interacting with my current electronic health
+
+654
+00:37:04.770 --> 00:37:07.440
+record provider. And so I imagine this
+
+655
+00:37:08.410 --> 00:37:10.530
+future state where,
+
+656
+00:37:11.510 --> 00:37:15.470
+on behalf of my patients, their raw clinical data,
+
+657
+00:37:15.960 --> 00:37:18.830
+their imaging, their pathology, raw
+
+658
+00:37:20.250 --> 00:37:23.580
+images, their lab values, and the
+
+659
+00:37:24.850 --> 00:37:28.830
+audio recordings of our conversations are all dumped into a central
+
+660
+00:37:28.970 --> 00:37:32.710
+personalized repository that is capable of
+
+661
+00:37:33.190 --> 00:37:33.770
+analyzing
+
+662
+00:37:35.270 --> 00:37:38.650
+multimodal data through some large transformer architecture.
+
+663
+00:37:39.270 --> 00:37:39.470
+And
+
+664
+00:37:40.310 --> 00:37:44.060
+the data exists and is passed in real-time to me and
+
+665
+00:37:44.130 --> 00:37:47.450
+to my patient so that we can have an informed
+
+666
+00:37:47.530 --> 00:37:50.950
+conversation. And so that we obviate the need of this
+
+667
+00:37:51.070 --> 00:37:54.750
+incredibly cumbersome
+
+668
+00:37:55.090 --> 00:37:58.010
+intermediary step, which is our current proprietary
+
+669
+00:37:58.750 --> 00:38:00.450
+electronic health record systems,
+
+670
+00:38:01.410 --> 00:38:03.990
+and allows us a much more free flow of information.
+
+671
+00:38:04.050 --> 00:38:07.590
+So my side, the privacy, the security
+
+672
+00:38:07.610 --> 00:38:11.430
+concerns are substantial. But the upshot for utilization
+
+673
+00:38:11.490 --> 00:38:15.090
+and as a medical provider, what I see as the future potential
+
+674
+00:38:15.190 --> 00:38:18.950
+would be transformative in terms of my
+
+675
+00:38:19.030 --> 00:38:20.250
+day-to-day quality of life.
+
+676
+00:38:22.190 --> 00:38:26.130
+So maybe I can follow up on that. But I think Daniela, you
+
+677
+00:38:26.170 --> 00:38:28.970
+should answer as well in terms of clinic first, maybe.
+
+678
+00:38:29.030 --> 00:38:30.710
+Yeah. I agree with everything you said.
+
+679
+00:38:30.850 --> 00:38:31.940
+I think there is
+
+680
+00:38:33.030 --> 00:38:35.589
+something Ken Mandl at Boston Children's Hospital talks about a lot.
+
+681
+00:38:35.680 --> 00:38:39.630
+There's a lot of potential, and I think I find it hard to
+
+682
+00:38:39.710 --> 00:38:43.010
+argue for a reason that it shouldn't be the patient who really
+
+683
+00:38:43.050 --> 00:38:45.270
+primarily owns the data, and
+
+684
+00:38:46.430 --> 00:38:49.990
+with appropriate disclosure to them and
+
+685
+00:38:50.050 --> 00:38:54.000
+education to them about the risks of what it means to share your data with
+
+686
+00:38:54.070 --> 00:38:57.150
+other entities. Everyone should have the choice on how to share their data.
+
+687
+00:38:57.470 --> 00:38:57.820
+Of course,
+
+688
+00:38:59.870 --> 00:39:01.970
+providing data to the
+
+689
+00:39:02.890 --> 00:39:06.490
+frontier model companies does,
+
+690
+00:39:07.390 --> 00:39:09.390
+as Alex, you just mentioned, carry risk.
+
+691
+00:39:09.470 --> 00:39:12.770
+And I do worry that's not being
+
+692
+00:39:13.150 --> 00:39:17.030
+adequately communicated to the population, what it
+
+693
+00:39:17.070 --> 00:39:18.410
+really means to share data
+
+694
+00:39:20.510 --> 00:39:23.650
+with
+
+695
+00:39:23.690 --> 00:39:26.390
+these proprietary models.
+
+696
+00:39:28.470 --> 00:39:30.090
+That said, I think there's huge potential,
+
+697
+00:39:31.950 --> 00:39:35.790
+as long as the data doesn't
+
+698
+00:39:36.530 --> 00:39:38.680
+in another way become locked up by another
+
+699
+00:39:39.690 --> 00:39:43.470
+one or two companies. And I think that's where we, as a community,
+
+700
+00:39:44.110 --> 00:39:47.730
+have a lot of power both in educating the population, educating patients, and also
+
+701
+00:39:47.770 --> 00:39:51.350
+pushing for regulation that ensures
+
+702
+00:39:51.410 --> 00:39:55.250
+that data that's being collected on patients, there's a
+
+703
+00:39:55.270 --> 00:39:58.210
+way for that also to contribute to the public good.
+
+704
+00:39:58.250 --> 00:40:02.050
+Because there is a long history in public health that there is a sense of
+
+705
+00:40:02.090 --> 00:40:04.970
+patients own their data, but there's some shared ownership because they also
+
+706
+00:40:05.010 --> 00:40:05.820
+benefit from
+
+707
+00:40:07.350 --> 00:40:08.790
+research and healthcare services.
+
+708
+00:40:08.810 --> 00:40:12.740
+And there is some ethical,
+
+709
+00:40:14.510 --> 00:40:18.130
+in some ways, requirement that some of that data be shared to
+
+710
+00:40:18.230 --> 00:40:20.250
+further help the next generation of patients.
+
+711
+00:40:20.280 --> 00:40:23.110
+And I do fear that if
+
+712
+00:40:24.050 --> 00:40:24.250
+the
+
+713
+00:40:26.210 --> 00:40:29.950
+data sharing becomes overly privatized and
+
+714
+00:40:30.110 --> 00:40:33.490
+industrialized in that way, we might lose the benefit
+
+715
+00:40:33.610 --> 00:40:37.050
+of the real-world evidence that we might otherwise
+
+716
+00:40:37.110 --> 00:40:40.550
+be able to benefit enormously from,
+
+717
+00:40:40.650 --> 00:40:41.950
+if realized properly.
+
+718
+00:40:43.610 --> 00:40:47.230
+So I'll say a few controversial points of view here.
+
+719
+00:40:48.310 --> 00:40:52.210
+We discussed the danger of basically there is no danger in the
+
+720
+00:40:52.230 --> 00:40:56.080
+patient owning the data, but there might be a danger that not only the risk are
+
+721
+00:40:56.090 --> 00:40:59.030
+not properly disclosed when you share your data, and you also have companies
+
+722
+00:40:59.050 --> 00:41:02.150
+building those platforms that are kind of locked up.
+
+723
+00:41:03.590 --> 00:41:06.590
+However, I don't think the current system is actually that different.
+
+724
+00:41:06.860 --> 00:41:09.650
+We lock up data in our hospital databases.
+
+725
+00:41:09.750 --> 00:41:13.720
+We make it, in effect, quite difficult for patients to get all their
+
+726
+00:41:13.810 --> 00:41:14.090
+data.
+
+727
+00:41:15.030 --> 00:41:16.430
+So if I really want to be
+
+728
+00:41:17.770 --> 00:41:18.670
+cynic again,
+
+729
+00:41:19.670 --> 00:41:23.310
+you could say that hospitals are actually playing that role right now.
+
+730
+00:41:24.170 --> 00:41:24.440
+And
+
+731
+00:41:25.750 --> 00:41:28.850
+sometimes very stupid paradoxical things happen.
+
+732
+00:41:28.910 --> 00:41:32.610
+It's easier for me often to, instead of
+
+733
+00:41:32.690 --> 00:41:36.520
+signing a data transfer agreement for another institution, it's
+
+734
+00:41:36.550 --> 00:41:39.830
+easier for me to put the data publicly so that my collaborators can grab them.
+
+735
+00:41:40.650 --> 00:41:44.230
+And so unless we optimize the way we share information
+
+736
+00:41:44.550 --> 00:41:48.210
+across institution and with the patient, it's going to be very hard to
+
+737
+00:41:48.290 --> 00:41:51.950
+argue against the fact that maybe patients should be the
+
+738
+00:41:51.970 --> 00:41:54.410
+brokers. But it opens another can of worms.
+
+739
+00:41:54.430 --> 00:41:56.830
+There are many, many risk associated to that.
+
+740
+00:41:56.850 --> 00:41:59.510
+But I really feel that the system we have today
+
+741
+00:42:00.370 --> 00:42:04.150
+is kind of broken, and it's not super obvious how to
+
+742
+00:42:04.190 --> 00:42:05.170
+fix it, in my opinion.
+
+743
+00:42:06.430 --> 00:42:10.090
+I just want to reflect on a conversation I had actually with a patient
+
+744
+00:42:10.530 --> 00:42:14.430
+survivor at this meeting who said when we're talking about ways that we
+
+745
+00:42:14.530 --> 00:42:18.150
+couldBring together data that have been behind firewalls
+
+746
+00:42:18.210 --> 00:42:22.040
+across continents and has fundamentally hindered
+
+747
+00:42:22.040 --> 00:42:25.990
+discoveries for rare diseases. And this patient
+
+748
+00:42:26.190 --> 00:42:29.940
+had one of those rare diseases and said, "Okay, how do we build something
+
+749
+00:42:30.610 --> 00:42:34.530
+that would be patient-forward, where patients are basically the brokers?"
+
+750
+00:42:35.070 --> 00:42:37.590
+And I said, "Well, this person's actually very creative." And so,
+
+751
+00:42:38.570 --> 00:42:42.130
+we started brainstorming about what it would take for that to look like.
+
+752
+00:42:42.190 --> 00:42:43.870
+And in fact, there are some examples.
+
+753
+00:42:44.370 --> 00:42:48.340
+And if some of you may know Cory Painter, who set up the Count Me In project at
+
+754
+00:42:48.390 --> 00:42:52.370
+the Broad. This is an effort where patients can say, "I contribute, I open consent.
+
+755
+00:42:52.410 --> 00:42:55.480
+Here's my data." It is publicly available for others to mine.
+
+756
+00:42:55.870 --> 00:42:58.770
+My lab has used those data. I'm sure many others have.
+
+757
+00:42:58.890 --> 00:43:02.350
+And, there are examples of this. And
+
+758
+00:43:02.390 --> 00:43:05.980
+so, I think many of you probably haven't heard of that, which also says,
+
+759
+00:43:06.310 --> 00:43:09.570
+how do we think about what it would mean to scale this?
+
+760
+00:43:09.630 --> 00:43:10.630
+And it's not just
+
+761
+00:43:11.570 --> 00:43:15.390
+it's the genomics, it's the healthcare data, it's the scale of what one could
+
+762
+00:43:15.430 --> 00:43:17.950
+achieve if data were shared in that manner.
+
+763
+00:43:17.980 --> 00:43:19.180
+And I think the other piece is,
+
+764
+00:43:19.990 --> 00:43:23.290
+for a lot of these other datasets, the issue that you're mentioning is, well, data
+
+765
+00:43:23.370 --> 00:43:26.700
+were collected through the routine course of patient care, and patients didn't
+
+766
+00:43:26.750 --> 00:43:29.090
+necessarily provide a consent for it to be used.
+
+767
+00:43:29.130 --> 00:43:32.770
+So a lot of this is about how data is being used and how we sort
+
+768
+00:43:32.810 --> 00:43:36.490
+of come back to the system and ask, what are the needs?
+
+769
+00:43:36.520 --> 00:43:40.030
+And I think there's also perhaps lack of
+
+770
+00:43:40.070 --> 00:43:42.000
+appreciation that we can
+
+771
+00:43:43.310 --> 00:43:46.370
+develop very powerful models, and I would like us to spend some time on
+
+772
+00:43:46.410 --> 00:43:49.070
+architecture at some point. We should come to this next.
+
+773
+00:43:49.630 --> 00:43:53.510
+But we can build these very powerful models, and they're only as good as the
+
+774
+00:43:53.550 --> 00:43:57.510
+data we input to them. So if data is rate-limiting for
+
+775
+00:43:57.550 --> 00:44:01.370
+oncology, for a disease that evolves continuously, for which we very seldom
+
+776
+00:44:01.450 --> 00:44:02.610
+have repeat measurements,
+
+777
+00:44:03.510 --> 00:44:07.410
+and we want to do better, we want to predict, we want
+
+778
+00:44:07.430 --> 00:44:11.069
+to forecast, which can be done, and be more anticipatory for patients, and maybe
+
+779
+00:44:11.130 --> 00:44:14.910
+even intervene before overt disease, well then we need
+
+780
+00:44:15.150 --> 00:44:17.970
+a very different approach to what we're doing perhaps today.
+
+781
+00:44:20.190 --> 00:44:22.310
+There's a question. Yeah. Hello, Mike.
+
+782
+00:44:22.870 --> 00:44:26.730
+So I think to follow up on that, and I think the conversation came
+
+783
+00:44:26.770 --> 00:44:30.579
+up in one of the sessions today or yesterday of who's going to pay for it,
+
+784
+00:44:30.690 --> 00:44:34.510
+right? I think our institutions are all advising
+
+785
+00:44:34.570 --> 00:44:38.350
+us to keep our models and our data and our images
+
+786
+00:44:38.430 --> 00:44:42.380
+in-house, right? Because there's tremendous value to these models
+
+787
+00:44:42.410 --> 00:44:44.370
+that can be capitalized on, right?
+
+788
+00:44:44.380 --> 00:44:47.139
+And our institutions are doing this because they're fighting to survive, right?
+
+789
+00:44:47.230 --> 00:44:51.120
+There's not a great funding climate, there's not an initiative
+
+790
+00:44:51.150 --> 00:44:51.810
+to pay for that.
+
+791
+00:44:52.630 --> 00:44:53.310
+So I think
+
+792
+00:44:54.250 --> 00:44:58.050
+in the need for us to share data and to share models
+
+793
+00:44:58.450 --> 00:45:02.430
+that have enormous capital value, who's going
+
+794
+00:45:02.450 --> 00:45:04.130
+to pay for it? And how do we do that?
+
+795
+00:45:05.530 --> 00:45:08.800
+This is a very poignant point, and there's a lot of discussion about this,
+
+796
+00:45:08.870 --> 00:45:12.510
+including from our new NCI director this week.
+
+797
+00:45:12.710 --> 00:45:16.630
+I guess I want to come back to just a point that absolutely data
+
+798
+00:45:16.710 --> 00:45:20.670
+have been likened to oil, gold, whatever you
+
+799
+00:45:20.690 --> 00:45:24.590
+want to say. But as Alex pointed out in the beginning, the
+
+800
+00:45:24.650 --> 00:45:28.250
+value is decreasing in some realms.
+
+801
+00:45:28.370 --> 00:45:32.250
+And so maybe we can follow up on that point and talk a little bit about
+
+802
+00:45:32.270 --> 00:45:34.850
+what that means in the context of these kinds of foundation models, where they're
+
+803
+00:45:34.890 --> 00:45:38.490
+there, and then actually, guess what? I didn't need that much data anymore, right?
+
+804
+00:45:38.610 --> 00:45:40.150
+So I think it's...
+
+805
+00:45:40.770 --> 00:45:44.370
+Yeah, I think it's a great point, and it's a really challenging one for
+
+806
+00:45:44.410 --> 00:45:47.070
+leadership to make this calculus, right?
+
+807
+00:45:48.270 --> 00:45:51.590
+At the beginning of the, let's say eight years ago, at the beginning of the AI
+
+808
+00:45:51.610 --> 00:45:55.310
+revolution, data was incredibly undervalued, right?
+
+809
+00:45:55.370 --> 00:45:59.230
+The institutions that had made investments in digitization stood
+
+810
+00:45:59.270 --> 00:46:02.470
+to benefit substantially from those investments.
+
+811
+00:46:02.800 --> 00:46:05.490
+And I think there are some really well-publicized
+
+812
+00:46:06.370 --> 00:46:08.770
+public instances where
+
+813
+00:46:09.670 --> 00:46:12.950
+licenses for huge volumes of data were made at
+
+814
+00:46:13.690 --> 00:46:17.590
+much below the value of that data in terms of the
+
+815
+00:46:17.610 --> 00:46:21.490
+commercialization potential. And now we're seeing the pendulum swing in the other
+
+816
+00:46:21.530 --> 00:46:25.190
+direction, where some of those, in some cases, some of the
+
+817
+00:46:25.730 --> 00:46:27.860
+same players are seeing investments
+
+818
+00:46:29.310 --> 00:46:32.930
+devalue substantially versus their
+
+819
+00:46:32.970 --> 00:46:35.669
+peaks. And part of that is because the
+
+820
+00:46:37.410 --> 00:46:39.010
+access to the data is
+
+821
+00:46:39.830 --> 00:46:43.730
+much more open. And so I think these same sorts of
+
+822
+00:46:43.770 --> 00:46:47.510
+economic boom-bust cycles are going to happen for a variety of
+
+823
+00:46:47.550 --> 00:46:49.350
+different data modes as we collect them.
+
+824
+00:46:49.390 --> 00:46:52.840
+And my intuition is that
+
+825
+00:46:52.870 --> 00:46:56.810
+institutions right now are still a little bit behind
+
+826
+00:46:57.010 --> 00:47:00.390
+and are thinking that their data is more valuable than they are, than it is.
+
+827
+00:47:01.070 --> 00:47:04.550
+And they are. I'm getting the noun clause wrong now.
+
+828
+00:47:05.050 --> 00:47:08.990
+And I think it's very challenging to think about
+
+829
+00:47:09.530 --> 00:47:10.910
+what are the combination,
+
+830
+00:47:11.730 --> 00:47:15.290
+maybe the value of an institution's data is still higher if
+
+831
+00:47:15.410 --> 00:47:18.890
+the demographics that they represent are unique, right?
+
+832
+00:47:18.970 --> 00:47:20.330
+This moding concept or
+
+833
+00:47:22.270 --> 00:47:25.930
+can you build models with that data that are more generalizable, for example.
+
+834
+00:47:26.030 --> 00:47:29.890
+So it's a really challenging-- it's a great question and a really challenging
+
+835
+00:47:29.970 --> 00:47:33.140
+scenario currently just because the field is
+
+836
+00:47:33.170 --> 00:47:36.870
+moving... The economics behind the field are moving very
+
+837
+00:47:36.950 --> 00:47:39.610
+quickly in parallel with the technology expanding rapidly.
+
+838
+00:47:42.110 --> 00:47:42.290
+Yeah.
+
+839
+00:47:44.230 --> 00:47:46.310
+Not the researchers. The clinician's going to pay for it.
+
+840
+00:47:46.390 --> 00:47:49.070
+You guys have tons of money. We don't.
+
+841
+00:47:49.570 --> 00:47:50.470
+Would you agree, Charlotte?
+
+842
+00:47:54.230 --> 00:47:57.749
+So, do you still have a question or is it a new one? Sorry.
+
+843
+00:47:59.610 --> 00:48:00.370
+I think you were first.
+
+844
+00:48:00.750 --> 00:48:01.630
+There's also one over there.
+
+845
+00:48:01.910 --> 00:48:02.310
+Oh, gosh.
+
+846
+00:48:02.390 --> 00:48:03.270
+Thank you. Sorry.
+
+847
+00:48:04.510 --> 00:48:06.190
+Hi, thank you so much for this panel.
+
+848
+00:48:06.570 --> 00:48:07.890
+So my question has a little bit
+
+849
+00:48:08.990 --> 00:48:12.800
+of a different track. But I've noticed in AI and biology, we borrow a
+
+850
+00:48:12.870 --> 00:48:16.210
+lot from computer science. Like over the talks the last couple of days, people
+
+851
+00:48:16.250 --> 00:48:18.370
+often compare their models to GPT.
+
+852
+00:48:19.350 --> 00:48:22.190
+But obviously, like you guys have talked about, biology and computer science are
+
+853
+00:48:22.210 --> 00:48:24.690
+very different. We don't have the vast amounts of data.
+
+854
+00:48:24.730 --> 00:48:26.530
+We don't have this multimodal data.
+
+855
+00:48:26.540 --> 00:48:29.310
+And you've already talked about how benchmarking needs to be different when it
+
+856
+00:48:29.370 --> 00:48:33.330
+comes to biology or cancer. But I was wondering if you could talk a little bit more
+
+857
+00:48:33.350 --> 00:48:36.550
+when it comes to designing model architecture when you're coming up with these
+
+858
+00:48:36.610 --> 00:48:39.770
+models and actually doing that, how we need to start thinking differently than
+
+859
+00:48:39.810 --> 00:48:42.590
+computer scientists might because of the unique challenges of our field.
+
+860
+00:48:45.040 --> 00:48:45.620
+Charlotte?
+
+861
+00:48:45.690 --> 00:48:49.020
+That's the focus of my lab and what we are thinking of.
+
+862
+00:48:49.680 --> 00:48:51.480
+So I can give you a couple of examples
+
+863
+00:48:52.440 --> 00:48:55.880
+just to understand all the modules that we can think of.
+
+864
+00:48:56.050 --> 00:48:59.560
+So on the one hand, we've built those large foundation models.
+
+865
+00:48:59.660 --> 00:49:03.380
+The core entity that goes in is tokenization.
+
+866
+00:49:03.420 --> 00:49:07.270
+And so that is the very first part where we need to think how do we tokenize all
+
+867
+00:49:07.360 --> 00:49:09.770
+the modules and all the entities that we feed into our model.
+
+868
+00:49:10.340 --> 00:49:13.480
+And then if you go at the very end of a model, like the learning objective,
+
+869
+00:49:14.480 --> 00:49:18.420
+we've understood now that training our models
+
+870
+00:49:18.520 --> 00:49:20.980
+without annotation actually has a lot of benefits.
+
+871
+00:49:21.040 --> 00:49:24.580
+So one of the aha moments I had in my own career was
+
+872
+00:49:25.420 --> 00:49:29.080
+looking at those large vision transformers that have been trained on
+
+873
+00:49:30.940 --> 00:49:34.420
+Instagram scale data, without any
+
+874
+00:49:34.460 --> 00:49:38.420
+supervision, outperforming models that had been trained to classify foreground
+
+875
+00:49:38.480 --> 00:49:42.110
+from background and actually being better because by not having
+
+876
+00:49:42.160 --> 00:49:46.060
+this very particular distinct task in mind, they've actually
+
+877
+00:49:46.070 --> 00:49:49.990
+learned patterns in the data that are much more generalizable, and then you take a
+
+878
+00:49:50.060 --> 00:49:53.520
+new data cohort and you actually outperform those specialized
+
+879
+00:49:53.560 --> 00:49:57.150
+models. But then the question is, what is the learning
+
+880
+00:49:57.220 --> 00:49:58.940
+objective, the learning signal we give?
+
+881
+00:49:59.920 --> 00:50:02.080
+If we just look at imaging, there's multiple.
+
+882
+00:50:02.160 --> 00:50:05.700
+We can mask, we can contrast. We can generate, we can
+
+883
+00:50:06.820 --> 00:50:08.600
+do a combination of those.
+
+884
+00:50:09.560 --> 00:50:13.120
+If we are looking at masking and we are looking at tissue data, is masking really
+
+885
+00:50:13.160 --> 00:50:16.990
+the strategy? If I mask a T cell, is there any signal for the
+
+886
+00:50:17.060 --> 00:50:20.940
+model to fill it in? Probably not. And then we have
+
+887
+00:50:21.080 --> 00:50:24.540
+so many different angles. It's not that we just train a language model where it's
+
+888
+00:50:24.620 --> 00:50:27.420
+all about text. We have so many models at the same time.
+
+889
+00:50:27.520 --> 00:50:31.380
+So we need to innovate, starting from
+
+890
+00:50:31.440 --> 00:50:35.260
+the level of tokenization all the way to the learning objectives that we are
+
+891
+00:50:35.300 --> 00:50:36.050
+designing and
+
+892
+00:50:38.160 --> 00:50:41.860
+the learning schemes that need to deal with unpaired data, as we already mentioned.
+
+893
+00:50:41.900 --> 00:50:45.750
+So, that's exactly the exercises, and that's why a lot of
+
+894
+00:50:45.750 --> 00:50:48.640
+money actually needs to also flow into AI development.
+
+895
+00:50:48.700 --> 00:50:52.060
+Not only into data collection efforts, but also really
+
+896
+00:50:52.100 --> 00:50:55.910
+consortia that concentrate on developing those tools and
+
+897
+00:50:55.940 --> 00:50:57.800
+those methods the same way
+
+898
+00:50:59.260 --> 00:51:01.020
+we funded computer science research.
+
+899
+00:51:01.060 --> 00:51:03.700
+So that's absolutely a critical component.
+
+900
+00:51:04.260 --> 00:51:07.760
+Then very last part is that a lot of
+
+901
+00:51:07.800 --> 00:51:09.980
+components are really focusing about agents.
+
+902
+00:51:10.360 --> 00:51:13.760
+Agents are great tools to bring a
+
+903
+00:51:13.820 --> 00:51:17.740
+language into the game, have an easy way to
+
+904
+00:51:17.760 --> 00:51:19.880
+interact with the models that we might be building.
+
+905
+00:51:20.460 --> 00:51:22.940
+But then at the same time, so far, they're mostly
+
+906
+00:51:23.960 --> 00:51:24.900
+automating or
+
+907
+00:51:25.780 --> 00:51:28.540
+standardizing or giving us an access to those models.
+
+908
+00:51:29.140 --> 00:51:33.060
+In biology, we need more because we have no language access
+
+909
+00:51:33.100 --> 00:51:36.010
+to the data. We don't know what we see. We don't know what to interpret.
+
+910
+00:51:36.040 --> 00:51:39.380
+We have no reasoning traces. So that's another challenge.
+
+911
+00:51:39.840 --> 00:51:43.500
+We need clearly agent interfaces, but then our current agents are
+
+912
+00:51:43.600 --> 00:51:46.400
+just more sophisticated tool callers.
+
+913
+00:51:46.620 --> 00:51:49.180
+They cannot integrate with the foundation models that we've built.
+
+914
+00:51:49.600 --> 00:51:53.520
+And then we can't really prompt our models because we simply don't
+
+915
+00:51:53.600 --> 00:51:56.900
+know what they're supposedly capturing because we don't know the ground truth, we
+
+916
+00:51:56.940 --> 00:51:59.800
+don't know the underlying biology, we don't know the mechanisms.
+
+917
+00:51:59.860 --> 00:52:03.590
+So also here, a huge amount of tasks that
+
+918
+00:52:03.840 --> 00:52:04.600
+have to be solved.
+
+919
+00:52:06.240 --> 00:52:10.120
+I guess I'll just add to say, I think you hit on it, Charlotte, but I think one
+
+920
+00:52:10.160 --> 00:52:13.850
+thing that the community really needs to spend time thinking about
+
+921
+00:52:14.040 --> 00:52:17.240
+is this complexity of biology and giving
+
+922
+00:52:17.920 --> 00:52:21.810
+a biological framework in which we can reason because
+
+923
+00:52:21.860 --> 00:52:24.080
+it is not human language, to your point.
+
+924
+00:52:24.140 --> 00:52:27.800
+And we know that for some of the tasks of performance,
+
+925
+00:52:29.000 --> 00:52:32.720
+like mathematics, giving a mathematical
+
+926
+00:52:32.760 --> 00:52:36.600
+framework to how you think about deploying these
+
+927
+00:52:36.680 --> 00:52:40.100
+kinds of existing AI tools actually improve
+
+928
+00:52:40.180 --> 00:52:43.380
+performance quite substantially because they had a
+
+929
+00:52:43.440 --> 00:52:46.960
+system in which to operate. There is no such system
+
+930
+00:52:47.100 --> 00:52:50.780
+yet for biology, and I think that's actually what has to be built,
+
+931
+00:52:51.280 --> 00:52:52.980
+and we have to think about different architectures.
+
+932
+00:52:53.040 --> 00:52:56.560
+And, I think there's also the revolution that's already happening
+
+933
+00:52:56.570 --> 00:53:00.240
+in the broader AR community around thinking about world models, not
+
+934
+00:53:00.300 --> 00:53:04.140
+simply large language models, and how do
+
+935
+00:53:04.180 --> 00:53:06.000
+we relate that to the questions we have.
+
+936
+00:53:06.040 --> 00:53:09.900
+And maybe one other piece that we haven't talked about, it's
+
+937
+00:53:10.200 --> 00:53:13.970
+a bit distinct here, but as we get towards evaluating
+
+938
+00:53:14.000 --> 00:53:17.880
+then our frameworks, we have to think about uncertainty quantification
+
+939
+00:53:17.900 --> 00:53:18.490
+and what
+
+940
+00:53:19.500 --> 00:53:23.160
+that is. So we're back to actually a lot of good old statistics in its new
+
+941
+00:53:23.440 --> 00:53:27.320
+form in this context, and this is why there's so much need
+
+942
+00:53:27.360 --> 00:53:30.039
+for development. Then what are the
+
+943
+00:53:30.960 --> 00:53:34.580
+metrics and perhaps even independent data to
+
+944
+00:53:34.660 --> 00:53:37.680
+evaluate performance of these new approaches?
+
+945
+00:53:40.260 --> 00:53:41.830
+Yeah. So I'm not a computer science, so I
+
+946
+00:53:43.940 --> 00:53:46.360
+can't speak too much to the architecture.
+
+947
+00:53:46.500 --> 00:53:50.160
+I will say, one thing kind of coming from the NLP
+
+948
+00:53:50.280 --> 00:53:54.200
+side of things is I was initially kind of surprised
+
+949
+00:53:54.280 --> 00:53:57.840
+when, okay, we had the BERT models, which are kind of the
+
+950
+00:53:57.860 --> 00:54:01.740
+predecessors of the large language models, slightly different architecture, but
+
+951
+00:54:01.800 --> 00:54:03.220
+similar to the GPT models,
+
+952
+00:54:05.800 --> 00:54:09.580
+really kind of outperformed a lot of baselines from the previous NLP
+
+953
+00:54:09.640 --> 00:54:12.240
+methods. And then we got the GPT models, and it was like, wow.
+
+954
+00:54:12.320 --> 00:54:16.140
+When I first saw the GPT-3
+
+955
+00:54:16.220 --> 00:54:16.640
+output,
+
+956
+00:54:17.440 --> 00:54:20.660
+looking back now, I would think it wasn't that impressive, but honestly, I couldn't
+
+957
+00:54:20.700 --> 00:54:24.440
+believe my eyes. But it kind of makes sense that language
+
+958
+00:54:24.480 --> 00:54:27.370
+models are what got us this kind of initial, really
+
+959
+00:54:28.060 --> 00:54:31.720
+impressively performance models because language is how we communicate knowledge
+
+960
+00:54:31.740 --> 00:54:33.570
+and reason. So it's almost already--
+
+961
+00:54:34.520 --> 00:54:37.940
+there's a lot of abstracted knowledge that's easy for a model to learn when you
+
+962
+00:54:37.980 --> 00:54:38.860
+train it on text.
+
+963
+00:54:41.000 --> 00:54:44.800
+I don't have a reason to believe that the transformer architecture should
+
+964
+00:54:44.820 --> 00:54:47.040
+work similarly across modalities.
+
+965
+00:54:47.100 --> 00:54:50.840
+That being said, it is impressive how well the transformer
+
+966
+00:54:50.920 --> 00:54:52.860
+model does seem to be able to generalize.
+
+967
+00:54:52.920 --> 00:54:56.500
+So I think, as we get more data and we have it
+
+968
+00:54:56.560 --> 00:55:00.100
+paired with benchmarks-Maybe pre-specifying the
+
+969
+00:55:00.120 --> 00:55:02.040
+architecture will matter less and less and less,
+
+970
+00:55:03.100 --> 00:55:06.680
+but clearly we're not there quite yet.
+
+971
+00:55:08.260 --> 00:55:12.080
+I think I'll say one other thing that I think is a big opportunity for us is that
+
+972
+00:55:14.360 --> 00:55:16.080
+at its base, for example,
+
+973
+00:55:17.400 --> 00:55:18.620
+DinoV2 architecture
+
+974
+00:55:20.340 --> 00:55:21.020
+pushes
+
+975
+00:55:22.180 --> 00:55:24.800
+data into the feature space in a way that
+
+976
+00:55:25.100 --> 00:55:26.620
+intentionally
+
+977
+00:55:28.580 --> 00:55:32.240
+destructs some of the elements that
+
+978
+00:55:32.300 --> 00:55:35.300
+relate to density of data,
+
+979
+00:55:36.360 --> 00:55:39.869
+a likeness of data. It generates a well-posed
+
+980
+00:55:40.660 --> 00:55:44.380
+feature space. And so I think there's also, if we're thinking about
+
+981
+00:55:44.400 --> 00:55:48.060
+models that can help us understand biology, I think it will
+
+982
+00:55:48.180 --> 00:55:50.400
+also be helpful to develop
+
+983
+00:55:51.800 --> 00:55:55.440
+actual architectures that allow us to understand where the
+
+984
+00:55:55.480 --> 00:55:59.360
+knowledge gaps are. Because I think that there's this
+
+985
+00:55:59.420 --> 00:56:02.860
+assumption that when you feed a model enough data, it is
+
+986
+00:56:02.879 --> 00:56:06.400
+representative of all reality, and therefore it fills a space that
+
+987
+00:56:06.480 --> 00:56:09.890
+is reflective of that reality. And I think that's
+
+988
+00:56:11.000 --> 00:56:14.890
+making some critical assumptions, particularly with intrinsic factors of biology,
+
+989
+00:56:14.980 --> 00:56:16.980
+that is maybe a bridge too far.
+
+990
+00:56:20.480 --> 00:56:23.920
+Maybe just one more comment. I think that's actually a very nice thought.
+
+991
+00:56:25.340 --> 00:56:29.280
+Then there's, of course, also the ability of using the generative
+
+992
+00:56:29.360 --> 00:56:29.900
+process
+
+993
+00:56:29.920 --> 00:56:33.780
+skill to
+
+994
+00:56:34.020 --> 00:56:37.580
+use it as a learning signal, or if we are talking about multimodal models, if I'm
+
+995
+00:56:37.680 --> 00:56:41.490
+able to go from one modality to the other, do I have actually learned
+
+996
+00:56:41.600 --> 00:56:45.180
+underlying biological rules that are good enough to make my model a
+
+997
+00:56:45.220 --> 00:56:48.380
+generalist model? But this is all to be proven.
+
+998
+00:56:49.900 --> 00:56:51.560
+Maybe I'll say one more thing.
+
+999
+00:56:53.760 --> 00:56:56.900
+More data is not always the best. We discussed about diversity.
+
+1000
+00:56:57.100 --> 00:57:00.780
+My prediction is that in five years, 50% of internet is going to be AI slop.
+
+1001
+00:57:02.160 --> 00:57:05.360
+So there is a real question about data
+
+1002
+00:57:06.420 --> 00:57:10.150
+quality that's probably going to come up, because in the future, we'll have
+
+1003
+00:57:10.440 --> 00:57:14.180
+10 millions of whatever data types, but the truth is, it could be
+
+1004
+00:57:14.420 --> 00:57:16.560
+half of data you don't really need,
+
+1005
+00:57:17.500 --> 00:57:19.660
+and that could make the model worse.
+
+1006
+00:57:19.700 --> 00:57:23.580
+So I'm wondering if it's going to be an agentic system again, or whatever, but
+
+1007
+00:57:23.640 --> 00:57:25.120
+we're going to have to be able to
+
+1008
+00:57:26.380 --> 00:57:30.360
+be quite selective to make sure that we gather the essence, and
+
+1009
+00:57:30.460 --> 00:57:32.440
+we explore that space efficiently.
+
+1010
+00:57:32.470 --> 00:57:35.700
+And it could be that some data just don't exist and active learning kind of
+
+1011
+00:57:35.740 --> 00:57:39.040
+paradigm where you would ask the model, as you said, Charlotte,
+
+1012
+00:57:39.090 --> 00:57:42.440
+"What is the next space that I need to
+
+1013
+00:57:42.500 --> 00:57:46.220
+explore to really maximize the return on investment in terms of data
+
+1014
+00:57:46.280 --> 00:57:46.590
+modeling?"
+
+1015
+00:57:48.740 --> 00:57:49.440
+So question over there?
+
+1016
+00:57:49.940 --> 00:57:51.280
+Oh, no. That was my question. Thank you.
+
+1017
+00:57:52.340 --> 00:57:53.500
+I think in the middle.
+
+1018
+00:57:53.900 --> 00:57:54.840
+Oh, great. Sorry.
+
+1019
+00:57:54.900 --> 00:57:57.340
+Thanks, Christina. Thank you all for your time tonight.
+
+1020
+00:57:57.460 --> 00:57:59.460
+I want to ask more about the agents.
+
+1021
+00:57:59.700 --> 00:58:03.460
+I think that they could be very valuable in research, but I also think that
+
+1022
+00:58:03.820 --> 00:58:07.720
+we've already seen that there are misuses of agents in science.
+
+1023
+00:58:07.850 --> 00:58:11.620
+And so in terms of scientific integrity, each person has a
+
+1024
+00:58:11.660 --> 00:58:14.520
+responsibility to use agents properly and check on their work.
+
+1025
+00:58:14.860 --> 00:58:18.620
+But as PIs and as attendings, that responsibility is
+
+1026
+00:58:18.640 --> 00:58:22.180
+ultimately yours. So I would like to ask how each of you are thinking
+
+1027
+00:58:22.240 --> 00:58:25.800
+about setting standards for agent use in your labs and in your
+
+1028
+00:58:25.840 --> 00:58:28.820
+clinics to guarantee that scientific integrity over time.
+
+1029
+00:58:29.540 --> 00:58:30.500
+That's a good question.
+
+1030
+00:58:33.280 --> 00:58:33.520
+She's asking.
+
+1031
+00:58:33.540 --> 00:58:34.000
+Or Sophie.
+
+1032
+00:58:35.020 --> 00:58:35.840
+No, no. Go, go ahead.
+
+1033
+00:58:36.720 --> 00:58:37.520
+No, maybe we start.
+
+1034
+00:58:37.880 --> 00:58:40.120
+It's such a good question that nobody wants to start.
+
+1035
+00:58:41.920 --> 00:58:44.820
+I can start, and it is really challenging.
+
+1036
+00:58:45.380 --> 00:58:45.420
+We
+
+1037
+00:58:48.400 --> 00:58:50.820
+don't have any true agentic uses
+
+1038
+00:58:53.580 --> 00:58:54.700
+running in clinic
+
+1039
+00:58:55.980 --> 00:58:56.660
+as a part of
+
+1040
+00:58:57.620 --> 00:59:01.500
+actual clinical care delivery, depending on how you define agentic.
+
+1041
+00:59:01.520 --> 00:59:05.350
+We're using LLMs, and maybe there's some simple tool calling behind
+
+1042
+00:59:05.400 --> 00:59:06.020
+it.
+
+1043
+00:59:07.200 --> 00:59:10.780
+For clinical settings right now, they're all assistive, in which case
+
+1044
+00:59:10.790 --> 00:59:14.340
+the liability is ultimately on the clinician, and so it really is still on the
+
+1045
+00:59:14.359 --> 00:59:16.460
+clinician to review and make sure everything's correct.
+
+1046
+00:59:17.440 --> 00:59:20.900
+There's major issues with automation bias and
+
+1047
+00:59:21.440 --> 00:59:25.300
+over-reliance, and then ultimately, probably, likely de-skilling,
+
+1048
+00:59:26.360 --> 00:59:29.360
+that we haven't really
+
+1049
+00:59:30.180 --> 00:59:31.630
+completely filled the gaps in yet.
+
+1050
+00:59:31.740 --> 00:59:34.880
+I think there's going to be a lot of work on it, and I believe interface
+
+1051
+00:59:34.980 --> 00:59:38.940
+design and a lot of new innovations that might not be
+
+1052
+00:59:38.980 --> 00:59:42.380
+on the modeling side, but more how do we help humans be
+
+1053
+00:59:42.440 --> 00:59:46.290
+effective and vigilant overseers of AI when used as part of
+
+1054
+00:59:46.300 --> 00:59:50.260
+clinical care. But ultimately, if in an assistive setting, you can assume it's
+
+1055
+00:59:50.280 --> 00:59:52.280
+going to be the clinician who's liable if there's an error.
+
+1056
+00:59:53.560 --> 00:59:56.460
+As things become more automated, I believe that
+
+1057
+00:59:56.540 --> 00:59:59.360
+the more automated the method is,
+
+1058
+00:59:59.800 --> 01:00:03.620
+then there should be some responsibility and accountability that
+
+1059
+01:00:03.700 --> 01:00:07.180
+shifts towards the developer, and that will also push the developers
+
+1060
+01:00:07.240 --> 01:00:09.940
+to create the best and safest model possible.
+
+1061
+01:00:09.960 --> 01:00:13.620
+Without having any accountability and responsibility, we're going to really
+
+1062
+01:00:13.660 --> 01:00:16.040
+plateau at the performance of these clinical models, I believe.
+
+1063
+01:00:16.620 --> 01:00:20.520
+From the research setting, this is not fancy, but the way that I've
+
+1064
+01:00:20.560 --> 01:00:24.500
+been addressing it is I have basically a kind of written
+
+1065
+01:00:24.600 --> 01:00:25.140
+down
+
+1066
+01:00:27.160 --> 01:00:31.040
+standards of practice for my lab of when you can use
+
+1067
+01:00:31.100 --> 01:00:34.960
+AI and when you can't use AI. I do allow my lab to use AI
+
+1068
+01:00:35.090 --> 01:00:38.160
+for coding assistance, as long as they're able to
+
+1069
+01:00:38.220 --> 01:00:42.050
+understand the code that is being developed.
+
+1070
+01:00:42.760 --> 01:00:42.870
+But
+
+1071
+01:00:43.780 --> 01:00:45.000
+for writing,
+
+1072
+01:00:46.500 --> 01:00:49.500
+my bar is you can use it for copy
+
+1073
+01:00:49.600 --> 01:00:53.470
+editing and grammatical assistance, but not to generate
+
+1074
+01:00:53.500 --> 01:00:54.620
+any primary content.
+
+1075
+01:00:57.320 --> 01:01:01.240
+Yeah. I think something similar. I'll agree with you
+
+1076
+01:01:01.280 --> 01:01:02.200
+on the clinical side. We
+
+1077
+01:01:03.520 --> 01:01:05.380
+also don't use any specific agents.
+
+1078
+01:01:06.040 --> 01:01:08.860
+And on the research side, I think we have a similar...
+
+1079
+01:01:09.940 --> 01:01:13.580
+Basically, the bar is, in my lab, that every sentence needs to
+
+1080
+01:01:13.640 --> 01:01:15.140
+be principally humans
+
+1081
+01:01:15.240 --> 01:01:19.168
+constructed.I'll tell you though, that on
+
+1082
+01:01:19.188 --> 01:01:19.968
+the code side,
+
+1083
+01:01:22.108 --> 01:01:23.048
+the week that
+
+1084
+01:01:23.928 --> 01:01:27.888
+Claude Code with Opus 4.6 came out, I didn't sleep for
+
+1085
+01:01:27.908 --> 01:01:29.678
+three nights because I was like, "What
+
+1086
+01:01:30.508 --> 01:01:34.368
+just happened?" The first student
+
+1087
+01:01:34.708 --> 01:01:38.468
+sent me his work for the week, and it was a 38-page LaTeX document.
+
+1088
+01:01:38.498 --> 01:01:40.778
+And I was like, "What's going on right now?"
+
+1089
+01:01:41.108 --> 01:01:44.788
+And then the second early adopter
+
+1090
+01:01:44.848 --> 01:01:48.088
+had something analogous and was like, "Oh, I looked at these
+
+1091
+01:01:49.268 --> 01:01:53.058
+massive set of parallelized experiments." And then I was like,
+
+1092
+01:01:53.648 --> 01:01:57.348
+"Listen, everyone in the lab is getting as many tokens as you can consume."
+
+1093
+01:01:57.548 --> 01:01:59.568
+And I had a small
+
+1094
+01:02:00.428 --> 01:02:04.348
+account that a benefactor had given our lab, and I was
+
+1095
+01:02:04.388 --> 01:02:05.108
+like, "We're going to
+
+1096
+01:02:05.948 --> 01:02:09.728
+go as hard at as much
+
+1097
+01:02:10.908 --> 01:02:14.848
+Claude Code as we can consume to co-design a couple of
+
+1098
+01:02:14.888 --> 01:02:18.168
+months' worth of experiments." And I viewed it as an
+
+1099
+01:02:18.348 --> 01:02:20.588
+existential change in the
+
+1100
+01:02:21.468 --> 01:02:24.108
+way that productivity was developed.
+
+1101
+01:02:24.198 --> 01:02:27.968
+And I also had to change the way I evaluated students' work because I now
+
+1102
+01:02:28.068 --> 01:02:32.008
+can't look through all of the work all of my students do each
+
+1103
+01:02:32.088 --> 01:02:35.668
+week. I'd estimate an 8X
+
+1104
+01:02:35.728 --> 01:02:38.028
+increase in productivity per student.
+
+1105
+01:02:38.608 --> 01:02:39.678
+And so now I
+
+1106
+01:02:41.128 --> 01:02:44.608
+have resisted having an agent that reads my
+
+1107
+01:02:44.728 --> 01:02:48.408
+students' agentic output because then we're in the
+
+1108
+01:02:48.468 --> 01:02:49.768
+slop wars, right? Where just-
+
+1109
+01:02:49.778 --> 01:02:50.128
+Don't do that.
+
+1110
+01:02:50.248 --> 01:02:50.398
+Yeah.
+
+1111
+01:02:51.448 --> 01:02:51.588
+So
+
+1112
+01:02:53.268 --> 01:02:57.148
+now they have this huge portfolio of work and I'm like, "Well,
+
+1113
+01:02:57.208 --> 01:03:00.848
+tell me what the most exciting results were in
+
+1114
+01:03:01.368 --> 01:03:03.988
+your own human words and distill it for me what the
+
+1115
+01:03:05.208 --> 01:03:08.868
+results were so I can ensure that they're understanding the
+
+1116
+01:03:09.328 --> 01:03:12.648
+overall components." But that was what?
+
+1117
+01:03:13.068 --> 01:03:14.988
+End of February and end of January.
+
+1118
+01:03:15.048 --> 01:03:19.008
+It completely changed the outlook that I had for
+
+1119
+01:03:19.068 --> 01:03:22.948
+how my lab team structures were going to be for the foreseeable future.
+
+1120
+01:03:23.048 --> 01:03:27.007
+So it's an excellent question to ask and one that has made
+
+1121
+01:03:27.048 --> 01:03:28.788
+me tachycardic just thinking about it.
+
+1122
+01:03:31.148 --> 01:03:34.828
+Maybe just two anecdotes. So I think that that hiring
+
+1123
+01:03:34.948 --> 01:03:38.668
+cycle, I was interviewing a PhD student who came from a pre-doctorate
+
+1124
+01:03:38.788 --> 01:03:42.708
+program of one of the frontier labs working on one of the frontier LLMs, and
+
+1125
+01:03:42.748 --> 01:03:45.228
+I asked him about his coding practices.
+
+1126
+01:03:45.258 --> 01:03:46.758
+And he basically said that there's
+
+1127
+01:03:48.128 --> 01:03:51.928
+nobody ever coding anymore, or it seems very limited, at least
+
+1128
+01:03:51.988 --> 01:03:55.848
+he doesn't, because there's so many subteams within this frontier lab
+
+1129
+01:03:55.868 --> 01:03:59.368
+competing against each other, who's not coding with agents, right?
+
+1130
+01:03:59.988 --> 01:04:03.588
+At the same time, if we look at the recent studies that have been done at the
+
+1131
+01:04:03.648 --> 01:04:06.438
+leading AI conferences, NeurIPS, ICML,
+
+1132
+01:04:07.168 --> 01:04:10.348
+the problem that we have with hallucinated citations, right?
+
+1133
+01:04:10.388 --> 01:04:13.028
+We clearly know these models have massive flaws.
+
+1134
+01:04:13.468 --> 01:04:17.128
+A lot of papers that were desk rejected because of
+
+1135
+01:04:17.688 --> 01:04:21.488
+fraudulent activity. So I also see students
+
+1136
+01:04:21.628 --> 01:04:25.077
+being more productive, but there's pieces that those models cannot
+
+1137
+01:04:25.108 --> 01:04:28.808
+do, creative forming certain core
+
+1138
+01:04:28.868 --> 01:04:32.658
+elements of a model, or then the efficiency might be increased here,
+
+1139
+01:04:32.728 --> 01:04:36.528
+but then it drops there. It can also slow down the workflow, and I think
+
+1140
+01:04:36.568 --> 01:04:40.207
+that's, as a PI, actually quite hard to somewhat manage.
+
+1141
+01:04:40.288 --> 01:04:43.748
+And it's a skill for every student and everyone to
+
+1142
+01:04:44.048 --> 01:04:47.708
+acquire, like how do I use the model so that they actually make me more productive
+
+1143
+01:04:47.808 --> 01:04:51.338
+versus less productive, right? When sometimes we are prompting them and prompting
+
+1144
+01:04:51.368 --> 01:04:54.828
+them again, and in the meantime, I might have just written it myself.
+
+1145
+01:04:54.988 --> 01:04:55.448
+So...
+
+1146
+01:04:55.568 --> 01:04:58.708
+And you make the great point that that kind of critical reasoning can't be
+
+1147
+01:04:58.768 --> 01:05:01.388
+replaced. And we are still at a point where we mostly
+
+1148
+01:05:02.468 --> 01:05:06.048
+have students who at least went through their undergraduate education
+
+1149
+01:05:06.468 --> 01:05:08.308
+without access to these coding models.
+
+1150
+01:05:08.728 --> 01:05:12.688
+Soon we're going to start having students who have gone through their entire
+
+1151
+01:05:12.728 --> 01:05:16.297
+education with agentic assistance
+
+1152
+01:05:16.388 --> 01:05:18.908
+broadly and specifically right now, especially coding.
+
+1153
+01:05:19.398 --> 01:05:23.128
+And that's where I worry we're going to start seeing a real gap in their
+
+1154
+01:05:23.148 --> 01:05:27.068
+ability to oversee anything and to ask
+
+1155
+01:05:28.068 --> 01:05:29.428
+interesting research questions.
+
+1156
+01:05:30.408 --> 01:05:32.988
+I don't know what the term is. Is it deskalization?
+
+1157
+01:05:33.797 --> 01:05:33.797
+Descaling.
+
+1158
+01:05:33.828 --> 01:05:34.368
+Yeah. So
+
+1159
+01:05:35.368 --> 01:05:38.607
+I think to follow up on Alex's point,
+
+1160
+01:05:39.668 --> 01:05:43.328
+the speed at which you can prototype and test an idea
+
+1161
+01:05:43.488 --> 01:05:46.378
+has exploded. It's like 100 times now, right?
+
+1162
+01:05:47.508 --> 01:05:50.768
+That doesn't mean that that should be your end product.
+
+1163
+01:05:51.148 --> 01:05:53.368
+The way I see AI is that I prototype
+
+1164
+01:05:54.228 --> 01:05:56.888
+and then you need to kind of rethinking from scratch.
+
+1165
+01:05:56.928 --> 01:06:00.618
+You can still use AI to kind of distill that code,
+
+1166
+01:06:00.688 --> 01:06:04.288
+but in something I agree with Daniela, like something you would understand that you
+
+1167
+01:06:04.328 --> 01:06:08.127
+can own, that you can take responsibility for.
+
+1168
+01:06:08.168 --> 01:06:11.928
+But that's romantic. In the future, we're going to build
+
+1169
+01:06:11.968 --> 01:06:13.458
+those huge black boxes
+
+1170
+01:06:14.328 --> 01:06:18.188
+that are millions of lines of code with optimization we barely understand.
+
+1171
+01:06:18.208 --> 01:06:21.448
+And I think that's where it becomes a little bit tricky, is that I think we're
+
+1172
+01:06:21.468 --> 01:06:25.408
+going to spend more time building unit testing, positive and negative controls,
+
+1173
+01:06:25.468 --> 01:06:28.988
+to kind of see whether that black box does actually what
+
+1174
+01:06:29.648 --> 01:06:31.028
+we think it does,
+
+1175
+01:06:31.828 --> 01:06:35.288
+rather than going to the code line by line and take ownership for it.
+
+1176
+01:06:35.368 --> 01:06:38.388
+So we are in a transition period. I also agree with the...
+
+1177
+01:06:38.638 --> 01:06:42.428
+My kids were born with ChatGPT. So the way
+
+1178
+01:06:42.528 --> 01:06:46.448
+they learn is with those LLMs. They don't
+
+1179
+01:06:46.488 --> 01:06:47.408
+even ask me to
+
+1180
+01:06:48.308 --> 01:06:50.288
+help balance their homework. They say, "Oh, Dad, you know nothing.
+
+1181
+01:06:50.298 --> 01:06:52.758
+I'm going to ask Gemini to teach me that concept."
+
+1182
+01:06:53.568 --> 01:06:55.788
+And I think they're going to be born with it.
+
+1183
+01:06:55.808 --> 01:06:59.368
+And so the question is not should they use it or not, but rather how do you make
+
+1184
+01:06:59.448 --> 01:07:00.348
+sure that they have this
+
+1185
+01:07:01.268 --> 01:07:04.488
+symbiotic synergy that's really maximal,
+
+1186
+01:07:05.248 --> 01:07:08.918
+but they can still take ownership and responsibility and
+
+1187
+01:07:08.928 --> 01:07:11.448
+accountability for what they generate through those tools?
+
+1188
+01:07:12.088 --> 01:07:12.828
+Mm-hmm.
+
+1189
+01:07:12.968 --> 01:07:16.908
+I think this is such an important discussion that's going to continue
+
+1190
+01:07:16.968 --> 01:07:18.048
+to evolve and
+
+1191
+01:07:19.268 --> 01:07:23.008
+It hearkens to the need for a
+
+1192
+01:07:23.048 --> 01:07:26.108
+human still in the loop. We are still very much needed.
+
+1193
+01:07:26.148 --> 01:07:30.028
+And to your point about, for clinical applications, how do we
+
+1194
+01:07:30.088 --> 01:07:32.768
+maintain that accountability and where do we get the boost?
+
+1195
+01:07:33.208 --> 01:07:36.658
+What is the greatest gain, right? Whether in terms of
+
+1196
+01:07:36.688 --> 01:07:40.348
+efficiency or upskilling. Upskilling is what we should be looking for, right?
+
+1197
+01:07:40.388 --> 01:07:43.828
+And I think the concern is we may very much lose these skills.
+
+1198
+01:07:45.168 --> 01:07:48.278
+So I think the clinical versus the research side, but actually, it applies there
+
+1199
+01:07:48.308 --> 01:07:48.768
+too, right? You
+
+1200
+01:07:51.048 --> 01:07:54.938
+spend enough time with this, people lose their ability to sort of sit there
+
+1201
+01:07:54.988 --> 01:07:56.188
+and code.
+
+1202
+01:07:57.048 --> 01:08:00.608
+Which, maybe we have greater ambitions that we need to focus on, but I think the
+
+1203
+01:08:00.668 --> 01:08:04.628
+scientific reasoning, the questions, the understanding very much remains
+
+1204
+01:08:04.768 --> 01:08:08.728
+human at this point. And maybe we'll see that AGI moment.
+
+1205
+01:08:08.928 --> 01:08:11.088
+I don't know. For the questions I'm asking,
+
+1206
+01:08:11.468 --> 01:08:15.328
+this is not a full solution, but boy, wow,
+
+1207
+01:08:15.588 --> 01:08:19.428
+I feel like suddenly I might be not quite as efficient as the students in my lab,
+
+1208
+01:08:19.489 --> 01:08:22.648
+including Sophie, who asked the question, but maybe they'll let me play with them
+
+1209
+01:08:22.788 --> 01:08:23.188
+again.
+
+1210
+01:08:24.489 --> 01:08:28.468
+So, it's crazy
+
+1211
+01:08:28.489 --> 01:08:31.088
+times, and I think the same for the next generation.
+
+1212
+01:08:31.168 --> 01:08:33.348
+Watching my own kids, it's like, oh my goodness.
+
+1213
+01:08:33.409 --> 01:08:36.678
+I have philosophical debates about what that all will look like.
+
+1214
+01:08:37.579 --> 01:08:38.928
+What is the term? Anthropocentric.
+
+1215
+01:08:39.068 --> 01:08:41.989
+I think your view is very human-oriented.
+
+1216
+01:08:42.048 --> 01:08:45.848
+I'm not sure human is going to be needed at some point, but if we want to
+
+1217
+01:08:45.968 --> 01:08:49.388
+work for our own sake, I would rather involve me in some
+
+1218
+01:08:49.449 --> 01:08:51.768
+processes so I can keep some purpose.
+
+1219
+01:08:54.688 --> 01:08:55.708
+Question over there.
+
+1220
+01:08:58.208 --> 01:08:58.438
+Thank you.
+
+1221
+01:08:58.438 --> 01:08:59.369
+I think on the right mic.
+
+1222
+01:08:59.829 --> 01:09:02.548
+Yeah. Hi. Thank you for the interesting panel.
+
+1223
+01:09:03.888 --> 01:09:07.808
+I guess we are landing on the benchmark part as one of the main conclusions,
+
+1224
+01:09:08.008 --> 01:09:09.239
+but also thinking
+
+1225
+01:09:10.128 --> 01:09:13.949
+back to the research community, I was wondering your
+
+1226
+01:09:14.428 --> 01:09:18.088
+thoughts about how we ensure that the community has a
+
+1227
+01:09:18.168 --> 01:09:22.128
+shot in reproducing all these models, or at least trying
+
+1228
+01:09:22.228 --> 01:09:25.628
+to improve them and push the field forward.
+
+1229
+01:09:25.668 --> 01:09:27.888
+I'm thinking on the biology side, too.
+
+1230
+01:09:28.989 --> 01:09:32.788
+So how do we democratize the
+
+1231
+01:09:32.829 --> 01:09:36.748
+fact that everyone can implement and create these models?
+
+1232
+01:09:37.138 --> 01:09:40.597
+I couldn't quite hear
+
+1233
+01:09:40.628 --> 01:09:41.148
+it.
+
+1234
+01:09:41.588 --> 01:09:45.449
+That's super important, right? I think one example we had is AlphaFold,
+
+1235
+01:09:45.529 --> 01:09:48.909
+right? There's initiatives like OpenFold, who
+
+1236
+01:09:49.468 --> 01:09:52.529
+I think up to now were able to match the performance.
+
+1237
+01:09:52.619 --> 01:09:56.408
+And now there are some subtasks, I think it's antibody binding, but I'm not so
+
+1238
+01:09:56.508 --> 01:09:58.888
+sure. I might not be, where we
+
+1239
+01:10:00.088 --> 01:10:02.948
+are not able anymore to match the performance of those models.
+
+1240
+01:10:04.588 --> 01:10:08.468
+What do we need, right? So basically, we should have those initiatives that
+
+1241
+01:10:08.508 --> 01:10:08.908
+are able to
+
+1242
+01:10:09.828 --> 01:10:13.757
+have powerful models that are open and make them available for the
+
+1243
+01:10:13.808 --> 01:10:17.338
+community. This requires a lot of funding,
+
+1244
+01:10:17.668 --> 01:10:19.968
+right? Still support of
+
+1245
+01:10:20.908 --> 01:10:23.768
+data collection initiatives that ultimately have to be
+
+1246
+01:10:24.968 --> 01:10:28.648
+open sourcing their data. And we are in the midst or at the
+
+1247
+01:10:28.728 --> 01:10:30.328
+starting point of many of those, right?
+
+1248
+01:10:30.368 --> 01:10:33.848
+So there's even more data that is currently collected from those funded initiatives
+
+1249
+01:10:33.888 --> 01:10:36.108
+that will be ultimately released.
+
+1250
+01:10:36.148 --> 01:10:38.688
+And then also national infrastructures.
+
+1251
+01:10:38.728 --> 01:10:42.488
+In Switzerland, I'm training my models, and I can only train my
+
+1252
+01:10:42.508 --> 01:10:46.348
+models of this scale because I have access to the Swiss supercomputer
+
+1253
+01:10:46.368 --> 01:10:49.608
+that has proprietary access for researchers
+
+1254
+01:10:49.668 --> 01:10:51.948
+from the ETH and the EPFL
+
+1255
+01:10:52.508 --> 01:10:54.778
+universities to work on those, right?
+
+1256
+01:10:54.788 --> 01:10:58.108
+They also have part of the supercomputer reserved for the
+
+1257
+01:10:59.048 --> 01:11:02.838
+national weather, and then they have part of the supercomputer reserved to actually
+
+1258
+01:11:02.948 --> 01:11:06.808
+train Apertus, which was the Swiss open source
+
+1259
+01:11:06.948 --> 01:11:09.708
+LLM. But then there's also a lot of initiatives,
+
+1260
+01:11:10.648 --> 01:11:14.548
+like part of the supercomputer that's open for researchers like me to train those
+
+1261
+01:11:14.628 --> 01:11:16.568
+large foundation models in biomedicine.
+
+1262
+01:11:16.648 --> 01:11:20.328
+So in the end, it requires public funding to computing
+
+1263
+01:11:20.368 --> 01:11:24.188
+infrastructure that scales and keeps up
+
+1264
+01:11:24.388 --> 01:11:28.088
+with what we have in frontier labs, and then still funding of data
+
+1265
+01:11:28.128 --> 01:11:30.568
+initiatives that ultimately are open sourced.
+
+1266
+01:11:31.488 --> 01:11:31.768
+And
+
+1267
+01:11:32.628 --> 01:11:35.928
+support for projects such as OpenFold and many others that
+
+1268
+01:11:35.988 --> 01:11:39.287
+actually have an effort of building community models
+
+1269
+01:11:39.368 --> 01:11:41.868
+that keep up with
+
+1270
+01:11:42.888 --> 01:11:45.428
+closed source models.
+
+1271
+01:11:46.608 --> 01:11:49.128
+So the answer is go to Switzerland.
+
+1272
+01:11:49.968 --> 01:11:51.288
+They have everything you need over there.
+
+1273
+01:11:51.968 --> 01:11:53.528
+I have actually a related question
+
+1274
+01:11:54.788 --> 01:11:57.168
+for the panel, which is very close to my heart.
+
+1275
+01:11:59.028 --> 01:11:59.228
+So
+
+1276
+01:12:00.288 --> 01:12:02.168
+how do we ensure
+
+1277
+01:12:03.508 --> 01:12:06.248
+full transparency, reproducibility, and reusability
+
+1278
+01:12:07.388 --> 01:12:08.768
+of those very large
+
+1279
+01:12:09.668 --> 01:12:13.578
+AI models? And it's kind of related to your point in the
+
+1280
+01:12:13.668 --> 01:12:14.788
+sense that what
+
+1281
+01:12:15.708 --> 01:12:18.728
+makes us different, the public/academic, is that
+
+1282
+01:12:19.508 --> 01:12:22.888
+we're scientists, we advance science, and we do it in a transparent way.
+
+1283
+01:12:23.768 --> 01:12:25.448
+Companies don't have to do that, right?
+
+1284
+01:12:25.988 --> 01:12:28.928
+And so what I love about OpenFold is that you
+
+1285
+01:12:29.188 --> 01:12:33.048
+go deep dive, you try to reproduce
+
+1286
+01:12:33.108 --> 01:12:36.668
+some of the principles that have been described with beautiful text but no code in
+
+1287
+01:12:36.708 --> 01:12:38.808
+those kind of Google-led paper or whatnot.
+
+1288
+01:12:39.488 --> 01:12:42.728
+And that really elevate the whole field.
+
+1289
+01:12:43.088 --> 01:12:46.728
+So we need those initiatives. We cannot just rely on a black box that a
+
+1290
+01:12:46.788 --> 01:12:47.628
+company is building.
+
+1291
+01:12:48.808 --> 01:12:49.588
+On the other hand,
+
+1292
+01:12:51.008 --> 01:12:54.568
+do you believe that agentic AI is going to make our research more
+
+1293
+01:12:54.628 --> 01:12:56.428
+reproducible, or it's going to make it worse?
+
+1294
+01:12:57.388 --> 01:12:59.568
+What's the panel point of view on that?
+
+1295
+01:13:02.148 --> 01:13:02.548
+Worse.
+
+1296
+01:13:04.508 --> 01:13:08.328
+I think, just from a fundamental
+
+1297
+01:13:08.348 --> 01:13:11.448
+perspective, the more layers, the more
+
+1298
+01:13:11.528 --> 01:13:14.708
+complexity we are encoding in
+
+1299
+01:13:14.788 --> 01:13:18.638
+obscured layers, the harder it is to uncover
+
+1300
+01:13:19.388 --> 01:13:23.368
+associations that are responsible for rendering the final results
+
+1301
+01:13:23.488 --> 01:13:23.798
+and
+
+1302
+01:13:24.608 --> 01:13:27.378
+any spurious results. Right? So, I mean
+
+1303
+01:13:28.304 --> 01:13:29.044
+We have seen
+
+1304
+01:13:31.244 --> 01:13:35.044
+a lot on foundation models, this ACR, and I think that
+
+1305
+01:13:35.424 --> 01:13:39.344
+we know that each foundation model can encode any number of different
+
+1306
+01:13:39.364 --> 01:13:42.664
+metadata components, which have potentials for
+
+1307
+01:13:42.684 --> 01:13:45.124
+non-biological bias being part of models.
+
+1308
+01:13:45.144 --> 01:13:48.844
+And then those foundation model-derived features are combined through a series of
+
+1309
+01:13:48.904 --> 01:13:52.694
+agents who are operating through a LLM whose source code is not
+
+1310
+01:13:52.744 --> 01:13:56.254
+necessarily available. I think the transparency
+
+1311
+01:13:56.344 --> 01:13:59.944
+element, just without even talking about computer architectures that could
+
+1312
+01:13:59.984 --> 01:14:01.324
+be improved for
+
+1313
+01:14:02.684 --> 01:14:04.064
+these endpoints of
+
+1314
+01:14:04.904 --> 01:14:08.324
+reproducibility and transparency, I think that the move is
+
+1315
+01:14:08.824 --> 01:14:12.643
+rapidly in a direction which is opaque, opaquening.
+
+1316
+01:14:13.124 --> 01:14:15.264
+I don't know. Is that a word? It is a word now.
+
+1317
+01:14:15.324 --> 01:14:15.884
+It is a word now.
+
+1318
+01:14:16.004 --> 01:14:16.864
+Opaquening, TM.
+
+1319
+01:14:18.024 --> 01:14:21.984
+Of our understanding based on this incredible complexity that's
+
+1320
+01:14:22.004 --> 01:14:22.564
+being combined.
+
+1321
+01:14:24.604 --> 01:14:28.464
+Yeah. I agree. I don't see how agentic AI, unless
+
+1322
+01:14:28.564 --> 01:14:28.684
+you...
+
+1323
+01:14:30.393 --> 01:14:32.674
+realistically is going to make things more transparent.
+
+1324
+01:14:32.914 --> 01:14:36.824
+There's this question of even if you're collecting all the data about all
+
+1325
+01:14:36.844 --> 01:14:39.764
+the different tool calls and all the different interactions with the model, and you
+
+1326
+01:14:39.784 --> 01:14:40.454
+somehow make it
+
+1327
+01:14:41.584 --> 01:14:45.344
+available, these agents generate such an
+
+1328
+01:14:45.404 --> 01:14:49.184
+incredible amount of content that it'd be so difficult for
+
+1329
+01:14:49.224 --> 01:14:52.264
+anyone to review or even understand what it meant,
+
+1330
+01:14:53.984 --> 01:14:57.714
+when you're using it for a very large scale experiment.
+
+1331
+01:14:58.084 --> 01:15:01.954
+Now, one potential glimmer of hope I have is that,
+
+1332
+01:15:02.464 --> 01:15:06.384
+as we move towards in the clinical setting or the biomedical setting where there
+
+1333
+01:15:06.424 --> 01:15:07.704
+is an effort to create
+
+1334
+01:15:08.724 --> 01:15:12.224
+valuable clinical applications that
+
+1335
+01:15:12.244 --> 01:15:17.204
+provide
+
+1336
+01:15:17.224 --> 01:15:19.344
+real value either by improving
+
+1337
+01:15:22.464 --> 01:15:23.684
+patient outcomes or
+
+1338
+01:15:24.704 --> 01:15:28.184
+even allowing healthcare institutions to bill more.
+
+1339
+01:15:28.744 --> 01:15:29.884
+Some
+
+1340
+01:15:31.084 --> 01:15:34.904
+applications where you show clear
+
+1341
+01:15:34.984 --> 01:15:37.264
+return on investment, and therefore you can
+
+1342
+01:15:37.323 --> 01:15:42.184
+link
+
+1343
+01:15:42.224 --> 01:15:45.664
+it to requirements for transparency, for
+
+1344
+01:15:45.864 --> 01:15:49.304
+the buyer can have, "Okay, these are my
+
+1345
+01:15:49.364 --> 01:15:53.244
+expectations if I'm going to pay for it." These more commercial
+
+1346
+01:15:53.344 --> 01:15:57.094
+LLM type applications that don't have this really clear return on
+
+1347
+01:15:57.144 --> 01:15:58.134
+investment, there is
+
+1348
+01:15:59.304 --> 01:16:03.134
+no customer who's going to push strong enough, I think, for full
+
+1349
+01:16:03.204 --> 01:16:06.824
+transparency or reproducibility to make that a reality commercially.
+
+1350
+01:16:09.964 --> 01:16:10.004
+I
+
+1351
+01:16:11.284 --> 01:16:13.504
+think it's all been covered very well.
+
+1352
+01:16:13.684 --> 01:16:17.064
+I guess there's some places where I'm very excited about agentic
+
+1353
+01:16:17.124 --> 01:16:20.764
+workflows. Just to come back to some of that and think about places
+
+1354
+01:16:20.844 --> 01:16:21.243
+where,
+
+1355
+01:16:22.264 --> 01:16:26.024
+maybe to be counterculture, we want to build models that are very
+
+1356
+01:16:26.164 --> 01:16:30.113
+challenging to parameterize, and a human being used to sit there and
+
+1357
+01:16:30.444 --> 01:16:33.984
+crank through and think about how do we update these very large
+
+1358
+01:16:34.024 --> 01:16:37.704
+models that might relate to human biology or cancer.
+
+1359
+01:16:37.784 --> 01:16:41.764
+So, I personally think I'm very eager to actually
+
+1360
+01:16:41.804 --> 01:16:45.364
+run through, and I think the traceability of such a system has a lot of merits to
+
+1361
+01:16:45.404 --> 01:16:48.664
+say, "Okay, I'm simulating this particular disease
+
+1362
+01:16:48.684 --> 01:16:50.324
+process. I've built the simulator.
+
+1363
+01:16:50.514 --> 01:16:53.944
+By the way, I also get ground truth with my simulator," which is a bonus here given
+
+1364
+01:16:53.984 --> 01:16:57.964
+all we've talked about. So what if I can agentify that and get to the
+
+1365
+01:16:58.004 --> 01:17:01.644
+points of matching, basically evaluating those models much more readily.
+
+1366
+01:17:02.164 --> 01:17:05.754
+So I think there are many wonderful applications
+
+1367
+01:17:05.784 --> 01:17:08.684
+besides the gains of efficiency we just talked about.
+
+1368
+01:17:09.544 --> 01:17:13.304
+But we do need to focus on where we achieve that and what we need
+
+1369
+01:17:13.344 --> 01:17:17.064
+and what that needs to look like, especially if you're trying to use these
+
+1370
+01:17:17.104 --> 01:17:21.004
+approaches to advance scientific reasoning, which is in my particular case, where
+
+1371
+01:17:21.024 --> 01:17:24.814
+we're going for it. So, okay, and then I want to know, "Ooh. Oh, dear.
+
+1372
+01:17:24.984 --> 01:17:27.504
+I have a human in the loop, but I've got multiple agents.
+
+1373
+01:17:27.544 --> 01:17:28.824
+I've got agents doing all sorts of things.
+
+1374
+01:17:29.344 --> 01:17:32.264
+Where is my gain coming from in these learnings?
+
+1375
+01:17:32.344 --> 01:17:35.804
+How do you go back and evaluate what that information boost came from?
+
+1376
+01:17:35.884 --> 01:17:39.324
+What data source was it, by the way, also?" Because I think to the points that were
+
+1377
+01:17:39.364 --> 01:17:42.964
+made earlier, what we really want, if we want to accelerate scientific discovery,
+
+1378
+01:17:43.024 --> 01:17:45.664
+is to be able to say, "Aha, this is what is missing.
+
+1379
+01:17:45.703 --> 01:17:48.864
+This is where the greatest value gain would be, the add.
+
+1380
+01:17:48.924 --> 01:17:52.644
+Let's go do this very complicated experiment, bad bam, and we'll update and see."
+
+1381
+01:17:53.104 --> 01:17:54.444
+But that's going to be an iterative cycle.
+
+1382
+01:17:55.184 --> 01:17:58.524
+Maybe we'll have fully automated robotic labs to solve that, but probably
+
+1383
+01:17:58.564 --> 01:18:00.784
+not tomorrow. So,
+
+1384
+01:18:02.784 --> 01:18:04.044
+where do we deploy this?
+
+1385
+01:18:05.604 --> 01:18:07.264
+To Charlotte. More or less reproducible?
+
+1386
+01:18:07.824 --> 01:18:08.164
+I think
+
+1387
+01:18:09.964 --> 01:18:13.944
+the agentic workflows. I think the example of Christina, I very
+
+1388
+01:18:13.984 --> 01:18:17.704
+much enjoyed. Actually there, we might have agents that systematically
+
+1389
+01:18:17.744 --> 01:18:19.664
+screen something and give us traceability.
+
+1390
+01:18:20.344 --> 01:18:23.884
+In other aspects, probably not. And sometimes I'm actually trying
+
+1391
+01:18:23.944 --> 01:18:27.884
+to use those tools myself, and I look, I open my
+
+1392
+01:18:27.984 --> 01:18:29.504
+pen on the right, like how did you get...
+
+1393
+01:18:30.024 --> 01:18:32.734
+Those reasoning traces are not necessarily,
+
+1394
+01:18:34.884 --> 01:18:36.944
+it's like, okay, this is not a path I would have taken.
+
+1395
+01:18:37.044 --> 01:18:37.924
+So, so far,
+
+1396
+01:18:39.084 --> 01:18:43.044
+even the traceability for very trivial task is sometimes
+
+1397
+01:18:43.124 --> 01:18:47.104
+so flawed that the reproducibility or how you got to a result
+
+1398
+01:18:47.204 --> 01:18:49.764
+is rather questioning me about the...
+
+1399
+01:18:49.944 --> 01:18:53.454
+It gives me rather questions about using the end result than
+
+1400
+01:18:53.684 --> 01:18:54.244
+confidence.
+
+1401
+01:18:54.304 --> 01:18:54.464
+So
+
+1402
+01:18:56.764 --> 01:18:58.364
+maybe I shared the
+
+1403
+01:19:00.804 --> 01:19:04.584
+pessimistic view of Alex. So basically, Alex, what you're
+
+1404
+01:19:04.644 --> 01:19:05.104
+saying is,
+
+1405
+01:19:06.044 --> 01:19:10.034
+if you compare that to deterministic programs that
+
+1406
+01:19:10.124 --> 01:19:13.334
+we use to design bioinformatics pipelines, et cetera,
+
+1407
+01:19:13.444 --> 01:19:16.544
+where you know you can describe every single step,
+
+1408
+01:19:17.204 --> 01:19:20.754
+agentic AI is a big step back. There is a lot of
+
+1409
+01:19:20.804 --> 01:19:24.384
+stochasticity, a lot of flexibility in those system that are
+
+1410
+01:19:24.444 --> 01:19:27.884
+probably unnecessary for many, many tasks and sometimes going to be very useful.
+
+1411
+01:19:28.384 --> 01:19:32.024
+If you compare agentic AI with a
+
+1412
+01:19:32.164 --> 01:19:33.244
+sleep-deprived human,
+
+1413
+01:19:34.124 --> 01:19:37.306
+I totally agree it's a lot more-Are
+
+1414
+01:19:37.306 --> 01:19:40.336
+reproducible. And so to Daniela's point,
+
+1415
+01:19:41.646 --> 01:19:44.646
+there are many applications where you're going to increase the consistency because
+
+1416
+01:19:44.696 --> 01:19:46.936
+humans are just really, really bad at this.
+
+1417
+01:19:47.596 --> 01:19:50.876
+Maybe hyperparameter tuning is also something that we should automate.
+
+1418
+01:19:50.936 --> 01:19:54.856
+Humans are probably not rightfully equipped to explore that in
+
+1419
+01:19:54.916 --> 01:19:56.416
+a more systematic way.
+
+1420
+01:19:57.276 --> 01:19:59.336
+So I think we got
+
+1421
+01:20:00.216 --> 01:20:00.896
+one of the
+
+1422
+01:20:02.036 --> 01:20:02.936
+plenary session
+
+1423
+01:20:03.816 --> 01:20:07.036
+basically said agentic AI is going to make research more reproducible, and I
+
+1424
+01:20:07.056 --> 01:20:10.876
+think it's missing that part of the equation, which is what do you mean by
+
+1425
+01:20:10.936 --> 01:20:14.536
+reproducible? There are some processes that will be, and some
+
+1426
+01:20:14.636 --> 01:20:18.365
+processes that will... If we start applying agentic AI for everything, we're going
+
+1427
+01:20:18.376 --> 01:20:19.756
+to be in trouble. That's my point.
+
+1428
+01:20:22.876 --> 01:20:23.916
+There's a good question. Yeah.
+
+1429
+01:20:25.396 --> 01:20:27.636
+I am wondering to ask,
+
+1430
+01:20:28.976 --> 01:20:32.696
+one thing that was already brought today is that transformational moment, like
+
+1431
+01:20:33.076 --> 01:20:36.956
+first time you opened ChatGPT and realized that that thing was talking to
+
+1432
+01:20:37.096 --> 01:20:40.836
+you or like I said, now, like the last
+
+1433
+01:20:40.875 --> 01:20:44.316
+version of Claude Code, now they really generate code that work.
+
+1434
+01:20:44.716 --> 01:20:48.536
+But my understanding is that aha moment haven't really happened in medicine or
+
+1435
+01:20:48.716 --> 01:20:51.676
+general research yet. What's the view of the panel?
+
+1436
+01:20:52.816 --> 01:20:56.616
+What you would like to see as, or you think is this next
+
+1437
+01:20:56.696 --> 01:20:57.916
+aha moment in
+
+1438
+01:20:58.716 --> 01:21:00.576
+research or medicine in general?
+
+1439
+01:21:04.856 --> 01:21:07.916
+I'll tell you tomorrow. I mean, that's how fast the field is.
+
+1440
+01:21:07.946 --> 01:21:08.256
+What was the question?
+
+1441
+01:21:08.356 --> 01:21:11.396
+Oh, the question is what is going to be the next aha moment?
+
+1442
+01:21:11.716 --> 01:21:15.636
+The same way that GPT-3.5 was like, "Oh
+
+1443
+01:21:15.756 --> 01:21:16.646
+my gosh, every
+
+1444
+01:21:17.536 --> 01:21:21.346
+recommendation letter I ever read is going to be AI generated." And the way Claude
+
+1445
+01:21:21.436 --> 01:21:23.826
+Code with Opus 4.6 was like, "Oh my God, every
+
+1446
+01:21:24.636 --> 01:21:25.016
+piece of..."
+
+1447
+01:21:26.016 --> 01:21:29.976
+In more specifically perspective, those happens were not specific to
+
+1448
+01:21:30.376 --> 01:21:31.956
+biomedical research.
+
+1449
+01:21:32.296 --> 01:21:32.306
+Right.
+
+1450
+01:21:32.316 --> 01:21:34.976
+So you mean biomedical research, what would be that thing?
+
+1451
+01:21:36.156 --> 01:21:37.176
+I think one,
+
+1452
+01:21:38.136 --> 01:21:39.976
+I think as a clinician,
+
+1453
+01:21:40.836 --> 01:21:44.236
+my intuition is that every drug,
+
+1454
+01:21:44.956 --> 01:21:48.896
+starting say three years from now, every drug
+
+1455
+01:21:48.956 --> 01:21:52.496
+is going to be AI designed, or at least co-designed with artificial intelligence.
+
+1456
+01:21:52.556 --> 01:21:53.236
+I think that's going to-
+
+1457
+01:21:53.616 --> 01:21:54.116
+Three years?
+
+1458
+01:21:54.126 --> 01:21:54.325
+Three? I mean-
+
+1459
+01:21:54.396 --> 01:21:54.716
+Years?
+
+1460
+01:21:55.116 --> 01:21:55.836
+Well, there's already
+
+1461
+01:21:57.136 --> 01:21:58.716
+every new drug to the market.
+
+1462
+01:21:59.376 --> 01:22:01.376
+And probably the biomarker with the drug.
+
+1463
+01:22:01.756 --> 01:22:02.356
+Yeah. I mean, I-
+
+1464
+01:22:03.096 --> 01:22:03.436
+Years?
+
+1465
+01:22:03.476 --> 01:22:06.926
+There's already positive Phase 2 at Phase 3.
+
+1466
+01:22:06.936 --> 01:22:09.016
+Fully designed? Fully. Parts.
+
+1467
+01:22:09.436 --> 01:22:09.446
+No.
+
+1468
+01:22:09.456 --> 01:22:09.646
+Parts of.
+
+1469
+01:22:10.156 --> 01:22:10.716
+I mean the-
+
+1470
+01:22:11.296 --> 01:22:11.446
+Designed.
+
+1471
+01:22:11.496 --> 01:22:14.496
+Stanford University is always a little bit late. It's fine. It's fine.
+
+1472
+01:22:15.646 --> 01:22:16.265
+Okay.
+
+1473
+01:22:16.376 --> 01:22:16.616
+I think
+
+1474
+01:22:17.796 --> 01:22:19.796
+we're very close. I think that the
+
+1475
+01:22:19.856 --> 01:22:24.456
+target
+
+1476
+01:22:24.496 --> 01:22:27.856
+still has to be evaluated by humans, but I think that
+
+1477
+01:22:27.916 --> 01:22:31.016
+the quality of drug design is going to be...
+
+1478
+01:22:31.076 --> 01:22:34.756
+Okay. Quality of drug design, not all the way from target discovery through to-
+
+1479
+01:22:35.296 --> 01:22:35.846
+Well, I mean, the-
+
+1480
+01:22:35.926 --> 01:22:36.866
+... IND-enabling studies.
+
+1481
+01:22:37.156 --> 01:22:38.906
+I think that "Nature Biotech"
+
+1482
+01:22:40.636 --> 01:22:44.486
+paper from Insilico Medicine was an aha moment for me, because I think that blew my
+
+1483
+01:22:44.496 --> 01:22:46.176
+mind, like target
+
+1484
+01:22:47.296 --> 01:22:48.196
+specification,
+
+1485
+01:22:49.176 --> 01:22:52.916
+two synthetic molecules shown proof of principle in mice in
+
+1486
+01:22:53.056 --> 01:22:54.476
+42 days or whatever it was.
+
+1487
+01:22:55.296 --> 01:22:58.776
+That to me was one of those sea change moments that
+
+1488
+01:22:59.256 --> 01:23:03.156
+the life cycle of drug development was going to change dramatically, and
+
+1489
+01:23:03.196 --> 01:23:06.776
+that as an oncologist, we were going to have more better
+
+1490
+01:23:06.856 --> 01:23:10.836
+drugs, which is something I definitely value. So I think that's...
+
+1491
+01:23:11.676 --> 01:23:12.036
+Oh, you-
+
+1492
+01:23:12.516 --> 01:23:16.496
+Oh, I'm going. It's okay. No. Oh, no. I agree.
+
+1493
+01:23:16.636 --> 01:23:18.406
+I think Insilico has done more than
+
+1494
+01:23:19.216 --> 01:23:22.976
+most to demonstrate this, but we still then
+
+1495
+01:23:23.036 --> 01:23:26.756
+have to do the studies to show that we get there, and I think,
+
+1496
+01:23:26.816 --> 01:23:28.536
+again, the biomarker piece, it's great, Ben.
+
+1497
+01:23:28.756 --> 01:23:31.756
+Because frankly, we know that most drugs fail because they're not...
+
+1498
+01:23:32.676 --> 01:23:35.676
+Both, for a variety of reasons, but one of which being that we haven't found the
+
+1499
+01:23:35.716 --> 01:23:38.096
+right indication, and we don't have the patient population selected.
+
+1500
+01:23:38.136 --> 01:23:41.516
+So I guess one thing that I do think this audience still has to take away is we
+
+1501
+01:23:41.576 --> 01:23:45.296
+still need experimentalists to also go in and
+
+1502
+01:23:45.336 --> 01:23:48.836
+verify these hypotheses, right? This is still absolutely a
+
+1503
+01:23:48.856 --> 01:23:52.196
+requirement, and if you look at any of the optimization of antibody design or
+
+1504
+01:23:52.216 --> 01:23:54.976
+whatever else, there's always an experimental component.
+
+1505
+01:23:55.556 --> 01:23:58.516
+So I think just three years.
+
+1506
+01:23:59.096 --> 01:24:02.896
+I'll dig in on that, and I'll say that a future aha moment will
+
+1507
+01:24:02.936 --> 01:24:06.716
+be what we can learn from the first failed study of an
+
+1508
+01:24:06.756 --> 01:24:09.146
+AI-developed drug. Because we haven't had...
+
+1509
+01:24:09.336 --> 01:24:09.716
+I think the
+
+1510
+01:24:10.656 --> 01:24:14.576
+hype in the space is because the first Phase 2
+
+1511
+01:24:14.596 --> 01:24:16.536
+was a positive study with the
+
+1512
+01:24:17.396 --> 01:24:20.875
+AI design drug, and it'll be interesting to see why they fail.
+
+1513
+01:24:21.916 --> 01:24:22.396
+How about that?
+
+1514
+01:24:22.796 --> 01:24:25.896
+Behind all good AI design drugs, there is a human.
+
+1515
+01:24:27.996 --> 01:24:28.326
+For now.
+
+1516
+01:24:28.576 --> 01:24:28.995
+For now.
+
+1517
+01:24:29.036 --> 01:24:29.776
+For now.
+
+1518
+01:24:29.816 --> 01:24:33.036
+So maybe one last round for the panel. We're almost at time.
+
+1519
+01:24:33.776 --> 01:24:35.496
+And it's going to be a tricky question, but
+
+1520
+01:24:36.516 --> 01:24:40.356
+what do you think, what would be the most exciting
+
+1521
+01:24:40.736 --> 01:24:43.276
+thing that could happen in your research program?
+
+1522
+01:24:43.346 --> 01:24:47.316
+If you had infinite amount of resources and you get this great
+
+1523
+01:24:47.336 --> 01:24:49.376
+team of geniuses working for you 24/7.
+
+1524
+01:24:49.436 --> 01:24:52.526
+I'm not talking about agent, I'm talking about real humans here.
+
+1525
+01:24:53.216 --> 01:24:56.956
+What do you want to accomplish in, let's say, the next three
+
+1526
+01:24:57.016 --> 01:24:57.356
+years?
+
+1527
+01:25:00.176 --> 01:25:01.876
+It's all happening in three years, apparently.
+
+1528
+01:25:01.936 --> 01:25:02.676
+Yeah.
+
+1529
+01:25:03.006 --> 01:25:06.616
+Well, honestly, I'm a physician scientist and an incremental pragmatist.
+
+1530
+01:25:07.016 --> 01:25:10.576
+So, I would love to see, I think the promise of physician scientists
+
+1531
+01:25:10.636 --> 01:25:14.296
+is to get your discoveries into the practice of
+
+1532
+01:25:14.336 --> 01:25:15.536
+medicine and to the
+
+1533
+01:25:16.456 --> 01:25:20.376
+benefit of patient care. So I would love to see biomarkers that
+
+1534
+01:25:20.456 --> 01:25:24.036
+have been, for example, a diagnostic device that had been
+
+1535
+01:25:24.076 --> 01:25:28.056
+developed in either in my lab or in collaboration, see
+
+1536
+01:25:28.136 --> 01:25:30.016
+its way into routine use. With
+
+1537
+01:25:30.956 --> 01:25:34.836
+all the hype
+
+1538
+01:25:34.896 --> 01:25:38.516
+aside, I think that most of medicine crawls along
+
+1539
+01:25:38.556 --> 01:25:42.046
+with very slow incremental progress, and I think that
+
+1540
+01:25:42.096 --> 01:25:46.068
+that'sPart of how I've designed my own research strategies in order to
+
+1541
+01:25:46.428 --> 01:25:50.338
+feasibly achieve that realistic and optimistic goal,
+
+1542
+01:25:50.448 --> 01:25:54.428
+as opposed to thinking about a massive disruption in what
+
+1543
+01:25:54.468 --> 01:25:55.368
+is a very
+
+1544
+01:25:56.288 --> 01:25:58.528
+high-friction environment, which is clinical medicine.
+
+1545
+01:26:00.608 --> 01:26:04.588
+Yeah. I would say for me, a lot of my work is focused on how can we use AI
+
+1546
+01:26:04.648 --> 01:26:08.348
+to improve the quality of evidence that we generate from clinical
+
+1547
+01:26:08.408 --> 01:26:12.248
+data. So what I would really love to see is that we really
+
+1548
+01:26:12.288 --> 01:26:12.578
+start
+
+1549
+01:26:13.488 --> 01:26:17.328
+completely change how we document on our
+
+1550
+01:26:17.368 --> 01:26:21.068
+patients from a very passive process and a note-based
+
+1551
+01:26:21.108 --> 01:26:24.817
+process to a proactive process where
+
+1552
+01:26:24.828 --> 01:26:28.808
+we're collecting data iteratively and refining,
+
+1553
+01:26:29.428 --> 01:26:30.028
+and
+
+1554
+01:26:31.168 --> 01:26:34.908
+using AI to insert it into real
+
+1555
+01:26:34.988 --> 01:26:38.568
+clinical practice to identify, okay, you have an underspecified piece of
+
+1556
+01:26:38.608 --> 01:26:42.088
+information, physician, can you please ask more
+
+1557
+01:26:42.148 --> 01:26:45.628
+questions and that can get us to a more specific
+
+1558
+01:26:45.688 --> 01:26:47.688
+understanding of what's happening to the patient right now?
+
+1559
+01:26:48.068 --> 01:26:51.008
+Maybe you should order this test to get us to a more specific understanding of
+
+1560
+01:26:51.028 --> 01:26:52.208
+what's happening to that patient right now.
+
+1561
+01:26:52.588 --> 01:26:56.268
+I think that's currently our real gap to this big
+
+1562
+01:26:56.388 --> 01:27:00.308
+data promise and learning health system promise that we've been working
+
+1563
+01:27:00.348 --> 01:27:04.188
+towards for many decades. So yeah, I would say summary, use
+
+1564
+01:27:04.228 --> 01:27:08.168
+AI to actively and proactively collect
+
+1565
+01:27:08.428 --> 01:27:12.208
+really, really high-quality data so we have the real-world evidence we need to
+
+1566
+01:27:12.568 --> 01:27:16.428
+maybe even start moving away from large scale randomized clinical
+
+1567
+01:27:16.468 --> 01:27:16.988
+trial for
+
+1568
+01:27:18.308 --> 01:27:21.508
+everything. That's maybe more than three years away.
+
+1569
+01:27:22.368 --> 01:27:22.908
+That's cool.
+
+1570
+01:27:23.808 --> 01:27:24.788
+Am I allowed two?
+
+1571
+01:27:25.708 --> 01:27:26.868
+Or do I have to pick one?
+
+1572
+01:27:27.448 --> 01:27:28.308
+It's okay. One and a half.
+
+1573
+01:27:28.728 --> 01:27:31.028
+One and a half. Okay. One and a half. That's good.
+
+1574
+01:27:32.568 --> 01:27:36.468
+I actually have a very fundamental question that has plagued me for
+
+1575
+01:27:36.588 --> 01:27:39.228
+many, many years, and I still have it, and it's not solved.
+
+1576
+01:27:39.288 --> 01:27:42.628
+So maybe my agents can help me and the clever students.
+
+1577
+01:27:42.988 --> 01:27:43.188
+But,
+
+1578
+01:27:44.168 --> 01:27:47.908
+what does it take to make a cancer? Across tissue types, what is the minimal
+
+1579
+01:27:47.968 --> 01:27:51.788
+requirement for malignancy? If we knew this, we could prevent
+
+1580
+01:27:51.828 --> 01:27:53.248
+many cancers. We could intercept.
+
+1581
+01:27:53.627 --> 01:27:56.088
+I don't think we have that answer, and I think it's a combinatorial problem.
+
+1582
+01:27:56.808 --> 01:27:59.328
+I do think it's solvable. So that's one.
+
+1583
+01:27:59.388 --> 01:28:02.977
+And the other is, we have now this unprecedented
+
+1584
+01:28:03.048 --> 01:28:07.028
+understanding on the other hand of some of the causative factors of
+
+1585
+01:28:07.088 --> 01:28:10.768
+disease. And we in fact have new clues about how to drug what was
+
+1586
+01:28:10.828 --> 01:28:14.167
+once frankly undruggable. But that's not due to
+
+1587
+01:28:14.668 --> 01:28:17.648
+AI yet. That's actually due to advances in medicinal chemistry.
+
+1588
+01:28:18.268 --> 01:28:20.928
+So I want to see those make it to the clinic and benefit the patient populations
+
+1589
+01:28:20.948 --> 01:28:21.948
+who have been overlooked,
+
+1590
+01:28:23.008 --> 01:28:26.608
+because it wasn't profitable enough to target them, and we couldn't.
+
+1591
+01:28:27.368 --> 01:28:30.508
+So we'll see if we can conduct those trials in three years.
+
+1592
+01:28:32.888 --> 01:28:33.208
+Sorry.
+
+1593
+01:28:34.928 --> 01:28:38.748
+We are looking very much at generative AI to develop new
+
+1594
+01:28:38.768 --> 01:28:42.568
+drugs on the molecular level. In my lab, we are looking at generative
+
+1595
+01:28:42.648 --> 01:28:46.618
+models to forecast how would this drug actually play out in a cellular context?
+
+1596
+01:28:46.668 --> 01:28:50.268
+How do cellular phenotypes change now we move this to the tissue level?
+
+1597
+01:28:50.508 --> 01:28:53.988
+I think what's extremely challenging and something I would like to see is can we
+
+1598
+01:28:54.048 --> 01:28:57.788
+actually bridge the scale? So anything that I can model on the molecular level, I
+
+1599
+01:28:57.828 --> 01:29:01.628
+actually also able to forecast how this will play out in a cellular
+
+1600
+01:29:01.648 --> 01:29:02.208
+phenotype,
+
+1601
+01:29:03.128 --> 01:29:05.108
+and then ultimately in a tissue level.
+
+1602
+01:29:05.137 --> 01:29:09.108
+And that will require also collecting actually exciting new
+
+1603
+01:29:09.148 --> 01:29:11.948
+data sets where we have those super
+
+1604
+01:29:11.988 --> 01:29:15.858
+high-resolution tissue screens that allow us to somewhat
+
+1605
+01:29:15.908 --> 01:29:19.008
+map to interaction studies on the molecular level.
+
+1606
+01:29:19.028 --> 01:29:22.608
+And then we need to have this for the same drug for the same patients
+
+1607
+01:29:22.968 --> 01:29:26.888
+in a somewhat large scale, and then develop methods that actually go multiscale.
+
+1608
+01:29:27.268 --> 01:29:28.788
+So I think that is something that is
+
+1609
+01:29:29.668 --> 01:29:33.578
+to some degree feasible in a three years time and gives us
+
+1610
+01:29:33.588 --> 01:29:37.428
+a new dimension to also then develop our
+
+1611
+01:29:37.448 --> 01:29:41.268
+drugs in silico or largely in silico because we have actually better
+
+1612
+01:29:41.308 --> 01:29:44.508
+models to understand how they might act in a patient context.
+
+1613
+01:29:45.338 --> 01:29:46.148
+Dan, you have to go.
+
+1614
+01:29:46.968 --> 01:29:50.668
+So I think you're going to help Alex win this bet about the AI drug design.
+
+1615
+01:29:51.788 --> 01:29:55.728
+So mine would be how can we use non-invasi-- so it's going to be a combination
+
+1616
+01:29:55.788 --> 01:29:59.048
+of technology advances and AI. How do we use non-invasive
+
+1617
+01:29:59.148 --> 01:30:02.148
+technologies to learn everything we need to know about the tumor
+
+1618
+01:30:02.158 --> 01:30:05.288
+microenvironment and potentially the evolution of the disease?
+
+1619
+01:30:05.868 --> 01:30:09.748
+And right now we've shown that with radiomics we can capture some
+
+1620
+01:30:09.788 --> 01:30:13.728
+signal. With liquid biopsy we can actually capture very interesting
+
+1621
+01:30:13.788 --> 01:30:14.708
+unexpected signal.
+
+1622
+01:30:15.568 --> 01:30:17.888
+But that's just the beginning. If the technologies evolve,
+
+1623
+01:30:18.688 --> 01:30:21.388
+if the AI aspect evolves as well,
+
+1624
+01:30:22.228 --> 01:30:26.148
+it would be amazing if we could have very repeated and very
+
+1625
+01:30:26.228 --> 01:30:29.668
+frequent non-invasive profiling
+
+1626
+01:30:29.788 --> 01:30:33.488
+of healthy people and patients. So that would be my dream in three
+
+1627
+01:30:33.508 --> 01:30:33.888
+years.
+
+1628
+01:30:36.528 --> 01:30:37.088
+And we're done.
+
+1629
+01:30:38.828 --> 01:30:39.448
+So yeah.
+
+1630
+01:30:39.768 --> 01:30:43.188
+All right. Well, we'd want to thank the audience for their brilliant
+
+1631
+01:30:43.328 --> 01:30:47.118
+questions and for the exciting dialogue, and hopefully this is one that
+
+1632
+01:30:47.148 --> 01:30:50.808
+maybe we continue because there's clearly a lot more to discuss.
+
+1633
+01:30:50.908 --> 01:30:54.888
+Or maybe we won't all be here because it will be solved in three years,
+
+1634
+01:30:54.988 --> 01:30:57.188
+and that would be something to celebrate.
+
+1635
+01:30:57.988 --> 01:30:58.708
+All right. Thanks, all.
+
+1636
+01:30:59.088 --> 01:31:00.148
+Thank you very much.

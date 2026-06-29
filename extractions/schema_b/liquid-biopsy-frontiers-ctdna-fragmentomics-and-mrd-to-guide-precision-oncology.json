@@ -1,0 +1,459 @@
+[
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "William Bowers",
+      "institution_or_pharma": "Johns Hopkins University",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "Serial Plasma Comprehensive Genomic Profiling Detects Therapy Resistance and Guides Management of Metastatic Non-Small Cell Lung Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"patients who received a genotype-targeted therapy based on an actionable alteration identified by PCGP had significantly better overall survival compared to those who did not.\"",
+        "Speaker said: \"we were able to capture these structural alterations by liquid biopsy, but there were some instances of discordance.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "MET amplification detection by Guardant 360",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low tumor burden or intrathoracic disease reduces assay sensitivity for MET amplification",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data stratified by specific resistance mechanisms",
+        "Limited concordance analysis between tissue and plasma MET amplification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could model MET amplification\u2013driven resistance pathways and suggest combination strategies to overcome detection gaps.",
+        "transcript_evidence": "Speaker noted MET amplification was only captured in ~10% of progression samples and missed in some cases due to technical challenges.",
+        "crispro_angle": "Use computational pathway analysis to predict co\u2011occurring resistance alterations and prioritize agents that target MET plus parallel pathways.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Guardant 360",
+        "context": "used as the liquid biopsy assay platform",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal assay sensitivity needed to reliably detect MET amplification in low\u2011burden disease?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MET inhibitors (cabozantinib, tepotinib, selpercatinib)"
+      ],
+      "companies_to_monitor": [
+        "Guardant Health"
+      ]
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Stabile",
+      "institution_or_pharma": "University of Pittsburgh Hillman Cancer Center",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "Feasibility of Plasma ctDNA for Detecting Brain Metastasis Specific Alterations in Lung Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"MET amplification was significantly more common in the brain metastases at a rate of 16.4% compared to 3.7% in primary lung tumors.\"",
+        "Speaker said: \"sensitivity still remains a major limitation\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard ctDNA assays for brain metastasis MET amplification",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Blood\u2011brain barrier limits ctDNA shedding from intracranial lesions",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Detection of MET amplification in brain metastases via plasma ctDNA",
+        "flawed_enrollment_criteria": "No requirement for timing of blood draw relative to radiotherapy or surgery, leading to variable ctDNA shedding",
+        "missing_biomarker": "Concurrent CSF ctDNA or imaging\u2011guided sampling",
+        "static_vs_dynamic_failure": "Lack of serial post\u2011radiation sampling to capture peak shedding",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Small number of paired tissue\u2011plasma samples",
+        "No systematic evaluation of assay sensitivity thresholds"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can integrate ctDNA VAF dynamics with radiotherapy timing to define optimal sampling windows for brain metastasis detection.",
+        "transcript_evidence": "Speaker highlighted increased ctDNA detection after postoperative radiation in a case study.",
+        "crispro_angle": "Model temporal shedding kinetics to recommend post\u2011radiation blood draw intervals.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Predicinn CARE 200 gene NGS assay",
+        "context": "used for deep sequencing of plasma and tissue samples",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal tumor fraction required for reliable MET amplification detection in brain metastasis ctDNA?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MET inhibitors (cabozantinib, tepotinib)"
+      ],
+      "companies_to_monitor": [
+        "Predicinn"
+      ]
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Evi Leonido",
+      "institution_or_pharma": "University of Athens",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "AXL mRNA Overexpression in CTCs as a New Potential Liquid Biopsy Biomarker in Non-Small Cell Lung Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"AXL overexpression was detected in almost 13% of patients at baseline before treatment, at 16% after the first cycle of therapy...\"",
+        "Speaker said: \"our results indicate that longitudinal monitoring ... could be a precious tool for the assessment of osimertinib efficacy and early therapeutic intervention with AXL inhibitors.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "AXL\u2011targeted agents (TKIs, antibodies, ADCs)",
+        "ip_vulnerability_note": "Speaker noted multiple AXL\u2011targeting drugs are in clinical trials, suggesting a crowded IP space.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on bulk CTC RNA measurement may miss low\u2011frequency AXL\u2011positive clones."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that bulk CTC RNA detects AXL overexpression in ~13% of patients, then concluded that AXL\u2011positive CTCs could guide therapy despite acknowledging limited sensitivity of bulk approach."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No concordance data between CTC AXL expression and tissue AXL status",
+        "Therapeutic threshold for AXL RNA levels not defined"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO could define quantitative AXL expression cutoffs predictive of response to AXL inhibitors.",
+        "transcript_evidence": "Speaker highlighted variable AXL overexpression across treatment cycles without a defined therapeutic threshold.",
+        "crispro_angle": "Apply machine\u2011learning on longitudinal CTC RNA data to derive response\u2011linked expression thresholds.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Parsortix system",
+        "context": "size\u2011based CTC enrichment platform used in the study",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What AXL RNA expression level constitutes a clinically actionable target?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AXL inhibitors (e.g., bemcentinib, enapotamab vedotin)"
+      ],
+      "companies_to_monitor": [
+        "Roche",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Yin Zhu",
+      "institution_or_pharma": "University of Michigan",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "Circulating Tumor Cell\u2011Informed Pipeline for Rapid Personalization of Synergistic Cytokine\u2011Armed CAR\u2011NK Cell Therapy in Pancreatic Ductal Adenocarcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"87% of patients carry CTCs with at least one of our CAR\u2011NK cell targets.\"",
+        "Speaker said: \"IL\u201112 and IL\u201115 armed CAR\u2011NK cells can actually exert a very long\u2011term killing efficiencies.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "CTC\u2011guided selection of mesothelin or MUC4 for CAR\u2011NK therapy",
+        "flawed_enrollment_criteria": "No pre\u2011screening for target expression in metastatic lesions; reliance on CTCs alone may miss intratumoral heterogeneity",
+        "missing_biomarker": "Serial tissue biopsies to confirm target persistence",
+        "static_vs_dynamic_failure": "Lack of longitudinal CTC monitoring after CAR\u2011NK infusion",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Labyrinth microfluidic CTC enrichment device",
+        "ip_vulnerability_note": "Proprietary design disclosed in talk; competitors could replicate size\u2011based enrichment with alternative platforms.",
+        "scale_or_manufacturing_bottleneck": "Device scaling for clinical\u2011grade GMP production not addressed",
+        "clinical_strategy_weakness": "Target selection limited to two antigens; may not cover full PDAC heterogeneity."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated high correlation between CTC and primary tumor target expression, yet admitted lack of metastatic tissue validation, creating a gap between assumed representativeness and actual evidence."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy or safety data for cytokine\u2011armed CAR\u2011NK cells",
+        "Limited patient numbers with matched CTC\u2011tumor validation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CrisPRO could predict emergence of antigen\u2011loss variants from CTC dynamics to guide sequential CAR\u2011NK target switching.",
+        "transcript_evidence": "Speaker noted exclusive MUC4 or mesothelin CTC populations and potential target loss over time.",
+        "crispro_angle": "Model clonal evolution using longitudinal CTC proteomics to anticipate escape mechanisms.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Dana\u2011Faber Cancer Institute",
+        "context": "collaborator for preclinical validation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How stable are mesothelin/MUC4 expressions on CTCs after prior lines of therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CAR\u2011NK platforms targeting mesothelin or MUC4"
+      ],
+      "companies_to_monitor": [
+        "Fate Therapeutics",
+        "Nkarta"
+      ]
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Hannah Robinson",
+      "institution_or_pharma": "University of Colorado",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "ctDNA Clearance Dynamics in MSI\u2011high Colorectal Cancer Treated with Immune Checkpoint Inhibitors",
+      "rhetorical_signals": [
+        "Speaker said: \"77% achieved ctDNA clearance at least one time point after treatment initiation with a median time to clearance of 96 days.\"",
+        "Speaker said: \"Patients who had a negative ctDNA result at this time point had significantly superior overall survival...\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ICI monotherapy in MSI\u2011high mCRC",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "No molecular correlates (e.g., TCR repertoire) integrated to explain persistent ctDNA positivity",
+        "unexplained_resistance_quote": "Speaker noted persistent ctDNA positivity was associated with markedly inferior overall survival but did not explain underlying biology.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of uniform ctDNA sampling timepoints",
+        "No integration of TCR or immune profiling"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO could integrate ctDNA dynamics with tumor\u2011infiltrating lymphocyte signatures to refine early response prediction.",
+        "transcript_evidence": "Speaker highlighted early ctDNA negativity as a strong prognostic marker but lacked immune correlates.",
+        "crispro_angle": "Combine ctDNA VAF trajectories with computational immune repertoire modeling.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Signatera (Natera)",
+        "context": "tumor\u2011informed ctDNA assay used for monitoring",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does ctDNA clearance kinetics differ between pembrolizumab monotherapy and ipilimumab/nivolumab combination?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Signatera ctDNA assay",
+        "Pembrolizumab"
+      ],
+      "companies_to_monitor": [
+        "Natera",
+        "Merck"
+      ]
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Xinyu Yao",
+      "institution_or_pharma": "West Lake University",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "Genomic Signatures in Red Blood Cell DNA\u2011Enabled Early Non\u2011Invasive Detection of Colorectal Neoplasia",
+      "rhetorical_signals": [
+        "Speaker said: \"Our model achieved an overall AUC of 95% for detecting advanced colorectal neoplasia with 85% sensitivity for advanced adenomas and 95% sensitivity for colorectal cancer.\"",
+        "Speaker said: \"Sensitivity for advanced adenomas was over 60% in external validation, higher than stool\u2011based tests.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "RBC\u2011DNA extraction and low\u2011coverage sequencing workflow",
+        "ip_vulnerability_note": "Methodology described in detail; could be replicated by competitors with similar sequencing platforms.",
+        "scale_or_manufacturing_bottleneck": "Requires specialized RBC isolation and high\u2011throughput sequencing infrastructure.",
+        "clinical_strategy_weakness": "Performance drops for advanced adenomas (sensitivity ~60%) compared to cancer."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Biological origin of RBC\u2011DNA signatures not fully elucidated",
+        "Limited data on performance in non\u2011colorectal cancers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "indication_expansion",
+        "description": "CrisPRO could apply the RBC\u2011DNA signature pipeline to other GI cancers by training on pan\u2011cancer datasets.",
+        "transcript_evidence": "Speaker mentioned pan\u2011cancer RBC\u2011DNA signals in prior work.",
+        "crispro_angle": "Leverage existing methylation\u2011based classifiers to extend to gastric and pancreatic neoplasia.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Do inflammatory or non\u2011malignant conditions affect RBC\u2011DNA signatures?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "RBC\u2011DNA early detection assay"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Yupeng He",
+      "institution_or_pharma": "Guardant Health",
+      "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+      "talk_title": "Methylation\u2011Based Molecular Tumor Typing Classifier for Tissue Samples from Cancers of Unknown Primary",
+      "rhetorical_signals": [
+        "Speaker said: \"On 4,000 tissue samples, we observed 97% evaluable rate and 91% accuracy with the primary prediction.\"",
+        "Speaker said: \"For CUP cases, we achieved 88% accuracy on primary prediction and 94% when including secondary prediction.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GR360 tissue methylation\u2011plus\u2011omics platform",
+        "ip_vulnerability_note": "Relies on proprietary DMR panel; competitors could develop alternative methylation panels.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires \u22655% tumor fraction; low\u2011purity samples may still be unevaluable."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Limited prospective validation in real\u2011world CUP workflow",
+        "Unclear performance on early\u2011stage or low\u2011purity specimens below 5% tumor fraction"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can augment methylation\u2011based typing with integrated mutation and expression data to improve confidence for low\u2011purity CUP samples.",
+        "transcript_evidence": "Speaker noted confidence levels correlate with accuracy, suggesting room for multimodal improvement.",
+        "crispro_angle": "Combine methylation DMR scores with tumor\u2011informed mutation signatures to boost predictive power.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does the classifier perform on CUP cases with tumor fraction <5%?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GR360 tissue testing platform"
+      ],
+      "companies_to_monitor": [
+        "Guardant Health"
+      ]
+    }
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "talk_id": "immunometabolism-in-cancer::sansom::1",
+    "session_title": "immunometabolism-in-cancer",
+    "talk_title": "Modeling immune metabolism and cancer using spatial metabolomics and organoid systems",
+    "speaker": {
+      "name": "Dr Owen Sansom",
+      "affiliation": "Cancer Research UK, University of Cambridge, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "pancreatic ductal adenocarcinoma",
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "metabolism",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Mirati G12C inhibitor",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SLC7A5",
+        "alteration": "",
+        "pathway": "amino_acid_transport",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "APC KRAS colorectal tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "organoid",
+        "name": "APC KRAS organoids",
+        "genotype_or_key_features": "APC loss, KRAS G12C mutation"
+      },
+      {
+        "model_type": "mouse",
+        "name": "KPC mouse",
+        "genotype_or_key_features": "KRAS G12D, TP53 mutation"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "SANSOM demonstrated that spatially resolved DESI metabolomics can map tumor metabolic phenotypes, revealing glutamine depletion and SLC7A5 upregulation in APC KRAS colorectal tumors, and that genetic deletion of SLC7A5 suppresses tumor growth and alters MAPK/mTOR signaling, highlighting metabolic dependencies that can be targeted with KRAS inhibitors or rapamycin.",
+    "readouts": [
+      "DESI-MSI",
+      "MALDI-MSI",
+      "spatial transcriptomics (Xenium)",
+      "tSNE clustering",
+      "immunofluorescence",
+      "CRISPR knockout"
+    ],
+    "key_findings": [
+      "DESI imaging identified glutamine depletion and high SLC7A5 expression in APC KRAS colorectal tumor epithelium versus normal tissue.",
+      "Genetic deletion of SLC7A5 in APC KRAS mouse models caused accumulation of glutamine, glutamate, and alanine and resulted in the strongest tumor suppression observed in colorectal cancer models.",
+      "SLC7A5 loss reduced phospho\u2011S6 signaling, sensitizing tumors to rapamycin and MAPK inhibition.",
+      "KRAS G12D inhibitor treatment eliminated phospho\u2011ERK signaling but did not eradicate tumors; however, it rapidly altered neutrophil, lymphocyte, and monocyte counts and remodeled macrophage and CAF spatial organization.",
+      "In pancreatic KPC mice, SLC7A5 deletion slowed tumor genesis, shifted tumors toward a more homogeneous squamous subtype, and increased immune infiltration."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "KRAS inhibitors showed poor efficacy in colorectal models despite target inhibition, indicating intrinsic resistance mechanisms linked to metabolic context."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "rapamycin",
+        "rationale": "SLC7A5 loss sensitizes tumors to mTOR inhibition by reducing phospho\u2011S6 signaling.",
+        "phenotype": "enhanced tumor suppression in APC KRAS models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MEK inhibitor",
+        "rationale": "Combined with SLC7A5 deletion to block MAPK signaling downstream of KRAS.",
+        "phenotype": "greater tumor growth inhibition",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the precise mechanism by which SLC7A5 deletion remodels the tumor vasculature and immune cell infiltration?",
+      "Can the metabolic phenotypes observed in organoid models be fully recapitulated in patient-derived xenografts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Holbrook et al. 2023 Nature Cancer"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "immunometabolism-in-cancer::delgoff::2",
+    "session_title": "immunometabolism-in-cancer",
+    "talk_title": "Citrate carrier SLC25A1 drives T cell exhaustion and can be targeted to improve immunotherapy",
+    "speaker": {
+      "name": "Dr Greg Delgoff",
+      "affiliation": "University of Pittsburgh, Department of Immunology, UPMC Hillman Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "NSCLC",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "metabolism",
+      "basic_science",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SLC25A1",
+        "alteration": "",
+        "pathway": "mitochondrial_citrate_transport",
+        "modality": "other",
+        "compound_name": "hydroxycitrate (allosteric inhibitor)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "exhausted CD8+ T cells in tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PD-1",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "SLC25A1 KO T cells show reduced PD-1 expression in tumor"
+      },
+      {
+        "name": "CD39",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "SLC25A1 KO T cells have lower CD39 levels versus control"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "human TILs",
+        "genotype_or_key_features": "various tumor types, exhausted phenotype"
+      },
+      {
+        "model_type": "mouse",
+        "name": "adoptive transfer model",
+        "genotype_or_key_features": "antigen-specific CD8+ T cells, tumor-bearing mice"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "significant reduction in tumor volume",
+        "confidence_interval": "",
+        "n": "n=10 mice per group",
+        "population": "tumor-bearing mice receiving 10M T cells",
+        "comparator": "non\u2011targeted T cells",
+        "maturity": "interim"
+      },
+      {
+        "metric": "cytokine production",
+        "value": "2\u2011fold increase in IFN\u2011\u03b3 and IL\u20112 per cell",
+        "confidence_interval": "",
+        "n": "n=5 mice",
+        "population": "tumor infiltrating T cells",
+        "comparator": "control T cells",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Delgoff showed that chronic TCR stimulation and hypoxia upregulate the mitochondrial citrate carrier SLC25A1, shunting citrate to the cytosol where it fuels de novo lipogenesis and protein acetylation, driving lipid droplet accumulation and hyperacetylation that enforce terminal T cell exhaustion; CRISPR knockout of SLC25A1 restores mitochondrial respiration, reduces lipid droplets, enhances polyfunctionality, and improves tumor control, synergizing with PD\u20111 blockade.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "ATAC\u2011seq",
+      "proteomics (acetyl\u2011lysine enrichment)",
+      "BODIPY lipid droplet staining",
+      "citrate sensor (mito\u2011GFP and cytosolic\u2011GFP)",
+      "Seahorse metabolic flux analysis",
+      "in vivo tumor growth curves"
+    ],
+    "key_findings": [
+      "Chronic TCR stimulation plus hypoxia uniquely upregulates SLC25A1 in terminally exhausted CD8+ T cells.",
+      "SLC25A1 mediates export of mitochondrial citrate, leading to cytosolic acetyl\u2011CoA accumulation, lipid droplet formation, and widespread protein acetylation.",
+      "CRISPR knockout of SLC25A1 increases mitochondrial respiratory capacity, glycolysis, and reduces lipid droplet burden in exhausted T cells.",
+      "SLC25A1\u2011deficient T cells exhibit lower PD\u20111, TIM\u20113, and CD39 expression, retain IL\u20112 production, and display superior polyfunctionality in tumors.",
+      "Adoptive transfer of SLC25A1\u2011KO T cells yields greater tumor regression and synergizes with anti\u2011PD\u20111 therapy in mouse models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "SLC25A1 expression persists despite PD\u20111 blockade, suggesting a resistance mechanism independent of checkpoint inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 antibody",
+        "rationale": "SLC25A1 KO T cells retain function and may respond better to checkpoint release.",
+        "phenotype": "enhanced tumor regression compared to either monotherapy",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "hydroxycitrate",
+        "rationale": "Pharmacologic inhibition of SLC25A1 could mimic genetic knockout.",
+        "phenotype": "preliminary data show improved T cell metabolic fitness in vitro",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Does SLC25A1 inhibition affect PD\u2011L1 expression on tumor cells via increased IFN\u2011\u03b3 production?",
+      "What is the impact of SLC25A1 loss on myeloid cell populations within the TME?",
+      "Can selective SLC25A1 inhibitors be developed with acceptable safety for clinical use?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wherry 2023 Nat Immunol",
+        "Zhang et al. 2022 Cell Metab"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": [
+        "hydroxycitrate SLC25A1 inhibitor IP filing 2024"
+      ]
+    }
+  },
+  {
+    "talk_id": "immunometabolism-in-cancer::madar::3",
+    "session_title": "immunometabolism-in-cancer",
+    "talk_title": "Reprogramming NK cell metabolism for enhanced adoptive cell therapy",
+    "speaker": {
+      "name": "Dr Madar",
+      "affiliation": "MD Anderson Cancer Center, Department of Immunology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "AML",
+      "renal cell carcinoma",
+      "pancreatic adenocarcinoma",
+      "triple\u2011negative breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "metabolism",
+      "NK_cells",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TGFBR2",
+        "alteration": "",
+        "pathway": "TGF\u2011beta signaling",
+        "modality": "CRISPR_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NK cells in AML and solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CIS",
+        "alteration": "",
+        "pathway": "JAK\u2011STAT negative regulation",
+        "modality": "CRISPR_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CAR NK cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "E4ORF1",
+        "alteration": "",
+        "pathway": "PI3K/AKT/mTOR activation",
+        "modality": "viral_gene_overexpression",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NK cells for solid tumor therapy",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "mTOR signaling",
+        "type": "pharmacodynamic",
+        "assay": "phospho\u2011S6 flow cytometry",
+        "finding": "CIS KO NK cells show increased phospho\u2011S6 compared with control"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1/2 CD70 CAR NK cells (TGFBR2 KO)",
+        "genotype_or_key_features": "TGFBR2 knockout, CD70 CAR, off\u2011the\u2011shelf product"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1/2 CD70 CAR NK cells (TGFBR2 KO) for RCC",
+        "genotype_or_key_features": "same product, renal cell carcinoma patients"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "MOLM14 AML line",
+        "genotype_or_key_features": "AML, CD70 positive"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall response rate",
+        "value": "pending",
+        "confidence_interval": "",
+        "n": "n=12 AML patients enrolled",
+        "population": "relapsed/refractory AML",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Madar described multiple metabolic engineering strategies for NK cell ACT, including CRISPR knockout of the cytokine\u2011inducible checkpoint CIS and TGF\u2011\u03b2 receptor II to boost mTOR and glycolytic pathways, and overexpression of the adenoviral E4ORF1 protein to activate PI3K/AKT/mTOR and increase citrate\u2011derived biosynthesis, resulting in enhanced mitochondrial mass, oxidative phosphorylation, and cytotoxicity across solid and hematologic tumor models.",
+    "readouts": [
+      "Seahorse metabolic flux",
+      "mitochondrial mass and membrane potential (MitoTracker)",
+      "confocal microscopy",
+      "in vivo tumor growth curves",
+      "serial killing rechallenge assays",
+      "ATAC\u2011seq epigenetic profiling",
+      "flow cytometry for activation markers"
+    ],
+    "key_findings": [
+      "NK cells cultured in lipid\u2011rich APEL media acquire higher mitochondrial mass, elongated morphology, and increased spare respiratory capacity versus standard media.",
+      "CIS knockout NK cells display upregulated mTOR signaling, glycolysis, and improved survival in aggressive Raji lymphoma mouse models.",
+      "TGFBR2\u2011KO CD70 CAR NK cells demonstrate superior anti\u2011AML activity in preclinical models and have entered a Phase 1/2 trial (NCT\u2011pending).",
+      "E4ORF1 overexpression in NK cells enhances glycolysis, OXPHOS, fatty\u2011acid oxidation, and glutaminolysis, leading to robust killing of multiple solid tumor lines even under nutrient starvation.",
+      "AMPK activity is required for the E4ORF1\u2011mediated metabolic boost; inhibition of AMPK abrogates the enhanced cytotoxic phenotype."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "TGF\u2011\u03b2 signaling in the TME suppresses NK cell metabolism; TGFBR2 knockout overcomes this resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IL\u201115 cytokine support",
+        "rationale": "IL\u201115 upregulates metabolic pathways; combined with CIS KO to further boost mTOR.",
+        "phenotype": "enhanced NK cell expansion and persistence in vivo",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "AMPK activator (AICAR)",
+        "rationale": "Synergize with E4ORF1\u2011driven metabolic reprogramming.",
+        "phenotype": "further increased oxidative phosphorylation and tumor killing",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Which specific media components in APEL drive the observed metabolic reprogramming?",
+      "Can E4ORF1 overexpression be safely applied to CAR T cells without oncogenic transformation?",
+      "How does metabolic reprogramming affect NK cell receptor repertoire and ADCC function?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345",
+        "NCT05812456"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhang et al. 2022 Nat Biotechnol"
+      ],
+      "company_or_sponsor": [
+        "MD Anderson Cancer Center"
+      ],
+      "patent_or_ip_hints": [
+        "CRISPR\u2011mediated TGFBR2 knockout NK cell IP filing 2023"
+      ]
+    }
+  }
+]

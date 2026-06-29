@@ -1,0 +1,397 @@
+[
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::dave::1",
+    "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+    "talk_title": "Immunological considerations and B7H3-targeted radioligand therapy mechanisms",
+    "speaker": {
+      "name": "Dave",
+      "affiliation": "University (lab group unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "radiopharmaceuticals",
+      "combination_therapy",
+      "tumor_microenvironment",
+      "targeted_therapy",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "B7H3",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "BetaBART",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "4IG isoform overexpressed in prostate, breast, colon, lung, gastric cancers",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HeLa (4IG B7H3 high)",
+        "genotype_or_key_features": "human 4IG isoform expression"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "CT26 (murine colorectal carcinoma transduced with human 4IG B7H3)",
+        "genotype_or_key_features": "4IG B7H3 transduced"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "B16-F10 (murine melanoma transduced with 4IG B7H3)",
+        "genotype_or_key_features": "4IG B7H3 transduced"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "BetaBART Phase 1/2",
+        "genotype_or_key_features": "first\u2011in\u2011human enrollment, dose 100 \u00b5Ci Y\u201190 MIL\u201133B"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "long\u2011term survival",
+        "value": "56% at 100 days",
+        "confidence_interval": "",
+        "n": "unspecified",
+        "population": "IR\u2011resistant CT26 tumors in immunocompetent mice",
+        "comparator": "vector control or saline",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "tumor uptake (SUV ratio)",
+        "value": "high tumor\u2011to\u2011heart ratio",
+        "confidence_interval": "",
+        "n": "unspecified",
+        "population": "HeLa xenograft mice",
+        "comparator": "CRISPR\u2011KO or excess cold antibody",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "BetaBART is a humanized anti\u2011B7H3 antibody with 20\u202fpM affinity for the tumor\u2011specific 4\u2011Ig isoform; when labeled with Y\u201190 it delivers beta radiation that induces DNA damage, immunogenic cell death and a CD8\u2011dependent in situ vaccination, leading to long\u2011term tumor control and immune memory in murine models.",
+    "readouts": [
+      "PET imaging (Zr\u201189), SUV ratios",
+      "RNA\u2011seq",
+      "single\u2011cell RNA\u2011seq",
+      "IHC (CD3, CD4, CD8, TCF1)",
+      "survival curves"
+    ],
+    "key_findings": [
+      "MIL\u201133B (Zr\u201189) specifically localizes to 4IG\u2011expressing tumors in vivo, with loss of signal in B7H3\u2011KO or excess cold antibody controls.",
+      "A single 100\u202f\u00b5Ci Y\u201190\u2011MIL\u201133B injection yields 56% long\u2011term survival in IR\u2011resistant CT26 tumors, whereas controls die.",
+      "CD8 T\u2011cell depletion abolishes the survival benefit, indicating CD8\u2011mediated adaptive immunity is essential.",
+      "Treated mice develop immune memory, rejecting rechallenge with the same tumor cells at >100\u202fdays post\u2011treatment.",
+      "Cold (non\u2011radiolabeled) MIL\u201133B antibody at high dose shows no anti\u2011tumor effect, confirming radiation drives the response.",
+      "Small\u2011molecule NM600 requires checkpoint blockade to achieve long\u2011term survivors, highlighting modality\u2011specific immune priming."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Human 4IG isoform is absent in standard mouse models, requiring transduction; circulating soluble 2IG isoform may act as a decoy sink for the antibody."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "immune checkpoint inhibitor (anti\u2011PD\u20111/PD\u2011L1)",
+        "rationale": "Radioligand\u2011induced immunogenic cell death may synergize with checkpoint blockade to enhance CD8 T\u2011cell activity.",
+        "phenotype": "Increased long\u2011term survival and immune memory compared with radioligand alone.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "NM600 small\u2011molecule radioligand",
+        "rationale": "Combining beta or alpha emitting NM600 with checkpoint blockade overcomes lack of single\u2011agent efficacy.",
+        "phenotype": "Long\u2011term survivors observed only in combination arms; actinium\u2011225 more effective in immune\u2011resistant melanoma.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can the 4IG\u2011specific antibody be engineered to avoid the soluble 2IG decoy and improve tumor delivery?",
+      "What is the optimal isotope (beta vs alpha) and dosing schedule to maximize immune priming while minimizing lymphocyte toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::evans::2",
+    "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+    "talk_title": "Granzyme\u2011B targeted PET imaging to monitor immune activation during PSMA\u2011RLT plus pembrolizumab",
+    "speaker": {
+      "name": "Mike Evans",
+      "affiliation": "UCSF",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "molecular_glue",
+      "biomarker_development",
+      "clinical_trial",
+      "imaging"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Granzyme B",
+        "alteration": "",
+        "pathway": "immune_effector",
+        "modality": "peptide_vaccine",
+        "compound_name": "GRIP granzyme probe (Cu\u201164 labeled)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "activated CD8 T\u2011cells releasing granzyme B in tumor microenvironment",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Granzyme B PET signal",
+        "type": "pharmacodynamic",
+        "assay": "Cu\u201164 PET imaging",
+        "finding": "Lesions with increased SUV correlated with PSA declines and later tumor response in mCRPC patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1 PSMA\u2011617 + pembrolizumab with granzyme PET",
+        "genotype_or_key_features": "metastatic castration\u2011resistant prostate cancer, schedule 1/2 dosing"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Syngeneic tumor models (e.g., MC38, CT26) with checkpoint blockade",
+        "genotype_or_key_features": "granzyme B competent vs knockout"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "PSA response",
+        "value": "90% decline after PLUVICTO + pembrolizumab (schedule 1)",
+        "confidence_interval": "",
+        "n": "single patient case",
+        "population": "mCRPC, triple\u2011digit PSA",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Granzyme PET SUV change",
+        "value": "increase in SUV of 8 bone lesions (April scan) and further intensification on August scan",
+        "confidence_interval": "",
+        "n": "single patient case",
+        "population": "same patient, lesions confirmed as cancer by PSMA PET",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Granzyme PET SUV change (second patient)",
+        "value": "new lesions became PET\u2011avid on second scan, matching PSA decline",
+        "confidence_interval": "",
+        "n": "single patient case",
+        "population": "mCRPC patient on PLUVICTO + pembrolizumab",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A Cu\u201164\u2011labeled GRIP peptide is proteolytically activated by granzyme B released from cytotoxic T cells; the activated probe inserts into nearby membranes, retaining signal on PET and enabling non\u2011invasive visualization of immune\u2011mediated tumor killing during PSMA\u2011targeted radioligand therapy combined with pembrolizumab.",
+    "readouts": [
+      "Cu\u201164 PET imaging",
+      "SUV quantification",
+      "PSA measurements",
+      "single\u2011cell RNA\u2011seq of peripheral blood",
+      "flow cytometry of granzyme B expression"
+    ],
+    "key_findings": [
+      "Granzyme\u2011B PET signal appears in bone lesions after sub\u2011ablative PSMA\u2011617 (Pluvicto) plus pembrolizumab, coinciding with PSA reductions.",
+      "Serial granzyme PET scans show increased SUV in existing lesions and emergence of new PET\u2011avid lesions, reflecting evolving immune activation.",
+      "Granzyme PET uptake is absent in control mice lacking granzyme B, confirming probe specificity.",
+      "Probe uptake correlates with peripheral blood granzyme B induction and with clinical response, suggesting a pharmacodynamic biomarker for RLT\u2011IO combinations.",
+      "No significant off\u2011target uptake observed in most patients; occasional uptake in sarcoma of unclear relevance."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "Pluvicto (Lu\u2011177\u2011PSMA\u2011617)",
+        "rationale": "Sub\u2011ablative radioligand may reprogram tumor microenvironment to enable granzyme\u2011B release from CD8 T cells.",
+        "phenotype": "Enhanced granzyme PET signal and PSA decline when administered before or concurrent with pembrolizumab.",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Pembrolizumab (PD\u20111 inhibitor)",
+        "rationale": "Checkpoint blockade amplifies CD8 T\u2011cell activation, increasing granzyme B release detectable by the probe.",
+        "phenotype": "Higher response rates in schedule 1/2 cohorts versus schedule 3 (pembrolizumab first).",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal timing of granzyme\u2011B PET relative to radioligand dosing to capture peak immune activation?",
+      "Can granzyme\u2011B PET predict responders early enough to guide treatment adaptation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::patel::3",
+    "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+    "talk_title": "Immunostimulatory radioligand therapy to enhance checkpoint blockade and CAR\u2011T efficacy",
+    "speaker": {
+      "name": "Ravi Patel",
+      "affiliation": "University of Pittsburgh",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "breast cancer",
+      "neuroblastoma",
+      "glioma",
+      "solid tumors",
+      "liquid tumors"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "radiopharmaceuticals",
+      "combination_therapy",
+      "cell_therapy",
+      "tumor_microenvironment",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "VLA4",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "small_molecule",
+        "compound_name": "LLP\u20112A",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "expressed on multiple solid and liquid tumors; also on lymphocytes",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "B7\u2011H3",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_T",
+        "compound_name": "B7\u2011H3 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high B7\u2011H3 expression in neuroblastoma models",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NM600",
+        "alteration": "",
+        "pathway": "lipid_raft_targeting",
+        "modality": "small_molecule",
+        "compound_name": "NM600",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "multiple tumor types including B78 melanoma, 4T1 breast cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "B78 melanoma",
+        "genotype_or_key_features": "high NM600 uptake, immunogenic"
+      },
+      {
+        "model_type": "mouse",
+        "name": "4T1 breast cancer (metastatic)",
+        "genotype_or_key_features": "spontaneous metastasis, cold tumor"
+      },
+      {
+        "model_type": "mouse",
+        "name": "4T07 breast cancer (non\u2011metastatic)",
+        "genotype_or_key_features": "cold tumor, dose\u2011response to NM600"
+      },
+      {
+        "model_type": "mouse",
+        "name": "B16 melanoma",
+        "genotype_or_key_features": "GP100 antigen for CAR T studies"
+      },
+      {
+        "model_type": "mouse",
+        "name": "SK\u2011N\u2011AS neuroblastoma (NSG)",
+        "genotype_or_key_features": "adrenergic vs mesenchymal subtypes, VLA4 expression"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Low\u2011dose targeted radionuclide therapy (e.g., NM600 or Cu\u201167\u2011LLP\u20112A) delivers localized radiation that modulates the tumor microenvironment, increases pro\u2011inflammatory cytokines and CD8 infiltration, and can serve as a lymphodepleting conditioning regimen for checkpoint blockade or CAR\u2011T cells, while sparing systemic lymphocytes when using small\u2011molecule agents.",
+    "readouts": [
+      "survival curves",
+      "tumor growth inhibition",
+      "cytokine profiling (TNF\u2011\u03b1, IL\u201110)",
+      "flow cytometry for CD8, CD4, exhaustion markers (TIM3, LAG3, PD\u20111)",
+      "single\u2011cell RNA\u2011seq",
+      "immunofluorescence co\u2011localization",
+      "PET imaging for NM600 uptake"
+    ],
+    "key_findings": [
+      "NM600 at 50\u2013100\u202f\u00b5Ci (2.5\u20135\u202fGy) combined with checkpoint blockade yields ~50% complete responses in B78 melanoma, whereas either monotherapy is ineffective.",
+      "In 4T1 metastatic breast cancer, low\u2011dose NM600 alone controls primary tumor but not micrometastases; combination with checkpoint blockade controls both primary and metastatic disease.",
+      "Whole\u2011body 2.5\u202fGy radiation abrogates the synergy, indicating systemic lymphocyte depletion impairs efficacy, whereas tumor\u2011restricted dosing preserves benefit.",
+      "Cu\u201167\u2011LLP\u20112A enhances lymphodepletion, improving engraftment and persistence of adoptively transferred T cells (Flucy conditioning) and boosting CAR\u2011T efficacy in B16\u2011PMEL and neuroblastoma models.",
+      "Copper\u201167 conditioning reduces exhaustion markers (TIM3, LAG3, PD\u20111) on CAR\u2011T cells and shifts tumor\u2011associated macrophages from M2 to a less suppressive phenotype."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Full\u2011length antibody radioligands (e.g., GD2\u2011Ab) cause systemic lymphodepletion and lack synergy with checkpoint blockade, highlighting the importance of preserving peripheral immune cells."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "immune checkpoint inhibitors (anti\u2011PD\u20111/PD\u2011L1)",
+        "rationale": "Radiation\u2011induced immunogenic cell death primes tumors for checkpoint\u2011mediated T\u2011cell activation.",
+        "phenotype": "Synergistic tumor regression and increased cytokine milieu; loss of effect when CD8 cells depleted.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "CAR\u2011T cells (B7\u2011H3 CAR)",
+        "rationale": "Cu\u201167\u2011LLP\u20112A provides lymphodepleting conditioning and tumor microenvironment remodeling to enhance CAR\u2011T expansion and reduce exhaustion.",
+        "phenotype": "5/7 mice achieve complete response versus 0/7 with CAR\u2011T alone; increased CD8/T\u2011cell memory markers.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Flucy (cyclophosphamide) conditioning",
+        "rationale": "Combining Cu\u201167\u2011LLP\u20112A with standard chemotherapy conditioning further improves donor T\u2011cell engraftment.",
+        "phenotype": "Higher donor T\u2011cell chimerism and tumor control.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal radiation dose and timing to maximize immune priming while minimizing systemic lymphocyte loss?",
+      "Can VLA4\u2011targeted radionuclide therapy be safely translated to humans for CAR\u2011T conditioning without excessive off\u2011target toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

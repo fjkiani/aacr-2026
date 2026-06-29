@@ -1,0 +1,214 @@
+[
+  {
+    "talk_id": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Gabriele Cambiamalla",
+      "institution_or_pharma": "Mount Sinai",
+      "session_title": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers",
+      "talk_title": "Implementation of AI models for pathology",
+      "rhetorical_signals": [
+        "Speaker said: \"fewer than 15% of healthcare organizations are at any stage of digital pathology adoption\"",
+        "Speaker said: \"there was one FDA approval for AI in pathology in 2021, and maybe three more recently\"",
+        "Speaker said: \"the pathologist workforce is aging, worldwide shortage, leading to burnout and delays\"",
+        "Speaker said: \"we reduced by about 43% the amount of rapid tests while keeping the same gold standard performance\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "digital pathology AI deployment pipeline",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "reliance on a single LIS integration causing breakage when the LIS changes",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Prospective silent trial for EGFR prediction model",
+        "target_biology": "EGFR mutation status prediction from H&E whole slide images",
+        "flawed_enrollment_criteria": "None explicitly stated; however, the trial relies on retrospective data for threshold simulation which may not reflect real-world heterogeneity",
+        "missing_biomarker": "No explicit ctDNA or NGS confirmation arm for discordant cases",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Retrospective simulation may overestimate performance; prospective validation sample size not disclosed",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proprietary deployment infrastructure tied to specific LIS",
+        "ip_vulnerability_note": "Speaker disclosed that the pipeline broke when the institution changed its LIS, indicating limited portability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad deployment without standardized integration layer may limit multi-center scalability"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No prospective multi-center validation results presented",
+        "Missing comparison to standard of care NGS workflow in a randomized setting",
+        "Lack of detailed performance metrics for low-resource settings"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "EGFR mutation prediction from H&E lacks a robust biomarker to replace NGS in low-resource settings",
+        "transcript_evidence": "Speaker said: \"we could reduce by about 43% the amount of rapid tests while keeping the same gold standard performance\"",
+        "crispro_angle": "CrisPRO can integrate multi-omics and pathology embeddings to improve predictive accuracy and provide confidence scores for stratifying patients who truly need NGS",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve protocol for the silent EGFR trial",
+          "PubMed: benchmark EGFR H&E prediction models"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Current prospective silent trial lacks a randomized comparator arm and clear statistical powering",
+        "transcript_evidence": "Speaker said: \"we see about 15% of healthcare organizations are at any stage of digital pathology adoption\" indicating limited real-world deployment",
+        "crispro_angle": "CrisPRO can simulate trial outcomes using virtual patient cohorts to optimize enrollment criteria and power calculations before launch",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: identify similar AI pathology trials for design benchmarks"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NYU",
+        "context": "cited as early work predicting mutations from H&E",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "MSK Impact",
+        "context": "source of large cohort for EGFR model development",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "FDA",
+        "context": "mentioned regarding limited approvals for AI pathology",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific biological mechanisms cause the EGFR model to misclassify certain cases?",
+      "How will the model perform in diverse histology sites beyond the institutions used for training?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "EGFR H&E prediction model (Mount Sinai)",
+        "SlideFlow deployment platform"
+      ],
+      "companies_to_monitor": [
+        "Mount Sinai",
+        "MSK"
+      ]
+    }
+  },
+  {
+    "talk_id": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Lihua Wang",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "deep-learning-in-digital-pathology-from-morphology-to-multimodal-biomarkers",
+      "talk_title": "Integrating AI pathology, spatial multi-omics, and biomarker discovery",
+      "rhetorical_signals": [
+        "Speaker said: \"we generated the same sections, spatial transcriptomics, proteomics, and post H&E images\"",
+        "Speaker said: \"we can align modalities at single-cell resolution using distance, cell typing similarity, and topology\"",
+        "Speaker said: \"we built 3D molecular maps of human tumors with 2 million cells\"",
+        "Speaker said: \"we defined spatial niches of macrophages with distinct immunosuppressive or immune\u2011active signatures\"",
+        "Speaker said: \"we are developing AI models to detect CAF tumor niches directly from H&E images\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "current spatial omics platforms",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "limited cytokine detection sensitivity in spatial transcriptomics/proteomics",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "proprietary AI models for CAF and TIS detection",
+        "ip_vulnerability_note": "Speaker described models but did not disclose novel algorithmic components, suggesting core scaffold may be standard deep learning pipelines",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on high\u2011cost spatial omics platforms may limit clinical scalability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high\u2011resolution 3D spatial maps revealing distinct macrophage niches, then concluded that \"we can translate these insights into biomarkers\" without addressing the current limitation of cytokine detection, which contradicts the earlier admission of limited cytokine capture"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical outcome correlation presented for the spatial niches",
+        "Absence of prospective validation of AI\u2011derived biomarkers",
+        "Limited discussion of assay reproducibility across platforms"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify cytokine\u2011driven resistance pathways that are missed due to current spatial platform limitations",
+        "transcript_evidence": "Speaker said: \"I hope in the near future we can see a more robust platform to capture those cytokines\"",
+        "crispro_angle": "CrisPRO can integrate external cytokine assay data with spatial embeddings to infer missing signaling cues",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: recent cytokine spatial profiling technologies",
+          "ClinicalTrials.gov: trials using spatial omics for immunotherapy response"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s ability to generate synthetic H&E embeddings that predict spatial transcriptomic signatures, reducing dependence on expensive platforms",
+        "transcript_evidence": "Speaker said: \"we can use a simple model to infer spatial architecture from H&E images\"",
+        "crispro_angle": "CrisPRO\u2019s generative models can predict multi\u2011omics maps from routine H&E, offering a cost\u2011effective alternative",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Benchmark studies comparing H&E\u2011derived predictions to Visium/HD spatial data"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Visium HD",
+        "context": "mentioned as a high\u2011resolution spatial transcriptomics platform",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "NYU",
+        "context": "cited for early mutation prediction work",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do the identified CAF and macrophage spatial niches correlate with patient survival across cancer types?",
+      "Can the AI models trained on one tissue type generalize to others without retraining?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Omni\u2011TIS AI framework",
+        "Spiral multimodal integration platform"
+      ],
+      "companies_to_monitor": [
+        "10x Genomics",
+        "NanoString"
+      ]
+    }
+  }
+]

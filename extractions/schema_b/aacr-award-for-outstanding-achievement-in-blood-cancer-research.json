@@ -1,0 +1,126 @@
+[
+  {
+    "talk_id": "aacr-award-for-outstanding-achievement-in-blood-cancer-research::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. John DiPersio",
+      "institution_or_pharma": "Washington University School of Medicine in St. Louis",
+      "session_title": "aacr-award-for-outstanding-achievement-in-blood-cancer-research",
+      "talk_title": "Developing CAR T therapies for T\u2011cell malignancies",
+      "rhetorical_signals": [
+        "Speaker said: \"I don't know what to say, really.\"",
+        "Speaker said: \"We thought that after seeing a few patients with T\u2011cell ALL die from no option, we thought that maybe we should try to push this forward.\"",
+        "Speaker said: \"The FDA said they were impressed enough that they said proceed with the registration study.\"",
+        "Speaker said: \"The FDA was completely fixated on CRS, and they wanted us to be extremely careful.\"",
+        "Speaker said: \"We did a simple experiment where we deleted CD2 in a CAR and made the CAR to CD19 as a sort of a control.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CD7\u2011directed universal CAR T (UCAR T7)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Loss of CD7 surface expression on relapsed leukemic blasts (splicing abnormalities, biallelic deletion, down\u2011regulation) not pre\u2011emptively addressed",
+        "unexplained_resistance_quote": "Speaker said: \"We noticed that some of the patients had lost CD7 expression. In fact, most of them that relapsed had lost CD7 expression.\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted immunodeficiency from targeting CD7 and CD2 but did not quantify infection\u2011related mortality",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "UCAR T7 registration study (multinational, ~120 pts)",
+        "target_biology": "Allogeneic CD7\u2011CAR T for relapsed/refractory T\u2011cell ALL",
+        "flawed_enrollment_criteria": "Enrolling all relapsed T\u2011cell ALL patients without pre\u2011screening for CD7 expression or other resistance biomarkers",
+        "missing_biomarker": "Baseline CD7 expression / mechanisms of CD7 loss",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA or serial flow cytometry to track CD7 loss",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Multiplex CRISPR editing of CD7 and TRAC in allogeneic donor T cells",
+        "ip_vulnerability_note": "Speaker disclosed detailed manufacturing steps (dasatinib early, alpha/beta depletion, OKT3\u2011mediated cell kill) revealing reliance on a complex gene\u2011editing workflow that could be circumvented by alternative editing platforms",
+        "scale_or_manufacturing_bottleneck": "Need for alpha/beta affinity column or OKT3\u2011mediated depletion to achieve <5% residual TRAK+ cells, which reduces overall yield",
+        "clinical_strategy_weakness": "Broad enrollment without biomarker stratification and reliance on a single antigen (CD7) despite known antigen loss"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that CD2 knockout CAR T cells are functionally impaired in vitro and in vivo, yet later pursued CD2 as a primary target for T\u2011cell non\u2011Hodgkin lymphoma without fully resolving the functional deficit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Long\u2011term infection and immunodeficiency outcomes not reported",
+        "No biomarker\u2011stratified efficacy analysis (e.g., CD7 loss kinetics)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients at risk of CD7 antigen loss using CRISPR\u2011derived resistance signatures and serial ctDNA/flow monitoring",
+        "transcript_evidence": "Speaker said: \"We noticed that some of the patients had lost CD7 expression. In fact, most of them that relapsed had lost CD7 expression.\"",
+        "crispro_angle": "CrisPRO can integrate genomic, transcriptomic and ctDNA data to predict CD7 loss and guide patient selection or early switch to alternative CARs",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the CD2 costimulatory pathway by epitope\u2011masked CD2 or CD2\u2011cytoplasmic domain insertion to overcome CD2\u2011knockout functional loss",
+        "transcript_evidence": "Speaker said: \"When we delete CD2 in T cells and in these CAR T cells, they take a huge hit. We did not see that with CD7.\"",
+        "crispro_angle": "CrisPRO can model CD2\u2011CAR signaling networks to design optimal intracellular domains that restore function without antigen expression",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Co\u2011administer long\u2011acting IL\u20117 (NTi\u20117) to boost CAR T expansion and persistence in T\u2011cell malignancies",
+        "transcript_evidence": "Speaker said: \"The addition of just a cytokine, IL\u20117, provided curative potential in multiple mouse models.\"",
+        "crispro_angle": "CrisPRO can predict cytokine\u2011CAR synergy and optimal dosing windows to maximize expansion while minimizing CRS",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate early IL\u20117 dosing (days 1\u20117) and prospective CRS mitigation (PI3\u03b3\u03b4 + JAK inhibition) into the registration protocol",
+        "transcript_evidence": "Speaker said: \"If you wait 21 days, there's no benefit. If you wait 14 days, there's a diminished benefit, and you have to give it between days one and day seven for them to be markedly improved.\"",
+        "crispro_angle": "CrisPRO can simulate trial arms with varied IL\u20117 timing and prophylactic kinase inhibition to forecast efficacy and safety outcomes",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AbbVie",
+        "context": "Sponsor of the AACR award supporting the session",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "WuJin",
+        "context": "Company founded by former postdoc who helped develop the CD7 CAR platform",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "FDA",
+        "context": "Regulatory body imposing restrictions on IL\u20117 timing and CRS monitoring",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal timing and dosing schedule for long\u2011acting IL\u20117 in patients receiving UCAR T therapies?",
+      "What molecular mechanisms drive CD7 down\u2011regulation in relapsed patients?",
+      "Can CD2\u2011targeted CARs be engineered to retain function without epitope masking?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "UCAR T7 (CD7\u2011CAR)",
+        "UCAR T2 (CD2\u2011CAR)",
+        "NTi\u20117 (long\u2011acting IL\u20117 fusion)"
+      ],
+      "companies_to_monitor": [
+        "WuJin",
+        "Washington University (WashU) cell therapy program"
+      ]
+    }
+  }
+]

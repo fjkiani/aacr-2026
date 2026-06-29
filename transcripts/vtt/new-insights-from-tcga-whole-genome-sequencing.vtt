@@ -1,0 +1,6785 @@
+WEBVTT
+
+1
+00:00:01.240 --> 00:00:04.540
+Okay, I want to start the session. So welcome, everyone.
+
+2
+00:00:04.600 --> 00:00:08.061
+I'm Gadi Getz. I'm from Mass General Hospital and the Broad
+
+3
+00:00:08.120 --> 00:00:11.620
+Institute, and I welcome you to this session on new insights from
+
+4
+00:00:11.680 --> 00:00:15.320
+TCGA whole-genome sequencing. And since this is
+
+5
+00:00:15.420 --> 00:00:18.960
+an educational session, I will start first with a kind of longer
+
+6
+00:00:19.000 --> 00:00:22.920
+introduction about TCGA, and if you are new to cancer genomics
+
+7
+00:00:23.500 --> 00:00:26.940
+and the whole-genome sequencing that was done together with TCGA data.
+
+8
+00:00:27.540 --> 00:00:29.040
+So here are my disclosures.
+
+9
+00:00:30.260 --> 00:00:34.070
+So it's useful, when you think about cancer genomics, to think about the whole
+
+10
+00:00:34.140 --> 00:00:37.780
+life history of cancer. Cancer is a disease of the genome and the epigenome.
+
+11
+00:00:38.340 --> 00:00:41.470
+We all start from a single fertilized egg with
+
+12
+00:00:42.040 --> 00:00:45.070
+DNA coming from mom and dad, and potentially also with
+
+13
+00:00:45.460 --> 00:00:49.269
+possible germline risk alleles. As cells divide, or
+
+14
+00:00:49.320 --> 00:00:52.180
+even if they don't divide, they accumulate DNA damage, and there are repair
+
+15
+00:00:52.240 --> 00:00:55.940
+mechanisms in the cells that are used to repair the damage, but the
+
+16
+00:00:55.980 --> 00:00:59.000
+damage that is not repaired can stay as mutations.
+
+17
+00:00:59.400 --> 00:01:03.120
+Most of those mutations don't do anything. We call them passenger events.
+
+18
+00:01:03.480 --> 00:01:07.400
+But occasionally, there could be an event that increases the fitness of the
+
+19
+00:01:07.480 --> 00:01:11.479
+cells, and the clone starts to either grow faster or die
+
+20
+00:01:11.540 --> 00:01:13.980
+slower, and it accumulates, and that clone grows.
+
+21
+00:01:14.400 --> 00:01:18.100
+This is still not cancer. It occurs in every tissue in our body.
+
+22
+00:01:18.520 --> 00:01:22.220
+But then it continues to divide in the clone and many more passenger
+
+23
+00:01:22.260 --> 00:01:26.000
+events occur. And here's another driver event that increase further the
+
+24
+00:01:26.080 --> 00:01:29.980
+fitness of the cells, and they start to take over the population of cells.
+
+25
+00:01:30.070 --> 00:01:34.010
+And here's another driver. And this one is the last clonal driver,
+
+26
+00:01:34.100 --> 00:01:37.340
+meaning that all the cancer cells are descendant of that cell.
+
+27
+00:01:37.360 --> 00:01:40.980
+And this is very important because that means that the cancer cells
+
+28
+00:01:41.340 --> 00:01:45.320
+have all the mutations that were acquired all the way back in this lineage
+
+29
+00:01:45.360 --> 00:01:48.110
+from this cell all the way to the fertilized egg.
+
+30
+00:01:48.580 --> 00:01:52.140
+And then cancer continues to evolve with subclones driven by
+
+31
+00:01:52.180 --> 00:01:55.760
+drivers. And then when cancer is diagnosed, the DNA
+
+32
+00:01:55.840 --> 00:01:59.480
+is highly altered with between
+
+33
+00:01:59.700 --> 00:02:03.040
+300 and 300,000 mutations in the genome.
+
+34
+00:02:03.720 --> 00:02:06.110
+The genome, just to remind people, is 3 billion bases.
+
+35
+00:02:06.660 --> 00:02:10.361
+But only a handful of these mutations are actually the drivers that gave the
+
+36
+00:02:10.420 --> 00:02:13.850
+cells the fitness advantage, and potentially zero or one of these
+
+37
+00:02:13.880 --> 00:02:17.260
+germline risk alleles.
+
+38
+00:02:18.300 --> 00:02:21.880
+After treatment, cancer continues to evolve, but since TCGA and also
+
+39
+00:02:21.920 --> 00:02:24.200
+ICGC, which we'll mention, the PEACOCK project,
+
+40
+00:02:25.020 --> 00:02:28.140
+worked on primary tumors, we won't focus on this today.
+
+41
+00:02:28.480 --> 00:02:30.220
+Now, where are all these mutations coming from?
+
+42
+00:02:30.290 --> 00:02:33.060
+They are coming from mutational processes that occur
+
+43
+00:02:33.660 --> 00:02:37.160
+in different cells in the body. There are these aging
+
+44
+00:02:37.820 --> 00:02:41.730
+processes like this deamination of methylated cytosine in CpGs,
+
+45
+00:02:42.000 --> 00:02:43.989
+and they occur in all cells in the body.
+
+46
+00:02:44.020 --> 00:02:47.790
+There could be carcinogens, like cigarette smoke or UV light, that generate their
+
+47
+00:02:47.820 --> 00:02:51.500
+own pattern of mutations. And also, there could be some driver events that
+
+48
+00:02:52.520 --> 00:02:55.900
+create defects in DNA repair genes, and from that point on,
+
+49
+00:02:56.360 --> 00:03:00.180
+the damage that would have been repaired is not
+
+50
+00:03:00.220 --> 00:03:04.080
+repaired as efficiently, and you get more mutations in with their
+
+51
+00:03:04.180 --> 00:03:07.980
+signatures. And of course, if the tumor is treated with the
+
+52
+00:03:08.040 --> 00:03:11.360
+DNA-damaging agent, there could have also signatures or
+
+53
+00:03:11.800 --> 00:03:14.280
+processes that are caused by, for example, chemotherapy.
+
+54
+00:03:14.340 --> 00:03:17.299
+But again, we'll talk about primary tumors that are mostly untreated.
+
+55
+00:03:18.460 --> 00:03:22.140
+So in order to study all of these aspects, and particularly these driver
+
+56
+00:03:22.180 --> 00:03:25.540
+mutations, there are cancer genome projects started two
+
+57
+00:03:25.580 --> 00:03:28.880
+decades ago, including TCGA. And the main
+
+58
+00:03:29.020 --> 00:03:32.640
+goal is to generate a comprehensive list of genes and pathways
+
+59
+00:03:33.000 --> 00:03:36.320
+and regions of the genome that drive cancer.
+
+60
+00:03:37.060 --> 00:03:40.950
+Also find molecular subtypes and study mutational processes,
+
+61
+00:03:41.000 --> 00:03:44.940
+what generates mutations, and associate all of these findings with outcome of
+
+62
+00:03:45.000 --> 00:03:48.829
+the cancer. Of course, when I say cancer is a disease of the genome and
+
+63
+00:03:48.900 --> 00:03:52.860
+epigenome, is because also epigenetic changes that are copied from mother cell
+
+64
+00:03:52.900 --> 00:03:56.080
+to daughter cell also can be kind of cancer-causing.
+
+65
+00:03:57.020 --> 00:04:00.049
+So this is the TCGA project, started in 2006,
+
+66
+00:04:01.100 --> 00:04:04.860
+with studying three tumor types and then extended in 2009 to study
+
+67
+00:04:04.920 --> 00:04:08.360
+33 tumor types, 20 kind of larger tumor types and
+
+68
+00:04:08.940 --> 00:04:12.180
+13 more rare cancer types that are smaller cohorts.
+
+69
+00:04:12.490 --> 00:04:16.200
+And then it's formally ended generating data in 2016
+
+70
+00:04:16.820 --> 00:04:20.800
+and published a comprehensive analysis
+
+71
+00:04:20.860 --> 00:04:24.700
+of all the data in 2018. Now, every tumor in
+
+72
+00:04:24.760 --> 00:04:26.860
+TCGA, tumor normal pair, had
+
+73
+00:04:28.800 --> 00:04:32.540
+whole exome sequencing. Roughly 10% had originally PCR
+
+74
+00:04:32.780 --> 00:04:33.240
+plus
+
+75
+00:04:34.880 --> 00:04:38.620
+deeper whole-genome sequencing, and 20% had low-coverage whole-genome
+
+76
+00:04:38.700 --> 00:04:42.330
+sequencing, and then RNA-Seq for mRNA and microRNA, SNP arrays,
+
+77
+00:04:42.400 --> 00:04:46.100
+methylation arrays, some proteomic data with reverse phase
+
+78
+00:04:46.180 --> 00:04:47.920
+protein arrays, and clinical data.
+
+79
+00:04:48.920 --> 00:04:50.680
+Similar projects around the world,
+
+80
+00:04:51.640 --> 00:04:55.600
+combined under the umbrella of the International Cancer Genome Consortium, aim
+
+81
+00:04:55.660 --> 00:04:59.600
+to study 50 tumor types, again, with the same study design of 500 tumor
+
+82
+00:04:59.640 --> 00:05:03.500
+normal pairs each. So there are more recent large-scale
+
+83
+00:05:03.560 --> 00:05:07.550
+projects, including kind of in Genomics England, and BC Cancer, and
+
+84
+00:05:07.620 --> 00:05:11.120
+Hardwick Medical Center, and ICGC Argo, and Japan Cancer
+
+85
+00:05:11.200 --> 00:05:14.820
+Sequencing, and others that are studying kind of large-scale cancer genomics.
+
+86
+00:05:16.060 --> 00:05:18.140
+So what are the key tasks in cancer genomics?
+
+87
+00:05:18.480 --> 00:05:20.720
+Once you start, you get these tumor normal pairs.
+
+88
+00:05:21.120 --> 00:05:25.090
+The first thing is to identify all the changes that happen from normal cells
+
+89
+00:05:25.120 --> 00:05:29.060
+to cancer cells, and we call this characterization, finding all these
+
+90
+00:05:29.140 --> 00:05:32.800
+somatic events, including also finding the germline events, and that's per
+
+91
+00:05:32.860 --> 00:05:33.700
+individual.
+
+92
+00:05:34.720 --> 00:05:38.300
+Then we take all this data across a cohort of patients
+
+93
+00:05:38.820 --> 00:05:42.760
+and study, and we call that phase interpretation, where we discover
+
+94
+00:05:43.500 --> 00:05:46.960
+new drivers and subtypes and associate it with
+
+95
+00:05:47.080 --> 00:05:50.000
+outcome and mutational processes and things like that.
+
+96
+00:05:51.000 --> 00:05:54.840
+The power for these studies
+
+97
+00:05:55.000 --> 00:05:55.560
+come from
+
+98
+00:05:56.440 --> 00:06:00.090
+sequencing depth of the-- in the individual, sequencing depth and quality and
+
+99
+00:06:00.580 --> 00:06:03.520
+read length, and for the discovery part, the size of the
+
+100
+00:06:03.560 --> 00:06:07.260
+cohort.So this is the TCGA and all tumor types in TCGA.
+
+101
+00:06:07.380 --> 00:06:11.240
+Every tumor type was studied, and then at some point,
+
+102
+00:06:11.480 --> 00:06:15.000
+a paper came out, we call it the marker paper, and studied some number of
+
+103
+00:06:15.100 --> 00:06:18.380
+cases. And then later on, more cases were
+
+104
+00:06:19.020 --> 00:06:21.660
+acquired, and that's the column of the cases of
+
+105
+00:06:22.440 --> 00:06:25.640
+characterized, and overall, 11,000 cancers.
+
+106
+00:06:26.880 --> 00:06:28.600
+So in 2018,
+
+107
+00:06:29.560 --> 00:06:33.460
+all of the data were harmonized and processed together in this
+
+108
+00:06:33.760 --> 00:06:37.560
+effort called the Pan-Can Atlas, and multiple papers were published in three
+
+109
+00:06:37.660 --> 00:06:41.560
+categories. And all the mutations were processed by multiple
+
+110
+00:06:41.660 --> 00:06:45.120
+centers and called this MC3 for
+
+111
+00:06:45.220 --> 00:06:47.900
+multi-center mutation calling in multiple cancers.
+
+112
+00:06:48.840 --> 00:06:52.720
+Then joining forces with ICGC, created this project called
+
+113
+00:06:52.800 --> 00:06:56.300
+the PEACoG, Pan-Cancer Analysis of Whole Genomes, focusing on
+
+114
+00:06:56.440 --> 00:07:00.240
+2,600 tumor normal pairs for whole genomes, because the
+
+115
+00:07:00.320 --> 00:07:02.940
+Pan-Can Atlas focused mostly on whole exome data.
+
+116
+00:07:03.800 --> 00:07:07.580
+And that also was analyzed in a large cohort of
+
+117
+00:07:08.280 --> 00:07:11.880
+researchers around the world, publishing in 2020, a bunch of
+
+118
+00:07:11.920 --> 00:07:15.900
+papers, a collection of papers, and here are some examples of papers
+
+119
+00:07:15.910 --> 00:07:19.780
+that were published. And the main key findings of
+
+120
+00:07:19.820 --> 00:07:23.720
+the PEACoG was that the cancer has on average four to five drivers.
+
+121
+00:07:24.120 --> 00:07:26.220
+The majority of drivers are in coding regions.
+
+122
+00:07:26.320 --> 00:07:28.140
+Third promoter mutation is an outlier.
+
+123
+00:07:28.580 --> 00:07:30.780
+5% of cancers have no clear driver.
+
+124
+00:07:31.880 --> 00:07:35.220
+Cancer clones initiate decades before diagnosis.
+
+125
+00:07:35.800 --> 00:07:39.540
+Many cancers harbor complex genomic events like chromothripsis or
+
+126
+00:07:39.560 --> 00:07:42.780
+chromoplexy or retrotransposition.
+
+127
+00:07:42.820 --> 00:07:46.760
+There are different mutational processes for single-base substitutions or
+
+128
+00:07:46.800 --> 00:07:48.600
+double-base substitutions and indels.
+
+129
+00:07:49.320 --> 00:07:51.780
+Some of them, the etiology is known, some is unknown.
+
+130
+00:07:53.680 --> 00:07:57.390
+8% of cancer have predisposition germline alleles, and
+
+131
+00:07:57.460 --> 00:08:01.440
+tumor types and cell of origin could be predicted by the pattern of mutations.
+
+132
+00:08:02.540 --> 00:08:06.200
+What are the limitations of PEACoG? There are four main limitations.
+
+133
+00:08:06.320 --> 00:08:10.060
+One is the lower depth of sequencing with only 30 to 50X
+
+134
+00:08:10.100 --> 00:08:14.080
+coverage. There are missing mutations because the PCR amplification
+
+135
+00:08:14.120 --> 00:08:16.820
+of the whole genomes not
+
+136
+00:08:16.880 --> 00:08:20.780
+amplifies well GC-rich regions, so
+
+137
+00:08:21.080 --> 00:08:24.700
+you lose mutations. And there's, sorry, lack of power
+
+138
+00:08:24.860 --> 00:08:28.580
+because the number of tumors per tumor type was relatively
+
+139
+00:08:28.720 --> 00:08:32.341
+small, and some of the drivers are tumor type specific, particularly the
+
+140
+00:08:32.380 --> 00:08:36.341
+regulatory ones. And not all of the PEACoG had
+
+141
+00:08:36.380 --> 00:08:39.220
+other data types, as opposed to TCGA, where all these
+
+142
+00:08:40.321 --> 00:08:43.640
+other data types like RNA and microRNA and proteomics, et cetera.
+
+143
+00:08:44.180 --> 00:08:47.940
+So since then, TCGA
+
+144
+00:08:48.280 --> 00:08:51.760
+and the NCI sequenced deeply these whole genome
+
+145
+00:08:51.820 --> 00:08:55.120
+sequencing of nearly all of the TCGA cases, more than
+
+146
+00:08:55.240 --> 00:08:56.940
+8,500 tumor normal pairs.
+
+147
+00:08:57.780 --> 00:09:01.260
+Deep sequencing of 80X with newer technologies of
+
+148
+00:09:01.340 --> 00:09:04.860
+sequencing. They are PCR-free rather than PCR
+
+149
+00:09:04.900 --> 00:09:08.860
+plus, and there's all this rich and curated dataset like
+
+150
+00:09:09.240 --> 00:09:11.520
+whole exome and RNA-Seq and microRNA-Seq, et cetera.
+
+151
+00:09:11.600 --> 00:09:15.280
+And as you can see in this plot, the blue is the
+
+152
+00:09:15.420 --> 00:09:18.920
+8,500 cases compared to the yellow, which were done in the PEACoG.
+
+153
+00:09:20.040 --> 00:09:23.510
+How do you get to this data? You could go to the GDC, the Genomics Data
+
+154
+00:09:23.620 --> 00:09:27.460
+Commons, and put your dbGaP credentials and select the right samples
+
+155
+00:09:27.480 --> 00:09:30.900
+that you want and filter them to have the high coverage, and then you could
+
+156
+00:09:31.200 --> 00:09:33.900
+download those whole genome sequencing data.
+
+157
+00:09:34.620 --> 00:09:36.560
+Now, this session will have three speakers.
+
+158
+00:09:37.120 --> 00:09:40.100
+Jason Pitt will start with representation learning over
+
+159
+00:09:42.140 --> 00:09:44.320
+cancer genomes, scaling petabytes to predictions.
+
+160
+00:09:44.620 --> 00:09:47.860
+Then Marcin Imielinski will talk about dimensional structural chromosome
+
+161
+00:09:47.900 --> 00:09:51.580
+instability in human cancers. And we'll finish with my talk on systematic analysis
+
+162
+00:09:51.620 --> 00:09:55.580
+of more than 8,000 TCGA whole genomes, and the goal is to have
+
+163
+00:09:55.620 --> 00:09:57.620
+20 minutes talk and seven minutes Q&amp;A.
+
+164
+00:09:58.160 --> 00:10:01.140
+So thank you, and Jason, it's all yours.
+
+165
+00:10:12.480 --> 00:10:16.040
+Okay, great. Thanks for the introduction, Gad, and really, thanks to the
+
+166
+00:10:16.080 --> 00:10:19.100
+ACR, the organizers, the session chair for inviting me to be here.
+
+167
+00:10:19.180 --> 00:10:20.590
+I'm really excited to share my
+
+168
+00:10:21.480 --> 00:10:23.780
+thoughts and work with all of you here.
+
+169
+00:10:23.800 --> 00:10:27.620
+So I want to quickly say, just as Gad did, as this is an educational session, the
+
+170
+00:10:27.660 --> 00:10:28.500
+first part of this, I'll
+
+171
+00:10:29.340 --> 00:10:33.150
+be making sure, again, to give an introduction to how we've analyzed mutational
+
+172
+00:10:33.240 --> 00:10:35.580
+patterns over the past 15 years or so.
+
+173
+00:10:36.040 --> 00:10:39.940
+So if you're quite familiar with this process, I assure you as in, if you
+
+174
+00:10:40.080 --> 00:10:42.940
+know mutational signatures, I assure you towards the end, there'll be some new
+
+175
+00:10:43.020 --> 00:10:46.740
+ideas and insights I think will interest you, but please bear with me while we all
+
+176
+00:10:46.780 --> 00:10:47.400
+get up to speed.
+
+177
+00:10:48.760 --> 00:10:50.300
+Before we start, nothing to disclose.
+
+178
+00:10:51.560 --> 00:10:51.700
+But
+
+179
+00:10:52.820 --> 00:10:55.220
+really, let's ground the conversation in genome instability.
+
+180
+00:10:55.320 --> 00:10:58.980
+So genome instability acts as both an enabler and a vulnerability in
+
+181
+00:10:59.080 --> 00:11:01.260
+cancer. So what do I mean by genome instability?
+
+182
+00:11:01.720 --> 00:11:05.560
+Really, it's the propensity of cells to continuously accumulate more and more
+
+183
+00:11:05.580 --> 00:11:09.560
+mutations. And when this occurs, this can be a benefit to
+
+184
+00:11:09.620 --> 00:11:13.360
+cancer development and progression in the sense that it provides
+
+185
+00:11:13.600 --> 00:11:17.580
+enough genomic diversity for cancer cells to use
+
+186
+00:11:17.620 --> 00:11:21.440
+in terms of adaptations, selection, and also expansion.
+
+187
+00:11:21.480 --> 00:11:25.150
+Just giving a little example of how that can happen in terms of hypoxia on the
+
+188
+00:11:25.200 --> 00:11:29.100
+left-hand side. But also important to remember that DNA damage
+
+189
+00:11:29.140 --> 00:11:32.680
+itself or genome instability, I should say, can be a vulnerability with
+
+190
+00:11:33.040 --> 00:11:36.320
+cancer as well, and where certain drugs, such as platinum, will
+
+191
+00:11:36.400 --> 00:11:38.580
+actually increase DNA damage further,
+
+192
+00:11:39.480 --> 00:11:43.160
+hoping to overwhelm cancer cells with too much DNA damage that they can't just
+
+193
+00:11:43.200 --> 00:11:46.940
+possibly survive, or other drugs, such as PARP inhibitors that
+
+194
+00:11:47.040 --> 00:11:50.560
+are meant to prevent DNA repair, but the same concept to try to overwhelm the
+
+195
+00:11:50.600 --> 00:11:50.920
+cells.
+
+196
+00:11:52.100 --> 00:11:55.760
+So looking for genome instability and recognizing these various patterns is quite
+
+197
+00:11:55.780 --> 00:11:59.520
+important. And this is where the newly released TCGA data
+
+198
+00:11:59.580 --> 00:12:02.940
+really does become important. So I won't highlight all of these points.
+
+199
+00:12:03.460 --> 00:12:06.160
+Gad, I think covered that. I think I have 90X here. I would actually trust Gad.
+
+200
+00:12:06.200 --> 00:12:07.840
+Maybe it is 80X and I'm a little off.
+
+201
+00:12:08.260 --> 00:12:10.420
+But the whole point is that this is a lot of data.
+
+202
+00:12:11.020 --> 00:12:14.300
+All of the BAM files that are on GDC, it's about five petabytes of data.
+
+203
+00:12:14.360 --> 00:12:18.140
+It's a lot of data to sift through, but this is really, really cool dataset
+
+204
+00:12:18.180 --> 00:12:21.130
+to explore things like genome instability, but other things as
+
+205
+00:12:21.180 --> 00:12:25.120
+well.And why look at genomes in
+
+206
+00:12:25.160 --> 00:12:28.600
+terms of genome instability? Really, if you think about panel
+
+207
+00:12:28.680 --> 00:12:32.080
+sequencing, it only covers about 0.1% of the genome, while
+
+208
+00:12:32.260 --> 00:12:34.850
+theoretically, whole-genome sequencing should cover 100%.
+
+209
+00:12:35.400 --> 00:12:39.080
+And then also when you're at 80 to 90x sequencing, you have
+
+210
+00:12:39.360 --> 00:12:43.000
+hundreds of base pairs of bases that you're sequencing.
+
+211
+00:12:43.070 --> 00:12:46.740
+So lots and lots of information. Information is going to be a very
+
+212
+00:12:46.760 --> 00:12:48.660
+consistent theme of what I'm talking about today.
+
+213
+00:12:49.360 --> 00:12:53.300
+And really, there are specific benefits to using whole-genome sequencing in
+
+214
+00:12:53.340 --> 00:12:57.230
+terms of exclusive phenomena that I think Gad highlighted that you can detect from
+
+215
+00:12:57.280 --> 00:13:00.760
+that type of data. So non-coding drivers, retrotranspositions,
+
+216
+00:13:00.920 --> 00:13:04.380
+complex SVs. But something that I think is not
+
+217
+00:13:04.640 --> 00:13:07.680
+appreciated as much is that you can also get
+
+218
+00:13:08.460 --> 00:13:10.540
+more robust metrics from certain outputs.
+
+219
+00:13:11.000 --> 00:13:14.680
+So for example, if you look at ploidy or if you look at
+
+220
+00:13:14.720 --> 00:13:18.000
+mutational signature activities, the stability of mutational profiles, subclonal
+
+221
+00:13:18.060 --> 00:13:21.480
+architecture, you can get these things from exomes as well, but the data
+
+222
+00:13:21.520 --> 00:13:24.160
+from whole-genome tends to be a bit more robust.
+
+223
+00:13:25.840 --> 00:13:29.000
+And speaking of mutational profiles, I just want to highlight the taxonomy of
+
+224
+00:13:29.040 --> 00:13:31.950
+somatic mutations. I'm sure many of you have seen this before, but if you look at
+
+225
+00:13:31.960 --> 00:13:35.620
+the right-hand side, these are just COSMIC-based definitions of single-base
+
+226
+00:13:35.700 --> 00:13:38.580
+substitution profiles, indel, structural variant, copy number.
+
+227
+00:13:39.040 --> 00:13:42.820
+So the numbers there represent the number of features, and so each mutation of
+
+228
+00:13:42.880 --> 00:13:46.420
+that particular type will go into one of those slots on that histogram.
+
+229
+00:13:46.940 --> 00:13:50.350
+So this is really a way of doing featurization of
+
+230
+00:13:50.720 --> 00:13:54.560
+whole-genome data. So you strip away the actual coordinates of where a
+
+231
+00:13:54.600 --> 00:13:58.330
+mutation occurs, and you're saying, "Well, what's the local mutation context and
+
+232
+00:13:58.360 --> 00:14:01.880
+where this is actually happening?" And based on that, you end up categorizing them
+
+233
+00:14:02.000 --> 00:14:04.420
+into one of those channels, and that's what makes up your
+
+234
+00:14:05.400 --> 00:14:09.320
+profile itself. And these are really biologically informed a priori designs
+
+235
+00:14:09.400 --> 00:14:11.320
+of how these profiles were constructed.
+
+236
+00:14:13.040 --> 00:14:16.990
+And really the workhorse related to analyzing
+
+237
+00:14:17.000 --> 00:14:20.920
+these profiles is something called non-negative matrix factorization.
+
+238
+00:14:20.960 --> 00:14:23.220
+I'm sure, again, if you're familiar with signatures, you've heard of this.
+
+239
+00:14:23.280 --> 00:14:24.250
+But really,
+
+240
+00:14:25.140 --> 00:14:28.680
+non-negative matrix factorization, or NMF, was a method that was
+
+241
+00:14:28.720 --> 00:14:32.440
+popularized in the late '90s in terms of just a general method, not specific
+
+242
+00:14:32.449 --> 00:14:35.620
+within genomics. But it's really learning parts-based
+
+243
+00:14:35.700 --> 00:14:37.100
+representation of
+
+244
+00:14:38.440 --> 00:14:40.060
+particular profiles. And really it has
+
+245
+00:14:40.860 --> 00:14:44.560
+this constraint where it is non-negative, meaning that it's linear and the
+
+246
+00:14:44.580 --> 00:14:46.520
+parts have to be additive. And
+
+247
+00:14:47.900 --> 00:14:51.360
+pretty much any application of NMF, what you're really saying is you have visible
+
+248
+00:14:51.400 --> 00:14:55.160
+variables, and then you actually try to approximate them by multiplying
+
+249
+00:14:55.180 --> 00:14:57.740
+hidden variables by weight. So you're trying to estimate these.
+
+250
+00:14:57.800 --> 00:15:01.640
+So in the context of mutational signatures, which was pioneered by Alexandrov and
+
+251
+00:15:01.690 --> 00:15:05.300
+colleagues and a bunch of folks at Sanger, Serena Nik-Sin and all as well,
+
+252
+00:15:05.960 --> 00:15:07.940
+that's where you end up having your visible profiles.
+
+253
+00:15:08.320 --> 00:15:11.060
+You're trying to estimate the signatures that are present in that data.
+
+254
+00:15:11.190 --> 00:15:15.140
+And then also you get your W matrix, which is the activities of those signatures
+
+255
+00:15:15.360 --> 00:15:17.180
+within those particular patients.
+
+256
+00:15:19.440 --> 00:15:23.180
+And when we apply this to large collections of data, you can
+
+257
+00:15:23.220 --> 00:15:27.020
+actually define signatures you have, just the toy example on the left-hand
+
+258
+00:15:27.060 --> 00:15:30.920
+side there. And again, once you define
+
+259
+00:15:30.960 --> 00:15:33.340
+these signatures robustly across...
+
+260
+00:15:34.020 --> 00:15:37.380
+These days, we're talking thousands if not tens of thousands of
+
+261
+00:15:37.700 --> 00:15:41.170
+genomes that are required to really be at the scale that
+
+262
+00:15:41.740 --> 00:15:43.160
+some of the big players are operating.
+
+263
+00:15:43.620 --> 00:15:45.620
+Once you have that, you start to look for etiologies.
+
+264
+00:15:45.700 --> 00:15:48.700
+Here are two classic ones that have been around for quite a while.
+
+265
+00:15:48.780 --> 00:15:52.480
+So you have SBS2, which is related to apobec base mutagenesis.
+
+266
+00:15:52.540 --> 00:15:56.520
+Just giving you another example with ID3, where that's related to tobacco smoking.
+
+267
+00:15:56.920 --> 00:16:00.580
+But the whole point is once you end up having these mutational signatures,
+
+268
+00:16:01.000 --> 00:16:04.560
+you can assign them etiologies. Not all of them will have etiologies.
+
+269
+00:16:04.580 --> 00:16:05.390
+We're still trying to
+
+270
+00:16:06.480 --> 00:16:10.360
+understand what many of these do. But then they're often released by these large
+
+271
+00:16:10.380 --> 00:16:13.140
+consortiums or larger groups who pioneer this work as catalogs.
+
+272
+00:16:13.520 --> 00:16:15.440
+So here I'm just highlighting COSMIC and Signal.
+
+273
+00:16:15.920 --> 00:16:19.820
+And for these, you can use these catalogs for reference
+
+274
+00:16:19.880 --> 00:16:22.180
+signature assignment. So you assign it to your own data.
+
+275
+00:16:22.540 --> 00:16:25.380
+Maybe it can be a comparison to signature extraction that you're doing over your
+
+276
+00:16:25.400 --> 00:16:28.100
+own data as well, but also just a comprehensive
+
+277
+00:16:29.040 --> 00:16:32.260
+resource for understanding mutagenesis patterns in general across many different
+
+278
+00:16:32.300 --> 00:16:33.220
+mutational classes.
+
+279
+00:16:34.700 --> 00:16:34.820
+So
+
+280
+00:16:36.080 --> 00:16:39.320
+really this process has evolved quite a bit in terms of the timeline of mutational
+
+281
+00:16:39.339 --> 00:16:42.570
+signatures. We went from 21 breast cancer genomes where
+
+282
+00:16:44.519 --> 00:16:48.450
+five single-base substitution signatures were discovered, to now we're looking at
+
+283
+00:16:48.480 --> 00:16:52.380
+hundreds of different signatures across many, many different mutational classes.
+
+284
+00:16:52.460 --> 00:16:56.170
+And along with this, again, these tools have been developed, such as
+
+285
+00:16:56.180 --> 00:16:59.630
+SigProfiler by the Alexandrov lab, signature tools led by the Nik-Sin and all
+
+286
+00:16:59.700 --> 00:17:02.880
+lab. I believe Gad's group has Signature Analyzer.
+
+287
+00:17:03.260 --> 00:17:05.340
+Various tools that allow different groups to then
+
+288
+00:17:06.300 --> 00:17:10.100
+take these reference signatures and essentially look at the activities of these
+
+289
+00:17:10.141 --> 00:17:13.421
+various signatures in their samples or even try to extract their own.
+
+290
+00:17:13.940 --> 00:17:17.540
+And the point being here is that mutational signature analysis, if you're working
+
+291
+00:17:17.580 --> 00:17:21.171
+with exomes or genomes, is pretty much standard these days.
+
+292
+00:17:21.460 --> 00:17:24.710
+Especially if you're looking at any new cohort, you're going to be asked what
+
+293
+00:17:24.740 --> 00:17:27.360
+signatures are present, are there new signatures there, et cetera.
+
+294
+00:17:29.280 --> 00:17:32.740
+And this timeline is continuing. Just a couple of months ago, a paper by
+
+295
+00:17:32.980 --> 00:17:36.960
+Everall and colleagues came out in "Nature Genetics" where they identified
+
+296
+00:17:37.100 --> 00:17:40.680
+136 signatures where 26 of them are new, and they did a
+
+297
+00:17:40.740 --> 00:17:44.020
+comprehensive analysis across the five main classes of
+
+298
+00:17:45.340 --> 00:17:46.900
+mutational types that have been analyzed.
+
+299
+00:17:46.940 --> 00:17:49.260
+So this was done over Genomics England data.
+
+300
+00:17:49.420 --> 00:17:51.700
+So not TCGA, but Genomics England.
+
+301
+00:17:52.280 --> 00:17:56.140
+They had some cool findings from there, such as the scars of exogenous
+
+302
+00:17:56.220 --> 00:17:57.050
+mutational processes
+
+303
+00:17:57.900 --> 00:18:01.060
+looking like they occur earlier, being more clonal events compared to
+
+304
+00:18:01.900 --> 00:18:05.820
+endogenous ones. But another interesting aspect,
+
+305
+00:18:05.860 --> 00:18:09.240
+and this type of analysis has been done before, but since it's Genomics England,
+
+306
+00:18:09.300 --> 00:18:12.060
+they have their whole genome data that's connected to more clinical records.
+
+307
+00:18:12.100 --> 00:18:15.990
+So they're able to look at signatures, associate them with overall survival, and
+
+308
+00:18:16.020 --> 00:18:19.270
+then also look at therapeutic response as well, and see if they're associated with
+
+309
+00:18:19.300 --> 00:18:22.612
+those signatures.So related to that,
+
+310
+00:18:22.912 --> 00:18:26.742
+I just thought it'd be worth talking briefly a bit about the clinical relevance of
+
+311
+00:18:26.772 --> 00:18:27.712
+mutational signatures.
+
+312
+00:18:28.772 --> 00:18:32.172
+Here are just three examples, but I think these are the big ones where this comes
+
+313
+00:18:32.272 --> 00:18:35.902
+up, and this is highlighting all the three different types where you can have
+
+314
+00:18:35.932 --> 00:18:39.822
+signatures aid detection of a particular phenotype, and if you detect that
+
+315
+00:18:39.832 --> 00:18:43.672
+phenotype, those patients are eligible for a certain treatment
+
+316
+00:18:43.992 --> 00:18:47.752
+option in which it's been shown that those individuals that have that
+
+317
+00:18:47.772 --> 00:18:49.552
+phenotype are likely to respond to that therapy.
+
+318
+00:18:50.112 --> 00:18:51.172
+So here's one, homologous
+
+319
+00:18:52.252 --> 00:18:55.462
+recombination deficiency, which will be coming up again later.
+
+320
+00:18:55.492 --> 00:18:59.032
+Multiple signatures associated with it, and then you have tools like HRDetect,
+
+321
+00:18:59.052 --> 00:19:03.032
+Sigma, that try to take those signatures explicitly and try to refine them in a
+
+322
+00:19:03.052 --> 00:19:06.492
+way that you can actually predict cases that you think are HRD and will respond to
+
+323
+00:19:06.512 --> 00:19:10.252
+therapeutics. And the same is the case for mismatch repair
+
+324
+00:19:10.272 --> 00:19:13.612
+deficiency and high tumor mutational burden, where you can actually use
+
+325
+00:19:14.392 --> 00:19:17.392
+signatures to try to better inform predictive tools to say, "Do you think this
+
+326
+00:19:17.412 --> 00:19:19.091
+patient would respond to a therapy or not?"
+
+327
+00:19:19.972 --> 00:19:23.832
+So given that background, I think here's just the slight pivot that
+
+328
+00:19:24.072 --> 00:19:27.592
+I think is very important to recognize, is
+
+329
+00:19:27.632 --> 00:19:31.312
+that NMF and mutational signatures themselves are absolutely
+
+330
+00:19:31.392 --> 00:19:33.832
+fantastic. They've given such insights
+
+331
+00:19:34.132 --> 00:19:37.862
+to so many things that we were unaware of before those methods were
+
+332
+00:19:37.892 --> 00:19:41.792
+applied. But it's important to recognize that identifying the cause of
+
+333
+00:19:41.852 --> 00:19:44.372
+something is different from predicting an outcome.
+
+334
+00:19:44.912 --> 00:19:48.752
+So in the sense where NMF itself really excels of
+
+335
+00:19:49.112 --> 00:19:52.622
+looking at understanding mutational processes and looking at a patient saying,
+
+336
+00:19:53.082 --> 00:19:56.862
+"What is the likely source of these mutations that we're seeing?" It's not
+
+337
+00:19:56.912 --> 00:19:59.412
+exactly optimized to do clinical predictions.
+
+338
+00:19:59.452 --> 00:20:02.772
+It doesn't mean it can't be used for this, but that's not necessarily its purpose.
+
+339
+00:20:02.822 --> 00:20:05.962
+Its purpose was to do the math that I've showed in the previous slide, and not
+
+340
+00:20:05.992 --> 00:20:09.062
+necessarily predictions based on the activities of that matrix
+
+341
+00:20:09.092 --> 00:20:13.062
+outputs. So there are other approaches that you could utilize that
+
+342
+00:20:13.092 --> 00:20:16.922
+will ask, "Will a patient respond to therapy?" And again, you, of course, can
+
+343
+00:20:16.992 --> 00:20:19.362
+utilize this, but I think it's worth thinking... Sorry.
+
+344
+00:20:19.432 --> 00:20:23.212
+You can utilize NMF and signatures to do clinical prediction. It has been working.
+
+345
+00:20:23.232 --> 00:20:25.222
+But the question is, are there other ways to do it as well?
+
+346
+00:20:26.712 --> 00:20:30.492
+And this is primarily because we're constantly within the AI ML
+
+347
+00:20:30.511 --> 00:20:33.332
+field, I think, and especially in biology, trying to balance
+
+348
+00:20:33.412 --> 00:20:36.372
+interpretability and information loss.
+
+349
+00:20:36.412 --> 00:20:39.212
+So in the context of whole genome sequencing, on the left-hand side, you have
+
+350
+00:20:39.252 --> 00:20:42.832
+billions of reads, massive volume, high noise, tons of
+
+351
+00:20:42.872 --> 00:20:46.692
+information there, but very hard to manage or even build a model around, right?
+
+352
+00:20:46.772 --> 00:20:50.012
+A substantial compute required if you're going to try to do something like that.
+
+353
+00:20:50.032 --> 00:20:52.892
+But we tend to then distill them down to variant calls so we can understand which
+
+354
+00:20:52.932 --> 00:20:55.352
+mutations are occurring in patients, quite important.
+
+355
+00:20:55.732 --> 00:20:58.872
+But from there, you can collapse them into the mutational profiles that we talked
+
+356
+00:20:58.892 --> 00:21:02.192
+about, and from there, mutational profiles, you can get signatures.
+
+357
+00:21:02.712 --> 00:21:04.192
+Or signature activities, I should say.
+
+358
+00:21:04.552 --> 00:21:08.452
+And so when you're moving left to right, you are getting an increase in
+
+359
+00:21:08.512 --> 00:21:10.532
+human interpretability of the data. Yeah?
+
+360
+00:21:11.012 --> 00:21:14.192
+And very important for us to understand the biological underpinnings of some of the
+
+361
+00:21:14.212 --> 00:21:18.052
+things that we're seeing. But it's important to recognize, as you do that same left
+
+362
+00:21:18.072 --> 00:21:21.412
+to right, you're also losing information content. Yeah?
+
+363
+00:21:21.852 --> 00:21:25.772
+And so it's really when you're going through this process, I look
+
+364
+00:21:25.812 --> 00:21:29.732
+at each of these steps as a variant of lossy compression of the
+
+365
+00:21:29.792 --> 00:21:33.472
+data, where you're slowly getting things that are distilled a bit more and more.
+
+366
+00:21:33.532 --> 00:21:36.872
+We can interpret them, but you may have lost something that you can never recover
+
+367
+00:21:36.912 --> 00:21:40.652
+from the very downstream data. And so I think a key question
+
+368
+00:21:40.872 --> 00:21:43.932
+then is, instead of just... If I highlight that, yeah.
+
+369
+00:21:44.332 --> 00:21:48.112
+Instead of looking at mutational signature activities, well, what if we step
+
+370
+00:21:48.152 --> 00:21:51.742
+back? And what if we actually model the mutational profiles themselves?
+
+371
+00:21:51.792 --> 00:21:54.182
+And you could even ask the same question, why not keep going back?
+
+372
+00:21:54.312 --> 00:21:57.212
+And I think that will start to happen more and more actually.
+
+373
+00:21:57.252 --> 00:22:01.152
+But the step that we took is why not actually model mutational profiles
+
+374
+00:22:01.252 --> 00:22:02.392
+and then see
+
+375
+00:22:03.252 --> 00:22:04.992
+if that can do better predictive tasks.
+
+376
+00:22:05.512 --> 00:22:06.512
+And that's really
+
+377
+00:22:08.332 --> 00:22:11.732
+where we come to this idea of neural representation or
+
+378
+00:22:11.772 --> 00:22:13.412
+representation learning for predictive tasks.
+
+379
+00:22:13.432 --> 00:22:15.572
+So on the left-hand side, I have traditional NMF.
+
+380
+00:22:15.772 --> 00:22:19.692
+As I said, it's linear, it's additive, it's independent in terms
+
+381
+00:22:19.752 --> 00:22:22.032
+of data views. So now I know I'll pivot a little bit.
+
+382
+00:22:22.072 --> 00:22:25.452
+I've been referring to it as mutational classes, but within my group,
+
+383
+00:22:26.012 --> 00:22:28.532
+we always talk about these as views of the data.
+
+384
+00:22:28.752 --> 00:22:31.612
+It's a different type of mutation that just represents genome instability.
+
+385
+00:22:32.092 --> 00:22:34.292
+And oftentimes these views or classes,
+
+386
+00:22:35.112 --> 00:22:37.432
+usually within NMF, they are very independent.
+
+387
+00:22:37.512 --> 00:22:41.452
+You don't extract signatures typically of indels and SBS
+
+388
+00:22:41.461 --> 00:22:44.612
+together. So you don't look for interactions between those two data types.
+
+389
+00:22:45.332 --> 00:22:46.802
+And that makes sense biologically and
+
+390
+00:22:46.832 --> 00:22:50.772
+interpretation-wise, because we think mutational
+
+391
+00:22:50.782 --> 00:22:52.872
+processes should be operating on a certain type of mutation.
+
+392
+00:22:53.392 --> 00:22:57.352
+But I think especially with HRD, I always say it's an interesting case
+
+393
+00:22:57.392 --> 00:22:58.132
+where you have
+
+394
+00:22:59.132 --> 00:23:02.442
+signatures that are associated with the HRD phenotype that are across all four of
+
+395
+00:23:02.472 --> 00:23:05.412
+the major classes, and even five, if you count double-base
+
+396
+00:23:05.432 --> 00:23:09.182
+substitutions. So really, then if you're looking at neural
+
+397
+00:23:09.192 --> 00:23:13.012
+representations, you have a situation where these types of approaches are
+
+398
+00:23:13.072 --> 00:23:15.851
+non-linear. They can capture complex interactions.
+
+399
+00:23:15.912 --> 00:23:18.912
+They can look for relationships across mutational profiles.
+
+400
+00:23:18.952 --> 00:23:21.672
+So again, the different mutational classes or views.
+
+401
+00:23:22.292 --> 00:23:24.612
+And then also they can be supervised.
+
+402
+00:23:24.652 --> 00:23:28.492
+If you really are trying to do a predictive task, generalized learning is great,
+
+403
+00:23:28.612 --> 00:23:32.212
+but almost everything you're doing some form of supervised learning over it at some
+
+404
+00:23:32.292 --> 00:23:32.632
+point.
+
+405
+00:23:34.252 --> 00:23:35.632
+So here I'm just
+
+406
+00:23:36.512 --> 00:23:40.472
+highlighting the way that my lab has been looking at this problem, and
+
+407
+00:23:40.512 --> 00:23:43.872
+that's doing multi-view learning over mutational profiles itself.
+
+408
+00:23:44.282 --> 00:23:47.752
+And on the left-hand side was just our initial investigations of, is this method
+
+409
+00:23:47.992 --> 00:23:49.632
+viable or is this thought process viable?
+
+410
+00:23:50.072 --> 00:23:53.882
+So here we're showing just PEACOG data on the left-hand side, and what is
+
+411
+00:23:53.972 --> 00:23:57.272
+on the top left plot there is we're showing the
+
+412
+00:23:57.332 --> 00:24:00.152
+correlation between all cross view pairs.
+
+413
+00:24:00.192 --> 00:24:03.912
+So all SBS features correlate with all indel features, all SBS
+
+414
+00:24:03.952 --> 00:24:06.572
+features correlate with all SV features, et cetera, et cetera.
+
+415
+00:24:07.142 --> 00:24:10.992
+And what we can see when you do that, you have pervasive relationships
+
+416
+00:24:11.032 --> 00:24:14.662
+that are occurring. Some of these are weak correlations, but when you're talking
+
+417
+00:24:14.692 --> 00:24:18.032
+about neural networks, 20% of things being correlated, that's information, and that
+
+418
+00:24:18.092 --> 00:24:19.872
+information very much could be useful.
+
+419
+00:24:19.882 --> 00:24:23.252
+And it's in general just saying these views are not independent of one another.
+
+420
+00:24:23.762 --> 00:24:27.252
+And I should say, when you adjust this by purity, ploidy, does that make a
+
+421
+00:24:27.292 --> 00:24:29.652
+difference? You still see almost the exact same pattern here.
+
+422
+00:24:29.992 --> 00:24:33.920
+Yeah?And now when you look at the bottom, we ended up
+
+423
+00:24:33.960 --> 00:24:36.160
+doing nonlinear clustering of this data.
+
+424
+00:24:36.580 --> 00:24:40.500
+And so while I can't necessarily look at this and say, "Well, you have
+
+425
+00:24:40.560 --> 00:24:43.880
+nonlinear patterns that are emerging," we can at least say that there are clearly
+
+426
+00:24:43.900 --> 00:24:47.040
+complex relationships that are occurring across these views based on this
+
+427
+00:24:47.060 --> 00:24:48.260
+clustering and what we're seeing here.
+
+428
+00:24:48.760 --> 00:24:51.660
+So again, giving more evidence that there may be some interactions.
+
+429
+00:24:53.000 --> 00:24:56.800
+So really we thought about doing this in terms of a shared representation approach
+
+430
+00:24:56.840 --> 00:24:57.830
+and doing this type of learning.
+
+431
+00:24:58.940 --> 00:25:00.240
+And here's just an example of us doing this.
+
+432
+00:25:00.270 --> 00:25:04.200
+So this is HR Difuse, which is multi-view learning for pan-cancer HRD prediction.
+
+433
+00:25:04.240 --> 00:25:08.180
+We did this across the majority, or all of PECAUG, but
+
+434
+00:25:08.220 --> 00:25:12.180
+then we specifically went into TCGA using all of the old TCGA data
+
+435
+00:25:12.220 --> 00:25:15.740
+that Gad mentioned, and explicitly asked which of these cases have evidence for
+
+436
+00:25:15.760 --> 00:25:19.370
+being HRD, in the case of being BRCA1 or BRCA2 inactivated, and
+
+437
+00:25:19.440 --> 00:25:21.340
+specifically grabbed all of those samples.
+
+438
+00:25:21.420 --> 00:25:25.060
+Because for learning tasks like this, the problem is often positive data.
+
+439
+00:25:25.160 --> 00:25:27.180
+There's lots of negative data out there, and usually
+
+440
+00:25:28.220 --> 00:25:29.920
+from what we've seen, there's enough negative data.
+
+441
+00:25:29.980 --> 00:25:31.480
+The problem is having enough positive data.
+
+442
+00:25:32.220 --> 00:25:36.180
+So we did that, and when we talk about the HR Difuse model itself, here
+
+443
+00:25:36.220 --> 00:25:39.790
+we have the four different views. Each of these have their own encoder,
+
+444
+00:25:40.050 --> 00:25:43.950
+so each of these are encoded. Then they're actually fused by self-attention
+
+445
+00:25:43.980 --> 00:25:46.120
+within this latent space that you have here.
+
+446
+00:25:46.140 --> 00:25:49.360
+But we also have another training objective here where we use contrastive learning
+
+447
+00:25:49.370 --> 00:25:53.140
+to actually shape these encodings in a way that once they're in the latent
+
+448
+00:25:53.220 --> 00:25:56.900
+space, they're able to effectively pull like samples together and push
+
+449
+00:25:57.480 --> 00:26:01.020
+non-like samples apart from one another, which we've actually found
+
+450
+00:26:01.040 --> 00:26:04.660
+is quite effective in terms of this
+
+451
+00:26:04.720 --> 00:26:08.500
+method. So not implying contrastive learning at the
+
+452
+00:26:08.540 --> 00:26:11.660
+classification head, but doing it in terms of helping shape encodings.
+
+453
+00:26:12.290 --> 00:26:15.560
+And once it gets to classification, classification will use that latent space to
+
+454
+00:26:15.600 --> 00:26:18.420
+try to predict if a sample is HRD or HRP.
+
+455
+00:26:18.460 --> 00:26:21.820
+And again, in this case, HRD are BRCA1, BRCA2 inactivation.
+
+456
+00:26:23.560 --> 00:26:26.640
+And here I'm just showing the benchmarking just straight into it.
+
+457
+00:26:26.760 --> 00:26:28.480
+So we had to compare this to
+
+458
+00:26:29.720 --> 00:26:32.680
+two premier tools that do HRD prediction.
+
+459
+00:26:33.120 --> 00:26:36.180
+One is Cord, which is a random forest-based classifier.
+
+460
+00:26:36.220 --> 00:26:40.060
+The other is HRDetect, which uses lasso regression and actually featurizes
+
+461
+00:26:40.100 --> 00:26:41.800
+based on mutational signatures themselves.
+
+462
+00:26:42.380 --> 00:26:46.080
+And when you look at both the AUROC and the AUPRC, you see that HR
+
+463
+00:26:46.120 --> 00:26:49.700
+Difuse does perform better than both these models by a fair margin.
+
+464
+00:26:49.840 --> 00:26:53.700
+You compare to pure NMF, that approach actually struggles quite a bit,
+
+465
+00:26:54.160 --> 00:26:57.219
+making the point that I was saying earlier of not all tools are good at
+
+466
+00:26:57.280 --> 00:27:01.240
+everything. But also, and I think this is going to become more
+
+467
+00:27:01.280 --> 00:27:04.660
+and more critical as people keep throwing AI models out there,
+
+468
+00:27:05.240 --> 00:27:08.520
+is that we retrain Cord and HRDetect on our same exact data.
+
+469
+00:27:08.980 --> 00:27:12.670
+And what we saw when we did that is they still cannot perform as well as HR Difuse.
+
+470
+00:27:12.800 --> 00:27:16.550
+But this is going to start to be critical because you have this question of are
+
+471
+00:27:16.560 --> 00:27:19.960
+performance gains you're getting, is it due to your data set being different, or is
+
+472
+00:27:19.980 --> 00:27:21.160
+it due to your method being better?
+
+473
+00:27:21.620 --> 00:27:25.420
+So I would highly encourage folks to especially test this early with your
+
+474
+00:27:25.460 --> 00:27:29.060
+model to see how it's doing, if all other comparable
+
+475
+00:27:29.120 --> 00:27:31.780
+approaches are doing with your own data.
+
+476
+00:27:33.270 --> 00:27:36.480
+And when we look at inactivation type, we see some interesting things as well.
+
+477
+00:27:36.820 --> 00:27:40.400
+Essentially, where you start to see performance differences across the three tools
+
+478
+00:27:40.480 --> 00:27:42.880
+are when you look at more somatic inactivation.
+
+479
+00:27:42.920 --> 00:27:45.510
+So these are things that don't involve germline
+
+480
+00:27:45.520 --> 00:27:49.200
+predisposition allele at all. It's purely somatic
+
+481
+00:27:49.210 --> 00:27:52.909
+mutations, could be homozygous deletion, could be somatic mutation that is
+
+482
+00:27:53.260 --> 00:27:56.330
+expected to be pathogenic, non-pathogenic plus LOH, but then
+
+483
+00:27:56.420 --> 00:28:00.390
+also methylation. And again, some interesting patterns
+
+484
+00:28:00.420 --> 00:28:03.800
+emerging. When you look at BRCA-associated cancers, all three tools do
+
+485
+00:28:04.300 --> 00:28:07.760
+relatively okay here. This might have something to do with the germline
+
+486
+00:28:07.820 --> 00:28:09.880
+predisposition pattern that you're seeing here as well.
+
+487
+00:28:10.500 --> 00:28:14.040
+But when you look at non-BRCA associated cancers, so breast, ovary,
+
+488
+00:28:14.140 --> 00:28:17.660
+pancreas, prostate, you end up seeing a big performance difference here.
+
+489
+00:28:18.340 --> 00:28:22.300
+And again, when we actually retrain, there are interesting patterns
+
+490
+00:28:22.320 --> 00:28:26.249
+that we see as well, where Cord actually does a bit better when it retrains on our
+
+491
+00:28:26.300 --> 00:28:29.700
+data, indicating that it could learn from that, but still not as well as HR Difuse.
+
+492
+00:28:30.160 --> 00:28:33.920
+But when we train HRDetect itself, there really is no improvement that we
+
+493
+00:28:33.960 --> 00:28:37.740
+saw there, indicating that featurization might actually just be really good for
+
+494
+00:28:37.800 --> 00:28:41.749
+BRCA-associated cancers, and not maybe more complex non-BRCA associated
+
+495
+00:28:41.820 --> 00:28:42.280
+cancers.
+
+496
+00:28:44.160 --> 00:28:48.120
+And we had to come and try to ask why, and I'll try to get through this part real
+
+497
+00:28:48.159 --> 00:28:52.120
+quick. We think it has quite a bit to do with micromality deletions, and the fact
+
+498
+00:28:52.159 --> 00:28:55.860
+that not all cases have this canonical scar of HRD, these high
+
+499
+00:28:55.880 --> 00:28:58.500
+micromality deletion proportions, and that's being indicated there.
+
+500
+00:28:59.460 --> 00:29:02.000
+But we think LOO affects about 23% of cases.
+
+501
+00:29:02.420 --> 00:29:06.040
+We took extreme care our second time about doing this to make sure that we are
+
+502
+00:29:06.080 --> 00:29:09.600
+actually calling cases that HRD in a very rigorous way, only
+
+503
+00:29:09.640 --> 00:29:13.300
+pathogenic, non-pathogenic mutations, allele-based homozygous
+
+504
+00:29:13.340 --> 00:29:16.620
+deletion calls, making sure everything's standard to the community, just to make
+
+505
+00:29:16.660 --> 00:29:20.609
+sure that there aren't other explanations of why these might have low micromality
+
+506
+00:29:20.620 --> 00:29:23.140
+deletions. But the interesting thing too is that these
+
+507
+00:29:24.180 --> 00:29:27.460
+LOO cases are in risk for other BRCA-ness patterns as well.
+
+508
+00:29:27.840 --> 00:29:31.540
+So giving this intermediate phenotype between high micromality
+
+509
+00:29:31.560 --> 00:29:33.520
+deletion cases and HRPs.
+
+510
+00:29:35.360 --> 00:29:39.180
+And here's just showing that it's key because HRDetect and Cord
+
+511
+00:29:39.400 --> 00:29:43.140
+micromality deletions are the primary feature that they use within their models to
+
+512
+00:29:43.200 --> 00:29:47.100
+predict HRD. And you can see here all the tools typically do well with high, but
+
+513
+00:29:47.140 --> 00:29:50.440
+then only HR Difuse is able to really pick up some of the lows.
+
+514
+00:29:50.480 --> 00:29:54.000
+But as you can see, still could be improvement here based on any
+
+515
+00:29:54.040 --> 00:29:57.960
+tool. But then I think this is a critical part, which I'll just try to spend a
+
+516
+00:29:58.020 --> 00:30:02.010
+minute and a half on, or two minutes quickly, is why is this practically important?
+
+517
+00:30:02.880 --> 00:30:06.770
+And here we really leverage the new TCGA data in order to find every
+
+518
+00:30:06.800 --> 00:30:10.590
+case that it has that has platinum response data, particularly cisplatin and
+
+519
+00:30:10.620 --> 00:30:14.300
+carboplatin. And so we intentionally collected a group of
+
+520
+00:30:14.700 --> 00:30:18.400
+cancers that are quite difficult, and that would be non-BRCA
+
+521
+00:30:18.410 --> 00:30:21.270
+associated cancers. Difficult in the sense of platinum prediction
+
+522
+00:30:22.100 --> 00:30:26.070
+we assumed would not be easy there, or it would at least be harder than
+
+523
+00:30:26.100 --> 00:30:27.980
+your classical ovarian cases with HRD.
+
+524
+00:30:28.920 --> 00:30:32.560
+And what you can see on the bottom left is this effectively micromality deletions
+
+525
+00:30:32.620 --> 00:30:36.410
+alone in that cohort do not differentiate responders and
+
+526
+00:30:36.420 --> 00:30:40.260
+non-responders. And because of that, you see tools like Cord and HRDetect
+
+527
+00:30:40.620 --> 00:30:43.690
+not doing well in that group. And to give them credit, I don't think they were ever
+
+528
+00:30:43.700 --> 00:30:46.300
+designed for this. I don't think they looked for this or tested for this, but I
+
+529
+00:30:46.340 --> 00:30:49.876
+think it's still important to point out.But HRDFuse here can
+
+530
+00:30:49.976 --> 00:30:53.316
+actually... This isn't a good F1 where it's at now, but we thought, "Okay, this is
+
+531
+00:30:53.336 --> 00:30:57.236
+showing promise. Can we leverage the framework further?" And this is where neural
+
+532
+00:30:57.256 --> 00:31:01.056
+representation learning really benefits, and that is the concept of transfer
+
+533
+00:31:01.116 --> 00:31:03.156
+learning. And this is unique to HRDFuse.
+
+534
+00:31:03.216 --> 00:31:05.496
+CORG and HRDTech, based on their models, can't do it.
+
+535
+00:31:06.036 --> 00:31:09.276
+So the easiest explanation I could find is think of it like this.
+
+536
+00:31:09.416 --> 00:31:09.776
+You are
+
+537
+00:31:10.876 --> 00:31:12.776
+pre-training a model to detect cats.
+
+538
+00:31:13.276 --> 00:31:16.116
+You've done that, and now that you've trained a model to detect cats, now you want
+
+539
+00:31:16.136 --> 00:31:16.236
+to
+
+540
+00:31:17.236 --> 00:31:19.356
+be able to detect a subset of cats, lions.
+
+541
+00:31:19.856 --> 00:31:23.616
+So what you can do is you can actually freeze your feature extractor and then
+
+542
+00:31:23.656 --> 00:31:27.436
+build a new classifier that says, "I want to detect lions." So the
+
+543
+00:31:27.516 --> 00:31:31.236
+idea is you can learn from cat representations in order to better predict
+
+544
+00:31:31.276 --> 00:31:34.486
+lions instead of training a whole new classifier on lions themselves.
+
+545
+00:31:35.076 --> 00:31:38.976
+So for us, BRCA1 and BRCA2 loss is our cat, and platinum
+
+546
+00:31:38.996 --> 00:31:40.056
+response is our lion.
+
+547
+00:31:41.516 --> 00:31:44.976
+And here are the results when we do that, and you can see HRDFuse fine-tuned on the
+
+548
+00:31:44.996 --> 00:31:45.856
+left-hand side.
+
+549
+00:31:47.136 --> 00:31:49.376
+To be honest, we're a bit shocked by how well we're able to do here.
+
+550
+00:31:49.756 --> 00:31:53.016
+So this is approaching 0.75 in terms of F1.
+
+551
+00:31:53.436 --> 00:31:54.536
+You can see that eclipses the
+
+552
+00:31:57.136 --> 00:32:00.816
+performance of all our predictive tools, including HRDFuse baseline, and
+
+553
+00:32:00.916 --> 00:32:03.476
+also when we retrain directly on platinum response.
+
+554
+00:32:03.536 --> 00:32:06.536
+So that's the idea of we train a model just looking for lines.
+
+555
+00:32:06.616 --> 00:32:10.516
+It does not do as well as the fine-tune model, indicating learning the BRCA1,
+
+556
+00:32:10.526 --> 00:32:12.676
+BRCA2 representations actually benefited the model.
+
+557
+00:32:13.176 --> 00:32:16.396
+And on the right-hand side, I'm just showing how we validate that in another small
+
+558
+00:32:16.456 --> 00:32:20.276
+cohort of non-BRCA associated cancers, which we found was very hard to come by, but
+
+559
+00:32:20.316 --> 00:32:23.556
+we found one to at least validate on. So the last slide.
+
+560
+00:32:23.636 --> 00:32:27.576
+So I think hopefully I convinced you that neural representation learning has a lot
+
+561
+00:32:27.596 --> 00:32:30.666
+of promise, especially when you're trying to predict clinical phenotypes using
+
+562
+00:32:30.696 --> 00:32:33.866
+genome instability patterns. And from what I showed, you can see lots of folks are
+
+563
+00:32:33.896 --> 00:32:34.676
+trying to do that task.
+
+564
+00:32:35.676 --> 00:32:39.516
+TCGA, it's so cool that they have this whole genome data now, especially for us,
+
+565
+00:32:39.596 --> 00:32:42.976
+because I truly think it's unlocked as a modality, where now we can look at
+
+566
+00:32:43.056 --> 00:32:45.326
+multimodal models that involve whole genome sequencing.
+
+567
+00:32:45.376 --> 00:32:48.786
+And I don't know all the data types that things like Genomics England and Hartwick
+
+568
+00:32:48.796 --> 00:32:52.716
+has, but this is, I think, going to be very unique to TCGA and what it's actually
+
+569
+00:32:52.736 --> 00:32:54.296
+unlocking in terms of multimodal modeling.
+
+570
+00:32:54.636 --> 00:32:57.096
+And I think doing these types of representation learning could really start
+
+571
+00:32:57.196 --> 00:33:00.856
+complementing mutational signatures, where you're using parallel approaches, one
+
+572
+00:33:00.876 --> 00:33:03.736
+that's really trying to look for etiologies and one that's trying to do prediction.
+
+573
+00:33:04.456 --> 00:33:07.836
+So with that, I'd just like to end. Thank my lab, thank
+
+574
+00:33:07.896 --> 00:33:11.616
+collaborators, thank Anand and Ashalok for contributing to this quite greatly, and
+
+575
+00:33:11.696 --> 00:33:13.736
+Andy and Aakanksha for doing fantastic work on this.
+
+576
+00:33:13.836 --> 00:33:15.336
+And I'd be happy to take questions. Thank you.
+
+577
+00:33:15.576 --> 00:33:19.196
+Before the question, I'm
+
+578
+00:33:20.236 --> 00:33:23.845
+going to look to see if there are questions from the-
+
+579
+00:33:23.856 --> 00:33:24.396
+Oh, sure.
+
+580
+00:33:24.416 --> 00:33:25.136
+From the audience.
+
+581
+00:33:26.596 --> 00:33:27.016
+Yes.
+
+582
+00:33:27.056 --> 00:33:27.356
+Oh, sorry.
+
+583
+00:33:28.036 --> 00:33:29.616
+Yes.
+
+584
+00:33:29.666 --> 00:33:29.666
+Mic.
+
+585
+00:33:29.716 --> 00:33:30.256
+Richard.
+
+586
+00:33:30.336 --> 00:33:33.636
+Hi, Jason. Great talk. And so I have a couple of questions.
+
+587
+00:33:33.676 --> 00:33:35.736
+The first question is that your
+
+588
+00:33:36.776 --> 00:33:40.476
+HRDFuse's performance with your
+
+589
+00:33:41.056 --> 00:33:44.556
+algorithm are a little bit reduced in
+
+590
+00:33:44.625 --> 00:33:47.796
+non-breast cancer cases. So what is the reason?
+
+591
+00:33:48.276 --> 00:33:52.216
+This is the first question. Second question is that you tested
+
+592
+00:33:52.236 --> 00:33:56.056
+the performance using the BRCA mutation as a
+
+593
+00:33:56.136 --> 00:33:56.776
+ground truth.
+
+594
+00:33:57.116 --> 00:33:57.226
+Mm-hmm.
+
+595
+00:33:57.376 --> 00:34:01.036
+But then detecting mutation
+
+596
+00:34:02.176 --> 00:34:02.856
+much quicker way.
+
+597
+00:34:03.776 --> 00:34:06.976
+Why? So what is the significance of
+
+598
+00:34:06.996 --> 00:34:10.716
+developing the new algorithm to detect
+
+599
+00:34:10.796 --> 00:34:13.576
+other HRD or something like that?
+
+600
+00:34:14.576 --> 00:34:17.656
+Yeah. Thank you, Professor Gawande. Very good question.
+
+601
+00:34:17.736 --> 00:34:17.957
+So,
+
+602
+00:34:19.516 --> 00:34:22.696
+for us, yes, we did use non-BRCA associated.
+
+603
+00:34:23.116 --> 00:34:25.976
+To be honest, we pressed through this for a revision.
+
+604
+00:34:26.216 --> 00:34:29.816
+This fine-tuning method is actually showing evidence within ovarian
+
+605
+00:34:29.857 --> 00:34:33.636
+cancers as well, actually. So we think it's not necessarily specific to
+
+606
+00:34:33.676 --> 00:34:36.696
+non-BRCA associated, even the fine-tuning for platinum response part.
+
+607
+00:34:36.736 --> 00:34:38.377
+So, very quite interesting there.
+
+608
+00:34:39.676 --> 00:34:41.296
+But the second part, I think
+
+609
+00:34:42.096 --> 00:34:44.276
+using BRCA1 and BRCA2 as labels is always a problem.
+
+610
+00:34:44.636 --> 00:34:48.496
+I think we're always going to have this problem with HRD, of that
+
+611
+00:34:48.556 --> 00:34:52.397
+you're going to have non-perfectly labeled data, where you're going to
+
+612
+00:34:52.457 --> 00:34:56.357
+have positive cases within whatever you are calling negatives because you
+
+613
+00:34:56.437 --> 00:34:59.176
+just don't know that they're positive yet. It's going to be quite difficult.
+
+614
+00:34:59.656 --> 00:35:03.516
+But I'm hoping that when you start having platinum response combined with
+
+615
+00:35:03.536 --> 00:35:07.176
+BRCA1 and BRCA2 loss, HRR, other HRR genes, all this,
+
+616
+00:35:07.216 --> 00:35:11.116
+and especially PARP inhibitor response, if we
+
+617
+00:35:11.156 --> 00:35:15.056
+can ever find whole genome there, we can start really disentangling what's what in
+
+618
+00:35:15.116 --> 00:35:16.816
+terms of the patterns that we're seeing.
+
+619
+00:35:17.276 --> 00:35:18.816
+Specifically, your
+
+620
+00:35:19.636 --> 00:35:22.716
+algorithm can discriminate pathogenic and
+
+621
+00:35:23.036 --> 00:35:24.976
+non-pathogenic BRCA mutations?
+
+622
+00:35:26.496 --> 00:35:30.216
+Very good question. So we've looked, and it
+
+623
+00:35:30.296 --> 00:35:33.736
+can, but we haven't formalized as much where is it something
+
+624
+00:35:33.776 --> 00:35:37.636
+where you have a VUS, but it's predicted to be closer to being
+
+625
+00:35:37.656 --> 00:35:40.696
+pathogenic? Are we higher for those predictions than others?
+
+626
+00:35:40.776 --> 00:35:43.856
+We haven't fully looked at that yet, though. But that would be quite interesting.
+
+627
+00:35:44.136 --> 00:35:44.876
+Oh, thank you.
+
+628
+00:35:45.016 --> 00:35:46.596
+Yeah. Thank you.
+
+629
+00:35:49.376 --> 00:35:53.336
+Thank you for the talk. I have a quick question regarding the HRD and the
+
+630
+00:35:53.356 --> 00:35:56.376
+problem of multi-channel representation.
+
+631
+00:35:56.416 --> 00:35:57.176
+Mm-hmm.
+
+632
+00:35:57.216 --> 00:36:00.916
+So I was interesting to see that your deletions with microhomology are not
+
+633
+00:36:00.976 --> 00:36:04.696
+present in all the tumors with BRCA1 or BRCA or
+
+634
+00:36:04.856 --> 00:36:06.956
+other homologous recombination repair genes.
+
+635
+00:36:07.376 --> 00:36:09.376
+But what do you think is the reason for that?
+
+636
+00:36:09.416 --> 00:36:12.756
+It wouldn't be the case that actually there are multiple alternative
+
+637
+00:36:12.796 --> 00:36:16.716
+repair pathways that are active in those tumors, and not
+
+638
+00:36:16.776 --> 00:36:20.676
+all the tumors have the same alternative repair pathways that are
+
+639
+00:36:20.716 --> 00:36:24.596
+like TMJ, leaving these non-homolog, microhomology deletions
+
+640
+00:36:24.616 --> 00:36:26.996
+that are active. So did you look beyond that?
+
+641
+00:36:27.076 --> 00:36:29.156
+What are the features that inform your
+
+642
+00:36:29.956 --> 00:36:33.936
+HRDFuse and whether by introducing additional features
+
+643
+00:36:33.956 --> 00:36:35.576
+from alternative repair pathways-
+
+644
+00:36:35.656 --> 00:36:35.746
+Yeah
+
+645
+00:36:35.746 --> 00:36:37.976
+... you can actually improve the predictions?
+
+646
+00:36:38.146 --> 00:36:40.968
+Yeah.That's actually a very great question.
+
+647
+00:36:41.068 --> 00:36:44.308
+So I don't have those results to show here. We're doing it.
+
+648
+00:36:44.528 --> 00:36:47.598
+So we actually just did another round of retraining for the revision for this.
+
+649
+00:36:47.608 --> 00:36:50.848
+So I don't want to say things that were with the old model that might not be true
+
+650
+00:36:50.888 --> 00:36:54.787
+now, but you're exactly right. So we contrasted those
+
+651
+00:36:54.808 --> 00:36:58.308
+cases, the high and the lows, and actually did integrated gradients and integrated
+
+652
+00:36:58.328 --> 00:37:01.348
+Hessians on there to try to ask what features are actually discriminating these two
+
+653
+00:37:01.428 --> 00:37:05.058
+groups. So I don't have the answer straight away, but
+
+654
+00:37:05.288 --> 00:37:07.208
+I think that is actually very important to do.
+
+655
+00:37:08.108 --> 00:37:11.968
+But with the microhomology-mediated deletion, some work
+
+656
+00:37:12.148 --> 00:37:16.128
+that Chuck Venkitaraman and I had in a cell paper about a year and a half
+
+657
+00:37:16.168 --> 00:37:20.078
+ago is quite interesting that when we showed that within cell lines,
+
+658
+00:37:20.088 --> 00:37:23.878
+that you can actually get the emergence of SBS3 when you're actually knocking out
+
+659
+00:37:23.888 --> 00:37:27.368
+BRCA2 without the emergence of microhomology deletions.
+
+660
+00:37:27.508 --> 00:37:30.008
+Why that was occurring and so consistently, I don't know.
+
+661
+00:37:30.028 --> 00:37:33.718
+But I'm really wondering, I think it's going to be worth figuring out under what
+
+662
+00:37:33.748 --> 00:37:37.078
+circumstances can you actually break these links between these different views and
+
+663
+00:37:37.108 --> 00:37:40.428
+what you're actually seeing and what might compensate for them. Yeah.
+
+664
+00:37:40.488 --> 00:37:40.808
+Thank you.
+
+665
+00:37:43.928 --> 00:37:47.908
+We have maybe time for one more question or whatever.
+
+666
+00:37:47.958 --> 00:37:49.308
+Maybe two more questions.
+
+667
+00:37:50.288 --> 00:37:50.558
+Up to you. Up to you.
+
+668
+00:37:50.568 --> 00:37:51.998
+But there's only two people standing here.
+
+669
+00:37:52.008 --> 00:37:52.168
+Yeah.
+
+670
+00:37:53.028 --> 00:37:56.827
+Cutoff for HRDetect is 0.6
+
+671
+00:37:56.898 --> 00:38:00.648
+in ovarian tumors, but pancreatic cancer is associated with
+
+672
+00:38:01.008 --> 00:38:02.378
+much lower tumor purity.
+
+673
+00:38:02.888 --> 00:38:02.918
+Mm-hmm.
+
+674
+00:38:02.948 --> 00:38:03.168
+So,
+
+675
+00:38:04.088 --> 00:38:07.708
+is the cutoff should be lower with pancreatic cancer or
+
+676
+00:38:08.028 --> 00:38:09.288
+tumor with lower purity?
+
+677
+00:38:09.828 --> 00:38:10.008
+Hmm.
+
+678
+00:38:11.468 --> 00:38:15.328
+So that, it's a fair point. It's something that we didn't look at as tumor specific
+
+679
+00:38:15.388 --> 00:38:18.918
+cutoffs. Of course, when you look at the AUPRCs and the AUROCs, it is
+
+680
+00:38:19.188 --> 00:38:22.308
+measuring across all probability cutoffs that you could use and trying to estimate
+
+681
+00:38:22.368 --> 00:38:25.898
+overall model performance. But it is something that we can't preclude, that within
+
+682
+00:38:25.948 --> 00:38:28.268
+one cancer type at a certain cutoff, that
+
+683
+00:38:29.128 --> 00:38:33.048
+HRDetect might be better than HRDfuse, vice versa, or even cord for
+
+684
+00:38:33.088 --> 00:38:36.608
+that matter. But it is worth looking at very specific cutoffs within cancer types
+
+685
+00:38:36.648 --> 00:38:39.678
+because of course that's what GIS and the myriad score actually did is, there's
+
+686
+00:38:39.728 --> 00:38:41.948
+very specific cutoffs for each cancer type. Yeah.
+
+687
+00:38:43.748 --> 00:38:45.808
+Hi, excellent talk, very inspiring.
+
+688
+00:38:46.138 --> 00:38:50.068
+I really like this multi-view learning framework, and my question may be a
+
+689
+00:38:50.148 --> 00:38:53.798
+little bit staying ahead of time, but I want to hear your comments say,
+
+690
+00:38:54.328 --> 00:38:58.248
+different tumors might have different biologies, like maybe some
+
+691
+00:38:58.368 --> 00:39:02.268
+have emphasized more on the mutation side, which is the focus of this talk.
+
+692
+00:39:02.508 --> 00:39:02.608
+Hmm.
+
+693
+00:39:02.788 --> 00:39:06.208
+But what are you thinking on maybe expression may be driving in-
+
+694
+00:39:06.228 --> 00:39:06.258
+Hmm
+
+695
+00:39:06.258 --> 00:39:08.518
+... some of the tumors? I just want to hear your-
+
+696
+00:39:09.388 --> 00:39:13.358
+I think that actually could be very important too, especially refining predictions,
+
+697
+00:39:13.428 --> 00:39:16.168
+because obviously just having these scars doesn't necessarily mean you respond to a
+
+698
+00:39:16.208 --> 00:39:19.858
+therapy. Could be the immune microenvironment, could be expression of certain
+
+699
+00:39:19.928 --> 00:39:21.528
+genes. So I think there's going to be interplay there.
+
+700
+00:39:21.588 --> 00:39:25.368
+So I think multimodal models are going to be really important, and I also
+
+701
+00:39:25.388 --> 00:39:28.918
+think feature engineering is going to start to be very important too, where who's
+
+702
+00:39:28.948 --> 00:39:32.488
+to say these profiles are actually going to be the ones that accurately predict
+
+703
+00:39:32.548 --> 00:39:34.788
+every clinical phenotype? It might start changing.
+
+704
+00:39:34.808 --> 00:39:37.888
+We have to figure out which ones actually carry the most information for the most
+
+705
+00:39:37.908 --> 00:39:38.728
+phenotypes, I think.
+
+706
+00:39:39.628 --> 00:39:39.828
+Yeah.
+
+707
+00:39:39.888 --> 00:39:40.148
+Thank you.
+
+708
+00:39:40.348 --> 00:39:40.948
+Yeah.
+
+709
+00:39:40.988 --> 00:39:41.188
+Great.
+
+710
+00:39:41.488 --> 00:39:41.808
+Thank you.
+
+711
+00:39:42.148 --> 00:39:42.388
+Thank you.
+
+712
+00:39:45.868 --> 00:39:49.488
+There's another question here that was about how to access the data, and
+
+713
+00:39:50.108 --> 00:39:53.888
+the answer to that question from online is that you need to get to
+
+714
+00:39:53.908 --> 00:39:57.008
+TCGA data, get dbGaP approval,
+
+715
+00:39:57.968 --> 00:39:58.448
+and then
+
+716
+00:39:59.248 --> 00:40:01.968
+sign all the agreements there, and then you could download the data.
+
+717
+00:40:01.998 --> 00:40:03.908
+And Marcin Imielinski, it's all yours.
+
+718
+00:40:11.568 --> 00:40:14.888
+Great. Thanks, Gaddy. Thank you to the
+
+719
+00:40:14.928 --> 00:40:17.968
+organizers, and great to see such a big crowd for
+
+720
+00:40:18.988 --> 00:40:22.268
+TCGA, and hats off to Gaddy and a lot of the
+
+721
+00:40:22.328 --> 00:40:24.588
+visionaries who created the project.
+
+722
+00:40:24.868 --> 00:40:28.828
+I have many fond memories of training at the Broad during the
+
+723
+00:40:28.868 --> 00:40:31.548
+sort of glory days, and they're still happening.
+
+724
+00:40:31.568 --> 00:40:32.948
+The glory days are now.
+
+725
+00:40:34.028 --> 00:40:37.668
+We're going to be talking about analyses of thousands of cancer whole genomes, and
+
+726
+00:40:37.728 --> 00:40:38.008
+I think
+
+727
+00:40:38.908 --> 00:40:42.228
+while we are excited about that, I think we also have to think about
+
+728
+00:40:43.408 --> 00:40:46.978
+why aren't we analyzing hundreds of thousands or millions of cancer whole genomes?
+
+729
+00:40:47.028 --> 00:40:50.748
+And I think a lot of the questions that we're asking, the really deep,
+
+730
+00:40:50.888 --> 00:40:54.208
+fundamental questions, will benefit from that kind of scale.
+
+731
+00:40:54.248 --> 00:40:57.348
+And I think we look for inspiration, for example, in the germline community,
+
+732
+00:40:57.428 --> 00:41:01.348
+cardiovascular disease, or all kinds of common diseases where they've gotten to
+
+733
+00:41:01.388 --> 00:41:05.248
+numbers like the millions, or even in targeted sequencing, very elegant
+
+734
+00:41:05.308 --> 00:41:08.688
+studies revealing surprising results from MSK, for example.
+
+735
+00:41:08.708 --> 00:41:10.528
+I think I saw Mike Berger in the audience,
+
+736
+00:41:12.048 --> 00:41:14.448
+from looking at tens of thousands of samples.
+
+737
+00:41:14.508 --> 00:41:14.818
+So I think,
+
+738
+00:41:17.308 --> 00:41:19.508
+let's get down to the topic at hand.
+
+739
+00:41:19.568 --> 00:41:23.518
+So one of the reasons we're interested in analyzing cancer
+
+740
+00:41:23.588 --> 00:41:26.408
+whole genomes is to study something called chromosomal instability.
+
+741
+00:41:26.508 --> 00:41:27.908
+What is chromosomal instability?
+
+742
+00:41:27.968 --> 00:41:30.028
+Well, there's actually,
+
+743
+00:41:30.928 --> 00:41:34.628
+Nature commissioned this review on that topic, and I sort of crashed the
+
+744
+00:41:34.688 --> 00:41:38.608
+party, so I've gotten some of the insights from the leaders
+
+745
+00:41:38.648 --> 00:41:41.418
+in the field about it. But here's a little bit how I think about it, and
+
+746
+00:41:41.428 --> 00:41:44.238
+particularly what's relevant for cancer genomics.
+
+747
+00:41:44.708 --> 00:41:47.728
+So when we think about cancer genomes evolving,
+
+748
+00:41:47.828 --> 00:41:51.518
+we think of many defective cellular pathways that
+
+749
+00:41:51.548 --> 00:41:55.308
+are sort of regulating the homostasis of the genome from
+
+750
+00:41:56.028 --> 00:41:58.648
+sort of nucleotide base excision, mismatch repair,
+
+751
+00:42:00.468 --> 00:42:04.048
+double-stranded break repair, and replication, and then
+
+752
+00:42:04.088 --> 00:42:07.948
+mitosis and nuclear integrity and telomere end protection.
+
+753
+00:42:07.988 --> 00:42:11.908
+And these are sort of processes that have much different biology and
+
+754
+00:42:11.968 --> 00:42:13.768
+operate on very different
+
+755
+00:42:14.568 --> 00:42:18.288
+scales. And I don't really know what the left-hand side is, but I think the
+
+756
+00:42:18.368 --> 00:42:21.468
+right-hand side is more of what we think about in terms of SIN.
+
+757
+00:42:21.508 --> 00:42:25.458
+And there's some really exciting concurrent sessions and later in the
+
+758
+00:42:25.488 --> 00:42:29.028
+day by Sam Vakharia and others, thinking about the therapeutic
+
+759
+00:42:29.108 --> 00:42:32.248
+opportunities that arise, particularly from the right-hand
+
+760
+00:42:32.368 --> 00:42:35.528
+side of this diagram. Now, when we
+
+761
+00:42:36.568 --> 00:42:39.058
+triangulate this with the cancer genome, we can think about
+
+762
+00:42:39.088 --> 00:42:42.848
+somatic events that happen on different scales.
+
+763
+00:42:43.108 --> 00:42:46.768
+Point mutations that alter single or a few nucleotides,
+
+764
+00:42:46.848 --> 00:42:50.528
+rearrangements that join distant regions or segments of the genome,
+
+765
+00:42:51.008 --> 00:42:54.088
+and what we call chromosomal alterations that
+
+766
+00:42:55.308 --> 00:42:59.230
+affect megabases of DNA.And we have names for
+
+767
+00:42:59.320 --> 00:43:02.600
+signatures, and Jason very elegantly reviewed some of the
+
+768
+00:43:03.260 --> 00:43:07.180
+approaches for deconvolution these straight from data
+
+769
+00:43:08.100 --> 00:43:11.860
+from SBS and indel signatures, rearrangement signatures, and more
+
+770
+00:43:11.920 --> 00:43:14.100
+recently, copy number signatures.
+
+771
+00:43:14.130 --> 00:43:18.020
+And the vision here is really as we move to whole-genome molecular oncology,
+
+772
+00:43:18.030 --> 00:43:21.870
+that these findings can be actionable, meaning that we can
+
+773
+00:43:21.900 --> 00:43:25.540
+diagnose a sort of pathology, a defective
+
+774
+00:43:26.480 --> 00:43:30.340
+cellular pathway, and triangulate that with a targetable
+
+775
+00:43:30.380 --> 00:43:34.140
+synthetic lethality. And that's one way that whole
+
+776
+00:43:34.200 --> 00:43:37.880
+genomes, and maybe only whole genomes, will be able to inform this kind of
+
+777
+00:43:37.920 --> 00:43:39.600
+approach to
+
+778
+00:43:40.460 --> 00:43:43.700
+treatment. So when we think about these different
+
+779
+00:43:44.580 --> 00:43:48.420
+kind of scales of variation, there's different features that we
+
+780
+00:43:48.460 --> 00:43:52.280
+think about. And for SNVs, a lot of those features have been really worked out in
+
+781
+00:43:52.320 --> 00:43:56.220
+terms of what we care about when diagnosing a particular SNV or indel
+
+782
+00:43:56.260 --> 00:43:59.720
+mutational process, meaning we look at the immediate nucleotide context.
+
+783
+00:44:00.420 --> 00:44:04.000
+For rearrangements, these processes are generally
+
+784
+00:44:04.060 --> 00:44:05.800
+represented in terms of
+
+785
+00:44:06.860 --> 00:44:10.450
+the orientation of each junction, whether it's an inversion or a
+
+786
+00:44:10.480 --> 00:44:14.340
+translocation or a clustered rearrangement or not, and the length, the
+
+787
+00:44:14.460 --> 00:44:15.390
+span that they take.
+
+788
+00:44:16.200 --> 00:44:18.420
+And thinking about copy number processes,
+
+789
+00:44:21.360 --> 00:44:25.000
+the sort of methods have, right now, I think still a little bit nascent, and I
+
+790
+00:44:25.040 --> 00:44:28.320
+think this is where we have a lot of room to improve.
+
+791
+00:44:28.340 --> 00:44:31.270
+And when I kind of subdivided these entities,
+
+792
+00:44:31.360 --> 00:44:35.200
+they do exist in sort of a continuum and when we think
+
+793
+00:44:35.260 --> 00:44:39.200
+about mutational processes, we may have to think about many of these scales.
+
+794
+00:44:39.280 --> 00:44:39.420
+Now,
+
+795
+00:44:40.600 --> 00:44:43.700
+for better or for worse, I've spent the last decade sort of with unhealthy
+
+796
+00:44:43.760 --> 00:44:44.760
+obsession about the
+
+797
+00:44:45.760 --> 00:44:49.660
+way that copy number and rearrangements really are two coherent
+
+798
+00:44:49.700 --> 00:44:53.060
+sort of shadows of a single cancer genome
+
+799
+00:44:53.120 --> 00:44:56.180
+structure. And this is a very sort of practical
+
+800
+00:44:56.220 --> 00:44:59.880
+intuition, which is that there's a stoichiometry around copy
+
+801
+00:44:59.940 --> 00:45:03.240
+number alterations in the genome where we have segments that
+
+802
+00:45:03.880 --> 00:45:07.120
+might have two copies, might have five copies, and they're connected to other
+
+803
+00:45:07.160 --> 00:45:09.820
+segments, either in the reference through this kind of gray
+
+804
+00:45:10.780 --> 00:45:14.360
+edge, or through distant connections in the genome
+
+805
+00:45:14.720 --> 00:45:18.600
+made through rearrangement. And there's a sort of mass balance principle
+
+806
+00:45:18.660 --> 00:45:21.480
+around this, sort of like if you think about basic chemistry.
+
+807
+00:45:21.510 --> 00:45:25.460
+And the way that this is framed is that every copy of
+
+808
+00:45:25.520 --> 00:45:29.320
+every segment has a left and a right neighbor, or it's at a chromosome
+
+809
+00:45:29.330 --> 00:45:32.860
+end. And we can leverage this actually not just a kind of neat little fact, we
+
+810
+00:45:32.900 --> 00:45:35.960
+can leverage this to build better analytics.
+
+811
+00:45:35.980 --> 00:45:39.720
+And part of the output of that analytics is that we not only infer the copy
+
+812
+00:45:39.760 --> 00:45:43.380
+number on the segments of the genome, but also the rearrangements, the junctions
+
+813
+00:45:43.440 --> 00:45:46.780
+that connect them. And I think this is a very powerful starting point for thinking
+
+814
+00:45:46.840 --> 00:45:49.540
+about particularly structural chromosomal instability.
+
+815
+00:45:50.680 --> 00:45:54.460
+And so we've developed a method based around this mass balance principle
+
+816
+00:45:54.540 --> 00:45:57.480
+called JAVEL, and it's undergone several iterations.
+
+817
+00:45:57.540 --> 00:46:00.480
+Here's the poor PhD students who, well, they
+
+818
+00:46:02.020 --> 00:46:05.740
+put a lot of their time into this approach, and I
+
+819
+00:46:05.780 --> 00:46:08.600
+think it's really the state-of-the-art approach
+
+820
+00:46:08.960 --> 00:46:12.520
+that takes into account rearrangements and
+
+821
+00:46:13.320 --> 00:46:16.880
+copy number as input and outputs what I think is a state-of-the-art
+
+822
+00:46:18.980 --> 00:46:22.740
+copy number profiles. And here's some benchmarking we did both against an
+
+823
+00:46:22.800 --> 00:46:26.540
+older version of JAVEL and then the sort of rest of the pack of key
+
+824
+00:46:26.580 --> 00:46:30.280
+methods in the field, showing markedly sort of step change in
+
+825
+00:46:30.460 --> 00:46:33.880
+precision and recall for breakpoint detection and copy number
+
+826
+00:46:34.140 --> 00:46:36.570
+estimation on alleles and total copy number.
+
+827
+00:46:36.570 --> 00:46:40.040
+Now, this is obviously a good starting point, but where I
+
+828
+00:46:40.080 --> 00:46:43.960
+think our approach really shines is in providing this feature space that we
+
+829
+00:46:44.000 --> 00:46:47.089
+can start to think about structural chromosomal instability.
+
+830
+00:46:47.170 --> 00:46:50.400
+And part of this is sort of this gallery that I'm showing here of the kind of
+
+831
+00:46:50.440 --> 00:46:52.750
+events that we can diagnose by
+
+832
+00:46:53.820 --> 00:46:56.170
+looking at patterns in these genome graphs.
+
+833
+00:46:56.220 --> 00:46:59.820
+So the output of JAVEL is a genome graph, and we analyze it using a
+
+834
+00:47:01.060 --> 00:47:04.900
+sort of toolkit suite called gGenome, or for
+
+835
+00:47:05.020 --> 00:47:08.620
+graph genomes. So these are the patterns of both
+
+836
+00:47:08.680 --> 00:47:11.360
+simple and complex rearrangements.
+
+837
+00:47:11.380 --> 00:47:14.280
+And you could see that in addition to sort of deletions,
+
+838
+00:47:14.320 --> 00:47:18.030
+duplications, and these kind of simple events, many
+
+839
+00:47:18.140 --> 00:47:21.960
+other patterns can emerge and we can sort of pick them off the graph as
+
+840
+00:47:22.180 --> 00:47:25.800
+sort of motifs. So, for example, chromoplexy are these multi-way balanced
+
+841
+00:47:26.460 --> 00:47:29.380
+rearrangements that were originally identified in prostate cancer.
+
+842
+00:47:29.760 --> 00:47:33.040
+These templated insertion chains came from the, actually PCOG
+
+843
+00:47:33.860 --> 00:47:37.200
+analysis that we did with Peter Campbell and Elong Li.
+
+844
+00:47:38.200 --> 00:47:41.980
+And chromothripsis is this dramatic chromosome
+
+845
+00:47:42.080 --> 00:47:45.220
+shattering that happens when a chromosome is trapped in a micronucleus and then
+
+846
+00:47:45.240 --> 00:47:48.300
+within the next cell cycle or two gets reassembled.
+
+847
+00:47:48.900 --> 00:47:52.260
+Extrachromosomal DNA, there's a lot of interest in this field,
+
+848
+00:47:53.920 --> 00:47:57.400
+are these circles that can amplify and become very unstable,
+
+849
+00:47:58.300 --> 00:48:01.920
+and often, usually carry some
+
+850
+00:48:01.960 --> 00:48:04.720
+critical classic kind of oncogene.
+
+851
+00:48:04.760 --> 00:48:08.320
+And these other patterns like breakage-fusion-bridge cycles that I'll discuss in a
+
+852
+00:48:08.360 --> 00:48:08.740
+little bit.
+
+853
+00:48:09.580 --> 00:48:11.720
+So how did we discover these different patterns?
+
+854
+00:48:11.740 --> 00:48:15.700
+Here's one called rhigma, which is a chasm of nested deletions that we
+
+855
+00:48:15.760 --> 00:48:19.560
+analyzed in a previous-- This came out of a previous sort of study of
+
+856
+00:48:20.280 --> 00:48:22.460
+a few thousand, a couple of thousand cancer genomes,
+
+857
+00:48:23.460 --> 00:48:26.760
+where we found this clustered rearrangement pattern that wasn't chromothripsis.
+
+858
+00:48:26.800 --> 00:48:30.380
+It was a cluster of nested deletions with this kind of
+
+859
+00:48:32.120 --> 00:48:35.810
+stepwise drop in copy number. We called it rhigma, which means chasm in
+
+860
+00:48:35.860 --> 00:48:39.240
+Greek. These rhigma, we could tell that they're a distinct
+
+861
+00:48:39.280 --> 00:48:43.080
+biological entity. One thing was that these rhigma
+
+862
+00:48:43.200 --> 00:48:47.160
+occurred predominantly in late replicating regions of the genome.
+
+863
+00:48:47.560 --> 00:48:50.580
+They were also present in very large genes and
+
+864
+00:48:50.820 --> 00:48:54.480
+overlapped with previously annotated fragile
+
+865
+00:48:54.500 --> 00:48:56.400
+sites from cell line experiments.
+
+866
+00:48:57.860 --> 00:49:01.640
+So here's an example of what we think is a structural mutational
+
+867
+00:49:01.680 --> 00:49:05.670
+process that has a very distinct footprint on these graphs
+
+868
+00:49:05.700 --> 00:49:09.420
+that we're deriving.Another one we were just hearing a
+
+869
+00:49:09.460 --> 00:49:09.910
+beautiful
+
+870
+00:49:12.020 --> 00:49:14.240
+discussion about homologous recombination deficiency.
+
+871
+00:49:14.300 --> 00:49:18.240
+Here was a new structural scar of BRCA1 deficiency
+
+872
+00:49:18.260 --> 00:49:22.160
+that we recently uncovered, and it has a very simple sort of pattern
+
+873
+00:49:22.180 --> 00:49:26.030
+where you have these two duplications that are here separated by 10 or
+
+874
+00:49:26.080 --> 00:49:28.700
+more megabases, but often on different chromosomes.
+
+875
+00:49:28.740 --> 00:49:30.870
+And they're each linked to each other
+
+876
+00:49:31.740 --> 00:49:32.980
+with a rearrangement
+
+877
+00:49:34.040 --> 00:49:37.600
+junction. And what's interesting is that these can adopt very diverse
+
+878
+00:49:37.660 --> 00:49:41.380
+phases from copy and paste to these complex
+
+879
+00:49:41.440 --> 00:49:44.960
+quasi-balanced translocations, and they're highly enriched, almost
+
+880
+00:49:45.140 --> 00:49:47.520
+pathognomonic for BRCA1 deficiency.
+
+881
+00:49:48.040 --> 00:49:51.560
+Almost never seen in homologous recombination, proficient
+
+882
+00:49:52.000 --> 00:49:54.260
+tumors beyond one or a couple events.
+
+883
+00:49:55.200 --> 00:49:58.620
+So this is an example of where a particular biallelic
+
+884
+00:50:00.460 --> 00:50:02.500
+DNA repair deficiency correlates with
+
+885
+00:50:03.500 --> 00:50:06.000
+the presence of these specific graph patterns.
+
+886
+00:50:06.040 --> 00:50:09.860
+Now, there's been a tremendous excitement in the field about these
+
+887
+00:50:09.920 --> 00:50:13.420
+extrachromosomal DNA, and more broadly about
+
+888
+00:50:15.280 --> 00:50:17.660
+focal genomic amplifications. In fact, the chair of our
+
+889
+00:50:20.040 --> 00:50:22.980
+conference, Paul Michiel, has been a real champion of this field, and it's really
+
+890
+00:50:23.020 --> 00:50:26.900
+exciting because these focal amplifications
+
+891
+00:50:26.960 --> 00:50:30.240
+are extremely dynamic. They have unique biology,
+
+892
+00:50:30.880 --> 00:50:34.620
+and are potentially a mechanism of drug resistance and potentially
+
+893
+00:50:34.700 --> 00:50:36.140
+also a targetable
+
+894
+00:50:37.040 --> 00:50:40.720
+therapeutic opportunity. But many alterations in
+
+895
+00:50:41.380 --> 00:50:43.720
+cancer genomes, focal amplifications,
+
+896
+00:50:45.280 --> 00:50:47.120
+are chromosomally integrated.
+
+897
+00:50:47.920 --> 00:50:50.780
+And the classic kind of cytogenetic name for these is
+
+898
+00:50:51.920 --> 00:50:54.700
+homogenous staining regions. This is what they look like sort of under the
+
+899
+00:50:54.740 --> 00:50:57.360
+microscope to cytogeneticists decades ago.
+
+900
+00:50:58.260 --> 00:51:01.840
+Unlike ecDNA, they're thought to segregate symmetrically and they're stable.
+
+901
+00:51:03.200 --> 00:51:07.100
+And we can sort of detect very distinct footprints of these
+
+902
+00:51:07.200 --> 00:51:09.280
+in our genome graphs, as I
+
+903
+00:51:10.220 --> 00:51:12.800
+showed you that dictionary above.
+
+904
+00:51:12.840 --> 00:51:16.080
+So applying our approaches to thousands of
+
+905
+00:51:16.260 --> 00:51:16.900
+TCGA
+
+906
+00:51:18.120 --> 00:51:21.840
+genomes, we developed a landscape of how
+
+907
+00:51:21.960 --> 00:51:23.800
+frequent each of these patterns
+
+908
+00:51:24.700 --> 00:51:28.080
+are. And we have several patterns that qualify as
+
+909
+00:51:28.760 --> 00:51:30.000
+HSR in our dictionary.
+
+910
+00:51:30.940 --> 00:51:34.660
+And what we see is really striking, which is that
+
+911
+00:51:34.940 --> 00:51:38.720
+really, a lot of amplifications in cancer genomes fall
+
+912
+00:51:38.760 --> 00:51:42.230
+into this homogenously staining region pattern, with the exception
+
+913
+00:51:42.280 --> 00:51:43.880
+of glioblastoma,
+
+914
+00:51:45.240 --> 00:51:45.600
+where
+
+915
+00:51:46.780 --> 00:51:50.380
+these tumors indeed are dominated by ecDNA
+
+916
+00:51:50.400 --> 00:51:53.990
+amplifications of EGFR and PDGFRA and these kind of
+
+917
+00:51:54.020 --> 00:51:57.940
+classic oncogenes. And that's a little bit distinct, different from the
+
+918
+00:51:57.980 --> 00:51:59.620
+narrative in the field,
+
+919
+00:52:00.520 --> 00:52:04.400
+where ecDNA or B have been sort of found in many,
+
+920
+00:52:04.480 --> 00:52:08.000
+many places. And I think it's worth taking another look
+
+921
+00:52:08.120 --> 00:52:11.080
+at the dynamics of ecDNA formation.
+
+922
+00:52:11.200 --> 00:52:15.080
+So the key tool that you use to analyze
+
+923
+00:52:15.140 --> 00:52:17.900
+ecDNA is called Amplicon Architect.
+
+924
+00:52:18.800 --> 00:52:21.020
+So we did a head-to-head study of sort of
+
+925
+00:52:21.840 --> 00:52:25.380
+how frequently we detect ecDNA versus Amplicon Architect.
+
+926
+00:52:25.400 --> 00:52:26.129
+And you could see that
+
+927
+00:52:27.140 --> 00:52:30.700
+for everything but GBM, we tend to detect it much
+
+928
+00:52:30.760 --> 00:52:33.860
+less frequently. Now, is this just a technical kind of issue
+
+929
+00:52:34.540 --> 00:52:35.230
+related to
+
+930
+00:52:37.820 --> 00:52:39.600
+different tools making different calls?
+
+931
+00:52:39.660 --> 00:52:41.760
+Well, one of the kind of key
+
+932
+00:52:43.540 --> 00:52:47.280
+classes of amplifications that we uncovered several years
+
+933
+00:52:47.320 --> 00:52:47.600
+ago
+
+934
+00:52:48.400 --> 00:52:52.250
+didn't really fit into the description of double minute in
+
+935
+00:52:52.280 --> 00:52:56.000
+this case or an ecDNA or a breakage fusion bridge cycle, which is
+
+936
+00:52:56.780 --> 00:52:58.120
+a classic form of
+
+937
+00:52:59.020 --> 00:53:02.460
+a chromosomally integrated amplification. We called it Typhonis.
+
+938
+00:53:02.500 --> 00:53:05.740
+Typhonis had this very dramatic pattern
+
+939
+00:53:05.800 --> 00:53:06.640
+of
+
+940
+00:53:08.320 --> 00:53:12.140
+not just sort of a broad footprint of extremely
+
+941
+00:53:12.180 --> 00:53:16.120
+high-level amplifications, but many of these fold-back inversion
+
+942
+00:53:16.460 --> 00:53:20.180
+amplifications and also rearrangements that are themselves
+
+943
+00:53:20.280 --> 00:53:23.949
+amplified many times and occupy many
+
+944
+00:53:23.980 --> 00:53:27.620
+copy states. And we thought this was actually a very unique pattern.
+
+945
+00:53:27.699 --> 00:53:31.180
+That's why we called it Typhonis from the sort of way it looked on our
+
+946
+00:53:33.860 --> 00:53:35.940
+visualizations here resembling a typhoon.
+
+947
+00:53:37.170 --> 00:53:41.100
+And the one that we reported there showed that these Typhonis are, in fact,
+
+948
+00:53:41.860 --> 00:53:45.750
+massively amplified homogenously staining regions, and
+
+949
+00:53:45.760 --> 00:53:48.930
+this is the metaphase FISH from the same cell here that's
+
+950
+00:53:48.960 --> 00:53:52.760
+co-amplifying MYCN and MIB.
+
+951
+00:53:52.820 --> 00:53:56.000
+And you can see that there are two chromosomes here.
+
+952
+00:53:56.050 --> 00:53:59.560
+Those are chromosomes undergone a duplication where all of these
+
+953
+00:53:59.620 --> 00:54:03.520
+copies of MYCN, in this case, are clustered in a
+
+954
+00:54:03.620 --> 00:54:05.240
+single genomic region.
+
+955
+00:54:06.300 --> 00:54:10.240
+And we think this indicates a distinct mutational process.
+
+956
+00:54:10.280 --> 00:54:14.180
+Now, this is one example of a pattern that Amplicon Architect would call an
+
+957
+00:54:14.240 --> 00:54:18.230
+ecDNA. So we went further, investigated additional discordances
+
+958
+00:54:18.300 --> 00:54:21.840
+where we called the Typhonis and Amplicon
+
+959
+00:54:21.920 --> 00:54:23.840
+Architect called it ecDNA.
+
+960
+00:54:24.960 --> 00:54:28.620
+And every one of these we confirmed as being a homogenously
+
+961
+00:54:28.760 --> 00:54:32.340
+staining region. Now, you can see the scope here of Typhonis, the relatively
+
+962
+00:54:32.400 --> 00:54:33.220
+infrequent event
+
+963
+00:54:34.300 --> 00:54:37.900
+class that occurs on average in 3% of most cancers
+
+964
+00:54:37.940 --> 00:54:40.680
+and a higher rate in certain cancers.
+
+965
+00:54:41.320 --> 00:54:44.440
+But in fact, affects almost every known
+
+966
+00:54:44.840 --> 00:54:48.200
+oncogene, so cyclin D1, MYC, and
+
+967
+00:54:48.260 --> 00:54:48.900
+ERBB2.
+
+968
+00:54:49.980 --> 00:54:53.680
+And just to show that we're able to actually detect ecDNA with our
+
+969
+00:54:53.700 --> 00:54:55.780
+metaphase FISH, here's an example of
+
+970
+00:54:57.280 --> 00:54:57.440
+a
+
+971
+00:54:58.480 --> 00:55:02.280
+amplification that gGenome calls an ecDNA, and
+
+972
+00:55:02.300 --> 00:55:03.160
+indeed it is one.
+
+973
+00:55:04.500 --> 00:55:07.880
+So mapping these Typhonis events, we can see that they have an
+
+974
+00:55:08.000 --> 00:55:11.140
+extremely dramatic structure that involves both
+
+975
+00:55:12.820 --> 00:55:14.280
+amplification and rearrangement.
+
+976
+00:55:14.810 --> 00:55:18.240
+And we kind of threw every single technology in the book that we could at
+
+977
+00:55:19.340 --> 00:55:23.120
+sequencing these. Of course, our standard sequencing in TCGA is Illumina
+
+978
+00:55:23.160 --> 00:55:27.004
+short reads, which are less than 1kb.Long reads are generally
+
+979
+00:55:27.064 --> 00:55:30.824
+10 to 100 kb. Ultra long reads are a little bit longer than 100 kb,
+
+980
+00:55:31.304 --> 00:55:35.004
+and then optical mapping's not really sequencing, but it's somewhere in this 100
+
+981
+00:55:35.024 --> 00:55:36.304
+kb to one megabase
+
+982
+00:55:37.564 --> 00:55:41.424
+range. They were all really, even though we could get very detailed, kind
+
+983
+00:55:41.444 --> 00:55:45.324
+of plausible reconstructions of these complex loci, in
+
+984
+00:55:45.364 --> 00:55:48.884
+this case co-amplifying MIB and MYCN, we couldn't
+
+985
+00:55:48.944 --> 00:55:49.564
+prove
+
+986
+00:55:50.424 --> 00:55:54.394
+sorry about that, with even the longest of these technologies,
+
+987
+00:55:54.484 --> 00:55:58.184
+that this dramatic amplification was chromosomally
+
+988
+00:55:58.243 --> 00:56:01.764
+integrated. The way we could prove it is actually with a relatively old
+
+989
+00:56:01.804 --> 00:56:04.364
+technology, I wouldn't call it ancient just yet, called Hi-C,
+
+990
+00:56:06.184 --> 00:56:08.544
+which actually fortunately works on paraffin.
+
+991
+00:56:09.024 --> 00:56:12.964
+And here, Hi-C, it's used to study chromatin folding,
+
+992
+00:56:13.024 --> 00:56:16.624
+but also has become a workhorse in species genome assembly
+
+993
+00:56:16.704 --> 00:56:20.624
+projects. It captures 3D contacts, the frequency
+
+994
+00:56:20.644 --> 00:56:24.604
+of 3D contacts in genomes, and most of the contacts in
+
+995
+00:56:24.644 --> 00:56:28.344
+a Hi-C experiment come from the same chromosome.
+
+996
+00:56:28.384 --> 00:56:32.264
+They're cis contacts. And these can stretch for many, many
+
+997
+00:56:32.324 --> 00:56:34.424
+megabases, even hundreds of megabases out.
+
+998
+00:56:34.824 --> 00:56:38.784
+And this kind of signal is almost like an infinite long read, and it gives
+
+999
+00:56:38.824 --> 00:56:42.224
+us a very clean sort of landing pad for this
+
+1000
+00:56:42.564 --> 00:56:46.504
+incredibly complex amplification on, in this
+
+1001
+00:56:46.584 --> 00:56:47.544
+case, chromosome one.
+
+1002
+00:56:48.544 --> 00:56:52.014
+So why am I harping so much on HSRs? Well, I think HSRs are actually
+
+1003
+00:56:52.384 --> 00:56:54.024
+really interesting because they're good news.
+
+1004
+00:56:54.484 --> 00:56:58.404
+I know we're trying to find targets for ecDNA, but
+
+1005
+00:56:58.724 --> 00:57:02.704
+one feature of HSRs that might make it a sort of priority to
+
+1006
+00:57:02.724 --> 00:57:06.664
+be able to detect them accurately is, for example, HER2 is a
+
+1007
+00:57:06.724 --> 00:57:07.344
+target of
+
+1008
+00:57:08.984 --> 00:57:12.824
+obviously a very famous drug called Herceptin, but also more recently an
+
+1009
+00:57:12.884 --> 00:57:14.944
+antibody drug conjugate called T-DXd.
+
+1010
+00:57:16.444 --> 00:57:20.384
+If a cancer cell amplifies HER2 on an ecDNA, it's more likely
+
+1011
+00:57:20.404 --> 00:57:21.924
+to develop resistance to
+
+1012
+00:57:23.564 --> 00:57:26.944
+either of those drugs. But if we can detect the subset of HER2
+
+1013
+00:57:27.004 --> 00:57:30.824
+amplifications that are chromosomally integrated, well, then maybe those
+
+1014
+00:57:31.304 --> 00:57:33.604
+tumors would have a harder time evading that therapy.
+
+1015
+00:57:33.634 --> 00:57:37.004
+And here we find that a really substantial subset
+
+1016
+00:57:37.704 --> 00:57:41.313
+of HER2 amplifications, we predict to be HSRs, either by
+
+1017
+00:57:41.384 --> 00:57:45.284
+BFB cycles or tifonis, and that's both in breast and other cancers.
+
+1018
+00:57:45.704 --> 00:57:48.824
+The other thing that's interesting with tifonis is that they're actually very
+
+1019
+00:57:48.904 --> 00:57:52.324
+frequent in acral melanomas, not in cutaneous sun-exposed
+
+1020
+00:57:52.364 --> 00:57:52.904
+melanomas.
+
+1021
+00:57:53.964 --> 00:57:54.444
+And when we
+
+1022
+00:57:55.604 --> 00:57:59.564
+correlate the incidence of these tifonis HSR
+
+1023
+00:57:59.624 --> 00:58:03.504
+events across TCGA and correlate it with gene expression, we
+
+1024
+00:58:03.524 --> 00:58:07.104
+find that they're associated with an order of magnitude higher number of
+
+1025
+00:58:07.144 --> 00:58:08.904
+expressed protein coding fusions.
+
+1026
+00:58:09.904 --> 00:58:11.614
+And we think that's really interesting because
+
+1027
+00:58:12.564 --> 00:58:15.324
+that could make these tifonis a
+
+1028
+00:58:16.884 --> 00:58:20.804
+source of neoantigens in otherwise
+
+1029
+00:58:20.904 --> 00:58:23.764
+TMB-low tumors like acral melanomas.
+
+1030
+00:58:24.033 --> 00:58:27.684
+And so we've been exploring this concept, and we actually have some preliminary
+
+1031
+00:58:29.084 --> 00:58:32.184
+results showing an improved response to checkpoint
+
+1032
+00:58:32.584 --> 00:58:35.484
+inhibition, even after correcting for TMB and other known
+
+1033
+00:58:35.844 --> 00:58:39.524
+covariates of both SNVs and
+
+1034
+00:58:39.664 --> 00:58:40.524
+structural variants,
+
+1035
+00:58:41.824 --> 00:58:45.064
+rearrangement junctions that were amplified in an HSR.
+
+1036
+00:58:45.864 --> 00:58:49.284
+And here's an example of a tifonis in a low TMB
+
+1037
+00:58:50.644 --> 00:58:54.524
+tumor with a durable ICB response. This is an acral melanoma.
+
+1038
+00:58:56.444 --> 00:58:57.984
+So one observation from
+
+1039
+00:58:59.164 --> 00:59:02.924
+cataloging our dictionary of these complex and simple
+
+1040
+00:59:03.024 --> 00:59:04.324
+structural events,
+
+1041
+00:59:05.324 --> 00:59:09.104
+chromosomal events across thousands of tumors, is that they tend to
+
+1042
+00:59:09.164 --> 00:59:13.004
+co-occur. So it's not just that some tumors have BFB
+
+1043
+00:59:13.044 --> 00:59:15.684
+and don't have other event classes.
+
+1044
+00:59:16.114 --> 00:59:20.064
+They occur and they co-occur. For example, these RIGMA that I
+
+1045
+00:59:20.104 --> 00:59:23.584
+told you before often co-occur with BFB cycles and often
+
+1046
+00:59:24.064 --> 00:59:27.824
+in GI-related tumors, even in Barrett's esophagus,
+
+1047
+00:59:28.084 --> 00:59:31.704
+and that combination is associated with a much poorer prognosis.
+
+1048
+00:59:31.744 --> 00:59:34.984
+So we wanted to see if we could actually combine these events into
+
+1049
+00:59:35.344 --> 00:59:38.824
+true structural SIN signatures. Now, I think I
+
+1050
+00:59:39.524 --> 00:59:42.883
+told you, and also you heard in the previous talk,
+
+1051
+00:59:43.404 --> 00:59:46.744
+there's these copy number signatures which ignore genomic rearrangements.
+
+1052
+00:59:47.204 --> 00:59:49.744
+There are these rearrangement signatures that ignore copy numbers.
+
+1053
+00:59:49.764 --> 00:59:53.274
+So we thought, could we combine these approaches into a single
+
+1054
+00:59:53.304 --> 00:59:56.114
+integrated structural SIN signature?
+
+1055
+00:59:56.154 --> 00:59:59.144
+And so here we had to come up with a sort of feature,
+
+1056
+00:59:59.224 --> 01:00:02.704
+a vector that we could put into our
+
+1057
+01:00:02.764 --> 01:00:03.984
+NMF or LDA
+
+1058
+01:00:04.904 --> 01:00:08.404
+inference process, and this included that
+
+1059
+01:00:08.444 --> 01:00:12.304
+dictionary of annotated event counts and then additional copy
+
+1060
+01:00:12.364 --> 01:00:14.544
+number and rearrangement features.
+
+1061
+01:00:15.244 --> 01:00:19.044
+And this includes also that graph-based feature of the copy number that we
+
+1062
+01:00:19.084 --> 01:00:20.444
+infer on junctions themselves.
+
+1063
+01:00:22.004 --> 01:00:24.704
+Oh, yeah. This was us looking for names.
+
+1064
+01:00:24.834 --> 01:00:25.064
+Maybe
+
+1065
+01:00:26.384 --> 01:00:27.444
+not the best use of
+
+1066
+01:00:28.584 --> 01:00:30.504
+LLMs and probably not the best venue, right?
+
+1067
+01:00:30.604 --> 01:00:33.204
+The ACR doesn't like this kind of stuff. Okay, sorry.
+
+1068
+01:00:33.324 --> 01:00:36.224
+So how many of these signatures do we have?
+
+1069
+01:00:37.464 --> 01:00:41.244
+We've settled on about 30 across these tumors,
+
+1070
+01:00:41.324 --> 01:00:43.844
+but that's still a work in progress.
+
+1071
+01:00:43.884 --> 01:00:47.444
+And you can see each signature is associated with a combination of
+
+1072
+01:00:47.884 --> 01:00:51.844
+this kind of word cloud of complex events and then a footprint of
+
+1073
+01:00:51.904 --> 01:00:54.424
+these different rearrangement patterns.
+
+1074
+01:00:54.484 --> 01:00:58.464
+Now, what's quite striking is that when we cross these signatures, when we
+
+1075
+01:00:58.544 --> 01:01:02.154
+analyzed cancer cell models and annotated them for these
+
+1076
+01:01:02.204 --> 01:01:05.924
+structural SIN signatures, and in
+
+1077
+01:01:06.304 --> 01:01:10.124
+models in DepMap and correlated them with susceptibility to
+
+1078
+01:01:11.364 --> 01:01:14.584
+CRISPR knockout or RNAi or therapeutic
+
+1079
+01:01:15.844 --> 01:01:17.224
+susceptibility, we found
+
+1080
+01:01:18.684 --> 01:01:22.084
+a large number of correlations between the burden of these structural SIN
+
+1081
+01:01:22.164 --> 01:01:23.544
+signatures and
+
+1082
+01:01:24.184 --> 01:01:28.004
+specific... vulnerabilities to individual
+
+1083
+01:01:28.084 --> 01:01:31.564
+therapies. In fact, I'm listing a few here, but we don't have time to go into them.
+
+1084
+01:01:32.744 --> 01:01:35.184
+But we found targets,
+
+1085
+01:01:36.064 --> 01:01:39.464
+synthetic lethalities that were present, which both
+
+1086
+01:01:39.964 --> 01:01:43.234
+were where we found the same target for the
+
+1087
+01:01:43.944 --> 01:01:45.974
+susceptibility of the same drug and
+
+1088
+01:01:47.564 --> 01:01:51.284
+CRISPR or RNAi target across many of these structural
+
+1089
+01:01:51.364 --> 01:01:55.204
+sin signatures. When we did the same analysis with the cosmic copy
+
+1090
+01:01:55.244 --> 01:01:58.344
+number signatures, we found way fewer such associations.
+
+1091
+01:01:58.404 --> 01:02:02.244
+So in summary, these balanced genome graphs, I think, provide an
+
+1092
+01:02:02.284 --> 01:02:05.944
+important starting point for studying structural SIN, which is in this kind of
+
+1093
+01:02:06.264 --> 01:02:09.844
+right-hand side of what we consider genomic instability
+
+1094
+01:02:11.364 --> 01:02:13.824
+related to structural chromosomal alterations.
+
+1095
+01:02:14.644 --> 01:02:18.564
+We think there's a much higher prevalence of HSR amplifications than has
+
+1096
+01:02:18.604 --> 01:02:19.464
+been sort of
+
+1097
+01:02:20.524 --> 01:02:23.984
+represented in the literature, including through novel mechanisms like
+
+1098
+01:02:24.004 --> 01:02:27.324
+Typhonis. We estimate about 30 dimensions of structural
+
+1099
+01:02:27.464 --> 01:02:28.604
+SIN across
+
+1100
+01:02:30.823 --> 01:02:34.744
+thousands of cancers, and some of these may provide insight
+
+1101
+01:02:34.784 --> 01:02:36.024
+into targetable synthetic
+
+1102
+01:02:36.924 --> 01:02:39.924
+lethalities detectable only with whole-genome sequencing.
+
+1103
+01:02:39.974 --> 01:02:43.744
+And just want to put a quick plug for clinical whole-genome molecular
+
+1104
+01:02:43.784 --> 01:02:47.164
+oncology. I'm a pathologist, and at NYU, we're
+
+1105
+01:02:47.484 --> 01:02:48.124
+implementing
+
+1106
+01:02:49.704 --> 01:02:53.194
+rapid whole-genome oncology, whole-genome
+
+1107
+01:02:53.264 --> 01:02:57.164
+sequencing, and interpretation from FFP-derived DNA.
+
+1108
+01:02:57.244 --> 01:03:01.184
+We have our FDA-targeted panel, and we're now
+
+1109
+01:03:01.204 --> 01:03:04.524
+routinely doing whole-genome sequencing, and it's yielding a lot of
+
+1110
+01:03:05.224 --> 01:03:07.364
+really exciting and interesting vignettes.
+
+1111
+01:03:07.404 --> 01:03:11.174
+I want to thank the folks in my lab, and also the funding support from
+
+1112
+01:03:11.264 --> 01:03:14.744
+especially Pershing Square and Mark Foundation, and of course, the
+
+1113
+01:03:14.784 --> 01:03:16.624
+NCI for supporting a lot of our work.
+
+1114
+01:03:17.524 --> 01:03:19.864
+Sorry to go over time. I'll take any questions. Thanks.
+
+1115
+01:03:25.564 --> 01:03:28.944
+Anton.
+
+1116
+01:03:29.364 --> 01:03:32.964
+I don't think we have time for so many questions, so maybe we take kind of
+
+1117
+01:03:33.904 --> 01:03:35.914
+two or three and because we want to be on time.
+
+1118
+01:03:35.914 --> 01:03:35.953
+Anton.
+
+1119
+01:03:36.084 --> 01:03:38.524
+Beautiful talk, Martin, as always.
+
+1120
+01:03:39.284 --> 01:03:42.904
+I was wondering about the validation of the HSR findings and the prevalence of
+
+1121
+01:03:43.024 --> 01:03:46.904
+HSRs. I don't know if you're aware, but in most cell lines that you
+
+1122
+01:03:46.924 --> 01:03:47.804
+also depicted here,
+
+1123
+01:03:49.504 --> 01:03:53.264
+a lot of those HSRs might be a result of ecDNA reintegration.
+
+1124
+01:03:53.784 --> 01:03:57.584
+So the structure between the ecDNA and HSR might be the same and which is maybe
+
+1125
+01:03:57.664 --> 01:04:00.924
+why some of the algorithms also cannot distinguish the two.
+
+1126
+01:04:01.424 --> 01:04:04.784
+And so have you tried to do this in cell lines in which ecDNAs
+
+1127
+01:04:04.794 --> 01:04:08.584
+are known to be present and isogenic pairs in which those are reintegrated to see
+
+1128
+01:04:08.624 --> 01:04:11.704
+whether your algorithms can distinguish between those two?
+
+1129
+01:04:11.764 --> 01:04:13.504
+Because that would be really relevant.
+
+1130
+01:04:13.524 --> 01:04:14.184
+And also,
+
+1131
+01:04:15.204 --> 01:04:19.044
+a follow-up question, have you tried to do the same validation in patient samples?
+
+1132
+01:04:19.104 --> 01:04:21.944
+Because we know that in patient samples, this kind of reintegration is a little
+
+1133
+01:04:21.984 --> 01:04:24.184
+less frequent than in cell lines, so. Right.
+
+1134
+01:04:24.764 --> 01:04:24.904
+So,
+
+1135
+01:04:26.524 --> 01:04:27.504
+quite a few questions
+
+1136
+01:04:28.784 --> 01:04:32.764
+to discuss there. I think the most
+
+1137
+01:04:32.804 --> 01:04:36.304
+important concept here is obviously, when we see an
+
+1138
+01:04:36.464 --> 01:04:39.584
+HSR, is that important?
+
+1139
+01:04:39.624 --> 01:04:43.244
+Mechanistically, we can think about how did that HSR
+
+1140
+01:04:43.284 --> 01:04:47.104
+happen. And if we're thinking about mechanisms and working backwards from
+
+1141
+01:04:47.144 --> 01:04:50.504
+patterns to mechanisms, that's obviously an important thing to consider.
+
+1142
+01:04:50.544 --> 01:04:54.273
+And did that HSR evolve through some sort of transient
+
+1143
+01:04:54.684 --> 01:04:58.594
+ecDNA, and whether that's a circular ecDNA or maybe a transient
+
+1144
+01:04:58.984 --> 01:05:00.744
+linear ecDNA. Now,
+
+1145
+01:05:00.784 --> 01:05:06.344
+obviously,
+
+1146
+01:05:06.404 --> 01:05:08.504
+ecDNA, we think
+
+1147
+01:05:09.384 --> 01:05:13.164
+do undergo reintegration. I think what's a little bit harder
+
+1148
+01:05:13.244 --> 01:05:16.984
+to understand is how they would reintegrate
+
+1149
+01:05:17.084 --> 01:05:18.084
+all into a single
+
+1150
+01:05:19.224 --> 01:05:22.204
+location, right? And I think,
+
+1151
+01:05:25.044 --> 01:05:28.744
+part of that is sort of understanding exactly what are the conditions
+
+1152
+01:05:28.804 --> 01:05:32.464
+when that happens. But we think that there's maybe a distinct
+
+1153
+01:05:32.504 --> 01:05:35.704
+mechanism for particularly these Typhonis.
+
+1154
+01:05:36.544 --> 01:05:40.324
+Now, whether that can be characterized as an ecDNA mechanism,
+
+1155
+01:05:41.344 --> 01:05:42.724
+I don't know. But
+
+1156
+01:05:43.824 --> 01:05:44.153
+I think
+
+1157
+01:05:46.364 --> 01:05:47.104
+these kind of
+
+1158
+01:05:48.204 --> 01:05:51.844
+questions are a little bit distinct from addressing what's biologically
+
+1159
+01:05:51.864 --> 01:05:55.324
+important maybe for therapy, which is, what is the current state
+
+1160
+01:05:56.044 --> 01:05:59.524
+of this tumor genome? And I think that's what we've been
+
+1161
+01:05:59.964 --> 01:06:01.624
+sort of focused on here. But,
+
+1162
+01:06:02.844 --> 01:06:06.684
+yeah, the challenge is obviously for human tissues is it's much harder to get a
+
+1163
+01:06:06.764 --> 01:06:07.444
+metaphase
+
+1164
+01:06:11.064 --> 01:06:12.884
+spread, so we haven't done that yet.
+
+1165
+01:06:12.944 --> 01:06:16.344
+We've done it on some cancer models, like organoid models.
+
+1166
+01:06:17.484 --> 01:06:19.424
+Isogenic models, I think it's tricky, right?
+
+1167
+01:06:19.444 --> 01:06:23.234
+Because a lot of those will be... If we're talking about
+
+1168
+01:06:23.264 --> 01:06:26.824
+engineered isogenic models, I don't know if we've got
+
+1169
+01:06:28.184 --> 01:06:31.224
+great examples of that, but how representative are they
+
+1170
+01:06:31.324 --> 01:06:33.004
+of
+
+1171
+01:06:35.224 --> 01:06:37.604
+real human tumors? We'd have to see.
+
+1172
+01:06:37.624 --> 01:06:40.684
+But I think these are all interesting things to pursue.
+
+1173
+01:06:41.644 --> 01:06:41.924
+Thank you.
+
+1174
+01:06:44.624 --> 01:06:44.824
+Yeah.
+
+1175
+01:06:44.864 --> 01:06:47.084
+Thank you for great talk. I have a quick question.
+
+1176
+01:06:47.784 --> 01:06:51.744
+So in your fishing imagery of the HSR, it seems like
+
+1177
+01:06:51.784 --> 01:06:55.764
+that some HSR is initially in only one chromosome, and then the
+
+1178
+01:06:55.824 --> 01:06:58.104
+other one looks like scattered in the different chromosome.
+
+1179
+01:06:58.564 --> 01:07:02.104
+So in Typhonis, do you think there's
+
+1180
+01:07:02.544 --> 01:07:06.324
+two different mechanism that making different appearance in HSR?
+
+1181
+01:07:08.724 --> 01:07:10.264
+I'm sorry, can you repeat the question?
+
+1182
+01:07:10.444 --> 01:07:14.344
+Yeah. So some HSR is initially only one single chromosome in
+
+1183
+01:07:14.384 --> 01:07:18.144
+your images, and then the other one is scattered in the multiple chromosomes.
+
+1184
+01:07:18.204 --> 01:07:20.924
+So do you think there's a different mechanism for that?
+
+1185
+01:07:22.284 --> 01:07:25.224
+The HSRs that integrate into multiple
+
+1186
+01:07:26.604 --> 01:07:29.724
+chromosomes versus those that integrate... Right.
+
+1187
+01:07:29.804 --> 01:07:33.094
+So I think this gets back to the question about
+
+1188
+01:07:33.124 --> 01:07:35.474
+ecDNA reintegration. I
+
+1189
+01:07:35.504 --> 01:07:39.124
+think-If ecDNA are existing in a
+
+1190
+01:07:39.164 --> 01:07:42.504
+circular state, there's obviously examples of where they reintegrate,
+
+1191
+01:07:43.084 --> 01:07:46.844
+and they probably will reintegrate in multiple locations.
+
+1192
+01:07:46.874 --> 01:07:50.064
+Like for example, Colo 320 has
+
+1193
+01:07:51.684 --> 01:07:55.494
+examples of... So there are examples of that,
+
+1194
+01:07:55.704 --> 01:07:56.044
+I think.
+
+1195
+01:07:56.864 --> 01:07:58.374
+If we're thinking about a
+
+1196
+01:07:59.584 --> 01:08:03.394
+single reintegration event, I think the biology there,
+
+1197
+01:08:03.844 --> 01:08:04.774
+I think
+
+1198
+01:08:05.724 --> 01:08:09.144
+still has yet to be worked out. Now, how can we distinguish between those
+
+1199
+01:08:09.163 --> 01:08:10.874
+different reintegration states?
+
+1200
+01:08:10.944 --> 01:08:13.384
+I think some of that can be apparent on short reads.
+
+1201
+01:08:14.584 --> 01:08:18.384
+I do think that's where longer reads can help, but my sense is
+
+1202
+01:08:18.424 --> 01:08:21.964
+no long reads are long enough, and I think Hi-C probably
+
+1203
+01:08:22.084 --> 01:08:25.684
+provides the unique insight to get that level of resolution.
+
+1204
+01:08:25.724 --> 01:08:29.704
+And that level of reconstruction, cancer genome assembly,
+
+1205
+01:08:30.364 --> 01:08:34.344
+is something that may eventually be important for guiding
+
+1206
+01:08:34.384 --> 01:08:34.994
+therapy, I think.
+
+1207
+01:08:36.945 --> 01:08:39.044
+Maybe we should take this offline.
+
+1208
+01:08:39.105 --> 01:08:42.985
+I mean, Martin will be here after the talk and because we want to
+
+1209
+01:08:43.025 --> 01:08:43.964
+be back on track.
+
+1210
+01:08:44.004 --> 01:08:44.684
+Thank you, sir.
+
+1211
+01:08:44.724 --> 01:08:45.184
+Thank you.
+
+1212
+01:08:50.945 --> 01:08:51.284
+Okay.
+
+1213
+01:08:52.985 --> 01:08:56.945
+So I will talk now about our effort for systematic
+
+1214
+01:08:57.004 --> 01:09:00.504
+analysis of more than 8,000 TCGA whole genome sequencing.
+
+1215
+01:09:01.565 --> 01:09:05.464
+And this is on behalf of a joint collaboration between Broad and InnoCrac.
+
+1216
+01:09:06.184 --> 01:09:10.124
+Here are my disclosures, and relevant here are research funds from InnoCrac and
+
+1217
+01:09:11.044 --> 01:09:13.404
+cloud credits from Google.
+
+1218
+01:09:14.784 --> 01:09:18.624
+So just to remind you what said in the introduction, there
+
+1219
+01:09:18.824 --> 01:09:22.784
+are limitations for PECAW with low sequencing coverage,
+
+1220
+01:09:23.164 --> 01:09:27.084
+missing mutations due to PCR amplification, PCR plus,
+
+1221
+01:09:27.264 --> 01:09:31.065
+so missing parts of the genome, lack of power to detect
+
+1222
+01:09:31.105 --> 01:09:35.004
+drivers, particularly those that are in particular tumor types because those
+
+1223
+01:09:35.025 --> 01:09:38.724
+tumor types had smaller cohorts, and a lack of
+
+1224
+01:09:38.945 --> 01:09:42.905
+this accompanying other data like RNA-seq or
+
+1225
+01:09:43.144 --> 01:09:44.464
+microRNAs, et cetera.
+
+1226
+01:09:45.624 --> 01:09:49.044
+In the PCR-free whole genomes in TCGA, we
+
+1227
+01:09:49.124 --> 01:09:52.284
+have deeper coverage, 80x and 30x.
+
+1228
+01:09:52.744 --> 01:09:56.124
+It's PCR-free, so we don't have this kind of loss of coverage.
+
+1229
+01:09:56.544 --> 01:09:59.514
+We have more than 8,500
+
+1230
+01:10:00.344 --> 01:10:04.264
+tumor normal pairs, which is much larger than what we
+
+1231
+01:10:04.284 --> 01:10:07.264
+had in PECAW, and we have this rich curated data set.
+
+1232
+01:10:07.344 --> 01:10:10.784
+And here, you could see the differences in, for example, if you look at GBM,
+
+1233
+01:10:11.244 --> 01:10:14.444
+it's much larger. You look at bladder cancer,
+
+1234
+01:10:15.264 --> 01:10:19.074
+you see the new data is much larger than what we had in PECAW, and many other ones
+
+1235
+01:10:19.104 --> 01:10:22.944
+are also much larger. So in order to analyze these huge amounts of data,
+
+1236
+01:10:23.444 --> 01:10:27.084
+we created this analysis team together with
+
+1237
+01:10:27.184 --> 01:10:28.404
+Broad and InnoCrac, and
+
+1238
+01:10:29.624 --> 01:10:33.284
+co-led with Esther Reiber here and Youngsuk and Jihee,
+
+1239
+01:10:33.884 --> 01:10:34.053
+and
+
+1240
+01:10:35.004 --> 01:10:38.904
+other PIs like Matthew Meyerson and CZ and Ramin that are here,
+
+1241
+01:10:39.344 --> 01:10:42.614
+and many other people in our labs, and
+
+1242
+01:10:43.584 --> 01:10:46.764
+to analyze this data. So first, we want to
+
+1243
+01:10:47.344 --> 01:10:49.404
+process the data and call variants.
+
+1244
+01:10:49.504 --> 01:10:53.284
+So we actually had two different pipelines, one at Broad and one at
+
+1245
+01:10:53.344 --> 01:10:57.174
+InnoCrac, to process this data. And we picked a couple of
+
+1246
+01:10:57.204 --> 01:11:01.004
+cohorts to optimize our pipelines and to make
+
+1247
+01:11:01.064 --> 01:11:04.484
+sure that they could scale up to run on this huge amount of data.
+
+1248
+01:11:05.104 --> 01:11:08.644
+And it took us a few months to do that, and here's an example of,
+
+1249
+01:11:08.844 --> 01:11:12.064
+after optimizing it at Broad, we could run
+
+1250
+01:11:12.324 --> 01:11:15.724
+8,000 tumor normal pairs in less than four weeks on the cloud.
+
+1251
+01:11:16.024 --> 01:11:17.204
+So we could scale it up.
+
+1252
+01:11:18.344 --> 01:11:18.544
+And
+
+1253
+01:11:19.664 --> 01:11:23.524
+all of this data together in December 2025, not long ago,
+
+1254
+01:11:23.964 --> 01:11:27.504
+we called all these variants. We combined the data from the two different
+
+1255
+01:11:27.584 --> 01:11:31.224
+pipelines, and we had almost 200 million single nucleotide
+
+1256
+01:11:31.264 --> 01:11:34.664
+variations, 1.7 million double nucleotide
+
+1257
+01:11:34.724 --> 01:11:35.404
+variations,
+
+1258
+01:11:36.244 --> 01:11:40.064
+55 or 56 million indels, and 1.3 million structural
+
+1259
+01:11:40.124 --> 01:11:43.924
+variations. And thank to the huge team of people involved
+
+1260
+01:11:43.944 --> 01:11:46.084
+with processing all this data. And
+
+1261
+01:11:47.024 --> 01:11:50.773
+we have also posters to go into these pipelines and
+
+1262
+01:11:50.804 --> 01:11:54.704
+details, and I'll highlight this poster on the side of this slide so you could
+
+1263
+01:11:55.644 --> 01:11:56.243
+write them down.
+
+1264
+01:11:57.464 --> 01:12:01.424
+So one thing that we saw in the data, that there's a new sequencing artifact
+
+1265
+01:12:01.464 --> 01:12:03.964
+that we've never encountered before, and these are
+
+1266
+01:12:04.844 --> 01:12:07.504
+T to G mutate or A to C kind of
+
+1267
+01:12:08.284 --> 01:12:12.004
+substitutions that had these are the quality of the
+
+1268
+01:12:12.704 --> 01:12:16.644
+bases. And you could see the quality kind of decreases and kind of evaporates,
+
+1269
+01:12:16.904 --> 01:12:19.364
+and we call that a vapor trail. And
+
+1270
+01:12:20.204 --> 01:12:24.104
+this is new because these were sequenced on Nova 6,000,
+
+1271
+01:12:25.204 --> 01:12:28.704
+and this is a new type of sequencing artifact that if we
+
+1272
+01:12:28.744 --> 01:12:32.664
+don't fix, we'll find many mutations typically in the same sites, and
+
+1273
+01:12:32.684 --> 01:12:34.464
+we think they are these somatic mutations.
+
+1274
+01:12:35.344 --> 01:12:39.144
+So in order to do that, we developed a tool we call
+
+1275
+01:12:39.244 --> 01:12:43.224
+Vapor Trail Filter that, based on this pattern
+
+1276
+01:12:43.344 --> 01:12:47.264
+of base qualities and the sequence context, could filter
+
+1277
+01:12:47.324 --> 01:12:51.184
+those. And you could see these are all the tumors, the number of SNVs that we
+
+1278
+01:12:51.224 --> 01:12:53.644
+found, and the red ones are the ones that we filtered.
+
+1279
+01:12:53.984 --> 01:12:57.464
+Some tumor types had a lot more than others, like GBM and KIRC,
+
+1280
+01:12:57.904 --> 01:13:01.624
+and others had less, but we filtered all of these mutations
+
+1281
+01:13:01.744 --> 01:13:01.974
+out
+
+1282
+01:13:03.264 --> 01:13:07.144
+from the data. So we want first to make sure
+
+1283
+01:13:07.204 --> 01:13:09.144
+that we're seeing something that makes sense, kind of.
+
+1284
+01:13:09.224 --> 01:13:12.844
+So we look at all the-- this is 85 or
+
+1285
+01:13:12.924 --> 01:13:16.804
+8,500 tumors, roughly, or more than 8,000 different tumor
+
+1286
+01:13:16.824 --> 01:13:20.584
+types. And you see the different substitutions, and as we expect,
+
+1287
+01:13:21.344 --> 01:13:25.184
+the top ones, the highest median here is with skin
+
+1288
+01:13:25.224 --> 01:13:28.944
+cancer, melanoma, and the two lung cancers due to
+
+1289
+01:13:28.964 --> 01:13:32.604
+cigarette smoking. You could see also the C to T mutations in the skin
+
+1290
+01:13:32.704 --> 01:13:35.724
+cancer and the C to A substitutions in
+
+1291
+01:13:36.844 --> 01:13:36.944
+the
+
+1292
+01:13:37.964 --> 01:13:41.608
+lung cancers.Then we looked at the double nucleotide variations.
+
+1293
+01:13:41.668 --> 01:13:45.468
+We again see the even stronger. Look at this big gap between
+
+1294
+01:13:45.508 --> 01:13:49.408
+these and the other ones, and this is the skin cancer with the CC
+
+1295
+01:13:49.468 --> 01:13:51.808
+to TT, and double
+
+1296
+01:13:52.768 --> 01:13:56.148
+nucleotide variations, and you have the CC to
+
+1297
+01:13:56.228 --> 01:13:59.028
+AA in the smoking-related signatures.
+
+1298
+01:14:00.308 --> 01:14:04.018
+In terms of indels, we see, again, a big distribution
+
+1299
+01:14:04.068 --> 01:14:08.048
+with many cancers that have a much higher number of indels, and in fact,
+
+1300
+01:14:08.108 --> 01:14:11.677
+these are indels in microsatellites, and these are actually these
+
+1301
+01:14:11.728 --> 01:14:15.468
+microsatellite unstable tumors or
+
+1302
+01:14:15.488 --> 01:14:17.117
+tumors with microsatellite instability.
+
+1303
+01:14:19.268 --> 01:14:22.948
+Now, did we actually fix this problem of the
+
+1304
+01:14:23.928 --> 01:14:27.688
+lack of coverage? So here you could see in the PCG and the TCGA
+
+1305
+01:14:27.748 --> 01:14:31.478
+exomes, we have lack of coverage in the either
+
+1306
+01:14:31.588 --> 01:14:35.088
+promoter or first exons of different
+
+1307
+01:14:35.128 --> 01:14:38.988
+important genes. Here we see then, if you look at the mutations
+
+1308
+01:14:39.108 --> 01:14:42.928
+in exome data, you see there are these holes in important genes
+
+1309
+01:14:42.988 --> 01:14:45.608
+because we don't have mutations because they have high GC.
+
+1310
+01:14:46.208 --> 01:14:50.108
+When we look at the TCGA PCR-free data, there's
+
+1311
+01:14:50.188 --> 01:14:54.128
+no loss of coverage, and we actually find mutations with new
+
+1312
+01:14:54.168 --> 01:14:57.668
+hotspots in these regions that were missed before.
+
+1313
+01:14:58.828 --> 01:15:02.458
+So in general, we are fixing this problem of a lack of
+
+1314
+01:15:02.488 --> 01:15:06.038
+coverage in different regions. So in general, when we compare the whole genomes to
+
+1315
+01:15:06.068 --> 01:15:09.788
+the whole exomes, we see a big overlap between the
+
+1316
+01:15:09.908 --> 01:15:11.848
+genomes and exomes in the coding regions.
+
+1317
+01:15:12.248 --> 01:15:16.068
+But in general, we see more in whole genome only, in
+
+1318
+01:15:16.108 --> 01:15:19.748
+particular in indels that we couldn't find when we had the whole
+
+1319
+01:15:19.808 --> 01:15:20.468
+exome data.
+
+1320
+01:15:22.048 --> 01:15:25.368
+And again, there are posters that give a lot more information about this.
+
+1321
+01:15:26.708 --> 01:15:29.408
+Here's example of some key genes that you're all familiar with.
+
+1322
+01:15:29.458 --> 01:15:32.828
+This is VHL in kidney cancers. We find many more
+
+1323
+01:15:33.088 --> 01:15:36.768
+mutations in the whole genome data, both SNPs or
+
+1324
+01:15:36.888 --> 01:15:40.548
+SNVs and indels. And you could see them here in the
+
+1325
+01:15:40.808 --> 01:15:42.088
+whole genome only and
+
+1326
+01:15:43.128 --> 01:15:45.768
+there's some in the overlap, but mainly in the whole genome only.
+
+1327
+01:15:46.208 --> 01:15:50.008
+Here's another gene that you're all familiar with, ARID1A, across
+
+1328
+01:15:50.108 --> 01:15:53.068
+cancer. And you could see that this region
+
+1329
+01:15:54.108 --> 01:15:56.928
+was missing mutations before, and
+
+1330
+01:15:57.768 --> 01:16:01.408
+we find a lot more mutation in the first exon of
+
+1331
+01:16:01.548 --> 01:16:03.768
+ARID1A that we couldn't find before.
+
+1332
+01:16:03.798 --> 01:16:05.568
+Again, indels and SNVs.
+
+1333
+01:16:06.988 --> 01:16:10.548
+Now, the TERT promoter mutations is in PECAW.
+
+1334
+01:16:10.788 --> 01:16:14.758
+We had a big hole in TERT promoters because of GC-rich regions, and
+
+1335
+01:16:14.788 --> 01:16:18.308
+you see here in liver cancer that these are the missed ones, and the vast
+
+1336
+01:16:18.388 --> 01:16:21.428
+majority of ones were missed in PECAW.
+
+1337
+01:16:21.838 --> 01:16:25.688
+And when we look at the TCGA whole genomes in that project in TCGA in
+
+1338
+01:16:25.748 --> 01:16:29.648
+liver cancer, we actually did a targeted sequencing
+
+1339
+01:16:29.748 --> 01:16:32.768
+of these promoters, and we see now that we are actually finding
+
+1340
+01:16:33.268 --> 01:16:35.388
+essentially all of them with a whole genome data.
+
+1341
+01:16:35.428 --> 01:16:39.348
+We actually find a few new ones, and we lost a few, and we're looking into that
+
+1342
+01:16:39.388 --> 01:16:42.868
+to see what's going on, but we are finding them in this new data.
+
+1343
+01:16:43.508 --> 01:16:46.937
+So what are the top 30 mutated bases throughout the genome?
+
+1344
+01:16:47.348 --> 01:16:50.958
+The top mutated base in TCGA is one of the TERT
+
+1345
+01:16:50.968 --> 01:16:54.788
+promoter mutations. So it's interesting that the non-coding mutation is the
+
+1346
+01:16:54.848 --> 01:16:57.228
+most mutated base in the genome. But
+
+1347
+01:16:57.908 --> 01:17:01.848
+the next second one and the fourth one actually, we think,
+
+1348
+01:17:01.868 --> 01:17:05.748
+are artifacts. You see them across all tumor types, but the one after that
+
+1349
+01:17:05.808 --> 01:17:08.928
+is actually the BRAF V600E coding mutation.
+
+1350
+01:17:09.448 --> 01:17:09.688
+And
+
+1351
+01:17:10.508 --> 01:17:14.308
+what you could see here that among the top 30 most mutated
+
+1352
+01:17:14.368 --> 01:17:17.508
+bases, 10 of them are in coding regions.
+
+1353
+01:17:17.548 --> 01:17:21.088
+So that shows how the coding region is important because it's only
+
+1354
+01:17:21.288 --> 01:17:22.428
+1% of the genome.
+
+1355
+01:17:23.388 --> 01:17:27.228
+Other things that we see are APOBEC hotspots in these promoters of
+
+1356
+01:17:27.248 --> 01:17:31.068
+this PLCHS1 and the ADRG6,
+
+1357
+01:17:31.408 --> 01:17:34.868
+and one of these hotspots, which actually a coding mutation in
+
+1358
+01:17:34.888 --> 01:17:38.608
+PIK3CA that is actually functional, it's caused by APOBEC.
+
+1359
+01:17:38.908 --> 01:17:40.868
+And as I said earlier, these two are artifacts.
+
+1360
+01:17:42.188 --> 01:17:44.668
+So how do we find drivers using all this data?
+
+1361
+01:17:44.988 --> 01:17:46.688
+We applied three different
+
+1362
+01:17:47.608 --> 01:17:51.348
+driver detection tools, MutSig2CV, DNDSCV, and
+
+1363
+01:17:51.468 --> 01:17:55.388
+DIG. MutSig2CV and DIG are looking more at the
+
+1364
+01:17:55.528 --> 01:17:59.488
+frequency of mutations, where DNDSCV looks at the ratio
+
+1365
+01:17:59.548 --> 01:18:02.908
+between the non-silent to silent mutation. This is in coding regions.
+
+1366
+01:18:03.328 --> 01:18:05.488
+DIG we also use for non-coding regions.
+
+1367
+01:18:05.988 --> 01:18:09.128
+So in coding regions, we applied all three, and we combined those P
+
+1368
+01:18:09.188 --> 01:18:13.108
+values with this Brown method that combines P values of
+
+1369
+01:18:13.508 --> 01:18:16.088
+correlated statistics that are not independent.
+
+1370
+01:18:16.428 --> 01:18:19.188
+So we could calculate the correlation and then combine them.
+
+1371
+01:18:19.588 --> 01:18:23.488
+And then we calculate these P values and look at the QQ plots, and there
+
+1372
+01:18:23.508 --> 01:18:27.008
+are three types of QQ plots. There are the good QQ plots, which
+
+1373
+01:18:27.268 --> 01:18:30.518
+most of them are the genes are the passengers or
+
+1374
+01:18:30.588 --> 01:18:34.528
+non-drivers are on the Y equal X line, and then some drivers are kind
+
+1375
+01:18:34.568 --> 01:18:38.468
+of above. And then there are the bad QQ plots, which essentially you don't find
+
+1376
+01:18:38.528 --> 01:18:40.308
+anything. Everything is on the line.
+
+1377
+01:18:40.328 --> 01:18:44.248
+And then there are the ugly QQ plots, which are either inflated P value
+
+1378
+01:18:44.288 --> 01:18:48.108
+or deflated, caused by essentially bad
+
+1379
+01:18:48.188 --> 01:18:51.248
+statistical models that you need to kind of fix.
+
+1380
+01:18:51.998 --> 01:18:54.808
+And so here's the example of colorectal cancer.
+
+1381
+01:18:54.868 --> 01:18:58.788
+These are coding regions, and you see we find all these driver
+
+1382
+01:18:58.888 --> 01:19:02.488
+genes. Many of them are known. These are the blue ones, are known in
+
+1383
+01:19:03.228 --> 01:19:07.068
+colorectal cancer. The purple ones
+
+1384
+01:19:07.208 --> 01:19:10.788
+are known in other cancer types, but not in colorectal
+
+1385
+01:19:10.868 --> 01:19:14.768
+cancer. And there were ones that were not known in any
+
+1386
+01:19:14.888 --> 01:19:18.348
+one of them before. This BMPR2
+
+1387
+01:19:19.428 --> 01:19:21.688
+has a lot of these nonsense and frame shifts.
+
+1388
+01:19:22.018 --> 01:19:25.728
+Some of those frame shifts were actually not detected by the whole exome sequencing
+
+1389
+01:19:25.738 --> 01:19:27.858
+data. And if we look at this,
+
+1390
+01:19:28.868 --> 01:19:32.128
+this is a tumor suppressor gene, and we look at it when it's
+
+1391
+01:19:33.248 --> 01:19:36.708
+truncated, non-silent or other non-silent, you see that it's lower
+
+1392
+01:19:36.748 --> 01:19:39.828
+expression compared to the others, suggesting that it
+
+1393
+01:19:39.908 --> 01:19:43.436
+loses function.So overall, we find
+
+1394
+01:19:44.076 --> 01:19:47.756
+many drivers. The most commonly found
+
+1395
+01:19:47.816 --> 01:19:51.396
+drivers that we knew about are P53, PTEN, BRCA, et cetera,
+
+1396
+01:19:51.776 --> 01:19:55.616
+that are known in their cohort. But we also find drivers that were
+
+1397
+01:19:55.636 --> 01:19:57.936
+known in other cohorts but in other cancer types.
+
+1398
+01:19:57.996 --> 01:20:00.456
+Again, these are the like CREBBP, B2M, et cetera.
+
+1399
+01:20:01.696 --> 01:20:05.116
+In the non-coding space, we're also finding new drivers.
+
+1400
+01:20:05.196 --> 01:20:09.056
+Some are the known ones like TERT and NP53, and
+
+1401
+01:20:09.076 --> 01:20:12.536
+we're finding new ones that we're diving into right now where it's still all fresh,
+
+1402
+01:20:12.716 --> 01:20:16.436
+only we had the data freeze a few weeks ago.
+
+1403
+01:20:17.036 --> 01:20:19.196
+And you could learn more in this poster.
+
+1404
+01:20:19.956 --> 01:20:23.876
+So P53 mutations in the promoter or the UTR,
+
+1405
+01:20:23.936 --> 01:20:26.276
+the five-prime UTR, were reported in the PEACOG,
+
+1406
+01:20:27.216 --> 01:20:31.076
+but we find more of them, and we find both in the five-prime UTR and
+
+1407
+01:20:31.136 --> 01:20:33.096
+also in introns. We find these
+
+1408
+01:20:34.376 --> 01:20:37.136
+indels and SNVs, but mostly indels.
+
+1409
+01:20:37.456 --> 01:20:41.436
+And when we look at them in terms of the effect on expression, we see that
+
+1410
+01:20:41.736 --> 01:20:45.636
+those mutations that are non-coding actually cause low expression generally
+
+1411
+01:20:45.676 --> 01:20:49.156
+of P53, losing the function of P53.
+
+1412
+01:20:50.976 --> 01:20:54.776
+The other thing we saw in PEACOG were this in highly expressed genes like
+
+1413
+01:20:54.876 --> 01:20:57.296
+albumin in liver or
+
+1414
+01:20:58.096 --> 01:21:01.676
+surfactant in lung cancer. We see this pattern
+
+1415
+01:21:01.756 --> 01:21:05.596
+of a lot of indels that are in the coding and the non-coding regions of
+
+1416
+01:21:05.656 --> 01:21:08.056
+those genes, and we validate that.
+
+1417
+01:21:08.076 --> 01:21:11.916
+We see it also in TCGA, we see it in albumin and the surfactant, but
+
+1418
+01:21:12.016 --> 01:21:14.476
+we also find it in new genes that we didn't see before.
+
+1419
+01:21:14.836 --> 01:21:17.096
+We see P63 in
+
+1420
+01:21:18.116 --> 01:21:21.236
+head and neck cancers, and we find this
+
+1421
+01:21:21.916 --> 01:21:24.376
+pattern of indels both in coding and non-coding.
+
+1422
+01:21:24.676 --> 01:21:28.496
+We find it in GATA3 and XBP1 and estrogen receptor
+
+1423
+01:21:28.616 --> 01:21:32.456
+in breast cancer. And these ones
+
+1424
+01:21:32.476 --> 01:21:36.216
+also affect expression, even the non-coding ones.
+
+1425
+01:21:37.576 --> 01:21:39.196
+So now we look at structural variations.
+
+1426
+01:21:39.256 --> 01:21:41.856
+We see a big distribution of structural variations.
+
+1427
+01:21:42.316 --> 01:21:46.296
+The pattern is different here. The highest ones are ovarian and sarcoma
+
+1428
+01:21:46.336 --> 01:21:49.736
+and UCS. They have a higher number of structural variations,
+
+1429
+01:21:50.196 --> 01:21:51.676
+a lot of things that
+
+1430
+01:21:53.136 --> 01:21:56.016
+Marcin would be happy to look at kind of in terms of the patterns.
+
+1431
+01:21:56.516 --> 01:21:59.436
+And how do we find drivers of structural variations?
+
+1432
+01:22:00.276 --> 01:22:04.236
+We have multiple tools. One tool that we recently developed, which is kind of like
+
+1433
+01:22:04.276 --> 01:22:07.056
+the NDS for structural variations.
+
+1434
+01:22:07.116 --> 01:22:07.796
+We look at
+
+1435
+01:22:08.616 --> 01:22:12.216
+structural variations that we think will have no effect, like the silent mutations
+
+1436
+01:22:12.256 --> 01:22:15.696
+or the synonymous, and structural variations that we think will have an effect,
+
+1437
+01:22:16.076 --> 01:22:20.056
+mostly in deleterious effect. And we look at
+
+1438
+01:22:20.096 --> 01:22:24.056
+their ratio and see which ones are enriched in functional effects, and we
+
+1439
+01:22:24.096 --> 01:22:27.716
+call it SVelfi. And then there's the method that we developed in
+
+1440
+01:22:27.936 --> 01:22:31.156
+Ramin's lab, looking at structural variations
+
+1441
+01:22:32.516 --> 01:22:36.426
+that are kind of recurrently connecting different parts of the
+
+1442
+01:22:36.516 --> 01:22:40.256
+genome. So we applied these tools. I will talk about SVelfi results.
+
+1443
+01:22:41.816 --> 01:22:44.136
+This, again, you could learn more in this poster here.
+
+1444
+01:22:44.556 --> 01:22:47.276
+So here are the number of structural variation drivers that we found.
+
+1445
+01:22:47.336 --> 01:22:51.296
+Some of them are known structural variation drivers, some are a known cancer
+
+1446
+01:22:51.356 --> 01:22:54.516
+gene, and some are totally novel. Of course, some of them could be still artifacts
+
+1447
+01:22:54.556 --> 01:22:58.276
+that we're looking into. Let's look at, for example, in prostate cancer that is
+
+1448
+01:22:58.296 --> 01:22:59.216
+known to be affected
+
+1449
+01:23:00.076 --> 01:23:04.056
+by known drivers of structural variations. So here are the top SVelfi hits.
+
+1450
+01:23:04.496 --> 01:23:07.356
+The top hit is like TMPRSS2 and ERG, which we know.
+
+1451
+01:23:07.416 --> 01:23:10.376
+There's PTEN and other ones, other new ones that
+
+1452
+01:23:11.196 --> 01:23:15.056
+different labs are working on. But we wanted to look at this
+
+1453
+01:23:15.116 --> 01:23:15.796
+one, this
+
+1454
+01:23:15.896 --> 01:23:19.676
+SLC30A4 gene.
+
+1455
+01:23:20.376 --> 01:23:23.556
+And this is an interesting gene. It has many translocations, both that are kind of
+
+1456
+01:23:23.636 --> 01:23:27.396
+in the region, but also to other chromosomes. This is kind of what this depicts.
+
+1457
+01:23:27.456 --> 01:23:31.076
+But many of them into known other cancer genes like ETV1
+
+1458
+01:23:31.116 --> 01:23:34.376
+and MYC and others that are known in prostate cancer.
+
+1459
+01:23:35.516 --> 01:23:38.936
+So when you look at ETV1, this kind of partner here,
+
+1460
+01:23:40.196 --> 01:23:44.116
+it actually is connected to other known cancer genes that are known to be
+
+1461
+01:23:44.196 --> 01:23:46.296
+highly expressed in normal prostate.
+
+1462
+01:23:46.356 --> 01:23:49.856
+So TMPRSS2 and SLC45A3 and
+
+1463
+01:23:49.876 --> 01:23:53.416
+FOXA1 are highly expressed in normal prostate.
+
+1464
+01:23:53.436 --> 01:23:57.376
+Here, this is GTEx data. But also SLC30A4 is
+
+1465
+01:23:57.436 --> 01:24:01.316
+highly expressed, suggesting that this is another mechanism to take a
+
+1466
+01:24:01.355 --> 01:24:05.286
+kind of a regulatory region of highly expressed gene and move it
+
+1467
+01:24:05.316 --> 01:24:08.996
+next to ETV1 to overexpress ETV1 in prostate cancer.
+
+1468
+01:24:09.616 --> 01:24:13.256
+And when we look at the expression of ETV1, you see that
+
+1469
+01:24:13.356 --> 01:24:17.206
+like the other genes that we know are causing high expression of ETV1,
+
+1470
+01:24:17.396 --> 01:24:20.956
+also this new SLC30A4 also generates high expression
+
+1471
+01:24:20.996 --> 01:24:22.176
+of ETV1.
+
+1472
+01:24:23.396 --> 01:24:25.856
+So when we look at copy number,
+
+1473
+01:24:27.416 --> 01:24:31.366
+what do we see in copy number? We see these patterns of gains and losses
+
+1474
+01:24:31.396 --> 01:24:35.286
+that we see in cancer, and we saw roughly these big-picture patterns using
+
+1475
+01:24:35.316 --> 01:24:39.216
+SNP array data. But now with whole-genome sequencing data, we could find
+
+1476
+01:24:39.636 --> 01:24:43.366
+smaller gains and losses that we could not find with SNP
+
+1477
+01:24:43.436 --> 01:24:44.016
+array data.
+
+1478
+01:24:45.056 --> 01:24:46.796
+So here are the
+
+1479
+01:24:48.016 --> 01:24:51.316
+estrogen receptor gene, and what we see are recurrent
+
+1480
+01:24:51.336 --> 01:24:55.236
+amplifications of regulatory regions next to ESR1.
+
+1481
+01:24:55.516 --> 01:24:59.196
+So not amplifying just ESR1, like known, but amplifying
+
+1482
+01:24:59.276 --> 01:25:03.156
+regions that are next to ESR1, and we see the same thing
+
+1483
+01:25:03.196 --> 01:25:06.936
+in EGFR. Amplifications of regulatory regions
+
+1484
+01:25:07.056 --> 01:25:10.836
+next to EGFR in GBM, and that is something that we
+
+1485
+01:25:12.396 --> 01:25:16.376
+believe is going to function. Again, you could look here more when you go to this
+
+1486
+01:25:16.416 --> 01:25:16.876
+poster.
+
+1487
+01:25:18.616 --> 01:25:21.636
+Then whole genome sequencing enables to study
+
+1488
+01:25:22.916 --> 01:25:26.816
+chromosomes that we kind of neglected in the past, which are the X
+
+1489
+01:25:26.936 --> 01:25:30.856
+and particularly Y chromosomes. And Esther's lab had a session
+
+1490
+01:25:30.936 --> 01:25:34.056
+just before this one about kind of chromosome Y.
+
+1491
+01:25:34.516 --> 01:25:35.056
+And the
+
+1492
+01:25:35.876 --> 01:25:39.696
+most kind of exciting thing here is that the vast majority of
+
+1493
+01:25:39.756 --> 01:25:43.636
+events in chromosome Y are loss of the entire chromosome Y, which could
+
+1494
+01:25:43.676 --> 01:25:45.496
+have also potential driver effects.
+
+1495
+01:25:45.536 --> 01:25:49.116
+And again, please go and look at these posters to learn more about
+
+1496
+01:25:49.176 --> 01:25:53.086
+chromosome Y loss.Now we looked, as mentioned
+
+1497
+01:25:53.146 --> 01:25:56.526
+here before, on HRD, and so the most known
+
+1498
+01:25:56.906 --> 01:26:00.666
+signatures of HRD are these structural
+
+1499
+01:26:00.746 --> 01:26:04.586
+variations and also signature 3, SBS3, and
+
+1500
+01:26:04.646 --> 01:26:07.566
+indel signature 6 and structural variation signature 3.
+
+1501
+01:26:08.226 --> 01:26:08.486
+So
+
+1502
+01:26:09.506 --> 01:26:12.696
+Juno from the InnoCrust team and Yung Suk developed this
+
+1503
+01:26:13.366 --> 01:26:14.886
+tool that estimates kind of
+
+1504
+01:26:15.706 --> 01:26:19.266
+HRD and could applied it across cancer.
+
+1505
+01:26:19.296 --> 01:26:23.206
+And clearly you could see it high in ovarian and breast
+
+1506
+01:26:23.246 --> 01:26:25.566
+cancer, but you could see it also in other cancer types.
+
+1507
+01:26:26.086 --> 01:26:30.026
+And, so this is HRD was found in 7% across all these
+
+1508
+01:26:30.186 --> 01:26:31.666
+32 cancer types, with
+
+1509
+01:26:32.526 --> 01:26:35.886
+3.3% are not in ovarian and breast cancer.
+
+1510
+01:26:36.446 --> 01:26:38.046
+And the other
+
+1511
+01:26:39.546 --> 01:26:42.706
+kind of explanation of this signature, including
+
+1512
+01:26:43.246 --> 01:26:47.086
+somatic and germline, BRCA1 and 2 mutation, and promoter
+
+1513
+01:26:47.126 --> 01:26:49.726
+methylation of RAD51C, et cetera.
+
+1514
+01:26:50.046 --> 01:26:53.486
+But of course, there's also cases which we don't know why there are
+
+1515
+01:26:53.666 --> 01:26:57.306
+HRD, and we cannot explain, and we should talk to
+
+1516
+01:26:57.346 --> 01:27:00.146
+Jason and maybe he could explain some of them. Yes.
+
+1517
+01:27:00.286 --> 01:27:02.306
+And again, look at this poster here.
+
+1518
+01:27:03.946 --> 01:27:06.506
+Then we looked at germline mutation.
+
+1519
+01:27:06.586 --> 01:27:10.546
+So about 10% of TCGA has known pathogenic
+
+1520
+01:27:10.626 --> 01:27:14.566
+or likely pathogenic mutations, and this is, you could
+
+1521
+01:27:14.626 --> 01:27:18.186
+see here, with the pathogenic and likely pathogenic different shades.
+
+1522
+01:27:19.266 --> 01:27:23.246
+And using that, we could detect a novel
+
+1523
+01:27:23.266 --> 01:27:26.746
+BRCA1 intronic splice variant that
+
+1524
+01:27:27.406 --> 01:27:28.426
+you could see here. It's
+
+1525
+01:27:29.566 --> 01:27:33.466
+a SNP in the germline, but it's LOH in
+
+1526
+01:27:33.506 --> 01:27:37.226
+the cancer. And when you look at that tumor,
+
+1527
+01:27:37.546 --> 01:27:41.126
+it has low expression compared to the ones that have no
+
+1528
+01:27:41.306 --> 01:27:43.846
+HRD. So it suggests that this is actually HRD.
+
+1529
+01:27:44.306 --> 01:27:47.926
+And look at the posters. There's more information there about actually showing the
+
+1530
+01:27:48.006 --> 01:27:50.606
+splice kind of variants.
+
+1531
+01:27:51.526 --> 01:27:51.686
+So,
+
+1532
+01:27:53.106 --> 01:27:54.126
+just to finish here,
+
+1533
+01:27:55.026 --> 01:27:58.586
+we have these many posters with different themes, and please take a photo of this
+
+1534
+01:27:58.646 --> 01:28:00.945
+one if you want to go to those posters.
+
+1535
+01:28:01.486 --> 01:28:02.366
+And we
+
+1536
+01:28:04.026 --> 01:28:07.826
+collected all this data. We need to have more rounds of analysis, and we're
+
+1537
+01:28:07.846 --> 01:28:11.006
+putting a manuscript together in the next few months.
+
+1538
+01:28:11.166 --> 01:28:11.346
+And
+
+1539
+01:28:12.486 --> 01:28:16.246
+once we publish, we make all this data available through the GDC
+
+1540
+01:28:16.346 --> 01:28:20.306
+publication page, so everyone in the world could get
+
+1541
+01:28:20.366 --> 01:28:24.226
+access. You do need to get dbGaP access to download this data because
+
+1542
+01:28:24.246 --> 01:28:27.286
+they are non-coding mutations. That's the rules of the TCGA,
+
+1543
+01:28:28.246 --> 01:28:30.206
+but then you could download this data.
+
+1544
+01:28:30.826 --> 01:28:32.246
+And again, I want to thank this
+
+1545
+01:28:33.046 --> 01:28:36.826
+collaboration with InnoCrust and the Broad team and different labs and
+
+1546
+01:28:37.146 --> 01:28:41.106
+many members of those labs, which I can't name them all here, but many of them
+
+1547
+01:28:41.126 --> 01:28:44.406
+are here in the crowd and showing posters, so please meet them.
+
+1548
+01:28:44.926 --> 01:28:48.466
+And of course, the TCGA project and the NCI for
+
+1549
+01:28:48.546 --> 01:28:51.746
+generating this and spending money to generate this kind of
+
+1550
+01:28:51.966 --> 01:28:55.806
+high-quality data and ICGC to kind of lead the way of how to
+
+1551
+01:28:55.866 --> 01:28:59.786
+analyze this whole genome data, and with the PECOB project
+
+1552
+01:28:59.826 --> 01:29:03.266
+together with TCGA and Google Cloud for the
+
+1553
+01:29:03.786 --> 01:29:07.626
+cloud credit and an internal Broad kind of
+
+1554
+01:29:07.686 --> 01:29:11.346
+award. And of course, the patients and doctors that contribute samples and
+
+1555
+01:29:11.356 --> 01:29:14.985
+data for research. And I'd be happy to take questions.
+
+1556
+01:29:25.346 --> 01:29:25.506
+Yes.
+
+1557
+01:29:26.066 --> 01:29:27.826
+Gadi, Tim Ley. Moshu.
+
+1558
+01:29:29.446 --> 01:29:31.346
+Wonderful session, guys. Great job.
+
+1559
+01:29:31.466 --> 01:29:34.986
+We take all this stuff for granted now, but I have a quick story to put things in
+
+1560
+01:29:35.006 --> 01:29:38.026
+perspective. So 19 years ago, I was at a conference
+
+1561
+01:29:38.146 --> 01:29:42.026
+explaining preliminary data on the first AML genome, the
+
+1562
+01:29:42.046 --> 01:29:43.666
+first cancer genome to be sequenced.
+
+1563
+01:29:44.316 --> 01:29:48.295
+And the pushback in that room was unbelievable because no one believed that
+
+1564
+01:29:48.326 --> 01:29:52.226
+you could deconvolute and interpret the data because
+
+1565
+01:29:52.246 --> 01:29:55.306
+there'd be so many mutations that would be completely uninterpretable.
+
+1566
+01:29:56.486 --> 01:30:00.226
+And I wasn't prepared for this criticism, but someone came to my rescue,
+
+1567
+01:30:00.406 --> 01:30:04.286
+Sherm Weissman, the great geneticist from Yale who sequenced SV40.
+
+1568
+01:30:04.666 --> 01:30:07.926
+And he got up in the middle of the room and said, and I quote,
+
+1569
+01:30:09.145 --> 01:30:13.006
+"If this goes forward, in 10 or 15 years, we'll be able to
+
+1570
+01:30:13.066 --> 01:30:16.966
+sequence thousands of cancer genomes for the cost of a B-1
+
+1571
+01:30:16.986 --> 01:30:17.366
+bomber.
+
+1572
+01:30:18.446 --> 01:30:22.346
+What would you rather have, thousands of cancer genomes or another B-1
+
+1573
+01:30:22.406 --> 01:30:22.806
+bomber?"
+
+1574
+01:30:23.646 --> 01:30:24.466
+Silenced the room.
+
+1575
+01:30:25.786 --> 01:30:26.766
+There is a challenge
+
+1576
+01:30:27.606 --> 01:30:31.136
+for the field, I think, that no one's talked about today, which is,
+
+1577
+01:30:31.686 --> 01:30:35.546
+it's one thing to do this sequencing, it's another to convince third-party payers
+
+1578
+01:30:35.606 --> 01:30:39.586
+that this sequencing matters for the care of patients, which requires
+
+1579
+01:30:39.686 --> 01:30:43.326
+a much more difficult exercise, which is doing prospective clinical
+
+1580
+01:30:43.366 --> 01:30:46.326
+trials to prove that this information matters.
+
+1581
+01:30:46.346 --> 01:30:49.786
+Because third-party payers ultimately determine how this information gets used.
+
+1582
+01:30:50.306 --> 01:30:52.566
+It's just something for everybody to be thinking about.
+
+1583
+01:30:52.746 --> 01:30:55.956
+Requires collaborations with the translational teams and clinical
+
+1584
+01:30:56.006 --> 01:30:59.286
+investigators to get that work done, because we need to do
+
+1585
+01:30:59.346 --> 01:31:01.686
+this all the time for everybody.
+
+1586
+01:31:02.946 --> 01:31:05.246
+Thank you, Tim. Thank you for this comment.
+
+1587
+01:31:05.366 --> 01:31:06.446
+I 100%
+
+1588
+01:31:10.326 --> 01:31:11.806
+agree with this.
+
+1589
+01:31:12.886 --> 01:31:16.626
+As you saw in the different talks today, there are clinical
+
+1590
+01:31:16.686 --> 01:31:19.866
+implication of this. We're finding more mutations, more
+
+1591
+01:31:19.926 --> 01:31:23.606
+signatures. With AI, we will need this data.
+
+1592
+01:31:23.666 --> 01:31:27.076
+We're talking the need for 100,000 or a million,
+
+1593
+01:31:27.126 --> 01:31:30.046
+or every patient will need to have this data.
+
+1594
+01:31:30.186 --> 01:31:33.926
+The cost of sequencing is dropping and continues to drop.
+
+1595
+01:31:34.406 --> 01:31:38.186
+I don't see any reason why this should not be part of standard
+
+1596
+01:31:38.266 --> 01:31:38.946
+clinical care.
+
+1597
+01:31:39.846 --> 01:31:43.646
+Together, married together with consent for using this data for
+
+1598
+01:31:43.686 --> 01:31:47.566
+research, we could find a lot more of what's going on
+
+1599
+01:31:47.646 --> 01:31:51.526
+in the genome and affect new drug development and new clinical
+
+1600
+01:31:51.606 --> 01:31:55.346
+trials. So, I'm 100% with you and happy to collaborate
+
+1601
+01:31:55.406 --> 01:31:59.402
+with you and the whole field here to make this happen.Yes,
+
+1602
+01:31:59.802 --> 01:32:00.342
+more questions.
+
+1603
+01:32:00.382 --> 01:32:01.722
+Hello. Thanks for your talk.
+
+1604
+01:32:02.762 --> 01:32:06.562
+I was wondering whether you took into account tumor purity of the
+
+1605
+01:32:06.622 --> 01:32:10.422
+samples while analyzing them and deriving
+
+1606
+01:32:10.502 --> 01:32:12.262
+these mutational signatures?
+
+1607
+01:32:13.182 --> 01:32:14.882
+Great question. Thank you.
+
+1608
+01:32:15.702 --> 01:32:19.022
+We have actually developed a method, a new version
+
+1609
+01:32:19.062 --> 01:32:22.982
+of a tool that we've developed many years ago called Absolute.
+
+1610
+01:32:23.042 --> 01:32:26.862
+So we have a new version called Absolute2, which we're still working on
+
+1611
+01:32:26.922 --> 01:32:28.222
+that, not published yet.
+
+1612
+01:32:29.302 --> 01:32:31.042
+But we applied it here, and
+
+1613
+01:32:31.862 --> 01:32:35.422
+we can get purity and ploidy for every one of those
+
+1614
+01:32:35.482 --> 01:32:39.362
+samples. Still, we need some manual review, but a small fraction of the
+
+1615
+01:32:39.462 --> 01:32:39.942
+cases.
+
+1616
+01:32:41.202 --> 01:32:41.422
+And
+
+1617
+01:32:42.542 --> 01:32:42.902
+we will
+
+1618
+01:32:45.362 --> 01:32:46.922
+take that into account, of course.
+
+1619
+01:32:46.982 --> 01:32:47.122
+So,
+
+1620
+01:32:48.062 --> 01:32:51.822
+samples. The nice thing about TCGA, that they were selected to be
+
+1621
+01:32:51.862 --> 01:32:55.102
+relatively higher purity tumor types of tumors.
+
+1622
+01:32:55.162 --> 01:32:58.872
+I mean, pancreatic cancer has low purity, but in general, to get into
+
+1623
+01:32:58.882 --> 01:33:02.762
+TCGA, you had to have a big piece of tumor resected out, because
+
+1624
+01:33:02.922 --> 01:33:05.562
+back then we needed a lot of DNA in order to sequence.
+
+1625
+01:33:05.982 --> 01:33:09.962
+But we now have all this purity and ploidy information, which we'll use in
+
+1626
+01:33:10.042 --> 01:33:11.382
+all of the analysis. Yeah.
+
+1627
+01:33:13.622 --> 01:33:17.542
+And that data will also be released when the paper is out. Yeah.
+
+1628
+01:33:17.942 --> 01:33:18.922
+Stephen Chanock from the NCI.
+
+1629
+01:33:19.182 --> 01:33:19.362
+Yes.
+
+1630
+01:33:19.422 --> 01:33:21.112
+Adi, thank you. That was breathtaking.
+
+1631
+01:33:21.202 --> 01:33:25.042
+That was really spectacular, and it was, I'm sorry to say, worth the wait.
+
+1632
+01:33:25.142 --> 01:33:28.582
+I know the genome sat there for a long period of time, but it's beautiful to see
+
+1633
+01:33:28.642 --> 01:33:29.002
+that. Now
+
+1634
+01:33:29.842 --> 01:33:33.582
+that you've given us an incredible portrait across all these cancers,
+
+1635
+01:33:34.002 --> 01:33:37.522
+I'm going to put you on the spot and say, what have you learned about-- Give me an
+
+1636
+01:33:37.562 --> 01:33:41.522
+example or one or two of the cancers where doing this has really changed the way
+
+1637
+01:33:41.562 --> 01:33:45.422
+in which we now understand or think about the primary
+
+1638
+01:33:45.462 --> 01:33:49.022
+processes that are driving those particular cancers, okay?
+
+1639
+01:33:49.542 --> 01:33:53.402
+Because you showed a lot of very interesting examples, and there's lots of
+
+1640
+01:33:53.462 --> 01:33:57.442
+great detail there, but is our view of ovarian cancer
+
+1641
+01:33:57.522 --> 01:33:59.802
+different now with whole genome or
+
+1642
+01:34:00.682 --> 01:34:02.202
+gastric? I'm just curious.
+
+1643
+01:34:02.342 --> 01:34:05.502
+So I would say that, first of all, we're finding-
+
+1644
+01:34:05.642 --> 01:34:06.092
+Give me an example
+
+1645
+01:34:06.092 --> 01:34:08.941
+... in particular tumor types of tumors, we find new
+
+1646
+01:34:09.642 --> 01:34:13.321
+variants, even in coding regions that we couldn't find before.
+
+1647
+01:34:13.862 --> 01:34:17.662
+UVM, for example, there we kind of doubled or something
+
+1648
+01:34:17.722 --> 01:34:21.122
+the number of mutations in
+
+1649
+01:34:21.542 --> 01:34:25.322
+BAP1. And so we are
+
+1650
+01:34:25.382 --> 01:34:29.092
+finding new things in coding and non-coding, but you just heard other talks-
+
+1651
+01:34:29.202 --> 01:34:29.542
+Yeah, absolutely
+
+1652
+01:34:29.742 --> 01:34:31.731
+... about these patterns that
+
+1653
+01:34:33.362 --> 01:34:36.742
+where are the ecDNA versus kind of
+
+1654
+01:34:36.802 --> 01:34:39.462
+integrated into genome. How can we use this data?
+
+1655
+01:34:39.542 --> 01:34:43.522
+So if you ask me one particular example
+
+1656
+01:34:43.562 --> 01:34:47.502
+that we learned, I think we're learning things across all the
+
+1657
+01:34:47.522 --> 01:34:51.422
+tumor types. We didn't kind of now have something we didn't know before
+
+1658
+01:34:51.502 --> 01:34:54.682
+totally, but we are increasing our knowledge in each one.
+
+1659
+01:34:54.962 --> 01:34:58.842
+I think the structural variation part was totally we were blind
+
+1660
+01:34:58.922 --> 01:35:02.602
+to before, so understanding the structure of the genome
+
+1661
+01:35:03.142 --> 01:35:07.042
+will open many more kind of understanding of how the
+
+1662
+01:35:07.082 --> 01:35:10.342
+cancer evolved, what's the timing, when it started.
+
+1663
+01:35:10.382 --> 01:35:13.602
+I mean, for example, in PECOG, we used the timing of
+
+1664
+01:35:13.642 --> 01:35:17.182
+events. We saw that cancers started
+
+1665
+01:35:17.222 --> 01:35:21.182
+decades before. The first initial events, the copy number changes,
+
+1666
+01:35:21.742 --> 01:35:24.702
+occurred decades before the tumor was diagnosed.
+
+1667
+01:35:25.242 --> 01:35:29.142
+That was a big finding. Cross-cancer, not just one cancer type.
+
+1668
+01:35:29.482 --> 01:35:29.602
+So
+
+1669
+01:35:30.422 --> 01:35:32.342
+I would say each one of these
+
+1670
+01:35:33.882 --> 01:35:37.542
+concepts in cancer, we are changing based on this whole genome data.
+
+1671
+01:35:37.842 --> 01:35:41.362
+Some we are changing a lot, some we are changing a little, but we're getting a
+
+1672
+01:35:41.402 --> 01:35:41.962
+better view.
+
+1673
+01:35:42.822 --> 01:35:46.562
+I'm not sure I can tell you one thing that we totally didn't know before.
+
+1674
+01:35:46.622 --> 01:35:50.582
+We suspected things, but I think this ecDNA, I was very excited about
+
+1675
+01:35:50.642 --> 01:35:54.382
+that, and the AI patterns, to get
+
+1676
+01:35:54.462 --> 01:35:58.282
+new signatures on combination of these events to
+
+1677
+01:35:58.302 --> 01:35:59.122
+new patterns.
+
+1678
+01:35:59.942 --> 01:36:03.882
+There's also a poster from our group, from Greg here, that has
+
+1679
+01:36:03.922 --> 01:36:05.542
+different kind of SV patterns.
+
+1680
+01:36:06.382 --> 01:36:06.622
+So
+
+1681
+01:36:08.222 --> 01:36:11.402
+I think that these are things that we learned that the implication
+
+1682
+01:36:12.622 --> 01:36:16.572
+in the clinic is not yet known. But
+
+1683
+01:36:16.642 --> 01:36:20.382
+once we have the data and associate with results and treatment,
+
+1684
+01:36:20.832 --> 01:36:24.062
+then we'll know the effect. And of course, PARP inhibitor.
+
+1685
+01:36:24.122 --> 01:36:26.602
+Who should get PARP inhibitor? Who should not get PARP inhibitor?
+
+1686
+01:36:26.662 --> 01:36:30.222
+Things like that, we could do a better job than what we're doing today.
+
+1687
+01:36:30.702 --> 01:36:31.422
+That's my thought.
+
+1688
+01:36:31.482 --> 01:36:32.902
+Onto 100,000. Right?
+
+1689
+01:36:33.362 --> 01:36:33.562
+What?
+
+1690
+01:36:33.882 --> 01:36:35.222
+I said onto 100,000.
+
+1691
+01:36:35.862 --> 01:36:39.762
+I say onto a million with a milestone at 100,000. Yes. Yeah.
+
+1692
+01:36:39.882 --> 01:36:40.742
+You got to take steps.
+
+1693
+01:36:40.982 --> 01:36:41.182
+Yes.
+
+1694
+01:36:42.222 --> 01:36:46.022
+Factor of 10. That's where my physics background comes in play. Yes.
+
+1695
+01:36:47.682 --> 01:36:51.562
+Other questions? If not, let's thank the speakers again, and thank you
+
+1696
+01:36:51.622 --> 01:36:52.082
+for coming.

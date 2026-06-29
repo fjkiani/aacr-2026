@@ -1,0 +1,232 @@
+[
+  {
+    "talk_id": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro::li::1",
+    "session_title": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro",
+    "talk_title": "Digital Tissue Twins: AI\u2011Powered Prediction of Single\u2011Cell Spatial Omics from H&E Slides",
+    "speaker": {
+      "name": "Mingyao Li",
+      "affiliation": "University of Pennsylvania",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung adenocarcinoma",
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "spatial_biology",
+      "AI_ML",
+      "platform_technology",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA lung adenocarcinoma",
+        "genotype_or_key_features": "n=885 slides, diverse histologies"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "MD Anderson spatial transcriptomics",
+        "genotype_or_key_features": "23 LUAD patients, medium-resolution spatial gene expression"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Li's group developed AI models (iSTAR, iSCALE, AURORA) that learn the relationship between H&E morphology and spatial gene expression, using bulk RNA\u2011seq as a dynamic\u2011range constraint to predict single\u2011cell resolution transcriptomic maps and cell\u2011type annotations across whole\u2011slide images.",
+    "readouts": [
+      "H&E imaging",
+      "spatial transcriptomics (Visium)",
+      "bulk RNA\u2011seq",
+      "Pearson correlation",
+      "false positive rate"
+    ],
+    "key_findings": [
+      "AURORA achieved the highest Pearson correlation and lowest false\u2011positive rate among competing methods when predicting gene expression on held\u2011out LUAD samples (5 patients).",
+      "Virtual prediction of 4,000 TCGA LUAD slides reproduced known tumor pathology patterns (e.g., KRT8 expression).",
+      "Mature TLS area quantified by AURORA correlated with improved patient survival in TCGA LUAD.",
+      "Higher tumor\u2011TLS co\u2011localization was associated with better cancer survival.",
+      "Spatial cuff structures identified by AURORA predicted poorer survival, recapitulating findings from Wang et\u202fal. Cancer Cell."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How will AURORA perform on treated or therapy\u2011resistant tumor samples where dynamic range may shift?",
+      "Can virtual predictions be extended to infer subclonal genetic alterations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wang et al. Cancer Cell"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro::zou::2",
+    "session_title": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro",
+    "talk_title": "Rosie: Generative AI for In\u2011Silico Spatial Proteomics from H&E Slides",
+    "speaker": {
+      "name": "James Zou",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "spatial_biology",
+      "AI_ML",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Rosie paired H&E\u2011CODEX dataset",
+        "genotype_or_key_features": "2,000 samples, 30\u202fM cells, 16 disease types"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Rosie trains a hierarchical deep\u2011learning model on paired H&E and CODEX images to impute multiplex protein expression at 8\u202f\u00b5m resolution, enabling rapid, low\u2011cost generation of in\u2011silico spatial proteomics maps.",
+    "readouts": [
+      "H&E imaging",
+      "CODEX multiplex immunofluorescence",
+      "Pearson correlation"
+    ],
+    "key_findings": [
+      "Rosie generates in\u2011silico CODEX images for up to 50 protein markers in minutes for <$1 cost, matching key structures seen in experimental CODEX.",
+      "Performance across external validation sites remained robust, with Pearson correlations ranging from high (99th percentile) to moderate (25th percentile).",
+      "Imputed proteomic maps enable accurate segmentation of tissue structures (stroma, tumor epithelium, endothelium) comparable to ground\u2011truth CODEX."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does Rosie generalize to novel tissue types or rare biomarkers not represented in the training set?",
+      "What are the limits of sub\u2011cellular resolution for accurate protein quantification?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro::chair::3",
+    "session_title": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro",
+    "talk_title": "Virtual Biotech and AI\u2011Driven Spatial Omics for Therapeutic Strategy Design",
+    "speaker": {
+      "name": "Unnamed Session Chair",
+      "affiliation": "Unknown Institution",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "spatial_biology",
+      "AI_ML",
+      "drug_discovery",
+      "platform_technology",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD276",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "ADC",
+        "compound_name": "CD276\u2011DXd ADC",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung cancer fibroblasts",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD276 expression",
+        "type": "predictive",
+        "assay": "spatial transcriptomics",
+        "finding": "high CD276 expression in fibroblasts associated with poorer survival and reduced therapy response"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Virtual Biotech AI agents",
+        "genotype_or_key_features": "integrates single\u2011cell atlases, spatial transcriptomics, genetics, clinical trial data"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "lower in high CD276 cohort",
+        "confidence_interval": "",
+        "n": "n=unspecified",
+        "population": "lung cancer patients with high CD276",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "The virtual biotech platform uses AI agents to integrate multi\u2011omic and clinical data, identifying CD276 (B7H3) as a fibroblast\u2011derived immune checkpoint; agents propose an ADC (CD276\u2011DXd) strategy, later validated by an FDA breakthrough designation for a similar ADC.",
+    "readouts": [
+      "spatial transcriptomics",
+      "single\u2011cell RNA\u2011seq",
+      "cell\u2011cell communication analysis",
+      "clinical survival analysis"
+    ],
+    "key_findings": [
+      "AI agents identified CD276 highly expressed in tumor\u2011associated fibroblasts in lung cancer.",
+      "Spatial analysis showed CD276\u2011high fibroblast neighborhoods depleted of immune cells.",
+      "High CD276 expression correlated with poorer overall and disease\u2011specific survival.",
+      "Agents independently designed a CD276\u2011DXd ADC strategy, later mirrored by Merck's FDA\u2011breakthrough ADC."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "ADC payload DXd",
+        "rationale": "Target CD276 on fibroblasts to deliver cytotoxic payload directly to immunosuppressive niche",
+        "phenotype": "preclinical efficacy predicted; clinical breakthrough designation achieved",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can AI\u2011derived single\u2011cell features (tau score, bimodality) predict trial success across other indications?",
+      "How robust is the CD276 fibroblast target across diverse ethnic and molecular subpopulations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Merck breakthrough ADC CD276\u2011DXd 2025"
+      ],
+      "company_or_sponsor": [
+        "Merck"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

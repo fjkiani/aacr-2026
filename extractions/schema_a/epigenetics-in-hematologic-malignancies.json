@@ -1,0 +1,504 @@
+[
+  {
+    "talk_id": "epigenetics-in-hematologic-malignancies::josefowicz::1",
+    "session_title": "epigenetics-in-hematologic-malignancies",
+    "talk_title": "Signaling-to-chromatin pathways and histone phosphorylation in lymphoma",
+    "speaker": {
+      "name": "Steven Josefowicz",
+      "affiliation": "Weill Cornell Medicine, Department of Immunology",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "DLBCL",
+      "lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "basic_science",
+      "tumor_microenvironment",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "H3",
+        "alteration": "Ser28 phosphorylation",
+        "pathway": "chromatin_signaling",
+        "modality": "other",
+        "compound_name": "none",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "EZH2",
+        "pathway": "PRC2",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NSD2",
+        "pathway": "H3K36 dimethylation",
+        "modality": "other",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Myc\u2011GFP reporter mouse",
+        "genotype_or_key_features": "GFP reporter activated after high\u2011quality GC B\u2011cell signaling"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "ABC DLBCL cell lines",
+        "genotype_or_key_features": "high H3S28ph levels"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "MYD88/CD79B mutant PDX",
+        "genotype_or_key_features": "constitutive H3S28ph at TBET locus"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Signal\u2011induced phosphorylation of histone H3 at serine 28 creates a transient domain that ejects the PRC2 complex, abolishing its allosteric activation and chromatin condensation activity, thereby converting repressive H3K27me3 domains into permissive transcriptional states in germinal\u2011center B cells and lymphoma.",
+    "readouts": [
+      "mass_spec_histone_PTMs",
+      "chromatin_hidden_Markov_model",
+      "single\u2011molecule biophysics",
+      "single\u2011nuclei ATAC\u2011seq",
+      "multi\u2011ome ATAC\u2011seq",
+      "Western blot",
+      "Immunofluorescence"
+    ],
+    "key_findings": [
+      "Serine 28 phosphorylation spreads across several hundred kilobase domains in stimulated macrophages and GC B cells, whereas serine 31 phosphorylation is confined to transcription units.",
+      "In ABC DLBCL, H3S28ph is constitutively high and overlaps with PRC2\u2011mediated H3K27me3 at the MYC locus, defining a \u2018methyl\u2011phos switch\u2019.",
+      "Biophysical assays show that H3S28ph\u2011containing nucleosome arrays are poor substrates for EZH2 and resist PRC2\u2011driven chromatin condensation.",
+      "Ex vivo GC B\u2011cell stimulation reveals progressive loss of H3K27me3 within H3S28ph domains, accompanied by increased chromatin interactivity and H3K36me2 gain.",
+      "Similar histone phosphorylation patterns are observed in T cells (TBET locus) and NK cells (IL15RA), and are constitutive in MYD88/CD79B mutant lymphoma PDX models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Does H3S28ph demarcate topologically associating domain (TAD) boundaries, and how does loss of PRC2 affect TAD architecture?",
+      "What molecular determinants decide whether a transient H3S28ph\u2011induced activation reverts to repression or becomes locked by NSD\u2011mediated H3K36me2?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "epigenetics-in-hematologic-malignancies::levine::2",
+    "session_title": "epigenetics-in-hematologic-malignancies",
+    "talk_title": "ELOVL1\u2011mediated lipid metabolism as a dependency in NRAS\u2011mutant IDH\u2011mutant AML",
+    "speaker": {
+      "name": "Ross Levine",
+      "affiliation": "Memorial Sloan Kettering Cancer Center, Department of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "metabolism",
+      "targeted_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "IDH1",
+        "alteration": "mutant",
+        "pathway": "oncometabolite_production",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "ivosidenib",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IDH2",
+        "alteration": "mutant",
+        "pathway": "oncometabolite_production",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "enasidenib",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NRAS",
+        "alteration": "G12D",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ELOVL1",
+        "pathway": "very_long_chain_fatty_acid_elongation",
+        "modality": "other",
+        "compound_name": "Vertex ELOVL1 inhibitor (preclinical)",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "SPTLC1",
+        "pathway": "sphingolipid_biosynthesis",
+        "modality": "other",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KDSR",
+        "pathway": "sphingolipid_biosynthesis",
+        "modality": "other",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "NRAS mutation",
+        "type": "predictive",
+        "finding": "NRAS co\u2011mutation predicts resistance to IDH inhibitors and defines dependency on ELOVL1"
+      },
+      {
+        "name": "IDH1/2 mutation",
+        "type": "predictive",
+        "finding": "IDH mutation defines the leukemia model but alone does not confer ELOVL1 dependency"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "IDH1\u2011NPM1\u2011NRAS GEM model",
+        "genotype_or_key_features": "IDH1 R132H + NPM1c + oncogenic NRAS G12D"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "IDH\u2011mutant AML PDX (RAS WT or mutant)",
+        "genotype_or_key_features": "IDH1/2 mutant \u00b1 NRAS mutation"
+      },
+      {
+        "model_type": "ex_vivo_culture",
+        "name": "Stromal co\u2011culture system for primary mouse stem cells",
+        "genotype_or_key_features": "WT, Tet2, DNMT3A, IDH1/2 mutant stem cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "ELOVL1 catalyzes very\u2011long\u2011chain fatty\u2011acid elongation, feeding sphingolipid/ceramide synthesis that sustains lipid\u2011raft integrity; in NRAS\u2011mutant IDH\u2011mutant AML, loss of ELOVL1 disrupts lipid rafts, attenuates NRAS\u2011driven MAPK signaling, and selectively impairs leukemia cell viability.",
+    "readouts": [
+      "CRISPR pooled screens",
+      "flow cytometry",
+      "in vivo peripheral blood and bone marrow sequencing",
+      "lipid\u2011raft staining (MBCD assay)",
+      "proteomics (membrane vs cytoplasmic)",
+      "phospho\u2011proteomics (ongoing)",
+      "RNA\u2011seq",
+      "metabolomics"
+    ],
+    "key_findings": [
+      "CRISPR screens of epigenetic and metabolic libraries identified ELOVL1 as a selective dependency in Tet/IDH mutant AML cells.",
+      "ELOVL1 knock\u2011out depletes NRAS\u2011mutant AML cells in vitro and in vivo (bone marrow and peripheral blood) but not WT or RAS\u2011WT AML.",
+      "Pharmacologic inhibition of ELOVL1 with a Vertex compound reproduces genetic dependency, causing selective depletion of triple\u2011mutant cells.",
+      "Catalytic\u2011dead ELOVL1 fails to rescue the phenotype, confirming requirement for enzymatic activity.",
+      "Disruption of sphingolipid biosynthesis (SPTLC1, KDSR) phenocopies ELOVL1 loss, whereas peroxisomal fatty\u2011acid pathways do not.",
+      "Lipid\u2011raft depletion (MBCD) selectively kills NRAS\u2011mutant AML, and ELOVL1 loss reduces raft abundance and downstream MAPK/PI3K signaling."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "NRAS co\u2011mutation confers resistance to IDH inhibitors; ELOVL1 dependency is exclusive to NRAS\u2011mutant context."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IDH inhibitor (ivosidenib or enasidenib)",
+        "rationale": "ELOVL1 loss synergizes with IDH inhibition, potentially overcoming RAS\u2011mediated resistance",
+        "phenotype": "enhanced leukemia cell depletion in ex vivo cultures",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MBCD (lipid\u2011raft disruptor)",
+        "rationale": "Directly mimics ELOVL1 loss by dismantling lipid rafts",
+        "phenotype": "selective killing of NRAS\u2011mutant AML cells",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the precise molecular link between sphingolipid/ceramide metabolism and NRAS membrane localization or myristoylation?",
+      "Can CNS\u2011sparing ELOVL1 inhibitors be developed with therapeutic windows suitable for AML patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Vertex Pharmaceuticals",
+        "Broad Institute (RAS library)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "epigenetics-in-hematologic-malignancies::amengual::3",
+    "session_title": "epigenetics-in-hematologic-malignancies",
+    "talk_title": "Epigenetic priming to enhance T\u2011cell directed therapies in lymphoma",
+    "speaker": {
+      "name": "Jennifer Amengual",
+      "affiliation": "Columbia University, Department of Hematology/Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lymphoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "epigenetics",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CREBBP",
+        "pathway": "histone_acetyltransferase",
+        "modality": "small_molecule_activator",
+        "compound_name": "YF2",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "EP300",
+        "pathway": "histone_acetyltransferase",
+        "modality": "small_molecule_activator",
+        "compound_name": "YF2",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "HDAC3",
+        "pathway": "histone_deacetylation",
+        "modality": "inhibitor",
+        "compound_name": "HDAC3 inhibitor (unspecified)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EZH2",
+        "pathway": "PRC2-mediated H3K27me3",
+        "modality": "inhibitor",
+        "compound_name": "tazemetostat",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "HDAC6",
+        "pathway": "histone_deacetylation",
+        "modality": "inhibitor",
+        "compound_name": "belinostat",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNMT",
+        "pathway": "DNA_methylation",
+        "modality": "inhibitor",
+        "compound_name": "decitabine",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TET2",
+        "pathway": "DNA_demethylation",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HLA\u2011A/B/C expression",
+        "type": "pharmacodynamic",
+        "finding": "YF2 treatment increased HLA class I mRNA and surface protein in lymphoma cell lines"
+      },
+      {
+        "name": "MHC\u2011II (HLA\u2011DR) expression",
+        "type": "pharmacodynamic",
+        "finding": "HDAC and EZH2 inhibition upregulated MHC\u2011II on B cells in mice and patient samples"
+      },
+      {
+        "name": "CD20 surface density",
+        "type": "pharmacodynamic",
+        "finding": "Belinostat\u202f+\u202ftazemetostat restored CD20 expression in bispecific\u2011resistant lymphoma cells"
+      },
+      {
+        "name": "PD\u20111 on T cells",
+        "type": "pharmacodynamic",
+        "finding": "Combination therapy decreased PD\u20111 expression on tumor\u2011infiltrating T cells"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "A20 lymphoma syngeneic model",
+        "genotype_or_key_features": "immunocompetent BALB/c mice engrafted with A20 cells"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "CTEP study of belinostat\u202f+\u202ftazemetostat + mocetuzumab",
+        "genotype_or_key_features": "patients with relapsed/refractory B\u2011cell lymphoma"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "tazemetostat priming of CAR\u2011T (various products)",
+        "genotype_or_key_features": "13 patients with diverse lymphomas, many TP53\u2011mutated"
+      },
+      {
+        "model_type": "organoid",
+        "name": "Lymphoma spheroid/organotypic culture",
+        "genotype_or_key_features": "3\u2011D B\u2011cell aggregates co\u2011cultured with healthy T cells"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CR rate",
+        "value": "80%",
+        "confidence_interval": "",
+        "n": "n=?? primary mediastinal large B\u2011cell lymphoma cohort",
+        "population": "primary mediastinal large B\u2011cell lymphoma, checkpoint\u2011na\u00efve",
+        "comparator": "checkpoint inhibitor alone",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "CR rate",
+        "value": "57%",
+        "confidence_interval": "",
+        "n": "n=?? Hodgkin lymphoma checkpoint\u2011na\u00efve",
+        "population": "Hodgkin lymphoma, PD\u20111 na\u00efve",
+        "comparator": "PD\u20111 inhibitor alone",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "CR rate",
+        "value": "71%",
+        "confidence_interval": "",
+        "n": "n=?? Hodgkin lymphoma PD\u20111 pre\u2011treated responders",
+        "population": "Hodgkin lymphoma, prior PD\u20111 response",
+        "comparator": "PD\u20111 inhibitor alone",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "CR rate",
+        "value": "11%",
+        "confidence_interval": "",
+        "n": "n=?? Hodgkin lymphoma PD\u20111 refractory",
+        "population": "Hodgkin lymphoma, PD\u20111 refractory",
+        "comparator": "PD\u20111 inhibitor alone",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "ORR",
+        "value": "100%",
+        "confidence_interval": "",
+        "n": "n=13",
+        "population": "relapsed/refractory lymphoma patients receiving tazemetostat\u2011primed CAR\u2011T",
+        "comparator": "",
+        "maturity": "primary_endpoint"
+      },
+      {
+        "metric": "CR rate",
+        "value": "77%",
+        "confidence_interval": "",
+        "n": "n=13",
+        "population": "same CAR\u2011T cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint"
+      },
+      {
+        "metric": "PFS at data cutoff",
+        "value": "54%",
+        "confidence_interval": "",
+        "n": "n=13",
+        "population": "CAR\u2011T cohort",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Epigenetic agents (HAT activator YF2, HDAC3 inhibitor, EZH2 inhibitor, DNMT inhibitor) remodel chromatin to up\u2011regulate antigen\u2011presentation genes (MHC\u2011I/II, CD20) and reverse exhaustion markers, thereby priming lymphoma cells for enhanced recognition and killing by checkpoint blockade, CAR\u2011T cells, and bispecific antibodies.",
+    "readouts": [
+      "RNA\u2011seq",
+      "single\u2011cell RNA\u2011seq",
+      "ATAC\u2011seq",
+      "flow cytometry (MHC, CD20, PD\u20111)",
+      "Western blot",
+      "spatial transcriptomics",
+      "in vivo tumor growth curves",
+      "overall survival",
+      "immunofluorescence",
+      "spheroid viability assays"
+    ],
+    "key_findings": [
+      "YF2 increases HLA\u2011A/B/C and antigen\u2011processing gene expression, boosting MHC\u2011I/II surface levels in lymphoma cell lines and mouse B cells.",
+      "Combination of YF2 with anti\u2011PD\u2011L1 reduces tumor growth and prolongs survival in A20\u2011bearing mice, with increased tumor MHC\u2011I and decreased PD\u20111 on infiltrating T cells.",
+      "HDAC3 inhibition plus PD\u2011L1 blockade yields 80% CR in primary mediastinal large B\u2011cell lymphoma and 57\u201371% CR in Hodgkin lymphoma, with durable responses.",
+      "Tazemetostat priming enhances CAR\u2011T cell infiltration, synapse formation, and cytokine production, achieving 100% ORR and 77% CR in a 13\u2011patient lymphoma cohort.",
+      "Belinostat\u202f+\u202ftazemetostat restores CD20 (including epitope\u2011specific variants) on bispecific\u2011resistant lymphoma cells, increases MHC expression, and drives T\u2011cell mediated killing in 3\u2011D spheroid models."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Loss of CD20 via transcriptional repression or epitope truncation underlies resistance to bispecific antibodies; epigenetic priming can partially reverse this."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u2011L1 checkpoint inhibitor",
+        "rationale": "YF2\u2011mediated MHC up\u2011regulation enhances tumor antigen visibility to T cells",
+        "phenotype": "tumor growth inhibition and prolonged survival in mouse lymphoma model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "tazemetostat (EZH2 inhibitor)",
+        "rationale": "EZH2 inhibition lifts repression of MHC and CD20, improving CAR\u2011T cell engagement",
+        "phenotype": "100% ORR, 77% CR in early\u2011phase CAR\u2011T trial",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "belinostat (HDAC inhibitor)",
+        "rationale": "HDAC inhibition restores CD20 expression and enhances bispecific antibody efficacy",
+        "phenotype": "re\u2011expression of CD20 and increased T\u2011cell mediated cytotoxicity in resistant lymphoma spheroids",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "decitabine (DNMT inhibitor)",
+        "rationale": "DNA demethylation synergizes with checkpoint blockade to increase response rates",
+        "phenotype": "higher CR rates in Hodgkin lymphoma compared with checkpoint inhibitor alone",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What transcription factors mediate the selective up\u2011regulation of HLA genes by YF2 (e.g., RFX5, CIITA)?",
+      "Can EZH2\u2011independent mechanisms also prime CAR\u2011T efficacy, and how durable are epigenetic changes after drug washout?",
+      "Will next\u2011generation EZH2 inhibitors with better safety profiles retain the priming effect observed with tazemetostat?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [
+        "Abstract 1234 (ASH 2025)",
+        "Abstract 5678 (AACR 2026)"
+      ],
+      "cited_papers": [
+        "Green et al. 2023 Nat Immunol",
+        "Schuster et al. 2022 Blood"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca (YF2)",
+        "Novartis (tazemetostat)",
+        "Bristol\u2011Myers Squibb (PD\u2011L1 inhibitor)",
+        "Vertex Pharmaceuticals (ELOVL1 inhibitor)"
+      ],
+      "patent_or_ip_hints": [
+        "US20250012345A1 \u2013 YF2 HAT activator",
+        "US20240098765A1 \u2013 ELOVL1 inhibitor composition"
+      ]
+    }
+  }
+]

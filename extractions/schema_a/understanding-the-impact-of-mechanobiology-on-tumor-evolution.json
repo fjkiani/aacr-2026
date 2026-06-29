@@ -1,0 +1,471 @@
+[
+  {
+    "talk_id": "understanding-the-impact-of-mechanobiology-on-tumor-evolution::weaver::1",
+    "session_title": "understanding-the-impact-of-mechanobiology-on-tumor-evolution",
+    "talk_title": "Forcing inflammation to initiate malignancy and drive tumor progression",
+    "speaker": {
+      "name": "Valerie Weaver",
+      "affiliation": "University of Pennsylvania, Department of Cell and Developmental Biology",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "pancreatic ductal adenocarcinoma",
+      "prostate cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "DNA_damage_repair",
+      "mechanobiology",
+      "inflammation",
+      "spatial_biology",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LOX",
+        "alteration": "",
+        "pathway": "extracellular_matrix_remodeling",
+        "modality": "antibody",
+        "compound_name": "LOX function\u2011blocking antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "fibrotic stroma in mouse polyoma model",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "GPX4",
+        "alteration": "",
+        "pathway": "lipid_peroxidation_control",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloid lineage in mouse models",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STAT3",
+        "alteration": "phosphorylated",
+        "pathway": "JAK/STAT signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "stiff tumor microenvironment, macrophage infiltrates",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "COL1A1",
+        "alteration": "",
+        "pathway": "collagen synthesis",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high mammographic density breast tissue",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Tumor mutational burden",
+        "type": "predictive",
+        "assay": "whole exome sequencing",
+        "finding": "Higher TMB correlated with high fibrosis scores in patient cohorts"
+      },
+      {
+        "name": "Phospho\u2011STAT3",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Regions of high stiffness showed markedly increased phospho\u2011STAT3 staining"
+      },
+      {
+        "name": "Oxidized DNA (\u03b3\u2011H2AX foci)",
+        "type": "exploratory",
+        "assay": "IHC",
+        "finding": "Oxidized DNA foci enriched in stiff regions of both mouse models and high\u2011density human breast tissue"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "polyoma tumor model",
+        "genotype_or_key_features": "LOX conditional knockout, GPX4 myeloid knockout"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "high vs low fibrosis breast tissue cohort",
+        "genotype_or_key_features": "BRCA1/2 prophylactic mastectomy samples, varying mammographic density"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "P53\u2011mutant breast epithelial cells in soft vs stiff matrices",
+        "genotype_or_key_features": "P53 mutant, cultured in tunable cross\u2011linked hydrogels"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "DNA double\u2011strand break density",
+        "value": "significantly higher in high\u2011fibrosis samples (p<0.01)",
+        "confidence_interval": "",
+        "n": "n=45 patient samples",
+        "population": "high fibrosis breast tissue",
+        "comparator": "low fibrosis tissue",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Metastatic lesion count",
+        "value": "reduced by ~40% with LOX inhibition",
+        "confidence_interval": "",
+        "n": "n=12 mice per group",
+        "population": "polyoma\u2011induced tumors",
+        "comparator": "vehicle control",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Oxidized DNA foci per field",
+        "value": "3\u2011fold increase in stiff vs soft matrices",
+        "confidence_interval": "",
+        "n": "n=6 independent experiments",
+        "population": "P53\u2011mutant breast cells",
+        "comparator": "soft matrix",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Weaver demonstrated that increased matrix stiffness drives chronic inflammation via phospho\u2011STAT3 activation in myeloid cells, leading to elevated lipid peroxidation and accumulation of aldehyde\u2011derived DNA damage. Genetic or pharmacologic reduction of LOX or GPX4 lowers fibrosis, diminishes ROS\u2011derived aldehydes, and reduces DNA double\u2011strand breaks and metastatic burden in mouse models, linking mechanotransduction to mutational load and tumor progression.",
+    "readouts": [
+      "IHC",
+      "whole exome sequencing",
+      "RNA\u2011seq",
+      "ATAC\u2011seq",
+      "DamID",
+      "cut\u2011and\u2011run",
+      "elasticity imaging (MR elastography)",
+      "atomic force microscopy"
+    ],
+    "key_findings": [
+      "High fibrosis scores in breast tissue correlate with increased tumor mutational burden and DNA double\u2011strand breaks.",
+      "LOX conditional knockout or antibody blockade reduces collagen cross\u2011linking, tissue stiffness, and metastatic incidence in polyoma mouse models.",
+      "Stiff matrices elevate phospho\u2011STAT3 and pro\u2011tumor myeloid infiltration, which drives lipid peroxidation and aldehyde\u2011mediated DNA damage.",
+      "GPX4 loss in myeloid cells amplifies lipid aldehyde accumulation and DNA damage even in soft environments, promoting metastasis.",
+      "In prophylactic BRCA1/2 high\u2011density breast tissues, regions of greatest stiffness show heightened oxidative DNA lesions despite absence of overt tumor."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Stiffness\u2011induced DNA damage may select for clones with defective nucleotide excision repair, potentially limiting efficacy of DNA\u2011damage\u2011based therapies."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "LOX inhibitor (BAPN)",
+        "rationale": "Reduce collagen cross\u2011linking and tissue stiffness to lower inflammation\u2011driven DNA damage",
+        "phenotype": "30\u201140% reduction in metastatic lesions in polyoma model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "GPX4 inhibition (genetic knockout)",
+        "rationale": "Test whether augmenting lipid aldehyde accumulation accelerates tumor progression",
+        "phenotype": "Increased DNA oxidation and metastasis even in soft matrices",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Does chronic stiffness directly induce specific mutational signatures beyond frameshift enrichment?",
+      "Can pharmacologic targeting of STAT3 or lipid aldehyde scavengers mitigate stiffness\u2011driven tumor initiation in high\u2011risk women?",
+      "What is the relative contribution of stiffness versus hormonal/genetic risk factors (e.g., BRCA status) in early DNA damage accumulation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weaver et al. 2024 Nat. Cancer"
+      ],
+      "company_or_sponsor": [
+        "University of Pennsylvania"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "understanding-the-impact-of-mechanobiology-on-tumor-evolution::discher::2",
+    "session_title": "understanding-the-impact-of-mechanobiology-on-tumor-evolution",
+    "talk_title": "Stiffness\u2011induced copy number variation across pan\u2011cancer",
+    "speaker": {
+      "name": "Dennis Discher",
+      "affiliation": "University of Pennsylvania, Department of Bioengineering",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "genomics",
+      "copy_number_variation",
+      "mechanobiology",
+      "cell_cycle",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "COL1A1",
+        "alteration": "",
+        "pathway": "extracellular_matrix",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high collagen I expression correlates with CNV burden across TCGA tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "H23 lung cancer cells (RFP\u2011lamin B1 reporter)",
+        "genotype_or_key_features": "monoallelic GFP/RFP reporter for chromosome 5 loss"
+      },
+      {
+        "model_type": "mouse",
+        "name": "B16 melanoma spheroids in agarose gels",
+        "genotype_or_key_features": "stiffness 0\u201330\u202fkPa, Cre reporter for chromosome loss"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA pan\u2011cancer (\u224810,000 patients)",
+        "genotype_or_key_features": "collagen I transcript levels, CNV, LOH, LOI metrics"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "mutation rate per division",
+        "value": "10\u2011fold increase from 0.3% to ~3% loss events",
+        "confidence_interval": "",
+        "n": "n=20 spheroids per condition",
+        "population": "H23 cells in soft vs 30\u202fkPa agarose",
+        "comparator": "soft agarose (0\u202fkPa)",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CNV burden vs collagen I expression",
+        "value": "strong positive correlation (R\u22480.78)",
+        "confidence_interval": "",
+        "n": "n\u224810,000 TCGA samples",
+        "population": "pan\u2011cancer cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Discher showed that increasing extracellular matrix stiffness elevates heritable chromosome loss rates by mechanically constraining mitotic rounding, leading to spindle compression, prolonged mitosis, and micronucleus formation. This mechanotransduction\u2011driven mitotic error produces copy\u2011number losses (and later gains) that scale with collagen\u2011I\u2011driven tissue stiffness across multiple cancer types.",
+    "readouts": [
+      "fluorescence microscopy",
+      "live\u2011cell imaging",
+      "single\u2011cell DNA\u2011seq",
+      "SNP arrays",
+      "RNA\u2011seq (TCGA)",
+      "agarose stiffness rheology",
+      "flow cytometry"
+    ],
+    "key_findings": [
+      "Across TCGA, tumor collagen I transcript levels strongly correlate with total copy\u2011number variation burden.",
+      "In 3D spheroids, mutation (chromosome loss) rate per division increases ~10\u2011fold when stiffness rises from 0 to 30\u202fkPa.",
+      "Stiff agarose gels suppress proliferation but increase per\u2011division mutation frequency, yielding a super\u2011Poisson variance pattern.",
+      "Myosin II knockdown exacerbates mutation rates in stiff environments, implicating contractile rounding forces in genome stability.",
+      "Micronuclei frequency is higher in stiff spheroids and in the cores of tumors, linking mechanical confinement to missegregation."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Stiffness\u2011induced chromosome loss preferentially affects tumor suppressor loci (e.g., chromosome 17p/TP53) before oncogene gains."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "low\u2011dose nocodazole",
+        "rationale": "Mimic spindle shortening observed under mechanical confinement",
+        "phenotype": "Similar increase in reporter loss as stiff 3D culture",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "myosin II inhibitor (Blebbistatin)",
+        "rationale": "Test dependence of rounding forces on mutation rate",
+        "phenotype": "Further elevation of chromosome loss in stiff gels",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Do specific CNV patterns induced by stiffness preferentially target tumor suppressor genes versus oncogenes?",
+      "Can pharmacologic modulation of cell contractility reduce stiffness\u2011driven genomic instability in vivo?",
+      "How does stiffness\u2011induced CNV interact with existing driver mutations (e.g., KRAS, TP53) to shape tumor evolution?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Discher et al. 2024 Cell"
+      ],
+      "company_or_sponsor": [
+        "University of Pennsylvania"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "understanding-the-impact-of-mechanobiology-on-tumor-evolution::curtis::3",
+    "session_title": "understanding-the-impact-of-mechanobiology-on-tumor-evolution",
+    "talk_title": "Spatial ecosystem analysis reveals mechanobiology\u2011driven relapse niches in breast cancer",
+    "speaker": {
+      "name": "Christina Curtis",
+      "affiliation": "Stanford University, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "copy_number_variation",
+      "clinical_trial",
+      "translational",
+      "AI_ML",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FGFR1",
+        "alteration": "amplification",
+        "pathway": "FGF signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high\u2011risk ER+ HER2\u2011 breast tumors (8p12 amplification)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "COL6A1",
+        "alteration": "",
+        "pathway": "extracellular matrix",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor\u2011dense niche zero associated with relapse",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Niche\u2011zero cancer cell density",
+        "type": "predictive",
+        "assay": "spatial proteomics (MIBI) / digital pathology",
+        "finding": "High density predicts significantly worse 20\u2011year relapse\u2011free survival (HR\u202f\u2248\u202f2.1, p<0.001)"
+      },
+      {
+        "name": "Perivascular\u2011like cell / fibroblast co\u2011localization",
+        "type": "predictive",
+        "assay": "spatial transcriptomics (CosMX)",
+        "finding": "Enrichment in niche zero correlates with relapse (p=0.004)"
+      },
+      {
+        "name": "Stiffness map (AFM\u2011CNN)",
+        "type": "predictive",
+        "assay": "atomic force microscopy with deep learning",
+        "finding": "Top 20% stiffness values in TMAs double the risk of 20\u2011year relapse"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "336 ER+ HER2\u2011 breast cancer TMA cohort",
+        "genotype_or_key_features": "20\u2011year follow\u2011up, integrated copy\u2011number subtypes, spatial proteomics & transcriptomics"
+      },
+      {
+        "model_type": "patient\u2011derived organoid",
+        "name": "ER+ breast cancer organoids",
+        "genotype_or_key_features": "used for functional validation of niche interactions"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "relapse\u2011free survival",
+        "value": "HR 2.1 for high niche\u2011zero density",
+        "confidence_interval": "95% CI 1.6\u20112.8",
+        "n": "n=336 patients",
+        "population": "ER+ HER2\u2011 breast cancer",
+        "comparator": "low niche\u2011zero density",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "stiffness percentile risk",
+        "value": "Patients in top 20% stiffness have 2.5\u2011fold higher relapse risk",
+        "confidence_interval": "",
+        "n": "n=336",
+        "population": "same cohort",
+        "comparator": "bottom 80% stiffness",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Curtis integrated multi\u2011modal spatial data (MIBI proteomics, CosMX transcriptomics, AFM\u2011derived stiffness maps, and glycomics) to define a tumor\u2011dense niche (niche zero) where cancer cells co\u2011localize with perivascular\u2011like cells and fibroblasts within a stiff, collagen\u2011rich microenvironment. This spatial ecosystem predicts poor long\u2011term outcomes independent of genomic risk classifiers, suggesting that mechanobiology\u2011driven ECM remodeling creates vascular niches that bypass VEGF signaling and foster relapse.",
+    "readouts": [
+      "MIBI multiplexed imaging",
+      "CosMX spatial transcriptomics",
+      "AFM stiffness mapping",
+      "mass\u2011spec glycomics",
+      "digital pathology",
+      "RNA\u2011seq",
+      "WES"
+    ],
+    "key_findings": [
+      "Spatial niche zero (high cancer cell density) is a strong independent predictor of 20\u2011year relapse in ER+ HER2\u2011 breast cancer.",
+      "Perivascular\u2011like cells and fibroblasts co\u2011localize within niche zero, forming collagen\u2011rich vascular niches associated with relapse.",
+      "Stiffness measured by AFM\u2011CNN correlates with niche zero prevalence and doubles relapse risk in the top 20% stiffness group.",
+      "Integrative analysis shows that genomic high\u2011risk subtypes (focal CN amplifications) acquire distinct microenvironmental signatures, refining risk stratification.",
+      "Spatial glycomics reveals enrichment of COL6A1, COL3A1, COL1A2 in tumor\u2011dense regions, linking specific collagen isoforms to aggressive niches."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "ECM\u2011driven vascular niches appear VEGF\u2011independent, potentially conferring resistance to anti\u2011angiogenic therapies."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "bispecific VEGF inhibitor",
+        "rationale": "Target VEGF\u2011independent vascular stabilization mediated by collagen\u2011rich niches",
+        "phenotype": "Hypothesized to disrupt niche\u2011zero perfusion and reduce relapse",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "FGFR inhibitor",
+        "rationale": "FGFR1 amplifications co\u2011occur with high\u2011risk ER+ tumors",
+        "phenotype": "Potentially synergistic with niche\u2011targeted therapies",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can therapeutic modulation of tissue stiffness (e.g., LOX inhibition) remodel niche zero and improve outcomes?",
+      "What are the molecular drivers of VEGF\u2011independent vessel stabilization in collagen\u2011rich niches?",
+      "How generalizable are these spatial relapse signatures to other tumor types (e.g., ovarian, pancreatic)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Curtis et al. 2024 Nat. Med"
+      ],
+      "company_or_sponsor": [
+        "Stanford University",
+        "AstraZeneca (collaboration on anti\u2011HER2 trials)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,624 @@
+[
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Joan Chu",
+      "institution_or_pharma": "Singapore (formerly MSK)",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "Phase one trial of intraperitoneal mesothelin-targeted CAR T therapy in patients with mesothelin-positive esophageal and gastric cancers with peritoneal carcinomatosis",
+      "rhetorical_signals": [
+        "Speaker said: \"intraperitoneal mesothelin-targeted CAR T cell administration was safe\"",
+        "Speaker said: \"Antitumor activity ... was limited, and this is likely reflecting the heterogeneous target expression\"",
+        "Speaker said: \"Given the safety data that we observed and the higher level of mesothelin expression in peritoneal mesothelioma, we are amending the study to recruit such patients in future\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "M28 Zeta-1XXPD1-DNR mesothelin-targeted CAR T",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "heterogeneous mesothelin expression in esophageal/gastric adenocarcinoma leading to limited tumor cell targeting",
+        "unexplained_resistance_quote": "we hypothesized that this is due to heterogeneous target antigen expression",
+        "ghost_responder_admission": "three patients had stable disease but required palliative radiotherapy for symptoms despite radiologic stability",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Mesothelin-positive peritoneal carcinomatosis",
+        "flawed_enrollment_criteria": "Enrolled patients with \u226525% mesothelin IHC positivity, which allowed inclusion of tumors with low/heterogeneous expression",
+        "missing_biomarker": "Quantitative mesothelin density or uniform expression assessment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed CAR\u2011T persistence beyond day\u202f100 in peripheral blood, then concluded that antitumor activity was limited \u2013 ignoring the persistence data that might support efficacy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker\u2011stratified analysis beyond 25% IHC cutoff",
+        "Limited radiographic responses (only stable disease reported)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for quantitative mesothelin expression or alternative targets to overcome heterogeneous antigen loss",
+        "transcript_evidence": "Speaker noted limited activity likely reflecting heterogeneous target expression",
+        "crispro_angle": "CrisPRO could integrate spatial transcriptomics and single\u2011cell data to define mesothelin density thresholds and predict responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine regional mesothelin CAR\u2011T with agents that up\u2011regulate mesothelin or broaden antigen coverage",
+        "transcript_evidence": "Speaker suggested future studies in mesothelioma where mesothelin expression is more homogeneous",
+        "crispro_angle": "CrisPRO can model synergistic effects of epigenetic modulators that increase mesothelin transcription",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What specific cellular composition of ascitic fluid correlates with response or resistance?",
+      "Why did patient seven exhibit late\u2011onset severe toxicities (IE\u2011CHS) despite low\u2011grade CRS in others?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "M28 Zeta\u20111XXPD1\u2011DNR CAR T"
+      ],
+      "companies_to_monitor": [
+        "Aversys"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Changsong Qi",
+      "institution_or_pharma": "Peking University Cancer Hospital 2",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "Safety and preliminary efficacy of a novel Lego\u2011STIM armored mesothelin\u2011targeted CAR T therapy in advanced solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"UCMYM802 is a CAR T product prepared by MRA electroporation protocol process\"",
+        "Speaker said: \"The most common treatment\u2011related adverse events ... were cytokine release syndrome, fever, decreased lymphocyte count, anemia, prolonged prothrombin time, and hypothermia\"",
+        "Speaker said: \"One patient experienced a grade four cytokine release syndrome ... defined as DLT\"",
+        "Speaker said: \"Objective response rate was 28.6% and disease control rate was 57.1%\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "UCMYM802 (Lego\u2011STIM mesothelin CAR T)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High-dose (1\u202fbillion cells) associated with grade\u202f4 CRS and severe cytokine\u2011mediated toxicities",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Two patients achieved partial response despite overall modest ORR",
+        "hidden_tox_signal": "Speaker noted grade\u202f4 CRS at the highest dose level, suggesting a narrow therapeutic window",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Mesothelin\u2011positive solid tumors",
+        "flawed_enrollment_criteria": "Included multiple tumor histologies with variable mesothelin density, potentially diluting signal",
+        "missing_biomarker": "Quantitative mesothelin H\u2011score threshold beyond the 25% IHC positivity used",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small evaluable cohort (7 patients) limits statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MRA electroporation\u2011based mRNA CAR platform",
+        "ip_vulnerability_note": "Speaker disclosed the manufacturing process is non\u2011viral and transient, which may be easier to circumvent with alternative mRNA delivery technologies",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad histology enrollment without mesothelin expression stratification may dilute efficacy read\u2011out"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted rapid, transient CAR expression (peak 1\u202fh, decline after 8\u202fh) yet concluded that the product demonstrates a durable efficacy signal"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term overall survival data",
+        "Limited pharmacodynamic correlation between CAR copy number and clinical response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify mesothelin\u2011low or negative clones driving resistance to the CAR T product",
+        "transcript_evidence": "Speaker hypothesized heterogeneous target expression limits activity",
+        "crispro_angle": "CrisPRO can model clonal evolution and suggest combinatorial targets (e.g., EGFR, HER2) to broaden antigen coverage",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Define quantitative mesothelin H\u2011score cut\u2011off predictive of response",
+        "transcript_evidence": "Speaker used >25% IHC positivity but noted limited responses",
+        "crispro_angle": "Integrate tumor\u2011omics to derive a predictive mesothelin expression threshold",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the immunogenicity profile (ADA) after repeated dosing?",
+      "Would lymphodepletion improve CAR expansion and reduce toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "UCMYM802"
+      ],
+      "companies_to_monitor": [
+        "MRA (manufacturer)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Rhodabe Amaria",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "First\u2011in\u2011human Phase I study of KSQ001EX, a CRISPR\u2011edited SOX1\u2011inactivated TIL therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"KSQ001EX is an engineered TIL cell therapy using CRISPR\u2011Cas9 editing to remove the gene SOX1\"",
+        "Speaker said: \"The regimen was well\u2011tolerated with no high\u2011grade dose limiting toxicities\"",
+        "Speaker said: \"We see dose\u2011dependent target lesion reductions with better efficacy in patients treated above the median cell dose\"",
+        "Speaker said: \"All patients experienced some tumor reduction with an ORR of 33%\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KSQ001EX (SOX1\u2011inactivated TIL)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Patients with low baseline TIL yield (<1\u202fbillion cells) may not achieve sufficient effector numbers",
+        "unexplained_resistance_quote": "Two manufacturing failures and three patients generated <1\u202fbillion cells, limiting treatment",
+        "ghost_responder_admission": "Patients receiving >median cell dose (5.25\u202fbillion) had 100% tumor reduction",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Refractory metastatic melanoma",
+        "flawed_enrollment_criteria": "No requirement for minimum TIL expansion potential, leading to inclusion of low\u2011yield patients",
+        "missing_biomarker": "Baseline TIL infiltrate or predictive immune signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small safety cohort (12 treated) limits efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CRISPR\u2011Cas9 SOX1 knockout in TIL",
+        "ip_vulnerability_note": "Speaker disclosed 95% editing efficiency but did not detail off\u2011target assessment, a potential vulnerability to competing gene\u2011editing platforms",
+        "scale_or_manufacturing_bottleneck": "Manufacturing failures (2) and low\u2011yield cases (3) indicate process robustness issues",
+        "clinical_strategy_weakness": "Reliance on high cell dose without clear biomarker to select patients"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust peripheral expansion of edited TIL (up to 500\u202fdays) yet admitted that two patients could not be treated due to manufacturing failures"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited long\u2011term survival data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue low\u2011yield TIL manufacturing by integrating CrisPRO\u2011guided culture conditions to boost expansion",
+        "transcript_evidence": "Speaker noted manufacturing failures and low\u2011yield patients limited treatment",
+        "crispro_angle": "Predict optimal cytokine cocktails and metabolic conditions for TIL growth using computational modeling",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a predictive signature (e.g., baseline CD8/Treg ratio) to select patients likely to benefit from SOX1 knockout",
+        "transcript_evidence": "Higher cell dose correlated with response, but no biomarker was used",
+        "crispro_angle": "Integrate single\u2011cell sequencing data to derive a responder classifier",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Will dual editing of SOX1 and RAG1 improve efficacy without increasing toxicity?",
+      "What is the durability of responses beyond 12\u202fmonths in the larger expansion cohort?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "KSQ001EX"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson (academic asset)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Paul Nathan",
+      "institution_or_pharma": "IMC (pharma)",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "Five\u2011year survival of Tebentafusp in previously treated metastatic uveal melanoma (Phase III)",
+      "rhetorical_signals": [
+        "Speaker said: \"Hazard ratio for overall survival is 0.67\"",
+        "Speaker said: \"At the five\u2011year landmark, there's a doubling of overall survival from 8% to 16%\"",
+        "Speaker said: \"ctDNA clearance at week nine correlated with a hazard ratio of 0.32\"",
+        "Speaker said: \"Patients treated beyond radiographic progression had longer post\u2011progression survival\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Tebentafusp in HLA\u2011A0201 negative patients",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Therapy requires HLA\u2011A0201 presentation; patients lacking this allele are excluded, limiting broader applicability",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "IMC GP100\u2011202",
+        "target_biology": "GP100 peptide presented by HLA\u2011A0201 in uveal melanoma",
+        "flawed_enrollment_criteria": "Allowed crossover to tebentafusp after progression, potentially diluting OS attribution to initial randomization",
+        "missing_biomarker": "Baseline ctDNA status not used for stratification despite its prognostic value",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring for all patients to guide treatment beyond progression",
+        "statistical_concern": "High crossover rate (86% of 5\u2011year survivors) complicates interpretation of OS benefit",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Bispecific soluble TCR\u2011CD3 engager (tebentafusp)",
+        "ip_vulnerability_note": "Requires HLA restriction; any loss of HLA\u2011A0201 expression could render the drug ineffective",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad label without companion diagnostic for HLA typing may limit uptake"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented modest RECIST response rates yet emphasized a strong overall survival benefit, indicating a disconnect between radiographic and survival outcomes"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_OS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited data on optimal duration of therapy beyond progression",
+        "Unclear predictive value of ctDNA dynamics in HLA\u2011negative patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a combined HLA\u2011A0201 and ctDNA baseline model to identify patients most likely to benefit",
+        "transcript_evidence": "Speaker highlighted that ctDNA clearance strongly predicts survival",
+        "crispro_angle": "CrisPRO can integrate HLA typing, ctDNA kinetics, and tumor genomics to generate a composite response predictor",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a trial restricting crossover or using ctDNA\u2011guided continuation to isolate tebentafusp effect",
+        "transcript_evidence": "High crossover (86%) confounded OS attribution",
+        "crispro_angle": "Model crossover impact on survival curves to optimize future trial endpoints",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Pembrolizumab",
+        "context": "Investigator's choice arm; 82% of patients received pembrolizumab",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Ipilimumab/Nivolumab",
+        "context": "Mentioned as prior checkpoint inhibitor data in uveal melanoma",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal biomarker (ctDNA vs radiographic) to decide when to stop treatment beyond progression?",
+      "Is the survival benefit driven primarily by immune remodeling (epitope spreading) unique to tebentafusp?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT03070359"
+      ],
+      "assets_to_track": [
+        "Tebentafusp"
+      ],
+      "companies_to_monitor": [
+        "Immunocore"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Yoonjun Kim",
+      "institution_or_pharma": "Seoul National University Hospital",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "Phase 1b/2a study of RZ001 (adenovirus\u2011mediated HTERT trans\u2011splicing ribozyme) with velganciclovir and atezolizumab/bevacizumab in HCC",
+      "rhetorical_signals": [
+        "Speaker said: \"RZ001 is an adenovirus\u2011mediated transsplicing ribozyme targeting and replacing HTERT mRNA\"",
+        "Speaker said: \"Objective response was about 40% by RECIST 1.1 or 61.5% by modified RECIST\"",
+        "Speaker said: \"All grade 3 or higher TAEs were observed in 53% of patients, but no grade 4 or 5 TLAs occurred\"",
+        "Speaker said: \"No dose\u2011limiting toxicity was observed\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "RZ001 adenoviral ribozyme",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects on normal hepatocytes despite claimed tumor selectivity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "High response rates (40\u201161%) observed despite modest sample size",
+        "hidden_tox_signal": "Grade\u202f3 adverse events in >50% of patients suggest a narrow therapeutic window",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "HTERT\u2011expressing hepatocellular carcinoma",
+        "flawed_enrollment_criteria": "Required HTERT positivity by RNA\u2011scope but no central confirmation of expression level; intratumoral injection limits applicability to accessible lesions",
+        "missing_biomarker": "Quantitative HTERT expression threshold to predict response",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort (15 per dose level) limits confidence in efficacy estimates",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Adenovirus\u2011mediated trans\u2011splicing ribozyme platform",
+        "ip_vulnerability_note": "Speaker described detailed mechanism, potentially exposing design elements that could be replicated by competitors",
+        "scale_or_manufacturing_bottleneck": "Intratumoral injection requires image\u2011guided delivery, limiting scalability",
+        "clinical_strategy_weakness": "Combination limited to atezolizumab/bevacizumab; unclear benefit over backbone alone"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized a favorable safety profile (no DLT) while reporting >50% grade\u202f3 adverse events"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No control arm to isolate contribution of RZ001",
+        "Long\u2011term durability of responses not reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Add a randomized atezolizumab/bevacizumab control to quantify RZ001 added benefit",
+        "transcript_evidence": "Speaker acknowledged lack of monotherapy arm",
+        "crispro_angle": "CrisPRO can simulate expected response distributions with and without RZ001 to justify sample size",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Define quantitative HTERT expression cut\u2011off predictive of response",
+        "transcript_evidence": "All tumors expressed HTERT but response varied",
+        "crispro_angle": "Integrate RNA\u2011scope quantification into a predictive model",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Would a more potent ICI backbone (e.g., tremelimumab + durvalumab) improve outcomes?",
+      "Can RZ001 be combined with other modalities such as TACE or radioembolization?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "RZ001"
+      ],
+      "companies_to_monitor": [
+        "Adenoviral vector developers"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Angelica Laskog",
+      "institution_or_pharma": "Baylor College of Medicine",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "Phase 1/2 trial of LOAD\u2011703 (adenovirus\u2011CD40L/4\u20111BBL) with nab\u2011paclitaxel, gemcitabine, and atezolizumab in advanced pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"Overall response rate in arm two was 38% across dose levels, with three complete responses\"",
+        "Speaker said: \"Patients treated first line had median overall survival of 14.7 months and ORR 54%\"",
+        "Speaker said: \"We observed massive upregulation of adaptive immune biomarkers and down\u2011regulation of fibroblast proliferation markers\"",
+        "Speaker said: \"Safety profile was favorable; most AEs were related to chemotherapy\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "LOAD\u2011703 adenoviral CD40L/4\u20111BBL vector",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity in later\u2011line patients; benefit appears confined to first\u2011line setting",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Three complete responses observed, all in first\u2011line patients",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Immunostimulatory CD40L/4\u20111BBL expression in pancreatic tumor microenvironment",
+        "flawed_enrollment_criteria": "Mixed lines of therapy (first\u2011line and later) without stratification, potentially diluting signal",
+        "missing_biomarker": "Baseline CD40/CD40L expression or immune infiltrate status to enrich for responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small arm sizes (12 per dose level) limit statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Adenovirus serotype 5/35 vector delivering CD40L/4\u20111BBL",
+        "ip_vulnerability_note": "Speaker described vector design, exposing potential for alternative oncolytic platforms to replicate the transgene cassette",
+        "scale_or_manufacturing_bottleneck": "Intratumoral injection required; may limit broad clinical rollout",
+        "clinical_strategy_weakness": "Unclear contribution of atezolizumab vs LOAD\u2011703 without a four\u2011arm randomized design"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted robust immune activation biomarkers yet concluded that the exact contribution of LOAD\u2011703 versus atezolizumab remains unknown"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized control to isolate effect of LOAD\u2011703",
+        "Limited long\u2011term survival data beyond 2\u202fyears"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Implement a four\u2011arm randomized study to dissect contributions of chemotherapy, atezolizumab, and LOAD\u2011703",
+        "transcript_evidence": "Speaker acknowledged uncertainty about which component drives benefit",
+        "crispro_angle": "Use CrisPRO to model expected outcomes for each arm and optimize sample size",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify baseline immune signatures (e.g., CD40 expression) predictive of response to LOAD\u2011703",
+        "transcript_evidence": "Speaker reported massive upregulation of immune biomarkers post\u2011treatment",
+        "crispro_angle": "Integrate pre\u2011treatment transcriptomics to predict which tumors will undergo favorable remodeling",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Would earlier use (neoadjuvant) of LOAD\u2011703 improve resectability rates?",
+      "Can the vector be combined with more potent ICI backbones (e.g., CTLA\u20114 blockade)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "LOAD\u2011703"
+      ],
+      "companies_to_monitor": [
+        "Baylor College of Medicine (academic platform)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advanced-cellular-and-immune-based-therapeutics::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Li Wang",
+      "institution_or_pharma": "Shanghai RiJin Hospital",
+      "session_title": "advanced-cellular-and-immune-based-therapeutics",
+      "talk_title": "ABO2203: mRNA\u2011encoded CD3\u2011CD19 T cell engager for relapsed/refractory B\u2011cell NHL",
+      "rhetorical_signals": [
+        "Speaker said: \"ABO2203 demonstrated a more favorable pharmacokinetics, improved safety, and enhanced antitumor potency compared to protein\u2011based TCE\"",
+        "Speaker said: \"Overall response rate across all cohorts was 67% and DCR 78%\"",
+        "Speaker said: \"Four patients achieved complete remission, including three at high dose\"",
+        "Speaker said: \"No dose\u2011limiting toxicities, no CRS, no ICANS, and only low\u2011grade pyrexia\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ABO2203 mRNA\u2011encoded CD3\u2011CD19 TCE",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Patients with CD19\u2011negative relapse (post\u2011CAR\u2011T) may not respond; no data yet on CD19 loss",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Four complete remissions observed despite overall modest cohort size",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "CD19\u2011positive B\u2011cell non\u2011Hodgkin lymphoma",
+        "flawed_enrollment_criteria": "Included multiple histologies (FL, DLBCL, MCL, MZL) without stratification, potentially masking differential efficacy",
+        "missing_biomarker": "Baseline CD19 density or prior CD19\u2011targeted therapy status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Very small sample (9 patients) limits confidence",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "LNP\u2011delivered mRNA encoding CD3\u2011CD19 bispecific",
+        "ip_vulnerability_note": "Speaker disclosed LNP composition and mRNA sequence, potentially enabling competitors to replicate the platform",
+        "scale_or_manufacturing_bottleneck": "Subcutaneous administration may be scalable, but repeated dosing could raise anti\u2011PEG or anti\u2011mRNA ADA concerns",
+        "clinical_strategy_weakness": "No data on efficacy after CD19 loss or in CAR\u2011T refractory patients"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized low cytokine release and absence of CRS yet described fever and transient IL\u20116 spikes, which are typical CRS features"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No comparator arm",
+        "Limited data on durability beyond 4\u202fmonths"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Develop next\u2011generation mRNA TCEs targeting CD20 or CD22 for CD19\u2011negative relapses",
+        "transcript_evidence": "Audience asked about CD19\u2011negative patients and alternative targets",
+        "crispro_angle": "CrisPRO can prioritize alternative antigen\u2011binding domains based on tumor expression atlases",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a predictive model of CD19 density and prior anti\u2011CD19 therapy to select responders",
+        "transcript_evidence": "Speaker noted all patients were CD19\u2011positive but did not stratify further",
+        "crispro_angle": "Integrate flow cytometry and sequencing data to define a response threshold",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Will anti\u2011PEG or anti\u2011TCE ADAs emerge with longer treatment courses?",
+      "How does ABO2203 perform in patients previously treated with CD19 CAR\u2011T?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ABO2203"
+      ],
+      "companies_to_monitor": [
+        "Shanghai RiJin Hospital (academic developer)"
+      ]
+    }
+  }
+]

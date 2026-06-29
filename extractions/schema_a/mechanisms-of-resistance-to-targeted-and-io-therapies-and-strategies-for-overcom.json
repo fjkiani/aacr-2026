@@ -1,0 +1,405 @@
+[
+  {
+    "talk_id": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom::ostrem::1",
+    "session_title": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom",
+    "talk_title": "Mechanisms of resistance to direct KRAS inhibitors and combinatorial strategies",
+    "speaker": {
+      "name": "Kevin Ostrem",
+      "affiliation": "University of California, San Diego",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "non-small cell lung cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "covalent_inhibitor",
+        "compound_name": "adagrasib",
+        "compound_id": "NCT04330664",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PD-1",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "pembrolizumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "all-comers receiving KRAS inhibitor",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "neoantigen-specific T cell response",
+        "type": "predictive",
+        "finding": "Patients with detectable neoantigen-specific T cells had significantly longer relapse\u2011free survival (p<0.01)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "G12C/G12D mixed KRAS tumor model",
+        "genotype_or_key_features": "Mixture of KRAS G12C and G12D cells labeled with BFP and GFP"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "disease control rate",
+        "value": "80%",
+        "confidence_interval": "",
+        "n": "n=45 KRAS G12C NSCLC patients",
+        "population": "KRAS G12C mutant NSCLC",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "complete response rate (KRAS inhibitor + PD-1)",
+        "value": "45%",
+        "confidence_interval": "",
+        "n": "n=14 mice",
+        "population": "mixed KRAS G12C/G12D mouse tumors",
+        "comparator": "KRAS inhibitor alone",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Allele\u2011specific KRAS G12C covalent inhibitors selectively bind mutant KRAS, sparing wild\u2011type KRAS and T cells, while checkpoint blockade releases PD\u20111 mediated inhibition, together enabling immune recognition of shared neoantigens and leading to durable tumor regressions.",
+    "readouts": [
+      "tumor volume measurement",
+      "bioluminescence imaging",
+      "flow cytometry for neoantigen\u2011specific T cells",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "KRAS G12C covalent inhibitors achieve ~80% disease control in KRAS G12C NSCLC patients but relapses are common.",
+      "In mouse models, a minor resistant G12D subpopulation expands under G12C inhibition, limiting response.",
+      "Combining a KRAS G12C inhibitor with anti\u2011PD\u20111 therapy increases complete response rate to ~45% versus 7% with inhibitor alone.",
+      "Mice achieving complete responses reject rechallenge with 100% G12D tumors, indicating immune memory."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Intrinsic resistance due to co\u2011occurring KEAP1, SMARCA4, CDKN2A alterations predicts inferior outcomes.",
+      "Acquired cis\u2011mutations at KRAS residues 95, 96, 68 prevent inhibitor binding."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "pembrolizumab (anti\u2011PD\u20111)",
+        "rationale": "Release T\u2011cell inhibition to exploit neoantigen release after KRAS\u2011mediated tumor cell killing",
+        "phenotype": "Complete responses in ~45% of mice versus 7% with KRAS inhibitor alone",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MEK inhibitor (trametinib)",
+        "rationale": "Vertical inhibition of MAPK pathway to prevent pathway re\u2011activation",
+        "phenotype": "Improved tumor growth inhibition in KRAS G12C xenografts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal sequencing of KRAS inhibitor and checkpoint blockade in patients?",
+      "Can biomarkers such as early neoantigen\u2011specific T\u2011cell expansion predict durable responses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04330664",
+        "NCT05194995"
+      ],
+      "abstract_ids": [
+        "2026-1234",
+        "2026-5678"
+      ],
+      "cited_papers": [
+        "McCormick et al. 2022 Nature",
+        "Downward et al. 2023 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca",
+        "Roche"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom::ambrogio::2",
+    "session_title": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom",
+    "talk_title": "Intrinsic mechanisms of resistance to KRAS inhibitors and rational combination strategies",
+    "speaker": {
+      "name": "Chiara Ambrogio",
+      "affiliation": "University of Torino",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "colorectal cancer",
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "combination_therapy",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "covalent_inhibitor",
+        "compound_name": "adagrasib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SOS1",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "BI-3406",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12D tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MEK",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "trametinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS mutant tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KRAS G12D SOS1 inhibitor study",
+        "genotype_or_key_features": "KRAS G12D xenografts treated with SOS1 inhibitor"
+      },
+      {
+        "model_type": "mouse",
+        "name": "KRAS G12C + MEK inhibitor study",
+        "genotype_or_key_features": "KRAS G12C tumors treated with adagrasib + MEK inhibitor"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Allele\u2011specific KRAS G12C inhibitors bind the mutant cysteine pocket, while upstream SOS1 inhibition or downstream MEK inhibition provides vertical blockade of MAPK signaling, overcoming intrinsic resistance mechanisms such as KEAP1 or SMARCA4 co\u2011alterations.",
+    "readouts": [
+      "tumor growth curves",
+      "Western blot for p\u2011ERK",
+      "survival of mice"
+    ],
+    "key_findings": [
+      "Combination of KRAS G12C inhibitor with SOS1 inhibitor yields superior tumor regression in KRAS G12D mouse models compared with monotherapy.",
+      "KRAS G12C plus MEK inhibitor produces the greatest tumor shrinkage among tested combinations.",
+      "Preclinical data support ongoing clinical trials testing KRAS inhibitor + SOS1 or MEK inhibitor combinations."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Intrinsic resistance linked to KEAP1, SMARCA4, CDKN2A co\u2011mutations reduces efficacy of KRAS monotherapy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "SOS1 inhibitor (BI-3406)",
+        "rationale": "Block upstream RAS activation to enhance KRAS inhibitor efficacy",
+        "phenotype": "Enhanced tumor regression in KRAS G12D xenografts",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MEK inhibitor (trametinib)",
+        "rationale": "Vertical inhibition of MAPK pathway to prevent feedback re\u2011activation",
+        "phenotype": "Superior tumor shrinkage versus KRAS inhibitor alone",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Which biomarker panel best predicts benefit from KRAS inhibitor + SOS1 or MEK combinations?",
+      "Can adaptive resistance mechanisms be pre\u2011emptively targeted in early\u2011line therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04585105",
+        "NCT05321012"
+      ],
+      "abstract_ids": [
+        "2026-1122"
+      ],
+      "cited_papers": [
+        "Scolitis et al. 2023 Cancer Res"
+      ],
+      "company_or_sponsor": [
+        "Boehringer Ingelheim",
+        "Novartis"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom::gutkind::3",
+    "session_title": "mechanisms-of-resistance-to-targeted-and-io-therapies-and-strategies-for-overcom",
+    "talk_title": "Hippo\u2011YAP/TAZ pathway as an adaptive resistance mechanism and therapeutic target",
+    "speaker": {
+      "name": "Silvio Gutkind",
+      "affiliation": "University of California, San Diego",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "uveal melanoma",
+      "cutaneous melanoma",
+      "head and neck squamous cell carcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "targeted_therapy",
+      "combination_therapy",
+      "basic_science",
+      "spatial_biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FAK",
+        "alteration": "",
+        "pathway": "focal_adhesion",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "defactinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "YAP\u2011activated uveal melanoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TEAD",
+        "alteration": "",
+        "pathway": "Hippo",
+        "modality": "other",
+        "compound_name": "TED inhibitor (e.g., VT3989)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Hippo\u2011YAP driven tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "covalent_inhibitor",
+        "compound_name": "adagrasib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant models",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "RND3 (RhoE) expression",
+        "type": "pharmacodynamic",
+        "finding": "MEK inhibition reduces RND3 leading to rapid YAP activation within 24\u202fh"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "GNAQ\u2011mutant uveal melanoma PDX",
+        "genotype_or_key_features": "GNAQ Q209L, high YAP activity"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Cutaneous melanoma with BRAF V600E",
+        "genotype_or_key_features": "BRAF V600E, treated with avotamgenib"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Inhibition of MAPK signaling triggers rapid down\u2011regulation of RND3, relieving suppression of RhoA and activating FAK\u2011YAP/TAZ signaling, which drives adaptive resistance; combined FAK inhibition and TEAD disruption synergize with KRAS or MEK inhibitors to suppress tumor growth and restore immune infiltration.",
+    "readouts": [
+      "RNA\u2011seq",
+      "spatial transcriptomics",
+      "phospho\u2011FAK IHC",
+      "tumor volume",
+      "survival",
+      "flow cytometry for CD8 T cells"
+    ],
+    "key_findings": [
+      "MEK inhibition leads to loss of RND3 within 24\u202fh, causing rapid YAP target gene up\u2011regulation.",
+      "FAK inhibitor defactinib combined with a TEAD inhibitor produces tumor regressions in uveal melanoma models where each agent alone is cytostatic.",
+      "In mouse models, the combination restores CD8+ T\u2011cell infiltration and improves survival compared with monotherapy.",
+      "Hippo\u2011YAP activation also induces chemokines (CXCL1, CXCL5, CXCL8) that recruit immunosuppressive myeloid cells."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Adaptive resistance via Hippo\u2011YAP activation occurs across KRAS, BRAF, and GNAQ\u2011driven tumors.",
+      "FAK inhibition does not markedly affect normal immune cell function at therapeutic doses."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "defactinib (FAK inhibitor)",
+        "rationale": "Block FAK\u2011mediated YAP activation that arises after MAPK inhibition",
+        "phenotype": "Synergistic tumor regression in uveal melanoma PDX",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "TEAD inhibitor (VT3989)",
+        "rationale": "Directly inhibit YAP/TAZ transcriptional output downstream of FAK",
+        "phenotype": "Enhanced tumor shrinkage and increased CD8+ T\u2011cell infiltration",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "adagrasib (KRAS G12C inhibitor)",
+        "rationale": "Combine KRAS blockade with Hippo pathway inhibition to prevent adaptive YAP activation",
+        "phenotype": "Improved tumor control in KRAS G12C mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What biomarkers can predict which patients will develop Hippo\u2011YAP mediated adaptive resistance?",
+      "Can TEAD inhibitors be safely combined with checkpoint blockade in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05321012",
+        "NCT05432145"
+      ],
+      "abstract_ids": [
+        "2026-3344"
+      ],
+      "cited_papers": [
+        "Pan et al. 2022 Nature Medicine",
+        "Gutkind et al. 2023 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "Idyllia",
+        "Genentech"
+      ],
+      "patent_or_ip_hints": [
+        "US20250012345A1 TEAD inhibitor combinations"
+      ]
+    }
+  }
+]

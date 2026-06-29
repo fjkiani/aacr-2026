@@ -1,0 +1,213 @@
+[
+  {
+    "talk_id": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Liling Wang",
+      "institution_or_pharma": "Unspecified (academic lab)",
+      "session_title": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson",
+      "talk_title": "Chromatin-associated condensates as drivers of cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we can convince you that these aberrant assemblies are a real driver of cancer\"",
+        "Speaker said: \"we have developed specific inhibitors that can block the binding of ENL YEATS domain with a set of histones and demonstrate that these specific interactions can have efficacy\"",
+        "Speaker said: \"the condensate are very large, very distinct, highly concentrated\"",
+        "Speaker said: \"the condensate can last for over 10 hours\"",
+        "Speaker said: \"partial reduction of RNA binding can lead to a meaningful reduction in transcription bursting that ultimately impair tumor genesis\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ENL YEATS domain inhibitor",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Mutations in ENL YEATS domain are distal from the binding pocket and may not fully disrupt condensate-driven transcription",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "partial reduction of condensate formation still drives tumorigenesis",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ENL YEATS domain inhibitors",
+        "ip_vulnerability_note": "Speaker disclosed that the inhibitor displaces ENL from chromatin but does not dissolve condensates, suggesting limited mechanistic scope",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Targeting only the histone\u2011acetyl binding may not fully abrogate condensate function, risking signal dilution"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ENL mutants form large, stable condensates that drive HOXA activation, then concluded that a short\u2011term inhibitor that only displaces ENL from chromatin is sufficient to achieve long\u2011term tumor control"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in\u2011human clinical data presented",
+        "Lack of biomarker\u2011stratified analysis of ENL mutant cancers",
+        "No comparison to standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Partial reduction of RNA\u2011binding (3A mutant) markedly decreases condensate formation and tumorigenesis, suggesting targeting the RNA\u2011ENL interface could overcome resistance to YEATS inhibitors.",
+        "transcript_evidence": "Speaker said: \"the 3A mutant ... can partially reduce the RNA binding... leads to reduced condensate numbers and almost complete abolishment of tumorigenesis\"",
+        "crispro_angle": "CrisPRO can model RNA\u2011protein interaction surfaces to design molecules that disrupt the ENL\u2011RNA patch, lowering condensate nucleation threshold.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "ENL mutations are enriched in pediatric Wilms' tumor, AML, and kidney cancer, but no diagnostic assay was presented; developing a companion biomarker could enable patient selection for ENL\u2011targeted therapies.",
+        "transcript_evidence": "Speaker said: \"a series of oncogenic mutations ... most frequently in pediatric kidney cancer, Wilms' tumor, and also small subset of AML\"",
+        "crispro_angle": "CrisPRO can integrate mutational signatures with chromatin state data to predict ENL\u2011driven condensate activity for patient stratification.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MENIN inhibitors (revumenib, ziftomenib)",
+        "context": "mentioned as a parallel therapeutic approach targeting chromatin complexes",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "KAT6A inhibitors (Pfizer)",
+        "context": "cited as a combination partner in breast cancer models",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What determines the specificity of ENL condensates for particular genomic loci such as HOXA?",
+      "Can locus\u2011specific antisense oligos or degraders more precisely disrupt pathogenic condensates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ENL YEATS domain inhibitors",
+        "RNA\u2011binding disruptors for ENL"
+      ],
+      "companies_to_monitor": [
+        "Companies developing ENL degraders"
+      ]
+    }
+  },
+  {
+    "talk_id": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Scott Armstrong",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson",
+      "talk_title": "Menin inhibition in MLL\u2011rearranged and NPM1\u2011mutant AML",
+      "rhetorical_signals": [
+        "Speaker said: \"the FDA has approved revumenib for the treatment of relapsed/refractory KMT2A rearranged AML and NPM1 AML\"",
+        "Speaker said: \"mutation of the small molecule binding pocket is a very common form of resistance\"",
+        "Speaker said: \"higher dose extends survival and shifts resistance mechanism away from binding\u2011pocket mutations\"",
+        "Speaker said: \"leukemias are mutating other proteins in the protein\u2011protein interaction, not the one where the inhibitor is binding\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Menin inhibitors (revumenib, ziftomenib, etc.)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Mutations in MLL (G123V, G137D) and LEDGF stabilize the MLL\u2011menin complex, bypassing inhibitor disruption",
+        "unexplained_resistance_quote": "Speaker said: \"we don't fully understand why some patients escaped\"",
+        "ghost_responder_admission": "Speaker noted a 30\u201140% response rate, implying a subset of patients respond while others do not",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical PDX dose\u2011escalation study (revumenib)",
+        "target_biology": "Disruption of menin\u2011MLL interaction to suppress HOXA/MEIS1 transcription",
+        "flawed_enrollment_criteria": "Preclinical mouse study lacks patient\u2011level biomarker stratification; dose levels may not reflect optimal human exposure",
+        "missing_biomarker": "Baseline MLL\u2011menin complex mutation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small number of PDX models limits generalizability",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Menin\u2011MLL small\u2011molecule inhibitors",
+        "ip_vulnerability_note": "Speaker disclosed that resistance arises via mutations in the inhibitor binding pocket and in other complex components, indicating the chemical scaffold can be circumvented",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on single\u2011agent therapy leads to rapid emergence of resistance mutations"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented structural data showing menin inhibitors effectively displace menin from chromatin, then concluded that higher dosing simply delays resistance rather than addressing the underlying mutational escape routes"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term clinical outcome data beyond early\u2011phase trials",
+        "Lack of systematic biomarker analysis for resistance mutations in patient cohorts",
+        "No head\u2011to\u2011head comparison with standard chemotherapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can predict and design molecules that disrupt the stabilizing MLL\u2011LEDGF interface (e.g., G137D mutation), overcoming resistance that bypasses menin binding.",
+        "transcript_evidence": "Speaker said: \"leukemias are mutating other proteins in the protein\u2011protein interaction, not the one where the inhibitor is binding\"",
+        "crispro_angle": "Use computational modeling of multivalent interfaces to identify allosteric sites for degrader development against MLL or LEDGF.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a diagnostic assay to detect MLL, LEDGF, or menin binding\u2011pocket mutations pre\u2011treatment to guide menin inhibitor use.",
+        "transcript_evidence": "Speaker said: \"mutation of the small molecule binding pocket is a very common form of resistant to single\u2011agent therapy\"",
+        "crispro_angle": "Leverage CrisPRO's predictive pipeline to correlate mutation profiles with functional disruption of the menin\u2011MLL complex.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine menin inhibitors with KAT6A/7 inhibitors to achieve synergistic suppression of HOXA/MEIS1 transcription, as suggested by cross\u2011talk with ENL condensate biology.",
+        "transcript_evidence": "Speaker said: \"KAT6A and menin may be working together in this setting as well\"",
+        "crispro_angle": "Model combined epigenetic perturbations to predict additive effects on transcriptional programs.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revumenib (Syndax)",
+        "context": "FDA\u2011approved menin inhibitor discussed as a lead compound",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Ziftomenib (Cure Oncology)",
+        "context": "Another menin inhibitor in clinical development",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Blexominib (Janssen)",
+        "context": "Menin inhibitor used in preclinical dose\u2011escalation experiments",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What proportion of clinical resistance is driven by non\u2011binding\u2011pocket mutations versus other adaptive mechanisms?",
+      "Can menin degraders fully overcome resistance mutations in MLL or LEDGF?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04576156"
+      ],
+      "assets_to_track": [
+        "Revumenib",
+        "Ziftomenib",
+        "Blexominib"
+      ],
+      "companies_to_monitor": [
+        "Syndax Pharmaceuticals",
+        "Cure Oncology",
+        "Janssen"
+      ]
+    }
+  }
+]

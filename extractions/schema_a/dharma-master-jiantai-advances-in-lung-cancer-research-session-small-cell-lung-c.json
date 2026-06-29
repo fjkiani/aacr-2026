@@ -1,0 +1,431 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::osar::1",
+    "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+    "talk_title": "Transcription factor subtypes and DLL3 bispecific T\u2011cell engager tarlatamab resistance mechanisms in small cell lung cancer",
+    "speaker": {
+      "name": "Dr. Osar",
+      "affiliation": "Harvard Medical School, Dana\u2011Farber Cancer Institute, Lowe Center for Thoracic Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "small cell lung cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "biomarker_development",
+      "liquid_biopsy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DLL3",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "bispecific",
+        "compound_name": "tarlatamab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ASCL1 subtype SCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NEUROD1",
+        "alteration": "",
+        "pathway": "lineage_transcription_factor",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SCLC resistance",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ASCL1 subtype signature",
+        "type": "predictive",
+        "assay": "cell\u2011free ChIP\u2011seq with APEX inference",
+        "finding": "80% response rate in patients with ASCL1 subtype (n=46 cohort)"
+      },
+      {
+        "name": "NEUROD1 expression",
+        "type": "resistance",
+        "assay": "cell\u2011free ChIP\u2011seq / RNA\u2011seq",
+        "finding": "Upregulated in acquired resistance; associated with poor response"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "tarlatamab treated SCLC patients",
+        "genotype_or_key_features": "46 patients, 22 responders, 18 non\u2011responders"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "BLK6 GEM\u2011derived ASCL1 subtype SCLC line",
+        "genotype_or_key_features": "ASCL1+, DLL3+, DLL3 KO and NEUROD1\u2011overexpressing derivatives"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "TR2 resistant line",
+        "genotype_or_key_features": "Acquired resistance with NEUROD1 up, DLL3 down"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "35-40%",
+        "confidence_interval": "",
+        "n": "n=46",
+        "population": "tarlatamab second\u2011line SCLC",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Duration of response",
+        "value": "7-9 months",
+        "confidence_interval": "",
+        "n": "n=46",
+        "population": "responders",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Response in ASCL1 subtype",
+        "value": "80%",
+        "confidence_interval": "",
+        "n": "n=46",
+        "population": "ASCL1 subtype patients",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Response in PALCH2\u2011F3 subtype",
+        "value": "0%",
+        "confidence_interval": "",
+        "n": "n=46",
+        "population": "PALCH2\u2011F3 patients",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Tarlatamab is a DLL3\u2011CD3 bispecific T\u2011cell engager that induces tumor cell killing in DLL3\u2011high ASCL1 SCLC. Resistance emerges via a transcriptional switch to a NEUROD1 subtype, leading to DLL3 down\u2011regulation and impaired T\u2011cell activation, with NEUROD1 overexpression causally driving early resistance in mouse models.",
+    "readouts": [
+      "cell\u2011free ChIP\u2011seq",
+      "APEX inferred RNA expression",
+      "IHC",
+      "flow cytometry",
+      "tumor growth curves in mice",
+      "RNA\u2011seq",
+      "ChIP\u2011seq"
+    ],
+    "key_findings": [
+      "Tarlatamab achieved a 35\u201140% ORR and 7\u20119 month DOR in second\u2011line SCLC (n=46).",
+      "ASCL1 transcriptional subtype correlated with response; 80% of ASCL1 patients responded.",
+      "NEUROD1 up\u2011regulation and DLL3 loss were observed at acquired resistance in both patients and mouse models.",
+      "CRISPR\u2011mediated DLL3 knockout abrogated tarlatamab binding and killing in syngeneic models.",
+      "NEUROD1 overexpression in tumor cells caused early resistance to tarlatamab in vivo."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Acquired resistance associated with ASCL1\u2192NEUROD1 transcriptional switch and DLL3 down\u2011regulation.",
+      "NEUROD1 overexpression accelerates resistance, suggesting a causal role."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "NEUROD1 pathway inhibitor (hypothetical)",
+        "rationale": "Prevent transcriptional switch that drives DLL3 loss and resistance",
+        "phenotype": "Potentially sustain tarlatamab efficacy",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What molecular mechanism links NEUROD1 activation to DLL3 down\u2011regulation?",
+      "Can DLL3 expression be re\u2011induced after drug holiday to restore sensitivity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Harvard Medical School"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::byers::2",
+    "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+    "talk_title": "Antibody\u2011drug conjugates targeting DLL3, CES6, B7H3 and other surface antigens in small cell and high\u2011grade neuroendocrine cancers",
+    "speaker": {
+      "name": "Dr. Lauren Byers",
+      "affiliation": "MD Anderson Cancer Center, Thoracic Section Chief",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "small cell lung cancer",
+      "high\u2011grade neuroendocrine cancers"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "ADC",
+      "targeted_therapy",
+      "cancer_vaccines",
+      "clinical_trial",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DLL3",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "ABBV\u2011706",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SCLC and neuroendocrine tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CES6",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "ABBV\u2011706 (CES6 ADC)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SCLC and other high\u2011grade neuroendocrine cancers",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "B7H3",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SCLC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CES6 IHC expression",
+        "type": "eligibility",
+        "assay": "IHC",
+        "finding": "High CES6 expression correlated with robust responses in SCLC and neuroendocrine tumors"
+      },
+      {
+        "name": "SLFN11",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "SLFN11 positivity associated with greater ADC payload sensitivity"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "ABBV\u2011706 CES6 ADC trial",
+        "genotype_or_key_features": "Patients with relapsed SCLC or high\u2011grade neuroendocrine cancers, n\u2248127 evaluable"
+      },
+      {
+        "model_type": "PDX",
+        "name": "SCLC and neuroendocrine PDX panel",
+        "genotype_or_key_features": "400+ models representing treatment\u2011na\u00efve and relapsed disease"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "\u224860%",
+        "confidence_interval": "",
+        "n": "n=127 evaluable",
+        "population": "CES6 ADC treated SCLC/high\u2011grade neuroendocrine patients",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Time to response",
+        "value": "\u22481 week",
+        "confidence_interval": "",
+        "n": "n=127",
+        "population": "same cohort",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "ABBV\u2011706 is an ADC linking a cytotoxic Top1 payload to antibodies against surface antigens DLL3, CES6 or B7H3, delivering DNA\u2011damage\u2013inducing payloads selectively to SCLC and high\u2011grade neuroendocrine tumors, with SLFN11 expression enhancing payload efficacy.",
+    "readouts": [
+      "IHC",
+      "waterfall plots",
+      "tumor burden imaging",
+      "PK sampling",
+      "SLFN11 IHC"
+    ],
+    "key_findings": [
+      "CES6\u2011targeted ADC (ABBV\u2011706) produced a ~60% ORR in relapsed SCLC and high\u2011grade neuroendocrine cancers (n=127).",
+      "Responses were rapid, often within one week of treatment initiation.",
+      "SLFN11 positivity correlated with higher response rates, suggesting a predictive biomarker for ADC payload sensitivity.",
+      "ADC activity observed across diverse neuroendocrine sites (small cell bladder, cervix, Merkel cell carcinoma).",
+      "Preclinical PDX models (\u2248400) recapitulated clinical efficacy and supported biomarker development."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Low SLFN11 expression linked to reduced ADC efficacy, indicating a potential resistance mechanism."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ATR inhibitor",
+        "rationale": "Enhance DNA damage response in SLFN11\u2011low tumors",
+        "phenotype": "Improved ADC efficacy in preclinical models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will combining CES6 ADC with tarlatamab overcome resistance in DLL3\u2011low, neuroD1\u2011high tumors?",
+      "Can SLFN11 be therapeutically up\u2011regulated to sensitize resistant tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AbbVie"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c::venkatesh::3",
+    "session_title": "dharma-master-jiantai-advances-in-lung-cancer-research-session-small-cell-lung-c",
+    "talk_title": "Neuronal activity drives proliferation and plasticity of small cell lung cancer brain metastases and primary lung tumors",
+    "speaker": {
+      "name": "Dr. Hamsa Venkatesh",
+      "affiliation": "Harvard Medical School, Brigham and Women's Hospital, Assistant Professor",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "neuroscience",
+      "basic_science",
+      "translational",
+      "combination_therapy",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GABA_A receptor",
+        "alteration": "",
+        "pathway": "neurotransmission",
+        "modality": "other",
+        "compound_name": "Gabazine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SCLC cells co\u2011cultured with GABAergic neurons",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Voltage\u2011gated sodium channels",
+        "alteration": "",
+        "pathway": "neuronal activity",
+        "modality": "other",
+        "compound_name": "Tetrodotoxin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Neuronal activity blockade in co\u2011culture",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Levetiracetam target (SV2A)",
+        "alteration": "",
+        "pathway": "synaptic vesicle release",
+        "modality": "other",
+        "compound_name": "Levetiracetam",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "In vivo SCLC brain metastasis models",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Syngeneic SCLC brain metastasis model with optogenetic premotor circuit activation",
+        "genotype_or_key_features": "BLK6\u2011derived ASCL1 SCLC cells implanted in mouse brain"
+      },
+      {
+        "model_type": "iPSC\u2011derived neuronal co\u2011culture",
+        "name": "GABAergic interneuron\u2011SCLC co\u2011culture",
+        "genotype_or_key_features": "Multiple SCLC cell lines with human iPSC GABAergic neurons"
+      },
+      {
+        "model_type": "genetic lung SCLC model",
+        "name": "Kras/Trp53/Rb1 GEM model",
+        "genotype_or_key_features": "Lung tumors innervated; unilateral vagotomy performed"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Neuronal activity, via glutamatergic and especially depolarizing GABAergic signaling, induces depolarization of SCLC cells, promoting proliferation, invasion, and a transcriptional shift toward a neuroD1\u2011like phenotype; direct tumor depolarization recapitulates these effects, and anti\u2011seizure drug levetiracetam suppresses tumor growth in brain metastasis models.",
+    "readouts": [
+      "optogenetics",
+      "patch\u2011clamp electrophysiology",
+      "calcium imaging",
+      "single\u2011cell RNA\u2011seq",
+      "immunoelectron microscopy",
+      "tumor burden imaging",
+      "field potential recordings"
+    ],
+    "key_findings": [
+      "Optogenetic activation of premotor cortical circuits increased SCLC brain tumor proliferation and invasion in mice.",
+      "SCLC cells receive depolarizing GABAergic currents due to high intracellular chloride, driving growth.",
+      "Co\u2011culture with GABAergic neurons boosted proliferation of all tested SCLC lines; effect blocked by gabazine or tetrodotoxin.",
+      "Direct optogenetic depolarization of SCLC cells in vivo accelerated tumor burden, confirming depolarization as the driver.",
+      "Vagotomy reduced lung tumor initiation and extended survival in a GEM SCLC model.",
+      "Levetiracetam treatment markedly decreased tumor burden and proliferation in multiple SCLC brain metastasis models."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "Levetiracetam",
+        "rationale": "Block activity\u2011driven tumor growth via SV2A\u2011mediated synaptic transmission inhibition",
+        "phenotype": "Reduced tumor burden and proliferation in brain metastasis models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "GABA_A receptor antagonist (gabazine)",
+        "rationale": "Prevent depolarizing GABA signaling that fuels SCLC growth",
+        "phenotype": "Suppressed proliferation in co\u2011culture assays",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What downstream signaling pathways link neuronal depolarization to SCLC proliferation?",
+      "Can systemic neuromodulatory drugs improve outcomes in patients with SCLC brain metastases?",
+      "Does vagotomy or pharmacologic denervation affect response to standard SCLC therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

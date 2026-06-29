@@ -1,0 +1,313 @@
+[
+  {
+    "talk_id": "ai-revolution-in-cancer-research::leskovec::1",
+    "session_title": "ai-revolution-in-cancer-research",
+    "talk_title": "Agentic AI for accelerating biomedical discovery",
+    "speaker": {
+      "name": "Jure Leskovec",
+      "affiliation": "Stanford University, Computer Science Department",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "Bi Omni",
+        "genotype_or_key_features": "not specified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Bi Omni is an open\u2011source AI agent that integrates a curated environment of >100 biomedical tools, databases, and wet\u2011lab robots, enabling it to plan, execute, and iteratively refine experimental protocols, data analyses, and hypothesis generation, thereby automating and accelerating the scientific discovery loop.",
+    "readouts": [],
+    "key_findings": [
+      "Bi Omni performed a full plasmid cloning design in ~10\u202fminutes, producing a protocol that was experimentally validated as correct.",
+      "The agent completed a 30\u2011human multimodal data analysis (458 Excel files) in ~35\u202fminutes, a task estimated to take weeks by a post\u2011doc.",
+      "In internal benchmarks across variant prioritization, GWAS gene discovery, perturbation screen design, scRNA\u2011seq analysis, drug repurposing, microbiome taxa analysis, and rare\u2011disease diagnosis, Bi Omni achieved accuracy comparable to or exceeding specialist tools despite no task\u2011specific engineering.",
+      "Over a three\u2011month public beta, >10,000 users executed ~70,000 automated research tasks, demonstrating broad utility across academia, pharma, and clinical settings."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-revolution-in-cancer-research::wang::2",
+    "session_title": "ai-revolution-in-cancer-research",
+    "talk_title": "Foundation and virtual cell models for single\u2011cell biology",
+    "speaker": {
+      "name": "Bo Wang",
+      "affiliation": "University of Toronto",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "XCell Ultra",
+        "genotype_or_key_features": "5\u202fbillion parameters, trained on Pisces dataset (\u224826\u202fM perturbed scRNA\u2011seq cells, 16 contexts)"
+      },
+      {
+        "model_type": "other",
+        "name": "BioReason Pro",
+        "genotype_or_key_features": "4\u202fbillion\u2011parameter language model fine\u2011tuned on protein GO reasoning data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "XCell extends the first\u2011generation scGBT foundation model by training a diffusion\u2011based language model on massive, diverse perturbation scRNA\u2011seq datasets (Pisces) to learn causal gene\u2011expression responses, while BioReason Pro aligns DNA\u2011 or protein\u2011sequence foundation models with large\u2011language\u2011model reasoning to predict pathway or GO\u2011term functions, using reinforcement learning and multimodal tokenization.",
+    "readouts": [
+      "diffusion language model training curves",
+      "benchmark accuracy on perturbation prediction tasks",
+      "LLM\u2011as\u2011judge evaluation scores"
+    ],
+    "key_findings": [
+      "Training on 26\u202fM perturbed cells across 16 biological contexts enabled XCell to recover known protein\u2011protein interaction networks and improve causal inference over descriptive models.",
+      "Scaling XCell from 50\u202fM to 5\u202fB parameters yielded a monotonic decrease in training loss and increase in test\u2011set accuracy, establishing a clear scaling law for virtual\u2011cell models.",
+      "BioReason Pro achieved >80\u202f% of predictions judged superior to human expert annotations on 200 novel proteins, outperforming baseline methods across GO\u2011term categories.",
+      "Both XCell and BioReason Pro were released open\u2011source; within two weeks, tens of thousands of users accessed the models, indicating strong community uptake."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How will virtual\u2011cell models generalize to patient\u2011level organoid or in\u2011vivo perturbation data with limited training examples?",
+      "Can DNA\u2011sequence reasoning models be extended to predict drug\u2011response phenotypes directly from genomic variants?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Zara Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-revolution-in-cancer-research::saria::3",
+    "session_title": "ai-revolution-in-cancer-research",
+    "talk_title": "Real\u2011time AI augmentation for sepsis and palliative\u2011care in the clinic",
+    "speaker": {
+      "name": "Suchi Saria",
+      "affiliation": "Johns Hopkins University; Founder & CEO, Bayesian Health",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "combination_therapy",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Sepsis detection AI (Cleveland Clinic deployment)",
+        "genotype_or_key_features": "mixture\u2011of\u2011experts transformer on multimodal EMR data"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Palliative\u2011care early\u2011alert AI (Mayo Clinic deployment)",
+        "genotype_or_key_features": "same architecture applied to oncology\u2011related admissions"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "sensitivity",
+        "value": "80%\u201190%",
+        "confidence_interval": "",
+        "n": "n=~20,000 admissions across 4 health systems",
+        "population": "hospitalized patients (including oncologic subcohort)",
+        "comparator": "existing rule\u2011based sepsis alerts",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "lead_time_improvement",
+        "value": "3.5\u202fhours earlier detection (median)",
+        "confidence_interval": "",
+        "n": "n=~5,000 sepsis cases",
+        "population": "sepsis patients",
+        "comparator": "historical alert system",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "alert_volume_reduction",
+        "value": "7,000 fewer alerts per month",
+        "confidence_interval": "",
+        "n": "n=450\u2011bed hospital",
+        "population": "all admissions",
+        "comparator": "baseline alert count",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "clinical_adoption",
+        "value": "80%\u201190% of alerts reviewed by clinicians",
+        "confidence_interval": "",
+        "n": "n=~12,000 flagged events",
+        "population": "flagged sepsis or palliative\u2011care alerts",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "mortality_reduction",
+        "value": "significant decrease (p<0.01) in in\u2011hospital mortality for sepsis cohort",
+        "confidence_interval": "",
+        "n": "n=~4,000 sepsis patients",
+        "population": "sepsis patients",
+        "comparator": "pre\u2011deployment period",
+        "maturity": "interim"
+      },
+      {
+        "metric": "30\u2011day readmission reduction",
+        "value": "\u224815% relative reduction in oncology palliative\u2011care cohort",
+        "confidence_interval": "",
+        "n": "n=1,200 oncology admissions",
+        "population": "oncology patients eligible for palliative care",
+        "comparator": "historical control",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A real\u2011time multimodal transformer model ingests continuous EMR streams (labs, vitals, notes, meds) and outputs patient\u2011specific risk scores; integrated as an EHR\u2011embedded modular agent, it surfaces transparent alerts, auto\u2011generates order\u2011sets and documentation, and feeds back clinician responses for continuous monitoring and drift detection.",
+    "readouts": [
+      "real\u2011time risk score",
+      "alert flag with explanatory summary",
+      "order\u2011set recommendation",
+      "documentation auto\u2011populate"
+    ],
+    "key_findings": [
+      "AI\u2011augmented sepsis detection achieved 80%\u201190% sensitivity while reducing false\u2011positive alerts by ~10\u2011fold compared with legacy rule\u2011based systems.",
+      "Median time\u2011to\u2011treatment was advanced by 3.5\u202fhours, leading to a statistically significant reduction in in\u2011hospital mortality (p<0.01).",
+      "Clinician adoption of AI alerts reached 80%\u201190% across four health systems, demonstrating high workflow integration.",
+      "In oncology\u2011focused palliative\u2011care deployment, early alerts increased appropriate consults and cut 30\u2011day readmissions by ~15%, also lowering total cost of care.",
+      "A governance layer continuously monitors model drift, enabling rapid root\u2011cause analysis and model re\u2011training without interrupting care."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Initial rule\u2011based alerts suffered from high nuisance\u2011alert rates (\u224820:1 false\u2011positive to true\u2011positive), which the AI system reduced to ~3:1."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EHR workflow integration layer",
+        "rationale": "Embed risk scores directly into clinician order\u2011sets to reduce friction and improve adoption",
+        "phenotype": "higher alert acknowledgment and faster treatment initiation",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How does model performance vary across demographic sub\u2011populations and rare disease cohorts?",
+      "What are the optimal strategies for continual learning while preserving patient safety?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Saria et al. 2024 Nature Medicine",
+        "Saria et al. 2023 JAMA"
+      ],
+      "company_or_sponsor": [
+        "Bayesian Health",
+        "Cleveland Clinic",
+        "Mayo Clinic"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-revolution-in-cancer-research::mahmood::4",
+    "session_title": "ai-revolution-in-cancer-research",
+    "talk_title": "Foundation models for pathology and multimodal patient representation",
+    "speaker": {
+      "name": "Faisal Mahmood",
+      "affiliation": "Harvard Medical School, Department of Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "translational",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "Titan",
+        "genotype_or_key_features": "whole\u2011slide representation model trained with iBOT, contrastive image\u2011text, 1\u2011B+ parameters"
+      },
+      {
+        "model_type": "other",
+        "name": "Threads",
+        "genotype_or_key_features": "multimodal contrastive model aligning H&E with molecular (IHC, transcriptomics) data"
+      },
+      {
+        "model_type": "other",
+        "name": "Virtual Patient Representation Model",
+        "genotype_or_key_features": "trained on 7.2\u202fM patients, 18 modalities, dynamic embedding updated over time"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Self\u2011supervised foundation models (e.g., Titan) learn dense embeddings of whole\u2011slide pathology images; multimodal contrastive training (Threads) aligns these embeddings with molecular assays, while a large\u2011scale multimodal patient encoder integrates structured and unstructured clinical data into a single dynamic vector for downstream prediction of diagnosis, prognosis, and treatment response.",
+    "readouts": [
+      "whole\u2011slide image embeddings",
+      "multimodal similarity scores",
+      "patient trajectory vectors"
+    ],
+    "key_findings": [
+      "Titan achieved state\u2011of\u2011the\u2011art performance on slide\u2011level classification tasks while using a single vector per slide, outperforming prior region\u2011based models.",
+      "Contrastive training with IHC and transcriptomic data (Threads) improved few\u2011shot classification accuracy by >20\u202f% on external cancer cohorts.",
+      "The 7.2\u202fM\u2011patient multimodal encoder clustered known disease ontologies without supervision, demonstrating emergent medical knowledge.",
+      "Similarity search using the patient embeddings retrieved clinically relevant matches for rare\u2011cancer cases and potential trial candidates."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How will dynamic patient embeddings handle longitudinal data drift and evolving clinical practice?",
+      "Can the virtual patient model be prospectively validated for trial matching in real time?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Mahmood et al. 2024 Nature Methods",
+        "Mahmood et al. 2023 Cell"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

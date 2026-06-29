@@ -1,0 +1,400 @@
+[
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::chinnaiyan::1",
+    "session_title": "prostate-cancer-basic-to-clinical-advances",
+    "talk_title": "Domain Alteration Chimeras (DALTACs) reprogram AR-p300 enhancer complexes in prostate cancer",
+    "speaker": {
+      "name": "Arul Chinnaiyan",
+      "affiliation": "University of Michigan",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "AR",
+        "alteration": "",
+        "pathway": "androgen_receptor_signaling",
+        "modality": "other",
+        "compound_name": "AR-p300 DALTAC",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AR\u2011positive prostate cancer cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EP300",
+        "alteration": "",
+        "pathway": "histone_acetyltransferase",
+        "modality": "other",
+        "compound_name": "AR-p300 DALTAC",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AR\u2011positive prostate cancer cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "N\u2011terminal H2B acetylation",
+        "type": "pharmacodynamic",
+        "assay": "immunofluorescence",
+        "finding": "Markedly elevated in malignant prostate epithelium versus benign and reduced after DALTAC treatment"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "22RV1",
+        "genotype_or_key_features": "AR\u2011positive, expresses AR\u2011V7 splice variant"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "VCAP",
+        "genotype_or_key_features": "AR\u2011positive, castration\u2011resistant xenograft"
+      },
+      {
+        "model_type": "organoid",
+        "name": "patient\u2011derived xenograft organoids",
+        "genotype_or_key_features": "AR\u2011positive prostate cancer"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "castrated VCAP xenograft",
+        "genotype_or_key_features": "AR\u2011positive, castration\u2011resistant"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The DALTAC heterobifunctional molecule simultaneously binds the androgen receptor ligand\u2011binding domain and the p300 bromodomain, inducing a ternary complex that repositions p300 from its native chromatin sites to AR\u2011bound enhancers. This relocalization extinguishes N\u2011terminal H2B acetylation, suppresses AR\u2011target gene transcription, and creates neomorphic complexes that impair transcriptional elongation, leading to selective cytotoxicity in AR\u2011positive prostate cancer cells.",
+    "readouts": [
+      "cellular_thermal_shift_assay",
+      "crystal_violet_assay",
+      "IC50_determination",
+      "proximity_ligation_assay",
+      "immunoprecipitation",
+      "mass_spectrometry",
+      "ChIP\u2011seq",
+      "histone_acetylation_mass_spec"
+    ],
+    "key_findings": [
+      "DALTAC induced ternary complex formation between AR and p300 confirmed by proximity ligation assay and IP\u2011mass spec.",
+      "In AR\u2011positive 22RV1 cells, 10\u202fnM DALTAC caused >90% reduction in crystal violet staining, whereas p300 inhibitor or AR inhibitor alone showed minimal effect.",
+      "Across a panel of prostate cancer cell lines, AR\u2011positive lines displayed nanomolar IC50s (median ~5\u202fnM) while AR\u2011negative and normal cell lines had IC50s >10\u202f\u00b5M, demonstrating >2000\u2011fold selectivity.",
+      "In castrated VCAP xenografts, oral DALTAC modestly inhibited tumor growth; intraperitoneal dosing achieved tumor regression in all treated mice with no regrowth after drug withdrawal.",
+      "Histone H2B N\u2011terminal acetylation, a pharmacodynamic biomarker, was abolished in tumors treated with DALTAC, correlating with loss of AR\u2011target gene expression.",
+      "Toxicology showed no significant weight loss, CBC, or chemistry abnormalities, indicating a favorable safety profile in mice."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "DALTAC activity is exquisitely dependent on co\u2011expression of AR and p300; AR\u2011negative prostate cancer and neuroblastoma cells are resistant.",
+      "Potential resistance mechanisms include down\u2011regulation of AR or p300 expression and emergence of AR splice variants lacking the ligand\u2011binding domain."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will DALTAC retain activity in enzalutamide\u2011resistant patient\u2011derived organoids?",
+      "What are the long\u2011term effects of sequestering p300 on non\u2011AR transcriptional programs?",
+      "Can normal androgen\u2011dependent tissues tolerate AR\u2011p300 gluing without functional impairment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Deshaies et al. 2020 Cell",
+        "Crews et al. 2019 Nat Chem Biol"
+      ],
+      "company_or_sponsor": [
+        "Arvinas",
+        "Halda",
+        "Xiaoming Wang Lab"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::bono::2",
+    "session_title": "prostate-cancer-basic-to-clinical-advances",
+    "talk_title": "Phase I/II trial of heterobifunctional BRD4\u2011AR degrader (RIPTag) in heavily pre\u2011treated CRPC",
+    "speaker": {
+      "name": "Johan de Bono",
+      "affiliation": "The Royal Marsden and ICR",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "castration\u2011resistant prostate cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "AR",
+        "alteration": "",
+        "pathway": "androgen_receptor_signaling",
+        "modality": "other",
+        "compound_name": "BRD4\u2011AR RIPTag",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AR\u2011mutated or splice\u2011variant CRPC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRD4",
+        "alteration": "",
+        "pathway": "bromodomain_readers",
+        "modality": "other",
+        "compound_name": "BRD4\u2011AR RIPTag",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AR\u2011positive CRPC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase I/II BRD4\u2011AR RIPTag trial",
+        "genotype_or_key_features": "Heavily pre\u2011treated CRPC, prior taxanes, AR\u2011targeted therapy, some with AR splice variants"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "PSA decline",
+        "value": "\u226550% decline in >30% of patients",
+        "confidence_interval": "",
+        "n": "n=?? (not specified)",
+        "population": "heavily pre\u2011treated CRPC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Objective tumor regression",
+        "value": "radiographic regressions observed in liver and prostate lesions",
+        "confidence_interval": "",
+        "n": "",
+        "population": "CRPC patients receiving RIPTag",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Maximum tolerated dose",
+        "value": "Not reached",
+        "confidence_interval": "",
+        "n": "",
+        "population": "CRPC cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Pharmacokinetic Cmax",
+        "value": "dose\u2011dependent increase, Tmax 46\u202fh",
+        "confidence_interval": "",
+        "n": "",
+        "population": "CRPC patients",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The heterobifunctional RIPTag molecule simultaneously binds BRD4 bromodomain and the AR ligand\u2011binding domain, creating a non\u2011degradative ternary complex that locks AR and BRD4 together, disrupting AR transcriptional programs without classic AR antagonism, leading to PSA reductions and radiographic tumor regressions in heavily pre\u2011treated CRPC.",
+    "readouts": [
+      "PSA measurement",
+      "radiographic imaging (CT/MRI)",
+      "pharmacokinetic sampling",
+      "adverse event monitoring"
+    ],
+    "key_findings": [
+      "No dose\u2011limiting toxicities observed; MTD not reached up to the highest tested dose (~1000\u202fDa molecule).",
+      "Patients experienced rapid, dose\u2011dependent increases in Cmax and AUC with steady\u2011state achieved within a few days.",
+      "Significant PSA declines (\u226550%) were seen in a subset of heavily pre\u2011treated CRPC patients, including those with AR splice variants.",
+      "Radiographic regressions were documented in liver metastases and primary prostate lesions, indicating drug penetration into sanctuary sites.",
+      "Common adverse events were mild nausea, anemia, and fatigue; overall tolerability was favorable."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Efficacy appears higher in patients with AR mutations or splice variants; the drug does not rely on AR degradation."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will the RIPTag maintain activity in castration\u2011sensitive metastatic disease?",
+      "What biomarkers predict response beyond AR mutation status?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Halda",
+        "Janssen"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "prostate-cancer-basic-to-clinical-advances::beltran::3",
+    "session_title": "prostate-cancer-basic-to-clinical-advances",
+    "talk_title": "DLL3\u2011targeted T\u2011cell engager gocatumig in neuroendocrine prostate cancer",
+    "speaker": {
+      "name": "Misha Beltran",
+      "affiliation": "Dana\u2011Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroendocrine prostate cancer"
+    ],
+    "clinical_stage": "phase_1_2",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_surface_protein_targeting",
+      "clinical_trial",
+      "biomarker_development",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DLL3",
+        "alteration": "",
+        "pathway": "Notch_inhibition",
+        "modality": "bispecific",
+        "compound_name": "gocatumig",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "DLL3\u2011positive neuroendocrine prostate cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "DLL3 expression (IHC)",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "High DLL3 expression in 86% of NEPC clusters; response rates did not correlate strongly with expression level"
+      },
+      {
+        "name": "ASCL1 expression",
+        "type": "exploratory",
+        "assay": "RNA\u2011seq/IHC",
+        "finding": "Strong correlation with DLL3; ASCL1 knock\u2011out reduces DLL3 levels"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase I/II gocatumig pan\u2011neuroendocrine carcinoma trial",
+        "genotype_or_key_features": "Heavily pre\u2011treated NEPC patients, mixed histology, prior therapies"
+      },
+      {
+        "model_type": "PDX",
+        "name": "DLL3\u2011positive NEPC PDX with human T cells",
+        "genotype_or_key_features": "DLL3 overexpression, neuroendocrine phenotype"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall response rate",
+        "value": "\u224850%",
+        "confidence_interval": "",
+        "n": "n=20 evaluable patients (interim)",
+        "population": "NEPC patients in gocatumig trial",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Disease control rate",
+        "value": "72%",
+        "confidence_interval": "",
+        "n": "n=20",
+        "population": "NEPC patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "PSA decline",
+        "value": "\u226590% decline in 50% of patients; \u226599% decline in 30% of patients",
+        "confidence_interval": "",
+        "n": "",
+        "population": "gocatumig\u2011treated NEPC cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Acquired resistance biomarker change",
+        "value": "Reduced DLL3 protein levels in post\u2011progression biopsies",
+        "confidence_interval": "",
+        "n": "",
+        "population": "Patients with initial response then progression",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Gocatumig is a bispecific T\u2011cell engager that binds DLL3 on neuroendocrine prostate cancer cells and CD3 on T cells, with an albumin\u2011binding domain to improve half\u2011life. Engagement redirects cytotoxic T cells to DLL3\u2011expressing tumor cells, inducing tumor regression; a by\u2011stander effect may contribute to activity against DLL3\u2011negative cells within heterogeneous tumors.",
+    "readouts": [
+      "IHC for DLL3 and ASCL1",
+      "RNA\u2011seq",
+      "flow cytometry of CD3+ T cells",
+      "radiographic imaging (CT/MRI)",
+      "PSA measurements"
+    ],
+    "key_findings": [
+      "Phase I/II trial showed an overall response rate of ~50% and disease control rate of 72% in heavily pre\u2011treated NEPC patients.",
+      "Deep PSA reductions were observed: 50% of patients achieved \u226590% PSA decline, and 30% achieved \u226599% decline.",
+      "Response did not strongly correlate with baseline DLL3 IHC intensity, indicating possible by\u2011stander killing or heterogeneous antigen expression.",
+      "Acquired resistance was associated with loss of DLL3 protein in post\u2011treatment biopsies, suggesting antigen loss as a resistance mechanism.",
+      "Pre\u2011clinical PDX models demonstrated potent tumor regression and increased CD3+ T\u2011cell infiltration after gocatumig treatment."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Loss of DLL3 expression in progressing lesions suggests antigen\u2011escape as a resistance pathway.",
+      "Heterogeneity of DLL3 within and between tumors may limit efficacy of single\u2011target approaches."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PARP inhibitor",
+        "rationale": "PARP inhibition depletes myeloid suppressor cells, potentially enhancing T\u2011cell engager activity",
+        "phenotype": "Pre\u2011clinical data show myeloid clearance and improved tumor control",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "PD\u20111/PD\u2011L1 blockade",
+        "rationale": "Combining checkpoint inhibition may overcome T\u2011cell exhaustion in the tumor microenvironment",
+        "phenotype": "Ongoing early\u2011phase combination trial",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What molecular features distinguish DLL3\u2011high responders from non\u2011responders despite similar antigen levels?",
+      "Can dual\u2011targeting (e.g., DLL3\u202f+\u202fB7\u2011H3) improve durability and prevent antigen\u2011loss resistance?",
+      "How does prior PSMA\u2011targeted radioligand therapy affect DLL3 expression and gocatumig efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Ku et al. 2023 Nat Med (DLL3 in NEPC)",
+        "Donad et al. 2022 Cancer Res (gocatumig preclinical)"
+      ],
+      "company_or_sponsor": [
+        "Halda",
+        "Janssen",
+        "Sanofi (via Vir)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

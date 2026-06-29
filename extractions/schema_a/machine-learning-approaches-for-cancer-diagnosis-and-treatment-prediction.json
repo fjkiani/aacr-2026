@@ -1,0 +1,506 @@
+[
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::wang::1",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "CUPIA 2 collaborative multi-agent LLM for cancer of unknown primary diagnosis",
+    "speaker": {
+      "name": "Kai Wang",
+      "affiliation": "OrigMed, Wistar Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "CUPIA 2 LLM framework",
+        "genotype_or_key_features": "NGS mutation profiles across 19 cancer types"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CUPIA 2 uses a multi-agent large language model ensemble to ingest NGS variant data and generate tissue-of-origin predictions with rationale derived from a 100,000-patient Smart Data database, achieving ~77% top\u20111 accuracy internally and ~62% on independent MSK data.",
+    "readouts": [
+      "LLM inference",
+      "probability scores",
+      "rationale generation"
+    ],
+    "key_findings": [
+      "CUPIA 2 achieved 77% top\u20111 accuracy and 93% top\u20113 accuracy across 19 cancer types in internal validation.",
+      "On independent MSK cohort (12,000 samples) top\u20111 accuracy was 62% and top\u20113 accuracy 82%.",
+      "Model provided rationale linking co\u2011mutations (e.g., KRAS G12D + TP53 R175H) to predicted tissue origins.",
+      "Chairman LLM overwrote 24% of ensemble predictions during training."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to improve performance on under\u2011represented cancer types such as small\u2011cell lung cancer and endometrial cancer?",
+      "Can multimodal inputs (RNA\u2011seq, imaging) be incorporated to boost accuracy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "OrigMed"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::singhal::2",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "Deep learning model predicts palbociclib response in ER+ HER2\u2011 negative advanced breast cancer",
+    "speaker": {
+      "name": "Akshat Singhal",
+      "affiliation": "City of Hope / UC San Diego",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "machine_learning",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CDK4/6",
+        "alteration": "",
+        "pathway": "cell_cycle",
+        "modality": "other",
+        "compound_name": "palbociclib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ER+ HER2\u2011 negative advanced breast cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "PalboVNN",
+        "genotype_or_key_features": "trained on 900 cell lines, 718 gene panel"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "UCSD cohort",
+        "genotype_or_key_features": "139 patients, NGS within \u00b1180 days of palbociclib start"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK cohort",
+        "genotype_or_key_features": "474 patients filtered to 474, NGS panel"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "hazard_ratio",
+        "value": "0.38",
+        "confidence_interval": "",
+        "n": "36",
+        "population": "UCSD palbociclib\u2011treated",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "median_PFS_difference",
+        "value": "14 months",
+        "confidence_interval": "",
+        "n": "36",
+        "population": "UCSD cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "hazard_ratio",
+        "value": "0.56",
+        "confidence_interval": "",
+        "n": "474",
+        "population": "MSK palbociclib\u2011treated",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "median_PFS_difference",
+        "value": "18 months",
+        "confidence_interval": "",
+        "n": "474",
+        "population": "MSK cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "A visible neural network maps genomic alterations to hierarchical protein complexes, enabling prediction of palbociclib sensitivity; the model stratifies patients into sensitive (HR\u202f0.38, median PFS +14\u202fmo) and resistant groups, with specificity for CDK4/6 inhibition versus endocrine therapy alone.",
+    "readouts": [
+      "deep neural network inference",
+      "protein complex activation scores"
+    ],
+    "key_findings": [
+      "PalboVNN stratified UCSD patients (n=36) into responders vs non\u2011responders with HR\u202f0.38 and median PFS benefit of 14\u202fmonths.",
+      "In the larger MSK cohort (n=474) the model retained significance (HR\u202f0.56) with an 18\u2011month median PFS advantage.",
+      "Model performance was specific to palbociclib\u2011containing regimens and did not stratify letrozole\u2011only patients.",
+      "Interpretation identified 18 protein assemblies (11 shared) driving predictions, including DNA integrity and AKT signaling.",
+      "A prospective phase\u2011II trial has been launched based on these findings."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "ROS1 mutation was a dominant driver of predicted resistance in a non\u2011responding patient."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can the VNN framework be generalized to other CDK4/6 inhibitors (ribociclib, abemaciclib) with comparable performance?",
+      "How will inclusion of clinical covariates (ancestry, comorbidities) affect model accuracy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "City of Hope"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::parmar::3",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "AI\u2011derived H&E biomarkers predict survival under immunotherapy vs chemotherapy in NEPTUNE NSCLC trial",
+    "speaker": {
+      "name": "Chintan Parmar",
+      "affiliation": "AstraZeneca",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "AI_ML",
+      "spatial_biology",
+      "biomarker_development",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "AI\u2011derived fibroblast density",
+        "type": "prognostic",
+        "assay": "AI segmentation of H&E",
+        "finding": "high fibroblast density associated with worse OS in both IO and chemo arms"
+      },
+      {
+        "name": "AI\u2011derived immune cell density",
+        "type": "predictive",
+        "assay": "AI segmentation of H&E",
+        "finding": "high immune density predicted better OS in IO arm but not in chemo arm"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NEPTUNE phase\u202fIII NSCLC",
+        "genotype_or_key_features": "468 H&E images (426 after QC), IO vs chemo arms"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall_survival_difference",
+        "value": "significant separation by median split of immune phenotype in IO arm",
+        "confidence_interval": "",
+        "n": "154 IO, 272 chemo",
+        "population": "NEPTUNE participants",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "PathAI's off\u2011the\u2011shelf AI model segments tumor, immune and fibroblast compartments on H&E slides, quantifies densities and spatial relationships, and these features improve survival stratification beyond PD\u2011L1 and TMB, especially predicting benefit from immunotherapy.",
+    "readouts": [
+      "AI segmentation",
+      "density metrics",
+      "spatial relationship scores"
+    ],
+    "key_findings": [
+      "Fibroblast density was a negative prognostic marker in both IO and chemo arms (high density \u2192 worse OS).",
+      "Immune cell density showed a predictive interaction: high density correlated with improved OS only in the immunotherapy arm.",
+      "Multivariate Cox model adding H&E features to PD\u2011L1/TMB achieved significant separation (p<0.05) whereas clinical features alone did not.",
+      "At 18\u2011month follow\u2011up, high\u2011risk group defined by H&E features had 21% event rate, supporting enrichment potential."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will prospective validation confirm the added predictive value of H&E\u2011derived biomarkers?",
+      "Can these AI features be integrated with other omics (e.g., RNA\u2011seq) for further improvement?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::pandya::4",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "Deep learning predicts metabolic pathway activity from routine H&E slides",
+    "speaker": {
+      "name": "Pahini Pandya",
+      "affiliation": "University of Cambridge",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "ResNet34\u2011decoder metabolic pathway predictor",
+        "genotype_or_key_features": "Tile\u2011level H&E images labeled with binary pathway activity from GSMMs"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A ResNet34 encoder\u2011decoder network is trained on 256\u202f\u00d7\u202f256 H&E tiles paired with binary metabolic pathway activity derived from patient\u2011specific genome\u2011scale metabolic models (GSMMs) built from TCGA transcriptomics, enabling prediction of pathway enrichment directly from morphology.",
+    "readouts": [
+      "H&E tile images",
+      "ResNet34 feature maps",
+      "binary pathway activity"
+    ],
+    "key_findings": [
+      "Across 21 cancer types, 87% of 450 pathway\u2011cancer models achieved AUC\u202f>\u202f0.5.",
+      "9% of models (top 10 pathways) reached AUC\u202f0.65\u20130.85, notably nucleotide metabolism (AUC\u202f0.85 in TGCT) and nuclear transport (AUC\u202f0.79 in COAD).",
+      "Metabolic pathways with high predictability clustered in nucleotide synthesis, nuclear/mitochondrial transport, and fatty\u2011acid \u03b2\u2011oxidation.",
+      "Demonstrated feasibility of using H&E morphology to infer functional metabolic states, suggesting utility for trial enrichment."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will external validation on independent cohorts confirm the high\u2011performing pathways?",
+      "Can predicted metabolic activity be linked to response to pathway\u2011targeted therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::ajami::5",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "Longitudinal fusion of low\u2011dose CT improves lung cancer risk prediction",
+    "speaker": {
+      "name": "Hanieh Ajami",
+      "affiliation": "Moffitt Cancer Center / University of South Florida",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "translational",
+      "imaging"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Hybrid, Bi\u2011fusion, Tri\u2011fusion architectures",
+        "genotype_or_key_features": "Sybil CNN features from up to three LDCT time points"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC_year1",
+        "value": "0.99",
+        "confidence_interval": "",
+        "n": "NLST cohort",
+        "population": "screened participants",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "AUC_year6",
+        "value": "0.94",
+        "confidence_interval": "",
+        "n": "NLST cohort",
+        "population": "screened participants",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Multiple low\u2011dose CT scans are processed by the Sybil model to extract encoded and attention features; these are fused via vision and temporal transformers (Hybrid) or concatenated (Bi/ Tri\u2011fusion) to produce six\u2011year risk scores, leveraging temporal disease progression for improved discrimination.",
+    "readouts": [
+      "CT scans",
+      "Sybil CNN embeddings",
+      "vision transformer",
+      "temporal transformer",
+      "risk scores"
+    ],
+    "key_findings": [
+      "Hybrid architecture achieved near\u2011perfect AUC (0.99) at year\u202f1 and maintained 0.94 at year\u202f6 on NLST test set.",
+      "Hybrid model outperformed Bi\u2011fusion and Tri\u2011fusion across all horizons and also generalized to external Moffitt cohort after fine\u2011tuning.",
+      "Statistical tests confirmed significant performance differences (p\u202f<\u202f0.05) between hybrid and other models.",
+      "Model handles missing time points via attention masking, making it applicable to real\u2011world screening data."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How will incorporation of clinical/demographic risk factors affect long\u2011term prediction?",
+      "Can federated learning across institutions improve robustness to variable scan intervals?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::wang::6",
+    "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+    "talk_title": "Multimodal deep learning predicts gastric cancer response to first\u2011line anti\u2011PD\u20111 therapy",
+    "speaker": {
+      "name": "Jingyuan Wang",
+      "affiliation": "Fudan University Zhongshan Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "gastric cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "multimodal",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD\u20111",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti\u2011PD\u20111 therapy",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "microsatellite stable gastric cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CRP multimodal model prediction",
+        "type": "predictive",
+        "assay": "integrated radiomics, pathomics, clinical data",
+        "finding": "predicted partial response associated with longer PFS (HR\u202f0.45) and OS (HR\u202f0.48) across training, validation, and two external cohorts"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "CRT multimodal model",
+        "genotype_or_key_features": "CT radiomics + H&E pathomics (CLIME + CNN\u2011Transformer) + clinical features"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC_response",
+        "value": "0.97",
+        "confidence_interval": "",
+        "n": "84 patients with both modalities (training)",
+        "population": "Fudan cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "hazard_ratio_PFS",
+        "value": "0.45",
+        "confidence_interval": "",
+        "n": "84",
+        "population": "Fudan training",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "hazard_ratio_OS",
+        "value": "0.48",
+        "confidence_interval": "",
+        "n": "84",
+        "population": "Fudan training",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "A self\u2011attention fusion network combines CT\u2011derived radiomic features, H&E\u2011derived graph\u2011based pathomic embeddings, and clinical variables to predict first\u2011line chemo\u2011immunotherapy response; high predicted PR status correlates with increased tumor fraction, up\u2011regulated immune\u2011activating pathways, and improved survival.",
+    "readouts": [
+      "CT radiomics",
+      "pathomics graphs",
+      "self\u2011attention fusion",
+      "risk scores"
+    ],
+    "key_findings": [
+      "CRT model achieved AUC\u202f0.97 for response prediction in training set and validated across two external cohorts.",
+      "Predicted PR patients had significantly longer PFS and OS (HR\u202f\u2248\u202f0.45\u20130.48) after multivariate adjustment for age, sex, PD\u2011L1 CPS.",
+      "Pathway analysis showed enrichment of immune\u2011activating signatures (alpha/gamma response) in predicted PR group versus immune\u2011inhibitory pathways (IL\u201110, NF\u2011\u03baB) in non\u2011PR group.",
+      "Model outperformed PD\u2011L1 CPS and unimodal radiomics or pathomics models in precision\u2011recall and confusion matrix metrics."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "High fibroblast density (from pathomics) was linked to non\u2011PR status and immune\u2011inhibitory gene expression."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will prospective multicenter trials confirm the CRT model\u2019s predictive power for treatment selection?",
+      "Can the model be adapted for other immunotherapy regimens or combination therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Yangtze River Delta Guochi Intelligent Medical Technology Co."
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

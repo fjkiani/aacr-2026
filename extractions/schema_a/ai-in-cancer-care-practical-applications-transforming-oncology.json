@@ -1,0 +1,172 @@
+[
+  {
+    "talk_id": "ai-in-cancer-care-practical-applications-transforming-oncology::brooks::1",
+    "session_title": "ai-in-cancer-care-practical-applications-transforming-oncology",
+    "talk_title": "CODA: 3D Mapping of Tumors at Single\u2011Cell Resolution Across Organs and Species",
+    "speaker": {
+      "name": "Dennis Brooks",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "ovarian cancer",
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "imaging",
+      "tumor_microenvironment",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "organ",
+        "name": "human pancreas",
+        "genotype_or_key_features": "healthy and disease\u2011adjacent tissue"
+      },
+      {
+        "model_type": "organ",
+        "name": "human fallopian tube",
+        "genotype_or_key_features": "BRCA\u2011negative healthy women"
+      },
+      {
+        "model_type": "organ",
+        "name": "mouse lung",
+        "genotype_or_key_features": "wild\u2011type"
+      },
+      {
+        "model_type": "organ",
+        "name": "rhesus macaque fetus",
+        "genotype_or_key_features": "developmental stage"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CODA reconstructs large tissue volumes (multi\u2011centimeter cubes) at sub\u2011micron resolution by iteratively registering serial H&E sections, segmenting tissue components with a CNN, and deconvolving cellular morphology, enabling 3D mapping of individual cells, vessels, nerves, and precancerous lesions across organs and species.",
+    "readouts": [
+      "serial H&E imaging",
+      "CNN segmentation",
+      "IHC (Ki\u201167, p53)",
+      "spatial transcriptomics",
+      "spatial proteomics (CODEX)",
+      "spatial metabolomics",
+      "laser capture microdissection sequencing"
+    ],
+    "key_findings": [
+      "Reconstructed a 3\u2011centimeter\u2011cube of human pancreas at sub\u2011micron resolution, positioning ~1\u202fbillion cells with >97% segmentation accuracy.",
+      "Identified 100\u2013500 microscopic precursor lesions per healthy pancreas sample; disease\u2011adjacent pancreas contained up to 1\u202f000 lesions.",
+      "Laser\u2011capture sequencing of individual lesions revealed distinct point\u2011mutation profiles, demonstrating multifocality in precancerous lesions.",
+      "Mapped entire fallopian tubes from seven healthy women and found STIC\u2011like lesions in all, challenging the prevailing belief that such lesions are rare in normal tissue.",
+      "Demonstrated that blood vessels and nerves follow a scale\u2011free fractal geometry across species (human, mouse, rhesus macaque) and developmental stages.",
+      "Developed generative AI tools (InterpolAI) to interpolate missing histology sections, achieving Pearson correlation >0.99 with ground\u2011truth images."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the smallest length scale at which CODA provides biologically meaningful information for different research questions?",
+      "Can 3D snapshots of T\u2011cell spatial organization be used to predict tumor clearance or response to immunotherapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Chung et al. 2021 Cancer Research"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "ai-in-cancer-care-practical-applications-transforming-oncology::berger::2",
+    "session_title": "ai-in-cancer-care-practical-applications-transforming-oncology",
+    "talk_title": "AI\u2011Enabled Clinical Genomics Workflows for Precision Oncology",
+    "speaker": {
+      "name": "Michael Berger",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "clinician_investigator",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "translational",
+      "targeted_therapy",
+      "biomarker_development",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK\u2011IMPACT cohort",
+        "genotype_or_key_features": "500\u2011gene tumor\u2011normal panel; >100,000 patients, >140,000 tumors"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "patients sequenced",
+        "value": "100,000+",
+        "confidence_interval": "",
+        "n": "n=100,000",
+        "population": "all solid tumors and hematologic malignancies",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "tumors sequenced",
+        "value": "140,000+",
+        "confidence_interval": "",
+        "n": "n=140,000",
+        "population": "clinical tumor specimens",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "AI methods are integrated into the MSK\u2011IMPACT clinical genomics pipeline to improve variant detection (deep learning callers, error\u2011modeling), functional interpretation (deep neural networks, AlphaMisSense, SpliceAI), and clinical decision support (LLMs with retrieval\u2011augmented generation, AI\u2011driven trial matching), thereby increasing sensitivity, reducing turnaround time, and expanding actionable insights across cancer types.",
+    "readouts": [
+      "NGS (tumor\u2011normal panel)",
+      "deep learning variant callers (DeepVariant, DeepSomatic)",
+      "AI\u2011based MSI detection (myMSI)",
+      "AI\u2011based HRD detection (Sigma)",
+      "LLM\u2011based knowledge\u2011base querying (OncoKB, Molecular Oncology Almanac)",
+      "NLP extraction from clinical notes"
+    ],
+    "key_findings": [
+      "Sequenced >100,000 patients using the MSK\u2011IMPACT 500\u2011gene tumor\u2011normal panel, generating a dataset that enables AI\u2011driven analyses.",
+      "Deep learning variant callers (e.g., DeepVariant) achieve higher sensitivity in difficult genomic regions compared with traditional callers.",
+      "AI\u2011based MSI detection (myMSI) reduced indeterminate cases relative to MSI\u2011Sensor, improving diagnostic confidence.",
+      "AlphaMisSense and SpliceAI improve pathogenicity prediction for missense and splice variants by incorporating protein structure and splicing models.",
+      "A neural network trained on 40,000 MSK\u2011IMPACT profiles predicts cancer type with ~80% accuracy overall and >90% for high\u2011confidence predictions.",
+      "LLM\u2011augmented tumor board agents (GPT\u20114\u2011based) doubled decision\u2011support accuracy compared with GPT\u20114 alone in a prospective evaluation."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can AI models be validated and regulated to ensure safety and equity across diverse patient populations?",
+      "What are the best practices for integrating AI\u2011generated confidence intervals into clinician decision\u2011making?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Berger et al. 2024 Cancer Cell",
+        "Park et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca (MetaCH tool)",
+        "Google DeepMind (AlphaMisSense, AlphaGenome)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

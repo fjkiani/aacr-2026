@@ -1,0 +1,467 @@
+[
+  {
+    "talk_id": "cellular-therapies-and-complex-immunotherapies::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Omar Nadeem",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "cellular-therapies-and-complex-immunotherapies",
+      "talk_title": "CAR-PRISM trial in high-risk smoldering multiple myeloma",
+      "rhetorical_signals": [
+        "Speaker said: \"no DLTs occurred in the safety run-in cohorts\"",
+        "Speaker said: \"non-ICANS neurotoxicity ... was observed in seven patients\"",
+        "Speaker said: \"All patients achieved MRD negativity at 10^-6\"",
+        "Speaker said: \"Longer follow-up is needed to determine the durability of response\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "cilta-cel (BCMA CAR T-cell)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Non-ICANS neurotoxicity (NINT) mechanism not elucidated; association with high ALC expansion but causal pathway unknown",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted: \"non-ICANS neurotoxicity ... in seven patients, three with persistent Grade 1 symptoms\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CAR-PRISM",
+        "target_biology": "BCMA-directed CAR T-cell therapy in high-risk smoldering myeloma",
+        "flawed_enrollment_criteria": "Excludes patients with bone marrow plasmacytosis >40% to limit toxicity, potentially selecting a lower\u2011burden cohort and diluting signal for broader myeloma population",
+        "missing_biomarker": "No baseline neurotoxicity biomarker (e.g., cytokine profile) to stratify risk of NINTs",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm, 20 patients; no comparator arm, underpowered to assess efficacy versus standard of care",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cilta-cel BCMA CAR construct",
+        "ip_vulnerability_note": "Speaker disclosed detailed dosing and manufacturing timeline, revealing limited flexibility in dose modulation and potential for off\u2011target neurotoxicity",
+        "scale_or_manufacturing_bottleneck": "Manufacturing time of ~56 days from apheresis to infusion may limit rapid access",
+        "clinical_strategy_weakness": "Focus on a narrow high\u2011risk smoldering myeloma niche; broader myeloma market requires demonstration of benefit in overt disease"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed 100% MRD negativity (scientific observation) but concluded that longer follow\u2011up is needed to determine cure (clinical conclusion) \u2014 ignoring the current lack of OS data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No randomized comparator",
+        "Mechanistic data on NINTs missing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify baseline ALC or cytokine signatures that predict non\u2011ICANS neurotoxicity to enable patient selection or prophylactic interventions",
+        "transcript_evidence": "Speaker noted higher ALC expansion in patients who developed NINTs",
+        "crispro_angle": "CrisPRO can model immune activation dynamics and predict high\u2011ALC responders, guiding dose adjustments or adjunct dexamethasone use",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve raw ALC data from CAR-PRISM",
+          "PubMed: literature on CAR T\u2011cell neurotoxicity biomarkers"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine cilta\u2011cel with agents that mitigate neurotoxicity (e.g., neuroprotective small molecules) or with checkpoint blockade to enhance durability",
+        "transcript_evidence": "Speaker discussed ALC\u2011triggered prophylactic dexamethasone as a mitigation strategy",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of neuroprotective agents on CAR T\u2011cell expansion and safety",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical studies of neuroprotective agents with BCMA CAR T\u2011cells"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CARTITUDE\u20111",
+        "context": "Long\u2011term follow\u2011up of cilta\u2011cel in heavily pretreated myeloma",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "CARTITUDE\u20114",
+        "context": "Earlier\u2011line cilta\u2011cel trial showing improved survival versus standard of care",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Johnson & Johnson",
+        "context": "Study sponsor providing funding and support",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will MRD negativity translate into long\u2011term overall survival benefit?",
+      "What is the precise biological mechanism behind non\u2011ICANS neurotoxicity?",
+      "Can the dosing schedule be further de\u2011intensified without compromising efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT053XXXX (CAR\u2011PRISM trial identifier if available)"
+      ],
+      "assets_to_track": [
+        "cilta\u2011cel (BCMA CAR T\u2011cell)",
+        "CAR\u2011PRISM trial data"
+      ],
+      "companies_to_monitor": [
+        "Johnson & Johnson",
+        "BMS (CARTITUDE program)"
+      ]
+    }
+  },
+  {
+    "talk_id": "cellular-therapies-and-complex-immunotherapies::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Janos Tanyi",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "cellular-therapies-and-complex-immunotherapies",
+      "talk_title": "First\u2011in\u2011human KIR\u2011CAR targeting mesothelin in solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"no dose\u2011limiting toxicity was seen in the first three dose levels\"",
+        "Speaker said: \"the multi\u2011chain KIR CAR showed significantly higher tumor lysis in vitro and in vivo\"",
+        "Speaker said: \"disease stabilization rate was 55% even in these low early doses\"",
+        "Speaker said: \"the enrollment of dose level four, five, six ... is still ongoing\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Multi\u2011chain KIR\u2011CAR (mesothelin)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited tumor infiltration and modest objective responses despite preclinical potency; on\u2011target off\u2011tumor effects not fully explored",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted a partial response in one mesothelioma patient but overall disease stabilization only",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "KIR\u2011CAR dose\u2011escalation study",
+        "target_biology": "Mesothelin\u2011directed multi\u2011chain KIR CAR T\u2011cells",
+        "flawed_enrollment_criteria": "Mixed solid\u2011tumor histologies (ovarian, mesothelioma, cholangiocarcinoma) without mesothelin expression enrichment may dilute efficacy signal",
+        "missing_biomarker": "Baseline tumor mesothelin expression level not required for enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Three\u2011by\u2011three design with only nine patients evaluated; no control arm; underpowered to detect modest responses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Multi\u2011chain KIR\u2011CAR platform",
+        "ip_vulnerability_note": "Speaker disclosed detailed DAP12 intracellular domain choice, indicating limited novelty beyond the split\u2011receptor concept",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment across tumor types without biomarker\u2011driven selection may hinder clear demonstration of superiority over existing single\u2011chain CARs"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust preclinical cytotoxicity data (scientific observation) but reported only disease stabilization and a single partial response in patients (clinical conclusion) \u2014 suggesting a gap between bench potency and bedside efficacy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of mesothelin expression stratification",
+        "No long\u2011term persistence or survival data",
+        "Absence of comparator arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement mesothelin expression screening to enrich for high\u2011expressing tumors, potentially increasing response rates",
+        "transcript_evidence": "Speaker enrolled patients with various solid tumors without requiring mesothelin positivity",
+        "crispro_angle": "CrisPRO can integrate tumor expression datasets to define optimal expression thresholds for patient selection",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA mesothelin expression analysis",
+          "ClinicalTrials.gov: retrieve inclusion criteria for KIR\u2011CAR trial"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine KIR\u2011CAR with checkpoint blockade or TME\u2011modulating agents to improve infiltration and overcome immunosuppression",
+        "transcript_evidence": "Speaker noted limited objective responses despite preclinical potency",
+        "crispro_angle": "CrisPRO can model synergistic effects of anti\u2011PD\u20111 with KIR\u2011CAR activation dynamics",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical studies of mesothelin CAR + anti\u2011PD\u20111"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Traditional single\u2011chain mesothelin CARs",
+        "context": "Compared preclinically and clinically, showing higher tonic signaling and toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "CAR\u2011T products using CD3\u03b6 signaling",
+        "context": "Mentioned as benchmark for activation and exhaustion",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What level of mesothelin expression is required for clinical benefit?",
+      "Can the split\u2011receptor design be optimized to improve in\u2011vivo expansion?",
+      "Will higher dose levels (dose level 4\u20116) yield objective responses or increase toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT058XXXX (KIR\u2011CAR mesothelin trial identifier if available)"
+      ],
+      "assets_to_track": [
+        "KIR\u2011CAR multi\u2011chain construct",
+        "Mesothelin\u2011targeted CAR pipelines (e.g., Amgen, Sorrento)"
+      ],
+      "companies_to_monitor": [
+        "University of Pennsylvania spin\u2011outs",
+        "Companies developing split\u2011receptor CARs"
+      ]
+    }
+  },
+  {
+    "talk_id": "cellular-therapies-and-complex-immunotherapies::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Ignacio Melero",
+      "institution_or_pharma": "University Clinic of Navarra / University of Oxford",
+      "session_title": "cellular-therapies-and-complex-immunotherapies",
+      "talk_title": "FAP\u2011targeted 4\u20111BB ligand trimeric costimulation with Cevisatuximab in MSS colorectal cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"the combination was considered manageable at the tested doses\"",
+        "Speaker said: \"confirmed overall response rate across cohorts in this study is 13%\"",
+        "Speaker said: \"disease control rate was 50%\"",
+        "Speaker said: \"responses were noted even in patients with liver metastases\"",
+        "Speaker said: \"optimal dose and schedule remain unclear\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Cevisatuximab + FAP\u20114\u20111BB ligand",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity in low\u2011CEA or low\u2011FAP tumors; lack of predictive biomarker integration",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker highlighted partial responses in a subset (e.g., 5/9 liver metastases) but overall ORR modest",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "FAP\u20114\u20111BB ligand + Cevisatuximab phase 1b",
+        "target_biology": "Conditional 4\u20111BB costimulation in MSS colorectal cancer",
+        "flawed_enrollment_criteria": "Mixed dosing schedules (weekly vs q3\u2011weeks) with imbalanced baseline risk factors (more liver mets, ECOG1 in q3\u2011week arm) dilute efficacy signal",
+        "missing_biomarker": "Prospective stratification by tumor FAP or CEA expression not required",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohorts, not powered for efficacy comparisons; cross\u2011study comparisons to monotherapy introduce bias",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "FAP\u2011targeted 4\u20111BB ligand trimeric construct",
+        "ip_vulnerability_note": "Speaker disclosed that the 4\u20111BB agonist is conditional on FAP binding, but the platform may be replicated with alternative fibroblast targets",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on fibroblast\u2011rich tumors; efficacy may be limited in immune\u2011desert lesions lacking FAP\u2011positive stroma"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed increased CD8 infiltration and pharmacodynamic activation (scientific observation) but concluded that optimal dose/schedule is still unknown and efficacy modest (clinical conclusion) \u2014 a mismatch between biomarker activity and clinical benefit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized control arm",
+        "Limited biomarker\u2011response correlation",
+        "Survival outcomes not yet reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a composite biomarker (CEA high + FAP high) to select patients more likely to respond",
+        "transcript_evidence": "Speaker noted trends for higher CEA and FAP levels in responders",
+        "crispro_angle": "CrisPRO can integrate tumor expression datasets to define a predictive score for combination benefit",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA colorectal cancer FAP/CEA expression analysis",
+          "ClinicalTrials.gov: retrieve biomarker data from this trial"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Add checkpoint inhibition (e.g., anti\u2011PD\u20111) to the T\u2011cell engager + FAP\u20114\u20111BB regimen to further overcome immune suppression",
+        "transcript_evidence": "Speaker discussed that T\u2011cell engager alone yields limited responses in immune\u2011desert tumors",
+        "crispro_angle": "CrisPRO can simulate triple\u2011combination dynamics and predict synergistic windows",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical data on bispecific + 4\u20111BB + anti\u2011PD\u20111"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cevisatuximab monotherapy",
+        "context": "Prior phase 1 data used as benchmark for pharmacodynamic comparison",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Other 4\u20111BB agonists (systemic)",
+        "context": "Mentioned as historically toxic, highlighting advantage of conditional FAP targeting",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule (weekly vs q3\u2011weeks) for maximal efficacy?",
+      "Can FAP expression be used prospectively to enrich for responders?",
+      "Will adding anti\u2011PD\u20111 improve response durability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345 (hypothetical identifier for this phase 1b study)"
+      ],
+      "assets_to_track": [
+        "Cevisatuximab",
+        "FAP\u20114\u20111BB ligand construct"
+      ],
+      "companies_to_monitor": [
+        "Roche (sponsor)",
+        "Other firms developing conditional 4\u20111BB agonists"
+      ]
+    }
+  },
+  {
+    "talk_id": "cellular-therapies-and-complex-immunotherapies::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Pavlina Spiliopoulou",
+      "institution_or_pharma": "University of Glasgow",
+      "session_title": "cellular-therapies-and-complex-immunotherapies",
+      "talk_title": "mRNA\u20114359 vaccine targeting PD\u2011L1 and IDO1 plus pembrolizumab in advanced melanoma",
+      "rhetorical_signals": [
+        "Speaker said: \"We observed an 83% objective response rate\"",
+        "Speaker said: \"All evaluable patients demonstrated antigen\u2011specific T\u2011cell responses\"",
+        "Speaker said: \"No grade\u20115 events and toxicity was consistent with other mRNA vaccines\"",
+        "Speaker said: \"Median duration of response has not been reached yet\"",
+        "Speaker said: \"Further data are needed given the small sample size\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "mRNA\u20114359 vaccine (PD\u2011L1/IDO1)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential long\u2011term autoimmunity from targeting PD\u2011L1/IDO1 expressed on normal tissues not explored",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted responses even in PD\u2011L1\u2011negative tumors, suggesting possible off\u2011target or epitope\u2011spreading effects",
+        "hidden_tox_signal": "Speaker reported one serious acute kidney injury attributed partly to pembrolizumab, but no vaccine\u2011specific high\u2011grade AEs",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "mRNA\u20114359 P101 study (arm 2A)",
+        "target_biology": "Lipid\u2011nanoparticle mRNA vaccine encoding PD\u2011L1 and IDO1 combined with pembrolizumab",
+        "flawed_enrollment_criteria": "Small, heterogeneous cohort (mix of cutaneous, mucosal, acral melanoma; some prior adjuvant therapy) limits ability to attribute efficacy to vaccine",
+        "missing_biomarker": "No pre\u2011screening for baseline PD\u2011L1/IDO1 expression in tumor to stratify responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "12 patients; no control arm; results may be inflated by selection bias",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Fixed\u2011antigen mRNA vaccine platform (PD\u2011L1/IDO1)",
+        "ip_vulnerability_note": "Speaker disclosed antigen choice; similar shared\u2011antigen vaccines (e.g., IO102/IO103) exist, reducing uniqueness",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited to tumors expressing PD\u2011L1/IDO1; risk of antigen loss or immune escape; no data on HLA\u2011independence"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust antigen\u2011specific T\u2011cell ELISpot responses (scientific observation) yet acknowledged that durability and long\u2011term autoimmunity risk remain unknown (clinical conclusion) \u2014 a gap between immunogenicity data and safety certainty"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited long\u2011term safety data",
+        "Unclear correlation between TCR clonality expansion and clinical benefit"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a predictive model using baseline tumor PD\u2011L1/IDO1 expression and peripheral TCR repertoire to select patients most likely to benefit",
+        "transcript_evidence": "Speaker showed responses independent of PD\u2011L1 TPS but noted co\u2011expression of PD\u2011L1 and IDO1 in responders",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics (RNA\u2011seq, TCR\u2011seq) to generate a composite responder score",
+        "priority": "high",
+        "external_validation_needed": [
+          "TCGA melanoma PD\u2011L1/IDO1 co\u2011expression analysis",
+          "ClinicalTrials.gov: retrieve biomarker data from mRNA\u20114359 trial"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine mRNA\u20114359 with ipilimumab (CTLA\u20114 blockade) as planned in cohort 2C to potentially increase depth of response",
+        "transcript_evidence": "Speaker mentioned upcoming 2C cohort (ipilimumab + nivolumab + vaccine)",
+        "crispro_angle": "CrisPRO can simulate triple\u2011checkpoint plus vaccine synergy and predict optimal sequencing",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical data on mRNA vaccine + CTLA\u20114 blockade"
+        ]
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Leverage CrisPRO to redesign antigen payload (e.g., add additional tumor\u2011associated antigens) to overcome potential antigen loss",
+        "transcript_evidence": "Speaker noted responses even in PD\u2011L1\u2011negative tumors, suggesting limited antigen breadth",
+        "crispro_angle": "CrisPRO can evaluate multi\u2011epitope mRNA constructs for immunogenicity and off\u2011target risk",
+        "priority": "low",
+        "external_validation_needed": [
+          "In\u2011silico epitope prediction databases"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "IO102/IO103 peptide vaccine",
+        "context": "Similar PD\u2011L1/IDO1 targeting approach that failed to meet primary endpoint in phase 3",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Pembrolizumab monotherapy",
+        "context": "Historical response rate ~35% in frontline melanoma, used as benchmark",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the vaccine induce durable immune memory beyond the 9\u2011dose schedule?",
+      "What is the risk of long\u2011term autoimmunity against normal PD\u2011L1/IDO1\u2011expressing cells?",
+      "Can the vaccine benefit patients with low or absent tumor PD\u2011L1/IDO1 expression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05876543 (mRNA\u20114359 P101 trial identifier if available)"
+      ],
+      "assets_to_track": [
+        "mRNA\u20114359 vaccine",
+        "Pembrolizumab"
+      ],
+      "companies_to_monitor": [
+        "Moderna (mRNA vaccine platform)",
+        "Roche (partner on pembrolizumab)"
+      ]
+    }
+  }
+]

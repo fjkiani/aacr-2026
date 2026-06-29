@@ -1,0 +1,379 @@
+[
+  {
+    "talk_id": "cart-therapy-transforming-the-landscape-of-adult-and-pediatric-blood-cancers::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Karina Patel",
+      "institution_or_pharma": "University of Texas MD Anderson Cancer Center",
+      "session_title": "CAR-T Therapy: Transforming the Landscape of Adult and Pediatric Blood Cancers",
+      "talk_title": "Advances and Next\u2011Generation Strategies in BCMA\u2011Targeted CAR\u2011T for Multiple Myeloma",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't have the five\u2011year data yet, but we do think that there's going to be more patients who are in that functional cure when they get CAR T earlier\"",
+        "Speaker said: \"we see significant hypogammaglobulinemia... infections, especially the first six months, are really important to try to ameliorate\"",
+        "Speaker said: \"about 5% of patients in the late line trials and about 1% in the early line trials that got Parkinsonism\"",
+        "Speaker said: \"we don't know exactly what causes it [enterocolitis]... we give Cytoxan or tacrolimus to kill those cells\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BCMA\u2011targeted CAR\u2011T (ide\u2011cel, cilta\u2011cel)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "BCMA expression on normal plasma cells leads to prolonged hypogammaglobulinemia and infection risk",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted significant hypogammaglobulinemia and infections despite IVIG prophylaxis",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "BCMA\u2011targeted CAR\u2011T",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "BCMA dimming or loss in ~5% of patients, especially those with TP53 17p deletion",
+        "unexplained_resistance_quote": "we see that 5% of patients will lose BCMA after CAR T",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "BCMA\u2011CAR\u2011T manufacturing platform",
+        "failure_type": "manufacturing_failure",
+        "mechanistic_blindspot": "Long ex\u2011vivo expansion (2\u20113 weeks) may reduce T\u2011cell fitness in heavily pre\u2011treated patients",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CARTITUDE\u20114",
+        "target_biology": "BCMA\u2011directed CAR\u2011T in relapsed/refractory myeloma",
+        "flawed_enrollment_criteria": "Enrolled both standard\u2011risk and high\u2011risk cytogenetic patients without stratified arms, potentially diluting signal in high\u2011risk subgroup",
+        "missing_biomarker": "Baseline BCMA density or soluble BCMA levels not required for entry",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No pre\u2011specified subgroup power for high\u2011risk cytogenetics",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BCMA\u2011targeted CAR\u2011T (ide\u2011cel, cilta\u2011cel)",
+        "ip_vulnerability_note": "Both rely on a single antigen; loss or dimming of BCMA directly abrogates efficacy",
+        "scale_or_manufacturing_bottleneck": "Current manufacturing takes 2\u20113 weeks, limiting rapid access for aggressive disease",
+        "clinical_strategy_weakness": "Predominant focus on late\u2011line use despite data suggesting earlier line may improve cure fraction"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed 33% of patients disease\u2011free at 5\u202fyears (functional cure) yet concluded that most patients still need to be monitored for long\u2011term relapse and that cure remains a future goal"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for many trials",
+        "Limited biomarker\u2011stratified analysis beyond cytogenetics",
+        "Long\u2011term durability beyond 5\u202fyears not reported for most products"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "High\u2011risk cytogenetic patients (TP53 loss, EMD) have inferior PFS; need a predictive model to select those who benefit most from early BCMA CAR\u2011T",
+        "transcript_evidence": "Speaker said: \"the red are the patients who got cilta\u2011cel... high\u2011risk patients do not do as well as standard\u2011risk\"",
+        "crispro_angle": "CrisPRO can integrate genomic, transcriptomic and clinical data to generate a risk score guiding early\u2011line CAR\u2011T allocation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "BCMA dimming/loss drives primary resistance; a dual\u2011target CAR (BCMA\u202f+\u202fGPRC5D) could overcome antigen escape",
+        "transcript_evidence": "Speaker noted: \"we see BCMA loss in ~5% of patients\" and later described GPRC5D as a complementary target",
+        "crispro_angle": "CrisPRO can predict likelihood of BCMA loss based on baseline expression and suggest optimal dual\u2011target constructs",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Fast\u2011manufacturing, short\u2011off\u2011rate CAR (Anita Cell) shows lower neurotoxicity; pairing with immune\u2011modulating agents could enhance safety",
+        "transcript_evidence": "Speaker described Anita Cell's synthetic D\u2011domain with fast off\u2011rate and lower major toxicities",
+        "crispro_angle": "CrisPRO can model pharmacodynamic interactions to prioritize combination regimens that minimize CRS/ICANS",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CARTITUDE\u20114 lacked biomarker\u2011driven stratification; a biomarker\u2011enriched arm could increase power for high\u2011risk subgroup",
+        "transcript_evidence": "Speaker highlighted enrollment of both standard\u2011risk and high\u2011risk patients without separate analysis",
+        "crispro_angle": "CrisPRO can simulate trial outcomes under different enrichment strategies to optimize design",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ide\u2011cel",
+        "context": "Approved BCMA CAR\u2011T; discussed efficacy and toxicity profile",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "cilta\u2011cel",
+        "context": "Approved BCMA CAR\u2011T with higher response rates and longer PFS",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Anita Cell",
+        "context": "Next\u2011generation BCMA CAR with synthetic D\u2011domain and reduced toxicity",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal timing of BCMA CAR\u2011T (early line vs. late line) to maximize cure fraction?",
+      "Can persistence truly be ignored in myeloma, or does long\u2011term memory affect relapse rates?",
+      "What are the mechanisms behind enterocolitis and how can they be prevented?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ide\u2011cel",
+        "cilta\u2011cel",
+        "Anita Cell BCMA CAR",
+        "CB\u2011011 allogeneic BCMA CAR"
+      ],
+      "companies_to_monitor": [
+        "BMS",
+        "J&J",
+        "Novartis",
+        "Allogene"
+      ]
+    }
+  },
+  {
+    "talk_id": "cart-therapy-transforming-the-landscape-of-adult-and-pediatric-blood-cancers::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Matthew Frank",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "CAR-T Therapy: Transforming the Landscape of Adult and Pediatric Blood Cancers",
+      "talk_title": "Emerging Multi\u2011Antigen CAR\u2011T Strategies and Manufacturing Innovations in Lymphoma and Leukemia",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw an anti\u2011CD20 that showed a lot of promise... the trial's on hold\"",
+        "Speaker said: \"the CD22 CAR had high rates of IECHS and HLH\u2011like toxicity that led to five patients passing away\"",
+        "Speaker said: \"the CD37 trial was halted after severe hypocellular marrow in two of the first five patients\"",
+        "Speaker said: \"we gave a second bag of axicel without extra lymphodepletion and saw minimal added toxicity\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CD22 CAR (Cargo)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "CAR activation triggers HLH\u2011like cytokine storm not mitigated by standard CRS management",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted five deaths due to HLH\u2011like toxicity",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "CD20 CAR (early trial)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of durable signaling despite target expression; trial halted without clear efficacy data",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      },
+      {
+        "failing_compound_or_target": "CD37 CAR",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Target expressed on normal B cells and marrow progenitors leading to hypocellular marrow",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Severe hypocellular marrow after two of first five patients",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Zantacel (Miltenyi) tandem CD19/CD20 CAR",
+        "target_biology": "Dual antigen targeting to prevent CD19 loss",
+        "flawed_enrollment_criteria": "Enrolled heavily pre\u2011treated, high\u2011LDH patients without a control arm, risking signal dilution",
+        "missing_biomarker": "Baseline CD20 expression not required for entry",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (n\u224830) limits confidence in PFS estimate",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "CD22 CAR (Cargo) phase\u202f1",
+        "target_biology": "CD22\u2011directed CAR for CD19\u2011relapsed lymphoma",
+        "flawed_enrollment_criteria": "Included patients with high tumor burden and prior CAR exposure, increasing cytokine storm risk",
+        "missing_biomarker": "No pre\u2011infusion cytokine risk stratification",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Trial halted early due to safety, insufficient efficacy data",
+        "severity": "fatal_to_trial"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Bicistronic CD19/CD20 CAR constructs (Kite\u2011363, J&J tandem)",
+        "ip_vulnerability_note": "Both rely on CD19 as a core component; loss of CD19 still compromises efficacy despite CD20 co\u2011targeting",
+        "scale_or_manufacturing_bottleneck": "Complex vector design may increase production time compared to single\u2011antigen CARs",
+        "clinical_strategy_weakness": "Trials focus on heavily pre\u2011treated patients, limiting demonstration of superiority in earlier lines"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high CR rates (80%+) with dual\u2011antigen CARs yet also admitted that \"we still don't know which design (tandem vs bicistronic) is superior\""
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Long\u2011term durability and OS not presented",
+        "No head\u2011to\u2011head comparison of tandem vs bicistronic designs",
+        "Limited toxicity data for newer constructs"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "High LDH patients have poorer outcomes; a predictive model could identify who benefits from dose\u2011escalated dual\u2011CAR therapy",
+        "transcript_evidence": "Speaker noted: \"LDH was elevated in about two\u2011thirds of patients\" and outcomes were still encouraging",
+        "crispro_angle": "CrisPRO can integrate LDH, tumor burden, and genomic data to stratify patients for intensified CAR dosing",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Antigen loss (CD19, CD22) drives relapse; tri\u2011specific CARs (CD19/CD20/CD22) could mitigate escape",
+        "transcript_evidence": "Speaker discussed trispecific designs and the need to target multiple antigens",
+        "crispro_angle": "CrisPRO can simulate antigen loss kinetics and prioritize construct architectures",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Rapid manufacturing (12\u2011day) showed high response with lower toxicity; scaling this platform could outcompete slower processes",
+        "transcript_evidence": "Speaker highlighted YTB\u2011323 and Kite\u2011753 rapid manufacturing with high naive/stem\u2011cell memory phenotypes",
+        "crispro_angle": "CrisPRO can model manufacturing timelines versus clinical outcomes to justify investment in fast\u2011manufacture pipelines",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Sequential high\u2011dose axicel infusion showed improved CR without added severe toxicity; formal randomized testing could validate this approach",
+        "transcript_evidence": "Speaker described giving a second axicel infusion 7\u201114\u202fdays later with minimal extra toxicity",
+        "crispro_angle": "CrisPRO can run virtual trial simulations to estimate power and safety of double\u2011dose regimens",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Miltenyi Zantacel",
+        "context": "Tandem CD19/CD20 CAR in third\u2011line large B\u2011cell lymphoma",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Kite\u2011363",
+        "context": "Bicistronic CD19/CD20 CAR with 4\u20111BB co\u2011stimulatory domain",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "J&J tandem CAR",
+        "context": "CD19/CD20 tandem construct with high response rates",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Cargo CD22 CAR",
+        "context": "Early trial halted due to HLH\u2011like toxicity",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Which multi\u2011antigen architecture (tandem vs bicistronic vs tricistronic) provides the best balance of efficacy and safety?",
+      "Can rapid manufacturing be reliably scaled without compromising product potency?",
+      "What is the optimal sequencing of bispecific T\u2011cell engagers versus CAR\u2011T in high\u2011risk lymphoma?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zantacel CD19/CD20 CAR",
+        "Kite\u2011363 bicistronic CAR",
+        "J&J tandem CAR",
+        "Cargo CD22 CAR"
+      ],
+      "companies_to_monitor": [
+        "Miltenyi",
+        "Kite Pharma",
+        "Johnson & Johnson",
+        "Cargo Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "cart-therapy-transforming-the-landscape-of-adult-and-pediatric-blood-cancers::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Steve Gottschalk",
+      "institution_or_pharma": "St. Jude Children's Research Hospital",
+      "session_title": "CAR-T Therapy: Transforming the Landscape of Adult and Pediatric Blood Cancers",
+      "talk_title": "Overview of CAR\u2011T Landscape Across Adult and Pediatric Hematologic Malignancies",
+      "rhetorical_signals": [
+        "Speaker said: \"we really need to go beyond BCMA and with combinations\"",
+        "Speaker said: \"early line CAR\u2011T compared to late line\"",
+        "Speaker said: \"in vivo vector delivery could change access globally\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No original trial data presented; relies on secondary citations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "indication_expansion",
+        "description": "In vivo lentiviral CAR delivery could enable treatment in low\u2011resource settings lacking manufacturing capacity",
+        "transcript_evidence": "Speaker highlighted vector approaches that avoid ex\u2011vivo manufacturing and lymphodepletion",
+        "crispro_angle": "CrisPRO can model population\u2011level impact of in\u2011vivo delivery on access and outcomes",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combining early\u2011line BCMA CAR\u2011T with novel targets (GPRC5D, FCRH5) to prevent antigen escape",
+        "transcript_evidence": "Speaker discussed next\u2011generation targets beyond BCMA",
+        "crispro_angle": "CrisPRO can prioritize target combinations based on expression data and resistance patterns",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ide\u2011cel",
+        "context": "Approved BCMA CAR\u2011T discussed as benchmark",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "cilta\u2011cel",
+        "context": "Approved BCMA CAR\u2011T with higher response rates",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Anita Cell",
+        "context": "Next\u2011gen BCMA CAR with synthetic D\u2011domain",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the long\u2011term safety implications of in\u2011vivo lentiviral CAR delivery?",
+      "How will regulatory pathways adapt to off\u2011the\u2011shelf vector approaches?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Anita Cell BCMA CAR",
+        "In\u2011vivo lentiviral CAR vectors"
+      ],
+      "companies_to_monitor": [
+        "Allogene",
+        "Novartis"
+      ]
+    }
+  }
+]

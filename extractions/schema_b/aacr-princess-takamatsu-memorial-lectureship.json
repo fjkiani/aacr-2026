@@ -1,0 +1,98 @@
+[
+  {
+    "talk_id": "aacr-princess-takamatsu-memorial-lectureship::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "David Lyden",
+      "institution_or_pharma": "Weill Cornell Medicine",
+      "session_title": "aacr-princess-takamatsu-memorial-lectureship",
+      "talk_title": "Extracellular Vesicles as Systemic Mediators of Metastasis and Organ Dysfunction",
+      "rhetorical_signals": [
+        "Speaker said: \"we're still trying to figure out the cell biology, how that happens\"",
+        "Speaker said: \"we think the integrins are critical on the EVPs establishing organotropic metastases, but now they look like they have an additional role in systemic disease\"",
+        "Speaker said: \"we don't know exactly all those things that you mentioned\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "beta-2 integrin targeting antibody",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential redundancy with other integrins (e.g., alphaVbeta3) that can also mediate platelet binding and clot formation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      },
+      {
+        "failing_compound_or_target": "anti\u2011PD\u20111 monotherapy in pancreatic cancer",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of EV\u2011mediated immune suppression in the pre\u2011metastatic niche that limits checkpoint blockade",
+        "unexplained_resistance_quote": "Speaker said: \"anti\u2011PD\u20111 doesn't do much for pancreatic cancer\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EV\u2011based therapeutic platform (activated T\u2011cell EVs)",
+        "ip_vulnerability_note": "Speaker disclosed that the active cargo (granzyme B, DNA) is packaged without a defined proprietary delivery system, suggesting the core concept could be replicated with alternative vesicle sources",
+        "scale_or_manufacturing_bottleneck": "Manufacturing of clinical\u2011grade EVs was not addressed, implying potential scalability challenges",
+        "clinical_strategy_weakness": "Relying on systemic EV delivery without biomarker\u2011selected patient enrichment may dilute therapeutic signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that tumor\u2011derived EVs promote metastasis and organ dysfunction, then concluded that the same EV platform (activated T\u2011cell EVs) can be used as an effective anti\u2011tumor therapy, despite the mechanistic similarity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No clinical trial data for beta\u20112 integrin antibody or activated T\u2011cell EV therapy",
+        "Lack of prospective biomarker\u2011stratified patient cohorts",
+        "Absence of comparative efficacy versus standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high circulating beta\u20112 integrin\u2011positive EVs to enrich for those at risk of thrombosis and who may benefit from beta\u20112 integrin blockade",
+        "transcript_evidence": "Speaker said: \"Clinically, when we measure EVs that express beta\u20112 integrin, we can predict which patients in the pancreatic cancer realm are going to form clots\"",
+        "crispro_angle": "CrisPRO can integrate EV proteomic signatures with patient outcomes to generate a predictive classifier for beta\u20112 integrin\u2011positive EV burden",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the integrin\u2011mediated organotropic EV uptake pathway (e.g., alphaVbeta5, alpha6beta4) to prevent pre\u2011metastatic niche formation",
+        "transcript_evidence": "Speaker said: \"If we collect EVs from the blood and they have an EV that is alpha V beta 5, we already know those are going to potentially go to the liver\"",
+        "crispro_angle": "CrisPRO can model integrin\u2011EV interaction networks to design small\u2011molecule or antibody inhibitors that block the zip\u2011code binding",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011driven early\u2011phase trial enrolling only patients with elevated tumor\u2011derived EV signatures (beta\u20112 integrin or exomere metabolic cargo) to increase signal\u2011to\u2011noise for anti\u2011thrombotic or EV\u2011based therapies",
+        "transcript_evidence": "Speaker highlighted that early removal of the primary tumor reduces circulating EVs within a week, implying a window for intervention",
+        "crispro_angle": "CrisPRO can simulate trial enrichment scenarios using real\u2011world EV datasets to predict power gains",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise molecular mechanism by which beta\u20112 integrin\u2011positive EVs trigger platelet activation and clot formation?",
+      "Can chronic exercise\u2011induced EVs competitively inhibit tumor\u2011derived EV uptake in humans?",
+      "What is the durability of activated T\u2011cell EV therapeutic effects after cessation of dosing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "beta\u20112 integrin blocking antibody",
+        "activated T\u2011cell extracellular vesicle therapy"
+      ],
+      "companies_to_monitor": [
+        "Companies developing pre\u2011metastatic niche inhibitors (unnamed in transcript)"
+      ]
+    }
+  }
+]

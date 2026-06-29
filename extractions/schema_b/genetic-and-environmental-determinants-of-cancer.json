@@ -1,0 +1,325 @@
+[
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Kamila Axelrod",
+      "institution_or_pharma": "Harvard Medical School",
+      "session_title": "genetic-and-environmental-determinants-of-cancer",
+      "talk_title": "Distinguishing selection in normal tissues from cancer causation",
+      "rhetorical_signals": [
+        "Speaker said: \"Are those necessarily mutations that cause cancer, or are maybe some of them just an inheritance from the normal tissue evolution that precedes carcinogenesis as we age?\"",
+        "Speaker said: \"I think an open question is how large the overlap is and in which of these categories any one individual mutation belongs\"",
+        "Speaker said: \"We don't have normal tissue data from the same people that we analyze the cancers from\"",
+        "Speaker said: \"If you don't have that data, then age data is super helpful because genes that are frequency mutated in younger cancer patients are very likely to be causal\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PIK3CA mutations",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "PIK3CA appears equally frequent in cancer and normal tissue, suggesting limited carcinogenic effect",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that PIK3CA mutations have high frequency in normal tissue but concluded they may be cancer drivers \u2014 contradiction between selection data and driver labeling"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No matched normal tissue sequencing from same patients",
+        "Lack of functional validation of low carcinogenic effect genes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could model the differential selection pressure of mutations like PIK3CA across normal and tumor tissues to predict true drivers",
+        "transcript_evidence": "Speaker said: \"These mutations are no more frequent in the cancer than they would be in the corresponding normal tissue\"",
+        "crispro_angle": "Use computational spine to integrate normal tissue mutation frequencies and predict which mutations have true oncogenic potential",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Age\u2011based mutation frequency could be refined with CrisPRO to stratify patients for early detection",
+        "transcript_evidence": "Speaker said: \"If you don't have that data, then age data is super helpful because genes that are frequency mutated in younger cancer patients are very likely to be causal\"",
+        "crispro_angle": "Apply age\u2011adjusted risk modeling to identify high\u2011risk clones",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to obtain matched normal tissue sequencing from the same individuals at scale?",
+      "What is the functional impact of low\u2011carcinogenicity mutations like PIK3CA in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Alan Balmain",
+      "institution_or_pharma": "University of California, San Francisco",
+      "session_title": "genetic-and-environmental-determinants-of-cancer",
+      "talk_title": "Clonal evolution, promotion, and the role of inflammation in cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"The promotion is the rate\u2011limiting step\"",
+        "Speaker said: \"If we do all of this DMBA TPA stuff with NSG mice, which have no immune system, we get very, very few tumors\"",
+        "Speaker said: \"When you remove HRAS, it's competing for targets in some way that we don't understand\"",
+        "Speaker said: \"If you treat people or mice with an HRAS inhibitor, you might promote KRAS mutations\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HRAS\u2011targeted inhibition",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Inhibition of HRAS may relieve competition and allow KRAS G13R clones to expand",
+        "unexplained_resistance_quote": "Speaker said: \"If you treat HRAS knockout mice with TPA, they get tumors with KRAS G13R\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DMBA/TPA mouse skin carcinogenesis model",
+        "target_biology": "RAS mutation initiation + inflammatory promotion",
+        "flawed_enrollment_criteria": "Uses a single mouse strain without accounting for genetic background variability in promotion response",
+        "missing_biomarker": "No stratification by innate immune cell composition",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering for detecting strain\u2011specific effects",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "HRAS\u2011specific inhibitors",
+        "ip_vulnerability_note": "Speaker indicated that inhibiting HRAS could unintentionally promote KRAS mutant clones, suggesting a narrow therapeutic window",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Targeting a single RAS isoform may shift clonal dynamics toward other oncogenic RAS isoforms"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that HRAS mutant clones expand with TPA promotion, then concluded that HRAS inhibition is a viable prevention strategy \u2014 ignoring the data that HRAS loss enables KRAS\u2011driven tumors"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of human translational data linking neutrophil influx to HRAS clone expansion",
+        "No direct evidence of KRAS clone emergence in HRAS\u2011inhibited humans"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CrisPRO could identify immune\u2011modulating agents that block neutrophil\u2011driven promotion of HRAS clones",
+        "transcript_evidence": "Speaker said: \"The TPA gives us this huge clonal expansion and we found the difference between TPA and RPA is in the immune cells, especially neutrophils\"",
+        "crispro_angle": "Model immune\u2011cell\u2011mutation interaction networks to prioritize anti\u2011inflammatory combos with RAS inhibitors",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to stratify mouse strains by predicted inflammatory response before enrollment",
+        "transcript_evidence": "Speaker said: \"Different strains of mice respond differently to promotion\"",
+        "crispro_angle": "Predict strain\u2011specific promotion susceptibility via computational modeling of immune\u2011genetic background",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Pan\u2011RAS inhibitors",
+        "context": "Discussed as emerging drugs with potential unintended clonal effects",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific molecular pathways link neutrophil influx to HRAS clone expansion?",
+      "Will HRAS inhibition in humans lead to increased KRAS\u2011driven tumor incidence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "HRAS inhibitors",
+        "KRAS G13R targeted agents"
+      ],
+      "companies_to_monitor": [
+        "Companies developing pan\u2011RAS inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Jian Carrot Zhang",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "genetic-and-environmental-determinants-of-cancer",
+      "talk_title": "Germline\u2013somatic interactions across multi\u2011ancestral populations",
+      "rhetorical_signals": [
+        "Speaker said: \"We can reconstruct genome\u2011wide patients' common variants and haplotypes through leveraging off\u2011target reads\"",
+        "Speaker said: \"The MDM4 locus is associated with more TP53 mutations in the tumors\"",
+        "Speaker said: \"These variants are enriched in patients with late\u2011stage disease and lung metastasis\"",
+        "Speaker said: \"We controlled for tumor mutation burden, signatures, and smoking, and the association remained significant\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "MDM4\u2011driven TP53 pathway suppression",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Germline overexpression of MDM4 reduces TP53 activity, facilitating TP53 loss without addressing upstream driver",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted enrichment of the variant in late\u2011stage disease despite TP53 status",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Off\u2011target germline imputation pipeline",
+        "ip_vulnerability_note": "Reliance on low\u2011depth off\u2011target reads may limit accuracy for rare variants, creating a data\u2011quality bottleneck",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential mis\u2011classification of germline risk due to imputation errors"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Functional validation of many germline\u2011somatic associations beyond MDM4\u2011TP53",
+        "Limited ancestry diversity in discovery cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "CrisPRO can prioritize germline\u2011driven TP53 pathway alterations for repurposing MDM4 inhibitors in metastatic settings",
+        "transcript_evidence": "Speaker said: \"These variants are enriched in patients with late\u2011stage disease and lung metastasis\"",
+        "crispro_angle": "Integrate germline risk scores with drug\u2011target networks to identify patients who may benefit from MDM4 antagonists",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to develop ancestry\u2011specific risk models for driver mutations like EGFR or ERG fusions",
+        "transcript_evidence": "Speaker said: \"We found a risk variant that partially explains the relationship between European ancestry and ERG fusion\"",
+        "crispro_angle": "Combine germline variant panels with somatic mutation data to refine ancestry\u2011adjusted predictive biomarkers",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MDM4 inhibitors",
+        "context": "Potential therapeutic to counteract germline\u2011driven TP53 suppression",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How many of the identified germline\u2011somatic associations are causal versus linked by population structure?",
+      "Can the off\u2011target imputation approach be extended to rare variant detection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MDM4 inhibitors",
+        "Germline\u2011imputed GWAS pipelines"
+      ],
+      "companies_to_monitor": [
+        "Companies developing MDM4\u2011targeted therapies"
+      ]
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Nuria L\u00f3pez\u2011Bigas",
+      "institution_or_pharma": "Institute of Research in Biomedicine, Barcelona",
+      "session_title": "genetic-and-environmental-determinants-of-cancer",
+      "talk_title": "Cancer driver mutations in normal tissues and its relation to cancer risk",
+      "rhetorical_signals": [
+        "Speaker said: \"We have millions of cells with driver mutations in our tissues, but the incidence of cancer is far lower\"",
+        "Speaker said: \"If you look at the bladder, we see stronger positive selection in males for certain genes\"",
+        "Speaker said: \"Smoking is promoting the expansion of TERT promoter mutant clones in normal bladder\"",
+        "Speaker said: \"The discrepancy between incidence and random mutagenesis model should be decreasing as the self\u2011renewal of the tissue drops\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TERT promoter\u2011mutant clone expansion",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Smoking\u2011induced microenvironment promotes TERT mutant clones without increasing mutation rate",
+        "unexplained_resistance_quote": "Speaker said: \"We know smoking is not necessarily creating these mutations, it's promoting the expansion\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker presented high numbers of TP53 driver cells in normal tissue yet concluded that clonal selection, not mutation burden, is the main driver of cancer risk"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Longitudinal data linking normal\u2011tissue clone size to eventual cancer development",
+        "Functional assays confirming promoter\u2011mutant clone fitness in smokers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to model how exposure (e.g., smoking) alters selection coefficients of specific clones for better prevention trial stratification",
+        "transcript_evidence": "Speaker said: \"Smoking is changing the environment of the bladder\u2026 promoting the expansion of clones with TERT promoter mutations\"",
+        "crispro_angle": "Integrate exposure\u2011adjusted selection models to predict high\u2011risk individuals for targeted surveillance",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify agents that suppress neutrophil\u2011driven promotion (as described by Alan) to reduce expansion of HRAS or TERT mutant clones",
+        "transcript_evidence": "Speaker referenced PROMINENT team's focus on immune\u2011mediated promotion",
+        "crispro_angle": "Predict synergistic effects of anti\u2011inflammatory drugs with clone\u2011targeted therapies",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PROMINENT consortium",
+        "context": "Collaborative effort to measure selection in normal tissues",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the quantitative relationship between clone size in normal tissue and eventual tumor incidence?",
+      "Can interventions that reduce neutrophil infiltration lower the selection advantage of TERT promoter mutants?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TERT promoter mutation assays",
+        "Smoking cessation intervention trials"
+      ],
+      "companies_to_monitor": [
+        "Companies developing anti\u2011inflammatory agents for cancer prevention"
+      ]
+    }
+  }
+]

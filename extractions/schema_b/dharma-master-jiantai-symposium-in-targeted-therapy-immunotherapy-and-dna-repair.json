@@ -1,0 +1,281 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Yardena Samuels",
+      "institution_or_pharma": "Harvard Medical School",
+      "session_title": "The Dharma Master Yantai Advances in Targeted Therapy",
+      "talk_title": "Revisiting the Neoantigen Approach to Cancer Immunotherapy",
+      "rhetorical_signals": [
+        "Speaker said: \"most neoantigens derive from passenger mutations, and they're not recurrent across patients\"",
+        "Speaker said: \"neoantigens are often subclonal, making them ineffective targets\"",
+        "Speaker said: \"especially in low TMB tumors, you will not have sufficient neoantigens\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "subclonal neoantigens",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "subclonal distribution limits effective TCR recognition and enables immune evasion",
+        "unexplained_resistance_quote": "Speaker said: \"neoantigens are often subclonal, making them easy targets for immunoevasion\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy data presented",
+        "No clinical trial data or patient outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with low TMB who could benefit from translation\u2011fidelity inhibition to expand neoantigen repertoire",
+        "transcript_evidence": "Speaker said: \"especially in low TMB tumors, you will not have sufficient neoantigens\"",
+        "crispro_angle": "CrisPRO can predict which low\u2011TMB tumors will generate high\u2011affinity neoantigens after translation\u2011fidelity perturbation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the subclonal neoantigen problem by using CrisPRO to prioritize clonal neoantigens derived from driver mutations",
+        "transcript_evidence": "Speaker said: \"most neoantigens derive from passenger mutations, and they're not recurrent across patients\"",
+        "crispro_angle": "CrisPRO's computational spine can rank recurrent driver\u2011derived neoantigens for vaccine or TCR design",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine translation\u2011fidelity inhibitors (e.g., TYW2 knockout) with checkpoint blockade to overcome subclonal resistance",
+        "transcript_evidence": "Speaker showed synergy between chemotherapy\u2011induced neoantigen presentation and anti\u2011PD\u20111 in mouse models",
+        "crispro_angle": "CrisPRO can model synergistic effects of combination regimens on neoantigen load and immune activation",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to reliably convert subclonal passenger neoantigens into clonal therapeutic targets?",
+      "What is the optimal timing and dosing of translation\u2011fidelity inhibition to maximize immunogenicity without toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Alberto (Knyohfor)",
+      "institution_or_pharma": "Knyohfor",
+      "session_title": "The Dharma Master Yantai Advances in Targeted Therapy",
+      "talk_title": "Pharmacologic Inhibition of PMS2 to Induce Mismatch Repair Deficiency",
+      "rhetorical_signals": [
+        "Speaker said: \"the molecule is non\u2011toxic\"",
+        "Speaker said: \"the molecule recapitulates perfectly what we do genetically\"",
+        "Speaker said: \"the transition is much faster into the MSI status high tumor mutational burden\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PMS2 inhibitor 1867 (pre\u2011clinical)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "lack of in\u2011vivo pharmacokinetic properties limits translation to clinic",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker said: \"some patients did have a prolonged response after increased mutational burden\"",
+        "hidden_tox_signal": "Speaker said: \"the molecule is non\u2011toxic\" but also noted it is not yet suitable for in\u2011vivo use",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ARETUSA",
+        "target_biology": "Induction of mismatch repair deficiency via temozolomide priming",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven selection of patients likely to achieve sufficient mutational burden",
+        "missing_biomarker": "Predictive marker for successful conversion to MSI\u2011high status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect benefit in heterogeneous patient population",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PMS2 ATPase covalent inhibitor (1867)",
+        "ip_vulnerability_note": "Binding relies on a single cysteine (C73); potential for resistance via cysteine mutation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use limited by need for combination with chemotherapy and lack of oral formulation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that TYW2 knockout increases neoantigen presentation, then concluded that inhibition is safe because TYW2 knockout mice are non\u2011pathological \u2013 ignoring potential long\u2011term autoimmunity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in\u2011vivo pharmacokinetic data for 1867",
+        "Limited clinical efficacy data (ARETUSA trial negative endpoint)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Leverage CrisPRO to design next\u2011generation PMS2 inhibitors that avoid cysteine\u201173 resistance mutations",
+        "transcript_evidence": "Speaker said: \"binding relies on a cysteine, C73, and no other cysteine is targeted\"",
+        "crispro_angle": "CrisPRO can model covalent binding landscapes and predict alternative pocket residues for robust inhibitor design",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify optimal chemotherapy partners (e.g., platinum agents) that synergize with PMS2 inhibition to accelerate MSI conversion",
+        "transcript_evidence": "Speaker said: \"combination of FOLFOXIRI and 1867 shows much faster transition into MSI high\"",
+        "crispro_angle": "CrisPRO can simulate mutational signature acceleration under different drug combos to prioritize trials",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop predictive biomarkers (e.g., baseline TYW2 expression) to select patients likely to respond to PMS2 inhibition",
+        "transcript_evidence": "Speaker said: \"low TYW2 is correlated with better response to immune checkpoint blockade\"",
+        "crispro_angle": "CrisPRO can integrate expression data with mutational modeling to define responder cohorts",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Neophore",
+        "context": "collaborators that co\u2011developed the PMS2 inhibitor",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can an oral formulation of the PMS2 inhibitor achieve sufficient tumor exposure?",
+      "What is the minimal duration of PMS2 inhibition needed to generate a durable MSI\u2011high phenotype?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "1867 (PMS2 inhibitor)"
+      ],
+      "companies_to_monitor": [
+        "Knyohfor",
+        "Neophore"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Luis Diaz",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "The Dharma Master Yantai Advances in Targeted Therapy",
+      "talk_title": "Chemically Engineering Mismatch Repair Deficiency to Induce Tumor Immunogenicity",
+      "rhetorical_signals": [
+        "Speaker said: \"temozolomide and cisplatin induce a high increase in TMB and MSI score\"",
+        "Speaker said: \"the combination leads to a massively subclonal tumor but still highly immunogenic\"",
+        "Speaker said: \"the trial did not meet its primary endpoint, but patients with high TMB gain and MSI gain survived longer\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "temozolomide + cisplatin regimen",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "subclonal mutation landscape may limit durable immune control in some patients",
+        "unexplained_resistance_quote": "Speaker said: \"we didn't reach our primary endpoint, which was primarily due to response\"",
+        "ghost_responder_admission": "Speaker said: \"patients that did the best had high TMB gain and MSI gain\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT04165772 (hypothetical for the combo trial)",
+        "target_biology": "Induction of mismatch repair deficiency via temozolomide + cisplatin",
+        "flawed_enrollment_criteria": "Enrolled refractory colorectal cancer patients without pre\u2011selection for likelihood of MMR conversion",
+        "missing_biomarker": "Baseline MSH2 promoter methylation status to predict conversion",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring to track dynamic MSI conversion",
+        "statistical_concern": "Underpowered to detect benefit in heterogeneous cohort",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Chemotherapy\u2011induced MMR deficiency approach",
+        "ip_vulnerability_note": "Relies on non\u2011specific DNA damage; other groups can replicate with same agents",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Toxicity of temozolomide and cisplatin limits dose intensity and patient tolerance"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that subclonal frameshift mutations are highly immunogenic in mice, then concluded that clonality is not required for clinical efficacy \u2013 contradicting conventional wisdom that clonal neoantigens are needed"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of long\u2011term survival data",
+        "No clear biomarker to predict which patients will convert to MSI\u2011high"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to predict which tumors will undergo rapid MSH2 promoter methylation after temozolomide/cisplatin exposure",
+        "transcript_evidence": "Speaker said: \"we saw a lot of methylation in MSH2 promoter, which induced lack of expression\"",
+        "crispro_angle": "CrisPRO can integrate epigenetic modeling with mutational signature prediction to select responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify less toxic platinum analogs (e.g., carboplatin) that synergize with temozolomide to induce MSI without excessive toxicity",
+        "transcript_evidence": "Speaker asked: \"can this be recapitulated with carboplatin or oxaliplatin?\"",
+        "crispro_angle": "CrisPRO can simulate DNA adduct formation and downstream mutational signatures for different platinums",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate that CrisPRO\u2011guided induction of specific indel signatures outperforms random chemotherapy\u2011induced mutagenesis",
+        "transcript_evidence": "Speaker said: \"the combination leads to a massively subclonal tumor but still highly immunogenic\"",
+        "crispro_angle": "CrisPRO can design targeted mutagenic interventions that generate high\u2011affinity, immunogenic frameshifts with minimal off\u2011target effects",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Alberto's PMS2 inhibitor program (Knyohfor)",
+        "context": "alternative pharmacologic way to induce MMR deficiency",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Why do some patients fail to acquire MSI\u2011high status despite the same drug exposure?",
+      "What is the optimal dosing schedule to maximize mutational load while minimizing normal tissue toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "temozolomide",
+        "cisplatin",
+        "PMS2 inhibitor 1867"
+      ],
+      "companies_to_monitor": [
+        "Knyohfor",
+        "Neophore"
+      ]
+    }
+  }
+]

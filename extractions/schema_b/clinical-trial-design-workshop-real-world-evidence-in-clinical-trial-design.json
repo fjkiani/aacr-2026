@@ -1,0 +1,190 @@
+[
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Rebecca Hubbard",
+      "institution_or_pharma": "Brown University",
+      "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+      "talk_title": "Incorporating Real World Data into Clinical Trial Design \u2013 Methodological Challenges",
+      "rhetorical_signals": [
+        "Speaker said: \"the data are messy, they are challenging, and it's going to take a lot of methodological innovation and careful attention to analytic details\"",
+        "Speaker said: \"we need to think carefully about the methods that we're going to use\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No empirical trial data presented; focus on methodological simulations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for robust, AI\u2011derived confounder extraction from EHRs to enable accurate propensity\u2011score adjustment in hybrid control trials.",
+        "transcript_evidence": "Speaker said: \"advances in AI, especially LLMs, do hold the potential to unlock additional confounder information from the EHR\"",
+        "crispro_angle": "CrisPRO\u2019s computational spine can integrate LLM\u2011extracted covariates with validated causal models to improve propensity\u2011score weighting and reduce bias.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to reliably validate LLM\u2011extracted variables against gold\u2011standard abstractions at scale?",
+      "What are the best practices for handling missing not at random data in real\u2011world datasets?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Neil Meropol",
+      "institution_or_pharma": "Flatiron Health",
+      "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+      "talk_title": "Electronic Health Record Curation for Real\u2011World Evidence",
+      "rhetorical_signals": [
+        "Speaker said: \"the biggest nut to crack is unstructured EHR data\"",
+        "Speaker said: \"validation of LLM\u2011extracted progression\u2011free survival showed high reliability at the cohort level\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No direct clinical trial outcome data; examples are illustrative"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrated high\u2011reliability LLM extraction of progression events suggests a platform where CrisPRO could provide calibrated uncertainty metrics for AI\u2011derived endpoints.",
+        "transcript_evidence": "Speaker said: \"LLM\u2011extracted data, it looks like single curves on each of these plots, but they're actually two curves that are superimposed\"",
+        "crispro_angle": "CrisPRO can overlay Bayesian confidence intervals on LLM\u2011derived survival curves to flag potential hallucinations.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What systematic validation framework should be adopted for LLM\u2011based abstraction across disease domains?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Peter O'Dwyer",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "clinical-trial-design-workshop-real-world-evidence-in-clinical-trial-design",
+      "talk_title": "Prospective Real\u2011World Data Registry Integrated with an FDA\u2011Collaborative Trial",
+      "rhetorical_signals": [
+        "Speaker said: \"only 3% to 7% of patients treated for cancer are treated on clinical trials\"",
+        "Speaker said: \"the prospective model yields an expected data quality over 85% capture of the key variables\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Prospective real\u2011world control arm data capture",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited capture of patient\u2011reported outcomes and social determinants due to IRB exemptions",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "EA5182 (ECOG\u2011ACRIN NSCLC trial)",
+        "target_biology": "Osimertinib \u00b1 bevacizumab in EGFR\u2011mutated NSCLC",
+        "flawed_enrollment_criteria": "Prospective real\u2011world registry relied on site CRAs without standardized consent for patient\u2011reported outcomes, leading to missing social determinant data",
+        "missing_biomarker": "Patient\u2011reported outcomes / social determinants of health",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential bias from incomplete covariate capture affecting propensity\u2011score adjustment",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EHR\u2011based prospective registry workflow",
+        "ip_vulnerability_note": "Relies on manual CRA engagement and site\u2011specific processes; scalability limited without automated capture tools",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad inclusion without real\u2011time biomarker stratification may dilute signal compared to a fully biomarker\u2011selected trial"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the prospective real\u2011world registry achieved >85% data capture, then concluded that the approach 'likely meets regulatory standards' despite acknowledging missing patient\u2011reported outcomes and social determinants"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS or PFS endpoints reported yet",
+        "Missing patient\u2011reported outcomes and social determinant variables"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Integrate CrisPRO\u2019s dynamic borrowing framework to weight prospective real\u2011world control data based on similarity metrics, reducing bias from missing covariates.",
+        "transcript_evidence": "Speaker said: \"the prospective model yields an expected data quality over 85% capture of the key variables\" but also noted missing PRO and SDH data",
+        "crispro_angle": "CrisPRO can compute similarity scores in real time and adjust borrowing weights, allowing inclusion of incomplete registries while preserving type I error control.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Add automated extraction of molecular biomarker status from EHR (e.g., EGFR mutation) to enable biomarker\u2011selected analyses within the prospective registry.",
+        "transcript_evidence": "Speaker highlighted that the trial design lacked biomarker stratification in the real\u2011world arm.",
+        "crispro_angle": "CrisPRO\u2019s LLM pipeline can reliably extract genomic test results and feed them into propensity models.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Flatiron Health",
+        "context": "mentioned as a data source and collaborator on external control arm studies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Friends of Cancer Research",
+        "context": "cited for pre\u2011competitive external control arm experiments",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How to achieve IRB exemption for patient\u2011reported outcomes while maintaining data completeness?",
+      "What is the optimal accrual rate to ensure statistical power for prospective real\u2011world control arms?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT???"
+      ],
+      "assets_to_track": [
+        "EA5182"
+      ],
+      "companies_to_monitor": [
+        "Flatiron Health"
+      ]
+    }
+  }
+]

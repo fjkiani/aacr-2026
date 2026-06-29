@@ -1,0 +1,177 @@
+[
+  {
+    "talk_id": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Rong Fang",
+      "institution_or_pharma": "Yale University",
+      "session_title": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan",
+      "talk_title": "Lymphoma Transformers: Spatial Multi\u2011omics of Transformation",
+      "rhetorical_signals": [
+        "Speaker said: \"You can do the spatial transcriptome and protein and the spatial epigenomics, and can you really look at the same tissue I'm examining every day for diagnosis of patients, right?\"",
+        "Speaker said: \"We suspect this patient actually might benefit, and this microRNA, potentially can serve as a biomarker to stratify the patient for the targeted therapy.\"",
+        "Speaker said: \"PI3K inhibitor is a very toxic drug and often you don't want to use without knowing this patient might benefit.\"",
+        "Speaker said: \"We haven't done the enrichment for TCR/BCR yet, but that should give you a much better coverage for immune repertoire.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PI3K inhibitor",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Systemic toxicity of PI3K inhibition not mitigated by patient selection",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients might respond to PI3K inhibitor, but we don't know who's going to respond, who cannot",
+        "hidden_tox_signal": "PI3K inhibitor is a very toxic drug and often you don't want to use without knowing this patient might benefit",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed spatial RNA data indicating potential PI3K pathway activation and suggested PI3K inhibitor could be beneficial, then immediately cautioned that PI3K inhibitors are very toxic and should not be used without certainty \u2014 contradictory therapeutic recommendation."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival (OS) data presented",
+        "Limited number of patient cases (single case described)",
+        "Lack of prospective validation of miRNA biomarkers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "miR-155 and miR-21 expression correlate with PI3K/AKT pathway activation and could be used to stratify patients for PI3K inhibitor therapy.",
+        "transcript_evidence": "Speaker said: \"We suspect this patient actually might benefit, and this microRNA, potentially can serve as a biomarker to stratify the patient for the targeted therapy.\"",
+        "crispro_angle": "CrisPRO can integrate spatial miRNA expression with pathway activation signatures to predict PI3K inhibitor response.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Existing PI3K inhibitors have toxicity issues; CrisPRO could identify combination partners (e.g., checkpoint blockade) to lower required dose.",
+        "transcript_evidence": "Speaker said: \"PI3K inhibitor is a very toxic drug and often you don't want to use without knowing this patient might benefit.\"",
+        "crispro_angle": "Modeling dose\u2011response curves with spatial biomarker data to design lower\u2011dose regimens or rational combos.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Spatial total RNA sequencing captures non\u2011coding RNAs (tRNA, miRNA) missed by standard panels like FoundationOne.",
+        "transcript_evidence": "Speaker said: \"We detect 1,800 of ~2,000 microRNAs and can map spatial distribution of tRNA species.\"",
+        "crispro_angle": "CrisPRO\u2019s computational spine can integrate multi\u2011omics (coding + non\u2011coding) to generate richer predictive models than DNA\u2011only assays.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "FoundationOne",
+        "context": "Standard clinical sequencing assay lacking spatial and non\u2011coding RNA information.",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the predictive performance of miR\u2011155/miR\u201121 as biomarkers for PI3K inhibitor response in a larger cohort?",
+      "Can TCR/BCR enrichment be reliably performed on FFPE spatial libraries?",
+      "How does spatial heterogeneity of microRNA expression impact therapeutic decision\u2011making?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PI3K inhibitors (e.g., idelalisib, duvelisib)",
+        "Spatial total RNA sequencing platforms"
+      ],
+      "companies_to_monitor": [
+        "Yale's spatial omics collaborators",
+        "Foundation Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mamiko Sakata\u2011Yanagimoto",
+      "institution_or_pharma": "University of Tsukuba",
+      "session_title": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan",
+      "talk_title": "Spatial Multi\u2011omics Dissects Immune and Stromal Cell Heterogeneity in T\u2011cell Lymphoma",
+      "rhetorical_signals": [
+        "Speaker said: \"We identified a novel niche containing cHEV1, FDC, and of course, tumor cells. This niche was characterized by selective enrichment of exhausted T cells.\"",
+        "Speaker said: \"Exhausted T cell density was higher in cHEV FDC niche comparing to artery or HEV niche.\"",
+        "Speaker said: \"Patients with high expression cHEV and HEV signature had a worse clinical outcome.\"",
+        "Speaker said: \"We are thinking that cHEV interacting with, I didn't mention about the stromal cell today, but specific stromal cells interacting and making the vasculature structure\u2026 may be integrin or some collagen\u2011related gene\u2026\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "cHEV\u2011associated exhausted T\u2011cell niche",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of therapeutic strategies targeting exhausted T cells within cHEV vascular niche",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Custom Xenium panels (289\u2011gene custom panel)",
+        "ip_vulnerability_note": "Speaker disclosed detailed marker selection for BEC subclusters, suggesting the core chemistry is proprietary but heavily dependent on custom probe design.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on high\u2011plex custom panels limits rapid translation to broader clinical labs."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Functional validation of integrin\u2011mediated cHEV\u2011FDC interactions",
+        "Mechanistic studies linking exhausted T\u2011cell enrichment to therapeutic resistance"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Exhausted T cells enriched in cHEV1 niche may mediate resistance to checkpoint blockade; CrisPRO can model spatial exhaustion signatures to predict responders.",
+        "transcript_evidence": "Speaker said: \"Exhausted T cell density was higher in cHEV FDC niche comparing to artery or HEV niche.\"",
+        "crispro_angle": "Integrate spatial exhaustion scores with immune checkpoint expression to stratify patients for anti\u2011PD\u20111/PD\u2011L1 therapy.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integrin\u2011related pathways up\u2011regulated in cHEV suggest combining anti\u2011angiogenic agents with immunotherapy.",
+        "transcript_evidence": "Speaker said: \"We are thinking that cHEV interacting\u2026 may be integrin or some collagen\u2011related gene\u2026\"",
+        "crispro_angle": "Predict synergistic combos by linking spatial integrin expression to immune niche remodeling.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design trials that stratify AITL patients by cHEV\u2011exhausted T\u2011cell signature to enrich for responders to checkpoint inhibitors.",
+        "transcript_evidence": "Speaker said: \"Patients with high expression cHEV and HEV signature had a worse clinical outcome.\"",
+        "crispro_angle": "Use CrisPRO to generate a composite spatial biomarker for eligibility criteria.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the functional impact of the integrin genes up\u2011regulated in cHEV endothelial cells?",
+      "Can targeting the cHEV\u2011FDC\u2011exhausted T\u2011cell niche improve response to existing therapies?",
+      "Are there circulating biomarkers that reflect the cHEV niche status?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "cHEV\u2011targeted anti\u2011angiogenic agents",
+        "Checkpoint inhibitors in T\u2011cell lymphoma"
+      ],
+      "companies_to_monitor": [
+        "10x Genomics (Xenium platform)",
+        "NanoString (CosMx)",
+        "AstraZeneca (anti\u2011integrin programs)"
+      ]
+    }
+  }
+]

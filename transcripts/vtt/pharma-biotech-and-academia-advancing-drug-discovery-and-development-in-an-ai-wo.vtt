@@ -1,0 +1,6473 @@
+WEBVTT
+
+1
+00:00:02.360 --> 00:00:05.600
+Okay. Welcome everybody to this forum.
+
+2
+00:00:05.640 --> 00:00:09.620
+My name's Susan Galbraith. I head oncology research and development
+
+3
+00:00:10.160 --> 00:00:12.860
+at AstraZeneca, and I have the pleasure to be
+
+4
+00:00:13.660 --> 00:00:16.240
+introducing and chairing this forum.
+
+5
+00:00:17.020 --> 00:00:20.080
+And I'll introduce the other speakers just before they
+
+6
+00:00:21.020 --> 00:00:22.460
+come up. So we've had a
+
+7
+00:00:23.300 --> 00:00:25.660
+great day today, where we started with the
+
+8
+00:00:26.540 --> 00:00:30.260
+session this morning for those of you who made it in to Hall H first thing,
+
+9
+00:00:31.060 --> 00:00:34.500
+to hear about some of the advances in artificial
+
+10
+00:00:34.560 --> 00:00:38.300
+intelligence. The design of this forum, and forums are designed to be somewhat
+
+11
+00:00:38.340 --> 00:00:42.180
+provocative, is to have a debate about how we're actually using this
+
+12
+00:00:42.540 --> 00:00:46.020
+today in the real world across three
+
+13
+00:00:46.100 --> 00:00:49.640
+different environments. We've got representatives from
+
+14
+00:00:50.680 --> 00:00:53.960
+academia/biotech,
+
+15
+00:00:54.520 --> 00:00:58.300
+AI native biotech, and large
+
+16
+00:00:58.320 --> 00:01:01.520
+pharmaceutical company. That's me. Just to be clear.
+
+17
+00:01:01.580 --> 00:01:05.440
+So I hope that gives a spectrum of the interest in the
+
+18
+00:01:05.481 --> 00:01:06.920
+audience about what we're wanting to do.
+
+19
+00:01:07.740 --> 00:01:10.100
+So let me just start with my disclosures.
+
+20
+00:01:10.120 --> 00:01:13.760
+Obviously, I'm a full-time employee of AstraZeneca and
+
+21
+00:01:14.180 --> 00:01:15.320
+own stock in AstraZeneca.
+
+22
+00:01:17.300 --> 00:01:21.050
+So, at AstraZeneca, we are already using
+
+23
+00:01:21.120 --> 00:01:24.660
+AI tools across the full spectrum of our R&amp;D
+
+24
+00:01:24.760 --> 00:01:28.620
+process, from target discovery, lead optimization, up
+
+25
+00:01:29.000 --> 00:01:32.800
+through phase one and phase two, all the way through to regulatory review.
+
+26
+00:01:33.740 --> 00:01:37.190
+What we haven't yet got, though, is a full end-to-end system.
+
+27
+00:01:37.240 --> 00:01:40.950
+We've got a whole variety of different AI tools that are used and deployed
+
+28
+00:01:41.060 --> 00:01:43.960
+across that process. And I'll give you some examples.
+
+29
+00:01:44.000 --> 00:01:47.480
+For example, in the discovery process for biologics,
+
+30
+00:01:48.480 --> 00:01:52.200
+with the advances that have been made in understanding and predicting protein
+
+31
+00:01:52.260 --> 00:01:56.120
+folding, we have models that are already helping us do
+
+32
+00:01:56.420 --> 00:01:58.179
+biologics design
+
+33
+00:01:59.260 --> 00:02:02.960
+from de novo, but also with optimizing and making
+
+34
+00:02:03.000 --> 00:02:05.600
+those faster. Similarly, we've already
+
+35
+00:02:05.660 --> 00:02:09.209
+embedded AI tools into the chemistry
+
+36
+00:02:09.280 --> 00:02:11.570
+process for our small molecule work.
+
+37
+00:02:12.150 --> 00:02:15.420
+And I'll give you some examples of how we're also using AI
+
+38
+00:02:16.040 --> 00:02:19.760
+in the translational space for tissue-based
+
+39
+00:02:20.040 --> 00:02:23.720
+diagnostics and also starting in the molecular imaging space.
+
+40
+00:02:24.200 --> 00:02:28.180
+And then finally, I'll talk a little bit about the development of multimodal
+
+41
+00:02:28.260 --> 00:02:29.260
+foundation models,
+
+42
+00:02:30.420 --> 00:02:33.960
+which you, again, if you went to the session this morning, you will have heard a
+
+43
+00:02:34.020 --> 00:02:37.460
+lot about in that context as well. And the hope
+
+44
+00:02:38.000 --> 00:02:40.240
+of how this can potentially be applied
+
+45
+00:02:41.220 --> 00:02:44.420
+to improve both early-phase decision making
+
+46
+00:02:45.380 --> 00:02:48.280
+and late-phase success rates in clinical trials.
+
+47
+00:02:48.320 --> 00:02:50.360
+That's the hope and the aspiration.
+
+48
+00:02:52.220 --> 00:02:52.340
+So,
+
+49
+00:02:53.520 --> 00:02:57.320
+how are we doing today? Let me go into some of these examples, and here's one
+
+50
+00:02:57.420 --> 00:02:57.640
+for
+
+51
+00:02:58.540 --> 00:03:00.320
+biologics. Now, the classic
+
+52
+00:03:01.560 --> 00:03:05.080
+process that we go through, in terms of discovery applied to both
+
+53
+00:03:05.920 --> 00:03:09.380
+small and large molecules, is once you've identified a target you want to
+
+54
+00:03:09.720 --> 00:03:13.440
+inhibit, you then have an element of design, and there's all sorts of
+
+55
+00:03:13.500 --> 00:03:15.060
+tools that are used for the design.
+
+56
+00:03:15.500 --> 00:03:18.900
+Then you want to make and test those designs
+
+57
+00:03:19.240 --> 00:03:23.200
+using standard assays, analyze, learn what needs to
+
+58
+00:03:23.220 --> 00:03:26.380
+be optimized, and then go around that cycle multiple times.
+
+59
+00:03:26.400 --> 00:03:29.860
+What you can see from the video on the right is in terms of how we're applying this
+
+60
+00:03:30.480 --> 00:03:31.780
+in a biologic space
+
+61
+00:03:32.900 --> 00:03:33.120
+is
+
+62
+00:03:33.940 --> 00:03:37.780
+wanting here to design a mini protein to bind to the dark gray part of the
+
+63
+00:03:37.800 --> 00:03:41.320
+binding site of a specific target of interest.
+
+64
+00:03:41.820 --> 00:03:45.780
+We start off with some random amino acids, which are
+
+65
+00:03:45.800 --> 00:03:47.360
+the orange spheres that you see on the
+
+66
+00:03:48.400 --> 00:03:52.320
+video. Random amino acids selected
+
+67
+00:03:52.400 --> 00:03:55.840
+to potentially bind to different parts of that target
+
+68
+00:03:56.160 --> 00:04:00.020
+binding site. And then the AI model is used to
+
+69
+00:04:00.080 --> 00:04:00.380
+help
+
+70
+00:04:01.300 --> 00:04:05.060
+both predict a structure that would potentially
+
+71
+00:04:05.140 --> 00:04:08.460
+fit into that binding site and then
+
+72
+00:04:08.500 --> 00:04:11.720
+design different sequences that will fold into that
+
+73
+00:04:12.160 --> 00:04:15.900
+apparent structure. And then they are rank ordered and
+
+74
+00:04:16.780 --> 00:04:18.280
+selected for subsequent testing.
+
+75
+00:04:18.560 --> 00:04:22.240
+So in this particular example, using the model, we had
+
+76
+00:04:22.380 --> 00:04:26.300
+264 designs that led to 45 binders, so that would be like
+
+77
+00:04:26.340 --> 00:04:27.260
+a 17%
+
+78
+00:04:28.120 --> 00:04:31.500
+success rate with the highest affinity of 28
+
+79
+00:04:31.920 --> 00:04:35.800
+nanomolar, and the whole process took just a month from
+
+80
+00:04:35.900 --> 00:04:39.820
+end to end. So, an example of it is possible to do this for
+
+81
+00:04:39.860 --> 00:04:43.100
+some subset of the targets that we're looking at, and it can
+
+82
+00:04:43.360 --> 00:04:46.920
+accelerate the process. So that's already
+
+83
+00:04:46.960 --> 00:04:48.640
+possible today.
+
+84
+00:04:50.080 --> 00:04:54.040
+And I think, just in an estimate of the speed enhancement, this can get
+
+85
+00:04:54.080 --> 00:04:57.550
+potentially just a third of the time of what you might expect for something that
+
+86
+00:04:57.600 --> 00:05:01.400
+was standard. So this is not science fiction
+
+87
+00:05:01.420 --> 00:05:05.300
+anymore. This is now today's reality, and I'm sure that lots of
+
+88
+00:05:05.340 --> 00:05:07.180
+other companies and
+
+89
+00:05:08.100 --> 00:05:10.940
+labs are also using these similar kinds of processes.
+
+90
+00:05:11.840 --> 00:05:14.660
+So now let me move to a small molecule example.
+
+91
+00:05:14.700 --> 00:05:18.180
+This is an actual lead discovery for an
+
+92
+00:05:18.220 --> 00:05:19.600
+intractable target. Obviously,
+
+93
+00:05:20.620 --> 00:05:24.260
+kind of redacted in terms of the target because that's confidential
+
+94
+00:05:24.280 --> 00:05:27.740
+information, but it is actually a real example.
+
+95
+00:05:27.780 --> 00:05:28.630
+Now, we have a
+
+96
+00:05:29.800 --> 00:05:31.600
+AI tool that's embedded into the
+
+97
+00:05:32.740 --> 00:05:33.900
+computers that all of our
+
+98
+00:05:34.780 --> 00:05:38.580
+chemists have access to, and it's a tool that we have published and
+
+99
+00:05:38.740 --> 00:05:42.700
+shared called Reinvent. And this particular target, you can
+
+100
+00:05:42.760 --> 00:05:45.420
+see again that we're starting with
+
+101
+00:05:47.540 --> 00:05:50.940
+a binding site that we're wanting to have
+
+102
+00:05:51.120 --> 00:05:55.100
+a good binder, too. But in the starting point that we've
+
+103
+00:05:55.140 --> 00:05:55.500
+got is
+
+104
+00:05:56.460 --> 00:05:58.680
+only got moderate potency, poor
+
+105
+00:05:59.780 --> 00:06:03.240
+clearance in the mouse model, and only moderate exposure.
+
+106
+00:06:03.340 --> 00:06:07.020
+So in this case, we're using the Reinvent to help with
+
+107
+00:06:07.320 --> 00:06:11.300
+affinity prediction and improvements against those
+
+108
+00:06:11.660 --> 00:06:14.888
+targetsAnd what you can see is that with the AI strategy,
+
+109
+00:06:15.348 --> 00:06:19.088
+generating novel compounds with a new interaction, we can
+
+110
+00:06:19.128 --> 00:06:20.988
+rapidly improve on the potency.
+
+111
+00:06:22.648 --> 00:06:26.638
+And as we go through that cycle iteratively, we've ended up
+
+112
+00:06:26.728 --> 00:06:26.948
+with
+
+113
+00:06:29.168 --> 00:06:31.948
+a potential molecule that has
+
+114
+00:06:33.408 --> 00:06:37.048
+target levels of potency, clearance, exposure, and tumor growth
+
+115
+00:06:37.468 --> 00:06:41.308
+inhibition. And in this particular example, again,
+
+116
+00:06:42.108 --> 00:06:46.028
+there's acceleration of what we would have as a non-AI
+
+117
+00:06:46.088 --> 00:06:48.988
+assisted standard process of around four months.
+
+118
+00:06:50.008 --> 00:06:50.248
+So that's
+
+119
+00:06:51.388 --> 00:06:51.888
+good to see.
+
+120
+00:06:52.968 --> 00:06:54.888
+So those are examples in the discovery space.
+
+121
+00:06:54.928 --> 00:06:58.288
+What about in the translational space? So we've shared data on this before.
+
+122
+00:06:58.328 --> 00:07:01.088
+We now have a lot of
+
+123
+00:07:02.288 --> 00:07:05.968
+targets that are targeting cell surface markers, antibody drug conjugates,
+
+124
+00:07:06.068 --> 00:07:07.448
+T-cell engagers, et cetera,
+
+125
+00:07:08.328 --> 00:07:11.308
+for which tissue biomarkers are used.
+
+126
+00:07:11.808 --> 00:07:15.368
+So we've developed this computational pathology scoring with an
+
+127
+00:07:15.408 --> 00:07:18.968
+algorithm that can first of all, identify on a
+
+128
+00:07:19.188 --> 00:07:23.068
+immunohistochemistry stained slide, which are the
+
+129
+00:07:23.128 --> 00:07:26.758
+cancer cells, and then also do subcellular segmentation, what's the
+
+130
+00:07:26.828 --> 00:07:30.648
+membrane, what's the nucleus, what's the cytoplasmic pixels, and do
+
+131
+00:07:30.688 --> 00:07:32.928
+that continuously and quantitatively.
+
+132
+00:07:33.468 --> 00:07:37.448
+And then identify feature classes of the images that you've got, which look at
+
+133
+00:07:37.488 --> 00:07:40.838
+the optical density in the individual pixels, perhaps in the membrane, but also in
+
+134
+00:07:40.868 --> 00:07:44.588
+the cytoplasm, but also can incorporate some spatial biology,
+
+135
+00:07:45.308 --> 00:07:48.428
+looking at spatial proximity scores, for example.
+
+136
+00:07:48.648 --> 00:07:50.608
+Those are the different imaging classes.
+
+137
+00:07:51.268 --> 00:07:52.328
+So, we then
+
+138
+00:07:53.368 --> 00:07:56.918
+change that on a data set, in this case, for a Trop-2 based
+
+139
+00:07:57.288 --> 00:08:01.158
+antibody drug conjugate, looking at-- And the feature that it pulled out was
+
+140
+00:08:01.208 --> 00:08:04.528
+the membrane to cytoplasm optical density
+
+141
+00:08:04.768 --> 00:08:08.428
+difference that seemed to be predictive and if you like, a surrogate measure of the
+
+142
+00:08:08.468 --> 00:08:12.448
+internalization rate of that antibody drug conjugate, in
+
+143
+00:08:12.508 --> 00:08:14.098
+this case, datupizumab duoxetecane.
+
+144
+00:08:16.548 --> 00:08:20.348
+So we're now in the process of getting prospective validation of that in a
+
+145
+00:08:20.368 --> 00:08:21.217
+phase three trial,
+
+146
+00:08:22.028 --> 00:08:25.337
+and that has the potential to be the world's first computational pathology
+
+147
+00:08:25.608 --> 00:08:29.488
+biomarker. But very rapidly, with the advent of a large
+
+148
+00:08:29.568 --> 00:08:31.928
+number of antibody drug conjugates
+
+149
+00:08:32.869 --> 00:08:36.788
+in similar tumor types, very rapidly, the challenge is
+
+150
+00:08:36.828 --> 00:08:38.848
+going to need to be a multiplex
+
+151
+00:08:40.228 --> 00:08:43.869
+approach here. And so what we're now doing is developing multi-cancer
+
+152
+00:08:44.048 --> 00:08:47.968
+cross indication QCS and in this case,
+
+153
+00:08:48.008 --> 00:08:48.617
+rather than
+
+154
+00:08:49.468 --> 00:08:53.428
+the fully supervised training of the previous QCS tool
+
+155
+00:08:53.908 --> 00:08:57.248
+that we had, which had individual pathologists doing
+
+156
+00:08:57.348 --> 00:08:59.888
+annotations on HS to represent
+
+157
+00:08:59.928 --> 00:09:03.768
+the ground truth, now we're using the Modela
+
+158
+00:09:04.288 --> 00:09:07.988
+foundation model that we've obtained, and in a
+
+159
+00:09:08.288 --> 00:09:12.128
+much shorter period of time, much more rapidly, we're able to then train to
+
+160
+00:09:12.168 --> 00:09:13.288
+actually get multiplex
+
+161
+00:09:14.228 --> 00:09:18.128
+output across settings. And the goal then is
+
+162
+00:09:18.168 --> 00:09:21.168
+to move that into an agentic AI-based
+
+163
+00:09:22.348 --> 00:09:26.248
+tool where these AI agents can use information not just
+
+164
+00:09:26.268 --> 00:09:29.788
+from the computational pathology, but from other modalities that might
+
+165
+00:09:29.868 --> 00:09:33.358
+also predict for patient benefit, including ctDNA,
+
+166
+00:09:33.768 --> 00:09:37.428
+proteomics, clinical records, multi-omics, and help
+
+167
+00:09:37.728 --> 00:09:40.148
+get from the domain specific models,
+
+168
+00:09:40.968 --> 00:09:43.448
+better tools for identifying patients.
+
+169
+00:09:43.488 --> 00:09:47.178
+This can potentially then be used for early phase decision
+
+170
+00:09:47.248 --> 00:09:51.088
+making and better identification of the patient
+
+171
+00:09:51.168 --> 00:09:54.858
+selection tools embedded into phase three trials prospectively, and
+
+172
+00:09:54.928 --> 00:09:57.668
+enabling some combinations. So that is the
+
+173
+00:09:58.608 --> 00:10:00.428
+goal and the future.
+
+174
+00:10:02.028 --> 00:10:02.198
+Now,
+
+175
+00:10:03.148 --> 00:10:06.568
+one example of this as well for another modality is molecular imaging.
+
+176
+00:10:06.648 --> 00:10:09.448
+And of course, the vision-based
+
+177
+00:10:10.548 --> 00:10:14.358
+foundation models have been developed over a long period of time and are working
+
+178
+00:10:14.928 --> 00:10:15.358
+very well.
+
+179
+00:10:16.528 --> 00:10:20.368
+One example is that in prostate cancer, actually, because tissue
+
+180
+00:10:20.408 --> 00:10:24.328
+biopsies are harder to obtain and less predictive, actually,
+
+181
+00:10:24.458 --> 00:10:28.228
+imaging tools are often used to identify patients, and this particularly for
+
+182
+00:10:28.288 --> 00:10:32.208
+the radioconjugate modalities, where the mantra
+
+183
+00:10:32.288 --> 00:10:32.988
+is that you
+
+184
+00:10:33.948 --> 00:10:35.508
+treat what you see and you see what you treat.
+
+185
+00:10:37.128 --> 00:10:40.468
+But in order to do that quantitatively, when you've got the extent of bony
+
+186
+00:10:40.488 --> 00:10:42.828
+metastases that this example shows here,
+
+187
+00:10:43.728 --> 00:10:47.348
+that is a lot of work from an individual manual piece.
+
+188
+00:10:47.388 --> 00:10:51.368
+And the current models have been just developed based on prediction
+
+189
+00:10:51.408 --> 00:10:55.308
+from simply baseline scans. What we're doing now is using both
+
+190
+00:10:55.788 --> 00:10:59.648
+baseline and follow-up scans, so you can actually track
+
+191
+00:10:59.668 --> 00:11:03.548
+the trajectory of each individual metastasis automatically identified
+
+192
+00:11:03.588 --> 00:11:07.528
+and tracked. And because you've got the longitudinal information in
+
+193
+00:11:07.568 --> 00:11:11.258
+terms of predicting longer term outcomes, it's much more predictive of those
+
+194
+00:11:11.628 --> 00:11:14.168
+outcomes than just something that looks just at the baseline.
+
+195
+00:11:14.198 --> 00:11:17.608
+And I think that principle of longitudinal information
+
+196
+00:11:18.108 --> 00:11:21.848
+embedded as part of the models that are used is a really important piece of
+
+197
+00:11:22.408 --> 00:11:26.208
+improving the prediction. And so the idea of this is it can predict
+
+198
+00:11:26.248 --> 00:11:29.868
+both spatial and temporal heterogeneity.
+
+199
+00:11:31.388 --> 00:11:35.348
+So, to move on to the multimodal foundation models that
+
+200
+00:11:35.408 --> 00:11:38.328
+then can be built off some of these bases.
+
+201
+00:11:38.608 --> 00:11:42.488
+What we're doing in collaboration with Tempus and Pathos is
+
+202
+00:11:42.528 --> 00:11:42.848
+building
+
+203
+00:11:44.928 --> 00:11:48.388
+the largest multimodal oncology foundation model, again,
+
+204
+00:11:48.468 --> 00:11:52.148
+taking longitudinal electronic healthcare record data,
+
+205
+00:11:53.408 --> 00:11:54.228
+lab values,
+
+206
+00:11:55.768 --> 00:11:56.108
+H&amp;E
+
+207
+00:11:58.008 --> 00:11:59.688
+slides, images,
+
+208
+00:12:00.668 --> 00:12:04.268
+and genomics and/or transcriptomics where we have
+
+209
+00:12:04.308 --> 00:12:07.708
+it, in order to build this multimodal model that we hope will
+
+210
+00:12:08.028 --> 00:12:11.518
+ultimately enable us to better design the trials, better predict what
+
+211
+00:12:11.568 --> 00:12:15.468
+the control arm performance will be for the patient population
+
+212
+00:12:15.508 --> 00:12:19.308
+that is there, but also better select the patients who will respond.
+
+213
+00:12:19.758 --> 00:12:23.148
+And fundamentally, another key problem that we have in drug development
+
+214
+00:12:23.288 --> 00:12:27.088
+isIs making decisions based on the relatively small data
+
+215
+00:12:27.168 --> 00:12:29.418
+sets that we get from early-phase clinical trials.
+
+216
+00:12:30.028 --> 00:12:33.548
+And from this multimodal model, the hope is that we can build
+
+217
+00:12:33.808 --> 00:12:37.708
+digital twins that can effectively help amplify, if
+
+218
+00:12:37.748 --> 00:12:38.368
+you like, the
+
+219
+00:12:39.388 --> 00:12:42.798
+information and the data that you've got in those early-phase clinical trials, and
+
+220
+00:12:42.848 --> 00:12:44.788
+help make predictions about the right dose,
+
+221
+00:12:45.768 --> 00:12:49.648
+and the performance of what will ultimately be happening in
+
+222
+00:12:49.708 --> 00:12:53.478
+a much larger patient population in a more real-world setting in a Phase
+
+223
+00:12:53.548 --> 00:12:57.157
+III. The goal is to improve the success rates of those clinical
+
+224
+00:12:57.248 --> 00:13:01.068
+trials. And today, obviously, we still have too high a failure rate in
+
+225
+00:13:01.088 --> 00:13:01.598
+Phase III.
+
+226
+00:13:03.408 --> 00:13:07.308
+So, in terms of how this is working at AstraZeneca, I would just say already
+
+227
+00:13:07.368 --> 00:13:08.888
+we're embedding AI across
+
+228
+00:13:10.308 --> 00:13:14.128
+the system. And we started with the innovation ecosystem.
+
+229
+00:13:14.168 --> 00:13:17.868
+We can't do this all on our own. We are partnering with frontier AI
+
+230
+00:13:18.148 --> 00:13:18.748
+companies
+
+231
+00:13:19.628 --> 00:13:23.118
+to help us in many different aspects of this
+
+232
+00:13:23.128 --> 00:13:26.768
+build. We're also leveraging hyperscalers like AWS and
+
+233
+00:13:26.968 --> 00:13:29.508
+Domino to make sure we've got the adequate level of compute.
+
+234
+00:13:30.048 --> 00:13:33.968
+We're working with domain-specific specialized AI companies to help
+
+235
+00:13:34.008 --> 00:13:37.928
+in specific areas, partnering with key partners in academia, for
+
+236
+00:13:37.968 --> 00:13:41.308
+example, at Harvard and Stanford within the United States, but also
+
+237
+00:13:41.428 --> 00:13:44.988
+elsewhere. And then I think one thing that's really important is to make sure that
+
+238
+00:13:45.028 --> 00:13:48.848
+we're maintaining the dialogue with patient advocacy groups about how AI is going
+
+239
+00:13:48.868 --> 00:13:52.388
+to be used in the next version of clinical trials and how we
+
+240
+00:13:52.428 --> 00:13:55.228
+maintain the safeguards around that,
+
+241
+00:13:55.348 --> 00:13:58.548
+including adequate representation of
+
+242
+00:13:59.348 --> 00:14:02.728
+patient populations that are sometimes missed from some of the large clinical
+
+243
+00:14:02.768 --> 00:14:03.088
+trials.
+
+244
+00:14:04.048 --> 00:14:08.008
+So what we start with is these multimodal foundation models as
+
+245
+00:14:08.048 --> 00:14:08.468
+the model
+
+246
+00:14:09.288 --> 00:14:09.548
+layer.
+
+247
+00:14:10.448 --> 00:14:10.908
+Then we're
+
+248
+00:14:11.748 --> 00:14:15.248
+helping to build a solution layer, including agentic
+
+249
+00:14:15.688 --> 00:14:19.228
+AI, for example, for the computational pathology, and then
+
+250
+00:14:19.288 --> 00:14:22.928
+applying that in the specific use cases of which I've given you an example of,
+
+251
+00:14:22.968 --> 00:14:25.048
+which is the TRK2 NMR by QCS.
+
+252
+00:14:26.078 --> 00:14:29.008
+But that isn't enough. We have to also make sure that we
+
+253
+00:14:29.928 --> 00:14:32.767
+create the changes in the people process and culture.
+
+254
+00:14:32.788 --> 00:14:36.628
+We've got to make sure that we're enabling the training and AI
+
+255
+00:14:36.648 --> 00:14:39.878
+familiarity across a very large organization.
+
+256
+00:14:39.888 --> 00:14:42.428
+We don't just want to automate different parts of our process.
+
+257
+00:14:42.468 --> 00:14:46.028
+We want to think about what the design of the process might be with an
+
+258
+00:14:46.068 --> 00:14:49.788
+AI-first world. And we've got to make sure that we have the appropriate
+
+259
+00:14:49.908 --> 00:14:50.268
+culture
+
+260
+00:14:51.508 --> 00:14:54.708
+guidelines and guardrails in place to make sure that we're using this
+
+261
+00:14:55.008 --> 00:14:58.828
+effectively. So I hope that gives you some sense as an intro of how we're doing
+
+262
+00:14:58.928 --> 00:15:02.168
+and approaching this across a large pharmaceutical company.
+
+263
+00:15:02.768 --> 00:15:03.897
+And now I'd like to invite my
+
+264
+00:15:05.788 --> 00:15:08.608
+other speakers to come and give the context from their perspective.
+
+265
+00:15:09.248 --> 00:15:10.128
+So I can start with
+
+266
+00:15:11.448 --> 00:15:11.868
+Sigal
+
+267
+00:15:12.688 --> 00:15:13.988
+Kadish is going to give the next
+
+268
+00:15:15.088 --> 00:15:18.228
+talk. Sigal is a professor at
+
+269
+00:15:19.588 --> 00:15:22.468
+Harvard and also has been the co-founder of
+
+270
+00:15:23.488 --> 00:15:27.388
+Foghorn. So she has both the academic view in the lab
+
+271
+00:15:27.408 --> 00:15:31.228
+there and also a biotech view from the board
+
+272
+00:15:31.288 --> 00:15:31.508
+of
+
+273
+00:15:34.288 --> 00:15:37.367
+Foghorn about how these tools can be applied in that context.
+
+274
+00:15:37.438 --> 00:15:39.968
+So with that, thank you very much, and Sigal, over to you.
+
+275
+00:15:46.248 --> 00:15:49.488
+Great. Thank you very much, Susan, and beautiful work from Izzy.
+
+276
+00:15:49.518 --> 00:15:53.337
+It's really great to see this use of AI, and thank you so much
+
+277
+00:15:53.348 --> 00:15:56.258
+for including Josh and myself in this
+
+278
+00:15:56.988 --> 00:15:59.608
+exciting forum. I think you're going to hear
+
+279
+00:15:59.688 --> 00:16:03.088
+the wide distribution of our
+
+280
+00:16:03.108 --> 00:16:06.288
+motivations for including AI in the work from us, really
+
+281
+00:16:06.368 --> 00:16:10.268
+biology-inspired utility and operation in this AI
+
+282
+00:16:10.308 --> 00:16:13.958
+world, and certainly from Josh, a real deep dive look at how many of the engines
+
+283
+00:16:13.988 --> 00:16:15.918
+that we now use have actually been built,
+
+284
+00:16:17.408 --> 00:16:20.288
+including by all of his great work over the years.
+
+285
+00:16:21.088 --> 00:16:24.628
+So I thought I'd tell you a little bit about today some of the therapeutic
+
+286
+00:16:24.688 --> 00:16:28.578
+approaches and opportunities in chromatin and gene regulation that
+
+287
+00:16:28.628 --> 00:16:32.448
+have been informed by basic mechanisms that our group and others have uncovered in
+
+288
+00:16:32.488 --> 00:16:36.308
+this area and that we think are particularly ripe for the
+
+289
+00:16:36.528 --> 00:16:39.268
+not only inclusion but really adoption of AI
+
+290
+00:16:40.348 --> 00:16:44.328
+as we go forward. And as many of you know, our laboratory has had
+
+291
+00:16:44.388 --> 00:16:47.728
+a long-standing interest in understanding the structure and function of large,
+
+292
+00:16:48.208 --> 00:16:51.868
+multimeric, very heterogeneous ATP-dependent chromatin
+
+293
+00:16:51.908 --> 00:16:55.508
+remodeling complexes. So some of the work I'll share today is really just
+
+294
+00:16:55.808 --> 00:16:59.228
+from the lens and how we think about AI from the lens of studying these large
+
+295
+00:16:59.848 --> 00:17:01.748
+multi-component regulators.
+
+296
+00:17:02.588 --> 00:17:06.459
+So our laboratory is largely a basic science laboratory focused in biochemistry,
+
+297
+00:17:06.548 --> 00:17:09.268
+biophysics, increasingly 3D structural biology.
+
+298
+00:17:09.328 --> 00:17:13.229
+We really integrate in human genetics, which is really the inspiration behind
+
+299
+00:17:13.248 --> 00:17:16.248
+much of we do, and I'll go into that, as well as
+
+300
+00:17:16.469 --> 00:17:20.168
+epigenomic-based methods. And in parallel to that, I'm fortunate to
+
+301
+00:17:20.209 --> 00:17:23.248
+partner with and participate in groups that are intensely dedicated toward
+
+302
+00:17:23.368 --> 00:17:27.328
+translating discoveries in this area into hopefully meaningful therapeutics
+
+303
+00:17:27.348 --> 00:17:31.248
+for patients, which brings me to this requisite disclosure slide, most relevant of
+
+304
+00:17:31.308 --> 00:17:34.718
+which is that I'm the founder, as Susan mentioned, of Foghorn Therapeutics, and I
+
+305
+00:17:34.748 --> 00:17:36.768
+have the following other disclosures.
+
+306
+00:17:36.808 --> 00:17:36.848
+So
+
+307
+00:17:37.808 --> 00:17:41.408
+inside the nuclei of each one of our trillions of cells lies a vast,
+
+308
+00:17:41.468 --> 00:17:45.408
+highly interconnected network of factors that work together in concert
+
+309
+00:17:45.428 --> 00:17:49.248
+to orchestrate the overall architecture or topology of our genomes.
+
+310
+00:17:49.618 --> 00:17:53.528
+And we largely group these types of factors as DNA
+
+311
+00:17:53.548 --> 00:17:57.328
+or RNA modifiers, histone modifiers, or chromatin
+
+312
+00:17:57.428 --> 00:18:01.168
+remodeling complexes. And these work together to dictate
+
+313
+00:18:01.208 --> 00:18:05.028
+whether chromatin looks like this, largely in this off configuration, inaccessible
+
+314
+00:18:05.088 --> 00:18:08.928
+to transcriptional machinery, or in this nice open configuration shown here,
+
+315
+00:18:08.988 --> 00:18:12.628
+accessible for transcription factors and other transcription factor, that
+
+316
+00:18:12.648 --> 00:18:16.608
+transcriptional apparati to bind their target sequences
+
+317
+00:18:16.648 --> 00:18:19.928
+and largely enable active transcription.
+
+318
+00:18:19.938 --> 00:18:23.178
+And it's really the sequence positioning and timing of these factors
+
+319
+00:18:23.228 --> 00:18:26.878
+altogether and many more and many subclasses of each of these that
+
+320
+00:18:26.888 --> 00:18:30.688
+dictate very critical processes from human development to cellular
+
+321
+00:18:30.748 --> 00:18:34.488
+differentiation, lineage commitment, responses to external stimuli.
+
+322
+00:18:34.548 --> 00:18:37.888
+More and more, we really think these are the central hubs and integrators, if you
+
+323
+00:18:37.948 --> 00:18:41.548
+will, of cellular information, both intracellular information and in
+
+324
+00:18:41.568 --> 00:18:44.148
+responding to cues from outside cells.
+
+325
+00:18:44.548 --> 00:18:48.088
+And what we've really learned over the past decade, aided in large part to
+
+326
+00:18:48.428 --> 00:18:51.828
+large-scale genomic studies and sequencing studies and with the power of human
+
+327
+00:18:51.888 --> 00:18:54.728
+genetics, is that really any kind of defect in how this
+
+328
+00:18:54.808 --> 00:18:58.368
+runsrepresents a major cause or
+
+329
+00:18:58.408 --> 00:19:02.318
+contributing factor to human disease, and that's definitely the case in a number of
+
+330
+00:19:02.328 --> 00:19:06.208
+human cancers. So again, our laboratory is really focused on this
+
+331
+00:19:06.628 --> 00:19:10.578
+here, a simplified picture of this beast of a complex, which in mammalian cells is
+
+332
+00:19:10.628 --> 00:19:14.318
+actually pieced together from the products of
+
+333
+00:19:14.528 --> 00:19:18.208
+29 different genes into 11 to 15 or so subunit entities.
+
+334
+00:19:18.708 --> 00:19:21.748
+And that's made possible by the fact that there are
+
+335
+00:19:21.808 --> 00:19:24.628
+combinatorics that dictate the assembly.
+
+336
+00:19:24.668 --> 00:19:28.188
+These can actually be assembled into upwards of 1,000 different combinations in
+
+337
+00:19:28.248 --> 00:19:31.968
+even a given single cell, depending on the expression of different paralogs and so
+
+338
+00:19:32.068 --> 00:19:35.308
+on. They assemble into these three main forms, which over the years we've worked to
+
+339
+00:19:35.348 --> 00:19:39.208
+characterize. Canonical BAF complexes, pBAF complexes, ncBAF complexes,
+
+340
+00:19:39.268 --> 00:19:42.828
+just to show you that even within this family that has undergone quite an
+
+341
+00:19:42.868 --> 00:19:46.668
+extensive degree of evolution since its first naming in
+
+342
+00:19:46.708 --> 00:19:49.088
+yeast, we have these three main forms.
+
+343
+00:19:49.688 --> 00:19:53.088
+And there's also all these combinations are made possible
+
+344
+00:19:53.128 --> 00:19:56.848
+by mutually exclusive paralogs. That is one paralog or
+
+345
+00:19:56.908 --> 00:20:00.868
+another, never both, can fit the same structural pocket in the
+
+346
+00:20:00.948 --> 00:20:04.168
+complex. And you can see by just the repeating names of all the subunits I show you
+
+347
+00:20:04.208 --> 00:20:08.148
+on the left that there's several instances of that throughout this complex.
+
+348
+00:20:08.608 --> 00:20:11.848
+Now, the reason our lab is so extensively focused on these is that they are very
+
+349
+00:20:12.148 --> 00:20:16.108
+frequently mutated in human cancer, also in neurodevelopmental conditions is the
+
+350
+00:20:16.148 --> 00:20:19.838
+other place where these really emerge as very frequently disrupted
+
+351
+00:20:19.868 --> 00:20:23.568
+genes. And in addition to that, thanks to, again, genetics and
+
+352
+00:20:23.588 --> 00:20:27.568
+genomics-enabled technologies, for example, CRISPR
+
+353
+00:20:27.578 --> 00:20:31.028
+screening, we know that these are top dependencies and
+
+354
+00:20:31.448 --> 00:20:35.428
+vulnerabilities in a wide range of human cancers, which has really nominated
+
+355
+00:20:35.468 --> 00:20:39.308
+these as top targets for therapeutic inhibition and caused these to
+
+356
+00:20:39.348 --> 00:20:43.048
+jump to the spotlight of attention upon the earlier days of
+
+357
+00:20:43.388 --> 00:20:45.578
+CRISPR and shRNA-based even screening.
+
+358
+00:20:46.148 --> 00:20:48.348
+So again, we study these because they're very frequently mutated.
+
+359
+00:20:48.388 --> 00:20:51.648
+This is actually the most frequently disrupted entity,
+
+360
+00:20:52.148 --> 00:20:55.248
+second only to p53 across all of human cancer.
+
+361
+00:20:55.668 --> 00:20:59.588
+And in addition to their roles in a number of adult and common cancers,
+
+362
+00:20:59.608 --> 00:21:02.668
+as shown on the left, where they tally to 20% of these cancers, these are
+
+363
+00:21:02.748 --> 00:21:05.408
+also drivers of many rare cancers.
+
+364
+00:21:05.468 --> 00:21:09.408
+You can see here that actually many of these hit the 100% line or
+
+365
+00:21:09.488 --> 00:21:13.308
+come darn close to hitting that 100% line, providing very strong support for an
+
+366
+00:21:13.348 --> 00:21:15.968
+initiating role of some of the defects in these genes.
+
+367
+00:21:16.708 --> 00:21:20.688
+And actually, many of these disorders that I show you on the x-axis here
+
+368
+00:21:20.728 --> 00:21:23.878
+are pediatric malignancies, which is why I actually find my home department at
+
+369
+00:21:23.888 --> 00:21:25.908
+Dana-Farber in pediatric oncology.
+
+370
+00:21:26.828 --> 00:21:29.668
+We've learned over the years that different kinds of mutations can cause
+
+371
+00:21:29.928 --> 00:21:33.828
+subcomplexes to shift around. The stoichiometry or abundance of different types of
+
+372
+00:21:34.248 --> 00:21:37.988
+members of this family can shift, which underlie many of the gene
+
+373
+00:21:38.028 --> 00:21:39.668
+regulatory patterns in these diseases.
+
+374
+00:21:40.228 --> 00:21:43.648
+And we know also that certain paralogs, if one member or another is lost,
+
+375
+00:21:44.028 --> 00:21:47.548
+these cancer cells become uniquely dependent on the remaining paralog.
+
+376
+00:21:47.588 --> 00:21:48.948
+And that has nominated
+
+377
+00:21:49.768 --> 00:21:53.568
+SMARCA2, for example, as a top target in SMARCA4 mutant lung cancer.
+
+378
+00:21:54.328 --> 00:21:57.188
+That's being pursued by FogHorn and other companies.
+
+379
+00:21:57.368 --> 00:22:00.998
+ERBB1A mutant cancers with ERBB1B selective inhibition as
+
+380
+00:22:01.368 --> 00:22:04.168
+a tall and longstanding goal in the field.
+
+381
+00:22:04.208 --> 00:22:05.848
+These are just some of these examples.
+
+382
+00:22:05.857 --> 00:22:09.728
+So all of this is really the genetics have really been the inspiration behind much
+
+383
+00:22:09.788 --> 00:22:12.608
+of the data as input data that we've gotten in this field.
+
+384
+00:22:13.288 --> 00:22:16.868
+And the early days, exactly right when we were actually starting the lab,
+
+385
+00:22:17.208 --> 00:22:20.588
+these synthetic lethalities and mutations motivated us to really get a full
+
+386
+00:22:20.608 --> 00:22:24.588
+picture, biochemically and then increasingly at amino acid resolution
+
+387
+00:22:24.628 --> 00:22:27.688
+and with systems-based approaches. What's the composition?
+
+388
+00:22:27.748 --> 00:22:30.268
+How are these modularly organized? How do they come together?
+
+389
+00:22:30.328 --> 00:22:33.268
+What are all the possibilities for how they can combine?
+
+390
+00:22:33.308 --> 00:22:36.428
+To try to understand the 3D structure and topology.
+
+391
+00:22:36.468 --> 00:22:39.568
+This picture I show you here is now based on the 3D structure, but it's something
+
+392
+00:22:39.608 --> 00:22:42.868
+we now take for granted. But of course, just even five, six years ago, we didn't
+
+393
+00:22:42.908 --> 00:22:46.788
+have that picture. We would draw them as PowerPoint bubbles, never knowing exactly
+
+394
+00:22:46.828 --> 00:22:49.448
+which subunit touches which, never knowing which ones even interface with
+
+395
+00:22:49.508 --> 00:22:52.788
+chromatin. So really, this field has emerged and come a long way,
+
+396
+00:22:53.388 --> 00:22:55.188
+thanks to the work of many labs throughout the world.
+
+397
+00:22:55.688 --> 00:22:57.568
+Not only structure, but also lack thereof.
+
+398
+00:22:57.958 --> 00:23:01.838
+So lack of structure or putative lack of structure with intrinsically disordered
+
+399
+00:23:01.888 --> 00:23:05.708
+regions, which actually comprise over half of the molecular weight of this two
+
+400
+00:23:05.748 --> 00:23:08.988
+megadalton complex. So there's a lot of work to be done to understand these
+
+401
+00:23:09.028 --> 00:23:12.558
+sequences we don't yet fully understand and the functional relevance of what they
+
+402
+00:23:12.648 --> 00:23:12.808
+do.
+
+403
+00:23:13.728 --> 00:23:16.948
+We know that there are both direct as well as allosteric mechanisms of
+
+404
+00:23:17.048 --> 00:23:19.068
+modulating remodeling activities.
+
+405
+00:23:19.148 --> 00:23:22.368
+So how these complexes actually do their job on nucleosome
+
+406
+00:23:22.428 --> 00:23:26.268
+substrates. You can see they grip nucleosomes like a carpenter C-clamp,
+
+407
+00:23:26.528 --> 00:23:28.568
+and they ratchet these DNA nucleosome contacts.
+
+408
+00:23:29.788 --> 00:23:32.908
+Sometimes a single residue mutation at the very bottom of the complex actually can
+
+409
+00:23:32.968 --> 00:23:36.288
+come back around because of the allosteric effects to affect remodeling activity.
+
+410
+00:23:36.628 --> 00:23:40.328
+And otherwise, there are also pockets right within the catalytic pocket that
+
+411
+00:23:40.368 --> 00:23:44.248
+can affect remodeling activity. We've had a longstanding interest in understanding
+
+412
+00:23:44.288 --> 00:23:46.528
+how these complexes get where they need to go.
+
+413
+00:23:46.598 --> 00:23:49.868
+What is the navigation system along two meters of DNA?
+
+414
+00:23:49.948 --> 00:23:53.568
+How do they have these sequence-based and non-sequence-based cues for their
+
+415
+00:23:53.608 --> 00:23:53.978
+targeting?
+
+416
+00:23:55.268 --> 00:23:58.928
+And of course, all of this has motivated specialized efforts to
+
+417
+00:23:58.968 --> 00:24:02.248
+identify small molecule inhibitors that can target relevant human
+
+418
+00:24:02.288 --> 00:24:05.838
+complexes. Not necessarily just domains isolated from different
+
+419
+00:24:05.848 --> 00:24:09.028
+components here, but the actual full complexes as they act
+
+420
+00:24:09.608 --> 00:24:13.078
+in native mammalian chromatin. And of course, looking at
+
+421
+00:24:13.108 --> 00:24:17.008
+these as monotherapies as well as in combinations in oncology is the goal.
+
+422
+00:24:17.458 --> 00:24:21.348
+So really, we take all of these areas, and we've been increasingly inputting them
+
+423
+00:24:21.428 --> 00:24:25.248
+into AI-based strategies for integration, prediction, and also
+
+424
+00:24:25.288 --> 00:24:29.188
+network-based analyses. And this spans really the work we do on the
+
+425
+00:24:29.228 --> 00:24:32.988
+protein biochemistry and protein structure, all the way to the work we do
+
+426
+00:24:33.068 --> 00:24:36.878
+that is more genomic-centered. How to understand where these complexes
+
+427
+00:24:36.928 --> 00:24:40.728
+target, how they act, how much accessibility can they generate, and how much
+
+428
+00:24:40.968 --> 00:24:44.688
+transcriptional activity can be rendered by these
+
+429
+00:24:44.728 --> 00:24:48.468
+various combinations. So the outputs of this over the past
+
+430
+00:24:48.648 --> 00:24:52.348
+maybe even just year or so of really increasing our leveraging of
+
+431
+00:24:52.408 --> 00:24:55.948
+AI-based tools has been to develop new AI-powered models,
+
+432
+00:24:56.188 --> 00:24:59.946
+already using theThe frameworks that have been developed by,
+
+433
+00:25:00.276 --> 00:25:03.936
+say, TriDiscovery and many other alpha fold bolts and so on,
+
+434
+00:25:04.296 --> 00:25:07.876
+for both protein and gene regulatory questions to inform and
+
+435
+00:25:07.916 --> 00:25:11.756
+rationalize and provide really a foundation for how we
+
+436
+00:25:11.796 --> 00:25:15.196
+interpret the amassing and still increasingly amassing genetics
+
+437
+00:25:15.896 --> 00:25:19.236
+from high throughput screening as well as just cancer genetics from essentially now
+
+438
+00:25:19.296 --> 00:25:23.096
+every individual that comes through a major cancer center to provide
+
+439
+00:25:23.136 --> 00:25:26.736
+constraints as well, or guardrails, if you will, for AI-based predictions.
+
+440
+00:25:27.216 --> 00:25:31.036
+This is becoming increasingly important, particularly in small molecule discovery.
+
+441
+00:25:31.916 --> 00:25:35.676
+And again, taking all those outputs and using these to actually revise
+
+442
+00:25:35.756 --> 00:25:39.196
+our inputs and going back in this circular fashion to
+
+443
+00:25:39.496 --> 00:25:43.136
+revise and also further curate existing data sets,
+
+444
+00:25:43.736 --> 00:25:47.716
+the input data, the constraints that are actually needed to get a proper model
+
+445
+00:25:47.776 --> 00:25:51.756
+that can then be used for, say, in silico drug discovery.
+
+446
+00:25:52.166 --> 00:25:56.076
+And to reassess often targets their interactions
+
+447
+00:25:56.196 --> 00:26:00.056
+and opportunities that may have previously been obscured in the
+
+448
+00:26:00.066 --> 00:26:01.976
+data for cancer cell selectivity.
+
+449
+00:26:03.496 --> 00:26:06.416
+Again, I'll just tell you three quick little vignettes as to how we've done this.
+
+450
+00:26:06.476 --> 00:26:09.156
+We've had, again, a question as to how these get to where they need to go on
+
+451
+00:26:09.196 --> 00:26:09.656
+chromatin.
+
+452
+00:26:10.476 --> 00:26:14.416
+This has been beautifully worked out by a very talented postdoc in the lab
+
+453
+00:26:14.456 --> 00:26:17.856
+very recently. Sid Jain. He's actually here in the audience, and he just won an ACR
+
+454
+00:26:17.916 --> 00:26:21.896
+award for this work. This is really how we've explored how very
+
+455
+00:26:21.936 --> 00:26:25.636
+specialized factors, transcription factors, of which there are over 1,600
+
+456
+00:26:25.656 --> 00:26:29.516
+mammalian TFs, how these interact with a very specialized domain I'll tell you
+
+457
+00:26:29.556 --> 00:26:32.996
+about in a second, to actually guide the positioning and targeting of these
+
+458
+00:26:33.036 --> 00:26:36.906
+complexes on chromatin. How these complexes interact with features, this
+
+459
+00:26:36.956 --> 00:26:40.276
+seemingly endless universe of the histone code with multiple
+
+460
+00:26:40.336 --> 00:26:43.216
+post-translational modifications, variants, mutations, and so on.
+
+461
+00:26:43.656 --> 00:26:47.396
+How do these remodelers read and respond to that very vast,
+
+462
+00:26:47.516 --> 00:26:48.936
+also seemingly endless,
+
+463
+00:26:50.456 --> 00:26:53.616
+landscape? And finally, how do we interpret and
+
+464
+00:26:53.736 --> 00:26:57.196
+inform the functions and the roles of these
+
+465
+00:26:57.236 --> 00:27:01.026
+intrinsically disordered regions and their roles both in cancer and in our
+
+466
+00:27:01.396 --> 00:27:04.596
+normal cells and tissues? And so I'll just give you a couple of quick vignettes.
+
+467
+00:27:04.636 --> 00:27:07.336
+So this was the work on this very specialized domain.
+
+468
+00:27:07.375 --> 00:27:11.196
+We named this domain the SWIFT domain for switch-nit, immunoglobulin fold.
+
+469
+00:27:11.236 --> 00:27:14.716
+It looks like an immunoglobulin fold for transcription factor interactions, which
+
+470
+00:27:14.756 --> 00:27:17.096
+is really this out-pouching you can see of the complex.
+
+471
+00:27:17.516 --> 00:27:21.256
+It sort of spans this outward-facing module here.
+
+472
+00:27:22.196 --> 00:27:26.136
+And we used Alphafold 3 to actually predict where along, in this case,
+
+473
+00:27:26.256 --> 00:27:29.686
+one TF, a transcription factor called PU.1, also called SPI1,
+
+474
+00:27:30.096 --> 00:27:34.036
+where along that transcription factor TAD can this
+
+475
+00:27:34.276 --> 00:27:37.796
+TF interact with this structured hydrophobic pocket and domain?
+
+476
+00:27:38.176 --> 00:27:41.936
+We got these three products from probability mapping by Alphafold 3.
+
+477
+00:27:42.356 --> 00:27:45.846
+We then tested these, and you can see these three regions really
+
+478
+00:27:46.036 --> 00:27:49.976
+enriching on just a simple pull-down assay to really validate whether this was
+
+479
+00:27:50.016 --> 00:27:53.976
+truly binding in this allovalent, multiple binding sites on the TAD, binding
+
+480
+00:27:53.986 --> 00:27:57.456
+a single site on the SWIFT domain. We performed hydrogen-deuterium exchange
+
+481
+00:27:57.496 --> 00:28:01.116
+experiments where we can, of course, evaluate binding sites by looking for
+
+482
+00:28:01.126 --> 00:28:05.016
+protection in these assays. And excitingly, we see the exact same
+
+483
+00:28:05.056 --> 00:28:08.416
+residues that were pulled down by these peptide pull-down
+
+484
+00:28:08.456 --> 00:28:12.356
+experiments and predicted correctly by Alphafold
+
+485
+00:28:12.416 --> 00:28:15.716
+3-based modeling. So this was really exciting to show these two regions.
+
+486
+00:28:16.116 --> 00:28:19.756
+And this is broadly important because across all of human cancers, this is now
+
+487
+00:28:19.816 --> 00:28:23.505
+taking over 1,000 different cancer cell lines, and again, using a computational
+
+488
+00:28:23.556 --> 00:28:26.456
+approach to just predict how often is a member of
+
+489
+00:28:26.536 --> 00:28:30.516
+the complex that contains this SWIFT domain, and there are actually
+
+490
+00:28:30.596 --> 00:28:33.656
+three paralogs. I told you about this diversity in these paralogs.
+
+491
+00:28:33.696 --> 00:28:36.996
+There's three, SMARCD1, D2, and D3. They all have the SWIFT domain.
+
+492
+00:28:37.036 --> 00:28:40.676
+They're all slightly different. And if you look at fitness correlations, which is a
+
+493
+00:28:40.736 --> 00:28:44.376
+great way to understand genes that may function similarly
+
+494
+00:28:44.436 --> 00:28:48.316
+across the diversity of many, in this case, we have the privilege to
+
+495
+00:28:48.356 --> 00:28:49.976
+look at over 1,000 cancer cell lines.
+
+496
+00:28:50.276 --> 00:28:52.725
+You can see many of these are top codependencies.
+
+497
+00:28:53.096 --> 00:28:56.906
+Dependent on the complex was explaining how these are dependent on these
+
+498
+00:28:56.916 --> 00:29:00.616
+complexes, in some cases targeted by ATPase inhibitors, which
+
+499
+00:29:00.776 --> 00:29:02.976
+summarily wipe out the activity
+
+500
+00:29:03.956 --> 00:29:07.236
+of these remodelers. And here we see very specialized interactions actually that
+
+501
+00:29:07.256 --> 00:29:07.956
+are upholding
+
+502
+00:29:08.876 --> 00:29:11.436
+those cancer types. So we're excited about that.
+
+503
+00:29:12.316 --> 00:29:16.116
+We've also, again, looked at how these interact with different types of landscapes
+
+504
+00:29:16.216 --> 00:29:19.936
+on chromatin. So just all I want you to take from this complicated radar plot is
+
+505
+00:29:19.956 --> 00:29:23.756
+that different types of complexes in this family interact differently
+
+506
+00:29:23.796 --> 00:29:27.256
+with different types of nucleosomes decorated with different types of histone
+
+507
+00:29:27.296 --> 00:29:31.196
+modifications. You can see some really dial up the activity, others really
+
+508
+00:29:31.216 --> 00:29:35.116
+dial down the activity. Just as a sanity check, the places where these complexes
+
+509
+00:29:35.156 --> 00:29:38.896
+grip onto nucleosomes, which are called the acidic patches, any kind of
+
+510
+00:29:38.916 --> 00:29:41.516
+disruption in that acidic patch, you see a very big blue
+
+511
+00:29:42.456 --> 00:29:45.936
+area of density there. The remodeling activity is substantially
+
+512
+00:29:45.996 --> 00:29:49.976
+decreased. But it's amazing that even just along one histone tail, you see some
+
+513
+00:29:50.016 --> 00:29:51.046
+residues that if
+
+514
+00:29:52.016 --> 00:29:55.756
+acetylated, for example, really dial up the activity and just a few neighboring
+
+515
+00:29:55.816 --> 00:29:58.056
+residues down, those can drop the activity.
+
+516
+00:29:58.516 --> 00:30:01.936
+This gives you just a sense across one histone tail for the extensive
+
+517
+00:30:01.956 --> 00:30:05.456
+heterogeneity and degree of diversity we have interactions on chromatin.
+
+518
+00:30:06.676 --> 00:30:10.436
+And this is exciting to us because it's pointed toward very specific now
+
+519
+00:30:11.016 --> 00:30:12.896
+complex and even module-specific
+
+520
+00:30:13.896 --> 00:30:17.636
+strategies for inhibition. Rather than, again, summarily inhibiting the
+
+521
+00:30:17.676 --> 00:30:20.496
+entire engine across our human cells and tissues, really
+
+522
+00:30:20.596 --> 00:30:24.296
+specialized targeting interfaces that may be more amenable
+
+523
+00:30:24.476 --> 00:30:26.036
+to selective drug discovery efforts.
+
+524
+00:30:26.446 --> 00:30:29.416
+And finally, I'll leave you with the fact this is the structure of the endogenous
+
+525
+00:30:29.476 --> 00:30:32.656
+complex that we resolved several years ago.
+
+526
+00:30:32.996 --> 00:30:36.716
+You can see it's incomplete in parts, and actually, part of that is because we
+
+527
+00:30:36.816 --> 00:30:38.996
+use endogenously purified material for this.
+
+528
+00:30:39.016 --> 00:30:41.376
+This was not using recombinant complexes.
+
+529
+00:30:41.416 --> 00:30:43.696
+This was all endogenously purified from human cells.
+
+530
+00:30:43.996 --> 00:30:47.936
+You can just see the extensive amount of density that's unassigned
+
+531
+00:30:48.156 --> 00:30:50.876
+in these structures, which is lackluster for the structural aficionados.
+
+532
+00:30:50.936 --> 00:30:54.836
+But for us, it was actually a motivating factor to understand and try
+
+533
+00:30:54.896 --> 00:30:58.756
+to start developing studies that could help us inform what are the roles
+
+534
+00:30:58.816 --> 00:31:02.692
+of these putatively unstructuredor just disordered
+
+535
+00:31:02.772 --> 00:31:05.512
+low complexity regions of the complex, of which there are many.
+
+536
+00:31:05.572 --> 00:31:09.322
+You can see some of these total out-pouchings of the complex that have no described
+
+537
+00:31:09.372 --> 00:31:13.012
+function. Here's just an example of how bad this is, and here's how bad the
+
+538
+00:31:13.032 --> 00:31:16.492
+prediction is by AlphaFold. This is a complete set of spaghetti.
+
+539
+00:31:16.522 --> 00:31:20.142
+The majority of this 250 kilodalton subunit is totally not
+
+540
+00:31:20.292 --> 00:31:23.772
+solved and is very low complexity and is an IDR.
+
+541
+00:31:25.032 --> 00:31:28.072
+All that's solved is the part that actually inserts itself into the complex.
+
+542
+00:31:28.112 --> 00:31:30.292
+That's the only structured domain shown in blue.
+
+543
+00:31:31.092 --> 00:31:34.932
+This is 66% disordered, pretty bad, and it accounts for a
+
+544
+00:31:35.052 --> 00:31:37.472
+third of all the disorder of this entire complex.
+
+545
+00:31:37.812 --> 00:31:40.822
+So we thought that was a good bet. You can also see just how much we have to do
+
+546
+00:31:40.852 --> 00:31:44.632
+this work, because look at how many mutations, single
+
+547
+00:31:44.652 --> 00:31:48.572
+residue mutations are in cancer and in neurodevelopmental conditions in these
+
+548
+00:31:48.612 --> 00:31:52.542
+ARID1A and ARID1B proteins. You can just see how much these are smattered
+
+549
+00:31:52.572 --> 00:31:55.512
+throughout these IDRs that are
+
+550
+00:31:55.532 --> 00:31:57.382
+incredibly disordered.
+
+551
+00:31:58.232 --> 00:32:01.942
+But there's a significant burden of mutations across cancers and neurodevelopmental
+
+552
+00:32:01.992 --> 00:32:04.712
+conditions that motivated us to explore this.
+
+553
+00:32:05.491 --> 00:32:09.072
+So we did that, and computationally, we've been able to now take the entire set of
+
+554
+00:32:09.132 --> 00:32:12.992
+IDRs across this one remodeler and diverse remodeler
+
+555
+00:32:13.152 --> 00:32:16.942
+context and actually assign different clusters of features,
+
+556
+00:32:17.392 --> 00:32:21.072
+grammar features, amino acid sequence grammars, and analyze
+
+557
+00:32:21.112 --> 00:32:24.392
+these across the subunits of this complex
+
+558
+00:32:25.152 --> 00:32:28.192
+for the entire complex. And you can see that there are-- The ones on the left are
+
+559
+00:32:28.232 --> 00:32:31.412
+those that are hallmark to ARID1A and 1B that I showed you in the previous slide.
+
+560
+00:32:31.452 --> 00:32:35.272
+But look at how many other enrichments there are of different
+
+561
+00:32:35.352 --> 00:32:38.632
+types of features of amino acids and grammars.
+
+562
+00:32:39.192 --> 00:32:41.132
+We did this work with Rohit Pappu's group at Wash U.
+
+563
+00:32:41.492 --> 00:32:43.812
+You can see also if we look at the entire proteome,
+
+564
+00:32:44.872 --> 00:32:48.412
+these complexes in particular are very highly enriched for
+
+565
+00:32:48.452 --> 00:32:52.002
+"exceptional grammars," meaning those that stand out by orders of
+
+566
+00:32:52.052 --> 00:32:56.032
+magnitude when compared to every other IDR encoded
+
+567
+00:32:56.072 --> 00:32:57.852
+by the entire mammalian proteome.
+
+568
+00:32:58.052 --> 00:33:01.002
+You can see many of these are top-ranked features,
+
+569
+00:33:01.612 --> 00:33:03.522
+again, underscoring likely their
+
+570
+00:33:04.372 --> 00:33:07.812
+functional significance, which we have active efforts to try to understand,
+
+571
+00:33:07.852 --> 00:33:11.432
+especially for these paralogs here that again
+
+572
+00:33:11.752 --> 00:33:14.652
+remain top drug targets for the industry.
+
+573
+00:33:15.252 --> 00:33:17.072
+So all of this, I hope I've
+
+574
+00:33:18.312 --> 00:33:21.972
+motivated you and helped consider that this area in
+
+575
+00:33:22.012 --> 00:33:25.612
+particular is very ripe for AI-based identification of the proper targets
+
+576
+00:33:26.052 --> 00:33:29.612
+using the patterns from mechanisms like those that I described.
+
+577
+00:33:30.352 --> 00:33:34.092
+Is a target really one protein, or is it often a target should be
+
+578
+00:33:34.132 --> 00:33:38.052
+considered multiple proteins, at least two proteins coming together,
+
+579
+00:33:38.512 --> 00:33:42.102
+perhaps also in a different cellular context that allows increasing selectivity
+
+580
+00:33:42.472 --> 00:33:46.352
+for those cancer cells? This is definitely ripe in many of these interfaces for in
+
+581
+00:33:46.372 --> 00:33:49.902
+silico discovery of small molecule modulators, not only inhibitors,
+
+582
+00:33:50.532 --> 00:33:51.932
+for these specialized interactions.
+
+583
+00:33:52.832 --> 00:33:56.482
+And this has been a tall order in the chromatin and epigenetics
+
+584
+00:33:56.572 --> 00:34:00.292
+field, which has been overall for drug discovery, very challenging
+
+585
+00:34:00.412 --> 00:34:04.282
+because many of these regulators, these BAF complexes included, are broadly
+
+586
+00:34:04.292 --> 00:34:07.452
+commissioned throughout our healthy normal cells and tissues and for a
+
+587
+00:34:07.472 --> 00:34:11.172
+myriad of processes, from activating transcription, repressing
+
+588
+00:34:11.212 --> 00:34:12.033
+transcription, to
+
+589
+00:34:13.292 --> 00:34:15.632
+changing chromatin topology overall.
+
+590
+00:34:15.732 --> 00:34:19.372
+And so this is an opportunity if we can increasingly understand these interactions
+
+591
+00:34:19.432 --> 00:34:22.192
+and definitely guided by AI and in some cases
+
+592
+00:34:23.292 --> 00:34:24.312
+discovered by AI,
+
+593
+00:34:25.112 --> 00:34:29.013
+we have the opportunity for selective reprogramming and changing these
+
+594
+00:34:29.033 --> 00:34:32.993
+broadly commissioned machinery into opportunities for
+
+595
+00:34:33.033 --> 00:34:34.522
+cancer cell selective medicines.
+
+596
+00:34:35.152 --> 00:34:36.752
+So with that, I'll just thank the members of the lab.
+
+597
+00:34:36.772 --> 00:34:39.272
+There are many over the years that did this culmination of work.
+
+598
+00:34:39.493 --> 00:34:41.473
+The three stories I told you were led by Sidhant Jain,
+
+599
+00:34:42.473 --> 00:34:46.332
+the TF work. AJ Patil did the work on the IDRs.
+
+600
+00:34:46.732 --> 00:34:48.392
+Nazar Moshtaelier did the work on
+
+601
+00:34:49.493 --> 00:34:53.212
+the targeting with histones. Matthew King also did the work on the IDR.
+
+602
+00:34:53.332 --> 00:34:56.812
+So I'm thankful to you, Susan, for this opportunity to share some of our
+
+603
+00:34:56.852 --> 00:34:59.632
+biology and hopefully some motivation for what you're about to hear about in this
+
+604
+00:34:59.672 --> 00:35:02.372
+next exciting talk, and I thank all of you for your attention.
+
+605
+00:35:02.532 --> 00:35:05.232
+Thank you.
+
+606
+00:35:09.952 --> 00:35:13.382
+Thanks very much, Sagar. And now I'd like to introduce Josh Meyer,
+
+607
+00:35:14.352 --> 00:35:17.812
+who is leading the Chai Discovery, an AI
+
+608
+00:35:18.332 --> 00:35:22.212
+native discovery, a very different flavor of biotech.
+
+609
+00:35:22.792 --> 00:35:26.712
+And hope what you're going to help show is this how you design
+
+610
+00:35:27.852 --> 00:35:31.832
+discovery entirely differently, starting with the tools
+
+611
+00:35:31.932 --> 00:35:35.272
+and help provide those tools to the rest of the
+
+612
+00:35:35.992 --> 00:35:38.952
+ecosystem that's hoping to develop novel medicines.
+
+613
+00:35:39.072 --> 00:35:40.192
+So with that, Josh, over to you.
+
+614
+00:35:42.512 --> 00:35:45.172
+Thanks so much for hosting us, Susan, and great to be here today.
+
+615
+00:35:45.682 --> 00:35:48.392
+As Susan was saying, Chai Discovery is an AI lab.
+
+616
+00:35:48.652 --> 00:35:52.552
+We're building a computer-aided design suite for molecules, so really trying
+
+617
+00:35:52.572 --> 00:35:56.312
+to build these tools in order to accelerate the discovery of new medicines.
+
+618
+00:35:57.312 --> 00:36:00.432
+My background is a bit of a dual on the biology and AI side.
+
+619
+00:36:00.472 --> 00:36:03.352
+I was at the Broad Institute but really started my career on the early team at
+
+620
+00:36:03.392 --> 00:36:06.832
+OpenAI. Realized that if language models could speak English and French, why
+
+621
+00:36:06.892 --> 00:36:08.432
+couldn't they speak DNA and protein?
+
+622
+00:36:08.832 --> 00:36:12.252
+So we actually did a lot of the early work on this space at Facebook of all places,
+
+623
+00:36:12.312 --> 00:36:15.172
+where we trained some of the first transformer language models for protein
+
+624
+00:36:15.232 --> 00:36:19.052
+sequences. And it's been pretty incredible to see over the past couple of
+
+625
+00:36:19.092 --> 00:36:22.912
+years this technology has really reached an inflection point where you can really
+
+626
+00:36:22.972 --> 00:36:26.132
+start now using these tools in order to discover new medicines.
+
+627
+00:36:26.432 --> 00:36:29.312
+So I'll talk a bit about that today and how the field has evolved.
+
+628
+00:36:30.022 --> 00:36:33.612
+So first of all, the real reason why we exist and what we're aiming for
+
+629
+00:36:33.972 --> 00:36:37.752
+is this really big, ambitious goal of someday being able to design
+
+630
+00:36:37.792 --> 00:36:41.332
+antibody drug candidates directly on the computer that are ready for IND-enabling
+
+631
+00:36:41.372 --> 00:36:44.952
+studies. There's a lot that has to go right in order to reach that vision.
+
+632
+00:36:45.052 --> 00:36:49.032
+So we can break this down into a couple of other still ambitious challenges,
+
+633
+00:36:49.092 --> 00:36:51.692
+but maybe a little bit more tractable in the next few years.
+
+634
+00:36:52.162 --> 00:36:55.752
+So the first one is we need to output designs that can actually bind the drug
+
+635
+00:36:55.792 --> 00:36:58.912
+targets efficiently and without the need for library-based screens.
+
+636
+00:36:59.012 --> 00:37:02.572
+We ideally want to be able to take an epitope on a protein and then be able to
+
+637
+00:37:02.612 --> 00:37:05.402
+generate an antibody that can bind that with high success rates.
+
+638
+00:37:05.732 --> 00:37:09.232
+You can actually see on this animation here, these are real trajectories from our
+
+639
+00:37:09.252 --> 00:37:13.172
+diffusion models at Chai, where the model is placing these atoms in 3D space
+
+640
+00:37:13.472 --> 00:37:16.322
+and then trying to come up with an antibody that binds a given part on the
+
+641
+00:37:16.332 --> 00:37:20.320
+targetThe second challenge is even if you can discover a binder, there's
+
+642
+00:37:20.420 --> 00:37:22.520
+a big difference between a binder and a drug.
+
+643
+00:37:22.560 --> 00:37:26.260
+So the molecules that come out of the models need to have the drug developability
+
+644
+00:37:26.280 --> 00:37:29.000
+properties that you'd look for when building a therapeutic.
+
+645
+00:37:30.290 --> 00:37:33.880
+And then lastly, even if we can do the two of these things, we want our
+
+646
+00:37:33.900 --> 00:37:36.380
+molecules to be able to have therapeutic functions.
+
+647
+00:37:36.400 --> 00:37:39.920
+So for example, we want specificity to certain cancer mutations, or we'd like
+
+648
+00:37:39.940 --> 00:37:43.720
+receptor agonism. This starts to get us now into a territory of problems that
+
+649
+00:37:43.760 --> 00:37:46.060
+are pretty difficult to go after with traditional methods.
+
+650
+00:37:46.480 --> 00:37:49.700
+But if we can bring all these challenges together, then the outcome could be
+
+651
+00:37:49.740 --> 00:37:53.069
+drug-like antibodies to hard targets with atomic precision.
+
+652
+00:37:53.180 --> 00:37:56.560
+And I'll talk more about what that looks like in a few slides.
+
+653
+00:37:57.680 --> 00:38:01.230
+So first of all, just a bit of background, and what did the space even look like a
+
+654
+00:38:01.280 --> 00:38:05.100
+year ago. All of this work on being able to do antibody design with high success
+
+655
+00:38:05.160 --> 00:38:08.940
+rates and all that is quite new. If we look back at where the field was just a year
+
+656
+00:38:08.980 --> 00:38:12.020
+ago, we could barely design simple mini-proteins on the computer.
+
+657
+00:38:12.580 --> 00:38:15.500
+And if you look at it in an analogy of what we're doing on the computer versus what
+
+658
+00:38:15.520 --> 00:38:19.069
+we're doing today, we think of de novo design as some kind of computational
+
+659
+00:38:19.120 --> 00:38:23.020
+parallel immunization, where we're specifying a target for the model, and then the
+
+660
+00:38:23.060 --> 00:38:26.260
+model's trying to come out with a protein sequence that fits that.
+
+661
+00:38:26.840 --> 00:38:30.370
+So a lot of the work in this field over the past few years has really taken more of
+
+662
+00:38:30.480 --> 00:38:32.990
+a structural perspective, a protein folding perspective on this.
+
+663
+00:38:33.400 --> 00:38:36.740
+And a first step towards being able to do something like this is we need to be able
+
+664
+00:38:36.780 --> 00:38:40.700
+to understand not even just what simple proteins look like, but entire complexes.
+
+665
+00:38:41.460 --> 00:38:45.400
+So if you look at what's happened in this field over the past few years, at first,
+
+666
+00:38:45.440 --> 00:38:48.200
+you started to see really nice success rates for mini-proteins.
+
+667
+00:38:48.260 --> 00:38:52.080
+So Sujan showed some of this work, for instance, where we started about two
+
+668
+00:38:52.100 --> 00:38:55.720
+years ago or so to see high success rates on designing mini-proteins on the
+
+669
+00:38:55.740 --> 00:38:57.820
+computer. And you can see how this has evolved.
+
+670
+00:38:57.910 --> 00:39:01.600
+If you look at the Rosetta-based methods, we had usually less than a 1% success
+
+671
+00:39:01.680 --> 00:39:05.420
+rate. But then as you started to bring deep learning filters into it, the success
+
+672
+00:39:05.480 --> 00:39:09.420
+rates went up. And then eventually, fully end-to-end AI solutions, so ones that
+
+673
+00:39:09.500 --> 00:39:12.940
+used AI both for designing the molecules and then for filtering them out, were
+
+674
+00:39:12.960 --> 00:39:16.620
+performing really well. But we didn't see those same success rates happening in
+
+675
+00:39:16.680 --> 00:39:19.560
+antibody world. So if you look at what was happening in parallel for antibody
+
+676
+00:39:19.620 --> 00:39:23.560
+design, the success rates were still about 0.1% for the state-of-the-art methods.
+
+677
+00:39:23.600 --> 00:39:25.699
+And this is literally the state of the art one year ago.
+
+678
+00:39:26.860 --> 00:39:30.660
+And we hypothesized that a big reason for this was that the
+
+679
+00:39:30.680 --> 00:39:32.610
+protein-folding models weren't working well enough.
+
+680
+00:39:32.640 --> 00:39:36.420
+If you tried to put antibody antigen sequences into AlphaFold, for
+
+681
+00:39:36.480 --> 00:39:38.650
+instance, you would get a pretty poor prediction out of it.
+
+682
+00:39:39.120 --> 00:39:41.320
+So that was where we first started with the company.
+
+683
+00:39:41.880 --> 00:39:45.720
+And we were excited to see that with our models, we were able to really get a step
+
+684
+00:39:45.760 --> 00:39:48.420
+change improvement in antibody antigen structure prediction.
+
+685
+00:39:49.060 --> 00:39:51.200
+Most of this is actually driven by the underlying algorithm.
+
+686
+00:39:51.260 --> 00:39:54.690
+So it turns out that there is actually a lot of data that's even out there that's
+
+687
+00:39:54.700 --> 00:39:57.900
+not being utilized, and then new model architectures that we had to come up with.
+
+688
+00:39:58.260 --> 00:40:01.800
+But we're able to go from about a 10% success rate on this problem
+
+689
+00:40:02.260 --> 00:40:05.780
+to something that's now approaching 50% of cases being predicted with high
+
+690
+00:40:05.820 --> 00:40:09.600
+accuracy. The benchmark here, we're looking at fraction of cases on new
+
+691
+00:40:09.640 --> 00:40:11.000
+sequences that haven't been seen before.
+
+692
+00:40:11.360 --> 00:40:14.020
+What is the fraction of cases where we're getting a prediction that's within
+
+693
+00:40:14.040 --> 00:40:18.000
+experimental error? So it's exciting to see that we are making a
+
+694
+00:40:18.040 --> 00:40:21.960
+lot of headway on this problem, and that's what gave us the motivation to now set
+
+695
+00:40:21.980 --> 00:40:23.680
+our sights on de novo antibody design.
+
+696
+00:40:24.960 --> 00:40:26.379
+So that takes us to the first challenge.
+
+697
+00:40:26.500 --> 00:40:30.430
+Can we actually generate molecules efficiently now, the same way
+
+698
+00:40:30.460 --> 00:40:34.150
+that we saw it for mini-proteins? And in order to assess this, we set up a
+
+699
+00:40:34.220 --> 00:40:38.080
+big company-wide challenge. We tried to design proteins against over 50
+
+700
+00:40:38.120 --> 00:40:39.320
+targets, and
+
+701
+00:40:40.220 --> 00:40:43.980
+notably, we only tested no more than 20 molecules for each one of these proteins.
+
+702
+00:40:44.360 --> 00:40:47.600
+So the task was if we were really going to be able to get this technology to work,
+
+703
+00:40:47.900 --> 00:40:51.290
+it needed to be generalizable. So these are actually all targets that are different
+
+704
+00:40:51.290 --> 00:40:53.300
+than what the model had seen during training.
+
+705
+00:40:53.780 --> 00:40:56.200
+And we also needed the model to work with high success rates.
+
+706
+00:40:56.220 --> 00:40:58.320
+So we don't want to go screen a library for each of these.
+
+707
+00:40:58.360 --> 00:41:01.600
+We wanted to see if the model could do it on its first shot with no more than 20
+
+708
+00:41:01.620 --> 00:41:05.160
+designs. And it was really exciting to see when the data came back from the lab
+
+709
+00:41:05.220 --> 00:41:08.040
+that this worked for about half of the tested targets.
+
+710
+00:41:08.590 --> 00:41:12.340
+We were able to find a binder for each of them, testing no more than 20 designs for
+
+711
+00:41:12.400 --> 00:41:15.240
+each. This is data that we published back in June.
+
+712
+00:41:15.960 --> 00:41:19.100
+And the models have actually come a long way since then, so it's looking even
+
+713
+00:41:19.380 --> 00:41:19.900
+better now.
+
+714
+00:41:21.140 --> 00:41:24.340
+And it was really exciting just to compare this to where the field was at before.
+
+715
+00:41:25.040 --> 00:41:27.460
+Usually, when you're doing big science, you're trying to push for an
+
+716
+00:41:27.500 --> 00:41:31.370
+order-of-magnitude improvement on a task, and it was pretty exciting to see that by
+
+717
+00:41:31.370 --> 00:41:34.560
+bringing these next-generation models in, we really took two orders of magnitude
+
+718
+00:41:34.600 --> 00:41:38.440
+leap here. So, really going from that 0.1% success rate to
+
+719
+00:41:38.460 --> 00:41:40.320
+something that was now over 10%.
+
+720
+00:41:42.060 --> 00:41:45.940
+So we can generate binders to targets, but are those binders actually going to be
+
+721
+00:41:45.980 --> 00:41:47.640
+useful for things like drug discovery?
+
+722
+00:41:47.700 --> 00:41:50.580
+That's the next question that we started to go into.
+
+723
+00:41:50.640 --> 00:41:54.220
+So the first thing that we did is we took designs, and we just ran some
+
+724
+00:41:54.240 --> 00:41:57.640
+computational filters. What does the humanness look like for these designs?
+
+725
+00:41:57.660 --> 00:42:00.269
+Do they have liability sites? Do they have hydrophobic patches?
+
+726
+00:42:00.660 --> 00:42:01.740
+And the results looked pretty good.
+
+727
+00:42:01.920 --> 00:42:05.850
+The two main things to look at here are on the left, you have approved mAbs, and
+
+728
+00:42:05.920 --> 00:42:07.620
+all the way on the right, you have the Chi designs.
+
+729
+00:42:07.970 --> 00:42:11.160
+So the humanness actually looks pretty similar to fully human antibodies.
+
+730
+00:42:11.180 --> 00:42:14.269
+We prompt the model with human frameworks, and the model's actually been trained
+
+731
+00:42:14.300 --> 00:42:17.020
+that if you see a human framework, you need human CDRs.
+
+732
+00:42:17.060 --> 00:42:18.350
+So it's exciting to see that show up.
+
+733
+00:42:19.330 --> 00:42:23.269
+When we moved into the lab, we characterized the binders for a bunch of different
+
+734
+00:42:23.280 --> 00:42:26.160
+developability properties. We looked at yield and expression,
+
+735
+00:42:26.380 --> 00:42:29.590
+stability, viscosity, self-interaction, specificity,
+
+736
+00:42:30.240 --> 00:42:34.210
+and we used filters from a paper that
+
+737
+00:42:34.260 --> 00:42:38.060
+Adam Ma wrote a couple of years ago. The reference is Jain et al. 2017.
+
+738
+00:42:38.080 --> 00:42:41.880
+And they basically have a couple of different thresholds that you'd look for when
+
+739
+00:42:41.920 --> 00:42:44.160
+assessing the developability properties of molecules.
+
+740
+00:42:44.660 --> 00:42:48.620
+So you can see that over here. The green section for those first four
+
+741
+00:42:48.690 --> 00:42:52.420
+properties, those are the ones from the Adam Ma paper, and we find zero-shot right
+
+742
+00:42:52.440 --> 00:42:56.080
+out of the model. The sequences, for the most part, are already respecting those
+
+743
+00:42:56.100 --> 00:42:59.180
+constraints. So you see good thermal stability, good polyreactivity, good
+
+744
+00:42:59.260 --> 00:43:01.320
+self-interaction, hydrophobicity.
+
+745
+00:43:01.340 --> 00:43:04.290
+And then for some of the manufacturability problems like expression, purity, and
+
+746
+00:43:04.380 --> 00:43:06.860
+aggregation, you're also seeing pretty good results.
+
+747
+00:43:06.880 --> 00:43:08.340
+And again, this is right out of the model.
+
+748
+00:43:08.690 --> 00:43:10.769
+The model's never seen these targets before.
+
+749
+00:43:11.160 --> 00:43:14.810
+And on the first pass of generating sequences, you're already seeing molecules that
+
+750
+00:43:14.840 --> 00:43:17.940
+look pretty similar to molecules that have gone through the
+
+751
+00:43:17.980 --> 00:43:21.752
+clinic.So, the last
+
+752
+00:43:21.762 --> 00:43:24.912
+challenge that we wanted to address is can we actually go after some of these
+
+753
+00:43:24.952 --> 00:43:28.832
+harder therapeutic challenges? And in order to enable that, we wanted
+
+754
+00:43:28.872 --> 00:43:31.662
+to check whether the models could actually operate with atomic precision.
+
+755
+00:43:31.972 --> 00:43:35.222
+So if you're going to build an antagonist versus an agonist, for example, it's
+
+756
+00:43:35.252 --> 00:43:38.932
+going to be very important to hit the right epitope, to be able to hit the specific
+
+757
+00:43:38.972 --> 00:43:42.012
+residues. And the question was, with these new protein-folding models that we're
+
+758
+00:43:42.032 --> 00:43:45.982
+developing and design models, if we prospectively take those predictions and then
+
+759
+00:43:46.012 --> 00:43:49.972
+go test them with cryo-EM, for instance, how close are the predictions
+
+760
+00:43:49.982 --> 00:43:52.812
+to reality? And it turns out that they're quite close.
+
+761
+00:43:52.852 --> 00:43:55.752
+So you can see here five examples that we looked at.
+
+762
+00:43:56.232 --> 00:44:00.052
+And what we're showing here at the RMSD is the global RMSD
+
+763
+00:44:00.072 --> 00:44:03.612
+between the design and then what we actually found by cryo-EM.
+
+764
+00:44:04.272 --> 00:44:06.832
+If you go look at the interface, they're nearly perfect as well.
+
+765
+00:44:07.252 --> 00:44:09.952
+And the CDR loops were what was personally most striking to me.
+
+766
+00:44:09.992 --> 00:44:13.772
+If you just see the overlay in gray, the ground truth versus the
+
+767
+00:44:13.812 --> 00:44:17.652
+color and the predictions, it's nailing those loops almost perfectly.
+
+768
+00:44:17.692 --> 00:44:21.532
+This was personally very gratifying because years ago when I started to work
+
+769
+00:44:21.592 --> 00:44:25.332
+on this, from more of an AI perspective, everyone said the CDR loops are going to
+
+770
+00:44:25.352 --> 00:44:27.352
+be impossible to model. That's the really hard part here.
+
+771
+00:44:27.392 --> 00:44:31.312
+There's a lot of conformational flexibility, and it's pretty exciting to see just
+
+772
+00:44:31.352 --> 00:44:33.292
+how far the models have come on a problem like this.
+
+773
+00:44:34.252 --> 00:44:37.492
+So now that we have atomic precision, we can move towards this third challenge,
+
+774
+00:44:37.812 --> 00:44:39.692
+which is trying to achieve therapeutic functions.
+
+775
+00:44:40.572 --> 00:44:42.892
+So the first one we looked at was GPCRs.
+
+776
+00:44:43.352 --> 00:44:47.332
+So GPCR signaling is obviously very important, but it has unique challenges
+
+777
+00:44:47.352 --> 00:44:51.112
+for antibody discovery. There's minimal surface-accessible area to bind,
+
+778
+00:44:51.432 --> 00:44:53.772
+so you need to get something that's outside the cell membrane.
+
+779
+00:44:54.192 --> 00:44:57.552
+And then the conformation can also change when things will bind to it.
+
+780
+00:44:57.592 --> 00:45:01.072
+So trying to get something in an active versus inactive state, an agonist or an
+
+781
+00:45:01.152 --> 00:45:02.672
+antagonist, can be tricky.
+
+782
+00:45:03.612 --> 00:45:06.872
+So we designed antibodies to six GPCR targets.
+
+783
+00:45:07.792 --> 00:45:11.692
+For half of them, we tried to design things where the pocket was in an agonist
+
+784
+00:45:11.702 --> 00:45:15.552
+state, and then for the other half, we tried just to design binders to the
+
+785
+00:45:15.572 --> 00:45:19.092
+extracellular loop. And these models are prompted with a
+
+786
+00:45:19.212 --> 00:45:22.612
+specific hotspot. So what is the residue where you would like the antibody to bind?
+
+787
+00:45:23.032 --> 00:45:26.442
+So you can see on the left an example with CCR8, where we are
+
+788
+00:45:26.512 --> 00:45:29.972
+actually trying to have that VHH basically snake
+
+789
+00:45:30.052 --> 00:45:33.602
+in to the target here and try to achieve some
+
+790
+00:45:33.672 --> 00:45:37.032
+agonism. What was really cool is the solution that the model came up with.
+
+791
+00:45:37.072 --> 00:45:40.632
+This is, I'll show you data in a moment. This actually was shown to be an agonist.
+
+792
+00:45:40.672 --> 00:45:44.662
+If you look at the natural agonist for CCR8, which is shown in black over there,
+
+793
+00:45:44.692 --> 00:45:48.332
+the model's never seen that agonist before, but it's actually come up with a pretty
+
+794
+00:45:48.372 --> 00:45:51.712
+similar solution, this little aromatic ring that is interacting with the same
+
+795
+00:45:51.732 --> 00:45:55.492
+residues. So it's really interesting to see that the model has designed an antibody
+
+796
+00:45:55.532 --> 00:45:59.392
+that is sort of mimicking how this GPCR performs in that native state.
+
+797
+00:46:00.472 --> 00:46:04.312
+So let's turn to the data. The first thing that was interesting was that there were
+
+798
+00:46:04.352 --> 00:46:08.332
+surprisingly a small number of designs that we needed to discover those GPCR
+
+799
+00:46:08.352 --> 00:46:11.992
+agonists. So the first three targets are the ones that we targeted in an
+
+800
+00:46:12.012 --> 00:46:14.352
+orthosteric state, and we were trying to find agonists.
+
+801
+00:46:14.712 --> 00:46:17.832
+So these models have really high success rates, even for these hard problems.
+
+802
+00:46:18.052 --> 00:46:20.992
+So you can see for CCR8, we tested only 10 molecules.
+
+803
+00:46:21.012 --> 00:46:23.112
+Half of them were binding, and one of them showed signaling.
+
+804
+00:46:24.032 --> 00:46:27.832
+And then you see this also for CXCR4, CXCR6, and then the ones on the
+
+805
+00:46:27.852 --> 00:46:31.212
+bottom are targets that we tried to hit the extracellular loop and were also
+
+806
+00:46:31.222 --> 00:46:31.762
+successful.
+
+807
+00:46:33.532 --> 00:46:36.432
+A second challenging target class that we looked at is peptide MHC.
+
+808
+00:46:37.052 --> 00:46:40.282
+So this is not a case where the conformational dynamics are as
+
+809
+00:46:40.512 --> 00:46:43.272
+tricky, but selectivity is going to be really important over here.
+
+810
+00:46:43.752 --> 00:46:46.872
+So one of the things we've built into our model is not just an ability to choose a
+
+811
+00:46:46.932 --> 00:46:50.652
+specific epitope, but also to show the model either additional
+
+812
+00:46:50.692 --> 00:46:53.992
+homologs. So let's say for cross-reactivity or selectivity.
+
+813
+00:46:54.092 --> 00:46:56.832
+So you can tell the model, "I want to hit this target, but I really don't want to
+
+814
+00:46:56.872 --> 00:47:00.572
+hit this other target." So the challenge here is for peptide MHC
+
+815
+00:47:00.872 --> 00:47:04.762
+antibodies, you want this to be specific to a point of a single amino acid mutant.
+
+816
+00:47:05.492 --> 00:47:08.872
+With cancer, as we know, with a single amino acid mutant, that's what you might see
+
+817
+00:47:08.892 --> 00:47:10.972
+in this setting. So we want to bind the cancer form,
+
+818
+00:47:11.812 --> 00:47:12.872
+but avoid the healthy form.
+
+819
+00:47:14.312 --> 00:47:17.872
+So here's a structure prediction of one of the designs that was
+
+820
+00:47:17.972 --> 00:47:19.792
+specific to KRAS G12V.
+
+821
+00:47:20.592 --> 00:47:24.172
+If you look on the top right, we're showing the data of binding the KRAS
+
+822
+00:47:24.212 --> 00:47:27.952
+G12V mutant, but fortunately, the antibody was able to
+
+823
+00:47:27.992 --> 00:47:31.612
+avoid the healthy KRAS wild type. We also found that if we keep the
+
+824
+00:47:31.672 --> 00:47:34.652
+peptide the same and just change the MHC, you also abolish binding.
+
+825
+00:47:34.992 --> 00:47:37.812
+So it does seem specific to this peptide and this MHC.
+
+826
+00:47:38.232 --> 00:47:40.982
+Probably in follow-up work, we would just go take a whole boatload of other
+
+827
+00:47:41.132 --> 00:47:43.152
+peptides if you apply this for a real program.
+
+828
+00:47:43.752 --> 00:47:45.292
+But so far, this looks pretty promising.
+
+829
+00:47:45.692 --> 00:47:48.352
+And if you look at what the model came up with, so we gave it this task.
+
+830
+00:47:48.392 --> 00:47:51.632
+Again, it needs to be specific to this peptide. What did it come up with?
+
+831
+00:47:51.972 --> 00:47:55.592
+If you zoom in here on that G12V mutant, the model has actually found a
+
+832
+00:47:55.612 --> 00:47:59.592
+way for those CDR loops to actually interact specifically with that
+
+833
+00:47:59.632 --> 00:48:03.472
+valine. And this is probably the reason why we end up getting the specificity over
+
+834
+00:48:03.532 --> 00:48:03.732
+here.
+
+835
+00:48:05.852 --> 00:48:09.132
+So taking this all together, it's pretty exciting just to see where the field has
+
+836
+00:48:09.172 --> 00:48:12.812
+gone in the past year. Just a year ago, again, we could barely design simple
+
+837
+00:48:12.832 --> 00:48:16.162
+mini-proteins on the computer. You'd get things with like nanomolar affinities out
+
+838
+00:48:16.192 --> 00:48:19.632
+of the models. And we've now moved to a regime where we can design full-length
+
+839
+00:48:19.672 --> 00:48:22.922
+monoclonal antibodies with high affinities and high developability.
+
+840
+00:48:23.712 --> 00:48:26.552
+And we're now able to go after some of these really challenging problem for
+
+841
+00:48:26.572 --> 00:48:29.072
+therapeutics. There's a lot more room to go from here.
+
+842
+00:48:29.152 --> 00:48:33.092
+Again, our goal is to build molecules that are ready for IND-enabling studies.
+
+843
+00:48:33.132 --> 00:48:36.812
+There's a lot to figure out for how can the models better understand biology.
+
+844
+00:48:36.852 --> 00:48:40.632
+The hit rates for these models I showed you before, they're double-digit percent,
+
+845
+00:48:40.712 --> 00:48:41.872
+but they're not 100% yet.
+
+846
+00:48:42.952 --> 00:48:46.602
+We think that we've seen a scaling law here, where as we drive more compute and
+
+847
+00:48:46.652 --> 00:48:48.772
+more data into the models, they keep getting better.
+
+848
+00:48:49.132 --> 00:48:52.872
+So we're continuing to work on that and drive this forward, and hopefully one day
+
+849
+00:48:52.972 --> 00:48:56.582
+have a computer-aided design suite where, again, we can get drug candidates right
+
+850
+00:48:56.612 --> 00:48:57.952
+out of the model. Thank you.
+
+851
+00:49:08.752 --> 00:49:11.592
+Okay. Thank you. All right. Thanks very much. That was a great talk.
+
+852
+00:49:11.652 --> 00:49:14.632
+So I think you've got the spectrum of how we're applying this now.
+
+853
+00:49:14.672 --> 00:49:17.852
+So let's move to the discussion, and I encourage people to come up to the
+
+854
+00:49:17.872 --> 00:49:20.232
+microphones. But I'll start with a couple of questions.
+
+855
+00:49:20.242 --> 00:49:23.382
+So one question, and it's interesting, is when you're
+
+856
+00:49:23.392 --> 00:49:26.924
+designing-an organization
+
+857
+00:49:27.124 --> 00:49:29.144
+with AI in mind,
+
+858
+00:49:29.984 --> 00:49:33.684
+it might be a different construct than the traditional organization
+
+859
+00:49:33.804 --> 00:49:37.464
+of a biotech. So can you just give us some insight, Josh,
+
+860
+00:49:37.504 --> 00:49:41.364
+into the split of different roles in Chai
+
+861
+00:49:41.404 --> 00:49:45.224
+Discovery and how you might compare that to a more traditional
+
+862
+00:49:45.504 --> 00:49:48.204
+biotech? Are there different roles? Are there different people?
+
+863
+00:49:48.384 --> 00:49:49.184
+What are the skill sets?
+
+864
+00:49:50.364 --> 00:49:52.794
+Yeah. It's a great question. It's been really interesting to figure this out.
+
+865
+00:49:52.824 --> 00:49:56.754
+I worked in, actually, a biotech company before starting Chai, and the way that
+
+866
+00:49:56.764 --> 00:49:59.144
+we build the teams is, in fact, very different.
+
+867
+00:49:59.164 --> 00:50:02.664
+So one of the things here is that the technology moves so quickly.
+
+868
+00:50:03.064 --> 00:50:06.064
+Literally, you can see model improvements on a weekly basis.
+
+869
+00:50:06.114 --> 00:50:09.054
+We're always trying new things with the models and learning new things.
+
+870
+00:50:09.084 --> 00:50:11.884
+At the same time, though, it's also very important to be rigorous.
+
+871
+00:50:11.984 --> 00:50:14.594
+I think it's really cultural elements that are important here.
+
+872
+00:50:14.624 --> 00:50:18.424
+When things are moving so quickly, it's also very easy to drink your own Kool-Aid.
+
+873
+00:50:18.484 --> 00:50:20.614
+Not everyone is following all the right information.
+
+874
+00:50:20.624 --> 00:50:24.404
+So we've tried to build a culture of a lot of rigor and transparency internally.
+
+875
+00:50:24.444 --> 00:50:26.424
+If things don't work, we're very ambitious about it.
+
+876
+00:50:26.604 --> 00:50:30.014
+We want to get to 100% success rates with these models, but we also know we're not
+
+877
+00:50:30.063 --> 00:50:31.904
+there today, and we recognize that.
+
+878
+00:50:31.964 --> 00:50:33.504
+In terms of the people that we bring on,
+
+879
+00:50:34.424 --> 00:50:36.284
+we really have three main categories.
+
+880
+00:50:36.324 --> 00:50:40.024
+We have the AI researchers, so these are people who you would find
+
+881
+00:50:40.044 --> 00:50:42.804
+similar folks like that in the OpenAIs and Anthropic's of the world.
+
+882
+00:50:42.844 --> 00:50:44.024
+So they're building the core models.
+
+883
+00:50:44.564 --> 00:50:47.764
+You then have people who are actually building product experiences, so that's an
+
+884
+00:50:47.804 --> 00:50:51.344
+important thing as well, especially as there's more and more ways to prompt the
+
+885
+00:50:51.384 --> 00:50:53.424
+model. Think about that peptide MHC example.
+
+886
+00:50:53.794 --> 00:50:56.883
+It can be very easy to design something that's not actually specific to the immune
+
+887
+00:50:56.944 --> 00:50:58.943
+just because you prompted the model incorrectly.
+
+888
+00:50:58.984 --> 00:51:01.504
+So that's something unique about this field, and we do a lot of work even on the
+
+889
+00:51:01.544 --> 00:51:03.784
+software product. I didn't show any of that in the talk, but that's really
+
+890
+00:51:03.804 --> 00:51:06.464
+important. And the third, of course, is the science.
+
+891
+00:51:06.544 --> 00:51:10.344
+So when you have models that work this well, we need a smaller number of
+
+892
+00:51:10.384 --> 00:51:14.324
+people to do that work. But they actually need to have more context, and they need
+
+893
+00:51:14.364 --> 00:51:18.224
+to be really bright. So this is where we've brought in people to the company like
+
+894
+00:51:18.284 --> 00:51:22.044
+Andy Yong, who was at Genentech and Pfizer for 20 years and built his own drug
+
+895
+00:51:22.084 --> 00:51:26.004
+discovery company before. You've got people like Nathan, who are just like
+
+896
+00:51:26.024 --> 00:51:29.534
+prodigies at Harvard, finished his PhD when he's 22, and just very native to both
+
+897
+00:51:29.784 --> 00:51:30.944
+AI and drug discovery.
+
+898
+00:51:31.894 --> 00:51:34.424
+So it's been very cool to figure out all these organizational dynamics.
+
+899
+00:51:35.224 --> 00:51:36.524
+So if you just look at the split,
+
+900
+00:51:37.484 --> 00:51:38.024
+do you have
+
+901
+00:51:39.484 --> 00:51:43.264
+some percentage of the split of AI engineers versus
+
+902
+00:51:45.344 --> 00:51:47.524
+protein engineers, for example?
+
+903
+00:51:47.584 --> 00:51:50.044
+It's probably about a third, a third, a third between those groups.
+
+904
+00:51:50.124 --> 00:51:53.984
+One of the other things, too, that's unique about us is the company's actually only
+
+905
+00:51:54.044 --> 00:51:57.144
+two years old. So all this work we've had to figure out on that timeline, which
+
+906
+00:51:57.184 --> 00:52:00.724
+means we didn't have the time to go and build out a massive laboratory.
+
+907
+00:52:00.804 --> 00:52:03.524
+So instead, we work with over a dozen experimental partners.
+
+908
+00:52:03.804 --> 00:52:07.104
+So that means that the folks who are running all of those assays are not actually
+
+909
+00:52:07.144 --> 00:52:10.484
+situated in the company. I think there's more people doing experiments for Chai
+
+910
+00:52:10.524 --> 00:52:12.624
+than work full-time for the company right now, even.
+
+911
+00:52:12.944 --> 00:52:15.804
+So if you count it in that way, it's still a lot more on the biology side.
+
+912
+00:52:16.404 --> 00:52:20.224
+But overall, when you're doing things with AI, actually, each
+
+913
+00:52:20.264 --> 00:52:22.843
+person, I think, just has so much more agency with what they can do.
+
+914
+00:52:23.144 --> 00:52:27.084
+That's great. So Sugandha, if I turn that to you, how are you taking
+
+915
+00:52:27.884 --> 00:52:30.124
+both your academic lab and
+
+916
+00:52:31.224 --> 00:52:35.204
+Foghorn and thinking about the new skills that
+
+917
+00:52:35.224 --> 00:52:37.384
+you need to be applying? How is that going?
+
+918
+00:52:37.404 --> 00:52:40.164
+Yeah, I was thinking even as you were answering this question about the
+
+919
+00:52:40.184 --> 00:52:43.604
+organizational dynamics within the company, it's so different in an academic lab.
+
+920
+00:52:43.804 --> 00:52:46.873
+We have people using AI who are pure biochemists and
+
+921
+00:52:48.224 --> 00:52:51.704
+these platforms have gotten to the stage where now pure biochemists and those who
+
+922
+00:52:51.744 --> 00:52:53.884
+have never touched AI before are able to do it.
+
+923
+00:52:53.904 --> 00:52:57.313
+And of course, we also have for, especially when there's added constraints and
+
+924
+00:52:57.344 --> 00:53:00.974
+modeling needing to be done, then we see that it's often those with
+
+925
+00:53:00.974 --> 00:53:04.444
+computational skills and experience in machine learning, AI, and so on
+
+926
+00:53:05.224 --> 00:53:09.064
+doing that. But increasingly, we see this integration, and I think that's been,
+
+927
+00:53:09.184 --> 00:53:13.144
+for us, one of the most enabling, that we've seen people that-- One
+
+928
+00:53:13.164 --> 00:53:16.984
+of the advantages of an academic lab, certainly of our lab, I think, is diversity.
+
+929
+00:53:17.304 --> 00:53:20.104
+We have diversity of thinking and diversity of goals.
+
+930
+00:53:20.144 --> 00:53:23.344
+There are people in the lab that their goal is to identify a small molecule for a
+
+931
+00:53:23.384 --> 00:53:26.864
+given target. The other goals are to widely understand how all the different
+
+932
+00:53:26.884 --> 00:53:30.484
+compositions do different things, and how can we use systems-based
+
+933
+00:53:30.504 --> 00:53:31.784
+approaches to be able to do that.
+
+934
+00:53:33.564 --> 00:53:37.444
+As I highlighted in the talk, one of the key goals of our lab
+
+935
+00:53:37.464 --> 00:53:40.914
+is really to identify, down to protein-protein interactions,
+
+936
+00:53:41.524 --> 00:53:45.024
+the domains that are most responsible for given activities of this
+
+937
+00:53:45.464 --> 00:53:47.544
+very complex and heterogeneous complex.
+
+938
+00:53:48.804 --> 00:53:52.604
+A nice example of that is what I described with this TF binding platform, which
+
+939
+00:53:52.664 --> 00:53:56.244
+originally was discovered as a single TF binding platform, but again, using these
+
+940
+00:53:56.344 --> 00:54:00.184
+patterns of biology enabled by this, we were able to identify
+
+941
+00:54:00.224 --> 00:54:04.164
+that a multitude of human TFs actually engage there in
+
+942
+00:54:04.204 --> 00:54:07.884
+slightly different ways. And this is, again, now where we're leveraging and
+
+943
+00:54:07.904 --> 00:54:09.804
+doubling down on the AI-based
+
+944
+00:54:10.844 --> 00:54:14.224
+guidance to start to pull out the patterns
+
+945
+00:54:15.364 --> 00:54:19.204
+that tell us what features of an IDR in TFA are different
+
+946
+00:54:19.244 --> 00:54:23.024
+than that in TFB that dictate binding to one SWIF domain or another within this
+
+947
+00:54:23.064 --> 00:54:25.784
+complex, or a different interface altogether.
+
+948
+00:54:26.364 --> 00:54:28.974
+On other sides of what we do, we can now take and leverage some of these
+
+949
+00:54:29.004 --> 00:54:32.884
+interfaces, and use AI-based platforms, whether it's Bolts or
+
+950
+00:54:32.964 --> 00:54:35.384
+others, to start to in silico
+
+951
+00:54:36.344 --> 00:54:39.824
+model and discover small molecules or other agents,
+
+952
+00:54:40.024 --> 00:54:42.764
+peptides, whatever, that can actually engage with those
+
+953
+00:54:43.884 --> 00:54:47.544
+interfaces. We think the power-- And I remember actually when
+
+954
+00:54:48.204 --> 00:54:51.344
+you did this big collaboration with Eli Lilly, one of the first, which was really
+
+955
+00:54:51.364 --> 00:54:55.204
+exciting, and it's awesome. One of the things that was commented on both
+
+956
+00:54:55.244 --> 00:54:58.764
+sides was just that this is the optimal combination of
+
+957
+00:54:59.184 --> 00:55:02.884
+these brand new suites of approaches from Chai Discovery, but is
+
+958
+00:55:02.984 --> 00:55:06.884
+also enabled and requiring the partnership of deep expertise in a given
+
+959
+00:55:06.904 --> 00:55:08.404
+biologic domain, therefore antibodies,
+
+960
+00:55:09.604 --> 00:55:09.924
+and
+
+961
+00:55:11.044 --> 00:55:14.644
+domain expertise, as well as a suite of assay systems and a platform,
+
+962
+00:55:14.684 --> 00:55:17.184
+essentially, for the biologic interrogation.
+
+963
+00:55:17.204 --> 00:55:20.854
+And I think that more and more, that type of partnership is what we see as
+
+964
+00:55:20.924 --> 00:55:22.924
+absolutely critical. And so
+
+965
+00:55:23.904 --> 00:55:26.624
+whether it's a big pharma, smaller biotech
+
+966
+00:55:26.964 --> 00:55:30.704
+collaboration, or academics biotech or academics pharma collaborations, I think
+
+967
+00:55:31.204 --> 00:55:34.904
+the need for the biology doesn't go away.
+
+968
+00:55:35.392 --> 00:55:37.172
+Okay, thank you. Sorry, there's a question over here, I think.
+
+969
+00:55:37.452 --> 00:55:37.652
+Yeah.
+
+970
+00:55:38.632 --> 00:55:39.732
+First of all, thanks for
+
+971
+00:55:40.532 --> 00:55:43.012
+two wonderful presentations. So I have a question.
+
+972
+00:55:43.152 --> 00:55:47.092
+Very amazed by the results by Tri Discovery, and
+
+973
+00:55:47.132 --> 00:55:49.672
+amazing to get atomic level binders.
+
+974
+00:55:50.172 --> 00:55:51.712
+So I'm an antibody discovery
+
+975
+00:55:53.392 --> 00:55:54.732
+and protein engineer
+
+976
+00:55:56.072 --> 00:55:58.912
+area. So I'm curious to know, when you
+
+977
+00:55:59.852 --> 00:56:01.992
+first find binders to your target,
+
+978
+00:56:03.012 --> 00:56:03.112
+do
+
+979
+00:56:04.232 --> 00:56:07.972
+you expose the model to other protein other than your target as well?
+
+980
+00:56:08.032 --> 00:56:11.732
+Because when we have antibody involved in the body, it's
+
+981
+00:56:11.912 --> 00:56:15.232
+actually the negative selection actually that a lot of times happens at first to
+
+982
+00:56:15.312 --> 00:56:18.772
+avoid autoreactivity. So the binding
+
+983
+00:56:19.212 --> 00:56:22.992
+or not binding to other targets probably one of the challenging thing,
+
+984
+00:56:23.092 --> 00:56:26.692
+and that's actually a lot of time can derail a therapeutic down the
+
+985
+00:56:26.732 --> 00:56:28.292
+line and have very costly
+
+986
+00:56:29.192 --> 00:56:31.272
+mistakes. So I would like to hear your thoughts on that.
+
+987
+00:56:31.992 --> 00:56:32.692
+Great question. Thanks.
+
+988
+00:56:33.052 --> 00:56:35.492
+Yeah, great question. So the answer is, we do.
+
+989
+00:56:35.532 --> 00:56:39.432
+So I gave the p10 MHC example in the talk, where there you're prompting with, for
+
+990
+00:56:39.472 --> 00:56:42.032
+example, things that you don't want the model to bind to.
+
+991
+00:56:42.112 --> 00:56:45.172
+You can also do something where you're putting in an entire complex.
+
+992
+00:56:45.232 --> 00:56:49.212
+So I didn't talk about this in the presentation, but one of the
+
+993
+00:56:49.232 --> 00:56:51.712
+challenges that we look at is sometimes trying to hit...
+
+994
+00:56:52.432 --> 00:56:53.972
+I'll give TNF-alpha as an example.
+
+995
+00:56:53.992 --> 00:56:56.092
+This is something there is obviously a lot of antibodies that have been raised
+
+996
+00:56:56.132 --> 00:57:00.052
+against it. But I think still the Chai model is the only one that's been able to
+
+997
+00:57:00.072 --> 00:57:02.072
+generate binders against that target.
+
+998
+00:57:02.082 --> 00:57:04.632
+And one of the reasons there is you're trying to hit, at least in the way people
+
+999
+00:57:04.652 --> 00:57:08.172
+set up this task, is you're trying to hit this
+
+1000
+00:57:08.812 --> 00:57:09.472
+highly polar
+
+1001
+00:57:10.672 --> 00:57:14.452
+region between two subunits of the homotrimer in TNF-alpha.
+
+1002
+00:57:14.472 --> 00:57:17.572
+So there's cases like this as well, where there's actually a whole complex that you
+
+1003
+00:57:17.592 --> 00:57:21.432
+want to go after. Other things that we're excited about are, let's say
+
+1004
+00:57:21.472 --> 00:57:24.942
+there's an agonist or you want to create some kind of
+
+1005
+00:57:24.942 --> 00:57:28.472
+activity, that might trigger something downstream.
+
+1006
+00:57:28.892 --> 00:57:32.292
+So one of the reasons why we've invested in building really good protein folding
+
+1007
+00:57:32.312 --> 00:57:35.292
+models at Chai is to start to understand some of these biology questions later on.
+
+1008
+00:57:35.632 --> 00:57:37.252
+So just think about where this goes in the long term.
+
+1009
+00:57:37.272 --> 00:57:40.552
+We're still far away from 100% success rates on protein folding.
+
+1010
+00:57:40.932 --> 00:57:44.212
+But imagine if you would get there, there would be tremendous opportunities to
+
+1011
+00:57:44.252 --> 00:57:47.792
+explore things like that. And I think before you get to 100% globally, you'll
+
+1012
+00:57:47.812 --> 00:57:51.552
+probably get, I don't know, maybe 80, 90% plus on maybe certain sub-problems there.
+
+1013
+00:57:51.932 --> 00:57:54.172
+And that will enable a lot of really interesting things even on the target
+
+1014
+00:57:54.192 --> 00:57:57.162
+discovery side. So I think the questions you're talking about, that's really the
+
+1015
+00:57:57.232 --> 00:57:59.452
+frontier, right? And we're not quite there yet.
+
+1016
+00:57:59.572 --> 00:58:03.492
+But those are the kinds of problems that are really exciting to us from really from
+
+1017
+00:58:03.512 --> 00:58:04.352
+an AI perspective.
+
+1018
+00:58:04.892 --> 00:58:08.812
+Yes, thanks. These are great answers because it's amazing that it's able to
+
+1019
+00:58:08.912 --> 00:58:12.732
+use these AI or modeling to target epitope, because a lot of
+
+1020
+00:58:12.792 --> 00:58:16.722
+times you traditionally in vivo, in vitro approaches, the
+
+1021
+00:58:16.812 --> 00:58:19.952
+epitope or the choice actually is very hard to get any binders.
+
+1022
+00:58:19.972 --> 00:58:23.892
+So this is really amazing pushing the frontier of antibody discovery. Thank you.
+
+1023
+00:58:24.272 --> 00:58:25.712
+Thank you. Question here.
+
+1024
+00:58:26.912 --> 00:58:30.872
+Yeah, thanks. This is a really very inspiring session, and it's good to
+
+1025
+00:58:30.932 --> 00:58:34.132
+see the real case of how we accelerate the drug
+
+1026
+00:58:34.332 --> 00:58:38.312
+discovery phase. It's hard to speak of AI without
+
+1027
+00:58:38.412 --> 00:58:41.202
+speaking the fundamental of data and data sharing,
+
+1028
+00:58:42.252 --> 00:58:44.252
+especially in the clinical stage.
+
+1029
+00:58:44.992 --> 00:58:47.252
+I'm just wondering what's your vision in
+
+1030
+00:58:48.132 --> 00:58:51.452
+the data sharing or knowledge sharing across organization or
+
+1031
+00:58:51.512 --> 00:58:55.452
+institution while we can still maintain the patient
+
+1032
+00:58:55.712 --> 00:58:57.912
+privacy or proprietary boundary,
+
+1033
+00:58:58.772 --> 00:59:00.432
+especially in the clinical stage?
+
+1034
+00:59:00.572 --> 00:59:01.772
+Yeah, it's a great question.
+
+1035
+00:59:03.212 --> 00:59:06.912
+So let me use the example of the multimodal foundation
+
+1036
+00:59:06.952 --> 00:59:10.312
+model that we are building in collaboration with Tempus and Pathos.
+
+1037
+00:59:10.532 --> 00:59:14.252
+Obviously, what Tempus have already created is a very
+
+1038
+00:59:14.292 --> 00:59:17.722
+large, well clinically annotated data set that's
+
+1039
+00:59:17.772 --> 00:59:21.212
+multimodal, all of which was done with the appropriate
+
+1040
+00:59:21.492 --> 00:59:21.982
+informed
+
+1041
+00:59:22.932 --> 00:59:26.732
+consent from the patients that are involved there.
+
+1042
+00:59:26.812 --> 00:59:30.692
+So that's the first fundamental piece, which is you've got to make sure that
+
+1043
+00:59:30.752 --> 00:59:30.932
+the
+
+1044
+00:59:32.392 --> 00:59:33.152
+content for the
+
+1045
+00:59:34.032 --> 00:59:36.672
+consent is appropriate, and then that's linked.
+
+1046
+00:59:37.232 --> 00:59:41.092
+When we think about that kind of example within AstraZeneca as well,
+
+1047
+00:59:41.532 --> 00:59:45.152
+obviously we've got a lot of data from clinical trials, and there's
+
+1048
+00:59:45.192 --> 00:59:48.432
+various levels of informed consent that are associated with that.
+
+1049
+00:59:49.372 --> 00:59:53.212
+Actually, that whole process used to be pretty
+
+1050
+00:59:53.251 --> 00:59:53.652
+manual.
+
+1051
+00:59:54.552 --> 00:59:57.422
+And what we're trying to do now is make sure that we've actually got something that
+
+1052
+00:59:57.512 --> 00:59:57.682
+is
+
+1053
+00:59:59.732 --> 01:00:03.132
+more readily searchable and verifiable in terms of the
+
+1054
+01:00:03.852 --> 01:00:07.712
+electronic piece and linked to the patient samples so that we can save a
+
+1055
+01:00:07.752 --> 01:00:09.532
+lot of time and effort in terms of doing that.
+
+1056
+01:00:09.572 --> 01:00:13.522
+So I think the comment about the data foundations have got to be there is
+
+1057
+01:00:13.572 --> 01:00:16.412
+absolutely key. So that's the first principle.
+
+1058
+01:00:17.152 --> 01:00:21.112
+If we're able to then create a foundation model that's on a
+
+1059
+01:00:21.172 --> 01:00:24.692
+large trained data set, you can then apply that and
+
+1060
+01:00:24.772 --> 01:00:27.672
+fine-tune it on other specific data sets.
+
+1061
+01:00:27.732 --> 01:00:30.892
+So it might be possible then through collaborations
+
+1062
+01:00:31.812 --> 01:00:35.652
+to provide access to the core foundation model, which
+
+1063
+01:00:35.662 --> 01:00:39.182
+then can be fine-tuned on different institutions' or
+
+1064
+01:00:39.192 --> 01:00:43.182
+organizations' own data sets. And then it's a sort of, if
+
+1065
+01:00:43.232 --> 01:00:46.872
+you like, it's a unique manifestation of the application from that process.
+
+1066
+01:00:46.902 --> 01:00:49.712
+So that's the principle I think that can be
+
+1067
+01:00:50.972 --> 01:00:54.872
+applied. I think there'll be multiple iterations of that
+
+1068
+01:00:54.972 --> 01:00:57.672
+you can see. And you kind of already see it in the
+
+1069
+01:00:59.512 --> 01:01:03.352
+large language model world. So not multimodal, but large language
+
+1070
+01:01:03.592 --> 01:01:07.552
+model. With multiple iterations of the different models, people can use one or the
+
+1071
+01:01:07.612 --> 01:01:11.232
+other, but there's lots then of different applications that each is then
+
+1072
+01:01:11.292 --> 01:01:14.332
+applied to. I think the same will occur in the
+
+1073
+01:01:14.352 --> 01:01:17.492
+multimodal foundation models that will come up throughout
+
+1074
+01:01:18.552 --> 01:01:19.872
+medicine and the life sciences.
+
+1075
+01:01:22.852 --> 01:01:26.752
+Also, you bring up a good point, not only for patient protection and data sharing
+
+1076
+01:01:26.772 --> 01:01:30.472
+with respect to clinical data, but also how do we go about best
+
+1077
+01:01:32.072 --> 01:01:35.512
+practices for data sharing for academic progress in
+
+1078
+01:01:35.552 --> 01:01:36.352
+labs?
+
+1079
+01:01:37.152 --> 01:01:40.882
+Obviously, we have genomics repositories, proteomics repositories that
+
+1080
+01:01:40.932 --> 01:01:43.972
+we are required to, and we submit these data.
+
+1081
+01:01:44.312 --> 01:01:48.132
+Also coding repositories. But increasingly,
+
+1082
+01:01:48.432 --> 01:01:52.002
+we're using AI models and modifying certain aspects and inputs and
+
+1083
+01:01:52.072 --> 01:01:53.152
+constraints and so on.
+
+1084
+01:01:54.152 --> 01:01:57.402
+What's going to be the standard for reporting all of
+
+1085
+01:01:57.402 --> 01:02:01.108
+that?And I think that that is important because we need other people to be able to
+
+1086
+01:02:01.148 --> 01:02:02.148
+reproduce our findings.
+
+1087
+01:02:03.268 --> 01:02:06.788
+And we need to make sure we're taking a step forward for the
+
+1088
+01:02:06.848 --> 01:02:10.648
+academic and pharmaceutical biotech community against, on different
+
+1089
+01:02:10.668 --> 01:02:14.208
+targets or for different goals, to be able to use what's reported in each paper.
+
+1090
+01:02:14.248 --> 01:02:16.768
+Oftentimes, you just say, "We use Chai Discovery.
+
+1091
+01:02:16.808 --> 01:02:20.718
+We use AlphaFold, we use..." But we have to have more detail than that, I think,
+
+1092
+01:02:20.808 --> 01:02:23.968
+to really be able to push the field forward and ensure that we are
+
+1093
+01:02:24.848 --> 01:02:25.688
+thoroughly
+
+1094
+01:02:26.828 --> 01:02:28.208
+honoring the data-sharing policy.
+
+1095
+01:02:29.628 --> 01:02:31.528
+Okay, so just one more question from me, first of all.
+
+1096
+01:02:32.808 --> 01:02:36.628
+So we've talked about a lot of the advances and the exciting advances in
+
+1097
+01:02:36.688 --> 01:02:37.128
+AI, but
+
+1098
+01:02:37.948 --> 01:02:40.228
+where is AI not working at the moment?
+
+1099
+01:02:40.868 --> 01:02:41.988
+What are the
+
+1100
+01:02:42.948 --> 01:02:46.468
+key areas where the levels of predictions aren't where we need them to be?
+
+1101
+01:02:47.068 --> 01:02:49.908
+And what's the proposed strategy for helping to
+
+1102
+01:02:51.028 --> 01:02:54.748
+fill that gap? So you talked about the intrinsically disordered
+
+1103
+01:02:55.128 --> 01:02:55.728
+domains,
+
+1104
+01:02:56.608 --> 01:02:57.288
+for example.
+
+1105
+01:02:58.668 --> 01:03:02.608
+I imagine that those are the places where there's less
+
+1106
+01:03:02.628 --> 01:03:05.628
+good prediction, but I don't know if you can give us some examples.
+
+1107
+01:03:05.708 --> 01:03:08.788
+I'll answer the question by setting up the problem, and I'll have Josh solve it
+
+1108
+01:03:08.908 --> 01:03:10.128
+live for us.
+
+1109
+01:03:11.148 --> 01:03:13.948
+So, definitely as you mentioned and as I highlighted,
+
+1110
+01:03:15.208 --> 01:03:18.488
+so far, AI-based strategies
+
+1111
+01:03:18.548 --> 01:03:22.408
+for prediction of function, prediction of potential structure,
+
+1112
+01:03:22.488 --> 01:03:26.388
+prediction of interactions for those regions of proteins
+
+1113
+01:03:26.428 --> 01:03:29.268
+that are deemed intrinsically disordered or low complexity
+
+1114
+01:03:30.208 --> 01:03:33.358
+are, to date, still poor. Increasingly, we've tried
+
+1115
+01:03:33.428 --> 01:03:36.908
+to take more of a amino acid
+
+1116
+01:03:37.028 --> 01:03:40.528
+sequence grammar sort of, which is really a purely computational
+
+1117
+01:03:40.548 --> 01:03:43.968
+approach and fitting into algorithms as to what sequence
+
+1118
+01:03:44.048 --> 01:03:48.028
+features portend binding with X other proteins, and this is the
+
+1119
+01:03:48.088 --> 01:03:51.568
+culmination of proteome-wide data, interaction data.
+
+1120
+01:03:52.668 --> 01:03:56.328
+But where it fails also is even in trying to do that, and trying to
+
+1121
+01:03:56.368 --> 01:04:00.188
+essentially a priori apply AI to inform these large
+
+1122
+01:04:00.228 --> 01:04:02.348
+sequences, again, over 40% of the proteome.
+
+1123
+01:04:02.388 --> 01:04:03.568
+So we still have a big problem here,
+
+1124
+01:04:04.648 --> 01:04:08.228
+including many cancer therapeutic targets, and that's even enriched further in the
+
+1125
+01:04:08.247 --> 01:04:08.648
+nucleus,
+
+1126
+01:04:09.888 --> 01:04:11.508
+is exactly the input data.
+
+1127
+01:04:13.128 --> 01:04:16.748
+How are we taking these full stretches of IDRs?
+
+1128
+01:04:16.828 --> 01:04:20.248
+Are we taking proteomics data that was just collated from proteomics
+
+1129
+01:04:20.288 --> 01:04:24.248
+databases where we don't have a control of the quality of how
+
+1130
+01:04:24.288 --> 01:04:27.908
+we captured protein A and then asked what are all the other proteins that interact
+
+1131
+01:04:27.928 --> 01:04:31.288
+with it somewhere? That's never reporting on direct interactions.
+
+1132
+01:04:31.328 --> 01:04:34.338
+It's always reporting on around interactions.
+
+1133
+01:04:34.428 --> 01:04:38.328
+Often when these kinds of studies are done at low stringency
+
+1134
+01:04:38.768 --> 01:04:39.288
+or with
+
+1135
+01:04:40.388 --> 01:04:43.768
+BioID, these kinds of approaches, you're looking for really the realm of proteins
+
+1136
+01:04:43.828 --> 01:04:47.548
+around. That's useful, but I think we need better
+
+1137
+01:04:47.608 --> 01:04:51.338
+quality data that can parse out direct from associative
+
+1138
+01:04:51.348 --> 01:04:55.268
+interactions. And the higher quality of the data and the mass of
+
+1139
+01:04:55.328 --> 01:04:58.688
+that data, the amount of that data being put into these models, I think
+
+1140
+01:04:58.728 --> 01:05:01.808
+will ultimately reveal that actually the models can do it.
+
+1141
+01:05:02.108 --> 01:05:05.848
+It's just that the input data was lackluster and in some cases,
+
+1142
+01:05:05.888 --> 01:05:06.208
+faulty.
+
+1143
+01:05:07.188 --> 01:05:08.768
+Maybe one other thing to build on that.
+
+1144
+01:05:08.808 --> 01:05:11.168
+So of course, there's the data we're using for training the models.
+
+1145
+01:05:11.888 --> 01:05:14.208
+But then there's actually then the prompts themselves.
+
+1146
+01:05:14.288 --> 01:05:14.368
+Yeah.
+
+1147
+01:05:14.377 --> 01:05:18.068
+And we've actually discovered some pretty surprising failure modes with these
+
+1148
+01:05:18.108 --> 01:05:20.968
+models sometimes. I'll give you an example of some of the early work we did at
+
+1149
+01:05:21.008 --> 01:05:24.468
+Chai. When we first started generating molecules, we had things that the model
+
+1150
+01:05:24.568 --> 01:05:28.108
+predicted would bind with really high confidence, but they went to the lab and they
+
+1151
+01:05:28.368 --> 01:05:31.978
+didn't bind. And we went back and looked at the predictions really carefully, and
+
+1152
+01:05:32.008 --> 01:05:35.908
+we found sometimes that maybe the sequences were clashing with the membrane, or
+
+1153
+01:05:35.928 --> 01:05:38.268
+maybe they were clashing with a glycan and things like that.
+
+1154
+01:05:38.288 --> 01:05:41.708
+So it turns out that the model actually did exactly what we told it to do,
+
+1155
+01:05:42.388 --> 01:05:45.668
+or at least we hypothesized that, but we just didn't tell it to do the right thing.
+
+1156
+01:05:45.708 --> 01:05:47.858
+We didn't tell it, "Don't clash with the membrane," or, "Don't clash with the
+
+1157
+01:05:47.888 --> 01:05:49.888
+glycan." We just didn't give that information to the model.
+
+1158
+01:05:50.788 --> 01:05:54.208
+We see the same thing, by the way, happen in the rest of LLM world.
+
+1159
+01:05:54.248 --> 01:05:57.528
+So I don't know how many programmers there are in the world, but if you use models
+
+1160
+01:05:57.537 --> 01:06:01.428
+like Claude Code in order to write code, one of the things people are
+
+1161
+01:06:01.468 --> 01:06:04.428
+doing these days is really innovating on the input harnesses.
+
+1162
+01:06:04.448 --> 01:06:06.868
+So actually, even I should have said this before in setting up the organization, a
+
+1163
+01:06:06.908 --> 01:06:07.208
+lot of
+
+1164
+01:06:08.028 --> 01:06:11.668
+documentation we write at Chai and internal docs is actually written for AI agents
+
+1165
+01:06:11.708 --> 01:06:13.448
+these days. We write probably more
+
+1166
+01:06:14.268 --> 01:06:18.177
+internal documentation for agents than we do for our own scientists, because then
+
+1167
+01:06:18.188 --> 01:06:22.008
+we can set an agent on the code base and we can say, "Go write some code," or, "Go
+
+1168
+01:06:22.028 --> 01:06:25.048
+set up this antibody campaign," and it kind of knows what to do.
+
+1169
+01:06:25.528 --> 01:06:29.028
+One of the funniest things we've seen there now is a big trend, is people prompt
+
+1170
+01:06:29.248 --> 01:06:32.888
+Claude, and they say, when they're trying to write really long code bases, they'll
+
+1171
+01:06:32.928 --> 01:06:36.468
+say, "Think like a caveman." And then the model ends up talking in
+
+1172
+01:06:36.768 --> 01:06:40.408
+incomplete sentences, which actually spends fewer tokens and uses less compute
+
+1173
+01:06:40.448 --> 01:06:44.248
+power for the same result. So we're trying to figure out the equivalence of that in
+
+1174
+01:06:44.258 --> 01:06:47.668
+biology world, and part of that is like, don't bind the membrane or don't bind the
+
+1175
+01:06:47.688 --> 01:06:51.098
+glycans, so the model doesn't waste compute power trying to discover binders that
+
+1176
+01:06:51.108 --> 01:06:52.208
+are just never going to work in the lab.
+
+1177
+01:06:52.848 --> 01:06:55.408
+Those are good examples. Question over here. Thanks.
+
+1178
+01:06:56.268 --> 01:06:57.068
+Thank you very much.
+
+1179
+01:06:58.448 --> 01:07:01.808
+David Favara, I'm an oncologist and GPCR structural
+
+1180
+01:07:01.868 --> 01:07:05.228
+biologist from the MRC LMB in Cambridge, England.
+
+1181
+01:07:05.328 --> 01:07:07.628
+Got a question, Josh, to you.
+
+1182
+01:07:08.668 --> 01:07:12.288
+You may have mentioned it. I came in halfway through your talk, so apologies.
+
+1183
+01:07:12.888 --> 01:07:16.368
+What is your model, your system, how does it take into
+
+1184
+01:07:16.408 --> 01:07:20.358
+account affinity maturation or improvement of binding affinity?
+
+1185
+01:07:20.588 --> 01:07:20.968
+And
+
+1186
+01:07:22.208 --> 01:07:24.228
+does it also generate nanobodies as well?
+
+1187
+01:07:25.548 --> 01:07:28.998
+And the other part of the question I wanted to ask was,
+
+1188
+01:07:29.688 --> 01:07:31.908
+in terms of the success rates,
+
+1189
+01:07:32.708 --> 01:07:34.558
+what are the differences in
+
+1190
+01:07:35.508 --> 01:07:35.808
+binding
+
+1191
+01:07:36.968 --> 01:07:40.448
+when you've tested out your purified
+
+1192
+01:07:40.508 --> 01:07:41.148
+antibodies,
+
+1193
+01:07:43.328 --> 01:07:47.108
+those generated from experimentally solved, like cryo-EM
+
+1194
+01:07:47.188 --> 01:07:48.788
+crystallography structures versus
+
+1195
+01:07:49.748 --> 01:07:51.268
+your in-house
+
+1196
+01:07:54.028 --> 01:07:57.868
+AI LLM-based protein structure plus your
+
+1197
+01:07:57.968 --> 01:08:01.000
+ChaiBinder program.
+
+1198
+01:08:02.040 --> 01:08:03.680
+Yeah. Really interesting questions.
+
+1199
+01:08:04.480 --> 01:08:08.420
+So there are a couple in there. So first, VHH, and VHVL, the model can generate
+
+1200
+01:08:08.460 --> 01:08:12.160
+both. So some of those agonist examples are actually VHH because then it might be
+
+1201
+01:08:12.200 --> 01:08:13.560
+easier to hit the orthosteric pocket.
+
+1202
+01:08:14.780 --> 01:08:18.530
+In terms of affinity maturation. One of the
+
+1203
+01:08:18.561 --> 01:08:21.440
+interesting things too is we don't even now think about the models as
+
+1204
+01:08:21.561 --> 01:08:25.420
+generating a lead versus then doing affinity maturation
+
+1205
+01:08:25.500 --> 01:08:28.880
+on it. Ideally, the model can just get you the molecule that you want, right?
+
+1206
+01:08:28.940 --> 01:08:31.620
+If we're going to hit that big goal of a development candidate right out of the
+
+1207
+01:08:31.660 --> 01:08:34.800
+model, then, of course, you need that to be baked in from the start.
+
+1208
+01:08:34.840 --> 01:08:38.061
+So we're trying to build more controllable knobs that the model can do that in a
+
+1209
+01:08:38.101 --> 01:08:42.000
+zero-shot way. What we've found is as the models have gotten better,
+
+1210
+01:08:42.240 --> 01:08:44.040
+the need for affinity maturation has gone down.
+
+1211
+01:08:44.141 --> 01:08:46.120
+So it's definitely not there for all targets.
+
+1212
+01:08:46.721 --> 01:08:50.561
+But as the models have gotten better, when we ask the model, "Bind this target,"
+
+1213
+01:08:51.380 --> 01:08:55.000
+it turns out as it understands the structure better, understands interactions
+
+1214
+01:08:55.040 --> 01:08:58.061
+better, it just finds more ways for that antibody to hit the target.
+
+1215
+01:08:58.101 --> 01:09:01.460
+And then when you look at the outputs, if you go run a 96 well plate, you'll just
+
+1216
+01:09:01.480 --> 01:09:02.660
+see a whole diversity of affinity.
+
+1217
+01:09:02.740 --> 01:09:05.340
+So there'll be some that are really good, there'll be some that are a little bit
+
+1218
+01:09:05.360 --> 01:09:09.141
+worse, and then you can choose the one that makes most sense for your application.
+
+1219
+01:09:09.160 --> 01:09:10.820
+And I think the last question then was about
+
+1220
+01:09:12.660 --> 01:09:16.221
+success rates if you use basically a experimental structure versus a predicted
+
+1221
+01:09:16.300 --> 01:09:20.080
+structure. So we don't see much of a difference, but there is a little bit of a
+
+1222
+01:09:20.141 --> 01:09:20.620
+cheat there.
+
+1223
+01:09:21.420 --> 01:09:24.860
+One of the things that we can do is the models have really good confidence metrics.
+
+1224
+01:09:24.920 --> 01:09:27.760
+This is both when we design molecules, so we can test ahead.
+
+1225
+01:09:27.800 --> 01:09:30.920
+The model can tell ahead of time whether it thinks the thing will work in the lab.
+
+1226
+01:09:31.340 --> 01:09:32.860
+But we can also do that for an input prompt.
+
+1227
+01:09:33.160 --> 01:09:36.061
+So if you take in, let's say, a GPCR sequence, right?
+
+1228
+01:09:36.101 --> 01:09:37.521
+Where we don't know what the structure looks like,
+
+1229
+01:09:38.521 --> 01:09:39.620
+there'll be a couple of challenges there.
+
+1230
+01:09:39.641 --> 01:09:42.400
+First of all, are we getting it in the active state versus the inactive state?
+
+1231
+01:09:42.480 --> 01:09:45.500
+So we've been developing some techniques to solve for either of them.
+
+1232
+01:09:45.521 --> 01:09:47.760
+But then you also just might get out a structure that looks like a bunch of
+
+1233
+01:09:47.780 --> 01:09:48.200
+spaghetti.
+
+1234
+01:09:49.181 --> 01:09:51.740
+And the thing is, the model will know that ahead of time.
+
+1235
+01:09:51.780 --> 01:09:53.360
+And we just won't use that as a prompt.
+
+1236
+01:09:53.400 --> 01:09:56.870
+So the system can tell you ahead of time that it thinks that this target will work
+
+1237
+01:09:56.880 --> 01:10:00.840
+and that this target won't work. And, the goal there is, before you go spend
+
+1238
+01:10:00.900 --> 01:10:04.540
+all of your time and money testing something in the lab, let's just actually have a
+
+1239
+01:10:04.580 --> 01:10:06.640
+good, calibrated success metric for that.
+
+1240
+01:10:07.020 --> 01:10:10.500
+So that's something we've invested in a lot because one way to drive towards 100%
+
+1241
+01:10:10.520 --> 01:10:12.700
+is to just skip over the stuff that's never going to work.
+
+1242
+01:10:12.720 --> 01:10:15.940
+And of course, we want to grow the set of targets the model does work
+
+1243
+01:10:15.980 --> 01:10:19.160
+for. And fortunately it seems to be working for quite a bit.
+
+1244
+01:10:19.800 --> 01:10:23.760
+But, yeah, for targets where the protein folding model doesn't work, at least it
+
+1245
+01:10:23.780 --> 01:10:26.239
+can tell us that ahead of time, and then we skip over those.
+
+1246
+01:10:26.260 --> 01:10:29.140
+But in cases where it is confident, we find that the success rates are actually
+
+1247
+01:10:29.160 --> 01:10:29.720
+pretty similar.
+
+1248
+01:10:30.460 --> 01:10:32.340
+Okay. Thank you very much. I wish you lots of success.
+
+1249
+01:10:32.960 --> 01:10:33.320
+Thank you.
+
+1250
+01:10:34.420 --> 01:10:34.840
+Okay.
+
+1251
+01:10:35.880 --> 01:10:39.400
+So the next question. All right. You said already that
+
+1252
+01:10:40.720 --> 01:10:44.700
+we've made huge progress in the last year, and I think it is, you see
+
+1253
+01:10:44.740 --> 01:10:48.520
+it throughout the meeting, the general progress in this field.
+
+1254
+01:10:48.680 --> 01:10:51.240
+So I'm not asking you to predict 10 years.
+
+1255
+01:10:51.520 --> 01:10:55.060
+I'm not even asking you to predict five years, but just a year from now, at
+
+1256
+01:10:55.160 --> 01:10:58.940
+ACR 2027, how do you expect that things will have changed?
+
+1257
+01:11:00.390 --> 01:11:04.350
+I think that first and foremost, and we already started to see this this
+
+1258
+01:11:04.420 --> 01:11:06.570
+year, but it's really the earliest days.
+
+1259
+01:11:06.700 --> 01:11:07.280
+I think that a
+
+1260
+01:11:08.100 --> 01:11:11.580
+far greater percentage of overall talks and
+
+1261
+01:11:11.920 --> 01:11:15.220
+posters and presentations here at this meeting will
+
+1262
+01:11:15.740 --> 01:11:19.120
+have been fully informed by an
+
+1263
+01:11:19.220 --> 01:11:20.960
+AI-based drug discovery approach.
+
+1264
+01:11:21.000 --> 01:11:24.660
+For example, taking an AI-based approach to in silico
+
+1265
+01:11:24.720 --> 01:11:28.410
+model an interaction and then ultimately identify binders,
+
+1266
+01:11:28.480 --> 01:11:32.400
+inhibitors, modulators of that interaction, test them back in the lab
+
+1267
+01:11:32.460 --> 01:11:33.080
+exactly as
+
+1268
+01:11:34.260 --> 01:11:38.060
+Josh was mentioning, test them back in the lab and have success enough to be
+
+1269
+01:11:38.100 --> 01:11:38.830
+able to report it
+
+1270
+01:11:39.640 --> 01:11:42.620
+at a meeting like this. I think for multiple cancer targets,
+
+1271
+01:11:43.580 --> 01:11:46.590
+especially those that have been sort of prosecuted by the biotech and
+
+1272
+01:11:46.620 --> 01:11:50.240
+pharmaceutical industry for many, many years, these are exactly the ripe targets
+
+1273
+01:11:50.300 --> 01:11:54.280
+that we have on the table, ourselves included, for trying to use a
+
+1274
+01:11:54.340 --> 01:11:56.900
+culmination and multiple companies based technologies.
+
+1275
+01:11:56.940 --> 01:12:00.700
+I think as a scientist we may ultimately
+
+1276
+01:12:00.800 --> 01:12:04.770
+favor one or another, but for us we also thrive on the diversity that can come from
+
+1277
+01:12:04.860 --> 01:12:08.780
+putting multiple models against one another or taking the collective products
+
+1278
+01:12:08.820 --> 01:12:12.429
+of those together. I think more and more of that is-- so more presentations and
+
+1279
+01:12:12.500 --> 01:12:12.740
+more
+
+1280
+01:12:13.720 --> 01:12:17.160
+drug discovery based efforts that are now actually going toward and being optimized
+
+1281
+01:12:17.220 --> 01:12:18.920
+toward clinical development.
+
+1282
+01:12:20.320 --> 01:12:24.300
+And more times where multiple models and
+
+1283
+01:12:24.360 --> 01:12:28.060
+multiple companies infrastructure and foundations have been used for the
+
+1284
+01:12:28.100 --> 01:12:29.580
+discovery. That's what I would predict.
+
+1285
+01:12:29.820 --> 01:12:30.240
+Okay, thanks.
+
+1286
+01:12:30.960 --> 01:12:32.940
+Yeah, I fully agree with a lot of that.
+
+1287
+01:12:33.000 --> 01:12:36.760
+I think one of the interesting things that our field has in AI, which
+
+1288
+01:12:36.800 --> 01:12:40.000
+is pretty different than others, is it's very difficult to verify if these methods
+
+1289
+01:12:40.060 --> 01:12:43.780
+work. This field has honestly been smoke and mirrors for a long
+
+1290
+01:12:43.840 --> 01:12:46.640
+time. And I can say that because I've worked on it for a long time.
+
+1291
+01:12:47.180 --> 01:12:51.170
+And if you look at something like image generation or asking ChatGPT to
+
+1292
+01:12:51.180 --> 01:12:54.640
+write you an essay or Claude to write you some code, it's very easy just to look at
+
+1293
+01:12:54.680 --> 01:12:56.920
+it and do a sanity check, are these looking good?
+
+1294
+01:12:56.960 --> 01:13:00.849
+So image generation two, three years ago, you had these hazy images and there was
+
+1295
+01:13:00.860 --> 01:13:04.720
+clearly progress that was being made, but clearly they were
+
+1296
+01:13:04.730 --> 01:13:07.600
+not very good. And the field has come a long way since then.
+
+1297
+01:13:07.700 --> 01:13:11.690
+I think in this field it trails a little bit because to build the conviction
+
+1298
+01:13:11.720 --> 01:13:15.040
+that it's worth trying these methods, you really need a lot of evidence because
+
+1299
+01:13:15.100 --> 01:13:18.539
+it's expensive to run these experiments and it takes time to get a readout.
+
+1300
+01:13:19.340 --> 01:13:22.540
+And I think now that we've reached-- those results that I also showed you on the
+
+1301
+01:13:22.560 --> 01:13:26.300
+slide are all very recent, right? So I think the field is now passing that
+
+1302
+01:13:26.340 --> 01:13:30.320
+inflection point where many of us here are going to start adopting the methods to
+
+1303
+01:13:30.720 --> 01:13:34.200
+a greater degree. And even though these results are here now,
+
+1304
+01:13:34.660 --> 01:13:36.720
+it's going to take the next year for them to be deployed.
+
+1305
+01:13:36.780 --> 01:13:39.620
+But I think a lot is going to happen over the next year.
+
+1306
+01:13:39.640 --> 01:13:42.440
+And the progress of the models is not slowing down either.
+
+1307
+01:13:42.490 --> 01:13:44.040
+It's actually only accelerating.
+
+1308
+01:13:44.180 --> 01:13:47.540
+So we've reached this inflection point where the methods are now starting to be
+
+1309
+01:13:47.560 --> 01:13:49.470
+deployed, and they're only going to get better.
+
+1310
+01:13:49.480 --> 01:13:53.320
+So I think 2027 ACR will be really interesting, where you'll start to
+
+1311
+01:13:53.340 --> 01:13:55.880
+see penetration of these methods with a lot of the work.
+
+1312
+01:13:56.180 --> 01:13:59.040
+And then probably the year after is when we will see some crazy discoveries that
+
+1313
+01:13:59.060 --> 01:14:00.780
+are now becoming possible because of AI.
+
+1314
+01:14:01.640 --> 01:14:03.200
+Great. Thank you. There's another question over here.
+
+1315
+01:14:03.240 --> 01:14:03.470
+Thanks
+
+1316
+01:14:04.928 --> 01:14:05.228
+Thank you.
+
+1317
+01:14:06.128 --> 01:14:10.028
+Really amazing presentations and also the scope for AI to change from this
+
+1318
+01:14:10.048 --> 01:14:11.988
+call is amazing. My question,
+
+1319
+01:14:13.088 --> 01:14:15.048
+borrowing from honorable chairperson,
+
+1320
+01:14:16.368 --> 01:14:20.208
+you mentioned what kind of workforce is needed, but someone who
+
+1321
+01:14:20.268 --> 01:14:23.748
+is entering into the industry or someone just entering
+
+1322
+01:14:23.808 --> 01:14:27.558
+the... What kind of skill sets one should develop to the
+
+1323
+01:14:27.588 --> 01:14:30.808
+point of, Ms. Seagal, that it's not going to be
+
+1324
+01:14:30.848 --> 01:14:33.908
+AI-assisted, it's going to be AI integrated.
+
+1325
+01:14:33.968 --> 01:14:37.908
+So from the core biologists, what kind of skill sets one should develop so
+
+1326
+01:14:37.968 --> 01:14:41.548
+that they have an edge? At the same time, for the established professionals who
+
+1327
+01:14:41.588 --> 01:14:45.428
+have doing traditional way, how they should be thinking and what they
+
+1328
+01:14:45.448 --> 01:14:47.588
+should be augmenting to their skill set?
+
+1329
+01:14:48.108 --> 01:14:49.708
+We should probably ask the professor first.
+
+1330
+01:14:50.208 --> 01:14:50.897
+I was going to say ask the
+
+1331
+01:14:51.708 --> 01:14:55.208
+technical details first. I think, again, for this community in here,
+
+1332
+01:14:55.608 --> 01:14:57.008
+whether this is for diagnostics,
+
+1333
+01:14:57.868 --> 01:15:01.668
+and for the development of medicines for various cancers, I still think
+
+1334
+01:15:01.708 --> 01:15:02.248
+that
+
+1335
+01:15:03.628 --> 01:15:07.468
+we can fall short if we're not careful about, A, input data
+
+1336
+01:15:07.848 --> 01:15:11.668
+and ensuring that we're guiding it exactly to your point earlier, Josh,
+
+1337
+01:15:11.738 --> 01:15:14.708
+about did we actually ask it to do the right thing and make sure you avoid
+
+1338
+01:15:15.488 --> 01:15:19.408
+certain aspects of the biology. That requires, on the biologist side or
+
+1339
+01:15:19.468 --> 01:15:23.268
+computational biologist side, or experimentalist in the lab, for us to
+
+1340
+01:15:23.308 --> 01:15:26.868
+have a very deep familiarity with the biology.
+
+1341
+01:15:27.278 --> 01:15:31.268
+And we can use these models and input data, but without the
+
+1342
+01:15:31.308 --> 01:15:34.788
+right guardrails or constraints, or you call them another term, harnesses, was it?
+
+1343
+01:15:36.148 --> 01:15:38.248
+Without that, we will repeatedly fail.
+
+1344
+01:15:38.368 --> 01:15:41.808
+And we have already received the results of first round, second
+
+1345
+01:15:41.848 --> 01:15:44.898
+round, in silico-based designs and in silico-based
+
+1346
+01:15:47.228 --> 01:15:50.108
+experiments essentially with failure.
+
+1347
+01:15:50.128 --> 01:15:54.098
+But upon a second round, we think we can do better by inputting more of
+
+1348
+01:15:54.128 --> 01:15:57.108
+that information. And sometimes that level of depth comes
+
+1349
+01:15:57.148 --> 01:16:00.868
+from many layers, actually. Not only the layer of how two
+
+1350
+01:16:00.888 --> 01:16:04.648
+proteins or three proteins or how these complexes are configured on
+
+1351
+01:16:04.668 --> 01:16:08.548
+chromatin, but also what they're doing, which genes are activated, which sites did
+
+1352
+01:16:08.558 --> 01:16:11.628
+they actually go. And you have to put in multiple sources of data.
+
+1353
+01:16:11.968 --> 01:16:13.928
+That's another thing that I think is not always easy.
+
+1354
+01:16:13.967 --> 01:16:17.848
+There's two domains, well, there are more than two domains, but two domains that
+
+1355
+01:16:17.868 --> 01:16:19.568
+are very frequently talked about in here.
+
+1356
+01:16:19.628 --> 01:16:22.628
+There's the protein side of AI, and that's much of what you've done.
+
+1357
+01:16:22.968 --> 01:16:26.208
+But there's also this wide space of AI-based
+
+1358
+01:16:26.248 --> 01:16:29.208
+strategies to collate and
+
+1359
+01:16:29.668 --> 01:16:33.608
+illuminate new mechanisms and targets out of reams
+
+1360
+01:16:33.688 --> 01:16:37.468
+of genomics data. And what's missing, we find, because we work
+
+1361
+01:16:37.528 --> 01:16:41.348
+on two sides of the spectrum, almost every paper from our lab is integrating
+
+1362
+01:16:41.448 --> 01:16:45.188
+protein and biochemistry and structural biology and the AI on that side with also
+
+1363
+01:16:45.268 --> 01:16:48.108
+the genomics and epigenomics and other types of gene regulatory
+
+1364
+01:16:48.608 --> 01:16:52.048
+sequencing-based methods. What's missing often without our
+
+1365
+01:16:52.168 --> 01:16:55.988
+manual integration of that is something that can actually take those two totally
+
+1366
+01:16:56.008 --> 01:16:58.668
+different sets of input data and build that together.
+
+1367
+01:16:58.768 --> 01:17:01.168
+That's something I'd like to see increasingly done.
+
+1368
+01:17:01.218 --> 01:17:03.988
+And I think, again, that needs to be done with the lens of
+
+1369
+01:17:05.428 --> 01:17:08.268
+domain expertise across both biology and AI.
+
+1370
+01:17:09.848 --> 01:17:13.678
+The thing I can add to that too is, I think getting experience with using agents,
+
+1371
+01:17:14.268 --> 01:17:15.268
+is really important.
+
+1372
+01:17:16.248 --> 01:17:19.168
+If you look at some of the-- We see this first now with software engineering.
+
+1373
+01:17:19.208 --> 01:17:22.928
+But if you look at some of the software engineers on our team, a good fraction of
+
+1374
+01:17:22.968 --> 01:17:26.208
+their salary is actually now being spent just on tokens of
+
+1375
+01:17:26.748 --> 01:17:30.608
+using language models. And the folks who are doing really well
+
+1376
+01:17:30.648 --> 01:17:34.508
+have just found ways to leverage themselves in incredible ways, like having a dozen
+
+1377
+01:17:34.548 --> 01:17:38.028
+agents running in parallel, writing different code for them, or our scientists
+
+1378
+01:17:38.248 --> 01:17:42.188
+writing pretty thorough documentation for Claude or ChatGPT so that they
+
+1379
+01:17:42.208 --> 01:17:44.888
+can use it to find interesting targets for case studies or choose the right
+
+1380
+01:17:44.908 --> 01:17:46.268
+epitopes and things like that.
+
+1381
+01:17:47.188 --> 01:17:51.088
+So I think there's a lot that you can leverage yourself these days and
+
+1382
+01:17:51.368 --> 01:17:55.128
+it's not obvious how to do it. And actually, there's no playbook because the
+
+1383
+01:17:55.168 --> 01:17:56.728
+models are evolving right in front of us.
+
+1384
+01:17:56.868 --> 01:18:00.728
+And what you need is an open mind, and you need ambition, and you need to
+
+1385
+01:18:00.828 --> 01:18:04.588
+just take your evenings and try things out and find things that work for you.
+
+1386
+01:18:04.618 --> 01:18:07.488
+And I find different people in our company, they're using different tools, they're
+
+1387
+01:18:07.508 --> 01:18:09.627
+using different playbooks, and obviously they share with one another.
+
+1388
+01:18:09.748 --> 01:18:13.138
+So, building a group of folks who are also
+
+1389
+01:18:13.168 --> 01:18:16.398
+experimenting and learning from them and sharing strategies is important because a
+
+1390
+01:18:16.448 --> 01:18:17.848
+lot of this you won't even find on the internet yet.
+
+1391
+01:18:17.888 --> 01:18:21.417
+Because you might have a new model that launched two weeks ago, and then people
+
+1392
+01:18:21.417 --> 01:18:23.768
+have now figured out how to leverage it into their workflows.
+
+1393
+01:18:23.787 --> 01:18:27.528
+But I think the folks who will create the most value in the next year as well will
+
+1394
+01:18:27.548 --> 01:18:30.868
+be people who figure out how to leverage these resources and basically 10X their
+
+1395
+01:18:30.888 --> 01:18:33.108
+productivity compared to folks who aren't adopting AI.
+
+1396
+01:18:33.248 --> 01:18:36.848
+Yeah. So I think, just to add to that, I think the first thing is don't be
+
+1397
+01:18:36.948 --> 01:18:37.328
+scared.
+
+1398
+01:18:37.768 --> 01:18:37.868
+Yeah.
+
+1399
+01:18:38.028 --> 01:18:38.748
+Be curious.
+
+1400
+01:18:38.928 --> 01:18:39.548
+Yeah.
+
+1401
+01:18:39.768 --> 01:18:41.508
+Okay? And
+
+1402
+01:18:42.368 --> 01:18:44.008
+dive in and iterate. I
+
+1403
+01:18:45.808 --> 01:18:46.768
+can assure you that
+
+1404
+01:18:47.668 --> 01:18:49.748
+none of this existed when I went to medical school.
+
+1405
+01:18:50.648 --> 01:18:53.788
+And so you got to be willing to
+
+1406
+01:18:54.428 --> 01:18:56.928
+adopt and learn and iterate in the
+
+1407
+01:18:57.768 --> 01:18:59.428
+group piece and try and understand the language.
+
+1408
+01:19:00.408 --> 01:19:04.388
+I think one thing that's really interesting that's happening now is that the
+
+1409
+01:19:04.588 --> 01:19:07.028
+agents are then being putting forward into teams.
+
+1410
+01:19:07.078 --> 01:19:10.237
+And what we're having to learn to do is how do we train the teams to work well
+
+1411
+01:19:10.237 --> 01:19:14.128
+together? It's remarkably similar to how you actually train teams of human
+
+1412
+01:19:14.148 --> 01:19:16.908
+beings to work together and collaborate as well.
+
+1413
+01:19:16.968 --> 01:19:20.668
+So you've got to have different roles and functions as specialists and an
+
+1414
+01:19:20.728 --> 01:19:24.468
+orchestrator as well. So I think some of the
+
+1415
+01:19:24.528 --> 01:19:28.408
+core philosophy of how we do science today is still going to be
+
+1416
+01:19:28.448 --> 01:19:30.728
+inherent in how we do science going forward.
+
+1417
+01:19:32.228 --> 01:19:33.928
+But learning to
+
+1418
+01:19:35.248 --> 01:19:38.728
+question and iterate with the agentic tools that you're
+
+1419
+01:19:39.048 --> 01:19:40.328
+setting up, I think will be-
+
+1420
+01:19:40.588 --> 01:19:44.204
+YeahOkay. I'm curious, Josh, do you name the agents?
+
+1421
+01:19:44.984 --> 01:19:48.404
+And can agents be fired? Do you fire agents from time to time?
+
+1422
+01:19:48.453 --> 01:19:51.504
+"Bob's not doing his job over here." How does that work?
+
+1423
+01:19:51.584 --> 01:19:55.434
+And do you reorg the agents, much like Susan's asking
+
+1424
+01:19:55.464 --> 01:19:59.164
+here? These are now essentially functioning people to an extent.
+
+1425
+01:19:59.184 --> 01:20:02.824
+Do you reorg the agents and, "Bob's not cooperating on Team A, we're going to put
+
+1426
+01:20:02.844 --> 01:20:04.444
+him on Team C." How does this go?
+
+1427
+01:20:05.004 --> 01:20:08.834
+No, I think we probably should, though, because naming convention for AI models is
+
+1428
+01:20:08.864 --> 01:20:11.964
+actually very hard because things are iterating so quickly, right?
+
+1429
+01:20:12.044 --> 01:20:14.224
+So you have a new model every week, how do you name them?
+
+1430
+01:20:14.244 --> 01:20:15.184
+And then you have different variants.
+
+1431
+01:20:15.244 --> 01:20:17.963
+I have the model that's good for this task or this one or that one.
+
+1432
+01:20:19.304 --> 01:20:22.984
+But actually, the way that we structure this in our code base is you can write
+
+1433
+01:20:22.993 --> 01:20:26.954
+documentation for different sub-agents, and then you often just name them by
+
+1434
+01:20:27.184 --> 01:20:30.374
+what task they are doing. So maybe there's the epitope selection agent, right?
+
+1435
+01:20:30.404 --> 01:20:33.544
+And then you're like, "Your job is to do this." And then you can tell another agent
+
+1436
+01:20:33.584 --> 01:20:37.084
+who's orchestrating all of it that, "Your job is before you decide on this, make
+
+1437
+01:20:37.124 --> 01:20:39.604
+sure you talk to the epitope selection agent and get its feedback."
+
+1438
+01:20:39.614 --> 01:20:40.024
+Yeah.
+
+1439
+01:20:40.064 --> 01:20:40.964
+And then the epitope agent-
+
+1440
+01:20:41.024 --> 01:20:41.034
+Yeah
+
+1441
+01:20:41.034 --> 01:20:43.704
+... is not allowed to change the epitope. It's only allowed to give feedback on it.
+
+1442
+01:20:44.004 --> 01:20:47.344
+So this is where it gets into building all these harnesses for the models, and it's
+
+1443
+01:20:47.384 --> 01:20:49.344
+similar for our molecular design models as well.
+
+1444
+01:20:49.424 --> 01:20:52.844
+You might have your design model that's looking for that peptide-MHC binder.
+
+1445
+01:20:53.214 --> 01:20:56.564
+It's allowed to ask the protein folding model what does this thing look like in
+
+1446
+01:20:56.604 --> 01:20:58.864
+order to then figure out how to keep changing the molecule.
+
+1447
+01:20:59.004 --> 01:21:01.384
+The protein folding model is not allowed to change the antibody sequence.
+
+1448
+01:21:01.674 --> 01:21:01.674
+No.
+
+1449
+01:21:01.704 --> 01:21:03.004
+It's only allowed to tell you what it looks like.
+
+1450
+01:21:03.034 --> 01:21:03.034
+Yeah.
+
+1451
+01:21:03.064 --> 01:21:04.284
+So these things go back and forth-
+
+1452
+01:21:04.324 --> 01:21:04.334
+Yeah
+
+1453
+01:21:04.334 --> 01:21:08.204
+... and they talk to one another. And this is, by the way, I think, then a new
+
+1454
+01:21:08.284 --> 01:21:12.104
+trend in this space. A year or two ago, everyone was like, "One model to
+
+1455
+01:21:12.144 --> 01:21:14.204
+rule them all," end to end and so forth.
+
+1456
+01:21:14.244 --> 01:21:18.144
+And these actually, they might be technically the same model weights, but
+
+1457
+01:21:18.184 --> 01:21:20.194
+by giving them different harnesses, they actually end up
+
+1458
+01:21:21.124 --> 01:21:22.704
+operating in pretty different ways.
+
+1459
+01:21:22.724 --> 01:21:25.254
+And then you can string these all together to get some pretty incredible
+
+1460
+01:21:25.264 --> 01:21:26.224
+capabilities out of them.
+
+1461
+01:21:26.264 --> 01:21:29.864
+Have you calculated what's the maximum back and forth
+
+1462
+01:21:30.144 --> 01:21:34.084
+that one, two, three, four, or five different agents have
+
+1463
+01:21:35.244 --> 01:21:36.694
+had the dialogue between one another?
+
+1464
+01:21:37.054 --> 01:21:41.004
+And did you calculate whether is there a correlation in the quality of the output
+
+1465
+01:21:41.064 --> 01:21:44.484
+product based on how many interactions they had, if you had to draw a
+
+1466
+01:21:45.204 --> 01:21:46.264
+scatter plot of these interactions?
+
+1467
+01:21:46.484 --> 01:21:50.064
+No, it's getting quite high, actually. Depends exactly how you define this, right?
+
+1468
+01:21:50.184 --> 01:21:53.464
+What the definition is of talking to one another.
+
+1469
+01:21:53.584 --> 01:21:57.094
+But, for the results that I was showing you over there, there are many, many calls
+
+1470
+01:21:57.124 --> 01:22:00.304
+that go into the model. There was a question before about affinity maturation.
+
+1471
+01:22:00.344 --> 01:22:04.213
+This is one example of it. Maybe you have a molecule that looks like it's binding,
+
+1472
+01:22:04.664 --> 01:22:07.584
+and then the model's asking, "How can I actually improve this?" And this is where
+
+1473
+01:22:07.624 --> 01:22:10.064
+you're iterating through many possibilities. And I don't know.
+
+1474
+01:22:10.104 --> 01:22:13.604
+We don't call that affinity maturation because I don't think that's exactly what
+
+1475
+01:22:13.644 --> 01:22:17.384
+the model is doing, but it might be a good way to intuit what these
+
+1476
+01:22:17.404 --> 01:22:17.944
+models are doing.
+
+1477
+01:22:17.984 --> 01:22:17.993
+Mm-hmm.
+
+1478
+01:22:18.024 --> 01:22:20.034
+Find some solution, iterate on it to make it better.
+
+1479
+01:22:20.564 --> 01:22:20.824
+Yeah.
+
+1480
+01:22:21.144 --> 01:22:24.053
+So, it's quite high. And honestly, it's
+
+1481
+01:22:24.084 --> 01:22:28.004
+increasing exponentially. So we also need better algorithms as a
+
+1482
+01:22:28.044 --> 01:22:31.004
+result because the compute costs just go through the roof when this happens.
+
+1483
+01:22:31.564 --> 01:22:33.144
+Okay. Final question, I think.
+
+1484
+01:22:33.564 --> 01:22:37.493
+Yeah. So thanks for the really nice talks, and I have a question for Josh.
+
+1485
+01:22:38.124 --> 01:22:41.844
+Actually, two questions. The first is, how do you see the
+
+1486
+01:22:42.264 --> 01:22:45.964
+relatively importance of improving the sequence and structure
+
+1487
+01:22:46.064 --> 01:22:49.493
+design versus improving the downstream filtering
+
+1488
+01:22:49.584 --> 01:22:53.064
+criteria? Which one do you think contribute more for a higher
+
+1489
+01:22:53.164 --> 01:22:56.844
+final hit rate? And the second question is, I know you focus
+
+1490
+01:22:56.944 --> 01:23:00.583
+on AI-based protein structure prediction, protein
+
+1491
+01:23:00.624 --> 01:23:04.224
+designs, but I'm wondering, do you think it's necessary to incorporate a
+
+1492
+01:23:04.304 --> 01:23:07.514
+physics-based modeling into machine learning approaches?
+
+1493
+01:23:07.904 --> 01:23:11.644
+Or do you think currently, the machine learning, based on the existing
+
+1494
+01:23:11.684 --> 01:23:15.224
+structure, is already enough to generate a high enough success rate? Thanks.
+
+1495
+01:23:16.144 --> 01:23:19.384
+Yeah. Great questions. And my answer might be a little unsatisfying because it's
+
+1496
+01:23:19.404 --> 01:23:20.644
+basically all of them are important.
+
+1497
+01:23:21.404 --> 01:23:25.074
+And this is one of the reasons why this space is moving so quickly right
+
+1498
+01:23:25.104 --> 01:23:26.854
+now. There's honestly a lot of bottlenecks.
+
+1499
+01:23:27.064 --> 01:23:28.824
+There's a lot of opportunities to improve.
+
+1500
+01:23:29.304 --> 01:23:32.664
+And if you can find better scoring functions, or you can find better generative
+
+1501
+01:23:32.724 --> 01:23:36.044
+models, these are all things that can work together to come up with a good
+
+1502
+01:23:36.104 --> 01:23:39.824
+solution. And, now that we have these pieces really
+
+1503
+01:23:39.844 --> 01:23:42.833
+working together and talking to one another, if you will,
+
+1504
+01:23:43.864 --> 01:23:47.434
+it allows us to now parallel track work on each of them.
+
+1505
+01:23:47.464 --> 01:23:50.654
+So we have people who are just pushing forward all of the things that you just
+
+1506
+01:23:50.684 --> 01:23:53.484
+mentioned, and whenever you get a breakthrough on one of them, then the entire
+
+1507
+01:23:53.504 --> 01:23:57.384
+system gets better. Another interesting thing is that the crosstalk between
+
+1508
+01:23:57.444 --> 01:24:00.384
+these things also can be multiplicative.
+
+1509
+01:24:00.424 --> 01:24:04.324
+So meaning, if you have a better filter, for instance, it
+
+1510
+01:24:04.364 --> 01:24:07.164
+might actually allow your generative model to sample even more stuff.
+
+1511
+01:24:07.524 --> 01:24:11.084
+So maybe now I can say, "Hey, let my generative model think 10 times longer, come
+
+1512
+01:24:11.124 --> 01:24:14.284
+up with more candidate solutions." And now I have a good filter, or I have some
+
+1513
+01:24:14.304 --> 01:24:17.284
+good physics modeling or whatever that I can pull out the best ones.
+
+1514
+01:24:17.724 --> 01:24:21.614
+So, that's how all these things work together, and a small improvement on one might
+
+1515
+01:24:21.614 --> 01:24:23.664
+actually unlock really big improvements on the other.
+
+1516
+01:24:24.664 --> 01:24:28.564
+So basically, it's a great function of the space right now that we
+
+1517
+01:24:28.604 --> 01:24:31.664
+can push on all of them, but it also means that there's not any one of those that's
+
+1518
+01:24:31.704 --> 01:24:32.824
+more important than the other.
+
+1519
+01:24:33.344 --> 01:24:33.724
+I see.
+
+1520
+01:24:34.084 --> 01:24:34.344
+Okay.
+
+1521
+01:24:35.944 --> 01:24:36.844
+Did you have another question?
+
+1522
+01:24:37.124 --> 01:24:41.114
+Yeah. The other question is, do you think incorporating physics-based modeling
+
+1523
+01:24:41.144 --> 01:24:41.864
+is important?
+
+1524
+01:24:42.364 --> 01:24:44.924
+Yes. I was putting that in that filter category as well.
+
+1525
+01:24:44.964 --> 01:24:47.144
+That's one of the pieces that is over here.
+
+1526
+01:24:47.564 --> 01:24:48.224
+I think frankly,
+
+1527
+01:24:49.064 --> 01:24:49.984
+if you just look at the
+
+1528
+01:24:50.804 --> 01:24:54.404
+base model performance, things that are AI-based have been moving faster than the
+
+1529
+01:24:54.424 --> 01:24:55.024
+physics-based.
+
+1530
+01:24:55.304 --> 01:24:55.394
+Mm-hmm.
+
+1531
+01:24:55.444 --> 01:24:59.094
+But as the models get better, then there's more opportunity to incorporate some of
+
+1532
+01:24:59.124 --> 01:25:02.324
+the physics, for instance. So if your protein folding model gives you a bunch of
+
+1533
+01:25:02.384 --> 01:25:04.064
+spaghetti, there's no physics to do.
+
+1534
+01:25:04.764 --> 01:25:08.634
+But now if you have atomic resolution for your predictions, then you can
+
+1535
+01:25:08.664 --> 01:25:12.324
+actually start to study what the structure looks like and learn something from it.
+
+1536
+01:25:12.404 --> 01:25:15.474
+And that could be as simple as an antibody engineer looking at this and saying,
+
+1537
+01:25:15.504 --> 01:25:19.484
+"Did I hit the right epitope?" Or something as sophisticated as a physics model
+
+1538
+01:25:19.544 --> 01:25:22.184
+running some simulation to figure out what's going on.
+
+1539
+01:25:22.604 --> 01:25:24.864
+So again, it's all these things coming together.
+
+1540
+01:25:24.944 --> 01:25:26.644
+I see. Thanks for the answers.
+
+1541
+01:25:26.704 --> 01:25:26.944
+Okay.
+
+1542
+01:25:28.004 --> 01:25:31.004
+So let me draw this to a conclusion. Oh, hang on.
+
+1543
+01:25:31.064 --> 01:25:33.434
+One last question. Okay, we got one more minute.
+
+1544
+01:25:33.484 --> 01:25:36.884
+Just wonder, are you using AlphaFold 3 for drug design at this point?
+
+1545
+01:25:39.544 --> 01:25:39.984
+Well,
+
+1546
+01:25:41.024 --> 01:25:44.604
+I think in terms of the different iterations of
+
+1547
+01:25:44.644 --> 01:25:47.684
+AlphaFold have informed some of the
+
+1548
+01:25:48.084 --> 01:25:51.924
+internal modeling, but I don't think it's just sufficient on
+
+1549
+01:25:51.964 --> 01:25:54.954
+its own, is what I would say we're currently at. Yeah.
+
+1550
+01:25:55.232 --> 01:25:58.912
+Yeah, I think it's just one piece of the puzzle, like I was saying
+
+1551
+01:25:58.952 --> 01:26:02.231
+before, for our work, for instance. We actually don't use AlphaFold.
+
+1552
+01:26:02.392 --> 01:26:04.732
+AlphaFold 3 can't even be used by companies.
+
+1553
+01:26:05.352 --> 01:26:08.492
+It's also fairly outdated at this point, at least from our perspective.
+
+1554
+01:26:08.552 --> 01:26:12.312
+Like the model came out like a year and a half ago or two years
+
+1555
+01:26:12.352 --> 01:26:16.332
+ago. And the models we have internally at Chai are way beyond that right
+
+1556
+01:26:16.372 --> 01:26:20.332
+now. But some variant of that, like a protein folding model is a key part
+
+1557
+01:26:20.372 --> 01:26:20.812
+of the workflow.
+
+1558
+01:26:20.832 --> 01:26:21.962
+Yes. Yeah. I think that's what
+
+1559
+01:26:22.892 --> 01:26:26.812
+we're both showing really. You start with that, but then it's iterated
+
+1560
+01:26:26.832 --> 01:26:29.292
+and built, and then you can build your own version.
+
+1561
+01:26:29.322 --> 01:26:32.692
+It's a bit like I was saying, there's the fine-tuning of the large data sets that
+
+1562
+01:26:32.712 --> 01:26:34.672
+you've got will take you beyond that currently.
+
+1563
+01:26:35.552 --> 01:26:36.512
+Right. Amo.
+
+1564
+01:26:37.492 --> 01:26:41.392
+So with all the advances and all the knowledge and information you're putting into
+
+1565
+01:26:41.432 --> 01:26:45.092
+developing these new drugs, which has high confidence, you take them to the
+
+1566
+01:26:45.152 --> 01:26:49.132
+labs where you have to do all this plethora of tests and everything to make them
+
+1567
+01:26:49.872 --> 01:26:53.332
+progress through the clinics. What are your thoughts and approaches,
+
+1568
+01:26:53.912 --> 01:26:56.952
+if you are already implementing them, in evolving or
+
+1569
+01:26:57.012 --> 01:27:00.852
+improving these analytical methods and tests to
+
+1570
+01:27:00.892 --> 01:27:04.822
+make sure that you're actually getting the right drugs moving forward?
+
+1571
+01:27:05.232 --> 01:27:09.012
+Because there's a whole lot of things and efforts done to develop these very great
+
+1572
+01:27:09.052 --> 01:27:11.872
+drug candidates. Then how do you test them? How do you evolve them?
+
+1573
+01:27:11.912 --> 01:27:15.792
+Because you have very traditional tests such as Western blotting to very elegant
+
+1574
+01:27:16.212 --> 01:27:20.112
+3D models. So how are you inputting all these AI learnings and models
+
+1575
+01:27:20.192 --> 01:27:21.792
+to develop these better tests?
+
+1576
+01:27:21.832 --> 01:27:23.032
+Yeah, no, I think that's a really great question.
+
+1577
+01:27:23.052 --> 01:27:26.652
+And it's a form of the benchmarking challenge
+
+1578
+01:27:27.052 --> 01:27:28.912
+that you have with the large language model.
+
+1579
+01:27:29.012 --> 01:27:32.492
+What question, what bar are you setting against it?
+
+1580
+01:27:33.132 --> 01:27:36.692
+I still think that you're going to end up using some of the same
+
+1581
+01:27:36.772 --> 01:27:39.852
+assays that we've currently got. But I also think that,
+
+1582
+01:27:40.892 --> 01:27:44.232
+I don't know if you heard Bo Wang's talk from
+
+1583
+01:27:44.552 --> 01:27:48.212
+Zyera this morning.
+
+1584
+01:27:49.272 --> 01:27:53.152
+But he was giving one example of a cell-based model
+
+1585
+01:27:53.232 --> 01:27:56.412
+where there's an input- Oops, sorry.
+
+1586
+01:27:56.752 --> 01:27:57.892
+An input of
+
+1587
+01:28:00.632 --> 01:28:04.332
+very large data set of very many different cell types across the body.
+
+1588
+01:28:04.361 --> 01:28:07.892
+And you're looking at aspects of morphology
+
+1589
+01:28:08.052 --> 01:28:11.652
+and phenotype as a core piece for going that.
+
+1590
+01:28:11.732 --> 01:28:13.632
+I think that will be really informative
+
+1591
+01:28:15.372 --> 01:28:16.072
+in terms of
+
+1592
+01:28:18.072 --> 01:28:21.992
+better understanding the cellular context that you've
+
+1593
+01:28:22.032 --> 01:28:25.942
+then got the drugs to work on. And I think this is just an example of how we're
+
+1594
+01:28:26.012 --> 01:28:28.552
+going to need foundation models in multiple different mentions.
+
+1595
+01:28:28.592 --> 01:28:32.412
+You got the foundation models for predicting what the biologic structure is for
+
+1596
+01:28:32.452 --> 01:28:36.192
+the small molecule prediction. But I think you're also going to need foundation
+
+1597
+01:28:36.252 --> 01:28:39.812
+models for looking at the biological output sets, which will
+
+1598
+01:28:39.852 --> 01:28:40.372
+include
+
+1599
+01:28:41.272 --> 01:28:44.652
+phenotype. And there's been this long debate about
+
+1600
+01:28:44.772 --> 01:28:46.412
+phenotypic screening versus
+
+1601
+01:28:48.712 --> 01:28:50.692
+individual target-based screening.
+
+1602
+01:28:50.752 --> 01:28:54.392
+I think the cell-based foundation models will help us move and actually
+
+1603
+01:28:54.432 --> 01:28:58.232
+incorporate phenotype knowledge sets into it,
+
+1604
+01:28:58.312 --> 01:29:01.992
+because watching cells grow and the
+
+1605
+01:29:02.132 --> 01:29:05.852
+shape and the dynamics of that, actually,
+
+1606
+01:29:06.292 --> 01:29:10.192
+there's a lot of embedding of things that we don't necessarily have the
+
+1607
+01:29:10.232 --> 01:29:14.072
+current assays for, information inherent in that,
+
+1608
+01:29:14.632 --> 01:29:18.132
+that we are not paying attention to at the moment.
+
+1609
+01:29:18.332 --> 01:29:20.832
+And I think that will be a really important puzzle. It's a great question.
+
+1610
+01:29:20.942 --> 01:29:21.272
+Thank you.
+
+1611
+01:29:23.032 --> 01:29:26.892
+So with that, thank you very much to Sagal and Josh
+
+1612
+01:29:26.952 --> 01:29:30.252
+for your contribution. Thank you to all of you for staying to the end.
+
+1613
+01:29:31.002 --> 01:29:33.212
+It's late now. I think it's time we
+
+1614
+01:29:34.192 --> 01:29:37.912
+headed to either get food or drink, some variety of each. I know that I need one.
+
+1615
+01:29:38.272 --> 01:29:40.212
+Thank you very much for your time and attention. Thank you.
+
+1616
+01:29:41.272 --> 01:29:41.622
+Thank you.
+
+1617
+01:29:43.332 --> 01:29:48.652
+Thank
+
+1618
+01:29:48.712 --> 01:29:50.072
+you.

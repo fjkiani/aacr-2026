@@ -1,0 +1,327 @@
+[
+  {
+    "talk_id": "contextual-challenges-in-interpreting-performance-of-blood-based-early-cancer-de::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Bob Smith",
+      "institution_or_pharma": "American Cancer Society",
+      "session_title": "Contextual Challenges in Blood-Based Early Cancer Detection Tests",
+      "talk_title": "Statistical considerations for early detection test performance",
+      "rhetorical_signals": [
+        "Speaker said: \"we have a tendency to view [MCED] through the lens of the measurements and the evaluations of single cancer early detection tests\"",
+        "Speaker said: \"the lower detection of circulating markers for earlier stage cancers moderates sensitivity for aggregate detection, and that's normative at this time\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No direct trial data presented for MCED performance",
+        "No OS or mortality outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for better stratification of MCED sensitivity by cancer stage and size to improve predictive performance.",
+        "transcript_evidence": "Speaker said: \"Statistical power is a critical issue here. And there's little data on program sensitivity.\"",
+        "crispro_angle": "CrisPRO can model stage\u2011specific shedding signatures to predict assay sensitivity across tumor sizes.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate prospective cohort designs with serial ctDNA sampling to capture program sensitivity.",
+        "transcript_evidence": "Speaker said: \"We have not had an opportunity to look at the performance of these tests very often when they've been done year after year.\"",
+        "crispro_angle": "CrisPRO can simulate longitudinal sampling schedules to optimize trial power for program sensitivity endpoints.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Guardant Shield",
+        "context": "first FDA\u2011approved single cancer early detection test for colorectal cancer",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Freenome SimpleScreen",
+        "context": "referenced as an MCED under review",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How to reliably estimate program sensitivity without long\u2011term follow\u2011up data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Guardant Shield",
+        "Freenome SimpleScreen"
+      ],
+      "companies_to_monitor": [
+        "Grail",
+        "Natera"
+      ]
+    }
+  },
+  {
+    "talk_id": "contextual-challenges-in-interpreting-performance-of-blood-based-early-cancer-de::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Nima Visvade",
+      "institution_or_pharma": "Oregon Health & Science University",
+      "session_title": "Contextual Challenges in Blood-Based Early Cancer Detection Tests",
+      "talk_title": "Defining target condition for multi\u2011cancer early detection",
+      "rhetorical_signals": [
+        "Speaker said: \"the target condition in MCED tests cannot be separated from cancer signal origin\"",
+        "Speaker said: \"CSO accuracy is consistently high enough to help narrow the diagnostic search\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Limited prospective validation of CSO accuracy",
+        "No large\u2011scale outcome data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop computational models to predict CSO accuracy across tumor subtypes where empirical data are sparse.",
+        "transcript_evidence": "Speaker said: \"Across multiple data sets, cancer signal origin is accurate enough to be clinically useful as a workup diagnostic tool\"",
+        "crispro_angle": "CrisPRO can integrate methylation signatures with tissue\u2011of\u2011origin classifiers to improve CSO predictions.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a framework to map biologic families (e.g., HPV\u2011related tumors) to shared CSO pathways.",
+        "transcript_evidence": "Speaker said: \"Some CSOs reflect embryologic, molecular, or histologic relationships more so than strict organ boundaries\"",
+        "crispro_angle": "CrisPRO can cluster tumors by shared epigenetic signatures to define biologic parity groups.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the optimal clinical workflow for indeterminate CSO findings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "contextual-challenges-in-interpreting-performance-of-blood-based-early-cancer-de::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Asma Shukat",
+      "institution_or_pharma": "Oregon Health & Science University",
+      "session_title": "Contextual Challenges in Blood-Based Early Cancer Detection Tests",
+      "talk_title": "Translating clinical trial data into intended use populations",
+      "rhetorical_signals": [
+        "Speaker said: \"Our trials are very often biased on purpose because we need to get a certain number of cases of cancer\"",
+        "Speaker said: \"When you look at a test that goes into a population that has a different makeup than what the trial population was\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Trial enrichment strategy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Enrichment with high\u2011risk or advanced\u2011stage cancers inflates sensitivity and PPV",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PREEMPT",
+        "target_biology": "Blood\u2011based colorectal cancer detection",
+        "flawed_enrollment_criteria": "Over\u2011representation of 50\u201154 year olds and women, under\u2011representation of >75 year olds",
+        "missing_biomarker": "Age\u2011adjusted prevalence weighting not applied in primary analysis",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Sensitivity and specificity shift after age/sex adjustment",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of real\u2011world validation of adjusted performance metrics"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate age\u2011sex standardization prospectively in trial protocols to avoid post\u2011hoc adjustments.",
+        "transcript_evidence": "Speaker said: \"We adjusted it, and then we said, 'Okay, how does the performance of the test change?'\"",
+        "crispro_angle": "CrisPRO can simulate population distributions to guide enrollment quotas before trial launch.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Report sensitivity by lesion size and histology within each stage to refine performance estimates.",
+        "transcript_evidence": "Speaker said: \"Not all stage one cancers are created equal... size of the tumor correlates with how much it's shed\"",
+        "crispro_angle": "CrisPRO can model shedding dynamics as a function of tumor volume and histologic subtype.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Guardant Shield",
+        "context": "cited as the first FDA\u2011approved single\u2011cancer test",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Freenome SimpleScreen",
+        "context": "example of a large MCED validation cohort (PREEMPT)",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How to adjust for tumor size and location when reporting stage\u2011specific sensitivity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "SimpleScreen (Freenome)",
+        "Guardant Shield"
+      ],
+      "companies_to_monitor": [
+        "Grail",
+        "Freenome"
+      ]
+    }
+  },
+  {
+    "talk_id": "contextual-challenges-in-interpreting-performance-of-blood-based-early-cancer-de::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Anand Pathak",
+      "institution_or_pharma": "U.S. FDA Center for Devices and Radiological Health",
+      "session_title": "Contextual Challenges in Blood-Based Early Cancer Detection Tests",
+      "talk_title": "FDA considerations for MCED performance evaluation",
+      "rhetorical_signals": [
+        "Speaker said: \"The study population should reflect the context of use\"",
+        "Speaker said: \"Prospective cohort studies minimize the risk of spectrum bias\""
+      ],
+      "presentation_type": "industry_pitch"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Verification bias in prospective MCED studies",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Positive cases receive extensive work\u2011up while negatives are not uniformly investigated, inflating PPV",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Limited real\u2011world data on tissue\u2011of\u2011origin accuracy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Provide a standardized computational framework to assess verification bias across MCED trials.",
+        "transcript_evidence": "Speaker said: \"There are statistical techniques to deal with these biases, however\"",
+        "crispro_angle": "CrisPRO can generate bias\u2011adjusted performance estimates using simulated verification pathways.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Enable per\u2011cancer and per\u2011stage reporting through automated data pipelines.",
+        "transcript_evidence": "Speaker said: \"We need per cancer performance and per cancer stage specific performance data\"",
+        "crispro_angle": "CrisPRO can auto\u2011segment trial data by cancer type, stage, and demographic subgroups.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What statistical methods are preferred for correcting verification bias in MCED studies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": [
+        "FDA"
+      ]
+    }
+  },
+  {
+    "talk_id": "contextual-challenges-in-interpreting-performance-of-blood-based-early-cancer-de::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Gary Puckrein",
+      "institution_or_pharma": "National Minority Quality Forum",
+      "session_title": "Contextual Challenges in Blood-Based Early Cancer Detection Tests",
+      "talk_title": "Implementing MCEDs in underserved communities",
+      "rhetorical_signals": [
+        "Speaker said: \"These liquid biopsies allow us to surveil at the population level\"",
+        "Speaker said: \"The barrier that I see is actually having somebody within the community to provide that clinically actionable next step\""
+      ],
+      "presentation_type": "panel_discussion"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MCED platform requiring high\u2011complexity downstream imaging",
+        "ip_vulnerability_note": "Speaker highlighted that community sites lack access to advanced imaging/endoscopy needed after a positive test",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad deployment without established referral networks may dilute clinical utility"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No outcome data on community implementation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "implementation_partner",
+        "description": "Partner with CrisPRO to create decision\u2011support tools that triage positive MCED results to appropriate local or regional diagnostic resources.",
+        "transcript_evidence": "Speaker said: \"Being able to have a lifeline to the tertiary academic center to escalate signal positives\"",
+        "crispro_angle": "CrisPRO can generate referral algorithms based on CSO and local resource availability.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to ensure equitable access to confirmatory diagnostics after a positive MCED in rural settings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  }
+]

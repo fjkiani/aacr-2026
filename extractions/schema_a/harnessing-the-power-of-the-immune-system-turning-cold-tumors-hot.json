@@ -1,0 +1,379 @@
+[
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::gajewski::1",
+    "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+    "talk_title": "Mechanisms of Myeloid-Mediated Resistance to Anti-PD-1 Therapy",
+    "speaker": {
+      "name": "Tom Gajewski",
+      "affiliation": "University of Chicago",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "head and neck cancer",
+      "gastric cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "biomarker_development",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti-PD-1",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PKC delta",
+        "pathway": "unknown",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "GPNMB",
+        "pathway": "unknown",
+        "modality": "antibody",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "STING",
+        "pathway": "innate_immune",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "gamma interferon gene signature",
+        "type": "predictive",
+        "assay": "RNA-seq",
+        "finding": "Efficacy of single agent anti-PD-1 is enriched in patients with activated T cell gene signature (gamma interferon-induced genes) at baseline."
+      },
+      {
+        "name": "PKC delta hypomorphic allele",
+        "type": "predictive",
+        "assay": "NGS",
+        "finding": "Correlated with increased T cell infiltrate in the tumor microenvironment."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "melanoma patients",
+        "genotype_or_key_features": "anti-PD-1 treated patients"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16-SIY model",
+        "genotype_or_key_features": "model antigen"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "PKC delta conditional knockout",
+        "genotype_or_key_features": "hematopoietic cell deletion"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "GPNMB knockout",
+        "genotype_or_key_features": "global knockout"
+      },
+      {
+        "model_type": "other",
+        "name": "gnotobiotic mice",
+        "genotype_or_key_features": "germ-free mice receiving human FMT from responders vs non-responders"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The speaker proposes that 'cold' tumors are dominated by suppressive M2-like macrophages that prevent T cell function. He identifies PKC delta and GPNMB as key negative regulators of the antitumor response; loss of these targets shifts macrophage phenotype from suppressive to inflammatory, thereby enhancing spontaneous tumor control and anti-PD-1 efficacy.",
+    "readouts": [
+      "single-cell RNA-seq",
+      "bulk RNA-seq",
+      "metabolomics",
+      "flow_cytometry",
+      "IHC"
+    ],
+    "key_findings": [
+      "FMT from responder patients into germ-free mice restored anti-PD-L1 efficacy, a phenotype retained generationally in offspring.",
+      "Single-cell RNA-seq of FMT mice showed that responder microbiota induced an inflammatory macrophage gene signature and flipped granulocytes away from an MDSC-like phenotype.",
+      "Conditional deletion of PKC delta in hematopoietic cells led to spontaneous tumor control and markedly improved anti-PD-1 efficacy.",
+      "GPNMB is dominantly expressed in SPP1+ macrophages; its knockout resulted in substantial spontaneous tumor control in B16-SIY and orthotopic breast cancer models.",
+      "GPNMB-mediated suppression is driven by tissue-resident macrophages rather than bone marrow-derived cells, as Lysozyme M-Cre deletion showed a phenotype while Vav1-Cre did not."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "STING agonists have limited efficacy in cold tumors because they require the presence of CDC1 cells to function."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Identification of the relevant receptor for GPNMB to enable pharmacological blockade.",
+      "Whether the GPNMB pathway is generalizable to other cold tumors like pancreatic or colon cancer."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::pieper::2",
+    "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+    "talk_title": "Genetic Screens and Heterotypic Clusters for Overcoming Immunotherapy Resistance",
+    "speaker": {
+      "name": "Daniel Pieper",
+      "affiliation": "Netherlands Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "colon cancer",
+      "NSCLC",
+      "sarcoma",
+      "endometrial cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "targeted_therapy",
+      "spatial_biology",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TRAF2",
+        "pathway": "TNF signaling (survival arm)",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "RNF31",
+        "pathway": "TNF signaling (survival arm)",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "DEP5",
+        "pathway": "T cell dysfunction",
+        "modality": "unspecified",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "MGT2",
+        "pathway": "N-glycan biosynthesis",
+        "modality": "unspecified",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "T cell-tumor heterotypic clusters",
+        "type": "predictive",
+        "assay": "flow_cytometry / ImageStream",
+        "finding": "T cells in clusters are highly enriched for tumor antigen specificity, clonal expansion, and exhibit a 9-fold increase in melanoma killing capacity compared to singlets."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Mart1-expressing melanoma cells",
+        "genotype_or_key_features": "co-cultured with Mart1-specific TCR T cells"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "melanoma lymph node metastasis",
+        "genotype_or_key_features": "n=21 patients"
+      },
+      {
+        "model_type": "PDX",
+        "name": "melanoma PDX",
+        "genotype_or_key_features": "autologous adoptive cell transfer"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The speaker used genome-wide CRISPR screens to identify TRAF2 and RNF31 as survival-arm TNF pathway components that, when inactivated, sensitize tumor cells to T cell killing. Additionally, he developed a pipeline to isolate T cell-tumor heterotypic clusters, which are enriched for tumor-reactive, clonally expanded T cells with superior killing capacity.",
+    "readouts": [
+      "CRISPR_screen",
+      "single-cell RNA-TCR sequencing",
+      "flow_cytometry",
+      "ImageStream",
+      "multiplex_IHC",
+      "proximity labeling (TurboID)"
+    ],
+    "key_findings": [
+      "Inactivation of TRAF2 or RNF31 tips the balance from pro-survival to pro-death, leading to tumor regression in immune-proficient mouse models.",
+      "DEP5 knockout in primary T cells boosts global translation and proliferation, leading to significant tumor control in adoptive transfer models.",
+      "CD8 T cell clusters comprise ~1.4% of all cells in melanoma lymph node metastases, with ~12% of total CD8 T cells residing in clusters.",
+      "T cells isolated from clusters show a 9-fold increase in melanoma killing capacity in vitro across 11 patients.",
+      "MGT2 was identified as a top hit in proximity labeling and cluster screens; its knockout in T cells enhances tumor killing in vitro and in vivo."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "checkpoint blocker",
+        "rationale": "Synergize T cell killing by removing tumor intrinsic survival signals (TRAF2/RNF31)",
+        "phenotype": "increased sensitivity to T cell killing",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Whether these heterotypic clusters can be detected in peripheral blood for non-invasive monitoring.",
+      "Whether T cells at the tumor margin of 'cold' tumors form stable clusters with APCs to enable isolation of reactive T cells."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "harnessing-the-power-of-the-immune-system-turning-cold-tumors-hot::fong::3",
+    "session_title": "Harnessing the Power of the Immune System: Turning Cold Tumors Hot",
+    "talk_title": "Myeloid-Mediated Immune Suppression in Prostate Cancer and Bone Metastasis",
+    "speaker": {
+      "name": "Larry Fong",
+      "affiliation": "Fred Hutch / UCSF",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD73",
+        "pathway": "adenosine pathway",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "zafirlukast",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CXCR1/2",
+        "pathway": "chemokine signaling",
+        "modality": "small_molecule_inhibitor",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IL-1beta",
+        "pathway": "pro-inflammatory/suppressive",
+        "modality": "antibody",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SPP1-high TAMs",
+        "type": "predictive",
+        "assay": "single-cell RNA-seq",
+        "finding": "Patients with high levels of SPP1 TAMs at baseline responded to zafirlukast + atezolizumab (ORR ~20% in CRPC)."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "atezolizumab phase III trial",
+        "genotype_or_key_features": "prostate cancer patients"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "CRPC patients",
+        "genotype_or_key_features": "castration-resistant prostate cancer"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "tibial bone injection model",
+        "genotype_or_key_features": "osseous metastasis model"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "SPP1-GFP mouse",
+        "genotype_or_key_features": "SPP1 reporter"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "20%",
+        "n": "not specified",
+        "population": "CRPC patients with high SPP1 TAMs",
+        "comparator": "vs atezolizumab alone",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "OS",
+        "value": "4 months",
+        "n": "not specified",
+        "population": "Sipuleucel-T treated patients",
+        "comparator": "vs control",
+        "maturity": "mature_OS"
+      }
+    ],
+    "MOA_summary": "The speaker identifies two distinct myeloid-mediated resistance mechanisms in prostate cancer: SPP1-high TAMs in primary/soft tissue tumors that suppress via the CD73-adenosine pathway, and IL-1beta-high mature neutrophils in bone metastases that suppress via CXCR2-mediated recruitment and IL-1beta signaling.",
+    "readouts": [
+      "single-cell RNA-seq",
+      "flow_cytometry",
+      "IHC",
+      "proliferation assay"
+    ],
+    "key_findings": [
+      "Sipuleucel-T induces T cells that are 'excluded' at the invasive margin, limiting clinical efficacy.",
+      "SPP1-high TAMs produce adenosine via CD73; blocking the A2A receptor with zafirlukast combined with anti-PD-1 showed clinical responses in 20% of CRPC patients.",
+      "Bone metastases are uniquely enriched for IL-1beta-high mature neutrophils, which are functionally immunosuppressive in vitro and in vivo.",
+      "Inhibition of CXCR1/2 or IL-1beta receptor rescued the efficacy of combination checkpoint inhibition in bone metastasis mouse models."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Bone metastasis environments are dominated by neutrophils rather than TAMs, requiring different therapeutic strategies than soft tissue metastases."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "zafirlukast",
+        "rationale": "Block adenosine-mediated suppression to enhance checkpoint blockade",
+        "phenotype": "clinical responses in 20% of CRPC patients",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "CXCR1/2 inhibitor",
+        "rationale": "Prevent migration of suppressive neutrophils into bone metastasis",
+        "phenotype": "enhancement of anti-tumor response in mouse model",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Whether the role of IL-6 contributes to the immunosuppressive phenotype of neutrophils in bone metastases.",
+      "Whether epigenetic subtypes (e.g., neuroendocrine vs AR-positive) drive the different myeloid compositions across metastatic sites."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

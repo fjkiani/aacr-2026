@@ -1,0 +1,167 @@
+[
+  {
+    "talk_id": "tumor-immunology-for-non-immunologists-back-to-basics::paulos::1",
+    "session_title": "tumor-immunology-for-non-immunologists-back-to-basics",
+    "talk_title": "Adoptive T cell immunotherapy strategies and preclinical findings",
+    "speaker": {
+      "name": "Crystal Paulos",
+      "affiliation": "Emory Winship Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "triple-negative breast cancer",
+      "pancreatic cancer",
+      "leukemia"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cellular_therapy",
+      "combination_therapy",
+      "translational",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD19",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "target_novelty": "established_target",
+        "compound_name": "CD19 CAR",
+        "ligase_or_cofactor": null,
+        "dependency_context": "CD19-positive B-cell malignancies",
+        "alteration": null
+      },
+      {
+        "gene_or_protein": "mesothelin",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "target_novelty": "emerging_target",
+        "compound_name": "mesothelin CAR",
+        "ligase_or_cofactor": null,
+        "dependency_context": "mesothelin-overexpressing pancreatic cancer",
+        "alteration": null
+      },
+      {
+        "gene_or_protein": "NY-ESO-1",
+        "pathway": "cancer_testis_antigen",
+        "modality": "TCR",
+        "target_novelty": "established_target",
+        "compound_name": "NY-ESO-1 specific TCR",
+        "ligase_or_cofactor": null,
+        "dependency_context": "NY-ESO-1 expressing tumors",
+        "alteration": null
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "TIL therapy vs ipilimumab trial",
+        "genotype_or_key_features": "84 patients per arm, relapsed after checkpoint blockade"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16-F10 melanoma model",
+        "genotype_or_key_features": "C57BL/6 background, aggressive melanoma"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "progression-free survival at 6 months",
+        "value": "52.7%",
+        "confidence_interval": null,
+        "n": "n=84 per arm",
+        "population": "relapsed checkpoint blockade patients",
+        "comparator": "ipilimumab arm",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Adoptive transfer of expanded tumor-infiltrating lymphocytes (TILs) or genetically engineered T cells (TCR or CAR) provides large numbers of tumor-specific cytotoxic T cells that can directly kill cancer cells; CAR constructs redirect T cells to surface antigens such as CD19 or mesothelin, while TCR engineering targets intracellular antigens like NY-ESO-1. Preclinical data show that Th17-polarized CD4 T cells can synergize with endogenous CD8 responses to achieve durable tumor regression in the B16-F10 melanoma model.",
+    "readouts": [
+      "flow_cytometry",
+      "IHC",
+      "CT_scan",
+      "bulk_RNA_sequencing",
+      "clinical_survival_analysis"
+    ],
+    "key_findings": [
+      "TIL therapy achieved a 6\u2011month PFS of 52.7% versus ipilimumab in 84 relapsed patients (Phase II trial).",
+      "CD19 CAR T cells cleared CD19\u2011positive leukemia in bone marrow with durable remission observed >170 days post\u2011infusion.",
+      "Th17\u2011polarized CD4 T cells, when adoptively transferred into B16\u2011F10 melanoma\u2011bearing mice, produced superior tumor control compared with Th0, Th1, or Th9 subsets.",
+      "RNA\u2011seq of Th17\u2011treated tumors revealed up\u2011regulation of chemokines and antigen\u2011presentation pathways, suggesting recruitment of endogenous CD8 T cells."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "tumor-immunology-for-non-immunologists-back-to-basics::zhamarin::2",
+    "session_title": "tumor-immunology-for-non-immunologists-back-to-basics",
+    "talk_title": "Clinical mechanisms of response and resistance to cancer immunotherapy",
+    "speaker": {
+      "name": "Dmitry Zhamarin",
+      "affiliation": "Mount Sinai",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "clinical_trial",
+      "biomarker_development",
+      "tumor_microenvironment",
+      "other"
+    ],
+    "targets": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "not specified",
+        "genotype_or_key_features": "not specified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Zhamarin described how tumor antigens are presented to T cells, leading to activation, proliferation, and tumor cell lysis, and outlined mechanisms of primary and adaptive resistance including loss of antigen presentation, interferon signaling suppression, and immune-excluded microenvironments.",
+    "readouts": [
+      "IHC",
+      "spatial_transcriptomics",
+      "TCR_sequencing",
+      "NGS"
+    ],
+    "key_findings": [
+      "Primary resistance is associated with tumors lacking T cell infiltration (cold tumors) due to absent antigen presentation or immunosuppressive microenvironment.",
+      "Adaptive resistance involves upregulation of PD-L1 driven by IFN\u2011\u03b3 from activated T cells, creating an exhausted T cell phenotype.",
+      "Proximity analysis of PD\u20111+ T cells to PD\u2011L1+ cells within 30\u201150\u202f\u00b5m predicts response to checkpoint blockade in endometrial cancer.",
+      "Tumor mutational burden and MSI\u2011high status correlate with higher response rates to PD\u20111 inhibitors, but ~30% of high\u2011TMB patients do not respond."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Loss of MHC expression or interferon\u2011\u03b3 signaling in tumor cells leads to immune editing and re\u2011emergence of cold phenotypes.",
+      "Tumor\u2011derived cytokines and chemokines can recruit suppressive immune cells, contributing to exclusion."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can we reliably measure functional T cell\u2013tumor cell interactions in routine clinical samples?",
+      "What minimal biomarker panels can replace complex spatial analyses for predicting checkpoint inhibitor response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

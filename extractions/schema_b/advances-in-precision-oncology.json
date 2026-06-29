@@ -1,0 +1,571 @@
+[
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Luda Bazhanova",
+      "institution_or_pharma": "UC San Diego Moores Cancer Center",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "Telatrexib in TKI\u2011naive patients with ROS1 non\u2011small cell lung cancer: updated data from TRUST\u20111 and TRUST\u20112",
+      "rhetorical_signals": [
+        "Speaker said: we did not see any new safety signals with longer follow\u2011up",
+        "Speaker said: to the best of our knowledge, this represents the highest overall response rate and longest duration of response and PFS reported to date for an FDA\u2011approved ROS1 TKI"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Telatrexib",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity in patients with prior chemotherapy (ORR 85% vs 90% in chemo\u2011na\u00efve)",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker highlighted that 19% of patients received prior chemotherapy and response rates were slightly lower",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "TRUST\u20111 / TRUST\u20112",
+        "target_biology": "ROS1 fusion inhibition",
+        "flawed_enrollment_criteria": "Enrolled both TKI\u2011na\u00efve and TKI\u2011pre\u2011treated patients in pooled analysis without stratification",
+        "missing_biomarker": "No ctDNA or molecular resistance biomarker assessment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Pooled analysis mixes heterogeneous prior\u2011treatment subgroups, risking dilution of true efficacy signal",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Telatrexib \u2013 ROS1 selective TKI",
+        "ip_vulnerability_note": "Speaker disclosed that telatrexib is 11\u2011fold more potent against ROS1 than TRKB, suggesting limited novelty beyond existing ROS1 TKIs",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without biomarker\u2011driven selection may dilute signal compared with next\u2011generation ROS1 inhibitors"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high intracranial ORR (87.5% in TRUST\u20111) but concluded that telatrexib is an effective, durable option without presenting comparative CNS toxicity data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker\u2011stratified analysis of prior chemotherapy effect",
+        "No head\u2011to\u2011head comparison with other ROS1 TKIs"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of ctDNA or molecular resistance biomarker data creates an opportunity for CrisPRO to develop predictive models for ROS1 TKI response and resistance",
+        "transcript_evidence": "Speaker noted pooled analysis included patients with prior chemotherapy and no ctDNA pre\u2011screening",
+        "crispro_angle": "Use CrisPRO's computational pipeline to integrate ctDNA dynamics and clinical outcomes to identify sub\u2011populations benefiting most from telatrexib",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve full protocol for TRUST\u20111/2",
+          "PubMed: ROS1 resistance mechanisms post\u2011TKI"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Repotrectinib",
+        "context": "Compared CNS toxicity mechanisms, noting TRKB inhibition as a cause",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Lorlatinib",
+        "context": "Mentioned alongside repotrectinib for CNS toxicity via TRKB inhibition",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the mechanisms of progression in the minority of patients who eventually relapse despite high ORR?",
+      "Would a biomarker\u2011driven selection (e.g., ctDNA ROS1 allele burden) improve response durability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Telatrexib (Innovation Bio)",
+        "Repotrectinib",
+        "Lorlatinib"
+      ],
+      "companies_to_monitor": [
+        "Innovation Bio"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Shun Lu",
+      "institution_or_pharma": "Shanghai Chest Hospital, Shanghai Lung Cancer Center",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "SHR\u2011A\u20111811 plus avelumab as first\u2011line treatment for advanced HER2\u2011mutant NSCLC: randomized phase\u202f2 cohort",
+      "rhetorical_signals": [
+        "Speaker said: the numerical ORR is higher in the monotherapy arm but the combination shows better duration of response and PFS",
+        "Speaker said: there is no head\u2011to\u2011head comparison with other HER2\u2011mutant TKIs or ADCs"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SHR\u2011A\u20111811 + atezolizumab combination",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High grade \u22653 TRAEs (77.8% in combo vs 40.6% in mono) not fully addressed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that monotherapy ORR 81.3% vs combo 69.4% despite smaller sample size",
+        "hidden_tox_signal": "Speaker minimized toxicity differences, stating 'no new safety signal noted'",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f1b/2 HER2\u2011mutant NSCLC study",
+        "target_biology": "HER2\u2011directed ADC with or without PD\u2011L1 blockade",
+        "flawed_enrollment_criteria": "Small randomized cohort (36 vs 32 patients) without stratification for HER2 mutation subtype or prior lines",
+        "missing_biomarker": "No prospective biomarker (e.g., HER2 expression level) used for randomization",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect modest differences in ORR and PFS",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SHR\u2011A\u20111811 ADC (DAR 6, topoisomerase I payload)",
+        "ip_vulnerability_note": "Speaker disclosed payload and linker details, indicating limited novelty beyond existing HER2 ADCs",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad first\u2011line use without clear biomarker\u2011driven selection may dilute efficacy signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented high grade \u22653 TRAE rates (up to 77.8%) yet concluded that the safety profile was manageable and comparable to monotherapy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No head\u2011to\u2011head comparison with other HER2\u2011mutant agents",
+        "Limited biomarker stratification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "High toxicity in the combination arm suggests need for alternative partners; CrisPRO could identify synergistic agents with lower overlapping toxicity",
+        "transcript_evidence": "Speaker reported 77.8% grade \u22653 TRAEs in combo vs 40.6% in mono",
+        "crispro_angle": "Leverage CrisPRO's in\u2011silico synergy platform to prioritize low\u2011toxicity combos (e.g., ERK inhibitors) for HER2\u2011mutant NSCLC",
+        "priority": "medium",
+        "external_validation_needed": [
+          "PubMed: HER2\u2011mutant NSCLC combination studies",
+          "ClinicalTrials.gov: ongoing HER2 ADC trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan",
+        "context": "Mentioned as approved HER2\u2011mutant NSCLC ADC",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Other HER2 TKIs",
+        "context": "Speaker noted lack of head\u2011to\u2011head data with TKIs",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Would a lower dose of SHR\u2011A\u20111811 in combination reduce high\u2011grade toxicities without compromising efficacy?",
+      "What biomarkers predict response versus toxicity in HER2\u2011mutant NSCLC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SHR\u2011A\u20111811",
+        "Trastuzumab deruxtecan"
+      ],
+      "companies_to_monitor": [
+        "Jiangsu Hengrui Pharmaceutical"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Zhang Hongxe",
+      "institution_or_pharma": "First Affiliated Hospital of Guangzhou Medical University",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "Safety, tolerability, and efficacy of HS10504 in EGFR\u2011mutant NSCLC: first\u2011in\u2011human phase\u202f1 results",
+      "rhetorical_signals": [
+        "Speaker said: HS10504 showed encouraging anti\u2011tumor activity and manageable safety profile",
+        "Speaker said: the drug demonstrated rapid and strong on\u2011target effect as shown by ctDNA reductions"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HS10504 400\u202fmg dose",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High incidence of grade\u202f3+ lymphopenia (31.4%) and anemia (13.3%) not fully explained",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker highlighted ORR 52.9% in 400\u202fmg cohort despite toxicity",
+        "hidden_tox_signal": "Speaker minimized dose\u2011reduction impact, stating only one discontinuation",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "HS10504 Phase\u202f1",
+        "target_biology": "Fourth\u2011generation EGFR TKI targeting C797S and sensitizing mutations",
+        "flawed_enrollment_criteria": "Single\u2011arm design without comparator; patients with heterogeneous prior EGFR TKI exposure mixed",
+        "missing_biomarker": "No stratification by presence of T790M vs C797S alone",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample (69 evaluable) limits confidence in ORR estimate",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "HS10504 \u2013 fourth\u2011gen EGFR TKI",
+        "ip_vulnerability_note": "Speaker described the molecule but did not disclose novel chemistry, suggesting limited IP differentiation from other fourth\u2011gen candidates",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of biomarker\u2011driven patient selection may limit differentiation from existing EGFR TKIs"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented rapid ctDNA clearance as evidence of on\u2011target activity yet admitted that brain penetrance data are limited and no clear CNS efficacy was shown"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited CNS efficacy data",
+        "Unclear durability beyond 9.6\u202fmonths median PFS"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "C797S\u2011driven resistance is a clear unmet need; CrisPRO can model structural impacts of C797S and predict next\u2011generation inhibitors",
+        "transcript_evidence": "Speaker emphasized that HS10504 is designed to target C797S mutation",
+        "crispro_angle": "Apply CrisPRO's protein\u2011structure prediction to design molecules that retain potency against C797S and emerging tertiary mutations",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: C797S resistance mechanisms",
+          "ClinicalTrials.gov: other fourth\u2011gen EGFR TKI trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Osimertinib",
+        "context": "Referenced as first\u2011line EGFR TKI with C797S emergence",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Other EGFR ADCs",
+        "context": "Speaker compared HS10504 activity to novel ADCs",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the CNS activity of HS10504 given limited brain penetrance data?",
+      "Will combination with other pathway inhibitors overcome the observed hematologic toxicities?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "HS10504",
+        "Osimertinib"
+      ],
+      "companies_to_monitor": [
+        "Guangzhou Medical University spin\u2011out (if any)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Kanwal Raghav",
+      "institution_or_pharma": "University of Texas MD Anderson Cancer Center",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "Elirasib (D3S001), next\u2011generation GDP\u2011bound KRASG12C inhibitor in refractory colorectal and pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: Elirasib shows promising efficacy as monotherapy and in combination with cetuximab",
+        "Speaker said: the safety profile remains favorable despite higher grade\u202f3+ TRAEs in combo arm"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Elirasib + cetuximab combination",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High grade\u202f3+ TRAEs (48.4% in combo) driven by anti\u2011EGFR toxicities not mitigated by dosing",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted higher ORR in monotherapy (81.3%) than combo (69.4%) despite combination intent",
+        "hidden_tox_signal": "Speaker downplayed toxicity differences, stating 'no new safety signal noted'",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f1b/2 KRASG12C study (colorectal & pancreatic)",
+        "target_biology": "GDP\u2011bound KRASG12C inhibition",
+        "flawed_enrollment_criteria": "Open\u2011label design with mixed prior lines and no biomarker stratification beyond KRASG12C status",
+        "missing_biomarker": "No baseline RTK/MAPK pathway alteration assessment to predict combination benefit",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort sizes (36 combo, 32 mono) limit statistical power for ORR comparisons",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Elirasib \u2013 GDP\u2011bound KRASG12C inhibitor",
+        "ip_vulnerability_note": "Speaker highlighted mechanism but disclosed that resistance emerges via RTK/MAPK alterations, indicating a potential pathway escape",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Combination with cetuximab adds EGFR\u2011related toxicities, potentially limiting broader use"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed rapid and deep molecular responses (100% KRASG12C clearance) yet concluded that combination with cetuximab only modestly improves PFS despite higher toxicity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No head\u2011to\u2011head comparison with first\u2011generation KRASG12C inhibitors",
+        "Limited long\u2011term OS data",
+        "No prospective biomarker\u2011driven selection for combination arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Acquired MET amplifications and MAPK mutations after combo suggest need for downstream ERK inhibition; CrisPRO can predict optimal ERK inhibitor partners",
+        "transcript_evidence": "Speaker reported acquired alterations in RTK MAPK pathway (MET, BRAF V600E, MAP2K1) after combination therapy",
+        "crispro_angle": "Use CrisPRO to model combinatorial inhibition of KRASG12C and ERK to preempt bypass resistance",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: KRASG12C resistance mechanisms",
+          "ClinicalTrials.gov: ERK inhibitor combos with KRASG12C inhibitors"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sotorasib",
+        "context": "Referenced as first\u2011generation KRASG12C inhibitor with limited durability",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "Mentioned as another first\u2011generation KRASG12C inhibitor",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Would earlier use of Elirasib (first\u2011line) improve outcomes compared with current second\u2011line setting?",
+      "Can alternative combinations (e.g., MET or ERK inhibitors) reduce resistance emergence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Elirasib (D3S001)",
+        "Sotorasib",
+        "Adagrasib"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson (academic sponsor)",
+        "Any biotech developing Elirasib"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Terri\u2011Ann Koch",
+      "institution_or_pharma": "Amplia Therapeutics",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "Namifotenib + gemcitabine/nab\u2011paclitaxel in first\u2011line advanced pancreatic cancer (ACCENT trial)",
+      "rhetorical_signals": [
+        "Speaker said: Namifotenib had a well\u2011managed safety profile with negligible extra patient burden",
+        "Speaker said: The intermittent dosing schedule was based on preclinical efficacy data"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Namifotenib intermittent schedule",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Intermittent dosing may not achieve optimal target engagement; continuous dosing suggested by later preclinical work",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker highlighted 5% complete response rate, indicating limited deep responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ACCENT",
+        "target_biology": "FAK inhibition plus gemcitabine/nab\u2011paclitaxel",
+        "flawed_enrollment_criteria": "Single\u2011arm Simon two\u2011stage design without a control arm; heterogeneous geographic enrollment (Australia vs Korea) may introduce variability",
+        "missing_biomarker": "No baseline phospho\u2011FAK assessment to select patients with high FAK activity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Non\u2011randomized design limits attribution of efficacy to namifotenib",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Namifotenib \u2013 selective FAK inhibitor",
+        "ip_vulnerability_note": "Speaker disclosed high selectivity but no novel scaffold details, suggesting potential IP overlap with other FAK inhibitors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on intermittent dosing may limit differentiation from other FAK inhibitors using continuous dosing"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented deep tumor shrinkage (average 70% reduction) yet admitted that the trial used an intermittent schedule derived from a short\u2011term preclinical model, which may contradict the observed durability"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator to standard gemcitabine/nab\u2011paclitaxel",
+        "Lack of pharmacodynamic biomarker (phospho\u2011FAK) data",
+        "Unclear benefit of intermittent vs continuous dosing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate phospho\u2011FAK biomarker stratification to enrich for patients likely to benefit from FAK inhibition",
+        "transcript_evidence": "Speaker admitted that phospho\u2011FAK assay failed in phase\u202f2, leaving no target engagement data",
+        "crispro_angle": "Use CrisPRO's multi\u2011omic integration to develop a predictive FAK\u2011activity signature for patient selection",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: ACCENT trial protocol",
+          "PubMed: FAK biomarker studies in pancreatic cancer"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Focal adhesion kinase inhibitors (other companies)",
+        "context": "Implied competition in FAK space",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Would continuous daily dosing improve efficacy compared with the current intermittent schedule?",
+      "Can phospho\u2011FAK levels predict responders versus non\u2011responders?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Namifotenib",
+        "Other FAK inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Amplia Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-precision-oncology::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Valentina Marulanda Corzo",
+      "institution_or_pharma": "Weill Cornell Medicine",
+      "session_title": "advances-in-precision-oncology",
+      "talk_title": "Phase\u202f1 dose\u2011escalation expansion of fractionated dose anti\u2011PSMA actinium\u2011225 J591",
+      "rhetorical_signals": [
+        "Speaker said: fractionated regimen showed favorable safety and promising efficacy",
+        "Speaker said: multiple cycle regimen is not recommended at six\u2011week intervals"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Multiple\u2011cycle actinium\u2011225 J591 regimen",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Thrombocytopenia driven by cumulative marrow radiation not mitigated by schedule",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted 20% partial response rate but high DLT rate (thrombocytopenia) in multiple\u2011cycle arm",
+        "hidden_tox_signal": "Speaker minimized severity by stating 'no bleeding or clinical sequelae'",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Actinium\u2011225 J591 Phase\u202f1",
+        "target_biology": "PSMA\u2011targeted alpha therapy",
+        "flawed_enrollment_criteria": "Mixed population with and without prior lutetium\u2011PSMA therapy, potentially confounding efficacy assessment",
+        "missing_biomarker": "No baseline PSMA PET quantitative threshold for eligibility",
+        "static_vs_dynamic_failure": "No serial imaging to track dynamic PSMA expression changes",
+        "statistical_concern": "Small cohort sizes per regimen limit robust efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Actinium\u2011225 labeled J591 antibody",
+        "ip_vulnerability_note": "Speaker described standard three\u2011plus\u2011three escalation without novel radiochemistry claims, suggesting limited IP moat",
+        "scale_or_manufacturing_bottleneck": "Production of actinium\u2011225 is limited globally, a potential supply constraint",
+        "clinical_strategy_weakness": "Complex dosing schedules and need for specialized facilities may hinder broad adoption"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker reported high PSA response rates (\u224860%) yet concluded that the multiple\u2011cycle regimen is not recommended due to thrombocytopenia, indicating a mismatch between biomarker efficacy and tolerability"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator to lutetium\u2011PSMA",
+        "Limited long\u2011term overall survival data",
+        "No patient\u2011reported outcome data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Fractionated actinium\u2011225 regimen could be paired with DNA repair inhibitors to enhance efficacy while managing marrow toxicity",
+        "transcript_evidence": "Speaker noted thrombocytopenia as DLT and suggested need for alternative schedules",
+        "crispro_angle": "Leverage CrisPRO to model synergistic combos that spare hematopoietic cells (e.g., PARP inhibitors)",
+        "priority": "medium",
+        "external_validation_needed": [
+          "PubMed: radiosensitizers with alpha emitters",
+          "ClinicalTrials.gov: ongoing PSMA\u2011targeted alpha trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Lutetium\u2011PSMA",
+        "context": "Mentioned as standard beta\u2011emitter therapy for comparison",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Would a lower activity dose or alternative fractionation reduce thrombocytopenia while preserving efficacy?",
+      "Can PSMA PET quantitative metrics predict responders to actinium\u2011225 J591?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Actinium\u2011225 J591",
+        "Lutetium\u2011PSMA"
+      ],
+      "companies_to_monitor": [
+        "Convergent"
+      ]
+    }
+  }
+]

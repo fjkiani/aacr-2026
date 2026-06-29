@@ -1,0 +1,441 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::samuels::1",
+    "session_title": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair",
+    "talk_title": "Revisiting the neoantigen approach to cancer immunotherapy",
+    "speaker": {
+      "name": "Yardena Samuels",
+      "affiliation": "University of California, San Diego",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "colorectal cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "CAR_T",
+      "TCR_T",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12V",
+        "pathway": "RAS/MAPK",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "KRAS G12V mutant melanoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AR",
+        "alteration": null,
+        "pathway": "hormone_signaling",
+        "modality": "TCR",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "androgen receptor\u2013driven prostate cancer (model)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TYW2",
+        "alteration": null,
+        "pathway": "translation_fidelity",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "human melanoma cell lines",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HLA loss of heterozygosity",
+        "type": "predictive",
+        "assay": "NGS HLA typing",
+        "finding": "proposed as a biomarker to prioritize early multi\u2011neoantigen targeting"
+      },
+      {
+        "name": "MSI status",
+        "type": "exploratory",
+        "assay": "PCR MSI panel",
+        "finding": "low TYW2 expression correlates with better response to checkpoint blockade"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "human melanoma cell lines (e.g., A375)",
+        "genotype_or_key_features": "TYW2 knockout vs wild\u2011type"
+      },
+      {
+        "model_type": "mouse",
+        "name": "immunocompetent C57BL/6 mice bearing TYW2\u2011KO melanoma",
+        "genotype_or_key_features": "CD8\u2011dependent tumor rejection"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "primary metastatic melanoma specimens",
+        "genotype_or_key_features": "16S microbiome sequencing and immunopeptidomics"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Samuels demonstrated that inhibiting translation fidelity via TYW2 knockout induces programmed ribosomal frameshifts, generating abundant out\u2011of\u2011frame peptides that are presented on MHC and elicit strong CD8\u2011T\u2011cell responses; chemotherapy can further boost neoantigen presentation, and recurrent driver\u2011derived neoantigens can be identified through HLA\u2011matched population databases for vaccine or TCR\u2011based therapies.",
+    "readouts": [
+      "immunopeptidomics",
+      "ribosome profiling (Ribo\u2011seq)",
+      "fluorescent reporter assays",
+      "flow cytometry",
+      "ELISpot",
+      "in vivo tumor growth curves",
+      "RNA\u2011seq"
+    ],
+    "key_findings": [
+      "Chemotherapy (lymphodepleting) synergizes with KRAS G12V\u2011specific TCRs by increasing neoantigen presentation.",
+      "TYW2 knockout in melanoma cells produces a programmed increase in out\u2011of\u2011frame peptides, leading to CD8\u2011dependent tumor rejection in mice.",
+      "Ribosome profiling revealed phenylalanine\u2011codon pausing and both \u20131 and +1 frameshifts in TYW2\u2011KO cells.",
+      "Identified >350,000 patients per year with recurrently presented neoantigens using a data\u2011driven HLA\u2011matched pipeline.",
+      "Bacterial\u2011derived peptides and translation\u2011infidelity peptides expand the antigenic repertoire beyond somatic mutations."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Neoantigens derived from passenger mutations are subclonal and prone to immunoevasion.",
+      "Low\u2011TMB tumors lack sufficient neoantigens, limiting vaccine efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "lymphodepleting chemotherapy",
+        "rationale": "enhances MHC presentation of targeted neoantigens",
+        "phenotype": "synergistic tumor regression in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011PD\u20111 checkpoint blockade",
+        "rationale": "releases CD8 T\u2011cell activity against newly presented frameshift peptides",
+        "phenotype": "complete tumor rejection in TYW2\u2011KO mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How does HLA loss of heterozygosity impact the durability of multi\u2011neoantigen targeting?",
+      "Can RNA\u2011methylation pathways be exploited to further increase translation\u2011infidelity neoantigens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::alberto::2",
+    "session_title": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair",
+    "talk_title": "Pharmacologic inhibition of PMS2 to induce mismatch repair deficiency",
+    "speaker": {
+      "name": "Alberto",
+      "affiliation": "Knyohfor (pharma company)",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "DNA_damage_repair",
+      "targeted_therapy",
+      "immunotherapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PMS2",
+        "alteration": null,
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "1867",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "colorectal and breast cancer cell lines",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MSI score",
+        "type": "pharmacodynamic",
+        "assay": "MSI PCR panel",
+        "finding": "dose\u2011dependent increase to MSI\u2011high levels in treated cells"
+      },
+      {
+        "name": "Tumor mutational burden",
+        "type": "pharmacodynamic",
+        "assay": "WES",
+        "finding": "gradual rise in mutations/Mb correlating with 1867 concentration"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "colorectal cancer cell line (e.g., HCT116)",
+        "genotype_or_key_features": "wild\u2011type PMS2, treated with 1867"
+      },
+      {
+        "model_type": "mouse",
+        "name": "immunocompetent mice bearing 1867\u2011treated tumor cells",
+        "genotype_or_key_features": "tumor regression with anti\u2011PD\u20111"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "ARETUSA (Italy/Spain)",
+        "genotype_or_key_features": "temozolomide priming followed by pembrolizumab"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "objective response rate",
+        "value": "not met (primary endpoint negative)",
+        "confidence_interval": null,
+        "n": "n=30 (ARETUSA cohort)",
+        "population": "MGMT\u2011methylated colorectal cancer",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "duration of response",
+        "value": "prolonged in a subset of patients",
+        "confidence_interval": null,
+        "n": "n=5 responders",
+        "population": "patients with increased TMB after temozolomide",
+        "comparator": null,
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The small\u2011molecule 1867 covalently binds cysteine\u201173 in the ATPase domain of PMS2, selectively disabling its mismatch\u2011repair activity; treated cells acquire MSI\u2011high status, high mutational burden, and become sensitive to PD\u20111 blockade, recapitulating the phenotype of genetic PMS2 loss without cytotoxicity.",
+    "readouts": [
+      "cysteinome profiling",
+      "ATPase activity assay",
+      "MSI PCR",
+      "WES for TMB",
+      "in vivo tumor growth curves",
+      "mass\u2011spectrometry target engagement"
+    ],
+    "key_findings": [
+      "1867 selectively engages PMS2 cysteine\u201173 with >99% specificity among >20,000 cysteines.",
+      "Pharmacologic PMS2 inhibition phenocopies genetic knockout, abolishing 6\u2011guanine\u2011induced DNA nicks.",
+      "Dose\u2011dependent induction of MSI\u2011high and mutational signatures (SBS21, SBS15) in vitro.",
+      "1867\u2011treated tumor cells reject in immunocompetent mice when combined with anti\u2011PD\u20111, but not in immunodeficient hosts.",
+      "Combination of 1867 with FOLFOXIRI accelerates MSI conversion and can induce tumor regression without checkpoint blockade."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Potential redundancy among MMR proteins may limit efficacy of PMS2 inhibition alone.",
+      "Toxicity concerns addressed by non\u2011cytotoxic profile of 1867 in normal cells."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 (pembrolizumab)",
+        "rationale": "checkpoint blockade unleashes CD8 T\u2011cell response against newly generated neoantigens",
+        "phenotype": "complete tumor regression in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "FOLFOXIRI chemotherapy",
+        "rationale": "chemotherapy accelerates acquisition of MSI/high TMB when paired with PMS2 inhibition",
+        "phenotype": "rapid MSI conversion and tumor rejection without additional checkpoint therapy",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can oral formulations of 1867 achieve sufficient tumor exposure in patients?",
+      "Will simultaneous inhibition of multiple MMR components improve conversion speed?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Knyohfor"
+      ],
+      "patent_or_ip_hints": [
+        "PMS2 covalent inhibitor 1867 patent pending"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair::diaz::3",
+    "session_title": "dharma-master-jiantai-symposium-in-targeted-therapy-immunotherapy-and-dna-repair",
+    "talk_title": "Chemically inducing mismatch repair deficiency to sensitize tumors to PD\u20111 blockade",
+    "speaker": {
+      "name": "Luis Diaz",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "non-small cell lung cancer",
+      "melanoma",
+      "head\u2011neck cancer",
+      "renal cell carcinoma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "DNA_damage_repair",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MSH2",
+        "alteration": null,
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": "temozolomide",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MSS cell lines treated with temozolomide+cisplatin",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MSH2",
+        "alteration": null,
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": "cisplatin",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MSS cell lines treated with temozolomide+cisplatin",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MSI score",
+        "type": "pharmacodynamic",
+        "assay": "MSI PCR panel",
+        "finding": "combined temozolomide+cisplatin raises MSI to high levels in treated cells"
+      },
+      {
+        "name": "Tumor mutational burden",
+        "type": "pharmacodynamic",
+        "assay": "WES",
+        "finding": "increase of ~125 mutations/Mb after 8\u2011week combo treatment"
+      },
+      {
+        "name": "MSH2 promoter methylation",
+        "type": "exploratory",
+        "assay": "bisulfite sequencing",
+        "finding": "combo treatment induces MSH2 promoter methylation correlating with MSI rise"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MSS cancer cell lines (various histologies)",
+        "genotype_or_key_features": "treated 8 weeks with temozolomide \u00b1 cisplatin"
+      },
+      {
+        "model_type": "mouse",
+        "name": "immunocompetent mice bearing MSS tumors",
+        "genotype_or_key_features": "in vivo temozolomide+cisplatin followed by anti\u2011PD\u20111"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase II trial of temozolomide+cisplatin+nivolumab",
+        "genotype_or_key_features": "chemo\u2011refractory colorectal cancer patients"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "TMB increase",
+        "value": "125 mut/Mb",
+        "confidence_interval": null,
+        "n": "n=12 patients",
+        "population": "chemo\u2011refractory colorectal cancer",
+        "comparator": null,
+        "maturity": "interim"
+      },
+      {
+        "metric": "overall survival",
+        "value": "median not reached in MSI\u2011converted subgroup",
+        "confidence_interval": null,
+        "n": "n=5 responders",
+        "population": "patients with post\u2011treatment MSI\u2011high signature",
+        "comparator": "non\u2011converted patients",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Temozolomide induces DNA methylation and MSH2 promoter silencing, while cisplatin adds DNA cross\u2011links; together they rapidly down\u2011regulate MSH2, generate a mismatch\u2011repair\u2011deficient mutational signature rich in frameshift indels, elevate TMB and MSI, and render tumors highly sensitive to PD\u20111 blockade in preclinical models and a subset of patients.",
+    "readouts": [
+      "whole\u2011exome sequencing",
+      "MSI PCR",
+      "mutational signature analysis (SBS21, SBS15)",
+      "promoter methylation assays",
+      "in vivo tumor growth curves",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Temozolomide alone raises TMB but not MSI; cisplatin alone modestly increases frameshifts.",
+      "The combination yields a dramatic TMB gain (~125 mut/Mb) and high MSI scores with predominantly subclonal frameshift mutations.",
+      "MSH2 promoter methylation drives loss of MSH2 expression after 4\u20138 weeks of combo treatment.",
+      "Combo\u2011treated cells implanted into immunocompetent mice show delayed growth and complete regression with anti\u2011PD\u20111, unlike single\u2011agent controls.",
+      "In a clinical trial, patients who acquired both high TMB and MSI signatures after therapy had longer survival, though the primary endpoint was not met."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "p53\u2011mutant cell lines are less readily converted to MMR\u2011deficient phenotype.",
+      "Subclonal nature of induced neoantigens raises questions about durability of response."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 (nivolumab)",
+        "rationale": "blocks checkpoint inhibition, allowing T cells to attack newly generated neoantigens",
+        "phenotype": "complete tumor regression in mouse models; improved OS in MSI\u2011converted patients",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "cisplatin",
+        "rationale": "platinum\u2011induced DNA cross\u2011links synergize with temozolomide\u2011mediated MSH2 silencing to accelerate MSI conversion",
+        "phenotype": "rapid TMB and MSI increase in vitro and in vivo",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Why do certain tumor genotypes (e.g., p53\u2011mutant) resist conversion to MMR deficiency?",
+      "Can alternative platinum agents (carboplatin, oxaliplatin) achieve similar MSH2 down\u2011regulation with better tolerability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024 NEJM"
+      ],
+      "company_or_sponsor": [
+        "Memorial Sloan Kettering Cancer Center"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

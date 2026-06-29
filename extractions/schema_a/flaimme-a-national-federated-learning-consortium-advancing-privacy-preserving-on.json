@@ -1,0 +1,188 @@
+[
+  {
+    "talk_id": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on::topaloglu::1",
+    "session_title": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on",
+    "talk_title": "Technical implementation and early results of MedGamma fine\u2011tuning with QLoRA across consortium sites",
+    "speaker": {
+      "name": "Umut Topaloglu",
+      "affiliation": "National Cancer Institute, Clinical and Translational Informatics Branch",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "basic_science",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "MedGamma",
+        "genotype_or_key_features": "foundation multimodal model (text + imaging)"
+      },
+      {
+        "model_type": "other",
+        "name": "QLoRA adapters",
+        "genotype_or_key_features": "low\u2011rank fine\u2011tuning weights"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Umut described the federation of MedGamma using QLoRA adapters, where each site fine\u2011tunes a frozen foundation model on local lung and breast cancer records, then shares low\u2011rank weight updates via NVIDIA FLARE to produce a more robust multimodal extractor.",
+    "readouts": [
+      "structured data extraction from pathology reports",
+      "clinical note parsing"
+    ],
+    "key_findings": [
+      "Three of four sites completed local QLoRA fine\u2011tuning, showing improved extraction accuracy versus out\u2011of\u2011the\u2011box MedGamma (visualized as orange vs blue bars).",
+      "One site demonstrated a statistically significant increase in variable extraction performance after fine\u2011tuning; other sites reported even larger gains.",
+      "Federated aggregation of QLoRA weights is scheduled, with the hypothesis that exposure to four centers\u2019 data will further boost model robustness."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the optimal level of differential privacy that balances privacy guarantees with model accuracy across heterogeneous sites?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "NVIDIA",
+        "Google"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on::rasool::2",
+    "session_title": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on",
+    "talk_title": "Fine\u2011tuning MedGamma with QLoRA for trial\u2011matching in lung and breast cancer cohorts",
+    "speaker": {
+      "name": "Ghulam Rasool",
+      "affiliation": "Moffitt Cancer Center, Department of Machine Learning",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "clinical_trial",
+      "basic_science"
+    ],
+    "targets": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "MedGamma",
+        "genotype_or_key_features": "multimodal foundation model"
+      },
+      {
+        "model_type": "other",
+        "name": "QLoRA adapters",
+        "genotype_or_key_features": "low\u2011rank fine\u2011tuning"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Rasool reported that local QLoRA fine\u2011tuning of MedGamma on ~500 retrospective lung and breast cancer patients per site markedly improved the model\u2019s ability to extract structured trial\u2011matching variables from pathology reports and clinical notes, and that a forthcoming federated run will test whether pooled updates further enhance performance.",
+    "readouts": [
+      "structured variable extraction accuracy",
+      "benchmark comparisons (out\u2011of\u2011the\u2011box vs fine\u2011tuned)"
+    ],
+    "key_findings": [
+      "Local fine\u2011tuning at one site increased extraction performance from baseline (blue) to post\u2011fine\u2011tuning (orange).",
+      "Two additional sites reported even larger improvements after local QLoRA adaptation.",
+      "Federated aggregation of QLoRA weights is planned for the week following the conference."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will federated QLoRA updates yield additive gains beyond the best local fine\u2011tuned model?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Google",
+        "NVIDIA"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on::khanna::3",
+    "session_title": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on",
+    "talk_title": "Federated deep\u2011learning model for overall survival prediction in glioblastoma using MRIs",
+    "speaker": {
+      "name": "Rakesh Khanna",
+      "affiliation": "National Cancer Institute, Bioinformatics Science",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "basic_science",
+      "radiology"
+    ],
+    "targets": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "Vision Transformer with Brain SegFounder encoder",
+        "genotype_or_key_features": "pre\u2011trained on healthy brain MRIs and BRATS glioma data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Khanna described a federated pipeline where a pre\u2011trained Vision Transformer extracts 768\u2011dimensional embeddings from pre\u2011operative MRI tumor ROIs, which are pooled and fed to an MLP to predict relative overall\u2011survival risk; the model was trained across public GBM datasets and a real\u2011world Moffitt cohort (n=104) using NVIDIA FLARE with FedAvg aggregation.",
+    "readouts": [
+      "MRI ROI extraction",
+      "vision transformer embeddings",
+      "Kaplan\u2011Meier survival curves",
+      "time\u2011dependent AUC",
+      "C\u2011index"
+    ],
+    "key_findings": [
+      "Added 104 real\u2011world Moffitt GBM patients to three public datasets without centralizing data.",
+      "Leave\u2011one\u2011site\u2011out evaluation showed consistent Kaplan\u2011Meier separation across held\u2011out cohorts.",
+      "Time\u2011dependent 1\u2011year AUC and C\u2011index were comparable to prior centralized studies, though absolute performance was not yet sufficient for clinical decision\u2011making.",
+      "Future plans include incorporating an additional private NCI GBM cohort and expanding to radiology reports, other imaging modalities, and clinical markers."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to accurately compute Cox partial likelihood in a federated setting given incomplete at\u2011risk information across sites?",
+      "What is the impact of batch\u2011wise approximation on survival model bias across heterogeneous cohorts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "AI\u2011RANO review in The Lancet Oncology"
+      ],
+      "company_or_sponsor": [
+        "NVIDIA"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

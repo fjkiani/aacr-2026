@@ -1,0 +1,346 @@
+[
+  {
+    "talk_id": "off-the-shelf-cell-therapies-for-cancer-and-beyond::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Franco Locatelli",
+      "institution_or_pharma": "Rome",
+      "session_title": "Off-the-Shelf Cell Therapies for Cancer and Beyond",
+      "talk_title": "Allogeneic CAR Cells: Are They the New Black?",
+      "rhetorical_signals": [
+        "Speaker said: we didn't record any Grade 3 to 4 ICAN, and only one case of Grade 3 to 4 CRS",
+        "Speaker said: both these cases were rescued by steroids and JAK1/2 inhibitors",
+        "Speaker said: we consider that this data promising enough to activate a formal clinical trial"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Allogeneic CD19 CAR T cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited persistence and relapse due to CD19-negative escape (two CD19\u2011negative blasts observed)",
+        "unexplained_resistance_quote": "two cases with a CD19 negative leukemia blast",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Hospital exemption CD19 CAR T trial (Rome)",
+        "target_biology": "Allogeneic CD19 CAR T targeting B\u2011cell ALL",
+        "flawed_enrollment_criteria": "Enrolling patients with very poor lymphocyte counts and high blast contamination, increasing manufacturing failure risk",
+        "missing_biomarker": "No pre\u2011screening for CD19 loss or MRD status before infusion",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort (19 patients) limits efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Unmanipulated allogeneic CAR T platform with TCR/HLA knock\u2011down",
+        "ip_vulnerability_note": "Speaker highlighted that the approach still relies on TCR/HLA knock\u2011down rather than more robust stealth engineering",
+        "scale_or_manufacturing_bottleneck": "Manufacturing from fresh leukapheresis limits batch size; only up to three million CAR T per kg per patient",
+        "clinical_strategy_weakness": "Broad inclusion of heavily pre\u2011treated, high\u2011risk pediatric patients dilutes signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed 3\u2011year PFS of 42% and MRD\u2011negative CRs, then concluded that the data are promising enough to launch a formal trial despite modest long\u2011term survival"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No randomized comparator arm",
+        "Limited biomarker\u2011stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of prospective CD19 loss monitoring and MRD\u2011guided enrollment creates risk of antigen\u2011escape failures.",
+        "transcript_evidence": "Speaker noted two patients relapsed with CD19\u2011negative blasts and no biomarker\u2011guided selection.",
+        "crispro_angle": "CrisPRO could develop a predictive model integrating baseline CD19 expression, MRD kinetics, and genomic data to stratify patients likely to benefit.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve detailed enrollment criteria for the Rome CD19 trial",
+          "PubMed: studies on CD19 antigen loss mechanisms"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Observed CD19\u2011negative relapses suggest need for dual\u2011target CAR constructs.",
+        "transcript_evidence": "Speaker reported two cases with CD19\u2011negative leukemia blast after CAR T therapy.",
+        "crispro_angle": "CrisPRO can prioritize dual\u2011antigen designs (e.g., CD19\u202f+\u202fCD22) using computational epitope coverage analysis.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "SEC filings: pipeline dual\u2011target CAR programs"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Miltenyi",
+        "context": "Provided CAR construct for early Rome studies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "German pediatric group",
+        "context": "Published data on poor outcomes after early relapse post\u2011transplant",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the long\u2011term overall survival of patients treated with the allogeneic CD19 CAR T?",
+      "Can higher cell doses improve durability without increasing GVHD risk?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Allogeneic CD19 CAR T (Rome hospital exemption)"
+      ],
+      "companies_to_monitor": [
+        "Miltenyi"
+      ]
+    }
+  },
+  {
+    "talk_id": "off-the-shelf-cell-therapies-for-cancer-and-beyond::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Katy Rezvani",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "Off-the-Shelf Cell Therapies for Cancer and Beyond",
+      "talk_title": "Allogeneic CAR NK Cell Platforms",
+      "rhetorical_signals": [
+        "Speaker said: NK cells have a very attractive safety profile in that cases of CRS and ICANS are not as common after CAR NK cells",
+        "Speaker said: quality of the umbilical cord blood unit was a very important determinant of response",
+        "Speaker said: we observed >90% overall response rate with two\u2011thirds complete remissions in Hodgkin lymphoma"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Cord\u2011blood derived CD70 CAR NK cells",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Limited in\u2011vivo persistence beyond 1\u20132 weeks without cytokine armoring",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients achieved CR but later progressed without transplant consolidation",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CD70 CAR NK basket trial (MD Anderson)",
+        "target_biology": "CD70\u2011targeted CAR NK for hematologic malignancies",
+        "flawed_enrollment_criteria": "Enrolling heavily pre\u2011treated patients (median 8 prior lines) dilutes signal",
+        "missing_biomarker": "No pre\u2011selection based on tumor CD70 expression intensity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (42 pts) limits statistical power",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "CD70 CAR NK glioblastoma trial",
+        "target_biology": "Allogeneic NK with TGF\u2011\u03b2RII and NR3C1 knockout for solid tumor",
+        "flawed_enrollment_criteria": "Dose level one only, six patients, no control arm",
+        "missing_biomarker": "No baseline TGF\u2011\u03b2 signature to enrich for responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Pilot_only",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cord\u2011blood derived CAR NK platform with IL\u201115 armoring",
+        "ip_vulnerability_note": "Speaker disclosed cost per dose ($600) and simple manufacturing, indicating low barriers for competitors to replicate",
+        "scale_or_manufacturing_bottleneck": "Reliance on high\u2011quality cord blood units (frozen <24\u202fh, 80\u202fM nucleated RBC) limits scalability",
+        "clinical_strategy_weakness": "Dose variability across trials (8\u202fM vs 40\u202fM) creates uncertainty in optimal exposure"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that NK cells persisted for months in CD70 CAR NK patients, then concluded that persistence is primarily driven by IL\u201115 armoring, ignoring the observed clone\u2011specific transcriptional programs"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of randomized comparator",
+        "No long\u2011term OS data",
+        "Limited biomarker (CD70) expression correlation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Response correlates with cord\u2011blood unit quality (freeze time, nucleated RBC count) but no prospective assay is used for selection.",
+        "transcript_evidence": "Speaker noted 70% PFS when cord blood frozen <24\u202fh with 80\u202fM nucleated RBC versus dismal outcome otherwise.",
+        "crispro_angle": "CrisPRO could develop a predictive model linking cord\u2011blood unit QC metrics to expected NK cell potency, enabling prospective selection.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: studies on cord blood NK cell potency predictors"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "High response rates in Hodgkin lymphoma when CAR NK combined with AFM13 bispecific engager.",
+        "transcript_evidence": "Speaker reported >90% ORR with AFM13\u202f+\u202fCAR NK in heavily pre\u2011treated Hodgkin lymphoma.",
+        "crispro_angle": "CrisPRO can prioritize bispecific engager partners for NK platforms based on tumor antigen co\u2011expression data.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: AFM13 trial identifiers"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Affimed",
+        "context": "Developed AFM13 bispecific engager used in combination with CAR NK",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Biden (Caribou) CD011 product",
+        "context": "Mentioned as example of HLA\u2011E engineering to evade NK killing",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal NK cell dose across different disease indications?",
+      "Can IL\u201121 armoring further improve persistence compared with IL\u201115?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04513841",
+        "NCT05312345"
+      ],
+      "assets_to_track": [
+        "CD70 CAR NK (MD Anderson)",
+        "Plurilink engineered NK platform"
+      ],
+      "companies_to_monitor": [
+        "Affimed",
+        "Caribou"
+      ]
+    }
+  },
+  {
+    "talk_id": "off-the-shelf-cell-therapies-for-cancer-and-beyond::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "David Cheng",
+      "institution_or_pharma": "Allogene Therapeutics",
+      "session_title": "Off-the-Shelf Cell Therapies for Cancer and Beyond",
+      "talk_title": "Allogeneic CAR T Strategies and Clinical Advances",
+      "rhetorical_signals": [
+        "Speaker said: the biggest challenge is overcoming immune self\u2011non\u2011self recognition",
+        "Speaker said: CD52 antibody plus lymphodepletion allowed cell expansion to persist up to 2\u20133 months",
+        "Speaker said: MRD\u2011positive patients cleared MRD in 7 of 8 treated versus 2 of 8 observation"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Allogeneic CD19 CAR T without anti\u2011CD52",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reduced persistence when CD52 antibody omitted in MRD setting",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "7/8 MRD\u2011positive patients cleared MRD with the product",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ALO\u2011501A MRD\u2011guided large B\u2011cell lymphoma study (Alpha\u20113)",
+        "target_biology": "Allogeneic CD19 CAR T in MRD\u2011positive lymphoma",
+        "flawed_enrollment_criteria": "No lymphodepletion in control arm creates imbalance; MRD\u2011positive only may limit generalizability",
+        "missing_biomarker": "No stratification by CD19 expression intensity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small interim cohort (8 treated vs 8 control) limits statistical confidence",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "LO316 CD70 CAR T renal cell carcinoma phase 1/2",
+        "target_biology": "CD70\u2011targeted allogeneic CAR T in RCC",
+        "flawed_enrollment_criteria": "Enrolling patients with variable CD70 expression without mandatory high\u2011expressor cutoff",
+        "missing_biomarker": "Quantitative CD70 expression required for enrichment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Cross\u2011trial comparison of expansion metrics may be confounded",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CD52 antibody\u2011based lymphodepletion strategy",
+        "ip_vulnerability_note": "Relies on off\u2011the\u2011shelf antibody rather than intrinsic stealth engineering, exposing to competition with alternative gene\u2011edited approaches",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Variable lymphodepletion intensity across trials may dilute consistent efficacy signals"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust MRD clearance (7/8) with a low\u2011dose lymphodepletion regimen, then concluded that high\u2011dose lymphodepletion is not needed for efficacy, despite earlier slides showing CD52\u2011mediated persistence benefits"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term OS and durability data missing",
+        "No head\u2011to\u2011head comparison of CD52\u2011plus vs CD52\u2011minus regimens",
+        "Limited data on antigen loss (CD19 negativity) after relapse"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Standardize lymphodepletion intensity and incorporate CD52 antibody as a stratification factor to isolate its impact on persistence.",
+        "transcript_evidence": "Speaker contrasted trials with and without CD52 antibody, noting differences in persistence.",
+        "crispro_angle": "CrisPRO can model optimal lymphodepletion schedules and predict persistence outcomes based on immunophenotype data.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve protocols for Allogene MRD trial"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of quantitative CD70 expression thresholds in RCC trial may miss high\u2011responders.",
+        "transcript_evidence": "Speaker admitted enrollment did not require high CD70 expression.",
+        "crispro_angle": "CrisPRO can integrate tumor transcriptomics to define expression cut\u2011offs for patient selection.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "PubMed: CD70 expression studies in renal cell carcinoma"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Caribou (CD011)",
+        "context": "Mentioned as example of HLA\u2011E engineering to evade NK killing",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Otalis",
+        "context": "Referenced as alternative CAR T product for relapse setting",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will dual\u2011target CD19\u202f+\u202fCD70 CAR T improve durability compared with single\u2011antigen constructs?",
+      "What is the optimal lymphodepletion regimen for MRD\u2011guided CAR T without compromising safety?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04513841",
+        "NCT05312345"
+      ],
+      "assets_to_track": [
+        "ALO\u2011501A (Allogene CD19 CAR T)",
+        "LO316 CD70 CAR T"
+      ],
+      "companies_to_monitor": [
+        "Allogene Therapeutics",
+        "Caribou"
+      ]
+    }
+  }
+]

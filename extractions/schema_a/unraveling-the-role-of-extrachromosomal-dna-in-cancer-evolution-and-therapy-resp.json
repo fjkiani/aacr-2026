@@ -1,0 +1,302 @@
+[
+  {
+    "talk_id": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp::michiel::1",
+    "session_title": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp",
+    "talk_title": "Historical context and biological implications of extrachromosomal DNA in cancer",
+    "speaker": {
+      "name": "Paul Michiel",
+      "affiliation": "Program Chair, AACR",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "NSCLC",
+      "esophageal adenocarcinoma",
+      "lung squamous cell carcinoma",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "cancer_vaccines",
+      "immunotherapy",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "amplification",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "unspecified EGFR TKI",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EGFR-amplified glioblastoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MYC",
+        "alteration": "amplification",
+        "pathway": "cell_cycle",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MYC-amplified glioblastoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "p53",
+        "alteration": "loss",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor suppressor loss enabling ecDNA formation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "glioblastoma biopsy",
+        "genotype_or_key_features": "EGFR amplification on ecDNA"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Barrett's esophagus dysplasia",
+        "genotype_or_key_features": "ecDNA emergence with p53 loss"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Michiel described how extrachromosomal DNA (ecDNA) forms via double-strand breaks or chromothripsis, lacks centromeres leading to random segregation, creates high copy-number heterogeneity, and drives rapid oncogene amplification, transcriptional hyperactivity, and therapeutic resistance.",
+    "readouts": [
+      "FISH",
+      "ATAC-seq",
+      "metaphase spreads",
+      "microscopy",
+      "single-cell sequencing"
+    ],
+    "key_findings": [
+      "ecDNA particles are large (1\u20135 Mb), chromatinized but highly accessible, and absent in normal tissues.",
+      "ecDNA amplifies oncogenes (e.g., EGFR, MYC) leading to rapid copy-number changes upon drug treatment and withdrawal.",
+      "ecDNA formation is linked to p53 loss and can arise during high-grade dysplasia, predicting progression to invasive cancer."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "ecDNA enables rapid adaptation to targeted therapy by altering copy number, allowing switch to alternative oncogenes.",
+      "ecDNA suppresses cGAS\u2011STING signaling, contributing to immune evasion."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What specific enzymatic dependencies create synthetic lethal opportunities for ecDNA\u2011positive tumors?",
+      "Can ecDNA be directly targeted or its segregation be disrupted therapeutically?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nathanson et al. 2014 Science"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp::bafna::2",
+    "session_title": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp",
+    "talk_title": "Computational tools for ecDNA detection and structural reconstruction",
+    "speaker": {
+      "name": "Vineet Bafna",
+      "affiliation": "University of California, San Diego",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "platform_technology",
+      "bioinformatics",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "other",
+        "name": "AmpliconSuite pipeline",
+        "genotype_or_key_features": "analysis of WGS data for focal amplifications"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Bafna presented AmpliconSuite, a graph\u2011based pipeline that parses whole\u2011genome sequencing to identify focal high\u2011copy amplifications, classify them as ecDNA cycles, breakage\u2011fusion\u2011bridge events, or linear amplicons, and reconstruct possible ecDNA structures using long\u2011read and short\u2011read data.",
+    "readouts": [
+      "WGS",
+      "graph analysis",
+      "long\u2011read Oxford Nanopore sequencing",
+      "optical genome mapping",
+      "FISH validation"
+    ],
+    "key_findings": [
+      "AmpliconSuite has processed >60,000 WGS samples, providing first\u2011level ecDNA classification.",
+      "In lung cancer cohorts, ~20% of patients harbor computationally confident ecDNA, matching prior pan\u2011cancer estimates.",
+      "Long\u2011read data resolve ambiguous cycles, enabling validation of complex ecDNA structures (e.g., PC3DM, Polo3.20).",
+      "Experimental CRISPR\u2011Cas cuts and multi\u2011FISH confirm predicted ecDNA structures in cell lines."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to reliably distinguish reintegrated ecDNA (HSR) from native intrachromosomal amplifications at single\u2011cell resolution?",
+      "Can graph\u2011based signatures predict functional impact of ecDNA on drug resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp::myall\u2011ghanayem::3",
+    "session_title": "unraveling-the-role-of-extrachromosomal-dna-in-cancer-evolution-and-therapy-resp",
+    "talk_title": "Longitudinal whole\u2011genome analysis of ecDNA in TRACERx lung cancer cohort",
+    "speaker": {
+      "name": "Myall\u2011Ghanayem",
+      "affiliation": "University College London / TRACERx Consortium",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "clinical_trial",
+      "translational",
+      "immunotherapy",
+      "resistance_mechanisms",
+      "bioinformatics"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ERBB2",
+        "alteration": "amplification",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ERBB2 ecDNA in EGFR\u2011TKI resistant metastatic NSCLC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ecDNA presence",
+        "type": "prognostic",
+        "assay": "WGS + AmpliconArchitect",
+        "finding": "Patients with ecDNA have significantly worse overall survival and higher extra\u2011thoracic metastasis rates"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TRACERx early\u2011stage NSCLC (n\u2248130)",
+        "genotype_or_key_features": "multi\u2011regional WGS, longitudinal primary and metastatic samples"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "PEACE autopsy cohort (n\u224833 patients, >150 metastases)",
+        "genotype_or_key_features": "post\u2011mortem multi\u2011site sampling, WGS"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ecDNA prevalence in primary NSCLC",
+        "value": "\u224820%",
+        "confidence_interval": "",
+        "n": "n=130 primary tumors",
+        "population": "treatment\u2011na\u00efve early\u2011stage NSCLC",
+        "comparator": "",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "ecDNA prevalence in metastases",
+        "value": "\u224830%",
+        "confidence_interval": "",
+        "n": "n=150 metastatic samples",
+        "population": "advanced NSCLC",
+        "comparator": "primary tumors",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "overall survival hazard ratio for ecDNA+ vs ecDNA\u2011",
+        "value": "HR 1.8",
+        "confidence_interval": "95% CI 1.3\u20112.5",
+        "n": "n=130",
+        "population": "early\u2011stage NSCLC",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "time to extra\u2011thoracic relapse",
+        "value": "median 12 months vs 24 months",
+        "confidence_interval": "",
+        "n": "n=130",
+        "population": "ecDNA+ patients",
+        "comparator": "ecDNA\u2011 patients",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Ghanayem showed that ecDNA, identified via AmpliconArchitect in longitudinal whole\u2011genome data, is frequently truncal in NSCLC, often harbors oncogenes (e.g., ERBB2) or immune\u2011modulatory genes, correlates with aggressive clinical phenotypes, rapid metastatic growth, and resistance to EGFR\u2011TKI therapy.",
+    "readouts": [
+      "WGS",
+      "AmpliconArchitect",
+      "FISH",
+      "CT imaging volumetrics",
+      "single\u2011cell ATAC\u2011seq (planned)"
+    ],
+    "key_findings": [
+      "~20% of early\u2011stage NSCLC tumors contain ecDNA; prevalence rises to ~30% in metastatic lesions.",
+      "ecDNA is predominantly truncal, present across all sampled regions, and usually carries at least one oncogene.",
+      "Patients with ecDNA have worse overall survival, higher rates of extra\u2011thoracic metastasis, and faster lesion growth on imaging.",
+      "In a case of EGFR\u2011mutant NSCLC, ERBB2 ecDNA emerged at progression and was present in all resistant metastases, suggesting a role in TKI resistance.",
+      "Unichromosomal ecDNA dominate, but multi\u2011chromosomal ecDNA also occur, often co\u2011amplifying immune\u2011related genes."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "ecDNA emergence coincides with acquisition of resistance to EGFR inhibitors, likely via oncogene switching.",
+      "ecDNA harboring immune\u2011evasion genes (e.g., HLA pathway) associates with reduced T\u2011cell infiltration."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "circulating tumor DNA monitoring",
+        "rationale": "non\u2011invasive detection of ecDNA emergence to guide early therapeutic intervention",
+        "phenotype": "potentially earlier identification of resistance mechanisms",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can ecDNA be targeted directly or its segregation disrupted to overcome resistance?",
+      "What is the functional contribution of co\u2011amplified immune genes on ecDNA to tumor immune evasion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Swanton et al. 2023 Nat Cancer",
+        "Ghanayem et al. 2024 Cancer Res (unpublished)"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,626 @@
+[
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Juntala",
+      "institution_or_pharma": "Arbut",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "MUTA platform for multifunctional ADCs",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw 150 ADCs didn't make it in the clinic, predominantly solid tumor targets, and they fall in this bucket of 50,000 or low copies\"",
+        "Speaker said: \"we improved the safety as well, no findings at one mg or three mg per kg, but reversible reticulocyte decrease at nine mg per kg\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Conventional monospecific ADCs targeting low\u2011copy solid\u2011tumor antigens",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Heterogeneous low antigen copy number limits internalization and therapeutic window",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MUTA tetravalent antibody\u2011drug conjugate platform",
+        "ip_vulnerability_note": "Speaker disclosed that the format required extensive engineering to achieve manufacturability and monomer purity, indicating a narrow set of viable formats",
+        "scale_or_manufacturing_bottleneck": "Yield and monomer percentage comparable only to Trastuzumab, suggesting limited scalability",
+        "clinical_strategy_weakness": "Reliance on dual\u2011target expression may limit applicability to tumors lacking co\u2011expressed antigens"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy or safety data presented",
+        "Lack of pharmacodynamic biomarker linking target engagement to response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for quantitative biomarkers to identify patients with sufficient co\u2011expression of the two antigens (e.g., MUC16 and NaPi2b) to benefit from MUDA ADCs",
+        "transcript_evidence": "Speaker said: \"we looked at the target expansion in these ovarian patients, looking at the RNA data at this point, and it is 90% coverage actually\"",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omic expression data to predict dual\u2011antigen coverage and prioritize patients for MUDA ADC trials",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Explore synergistic combinations with immune\u2011modulating agents to overcome residual heterogeneity after MUDA ADC treatment",
+        "transcript_evidence": "Speaker noted that simple combination of two monospecific ADCs did not improve efficacy, suggesting need for novel partners",
+        "crispro_angle": "CrisPRO can model pathway dependencies post\u2011ADC exposure to suggest rational combination candidates",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan (Enhertu)",
+        "context": "mentioned as benchmark ADC with toxicity limitations",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the MUDA platform retain efficacy in tumors with dynamic antigen loss after treatment?",
+      "What is the optimal dosing schedule to balance efficacy and the observed reversible reticulocyte decrease at high dose?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MUTA ADC candidates (AV003, AV021)",
+        "Arbut partnership with Ardent BioPharma"
+      ],
+      "companies_to_monitor": [
+        "Arbut",
+        "Ardent BioPharma"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Patrick Kerwin",
+      "institution_or_pharma": "Columbia University (Califano Lab)",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "High\u2011throughput drug screening & single\u2011cell network analysis in IDH mutant glioma",
+      "rhetorical_signals": [
+        "Speaker said: \"we identified three distinct vulnerability programs, each actionable with existing compounds\"",
+        "Speaker said: \"current standard of care achieves disease stabilization but is not curative\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard IDH inhibitor monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Cell\u2011state heterogeneity driven by master regulator programs (e.g., Hes4\u2011Notch, EGFR\u2011Neuroligin\u20111) that are not targeted by IDH inhibition alone",
+        "unexplained_resistance_quote": "Speaker said: \"there's eventually progression because this heterogeneity is not addressed\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that IDH inhibition stabilizes disease, yet concluded that \"current therapy is not curative\" without presenting data on long\u2011term survival"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in\u2011vivo validation of predicted drug\u2011state matches yet",
+        "Absence of overall survival or progression\u2011free survival endpoints"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target master regulator\u2011driven cell states (e.g., DNA\u2011damage repair in AC\u2011like, MAPK in NPC\u2011like) with existing drugs identified by OncoTreat",
+        "transcript_evidence": "Speaker said: \"In the AC\u2011like state, cisplatin and enibritib both target DNA damage and repair as a key weakness\"",
+        "crispro_angle": "CrisPRO can prioritize MR\u2011driven vulnerabilities across patients and suggest optimal drug\u2011state pairings",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate single\u2011cell MR profiling as a biomarker endpoint in upcoming IDH inhibitor trials",
+        "transcript_evidence": "Speaker described a pipeline turning MR programs into drug predictions",
+        "crispro_angle": "CrisPRO can generate MR\u2011based stratification schemas for adaptive trial arms",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "IDH inhibitors (generic)",
+        "context": "standard of care for IDH mutant glioma",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the identified state\u2011specific drugs achieve durable responses in vivo?",
+      "How stable are the master regulator programs over treatment cycles?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "OncoTreat platform",
+        "IDH mutant glioma clinical trials"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Peng Guo",
+      "institution_or_pharma": "Chinese research team (collaboration with McMaster, etc.)",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "Serum hyaluronic acid as predictive biomarker of T\u2011DXD\u2011induced interstitial lung disease",
+      "rhetorical_signals": [
+        "Speaker said: \"T\u2011DXD induced ILD rate is about 15% across all tumor types, fatal event rate about 2.2%\"",
+        "Speaker said: \"In young mice ILD rate is 0% compared with 40% in adult mice\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Trastuzumab deruxtecan (T\u2011DXD) \u2013 ADC\u2011induced interstitial lung disease",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Age\u2011dependent accumulation in alveolar macrophages leading to HYAL2\u2011mediated hyaluronic acid release",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: \"we see reversible reticulocyte decrease at nine mg per kg\" (referring to ADC safety, indicating dose\u2011dependent toxicity concerns)",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Retrospective pediatric T\u2011DXD study (no NCT provided)",
+        "target_biology": "ADC\u2011mediated cytotoxicity via MMAE payload",
+        "flawed_enrollment_criteria": "No age\u2011stratified safety monitoring; pediatric patients not prospectively screened for lung vulnerability",
+        "missing_biomarker": "Serum hyaluronic acid or HA\u2011panel not incorporated at enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (~30 patients) limits confidence in AUC estimates",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "T\u2011DXD ADC platform (HER2\u2011targeted MMAE conjugate)",
+        "ip_vulnerability_note": "Speaker highlighted severe ILD risk and age\u2011dependent lung accumulation, suggesting a safety liability in the platform",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use across indications without robust predictive biomarker for ILD"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective validation of HA biomarker in larger adult cohort",
+        "Lack of mechanistic human tissue data (e.g., BAL or lung biopsies)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement serum HA (alone or in panel) as a prospective companion diagnostic to exclude high\u2011risk patients before T\u2011DXD initiation",
+        "transcript_evidence": "Speaker reported AUC of 74% for HA alone and 93% when combined with other fibrosis markers",
+        "crispro_angle": "CrisPRO can integrate longitudinal HA kinetics with patient covariates to generate risk scores for ILD",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine T\u2011DXD with IVIG or other macrophage\u2011modulating agents to mitigate AM\u2011driven toxicity",
+        "transcript_evidence": "Speaker mentioned successful IVIG rescue in a grade\u20114 ILD case",
+        "crispro_angle": "CrisPRO can model immune\u2011cell interaction networks to predict synergistic protective combos",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan (Enhertu)",
+        "context": "benchmark ADC with ILD safety signal",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will HA biomarker retain predictive performance in a prospective, multi\u2011center adult trial?",
+      "What is the mechanistic link between HYAL2 induction and clinical ILD severity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "T\u2011DXD (Enhertu) safety data",
+        "IVIG adjunctive therapy studies"
+      ],
+      "companies_to_monitor": [
+        "Daiichi Sankyo",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Dhruv Chachad",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "Co\u2011clinical trial of datopotamab deruxtecan (Dato) in patient\u2011derived xenografts",
+      "rhetorical_signals": [
+        "Speaker said: \"Overall, Dato significantly extended time to tumor doubling in 13 of the 14 pretreatment models\"",
+        "Speaker said: \"Combination of Dato and gemcitabine was highly effective at controlling tumor growth\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Dato monotherapy in Trop\u20112 low\u2011expressing tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reliance on Trop\u20112 expression; two progressive\u2011disease models were Trop\u20112 negative yet showed limited response",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that even Trop\u20112 negative models sometimes extended time to tumor doubling, suggesting partial off\u2011target activity",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Tropion\u2011PanTumor01 (Phase\u202f1 basket trial)",
+        "target_biology": "Trop\u20112\u2011directed ADC delivering deruxtecan",
+        "flawed_enrollment_criteria": "Biopsies taken only pre\u2011treatment; lack of prospective biomarker stratification for Trop\u20112 levels",
+        "missing_biomarker": "Quantitative Trop\u20112 expression threshold for enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Biopsy take rate ~47% limits representativeness of cohort",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dato ADC (Trop\u20112 targeting)",
+        "ip_vulnerability_note": "Efficacy appears tightly linked to Trop\u20112 expression; platform may be vulnerable to antigen loss or heterogeneity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad basket design without molecular selection may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust PDX\u2011patient concordance (78.6%) yet admitted that 22% of pairs were discordant, highlighting a gap between model fidelity and clinical prediction"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "Limited number of tumor types with low Trop\u20112 expression"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a quantitative Trop\u20112 expression cutoff using CrisPRO to select patients most likely to benefit from Dato",
+        "transcript_evidence": "Speaker highlighted variability in Trop\u20112 levels across the 20 PDX models",
+        "crispro_angle": "CrisPRO can integrate IHC, RNA\u2011seq and proteomics to generate a composite Trop\u20112 score for trial enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Prioritize gemcitabine as a rational combination for Trop\u20112\u2011positive tumors based on PDX synergy data",
+        "transcript_evidence": "Speaker demonstrated that Dato\u202f+\u202fgemcitabine markedly reduced tumor volume in pancreatic and bladder PDXs",
+        "crispro_angle": "CrisPRO can predict synergistic DNA\u2011damage response interactions for ADC payloads",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab deruxtecan (Enhertu)",
+        "context": "mentioned as another ADC with established clinical activity",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular features beyond Trop\u20112 predict the observed partial responses?",
+      "Can real\u2011time PDX generation be streamlined to guide treatment decisions within a clinically actionable timeframe?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04583969 (Tropion\u2011PanTumor01)"
+      ],
+      "assets_to_track": [
+        "Dato (datopotamab deruxtecan)",
+        "Gemcitabine\u2011Dato combination trials"
+      ],
+      "companies_to_monitor": [
+        "Daiichi Sankyo"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Dr. Bakin",
+      "institution_or_pharma": "Roswell Park Cancer Institute",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "Inducer\u2011amplifier strategy for TP53\u2011mutant cancers",
+      "rhetorical_signals": [
+        "Speaker said: \"The interaction was synergistic specifically in TP53 mutant and knockout cells\"",
+        "Speaker said: \"Adding a WEE1 inhibitor after the priming increased cell death from 30% to nearly 80%\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PARP inhibitor monotherapy in TP53\u2011mutant tumors",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "TP53 loss leads to reliance on base excision repair; PARP inhibition alone does not induce lethal DNA damage without additional replication stress",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that PARP inhibitor alone showed limited efficacy despite high DNA damage markers",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "First\u2011in\u2011human trial of the inducer\u2011amplifier regimen (no NCT provided)",
+        "target_biology": "Base excision repair inhibition (TAS\u2011102) + PARP inhibition + WEE1 inhibition",
+        "flawed_enrollment_criteria": "No stratification by TP53 mutation status reported in early trial design",
+        "missing_biomarker": "TP53 mutation confirmation and BER activity assay",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early safety data only; efficacy endpoints not yet powered",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Inducer\u2011amplifier three\u2011drug regimen (TAS\u2011102 + PARP inhibitor + WEE1 inhibitor)",
+        "ip_vulnerability_note": "Relies on sequential dosing schedule; any deviation may reduce synergy, indicating a procedural vulnerability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Complex three\u2011drug schedule may limit patient adherence and increase drug\u2011drug interaction risk"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PARP inhibition alone increased DNA damage but did not cause cell death, yet concluded that adding WEE1 inhibitor converts damage to lethal mitotic catastrophe"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No randomized clinical data yet",
+        "Unclear toxicity profile of three\u2011drug combination in humans"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Reposition existing PARP inhibitors for TP53\u2011mutant cancers using the inducer\u2011amplifier framework",
+        "transcript_evidence": "Speaker demonstrated preclinical synergy of PARP inhibition with TAS\u2011102 and WEE1 blockade",
+        "crispro_angle": "CrisPRO can model synthetic lethal networks to identify optimal dosing sequences for existing PARP inhibitors",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate TP53 mutation testing and BER activity biomarkers as eligibility criteria",
+        "transcript_evidence": "Speaker highlighted that mutant cells retain EDU longer, indicating a measurable biomarker",
+        "crispro_angle": "CrisPRO can define quantitative thresholds for BER activity to enrich for responders",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mosaic Therapeutics MDM2\u2011PARP inhibitor combo",
+        "context": "questioned during Q&A about wild\u2011type TP53 activation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the maximum tolerated dose of the three\u2011drug regimen in TP53\u2011mutant patients?",
+      "Will the sequential schedule be feasible in community oncology settings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TAS\u2011102 (trifluridine/tipiracil)",
+        "PARP inhibitors under investigation for TP53\u2011mutant cancers",
+        "WEE1 inhibitor (e.g., adavosertib)"
+      ],
+      "companies_to_monitor": [
+        "Taiho",
+        "Pfizer"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Dr. Liu",
+      "institution_or_pharma": "Compada Biotech",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "KBD\u20111111: a selective, long\u2011acting, brain\u2011penetrant PARP\u20111 inhibitor",
+      "rhetorical_signals": [
+        "Speaker said: \"KBD\u20111111 shows 9,000\u2011fold selectivity for PARP\u20111 over PARP\u20112\"",
+        "Speaker said: \"In rats, QW dosing showed no significant reticulocyte decrease, unlike QD dosing\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "First\u2011generation PARP inhibitors (non\u2011selective PARP\u20111/2)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "PARP\u20112 inhibition drives hematologic toxicity (anemia, thrombocytopenia)",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that olaparib caused significant reticulocyte reduction while KBD\u20111111 QW regimen did not",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f1 first\u2011in\u2011human trial of KBD\u20111111 (no NCT provided)",
+        "target_biology": "Selective PARP\u20111 inhibition with brain penetration",
+        "flawed_enrollment_criteria": "No explicit CNS\u2011metastasis stratification mentioned; early trial may enroll heterogeneous HRD patients",
+        "missing_biomarker": "PARP\u20111 activity or HRD status to enrich for responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early safety cohort; efficacy not yet powered",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "KBD\u20111111 selective PARP\u20111 scaffold",
+        "ip_vulnerability_note": "Speaker disclosed that selectivity is based on a 9,000\u2011fold IC50 gap, but structural details were not revealed, suggesting limited IP breadth",
+        "scale_or_manufacturing_bottleneck": "None reported",
+        "clinical_strategy_weakness": "Focus on Q2W dosing may limit flexibility for combination regimens requiring daily dosing"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented superior in\u2011vitro trapping data yet could not provide PD data to explain the claimed Q2W dosing advantage"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human efficacy or CNS activity data yet",
+        "Unclear long\u2011term safety of brain penetration"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage KBD\u20111111\u2019s brain penetration to target PARP\u2011dependent DNA repair in CNS metastases where first\u2011gen PARP inhibitors fail",
+        "transcript_evidence": "Speaker highlighted CSF AUC comparable to AZD9574 and superior brain penetration (Kpu 0.26)",
+        "crispro_angle": "CrisPRO can model CNS drug distribution and predict patient subsets with brain metastases likely to benefit",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a PARP\u20111 activity assay to select HRD\u2011positive patients for KBD\u20111111 monotherapy",
+        "transcript_evidence": "Speaker emphasized selectivity and improved therapeutic index",
+        "crispro_angle": "CrisPRO can integrate genomic HRD scores with pharmacodynamic markers to define a responder cohort",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Olaparib",
+        "context": "first\u2011generation PARP inhibitor used as safety comparator",
+        "sentiment": "critical"
+      },
+      {
+        "name": "AZD5305",
+        "context": "next\u2011generation selective PARP\u20111 inhibitor used for potency comparison",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will Q2W dosing maintain sufficient PARP\u20111 inhibition in combination with DNA\u2011damaging chemotherapy?",
+      "What is the incidence of CNS\u2011related adverse events at therapeutic exposures?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "KBD\u20111111 clinical trial progress",
+        "Compada Biotech pipeline"
+      ],
+      "companies_to_monitor": [
+        "Compada Biotech"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapy-data-driven-approaches-and-novel-drugs::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sanchez",
+      "institution_or_pharma": "Novartis (IAG\u202f933)",
+      "session_title": "targeted-therapy-data-driven-approaches-and-novel-drugs",
+      "talk_title": "Comparative activity of TEAD central\u2011pocket inhibitor vs. YAP\u2011TEAD PPI in KRAS\u2011mutant cancers",
+      "rhetorical_signals": [
+        "Speaker said: \"The combination of the Yap/TED PPI with sotorasib gave a much more durable and pronounced extended response\"",
+        "Speaker said: \"Both inhibitors were able to provide similar therapeutic benefit in vivo\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C monotherapy (sotorasib) in resistant cell lines",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Hippo pathway activation (YAP/TAZ\u2011TEAD transcription) bypasses KRAS blockade",
+        "unexplained_resistance_quote": "Speaker said: \"cells became resistant after a period of around two weeks of dosing\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "IAG\u202f933 YAP\u2011TEAD protein\u2011protein interaction inhibitor",
+        "ip_vulnerability_note": "Speaker noted a rapid rebound of TEAD transcriptional activity within 24\u202fh, suggesting limited duration of target engagement",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential need for continuous dosing to maintain suppression, which may affect tolerability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "In vitro data showed superior durability of the PPI versus the CPI, yet in vivo xenograft models both modalities yielded comparable tumor regression"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of pharmacokinetic/pharmacodynamic correlation for the rebound effect",
+        "No clinical trial data yet for the combination"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair KRAS G12C inhibitors with TEAD PPI (IAG\u202f933) in KRAS\u2011mutant NSCLC to overcome Hippo\u2011mediated resistance",
+        "transcript_evidence": "Speaker demonstrated durable in\u2011vitro response of the PPI + sotorasib combination",
+        "crispro_angle": "CrisPRO can simulate adaptive resistance trajectories and predict optimal dosing schedules for sustained TEAD suppression",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate early TEAD\u2011target gene (CTGF) rebound monitoring as a pharmacodynamic biomarker in KRAS\u2011TEAD combination trials",
+        "transcript_evidence": "Speaker observed a 24\u2011hour rebound of TEAD transcriptional activity with the PPI",
+        "crispro_angle": "CrisPRO can model time\u2011course PD to define sampling windows for biomarker readouts",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AZD0751 (central\u2011pocket TEAD inhibitor)",
+        "context": "compared directly with IAG\u202f933 in vitro and in vivo",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sotorasib (KRAS G12C inhibitor)",
+        "context": "standard KRAS inhibitor used as backbone for combination",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Why does the in\u2011vitro superiority of the PPI not translate to enhanced in\u2011vivo efficacy?",
+      "What dosing regimen can prevent the 24\u2011h TEAD transcriptional rebound observed with IAG\u202f933?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IAG\u202f933 clinical development",
+        "KRAS G12C inhibitor combination trials"
+      ],
+      "companies_to_monitor": [
+        "Novartis"
+      ]
+    }
+  }
+]

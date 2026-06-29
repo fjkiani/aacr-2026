@@ -1,0 +1,196 @@
+[
+  {
+    "talk_id": "latest-advances-in-translational-research-from-the-2025-san-antonio-breast-cance::shyam::1",
+    "session_title": "latest-advances-in-translational-research-from-the-2025-san-antonio-breast-cance",
+    "talk_title": "Chromatin redistribution of Rb reveals estrogen\u2011response activation by CDK4/6 inhibition",
+    "speaker": {
+      "name": "Shyam",
+      "affiliation": "Peter Mac Institute, Melbourne, Australia",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "hormone receptor\u2011positive breast cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "targeted_therapy",
+      "translational",
+      "basic_science",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "RB1",
+        "alteration": "",
+        "pathway": "cell_cycle",
+        "modality": "unspecified",
+        "compound_name": "CDK4/6 inhibitor (palbociclib etc.)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HR\u2011positive breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ESR1",
+        "alteration": "",
+        "pathway": "estrogen_signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ER\u2011positive breast cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HR+ breast cancer lines (e.g., MCF7)",
+        "genotype_or_key_features": "RB1 wild\u2011type"
+      },
+      {
+        "model_type": "PDX",
+        "name": "HR+ breast cancer PDX",
+        "genotype_or_key_features": "patient\u2011derived, RB1 intact"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Patients treated with CDK4/6 inhibitor monotherapy",
+        "genotype_or_key_features": "paired pre\u2011 and post\u2011treatment biopsies"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Estrogen response gene up\u2011regulation",
+        "value": "significant increase post\u2011treatment",
+        "confidence_interval": "",
+        "n": "n=3 cell lines, n=2 PDX, n=patients (paired)",
+        "population": "HR+ breast cancer",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "CDK4/6 inhibition dephosphorylates Rb, causing widespread chromatin binding; beyond canonical E2F repression, Rb is recruited to active enhancers of estrogen\u2011responsive genes, enhancing their expression (including cyclin\u202fD1), which can blunt cell\u2011cycle arrest unless blocked by endocrine therapy.",
+    "readouts": [
+      "CUT&RUN",
+      "ChIP\u2011seq",
+      "RNA\u2011seq",
+      "HiChIP",
+      "CRISPR\u2011Cas9 enhancer deletion",
+      "Western blot"
+    ],
+    "key_findings": [
+      "CDK4/6 inhibition increases chromatin\u2011bound Rb at >10,000 sites, 75% at promoters and many at active enhancers.",
+      "Rb binding at non\u2011promoter enhancers is associated with increased H3K27ac and up\u2011regulation of nearby estrogen\u2011response genes.",
+      "CRISPR disruption of Rb\u2011bound enhancers attenuates estrogen\u2011response gene induction and cyclin\u202fD1 protein up\u2011regulation.",
+      "Combining CDK4/6 inhibitors with endocrine therapy yields deeper suppression of cell\u2011cycle genes and prevents cyclin\u202fD1\u2011mediated resistance."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Rb\u2011driven estrogen response may limit monotherapy efficacy and contribute to resistance in ESR1\u2011mutant tumors."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "endocrine therapy (e.g., aromatase inhibitor, SERD)",
+        "rationale": "Blocks Rb\u2011induced estrogen\u2011response program that counteracts cell\u2011cycle arrest",
+        "phenotype": "Deeper suppression of E2F targets and reduced cyclin\u202fD1 levels",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Which E2F family members are recruited by Rb at non\u2011cell\u2011cycle sites?",
+      "Can selective Rb mutants separate E2F repression from estrogen\u2011response activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "latest-advances-in-translational-research-from-the-2025-san-antonio-breast-cance::prettykid::2",
+    "session_title": "latest-advances-in-translational-research-from-the-2025-san-antonio-breast-cance",
+    "talk_title": "Programmable RNA sensors for cancer\u2011specific fusion targeting",
+    "speaker": {
+      "name": "Nolan Prettykid",
+      "affiliation": "Dana\u2011Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "platform_technology",
+      "synthetic_biology",
+      "RNA_therapy",
+      "targeted_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Fusion RNAs (e.g., ESR1\u2011fusion, ARFGAP2\u2011SOX2)",
+        "alteration": "",
+        "pathway": "various (oncogenic drivers)",
+        "modality": "RNA_sensor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "patient\u2011specific fusion transcripts",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HEK293 (engineered ESR1 fusion)",
+        "genotype_or_key_features": "transfected fusion construct"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "MCF7 (endogenous ARFGAP2\u2011SOX2 fusion)",
+        "genotype_or_key_features": "ER+ breast cancer line"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "MCF10A (fusion\u2011negative control)",
+        "genotype_or_key_features": "non\u2011tumorigenic breast epithelial"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "ADAR\u2011mediated RNA editing sensors are programmed to bind cancer\u2011specific fusion breakpoints; upon editing a stop\u2011codon in the guide, translation of a downstream cytotoxic payload (e.g., iCaspase9) is enabled, selectively killing fusion\u2011positive cells.",
+    "readouts": [
+      "fluorescence microscopy",
+      "flow cytometry",
+      "cell viability assays",
+      "RT\u2011PCR for fusion validation"
+    ],
+    "key_findings": [
+      "Linear and gap RNA sensors selectively activate reporter expression in cells harboring the target fusion RNA.",
+      "In MCF7 cells with an endogenous ARFGAP2\u2011SOX2 fusion, gap sensors drive mNeon fluorescence with >10\u2011fold specificity over fusion\u2011negative MCF10A.",
+      "Fusion\u2011targeted sensors coupled to iCaspase9 reduce MCF7 viability to ~80% versus ~100% for non\u2011targeting controls.",
+      "High\u2011throughput sensor library screening begins to define design rules for effective RNA\u2011sensor constructs."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Variable sensor performance suggests sequence\u2011context dependent efficacy; loss or mutation of the fusion breakpoint could confer resistance."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What are the optimal payloads (immune\u2011stimulating, secreted factors) for in\u2011vivo efficacy?",
+      "How can delivery be achieved at scale (LNP, viral nanoparticles) to reach tumor cells in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jakob Kata",
+      "institution_or_pharma": "University of Dresden / University of Heidelberg",
+      "session_title": "ai-in-biomarker-discovery-and-drug-development",
+      "talk_title": "Multimodal and Agentic AI in Biomarker Discovery",
+      "rhetorical_signals": [
+        "Speaker said: \"I wish I were, but I'm not. Jakob could not make it today...\"",
+        "Speaker said: \"AI is no longer the future, it's happening today.\"",
+        "Speaker said: \"We cannot just like previously in AI, have one system that produces one output. We have to look at the procedures that the tool calls...\"",
+        "Speaker said: \"Agents are of course susceptible to many pitfalls. There's of course hallucinations, many other potential problems.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data presented",
+        "No prospective validation of Class C biomarkers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Class C AI-driven biomarkers lack standardized validation frameworks and prospective clinical utility data, creating an opening for CrisPRO to provide rigorous multi\u2011cohort validation pipelines.",
+        "transcript_evidence": "Speaker said: \"What we need is validation in multiple data sets that are fit for purpose... we cannot bypass the levels of evidence that are required.\"",
+        "crispro_angle": "CrisPRO can generate and benchmark reproducible multimodal biomarker models across independent datasets, delivering the required evidence of clinical utility.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will Class C biomarkers achieve regulatory acceptance without a gold\u2011standard reference?",
+      "What quantitative thresholds will define clinical utility for AI\u2011derived outcome predictors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Tirup Behanie",
+      "institution_or_pharma": "Recursion Pharmaceuticals",
+      "session_title": "ai-in-biomarker-discovery-and-drug-development",
+      "talk_title": "AI\u2011Enabled End\u2011to\u2011End Drug Discovery at Recursion",
+      "rhetorical_signals": [
+        "Speaker said: \"We went from target identification to IND\u2011enabling studies in just under 18 months.\"",
+        "Speaker said: \"We only needed about 200 molecules synthesized for RBM39 and 136 for CDK7, demonstrating speed.\"",
+        "Speaker said: \"We are not selecting patients based on CDK7 expression yet, but we are continuously evaluating it.\"",
+        "Speaker said: \"We used Tempus data to establish a causal relationship between CDK7 expression and poor prognosis.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "REC\u20111245 (RBM39 degrader)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential compensatory activity of CDK12/13 not fully explored",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DAHLIA (Phase 1/2 monotherapy)",
+        "target_biology": "RBM39 degradation in MSI\u2011high / DDR\u2011deficient tumors",
+        "flawed_enrollment_criteria": "Enrolling all MSI\u2011high tumors without stratifying by specific DDR gene alterations",
+        "missing_biomarker": "DDR mutation status (e.g., BRCA1/2, ATM) as a co\u2011enrollment biomarker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small early\u2011phase cohort may be underpowered to detect differential response",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "ELUCIDATE (Phase 1/2 CDK7 inhibitor)",
+        "target_biology": "CDK7 inhibition in ovarian cancer",
+        "flawed_enrollment_criteria": "Broad advanced solid tumor enrollment with optional ovarian cohort, lacking prospective CDK7\u2011high selection",
+        "missing_biomarker": "Baseline CDK7 expression for patient selection",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential dilution of signal due to mixed tumor types",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Recursion's proprietary phenomap and AI\u2011guided design pipelines",
+        "ip_vulnerability_note": "Speaker disclosed that the platform relies on external data partnerships (Tempus, Amsterdam UMC) and does not claim exclusive chemistry, suggesting potential replicability by competitors with similar data access.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment strategies in early trials may dilute biomarker\u2011driven signal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted rapid AI\u2011driven molecule optimization (136 compounds in 12\u202fmonths) but also admitted that patient selection for CDK7 is still not biomarker\u2011driven, creating a mismatch between claimed precision and current trial design."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized control arm for REC\u20111245 or REC\u2011617",
+        "Limited long\u2011term safety and efficacy data",
+        "Absence of biomarker\u2011stratified efficacy analyses"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "REC\u2011617 lacks a prospective CDK7\u2011high patient selection biomarker; CrisPRO can develop and validate a multimodal CDK7 expression signature.",
+        "transcript_evidence": "Speaker said: \"We are not selecting patients based on CDK7 expression, but it's something we're continuously evaluating.\"",
+        "crispro_angle": "CrisPRO can integrate transcriptomic, proteomic, and imaging data to generate a robust CDK7\u2011high classifier for trial enrichment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Potential compensatory CDK12/13 activity when RBM39 is degraded; CrisPRO can model splice\u2011factor network rewiring to anticipate resistance.",
+        "transcript_evidence": "Speaker said: \"We cannot share data on compensatory mechanisms right now, but we are always mining for them.\"",
+        "crispro_angle": "CrisPRO\u2019s network\u2011level resistance modeling can predict emergent splice\u2011factor dependencies and suggest combination partners.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "DAHLIA trial could benefit from co\u2011enrollment of DDR\u2011mutated biomarkers to sharpen the efficacy signal.",
+        "transcript_evidence": "Speaker said: \"We saw a trend that models with higher genomic instability were more sensitive to REC\u20111245.\"",
+        "crispro_angle": "CrisPRO can simulate enrichment strategies and power calculations for DDR\u2011based sub\u2011cohorts.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Tempus",
+        "context": "Provided thousands of patient datasets for causal inference in CDK7 analysis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Amsterdam UMC registry",
+        "context": "Supplied natural history data for FAP to contextualize REC\u20114881 trial",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal DDR biomarker panel to enrich for REC\u20111245 response?",
+      "Will prospective CDK7 expression selection improve REC\u2011617 efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT??? (DAHLIA)",
+        "NCT??? (ELUCIDATE)"
+      ],
+      "assets_to_track": [
+        "REC-1245",
+        "REC-617",
+        "REC-4881"
+      ],
+      "companies_to_monitor": [
+        "Recursion Pharmaceuticals"
+      ]
+    }
+  },
+  {
+    "talk_id": "ai-in-biomarker-discovery-and-drug-development::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "George Reis-Filho",
+      "institution_or_pharma": "AstraZeneca",
+      "session_title": "ai-in-biomarker-discovery-and-drug-development",
+      "talk_title": "AI Transformation of Pharmaceutical R&D",
+      "rhetorical_signals": [
+        "Speaker said: \"AI is no longer the future, it's our reality.\"",
+        "Speaker said: \"We moved from handcrafted annotations to self\u2011supervision on raw multimodal data.\"",
+        "Speaker said: \"Regulators now focus on extensive validation rather than mandatory explainability.\"",
+        "Speaker said: \"We reduced pathologist annotation time from 40,000 hours to four and a half, even to zero, using foundation models.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AI pathology quantification models",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential over\u2011reliance on model predictions without mechanistic explainability may hinder regulatory acceptance",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that earlier models required 40,000 pathologist hours, implying high resource burden and possible hidden costs.",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "AstraZeneca's proprietary multimodal foundation models",
+        "ip_vulnerability_note": "Speaker emphasized partnerships (Tempus, Pathos, Model AI) rather than in\u2011house model ownership, suggesting potential dependence on external platforms.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad patient\u2011selection models risk diluting signal if not tightly stratified."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker described a highly accurate AI pathology biomarker that received breakthrough device designation, yet simultaneously warned that \u201cblack\u2011box\u201d concerns remain and regulators still demand extensive validation."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited public data on performance of multimodal models across diverse tumor types",
+        "No disclosed prospective clinical trial outcomes linked to the AI biomarkers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "AstraZeneca\u2019s pathology AI models still require large annotation efforts; CrisPRO can provide zero\u2011annotation foundation models to further reduce human effort.",
+        "transcript_evidence": "Speaker said: \"We went from 40,000 hours of pathologist annotation to four and a half, even to zero, using foundation models.\"",
+        "crispro_angle": "CrisPRO\u2019s self\u2011supervised multimodal pipeline can generate high\u2011fidelity tissue embeddings without any manual labeling, offering a competitive advantage.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for parsimonious multimodal biomarker sets to identify the largest responsive patient population.",
+        "transcript_evidence": "Speaker said: \"We are developing the smallest set of parameters that would be required and sufficient for us to identify the largest population that would benefit.\"",
+        "crispro_angle": "CrisPRO can perform feature selection across imaging, omics, and clinical data to define minimal yet predictive biomarker panels.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Tempus",
+        "context": "Partner for multimodal oncology data to pre\u2011train foundation models",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Model AI",
+        "context": "Acquired to benchmark pathology models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How will AstraZeneca integrate time\u2011dimension data into multimodal embeddings at scale?",
+      "What validation thresholds will regulators accept for black\u2011box multimodal models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AstraZeneca AI pathology biomarker platform"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Tempus",
+        "Model AI"
+      ]
+    }
+  }
+]

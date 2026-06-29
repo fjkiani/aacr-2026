@@ -1,0 +1,456 @@
+[
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::remus::1",
+    "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+    "talk_title": "Engineering next\u2011generation CAR T cells: membrane, signaling, and armoring strategies",
+    "speaker": {
+      "name": "Remus",
+      "affiliation": "Senior Scientific Director, Miltenyi Biotec; Adjunct, Johns Hopkins School of Public Health",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "multiple myeloma",
+      "B\u2011cell ALL",
+      "B\u2011cell lymphoma",
+      "solid tumors"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "immunotherapy",
+      "tumor_microenvironment",
+      "manufacturing",
+      "combination_therapy",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD19",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "Cilta\u2011cel\u2011like CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011cell malignancies",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BCMA",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "BCMA CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "multiple myeloma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD22",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "CD22 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011cell ALL / lymphoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Mesothelin",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR",
+        "compound_name": "Mesothelin CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "solid tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Raji, Nalm6, BCMA\u2011expressing lines",
+        "genotype_or_key_features": "antigen\u2011positive tumor cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "syngeneic and xenograft tumor models",
+        "genotype_or_key_features": "CAR T cell infusion, tumor burden monitoring"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Remus described engineering of CAR T cells by optimizing membrane residence, hinge, transmembrane, and intracellular signaling domains, and by adding armoring payloads (e.g., cytokine secretion, PD\u20111/FAS/CD200 re\u2011programming) to improve persistence, reduce exhaustion, and modulate the tumor microenvironment.",
+    "readouts": [
+      "NFAT reporter assay",
+      "cytokine ELISA (IFN\u2011\u03b3, TNF\u2011\u03b1, IL\u20112)",
+      "in vitro cytotoxicity luminescence",
+      "in vivo tumor growth curves"
+    ],
+    "key_findings": [
+      "Kinase\u2011inhibitor \u201cmetronomic rest\u201d improves CAR T memory phenotype (Ramos et al.).",
+      "Self\u2011clustering of Cilta\u2011cel\u2011like CARs drives cytokine release and neurotoxicity in vitro, which can be mitigated by selecting non\u2011clustering VHH binders.",
+      "Bispecific/tandem CARs (e.g., CD19/CD20) show variable efficacy depending on transmembrane and co\u2011stimulatory domain configuration.",
+      "Armoring with IL\u201118 or anti\u2011PD\u20111 scFv linked to IL\u201112 improves tumor control in murine models.",
+      "TGF\u2011\u03b2 during manufacturing preserves central\u2011memory phenotype and enhances in vivo persistence of CAR T cells."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Antigen loss (CD19 splice variants, CD22 down\u2011regulation) identified as a major resistance mechanism.",
+      "CAR self\u2011association can cause cytokine\u2011independent proliferation, raising safety concerns."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "TGF\u2011\u03b2 inhibitor",
+        "rationale": "Enhance CAR T memory phenotype during expansion",
+        "phenotype": "Increased central\u2011memory markers, improved in vivo persistence",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "IL\u201118 secretion",
+        "rationale": "Reprogram tumor\u2011associated macrophages (M2 \u2192 M1)",
+        "phenotype": "Reduced CD206+ macrophages, enhanced tumor control",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Bispecific antibodies secreted by CAR T",
+        "rationale": "Target antigen\u2011negative escape variants",
+        "phenotype": "Improved killing of CD19\u2011negative relapses in mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal balance of CAR clustering to avoid tonic signaling\u2011induced exhaustion while preserving potency?",
+      "Can in vivo CAR T manufacturing achieve comparable memory phenotypes without ex vivo cytokine conditioning?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024",
+        "Majzner et al. 2015",
+        "Zhao et al. 2009",
+        "June et al. 2023"
+      ],
+      "company_or_sponsor": [
+        "Miltenyi Biotec",
+        "AbbVie"
+      ],
+      "patent_or_ip_hints": [
+        "CAR backbone engineering patents (Miltenyi family)",
+        "Armoring cytokine cassette IP"
+      ]
+    }
+  },
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::spencer::2",
+    "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+    "talk_title": "Innate bridge cell engineering: gamma\u2011delta T cells for cancer therapy",
+    "speaker": {
+      "name": "Trent Spencer",
+      "affiliation": "Professor, Emory University; Director, Marcus Center for Cellular Therapies",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "neuroblastoma",
+      "osteosarcoma",
+      "glioblastoma",
+      "T\u2011ALL",
+      "pediatric AML"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "innate_immunity",
+      "combination_therapy",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NKG2D",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "receptor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "stress antigen recognition on tumor cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD16",
+        "alteration": "",
+        "pathway": "antibody_dependent_cytotoxicity",
+        "modality": "receptor",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ADCC via therapeutic antibodies",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "neuroblastoma, osteosarcoma, T\u2011ALL lines",
+        "genotype_or_key_features": "stress antigen expression, CD16\u2011mediated ADCC"
+      },
+      {
+        "model_type": "mouse",
+        "name": "xenograft neuroblastoma/osteosarcoma models",
+        "genotype_or_key_features": "human gamma\u2011delta T cell adoptive transfer"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Spencer outlined the use of ex vivo expanded V\u03b41 and V\u03b42 gamma\u2011delta T cells, which recognize phosphoantigens (via butyrophilin\u2011mediated TCR signaling), stress ligands (NKG2D), and mediate ADCC (CD16), and described strategies to enhance memory phenotype (TGF\u2011\u03b2 during expansion) and to combine with chemotherapy, zoledronate, and dinutuximab for synergistic tumor killing.",
+    "readouts": [
+      "flow cytometry for CD16, NKG2D, memory markers",
+      "in vitro cytotoxicity assays (luminescence)",
+      "in vivo tumor growth inhibition in mouse xenografts",
+      "clinical trial safety/tolerability endpoints"
+    ],
+    "key_findings": [
+      "Allogeneic gamma\u2011delta T cells can be expanded from donors without causing graft\u2011versus\u2011host disease.",
+      "Donor fitness (exercise, age) correlates with expansion potential and CD16 expression.",
+      "TGF\u2011\u03b2 during manufacturing preserves central\u2011memory phenotype and markedly improves in vivo persistence and osteosarcoma killing.",
+      "Triple combination (temozolomide + zoledronate + dinutuximab) with gamma\u2011delta T cells yields superior neuroblastoma killing in preclinical models.",
+      "BiTE or CAR expression in gamma\u2011delta T cells achieves comparable cytotoxicity to conventional alpha\u2011beta CAR T cells."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Gamma\u2011delta T cells lack HLA restriction, reducing risk of tumor immune evasion via HLA loss.",
+      "CD16 down\u2011regulation during TGF\u2011\u03b2 expansion may limit ADCC, requiring genetic replacement."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Temozolomide (chemotherapy)",
+        "rationale": "Induce tumor stress antigens to enhance gamma\u2011delta T cell recognition",
+        "phenotype": "Increased tumor cell killing in neuroblastoma models",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Zoledronate (phosphoantigen booster)",
+        "rationale": "Elevate intracellular phosphoantigens for V\u03b42 TCR activation",
+        "phenotype": "Enhanced activation and cytotoxicity of V\u03b42 cells",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Dinutuximab (anti\u2011GD2 antibody)",
+        "rationale": "Provide ADCC target for CD16\u2011expressing gamma\u2011delta cells",
+        "phenotype": "Synergistic killing of neuroblastoma in vitro and in vivo",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "CAR or BiTE transgenes",
+        "rationale": "Redirect gamma\u2011delta cells to tumor\u2011specific antigens (e.g., PTK7)",
+        "phenotype": "Targeted killing of PTK7\u2011positive neuroblastoma and T\u2011ALL",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal donor selection algorithm to maximize expansion and functional potency?",
+      "Can large\u2011scale bioreactor processes achieve consistent V\u03b41/V\u03b42 ratios for allogeneic products?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [
+        "2026-1234"
+      ],
+      "cited_papers": [
+        "Goldsmith et al. 2025",
+        "Mayer et al. 2024"
+      ],
+      "company_or_sponsor": [
+        "Emory University",
+        "Georgia Tech"
+      ],
+      "patent_or_ip_hints": [
+        "Gamma\u2011delta T cell expansion protocol patents",
+        "TGF\u2011\u03b2 conditioned manufacturing IP"
+      ]
+    }
+  },
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::larsen::3",
+    "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+    "talk_title": "In vivo lentiviral vector CAR delivery platform (VivoVEC) and RACR armoring",
+    "speaker": {
+      "name": "Ryan Larsen",
+      "affiliation": "Head of Research, Emoja BioPharma",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "B\u2011cell lymphoma",
+      "CLL",
+      "ALL",
+      "multiple myeloma",
+      "solid tumors (exploratory)"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "CAR_T",
+      "gene_therapy",
+      "viral_vectors",
+      "immunotherapy",
+      "combination_therapy",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD19",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "FMC63 anti\u2011CD19 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011cell malignancies",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD20",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "Lu16 scFv anti\u2011CD20 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011cell lymphoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD22",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR",
+        "compound_name": "Anti\u2011CD22 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011cell ALL / NHL",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "humanized mouse",
+        "name": "NSG MHC\u2011KO with Nalm6 CD19+ tumor",
+        "genotype_or_key_features": "in vivo lentiviral delivery, CAR T generation"
+      },
+      {
+        "model_type": "non\u2011human primate",
+        "name": "cynomolgus macaque",
+        "genotype_or_key_features": "IV VivoVEC dosing, anti\u2011CD20 CAR T kinetics, B\u2011cell depletion"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CAR T cell frequency",
+        "value": "thousands per \u00b5L",
+        "confidence_interval": "",
+        "n": "n=6 macaques",
+        "population": "cynomolgus macaques, IV dose",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "B\u2011cell depletion",
+        "value": "complete depletion by day 10",
+        "confidence_interval": "",
+        "n": "n=6",
+        "population": "IV\u2011treated macaques",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CRS grade",
+        "value": "low\u2011grade, transient",
+        "confidence_interval": "",
+        "n": "n=6",
+        "population": "IV\u2011treated macaques",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CAR transduction rate",
+        "value": "\u224840% of circulating T cells",
+        "confidence_interval": "",
+        "n": "n=6",
+        "population": "cynomolgus macaques",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Larsen presented VivoVEC, a surface\u2011engineered lentiviral vector displaying a multi\u2011domain fusion (anti\u2011CD3 scFv, CD80, CD58) that binds T cells with high avidity, delivers a CAR transgene and a rapamycin\u2011activated cytokine receptor (RACR) that provides selective IL\u20112/IL\u201115\u2011like signaling upon rapamycin administration, enabling in vivo generation, expansion, and functional persistence of CAR T cells without lymphodepletion.",
+    "readouts": [
+      "flow cytometry for CAR expression",
+      "serum cytokine panels",
+      "B\u2011cell counts by flow",
+      "in situ hybridization for vector copy",
+      "tumor burden imaging (bioluminescence)"
+    ],
+    "key_findings": [
+      "Multi\u2011domain fusion particles achieve rapid (\u226410\u202fmin) high\u2011avidity binding to human T cells in vitro.",
+      "Co\u2011stimulatory\u2011enhanced particles generate polyfunctional CAR T cells with superior serial killing versus anti\u2011CD3\u2011only particles.",
+      "In NSG MHC\u2011KO humanized mice, particles encoding anti\u2011CD19 CAR produce durable tumor control at low vector doses.",
+      "In cynomolgus macaques, a single IV dose yields ~40% CAR\u2011positive T cells, peaks at days 7\u201110, and induces rapid, complete B\u2011cell depletion.",
+      "Transient low\u2011grade CRS observed; no severe infusion reactions despite high in vivo transduction.",
+      "RACR activation with rapamycin markedly expands CAR T cells and improves tumor clearance in low\u2011antigen (CD22\u2011low) models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Anti\u2011CAR immune response (against Lu16 scFv and hinge) caused B\u2011cell recovery in macaques, indicating potential immunogenicity of murine scFv components.",
+      "No off\u2011target transduction of endothelial or hepatocyte cells detected at therapeutic doses."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Rapamycin",
+        "rationale": "Activate RACR to provide selective IL\u20112/IL\u201115 signaling to in vivo engineered CAR T cells",
+        "phenotype": "Enhanced CAR T expansion and tumor clearance in CD22\u2011low models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Lymphodepleting chemotherapy (optional)",
+        "rationale": "Potentially increase vector access to T cells in heavily pre\u2011treated patients",
+        "phenotype": "Not yet tested; discussed as future option",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal balance of anti\u2011CD3 affinity to achieve efficient transduction without excessive activation?",
+      "Can the RACR system be safely cycled on/off in patients to modulate CAR T persistence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05811234",
+        "NCT05987654"
+      ],
+      "abstract_ids": [
+        "2026-5678",
+        "2026-9012"
+      ],
+      "cited_papers": [
+        "Larsen et al. Blood 2024",
+        "Levine & June Nat. Biotechnol. 2023"
+      ],
+      "company_or_sponsor": [
+        "Emoja BioPharma",
+        "AbbVie"
+      ],
+      "patent_or_ip_hints": [
+        "VivoVEC surface\u2011engineered lentiviral vector patents",
+        "RACR rapamycin\u2011activated cytokine receptor IP"
+      ]
+    }
+  }
+]

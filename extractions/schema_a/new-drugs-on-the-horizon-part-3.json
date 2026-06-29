@@ -1,0 +1,504 @@
+[
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::evangelista::1",
+    "session_title": "new-drugs-on-the-horizon-part-3",
+    "talk_title": "First-in-class oral macrocycle Cyclin AB RXL inhibitor CID-078",
+    "speaker": {
+      "name": "Marie Evangelista",
+      "affiliation": "Circle Pharma, Head of Research",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "solid tumors"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Cyclin A",
+        "alteration": null,
+        "pathway": "cell_cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CID-078",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "E2F high or RB-deficient tumors",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "Cyclin B",
+        "alteration": null,
+        "pathway": "cell_cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CID-078",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "E2F high or RB-deficient tumors",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "RB loss (biallelic)",
+        "type": "predictive",
+        "assay": "genomic sequencing / IHC",
+        "finding": "RB loss correlates with increased sensitivity to CID-078 in cell line screens"
+      },
+      {
+        "name": "E2F target gene expression",
+        "type": "predictive",
+        "assay": "RNA-seq gene set enrichment",
+        "finding": "High E2F signature predicts sensitivity to CID-078"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "multiple cancer cell lines",
+        "genotype_or_key_features": "E2F high, RB1 altered"
+      },
+      {
+        "model_type": "PDX",
+        "name": "various solid tumor PDXs",
+        "genotype_or_key_features": "RB loss or high E2F"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Phase I safety",
+        "value": "ongoing",
+        "confidence_interval": null,
+        "n": "n=unknown",
+        "population": "solid tumor patients with RB loss or E2F high",
+        "comparator": null,
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "CID-078 is an oral macrocyclic inhibitor that binds the hydrophobic RXL pocket of cyclin A and cyclin B, preventing their interaction with E2F and Mit1, respectively. This sustains E2F activity and forces cyclin B\u2011Cdk complexes into premature mitosis, causing replication stress, mitotic catastrophe and apoptosis preferentially in RB\u2011deficient or E2F\u2011high tumor cells.",
+    "readouts": [
+      "cell viability assays",
+      "RNA\u2011seq",
+      "GSEA",
+      "in vivo tumor regression in PDX models"
+    ],
+    "key_findings": [
+      "CID-078 achieves sub\u2011nanomolar potency against cyclin A/B in biochemical assays.",
+      "Oral bioavailability improved from 2% to 25% in preclinical species.",
+      "RB loss or biallelic RB1 inactivation correlates with >2\u2011fold increased sensitivity in cell line screens.",
+      "E2F\u2011high transcriptional signature predicts sensitivity across a broad panel of cancer cell lines.",
+      "In vivo, CID-078 induces tumor regression in RB\u2011deficient PDX models, with responses correlating with E2F expression."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity for cyclin A/B over cyclin E is driven by subtle differences in the hydrophobic pocket residues.",
+      "Some RB\u2011wildtype tumors still respond, indicating additional unknown drivers of E2F activation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CDK4/6 inhibitors",
+        "rationale": "CID-078 acts downstream of CDK4/6 and may overcome resistance due to RB loss.",
+        "phenotype": "expected synergistic tumor regression in CDK4/6\u2011resistant models",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What additional molecular determinants beyond RB loss drive sensitivity to CID-078?",
+      "Can biomarkers of E2F activity be standardized for patient selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Kaelin 1999"
+      ],
+      "company_or_sponsor": [
+        "Circle Pharma"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::pass::2",
+    "session_title": "new-drugs-on-the-horizon-part-3",
+    "talk_title": "Oral BRD9 degrader AMX883 for AML",
+    "speaker": {
+      "name": "Martin Pass",
+      "affiliation": "Enfysta Therapeutics, Chief Development Officer",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "PROTAC_degrader",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational",
+      "epigenetics"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRD9",
+        "alteration": null,
+        "pathway": "chromatin_remodeling",
+        "modality": "PROTAC",
+        "compound_name": "AMX883",
+        "compound_id": null,
+        "ligase_or_cofactor": "DCAF16",
+        "dependency_context": "AML blasts with high BRD9 expression",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BRD9 protein level",
+        "type": "pharmacodynamic",
+        "assay": "proteomics",
+        "finding": "AMX883 induces rapid degradation of BRD9 in AML cell lines"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MV411",
+        "genotype_or_key_features": "AML, BRD9 dependent"
+      },
+      {
+        "model_type": "PDX",
+        "name": "Dana-Farber AML PDX",
+        "genotype_or_key_features": "patient-derived AML, various mutations"
+      },
+      {
+        "model_type": "PDX",
+        "name": "second AML PDX",
+        "genotype_or_key_features": "different karyotype, AML"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor burden suppression",
+        "value": "complete suppression at 50 mg BID",
+        "confidence_interval": null,
+        "n": "n=5 per group",
+        "population": "AML PDX model",
+        "comparator": "venetoclax or vehicle",
+        "maturity": "interim"
+      },
+      {
+        "metric": "overall survival",
+        "value": "significant survival advantage",
+        "confidence_interval": null,
+        "n": "n=5 per group",
+        "population": "AML PDX model",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "AMX883 is an oral, covalent reversible PROTAC that binds BRD9 and recruits the E3 ligase DCAF16 via a cyanoacrylamide warhead, forming a ternary complex that leads to ubiquitination and proteasomal degradation of BRD9, thereby releasing the differentiation block in AML blasts and inducing myeloid differentiation and apoptosis.",
+    "readouts": [
+      "DC50/DC90 degradation assays",
+      "proteomics",
+      "ATAC\u2011seq",
+      "RNA\u2011seq",
+      "flow cytometry for CD11B/CD86",
+      "in vivo tumor growth curves"
+    ],
+    "key_findings": [
+      "AMX883 degrades BRD9 with DC90 of 0.3 nM and high selectivity over other bromodomain proteins.",
+      "BRD9 degradation induces myeloid differentiation markers (CD11B, CD86) in AML cell lines.",
+      "In MV411 xenografts, AMX883 achieves sustained BRD9 degradation beyond plasma PK.",
+      "In two AML PDX models, AMX883 monotherapy leads to complete tumor regression and significant survival benefit versus venetoclax or vehicle.",
+      "Combination of AMX883 with venetoclax prevents emergence of venetoclax resistance and shows synergistic tumor control in vivo."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "BRD9 is the sole degraded protein; no off\u2011target degradation observed.",
+      "Resistance to venetoclax (MCL1 up\u2011regulation) is not observed when combined with AMX883."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Venetoclax",
+        "rationale": "BRD9 degradation may prevent venetoclax resistance mechanisms (MCL1 up\u2011regulation).",
+        "phenotype": "synergistic tumor regression and prevention of resistance in MV411 model",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Will BRD9 degradation affect normal hematopoiesis in patients?",
+      "What is the safety margin for BRD9 inhibition in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Enfysta Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::vijayaraghavan::3",
+    "session_title": "new-drugs-on-the-horizon-part-3",
+    "talk_title": "ENPP3\u2011targeted ADC JNJ\u20112175 for solid tumors",
+    "speaker": {
+      "name": "Smruthi Vijayaraghavan",
+      "affiliation": "Johnson & Johnson, Director and Head of Solid Tumor Oncology Discovery",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "renal cell carcinoma",
+      "non-small cell lung cancer",
+      "colorectal cancer",
+      "endometrial cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "ADC",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational",
+      "biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ENPP3",
+        "alteration": null,
+        "pathway": "cell_surface_antigen",
+        "modality": "ADC",
+        "compound_name": "JNJ\u20112175",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "ENPP3\u2011positive solid tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ENPP3 IHC positivity",
+        "type": "eligibility",
+        "assay": "immunohistochemistry",
+        "finding": "93% of clear cell RCC, 78% papillary RCC, ~45\u201150% of CRC, LUAD, endometrial cancers are ENPP3 positive"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "ENPP3\u2011positive and knockout lines",
+        "genotype_or_key_features": "varying ENPP3 expression"
+      },
+      {
+        "model_type": "PDX",
+        "name": "NSCLC and RCC patient\u2011derived xenografts",
+        "genotype_or_key_features": "ENPP3 expression levels documented"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "dose\u2011dependent tumor regression",
+        "value": "complete regressions observed",
+        "confidence_interval": null,
+        "n": "n=5 per cohort",
+        "population": "ENPP3\u2011positive NSCLC and RCC PDX models",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "JNJ\u20112175 is a site\u2011specifically conjugated ADC comprising a high\u2011affinity ENPP3 antibody linked via a branched linker to the AFHPA auristatin\u2011derived payload; upon internalization in ENPP3\u2011positive tumor cells, the payload is metabolized to a non\u2011bystander auristatin, delivering potent microtubule inhibition while controlled bystander activity is achieved through the initial cell\u2011permeable intermediate.",
+    "readouts": [
+      "binding flow cytometry",
+      "confocal internalization imaging",
+      "in vitro cytotoxicity assays",
+      "co\u2011culture bystander killing assays",
+      "in vivo tumor growth inhibition in PDX models"
+    ],
+    "key_findings": [
+      "JNJ\u20112175 binds dose\u2011dependently to ENPP3\u2011positive cells with no off\u2011target binding to ENPP1/2.",
+      "Rapid internalization observed in ENPP3\u2011positive cell lines.",
+      "Potent cytotoxicity against ENPP3\u2011positive lines; no activity in ENPP3\u2011negative or knockout cells.",
+      "Co\u2011culture assays demonstrate bystander killing of ENPP3\u2011negative cells only when mixed with ENPP3\u2011positive cells.",
+      "In three ENPP3\u2011positive PDX models (NSCLC, RCC), JNJ\u20112175 produces dose\u2011dependent tumor regressions with complete responses."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity confirmed by lack of binding to ENPP1/2 and ENPP3\u2011negative cells.",
+      "No observed toxicity in non\u2011human primate IND\u2011enabling studies."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will the controlled bystander effect translate to improved efficacy in heterogeneous tumors?",
+      "What is the therapeutic window for ENPP3\u2011positive normal tissues with apical restriction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Johnson & Johnson",
+        "Mersana Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::pleiss::4",
+    "session_title": "new-drugs-on-the-horizon-part-3",
+    "talk_title": "Dual Vbeta6/Vbeta10 T\u2011cell agonist IPN\u20111203",
+    "speaker": {
+      "name": "Stefan Pleiss",
+      "affiliation": "Ipsen Biopharmaceuticals, Senior Director and Head of Translational Science Leads in Oncology",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "solid tumors"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TCR Vbeta6",
+        "alteration": null,
+        "pathway": "immune_activation",
+        "modality": "bispecific",
+        "compound_name": "IPN-1203",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Vbeta6/Vbeta10 expressing T cells (~11% of TILs)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TCR Vbeta10",
+        "alteration": null,
+        "pathway": "immune_activation",
+        "modality": "bispecific",
+        "compound_name": "IPN-1203",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Vbeta6/Vbeta10 expressing T cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "IL-15 receptor",
+        "alteration": null,
+        "pathway": "cytokine_signaling",
+        "modality": "cytokine_fusion",
+        "compound_name": "IPN-1203",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "T cells for co\u2011stimulation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Vbeta6+ T cell frequency",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "19\u2011fold expansion at 0.25 mg/kg in monkeys"
+      },
+      {
+        "name": "CD8 central memory phenotype (CD27+CD45RA\u2011CCR7+)",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry",
+        "finding": "Preferential expansion of central memory\u2011like CD8 T cells"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "in_vitro",
+        "name": "human PBMC cultures",
+        "genotype_or_key_features": "Vbeta6/Vbeta10 ~6% of T cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "surrogate Vbeta13/IL\u201115R bispecific",
+        "genotype_or_key_features": "CD26 tumor model"
+      },
+      {
+        "model_type": "mouse",
+        "name": "B16F10 melanoma model",
+        "genotype_or_key_features": "syngeneic melanoma"
+      },
+      {
+        "model_type": "non_human_primate",
+        "name": "cynomolgus monkey",
+        "genotype_or_key_features": "Vbeta6+ T cell subset"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Vbeta6+ T cell expansion",
+        "value": "19\u2011fold increase",
+        "confidence_interval": null,
+        "n": "n=3 monkeys",
+        "population": "cynomolgus monkeys",
+        "comparator": "RSV\u2011IL15 control",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "IPN\u20111203 is a trispecific bispecific construct that simultaneously binds Vbeta6 and Vbeta10 TCR domains on a subset of T cells and delivers a wild\u2011type IL\u201115/IL\u201115R\u03b1 fusion, providing potent, selective activation and proliferation of these T cells with enhanced STAT5 signaling, leading to central\u2011memory differentiation, reduced exhaustion, and durable antitumor immunity.",
+    "readouts": [
+      "flow cytometry binding",
+      "STAT5 phosphorylation",
+      "CD25 upregulation",
+      "TCR\u2011seq repertoire analysis",
+      "cell proliferation (CellTrace)",
+      "single\u2011cell RNA\u2011seq of tumor infiltrates",
+      "in vivo tumor growth inhibition"
+    ],
+    "key_findings": [
+      "IPN\u20111203 binds selectively to ~6% of peripheral T cells (Vbeta6/Vbeta10) with high affinity (1.9 nM).",
+      "Rapid STAT5 activation via IL\u201115 component without direct TCR phosphorylation.",
+      "Five\u2011day PBMC cultures show >50\u2011fold expansion of Vbeta\u2011positive T cells (EC50 ~50 pM).",
+      "In mouse surrogate model, IPN\u20111203 induces complete tumor regressions dependent on CD8 and Vbeta13 T cells.",
+      "Single\u2011cell RNA\u2011seq reveals >5\u2011fold increase in central memory CD8 T cells and >50% reduction in exhausted T cells.",
+      "In cynomolgus monkeys, a single 0.25 mg/kg dose yields a 19\u2011fold expansion of Vbeta6+ T cells with minimal cytokine release."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity limited to Vbeta6/Vbeta10 subsets avoids broad T\u2011cell activation and cytokine release.",
+      "No NK cell expansion observed despite IL\u201115 component, indicating T\u2011cell\u2011biased activation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Standard AML or solid tumor therapies",
+        "rationale": "Selective T\u2011cell activation may synergize with checkpoint blockade or chemotherapy.",
+        "phenotype": "proposed enhanced antitumor immunity",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Will selective Vbeta activation be sufficient in tumors with low Vbeta6/Vbeta10 infiltration?",
+      "Long\u2011term safety of chronic IL\u201115 signaling in humans remains to be defined."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Merango STAR platform 2023"
+      ],
+      "company_or_sponsor": [
+        "Ipsen Biopharmaceuticals",
+        "Marengo Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

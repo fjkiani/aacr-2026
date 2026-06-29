@@ -1,0 +1,128 @@
+[
+  {
+    "talk_id": "3d-tissue-imaging-and-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Unknown (Highplex 3D Microscopy Presenter)",
+      "institution_or_pharma": "Unspecified Academic Institution",
+      "session_title": "3d-tissue-imaging-and-cancer",
+      "talk_title": "Highplex 3D Microscopy and Spatial Profiling Applications",
+      "rhetorical_signals": [
+        "Speaker said: \"If you go to around 35 to 40 microns, about 70% of cells in a typical epithelial cancer will now be intact.\"",
+        "Speaker said: \"We get a very high rate of misidentification of critical immune cell lineages when chopping a cell into many slices.\"",
+        "Speaker said: \"We don't typically know what the antigen is, and it may in fact be quite diverse.\"",
+        "Speaker said: \"There is a big value in embedding even high plex molecular in traditional histopathology images.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No quantitative comparison to standard 2D clinical assays",
+        "No validation of functional synapse identification against orthogonal methods"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Speaker highlighted that 5\u2011\u00b5m sections miss >70% of intact cells and lead to misidentification of immune lineages, indicating a need for better biomarker capture in routine pathology.",
+        "transcript_evidence": "Speaker said: \"If you go to around 35 to 40 microns, about 70% of cells in a typical epithelial cancer will now be intact. And if you chop a cell into many slices, you're going to miss the vast majority of the LAG\u20113, for example.\"",
+        "crispro_angle": "CrisPRO can model the impact of section thickness on biomarker detection and propose optimal thickness or computational deconvolution to recover lost signals.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "The need to integrate 3D morphological data with functional readouts (e.g., granzyme B orientation) creates an opening for CrisPRO's multi\u2011modal computational spine to fuse imaging and proteomic data.",
+        "transcript_evidence": "Speaker said: \"We can determine whether they have cytolytic granules in the right place... we believe that we are capturing a functional immune synapse.\"",
+        "crispro_angle": "CrisPRO can align 3D spatial coordinates with multiplexed protein quantification to generate predictive models of cytotoxic activity.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How reliably can 3D thick\u2011section imaging distinguish functional immune synapses versus mere proximity?",
+      "What is the optimal trade\u2011off between tissue thickness and antibody penetration for clinical workflows?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "3d-tissue-imaging-and-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Ashley Keman",
+      "institution_or_pharma": "Johns Hopkins University",
+      "session_title": "3d-tissue-imaging-and-cancer",
+      "talk_title": "AI Approaches to 3D Imaging",
+      "rhetorical_signals": [
+        "Speaker said: \"AI has changed the game, the fact that a lot of these imaging methods date back as long ago as the 1850s, and why, in my opinion, it's AI and quantitative imaging that has made this the booming field that it is today.\"",
+        "Speaker said: \"We can take a block of human tissue, section it all the way down the block and label it with AI, but we wouldn't have been able to quantify it until the 2020s.\"",
+        "Speaker said: \"The biggest downside is that 3D imaging is tedious and expensive, so it's infeasible to think of studies on the scale of thousands of tissues.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "Lack of large\u2011scale, publicly available 3D imaging datasets for model training",
+        "Limited quantitative benchmarks comparing AI\u2011derived metrics to pathologist ground truth"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Speaker noted that current 3D imaging studies are limited by cost and scale, suggesting an opportunity for CrisPRO to provide computationally efficient synthetic 3D reconstructions that reduce experimental burden.",
+        "transcript_evidence": "Speaker said: \"The biggest downside is that 3D imaging is tedious and expensive, so it's infeasible to think of studies on the scale of thousands of tissues.\"",
+        "crispro_angle": "CrisPRO can generate high\u2011fidelity synthetic 3D volumes from sparse 2D sections, enabling larger cohort analyses without full 3D acquisition.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "The presentation highlighted foundation models and synthetic staining as emerging tools; CrisPRO can integrate these with its spine to deliver end\u2011to\u2011end pipelines for multimodal tissue atlasing.",
+        "transcript_evidence": "Speaker said: \"We use pathology foundation models... we can take H&E and make it into synthetic multiplex IHC using a diffusion model.\"",
+        "crispro_angle": "CrisPRO\u2019s modular architecture can incorporate foundation model embeddings and synthetic staining generators to streamline multimodal analysis.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Meta Segment Anything Model",
+        "context": "Mentioned as a backbone for segmentation across scales",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Open\u2011top light\u2011sheet imaging",
+        "context": "Cited as a method for whole\u2011piece imaging of needle biopsies",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How can AI models be validated across diverse tissue types and imaging platforms?",
+      "What standards are needed for sharing large 3D imaging datasets to accelerate foundation model development?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Open\u2011top light\u2011sheet imaging platforms",
+        "Pathology foundation model releases"
+      ],
+      "companies_to_monitor": [
+        "Meta (Segment Anything)",
+        "NVIDIA (GPU acceleration for AI in pathology)"
+      ]
+    }
+  }
+]

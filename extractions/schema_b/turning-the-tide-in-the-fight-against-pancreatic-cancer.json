@@ -1,0 +1,301 @@
+[
+  {
+    "talk_id": "turning-the-tide-in-the-fight-against-pancreatic-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Shubham Pant",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "turning-the-tide-in-the-fight-against-pancreatic-cancer",
+      "talk_title": "Recent advances in treatment of pancreas cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"When you look at chemotherapy in the second-line setting, the response rate is 10 to 15%... we almost doubled the response rate with adagrasib\"",
+        "Speaker said: \"A hazard ratio of 0.4, we have not seen these numbers in pancreatic cancer before\"",
+        "Speaker said: \"I was honestly a little bit tense over the last year... because I participated in the Napoli 1 trial, which led to the approval of 5-FU liposome, Irinotecan, and just negative trial after negative trial\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C inhibitors (adagrasib, sotorasib)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Only ~1.5% of pancreatic cancer patients harbor KRAS G12C mutations, limiting population benefit",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted a response rate of ~33% in KRAS G12C basket trial but emphasized it applies to a very small patient subset",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "RESOLUTE-302",
+        "target_biology": "KRAS G12C inhibition in pancreatic cancer",
+        "flawed_enrollment_criteria": "Enrolling all pancreatic cancer patients without KRAS G12C biomarker pre\u2011screening (basket design)",
+        "missing_biomarker": "KRAS G12C mutation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for the small KRAS G12C subset",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "KRAS G12C covalent inhibitors",
+        "ip_vulnerability_note": "Speaker highlighted that the pocket discovered in 2013 is specific to G12C and does not address the more prevalent KRAS G12D/V/R mutations",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a pan\u2011KRAS approach without robust biomarker\u2011selected enrollment dilutes signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed a 33% response rate for KRAS G12C inhibitors (a clear improvement over chemotherapy) but concluded that KRAS remains an \u201cundruggable target\u201d for the majority of patients"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited biomarker\u2011stratified analysis beyond KRAS G12C"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for robust KRAS mutation screening to match patients with appropriate KRAS inhibitors (G12C, G12D, G12V, G12R)",
+        "transcript_evidence": "Speaker noted that KRAS G12C occurs in only ~1.5% of patients and that basket trials enroll many KRAS\u2011wild\u2011type patients",
+        "crispro_angle": "CrisPRO can integrate NGS data to predict KRAS allele\u2011specific response and prioritize patients for pan\u2011KRAS or allele\u2011specific agents",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic partners (e.g., immunotherapy, chemotherapy) for KRAS inhibitors to improve durability",
+        "transcript_evidence": "Speaker mentioned ongoing combinations of duraxon rasib with gem/nab\u2011paclitaxel and noted durability concerns",
+        "crispro_angle": "CrisPRO can model pathway interactions to suggest rational combination regimens and predict resistance mechanisms",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen sotorasib",
+        "context": "Mentioned as an NCCN\u2011guideline KRAS G12C inhibitor alongside adagrasib",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Revolution Medicine (deraxone rasip)",
+        "context": "Presented phase\u2011I data with 36% response rate and 8.8\u202fmo PFS",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the mechanisms of acquired resistance to KRAS G12D/V/R inhibitors in pancreatic cancer?",
+      "Can short\u2011burst KRAS inhibition provide long\u2011term disease control without continuous dosing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04585035"
+      ],
+      "assets_to_track": [
+        "adagrasib",
+        "sotorasib",
+        "deraxone rasip",
+        "zoldonrasib",
+        "setigrasib"
+      ],
+      "companies_to_monitor": [
+        "Mirati Therapeutics",
+        "Amgen",
+        "Revolution Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "turning-the-tide-in-the-fight-against-pancreatic-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Wilfried Pastor",
+      "institution_or_pharma": "Dana\u2011Faber Cancer Institute",
+      "session_title": "turning-the-tide-in-the-fight-against-pancreatic-cancer",
+      "talk_title": "Cryptic antigens in pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"About a third of the detected non\u2011canonical peptides showed zero evidence of translation in any healthy tissue\"",
+        "Speaker said: \"Cancer\u2011restricted cryptic antigens were highly enriched for immunogenicity, with about a quarter positive in ex\u2011vivo T\u2011cell assays\"",
+        "Speaker said: \"Targeting multiple distinct cryptic antigens nearly eradicated patient\u2011derived organoids in long\u2011term assays\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Single\u2011antigen cryptic TCR therapies",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "Antigen heterogeneity within tumors limits efficacy of monotherapy TCR cells",
+        "unexplained_resistance_quote": "Speaker noted that TCR001 delayed tumor progression but did not completely eradicate tumors",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cryptic antigen\u2011specific TCR platform",
+        "ip_vulnerability_note": "Speaker demonstrated that many cryptic peptides are shared across patients, suggesting off\u2011the\u2011shelf potential but also risk of cross\u2011reactivity with rare normal tissue expression",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single cryptic antigen may dilute clinical signal due to intra\u2011tumoral heterogeneity"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that cancer\u2011restricted cryptic peptides are presented on HLA\u2011I and immunogenic, yet concluded that they are still \u201cjust a step back\u201d compared to classic mutation\u2011derived neoantigens for therapeutic development"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human clinical data on cryptic\u2011antigen TCR therapies",
+        "Limited assessment of off\u2011target toxicity in normal tissues"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Leverage CrisPRO to prioritize combinations of multiple cryptic antigens to overcome heterogeneity",
+        "transcript_evidence": "Speaker reported that targeting two cryptic antigens nearly eradicated organoids",
+        "crispro_angle": "CrisPRO can model antigen co\u2011expression networks and suggest optimal multi\u2011antigen TCR cocktails",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate computational advantage of CrisPRO over standard neoantigen pipelines by including dark\u2011proteome peptides",
+        "transcript_evidence": "Speaker highlighted that mutation\u2011derived neoepitopes were few compared to abundant non\u2011canonical peptides",
+        "crispro_angle": "CrisPRO integrates proteogenomic data to capture both canonical and cryptic antigens for vaccine design",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Broad Institute proteomics platform",
+        "context": "Performed the immunopeptidomics mass\u2011spec workflow",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Tyler Jacks lab (MIT)",
+        "context": "Collaborated on organoid models and ribosome profiling",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the precise ribosomal or translational machinery alteration that drives non\u2011canonical ORF translation in pancreatic cancer?",
+      "Can cryptic antigen\u2011specific TCRs achieve durable tumor eradication in vivo when combined with checkpoint blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "cryptic antigen TCR programs",
+        "Dana\u2011Faber adoptive cell therapy pipelines"
+      ],
+      "companies_to_monitor": [
+        "Bluebird Bio",
+        "Adaptimmune"
+      ]
+    }
+  },
+  {
+    "talk_id": "turning-the-tide-in-the-fight-against-pancreatic-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dani Engel",
+      "institution_or_pharma": "Salk Institute",
+      "session_title": "turning-the-tide-in-the-fight-against-pancreatic-cancer",
+      "talk_title": "CA19\u20119 biology and therapeutic interception",
+      "rhetorical_signals": [
+        "Speaker said: \"When we turn on CA19\u20119 in the whole mouse, we only see signs of inflammation in the pancreas\"",
+        "Speaker said: \"Three days of CA19\u20119 is sufficient to dramatically expand the fibroblast population and ramp up proliferation\"",
+        "Speaker said: \"Blocking CA19\u20119 with antibody 5B1 normalizes histologic architecture and reduces both collagen deposition and Treg infiltration\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CA19\u20119 blocking antibody (5B1)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High circulating CA19\u20119 levels act as a sink, reducing antibody availability at tumor sites",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that patients with the highest CA19\u20119 levels had increased clearance of the antibody",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CA19\u20119 antibody monotherapy trial (sponsor discontinued)",
+        "target_biology": "Neutralization of CA19\u20119 glycan to remodel TME",
+        "flawed_enrollment_criteria": "Did not stratify patients by baseline CA19\u20119 serum concentration, leading to variable drug exposure",
+        "missing_biomarker": "Baseline CA19\u20119 titer to adjust dosing",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underestimation of efficacy due to high\u2011CA19\u20119 patients diluting overall response",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CA19\u20119 glycan\u2011targeting antibodies",
+        "ip_vulnerability_note": "Speaker disclosed that the antibody binds a widely expressed glycan on many proteins, leading to off\u2011target sink effects",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of patient selection based on CA19\u20119 burden limits therapeutic window"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that CA19\u20119 drives immunosuppressive fibroblast and Treg expansion, yet concluded that CA19\u20119 is merely a biomarker without functional relevance in early disease"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical efficacy data for CA19\u20119 blockade in combination with checkpoint inhibitors",
+        "Mechanistic link between CA19\u20119\u2011modified fibulin\u20113 and EGFR signaling not validated in human tumors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the CA19\u20119\u2011fibulin\u20113\u2011EGFR axis to overcome TME\u2011mediated resistance to KRAS inhibitors",
+        "transcript_evidence": "Speaker showed that CA19\u20119 modification of fibulin\u20113 enhances EGFR activation and drives IL\u20111\u03b1/TGF\u2011\u03b2 production",
+        "crispro_angle": "CrisPRO can model glyco\u2011protein interaction networks to predict combinatorial targets that disrupt this axis",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a quantitative CA19\u20119 serum threshold to select patients for antibody or combination therapy",
+        "transcript_evidence": "Speaker noted that high CA19\u20119 levels caused rapid antibody clearance and reduced efficacy",
+        "crispro_angle": "CrisPRO can integrate pharmacokinetic modeling with serum biomarker levels to optimize dosing strategies",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "BioNTech (acquired 5B1 antibody from Madvax)",
+        "context": "Developed the CA19\u20119 blocking antibody used in the discontinued trial",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Madvax",
+        "context": "Original developer of the 5B1 CA19\u20119 antibody",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Which CA19\u20119\u2011modified proteins besides fibulin\u20113 are critical for TME remodeling?",
+      "Can short\u2011term CA19\u20119 blockade synergize with KRAS inhibitors to improve early\u2011stage outcomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04585035"
+      ],
+      "assets_to_track": [
+        "5B1 CA19\u20119 antibody",
+        "fibulin\u20113 EGFR interaction inhibitors"
+      ],
+      "companies_to_monitor": [
+        "BioNTech",
+        "Madvax"
+      ]
+    }
+  }
+]

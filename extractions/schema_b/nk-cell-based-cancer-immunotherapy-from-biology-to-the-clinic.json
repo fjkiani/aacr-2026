@@ -1,0 +1,291 @@
+[
+  {
+    "talk_id": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Eric (Innate Pharma)",
+      "institution_or_pharma": "Innate Pharma",
+      "session_title": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic",
+      "talk_title": "NK cell heterogeneity, monalizumab, and NK cell engagers",
+      "rhetorical_signals": [
+        "Speaker said: \"we have a very huge increase in the PFS after 12 months, as you can appreciate, from 30-ish percent to more than 90% in terms of PFS\"",
+        "Speaker said: \"we had quite interesting complete remission in patients with relapse or refractory AML, leading to fast track designation by FDA\"",
+        "Speaker said: \"we are building a new city, literally a new city dedicated to cancer, around Gustave Roussy\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "COAST phase 2",
+        "target_biology": "PD-L1 blockade combined with NKG2A blockade in NSCLC",
+        "flawed_enrollment_criteria": "Enrolled all-comers with PD-L1 \u22651% without stratifying by NK3 infiltration levels",
+        "missing_biomarker": "NK3 tumor-associated NK cell frequency",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Phase 2 single-arm design limits attribution of PFS benefit to combination",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tri-specific NK cell engagers anchored on NKp46 and CD16",
+        "ip_vulnerability_note": "Speaker disclosed that the scaffold uses three antibody fragments, suggesting modularity but also potential for competitors to replicate the design",
+        "scale_or_manufacturing_bottleneck": "High cell dose required in preclinical models (10 million NK cells per mouse) raises scalability concerns",
+        "clinical_strategy_weakness": "Broad indication strategy (AML, MM, solid tumors) may dilute focus and signal in early trials"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that NK3 tumor\u2011associated cells express CD39 and NKG2A (suggesting an exhausted phenotype) yet concluded that anti\u2011NKG2A monalizumab alone yields a dramatic PFS increase, ignoring the exhausted state"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented for COAST/PACIFIC 9",
+        "Lack of biomarker\u2011stratified analysis for NK3 infiltration",
+        "No randomized comparator arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "NK3 tumor\u2011associated NK cell frequency predicts better prognosis in NSCLC but is not used to stratify patients in the COAST trial",
+        "transcript_evidence": "Speaker said: \"we could correlate the presence of large subset of tumor associated NK3s with better prognosis for the patient\"",
+        "crispro_angle": "CrisPRO could develop a predictive NK3 signature to enrich future trials for patients most likely to benefit from NKG2A blockade",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Tri\u2011specific NK cell engagers show preclinical potency; combining them with CrisPRO\u2011identified synergistic cytokine signatures could enhance efficacy",
+        "transcript_evidence": "Speaker said: \"we incorporated a variant of IL\u20112 ... and later interferon\u2011alpha into the scaffold, which improved tumor control\"",
+        "crispro_angle": "Use CrisPRO computational modeling to predict optimal cytokine\u2011engager combos and prioritize engineering efforts",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AstraZeneca",
+        "context": "collaboration on NKG2A + PD\u2011L1 blockade (COAST trial)",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sanofi",
+        "context": "co-development of NK cell engagers targeting CD123 and BCMA",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the durability of the PFS benefit observed with anti\u2011NKG2A in the phase 3 PACIFIC 9 trial?",
+      "Can NK3 frequency be prospectively used to select patients for NKG2A blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04513841",
+        "NCT04644268"
+      ],
+      "assets_to_track": [
+        "Monalizumab",
+        "NKp46\u2011based tri\u2011specific engagers"
+      ],
+      "companies_to_monitor": [
+        "Innate Pharma",
+        "AstraZeneca",
+        "Sanofi"
+      ]
+    }
+  },
+  {
+    "talk_id": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Rizwan (Dana\u2011Farber Cancer Institute)",
+      "institution_or_pharma": "Dana\u2011Farber Cancer Institute / Harvard Medical School",
+      "session_title": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic",
+      "talk_title": "Memory\u2011like NK cells, CAR\u2011NK, cytokine\u2011engineered bacteria and synthetic promoters",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw several patients cleared their disease, which is pretty remarkable for this patient cohort\"",
+        "Speaker said: \"the IL\u201112 CAR with TGF\u2011beta sensor and IL\u201118 achieved near\u2011complete cures in mouse models\"",
+        "Speaker said: \"engineered bacteria preferentially colonize tumor and can deliver IL\u201112 and adenosine deaminase\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IL\u201112\u2011secreting CAR\u2011NK cells without TGF\u2011beta sensor",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of dynamic TME\u2011responsive control leads to limited tumor infiltration",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Baboon serotype lentiviral vector for memory\u2011like NK transduction",
+        "ip_vulnerability_note": "Speaker highlighted reliance on AACT1/2 receptor expression; alternative pseudotypes could bypass this advantage",
+        "scale_or_manufacturing_bottleneck": "Lentiviral production at scale for NK cells remains a bottleneck",
+        "clinical_strategy_weakness": "Heavy dependence on a single vector platform limits flexibility for future engineering"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that engineered bacteria dramatically increase NK cell activation yet concluded that the approach alone will likely cure solid tumors, overlooking the complex immunosuppressive TME"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human safety or efficacy data for cytokine\u2011engineered bacteria",
+        "Lack of long\u2011term persistence data for CAR\u2011NK with synthetic promoters"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "TGF\u2011beta\u2011responsive synthetic promoter can be optimized with CrisPRO to reduce leakage and improve cytokine expression control",
+        "transcript_evidence": "Speaker said: \"the TGF\u2011beta sensor triggers IL\u201112 expression in the tumor microenvironment\"",
+        "crispro_angle": "Use CrisPRO to model SMAD\u2011binding enhancer configurations and predict promoter designs with minimal basal activity",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Engineered bacteria delivering IL\u201112 and adenosine deaminase could be combined with CrisPRO\u2011guided NK cell programs for synergistic TME remodeling",
+        "transcript_evidence": "Speaker said: \"engineered bacteria expressing IL\u201112 and adenosine deaminase doubled survival in pancreatic cancer models\"",
+        "crispro_angle": "Integrate bacterial delivery kinetics into CrisPRO simulations to identify optimal cytokine dosing schedules",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MIT (Andrew Chen group)",
+        "context": "collaboration on baboon lentiviral vector",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Jeffrey Hubbell (U Chicago)",
+        "context": "concept of collagen\u2011binding cytokine domains",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the in vivo safety profile of IL\u201112\u2011expressing bacteria in immunocompetent humans?",
+      "Can the TGF\u2011beta sensor be adapted to other cytokines without off\u2011target activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CAR\u2011NK IL\u201112/TGF\u2011beta sensor constructs",
+        "Engineered E. coli IL\u201112/ADA strains"
+      ],
+      "companies_to_monitor": [
+        "Innate Pharma",
+        "MIT spin\u2011outs"
+      ]
+    }
+  },
+  {
+    "talk_id": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Tim Lu (Senti Bioscience)",
+      "institution_or_pharma": "Senti Bioscience",
+      "session_title": "nk-cell-based-cancer-immunotherapy-from-biology-to-the-clinic",
+      "talk_title": "Logic\u2011gate engineered allogeneic NK cells for AML (SENTI\u2011202)",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw about 50% overall response with a 30\u201140% CR/CRh rate\"",
+        "Speaker said: \"NK cells tend to be very safe and we observed only grade 1\u20112 pyrexia\"",
+        "Speaker said: \"we designed an inhibitory CAR against endomucin to protect healthy hematopoietic stem cells\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Endomucin\u2011targeted inhibitory CAR",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Potential expression of endomucin on a subset of AML blasts could limit efficacy",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients achieved MLFS despite target engagement, suggesting incomplete protection",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "SENTI\u2011202 Phase 1 (NCT04513841)",
+        "target_biology": "Dual activating CARs (CD33 & FLT3) + inhibitory CAR (endomucin) in allogeneic NK cells",
+        "flawed_enrollment_criteria": "Included patients with very low baseline hematopoietic stem cell counts, limiting ability to observe protective effect",
+        "missing_biomarker": "Baseline endomucin expression on patient AML blasts",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort (\u224820 pts) limits statistical power to detect differences between dosing schedules",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Logic\u2011gate NK cell platform (activating + inhibitory CARs)",
+        "ip_vulnerability_note": "Speaker described modular CAR design; similar architectures could be replicated by competitors",
+        "scale_or_manufacturing_bottleneck": "Off\u2011the\u2011shelf NK cell cryopreservation still yields 80\u201190% viability, a potential bottleneck",
+        "clinical_strategy_weakness": "Reliance on lymphodepletion (fludarabine + cytarabine) may limit use in less fit patients"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented deep MRD\u2011negative responses (suggesting potent anti\u2011leukemic activity) while also emphasizing minimal toxicity, yet the product uses high\u2011dose lymphodepletion which itself causes significant cytopenias"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term durability of responses beyond 2\u202fyears not yet available",
+        "Comparative efficacy versus existing AML cellular therapies (e.g., CAR\u2011T) not shown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify AML subpopulations with high CD33/FLT3 and low endomucin to enrich for responders",
+        "transcript_evidence": "Speaker noted variability in baseline endomucin expression and its impact on protection of healthy cells",
+        "crispro_angle": "Use CrisPRO to integrate transcriptomic datasets and derive a composite target\u2011expression score for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine SENTI\u2011202 with TGF\u2011beta\u2011responsive cytokine delivery (e.g., IL\u201112) to overcome residual immunosuppression",
+        "transcript_evidence": "Speaker discussed TGF\u2011beta sensor approaches in other programs as a way to flip the TME",
+        "crispro_angle": "Model synergistic effects of cytokine release with logic\u2011gate NK activation to prioritize combination trials",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CAR\u2011T cell programs in AML",
+        "context": "comparison of cytokine release profiles and toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Other NK cell therapies (e.g., memory\u2011like NK)",
+        "context": "mentioned as alternative approaches with similar safety profile",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will endomucin expression on AML blasts limit the efficacy of the inhibitory CAR?",
+      "Can the product achieve durable remissions without subsequent allogeneic stem cell transplant?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04513841"
+      ],
+      "assets_to_track": [
+        "SENTI\u2011202 NK cell product",
+        "CD33 CAR",
+        "FLT3 CAR",
+        "Endomucin inhibitory CAR"
+      ],
+      "companies_to_monitor": [
+        "Senti Bioscience",
+        "Competing NK cell therapy developers"
+      ]
+    }
+  }
+]

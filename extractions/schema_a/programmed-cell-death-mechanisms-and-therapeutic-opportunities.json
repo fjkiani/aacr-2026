@@ -1,0 +1,389 @@
+[
+  {
+    "talk_id": "programmed-cell-death-mechanisms-and-therapeutic-opportunities::strasser::1",
+    "session_title": "programmed-cell-death-mechanisms-and-therapeutic-opportunities",
+    "talk_title": "STING agonists amplify BH3 mimetic activity via p53- and cGAS-STING-dependent apoptosis loops",
+    "speaker": {
+      "name": "Andreas Strasser",
+      "affiliation": "Walter and Eliza Hall Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "CLL",
+      "AML",
+      "non-Hodgkin lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "apoptosis",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "mutations (point mutations)",
+        "pathway": "immune_checkpoint",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "venetoclax",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CLL and AML",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MCL1",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MCL-1 inhibitor (unnamed)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MCL lymphoma, AML",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STING",
+        "alteration": "",
+        "pathway": "cGAS-STING",
+        "modality": "other",
+        "compound_name": "STING agonist (unnamed)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lymphoma and leukemia cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "loss or mutation",
+        "pathway": "p53 signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CLL, AML",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "p53 status",
+        "type": "predictive",
+        "assay": "genetic sequencing",
+        "finding": "p53 loss correlates with reduced amplification loop and resistance to BH3 mimetics"
+      },
+      {
+        "name": "STING expression",
+        "type": "predictive",
+        "assay": "RNA-seq / protein level",
+        "finding": "High STING levels predict sensitivity to STING agonist killing in AML samples"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MCL lymphoma lines",
+        "genotype_or_key_features": "MCL1-dependent, BCL2-sensitive"
+      },
+      {
+        "model_type": "PDX",
+        "name": "human AML PDX",
+        "genotype_or_key_features": "venetoclax-resistant AML"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Rag knockout mice",
+        "genotype_or_key_features": "immune deficient, engrafted with Cas9-expressing lymphoma"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Cas9 transgenic mice",
+        "genotype_or_key_features": "immune competent, engrafted lymphoma"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "survival",
+        "value": "50% of mice survived with dual treatment",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "Rag knockout mice with lymphoma",
+        "comparator": "STING agonist alone or MCL-1 inhibitor alone",
+        "maturity": "interim"
+      },
+      {
+        "metric": "survival",
+        "value": "extended lifespan from 100 to 300 days",
+        "confidence_interval": "",
+        "n": "",
+        "population": "Cas9 transgenic mice with p53 knockout lymphoma",
+        "comparator": "untreated",
+        "maturity": "interim"
+      },
+      {
+        "metric": "leukemic burden reduction",
+        "value": "1.5 log drop",
+        "confidence_interval": "",
+        "n": "",
+        "population": "human AML PDX treated with venetoclax + STING agonist",
+        "comparator": "STING agonist alone",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "STING agonists activate cGAS-STING signaling leading to IRF3-dependent transcription of BH3-only proteins (BIM, NOXA, PUMA) and p53 activation, creating a feed\u2011forward loop that amplifies apoptosis; combined with BH3 mimetics (venetoclax or MCL\u20111 inhibitors) this overcomes resistance by releasing BIM from anti\u2011apoptotic proteins, resulting in enhanced tumor cell killing in vitro and in mouse models.",
+    "readouts": [
+      "RNA-seq",
+      "Western blot",
+      "BH3 profiling",
+      "cytochrome C release assay",
+      "in vivo survival curves",
+      "leukemic burden (intramedullary biopsy)"
+    ],
+    "key_findings": [
+      "STING agonists induce p53\u2011independent IRF3 activation and upregulation of BIM, NOXA, and PUMA in lymphoma and leukemia cells.",
+      "Loss of Bax/Bak abolishes STING\u2011agonist\u2011mediated apoptosis, confirming dependence on the intrinsic pathway.",
+      "Combination of STING agonist with BH3 mimetics (MCL\u20111 inhibitor or venetoclax) yields synergistic killing in vitro and improves survival in immune\u2011deficient and immune\u2011competent mouse models.",
+      "High STING expression in AML patient samples predicts sensitivity to STING agonist monotherapy and to the combination with venetoclax.",
+      "In vivo, dual treatment leads to ~50% survival benefit in Rag\u2011KO mice and extends median survival three\u2011fold in Cas9\u2011transgenic mice."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "p53 loss reduces the amplification loop, conferring resistance to BH3 mimetics.",
+      "BCL2 point mutations can abrogate venetoclax binding while preserving BH3\u2011only protein interaction."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "BH3 mimetic (venetoclax or MCL\u20111 inhibitor)",
+        "rationale": "STING agonist upregulates BH3\u2011only proteins, increasing dependence on anti\u2011apoptotic proteins that are blocked by BH3 mimetics.",
+        "phenotype": "Synergistic tumor cell killing and improved mouse survival",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How can STING expression be increased in cancer cells with low baseline STING levels?",
+      "What are the precise molecular mechanisms linking mitochondrial outer membrane permeabilization to p53 activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT???"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Roberts et al. 2020 (CLL venetoclax resistance)"
+      ],
+      "company_or_sponsor": [
+        "Walter and Eliza Hall Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "programmed-cell-death-mechanisms-and-therapeutic-opportunities::boyes::2",
+    "session_title": "programmed-cell-death-mechanisms-and-therapeutic-opportunities",
+    "talk_title": "Mitochondrial priming, BCL2 family dependencies and resistance mechanisms in multiple myeloma",
+    "speaker": {
+      "name": "Larry Boyes",
+      "affiliation": "University of ??? (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "multiple myeloma",
+      "Waldenstrom macroglobulinemia"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "apoptosis",
+      "targeted_therapy",
+      "combination_therapy",
+      "biomarker_development",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCL2L11",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloma cells (high BIM expression)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MCL1",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "AZD5991",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloma cells (MCL1 dependent)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "venetoclax",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "t(11;14) myeloma, some patients",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BCL2L1",
+        "alteration": "",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "ABT-737",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloma cell lines",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BIM (BCL2L11) expression",
+        "type": "predictive",
+        "assay": "Western blot / RNA\u2011seq",
+        "finding": "Higher BIM levels correlate with increased mitochondrial priming and venetoclax sensitivity"
+      },
+      {
+        "name": "IL6 levels",
+        "type": "resistance",
+        "assay": "ELISA / cytokine profiling",
+        "finding": "Stromal IL6 induces resistance to BCL2 inhibition by shifting BIM binding to MCL1"
+      },
+      {
+        "name": "BIM phosphorylation (Ser94)",
+        "type": "exploratory",
+        "assay": "Phos\u2011tag gel, phosphoproteomics",
+        "finding": "Phosphorylation at Ser94 reduces sensitivity to MCL1 inhibitor AZD5991"
+      },
+      {
+        "name": "t(11;14) translocation",
+        "type": "predictive",
+        "assay": "FISH",
+        "finding": "Patients with t(11;14) show higher ex\u2011vivo venetoclax sensitivity (\u224840% response vs 6% without)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "KMS18",
+        "genotype_or_key_features": "BCL2\u2011bound BIM, shifts to MCL1 upon venetoclax"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "primary myeloma plasma cells",
+        "genotype_or_key_features": "varied IL6 exposure, t(11;14) status"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "venetoclax trial cohort",
+        "genotype_or_key_features": "n\u224870, includes t(11;14) and non\u2011t(11;14) patients"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall response rate",
+        "value": "40% in t(11;14) patients vs 6% in non\u2011t(11;14)",
+        "confidence_interval": "",
+        "n": "n\u224870",
+        "population": "multiple myeloma patients treated with venetoclax",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "ex\u2011vivo IC50",
+        "value": "<100 nM",
+        "confidence_interval": "",
+        "n": "",
+        "population": "t(11;14) myeloma samples",
+        "comparator": "non\u2011t(11;14) samples",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "PFS",
+        "value": "significantly longer in venetoclax\u2011sensitive ex\u2011vivo group",
+        "confidence_interval": "",
+        "n": "",
+        "population": "clinical trial patients",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Myeloma cells exhibit high mitochondrial priming driven by BIM up\u2011regulation; venetoclax releases BIM from BCL2 but BIM can be re\u2011sequestered by MCL1, especially after IL6\u2011mediated signaling or BIM phosphorylation, leading to resistance. Combination with dexamethasone or IL6 blockade restores priming and sensitizes cells, while t(11;14) myeloma shows intrinsic BCL2 dependence and higher venetoclax response.",
+    "readouts": [
+      "BH3 profiling",
+      "co\u2011immunoprecipitation",
+      "Western blot",
+      "phosphoproteomics",
+      "RNA\u2011seq",
+      "ex\u2011vivo drug sensitivity assays"
+    ],
+    "key_findings": [
+      "BIM is up\u2011regulated in myeloma and drives mitochondrial priming, making cells vulnerable to BH3 mimetics.",
+      "Venetoclax treatment releases BIM from BCL2, which then binds MCL1, causing resistance in BCL2\u2011dependent lines.",
+      "Dexamethasone increases total BIM and restores venetoclax sensitivity across resistant myeloma samples.",
+      "Stromal IL6 shifts BIM binding to MCL1, conferring resistance; IL6 neutralization or Tocilizumab pretreatment re\u2011sensitizes cells to venetoclax.",
+      "BIM phosphorylation at Ser94 (and Ser87) reduces sensitivity to MCL1 inhibition, indicating a post\u2011translational resistance mechanism.",
+      "t(11;14) myeloma shows higher venetoclax sensitivity linked to a B\u2011cell\u2011like differentiation state rather than BCL2 expression levels.",
+      "Acquired BCL2 point mutations (e.g., G101V) after therapy diminish venetoclax binding and drive clinical resistance."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "IL6\u2011mediated signaling induces rapid, post\u2011translational adaptation increasing MCL1 and shifting BIM binding, leading to venetoclax resistance.",
+      "BIM phosphorylation (Ser94) creates resistance to MCL1 inhibitors.",
+      "Acquired BCL2 mutations (G101V) impair venetoclax efficacy while preserving BIM binding."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "dexamethasone",
+        "rationale": "Increases BIM transcription, enhancing priming and venetoclax efficacy",
+        "phenotype": "Conversion of venetoclax\u2011resistant cells to sensitive; higher ORR in early phase trial",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "tocilizumab (IL6R blocker)",
+        "rationale": "Blocks stromal IL6 signaling that shifts BIM to MCL1",
+        "phenotype": "Restores venetoclax sensitivity in vitro and in patient\u2011derived samples",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "MCL1 inhibitor (AZD5991)",
+        "rationale": "Dual inhibition of BCL2 and MCL1 overcomes BIM redistribution",
+        "phenotype": "Synergistic killing in cell lines; resistance observed with BIM phosphorylation",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What kinases mediate BIM Ser94 phosphorylation and can they be targeted to prevent resistance?",
+      "How does Ras activation confer venetoclax resistance independent of MCL1 up\u2011regulation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024 NEJM",
+        "Wu et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Dana\u2011Farber Cancer Institute",
+        "Mayo Clinic"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

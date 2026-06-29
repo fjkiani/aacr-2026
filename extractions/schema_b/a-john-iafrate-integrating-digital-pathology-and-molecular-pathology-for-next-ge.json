@@ -1,0 +1,98 @@
+[
+  {
+    "talk_id": "a-john-iafrate-integrating-digital-pathology-and-molecular-pathology-for-next-ge::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "John Ifraty",
+      "institution_or_pharma": "Pathology / Molecular Diagnostics (academic)",
+      "session_title": "a-john-iafrate-integrating-digital-pathology-and-molecular-pathology-for-next-ge",
+      "talk_title": "Integrating Digital Pathology and AI with Molecular Pathology: Opportunities and Challenges",
+      "rhetorical_signals": [
+        "Speaker said: \"we're at the very peak of inflated expectations\"",
+        "Speaker said: \"I predict it will go even higher\"",
+        "Speaker said: \"we won't replace MSI testing with an H&E predictor\"",
+        "Speaker said: \"the number of less than optimal samples that come to pathology is extremely large, and the expectation that foundation models ... are going to be able to handle ... is a little naive\"",
+        "Speaker said: \"we need rigorous performance metrics more than we're currently using\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical trial data presented for AI\u2011based mutation prediction",
+        "No head\u2011to\u2011head comparison with standard molecular assays",
+        "Limited discussion of performance on low\u2011quality or cytology specimens"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Many AI models show modest AUCs (0.6\u20110.7) for mutation prediction; a high\u2011confidence, CrisPRO\u2011validated biomarker panel could stratify patients for targeted testing.",
+        "transcript_evidence": "Speaker noted: \"the best predictor ... is MSI with an AUC of about 0.9, but for NRAS or PIK3CA it falls to 0.5\u20110.6\"",
+        "crispro_angle": "CrisPRO can integrate multi\u2011modal embeddings and apply rigorous cross\u2011validation to improve predictive power beyond current AUROCs.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Confounding factors such as biopsy type and tumor heterogeneity cause false positives; CrisPRO could model these variables to isolate true mutation signals.",
+        "transcript_evidence": "Speaker said: \"fluid samples and small biopsies drive ALK\u2011positive calls even when morphology is uninformative\"",
+        "crispro_angle": "CrisPRO\u2019s probabilistic framework can weight sample quality metrics, reducing bias from low\u2011quality slides.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Spatial transcriptomics and multiplex IF generate rich data; partnering with CrisPRO to fuse these modalities could create next\u2011generation predictive biomarkers.",
+        "transcript_evidence": "Speaker described: \"combining immunofluorescence with transcriptomics and H&E ... could predict immune checkpoint response\"",
+        "crispro_angle": "CrisPRO\u2019s multimodal integration engine can jointly analyze H&E embeddings, IF protein panels, and spatial transcriptomics to derive composite scores.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PathAI",
+        "context": "mentioned as a vendor providing quantitative IHC tools",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Singular Genomics",
+        "context": "highlighted for higher throughput spatial transcriptomics platform",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "ProvGigaPath",
+        "context": "cited as a foundation model used for mutation prediction",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Campanella et al. (Mount Sinai/Sloan Kettering)",
+        "context": "referenced for fine\u2011tuning a foundation model to improve EGFR prediction",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How can AI models achieve clinical\u2011grade sensitivity and specificity for low\u2011prevalence mutations?",
+      "What standards and benchmarks are needed for AI\u2011based diagnostic tools?",
+      "How will spatial transcriptomics add actionable information beyond conventional NGS?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Foundation models for pathology (e.g., ProvGigaPath, CONCH)",
+        "Spatial transcriptomics platforms (10x Visium, Singular Genomics)",
+        "Multiplex immunofluorescence segmentation tools (CellPose, Nimbus)"
+      ],
+      "companies_to_monitor": [
+        "PathAI",
+        "Singular Genomics",
+        "Microsoft (ProvGigaPath)",
+        "Paige",
+        "Faisal Mahmood Lab"
+      ]
+    }
+  }
+]

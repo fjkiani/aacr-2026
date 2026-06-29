@@ -1,0 +1,259 @@
+[
+  {
+    "talk_id": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ruth Shoresh-Jal",
+      "institution_or_pharma": "Weizmann Institute",
+      "session_title": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce",
+      "talk_title": "Stress and mutation dependency in the tumor microenvironment",
+      "rhetorical_signals": [
+        "Speaker said: \"we think that this rewiring of the tumor microenvironment is done by a combination of signals from the mutated cancer cells as well as stress responses in the tumor microenvironment.\"",
+        "Speaker said: \"we found that BRCA\u2011mutated tumors were more stressed compared to BRCA\u2011wild\u2011type tumors\"",
+        "Speaker said: \"we think that this is really exciting in its potential therapeutic implications because we could potentially target these stress responses in the tumor microenvironment\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HSF1\u2011dependent stress response pathway in CAFs",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Targeting HSF1 may not affect CAF subsets that are myofibroblastic (myCAFs) which are not driven by HSF1",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "HSF1 inhibition in tumor stroma",
+        "ip_vulnerability_note": "Speaker highlighted therapeutic interest but noted that targeting HSF1 is still unpublished and may lack specificity for diverse CAF subsets",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad application across cancers without biomarker\u2011selected patient population may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human clinical data on HSF1 inhibition",
+        "Lack of functional validation of CAF\u2011NK cell axis in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target HSF1\u2011driven stress response in CAFs to prevent iCAF polarization that suppresses NK cell activity",
+        "transcript_evidence": "Speaker said: \"we could potentially target these stress responses in the tumor microenvironment, and we could even combine this targeting with stress responses in the tumor microenvironment with targeting of the cancer cells\"",
+        "crispro_angle": "CrisPRO can model HSF1\u2011dependent transcriptional networks and predict combinatorial inhibitors that re\u2011program iCAFs while sparing myCAFs",
+        "external_validation_needed": [
+          "PubMed: HSF1 inhibition in CAFs",
+          "ClinicalTrials.gov: any HSF1\u2011targeting agents"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does inhibition of HSF1 in CAFs restore NK cell activating receptor expression?",
+      "Are there metabolic metabolites that mediate CAF\u2011induced NK cell exhaustion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "HSF1 inhibitors",
+        "PARP inhibitor + CAF stress\u2011response combos"
+      ],
+      "companies_to_monitor": [
+        "Companies developing HSF1 inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Speaker (stress and glucocorticoids)",
+      "institution_or_pharma": "University (unspecified)",
+      "session_title": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce",
+      "talk_title": "Chronic stress, glucocorticoids, and metastatic outgrowth via neutrophil NETs",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw a fourfold increase in metastatic burden with restraint stress\"",
+        "Speaker said: \"DNase treatment reduced metastasis in stressed animals almost back to background level\"",
+        "Speaker said: \"glucocorticoid receptor knockout in neutrophils abolished stress\u2011induced NET formation and metastasis\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Systemic glucocorticoid exposure (synthetic steroids)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Glucocorticoid\u2011driven neutrophil NET formation promotes metastatic niche; effect on T\u2011cell suppression not fully dissected",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted glucocorticoids are widely used clinically, implying hidden risk of promoting metastasis",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse stress\u2011metastasis models",
+        "target_biology": "Glucocorticoid\u2011mediated neutrophil NET formation",
+        "flawed_enrollment_criteria": "Mouse models use extreme restraint stress not reflective of patient stress levels",
+        "missing_biomarker": "Serum NET markers or neutrophil activation status in patients",
+        "static_vs_dynamic_failure": "No longitudinal monitoring of NETs during stress exposure",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Glucocorticoid receptor antagonism (e.g., mifepristone)",
+        "ip_vulnerability_note": "Speaker highlighted mixed preclinical data and context\u2011dependent effects, suggesting limited robustness of this approach",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad glucocorticoid blockade may interfere with essential anti\u2011inflammatory therapy and differ by cancer subtype"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that glucocorticoids increase NET formation and metastasis, yet also cited a study where glucocorticoids facilitated tumor cell clearance via FAS up\u2011regulation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of human clinical data linking glucocorticoid use to NET levels and metastasis",
+        "No assessment of timing/dose of glucocorticoids in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine NET\u2011targeting (e.g., DNase or PAD4 inhibitors) with glucocorticoid receptor antagonists to prevent stress\u2011induced metastatic niche formation",
+        "transcript_evidence": "Speaker said: \"DNase treatment reduced metastasis in the lungs of the stressed animals, almost back to background level\"",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of NET inhibition plus GR blockade on metastatic outgrowth",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: trials of PAD4 inhibitors",
+          "PubMed: glucocorticoid receptor antagonists in cancer"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high circulating NET markers or neutrophil activation as those who may be harmed by glucocorticoid therapy",
+        "transcript_evidence": "Speaker said: \"glucocorticoid receptor knockout in neutrophils abolished stress\u2011induced NET formation and metastasis\"",
+        "crispro_angle": "CrisPRO can integrate NET\u2011derived biomarkers with patient stress profiles to stratify risk",
+        "external_validation_needed": [
+          "Blood NET assays in cancer cohorts receiving steroids"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Mifepristone",
+        "context": "Proposed glucocorticoid receptor antagonist to block stress\u2011induced metastasis",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the net effect of glucocorticoids on different cancer subtypes (e.g., ER\u2011positive vs. triple\u2011negative)?",
+      "Can timing of glucocorticoid administration relative to surgery/chemo mitigate NET\u2011mediated metastasis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PAD4 inhibitors",
+        "DNase therapeutics",
+        "Glucocorticoid receptor antagonists"
+      ],
+      "companies_to_monitor": [
+        "Companies developing NET\u2011targeting agents"
+      ]
+    }
+  },
+  {
+    "talk_id": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Jesse Plaschak",
+      "institution_or_pharma": "Oregon Health & Science University",
+      "session_title": "stress-across-scales-in-cancer-from-societal-burden-to-microenvironmental-and-ce",
+      "talk_title": "Social stressors, epigenetic age acceleration, and breast cancer outcomes in Black women",
+      "rhetorical_signals": [
+        "Speaker said: \"income\u2011to\u2011poverty ratio was negatively correlated with epigenetic age acceleration\"",
+        "Speaker said: \"tobacco use had the largest effect on epigenetic age acceleration\"",
+        "Speaker said: \"neighborhood disinvestment remained associated after adjusting for socioeconomic composition\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current reliance on self\u2011reported stress measures",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Lack of validated circulating biomarkers linking social stress to tumor biology",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Epigenetic clock assays (DunedinPACE)",
+        "ip_vulnerability_note": "Speaker noted small sample size and limited generalizability, suggesting limited commercial robustness at present",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Use of a single epigenetic clock without replication may dilute predictive power"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No longitudinal stress biomarker data beyond two time points",
+        "Limited racial/ethnic diversity beyond Black women in NJ"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop blood\u2011based NET or inflammatory gene signatures that correlate with epigenetic age acceleration and social stressors",
+        "transcript_evidence": "Speaker highlighted that tobacco use and BMI were strong drivers of epigenetic age acceleration",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omic stress signatures to refine risk stratification beyond socioeconomic indices",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design prospective cohort with repeated epigenetic clock measurements and detailed glucocorticoid exposure to capture temporal dynamics",
+        "transcript_evidence": "Speaker noted need for larger samples and more repeated measures to assess trajectories",
+        "crispro_angle": "CrisPRO can model optimal sampling intervals and power calculations for epigenetic aging endpoints",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cole's conserved transcriptional response to adversity (CTRA) panel",
+        "context": "Mentioned as alternative stress\u2011related gene expression signature",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Do epigenetic age acceleration trajectories differ by treatment modality (e.g., chemotherapy vs. surgery only)?",
+      "Can interventions that reduce neighborhood disinvestment (e.g., lot remediation) measurably slow epigenetic aging in cancer survivors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DunedinPACE epigenetic clock kits",
+        "Blood NET biomarkers"
+      ],
+      "companies_to_monitor": [
+        "Companies offering epigenetic aging assays"
+      ]
+    }
+  }
+]

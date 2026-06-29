@@ -1,0 +1,243 @@
+[
+  {
+    "talk_id": "a-john-iafrate-integrating-digital-pathology-and-molecular-pathology-for-next-ge::ifraty::1",
+    "session_title": "a-john-iafrate-integrating-digital-pathology-and-molecular-pathology-for-next-ge",
+    "talk_title": "Integrating Digital Pathology, AI, and Molecular Diagnostics for Biomarker Development",
+    "speaker": {
+      "name": "John Ifraty",
+      "affiliation": "Pathology Department, Academic Medical Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer",
+      "colorectal cancer",
+      "soft tissue sarcoma",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "biomarker_development",
+      "translational",
+      "platform_technology",
+      "basic_science",
+      "AI_ML"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ALK",
+        "alteration": "EML4-ALK fusion",
+        "pathway": "RTK signaling",
+        "modality": "FISH",
+        "compound_name": "crizotinib",
+        "compound_id": "NCT00585195",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "ALK-positive NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ALK",
+        "alteration": "EML4-ALK fusion",
+        "pathway": "RTK signaling",
+        "modality": "RNA-Seq anchored multiplex PCR",
+        "compound_name": "alectinib",
+        "compound_id": "NCT01871805",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "ALK-positive NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "mutant",
+        "pathway": "RTK signaling",
+        "modality": "AI image analysis (prediction)",
+        "compound_name": "osimertinib",
+        "compound_id": "NCT02296125",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "EGFR-mutant NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "AI image analysis (prediction)",
+        "compound_name": "sotorasib",
+        "compound_id": "NCT03600883",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "KRAS G12C mutant NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "V600E",
+        "pathway": "MAPK",
+        "modality": "AI image analysis (prediction)",
+        "compound_name": "vemurafenib",
+        "compound_id": "NCT01006907",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "BRAF V600E mutant colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MSI",
+        "alteration": "high",
+        "pathway": "DNA_damage_response",
+        "modality": "AI image analysis (prediction)",
+        "compound_name": "unspecified",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MSI-high colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "HER2",
+        "alteration": "amplification/overexpression",
+        "pathway": "RTK signaling",
+        "modality": "AI image analysis (prediction)",
+        "compound_name": "trastuzumab",
+        "compound_id": "NCT00949650",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HER2-positive lung cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MSI-high",
+        "type": "predictive",
+        "assay": "IHC / PCR",
+        "finding": "AI model achieved AUROC ~0.9 for MSI prediction from H&E"
+      },
+      {
+        "name": "ALK fusion",
+        "type": "predictive",
+        "assay": "FISH (gold standard)",
+        "finding": "Clinical assay sensitivity 100%, specificity 99%, PPV 100%"
+      }
+    ],
+    "models": [],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "57%",
+        "confidence_interval": "",
+        "n": "Phase I crizotinib trial (n unspecified)",
+        "population": "ALK-positive NSCLC",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS median",
+        "value": "9 months",
+        "confidence_interval": "",
+        "n": "CROWN study crizotinib arm (n unspecified)",
+        "population": "ALK-positive advanced NSCLC",
+        "comparator": "lorlatinib arm",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS median",
+        "value": "6-8 years",
+        "confidence_interval": "",
+        "n": "CROWN study lorlatinib arm (n unspecified)",
+        "population": "ALK-positive advanced NSCLC",
+        "comparator": "crizotinib arm",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Sensitivity (ALK RNA-Seq assay)",
+        "value": "100%",
+        "confidence_interval": "",
+        "n": "validation cohort (n unspecified)",
+        "population": "ALK-positive samples",
+        "comparator": "ALK FISH predicate",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Specificity (ALK RNA-Seq assay)",
+        "value": "99%",
+        "confidence_interval": "",
+        "n": "validation cohort (n unspecified)",
+        "population": "ALK-negative samples",
+        "comparator": "ALK FISH predicate",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Positive Predictive Value (ALK RNA-Seq assay)",
+        "value": "100%",
+        "confidence_interval": "",
+        "n": "validation cohort (n unspecified)",
+        "population": "ALK-positive samples",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "ctDNA fusion detection rate",
+        "value": "50%",
+        "confidence_interval": "",
+        "n": "CROWN study ctDNA subset (n unspecified)",
+        "population": "ALK-positive NSCLC",
+        "comparator": "",
+        "maturity": "secondary_analysis"
+      }
+    ],
+    "MOA_summary": "John Ifraty reviewed how AI image embeddings derived from H&E slides can capture morphologic correlates of actionable mutations (e.g., ALK fusions, MSI, EGFR) and discussed the need for clinical\u2011grade performance (high sensitivity, specificity, PPV). He highlighted that current AI models achieve AUROC ~0.9 for MSI but only ~0.6\u20110.7 for most other mutations, emphasizing confounders, sample quality, and rare tumor entities as major barriers. He also described emerging multimodal and spatial platforms that combine H&E, multiplex immunofluorescence, and spatial transcriptomics to generate richer biomarkers, while noting throughput and reproducibility challenges.",
+    "readouts": [
+      "FISH",
+      "IHC",
+      "NGS (RNA\u2011Seq anchored multiplex PCR)",
+      "ctDNA sequencing (Guardant360)",
+      "AI image analysis (AUROC, AUPRC)",
+      "multiplex immunofluorescence",
+      "spatial transcriptomics (Visium)",
+      "digital slide QC metrics"
+    ],
+    "key_findings": [
+      "Clinical ALK FISH assay demonstrated 100% sensitivity, 99% specificity, and 100% PPV in validation against RNA\u2011Seq, setting a high bar for AI\u2011based predictors.",
+      "AI model trained on public colorectal cancer slides achieved AUROC ~0.9 for MSI prediction, the highest performance among mutation\u2011prediction tasks.",
+      "Predictive performance for EGFR, KRAS, PIK3CA, and other mutations ranged from AUROC 0.5\u20110.7, indicating limited clinical utility at present.",
+      "Foundation models fine\u2011tuned on institution\u2011specific data (e.g., Campanella et al.) can raise EGFR prediction AUROC to ~0.9 and enable triage of lung cancer cases for rapid molecular testing.",
+      "ctDNA assay (Guardant360) identified ALK fusions in only ~50% of cases, illustrating that sub\u2011optimal sensitivity can still be useful for longitudinal monitoring.",
+      "Spatial multiplex IF and transcriptomics platforms (e.g., Singular Genomics 18\u2011plex IF + 500\u2011plex RNA) now achieve 10 samples per slide throughput, moving toward clinical feasibility."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Confounding variables such as biopsy size, sample type (resection vs. fluid cytology), and co\u2011occurring biomarkers (e.g., BRAF with MSI) can inflate AI performance.",
+      "Rare tumor entities (170 soft\u2011tissue sarcoma subtypes) are under\u2011represented in training data, limiting model generalizability.",
+      "AI models may learn non\u2011biological shortcuts (e.g., ruler presence in skin lesion images) that do not translate to robust clinical biomarkers."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can standardized pre\u2011analytical corrections be implemented to improve reproducibility of multiplex immunofluorescence across institutions?",
+      "What minimal performance metrics (AUROC, AUPRC, PPV) are required for AI\u2011based mutation predictors to be adopted in clinical decision support?",
+      "Can multimodal models that integrate radiology, H&E, IF, and spatial transcriptomics achieve clinically actionable predictive power for immunotherapy response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT00585195",
+        "NCT01871805",
+        "NCT02296125",
+        "NCT03600883",
+        "NCT00949650"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Dawood et al. 2024",
+        "Kather et al. 2025",
+        "Campanella et al. 2023",
+        "Hsiao et al. 2024",
+        "Bychkov et al. 2021"
+      ],
+      "company_or_sponsor": [
+        "Singular Genomics",
+        "PathAI",
+        "Daiichi Sankyo"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

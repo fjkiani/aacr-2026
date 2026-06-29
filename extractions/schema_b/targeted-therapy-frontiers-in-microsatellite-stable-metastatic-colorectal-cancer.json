@@ -1,0 +1,138 @@
+[
+  {
+    "talk_id": "targeted-therapy-frontiers-in-microsatellite-stable-metastatic-colorectal-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Scott Kopetz",
+      "institution_or_pharma": "University of Texas MD Anderson Cancer Center",
+      "session_title": "targeted-therapy-frontiers-in-microsatellite-stable-metastatic-colorectal-cancer",
+      "talk_title": "RAS and RAF targeting in MSS metastatic colorectal cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't have that data formally yet\"",
+        "Speaker said: \"I don't think that MSS will be solved by a single drug, but it will be solved with strategy\"",
+        "Speaker said: \"we still don't have great ideas yet or at least great signals of what to do afterwards\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Encorafenib + cetuximab (BRAF/EGFR doublet)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Emergence of KRAS, NRAS, MAP2K1 mutations and MET amplifications at progression",
+        "unexplained_resistance_quote": "Speaker noted a \"fairly high prevalence of KRAS, NRAS, MAP2K1 mutations, as well as some MET amplifications\" acquired at progression without detailing why they dominate",
+        "ghost_responder_admission": "Some patients had multiple co\u2011occurring alterations yet still derived benefit, indicating a subset response",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BreakWater study",
+        "target_biology": "BRAF V600E inhibition with EGFR blockade plus chemotherapy backbone",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comer MSS BRAF V600E patients without stratifying by baseline ctDNA mutational signatures that predict secondary mutations",
+        "missing_biomarker": "Baseline high cell\u2011cycle transcriptional signature (predictive of secondary KRAS/NRAS mutations)",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring in control arm to track emerging resistance",
+        "statistical_concern": "Control arm powered for response rate but not for OS comparison across molecular sub\u2011groups",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Encorafenib (BRAF V600E inhibitor) limited to V600E mutation",
+        "ip_vulnerability_note": "Speaker highlighted that non\u2011V600E BRAF alterations have limited therapeutic options, exposing a narrow chemical scope",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on combination with EGFR inhibitor and chemotherapy may dilute signal in heterogeneous MSS population"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed pre\u2011clinical data that EGFR inhibition alone is inactive in BRAF\u2011mutant CRC, yet concluded that adding EGFR to BRAF inhibition is sufficient for durable pathway inhibition without needing additional targets"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for the EC\u2011only arm",
+        "Lack of biomarker\u2011stratified analysis for secondary resistance mutations",
+        "No head\u2011to\u2011head comparison with standard of care chemotherapy alone"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline high cell\u2011cycle transcriptional signature predicts emergence of secondary KRAS/NRAS mutations; CrisPRO could develop a predictive model to select patients who need upfront combination with PI3K or MET inhibitors",
+        "transcript_evidence": "Speaker said: \"Those that have really high cell cycle signaling on transcriptomic profiling at baseline are the ones that are much more likely to have these secondary mutations\"",
+        "crispro_angle": "Use CrisPRO's computational spine to integrate baseline RNA\u2011seq and ctDNA VAF data to generate a risk score for adaptive mutability",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pre\u2011clinical data suggest PI3K\u2011RAS breaker (e.g., BridgeBio 10203) may overcome resistance mediated by PI3K pathway activation",
+        "transcript_evidence": "Speaker said: \"The idea, of course, is that normally PI3 kinase, when it's activated through upstream RTKs, will signal down through AKT... we have a covalent inhibitor that prevents the binding of the mutated RAS\"",
+        "crispro_angle": "Model synergistic effects of KRAS/PI3K breaker combos to prioritize clinical trial designs",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "YAP/TEAD activation identified as a universal resistance pathway after KRAS/RAF inhibition; targeting TEAD could restore sensitivity",
+        "transcript_evidence": "Speaker said: \"The universal finding here, nearly universal, was that YAP signaling was indeed up\"",
+        "crispro_angle": "Predict YAP/TEAD activation from transcriptomic signatures and propose TEAD inhibitor combos",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Vemurafenib",
+        "context": "first BRAF mutant\u2011selective inhibitor that failed to show activity in CRC",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Encorafenib",
+        "context": "BRAF inhibitor approved in combination with cetuximab and chemotherapy",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Sotorasib",
+        "context": "KRAS G12C inhibitor combined with panitumumab in CodeBreaK 300",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "KRAS G12C inhibitor combined with cetuximab, response rate 34%",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Pluxerafenib",
+        "context": "Paradox\u2011breaker BRAF inhibitor with limited activity post\u2011encorafenib",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Amivantamab",
+        "context": "Bispecific MET/EGFR antibody discussed as potential partner",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal sequencing of BRAF/EGFR inhibition with chemotherapy to prevent cross\u2011resistance?",
+      "Can YAP/TEAD inhibition synergize with KRAS/RAF inhibitors in patients?",
+      "What is the durability of ctDNA clearance as a surrogate for long\u2011term benefit?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04525484"
+      ],
+      "assets_to_track": [
+        "Encorafenib",
+        "Cetuximab",
+        "BridgeBio 10203",
+        "Pluxerafenib",
+        "TEAD inhibitors"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson (academic program)",
+        "BridgeBio",
+        "Amgen",
+        "Astellas"
+      ]
+    }
+  }
+]

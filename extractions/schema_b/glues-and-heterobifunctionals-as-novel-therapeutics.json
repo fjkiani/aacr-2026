@@ -1,0 +1,356 @@
+[
+  {
+    "talk_id": "glues-and-heterobifunctionals-as-novel-therapeutics::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Nathaniel Gray",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "glues-and-heterobifunctionals-as-novel-therapeutics",
+      "talk_title": "Molecular glues to induce cancer cell death",
+      "rhetorical_signals": [
+        "Speaker said: \"we only see activity in models where BCL6 is high\"",
+        "Speaker said: \"the hook effect can be deleterious if the gain-of-function requires continual exposure\"",
+        "Speaker said: \"we call them the kiss of death experiments, transient exposure of the cells will send the signal in that direction\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BCL6\u2011dependent TSIP molecules",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Requires high BCL6 expression; low or negative BCL6 tumors show no response",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "only see activity in models where BCL6 is high",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TSIP heterobifunctional glues (BRD4\u2011BCL6, CDK9\u2011BCL6, p300\u2011BCL6)",
+        "ip_vulnerability_note": "Relies on fractional occupancy; low\u2011affinity binders may limit potency and therapeutic window",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without BCL6 biomarker stratification could dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed ChIP\u2011seq data that BRD4 is relocalized to BCL6 loci, yet concluded that gain\u2011of\u2011function glues are universally superior to loss\u2011of\u2011function approaches without addressing context\u2011specific dependency on BCL6 expression"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in\u2011human efficacy data",
+        "Lack of systematic biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a diagnostic assay for BCL6 expression to select patients who will respond to TSIP glues",
+        "transcript_evidence": "Speaker said: \"we only see activity in models where BCL6 is high\"",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and proteomic data to define a BCL6\u2011high signature for patient enrichment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TSIP glues with agents that up\u2011regulate BCL6 or enhance BRD4 recruitment to broaden efficacy",
+        "transcript_evidence": "Speaker discussed fractional occupancy and the possibility of boosting the ternary complex plateau",
+        "crispro_angle": "CrisPRO can model ternary complex kinetics to predict synergistic partners that increase occupancy",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Boehringer Ingelheim",
+        "context": "provided BTB domain binders used as starting points for BCL6 glues",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Bristol Myers Squibb",
+        "context": "provided CDK9 binder used in alternative TSIP constructs",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the long\u2011term safety of sub\u2011stoichiometric gain\u2011of\u2011function glues in normal tissues?",
+      "Can the hook effect be mitigated through formulation or dosing strategies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BCL6\u2011BRD4 TSIP molecules",
+        "CDK9\u2011BCL6 TSIP molecules"
+      ],
+      "companies_to_monitor": [
+        "Boehringer Ingelheim",
+        "Bristol Myers Squibb"
+      ]
+    }
+  },
+  {
+    "talk_id": "glues-and-heterobifunctionals-as-novel-therapeutics::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Brian Liao",
+      "institution_or_pharma": "Harvard University",
+      "session_title": "glues-and-heterobifunctionals-as-novel-therapeutics",
+      "talk_title": "Chemical and genetic convergence of molecular glues targeting KBDBD4",
+      "rhetorical_signals": [
+        "Speaker said: \"the cancer insertion and the small molecule actually exactly mimic one another\"",
+        "Speaker said: \"it is one of the first examples of a gain\u2011of\u2011function mutation that can cause the recruitment and degradation of a new substrate\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "UM171",
+        "failure_type": "partial_efficacy",
+        "mechanistic_blindspot": "Relies on HDAC active\u2011site engagement; HDAC inhibitors can block the glue effect",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "UM171 molecular glue targeting KBDBD4\u2011HDAC",
+        "ip_vulnerability_note": "Binding pocket is shallow and mimics a simple amino\u2011acid insertion, suggesting ease of resistance via point mutations",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Dependence on HDAC active\u2011site occupancy may limit selectivity and allow competition with HDAC inhibitors"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented structural data showing UM171 occupies the HDAC active site, yet concluded that small\u2011molecule design could be prospective despite the interface being highly specific and seemingly not druggable"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011vivo efficacy data for UM171 or mutant KBDBD4 glues",
+        "Unclear therapeutic index for HDAC\u2011dependent degradation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Use CrisPRO to design small\u2011molecule mimetics of the 2B2C loop insertions that can recapitulate the gain\u2011of\u2011function without HDAC competition",
+        "transcript_evidence": "Speaker said: \"the cancer insertion and the small molecule actually exactly mimic one another\"",
+        "crispro_angle": "CrisPRO can model protein\u2011protein interface hotspots and propose chemotypes that occupy the same pocket as the inserted residues",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage deep mutational scanning data to identify other glueable hotspots on E3 ligases beyond KBDBD4",
+        "transcript_evidence": "Speaker described a DMS library covering >5,000 mutations that identified many gain\u2011of\u2011function variants",
+        "crispro_angle": "CrisPRO can integrate DMS data to predict which surface patches are amenable to small\u2011molecule bridging",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "UM171",
+        "context": "small\u2011molecule molecular glue targeting KBDBD4\u2011HDAC",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can a small molecule fully replace the cancer insertion to achieve comparable degradation potency?",
+      "What are the off\u2011target effects of broadly activating KBDBD4 in normal cells?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "UM171",
+        "KBDBD4 mutants"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "glues-and-heterobifunctionals-as-novel-therapeutics::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Steven Corsello",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "glues-and-heterobifunctionals-as-novel-therapeutics",
+      "talk_title": "TRIM21 molecular glues targeting the nuclear pore complex",
+      "rhetorical_signals": [
+        "Speaker said: \"TRIM21 expression strongly predicted sensitivity\"",
+        "Speaker said: \"the compounds directly bind TRIM21, which is then recruited to Nup98\"",
+        "Speaker said: \"multiple components of the nuclear pore complex were ubiquitinated and degraded in a TRIM21\u2011dependent manner\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TRIM21\u2011Nup98 molecular glue (PRLX series)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential impact on normal cells due to global nuclear pore degradation; therapeutic index not fully defined",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "TRIM21\u2011high cell lines are sensitive, TRIM21\u2011low are resistant",
+        "hidden_tox_signal": "Selectivity gap between cancer and immortalized normal cells (23\u2011fold shift reported)",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Induce TRIM21\u2011mediated degradation of nuclear pore complex",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven patient selection; reliance on TRIM21 expression not prospectively validated",
+        "missing_biomarker": "TRIM21 protein level or activity assay",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early phase without clear dose\u2011response window for nuclear transport inhibition",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TRIM21\u2011binding pocket (PRI\u2011SPRY domain)",
+        "ip_vulnerability_note": "Binding pocket is shallow; many chemically diverse glues can engage, suggesting limited IP moat",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on TRIM21 expression limits patient population; potential off\u2011target degradation of other multimeric substrates"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that TRIM21 glues cause broad NPC degradation yet concluded that the approach will have a favorable therapeutic index without fully addressing potential toxicity to normal cells"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term safety of nuclear pore degradation in vivo",
+        "Biomarker\u2011guided patient selection data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven expression signature to identify tumors with high TRIM21 activity and NPC dependency",
+        "transcript_evidence": "Speaker said: \"TRIM21 expression strongly predicted sensitivity\"",
+        "crispro_angle": "Integrate transcriptomic and proteomic data to build a predictive model for TRIM21\u2011glue responsiveness",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TRIM21 glues with agents that sensitize nuclear transport pathways to lower required dose and improve therapeutic index",
+        "transcript_evidence": "Speaker discussed activation lethality and correlation with cell\u2011kill readouts",
+        "crispro_angle": "CrisPRO can simulate combinatorial effects on NPC stability and predict synergistic partners",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Erastin",
+        "context": "Original ferroptosis inducer that was chemically optimized into PRLX series",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Complex I inhibitors",
+        "context": "Mentioned as having similar toxicity profile to nuclear transport inhibition",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the therapeutic window for NPC degradation in normal versus cancer tissues?",
+      "Can alternative E3 ligases be recruited to achieve NPC degradation with a better safety profile?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PRLX 93936",
+        "JWZ8103"
+      ],
+      "companies_to_monitor": [
+        "Prolexis Pharmaceuticals"
+      ]
+    }
+  },
+  {
+    "talk_id": "glues-and-heterobifunctionals-as-novel-therapeutics::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Fleur Ferguson",
+      "institution_or_pharma": "University of California, San Diego",
+      "session_title": "glues-and-heterobifunctionals-as-novel-therapeutics",
+      "talk_title": "Induced\u2011proximity degradation of the druggable proteome",
+      "rhetorical_signals": [
+        "Speaker said: \"we created an active degrader molecular glue, JWJ\u20110136, with ~80% Dmax\"",
+        "Speaker said: \"ZBTB11 degradation normalizes oxidative phosphorylation in KRAS\u2011inhibitor\u2011resistant cells\"",
+        "Speaker said: \"our ZBTB11 degraders have no significant effects on neuronal health\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ZBTB11 cereblon glues (JWJ\u20110136 series)",
+        "failure_type": "partial_efficacy",
+        "mechanistic_blindspot": "Limited degradation of close homologs (ZBTB21, ZFP91, WIZ) may cause off\u2011target effects in certain contexts",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Degradation of ZBTB11 rescues KRAS\u2011inhibitor resistance in a subset of pancreatic models",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cereblon\u2011recruiting IMiD\u2011like glues for ZBTB11",
+        "ip_vulnerability_note": "Relies on well\u2011characterized CRBN pocket; many groups can generate similar chemotypes, limiting IP moat",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Low oral bioavailability of early hits; need scaffold hopping for drug\u2011like properties"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that ZBTB11 degradation reverses metabolic reprogramming yet also noted that ZBTB11 is low\u2011abundance and understudied, raising a contradiction between target tractability and therapeutic relevance"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "In\u2011vivo pharmacokinetics and efficacy of optimized ZBTB11 degraders",
+        "Long\u2011term safety in non\u2011cancer tissues"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Apply CrisPRO to predict cereblon\u2011compatible glues for other zinc\u2011finger transcription factors involved in metabolic resistance",
+        "transcript_evidence": "Speaker highlighted the C2H2 zinc\u2011finger motif as analogous to IMiD\u2011targeted TFs",
+        "crispro_angle": "CrisPRO can model degron\u2011compatible surfaces across the zinc\u2011finger family to prioritize new targets",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate ZBTB11 degradation readouts as pharmacodynamic biomarkers in KRAS\u2011inhibitor combination trials",
+        "transcript_evidence": "Speaker showed that ZBTB11 degradation normalizes oxidative phosphorylation and restores KRAS\u2011inhibitor sensitivity",
+        "crispro_angle": "CrisPRO can integrate metabolomic signatures to define early PD markers for combination regimens",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "IMiD class drugs (e.g., lenalidomide)",
+        "context": "Used as precedent for cereblon\u2011recruiting glues targeting zinc\u2011finger proteins",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Can ZBTB11 degraders be optimized for oral dosing and systemic exposure?",
+      "Will chronic ZBTB11 degradation affect normal tissue homeostasis beyond neurons?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "JWJ\u20110136",
+        "JWZ\u20118103"
+      ],
+      "companies_to_monitor": [
+        "Cereblon\u2011focused biotech programs"
+      ]
+    }
+  }
+]

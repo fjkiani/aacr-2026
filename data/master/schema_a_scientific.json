@@ -1,0 +1,324 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ScientificTalkExtraction_v2",
+  "description": "Per-speaker extraction of oncology/pharmacology research presented at AACR 2026. One record per individual speaker talk within a session. DO NOT create a record for session chairs who only give introductory remarks with no primary data — skip them. DO create a record for every speaker who presents original data, a clinical trial, or a substantive scientific argument.",
+  "type": "object",
+  "properties": {
+
+    "talk_id": {
+      "type": "string",
+      "description": "Constructed as '{session_slug}::{speaker_last_name}::{talk_index_within_session}'. e.g. 'cancer-vaccines::wu::2'. Index starts at 1 for the first data-presenting speaker."
+    },
+
+    "session_title": {
+      "type": "string",
+      "description": "Title of the parent session."
+    },
+
+    "talk_title": {
+      "type": "string",
+      "description": "Title of this specific talk as stated by the speaker or chair. If not explicitly stated, construct a concise descriptive title from the content (max 12 words). Do NOT leave blank."
+    },
+
+    "speaker": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the speaker as introduced or self-identified."
+        },
+        "affiliation": {
+          "type": "string",
+          "description": "Institution or company. Include department if stated."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["academic_pi", "industry_presenter", "clinician_investigator", "session_chair_with_data", "discussant", "keynote", "trainee", "unknown"],
+          "description": "Role of the speaker. Use 'session_chair_with_data' only if the chair also presents substantive data or a scientific argument."
+        },
+        "disclosures_noted": {
+          "type": "boolean",
+          "description": "True if the speaker explicitly mentioned financial disclosures (even if none)."
+        }
+      },
+      "required": ["name", "affiliation", "role", "disclosures_noted"]
+    },
+
+    "tumor_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Cancer types discussed. Use standard names: 'colorectal cancer', 'NSCLC', 'pancreatic ductal adenocarcinoma', 'melanoma', 'AML', etc. Use 'pan-cancer' if applicable. Use [] if no specific cancer type is discussed (e.g. pure methods talk)."
+    },
+
+    "clinical_stage": {
+      "type": "string",
+      "enum": ["preclinical", "IND_enabling", "phase_1", "phase_1_2", "phase_2", "phase_2_3", "phase_3", "approved", "mixed", "unspecified"],
+      "description": "Most advanced clinical stage of the primary work presented. Use 'preclinical' for cell line / mouse model only work. Use 'unspecified' only if truly unclear."
+    },
+
+    "topic_categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "High-level topic tags. Choose ALL that apply from: immunotherapy, cancer_vaccines, CAR_T, ADC, targeted_therapy, PROTAC_degrader, molecular_glue, epigenetics, DNA_damage_repair, cell_cycle, metabolism, tumor_microenvironment, spatial_biology, liquid_biopsy, ctDNA, biomarker_development, early_detection, microbiome, synthetic_biology, radiopharmaceuticals, combination_therapy, resistance_mechanisms, clinical_trial, translational, basic_science, platform_technology, AI_ML, other."
+    },
+
+    "targets": {
+      "type": "array",
+      "description": "Biological targets discussed. One entry per distinct target/drug. Use [] if no specific molecular target is discussed (e.g. a talk purely about imaging methods). For each target, fill as many fields as the transcript supports.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gene_or_protein": {
+            "type": "string",
+            "description": "Standard gene symbol or protein name. e.g. 'KRAS', 'PD-L1', 'HER2', 'TROP2'."
+          },
+          "alteration": {
+            "type": "string",
+            "description": "Specific mutation or alteration if relevant. e.g. 'G12C', 'G12D', 'amplification', 'fusion'. Omit if not applicable."
+          },
+          "pathway": {
+            "type": "string",
+            "description": "Signaling pathway. e.g. 'RAS/MAPK', 'PI3K/AKT', 'WNT', 'DNA_damage_response', 'immune_checkpoint', 'cell_surface_antigen'. Use 'unknown' if not stated."
+          },
+          "modality": {
+            "type": "string",
+            "enum": ["small_molecule_inhibitor", "covalent_inhibitor", "PROTAC", "molecular_glue", "degrader_other", "antibody", "ADC", "bispecific", "CAR_T", "TCR_T", "mRNA_vaccine", "peptide_vaccine", "viral_vector", "siRNA_ASO", "CRISPR", "radiopharmaceutical", "combination", "other", "unspecified"],
+            "description": "Therapeutic modality targeting this gene/protein. Use 'unspecified' only if truly unclear."
+          },
+          "compound_name": {
+            "type": "string",
+            "description": "Drug name (generic, brand, or internal code). e.g. 'sotorasib', 'AMG 510', 'mRNA-4157', 'SynthBody X8'. Omit if no compound named."
+          },
+          "compound_id": {
+            "type": "string",
+            "description": "NCT number, ClinicalTrials ID, or internal code if mentioned. Omit if not stated."
+          },
+          "ligase_or_cofactor": {
+            "type": "string",
+            "description": "For degraders/molecular glues only: E3 ligase recruited. e.g. 'CRBN', 'VHL', 'MDM2'. Omit if not applicable."
+          },
+          "dependency_context": {
+            "type": "string",
+            "description": "Genetic/molecular context where the dependency or activity exists. e.g. 'KRAS G12C mutant NSCLC', 'HER2-amplified breast cancer', 'MMR-deficient CRC', 'all solid tumors'. Omit if not specified."
+          },
+          "target_novelty": {
+            "type": "string",
+            "enum": ["established_target", "emerging_target", "novel_target", "undruggable_being_addressed", "unknown"],
+            "description": "How established is this target in the oncology field."
+          }
+        },
+        "required": ["gene_or_protein", "pathway", "modality", "target_novelty"]
+      }
+    },
+
+    "biomarkers": {
+      "type": "array",
+      "description": "Patient selection, predictive, prognostic, or pharmacodynamic biomarkers discussed. Use [] if none discussed.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Biomarker name. e.g. 'MSI-H', 'TMB-high', 'ctDNA clearance', 'PD-L1 CPS', 'KRAS G12C', 'CD8 TIL density'."
+          },
+          "type": {
+            "type": "string",
+            "enum": ["predictive", "prognostic", "pharmacodynamic", "eligibility", "resistance", "exploratory"],
+            "description": "Biomarker role in the study."
+          },
+          "assay": {
+            "type": "string",
+            "description": "How it was measured. e.g. 'IHC', 'NGS panel', 'WGS', 'ctDNA liquid biopsy (Next Personal)', 'IHC CPS score', 'ELISpot'. Omit if not stated."
+          },
+          "finding": {
+            "type": "string",
+            "description": "Key finding about this biomarker. Be specific and include numbers. e.g. 'ctDNA clearance at week 6 predicted pCR (sensitivity 89%, specificity 100%)'."
+          }
+        },
+        "required": ["name", "type", "finding"]
+      }
+    },
+
+    "models": {
+      "type": "array",
+      "description": "Experimental models used. For clinical talks, the patient cohort IS the model — use model_type 'clinical_cohort' or 'clinical_trial'. Use [] only if no experimental work described at all.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "model_type": {
+            "type": "string",
+            "enum": ["cell_line", "organoid", "PDX", "xenograft", "syngeneic_mouse", "GEM", "patient_sample_ex_vivo", "clinical_cohort", "clinical_trial", "other"],
+            "description": "Type of experimental model."
+          },
+          "name": {
+            "type": "string",
+            "description": "Specific model name. e.g. 'SW480', 'KPC mouse', 'PANC-1 PDX', 'NeoPRISM-CRC trial', 'TCGA cohort'. Use 'not specified' if model type is clear but name is not given."
+          },
+          "genotype_or_key_features": {
+            "type": "string",
+            "description": "Relevant genotype, features, or cohort characteristics. e.g. 'KRAS G12D/+; Trp53 R172H/+', 'MMRd stage II-III CRC, n=32', 'HER2-high breast cancer, n=127 evaluable'. Use 'not specified' if not stated."
+          }
+        },
+        "required": ["model_type", "name", "genotype_or_key_features"]
+      }
+    },
+
+    "clinical_data": {
+      "type": "array",
+      "description": "ALL quantitative clinical efficacy or safety data reported. Extract every number. Use [] for purely preclinical talks.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "type": "string",
+            "description": "Endpoint name. e.g. 'ORR', 'pCR', 'PFS', 'OS', 'DOR', 'DCR', 'RFS', 'EFS', 'ctDNA_clearance_rate', 'DLT_rate', 'MTD', 'T_cell_response_rate'."
+          },
+          "value": {
+            "type": "string",
+            "description": "Reported value with units. e.g. '59%', '14.2 months', 'HR 0.56', 'p=0.003', 'not reached'."
+          },
+          "confidence_interval": {
+            "type": "string",
+            "description": "95% CI if reported. e.g. '95% CI 0.38-0.82'. Omit if not reported."
+          },
+          "n": {
+            "type": "string",
+            "description": "Sample size for this datapoint. e.g. 'n=32', 'n=127 evaluable', 'n=25 with ctDNA data'."
+          },
+          "population": {
+            "type": "string",
+            "description": "Patient population this applies to. e.g. 'MMRd CRC stage II-III', 'all-comers', 'ctDNA-positive at baseline', 'pCR subgroup'."
+          },
+          "comparator": {
+            "type": "string",
+            "description": "Comparator arm if applicable. e.g. 'vs pembrolizumab alone', 'vs historical control 30%'. Omit if single-arm."
+          },
+          "maturity": {
+            "type": "string",
+            "enum": ["primary_endpoint_met", "secondary_endpoint", "exploratory", "interim", "updated", "mature_OS", "immature"],
+            "description": "Data maturity status."
+          }
+        },
+        "required": ["metric", "value", "n", "population", "maturity"]
+      }
+    },
+
+    "MOA_summary": {
+      "type": "string",
+      "description": "2-4 sentence mechanistic summary of the primary scientific contribution. Be specific — name the pathway, the intervention, and the observed effect. For clinical talks, summarize the clinical hypothesis and key result. Do NOT write generic summaries like 'the speaker discussed cancer immunotherapy'."
+    },
+
+    "readouts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "All assay types and readouts used. e.g. 'RNA-seq', 'scRNA-seq', 'Visium_spatial_transcriptomics', 'ELISpot', 'flow_cytometry', 'IHC', 'WGS', 'ctDNA_WGS', 'western_blot', 'CRISPR_screen', 'proteomics', 'CyTOF', 'TCR_sequencing', 'multiplex_IHC', 'ELISA'. Use [] if no assays described."
+    },
+
+    "key_findings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "3-7 bullet points of the major scientific discoveries or clinical results. RULES: (1) Each bullet must be a complete, specific, data-grounded statement. (2) Include numbers where reported. (3) Do NOT use vague language like 'results were promising' or 'showed improvement'. (4) Bad example: 'The vaccine showed clinical activity.' Good example: 'Adjuvant mRNA neoantigen vaccine + pembrolizumab improved RFS vs pembrolizumab alone (HR 0.56, 95% CI 0.38-0.82) in resected high-risk melanoma (n=157, Phase IIb randomized)'."
+    },
+
+    "novelty_flag": {
+      "type": "string",
+      "enum": ["first_in_class", "best_in_class", "me_too", "platform_technology", "clinical_validation_of_known", "negative_or_null_result", "unspecified"],
+      "description": "Scientific novelty classification of the primary contribution. 'clinical_validation_of_known' = confirming known biology in patients. 'negative_or_null_result' = primary endpoint missed or hypothesis disproven."
+    },
+
+    "resistance_or_selectivity_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Specific observations about resistance mechanisms, off-target effects, paralog redundancy, narrow therapeutic windows, or selectivity challenges. Quote or closely paraphrase the speaker. Use [] if none discussed."
+    },
+
+    "combination_strategies": {
+      "type": "array",
+      "description": "Drug combinations tested or proposed. Use [] if none discussed.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "with_agent": {
+            "type": "string",
+            "description": "Name of the combination partner drug or modality."
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Scientific rationale for the combination as stated or implied by the speaker."
+          },
+          "phenotype": {
+            "type": "string",
+            "description": "Observed or predicted outcome with specifics. e.g. 'synergistic tumor regression in KPC mice (p<0.01)', 'improved pCR 59% vs 30% historical'."
+          },
+          "stage": {
+            "type": "string",
+            "enum": ["proposed", "preclinical", "clinical_ongoing", "clinical_reported"],
+            "description": "How far along is this combination."
+          }
+        },
+        "required": ["with_agent", "rationale", "phenotype", "stage"]
+      }
+    },
+
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Explicit scientific or clinical questions the speaker raised but did not answer. High-value for identifying research gaps and follow-up directions. Use [] if none raised."
+    },
+
+    "external_follow_up": {
+      "type": "object",
+      "description": "Pointers for downstream enrichment agents. Populate only with what was explicitly mentioned in the transcript.",
+      "properties": {
+        "nct_numbers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "ClinicalTrials.gov NCT numbers mentioned verbatim. e.g. ['NCT04165772', 'NCT05194995']."
+        },
+        "abstract_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "AACR or other conference abstract IDs mentioned."
+        },
+        "cited_papers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Papers cited by author/year/journal as mentioned in the talk. e.g. 'Weber et al. 2024 NEJM', 'Wu et al. 2023 Nature'. Only include if author + year or journal was stated."
+        },
+        "company_or_sponsor": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Pharmaceutical companies or sponsors mentioned in context of the work."
+        },
+        "patent_or_ip_hints": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Any mentions of patents, licensing, or IP that warrant patent database lookup."
+        }
+      },
+      "required": ["nct_numbers", "abstract_ids", "cited_papers", "company_or_sponsor", "patent_or_ip_hints"]
+    }
+
+  },
+  "required": [
+    "talk_id",
+    "session_title",
+    "talk_title",
+    "speaker",
+    "tumor_types",
+    "clinical_stage",
+    "topic_categories",
+    "targets",
+    "models",
+    "clinical_data",
+    "MOA_summary",
+    "readouts",
+    "key_findings",
+    "novelty_flag",
+    "resistance_or_selectivity_notes",
+    "combination_strategies",
+    "open_questions",
+    "external_follow_up"
+  ],
+  "additionalProperties": false
+}

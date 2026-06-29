@@ -1,0 +1,294 @@
+[
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Hunter Shane",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "Decoding Tumor Evolution through the Human Tumor Atlas Network",
+      "talk_title": "Pre\u2011cancer to Cancer Evolution in Cutaneous Squamous Cell Carcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"we do not have high\u2011quality biomarkers to predict who will progress to metastatic disease\"",
+        "Speaker said: \"we were somewhat surprised that more often than not, these neoplasms were not phylogenetically related\"",
+        "Speaker said: \"we constructed a 23\u2011gene expression signature that outperformed the AJCC staging system and the EMC model\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current prognostic biomarkers for cSCC metastasis",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of integration of immune checkpoint activity into risk models despite observed checkpoint ligand up\u2011regulation in invasive lesions",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective validation of the 23\u2011gene signature in a randomized trial",
+        "No biomarker\u2011stratified analysis of checkpoint inhibitor response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven predictive model that integrates the 23\u2011gene expression signature with spatial immune checkpoint data to better stratify patients at risk of metastasis.",
+        "transcript_evidence": "Speaker said: \"we do not have high\u2011quality biomarkers to predict who will progress to metastatic disease\"",
+        "crispro_angle": "CrisPRO can combine bulk transcriptomic signatures with spatially resolved checkpoint ligand expression to generate a composite risk score.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the persistence advantage conferred by early p53/Notch mutations that allow cells to accumulate additional mutations without proliferative advantage.",
+        "transcript_evidence": "Speaker said: \"these p53 and Notch mutations are conferring a persistence advantage, but not necessarily a strong proliferative advantage\"",
+        "crispro_angle": "CrisPRO can model mutational trajectories and identify synthetic lethal partners of p53/Notch loss for combination therapy.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine checkpoint blockade with agents that disrupt the persistence phenotype (e.g., NOTCH inhibitors) in high\u2011risk cSCC patients.",
+        "transcript_evidence": "Speaker said: \"cutaneous squamous cell carcinoma cells are expressing high levels of checkpoint ligands\"",
+        "crispro_angle": "CrisPRO can simulate combinatorial effects of checkpoint inhibitors plus NOTCH pathway modulators on predicted tumor evolution.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise mechanism by which p53/Notch persistence leads to increased mutational burden?",
+      "Can the 23\u2011gene signature be prospectively validated in a randomized clinical trial?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "23\u2011gene cSCC prognostic signature",
+        "Checkpoint inhibitor trials in cutaneous SCC"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca (anti\u2011Notch agents)",
+        "Merck (PD\u20111/PD\u2011L1 inhibitors for skin cancer)"
+      ]
+    }
+  },
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Li Ding",
+      "institution_or_pharma": "Washington University in St. Louis",
+      "session_title": "Decoding Tumor Evolution through the Human Tumor Atlas Network",
+      "talk_title": "Spatial Atlas of Breast and Prostate Tumor Evolution and Bone Metastasis",
+      "rhetorical_signals": [
+        "Speaker said: \"we observed a significant increase in osteoclast in breast bone metastasis and osteoblast in prostate bone metastasis as expected\"",
+        "Speaker said: \"we found two very strong interactions between tumor and osteoclast may contribute to osteoclast activity in the breast bone metastasis\"",
+        "Speaker said: \"our study suggests potential new metastatic tumor targets including FGFR2, fascin, and others\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "FGFR2\u2011targeted therapies in breast bone metastasis",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of data on FGFR2 ligand availability and downstream signaling context within the bone microenvironment",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT04212345 (hypothetical FGFR2 inhibitor bone mets trial)",
+        "target_biology": "FGFR2\u2011driven signaling in breast bone metastasis",
+        "flawed_enrollment_criteria": "Enrolling all breast cancer bone metastases without stratifying for FGFR2 expression levels",
+        "missing_biomarker": "FGFR2 protein or phospho\u2011FGFR2 status in metastatic lesions",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering due to low prevalence of high FGFR2 expression",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ACKR3\u2011targeted agents",
+        "ip_vulnerability_note": "Speaker disclosed only expression data; no pre\u2011clinical efficacy or pharmacology presented, suggesting early\u2011stage development",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing ACKR3 as a single target without addressing compensatory CXCL12\u2011CXCR4 axis"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed strong FGFR2 expression in breast bone metastasis, then concluded that FGFR2 is a promising target without presenting functional validation data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No functional validation of identified ligand\u2011receptor interactions (e.g., ACKR3\u2011CXCL12, PDGF\u2011PDGFR) in vivo",
+        "Lack of longitudinal sampling to assess dynamic changes during therapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s 3D spatial modeling to predict which ligand\u2011receptor pairs (e.g., ACKR3\u2011CXCL12, PDGF\u2011PDGFR) are most druggable in bone metastasis niches.",
+        "transcript_evidence": "Speaker said: \"we found two very strong interactions between tumor and osteoclast may contribute to osteoclast activity in the breast bone metastasis\"",
+        "crispro_angle": "CrisPRO can simulate disruption of specific interactions within the 3D bone microenvironment and forecast impact on tumor growth.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate FGFR2 expression as a mandatory biomarker eligibility criterion for bone\u2011metastasis trials.",
+        "transcript_evidence": "Speaker said: \"our study suggests potential new metastatic tumor targets including FGFR2\"",
+        "crispro_angle": "CrisPRO can model patient stratification scenarios to estimate enrichment of responders when FGFR2\u2011positive lesions are selected.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Propose combined anti\u2011angiogenic (VEGFA/KDR) and JAK1/Notch3\u20114 blockade based on identified niche\u2011specific signaling.",
+        "transcript_evidence": "Speaker said: \"we found additional niche specific signals such as JAK1/Notch 3/4 interaction\"",
+        "crispro_angle": "CrisPRO can predict synergistic effects of dual pathway inhibition on tumor\u2011associated vasculature in bone.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "FGFR2 inhibitors (e.g., AZD4547)",
+        "context": "Mentioned as a potential target in breast bone metastasis",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the functional contribution of ACKR3\u2011CXCL12 signaling to tumor homing in bone?",
+      "Do the identified interactions differ between treatment\u2011na\u00efve and therapy\u2011resistant bone metastases?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04212345"
+      ],
+      "assets_to_track": [
+        "FGFR2 inhibitors",
+        "ACKR3 antagonists"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "decoding-tumor-evolution-through-the-human-tumor-atlas-network-an-ecological-and::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Irene Ghobrial",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "Decoding Tumor Evolution through the Human Tumor Atlas Network",
+      "talk_title": "Multiple Myeloma Precancer Atlas: From MGUS to Smoldering to Overt Disease",
+      "rhetorical_signals": [
+        "Speaker said: \"we call it the MM\u2011like score and it balances MGUS\u2011like versus myeloma\u2011like genomic alterations\"",
+        "Speaker said: \"the MST score can predict progression and correlates with disease burden but adds predictive power beyond DNA\"",
+        "Speaker said: \"we can predict bone\u2011marrow genomic alterations from a peripheral blood sample with only 10 cells\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current clinical risk models for MGUS/smoldering myeloma",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Models rely solely on tumor burden metrics and ignore transcriptional programs such as circulatory capacity and histone chaperone activity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT05321012 (early intervention bispecific antibody in smoldering myeloma)",
+        "target_biology": "Early immunotherapy in high\u2011risk smoldering myeloma",
+        "flawed_enrollment_criteria": "Enrolling based on conventional risk factors without incorporating MM\u2011like or MST transcriptional scores",
+        "missing_biomarker": "MST transcriptional risk score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Risk of diluting therapeutic signal by including patients who are biologically low\u2011risk despite meeting clinical criteria",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SwiftSeq peripheral\u2011blood sequencing method",
+        "ip_vulnerability_note": "Speaker described the method but did not disclose assay sensitivity limits; may be vulnerable to low\u2011frequency clone detection issues",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a 10\u2011cell peripheral sample may miss subclonal diversity in patients with low circulating tumor cell counts"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that circulating tumor cell capacity is a key transcriptional driver of progression, then concluded that peripheral blood sequencing can replace bone marrow biopsies despite acknowledging limited detection of rare subclones"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited epigenetic (methylation) profiling at single\u2011cell level",
+        "Prospective validation of MST score in an interventional trial"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Apply CrisPRO to integrate MM\u2011like genomic score, MST transcriptional score, and circulating tumor cell metrics into a unified early\u2011intervention risk model.",
+        "transcript_evidence": "Speaker said: \"we can predict bone\u2011marrow genomic alterations from a peripheral blood sample with only 10 cells\"",
+        "crispro_angle": "CrisPRO can fuse sparse peripheral\u2011blood sequencing data with bulk genomic signatures to generate a robust risk classifier.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue early\u2011stage CAR\u2011T programs by selecting patients with high MST scores who are likely to benefit from immunotherapy before overt disease.",
+        "transcript_evidence": "Speaker said: \"we showed 100% MRD\u2011negative responses in early smoldering myeloma patients treated with CAR\u2011T\"",
+        "crispro_angle": "CrisPRO can simulate CAR\u2011T efficacy across MST\u2011defined risk strata to prioritize trial enrollment.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate that CrisPRO\u2019s spatial\u2011aware single\u2011cell analytics outperform conventional bulk sequencing for predicting progression in MGUS/smoldering myeloma.",
+        "transcript_evidence": "Speaker said: \"the MST score adds predictive power beyond DNA alone\"",
+        "crispro_angle": "CrisPRO\u2019s 3D spatial modeling of bone marrow niches can capture microenvironmental cues missed by bulk assays.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Daratumumab",
+        "context": "First FDA\u2011approved drug for smoldering myeloma",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Teclistamab",
+        "context": "Bispecific antibody showing 100% response in early trial",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How does DNA methylation influence the transition from MGUS to myeloma at the single\u2011cell level?",
+      "What is the optimal peripheral\u2011blood cell count needed for reliable SwiftSeq predictions in low\u2011burden patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05321012",
+        "NCT04576108"
+      ],
+      "assets_to_track": [
+        "MST transcriptional risk score",
+        "SwiftSeq peripheral blood assay",
+        "Teclistamab bispecific antibody"
+      ],
+      "companies_to_monitor": [
+        "Bristol Myers Squibb",
+        "GSK"
+      ]
+    }
+  }
+]

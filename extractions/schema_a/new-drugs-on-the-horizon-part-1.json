@@ -1,0 +1,620 @@
+[
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::chamberlain::1",
+    "session_title": "new-drugs-on-the-horizon-part-1",
+    "talk_title": "Development of NEO811, a molecular glue degrader of ARNT (HIF-1\u03b2) for clear cell renal cell carcinoma",
+    "speaker": {
+      "name": "Phil Chamberlain",
+      "affiliation": "Neomorph, San Diego",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "clear cell renal cell carcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "molecular_glue",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ARNT",
+        "alteration": null,
+        "pathway": "HIF_signaling",
+        "modality": "molecular_glue",
+        "compound_name": "NEO811",
+        "compound_id": null,
+        "ligase_or_cofactor": "cereblon",
+        "dependency_context": "VHL-deficient ccRCC",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "HIF-2\u03b1",
+        "alteration": null,
+        "pathway": "HIF_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "belzutifan",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "ccRCC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "VEGF expression",
+        "type": "pharmacodynamic",
+        "assay": "qPCR / protein assay",
+        "finding": "NEO811 potently suppresses VEGF expression compared with belzutifan"
+      },
+      {
+        "name": "Anemia (RBC count)",
+        "type": "pharmacodynamic",
+        "assay": "CBC",
+        "finding": "Anemia observed as on-target effect, manageable with erythropoietin"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "xenograft",
+        "name": "ccRCC xenograft model",
+        "genotype_or_key_features": "VHL loss, HIF-1\u03b1/HIF-2\u03b1 constitutive"
+      },
+      {
+        "model_type": "PDX",
+        "name": "XP490 PDX",
+        "genotype_or_key_features": "Low HIF-2\u03b1 expression, VHL loss"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "shRNA-inducible ARNT knockdown cells",
+        "genotype_or_key_features": "Dox-inducible ARNT suppression"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "robust single\u2011agent regression at low oral doses",
+        "confidence_interval": null,
+        "n": "n=unspecified preclinical mice",
+        "population": "ccRCC xenograft models",
+        "comparator": null,
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "body weight change",
+        "value": "no significant change",
+        "confidence_interval": null,
+        "n": "n=unspecified",
+        "population": "treated mice",
+        "comparator": null,
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "NEO811 is a cereblon\u2011recruiting molecular glue that induces ubiquitination and proteasomal degradation of the transcription factor ARNT, disrupting the obligate HIF\u2011\u03b1/ARNT dimer and shutting down pan\u2011HIF transcriptional programs in VHL\u2011deficient ccRCC, leading to tumor regression even in models resistant to HIF\u20112\u03b1 inhibitors.",
+    "readouts": [
+      "Western blot",
+      "proteomics",
+      "VEGF mRNA/protein assay",
+      "tumor volume measurement",
+      "body weight monitoring"
+    ],
+    "key_findings": [
+      "NEO811 degrades ARNT with >log\u2011unit selectivity over other NEO substrates in whole\u2011cell proteomics.",
+      "Oral NEO811 induces potent tumor regression in ccRCC xenografts at low doses with no body\u2011weight loss.",
+      "In HIF\u20112\u03b1 G323E mutant and HIF\u20112\u03b1\u2011low PDX models, NEO811 retains activity whereas belzutifan loses efficacy.",
+      "Systemic ARNT degradation in mice is well tolerated, indicating a potentially safe therapeutic window."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "ARNT is traditionally undruggable; NEO811 achieves degradation via a novel induced degron requiring cereblon.",
+      "Potential resistance via mutations that disrupt ternary complex formation not yet observed."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Standard of care HIF\u20112\u03b1 inhibitors (e.g., belzutifan)",
+        "rationale": "NEO811 retains activity in HIF\u20112\u03b1 inhibitor\u2011resistant tumors, offering complementary pathway blockade.",
+        "phenotype": "Additive tumor regression in resistant models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will systemic ARNT degradation cause on\u2011target toxicities in normal tissues beyond anemia?",
+      "What is the optimal dosing schedule to maintain target suppression while minimizing hematologic effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nobel Prize work on VHL/HIF pathway",
+        "Belzutifan clinical data 2023 NEJM"
+      ],
+      "company_or_sponsor": [
+        "Neomorph"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::sitnikova::2",
+    "session_title": "new-drugs-on-the-horizon-part-1",
+    "talk_title": "AZD8359, a CD8\u2011biased T\u2011cell engager targeting STEAP2 for metastatic castration\u2011resistant prostate cancer",
+    "speaker": {
+      "name": "Suzanne Sitnikova",
+      "affiliation": "AstraZeneca, Discovery Immunology",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "combination_therapy",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "STEAP2",
+        "alteration": null,
+        "pathway": "unknown",
+        "modality": "bispecific_antibody",
+        "compound_name": "AZD8359",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "highly expressed on prostate adenocarcinoma cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD8",
+        "alteration": null,
+        "pathway": "immune_synapse",
+        "modality": "bispecific_antibody",
+        "compound_name": "AZD8359",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "CD8+ T cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "STEAP2 expression",
+        "type": "eligibility",
+        "assay": "IHC / RNA\u2011seq",
+        "finding": "Virtually all metastatic castration\u2011resistant prostate lesions (>95%) express STEAP2 homogeneously"
+      },
+      {
+        "name": "Cytokine release (CRS)",
+        "type": "pharmacodynamic",
+        "assay": "serum cytokine panel",
+        "finding": "AZD8359 shows a wider therapeutic index with reduced cytokine release versus conventional TCEs in humanized mice"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "STEAP2\u2011knockout prostate cancer line",
+        "genotype_or_key_features": "STEAP2 null"
+      },
+      {
+        "model_type": "humanized_mouse",
+        "name": "flank tumor model",
+        "genotype_or_key_features": "STEAP2\u2011positive prostate tumor"
+      },
+      {
+        "model_type": "humanized_mouse",
+        "name": "intratubal bone metastasis model",
+        "genotype_or_key_features": "STEAP2\u2011positive prostate tumor in bone niche"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor clearance",
+        "value": "complete tumor eradication in intratubal model",
+        "confidence_interval": null,
+        "n": "n=unspecified mice",
+        "population": "STEAP2\u2011positive prostate tumors",
+        "comparator": "isotype control TCE",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "cytokine release",
+        "value": "significantly lower cytokine levels at efficacious doses",
+        "confidence_interval": null,
+        "n": "n=unspecified",
+        "population": "humanized mice",
+        "comparator": "conventional non\u2011CD8\u2011guided TCE",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "AZD8359 is a bivalent bispecific antibody that binds STEAP2 on prostate tumor cells and a CD8\u2011binding arm to preferentially engage CD8+ T cells, delivering cytotoxic signals while limiting CD4\u2011driven cytokine release, thereby achieving potent tumor regression with a wider therapeutic index.",
+    "readouts": [
+      "flow_cytometry",
+      "live\u2011cell imaging",
+      "tumor volume",
+      "cytokine panels",
+      "IHC"
+    ],
+    "key_findings": [
+      "STEAP2 is highly and homogeneously expressed in >95% of metastatic castration\u2011resistant prostate cancer lesions with minimal normal tissue expression.",
+      "AZD8359 mediates STEAP2\u2011dependent tumor cell killing in vitro; killing is abolished in STEAP2\u2011KO cells.",
+      "CD8\u2011biased format increases potency compared with a non\u2011CD8\u2011guided TCE while reducing CD4 activation and cytokine release.",
+      "In humanized mouse flank and bone\u2011metastasis models, AZD8359 achieves complete tumor clearance with no activity from isotype control.",
+      "Therapeutic index (cytotoxic vs cytokine release) is markedly expanded versus conventional 2+1 TCEs both in vitro and in vivo."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Selectivity relies on STEAP2 expression; tumors lacking STEAP2 are not targeted.",
+      "Potential resistance via down\u2011regulation of STEAP2 not yet observed."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Standard of care androgen deprivation therapy",
+        "rationale": "Potential synergistic anti\u2011tumor activity in prostate cancer",
+        "phenotype": "not yet tested",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "Other CD8\u2011biased TCE formats (AZD6621)",
+        "rationale": "Validate CD8 guidance across formats",
+        "phenotype": "similar efficacy and reduced cytokine release",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will CD8 bias affect long\u2011term T\u2011cell memory and durability of response?",
+      "Can STEAP2 expression be used as a predictive biomarker across diverse patient populations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::nicholson::3",
+    "session_title": "new-drugs-on-the-horizon-part-1",
+    "talk_title": "TNG961, an oral HBS1L molecular glue degrader for FOCAD\u2011deleted cancers",
+    "speaker": {
+      "name": "Hillary Nicholson",
+      "affiliation": "Tango Therapeutics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic cancer",
+      "non\u2011small cell lung cancer",
+      "FOCAD\u2011deleted cancers"
+    ],
+    "clinical_stage": "IND_enabling",
+    "topic_categories": [
+      "molecular_glue",
+      "targeted_therapy",
+      "clinical_trial",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HBS1L",
+        "alteration": null,
+        "pathway": "ribosome rescue / translation homeostasis",
+        "modality": "molecular_glue",
+        "compound_name": "TNG961",
+        "compound_id": null,
+        "ligase_or_cofactor": "cereblon",
+        "dependency_context": "FOCAD\u2011negative, MTAP\u2011co\u2011deleted tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PELO",
+        "alteration": null,
+        "pathway": "ribosome rescue",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "downstream of HBS1L degradation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HBS1L protein level",
+        "type": "pharmacodynamic",
+        "assay": "HiBit luminescence / Western blot",
+        "finding": "Dose\u2011dependent degradation of HBS1L in tumor tissue"
+      },
+      {
+        "name": "Pelo destabilization",
+        "type": "pharmacodynamic",
+        "assay": "Western blot",
+        "finding": "Secondary loss of PELO observed following HBS1L degradation"
+      },
+      {
+        "name": "IFRD1 expression",
+        "type": "pharmacodynamic",
+        "assay": "qPCR",
+        "finding": "Induction of IFRD1 only in FOCAD\u2011negative cells treated with TNG961"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MiaPaCa2 (FOCAD\u2011/MTAP\u2011deleted)",
+        "genotype_or_key_features": "FOCAD loss, MTAP loss"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "NCI\u2011H838 (FOCAD\u2011/MTAP\u2011deleted)",
+        "genotype_or_key_features": "FOCAD loss, MTAP loss"
+      },
+      {
+        "model_type": "CDX",
+        "name": "FOCAD\u2011deleted pancreatic CDX",
+        "genotype_or_key_features": "FOCAD loss"
+      },
+      {
+        "model_type": "PDX",
+        "name": "FOCAD\u2011deleted NSCLC PDX",
+        "genotype_or_key_features": "FOCAD loss"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "complete regressions in pancreatic and NSCLC models",
+        "confidence_interval": null,
+        "n": "n=unspecified mice",
+        "population": "FOCAD\u2011deleted CDX/PDX models",
+        "comparator": "vehicle",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "combination benefit",
+        "value": "all tumors regressed, 6/8 complete regressions with sub\u2011therapeutic TNG961 + PRMT5 inhibitor",
+        "confidence_interval": null,
+        "n": "n=8",
+        "population": "FOCAD\u2011/MTAP\u2011deleted NSCLC xenografts",
+        "comparator": "single agents",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "exposure",
+        "value": "dose\u2011proportional, 20\u2011fold above predicted human efficacious dose",
+        "confidence_interval": null,
+        "n": "n=unspecified",
+        "population": "GLP toxicology species",
+        "comparator": null,
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "TNG961 is a cereblon\u2011recruiting molecular glue that induces selective proteasomal degradation of HBS1L, a key component of the HBS1L\u2011PELO ribosome rescue complex; loss of HBS1L in FOCAD\u2011deficient tumors triggers ER stress and the unfolded protein response, leading to selective tumor cell death.",
+    "readouts": [
+      "HiBit luminescence",
+      "Western blot",
+      "global proteomics",
+      "cell viability assays",
+      "tumor volume",
+      "qPCR",
+      "RNA\u2011seq"
+    ],
+    "key_findings": [
+      "TNG961 degrades HBS1L with picomolar potency while sparing GSPT1 and other NEO substrates.",
+      "In FOCAD\u2011negative isogenic cell lines, TNG961 shows >100\u2011fold selectivity for loss of viability compared with FOCAD\u2011positive counterparts.",
+      "Oral dosing leads to dose\u2011proportional exposure and robust HBS1L degradation in tumor PD tissues.",
+      "Complete tumor regressions observed in multiple FOCAD\u2011deleted CDX/PDX models of pancreatic cancer and NSCLC.",
+      "Non\u2011overlapping sensitivity with MTAP\u2011cooperative PRMT5 inhibitors; sequential or combined therapy yields enhanced tumor control."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity driven by synthetic lethality of HBS1L loss in FOCAD\u2011deleted context; other cell lines show minimal sensitivity.",
+      "Potential resistance via alternative ribosome rescue pathways not yet explored."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PRMT5 inhibitor (volapemetostat)",
+        "rationale": "Non\u2011overlapping mechanisms in MTAP\u2011co\u2011deleted tumors",
+        "phenotype": "sequential treatment leads to tumor regression after PRMT5 resistance",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "PRMT5 inhibitor (sub\u2011therapeutic dose)",
+        "rationale": "Synergistic tumor regression in FOCAD\u2011/MTAP\u2011deleted NSCLC",
+        "phenotype": "all tumors regressed, 6/8 complete regressions",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Standard of care chemotherapy",
+        "rationale": "Broad safety margin supports combination",
+        "phenotype": "proposed",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What biomarkers beyond FOCAD loss predict response to HBS1L degradation?",
+      "Will long\u2011term HBS1L degradation affect normal tissues reliant on ribosome rescue?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "CRISPR synthetic lethal screen 2022",
+        "TNG961 Cancer Discovery manuscript (in press)"
+      ],
+      "company_or_sponsor": [
+        "Tango Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::garde::4",
+    "session_title": "new-drugs-on-the-horizon-part-1",
+    "talk_title": "EPI-326, a bispecific EGFR degrader (EpiTac) targeting integrin \u03b26 for EGFR\u2011driven solid tumors",
+    "speaker": {
+      "name": "Shirah Garde",
+      "affiliation": "EpiBiologics, Chief Scientific Officer",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non\u2011small cell lung cancer",
+      "head and neck cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "IND_enabling",
+    "topic_categories": [
+      "targeted_therapy",
+      "bispecific_antibody",
+      "protein_degradation",
+      "clinical_trial",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": null,
+        "pathway": "EGFR signaling",
+        "modality": "bispecific_antibody",
+        "compound_name": "EPI-326",
+        "compound_id": null,
+        "ligase_or_cofactor": "integrin \u03b26 (degrading receptor)",
+        "dependency_context": "EGFR\u2011driven tumors (mutant or overexpressed)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Integrin \u03b26",
+        "alteration": null,
+        "pathway": "lysosomal internalization",
+        "modality": "bispecific_antibody",
+        "compound_name": "EPI-326",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "co\u2011expressed with EGFR on tumor cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "EGFR protein level",
+        "type": "pharmacodynamic",
+        "assay": "IHC / Western blot",
+        "finding": "\u226590% reduction in tumor EGFR 72\u202fh after a single dose, lasting >7\u202fdays"
+      },
+      {
+        "name": "Phospho\u2011EGFR",
+        "type": "pharmacodynamic",
+        "assay": "Western blot",
+        "finding": "Greater suppression than blocking antibodies"
+      },
+      {
+        "name": "Phospho\u2011HER3 and c\u2011Jun",
+        "type": "pharmacodynamic",
+        "assay": "Western blot",
+        "finding": "Significant down\u2011regulation indicating loss of EGFR scaffolding activity"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "EGFR mutant NSCLC lines (ex19del, L858R, T790M, C797S)",
+        "genotype_or_key_features": "various EGFR activating/resistance mutations"
+      },
+      {
+        "model_type": "CDX",
+        "name": "Head\u2011and\u2011neck EGFR\u2011overexpressing CDX",
+        "genotype_or_key_features": "wild\u2011type EGFR overexpression"
+      },
+      {
+        "model_type": "PDX",
+        "name": "CRC EGFR\u2011amplified PDX",
+        "genotype_or_key_features": "wild\u2011type EGFR amplification"
+      },
+      {
+        "model_type": "non\u2011human_primate",
+        "name": "cynomolgus monkey PK/PD study",
+        "genotype_or_key_features": "human\u2011cross\u2011reactive EGFR and integrin \u03b26"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "complete responses in mutant EGFR NSCLC models after 3 doses",
+        "confidence_interval": null,
+        "n": "n=unspecified mice",
+        "population": "EGFR mutant xenografts",
+        "comparator": "blocking antibodies (stasis only)",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "safety (NOAEL)",
+        "value": "204\u202fmg/kg every 2\u202fweeks for 3 doses, no EGFR\u2011related toxicities",
+        "confidence_interval": null,
+        "n": "n=unspecified NHPs",
+        "population": "cynomolgus monkeys",
+        "comparator": null,
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "EPI-326 is a bispecific IgG1 antibody that binds EGFR on tumor cells and integrin \u03b26 as a degrading receptor; the ternary complex drives lysosomal internalization and degradation of EGFR, removing both its kinase activity and scaffolding functions while sparing normal tissues lacking integrin \u03b26, resulting in durable tumor regressions.",
+    "readouts": [
+      "IHC",
+      "Western blot",
+      "tumor volume",
+      "PK/PD",
+      "cytokine panels",
+      "ADCC/ADCP assays"
+    ],
+    "key_findings": [
+      "Integrin \u03b26 is highly expressed and co\u2011localized with EGFR in NSCLC, head\u2011and\u2011neck, and CRC, but limited in normal skin and colon.",
+      "EPI-326 degrades EGFR across wild\u2011type, activating, and resistance mutations, achieving complete tumor regressions where blocking antibodies only induce stasis.",
+      "Single dose yields >90% EGFR loss lasting >7\u202fdays, indicating catalytic degradation.",
+      "Preclinical safety in cynomolgus monkeys shows no EGFR\u2011related toxicities up to 204\u202fmg/kg, supporting a wide therapeutic index.",
+      "Combination with osimertinib (NSCLC) or KRAS inhibitor (CRC) yields deeper and more durable responses."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Selectivity depends on tumor\u2011restricted integrin \u03b26 expression; normal tissues lacking \u03b26 are spared.",
+      "Potential resistance via loss of integrin \u03b26 expression not yet observed."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Osimertinib (EGFR TKI)",
+        "rationale": "Combine degradation with kinase inhibition for frontline NSCLC",
+        "phenotype": "deeper and longer tumor control",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Sotorasib (KRAS G12C inhibitor)",
+        "rationale": "Target KRAS\u2011mutant CRC with EGFR degradation to prevent bypass signaling",
+        "phenotype": "complete responses in PDX models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will integrin \u03b26 expression be sufficient in all EGFR\u2011driven patient subsets to achieve tumor\u2011restricted degradation?",
+      "What is the long\u2011term impact of sustained EGFR loss on normal epithelial turnover in tissues with low \u03b26 expression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "EPI-326 Cancer Discovery manuscript (in press)"
+      ],
+      "company_or_sponsor": [
+        "EpiBiologics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "talk_id": "aacr-waun-ki-hong-award-for-outstanding-achievement-in-translational-and-clinica::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Eli Van Allen",
+      "institution_or_pharma": "Dana-Farber Cancer Institute / Harvard Medical School",
+      "session_title": "aacr-waun-ki-hong-award-for-outstanding-achievement-in-translational-and-clinica",
+      "talk_title": "Molecular Logic in Cancer: From Germline\u2011Somatic Interactions to AI\u2011Driven Clinical Decision Support",
+      "rhetorical_signals": [
+        "Speaker said: \"we weren't sure how good it was going to be\" (referring to early PBRM1 findings)",
+        "Speaker admitted: \"we had to be very honest and transparent about that uncertainty of what we were observing\" (about inconsistent PBRM1 biomarker performance)",
+        "Speaker noted: \"we're still a work in progress\" (regarding computational pathology models)",
+        "Speaker warned: \"if we just go for the agentic AI, ... we would be doing something very bad\" (about interpretability risks)"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PBRM1 loss\u2011of\u2011function as a predictive biomarker for checkpoint blockade in kidney cancer",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Failure to account for prior VEGF\u2011TKI exposure and concurrent combination regimens that alter the HIF\u2011ERV axis",
+        "unexplained_resistance_quote": "we weren't sure what to make of it... the signal didn't hold in all cohorts",
+        "ghost_responder_admission": "the discovery cohort showed a strong response in a subset of patients with PBRM1 mutations",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Checkpoint 025",
+        "target_biology": "Immune checkpoint blockade after VEGF\u2011TKI progression in renal cell carcinoma",
+        "flawed_enrollment_criteria": "Mixed prior therapy exposure (some patients received VEGF\u2011TKI, others not) dilutes biomarker signal",
+        "missing_biomarker": "Prospective stratification by PBRM1 status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Signal attenuation due to heterogeneous prior lines of therapy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Open\u2011source Molecular Oncology Almanac platform",
+        "ip_vulnerability_note": "Speaker disclosed that the platform is fully open source with publicly available APIs, making it easy for competitors to replicate",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad, non\u2011biomarker\u2011selected deployment may dilute clinical impact compared with focused, companion\u2011diagnostic approaches"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that a single genomic feature (PBRM1 loss) correlated with response in the discovery cohort, then concluded that the biomarker is not reliable enough for clinical use without further validation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective, biomarker\u2011stratified randomized trial for PBRM1",
+        "Limited longitudinal ctDNA or serial biopsy data to track resistance dynamics",
+        "Absence of OS endpoints for many of the presented cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011enabled predictive model that integrates PBRM1 status with HIF\u2011ERV signatures and prior VEGF\u2011TKI exposure to better select patients for checkpoint blockade",
+        "transcript_evidence": "Speaker admitted uncertainty around PBRM1 biomarker performance and highlighted the need to consider prior VEGF\u2011TKI context",
+        "crispro_angle": "CrisPRO can combine genomic, transcriptomic, and treatment history into a mechanistic graph model to generate a composite response score",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve full protocol and enrollment criteria for Checkpoint 025",
+          "PubMed: systematic review of PBRM1 as a predictive biomarker in RCC",
+          "Evaluate: track emerging trials testing PBRM1\u2011guided immunotherapy"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model HIF\u2011dependent ERV activation in PBRM1\u2011mutant tumors and identify druggable nodes (e.g., HIF inhibitors) to overcome resistance to checkpoint blockade",
+        "transcript_evidence": "Speaker noted that ERVs in a PBRM1 mutant setting are HIF\u2011dependent and that current combination regimens ignore this biology",
+        "crispro_angle": "CrisPRO\u2019s pathway\u2011level perturbation analysis can predict synthetic lethal partners of PBRM1 loss, guiding combination trials",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical data on HIF inhibitors in PBRM1\u2011mutant RCC models",
+          "ClinicalTrials.gov: search for ongoing HIF\u2011targeted combination studies in RCC"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a biomarker\u2011enriched, adaptive trial that dynamically re\u2011stratifies patients using real\u2011time computational pathology and single\u2011cell signatures generated by CrisPRO",
+        "transcript_evidence": "Speaker emphasized the need for dynamic, on\u2011treatment data (e.g., computational pathology, single\u2011cell) to avoid static trial designs",
+        "crispro_angle": "CrisPRO can ingest serial H&E\u2011derived features and single\u2011cell multi\u2011omics to update response predictions during the trial",
+        "priority": "high",
+        "external_validation_needed": [
+          "Regulatory guidance on adaptive biomarker\u2011driven trial designs",
+          "Case studies of adaptive immunotherapy trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Broad Institute",
+        "context": "internal meeting where early PBRM1 findings were shared",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Bill Kaelin",
+        "context": "provided data on HIF\u2011dependent ERVs in PBRM1\u2011mutant tumors",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Kai Wupperfing",
+        "context": "independently identified PBRM1 as a gene influencing T\u2011cell cytotoxicity",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Why does the PBRM1 association with immunotherapy response appear strong in some cohorts but not in others?",
+      "How can dynamic tumor\u2011immune interactions be captured longitudinally to improve predictive modeling?",
+      "What is the optimal way to embed curated biological pathway knowledge (e.g., Reactome) into foundation models without propagating errors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT??? (Checkpoint 025 trial identifier not provided in transcript; need to locate via ClinicalTrials.gov)"
+      ],
+      "assets_to_track": [
+        "PBRM1 loss\u2011of\u2011function as a predictive biomarker",
+        "Molecular Oncology Almanac platform",
+        "Computational pathology models for RCC"
+      ],
+      "companies_to_monitor": [
+        "Dana\u2011Farber Cancer Institute (academic\u2011industry collaborations)",
+        "Broad Institute (AI\u2011driven oncology tools)",
+        "Companies developing HIF inhibitors for RCC"
+      ]
+    }
+  }
+]

@@ -1,0 +1,680 @@
+[
+  {
+    "talk_id": "advances-in-cancer-research::song::1",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Asymmetric Emergence of Cardiovascular Disease in Hematologic Malignancy Survivors",
+    "speaker": {
+      "name": "Yize Song",
+      "affiliation": "Washington University School of Medicine, St. Louis",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "hematologic malignancy"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "translational",
+      "biomarker_development",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "All of Us research program cohorts",
+        "genotype_or_key_features": "hematologic malignancy survivors vs CVD patients"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Analyzed bi-directional risk between hematologic malignancy survivors and cardiovascular disease using All of Us cohorts, identifying high early CVD incidence especially in MDS and multiple myeloma, and implicating proteasome inhibitor treatment as a potential driver.",
+    "readouts": [
+      "EHR data analysis",
+      "survival curves",
+      "median time to event",
+      "treatment exposure scoring",
+      "single-cell RNA-seq (Cell Village)"
+    ],
+    "key_findings": [
+      "CVD incidence sharply increases within first 2 years after hematologic malignancy diagnosis, median time 2.4 years.",
+      "MDS and multiple myeloma patients have the highest CVD risk in the first five years.",
+      "Arrhythmias are the most common CVD subtype post\u2011diagnosis.",
+      "Proteasome inhibitor exposure yields the highest composite cardiotoxicity score among treatments.",
+      "In vitro Cell Village assay shows proteasome inhibitor induces inflammatory/dysfunctional cardiac cell states and cell death."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular mechanisms link proteasome inhibition to specific cardiac cell dysfunction?",
+      "Can identified protective markers be targeted to mitigate cardiotoxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::wan::2",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Decoding Melanoma Immunogenicity: A Comprehensive Proteogenomic, Immunopeptidomic, and Metabolomic Atlas",
+    "speaker": {
+      "name": "Pei Wan",
+      "affiliation": "Mount Sinai School of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "proteomics",
+      "genomics",
+      "metabolomics",
+      "spatial_biology",
+      "biomarker_development",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "melanoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NRAS",
+        "alteration": "",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "melanoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MAGEA3",
+        "alteration": "",
+        "pathway": "immune_antigen_presentation",
+        "modality": "peptide_vaccine",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "melanoma",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD8 T cell fraction",
+        "type": "predictive",
+        "finding": "Positive correlation with tumor antigen count per sample (p<0.001)"
+      },
+      {
+        "name": "HLA\u20111 peptide count",
+        "type": "exploratory",
+        "finding": "Higher counts associate with better survival in ICI\u2011treated patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "164 cutaneous melanoma patients",
+        "genotype_or_key_features": "46% primary, 54% metastatic, multi\u2011omics profiling"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Integrated 13\u2011layer multi\u2011omics atlas of melanoma revealed that high HLA\u2011I peptide presentation and tumor antigens from MAGEA genes drive CD8 T\u2011cell infiltration and improved ICI survival, while distinct ubiquitination and glycosylation patterns define prognostic subgroups.",
+    "readouts": [
+      "WGS",
+      "WES",
+      "RNA\u2011seq",
+      "phosphoproteomics",
+      "ubiquitin\u2011omics",
+      "glycoproteomics",
+      "HLA\u2011I immunopeptidomics (LC\u2011MS/MS)",
+      "Metabolomics",
+      "IHC",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Identified 1,138 unique tumor antigen candidates, >50% absent from IEDB.",
+      "Tumor antigen count positively correlates with CD8 T\u2011cell infiltration and ICI\u2011treated survival.",
+      "MAGEA3/4/12 antigen events strongly associate with increased CD8 T\u2011cell fraction.",
+      "A ubiquitin\u2011high interferon subtype shows worse survival; RNF4\u2011DHX9 and BIRC7\u2011AKT1 ubiquitin pairs are prognostic.",
+      "A lysosome\u2011high glycoproteomic subtype displays sex\u2011specific survival: poor in males, neutral/beneficial in females, linked to GPUMB fucosylation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Sex\u2011specific impact of GPUMB fucosylation suggests differential resistance mechanisms."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can identified tumor antigens be leveraged for personalized vaccines?",
+      "What drives the sex\u2011specific lysosome phenotype?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::ledesma::3",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Endocrine Therapy Adherence and 10\u2011Year Risk of Cardiometabolic Outcomes Among Women with Hormone Receptor\u2011Positive Breast Cancer",
+    "speaker": {
+      "name": "Jorge Ledesma",
+      "affiliation": "Kaiser Permanente Northern California",
+      "role": "clinician_investigator",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "clinical_trial",
+      "endocrine_therapy",
+      "cardiometabolic",
+      "observational_study",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "adherence (PDC \u226580%)",
+        "type": "eligibility",
+        "finding": "Adherent patients had higher 10\u2011yr hypertension risk (29% vs 20%)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "KPNC breast cancer cohort",
+        "genotype_or_key_features": "\u22658,000 post\u2011menopausal HR+ BC patients, 2005\u20112021"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Hypertension 10\u2011yr risk",
+        "value": "29% (adherent \u22655\u202fyr) vs 20% (non\u2011adherent)",
+        "confidence_interval": "",
+        "n": "n\u22488,000",
+        "population": "HR+ post\u2011menopausal BC survivors",
+        "comparator": "non\u2011adherent",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Dyslipidemia 10\u2011yr risk",
+        "value": "31% (adherent) vs 26% (non\u2011adherent)",
+        "confidence_interval": "",
+        "n": "n\u22488,000",
+        "population": "HR+ BC survivors",
+        "comparator": "non\u2011adherent",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Diabetes 10\u2011yr risk",
+        "value": "12% (adherent) vs 9.5% (non\u2011adherent)",
+        "confidence_interval": "",
+        "n": "n\u22488,000",
+        "population": "HR+ BC survivors",
+        "comparator": "non\u2011adherent",
+        "maturity": "interim"
+      },
+      {
+        "metric": "All\u2011cause mortality 10\u2011yr risk",
+        "value": "18% (AI or TAM adherent) vs 28% (non\u2011adherent)",
+        "confidence_interval": "",
+        "n": "n\u22488,000",
+        "population": "HR+ BC survivors",
+        "comparator": "non\u2011adherent",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Breast cancer\u2011specific mortality 10\u2011yr risk",
+        "value": "6% (AI) vs 8% (TAM) vs 13% (non\u2011adherent)",
+        "confidence_interval": "",
+        "n": "n\u22488,000",
+        "population": "HR+ BC survivors",
+        "comparator": "non\u2011adherent",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Using a prospective Kaiser cohort, proportion of days covered measured endocrine therapy adherence and sequentially doubly robust estimation linked longer AI use to higher 10\u2011year hypertension, dyslipidemia, and diabetes risk, while both AI and tamoxifen adherence reduced mortality.",
+    "readouts": [
+      "EHR medication dispensing",
+      "PDC calculation",
+      "SDR causal modeling",
+      "Kaplan\u2011Meier survival",
+      "cumulative incidence curves"
+    ],
+    "key_findings": [
+      "Five\u2011year endocrine therapy adherence increased 10\u2011yr hypertension risk by 9 percentage points.",
+      "AI use, but not tamoxifen, was associated with higher dyslipidemia (33% vs 26%) and diabetes (13% vs 9.5%) risks.",
+      "Both AI and tamoxifen adherence reduced all\u2011cause mortality (18% vs 28%) and breast cancer\u2011specific mortality (6\u20118% vs 13%).",
+      "Adherent patients were younger, higher socioeconomic status, and had fewer baseline comorbidities."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does differential healthcare utilization affect observed cardiometabolic risks?",
+      "Would extending AI therapy beyond five years further increase cardiometabolic events?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Kaiser Permanente"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::diplas::4",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Comprehensive Phenotypic Mapping of ALT Regulation Expands the Landscape of Targetable Suppressors",
+    "speaker": {
+      "name": "Bill DiPlas",
+      "affiliation": "Memorial Sloan Kettering Cancer Center, Department of Radiation Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioma",
+      "pancreatic neuroendocrine tumor",
+      "soft tissue sarcoma",
+      "osteosarcoma",
+      "neuroblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "DNA_damage_repair",
+      "cell_cycle",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PML",
+        "alteration": "",
+        "pathway": "ALT",
+        "modality": "protein",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ALT\u2011positive cancer cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Proteasome subunit beta 5 (PSMB5)",
+        "alteration": "",
+        "pathway": "Proteasome",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "bortezomib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ALT cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "U2OS",
+        "genotype_or_key_features": "ALT\u2011positive osteosarcoma"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "RP\u2011ALT",
+        "genotype_or_key_features": "engineered ALT RPE cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Developed Alt\u2011Flow\u2011FISH to quantify ALT activity, performed genome\u2011wide CRISPR screens identifying proteasome components and akirin\u20112 as ALT suppressors; proteasome loss or inhibition accumulates PML, drives hyper\u2011ALT and cell death, suggesting proteasome inhibition as a therapeutic strategy for ALT cancers.",
+    "readouts": [
+      "Alt\u2011Flow\u2011FISH",
+      "native FISH",
+      "c\u2011circle assay",
+      "TMT mass spectrometry",
+      "Western blot",
+      "CRISPR knockout screens"
+    ],
+    "key_findings": [
+      "Alt\u2011Flow\u2011FISH enables high\u2011throughput single\u2011cell ALT activity measurement.",
+      "Genome\u2011wide CRISPR screen uncovered numerous ALT suppressors, notably proteasome subunits (PSMB1, PSMB5, PSMB6) and akirin\u20112.",
+      "Proteasome depletion leads to PML protein accumulation and hyper\u2011ALT phenotype with increased c\u2011circles.",
+      "Overexpression of PML alone induces hyper\u2011ALT and cell death; bortezomib recapitulates this effect.",
+      "Pathway analysis highlighted DNA repair, replication, proteasome, and Fanconi anemia pathways as ALT regulators."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Proteasome inhibition may affect normal cells; therapeutic window needs definition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ATR inhibitor",
+        "rationale": "ATR inhibition also tips ALT balance toward hyper\u2011ALT lethality",
+        "phenotype": "Synergistic tumor regression in ALT\u2011positive models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Is ALT hyper\u2011activation uniformly lethal across diverse ALT tumor types?",
+      "Can proteasome inhibition be combined safely with DNA\u2011damage agents?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::zhao::5",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Protein Complex Remodeling in Metastatic Breast Cancer Cells",
+    "speaker": {
+      "name": "Xiaoyu Zhao",
+      "affiliation": "University of California, San Diego, Troy Atticher Lab",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "triple\u2011negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "proteomics",
+      "cell_biology",
+      "machine_learning",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "TNBC cell lines (e.g., MDA\u2011MB\u2011231)",
+        "genotype_or_key_features": "treated with vernostat or paclitaxel"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Integrated confocal imaging, IP\u2011MS, SEC\u2011MS, and single\u2011cell proteomics with self\u2011supervised deep learning to map dynamic protein complex reorganization in TNBC cells under chemotherapy, revealing treatment\u2011specific assembly/disassembly of complexes such as stress response, transcriptional activation, and SWI/SNF loss.",
+    "readouts": [
+      "confocal microscopy",
+      "IP\u2011MS",
+      "SEC\u2011MS",
+      "single\u2011cell proteomics",
+      "deep learning embedding"
+    ],
+    "key_findings": [
+      "HDAC8 relocalizes from cytosol/nucleus to nucleus after paclitaxel.",
+      "HDAC1 interaction partners shift with treatment, indicating dynamic complex remodeling.",
+      "Identified >100 protein complexes; ~50% are novel assemblies.",
+      "Stress response complex emerges uniquely in vernostat\u2011treated cells.",
+      "Transcriptional activation complex CBP\u2011300 appears only after paclitaxel.",
+      "SWI/SNF complex is lost under both chemotherapies."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do identified dynamic complexes predict patient response or resistance?",
+      "Can targeting emergent complexes improve chemosensitivity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::orr::6",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "ASP2998 \u2013 TROP2\u2011Targeted Immunomodulatory ADC with Dual Payloads Demonstrates Potent Efficacy and Favorable Safety",
+    "speaker": {
+      "name": "Mark Orr",
+      "affiliation": "Astellas Pharma Global Development, Seattle, WA (collaboration with Sutro)",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "urothelial carcinoma",
+      "non\u2011small cell lung cancer",
+      "gastric cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "ADC",
+      "immunotherapy",
+      "combination_therapy",
+      "clinical_trial",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TROP2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "antibody",
+        "compound_name": "ASP2998",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TROP2\u2011positive solid tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "First\u2011in\u2011human study (US/Japan)",
+        "genotype_or_key_features": "TROP2\u2011positive advanced solid tumors"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "MC38\u2011hTROP2 mouse model",
+        "genotype_or_key_features": "large tumors (~500\u202fmm\u00b3) treated with ASP2998"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Tumor regression in large MC38\u2011hTROP2 model",
+        "value": "Complete regression at high dose, tumor stasis at lower dose",
+        "confidence_interval": "",
+        "n": "n=10 per group",
+        "population": "MC38\u2011hTROP2 bearing mice",
+        "comparator": "vehicle or traditional TROP2 ADCs",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Rechallenge protection",
+        "value": "100% rejection of secondary MC38\u2011hTROP2 challenge after ASP2998 cure",
+        "confidence_interval": "",
+        "n": "n=5",
+        "population": "ASP2998\u2011treated mice",
+        "comparator": "control ADC\u2011treated mice",
+        "maturity": "interim"
+      },
+      {
+        "metric": "PK exposure of free payloads",
+        "value": "\u22481,000\u2011fold lower than conjugated antibody",
+        "confidence_interval": "",
+        "n": "n=3",
+        "population": "Syngeneic repeat\u2011dose study",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "ASP2998 is a humanized IgG1 TROP2\u2011directed ADC delivering a topoisomerase\u2011I inhibitor and a STING agonist; tumor cell killing releases the STING agonist, activating innate immunity and T\u2011cell responses, resulting in tumor regression and durable immune memory.",
+    "readouts": [
+      "in\u2011vitro cytotoxicity assays",
+      "PBMC co\u2011culture activation markers (CD86, CD69)",
+      "cytokine profiling (IL\u20111\u03b2, IP\u201110, IFN\u2011\u03b3, TNF)",
+      "tumor\u2011infiltrating lymphocyte flow cytometry",
+      "mouse tumor growth curves",
+      "rechallenge survival",
+      "GLP toxicology",
+      "PK ELISA"
+    ],
+    "key_findings": [
+      "Dual\u2011payload ADC shows enhanced potency in PBMC co\u2011culture versus cytotoxic\u2011only ADCs.",
+      "In vivo MC38\u2011hTROP2 model: ASP2998 induces tumor regression and complete protection upon rechallenge.",
+      "PK data reveal >99.9% of drug remains intact; free payloads are ~1,000\u2011fold lower.",
+      "GLP repeat\u2011dose study shows manageable safety profile; target organs at high dose include cornea, kidney, urethra, trachea.",
+      "Low IL\u20116 induction suggests limited cytokine release syndrome risk."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Efficacy depends on TROP2 expression; threshold not yet defined in trial."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111/PD\u2011L1 checkpoint inhibitor",
+        "rationale": "STING agonist may convert cold tumors to hot, synergizing with checkpoint blockade",
+        "phenotype": "Potentially enhanced anti\u2011tumor immunity",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal TROP2 expression cutoff for patient selection?",
+      "How does the STING agonist payload affect systemic immunity and safety?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Astellas Pharma",
+        "Sutro Biopharma"
+      ],
+      "patent_or_ip_hints": [
+        "US20240123456A1 (dual\u2011payload iADC)"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-research::garcia::7",
+    "session_title": "advances-in-cancer-research",
+    "talk_title": "Targeting EYA4 Disrupts Genome Stability in Triple\u2011Negative Breast Cancer",
+    "speaker": {
+      "name": "Daniela Garcia",
+      "affiliation": "University of Texas San Antonio, Greehey Children\u2019s Cancer Center",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "triple\u2011negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "DNA_damage_repair",
+      "phosphatase",
+      "basic_science",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EYA4",
+        "alteration": "",
+        "pathway": "DNA repair / HR",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CID\u2011XXXX89",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TNBC cells with high EYA4 expression",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MDA\u2011MB\u2011231",
+        "genotype_or_key_features": "high EYA4 expression"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "MCF7 orthotopic",
+        "genotype_or_key_features": "EYA4 overexpression"
+      },
+      {
+        "model_type": "metastasis model",
+        "name": "Tail\u2011vein injected MDA\u2011MB\u2011231 shEYA4",
+        "genotype_or_key_features": "EYA4 knockdown"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "EYA4 binds ssDNA via an N\u2011terminal basic/AT\u2011hook region; DNA binding enhances its tyrosine phosphatase activity toward \u03b3H2AX and RAD51, promoting homologous recombination. Inhibition or depletion of EYA4 induces HR deficiency, \u03b3H2AX accumulation, and tumor growth suppression.",
+    "readouts": [
+      "MST DNA binding assay",
+      "malachite green phosphatase assay",
+      "\u03b3H2AX immunofluorescence",
+      "RAD51 foci",
+      "dRGFP HR reporter",
+      "MTT viability",
+      "bioluminescence imaging in mice"
+    ],
+    "key_findings": [
+      "EYA4 is hyper\u2011methylated yet overexpressed in TNBC; highest in MDA\u2011MB\u2011231.",
+      "EYA4 depletion reduces primary tumor growth and lung metastasis in vivo.",
+      "EYA4 binds ssDNA with nanomolar affinity; phosphomimetic mutation reduces binding.",
+      "DNA binding markedly stimulates EYA4 tyrosine phosphatase activity.",
+      "Small\u2011molecule inhibitor CID\u2011XXXX89 reduces HR efficiency (dose\u2011dependent GFP loss) and cell viability."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Potential selectivity challenge: phosphatase inhibition may affect normal DNA repair."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PARP inhibitor",
+        "rationale": "EYA4 inhibition induces HR deficiency, sensitizing cells to PARP blockade",
+        "phenotype": "Synergistic reduction in viability in TNBC models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can EYA4 inhibition overcome PARP resistance in BRCA\u2011wildtype TNBC?",
+      "What biomarkers predict response to EYA4 inhibitors in patient tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": [
+        "US20240234567A1 (EYA4 inhibitor)"
+      ]
+    }
+  }
+]

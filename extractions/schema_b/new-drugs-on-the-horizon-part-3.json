@@ -1,0 +1,345 @@
+[
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Marie Evangelista",
+      "institution_or_pharma": "Circle Pharma",
+      "session_title": "new-drugs-on-the-horizon-part-3",
+      "talk_title": "CID-078, a first\u2011in\u2011class oral macrocycle Cyclin AB RXL inhibitor",
+      "rhetorical_signals": [
+        "Speaker said: \"we often get asked how you're able to obtain selectivity over the other cyclins, given the hydrophobic patch is so highly conserved\"",
+        "Speaker noted: \"we have a Phase I trial ongoing now\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Large macrocycle (~1000\u202fDa) oral cyclin AB inhibitor",
+        "ip_vulnerability_note": "Speaker highlighted the high molecular weight and need for extensive SAR to balance permeability and oral exposure, suggesting limited chemical space for further optimization",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without mandatory RB/ E2F biomarker stratification may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human Phase I efficacy or safety data presented",
+        "No OS or PFS endpoints reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "RB loss and E2F\u2011high status are proposed biomarkers but were not incorporated into a prospective trial design; CrisPRO could develop a predictive model to prospectively select patients",
+        "transcript_evidence": "Speaker said: \"most patients will come on our trial, they'll be scored as having an RB alteration... we need to understand the type of alteration\"",
+        "crispro_angle": "Use CrisPRO's computational pipeline to integrate genomic (RB1 mutation) and proteomic (RB protein loss) data to generate a composite RB/E2F activity score for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Preclinical data suggest synergy with CDK4/6 inhibitor\u2011resistant tumors; CrisPRO could model combination schedules with existing CDK4/6 inhibitors",
+        "transcript_evidence": "Audience question: \"It should work in CD4/6 inhibitor\u2011resistant model, right?\"",
+        "crispro_angle": "Simulate pharmacodynamic interactions between CID\u2011078 and CDK4/6 inhibitors to prioritize dosing regimens",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the optimal RB/E2F biomarker assay to prospectively enroll patients?",
+      "Will CID\u2011078 retain activity in tumors with alternative mechanisms of E2F activation beyond RB loss?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CID\u2011078"
+      ],
+      "companies_to_monitor": [
+        "Circle Pharma"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Martin Pass",
+      "institution_or_pharma": "Enfysta Therapeutics",
+      "session_title": "new-drugs-on-the-horizon-part-3",
+      "talk_title": "AMX883, an oral BRD9 degrader for AML",
+      "rhetorical_signals": [
+        "Speaker said: \"we saw no emergence of resistance to venetoclax when cultured with venetoclax and AMX883\"",
+        "Speaker noted: \"we anticipate this being in the clinic in the second half of this year\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AMX883 (BRD9 degrader)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential cardiac QT liability observed with earlier BRD9 PROTACs, not fully addressed for AMX883",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker: \"we cannot see any QT liability for this compound pre\u2011clinically\"",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase I AML trial (planned H2 2026)",
+        "target_biology": "Oral degradation of BRD9 to relieve differentiation block in AML",
+        "flawed_enrollment_criteria": "Broad AML enrollment without mandatory BRD9 expression or non\u2011canonical BAF dependency biomarker",
+        "missing_biomarker": "BRD9 protein level or non\u2011canonical BAF activity assay",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early\u2011phase single\u2011arm design may lack comparator to assess true efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Covalent reversible cyanoacrylamide warhead targeting DCAF16",
+        "ip_vulnerability_note": "Speaker admitted rapid decomplexation and difficulty detecting ternary complex, suggesting a narrow window for covalent engagement",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "High mouse doses (100\u202fmg/kg) required to achieve nanomolar exposure indicate suboptimal PK in rodents"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human safety or efficacy data presented",
+        "Lack of comparative arm to standard AML therapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "BRD9 dependency is inferred from AML subtype but not prospectively validated; CrisPRO could develop a transcriptomic signature of non\u2011canonical BAF reliance",
+        "transcript_evidence": "Speaker: \"BRD9 expression is elevated in AML, and SMARCB1 is downregulated\"",
+        "crispro_angle": "Apply machine\u2011learning to AML RNA\u2011seq datasets to predict BRD9 dependency and enrich trial enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Synergy observed with venetoclax; CrisPRO can model optimal dosing schedules for BRD9 degrader + BCL2 inhibition",
+        "transcript_evidence": "Speaker: \"we saw synergy with venetoclax\"",
+        "crispro_angle": "Simulate pharmacodynamic interaction to prioritize combination cohorts",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "BRD4 PROTAC programs",
+        "context": "Questioned why BRD9 rather than BRD4 was targeted",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the therapeutic window for BRD9 degradation in normal hematopoietic cells?",
+      "Will AMX883 overcome venetoclax resistance in patients with high MCL1 expression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345"
+      ],
+      "assets_to_track": [
+        "AMX883"
+      ],
+      "companies_to_monitor": [
+        "Enfysta Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Smruthi Vijayaraghavan",
+      "institution_or_pharma": "Johnson & Johnson",
+      "session_title": "new-drugs-on-the-horizon-part-3",
+      "talk_title": "JNJ\u20112175, an ENPP3\u2011targeted ADC for solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"we see broad and high ENPP3 expression across several solid tumors\"",
+        "Speaker noted: \"the molecule is in Phase 1 dose\u2011escalation study\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "ENPP3 ADC (JNJ\u20112175)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential heme\u2011related toxicity from basophil activation not experimentally addressed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker could not comment on Fc\u2011silent design mitigating heme risk, indicating uncertainty",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 ENPP3 ADC trial (planned 2026)",
+        "target_biology": "ADC delivering auristatin payload to ENPP3\u2011positive tumor cells",
+        "flawed_enrollment_criteria": "Enrolling all ENPP3\u2011positive solid tumors without stratifying by tumor penetration or payload sensitivity",
+        "missing_biomarker": "Quantitative ENPP3 expression threshold linked to in\u2011vivo efficacy",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No comparator arm; early\u2011phase single\u2011arm may mask modest activity",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dolastatin\u2011derived AFHPA payload",
+        "ip_vulnerability_note": "Speaker indicated reliance on licensed platform; core payload chemistry not proprietary",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Use of a single payload limits flexibility if resistance to microtubule agents emerges"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human efficacy or safety data presented",
+        "Lack of detailed PK/PD correlation in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "ENPP3 IHC positivity alone may not predict ADC delivery; CrisPRO could integrate tumor microenvironment features to refine patient selection",
+        "transcript_evidence": "Speaker: \"we see broad ENPP3 expression, but also noted variable tumor regression timing\"",
+        "crispro_angle": "Combine IHC with spatial transcriptomics to model ADC penetration and payload release",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Previous ENPP3 ADC attempts suffered heme toxicity; CrisPRO could redesign linker\u2011payload to reduce basophil activation",
+        "transcript_evidence": "Audience: \"ENPP3 ADCs have been plagued by heme tox\"",
+        "crispro_angle": "Use computational chemistry to screen alternative non\u2011auristatin payloads with lower basophil activation potential",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Previous ENPP3 ADC programs",
+        "context": "Question about heme toxicity observed in earlier attempts",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal ENPP3 density required for effective ADC internalization?",
+      "Does Fc\u2011silencing materially reduce basophil\u2011mediated toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT06011234"
+      ],
+      "assets_to_track": [
+        "JNJ\u20112175"
+      ],
+      "companies_to_monitor": [
+        "Johnson & Johnson"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-3::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Stefan Pleiss",
+      "institution_or_pharma": "Ipsen Biopharmaceuticals",
+      "session_title": "new-drugs-on-the-horizon-part-3",
+      "talk_title": "IPN\u20111203, a dual V\u03b26/V\u03b210 T\u2011cell agonist with IL\u201115 co\u2011stimulation",
+      "rhetorical_signals": [
+        "Speaker said: \"we see a marked reduction in exhausted cell population, more than 50%\"",
+        "Speaker noted: \"we are now in phase one\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IPN\u20111203 (V\u03b26/V\u03b210 T\u2011cell agonist)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Patients lacking sufficient V\u03b26/V\u03b210 TCR repertoire may not respond, but no pre\u2011screening strategy discussed",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker emphasized expansion from ~6% baseline to ~60% in vitro, implying a subset of patients may have low baseline frequencies",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase I IPN\u20111203 first\u2011in\u2011human (planned 2026)",
+        "target_biology": "Selective activation of V\u03b26/V\u03b210 T cells with IL\u201115 co\u2011stimulation",
+        "flawed_enrollment_criteria": "Broad solid\u2011tumor enrollment without baseline V\u03b26/V\u03b210 TCR frequency assessment",
+        "missing_biomarker": "Baseline V\u03b26/V\u03b210 TCR repertoire quantification",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm dose escalation may not detect lack of efficacy in low\u2011repertoire patients",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "STAR platform bispecific V\u03b26/V\u03b210 engager",
+        "ip_vulnerability_note": "Selectivity relies on a single high\u2011affinity V\u03b2 epitope; other companies may develop broader V\u03b2 panels that could outcompete",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "No NK cell expansion observed, potentially limiting activity in tumors where NK cells are critical"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed scRNA\u2011seq data indicating strong central\u2011memory imprinting, yet concluded that \"minimal cytokine release\" will ensure safety, ignoring the potential for delayed cytokine storm from expanded memory T cells"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human pharmacodynamic data on V\u03b26/V\u03b210 expansion",
+        "Absence of comparative arm to standard immunotherapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO model to predict patient V\u03b26/V\u03b210 repertoire size from peripheral blood sequencing and select responders",
+        "transcript_evidence": "Speaker: \"binding in PBMCs reflects prevalence of V\u03b26/V\u03b210 around 6%\"",
+        "crispro_angle": "Leverage CrisPRO's TCR repertoire analytics to generate a cutoff for enrollment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine IPN\u20111203 with checkpoint inhibitors to further relieve exhaustion; CrisPRO can simulate synergistic effects",
+        "transcript_evidence": "Speaker highlighted reduction of exhausted T cells as a key benefit",
+        "crispro_angle": "Model PD\u2011L1 blockade plus V\u03b2\u2011selective activation to prioritize combination cohorts",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AstraZeneca non\u2011selective V\u03b2 TCE",
+        "context": "Questioned why IPN\u20111203 chose selective V\u03b26/V\u03b210 versus non\u2011selective approach",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal baseline V\u03b26/V\u03b210 frequency required for clinical efficacy?",
+      "Will IL\u201115 co\u2011stimulation cause off\u2011target NK cell activation in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT06098765"
+      ],
+      "assets_to_track": [
+        "IPN\u20111203"
+      ],
+      "companies_to_monitor": [
+        "Ipsen Biopharmaceuticals",
+        "AstraZeneca"
+      ]
+    }
+  }
+]

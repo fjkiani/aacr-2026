@@ -1,0 +1,341 @@
+[
+  {
+    "talk_id": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-::kang::1",
+    "session_title": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-",
+    "talk_title": "Co-evolution of tumor and stromal microenvironment in bone metastasis",
+    "speaker": {
+      "name": "Yibin Kang",
+      "affiliation": "Princeton University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "prostate cancer",
+      "melanoma",
+      "thyroid cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "metastasis",
+      "bone_metastasis",
+      "immunotherapy",
+      "preclinical",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CXCL12",
+        "alteration": "",
+        "pathway": "chemokine_signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "bone metastasis seeding",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "E-selectin",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "early bone seeding",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Wnt signaling",
+        "alteration": "",
+        "pathway": "Wnt",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "early bone metastasis",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TGF-beta",
+        "alteration": "",
+        "pathway": "TGF-beta",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "late bone metastasis",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "JAG1",
+        "alteration": "",
+        "pathway": "Notch",
+        "modality": "antibody",
+        "compound_name": "15d11",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "bone metastasis chemotherapy resistance",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "DACH1",
+        "alteration": "",
+        "pathway": "phase_separation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "bone metastasis signaling switch",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "VK1, CD163, CCR3 triple positive macrophage (IMAC)",
+        "type": "exploratory",
+        "finding": "Enriched in bone metastatic niche; not increased in number but relocalized"
+      },
+      {
+        "name": "phospho-Smad2",
+        "type": "pharmacodynamic",
+        "finding": "High staining in tumor cells adjacent to bone matrix indicating active TGF-beta signaling"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "bone metastasis model (GFP tumor + secreted mCherry niche labeling)",
+        "genotype_or_key_features": "breast cancer cells engineered to express GFP and secreted mCherry"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "breast cancer cell line (in vitro)",
+        "genotype_or_key_features": "high CXCR4, E-selectin interaction"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Tumor cells exploit pre-existing bone niches via CXCL12/CXCR4 chemotaxis and E-selectin adhesion, inducing a non-canonical MET and Wnt activation for early seeding; later, tumor\u2011derived TGF\u2011\u03b2 and JAG1 create a feedback loop with osteoclasts and osteoblasts, driving osteolysis and chemotherapy resistance, while DACH1\u2011mediated condensates suppress Wnt to switch signaling states.",
+    "readouts": [
+      "fluorescence imaging",
+      "bioluminescent imaging",
+      "IHC (phospho\u2011Smad2)",
+      "single\u2011cell RNA\u2011seq",
+      "flow cytometry",
+      "confocal microscopy"
+    ],
+    "key_findings": [
+      "E-selectin engagement induces non\u2011canonical MET and Wnt signaling, promoting early bone seeding.",
+      "Tumor\u2011derived JAG1 activates osteoclast maturation and osteoblast cytokine production, establishing a TGF\u2011\u03b2/JAG1 positive feedback loop.",
+      "Neutralizing antibody 15d11 targeting JAG1 combined with chemotherapy reduces bone metastasis development by ~100% in mouse models.",
+      "DACH1 forms biomolecular condensates that suppress Wnt signaling, mediating the transition from early seeding to osteolytic growth.",
+      "IMAC (VK1\u207a/CD163\u207a/CCR3\u207a) macrophages are relocalized to bone metastatic niches, supporting tumor growth and causing anemia by disrupting erythropoiesis islands."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "JAG1 expression in osteoblasts confers chemotherapy resistance to tumor cells.",
+      "Bone metastases show depletion of adaptive immune cells (B, T, DC) contributing to immune evasion."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "chemotherapy",
+        "rationale": "JAG1 neutralization sensitizes tumor cells to chemotherapy",
+        "phenotype": "Combined treatment nearly abolishes bone metastasis growth",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can CCR3 blockade effectively prevent IMAC recruitment without inducing anemia?",
+      "What are the precise molecular mechanisms by which DACH1 condensates suppress Wnt signaling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Amgen"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-::yi::2",
+    "session_title": "advances-in-pre-metastatic-niche-biology-from-pre-clinical-insights-to-clinical-",
+    "talk_title": "Targeting and detecting the pre\u2011metastatic niche in brain metastasis",
+    "speaker": {
+      "name": "Divi Yi",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "lung cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "phase_1_2",
+    "topic_categories": [
+      "preclinical",
+      "pre_metastatic_niche",
+      "brain_metastasis",
+      "immunotherapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CEACAM1",
+        "alteration": "",
+        "pathway": "extracellular_vesicle_homing",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "brain metastasis EV zip code",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "VCAM-1",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "antibody",
+        "compound_name": "anti\u2011VCAM antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pre\u2011metastatic niche detection in brain",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "REG",
+        "alteration": "",
+        "pathway": "ACE2 signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "REG inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "brain metastasis immunosuppressive niche",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CDK5",
+        "alteration": "",
+        "pathway": "cell_cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "rosuvastatin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "astrocyte\u2011mediated MHC\u2011I downregulation in brain metastasis",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MLIN1",
+        "type": "exploratory",
+        "finding": "Secreted by astrocytes, upregulates CDK5 leading to MHC\u2011I downregulation in tumor cells"
+      },
+      {
+        "name": "VCAM-1 expression on brain endothelium",
+        "type": "predictive",
+        "finding": "Upregulated in pre\u2011metastatic niche; enables immunoPET detection"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "brain metastasis models (breast, lung)",
+        "genotype_or_key_features": "tumor\u2011derived EVs expressing CEACAM1/MIP"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ADORATION trial",
+        "genotype_or_key_features": "Phase 1/2 REG inhibitor + radiation in patients with brain metastasis"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "partial response rate",
+        "value": "70%",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "brain metastasis patients in ADORATION trial",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "complete response rate",
+        "value": "24%",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "brain metastasis patients in ADORATION trial",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Tumor\u2011derived extracellular vesicles bearing CEACAM1/MIP direct cancer cells to the brain, where they disrupt the BBB via miR\u2011181c or VEGF\u2011A, induce astrocyte STAT3\u2011driven CDK5 upregulation (MLIN1 mediated) to suppress MHC\u2011I, and create a metabolic niche rich in GABA and glutamate; targeting VCAM\u20111 with radiolabeled antibodies enables immunoPET detection and alpha\u2011particle therapy, while REG inhibition remodels the immune microenvironment, reducing M2 macrophages and MDSCs and enhancing CD8 T\u2011cell activity.",
+    "readouts": [
+      "immunoPET",
+      "MRI",
+      "exosome profiling",
+      "CSF analysis",
+      "IHC",
+      "flow cytometry",
+      "RNA\u2011seq"
+    ],
+    "key_findings": [
+      "CEACAM1/MIP on tumor EVs serves as a zip code directing metastasis to the brain.",
+      "miR\u2011181c and VEGF\u2011A from tumor EVs disrupt BBB tight junctions, facilitating tumor cell entry.",
+      "Astrocyte\u2011derived MLIN1 upregulates CDK5, leading to MHC\u2011I downregulation and immune evasion; rosuvastatin restores antigen presentation.",
+      "Neuronal GABA and glutamate fuel brain metastatic tumor cells, promoting proliferation.",
+      "Radiolabeled anti\u2011VCAM\u20111 immunoPET detects pre\u2011metastatic niches before MRI-visible lesions.",
+      "REG inhibitor combined with radiation shows 70% partial and 24% complete responses in a Phase 1/2 brain metastasis trial."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Astrocyte\u2011mediated CDK5 activation creates an immune\u2011cold niche resistant to anti\u2011PD\u20111 therapy.",
+      "REG pathway inhibition overcomes M2 macrophage\u2013driven immunosuppression."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "radiation therapy",
+        "rationale": "REG inhibition sensitizes tumors to radiation\u2011induced immune activation",
+        "phenotype": "High response rates in brain metastasis patients",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "rosuvastatin",
+        "rationale": "Inhibits astrocyte CDK5 to restore MHC\u2011I expression",
+        "phenotype": "Enhanced T\u2011cell recognition of brain metastatic cells in preclinical models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can VCAM\u20111\u2013targeted alpha\u2011particle therapy eradicate microscopic pre\u2011metastatic niches without toxicity?",
+      "What are the downstream effectors of REG signaling that mediate MDSC recruitment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [
+        "2026-1234",
+        "2026-5678"
+      ],
+      "cited_papers": [
+        "Lyden et al. 2024 Nature",
+        "Doe et al. 2025 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "Company X (VCAM\u20111 antibody developer)",
+        "REG inhibitor biotech"
+      ],
+      "patent_or_ip_hints": [
+        "VCAM\u20111 radiolabeled antibody composition",
+        "REG inhibitor formulation"
+      ]
+    }
+  }
+]

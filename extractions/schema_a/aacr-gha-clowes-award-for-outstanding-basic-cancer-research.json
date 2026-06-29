@@ -1,0 +1,134 @@
+[
+  {
+    "talk_id": "aacr-gha-clowes-award-for-outstanding-basic-cancer-research::feinberg::1",
+    "session_title": "aacr-gha-clowes-award-for-outstanding-basic-cancer-research",
+    "talk_title": "Epigenetic plasticity drives pancreatic cancer metastasis via KLF5 and chromatin modifiers",
+    "speaker": {
+      "name": "Andrew P. Feinberg",
+      "affiliation": "Johns Hopkins University, Bloomberg Distinguished Professor of Epigenetics",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic cancer",
+      "acute lymphoblastic leukemia"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "UHRF1",
+        "alteration": "",
+        "pathway": "DNA_methylation_chromatin",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ALL with various rearrangements",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KLF5",
+        "alteration": "",
+        "pathway": "transcription_factor",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "metastatic PDAC xenografts",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NCAPD2",
+        "alteration": "",
+        "pathway": "chromatin_condensation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KLF5\u2011driven metastasis",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MTHFD1",
+        "alteration": "",
+        "pathway": "one_carbon_metabolism",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KLF5\u2011driven metastasis",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "PDAC primary and metastatic PDX",
+        "genotype_or_key_features": "paired primary tumor and distant lung metastasis"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KPC mouse model",
+        "genotype_or_key_features": "KRAS G12D; TP53 loss"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "laser capture microdissected panins",
+        "genotype_or_key_features": "KRAS mutant premalignant lesions"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Feinberg's work shows that epigenetic plasticity, measured as DNA methylation entropy, creates a transitional chromatin state in early pancreatic lesions and in metastatic clones. A CRISPR screen identified KLF5 as a key transcriptional modulator that drives metastasis by up\u2011regulating epigenetic modifiers (NCAPD2, MTHFD1) leading to loss of heterochromatin (H3K9me2/3) and increased euchromatin, which promotes EMT and tumor cell migration.",
+    "readouts": [
+      "whole genome bisulfite sequencing",
+      "laser capture microdissection",
+      "single\u2011cell RNA\u2011seq",
+      "ATAC\u2011seq",
+      "CRISPR screen",
+      "Boyden migration assay",
+      "immunofluorescence of histone marks"
+    ],
+    "key_findings": [
+      "PanIN lesions display DNA methylation patterns intermediate between acinar and ductal cells, indicating an epigenetically plastic transition zone.",
+      "UHRF1 knockdown abolishes soft\u2011agar growth of ALL cells, linking it to epigenetic entropy in leukemia.",
+      "CRISPR screen of metastatic PDAC PDX identified KLF5 as the top gene whose loss impairs metastatic growth but not primary tumor growth.",
+      "KLF5 knockdown restores heterochromatin (H3K9me2/3) in metastatic cells and reduces migration in Boyden assays.",
+      "KLF5 regulates NCAPD2 and MTHFD1; their knockdown also restores heterochromatin, placing them downstream of KLF5.",
+      "High KLF5 expression in human metastatic PDAC correlates with poor survival in TCGA data."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "KLF5 inhibition selectively impairs metastatic but not primary tumor growth in PDX models, suggesting a metastasis\u2011specific vulnerability."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "gemcitabine",
+        "rationale": "KLF5 inhibition may prevent emergence of gemcitabine\u2011resistant metastatic clones.",
+        "phenotype": "potentially prolonged survival by delaying metastasis development",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What microenvironmental stress signals trigger KLF5 up\u2011regulation in primary tumors?",
+      "Can circulating nucleosome signatures reflect the epigenetic entropy state of emerging metastases?",
+      "Will pharmacologic KLF5 inhibitors be effective in adjuvant settings for PDAC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Pena\u2011Ruiz and Fernandez\u2011Epico 2024 Molecular Cancer editorial"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

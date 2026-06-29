@@ -1,0 +1,307 @@
+[
+  {
+    "talk_id": "approaches-to-drug-development-for-rare-malignancies::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Martha Donahue",
+      "institution_or_pharma": "U.S. Food and Drug Administration",
+      "session_title": "approaches-to-drug-development-for-rare-malignancies",
+      "talk_title": "Regulatory perspective on rare cancer drug development",
+      "rhetorical_signals": [
+        "Speaker said: \"It's not that there's a lesser bar for rare cancers compared to less rare cancers.\"",
+        "Speaker said: \"We do recommend careful consideration of whether randomized designs are the most appropriate design in rare cancers.\"",
+        "Speaker said: \"Single\u2011arm designs are not always the ideal approach.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "single\u2011arm trial designs",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "lack of a control arm makes it impossible to separate drug effect from natural disease course",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "generic single\u2011arm oncology trials (e.g., accelerated approval pathways)",
+        "target_biology": "various rare tumor targets",
+        "flawed_enrollment_criteria": "No concurrent control arm; small safety databases; heterogeneous patient populations",
+        "missing_biomarker": "Biomarker\u2011driven stratification is often absent",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect true efficacy; confounding of time\u2011to\u2011event endpoints",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that accelerated approval can be based on intermediate endpoints such as ORR, then concluded that \"substantial evidence of effectiveness\" is required for all approvals, creating tension between a lower evidentiary bar and the stated need for robust data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented for single\u2011arm studies",
+        "Limited safety data due to small non\u2011randomized cohorts",
+        "Absence of biomarker\u2011stratified analyses"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Many rare\u2011cancer single\u2011arm trials lack biomarker\u2011driven patient selection, which could be addressed by CrisPRO's computational biomarker platform.",
+        "transcript_evidence": "Speaker said: \"...lack of timely access to molecular testing for many patients...\"",
+        "crispro_angle": "Use CrisPRO to identify predictive molecular signatures and design biomarker\u2011enriched cohorts for future rare\u2011cancer trials.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CrisPRO can model adaptive and Bayesian designs to replace underpowered single\u2011arm studies with more efficient randomized or platform trials.",
+        "transcript_evidence": "Speaker said: \"We recommend careful consideration of whether randomized designs are the most appropriate design in rare cancers.\"",
+        "crispro_angle": "Leverage CrisPRO's simulation engine to optimize sample size and randomization schemes for rare populations.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "dardavirpan",
+        "context": "example of a pediatric voucher award for H3K27M mutant diffuse midline glioma",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How should the FDA balance the need for randomized confirmatory trials with the practical limits of patient numbers in ultra\u2011rare cancers?",
+      "What specific intermediate endpoints are acceptable for accelerated approval when overall survival data are unavailable?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "approaches-to-drug-development-for-rare-malignancies::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Eric Padron",
+      "institution_or_pharma": "Independent researcher (affiliation not specified)",
+      "session_title": "approaches-to-drug-development-for-rare-malignancies",
+      "talk_title": "Barriers to clinical development of therapeutics for chronic myelomonocytic leukemia",
+      "rhetorical_signals": [
+        "Speaker said: \"...there are no FDA\u2011approved drugs that alter the natural history of the disease.\"",
+        "Speaker said: \"...the moral of this story is that really azacitidine, decitabine, and oral decitabine in Covi were all approved really in a clinical trial that included MDS patients.\"",
+        "Speaker said: \"...the short answer in CMML is we're trying...the biggest challenge here is that it is among the most clinically heterogeneous diseases.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "azacitidine/decitabine in CMML",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Trials enrolled CMML patients within broader MDS studies, diluting disease\u2011specific signal",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted only 11 CMML patients were in the pivotal azacitidine trial",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "GFM Phase III Dacogen vs Hydrea (France)",
+        "target_biology": "CMML disease\u2011modifying therapy",
+        "flawed_enrollment_criteria": "Mixed control arms (Dacogen vs Hydroxyurea) without biomarker enrichment",
+        "missing_biomarker": "No KRAS or GM\u2011CSF pathway stratification",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Negative outcome despite adequate accrual; possible endpoint mis\u2011selection",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "UK randomized 727 vs hydroxyurea study",
+        "target_biology": "CMML therapy",
+        "flawed_enrollment_criteria": "Broad inclusion without molecular sub\u2011stratification",
+        "missing_biomarker": "Absence of GM\u2011CSF sensitivity biomarker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample (50 vs 26) limits power",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker highlighted convergent biology (GM\u2011CSF hypersensitivity) as a therapeutic target, yet noted that \u201cthere are no FDA\u2011approved drugs that alter the natural history of the disease,\u201d indicating a gap between mechanistic insight and clinical success"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of biomarker\u2011driven patient selection in historic trials",
+        "No dedicated CMML\u2011specific phase III trial completed",
+        "Limited correlative biospecimen collection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting GM\u2011CSF signaling (e.g., JAK2 inhibition, anti\u2011GM\u2011CSF antibodies) could overcome the convergent pathway identified by the speaker.",
+        "transcript_evidence": "Speaker said: \"...the hyperactivity of GM\u2011CSF signaling could be therapeutically targeted.\"",
+        "crispro_angle": "CrisPRO can model GM\u2011CSF pathway dependencies and predict optimal combination partners for CMML.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a KRAS\u2011mutant or GM\u2011CSF\u2011sensitivity biomarker panel to enrich future CMML trials.",
+        "transcript_evidence": "Speaker said: \"...those homogenous mutations are in disparate pathways...hypersensitivity to a cytokine called GM\u2011CSF...\"",
+        "crispro_angle": "Use CrisPRO's machine\u2011learning pipeline to integrate mutational and cytokine\u2011response data for patient selection.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ruxolitinib",
+        "context": "JAK2 inhibitor trial in CMML",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "lenzilumab",
+        "context": "Neutralizing antibody against GM\u2011CSF in CMML",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal primary endpoint for CMML trials given the disease\u2019s heterogeneity?",
+      "How can future studies incorporate dynamic biomarkers (e.g., on\u2011treatment ctDNA) to track resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ruxolitinib",
+        "lenzilumab"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "approaches-to-drug-development-for-rare-malignancies::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Rachel Grisham",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "approaches-to-drug-development-for-rare-malignancies",
+      "talk_title": "Development of the first FDA\u2011approved treatment for women with low\u2011grade serous ovarian cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"...single\u2011agent MEK inhibitors showed initial promising response but were limited by toxicity.\"",
+        "Speaker said: \"...the combination therapy had a higher response rate and similar side effects to the single agent avutametinib.\"",
+        "Speaker said: \"...we chose not to go straight into a large Phase 3 study looking at the frontline setting.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "single\u2011agent benimetinib/trametinib",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Continuous dosing schedule caused dose\u2011limiting adverse events, limiting exposure",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted about a third of patients discontinued due to toxicity",
+        "hidden_tox_signal": "Speaker said: \"...about a third of patients treated with continuous single\u2011agent MEK inhibitor discontinued treatment due to toxicity.\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NGOD\u2011OV60 GOG 3052 RAMP 201 (Phase\u202f2)",
+        "target_biology": "KRAS\u2011mutant MAP\u2011kinase pathway in low\u2011grade serous ovarian cancer",
+        "flawed_enrollment_criteria": "Allowed KRAS\u2011wildtype patients in a trial stratified by KRAS status, potentially diluting efficacy signal",
+        "missing_biomarker": "No additional biomarkers beyond KRAS to further enrich responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Stratification may reduce power for KRAS\u2011wildtype subgroup analysis",
+        "severity": "minor_concern"
+      },
+      {
+        "trial_name_or_nct": "RAMP\u202f301 (Phase\u202f3)",
+        "target_biology": "Combination avutametinib + defactinib in recurrent low\u2011grade serous ovarian cancer",
+        "flawed_enrollment_criteria": "Investigator\u2019s choice control arm introduces heterogeneity in standard\u2011of\u2011care comparators",
+        "missing_biomarker": "No requirement for KRAS status in the overall population analysis (only hierarchical KRAS\u2011mutant analysis)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential crossover effect may confound overall survival endpoint",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "avutametinib (RAF/MEK clamp) + defactinib (FAK inhibitor) combination",
+        "ip_vulnerability_note": "Speaker disclosed that each component is a novel small molecule without prior FDA approvals, suggesting limited existing IP protection beyond the individual compounds.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on KRAS\u2011mutant subgroup for accelerated approval may limit broader label expansion."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented strong preclinical rationale that intermittent dosing would reduce toxicity, yet the trial still reported similar side\u2011effect profiles between combination and higher\u2011dose single\u2011agent arms, indicating a mismatch between dosing hypothesis and clinical outcome"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Long\u2011term overall survival data not yet reported",
+        "Limited efficacy data in KRAS\u2011wildtype patients",
+        "No biomarker beyond KRAS to explain responders in wildtype cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop additional predictive biomarkers (e.g., MAPK pathway activation signatures) to identify KRAS\u2011wildtype responders.",
+        "transcript_evidence": "Speaker said: \"...the drugs do also show activity in the KRAS wild type population, but we know that's a poorer prognosis group overall.\"",
+        "crispro_angle": "Apply CrisPRO's multi\u2011omics integration to discover co\u2011alterations that sensitize KRAS\u2011wildtype tumors to RAF/MEK/FAK inhibition.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Explore adding endocrine therapy (letrozole) earlier based on the investigator\u2011initiated frontline study, leveraging hormonal dependence in low\u2011grade serous tumors.",
+        "transcript_evidence": "Speaker said: \"...we chose to start an investigator\u2011initiated study ... combination with letrozole...\"",
+        "crispro_angle": "Use CrisPRO to model synergistic effects of MEK/FAK inhibition with aromatase blockade.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "benimetinib",
+        "context": "Prior single\u2011agent MEK inhibitor trial (GOG\u202f281)",
+        "sentiment": "critical"
+      },
+      {
+        "name": "trametinib",
+        "context": "Prior single\u2011agent MEK inhibitor trial (MILO)",
+        "sentiment": "critical"
+      },
+      {
+        "name": "defactinib",
+        "context": "FAK inhibitor component of the approved combination",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "avutametinib",
+        "context": "RAF/MEK clamp component of the approved combination",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the confirmatory Phase\u202f3 RAMP\u202f301 trial demonstrate PFS benefit in the overall (KRAS\u2011wildtype) population?",
+      "What is the optimal line of therapy (frontline vs recurrent) for the combination given its toxicity and efficacy profile?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772",
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "avutametinib",
+        "defactinib"
+      ],
+      "companies_to_monitor": [
+        "Verastem"
+      ]
+    }
+  }
+]

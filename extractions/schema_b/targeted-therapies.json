@@ -1,0 +1,598 @@
+[
+  {
+    "talk_id": "targeted-therapies::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jinhua Hu",
+      "institution_or_pharma": "CentaliCon Pharmaceutical",
+      "session_title": "targeted-therapies",
+      "talk_title": "CQ0736 polysaccharide-based KRAS pan\u2011targeted therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"No acquired resistance observed during treatment.\"",
+        "Speaker said: \"We will not trigger anti\u2011drug problem because we hide from the immune system.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dextran\u2011based drug conjugate (CQ0736)",
+        "ip_vulnerability_note": "Speaker disclosed the click\u2011chemistry linkage and high drug loading, suggesting the core dextran scaffold is the only novel element.",
+        "scale_or_manufacturing_bottleneck": "Manufacturing relies on high\u2011yield click chemistry; scalability of polysaccharide conjugation may be limited.",
+        "clinical_strategy_weakness": "Broad enrollment of all KRAS\u2011mutant tumors without biomarker stratification may dilute signal."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No human PK/PD or safety data presented",
+        "Half\u2011life reported only qualitatively (\"four times of the parent drug\")"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Macropinocytosis uptake varies 5\u201110\u2011fold between KRAS\u2011mutant and wild\u2011type cells; CrisPRO could develop a predictive biomarker panel for high macropinocytosis tumors.",
+        "transcript_evidence": "Speaker said: \"about five to 10 times\" increased macropinocytosis in KRAS mutant versus wild type.",
+        "crispro_angle": "Use CrisPRO\u2019s computational pipeline to integrate transcriptomic and metabolomic signatures of macropinocytosis to stratify patients.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CQ0736 claims reduced P\u2011gp mediated efflux; CrisPRO could model alternative resistance pathways (e.g., up\u2011regulation of alternative nutrient transporters).",
+        "transcript_evidence": "Speaker said: \"Gamma\u2011linolenic acid ... reduce P\u2011gp expression and inhibit P\u2011gp mediated efflux.\"",
+        "crispro_angle": "Predict and validate compensatory transporter expression using CrisPRO\u2019s network analysis.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Compare CQ0736 to ADCs; CrisPRO could identify synergistic combinations with immune checkpoint inhibitors.",
+        "transcript_evidence": "Speaker compared CQ0736 to ADCs, noting lower immune activation.",
+        "crispro_angle": "Model combination effects on tumor microenvironment using CrisPRO\u2019s immune\u2011oncology module.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "adagrasib",
+        "context": "Compared efficacy and resistance kinetics in CDX models.",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "S6236",
+        "context": "Mentioned as a recent KRAS\u2011targeted advance.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Exact pharmacokinetic parameters (half\u2011life in hours, clearance).",
+      "Heterogeneity of macropinocytosis across tumor types and patient samples."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CQ0736",
+        "adagrasib",
+        "S6236"
+      ],
+      "companies_to_monitor": [
+        "CentaliCon Pharmaceutical",
+        "Amgen"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Michelle Kriner",
+      "institution_or_pharma": "Wayfinder Biosciences",
+      "session_title": "targeted-therapies",
+      "talk_title": "RNA\u2011targeted small molecules inhibiting c\u2011MYC translation",
+      "rhetorical_signals": [
+        "Speaker said: \"We do not affect levels of the Myc mRNA transcript in these cells, which is also consistent with a translational mechanism.\"",
+        "Speaker said: \"We see a little bit of lymphopenia, but this has been a major challenge in the field of Myc\u2011targeting therapies.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "WDC\u2011623 series (c\u2011MYC translation inhibitor)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Lymphopenia observed in mice suggests off\u2011target impact on immune cells not captured by in\u2011vitro selectivity assays.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted lymphopenia as a major challenge, implying immune\u2011cell toxicity.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "RNA\u2011binding small molecules (Wayfinder platform)",
+        "ip_vulnerability_note": "Speaker admitted the chemistry is a typical diversity library; no unique scaffold disclosed, making IP potentially narrow.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single nutrient\u2011dependent activation mechanism may limit efficacy across tumor microenvironments."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed rapid MYC protein degradation within 30\u202fmin, then concluded that the compound is broadly tolerable with no body\u2011weight loss, despite early immune toxicity signals."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No dose\u2011limiting toxicity (DLT) study presented",
+        "No human PK/PD data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Compound activity is nutrient\u2011dependent; CrisPRO could develop a biomarker of tumor nutrient deprivation to select responsive patients.",
+        "transcript_evidence": "Speaker said: \"At high levels of the nutrient ... our compound is essentially inactive\".",
+        "crispro_angle": "Integrate metabolomic signatures with CrisPRO to predict low\u2011nutrient tumor niches.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Potential compensatory up\u2011regulation of other MYC family members (L\u2011MYC, N\u2011MYC) could cause resistance; CrisPRO can model paralog compensation.",
+        "transcript_evidence": "Question about reactivation of N\u2011MYC or L\u2011MYC after c\u2011MYC targeting.",
+        "crispro_angle": "Use CrisPRO to simulate paralog network rewiring and design combination strategies.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Synergy with EGFR antibody cetuximab was observed; CrisPRO could prioritize additional RTK inhibitors for combination.",
+        "transcript_evidence": "Speaker noted great synergy with cetuximab in long\u2011term growth assays.",
+        "crispro_angle": "Predict combinatorial efficacy using CrisPRO\u2019s drug\u2011drug interaction module.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Belzutifan",
+        "context": "Mentioned as an FDA\u2011approved HIF\u20112\u03b1 inhibitor (different program).",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Mechanism of lymphopenia and whether it is on\u2011target or off\u2011target.",
+      "Exact structural class of the RNA\u2011binding scaffold."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "WDC\u2011623",
+        "WDC\u2011198"
+      ],
+      "companies_to_monitor": [
+        "Wayfinder Biosciences"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Frederick Cohen",
+      "institution_or_pharma": "Nurix Therapeutics",
+      "session_title": "targeted-therapies",
+      "talk_title": "Cbl\u2011B intramolecular glue inhibitors (NX\u20111607) for T\u2011cell activation",
+      "rhetorical_signals": [
+        "Speaker said: \"We see robust efficacy at significantly lower doses\"",
+        "Speaker said: \"We have a very potent Kd of 0.4\u202fnM, driven by a slow off rate\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f1 trial of NX\u20111607 (NCT not disclosed)",
+        "target_biology": "Cbl\u2011B inhibition to release T\u2011cell brake",
+        "flawed_enrollment_criteria": "Enrolling unselected solid\u2011tumor patients without biomarker (e.g., Cbl\u2011B expression) may dilute signal",
+        "missing_biomarker": "Cbl\u2011B activity or phospho\u2011HS1 baseline levels",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early\u2011phase dose\u2011escalation without clear PD\u2011driven cohort expansion",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cbl\u2011B intramolecular glue (NX\u20111607)",
+        "ip_vulnerability_note": "Speaker disclosed crystal structure of the binding pocket, revealing a buried pocket that could be targeted by alternative chemotypes.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad indication strategy (colorectal, TNBC, B\u2011cell lymphoma) without predictive biomarker may limit trial success."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator arm reported",
+        "Limited PK data in rat (outlier) not explained"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high phospho\u2011HS1 or low Cbl\u2011B activity to enrich for responders.",
+        "transcript_evidence": "Speaker noted phospho\u2011HS1 as a proximal biomarker of Cbl\u2011B activity.",
+        "crispro_angle": "Use CrisPRO to correlate phospho\u2011HS1 levels with transcriptomic signatures for patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "NX\u20111607 synergizes with anti\u2011PD\u20111; CrisPRO could prioritize additional checkpoint inhibitors or co\u2011stimulatory agonists.",
+        "transcript_evidence": "Speaker showed strong synergy with anti\u2011PD\u20111 in multiple models.",
+        "crispro_angle": "Model immune\u2011cell activation networks to predict optimal combos.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PD\u20111 inhibitors",
+        "context": "Combined with NX\u20111607 in preclinical models.",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Why does NX\u20111607 have poor oral bioavailability in rat?",
+      "What is the mechanistic basis for the observed off\u2011target degradation of CK1\u03b1 and Ikaros?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NX\u20111607",
+        "NRX\u2011001",
+        "NRX\u20118766"
+      ],
+      "companies_to_monitor": [
+        "Nurix Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Jennifer Griffin",
+      "institution_or_pharma": "Neomorph",
+      "session_title": "targeted-therapies",
+      "talk_title": "NEO811 molecular glue degrader of ARNT",
+      "rhetorical_signals": [
+        "Speaker said: \"NEO811 shows superior potency to Belzutifan\"",
+        "Speaker said: \"Compound C mitigates off\u2011target degradation of SALL4\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f1 trial of NEO811 (NCT not disclosed)",
+        "target_biology": "Cereblon\u2011mediated degradation of ARNT (HIF\u2011\u03b2)",
+        "flawed_enrollment_criteria": "Enrolling all clear\u2011cell RCC patients without selecting for VHL loss or HIF\u2011activity biomarkers",
+        "missing_biomarker": "Baseline ARNT or HIF transcriptional signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design may not detect modest efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cereblon\u2011based molecular glue (NEO811)",
+        "ip_vulnerability_note": "Speaker disclosed ternary complex structures, revealing a defined ARNT degron that could be mimicked by competitors.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Off\u2011target degradation of CK1\u03b1 and Ikaros remains, potentially limiting therapeutic window."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ARNT undergoes a large conformational rearrangement upon glue binding, yet concluded that the same glue chemistry can be applied broadly without further structural optimization."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No comparative OS data versus standard of care",
+        "Limited data on impact on AhR signaling"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a transcriptional HIF\u2011target signature to select patients likely to benefit from ARNT degradation.",
+        "transcript_evidence": "Speaker highlighted superior potency over Belzutifan (HIF\u20112\u03b1 inhibitor).",
+        "crispro_angle": "Use CrisPRO to derive a composite HIF\u2011activity score for trial enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Off\u2011target degradation of CK1\u03b1/Ikaros could be mitigated by redesigning the cereblon\u2011binding moiety; CrisPRO can model alternative cereblon ligands.",
+        "transcript_evidence": "Speaker noted mitigation of SALL4 but persistence of CK1\u03b1/Ikaros degradation.",
+        "crispro_angle": "Predict cereblon\u2011glue interactions to improve selectivity.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Belzutifan",
+        "context": "Compared potency and mechanism (HIF\u20112\u03b1 inhibition vs ARNT degradation).",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the effect of ARNT degradation on AhR\u2011mediated immune suppression?",
+      "Long\u2011term safety of cereblon off\u2011target neo\u2011substrate degradation."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NEO811"
+      ],
+      "companies_to_monitor": [
+        "Neomorph"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Rong Zeng",
+      "institution_or_pharma": "Arizona State University",
+      "session_title": "targeted-therapies",
+      "talk_title": "DNA\u2011templated spatially controlled PROTACs (DTAG) for CDK4/6\u2011Cyclin\u202fD1 degradation",
+      "rhetorical_signals": [
+        "Speaker said: \"Version one able to induce CDK4, CDK6, as well as the Cyclin D1 degradation\"",
+        "Speaker said: \"The mouse body doesn't alter a lot, which indicates no severe side effect observed\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DNA\u2011templated degrader (DTAG)",
+        "ip_vulnerability_note": "Speaker described using standard phosphorothioate backbone and click chemistry; the core DNA scaffold is not proprietary.",
+        "scale_or_manufacturing_bottleneck": "Large\u2011scale synthesis of modified oligonucleotides may increase COGS.",
+        "clinical_strategy_weakness": "Potential innate immune activation (cGAS\u2011STING) not yet evaluated."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Molecular dynamics suggested stable ternary complexes for all three versions, yet version three (largest distance) showed no degradation in cells."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No pharmacokinetic data for the DNA\u2011based molecules",
+        "No assessment of innate immune activation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can model optimal ligand spacing on DNA to predict degradation efficiency, offering a computational design advantage over empirical DTAG screening.",
+        "transcript_evidence": "Speaker highlighted differential degradation based on ligand placement (major groove vs minor groove vs ends).",
+        "crispro_angle": "Apply CrisPRO\u2019s spatial modeling to pre\u2011screen DNA\u2011linker designs before synthesis.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "DTAG showed activity in CDK4/6\u2011resistant contexts; CrisPRO could identify synergistic agents (e.g., CDK9 inhibitors).",
+        "transcript_evidence": "Speaker discussed constructing DTAG libraries for CDK9 and CDK2 targets.",
+        "crispro_angle": "Predict cross\u2011target degradation synergies using network analysis.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Traditional PROTACs",
+        "context": "Compared to DTAG in terms of synthetic complexity and geometry control.",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Extent of off\u2011target DNA\u2011binding protein degradation.",
+      "Potential activation of cGAS\u2011STING pathway by the DNA scaffold."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DTAG version 1",
+        "DTAG version 3"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Jin Cui",
+      "institution_or_pharma": "Blossom Hill Therapeutics",
+      "session_title": "targeted-therapies",
+      "talk_title": "BH\u2011501284 non\u2011covalent pan\u2011KRAS inhibitor",
+      "rhetorical_signals": [
+        "Speaker said: \"1284 demonstrated picomolar binding affinity with more than 54\u2011hour resident time\"",
+        "Speaker said: \"1284 achieved deep tumor regression even at a 5\u202fmg/kg BID dose level\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BH\u2011501284",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Lymphopenia observed in mice suggests immune\u2011cell impact not captured in tumor models.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted lymphopenia as a major challenge in the field of Myc\u2011targeting therapies (contextual relevance).",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical CDX efficacy studies (no NCT disclosed)",
+        "target_biology": "Pan\u2011KRAS switch\u2011II pocket inhibition (GDP and GTP states)",
+        "flawed_enrollment_criteria": "Testing only KRAS\u2011mutant xenografts; lack of biomarker\u2011selected patient populations may overestimate efficacy.",
+        "missing_biomarker": "KRAS activity signature or downstream MAPK pathway activation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort size, no comparator arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Non\u2011covalent pan\u2011KRAS scaffold (BH\u2011501284)",
+        "ip_vulnerability_note": "Speaker emphasized a novel scaffold beyond MRTX1133, but disclosed binding kinetics and pseudo\u2011irreversible nature, potentially enabling design\u2011around by competitors.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad KRAS inhibition may cause on\u2011target toxicity in normal tissues expressing wild\u2011type KRAS."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that 1284 binds both GDP\u2011 and GTP\u2011bound KRAS with picomolar affinity yet claimed selectivity over HRAS/NRAS despite structural similarity of the switch\u2011II pocket."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human safety or DLT data",
+        "Limited data on KRAS\u2011wildtype tissue toxicity"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "EGFR ligand rescue reduces efficacy of many KRAS inhibitors; CrisPRO can model EGFR\u2011driven feedback to design combination strategies.",
+        "transcript_evidence": "Speaker demonstrated sustained ERK inhibition under EGF challenge.",
+        "crispro_angle": "Integrate EGFR\u2011MAPK network modeling to predict optimal combo dosing.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Synergy with EGFR antibody cetuximab observed; CrisPRO could prioritize additional RTK inhibitors.",
+        "transcript_evidence": "Speaker noted great synergy with cetuximab in long\u2011term growth assay.",
+        "crispro_angle": "Predict additive MAPK pathway suppression using CrisPRO.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate biomarker\u2011driven enrollment (KRAS activity score) to avoid dilution of signal.",
+        "transcript_evidence": "Speaker highlighted pan\u2011KRAS activity across many mutants but not wild\u2011type HRAS/NRAS.",
+        "crispro_angle": "Develop a CrisPRO\u2011derived KRAS\u2011dependency signature for trial inclusion.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "adagrasib",
+        "context": "Mentioned as a covalent KRAS G12C inhibitor for comparison of efficacy.",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "MRTX1133",
+        "context": "Cited as a non\u2011covalent KRAS G12D inhibitor with poor oral bioavailability.",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Long\u2011term safety of pan\u2011KRAS inhibition in normal tissues.",
+      "Potential for acquired resistance via secondary KRAS mutations not covered by the switch\u2011II pocket."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BH\u2011501284",
+        "adagrasib",
+        "MRTX1133"
+      ],
+      "companies_to_monitor": [
+        "Blossom Hill Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "targeted-therapies::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Aihuan Yu",
+      "institution_or_pharma": "DeepKinase Biotechnologies",
+      "session_title": "targeted-therapies",
+      "talk_title": "Proteomics\u2011guided discovery of TRIM21\u2011mediated multimeric degradation",
+      "rhetorical_signals": [
+        "Speaker said: \"ACE can induce TRIM21\u2011dependent degradation, is selectivity, and only enriches with NPC proteins in proteasome\u2011dependent manner.\"",
+        "Speaker said: \"Only the multimeric proteins can activate the TRIM21 and direct its proteasome degradation.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TRIM21\u2011based molecular glues (ACE compounds)",
+        "ip_vulnerability_note": "Speaker disclosed that degradation requires multimeric assembly (e.g., NPC); this mechanistic specificity may be circumvented by alternative E3 ligases.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential activation of NF\u2011\u03baB signaling via TRIM21 innate immune function not yet addressed."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Global proteomics showed selective NPC degradation, yet the speaker suggested broad applicability to other multimeric targets without presenting data on off\u2011target immune activation."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No in\u2011vivo efficacy data for ACE compounds",
+        "No assessment of NF\u2011\u03baB activation or cytokine release"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumors with high expression of multimeric complexes (e.g., NPC components) to predict ACE responsiveness.",
+        "transcript_evidence": "Speaker highlighted selective degradation of nuclear pore complex proteins.",
+        "crispro_angle": "Use CrisPRO to generate a multimeric\u2011complex expression signature for patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Loss of NUP98 abrogates TRIM21 recruitment; CrisPRO could model alternative degron\u2011E3 pairings to overcome such resistance.",
+        "transcript_evidence": "Speaker showed ACE fails to recruit TRIM21 in NUP98 mutant clones.",
+        "crispro_angle": "Predict alternative scaffold designs that engage TRIM21 independent of NUP98.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can simulate multimeric assembly\u2011dependent degradation, offering a computational advantage over empirical screening.",
+        "transcript_evidence": "Speaker emphasized that only multimeric proteins are degraded by TRIM21 glues.",
+        "crispro_angle": "Model protein\u2011protein interface geometry to prioritize glue candidates.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PROTACs",
+        "context": "Compared to TRIM21 glues in terms of E3 ligase diversity.",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Does TRIM21 activation trigger NF\u2011\u03baB\u2013mediated inflammation?",
+      "Can ACE compounds degrade other multimeric disease\u2011relevant proteins beyond NPC components?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ACE compounds",
+        "TRIM21\u2011based degraders"
+      ],
+      "companies_to_monitor": [
+        "DeepKinase Biotechnologies"
+      ]
+    }
+  }
+]

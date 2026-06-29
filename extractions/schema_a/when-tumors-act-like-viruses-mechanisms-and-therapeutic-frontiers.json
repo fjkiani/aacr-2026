@@ -1,0 +1,573 @@
+[
+  {
+    "talk_id": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers::ca\u00f1adas::1",
+    "session_title": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers",
+    "talk_title": "Inducing viral mimicry to turn cold small cell lung cancer hot via DHX9, TREX1 and spliceosome inhibition",
+    "speaker": {
+      "name": "Israel Ca\u00f1adas",
+      "affiliation": "Fox Chase Cancer Center, Assistant Professor",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "viral_mimicry",
+      "combination_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DHX9",
+        "alteration": "",
+        "pathway": "RNA_helicase",
+        "modality": "genetic_knockdown",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "small cell lung cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TREX1",
+        "alteration": "",
+        "pathway": "cGAS-STING_negative_regulator",
+        "modality": "genetic_knockdown",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "chemo-resistant small cell lung cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SF3B1",
+        "alteration": "",
+        "pathway": "spliceosome",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Pladienolide B",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "small cell lung cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CBP1",
+        "alteration": "",
+        "pathway": "ZBP1-mediated_necroptosis",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor microenvironment fibroblasts",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PD-L1",
+        "type": "predictive",
+        "assay": "qPCR / IHC",
+        "finding": "PD-L1 expression induced after DHX9 or spliceosome inhibition in vitro"
+      },
+      {
+        "name": "CD8 T cell infiltration",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry / IHC",
+        "finding": "Increased CD8+ T cells in tumors with DHX9 knockdown or spliceosome inhibitor treatment"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "immunocompetent small cell lung cancer model",
+        "genotype_or_key_features": "DHX9 knockdown or TREX1 knockout, treated with anti-PD-1"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "human small cell lung cancer cell lines (e.g., HCT9-AR)",
+        "genotype_or_key_features": "chemo-resistant, TREX1 high"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor growth",
+        "value": "significantly decreased",
+        "confidence_interval": "",
+        "n": "n=5 mice per group",
+        "population": "DHX9 knockdown tumors",
+        "comparator": "control tumors",
+        "maturity": "interim"
+      },
+      {
+        "metric": "survival",
+        "value": "significantly prolonged",
+        "confidence_interval": "",
+        "n": "n=5 mice per group",
+        "population": "DHX9 knockdown + anti-PD-1",
+        "comparator": "anti-PD-1 alone",
+        "maturity": "interim"
+      },
+      {
+        "metric": "tumor growth",
+        "value": "decreased",
+        "confidence_interval": "",
+        "n": "n=5 mice per group",
+        "population": "spliceosome inhibitor treated tumors",
+        "comparator": "DMSO control",
+        "maturity": "interim"
+      },
+      {
+        "metric": "survival",
+        "value": "increased",
+        "confidence_interval": "",
+        "n": "n=5 mice per group",
+        "population": "spliceosome inhibitor + anti-PD-1",
+        "comparator": "anti-PD-1 alone",
+        "maturity": "interim"
+      },
+      {
+        "metric": "IL-2 secretion (TCR responsiveness)",
+        "value": "significant increase",
+        "confidence_interval": "",
+        "n": "n=3 co-culture replicates",
+        "population": "TREX1 knockout + etoposide-resistant cells",
+        "comparator": "TREX1 intact cells",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Inhibition or genetic loss of DHX9, TREX1, or spliceosome components leads to accumulation of dsRNA, DNA\u2011RNA hybrids and crRNA, activating MDA5/MAVS and cGAS\u2011STING pathways, inducing type I interferon, cytokine production and necroptosis, which remodels the tumor microenvironment, increases CD8+ T\u2011cell infiltration and sensitizes small cell lung cancer to anti\u2011PD\u20111 therapy.",
+    "readouts": [
+      "RNA\u2011seq",
+      "RIP\u2011seq",
+      "J2 antibody dsRNA staining",
+      "S9.6 R\u2011loop assay",
+      "Western blot (phospho\u2011IRF3, TBK1)",
+      "flow cytometry",
+      "IHC",
+      "tumor volume measurement",
+      "survival curves",
+      "IL\u20112 ELISA"
+    ],
+    "key_findings": [
+      "DHX9 knockdown in small cell lung cancer cells increases dsRNA and DNA\u2011RNA hybrids, activating STING and MDA5 pathways.",
+      "DHX9 loss reduces tumor growth and enhances CD8+ T\u2011cell infiltration in immunocompetent mice.",
+      "Combination of DHX9 knockdown with anti\u2011PD\u20111 dramatically improves tumor control and survival versus anti\u2011PD\u20111 alone.",
+      "Spliceosome inhibition (Pladienolide B) induces crRNA accumulation, ZBP1\u2011dependent necroptosis, and tumor regression.",
+      "Spliceosome inhibitor plus anti\u2011PD\u20111 shows synergistic tumor suppression; effect is lost in CBP1\u2011deficient mice.",
+      "TREX1 is up\u2011regulated in chemotherapy\u2011resistant SCLC cells; its knockdown restores interferon signaling and sensitizes cells to cisplatin and T\u2011cell activation.",
+      "Viral mimicry can be chronic, leading to immune evasion; targeting TREX1 or DHX9 may overcome this tolerance."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Chronic viral mimicry can induce immune evasion via p53 loss and tolerance to cytosolic nucleases.",
+      "TREX1 up\u2011regulation in chemo\u2011resistant cells suppresses cGAS\u2011STING signaling, contributing to therapy resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 antibody",
+        "rationale": "Viral mimicry increases antigen presentation and PD\u2011L1 expression, making tumors more responsive to checkpoint blockade.",
+        "phenotype": "Synergistic tumor regression and prolonged survival in mouse SCLC models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "cisplatin chemotherapy",
+        "rationale": "TREX1 knockdown restores cGAS\u2011STING activation and DNA damage response, sensitizing cells to DNA\u2011damaging agents.",
+        "phenotype": "Enhanced cisplatin efficacy in TREX1\u2011deficient SCLC xenografts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What determines the balance between dsRNA and crRNA formation after spliceosome inhibition?",
+      "How does viral mimicry in tumor\u2011infiltrating lymphocytes affect autoimmunity or systemic immunity?",
+      "Can CBP1 expression levels predict response to spliceosome\u2011targeted therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers::chapinelli::2",
+    "session_title": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers",
+    "talk_title": "Epigenetic regulation of viral mimicry and its impact on immunotherapy response",
+    "speaker": {
+      "name": "Catherine Chapinelli",
+      "affiliation": "George Washington University, Associate Professor",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "ovarian cancer",
+      "NKT cell lymphoma",
+      "high-grade serous ovarian cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "epigenetics",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNA methyltransferases",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "azacitidine / decitabine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "various solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "HDACs",
+        "alteration": "",
+        "pathway": "histone_deacetylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "HDAC inhibitors",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EZH2",
+        "alteration": "",
+        "pathway": "histone_methyltransferase",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "EZH2 inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumors with epigenetic silencing",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ADAR1",
+        "alteration": "",
+        "pathway": "RNA_editing",
+        "modality": "genetic_knockdown",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor cells with TE transcription",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "wild-type vs R175H mutant vs null",
+        "pathway": "tumor suppressor",
+        "modality": "genetic_status",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "regulation of TE expression",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "type I interferon signature",
+        "type": "pharmacodynamic",
+        "assay": "RNA\u2011seq / IFN score",
+        "finding": "Induced by DNMTi and HDACi across multiple tumor models"
+      },
+      {
+        "name": "PD\u2011L1 expression",
+        "type": "predictive",
+        "assay": "IHC / qPCR",
+        "finding": "Upregulated after epigenetic therapy, correlating with improved checkpoint response"
+      },
+      {
+        "name": "M2 macrophage abundance",
+        "type": "pharmacodynamic",
+        "assay": "CyTOF / IHC",
+        "finding": "Reduced after combined DNMTi + ADAR1 knockdown in ovarian cancer model"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "melanoma syngeneic model",
+        "genotype_or_key_features": "treated with anti\u2011CTLA\u20114 \u00b1 DNMTi"
+      },
+      {
+        "model_type": "mouse",
+        "name": "ovarian cancer syngeneic model",
+        "genotype_or_key_features": "PD\u20111 \u00b1 DNMTi"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "DNMTi + anti\u2011PD\u20111 in NKT cell lymphoma (phase II)",
+        "genotype_or_key_features": "refractory patients became responsive"
+      },
+      {
+        "model_type": "patient_cohort",
+        "name": "high\u2011grade serous ovarian cancer survivors",
+        "genotype_or_key_features": "long\u2011term vs short\u2011term survivors, all TP53 mutant"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "significantly longer in high TE expression cluster (C1)",
+        "confidence_interval": "",
+        "n": "n=~200 patients",
+        "population": "high\u2011grade serous ovarian cancer long\u2011term survivors",
+        "comparator": "low TE expression clusters",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "progression\u2011free survival",
+        "value": "significantly longer in high TE expression cluster",
+        "confidence_interval": "",
+        "n": "n=~200 patients",
+        "population": "same cohort",
+        "comparator": "other clusters",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "response rate",
+        "value": "improved when DNMTi combined with anti\u2011PD\u20111 in melanoma preclinical model",
+        "confidence_interval": "",
+        "n": "n=10 mice per group",
+        "population": "melanoma syngeneic",
+        "comparator": "single agents",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "DNMT and HDAC inhibition demethylates and opens chromatin, reactivating transposable element transcription that forms dsRNA or DNA\u2011RNA hybrids, which are sensed by MDA5/MAVS and cGAS\u2011STING pathways, driving type I interferon signaling, upregulating antigen presentation and PD\u2011L1, and reshaping the tumor microenvironment to enhance checkpoint blockade efficacy; ADAR1 editing dampens this response, and TP53 status modulates TE expression and drug responsiveness.",
+    "readouts": [
+      "RNA\u2011seq",
+      "TE expression analysis",
+      "IFN\u2011stimulated gene scores",
+      "IHC for PD\u2011L1 and immune infiltrates",
+      "CyTOF",
+      "survival curves",
+      "clinical trial endpoints"
+    ],
+    "key_findings": [
+      "DNMT inhibitors reactivate endogenous retroviruses, generating dsRNA that triggers innate immunity.",
+      "Combining DNMTi with HDACi amplifies TE transcription and interferon responses.",
+      "ADAR1 knockdown synergizes with DNMTi to improve survival and shift macrophage polarization in ovarian cancer models.",
+      "Wild\u2011type TP53 binds to LTRs and enhances TE transcription upon DNMTi; TP53 loss reduces DNA methylation globally, increasing TE expression.",
+      "TP53\u2011null cells show the strongest interferon response to DNMTi, whereas R175H mutants are less responsive.",
+      "High TE expression in long\u2011term ovarian cancer survivors correlates with increased immune infiltration and better survival, independent of BRCA/HRD status.",
+      "Clinical trials of DNMTi + checkpoint blockade show mixed results; notable activity in NKT cell lymphoma and melanoma."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Chronic TE expression can lead to interferon desensitization and immune evasion.",
+      "ADAR1-mediated RNA editing reduces dsRNA immunogenicity, limiting viral mimicry efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111/PD\u2011L1 checkpoint inhibitors",
+        "rationale": "Viral mimicry upregulates antigen presentation and PD\u2011L1, sensitizing tumors to checkpoint blockade.",
+        "phenotype": "Improved tumor control and survival in preclinical melanoma and ovarian models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "HDAC inhibitors",
+        "rationale": "HDAC inhibition synergizes with DNMTi to further increase TE transcription.",
+        "phenotype": "Higher interferon scores than DNMTi alone",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "ADAR1 knockdown",
+        "rationale": "Blocks RNA editing that dampens dsRNA sensing, enhancing interferon response.",
+        "phenotype": "Extended survival and M1 macrophage polarization in ovarian cancer model",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How does TP53 status mechanistically influence DNMTi\u2011induced TE activation beyond methylation changes?",
+      "What are the determinants of chronic versus acute viral mimicry and their impact on therapy resistance?",
+      "Can TE expression be used prospectively to stratify patients for epigenetic\u2011immunotherapy combinations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "de Carvalho et al. 2022 Nature",
+        "Mehtapoor et al. 2023 Cancer Immunology",
+        "Wang et al. 2024 Cell"
+      ],
+      "company_or_sponsor": [
+        "Novartis (azacitidine)",
+        "Eli Lilly (HDAC inhibitors)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers::verret::3",
+    "session_title": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers",
+    "talk_title": "Viral mimicry enhances cancer vaccine efficacy via interferon\u2011dependent tumor remodeling",
+    "speaker": {
+      "name": "Nicolas Verret",
+      "affiliation": "Mount Sinai, Assistant Professor",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "colon carcinoma",
+      "lymphoma",
+      "MC38 colon cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "viral_mimicry",
+      "combination_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNA methyltransferases",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "azacitidine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor cells for viral mimicry induction",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MAVS",
+        "alteration": "",
+        "pathway": "MDA5 signaling",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B16 melanoma cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STING",
+        "alteration": "",
+        "pathway": "cGAS\u2011STING pathway",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B16 melanoma cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "type I interferon score",
+        "type": "pharmacodynamic",
+        "assay": "RNA\u2011seq IFN signature",
+        "finding": "Azacitidine induces strong IFN response in tumor cells, dependent on MAVS/STING"
+      },
+      {
+        "name": "MHC class I expression",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry / IHC",
+        "finding": "Increased on tumor cells only when viral mimicry is intact"
+      },
+      {
+        "name": "vaccine\u2011specific CD8+ T\u2011cell clones",
+        "type": "pharmacodynamic",
+        "assay": "tetramer staining, TCR sequencing",
+        "finding": "Clonal expansion in TME requires tumor\u2011intrinsic viral mimicry"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16\u2011F10 melanoma",
+        "genotype_or_key_features": "wild\u2011type, MAVS\u2011/\u2011 or STING\u2011/\u2011 tumors; vaccinated with mRNA neoantigen"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MC38 colon carcinoma",
+        "genotype_or_key_features": "treated with azacitidine + vaccine"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "CD26\u2011deficient colon carcinoma",
+        "genotype_or_key_features": "frameshift antigen vaccine"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "lymphoma model",
+        "genotype_or_key_features": "tumor\u2011associated antigen vaccine"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Azacitidine demethylates tumor DNA, reactivating transposable elements that generate dsRNA and DNA\u2011RNA hybrids, activating MDA5/MAVS and cGAS\u2011STING pathways, leading to type I interferon production, upregulation of MHC\u2011I and PD\u2011L1, and remodeling of myeloid populations; this creates a permissive microenvironment for vaccine\u2011elicited T cells to infiltrate, expand, and mediate tumor control, an effect lost when MAVS or STING are knocked out in tumor cells.",
+    "readouts": [
+      "RNA\u2011seq",
+      "IFN signature",
+      "flow cytometry for MHC\u2011I",
+      "tetramer staining",
+      "TCR sequencing",
+      "tumor growth curves",
+      "survival",
+      "single\u2011cell RNA\u2011seq of TME"
+    ],
+    "key_findings": [
+      "Azacitidine strongly induces transposable element transcription and a type I interferon response in B16 melanoma, dependent on MAVS and STING.",
+      "Vaccination alone fails therapeutically, but combined with azacitidine leads to tumor control and improved survival across multiple tumor models.",
+      "The combination increases tumor cell MHC\u2011I expression and expands vaccine\u2011specific CD8+ T\u2011cell clones within the TME.",
+      "MAVS/STING knockout tumors do not respond to the combination, confirming the necessity of tumor\u2011intrinsic viral mimicry.",
+      "Single\u2011cell analysis reveals increased cDC1 dendritic cells and reduced immunosuppressive Arg1+ macrophages only when viral mimicry is intact.",
+      "Combination therapy promotes proliferation of CD8+ T cells and clonal expansion of vaccine\u2011specific TCRs."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Tumors lacking MAVS or STING are resistant to the vaccine\u2011azacitidine synergy, highlighting dependence on innate sensing pathways."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "mRNA cancer vaccine",
+        "rationale": "Viral mimicry upregulates antigen presentation and creates an inflamed TME, enabling vaccine\u2011elicited T cells to function.",
+        "phenotype": "Synergistic tumor regression and survival benefit in multiple syngeneic models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "immune checkpoint blockade (anti\u2011PD\u20111)",
+        "rationale": "Azacitidine\u2011induced PD\u2011L1 upregulation may sensitize tumors to PD\u20111 inhibition.",
+        "phenotype": "Improved responses in NKT cell lymphoma patients (clinical observation)",
+        "stage": "clinical"
+      }
+    ],
+    "open_questions": [
+      "Can STING agonists substitute for azacitidine to achieve similar vaccine synergy?",
+      "What is the durability of myeloid repolarization after transient azacitidine treatment?",
+      "Will this strategy translate to human tumors with heterogeneous MAVS/STING status?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Verret et al. 2024 Cancer Immunology",
+        "Kumar et al. 2023 Nat Med"
+      ],
+      "company_or_sponsor": [
+        "Merck (vaccine platform)",
+        "Eisai (azacitidine)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

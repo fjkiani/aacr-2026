@@ -1,0 +1,190 @@
+[
+  {
+    "talk_id": "immune-and-stromal-reprogramming-across-the-tumor-micro-and-macroenvironment::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Yuval Shaked",
+      "institution_or_pharma": "Technion",
+      "session_title": "immune-and-stromal-reprogramming-across-the-tumor-micro-and-macroenvironment",
+      "talk_title": "Immune checkpoint inhibitors and extracellular matrix remodeling",
+      "rhetorical_signals": [
+        "Speaker said: we call it silent side effects.",
+        "Speaker said: 70% of the patient will show increase in metastatic properties of the tumor cells by means of invasion and filtration throughout the Boyden chamber.",
+        "Speaker said: CD8 T-cells expressing lysyl oxidase are the one that support chemotherapy-induced ECM remodeling.",
+        "Speaker said: we found that BMP1 and LOX are upregulated in the T-cells."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "anti-PD-1 monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "BMP1-mediated extracellular matrix remodeling creates a physical and immunosuppressive barrier that limits T\u2011cell infiltration",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BMP1 inhibitor payload in ADC",
+        "ip_vulnerability_note": "Speaker disclosed that the BMP1 inhibitor (UK-383367) is a small\u2011molecule originally developed for fibrosis, suggesting limited novelty of the core scaffold for oncology use",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use of anti\u2011PD\u20111 without biomarker selection may dilute signal; reliance on daily dosing of BMP1 inhibitor indicates potential compliance issues"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS or long\u2011term survival data",
+        "Limited patient cohort (12 paired TNBC samples)",
+        "No direct comparison to standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target BMP1\u2011driven ECM remodeling to overcome anti\u2011PD\u20111 resistance",
+        "transcript_evidence": "Speaker said: Blocking BMP1 in combination with anti\u2011PD\u20111 can sensitize resistant tumors to therapy.",
+        "crispro_angle": "CrisPRO can model BMP1\u2011mediated collagen cross\u2011linking networks and predict combinatorial inhibition strategies that restore T\u2011cell access",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop BMP1 plasma levels as a predictive biomarker for ICI response",
+        "transcript_evidence": "Speaker said: In head\u2011and\u2011neck SCC patients, almost all showed higher BMP1 after immunotherapy, but sample size was small and predictive value unclear.",
+        "crispro_angle": "CrisPRO can integrate longitudinal plasma proteomics with tumor\u2011microenvironment models to define BMP1 thresholds correlating with response",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s enzyme\u2011inhibitor payload design to create next\u2011generation ADCs with optimized linker chemistry for BMP1 inhibition",
+        "transcript_evidence": "Speaker said: Current ADC uses a short\u2011half\u2011life BMP1 inhibitor requiring daily dosing; a more stable conjugate could improve efficacy.",
+        "crispro_angle": "CrisPRO can simulate linker\u2011payload stability and predict pharmacokinetic improvements for ADC optimization",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Pfizer",
+        "context": "Developed the BMP1 inhibitor UK\u2011383367 originally for fibrosis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Roche",
+        "context": "Collaborated on clinical study of ECM remodeling in head\u2011and\u2011neck SCC patients",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Is BMP1 expression in CD8 T cells predictive of hyper\u2011progression after ICI?",
+      "What upstream signals trigger BMP1 release from T cells upon PD\u20111 blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "UK\u2011383367 (BMP1 inhibitor)",
+        "BMP1\u2011targeting ADC"
+      ],
+      "companies_to_monitor": [
+        "Pfizer",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "immune-and-stromal-reprogramming-across-the-tumor-micro-and-macroenvironment::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mitchell Fain",
+      "institution_or_pharma": "Fox Chase Cancer Center",
+      "session_title": "immune-and-stromal-reprogramming-across-the-tumor-micro-and-macroenvironment",
+      "talk_title": "Aging drives ARG1\u2011mediated NK cell suppression and metastasis",
+      "rhetorical_signals": [
+        "Speaker said: 90% to 95% of studies are done in 8\u201112\u2011week\u2011old mice, which is the clinical equivalent of a 20\u2011year\u2011old human.",
+        "Speaker said: Arginase 1 was significantly increased in CD45 cells in the lung and liver of aged mice.",
+        "Speaker said: Recombinant ARG1 treatment reactivated dormant melanoma colonies in young mice.",
+        "Speaker said: ARG1 inhibitor CB\u20111158 significantly decreased liver colonization in aged mice."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Age\u2011unadjusted immunotherapy strategies",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Elevated ARG1 from aged fibroblasts and CD11b+ myeloid cells depletes arginine, impairing NK cell proliferation and cytotoxicity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CB\u20111158 (ARG1/ARG2 inhibitor)",
+        "ip_vulnerability_note": "Speaker presented preclinical efficacy but no disclosed clinical data, indicating early\u2011stage IP and potential for rapid competitor entry",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Efficacy only observed in aged mouse models; may not translate without age\u2011stratified patient selection"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of human clinical trial data on ARG1 inhibition in aged patients",
+        "No assessment of long\u2011term toxicity of ARG1 blockade",
+        "Limited mechanistic dissection of ARG1 source (ARG1 vs ARG2)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target ARG1\u2011driven arginine depletion to restore NK cell function in aged metastatic niches",
+        "transcript_evidence": "Speaker said: ARG1 inhibitor CB\u20111158 significantly decreased liver colonization and increased NK cell infiltration in aged mice.",
+        "crispro_angle": "CrisPRO can simulate arginine metabolism networks and predict combinatorial regimens that pair ARG1 inhibition with NK\u2011cell activating agents",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop plasma ARG1 or SFRP1 levels as age\u2011adjusted biomarkers to select patients for ARG1\u2011targeted therapy",
+        "transcript_evidence": "Speaker said: ARG1 was dramatically increased in aged lung fibroblasts and correlated with poorer survival in TCGA melanoma patients over 55.",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and proteomic datasets to define cutoff values for ARG1\u2011high versus ARG1\u2011low cohorts",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine ARG1 inhibition with NK\u2011cell checkpoint blockade (e.g., anti\u2011TIGIT) to synergistically enhance anti\u2011metastatic immunity in elderly patients",
+        "transcript_evidence": "Speaker said: ARG1 treatment increased PD1 and TIGIT expression on NK cells, indicating a checkpoint\u2011driven exhaustion phenotype.",
+        "crispro_angle": "CrisPRO can model dual inhibition of metabolic (ARG1) and checkpoint pathways to forecast additive efficacy",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CB\u20111158 (by unspecified company)",
+        "context": "Small\u2011molecule ARG1/ARG2 inhibitor shown to reduce metastasis in aged mice",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does ARG1 inhibition improve response to standard ICI in aged patients?",
+      "What is the relative contribution of ARG1 versus ARG2 in the aged microenvironment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CB\u20111158",
+        "ARG1 plasma assay kits"
+      ],
+      "companies_to_monitor": [
+        "Company developing CB\u20111158"
+      ]
+    }
+  }
+]

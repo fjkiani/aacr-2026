@@ -1,0 +1,153 @@
+[
+  {
+    "talk_id": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Logan Walsh",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment",
+      "talk_title": "Spatial Omics Platforms and Analytical Challenges",
+      "rhetorical_signals": [
+        "I think a lot of people dive right in because they're commercially available.",
+        "There are a lot of bottlenecks and things that I think people need to consider.",
+        "I think if you are looking for tools and the latest and greatest, I think you should also consider a lot of the work that's on bioRxiv."
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No quantitative performance comparison across platforms",
+        "Lack of standardized segmentation benchmark"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop a standardized, AI\u2011driven cell segmentation benchmark that outperforms existing tools (e.g., SAM, Circle Cell Segmentation) highlighted by Dr. Walsh.",
+        "transcript_evidence": "Speaker emphasized that \"none of these tools are perfect\" and showed a new tool called Circle Cell Segmentation Across Scales that works well qualitatively and quantitatively.",
+        "crispro_angle": "CrisPRO can provide a computational spine for cross\u2011platform segmentation validation and generate consensus masks to improve downstream spatial analyses.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Create a low\u2011plex, cost\u2011effective assay (e.g., targeted panel) for nerve\u2011immune interactions to enable larger clinical cohorts, addressing the cost barrier mentioned.",
+        "transcript_evidence": "Speaker noted that \"these technologies are great because in a non\u2011destructive way, you can use some of these optical instruments... but they are very expensive\".",
+        "crispro_angle": "CrisPRO can prioritize a minimal set of predictive biomarkers (e.g., PDGFD, nerve injury signatures) for a focused panel.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "10x Genomics",
+        "context": "mentioned as a commercial provider of spatial transcriptomics platforms (Visium, Visium HD).",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "NanoString",
+        "context": "referenced for GeoMx digital spatial profiling technology.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal combination of segmentation algorithm and downstream phenotyping to minimize false positives/negatives?",
+      "How can spatial omics be scaled to whole\u2011section analysis without prohibitive cost?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": [
+        "10x Genomics",
+        "NanoString"
+      ]
+    }
+  },
+  {
+    "talk_id": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Will Wang",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment",
+      "talk_title": "Spatial Multi\u2011omics of Perineural Invasion in Pancreatic Cancer",
+      "rhetorical_signals": [
+        "We found that the PDGFD, PDGFRB axis seems to act on cancer cells, neurons, and glial cells to facilitate PNI in this multimodal fashion.",
+        "When we looked at the three predicted ligand\u2011receptor interactions that were above the significance threshold, only one overlapped with our GeoMix data.",
+        "We saw that in non\u2011responders, those transcriptional programs are hyperactivated."
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective clinical trial testing PDGFRB inhibition in patients with PNI",
+        "Limited number of patient TMAs (29 patients) for spatial validation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived PDGFD/PDGFRB expression signature to stratify pancreatic cancer patients who may benefit from PDGFRB inhibition.",
+        "transcript_evidence": "Speaker showed that PDGFD is enriched in cancer cells proximal to nerves and that PDGFD overexpression increases nerve invasion in vitro and in vivo.",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomic and proteomic data to generate a robust predictive score for PDGFD\u2011driven perineural invasion.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the PDGFD\u2011PDGFRB axis to overcome resistance to immunotherapy associated with nerve injury signatures.",
+        "transcript_evidence": "Non\u2011responders to anti\u2011PD\u20111 therapy showed enrichment of nerve injury pathways and PDGFD\u2011related signaling.",
+        "crispro_angle": "CrisPRO can model downstream signaling networks to identify combination partners (e.g., PDGFRB inhibitors with checkpoint blockade).",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine PDGFRB small\u2011molecule inhibitors (e.g., SU16f) with existing chemotherapy or KRAS inhibitors to block multimodal PNI effects.",
+        "transcript_evidence": "In vivo sciatic nerve invasion model showed significant inhibition of cancer spread when treated with the PDGFRB inhibitor SU16f.",
+        "crispro_angle": "CrisPRO can simulate drug\u2011drug interaction matrices to prioritize synergistic combos involving PDGFRB blockade.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Visium",
+        "context": "used as a sequencing\u2011based spatial transcriptomics platform for ROI profiling.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "GeoMx",
+        "context": "digital spatial profiling technology employed for whole\u2011transcriptome ROI analysis.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Merscope",
+        "context": "imaging\u2011based spatial transcriptomics platform mentioned for high\u2011plex single\u2011cell resolution.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will PDGFRB inhibition improve response to anti\u2011PD\u20111 therapy in patients with high nerve\u2011injury signatures?",
+      "What are the long\u2011term effects of targeting PDGFD/PDGFRB on normal peripheral nerve function?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PDGFD",
+        "PDGFRB inhibitors (e.g., SU16f)"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Novartis"
+      ]
+    }
+  }
+]

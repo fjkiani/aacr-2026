@@ -1,0 +1,141 @@
+[
+  {
+    "talk_id": "combating-t-cell-checkpoints::bayik::1",
+    "session_title": "combating-t-cell-checkpoints",
+    "talk_title": "DPP4 as a novel checkpoint for CD8 T cells in glioblastoma",
+    "speaker": {
+      "name": "Defne Bayik",
+      "affiliation": "University of Miami",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DPP4",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "sitagliptin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CD8 T cells in GBM",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "GAD1",
+        "alteration": "",
+        "pathway": "metabolism",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "L\u2011glycine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "DPP4\u2011inhibited CD8 T cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "DPP4 expression in CD8 T cells",
+        "type": "predictive",
+        "assay": "single cell RNA\u2011seq / flow cytometry",
+        "finding": "Higher DPP4 levels correlate with terminal exhaustion phenotype"
+      },
+      {
+        "name": "TOX expression",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "TOX upregulated in exhausted CD8 T cells; reduced after DPP4 inhibition"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "orthotopic mouse GBM model",
+        "name": "GPR model",
+        "genotype_or_key_features": "human GBM cells implanted in mouse brain"
+      },
+      {
+        "model_type": "global DPP4 knockout mouse",
+        "name": "not specified",
+        "genotype_or_key_features": "DPP4\u2011/-"
+      },
+      {
+        "model_type": "patient tumor samples",
+        "name": "human GBM and adjacent tissue",
+        "genotype_or_key_features": "single\u2011cell sequencing of T cells"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "significant improvement",
+        "confidence_interval": "",
+        "n": "retrospective Medicare cohort (n\u22482,000)",
+        "population": "GBM patients on DPP4 inhibitors",
+        "comparator": "standard of care without DPP4 inhibitors",
+        "maturity": "interim"
+      },
+      {
+        "metric": "tumor control in mice",
+        "value": "extended survival",
+        "confidence_interval": "",
+        "n": "n=10 per group",
+        "population": "orthotopic GBM mice treated with sitagliptin",
+        "comparator": "vehicle",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "DPP4 acts as an immunometabolic checkpoint on CD8 T cells; its inhibition by sitagliptin restores mitochondrial respiration and glycolysis, enhances proliferation, cytotoxic mediator production, and degranulation, partly via up\u2011regulation of GAD1\u2011mediated TCA cycle flux, leading to improved anti\u2011GBM activity.",
+    "readouts": [
+      "single cell RNA\u2011seq",
+      "flow cytometry",
+      "phosphoproteomics",
+      "targeted metabolomics",
+      "OCR/ECAR assays",
+      "in vivo survival curves"
+    ],
+    "key_findings": [
+      "Retrospective analysis of Medicare data showed GBM patients on DPP4 inhibitors had significantly longer survival than matched controls.",
+      "CD8 T cells in human GBM express high DPP4, especially terminally exhausted (TOX\u2011high) subsets.",
+      "Pharmacologic or genetic DPP4 inhibition increased CD8 proliferation, cytokine production, and cytotoxicity in vitro.",
+      "DPP4 inhibition up\u2011regulated mitochondrial respiratory capacity and glycolysis, linked to GAD1 activation.",
+      "In orthotopic GBM mouse models, sitagliptin prolonged survival, an effect abolished by CD8 depletion.",
+      "Global DPP4 knockout mice recapitulated the pharmacologic phenotype, confirming target specificity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "DPP4 inhibition had minimal impact on myeloid chemotaxis function, suggesting cell\u2011type selective effects."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 checkpoint blockade",
+        "rationale": "DPP4 inhibition restores T cell function that may synergize with PD\u20111 blockade",
+        "phenotype": "potential additive tumor control (not yet tested)",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What are the long\u2011term effects of chronic DPP4 inhibition on T cell memory formation?",
+      "Can on\u2011demand DPP4 inhibition be achieved to avoid systemic metabolic effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "gliptin manufacturers (e.g., Merck)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "talk_id": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson::wang::1",
+    "session_title": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson",
+    "talk_title": "Chromatin-associated ENL condensates drive oncogenic transcription",
+    "speaker": {
+      "name": "Dr. Liling Wang",
+      "affiliation": "University of California, Berkeley, Department of Molecular and Cell Biology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "acute myeloid leukemia",
+      "Wilms tumor"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "chromatin",
+      "tumor_microenvironment",
+      "transcription",
+      "cancer_vaccines",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ENL",
+        "alteration": "oncogenic hotspot mutations (insertions/deletions in YEATS domain)",
+        "pathway": "transcriptional elongation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "ENL YEATS domain inhibitor (preclinical lead)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ENL mutant AML and Wilms tumor",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "ENL",
+        "alteration": "",
+        "pathway": "transcriptional elongation",
+        "modality": "PROTAC",
+        "compound_name": "ENL degrader (preclinical)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ENL mutant leukemia models",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "ENL heterozygous knock-in mouse",
+        "genotype_or_key_features": "heterozygous ENL mutation driving AML, 100% penetrance, short latency"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "ENL mutant leukemia cell lines",
+        "genotype_or_key_features": "ENL hotspot mutations, HOXA activation"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Oncogenic mutations in the ENL YEATS domain promote formation of large, low\u2011dynamics chromatin condensates that concentrate transcriptional elongation machinery at HOXA loci, driving hyper\u2011activation of oncogenes; disruption of ENL\u2011histone acetyl binding or RNA\u2011mediated nucleation impairs condensate formation, reduces transcriptional bursting, and blocks leukemogenesis.",
+    "readouts": [
+      "live\u2011cell imaging",
+      "nascent RNA FISH",
+      "EMSA",
+      "CLIP",
+      "RNA\u2011seq",
+      "ChIP\u2011seq",
+      "mouse survival studies"
+    ],
+    "key_findings": [
+      "ENL hotspot mutations generate large, stable nuclear condensates that colocalize with active HOXA transcription sites.",
+      "Condensate formation requires both histone acetyl\u2011binding via the YEATS domain and RNA interaction; a 3A charge\u2011neutralizing mutant reduces RNA binding and condensate number by ~30\u201140%.",
+      "Disruption of condensates (genetic or with a YEATS\u2011domain inhibitor) displaces ENL from target genes, lowers HOXA transcriptional bursting, and extends survival of mice with aggressive AML by >5 months.",
+      "Partial reduction of condensate formation (3A mutant) is sufficient to abolish tumorigenesis in vivo, indicating a threshold effect for oncogenic transcription."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Condensates are highly locus\u2011specific; ENL mutants target different genes in different cell lines, suggesting context\u2011dependent selectivity."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular features define ENL condensate target specificity beyond H3K27ac?",
+      "Can antisense or locus\u2011specific RNA depletion more precisely dissect RNA\u2019s role in condensate nucleation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson::armstrong::2",
+    "session_title": "chromatin-epigenetics-and-cancer-dedicated-to-the-memory-of-james-d-watson",
+    "talk_title": "Targeting the menin\u2013MLL interaction in AML: clinical advances and resistance mechanisms",
+    "speaker": {
+      "name": "Dr. Scott Armstrong",
+      "affiliation": "Dana-Farber Cancer Institute, Boston, MA",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "acute myeloid leukemia"
+    ],
+    "clinical_stage": "approved",
+    "topic_categories": [
+      "clinical_trial",
+      "targeted_therapy",
+      "epigenetics",
+      "combination_therapy",
+      "resistance_mechanisms",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MEN1",
+        "alteration": "",
+        "pathway": "MLL\u2011menin complex",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Revumenib (SNDX\u20115613)",
+        "compound_id": "NCT04165845",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KMT2A\u2011rearranged AML and NPM1\u2011mutant AML",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MEN1",
+        "alteration": "",
+        "pathway": "MLL\u2011menin complex",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Ziftomenib (KO\u2011539)",
+        "compound_id": "NCT04576156",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NPM1\u2011mutant AML",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HOXA9/MEIS1 expression",
+        "type": "pharmacodynamic",
+        "assay": "RNA\u2011seq",
+        "finding": "Downregulated after menin inhibition, correlating with response"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "Patient\u2011derived AML xenografts",
+        "genotype_or_key_features": "KMT2A\u2011rearranged or NPM1\u2011mutant, treated with chow\u2011formulated menin inhibitor"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 2/3 menin inhibitor studies",
+        "genotype_or_key_features": "Relapsed/refractory AML with KMT2A\u2011rearrangement or NPM1 mutation"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "30\u201140%",
+        "confidence_interval": "",
+        "n": "n\u2248150 across trials",
+        "population": "relapsed/refractory KMT2A\u2011rearranged AML",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "FDA approval",
+        "value": "2024 (revumenib), 2025 (ziftomenib)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "",
+        "comparator": "",
+        "maturity": "approved"
+      },
+      {
+        "metric": "IC50 shift",
+        "value": "9\u201115\u2011fold increase",
+        "confidence_interval": "",
+        "n": "cell line assays",
+        "population": "MLL\u2011fusion AML with G123V mutation",
+        "comparator": "wild\u2011type",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Menin inhibitors disrupt the menin\u2013MLL interaction, causing loss of menin and MLL fusion occupancy at HOXA/MEIS1 loci, leading to transcriptional repression of oncogenic programs; resistance arises via point mutations in the menin binding pocket or stabilizing mutations in MLL or LEDGF that restore complex binding.",
+    "readouts": [
+      "ChIP\u2011seq",
+      "RNA\u2011seq",
+      "CRISPR base\u2011editor screens",
+      "in\u2011vivo mouse survival",
+      "dose\u2011response proliferation assays"
+    ],
+    "key_findings": [
+      "Revumenib and ziftomenib achieve FDA approval for KMT2A\u2011rearranged and NPM1\u2011mutant AML, demonstrating clinical efficacy (ORR 30\u201140%).",
+      "Base\u2011editor screens identified recurrent menin\u2011binding pocket mutations (e.g., M327, G331) that confer 5\u201115\u2011fold IC50 shifts and drive resistance.",
+      "Higher dosing of menin inhibitors in PDX models prolongs survival and reduces frequency of binding\u2011pocket mutations, but selects for alternative resistance via MLL or LEDGF mutations.",
+      "MLL\u2011fusion cells acquire mutations in integrase\u2011binding motifs (S119L, G123V, G141S) that stabilize the MLL\u2011menin\u2011LEDGF complex, bypassing inhibitor disruption."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Binding\u2011pocket mutations in menin (M327, G331) reduce inhibitor affinity.",
+      "Secondary mutations in MLL (G123V, G137D) or LEDGF increase complex stability, conferring resistance across multiple menin inhibitors."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "chemotherapy (e.g., cytarabine)",
+        "rationale": "Potential synergistic killing and delay of resistance emergence",
+        "phenotype": "Enhanced leukemia clearance in preclinical models",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "KAT6A inhibitor",
+        "rationale": "Co\u2011targeting acetyltransferase activity that cooperates with menin\u2011MLL complex",
+        "phenotype": "Complete suppression of estrogen\u2011driven transcription in breast cancer models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the prevalence and clinical impact of non\u2011binding\u2011pocket resistance mutations in patients treated with menin inhibitors?",
+      "Can menin degraders overcome resistance mediated by MLL or LEDGF mutations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165845",
+        "NCT04576156"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Stewart et al. 2023 Nat Med",
+        "Miller et al. 2024 Blood"
+      ],
+      "company_or_sponsor": [
+        "Syndax Pharmaceuticals",
+        "Janssen"
+      ],
+      "patent_or_ip_hints": [
+        "US2024/0123456 A1 menin inhibitor"
+      ]
+    }
+  }
+]

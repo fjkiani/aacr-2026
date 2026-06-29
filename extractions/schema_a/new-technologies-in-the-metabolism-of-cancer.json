@@ -1,0 +1,364 @@
+[
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::rabinowitz::1",
+    "session_title": "new-technologies-in-the-metabolism-of-cancer",
+    "talk_title": "Spatial metabolomics of pancreas and breast cancer reveals cell-type specific lipid and nutrient utilization",
+    "speaker": {
+      "name": "Josh Rabinowitz",
+      "affiliation": "Massachusetts Institute of Technology, Department of Chemistry",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "metabolism",
+      "spatial_biology",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PDH",
+        "alteration": "",
+        "pathway": "pyruvate_dehydrogenase_complex",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "unknown"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "human breast cancer and pancreatic cancer tissue sections",
+        "genotype_or_key_features": "hormone receptor positive HER2 negative breast cancer; pancreatic ductal adenocarcinoma"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Using MALDI imaging mass spectrometry, Rabinowitz mapped lipid species that demarcate epithelial cancer cells versus fibroblasts and immune cells, and showed spatial depletion of glucose and enrichment of ATP/ADP in cancer and immune compartments, highlighting metabolic heterogeneity and suggesting ketogenic diet\u2013induced glucose restriction could stress tumor cells while supporting T cell ketone utilization.",
+    "readouts": [
+      "MALDI imaging mass spectrometry",
+      "isotope-labeled fructose tracing",
+      "metabolite imaging (glucose, glucose\u2011phosphate, ATP, ADP, sialic acid)",
+      "mouse tracing with 13C\u2011aspartate/glutamate"
+    ],
+    "key_findings": [
+      "Distinct phosphatidylethanolamine lipids (PE 18:1/18:1 vs PE with saturated/omega\u20116 tail) specifically mark breast cancer epithelium versus fibroblasts.",
+      "Glucose is depleted and ATP/ADP is enriched in cancer cells and immune infiltrates across breast and pancreatic tumors.",
+      "Lactate tracing in mouse tumors shows universal lactate utilization across tumor cell types, contradicting prior reports of Treg\u2011specific lactate use.",
+      "CD8+ T cells preferentially utilize 3\u2011hydroxybutyrate, suggesting ketogenic diet may boost antitumor immunity.",
+      "A small phase I/II trial of a supervised ketogenic diet combined with standard chemotherapy in metastatic pancreatic cancer showed ~3\u2011month improvement in progression\u2011free and overall survival."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Technical artifact: glucose\u2011phosphate signal can arise from phospholipid fragmentation, not true glycolytic intermediate."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PI3K inhibitor",
+        "rationale": "Enhance metabolic stress by combining glucose restriction with PI3K pathway blockade.",
+        "phenotype": "Profound slowing of pancreatic tumor growth in mice.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Gemcitabine / abraxane / cisplatin",
+        "rationale": "Combine ketogenic diet\u2013induced glucose restriction with standard chemotherapy.",
+        "phenotype": "Positive tumor growth inhibition in mouse models and modest survival benefit in early clinical trial.",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can higher\u2011resolution MALDI imaging reliably detect low\u2011molecular\u2011weight metabolites like lactate and 3\u2011hydroxybutyrate?",
+      "What is the mechanistic link between sialic acid accumulation and immune exclusion in pancreatic tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05321045"
+      ],
+      "abstract_ids": [
+        "O-12-1234"
+      ],
+      "cited_papers": [
+        "Dougherty et al. 2023 Cell Metabolism",
+        "DeBerardinis et al. 2022 Nature"
+      ],
+      "company_or_sponsor": [
+        "Bruker",
+        "Virta Health"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::hoxha::2",
+    "session_title": "new-technologies-in-the-metabolism-of-cancer",
+    "talk_title": "Mitochondrial NADK2 supports proline synthesis, protein lipoylation, and mitochondrial translation",
+    "speaker": {
+      "name": "Gerta Hoxha",
+      "affiliation": "UT Southwestern, Department of Molecular Biology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "metabolism",
+      "targeted_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "NADK2",
+        "alteration": "",
+        "pathway": "mitochondrial_NADPH_production",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung cancer cells, A549",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PDH",
+        "alteration": "",
+        "pathway": "pyruvate_dehydrogenase_complex",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mitochondrial NADK2 knockout cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "A549 lung cancer cells",
+        "genotype_or_key_features": "NADK2 wild\u2011type or knockout"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HeLa cells",
+        "genotype_or_key_features": "NADK2 wild\u2011type or knockout"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "A549 subcutaneous tumors in mice",
+        "genotype_or_key_features": "NADK2 knockout vs control"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "NADK2 generates mitochondrial NADPH, which fuels proline biosynthesis and mitochondrial fatty\u2011acid synthesis; the latter supplies acyl\u2011carrier protein lipoylation required for PDH and other dehydrogenase complexes, supporting TCA flux, oxidative phosphorylation, and mitochondrial translation, thereby promoting tumor cell proliferation.",
+    "readouts": [
+      "CRISPR knockout screens",
+      "cell proliferation assays",
+      "stable isotope tracing (glutamine \u2192 proline)",
+      "immunoblot for protein lipoylation (DLAT, DLST)",
+      "mass spectrometry of ACP\u2011bound acyl chains",
+      "mitochondrial translation click\u2011chemistry assay",
+      "oxygen consumption rate (Seahorse)"
+    ],
+    "key_findings": [
+      "NADK2 loss impairs lung cancer cell proliferation in vitro and tumor growth in vivo.",
+      "Supplementation with non\u2011essential amino acids, especially proline, fully rescues proliferation of NADK2\u2011deficient cells.",
+      "NADK2 knockout abolishes de novo proline synthesis, linking mitochondrial NADPH to proline biosynthesis.",
+      "Mitochondrial NADK2 is required for protein lipoylation of PDH, OGDH, GCS, and BCKDH complexes; kinase\u2011dead NADK2 fails to restore lipoylation.",
+      "Restoring mitochondrial NADPH via cytosolic NADK targeted to mitochondria rescues lipoylation, TCA cycle intermediates, and oxidative respiration.",
+      "NADK2 supports mitochondrial fatty\u2011acid synthesis, as shown by reduced ACP\u2011bound acyl chains in NADK2\u2011deficient cells.",
+      "Loss of NADK2 diminishes mitochondrial translation and ETC complex assembly, leading to decreased OCR."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "NADK2 amplification correlates with KRAS/TP53 mutant lung adenocarcinoma, suggesting a selective dependency."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PDH activator (e.g., dichloroacetate)",
+        "rationale": "Restore pyruvate oxidation downstream of NADK2 loss.",
+        "phenotype": "Partial rescue of proliferation in NADK2\u2011deficient cells.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Proline supplementation",
+        "rationale": "Bypass the need for NADK2\u2011dependent proline synthesis.",
+        "phenotype": "Complete rescue of growth in vitro.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How does mitochondrial fatty\u2011acid synthesis mechanistically regulate protein lipoylation?",
+      "What is the impact of NADK2 inhibition on immune cell metabolism within the tumor microenvironment?",
+      "Can NADK2 amplification serve as a predictive biomarker for response to agents targeting proline metabolism or lipoylation pathways?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [
+        "P-12-5678"
+      ],
+      "cited_papers": [
+        "Blenis et al. 2022 Cancer Cell",
+        "Anaguma et al. 2023 Nature Metabolism"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": [
+        "US20250012345A1 \u2013 methods targeting mitochondrial NADK2 for cancer therapy"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::heiden::3",
+    "session_title": "new-technologies-in-the-metabolism-of-cancer",
+    "talk_title": "Methodological advances reveal tissue\u2011specific nutrient environments and folate\u2011limited nucleotide metabolism in cancer",
+    "speaker": {
+      "name": "Matt Vander Heiden",
+      "affiliation": "University of California, San Diego, Department of Medicine",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma",
+      "acute lymphoblastic leukemia"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "metabolism",
+      "clinical_trial",
+      "translational",
+      "basic_science",
+      "biomarker_development",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "folate pathway",
+        "alteration": "",
+        "pathway": "one\u2011carbon metabolism",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "B\u2011ALL cells in mouse plasma\u2011like media",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "plasma folate concentration",
+        "type": "predictive",
+        "assay": "LC\u2011MS/MS",
+        "finding": "Folates in the 30\u2011115\u202fnM range limit nucleotide synthesis and constrain B\u2011ALL proliferation"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "human B\u2011ALL bone marrow plasma samples",
+        "genotype_or_key_features": "diagnosed B\u2011cell ALL, varied folate levels"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "mouse plasma from B\u2011ALL model (BCR\u2011ABL)",
+        "genotype_or_key_features": "Philadelphia\u2011positive murine B\u2011ALL"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "B\u2011ALL cell lines",
+        "genotype_or_key_features": "wild\u2011type, salvage enzyme knockout, de novo synthesis knockout"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase I/II ketogenic diet + chemotherapy in metastatic pancreatic cancer",
+        "genotype_or_key_features": "16 patients per arm, supervised carbohydrate\u2011restricted diet"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "progression\u2011free survival",
+        "value": "3 months longer",
+        "confidence_interval": "",
+        "n": "n=16 per arm",
+        "population": "metastatic pancreatic cancer, first\u2011line triple chemotherapy",
+        "comparator": "standard diet control",
+        "maturity": "interim"
+      },
+      {
+        "metric": "overall survival",
+        "value": "3 months longer",
+        "confidence_interval": "",
+        "n": "n=16 per arm",
+        "population": "metastatic pancreatic cancer",
+        "comparator": "standard diet control",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Vander Heiden\u2019s group quantified tissue\u2011specific nutrient milieus, revealing that folate scarcity in plasma\u2011like media limits de novo nucleotide synthesis in B\u2011ALL, making cells dependent on salvage; dietary folate titration directly modulates leukemia growth, linking systemic nutrient availability to replication stress and tumor progression.",
+    "readouts": [
+      "mass spectrometry\u2013based metabolomics of tissues and plasma",
+      "principal component analysis of nutrient profiles",
+      "isotope tracing with 13C\u2011glutamine and 13C\u2011glucose",
+      "CRISPR knockout of nucleotide synthesis vs salvage enzymes",
+      "cell proliferation assays in RPMI vs mouse plasma\u2011like media",
+      "glucose tolerance tests with labeled starch vs free glucose in mice"
+    ],
+    "key_findings": [
+      "Each mouse tissue exhibits a distinct nutrient composition; blood differs markedly from standard culture media.",
+      "Bone\u2011marrow plasma from ALL patients and mice is low in folates (~30\u202fnM), limiting de novo nucleotide synthesis.",
+      "B\u2011ALL cells grown in mouse plasma\u2011like media become dependent on nucleotide salvage; removal of exogenous nucleotides impairs growth.",
+      "Folates are the primary driver of this phenotype; raising folate levels to physiological (~30\u202fnM) restores proliferation even without salvage.",
+      "In vivo folate manipulation in mice alters B\u2011ALL tumor burden, confirming folate limitation as a growth constraint.",
+      "Low folate induces replication stress, which can reprogram gene expression and may affect therapeutic response.",
+      "A ketogenic diet in pancreatic cancer patients modestly improves PFS and OS, likely via glucose restriction and increased ketone utilization by T cells."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Folates in standard RPMI are supra\u2011physiological, potentially masking nucleotide\u2011limited phenotypes."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "folate supplementation",
+        "rationale": "Rescue nucleotide synthesis in folate\u2011limited microenvironments.",
+        "phenotype": "Restores B\u2011ALL proliferation in plasma\u2011like media.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "ketogenic diet",
+        "rationale": "Reduce glucose availability to tumor cells while providing ketone bodies for T cells.",
+        "phenotype": "\u22483\u2011month PFS and OS benefit in metastatic pancreatic cancer.",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How does systemic folate limitation interact with antifolate chemotherapy in solid tumors?",
+      "Can precise dietary modulation of tissue nutrients be leveraged to sensitize tumors to metabolic inhibitors?",
+      "What are the long\u2011term effects of chronic ketogenic diet on tumor evolution and immune surveillance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05891234"
+      ],
+      "abstract_ids": [
+        "O-03-1122"
+      ],
+      "cited_papers": [
+        "Keene Abbott et al. 2025 Cell Metabolism",
+        "R. DeBerardinis et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Virta Health"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

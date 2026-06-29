@@ -1,0 +1,548 @@
+[
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Adam Durbin",
+      "institution_or_pharma": "St. Jude",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Dysregulated AKT Signaling Reprograms Osteosarcoma to Drive Selective Reliance on EP300",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't see major changes, but of course, you do see some changes\" when discussing toxicity of p300 degraders in normal tissues",
+        "Speaker said: \"there are lots of folks, including some in the audience, who have tried this before, and the answer is that it slows down tumor growth, but it doesn't actually involute the tumor\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "JQUAD1 (p300 PROTAC)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "tumor cells with high translational capacity resist p300 degradation",
+        "unexplained_resistance_quote": "we see that resistant lines have a higher translational rate",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PROTAC targeting only p300, sparing CBP",
+        "ip_vulnerability_note": "Speaker disclosed that the degrader interacts with cereblon E3 receptor, suggesting reliance on a single E3 ligase",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Targeting a single paralog may allow tumor escape via CBP compensation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that AKT dysregulated osteosarcoma is highly sensitive to p300 degradation, yet concluded that \"it might be challenging\" to develop a p300 inhibitor due to potential toxicity in normal developing tissues"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in vivo efficacy data in orthotopic pediatric models beyond two PDX lines",
+        "Lack of toxicity assessment in pediatric-relevant models"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify translational signatures that predict resistance to p300 degradation and combine with translation inhibitors",
+        "transcript_evidence": "Speaker said: \"we think what's going on here is that we're using AKT inhibitors to actually slow down translation, and that's allowing JQuad to work better\"",
+        "crispro_angle": "CrisPRO can model translation-rate biomarkers and predict patients who would benefit from combined AKT inhibitor + p300 degrader therapy",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a biomarker panel for AKT pathway activation (PTEN loss, AKT amplification) to select osteosarcoma patients for JQUAD1 therapy",
+        "transcript_evidence": "Speaker identified that all sensitive lines had mutations hyperactivating AKT pathway",
+        "crispro_angle": "CrisPRO can integrate genomic and transcriptomic data to generate a predictive AKT\u2011activation score",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise mechanism by which high translational capacity confers resistance to p300 degradation?",
+      "Can the p300 degrader be safely combined with AKT inhibitors in pediatric patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "JQUAD1",
+        "MK-2206",
+        "Capivasertib"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Gudrun Schillenbacher",
+      "institution_or_pharma": "University of Zurich",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Cell-free DNA in relapsed/refractory neuroblastoma",
+      "rhetorical_signals": [
+        "Speaker said: \"I must admit that this is preliminary data, and we're currently working on that\" regarding resistance mechanisms",
+        "Speaker said: \"we have a hint that that might occur with temozolomide treatment\" about clonal hematopoiesis"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current chemotherapy backbones (bevacizumab, dinutuximab beta) in BEACON trial",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of biomarkers to predict response and monitor resistance",
+        "unexplained_resistance_quote": "we don't really know the biomarkers of response",
+        "ghost_responder_admission": "some patients achieved 30-35% response rates but overall outcomes remain poor",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BEACON trial",
+        "target_biology": "Neuroblastoma response to bevacizumab or anti\u2011GD2 dinutuximab beta combined with chemotherapy",
+        "flawed_enrollment_criteria": "Mixed relapsed and refractory patients without molecular stratification",
+        "missing_biomarker": "Predictive ctDNA or mutation\u2011based biomarkers for response",
+        "static_vs_dynamic_failure": "No serial ctDNA\u2011guided adaptation of therapy",
+        "statistical_concern": "Factorial multi\u2011arm design may dilute signal for each backbone",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that high cfDNA quantity at enrollment predicts worse outcome, yet earlier they stated that cfDNA quantity did not correlate with disease burden (SIOPEN score)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No functional validation of identified resistance mutations",
+        "Limited analysis of GD2 synthesis pathway alterations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Integrate cfDNA mutation and copy\u2011number signatures to stratify patients for anti\u2011GD2 therapy",
+        "transcript_evidence": "Speaker highlighted that cfDNA quantity is prognostic but not linked to specific biomarkers",
+        "crispro_angle": "CrisPRO can combine cfDNA genomic data with clinical variables to generate a risk model for therapy selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target emergent RAS/MAPK and FGFR1 mutations that appear at relapse",
+        "transcript_evidence": "Speaker noted enrichment of ALK, RAS/MAPK, and FGFR1 alterations in relapse samples",
+        "crispro_angle": "CrisPRO can predict downstream pathway dependencies and suggest combination inhibitors",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the functional consequences of the identified FGFR1 mutations?",
+      "Can early cfDNA dynamics be used to adapt therapy in real time?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT02813877"
+      ],
+      "assets_to_track": [
+        "bevacizumab",
+        "dinutuximab beta"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "January Zhang",
+      "institution_or_pharma": "Princess Margaret Cancer Centre",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Spatial T Cell Receptor Profiling Uncovers Barriers to T Cell Engagement and Shared Tumor-Reactive Clonotypes in High-Risk Neuroblastoma",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't know which antigen specificity of this clone is yet\" regarding NY\u2011ESO\u20111 prediction",
+        "Speaker said: \"we are currently transitioning to Visium HD\" indicating current platform limitations"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Conventional alpha\u2011beta TCR\u2011based therapies",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Downregulation of antigen\u2011presenting molecules limits alpha\u2011beta T cell engagement",
+        "unexplained_resistance_quote": "alpha beta T cells are functionally constrained due to the downregulation of antigen\u2011presenting molecules",
+        "ghost_responder_admission": "gamma delta T cells show higher infiltration and may represent a subset of responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Xenium probe\u2011based spatial TCR detection",
+        "ip_vulnerability_note": "Speaker disclosed reliance on custom probe design, limiting rapid adaptation to new clonotypes",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Spatial profiling limited to pre\u2011selected 100 clonotypes, potentially missing relevant clones"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that gamma delta T cells are enriched near neural blasts, yet concluded that \"T\u2011cell transcriptional state is driven by location rather than clonotype identity alone\" which downplays the functional relevance of the clonotype"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No functional validation of predicted antigen specificity (e.g., NY\u2011ESO\u20111)",
+        "Limited longitudinal sampling to assess clonotype dynamics over therapy"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine gamma delta T cell expansion agents with CAR constructs targeting identified shared clonotypes",
+        "transcript_evidence": "Speaker highlighted gamma delta T cells as spatially privileged and sharing clonotype 2 across patients",
+        "crispro_angle": "CrisPRO can model gamma delta TCR repertoires and predict synergistic cytokine environments for combination therapy",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a spatial\u2011omics based biomarker to select patients with high gamma delta T cell infiltration for immunotherapy",
+        "transcript_evidence": "Speaker showed that gamma delta T cells have the highest proportion of neural blast neighbors (45%)",
+        "crispro_angle": "CrisPRO can integrate spatial proximity metrics with transcriptomics to generate a predictive score",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the antigen specificities of the shared gamma delta clonotypes?",
+      "Do gamma delta T cells retain functionality after tumor infiltration?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AMBL1531 trial"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Patrick Scheuer",
+      "institution_or_pharma": "Children's Hospital of Philadelphia",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Co-targeting GPC2 and B7H3 with CAR T cells achieves durable responses in preclinical high-risk neuroblastoma and medulloblastoma models",
+      "rhetorical_signals": [
+        "Speaker said: \"we did see that there is some value in doing bicistronic architecture over co-transduction\"",
+        "Speaker said: \"we hypothesized that the T cells could protect these mice from tumor rechallenge\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Single\u2011antigen GPC2 CAR",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Tumor downregulation of GPC2 under CAR pressure",
+        "unexplained_resistance_quote": "we see that GPC2 was downregulated in all groups",
+        "ghost_responder_admission": "some mice achieved complete response with dual CARs",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Bicistronic CAR construct linking GPC2 and B7H3 scFvs",
+        "ip_vulnerability_note": "Speaker noted reliance on a specific CD3\u03b6 omission strategy that may be patent\u2011encumbered",
+        "scale_or_manufacturing_bottleneck": "Complex vector design may increase manufacturing variability",
+        "clinical_strategy_weakness": "Potential for antigen loss (GPC2) remains; B7H3 expression heterogeneity not fully characterized"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that B7H3 expression is stable across treatment but concluded that \"bicistronic CARs are superior\" without addressing possible B7H3 heterogeneity in patient tumors"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_in_vivo",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of data in immune\u2011competent models",
+        "No assessment of off\u2011target toxicity to normal tissues expressing B7H3"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Redevelop GPC2\u2011only CARs with CRISPR\u2011mediated up\u2011regulation of GPC2 to overcome antigen loss",
+        "transcript_evidence": "Speaker reported GPC2 downregulation in all treatment groups",
+        "crispro_angle": "CrisPRO can predict transcriptional regulators of GPC2 and suggest epigenetic drugs to sustain its expression",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine bicistronic GPC2/B7H3 CARs with MDSC\u2011targeting agents to address relapse linked to MDSC infiltration",
+        "transcript_evidence": "Speaker observed high MDSC infiltration in relapsed bicistronic CAR\u2011treated mice",
+        "crispro_angle": "CrisPRO can model tumor\u2011immune microenvironment and prioritize agents that deplete MDSCs",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Dotti group",
+        "context": "demonstrated CD3\u03b6 omission improves CAR fitness",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will bicistronic CARs retain efficacy in an immune\u2011competent setting?",
+      "What is the durability of B7H3 expression in patient tumors over time?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GPC2 CAR",
+        "B7H3 CAR"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Sheila Xing",
+      "institution_or_pharma": "McMaster University",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Surface-localized Nuclear Envelope Proteins Define Therapeutic Vulnerability in MYC-Driven Group 3 Medulloblastoma",
+      "rhetorical_signals": [
+        "Speaker said: \"we think that it's almost like it gets lodged there and aberrantly stays there\" about LBR retention",
+        "Speaker said: \"we haven't gotten that far\" regarding functional role of surface LBR"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Single\u2011antigen LBR or TMPO CARs",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low surface density of each antigen limits CAR activation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "dual LBR/TMPO CARs showed more durable remission",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Camelid single\u2011domain antibody\u2011based CARs against LBR/TMPO",
+        "ip_vulnerability_note": "Speaker disclosed extensive engineering of nanobodies, indicating a narrow IP space",
+        "scale_or_manufacturing_bottleneck": "Low antigen expression may require higher CAR expression levels, complicating manufacturing",
+        "clinical_strategy_weakness": "Potential off\u2011target expression of nuclear envelope proteins in normal tissues under stress not fully evaluated"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that LBR/TMPO are minimally expressed on the surface yet concluded that bispecific CARs achieve durable remission without addressing how low antigen density might affect safety"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_in_vivo",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No toxicity assessment in normal pediatric brain tissue",
+        "Unclear mechanism of LBR surface mislocalization"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's subcellular proteomics modeling to predict other mislocalized nuclear envelope proteins as CAR targets",
+        "transcript_evidence": "Speaker emphasized that conventional pipelines miss nuclear envelope proteins",
+        "crispro_angle": "CrisPRO can integrate proteomics and subcellular localization data to prioritize novel surface antigens",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a diagnostic assay for LBR surface expression to select Group 3 patients",
+        "transcript_evidence": "Speaker showed LBR enrichment at recurrence and post\u2011therapy",
+        "crispro_angle": "CrisPRO can model expression dynamics and propose a cutoff for patient selection",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does surface LBR have a functional role in tumor signaling?",
+      "What is the risk of on\u2011target/off\u2011tumor toxicity in normal proliferative tissues?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "LBR CAR",
+        "TMPO CAR"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Samuel Wu",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Neuronal Activity Regulated Mechanisms Promote Growth of Diffuse Hemispheric Glioma H3G34 Mutant",
+      "rhetorical_signals": [
+        "Speaker said: \"we do not see the same effect of BDNF or neuroligin\u20113\" indicating a gap in knowledge",
+        "Speaker said: \"we are currently working on phosphoproteomic analyses\" showing ongoing uncertainty"
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BDNF/neuroligin\u20113 targeting approaches",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "G34 glioma does not rely on canonical activity\u2011regulated paracrine factors",
+        "unexplained_resistance_quote": "we do not see the same effect of these proteins in G34",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker demonstrated synaptic integration and activity\u2011dependent growth yet concluded that \"the tumor type is distinct\" without reconciling why shared mechanisms (e.g., BDNF) are absent"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_in_vivo",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Identification of receptors mediating N\u2011CADHERIN and neurofascin effects",
+        "In vivo validation of candidate paracrine factors as therapeutic targets"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target N\u2011CADHERIN signaling pathway to block activity\u2011driven proliferation",
+        "transcript_evidence": "Speaker showed N\u2011CADHERIN increased proliferation in G34 cells",
+        "crispro_angle": "CrisPRO can model downstream signaling networks of N\u2011CADHERIN and suggest druggable nodes",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine neuronal activity blockers (e.g., perampanel) with N\u2011CADHERIN inhibition",
+        "transcript_evidence": "Speaker discussed pharmacologic blockade of neuronal activity reducing proliferation",
+        "crispro_angle": "CrisPRO can simulate combined pharmacologic effects on tumor growth curves",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What receptors on G34 cells bind N\u2011CADHERIN and neurofascin?",
+      "Can in vivo optogenetic stimulation be translated to pharmacologic modulation in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Perampanel",
+        "Keppra"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Richard Locke",
+      "institution_or_pharma": "Children's Cancer Institute",
+      "session_title": "pediatric-cancer-from-mechanism-to-translation",
+      "talk_title": "Targeting MIB and REM4 with REM422 for the Treatment of Pediatric T-Cell Lymphoblastic Leukemia",
+      "rhetorical_signals": [
+        "Speaker said: \"I don't have answers to any of your questions, and it really is intriguing to us that with ALL4, where we would see really nice downregulation of MIB in vivo, it doesn't really care\"",
+        "Speaker said: \"I think it's very specific for MIB\" when asked about off\u2011target effects"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "REM422 in B\u2011ALL PDX models",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "B\u2011ALL may be less dependent on MIB despite expression",
+        "unexplained_resistance_quote": "we see that with ALL4, where we would see really nice downregulation of MIB in vivo, it doesn't really care",
+        "ghost_responder_admission": "some T\u2011ALL PDXs achieved complete responses",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PIVOT pediatric ALL preclinical trial",
+        "target_biology": "MIB dependency in ALL",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven selection of MIB\u2011high versus low PDXs",
+        "missing_biomarker": "Predictive MIB dependency score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single mouse per arm limits statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "REM422 small\u2011molecule poison\u2011exon inducer",
+        "ip_vulnerability_note": "Speaker noted it is already in clinical trials for AML, suggesting limited exclusive IP for pediatric use",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Single\u2011agent approach may be insufficient for heterogeneous ALL subtypes"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed robust MIB protein knockdown ex vivo but concluded that \"some T\u2011ALLs are not dependent on MIB\" without providing mechanistic explanation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Correlation of MIB expression levels with response not fully explored",
+        "Long\u2011term durability of remission after treatment cessation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a predictive MIB dependency signature to select T\u2011ALL patients for REM422 therapy",
+        "transcript_evidence": "Speaker highlighted variable responses despite similar MIB knockdown",
+        "crispro_angle": "CrisPRO can integrate expression, copy\u2011number, and dependency data to generate a MIB\u2011dependency score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine REM422 with agents targeting parallel pathways (e.g., NOTCH inhibitors) to overcome resistance in B\u2011ALL",
+        "transcript_evidence": "Speaker noted limited efficacy in B\u2011ALL despite MIB knockdown",
+        "crispro_angle": "CrisPRO can simulate synthetic lethal interactions with MIB suppression",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Remix Therapeutics",
+        "context": "Developer of REM422",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular features distinguish responsive from non\u2011responsive T\u2011ALL PDXs?",
+      "Does prolonged REM422 dosing lead to resistance via alternative splicing mechanisms?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "REM422"
+      ],
+      "companies_to_monitor": [
+        "Remix Therapeutics"
+      ]
+    }
+  }
+]

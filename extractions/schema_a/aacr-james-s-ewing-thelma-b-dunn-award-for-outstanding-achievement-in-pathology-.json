@@ -1,0 +1,196 @@
+[
+  {
+    "talk_id": "aacr-james-s-ewing-thelma-b-dunn-award-for-outstanding-achievement-in-pathology-::rim::1",
+    "session_title": "aacr-james-s-ewing-thelma-b-dunn-award-for-outstanding-achievement-in-pathology-",
+    "talk_title": "Quantitative fluorescence protein assays and selective biomarkers for ADC choice in breast cancer",
+    "speaker": {
+      "name": "David Rim",
+      "affiliation": "Yale School of Medicine, Department of Pathology and Medicine, Director of Yale Cancer Center Tissue Microarray Facility",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "melanoma",
+      "lung cancer",
+      "bladder cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "ADC",
+      "biomarker_development",
+      "translational",
+      "platform_technology",
+      "immunotherapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ERBB2",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HER2\u2011positive breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TROP2",
+        "alteration": "",
+        "pathway": "cell surface antigen",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Advanced breast cancer treated with ADCs",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NECTIN4",
+        "alteration": "",
+        "pathway": "cell adhesion",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Bladder cancer ADC selection",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ERBB3",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pipeline development",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "cMET",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "antibody",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pipeline development",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HER2 quantitative fluorescence (attomoles/mm\u00b2)",
+        "type": "predictive",
+        "assay": "quantitative immunofluorescence (Troplex assay)",
+        "finding": "Higher HER2 levels correlated with longer T\u2011DXd benefit (median OS 12.8\u202fmo vs 7.5\u202fmo, HR per 50\u2011unit increase 0.70, p<0.05)"
+      },
+      {
+        "name": "Trop\u20112 quantitative fluorescence (attomoles/mm\u00b2)",
+        "type": "resistance",
+        "assay": "quantitative immunofluorescence (Troplex assay)",
+        "finding": "High Trop\u20112 expression associated with poorer outcomes on T\u2011DXd (high vs low median OS 7.2\u202fmo vs 13.4\u202fmo, p<0.01)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Yale breast cancer surgical pathology cohort",
+        "genotype_or_key_features": "316 prospectively collected breast cancer cases, HER2 IHC scores available"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Retrospective Dana\u2011Farber T\u2011DXd cohort",
+        "genotype_or_key_features": "51 metastatic breast cancer cases treated with trastuzumab\u2011deruxtecan"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Coefficient of variation (inter\u2011 and intra\u2011assay)",
+        "value": "<10%",
+        "confidence_interval": "",
+        "n": "n=316",
+        "population": "prospective Yale breast cancer cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Hazard ratio per 50\u2011unit increase in HER2 attomoles",
+        "value": "HR 0.70",
+        "confidence_interval": "95% CI 0.55\u20110.89",
+        "n": "n=51",
+        "population": "metastatic breast cancer treated with T\u2011DXd",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Median overall survival (high HER2 group)",
+        "value": "12.8 months",
+        "confidence_interval": "",
+        "n": "n=65",
+        "population": "high HER2 quantification group",
+        "comparator": "low HER2 group",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Median overall survival (low HER2 group)",
+        "value": "7.5 months",
+        "confidence_interval": "",
+        "n": "n=65",
+        "population": "low HER2 quantification group",
+        "comparator": "high HER2 group",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Response difference by Trop\u20112 quartile (T\u2011DXd)",
+        "value": "Top quartile median OS 6.2\u202fmo vs bottom quartile 13.9\u202fmo",
+        "confidence_interval": "",
+        "n": "n=150",
+        "population": "metastatic breast cancer treated with T\u2011DXd",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Rim's laboratory developed the Troplex quantitative immunofluorescence platform that converts fluorescence intensity into absolute protein concentration (attomoles/mm\u00b2) for HER2, Trop\u20112 and other membrane antigens. By standardizing staining with cell\u2011line calibrators, the assay achieves <10% CV and enables continuous measurement of target density, which correlates with ADC efficacy and informs a proposed selective biomarker framework for choosing between competing HER2\u2011 or Trop\u20112\u2011directed ADCs.",
+    "readouts": [
+      "quantitative immunofluorescence",
+      "fluorescence microscopy",
+      "image analysis software (pixel intensity summation)",
+      "H\u2011score conversion",
+      "attomoles per square millimeter calculation"
+    ],
+    "key_findings": [
+      "The Troplex assay quantifies HER2 and Trop\u20112 in absolute units with inter\u2011 and intra\u2011assay CV <10% using cell\u2011line standards.",
+      "In a retrospective Yale cohort (n=316), quantitative HER2 levels distinguished patients likely to benefit from trastuzumab\u2011deruxtecan, with a hazard ratio of 0.70 per 50\u2011unit increase (p<0.05).",
+      "High Trop\u20112 expression was associated with significantly shorter overall survival on T\u2011DXd (median OS 6.2\u202fmo vs 13.9\u202fmo for low Trop\u20112, p<0.01).",
+      "Combined HER2\u2011high/Trop\u20112\u2011low tumors showed the best outcomes on HER2\u2011directed ADCs, suggesting a selective biomarker strategy for drug choice.",
+      "The assay received New York State Department of Health (NYSDOH) CLIA approval, enabling clinical deployment."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "High Trop\u20112 expression appears to blunt response to HER2\u2011directed ADCs, indicating a potential resistance mechanism or competitive target effect.",
+      "Patients with both high HER2 and high Trop\u20112 had poorer outcomes than HER2\u2011high/Trop\u20112\u2011low, supporting the need for a selective biomarker rather than a single target assessment."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the optimal quantitative cutoff for HER2 or Trop\u20112 to guide ADC selection?",
+      "How do intrinsic molecular subtypes (e.g., PAM50) influence the quantitative protein thresholds?",
+      "What is the contribution of the tumor microenvironment and adaptive immunity to ADC durability beyond target density?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Laboratory Investigation 2024 Rim et al.",
+        "JCO Precision Oncology 2024 Rim et al."
+      ],
+      "company_or_sponsor": [
+        "Yale School of Medicine",
+        "National Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

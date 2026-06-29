@@ -1,0 +1,265 @@
+[
+  {
+    "talk_id": "el-camino-de-la-pediatr\u00eda-finding-our-way-through-the-chasm-of-pediatric-oncolog::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Beth Fox",
+      "institution_or_pharma": "St. Jude Children's Research Hospital",
+      "session_title": "El Camino de la Pediatria: Finding Our Way Through the Chasm of Pediatric Oncology Drug Development",
+      "talk_title": "Small molecules and ADCs in pediatric oncology",
+      "rhetorical_signals": [
+        "Speaker said: \"the trial was activated in December of 2024 and closed eight months later\"",
+        "Speaker said: \"we need to get trials open because the most important thing I think we have as academic pediatric oncologists is the ability to generate the data faster\"",
+        "Speaker said: \"there were nine trials of folate receptor alpha in ADCs that were open, and eight of them were in adults, one of them was in children\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SUTRO-002 (folate receptor alpha ADC)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of patient selection based on quantitative folate receptor alpha expression levels",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Three of these 10 children in the monotherapy only arm had complete responses",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MyChild01 (CD33\u2011directed ADC in AML)",
+        "target_biology": "CD33 expression in pediatric AML",
+        "flawed_enrollment_criteria": "Only a few pediatric-specific arms; most ADC trials enroll adults and add children later, diluting pediatric signal",
+        "missing_biomarker": "Quantitative CD33 expression threshold for response",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small sample size (10 patients) limits statistical power",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "GLOBE BNHL platform trial (CD19\u2011directed ADC in NHL)",
+        "target_biology": "CD19 in pediatric non\u2011Hodgkin lymphoma",
+        "flawed_enrollment_criteria": "All\u2011comer age criteria without separate pediatric cohort",
+        "missing_biomarker": "Baseline CD19 density assessment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Mixed adult/child enrollment may mask pediatric efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Folate receptor alpha ADC platform",
+        "ip_vulnerability_note": "Speaker disclosed that the only pediatric trial relied on an expanded access experience, suggesting the core ADC scaffold is not uniquely protected for pediatrics",
+        "scale_or_manufacturing_bottleneck": "Company ran out of money before completing pediatric trial, indicating manufacturing/financing bottleneck",
+        "clinical_strategy_weakness": "Reliance on adult\u2011first development and late pediatric entry delays signal generation"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Brentuximab vedotin (anti\u2011CD30 ADC)",
+        "ip_vulnerability_note": "Development timeline shows long gap between adult pivotal trial and pediatric phase\u20111, highlighting dependence on adult data",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Sequential adult\u2011then\u2011pediatric approach lengthens time to pediatric approval"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high pre\u2011clinical HER2 mRNA/IHC expression in osteosarcoma but concluded that the HER2\u2011ADC trial failed to meet the bar for expansion, despite a patient with low HER2 having prolonged stable disease"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for most ADC single\u2011arm trials",
+        "Lack of biomarker\u2011stratified efficacy analysis",
+        "Absence of pediatric\u2011only randomized comparator arms"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a quantitative folate receptor alpha expression assay to select pediatric patients most likely to benefit from FR\u03b1\u2011ADC therapy",
+        "transcript_evidence": "Speaker said: \"we could generate data faster... the trial closed early... three of ten children had complete responses\"",
+        "crispro_angle": "CrisPRO can integrate RNA\u2011seq and proteomics to define expression thresholds and predict responders",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify and target downstream resistance pathways (e.g., drug efflux, payload detoxification) in FR\u03b1\u2011ADC non\u2011responders",
+        "transcript_evidence": "Speaker noted limited durability of responses and early trial termination",
+        "crispro_angle": "CrisPRO can model tumor\u2011cell signaling networks to pinpoint compensatory pathways for combination therapy",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Propose pairing FR\u03b1\u2011ADC with immune checkpoint blockade to enhance efficacy in pediatric AML",
+        "transcript_evidence": "Speaker discussed using ADC as a bridge to transplant and the need for combination strategies",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of ADC + anti\u2011PD\u20111 based on tumor microenvironment profiles",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Seattle Genetics",
+        "context": "Developed brentuximab vedotin, an ADC cited as a successful adult\u2011first example",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "AstraZeneca",
+        "context": "Developing a CD2\u2011directed ADC with a topoisomerase payload to reduce hepatotoxicity for children",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "SUTRO Biopharma",
+        "context": "Company behind the folate receptor alpha ADC that ran out of money and closed early",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How can pediatric ADC trials be funded sustainably without relying on adult commercial success?",
+      "What quantitative biomarker thresholds should define eligibility for FR\u03b1\u2011ADC therapy?",
+      "Can multi\u2011institutional pediatric ADC trials be harmonized to reduce variability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SUTRO-002",
+        "Brentuximab vedotin",
+        "AstraZeneca CD2\u2011ADC"
+      ],
+      "companies_to_monitor": [
+        "SUTRO Biopharma",
+        "Seattle Genetics",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "el-camino-de-la-pediatr\u00eda-finding-our-way-through-the-chasm-of-pediatric-oncolog::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Ted Leach",
+      "institution_or_pharma": "Children's Hospital of Philadelphia",
+      "session_title": "El Camino de la Pediatria: Finding Our Way Through the Chasm of Pediatric Oncology Drug Development",
+      "talk_title": "Precision immunotherapy: CAR T cells and bispecific antibodies",
+      "rhetorical_signals": [
+        "Speaker said: \"there have been no additional approvals of CAR T cells for pediatric cancer since tisagenlecleucel in 2017\"",
+        "Speaker said: \"the results are exciting but not currently being explored or FDA\u2011approved for pediatric patients\"",
+        "Speaker said: \"individual academic centers each manufacturing their own product raises consistency concerns\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CD19\u2011directed CAR T cells (first\u2011generation)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Antigen loss (CD19 negative relapse) not addressed in single\u2011target CAR designs",
+        "unexplained_resistance_quote": "Speaker noted that some patients lose CD19 expression as a mechanism of resistance",
+        "ghost_responder_admission": "High response rates in CD19\u2011na\u00efve patients but lower durability in relapsed cases",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Various single\u2011institution CAR T trials (e.g., GD2 CAR in neuroblastoma)",
+        "target_biology": "GD2 expression in neuroblastoma and diffuse midline glioma",
+        "flawed_enrollment_criteria": "Trials often limited to single centers with heterogeneous manufacturing, making cross\u2011patient comparisons difficult",
+        "missing_biomarker": "Standardized GD2 density cutoff for eligibility",
+        "static_vs_dynamic_failure": "No serial biopsies to track antigen modulation over time",
+        "statistical_concern": "Small cohort sizes (e.g., 4\u20118 patients) limit statistical power",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "CD22\u2011CAR trials across multiple institutions",
+        "target_biology": "CD22 expression in B\u2011ALL",
+        "flawed_enrollment_criteria": "Lack of unified eligibility criteria across sites, leading to variable disease burden at enrollment",
+        "missing_biomarker": "Quantitative CD22 expression threshold",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Heterogeneous endpoints and lack of control arms",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Academic\u2011manufactured CAR constructs",
+        "ip_vulnerability_note": "Speaker highlighted that each institution uses different vectors, cytokine cocktails, and growth conditions, creating variability",
+        "scale_or_manufacturing_bottleneck": "Manufacturing cost ~ $50,000 per patient and limited to centers with GMP facilities",
+        "clinical_strategy_weakness": "No centralized regulatory pathway; reliance on institutional trials hampers broad access"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Bispecific CD19/CD3 antibody (blinatumomab)",
+        "ip_vulnerability_note": "Although approved, the therapy lacks a formal companion diagnostic for CD19 density, limiting precise patient selection",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Continued off\u2011label use in younger ages without age\u2011specific formulation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed 81% remission rate in the single\u2011arm tisagenlecleucel trial but concluded that lack of FDA approval for most pediatric CAR T products limits broader patient access"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized pediatric CAR T trials for solid tumors",
+        "Absence of long\u2011term overall survival data beyond 3 years for many constructs",
+        "Lack of standardized manufacturing quality metrics across sites"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Design dual\u2011target CARs (CD19\u202f+\u202fCD22) guided by CrisPRO modeling of antigen co\u2011expression to prevent escape",
+        "transcript_evidence": "Speaker said: \"dual targeting CAR showed 86% to 99% response rates\"",
+        "crispro_angle": "CrisPRO can predict optimal antigen pairings and simulate escape dynamics",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a pan\u2011cancer expression atlas for GD2, CD22, and other CAR targets to define quantitative thresholds for enrollment",
+        "transcript_evidence": "Speaker noted lack of standardized GD2 density cutoff in neuroblastoma trials",
+        "crispro_angle": "CrisPRO integrates bulk and single\u2011cell RNA\u2011seq to generate actionable expression cutoffs",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s computational pipeline to standardize CAR construct design and predict manufacturing robustness across centers",
+        "transcript_evidence": "Speaker highlighted variability in constructs and manufacturing processes across institutions",
+        "crispro_angle": "CrisPRO can model vector design, cytokine milieu, and predict functional potency before GMP production",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis",
+        "context": "Developer of tisagenlecleucel, the only FDA\u2011approved pediatric CAR T therapy",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Kite Pharma",
+        "context": "Developed CD19 CARs referenced in discussion of antigen loss resistance",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Juno Therapeutics",
+        "context": "Mentioned in context of CD22\u2011CAR trials with 70\u201175% response rates",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What regulatory framework can enable multi\u2011institutional academic CAR T products to achieve consistent FDA approval?",
+      "How can long\u2011term safety and durability be monitored across disparate manufacturing sites?",
+      "What is the optimal timing for introducing CAR T therapy in the treatment algorithm to maximize efficacy and minimize toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CD19 CAR T constructs",
+        "CD22 CAR T constructs",
+        "GD2 CAR T trials",
+        "Blinatumomab"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Kite Pharma",
+        "Juno Therapeutics"
+      ]
+    }
+  }
+]

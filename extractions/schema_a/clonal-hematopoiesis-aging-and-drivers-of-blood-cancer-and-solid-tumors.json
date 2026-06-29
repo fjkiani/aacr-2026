@@ -1,0 +1,414 @@
+[
+  {
+    "talk_id": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors::jaiswal::1",
+    "session_title": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors",
+    "talk_title": "PACER method reveals TCL1A as a driver of clonal hematopoiesis and leukemia",
+    "speaker": {
+      "name": "Siddharth Jaiswal",
+      "affiliation": "Stanford University, Department of Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TCL1A",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HSCs with CHIP driver mutations",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "IL6",
+        "type": "predictive",
+        "assay": "polygenic risk score (genetically predicted cytokine level)",
+        "finding": "Modest association between genetically predicted IL6 levels and faster DNMT3A clone expansion"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank",
+        "genotype_or_key_features": "large population with whole-genome sequencing, CHIP status, smoking data"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "TOPMed",
+        "genotype_or_key_features": "GWAS of clonal expansion rate, identified rs2887399 in TCL1A promoter"
+      },
+      {
+        "model_type": "mouse",
+        "name": "TCL1A transgenic (H-11 locus) crossed with Cre strains",
+        "genotype_or_key_features": "human TCL1A ORF expressed in HSCs, leads to HSPC expansion and 100% mortality by 12 months"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Jaiswal introduced the PACER (passenger approximated clonal expansion rate) method to infer clone age from passenger mutations, identified TCL1A promoter SNP rs2887399 as a regulator of clonal fitness, and demonstrated that ectopic TCL1A expression drives HSC expansion and myeloid leukemia in transgenic mice, establishing TCL1A as a causal driver of CHIP.",
+    "readouts": [
+      "whole_genome_sequencing",
+      "linear_regression_fitness_estimation",
+      "GWAS",
+      "CBC_counts",
+      "competitive_transplant_assays",
+      "survival_analysis"
+    ],
+    "key_findings": [
+      "PACER can quantify clonal expansion rates from bulk WGS data using passenger mutation counts.",
+      "Driver mutation identity accounts for most variance in clone fitness; splicing factor mutations (U2AF1, SRSF2, SF3B1) and JAK2 show highest fitness.",
+      "Smoking is the only measured environmental factor positively correlated with clonal expansion rate in humans.",
+      "GWAS identified rs2887399 in the TCL1A promoter; the T allele slows expansion of multiple CHIP drivers.",
+      "TCL1A is normally silent in HSCs; driver mutations de\u2011repress TCL1A, leading to HSC fitness advantage.",
+      "Transgenic mice with HSC\u2011specific TCL1A expression develop HSPC expansion and 100% mortality from myeloid leukemia by 12\u201113 months.",
+      "Carriers of the protective T allele have reduced risk of myeloid malignancies, especially CMML."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What cooperating mutations underlie the rapid leukemic transformation observed in TCL1A transgenic mice?",
+      "Is the narrow mortality window driven by a specific epigenetic state or additional genetic events?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors::nangalia::2",
+    "session_title": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors",
+    "talk_title": "Phylogenetic and methylation mapping of somatic evolution in blood",
+    "speaker": {
+      "name": "Jyoti Nangalia",
+      "affiliation": "Cambridge University Hospital & Wellcome Sanger Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "myeloid malignancy",
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "basic_science",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNMT3A",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TET2",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "",
+        "pathway": "DNA_repair",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "epigenetic silencing in blood and breast tissue",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "single-cell derived colonies (blood, bone marrow)",
+        "genotype_or_key_features": "up to 1,200 colonies from healthy donors (age 17 weeks gestation to 77 years) and 6 hematologic cancer patients"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank & other cohorts",
+        "genotype_or_key_features": "used for validation of clonal expansion rate and environmental associations"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Nangalia described a combined whole\u2011genome and whole\u2011methylome sequencing pipeline for single\u2011cell colonies, enabling reconstruction of somatic mutation phylogenies and assignment of CpG methylation changes to specific ancestral branches, revealing massive early\u2011life epiallelic remodeling and that driver mutations both shape and are shaped by these epigenetic landscapes, with some epigenetic changes acting as oncogenic drivers themselves.",
+    "readouts": [
+      "whole_genome_sequencing",
+      "whole_genome_bisulfite_methylome_sequencing (short\u2011read Illumina)",
+      "phylogenetic tree reconstruction",
+      "hidden_Markov_model for methylation state inference",
+      "differential_methylation_analysis",
+      "RNA\u2011seq expression profiling"
+    ],
+    "key_findings": [
+      "Developed an automated low\u2011input pipeline to obtain both WGS and whole\u2011genome methylomes from ~2\u202fng DNA per colony.",
+      "Mapped ~5,000 CpG\u2011segment epialleles that change early in embryogenesis (\u224810\u201315 somatic mutations) with ~10,000\u2011fold higher rate than later life.",
+      "Identified ~4,000\u20135,000 early\u2011life CpG segments (mostly promoters) that acquire stable methylation states, many showing allele\u2011specific patterns beyond X\u2011inactivation.",
+      "Demonstrated that CHIP driver mutations (e.g., DNMT3A, TET2, 1q+, DNMT3A Y66F) are associated with increased numbers of epimutations per branch.",
+      "Showed that epigenetic silencing of one BRCA1 allele can occur pre\u2011gastrulation, creating a mosaic that predisposes to BRCA\u2011like breast cancer.",
+      "Found that somatic methylation changes can act as drivers, with certain embryonic epialleles preferentially selected by specific mutations.",
+      "Established that methylation trees can resolve polytomies where SNV trees cannot, providing finer temporal resolution of early clonal events."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Which specific early\u2011life epialleles confer selective advantage to particular driver mutations?",
+      "Do epigenetic changes directly contribute to disease phenotypes beyond serving as lineage markers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors::ebert::3",
+    "session_title": "clonal-hematopoiesis-aging-and-drivers-of-blood-cancer-and-solid-tumors",
+    "talk_title": "Inflammatory and metabolic consequences of CHIP and therapeutic implications",
+    "speaker": {
+      "name": "Ben Ebert",
+      "affiliation": "Dana\u2011Farber Cancer Institute, Harvard Medical School",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "myeloid malignancy",
+      "cardiovascular disease",
+      "chronic obstructive pulmonary disease",
+      "liver disease",
+      "lung cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "metabolism",
+      "clinical_trial",
+      "translational",
+      "resistance_mechanisms",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TET2",
+        "alteration": "loss_of_function",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "hematopoietic cells, drives inflammation",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ACLY",
+        "alteration": "",
+        "pathway": "lipid_metabolism",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Tet2\u2011deficient myeloid cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "OGT",
+        "alteration": "",
+        "pathway": "protein_glycosylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "interaction with TET2 in myeloid cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "DNMT3A",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CHIP driver, low progression risk",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PPM1D",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CHIP driver, variable progression risk",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Splicing_factors (SF3B1, SRSF2, U2AF1)",
+        "alteration": "",
+        "pathway": "RNA_splicing",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high fitness CHIP drivers",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Clone VAF \u226510%",
+        "type": "risk",
+        "assay": "NGS of blood",
+        "finding": "Large clones (VAF \u226510%) confer highest risk of inflammatory disease and myeloid malignancy"
+      },
+      {
+        "name": "RDW",
+        "type": "predictive",
+        "assay": "CBC",
+        "finding": "Higher RDW independently predicts progression to myeloid malignancy and overall mortality"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Tet2 knockout bone\u2011marrow transplant into LDLR\u2011/\u2011 mice",
+        "genotype_or_key_features": "Tet2\u2011/\u2011 hematopoietic cells increase atherosclerosis on high\u2011fat diet"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Tet2 knockout exposed to cigarette smoke",
+        "genotype_or_key_features": "Exacerbated airspace disease mimicking COPD"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Tet2 knockout on NASH diet",
+        "genotype_or_key_features": "Accelerated liver fibrosis and reticulin staining"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank (\u2248500,000 participants)",
+        "genotype_or_key_features": "CHIP status, genotype, outcomes, risk\u2011score development"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival (high\u2011risk CHIP group)",
+        "value": "\u224850% at follow\u2011up",
+        "confidence_interval": "",
+        "n": "UK Biobank subset",
+        "population": "high\u2011risk CHIP (\u22481% of cohort)",
+        "comparator": "low\u2011risk CHIP and no CHIP",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Overall survival (low\u2011risk/ no CHIP)",
+        "value": "\u224895% at follow\u2011up",
+        "confidence_interval": "",
+        "n": "UK Biobank subset",
+        "population": "low\u2011risk CHIP and CHIP\u2011negative individuals",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Myeloid malignancy risk (high\u2011risk CHIP)",
+        "value": "\u224835\u2011fold increased",
+        "confidence_interval": "",
+        "n": "UK Biobank",
+        "population": "high\u2011risk CHIP individuals",
+        "comparator": "general population",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Cardiovascular mortality (CHIP overall)",
+        "value": "significant increase vs non\u2011CHIP (exact HR not quoted)",
+        "confidence_interval": "",
+        "n": "UK Biobank",
+        "population": "CHIP carriers",
+        "comparator": "non\u2011CHIP",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Ebert showed that loss of TET2 in hematopoietic cells reprograms lipid metabolism, leading to accumulation of triglycerides, diacylglycerols and cholesterol esters, which drives heightened IL\u20111\u03b2\u2011mediated inflammation in atherosclerosis, COPD, NASH and other age\u2011related diseases; genetic screens identified ACLY and OGT as key mediators, and pharmacologic inhibition of lipid pathways normalizes the inflammatory phenotype.",
+    "readouts": [
+      "mouse CBC and organ histology",
+      "competitive bone\u2011marrow transplant assays",
+      "CRISPR in vivo screen with barcoded guides",
+      "lipidomics (triacylglycerol, cholesterol ester quantification)",
+      "RNA\u2011seq of Tet2\u2011deficient myeloid cells",
+      "TR\u2011FRET assay for TET2\u2011OGT interaction",
+      "clinical risk\u2011score modeling (age, VAF, genotype, RDW, MCV, cytopenias)"
+    ],
+    "key_findings": [
+      "CHIP carriers have increased risk of atherosclerosis, myocardial infarction, heart failure, arrhythmias, liver disease, kidney disease, COPD, osteoporosis and lung cancer.",
+      "TET2 loss leads to lipid droplet accumulation in neutrophils/macrophages, driving IL\u20111\u03b2\u2011dependent inflammation.",
+      "In vivo CRISPR screen in Tet2\u2011deficient mice identified ACLY and OGT as essential for the inflammatory phenotype; knockout of these genes restores wild\u2011type inflammation levels.",
+      "TET2 directly binds OGT; loss of TET2 liberates OGT, causing aberrant protein O\u2011GlcNAcylation and metabolic dysregulation.",
+      "A simple risk score incorporating genotype, clone size, RDW, MCV, cytopenias and age stratifies CHIP individuals into low, intermediate and high risk for myeloid malignancy and overall mortality.",
+      "High\u2011risk CHIP (~1% of population) has ~50% overall survival, whereas low\u2011risk/CHIP\u2011negative individuals have ~95% survival.",
+      "IL\u20111\u03b2 inhibition (e.g., canakinumab) reduces lung cancer incidence, suggesting inflammatory CHIP contributes to early tumorigenesis."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Tet2\u2011deficient cells show selective advantage only under inflammatory or metabolic stress (high\u2011fat diet, cigarette smoke, NASH diet).",
+      "ACLY is essential for all cells, making selective targeting of Tet2\u2011driven inflammation challenging."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IL\u20111\u03b2 inhibitor (canakinumab)",
+        "rationale": "Block downstream inflammatory cytokine mediating CHIP\u2011driven disease",
+        "phenotype": "Reduced atherosclerosis and lung cancer incidence in preclinical models and human trials",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "ACLY inhibitor",
+        "rationale": "Prevent lipid droplet accumulation in Tet2\u2011deficient myeloid cells",
+        "phenotype": "Restores wild\u2011type inflammatory gene expression profile in vitro and in mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can selective ACLY inhibition be achieved in hematopoietic cells without systemic metabolic toxicity?",
+      "What are the long\u2011term effects of chronic IL\u20111\u03b2 blockade in CHIP carriers without overt disease?",
+      "How do specific CHIP genotypes (e.g., splicing factor vs DNMT3A) differ in their metabolic rewiring?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

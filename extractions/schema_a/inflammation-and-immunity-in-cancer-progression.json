@@ -1,0 +1,723 @@
+[
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::li::1",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Evasion of Hepatic ILC1 Immunosurveillance Drives Breast Cancer Liver Metastasis",
+    "speaker": {
+      "name": "Peng Li",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "immunotherapy",
+      "spatial_biology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DR5",
+        "alteration": "",
+        "pathway": "death_receptor",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "breast cancer liver metastasis cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TFAP2A",
+        "alteration": "",
+        "pathway": "transcription_factor",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "regulates DR5 expression in breast cancer cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "high-fat diet steatotic liver model",
+        "genotype_or_key_features": "fed high-fat diet 4 months, IV injection of breast cancer cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "RAG1 knockout",
+        "genotype_or_key_features": "lacks T and B cells"
+      },
+      {
+        "model_type": "mouse",
+        "name": "RAG2 gamma knockout",
+        "genotype_or_key_features": "lacks T, B, innate lymphocytes"
+      },
+      {
+        "model_type": "mouse",
+        "name": "granzyme C DTA mouse",
+        "genotype_or_key_features": "depletes liver ILC1s"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Hepatic ILC1s mediate immune surveillance of breast cancer liver metastasis via TRAIL-DR5 signaling; loss of DR5 or depletion of ILC1s enhances liver tumor burden, while GLP-1 agonist restores ILC1 numbers and reduces metastasis.",
+    "readouts": [
+      "flow_cytometry",
+      "IHC",
+      "spatial_profiling",
+      "mouse_survival"
+    ],
+    "key_findings": [
+      "High-fat diet mice develop increased breast cancer liver metastasis compared to control diet.",
+      "RAG2 gamma knockout mice show increased liver and lung tumor burden, implicating innate lymphocytes in surveillance.",
+      "Selective depletion of conventional NK cells increases lung but not liver metastasis, indicating liver ILC1s are essential for hepatic surveillance.",
+      "ILC1s mediate tumor killing via TRAIL binding to DR5 on cancer cells; DR5 loss increases liver metastasis.",
+      "GLP-1 receptor agonist restores hepatic ILC1 numbers in steatotic mice and reduces liver tumor burden."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "DR5 loss in tumor cells enables escape from ILC1-mediated killing."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "GLP-1 receptor agonist",
+        "rationale": "Restores hepatic ILC1 numbers reduced by steatosis",
+        "phenotype": "Decreased liver metastasis in high-fat diet mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals regulate ILC1 activation in the liver microenvironment?",
+      "Can GLP-1 agonist synergize with checkpoint blockade in metastatic breast cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::gholamin::2",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Neutrophil Extracellular Trap Inhibition Mitigates Tumor Necrosis and Metastasis in Colorectal Cancer",
+    "speaker": {
+      "name": "Sepideh Gholamin",
+      "affiliation": "Cold Spring Harbor Laboratory / Surgical Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "basic_science",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PAD4",
+        "alteration": "",
+        "pathway": "NET_formation",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "neutrophils forming NETs",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NETs",
+        "alteration": "",
+        "pathway": "extracellular_trap",
+        "modality": "pharmacological_inhibition",
+        "compound_name": "disulfiram",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal cancer metastasis",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "citH3",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Reduced citH3 staining in tumors treated with disulfiram"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "AKPS organoid model",
+        "genotype_or_key_features": "KRAS, APC, TP53, SMAD4 mutations; MSS colorectal cancer"
+      },
+      {
+        "model_type": "mouse",
+        "name": "PAD4 knockout",
+        "genotype_or_key_features": "unable to form NETs"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "NETs accumulate in necrotic regions of colorectal tumors, driving hypoxia, EMT, and metastasis; pharmacologic (disulfiram) or genetic (PAD4 KO) inhibition of NET formation reduces necrosis, EMT signaling, and liver metastases, and enhances chemotherapy efficacy.",
+    "readouts": [
+      "IHC",
+      "H&E",
+      "single_cell_RNAseq",
+      "RNA_scope",
+      "mouse_survival",
+      "metastasis_count"
+    ],
+    "key_findings": [
+      "PAD4 knockout mice show decreased tumor necrosis and fewer liver metastases compared to wild-type.",
+      "Disulfiram treatment reduces NETs, necrosis, and liver metastasis burden in AKPS organoid mice.",
+      "NET inhibition combined with FOLFOX chemotherapy further decreases liver metastasis compared to chemotherapy alone.",
+      "Necrotic tumor regions exhibit higher EMT markers (vimentin, SNAI1) and inflammatory pathways.",
+      "Mice with NET inhibition display increased neutrophil activation markers (citH3) reduction."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Disulfiram is a non-specific aldehyde dehydrogenase inhibitor, raising potential off-target concerns."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "FOLFOX chemotherapy",
+        "rationale": "NET inhibition may improve drug delivery to necrotic tumors",
+        "phenotype": "Synergistic reduction of liver metastases",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals trigger NET release in colorectal tumors?",
+      "Can NET inhibition improve response to immunotherapy in CRC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::belabed::3",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Metabolic Reuse of Tumor-Derived Signals Coordinates Dendritic Cell Function",
+    "speaker": {
+      "name": "Mariam Belabed",
+      "affiliation": "Mount Sinai",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "basic_science",
+      "metabolism",
+      "spatial_biology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ODC1",
+        "alteration": "",
+        "pathway": "polyamine_biosynthesis",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor cells producing polyamines",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NPC1",
+        "alteration": "",
+        "pathway": "cholesterol_transport",
+        "modality": "pharmacological_inhibition",
+        "compound_name": "NPC1 inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "dendritic cell cholesterol mobilization",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AXL",
+        "alteration": "",
+        "pathway": "receptor_tyrosine_kinase",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "dendritic cell maturation regulation",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "ODC1 knockout tumor cells",
+        "genotype_or_key_features": "lacks polyamine production"
+      },
+      {
+        "model_type": "mouse",
+        "name": "in vivo tumor vaccination model",
+        "genotype_or_key_features": "OVA-expressing tumor debris vaccination"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Tumor-derived polyamines enhance dendritic cell uptake via RAC1 activation, while tumor-derived cholesterol fuels dendritic cell maturation through NPC1-mediated transport and lipid nanodomain formation; AXL deletion amplifies cholesterol accumulation, boosting maturation and antitumor immunity.",
+    "readouts": [
+      "microscopy",
+      "flow_cytometry",
+      "CCR7 expression",
+      "RAC1 activity",
+      "cholesterol staining",
+      "lipid_nanodomain staining"
+    ],
+    "key_findings": [
+      "ODC1-deficient tumor debris is less efficiently taken up by dendritic cells in vitro and in vivo.",
+      "Blocking polyamine transport (AMTX) impairs dendritic cell uptake of tumor debris.",
+      "Polyamine deficiency reduces RAC1 expression and activation in dendritic cells.",
+      "Inhibition of NPC1 or statin treatment diminishes CCR7 and other maturation markers on dendritic cells.",
+      "AXL knockout dendritic cells accumulate more cholesterol, lipid nanodomains, and display heightened maturation and improved tumor control."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "AXL inhibition",
+        "rationale": "Enhances cholesterol-driven maturation of dendritic cells",
+        "phenotype": "Increased CCR7 expression and antitumor response",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can pharmacologic modulation of polyamine transport improve dendritic cell vaccines in patients?",
+      "What is the impact of systemic statin use on dendritic cell function in cancer patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::zhu::4",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Spatial Rewiring of IL-1\u03b2 Network Limits Therapeutic Efficiency in Advanced Non\u2011Squamous Carcinoma",
+    "speaker": {
+      "name": "Bo Zhu",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non\u2011small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "spatial_biology",
+      "combination_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "IL1\u03b2",
+        "alteration": "",
+        "pathway": "inflammatory_cytokine",
+        "modality": "antibody_blockade",
+        "compound_name": "canakinumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pre\u2011cancer vs advanced NSCLC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "IL1\u03b2 plasma level",
+        "type": "pharmacodynamic",
+        "assay": "ELISA",
+        "finding": "Increased after anti\u2011IL1\u03b2 treatment in mice and humans"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Keratitis\u2011induced lung adenocarcinoma",
+        "genotype_or_key_features": "virus\u2011induced tumor, pre\u2011cancer vs advanced treatment windows"
+      },
+      {
+        "model_type": "mouse",
+        "name": "MNU carcinogen\u2011induced lung adenocarcinoma",
+        "genotype_or_key_features": "chemical induction, pre\u2011cancer vs advanced treatment"
+      },
+      {
+        "model_type": "human",
+        "name": "Xenium spatial transcriptomics cohort",
+        "genotype_or_key_features": "NSCLC tissue sections"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Anti\u2011IL1\u03b2 therapy is effective when administered at pre\u2011cancer stages by disconnecting IL1\u03b2\u2011IL1R1 signaling in epithelial cells; in advanced disease the network shifts to fibroblast\u2011centric signaling, limiting efficacy despite increased IL1\u03b2 levels.",
+    "readouts": [
+      "spatial_transcriptomics",
+      "Zennys 5K gene panel",
+      "cytotoxic signature scores",
+      "exhaustion signature scores",
+      "cell\u2011cell interaction analysis"
+    ],
+    "key_findings": [
+      "IL1\u03b2 pathway activity rises from normal to pre\u2011cancer to invasive adenocarcinoma in both human and mouse samples.",
+      "Anti\u2011IL1\u03b2 antibody suppresses tumor growth when given at pre\u2011cancer stage but not at advanced stage in two mouse models.",
+      "Anti\u2011IL1\u03b2 treatment paradoxically increases IL1\u03b2 plasma levels in mice and humans.",
+      "Spatial analysis shows pre\u2011cancer blockade reduces IL1R1\u2011positive epithelial cells within the IL1\u03b2 network, whereas advanced stage blockade reduces IL1R1\u2011positive fibroblasts.",
+      "Location\u2011aware cell\u2011cell interaction analysis reveals that IL1\u03b2\u2011IL1R1 contacts are disrupted in pre\u2011cancer but persist in advanced disease."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Advanced tumors retain fibroblast\u2011driven IL1\u03b2 signaling, providing a resistance mechanism to IL1\u03b2 blockade."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "fibroblast\u2011targeted therapy",
+        "rationale": "Disrupt fibroblast\u2011centric IL1\u03b2 network in advanced disease",
+        "phenotype": "Potentially restores anti\u2011IL1\u03b2 efficacy",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Which fibroblast subtypes sustain IL1\u03b2 signaling in advanced NSCLC?",
+      "Can simultaneous targeting of IL1\u03b2 and fibroblast pathways improve outcomes in late\u2011stage patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::poblete::5",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Gut Commensal Dysbiosis Modulates Lung Microenvironment to Promote Breast Tumor Metastasis via Mast Cell\u2011Dependent Axis",
+    "speaker": {
+      "name": "Mika Poblete",
+      "affiliation": "University of Virginia",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "microbiome",
+      "immunotherapy",
+      "metastasis",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "IL\u20116",
+        "alteration": "",
+        "pathway": "STAT3_signaling",
+        "modality": "cytokine",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mast cell secretion in dysbiotic lungs",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Mast cell count",
+        "type": "prognostic",
+        "assay": "histology",
+        "finding": "Higher mast cell density correlates with reduced survival in dysbiotic mice"
+      },
+      {
+        "name": "p\u2011STAT3",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Increased in lungs of dysbiotic mice"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "antibiotic\u2011induced dysbiosis model",
+        "genotype_or_key_features": "broad\u2011spectrum antibiotics followed by pathogenic recolonization"
+      },
+      {
+        "model_type": "mouse",
+        "name": "tail\u2011vein injection of HR\u2011positive breast cancer cells",
+        "genotype_or_key_features": "metastasis to lung"
+      },
+      {
+        "model_type": "mouse",
+        "name": "orthotopic mammary tumor model with pre\u2011metastatic lung analysis",
+        "genotype_or_key_features": "single\u2011cell RNA\u2011seq of lung immune cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Gut dysbiosis elevates mast cell activation in the lung, leading to IL\u20116 secretion that activates STAT3 in fibroblasts and endothelial cells, promoting ECM stiffening, angiogenesis, and M2 macrophage polarization, thereby creating a permissive niche for breast cancer lung metastasis.",
+    "readouts": [
+      "survival_curves",
+      "H&E",
+      "mast_cell_histology",
+      "single_cell_RNAseq",
+      "IHC for p\u2011STAT3",
+      "ELISA for IL\u20116"
+    ],
+    "key_findings": [
+      "Antibiotic\u2011induced gut dysbiosis accelerates death of mice after tail\u2011vein breast cancer cell injection.",
+      "Lung mast cell density inversely correlates with survival in dysbiotic mice.",
+      "Ketotifen (mast cell stabilizer) improves survival of dysbiotic mice, implicating mast cells in metastasis promotion.",
+      "Single\u2011cell RNA\u2011seq reveals dysbiotic lung mast cells upregulate IL\u20116 and degranulation genes.",
+      "Fibroblasts and endothelial cells in dysbiotic lungs show STAT3\u2011driven fibrotic and angiogenic transcriptional programs.",
+      "Macrophages shift toward M2 phenotype with increased CCL2 and MMP\u2011related genes in dysbiotic lungs."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "ketotifen",
+        "rationale": "Stabilize mast cells to block IL\u20116/STAT3 axis",
+        "phenotype": "Extended survival in dysbiotic mice",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Do primary bile acids mediate the gut\u2011lung signaling that activates mast cells?",
+      "Does lung microbiome alteration contribute independently to the pro\u2011metastatic niche?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::tanaka::6",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Mild Interferon\u2011\u03b3 Signaling Regulates Immune Suppression and Fibrotic TME in Pancreatic Cancer Liver Metastasis",
+    "speaker": {
+      "name": "Takeshi Tanaka",
+      "affiliation": "Cedar Sinai",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "fibrosis",
+      "basic_science",
+      "single_cell"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "IFN\u03b3R2",
+        "alteration": "",
+        "pathway": "interferon_gamma_signaling",
+        "modality": "genetic_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloid cells in liver metastasis",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD80",
+        "type": "pharmacodynamic",
+        "assay": "flow_cytometry",
+        "finding": "Reduced on TAMs in IFN\u03b3R2 myeloid KO mice"
+      },
+      {
+        "name": "p\u2011STAT1",
+        "type": "pharmacodynamic",
+        "assay": "Western blot",
+        "finding": "Decreased in bone\u2011marrow derived macrophages from KO mice"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "portal vein injection liver metastasis model",
+        "genotype_or_key_features": "pancreatic cancer cells injected into portal vein"
+      },
+      {
+        "model_type": "mouse",
+        "name": "IFN\u03b3R2^fl/fl LysM\u2011Cre myeloid KO",
+        "genotype_or_key_features": "myeloid\u2011specific IFN\u03b3R2 deletion"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Mild IFN\u2011\u03b3 signaling through IFN\u03b3R2 on macrophages sustains antigen\u2011presentation (CD80/CD86/MHC\u2011II) and limits immunosuppressive markers (ARG1, CD206, SPP1); loss of this signaling drives SPP1\u2011high macrophages, fibrosis, and T\u2011cell dysfunction in pancreatic cancer liver metastasis.",
+    "readouts": [
+      "flow_cytometry",
+      "bulk_RNAseq",
+      "single_cell_RNAseq",
+      "histology (collagen)"
+    ],
+    "key_findings": [
+      "Systemic IFN\u2011\u03b3 neutralization increases tumor number and burden in liver metastasis model.",
+      "Myeloid\u2011specific IFN\u03b3R2 KO mice exhibit larger tumor burden and higher TAM numbers.",
+      "KO TAMs show decreased CD80/CD86/MHC\u2011II and increased ARG1/CD206/SPP1 expression.",
+      "T\u2011cell proliferation (Ki67) and cytokine production (IFN\u2011\u03b3, TNF\u2011\u03b1) are reduced in KO mice.",
+      "Bulk RNA\u2011seq reveals down\u2011regulation of IFN\u2011\u03b3 response and up\u2011regulation of fibrosis pathways in KO tumors.",
+      "Single\u2011cell RNA\u2011seq identifies expansion of SPP1\u2011high macrophages with ECM and TGF\u2011\u03b2 signatures in KO."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Loss of IFN\u2011\u03b3 signaling shifts macrophages toward a pro\u2011fibrotic, immunosuppressive phenotype."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "fibrosis\u2011targeting agents (e.g., TGF\u2011\u03b2 inhibitors)",
+        "rationale": "Counteract fibrotic remodeling caused by IFN\u03b3R2 loss",
+        "phenotype": "Potentially restore antitumor immunity",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Do resident Kupffer cells versus monocyte\u2011derived macrophages differ in IFN\u2011\u03b3 responsiveness?",
+      "Can exogenous low\u2011dose IFN\u2011\u03b3 rescue the fibrotic phenotype without promoting tumor immune evasion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammation-and-immunity-in-cancer-progression::xiong::7",
+    "session_title": "inflammation-and-immunity-in-cancer-progression",
+    "talk_title": "Targeting Chronic Inflammation in Cancer and Fibrosis with Engineered uPAR\u2011CAR T Cells",
+    "speaker": {
+      "name": "Ze Xiong",
+      "affiliation": "MSKCC",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "ovarian cancer",
+      "lung adenocarcinoma",
+      "squamous lung cancer",
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "immunotherapy",
+      "fibrosis",
+      "targeted_therapy",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "uPAR",
+        "alteration": "",
+        "pathway": "extracellular_matrix_remodeling",
+        "modality": "CAR_T",
+        "compound_name": "uPAR\u2011CAR T",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor cells, myeloid cells, CAFs across solid tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "uPAR expression",
+        "type": "eligibility",
+        "assay": "IHC",
+        "finding": "High on tumor cells, CAFs, and myeloid cells in multiple cancers"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "human xenograft ovarian cancer model",
+        "genotype_or_key_features": "PDX with heterogeneous uPAR"
+      },
+      {
+        "model_type": "mouse",
+        "name": "syngeneic murine uPAR\u2011CAR T model",
+        "genotype_or_key_features": "Transposon\u2011mediated oncogene + CRISPR uPAR KO"
+      },
+      {
+        "model_type": "humanized_mouse",
+        "name": "CD34+ hematopoietic progenitor engraftment",
+        "genotype_or_key_features": "evaluates on\u2011target off\u2011tumor toxicity"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "uPAR\u2011CAR T cells recognize and eliminate uPAR\u2011positive tumor cells, cancer\u2011associated fibroblasts, and immunosuppressive myeloid cells, thereby dismantling fibrotic stroma, enhancing T\u2011cell infiltration, and preventing antigen escape.",
+    "readouts": [
+      "tumor_growth_curves",
+      "survival",
+      "IHC for collagen",
+      "flow_cytometry for immune subsets",
+      "CAR T cell infiltration imaging"
+    ],
+    "key_findings": [
+      "uPAR is co\u2011expressed on tumor cells, CAFs, and myeloid suppressor cells in >10 solid tumor types.",
+      "Single dose of uPAR\u2011CAR T yields durable tumor regression and protects against rechallenge in multiple xenograft models.",
+      "Cisplatin treatment up\u2011regulates uPAR on ovarian cancer cells, sensitizing them to uPAR\u2011CAR T killing.",
+      "uPAR\u2011CAR T reduces collagen deposition and fibrosis, leading to increased CAR T cell infiltration.",
+      "In humanized mice, uPAR\u2011CAR T shows antitumor activity without significant depletion of myeloid or granulocyte compartments."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Potential on\u2011target off\u2011tumor effects on monocytes due to uPAR expression."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cisplatin chemotherapy",
+        "rationale": "Chemotherapy induces uPAR expression, enhancing CAR T targeting",
+        "phenotype": "Improved survival and tumor infiltration",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can uPAR\u2011CAR T be combined with checkpoint blockade to further boost antitumor immunity?",
+      "What is the long\u2011term impact on normal monocyte populations and infection risk?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

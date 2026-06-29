@@ -1,0 +1,189 @@
+[
+  {
+    "talk_id": "aacr-irving-weinstein-foundation-distinguished-lectureship::lo::1",
+    "session_title": "aacr-irving-weinstein-foundation-distinguished-lectureship",
+    "talk_title": "From fetal DNA to cancer early detection: innovations in circulating nucleic acids",
+    "speaker": {
+      "name": "Dennis Lo",
+      "affiliation": "Vice Chancellor and President, The Chinese University of Hong Kong; Li Ka Shing Professor of Medicine, Department of Chemical Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "nasopharyngeal cancer",
+      "hepatocellular carcinoma",
+      "pan-cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "liquid_biopsy",
+      "early_detection",
+      "biomarker_development",
+      "translational",
+      "platform_technology",
+      "fragmentomics",
+      "epigenetics"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EBV DNA",
+        "alteration": "",
+        "pathway": "viral",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EBV-positive nasopharyngeal carcinoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Chromosome 21",
+        "alteration": "trisomy",
+        "pathway": "genome",
+        "modality": "digital PCR",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "fetal trisomy 21 detection",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Y chromosome",
+        "alteration": "",
+        "pathway": "genome",
+        "modality": "PCR",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "male fetal DNA detection",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Y chromosome PCR signal",
+        "type": "eligibility",
+        "assay": "PCR",
+        "finding": "Detected in maternal plasma only when fetus is male, confirming fetal origin of cell\u2011free DNA"
+      },
+      {
+        "name": "Chromosome 21 copy number ratio",
+        "type": "predictive",
+        "assay": "digital PCR",
+        "finding": "100% accurate discrimination of trisomy 21 vs euploid in 28 pregnancies (14 cases each)"
+      },
+      {
+        "name": "Plasma EBV DNA concentration",
+        "type": "predictive",
+        "assay": "quantitative PCR",
+        "finding": "Detected in >90% of nasopharyngeal cancer patients and <5% of healthy controls"
+      },
+      {
+        "name": "Fragment size distribution (shorter fragments)",
+        "type": "pharmacodynamic",
+        "assay": "size\u2011based sequencing",
+        "finding": "Cancer\u2011derived cfDNA shows a median size ~150\u202fbp vs 166\u202fbp for normal cfDNA"
+      },
+      {
+        "name": "End\u2011motif signatures (EM5, EM3, PREM, POEM)",
+        "type": "exploratory",
+        "assay": "single\u2011strand library sequencing",
+        "finding": "Distinct motif enrichment patterns differentiate liver cancer from controls (AUC up to 0.92 when combined)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NIPT validation cohort",
+        "genotype_or_key_features": "Pregnant women, gestational age 10\u201112\u202fweeks, n=~2000"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Hong Kong NPC screening trial",
+        "genotype_or_key_features": "Males 40\u201160\u202fy, high\u2011risk population, n=20,000"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Liver cancer case\u2011control set",
+        "genotype_or_key_features": "HCC patients vs healthy controls, n=200 each"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "NIPT accuracy",
+        "value": ">99%",
+        "confidence_interval": "",
+        "n": "n=~2000 pregnancies",
+        "population": "all\u2011comers, gestational age 10\u201112\u202fweeks",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "NPC mortality",
+        "value": "3% vs 40%",
+        "confidence_interval": "",
+        "n": "n=34 screen\u2011detected cases",
+        "population": "screened high\u2011risk males 40\u201160\u202fy",
+        "comparator": "historical unscreened cohort",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Stage shift in NPC screening",
+        "value": "70% stage I\u2011II vs 20% stage III\u2011IV",
+        "confidence_interval": "",
+        "n": "n=34 screen\u2011detected cases",
+        "population": "screened high\u2011risk cohort",
+        "comparator": "unscreened historical distribution",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Liver cancer detection AUC (fragmentomics panel)",
+        "value": "0.92",
+        "confidence_interval": "",
+        "n": "n=200 cases, 200 controls",
+        "population": "HCC patients",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Lo demonstrated that cell\u2011free DNA released by tumors or fetuses can be quantitatively measured using digital PCR, next\u2011generation sequencing and novel fragmentomics signatures (size, end\u2011motif, methylation). By exploiting tumor\u2011specific nucleic acid markers such as EBV DNA in nasopharyngeal carcinoma or chromosome\u2011specific copy\u2011number changes in trisomy 21, the approach enables highly accurate non\u2011invasive prenatal testing and cancer early\u2011detection, with fragment length and end\u2011motif patterns providing additional tissue\u2011origin information.",
+    "readouts": [
+      "digital PCR",
+      "quantitative PCR",
+      "NGS shotgun sequencing",
+      "single\u2011strand library sequencing",
+      "size distribution analysis",
+      "end\u2011motif profiling",
+      "methylation array"
+    ],
+    "key_findings": [
+      "Discovery of cell\u2011free fetal DNA in maternal plasma enabled non\u2011invasive prenatal testing with >99% accuracy using digital PCR of chromosome\u2011specific targets.",
+      "A genome\u2011wide NIPT based on low\u2011coverage sequencing accurately detected trisomy 21 in 28 pregnancies (100% sensitivity and specificity).",
+      "Plasma EBV DNA serves as a highly specific biomarker for nasopharyngeal carcinoma, detecting 34 cancers in a 20,000\u2011person Hong Kong screen and shifting 70% of cases to stage I\u2011II with a 10\u2011fold mortality reduction (3% vs 40%).",
+      "Fragmentomics signatures (shorter fragment size, distinct end\u2011motif patterns) differentiate cancer\u2011derived cfDNA from normal cfDNA and improve detection AUC to 0.92 for liver cancer.",
+      "Integration of fragment size, end\u2011motif, and methylation data enables tissue\u2011of\u2011origin inference, forming the basis of multi\u2011cancer early detection platforms such as GRAIL\u2019s Galleri test."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does diurnal or physiological variation (exercise, dialysis, menstrual cycle) affect cfDNA concentration and fragmentomics readouts in longitudinal monitoring?",
+      "Can histone modification signatures on cfDNA be systematically leveraged to improve tissue\u2011origin classification?",
+      "What are the limits of viral\u2011derived cfDNA fragmentomics for distinguishing infection\u2011related cancers versus benign viral carriage?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Illumina",
+        "GRAIL",
+        "Sequenom"
+      ],
+      "patent_or_ip_hints": [
+        "patents on cfDNA fragmentomics and size\u2011based quantification",
+        "licensing agreements between CUHK and Sequenom, later GRAIL"
+      ]
+    }
+  }
+]

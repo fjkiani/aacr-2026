@@ -1,0 +1,6413 @@
+WEBVTT
+
+1
+00:00:00.060 --> 00:00:03.260
+Welcome everybody. My name is Peter O'Dwyer
+
+2
+00:00:04.180 --> 00:00:08.000
+from the University of Pennsylvania and Eakock-Akron Cancer
+
+3
+00:00:08.080 --> 00:00:11.380
+Research Group. On behalf of myself and Dr.
+
+4
+00:00:11.580 --> 00:00:14.120
+Rebecca Hubbard and Dr. Neil Maropol,
+
+5
+00:00:15.280 --> 00:00:19.240
+I'm delighted to welcome you to this session on
+
+6
+00:00:19.280 --> 00:00:23.200
+real world data. To my knowledge, I think this is the
+
+7
+00:00:23.260 --> 00:00:24.460
+first real world data
+
+8
+00:00:25.380 --> 00:00:29.140
+methods workshop that has been held at an AACR
+
+9
+00:00:29.200 --> 00:00:31.920
+meeting, and we were talking before.
+
+10
+00:00:32.360 --> 00:00:35.060
+We're gratified to see so many attendees
+
+11
+00:00:35.880 --> 00:00:38.540
+at the meeting and more virtually.
+
+12
+00:00:40.480 --> 00:00:40.700
+The
+
+13
+00:00:42.260 --> 00:00:43.720
+session consists of
+
+14
+00:00:44.640 --> 00:00:47.360
+three talks with a period for discussion.
+
+15
+00:00:49.040 --> 00:00:52.660
+What we've decided to do is to give the three talks,
+
+16
+00:00:53.600 --> 00:00:57.160
+following which there will be about a half an hour for
+
+17
+00:00:57.300 --> 00:01:01.240
+a panel discussion. And that's so that many of
+
+18
+00:01:01.280 --> 00:01:05.060
+the questions that come along in sessions like this can be
+
+19
+00:01:05.121 --> 00:01:08.640
+addressed in different ways by more than one
+
+20
+00:01:08.740 --> 00:01:12.400
+speaker. So we would like to have that dialogue established.
+
+21
+00:01:14.760 --> 00:01:17.140
+A couple of housekeeping issues.
+
+22
+00:01:18.460 --> 00:01:22.340
+There is an audience virtually, and so that
+
+23
+00:01:22.360 --> 00:01:23.300
+they can hear
+
+24
+00:01:24.500 --> 00:01:24.980
+when you
+
+25
+00:01:26.780 --> 00:01:30.380
+want to ask a question, you can come to the microphone, but speak into the
+
+26
+00:01:30.400 --> 00:01:33.040
+microphone so that the audience can hear.
+
+27
+00:01:35.320 --> 00:01:37.020
+So I think without any
+
+28
+00:01:37.940 --> 00:01:38.680
+further ado,
+
+29
+00:01:39.800 --> 00:01:40.640
+I want to welcome
+
+30
+00:01:41.560 --> 00:01:44.440
+Dr. Rebecca Hubbard to the microphone.
+
+31
+00:01:45.720 --> 00:01:49.100
+Dr. Hubbard is the Carl Kawaja and
+
+32
+00:01:49.180 --> 00:01:52.980
+Wendy Holcomb Professor of Public Health and
+
+33
+00:01:53.060 --> 00:01:56.560
+Professor of Biostatistics and Data Science at Brown
+
+34
+00:01:56.660 --> 00:01:58.380
+University. Welcome.
+
+35
+00:02:11.240 --> 00:02:11.700
+Thank you.
+
+36
+00:02:13.580 --> 00:02:17.440
+Thank you all for coming out this afternoon to talk with us a bit about methods for
+
+37
+00:02:17.480 --> 00:02:21.120
+incorporating real world data into clinical trial design.
+
+38
+00:02:21.740 --> 00:02:25.680
+So I'm a biostatistician, and what I'm going to emphasize in my talk
+
+39
+00:02:25.780 --> 00:02:29.720
+is both design and analysis issues in incorporating
+
+40
+00:02:29.780 --> 00:02:33.660
+real world data into clinical trials, but particularly thinking about the
+
+41
+00:02:33.720 --> 00:02:37.660
+unique aspects of real world data and how that might inform the
+
+42
+00:02:37.720 --> 00:02:41.710
+way that we think about combining them with trial data in a way that
+
+43
+00:02:41.760 --> 00:02:45.680
+allows us to learn more and address the deficiencies of trials
+
+44
+00:02:45.980 --> 00:02:48.840
+without degrading the quality of the evidence that we're generating.
+
+45
+00:02:52.700 --> 00:02:56.660
+We are currently in an era of enormous enthusiasm
+
+46
+00:02:56.920 --> 00:03:00.580
+for incorporating real world data into research broadly,
+
+47
+00:03:01.140 --> 00:03:04.820
+and I think that's been particularly spurred by the
+
+48
+00:03:04.880 --> 00:03:08.820
+uptick in use of AI and AI allowing us to
+
+49
+00:03:08.920 --> 00:03:12.560
+access data and unleash data from electronic health records, for
+
+50
+00:03:12.600 --> 00:03:16.220
+instance, that's in narrative text form that we haven't previously been able to
+
+51
+00:03:16.240 --> 00:03:19.820
+access. So this is an example of three articles from
+
+52
+00:03:19.900 --> 00:03:23.880
+recent lay press publications. These came out spanning
+
+53
+00:03:23.900 --> 00:03:25.440
+the period from October,
+
+54
+00:03:26.440 --> 00:03:30.280
+no, August of 2025, up through December of 2025, and I
+
+55
+00:03:30.320 --> 00:03:33.490
+found those within a few seconds of just Google searching for real world data and
+
+56
+00:03:33.560 --> 00:03:37.490
+health. So there's a ton of enthusiasm about conducting this
+
+57
+00:03:37.500 --> 00:03:41.360
+kind of research and a lot of hype and promise
+
+58
+00:03:41.380 --> 00:03:44.140
+and potential for doing this work.
+
+59
+00:03:44.160 --> 00:03:47.860
+But I think we need to ground all of our analyses and all of our thinking
+
+60
+00:03:47.940 --> 00:03:51.920
+about the work in a realization that the data are messy,
+
+61
+00:03:52.040 --> 00:03:55.640
+they are challenging, and it's going to take a lot of methodological
+
+62
+00:03:55.740 --> 00:03:59.640
+innovation and careful attention to analytic details if we're going to
+
+63
+00:03:59.780 --> 00:04:03.260
+realize the kind of potential and the kind of promise
+
+64
+00:04:03.600 --> 00:04:05.520
+that these sort of headlines are touting.
+
+65
+00:04:09.600 --> 00:04:13.500
+Why is there such enthusiasm for potentially doing this, for
+
+66
+00:04:13.520 --> 00:04:17.041
+incorporating real world data into randomized control trial design?
+
+67
+00:04:18.019 --> 00:04:21.440
+We know that clinical trials, randomized trials, are considered the gold
+
+68
+00:04:21.541 --> 00:04:24.760
+standard for generating estimates of treatment efficacy.
+
+69
+00:04:25.280 --> 00:04:29.110
+So we already have a design approach that people
+
+70
+00:04:29.140 --> 00:04:32.820
+feel confident in and that we know reduces risks of certain types of
+
+71
+00:04:32.860 --> 00:04:33.380
+bias.
+
+72
+00:04:34.320 --> 00:04:37.860
+But we also know that clinical trials have numerous deficiencies,
+
+73
+00:04:38.200 --> 00:04:42.040
+most notably that they are extremely expensive, they're
+
+74
+00:04:42.160 --> 00:04:46.120
+slow, many trials fail to meet their enrollment targets, and there
+
+75
+00:04:46.140 --> 00:04:49.870
+are just many, many comparisons of different treatment combinations,
+
+76
+00:04:50.180 --> 00:04:53.550
+different treatment regimens and patterns that we might be interested in, and it's
+
+77
+00:04:53.580 --> 00:04:57.350
+simply infeasible to conduct a randomized control trial for every single one of
+
+78
+00:04:57.380 --> 00:05:00.940
+them. So bringing into our research
+
+79
+00:05:00.980 --> 00:05:04.440
+portfolio real world data, which are collected in the
+
+80
+00:05:04.520 --> 00:05:08.140
+course of routine practice, and when I say real world data, I'm
+
+81
+00:05:08.180 --> 00:05:12.020
+generally rolling up all sources collected outside of the
+
+82
+00:05:12.080 --> 00:05:15.640
+context of a randomized trial. So that would incorporate electronic health
+
+83
+00:05:15.740 --> 00:05:19.560
+records, administrative claims data, disease registries,
+
+84
+00:05:20.080 --> 00:05:23.760
+and potentially even more diffuse
+
+85
+00:05:23.880 --> 00:05:27.719
+data types like social media data or wearable devices.
+
+86
+00:05:27.800 --> 00:05:31.520
+So all of these secondary data sources potentially give us
+
+87
+00:05:31.640 --> 00:05:35.550
+access to a lot of opportunities and a lot of benefits,
+
+88
+00:05:35.960 --> 00:05:39.830
+including lower cost than large randomized trials, larger
+
+89
+00:05:39.940 --> 00:05:43.910
+sample sizes, and rapid data availability and
+
+90
+00:05:44.100 --> 00:05:44.680
+access.
+
+91
+00:05:45.480 --> 00:05:49.219
+But I think one of the most exciting opportunities of doing
+
+92
+00:05:49.280 --> 00:05:53.120
+research with real world data is the opportunity to access representative
+
+93
+00:05:53.180 --> 00:05:57.080
+patient populations receiving care in the real world.
+
+94
+00:05:57.180 --> 00:06:00.620
+So we're able to get a window into health and healthcare and treatment
+
+95
+00:06:00.660 --> 00:06:04.580
+effectiveness in the context of routine clinical practice, rather
+
+96
+00:06:04.660 --> 00:06:08.590
+than in the more verified and artificial environment of a randomized
+
+97
+00:06:08.620 --> 00:06:12.490
+control trial.You can imagine that all of
+
+98
+00:06:12.530 --> 00:06:15.970
+those benefits seem very appealing and are
+
+99
+00:06:16.230 --> 00:06:20.130
+spurring the current enormous research interest in using
+
+100
+00:06:20.170 --> 00:06:22.550
+these data sources for research purposes.
+
+101
+00:06:23.030 --> 00:06:26.690
+But there's an important caveat, which is that real-world data
+
+102
+00:06:26.730 --> 00:06:30.410
+differ in fundamental respects compared to randomized control trial
+
+103
+00:06:30.450 --> 00:06:34.270
+data. So if we're going to incorporate these data into our analyses, we need to
+
+104
+00:06:34.310 --> 00:06:37.109
+think carefully about the methods that we're going to use.
+
+105
+00:06:39.410 --> 00:06:43.150
+I tend to think of trials and real-world data as having complementary
+
+106
+00:06:43.210 --> 00:06:47.080
+strengths and weaknesses, and therefore, we would like to use them in ways that
+
+107
+00:06:47.110 --> 00:06:50.939
+are complementary. So on this slide, on the left, I have trials, on the
+
+108
+00:06:50.990 --> 00:06:54.470
+right, I have real-world data. And in the bold red, I've
+
+109
+00:06:54.530 --> 00:06:58.220
+indicated the strengths of each, and in black, I'm indicating the
+
+110
+00:06:58.290 --> 00:07:01.430
+weaknesses. And I've tried to line them up so that you can see that they somewhat
+
+111
+00:07:01.690 --> 00:07:05.430
+complement each other. Trials give us access to high-quality
+
+112
+00:07:05.530 --> 00:07:09.520
+data, very precise data collection standards, but are slow and
+
+113
+00:07:09.570 --> 00:07:11.850
+expensive and not necessarily generalizable.
+
+114
+00:07:13.210 --> 00:07:16.850
+Conversely, real-world data give us access to a broad representative
+
+115
+00:07:16.930 --> 00:07:20.730
+patient population. They can be assembled relatively quickly and
+
+116
+00:07:20.810 --> 00:07:24.290
+relatively cheaply, and the word "relatively" is doing a lot of work in that
+
+117
+00:07:24.330 --> 00:07:27.770
+sentence, because these are difficult to curate,
+
+118
+00:07:28.390 --> 00:07:32.090
+although not at the level of conducting a randomized control trial.
+
+119
+00:07:33.650 --> 00:07:35.670
+But data quality is inconsistent.
+
+120
+00:07:36.770 --> 00:07:40.210
+Data collection standards are unspecified, so we just see
+
+121
+00:07:40.290 --> 00:07:44.250
+patients according to their own interaction with the healthcare system, which is
+
+122
+00:07:44.310 --> 00:07:47.780
+not necessarily consistent across patients, providers, or
+
+123
+00:07:47.870 --> 00:07:48.470
+systems.
+
+124
+00:07:50.050 --> 00:07:53.830
+So what we'd like to do is use these two sources in a way that benefits from the
+
+125
+00:07:53.890 --> 00:07:57.310
+strengths of each without degrading the quality of evidence
+
+126
+00:07:57.470 --> 00:08:01.410
+associated with either. This is an example of two studies that were
+
+127
+00:08:01.450 --> 00:08:05.410
+conducted answering similar questions, one in a real-world
+
+128
+00:08:05.470 --> 00:08:09.310
+data population, which is the result on the left, and one in a phase three
+
+129
+00:08:09.370 --> 00:08:11.470
+clinical trial, which is the result on the right.
+
+130
+00:08:12.090 --> 00:08:14.130
+So the study that I'm showing here on the left
+
+131
+00:08:15.050 --> 00:08:19.010
+was an observational study using oncology EHR data from Flatiron
+
+132
+00:08:19.090 --> 00:08:22.850
+Health to do a head-to-head comparison of two treatments for advanced bladder
+
+133
+00:08:22.950 --> 00:08:23.430
+cancer.
+
+134
+00:08:24.630 --> 00:08:28.230
+We conducted that study because, at the time, there was no
+
+135
+00:08:28.290 --> 00:08:30.370
+head-to-head comparison of these two treatments.
+
+136
+00:08:30.770 --> 00:08:33.890
+Immunotherapy for advanced bladder cancer had been approved on the basis of a
+
+137
+00:08:33.990 --> 00:08:34.929
+single-arm trial.
+
+138
+00:08:35.951 --> 00:08:39.750
+So we were able to obtain the results on the left while the phase
+
+139
+00:08:39.810 --> 00:08:43.530
+three trial, asking the same question in a similar patient population,
+
+140
+00:08:43.890 --> 00:08:47.730
+was being conducted. And about six months later, the result on the right,
+
+141
+00:08:47.970 --> 00:08:49.970
+which is from the phase three trial, was published.
+
+142
+00:08:50.750 --> 00:08:54.170
+You can see qualitatively the conclusions are similar between these
+
+143
+00:08:54.190 --> 00:08:58.110
+two, and I would say this is a good example of how the two data sources can be
+
+144
+00:08:58.210 --> 00:09:01.770
+used in complementary ways. Real-world data gave us an answer more
+
+145
+00:09:01.830 --> 00:09:05.679
+quickly that could fill an evidentiary gap while the randomized
+
+146
+00:09:05.710 --> 00:09:09.130
+control trial was ongoing. But because of the higher risk of
+
+147
+00:09:09.230 --> 00:09:12.830
+bias and the limitations of data quality in real-world data,
+
+148
+00:09:13.250 --> 00:09:17.090
+we still need the randomized trial results to ultimately confirm
+
+149
+00:09:17.410 --> 00:09:19.610
+and augment what we'd found in real-world data.
+
+150
+00:09:22.110 --> 00:09:25.530
+So what are these data quality limitations that I'm alluding to?
+
+151
+00:09:26.050 --> 00:09:29.790
+There are three different types of discrepancies that
+
+152
+00:09:29.810 --> 00:09:33.750
+arise between real-world data and randomized controlled trials that could
+
+153
+00:09:33.770 --> 00:09:36.230
+potentially introduce bias into our analyses.
+
+154
+00:09:36.730 --> 00:09:40.450
+And on this slide, I've grouped them into three components, differences in the
+
+155
+00:09:40.470 --> 00:09:44.290
+patients, differences in the care environment, and differences in the
+
+156
+00:09:44.350 --> 00:09:45.150
+data quality.
+
+157
+00:09:46.610 --> 00:09:50.490
+Differences in the patient population between patients participating in a trial
+
+158
+00:09:50.530 --> 00:09:54.150
+and patients captured in a real-world data source, I would describe as
+
+159
+00:09:54.190 --> 00:09:56.250
+representing a source of selection bias.
+
+160
+00:09:56.550 --> 00:10:00.510
+So the patients who either have had the opportunity or have chosen to participate
+
+161
+00:10:00.530 --> 00:10:04.290
+in a trial are not necessarily the same as patients in the
+
+162
+00:10:04.330 --> 00:10:07.280
+broader patient population being treated in the real world.
+
+163
+00:10:08.210 --> 00:10:11.850
+Additionally, typically, oncology clinical trials have a lengthy list of
+
+164
+00:10:11.890 --> 00:10:15.570
+eligibility criteria, and many of those eligibility criteria are
+
+165
+00:10:15.630 --> 00:10:19.510
+measured inconsistently or incompletely in real-world data sources.
+
+166
+00:10:19.890 --> 00:10:23.630
+So although we'd like to look at the same patient population meeting the same
+
+167
+00:10:23.690 --> 00:10:27.600
+eligibility criteria in the real world and in a randomized trial, we're
+
+168
+00:10:27.670 --> 00:10:30.910
+often unable to do so because of the limitations of the data source.
+
+169
+00:10:33.130 --> 00:10:37.110
+The supportive care environment in the real world also potentially
+
+170
+00:10:37.150 --> 00:10:40.930
+differs from that in the trial environment, and that could represent
+
+171
+00:10:41.130 --> 00:10:44.790
+aspects of treatment delivery or supportive care as well as
+
+172
+00:10:44.850 --> 00:10:48.810
+monitoring. So if monitoring of patients, if follow-up
+
+173
+00:10:48.890 --> 00:10:52.630
+is different between the trial environment and real-world environment,
+
+174
+00:10:53.010 --> 00:10:56.770
+then potentially outcome ascertainment is also going to look different between the
+
+175
+00:10:56.810 --> 00:11:00.630
+two data sources, and this could also lead to the appearance of
+
+176
+00:11:00.730 --> 00:11:04.170
+treatment heterogeneity between the two data sources.
+
+177
+00:11:05.430 --> 00:11:07.490
+And then finally, the data themselves.
+
+178
+00:11:08.210 --> 00:11:11.570
+If you think of data sources like electronic health records or administrative
+
+179
+00:11:11.630 --> 00:11:15.550
+claims data, the data themselves are much more
+
+180
+00:11:15.650 --> 00:11:18.930
+heterogeneous, are inconsistently collected, have
+
+181
+00:11:19.250 --> 00:11:22.910
+unprespecified methods for outcome ascertainment, are
+
+182
+00:11:23.030 --> 00:11:26.570
+missing many of the data elements that we're interested in, and in many cases,
+
+183
+00:11:26.670 --> 00:11:30.330
+we're going to be deriving the data elements that we want to use from structured
+
+184
+00:11:30.350 --> 00:11:34.170
+fields such as ICD codes or procedure codes, which
+
+185
+00:11:34.290 --> 00:11:37.420
+have heterogeneous coding conventions across clinical
+
+186
+00:11:37.850 --> 00:11:41.750
+systems, across clinicians. And those differences in things like
+
+187
+00:11:41.790 --> 00:11:45.610
+coding conventions could create spurious appearance of differences
+
+188
+00:11:45.670 --> 00:11:49.310
+between treatments in the trial environment versus the
+
+189
+00:11:49.350 --> 00:11:51.410
+real-world environment.
+
+190
+00:11:53.910 --> 00:11:57.760
+So one opportunity for incorporating data from the real
+
+191
+00:11:57.850 --> 00:12:01.430
+world into a clinical trial is by augmenting the
+
+192
+00:12:01.500 --> 00:12:05.070
+control arm of a trial with patients from a real-world data
+
+193
+00:12:05.130 --> 00:12:07.450
+source who are receiving the same treatment.
+
+194
+00:12:08.330 --> 00:12:12.150
+There are two different ways that we could consider doing that.One is
+
+195
+00:12:12.210 --> 00:12:13.950
+via an externally controlled trial.
+
+196
+00:12:14.590 --> 00:12:18.310
+So in an externally controlled trial, we would have a single-arm
+
+197
+00:12:18.410 --> 00:12:21.850
+trial in which patients solely receive the experimental treatment,
+
+198
+00:12:22.590 --> 00:12:25.950
+and then we're going to compare those patients to those receiving a standard of
+
+199
+00:12:26.030 --> 00:12:27.570
+care treatment in the real world.
+
+200
+00:12:28.890 --> 00:12:32.750
+That approach has a high risk of bias because all of the differences between
+
+201
+00:12:32.770 --> 00:12:36.370
+real-world data sources and trials that I just described on the previous
+
+202
+00:12:36.410 --> 00:12:36.850
+slide
+
+203
+00:12:37.710 --> 00:12:41.610
+will erroneously or spuriously look like differences between
+
+204
+00:12:41.630 --> 00:12:43.729
+the experimental treatment and the standard of care.
+
+205
+00:12:44.110 --> 00:12:47.670
+In other words, all of those differences that are attributable to the data source
+
+206
+00:12:48.010 --> 00:12:51.850
+and the environment will be 100% confounded with the
+
+207
+00:12:51.890 --> 00:12:53.590
+comparison of the two treatment arms.
+
+208
+00:12:55.390 --> 00:12:58.470
+Another opportunity is the hybrid control trial design.
+
+209
+00:12:58.830 --> 00:13:02.390
+So in the hybrid control trial design, we'll take a randomized trial in which
+
+210
+00:13:02.400 --> 00:13:05.630
+patients are randomized to the experimental treatment as well as the standard of
+
+211
+00:13:05.730 --> 00:13:06.030
+care,
+
+212
+00:13:06.930 --> 00:13:10.790
+and then we're going to augment that internal control arm with an additional
+
+213
+00:13:10.870 --> 00:13:14.150
+external control arm drawn solely from real-world data.
+
+214
+00:13:14.970 --> 00:13:18.890
+So in this trial design, we have patients receiving the standard of care
+
+215
+00:13:18.970 --> 00:13:22.530
+treatment, both in the context of the trial and in the real world.
+
+216
+00:13:23.330 --> 00:13:27.090
+That allows us to distinguish between differences between the two treatments
+
+217
+00:13:27.290 --> 00:13:30.530
+and differences between the care environments and the data quality.
+
+218
+00:13:30.970 --> 00:13:34.790
+So the hybrid control trial design, while also potentially suffering from
+
+219
+00:13:34.870 --> 00:13:38.400
+bias by introducing differences between real-world data and
+
+220
+00:13:38.470 --> 00:13:39.540
+randomized trial data,
+
+221
+00:13:40.690 --> 00:13:44.510
+is able to accommodate those differences by leveraging information
+
+222
+00:13:44.750 --> 00:13:48.320
+comparing those two treatment arms, the control-treated patients in the
+
+223
+00:13:48.390 --> 00:13:51.390
+trial and the control-treated patients in the real world.
+
+224
+00:13:54.130 --> 00:13:57.570
+The reason that we might be interested in conducting a hybrid control trial despite
+
+225
+00:13:57.630 --> 00:14:01.510
+the potential limitations and the potential introduction of bias, is that
+
+226
+00:14:01.550 --> 00:14:04.850
+it may decrease the overall size of the randomized trial
+
+227
+00:14:05.010 --> 00:14:08.750
+portion of the study, so we may be able to complete the trial more
+
+228
+00:14:08.810 --> 00:14:10.050
+quickly and more cheaply.
+
+229
+00:14:10.870 --> 00:14:14.670
+We could potentially also accelerate enrollment because it allows us to vary the
+
+230
+00:14:14.730 --> 00:14:17.910
+randomization ratio towards the experimental arm.
+
+231
+00:14:18.210 --> 00:14:21.740
+So rather than randomizing patients one to one, we could randomize a higher
+
+232
+00:14:21.740 --> 00:14:25.690
+proportion of patients into the experimental arm, which may be more appealing both
+
+233
+00:14:25.730 --> 00:14:29.210
+to patients and clinicians and may accelerate enrollment into the
+
+234
+00:14:29.250 --> 00:14:33.230
+trial. However, all of the differences between the data sources
+
+235
+00:14:33.250 --> 00:14:37.030
+and the patient populations that I mentioned are potentially going to bias our
+
+236
+00:14:37.050 --> 00:14:40.740
+comparisons and need to be carefully addressed via our analysis and
+
+237
+00:14:40.810 --> 00:14:41.210
+design.
+
+238
+00:14:44.190 --> 00:14:47.740
+So at a high level, there are four different ways that we could think about
+
+239
+00:14:47.810 --> 00:14:49.610
+analyzing a hybrid control trial.
+
+240
+00:14:50.290 --> 00:14:53.950
+In the slides that I have coming up next, I'm illustrating
+
+241
+00:14:54.090 --> 00:14:57.830
+the randomized trial portion of the study by the two
+
+242
+00:14:57.950 --> 00:14:58.970
+circles on the right,
+
+243
+00:14:59.910 --> 00:15:02.030
+the internal control arm and the intervention arm.
+
+244
+00:15:02.110 --> 00:15:05.610
+So patients are randomized to those two arms, and they have the intervention arm
+
+245
+00:15:05.670 --> 00:15:08.730
+larger to represent that we're able to randomize more patients into the
+
+246
+00:15:08.750 --> 00:15:12.240
+intervention arm. The color of the patients inside the circles
+
+247
+00:15:12.630 --> 00:15:16.280
+represents the distribution of patient characteristics, and since the patients in
+
+248
+00:15:16.290 --> 00:15:20.130
+the randomized trial were randomly assigned to the control arm or the
+
+249
+00:15:20.150 --> 00:15:23.890
+intervention arm, the distribution of the colors of the figures in those two
+
+250
+00:15:23.930 --> 00:15:25.070
+circles should be the same.
+
+251
+00:15:26.290 --> 00:15:29.850
+In contrast, the real-world data control arm in green on the left
+
+252
+00:15:30.070 --> 00:15:33.810
+represents additional patients that we're going to use to augment the control arm
+
+253
+00:15:33.850 --> 00:15:37.690
+who come from the real world. And consequently, the distribution of patient
+
+254
+00:15:37.770 --> 00:15:41.130
+characteristics in that arm is not necessarily the same.
+
+255
+00:15:42.050 --> 00:15:45.880
+So to be very conservative, we could analyze only the patients from the randomized
+
+256
+00:15:45.950 --> 00:15:49.830
+portion of the trial, which we believe would control bias but would
+
+257
+00:15:49.870 --> 00:15:50.690
+be inefficient.
+
+258
+00:15:52.650 --> 00:15:56.550
+Conversely, we could fully incorporate information from the real-world control
+
+259
+00:15:56.670 --> 00:15:59.090
+arm, which I'm going to refer to as full pooling.
+
+260
+00:15:59.870 --> 00:16:03.450
+And under full pooling, we've now potentially introduced bias into our
+
+261
+00:16:03.550 --> 00:16:07.410
+study due to incorporating these patients who have different characteristics into
+
+262
+00:16:07.430 --> 00:16:10.710
+our control arm, but it's maximally efficient in that it
+
+263
+00:16:10.810 --> 00:16:13.000
+maximally uses the available information.
+
+264
+00:16:15.110 --> 00:16:19.020
+To try to account for that potential bias, there are a number of approaches that
+
+265
+00:16:19.030 --> 00:16:22.310
+are collectively referred to as static or dynamic borrowing.
+
+266
+00:16:22.890 --> 00:16:26.750
+And in these approaches, we're going to up or down-weight the information from that
+
+267
+00:16:26.810 --> 00:16:30.610
+real-world data control arm according to the similarity between the
+
+268
+00:16:30.650 --> 00:16:32.949
+real-world patients and the trial patients.
+
+269
+00:16:33.329 --> 00:16:36.970
+So in this example, the real-world patients are somewhat different from the trial
+
+270
+00:16:37.050 --> 00:16:40.870
+patients, and so that entire circle has been down-weighted to reflect
+
+271
+00:16:40.890 --> 00:16:44.430
+the fact that the evidence coming from that information is not quite
+
+272
+00:16:44.490 --> 00:16:46.710
+comparable to the trial information.
+
+273
+00:16:49.390 --> 00:16:52.710
+And then finally, we could take a propensity score-based weighting approach in
+
+274
+00:16:52.810 --> 00:16:56.290
+which rather than up or down-weighting the entire real-world data data
+
+275
+00:16:56.390 --> 00:17:00.310
+source, we're going to up or down-weight individual patients within
+
+276
+00:17:00.350 --> 00:17:04.250
+the real-world data control arm proportional to their similarity
+
+277
+00:17:04.310 --> 00:17:08.171
+to patients inside the trial. So patients in the real-world data control
+
+278
+00:17:08.250 --> 00:17:11.891
+arm who have characteristics that are underrepresented relative
+
+279
+00:17:11.899 --> 00:17:15.230
+to what that patient subgroup looks like in the trial would be
+
+280
+00:17:15.290 --> 00:17:18.570
+up-weighted. Those who are overrepresented would be down-weighted.
+
+281
+00:17:21.790 --> 00:17:25.230
+I'm going to show you the relative performance of these different approaches in a
+
+282
+00:17:25.290 --> 00:17:29.150
+few simulation studies in which I'm going to vary the strength of the true
+
+283
+00:17:29.230 --> 00:17:32.790
+treatment effect. I'm going to show you results for a randomization
+
+284
+00:17:32.870 --> 00:17:36.790
+ratio of two to one, and then I'm going to vary the strength of confounding,
+
+285
+00:17:36.870 --> 00:17:40.770
+by which I mean the systematic difference between patients in the real
+
+286
+00:17:40.850 --> 00:17:44.290
+world and patients in the trial, between what I'm going to refer to as mild
+
+287
+00:17:44.350 --> 00:17:45.930
+confounding and strong confounding.
+
+288
+00:17:46.890 --> 00:17:50.130
+And I'll show you results for bias, type one error, and power.
+
+289
+00:17:52.610 --> 00:17:56.390
+So these are results as we vary the hazard ratio, the true treatment effect
+
+290
+00:17:56.490 --> 00:18:00.370
+across the x-axis from about 0.5 up to one
+
+291
+00:18:00.410 --> 00:18:02.170
+for each of the methods that I've discussed.
+
+292
+00:18:02.570 --> 00:18:05.210
+So in green, I have bias results for the trial.
+
+293
+00:18:05.310 --> 00:18:09.270
+We expect that the trial is unbiased, it's protected by randomization, and you see
+
+294
+00:18:09.350 --> 00:18:13.090
+that's what this slide illustrates.If we fully pull
+
+295
+00:18:13.190 --> 00:18:16.790
+in all of the information from the real-world data, that's
+
+296
+00:18:16.830 --> 00:18:20.570
+represented by the red line, and it has very substantial bias.
+
+297
+00:18:21.270 --> 00:18:25.130
+We can reduce that bias by using a static borrowing approach,
+
+298
+00:18:25.430 --> 00:18:28.750
+which downweights the evidence from the real-world data source.
+
+299
+00:18:29.110 --> 00:18:32.890
+But you can see all of the blue lines here also demonstrate
+
+300
+00:18:32.930 --> 00:18:36.850
+significant bias due to that systematic confounding, that systematic difference
+
+301
+00:18:36.870 --> 00:18:39.150
+between real-world and trial patients.
+
+302
+00:18:40.070 --> 00:18:43.270
+And then finally, if we take a propensity score-based approach, we're able to
+
+303
+00:18:43.330 --> 00:18:46.839
+eliminate that bias. But an important caveat here is,
+
+304
+00:18:47.170 --> 00:18:50.750
+although the propensity score is appropriately adjusting for systematic
+
+305
+00:18:50.790 --> 00:18:54.630
+differences, it relies on the assumption that we have access to all of the
+
+306
+00:18:54.670 --> 00:18:58.659
+covariates, all of the confounders that we need to adjust for in order
+
+307
+00:18:58.710 --> 00:19:00.590
+to be able to explain those differences.
+
+308
+00:19:03.250 --> 00:19:07.070
+Type one error follows very similarly to what you would expect based on those bias
+
+309
+00:19:07.130 --> 00:19:11.050
+results. The trial controls type one error because of the systematic
+
+310
+00:19:11.090 --> 00:19:14.110
+bias in full pooling and all of the static borrowing approaches.
+
+311
+00:19:14.390 --> 00:19:18.310
+They have enormously inflated type one error in this example, and the
+
+312
+00:19:18.330 --> 00:19:22.270
+propensity score weighting approach is able to return type one
+
+313
+00:19:22.330 --> 00:19:24.130
+error to approximately the nominal level.
+
+314
+00:19:26.730 --> 00:19:30.630
+And then finally, if we look at power, you can see that we apparently get a
+
+315
+00:19:30.670 --> 00:19:34.480
+power boost from full pooling or the static borrowing approaches.
+
+316
+00:19:35.270 --> 00:19:38.700
+But we know that those approaches lead to inflated type one error.
+
+317
+00:19:38.810 --> 00:19:42.590
+So we wouldn't want to trust these power results essentially because we know that
+
+318
+00:19:42.610 --> 00:19:46.430
+this increase in power is due to the bias in those approaches.
+
+319
+00:19:47.110 --> 00:19:50.690
+The propensity score-based approach, which was approximately able to control type
+
+320
+00:19:50.730 --> 00:19:53.110
+one error, still gives us a power boost.
+
+321
+00:19:53.500 --> 00:19:56.850
+So we are getting some benefit from incorporating the real-world patients,
+
+322
+00:19:57.750 --> 00:20:00.450
+without inflating type one error or introducing bias.
+
+323
+00:20:03.070 --> 00:20:06.570
+I'll wrap up just by showing you what this looks like in a real-world example.
+
+324
+00:20:06.650 --> 00:20:10.470
+So in this study, I used data from a real trial
+
+325
+00:20:10.510 --> 00:20:14.010
+comparing two different treatments for prostate cancer, in which patients were
+
+326
+00:20:14.090 --> 00:20:17.870
+randomized to the experimental arm or the standard of care at a two to one
+
+327
+00:20:17.930 --> 00:20:18.470
+ratio.
+
+328
+00:20:19.590 --> 00:20:23.530
+I then created a pseudo real-world data arm in which I resampled
+
+329
+00:20:23.610 --> 00:20:27.480
+patients from the control arm of the trial, but I did it according to sampling
+
+330
+00:20:27.550 --> 00:20:31.370
+probabilities that systematically distorted the relationship
+
+331
+00:20:31.390 --> 00:20:35.170
+between patient covariates and whether or not a patient was seen in the
+
+332
+00:20:35.190 --> 00:20:38.490
+trial environment or the pseudo real-world data environment.
+
+333
+00:20:40.770 --> 00:20:44.730
+What I mean by that is shown here. So here I'm summarizing a few of the patient
+
+334
+00:20:44.770 --> 00:20:46.659
+characteristics for the patients in this trial.
+
+335
+00:20:47.390 --> 00:20:51.200
+You can see with the control arm and the intervention arm, which were randomized,
+
+336
+00:20:51.430 --> 00:20:54.310
+all of the patient characteristics are distributed similarly.
+
+337
+00:20:55.170 --> 00:20:58.990
+In the pseudo real-world data arm, because I have sampled the patients according
+
+338
+00:20:59.130 --> 00:21:02.570
+to ECOG performance status and according to PSA, I've
+
+339
+00:21:02.590 --> 00:21:06.410
+systematically distorted this distribution relative to the way that it
+
+340
+00:21:06.450 --> 00:21:07.550
+looks in the trial.
+
+341
+00:21:10.270 --> 00:21:13.750
+The implication is that if we compare survival in those three sources,
+
+342
+00:21:14.350 --> 00:21:17.790
+the pseudo EHR or pseudo real-world data arm has much poorer
+
+343
+00:21:17.830 --> 00:21:20.710
+survival compared to either of the two arms in the trial.
+
+344
+00:21:21.190 --> 00:21:25.050
+So you can imagine if I just naively pool the yellow patients in with the blue
+
+345
+00:21:25.110 --> 00:21:29.030
+patients, there's going to be a massively inflated
+
+346
+00:21:29.130 --> 00:21:32.450
+apparent treatment effect. Patients treated with the standard of care are going to
+
+347
+00:21:32.490 --> 00:21:36.070
+look like they do much more poorly than patients receiving the experimental
+
+348
+00:21:36.110 --> 00:21:37.810
+treatment in the context of the trial.
+
+349
+00:21:41.550 --> 00:21:44.950
+Here are point estimates and confidence intervals for each of the methods that I'm
+
+350
+00:21:44.970 --> 00:21:48.690
+describing, and I'm comparing them to the black vertical bar, which
+
+351
+00:21:48.770 --> 00:21:52.750
+is the point estimate from the trial, and then the gray bar around
+
+352
+00:21:52.790 --> 00:21:55.250
+it is the confidence interval from the trial.
+
+353
+00:21:56.310 --> 00:22:00.100
+Similar to the simulation results, you can see that full pooling and the static
+
+354
+00:22:00.170 --> 00:22:02.110
+borrowing approaches are enormously biased.
+
+355
+00:22:02.130 --> 00:22:05.270
+They give us an estimate very far away from the trial estimate.
+
+356
+00:22:06.110 --> 00:22:10.050
+Dynamic borrowing, which dynamically determines how much information we
+
+357
+00:22:10.070 --> 00:22:13.610
+want to incorporate from the real world, depending on similarity between the
+
+358
+00:22:13.650 --> 00:22:17.350
+patient populations, gets us back to something very close to the trial,
+
+359
+00:22:17.830 --> 00:22:20.450
+but also barely increases efficiency.
+
+360
+00:22:20.490 --> 00:22:24.430
+So the width of the confidence interval in the dynamic borrowing setting is
+
+361
+00:22:24.510 --> 00:22:27.890
+almost exactly the same as the width of the trial-only estimate.
+
+362
+00:22:29.050 --> 00:22:32.960
+Both of the propensity score-based approaches get us closer to
+
+363
+00:22:32.960 --> 00:22:36.920
+the trial-only estimate, and in particular, the propensity score-based weighting,
+
+364
+00:22:37.030 --> 00:22:40.980
+which is more flexible than a stratification approach, gets us very close to the
+
+365
+00:22:41.070 --> 00:22:42.910
+trial and has reduced
+
+366
+00:22:43.990 --> 00:22:46.410
+the width of the confidence interval by quite a bit.
+
+367
+00:22:48.810 --> 00:22:52.670
+So in conclusion, there are a lot of opportunities for using
+
+368
+00:22:52.690 --> 00:22:55.830
+real-world data to address some of the limitations of clinical trials,
+
+369
+00:22:56.190 --> 00:22:59.710
+including their speed, their cost, and their limited
+
+370
+00:22:59.790 --> 00:23:03.690
+generalizability. But there are many methodological challenges that we have to
+
+371
+00:23:03.710 --> 00:23:07.390
+think about carefully, particularly related to data quality.
+
+372
+00:23:07.510 --> 00:23:11.130
+So we really need to reflect carefully on those three sources of discrepancy
+
+373
+00:23:11.170 --> 00:23:14.830
+between real-world data and trials that I mentioned earlier and think
+
+374
+00:23:14.930 --> 00:23:18.750
+about the approaches that we're going to use to address things like missing data,
+
+375
+00:23:18.790 --> 00:23:21.650
+measurement error, and differential outcome ascertainment.
+
+376
+00:23:22.990 --> 00:23:26.390
+There are also systematic differences between trial and real-world patient
+
+377
+00:23:26.430 --> 00:23:30.410
+populations and care environments that we have to be careful to use
+
+378
+00:23:30.470 --> 00:23:34.270
+methods that will allow us to disentangle differences between
+
+379
+00:23:34.350 --> 00:23:38.300
+those care environments and patient populations and differences in treatments
+
+380
+00:23:38.350 --> 00:23:42.130
+that we want to compare. I think there are a lot of opportunities
+
+381
+00:23:42.190 --> 00:23:45.620
+for addressing these challenges via methodological innovation.
+
+382
+00:23:45.730 --> 00:23:49.550
+I think that advances in AI, especially LLMs, do
+
+383
+00:23:49.590 --> 00:23:52.990
+hold the potential to unlock additional confounder information from the
+
+384
+00:23:53.010 --> 00:23:56.710
+EHR, which would allow us to use these real-world data more
+
+385
+00:23:56.730 --> 00:24:00.010
+effectively. But we have to do so in a way that preserves
+
+386
+00:24:00.050 --> 00:24:03.990
+transparency and preserves research rigor, so we don't degrade the quality of
+
+387
+00:24:04.010 --> 00:24:06.770
+the evidence as we bring in additional real-world data.
+
+388
+00:24:07.850 --> 00:24:08.170
+Thank you.
+
+389
+00:24:16.046 --> 00:24:17.406
+Thanks, Rebecca. Great start.
+
+390
+00:24:18.466 --> 00:24:19.986
+And for those who came in
+
+391
+00:24:21.226 --> 00:24:25.046
+a little bit late, we are going to give all three talks
+
+392
+00:24:25.586 --> 00:24:29.166
+and then have a panel discussion at the
+
+393
+00:24:29.266 --> 00:24:33.186
+end to address
+
+394
+00:24:33.246 --> 00:24:34.266
+topics that come up.
+
+395
+00:24:35.126 --> 00:24:37.466
+The next speaker is Dr. Neil Meropol,
+
+396
+00:24:38.486 --> 00:24:41.946
+who is Senior Advisor to Flatiron Health,
+
+397
+00:24:42.446 --> 00:24:46.286
+and he is the Principal Investigator Elect of the
+
+398
+00:24:46.506 --> 00:24:48.066
+ASCO TAPER study.
+
+399
+00:24:49.146 --> 00:24:49.366
+Neil.
+
+400
+00:24:51.906 --> 00:24:52.906
+Thanks, Peter.
+
+401
+00:25:00.926 --> 00:25:02.526
+Okay, well, I'm going to provide
+
+402
+00:25:03.486 --> 00:25:04.786
+a complementary
+
+403
+00:25:05.706 --> 00:25:09.486
+perspective on the use of real-world data in clinical trial design and
+
+404
+00:25:09.526 --> 00:25:13.126
+execution, coming from the perspective of
+
+405
+00:25:13.266 --> 00:25:17.246
+an oncologist who's been a clinical investigator and
+
+406
+00:25:17.306 --> 00:25:20.666
+a health outcomes researcher working with real-world data, in
+
+407
+00:25:20.705 --> 00:25:21.326
+particular,
+
+408
+00:25:22.186 --> 00:25:25.186
+data derived from electronic health records.
+
+409
+00:25:25.286 --> 00:25:28.326
+So my talk is going to be divided into
+
+410
+00:25:29.206 --> 00:25:33.106
+two broad sections. The first, I'm going to talk about how we go
+
+411
+00:25:33.206 --> 00:25:37.186
+about curating, extracting research-ready data
+
+412
+00:25:37.606 --> 00:25:41.466
+from electronic health records, and then move on from there to
+
+413
+00:25:41.706 --> 00:25:44.966
+how that curation approach can be
+
+414
+00:25:45.006 --> 00:25:48.166
+applied to supporting clinical trials.
+
+415
+00:25:51.026 --> 00:25:54.126
+To amplify on what Rebecca
+
+416
+00:25:54.986 --> 00:25:58.466
+discussed previously, there are a variety of forms
+
+417
+00:25:58.706 --> 00:26:02.546
+of real-world data, data relating to patient health
+
+418
+00:26:02.626 --> 00:26:04.786
+status, routinely collected
+
+419
+00:26:06.486 --> 00:26:10.126
+in a variety of ways. And my focus is going to be on electronic health
+
+420
+00:26:10.206 --> 00:26:14.166
+records, but for completeness, I'm highlighting some of the other
+
+421
+00:26:14.226 --> 00:26:15.026
+sources here.
+
+422
+00:26:17.386 --> 00:26:21.026
+Why are people interested in EHRs as a
+
+423
+00:26:21.086 --> 00:26:24.706
+data resource for clinical research?
+
+424
+00:26:25.665 --> 00:26:27.306
+Rich source of patient-level data.
+
+425
+00:26:28.286 --> 00:26:31.386
+It integrates multiple data sources, radiology,
+
+426
+00:26:31.586 --> 00:26:34.886
+genomics, laboratory, clinical, pathologic.
+
+427
+00:26:35.666 --> 00:26:39.186
+The documentation happens in real time, so you can actually get a
+
+428
+00:26:39.286 --> 00:26:43.186
+very current picture of a patient
+
+429
+00:26:43.306 --> 00:26:45.226
+journey through the electronic health record.
+
+430
+00:26:45.866 --> 00:26:49.856
+The information's digitized, so it's ready to be curated,
+
+431
+00:26:49.946 --> 00:26:53.026
+to be analyzed in its native form.
+
+432
+00:26:54.126 --> 00:26:57.586
+Because it's part of the routine clinical care
+
+433
+00:26:58.366 --> 00:27:01.986
+workflow, EHR data as a real-world data source
+
+434
+00:27:02.486 --> 00:27:06.386
+is really great for understanding how care is delivered.
+
+435
+00:27:07.186 --> 00:27:11.166
+And finally, in terms of representativeness, it's well known
+
+436
+00:27:11.486 --> 00:27:15.306
+that the patients who take part in traditional clinical trials tend
+
+437
+00:27:15.386 --> 00:27:18.866
+to not be representative of the overall patient population.
+
+438
+00:27:19.626 --> 00:27:22.886
+Real-world data, on the other hand, has the potential to be fully
+
+439
+00:27:22.986 --> 00:27:23.746
+representative.
+
+440
+00:27:25.866 --> 00:27:29.446
+So when I think about the types of data that could be
+
+441
+00:27:29.486 --> 00:27:33.046
+obtained in the electronic health record, and this relates to how we
+
+442
+00:27:33.126 --> 00:27:36.726
+curate those data, there are three broad types of data.
+
+443
+00:27:37.146 --> 00:27:40.246
+One are the structured data that is entered as numbers,
+
+444
+00:27:40.646 --> 00:27:44.006
+drop-down fields, laboratory values, and so forth.
+
+445
+00:27:44.506 --> 00:27:46.806
+There's unstructured EHR data that
+
+446
+00:27:47.626 --> 00:27:50.046
+finds its way in through physician narratives
+
+447
+00:27:50.886 --> 00:27:53.426
+and reports of radiology and so forth.
+
+448
+00:27:54.606 --> 00:27:56.346
+And then there are external data sources,
+
+449
+00:27:57.206 --> 00:27:57.826
+like
+
+450
+00:27:58.746 --> 00:28:02.226
+genomic data that are performed in a
+
+451
+00:28:02.306 --> 00:28:06.046
+third-party laboratory. They might be sent in as
+
+452
+00:28:06.106 --> 00:28:09.486
+PDFs and integrated into the EHR.
+
+453
+00:28:10.286 --> 00:28:13.986
+There are claims data that are not typically part of the EHR.
+
+454
+00:28:14.006 --> 00:28:17.666
+There's mortality data from obituaries that are used to
+
+455
+00:28:18.126 --> 00:28:22.036
+supplement mortality variables when EHRs are used for
+
+456
+00:28:22.106 --> 00:28:24.946
+research that come from external sources.
+
+457
+00:28:25.276 --> 00:28:29.246
+And through tokenization and other methods, these can be linked with
+
+458
+00:28:29.366 --> 00:28:30.586
+EHR data.
+
+459
+00:28:32.006 --> 00:28:35.346
+Now, in terms of the unstructured EHR data, this is the biggest nut to crack,
+
+460
+00:28:36.106 --> 00:28:39.926
+because it requires interpretation of data
+
+461
+00:28:39.946 --> 00:28:41.726
+that are not research-ready.
+
+462
+00:28:42.866 --> 00:28:46.186
+And there are three broad categories, and this is a very
+
+463
+00:28:46.226 --> 00:28:49.826
+rapidly evolving field. There are three ways that these data are
+
+464
+00:28:49.886 --> 00:28:53.346
+typically curated today. One, shown on the bottom, is human
+
+465
+00:28:53.366 --> 00:28:56.946
+abstraction. This has been historically the gold standard.
+
+466
+00:28:57.986 --> 00:29:01.326
+A person reading a chart and turning a
+
+467
+00:29:01.406 --> 00:29:04.626
+sentence into a data element ready for analysis.
+
+468
+00:29:06.006 --> 00:29:06.366
+There are
+
+469
+00:29:07.386 --> 00:29:11.286
+machine learning approaches that are applied to
+
+470
+00:29:12.226 --> 00:29:15.286
+basically natural language process
+
+471
+00:29:16.426 --> 00:29:19.846
+reading of charts, and the machine learning
+
+472
+00:29:19.946 --> 00:29:23.226
+algorithms are trained and
+
+473
+00:29:23.286 --> 00:29:24.746
+tested against
+
+474
+00:29:25.766 --> 00:29:29.226
+a gold standard data set that has been human
+
+475
+00:29:29.286 --> 00:29:33.126
+curated. And then more recently, the application of large language
+
+476
+00:29:33.246 --> 00:29:36.646
+models. So being able to prompt the machine with
+
+477
+00:29:37.986 --> 00:29:41.956
+routine conversational language to give instructions
+
+478
+00:29:42.246 --> 00:29:45.806
+for what the machine should do in terms of reading the chart and pulling out
+
+479
+00:29:46.006 --> 00:29:49.646
+information, again, requiring validation of the approach.
+
+480
+00:29:50.566 --> 00:29:52.866
+So how do we
+
+481
+00:29:53.926 --> 00:29:57.726
+assess the quality of real-world data obtained from EHRs?
+
+482
+00:29:57.966 --> 00:30:01.826
+This is absolutely critical for minimizing bias as
+
+483
+00:30:01.886 --> 00:30:05.736
+much as you can related to the data that are
+
+484
+00:30:05.786 --> 00:30:08.186
+obtained. So there's questions of reliability.
+
+485
+00:30:08.206 --> 00:30:11.236
+Is that data element actually what was
+
+486
+00:30:11.986 --> 00:30:15.786
+documented in the chart? Do two methods of
+
+487
+00:30:15.846 --> 00:30:19.546
+interpretation or two interpreters over time come up with the
+
+488
+00:30:19.626 --> 00:30:23.278
+same data point?For that
+
+489
+00:30:23.298 --> 00:30:24.398
+particular parameter.
+
+490
+00:30:25.258 --> 00:30:29.218
+How relevant is the data in the EHR to the research
+
+491
+00:30:29.318 --> 00:30:32.778
+question? You'll hear a lot about fitness for purpose, and that's absolutely
+
+492
+00:30:32.878 --> 00:30:36.658
+critical in understanding whether a real-world data source is
+
+493
+00:30:36.698 --> 00:30:40.518
+appropriate to be integrated with clinical trial data.
+
+494
+00:30:41.578 --> 00:30:44.848
+There's issues of completeness and missingness.
+
+495
+00:30:45.458 --> 00:30:48.658
+Sometimes data are simply not documented.
+
+496
+00:30:49.178 --> 00:30:52.898
+Sometimes they are documented, but it's
+
+497
+00:30:53.038 --> 00:30:54.458
+incomplete documentation.
+
+498
+00:30:55.578 --> 00:30:59.258
+How representative is the patient population in the real-world data
+
+499
+00:30:59.338 --> 00:31:02.318
+source? And finally, provenance is really important,
+
+500
+00:31:02.618 --> 00:31:06.578
+especially as you get into regulatory use cases where
+
+501
+00:31:06.598 --> 00:31:10.298
+the FDA would like to have the ability to trace every data
+
+502
+00:31:10.418 --> 00:31:14.058
+element that is submitted back to its source document.
+
+503
+00:31:14.188 --> 00:31:18.018
+And not all real-world data sources have complete provenance, but this
+
+504
+00:31:18.078 --> 00:31:19.478
+is pretty important.
+
+505
+00:31:20.998 --> 00:31:24.218
+So a number of frameworks have been proposed for how to go about
+
+506
+00:31:24.278 --> 00:31:27.698
+assessing the quality of real-world data, and in
+
+507
+00:31:27.738 --> 00:31:31.678
+particular, real-world data that is obtained by
+
+508
+00:31:31.698 --> 00:31:35.338
+machines, whether it's large language models,
+
+509
+00:31:35.758 --> 00:31:38.348
+whether it is machine learning approaches.
+
+510
+00:31:38.718 --> 00:31:41.178
+And here's one approach here
+
+511
+00:31:42.198 --> 00:31:45.468
+that looks at a variety of different
+
+512
+00:31:46.478 --> 00:31:48.748
+metrics for assessing data quality.
+
+513
+00:31:49.398 --> 00:31:52.178
+One being data quality at the variable level.
+
+514
+00:31:52.978 --> 00:31:56.418
+One being verification checks, a reality check of
+
+515
+00:31:56.478 --> 00:32:00.198
+whether the cohort-level variable makes
+
+516
+00:32:00.278 --> 00:32:03.938
+sense. Are there cases where a
+
+517
+00:32:03.948 --> 00:32:05.158
+diagnosis date
+
+518
+00:32:05.978 --> 00:32:08.998
+is coming after the date of metastasis?
+
+519
+00:32:09.008 --> 00:32:12.758
+That doesn't make intuitive sense, and that's a type of
+
+520
+00:32:12.958 --> 00:32:16.578
+reference check that could be used to assess the quality of the
+
+521
+00:32:16.598 --> 00:32:20.318
+curation method. And then finally, there's replication and benchmarking
+
+522
+00:32:20.598 --> 00:32:24.118
+analyses. I'll show an example of that where you take the
+
+523
+00:32:24.238 --> 00:32:27.858
+overall analysis of the curated
+
+524
+00:32:28.078 --> 00:32:28.438
+data
+
+525
+00:32:29.458 --> 00:32:33.298
+and do a reality check on its
+
+526
+00:32:33.307 --> 00:32:37.298
+performance against some benchmark, perhaps the control
+
+527
+00:32:37.378 --> 00:32:39.698
+arm of a randomized clinical trial.
+
+528
+00:32:40.178 --> 00:32:40.738
+Or
+
+529
+00:32:41.758 --> 00:32:44.798
+both the experimental and control arm of a randomized clinical trial
+
+530
+00:32:45.838 --> 00:32:49.798
+if that experimental drug is now
+
+531
+00:32:49.838 --> 00:32:51.478
+licensed for routine use.
+
+532
+00:32:52.438 --> 00:32:55.898
+So these different types of metrics for
+
+533
+00:32:55.958 --> 00:32:57.038
+assessing quality
+
+534
+00:32:58.098 --> 00:33:01.978
+are operationalized by comparing to the gold standard,
+
+535
+00:33:02.578 --> 00:33:05.048
+by comparing to a human abstractor,
+
+536
+00:33:05.878 --> 00:33:09.828
+or comparing two abstractors' work to each other and
+
+537
+00:33:09.878 --> 00:33:11.958
+coming up with scores for data quality.
+
+538
+00:33:12.798 --> 00:33:16.318
+And different parameters might require different levels
+
+539
+00:33:16.798 --> 00:33:20.618
+of performance to be fit for use for a particular use
+
+540
+00:33:20.678 --> 00:33:24.278
+case, a particular context. So here's one example that's been
+
+541
+00:33:24.318 --> 00:33:28.278
+published. This is looking at the variable of real-world
+
+542
+00:33:28.378 --> 00:33:32.198
+progression-free survival. So progression of disease based
+
+543
+00:33:32.278 --> 00:33:35.638
+on clinician documentation in the electronic health record,
+
+544
+00:33:36.118 --> 00:33:39.998
+comparing human abstraction of the date of progression to
+
+545
+00:33:40.398 --> 00:33:41.158
+an LLM.
+
+546
+00:33:42.438 --> 00:33:46.158
+Looking at-- this is Flatiron data across a number of
+
+547
+00:33:46.198 --> 00:33:47.668
+different diseases,
+
+548
+00:33:48.518 --> 00:33:52.418
+basically showing that the LLM-extracted data, it looks like single
+
+549
+00:33:52.538 --> 00:33:55.878
+curves on each of these plots, but they're actually two curves that are
+
+550
+00:33:55.938 --> 00:33:57.118
+superimposed on each other,
+
+551
+00:33:58.678 --> 00:34:02.498
+showing that the performance of the LLM model for this particular
+
+552
+00:34:02.578 --> 00:34:06.518
+variable at the cohort level has a
+
+553
+00:34:06.578 --> 00:34:09.419
+high level of reliability.
+
+554
+00:34:11.138 --> 00:34:14.419
+So taking a step back now, you're able to curate
+
+555
+00:34:14.798 --> 00:34:18.178
+electronic health record data, both the structured data through
+
+556
+00:34:18.238 --> 00:34:21.819
+harmonization to a data model, the unstructured data through a
+
+557
+00:34:21.859 --> 00:34:22.998
+variety of methods.
+
+558
+00:34:23.899 --> 00:34:27.498
+What can those data be used for? Well, here's an example
+
+559
+00:34:27.778 --> 00:34:29.698
+of a clinical question.
+
+560
+00:34:30.558 --> 00:34:34.238
+Can checkpoint inhibitor therapy be discontinued after a
+
+561
+00:34:34.319 --> 00:34:38.129
+prolonged period of response in patients with non-small cell lung cancer?
+
+562
+00:34:39.198 --> 00:34:42.919
+The result being that the curves of fixed duration and
+
+563
+00:34:43.138 --> 00:34:46.218
+indefinite treatment in real-world cohorts
+
+564
+00:34:47.558 --> 00:34:48.538
+are superimposable.
+
+565
+00:34:49.419 --> 00:34:53.359
+So a clinically relevant question being asked of an
+
+566
+00:34:53.399 --> 00:34:55.278
+EHR-derived real-world data set.
+
+567
+00:34:57.078 --> 00:35:00.818
+And those data were largely human
+
+568
+00:35:00.898 --> 00:35:03.838
+abstracted. What about moving to
+
+569
+00:35:03.978 --> 00:35:05.998
+LLM-extracted EHR data?
+
+570
+00:35:06.858 --> 00:35:10.518
+So in this experiment, these are patients with bladder cancer who
+
+571
+00:35:10.618 --> 00:35:14.298
+technically were not eligible to receive cisplatinum because of poor renal
+
+572
+00:35:14.338 --> 00:35:18.018
+function, but underwent adjuvant therapy or neoadjuvant
+
+573
+00:35:18.078 --> 00:35:21.998
+therapy with cisplatinum nevertheless in the real
+
+574
+00:35:22.078 --> 00:35:22.398
+world.
+
+575
+00:35:23.388 --> 00:35:23.838
+And this
+
+576
+00:35:24.878 --> 00:35:28.598
+study showed that, in fact, in real-world practice,
+
+577
+00:35:29.138 --> 00:35:33.068
+many patients who are technically not eligible to receive
+
+578
+00:35:33.068 --> 00:35:34.958
+cisplatinum do receive cisplatinum.
+
+579
+00:35:35.558 --> 00:35:39.378
+And when they do, those patients that do actually have better
+
+580
+00:35:39.458 --> 00:35:43.078
+outcomes than patients who did not receive cisplatinum.
+
+581
+00:35:43.808 --> 00:35:47.598
+Suggesting that there might be characteristics that ought to be
+
+582
+00:35:47.658 --> 00:35:48.518
+identifiable
+
+583
+00:35:49.598 --> 00:35:53.448
+for patients that on paper shouldn't receive a therapy but
+
+584
+00:35:53.498 --> 00:35:57.458
+might benefit from that therapy and, in fact, should receive it
+
+585
+00:35:58.398 --> 00:36:01.958
+in variance to what historically has
+
+586
+00:36:01.978 --> 00:36:04.218
+been considered as guideline approach.
+
+587
+00:36:06.098 --> 00:36:07.718
+Now moving on to another way of
+
+588
+00:36:08.618 --> 00:36:12.558
+extracting variables, in this case, using machine learning
+
+589
+00:36:12.778 --> 00:36:16.128
+algorithms. I'm going to show a series of three slides
+
+590
+00:36:16.898 --> 00:36:19.848
+in a single experiment looking at patients with
+
+591
+00:36:20.518 --> 00:36:23.910
+early-stage non-small cell lung cancerAnd asking
+
+592
+00:36:23.990 --> 00:36:27.610
+questions around the use of neoadjuvant therapy
+
+593
+00:36:28.090 --> 00:36:31.870
+and adjuvant therapy in the face of published
+
+594
+00:36:31.970 --> 00:36:35.910
+data suggesting that there are benefits in terms of patient outcome
+
+595
+00:36:35.970 --> 00:36:37.030
+from this approach.
+
+596
+00:36:38.430 --> 00:36:42.070
+So what this first slide shows is simply a pattern of care
+
+597
+00:36:42.830 --> 00:36:43.490
+experiment,
+
+598
+00:36:44.550 --> 00:36:45.470
+suggesting that
+
+599
+00:36:46.570 --> 00:36:49.790
+many patients who should be receiving genomic
+
+600
+00:36:49.910 --> 00:36:53.170
+analysis of their tumors are not in the left panel.
+
+601
+00:36:53.830 --> 00:36:57.790
+And in the right panel, showing that the implementation
+
+602
+00:36:57.810 --> 00:37:01.630
+of neoadjuvant and adjuvant therapy, in this case
+
+603
+00:37:01.790 --> 00:37:04.590
+with immune oncology therapy,
+
+604
+00:37:05.410 --> 00:37:08.790
+has been increasing over the past several years, but is
+
+605
+00:37:08.890 --> 00:37:12.570
+still at low levels. So there's perhaps an
+
+606
+00:37:12.610 --> 00:37:13.990
+adoption issue.
+
+607
+00:37:15.270 --> 00:37:18.170
+Second of all, what about outcomes in the real world?
+
+608
+00:37:18.930 --> 00:37:21.090
+And this slide shows the analysis,
+
+609
+00:37:21.970 --> 00:37:23.810
+looking at distant
+
+610
+00:37:23.820 --> 00:37:27.490
+metastasis-free survival of the
+
+611
+00:37:27.530 --> 00:37:31.100
+patients who received neoadjuvant therapy and adjuvant therapy,
+
+612
+00:37:31.670 --> 00:37:34.250
+showing excellent outcomes in those patients.
+
+613
+00:37:34.790 --> 00:37:38.780
+And as a reality check, or a pressure test of the
+
+614
+00:37:38.850 --> 00:37:42.370
+data, those patients with earlier stage disease did better
+
+615
+00:37:42.750 --> 00:37:45.770
+than patients with later stage disease, as you would expect.
+
+616
+00:37:47.510 --> 00:37:51.170
+And then as a sensitivity analysis, the authors asked the
+
+617
+00:37:51.210 --> 00:37:51.700
+question,
+
+618
+00:37:52.590 --> 00:37:56.050
+among those patients who received neoadjuvant
+
+619
+00:37:56.190 --> 00:38:00.090
+therapy, was there additional benefit to giving adjuvant
+
+620
+00:38:00.100 --> 00:38:03.410
+therapy after surgery in addition to that neoadjuvant therapy?
+
+621
+00:38:03.950 --> 00:38:07.410
+And this analysis suggests that, in fact, there isn't evidence
+
+622
+00:38:07.870 --> 00:38:11.510
+that reinstituting the therapy in the
+
+623
+00:38:11.570 --> 00:38:13.210
+adjuvant setting benefits.
+
+624
+00:38:15.610 --> 00:38:19.430
+So those are just some examples of what you can do with
+
+625
+00:38:19.530 --> 00:38:22.970
+real-world data derived from EHRs and showing
+
+626
+00:38:24.470 --> 00:38:25.010
+some,
+
+627
+00:38:26.170 --> 00:38:29.970
+in tabular form, something that Rebecca presented
+
+628
+00:38:30.050 --> 00:38:30.610
+previously,
+
+629
+00:38:31.550 --> 00:38:34.950
+what she called clinical trial data and
+
+630
+00:38:35.490 --> 00:38:36.350
+observational data?
+
+631
+00:38:36.830 --> 00:38:37.210
+Real-world data.
+
+632
+00:38:37.350 --> 00:38:39.630
+Real-world data as the second category.
+
+633
+00:38:39.730 --> 00:38:43.010
+I'm calling retrospective data, think of that as the real-world data, and
+
+634
+00:38:43.070 --> 00:38:46.150
+prospective data, data you obtain in a clinical trial.
+
+635
+00:38:46.810 --> 00:38:50.670
+Highlighting in a simplified manner that retrospective
+
+636
+00:38:50.710 --> 00:38:50.930
+data,
+
+637
+00:38:51.910 --> 00:38:55.610
+off-the-shelf ability to use it, spinning up a clinical
+
+638
+00:38:55.690 --> 00:38:59.310
+trial, obviously, takes much longer, is much more
+
+639
+00:38:59.410 --> 00:38:59.910
+costly.
+
+640
+00:39:01.030 --> 00:39:04.870
+Real-world data, retrospective data, higher level of representativeness,
+
+641
+00:39:05.410 --> 00:39:09.050
+reflective of practice in routine practice,
+
+642
+00:39:09.690 --> 00:39:11.150
+larger sample sizes.
+
+643
+00:39:12.090 --> 00:39:15.310
+On the other hand, clinical trial data, prospective data,
+
+644
+00:39:16.070 --> 00:39:20.010
+give you much better precision of the cohorts, being able
+
+645
+00:39:20.030 --> 00:39:22.790
+to pre-specify inclusion and exclusion criteria,
+
+646
+00:39:24.270 --> 00:39:27.550
+list all the covariates you're interested in and make sure you collect them,
+
+647
+00:39:28.610 --> 00:39:32.250
+measure outcomes in pre-specified ways like RECIST
+
+648
+00:39:32.310 --> 00:39:36.230
+criteria for tumor measurements in solid tumors, and the
+
+649
+00:39:36.270 --> 00:39:39.610
+ability to audit query sites and minimize
+
+650
+00:39:39.670 --> 00:39:43.150
+missingness of data. So pros and cons.
+
+651
+00:39:45.190 --> 00:39:48.730
+So moving on now to how real-world data can
+
+652
+00:39:48.850 --> 00:39:51.730
+support clinical trials, there are a lot of ways.
+
+653
+00:39:52.530 --> 00:39:56.510
+One way is you could look at your site or across the
+
+654
+00:39:56.570 --> 00:39:59.950
+country at real-world data from electronic health records to
+
+655
+00:39:59.990 --> 00:40:03.570
+determine whether it's feasible to do a clinical trial in a
+
+656
+00:40:03.650 --> 00:40:07.550
+particular population and how long it might take based on
+
+657
+00:40:07.610 --> 00:40:10.450
+how many eligible patients there are per unit time.
+
+658
+00:40:11.230 --> 00:40:14.650
+It can help you design the study in terms of what the inclusion and
+
+659
+00:40:14.730 --> 00:40:18.530
+exclusion criteria ought to be. Select sites based on
+
+660
+00:40:18.630 --> 00:40:21.290
+what sites have particular patient populations.
+
+661
+00:40:22.030 --> 00:40:26.010
+Match patients to the study eligibility based
+
+662
+00:40:26.130 --> 00:40:27.959
+on EHR data
+
+663
+00:40:28.850 --> 00:40:30.410
+and which can be automated.
+
+664
+00:40:32.150 --> 00:40:35.630
+Primary data collection. Many of the data necessary for clinical
+
+665
+00:40:35.710 --> 00:40:39.209
+trials exist in the EHR and through
+
+666
+00:40:39.230 --> 00:40:43.030
+automation, can be directly transferred into an
+
+667
+00:40:43.050 --> 00:40:45.860
+electronic data capture system for a clinical trial,
+
+668
+00:40:47.730 --> 00:40:51.630
+saving the manual transcription that often takes place in clinical
+
+669
+00:40:51.710 --> 00:40:52.210
+trials.
+
+670
+00:40:53.410 --> 00:40:57.250
+Long-term follow-up from real-world data sources could
+
+671
+00:40:57.290 --> 00:40:57.970
+enable
+
+672
+00:40:59.630 --> 00:41:03.560
+finding out mortality or resource utilization following
+
+673
+00:41:03.590 --> 00:41:06.730
+the completion of a shorter clinical trial.
+
+674
+00:41:08.610 --> 00:41:11.930
+And then with regard to the potential for
+
+675
+00:41:12.550 --> 00:41:14.510
+external control arm construction,
+
+676
+00:41:15.630 --> 00:41:18.010
+could be used to both provide
+
+677
+00:41:18.030 --> 00:41:21.650
+context for a single-arm clinical trial
+
+678
+00:41:22.490 --> 00:41:26.010
+or a formal comparison as an external control arm.
+
+679
+00:41:26.400 --> 00:41:30.350
+And then finally, there's a lot coming out now, a lot of interest in
+
+680
+00:41:30.410 --> 00:41:33.850
+creating digital twins from EHR data to
+
+681
+00:41:33.950 --> 00:41:37.400
+simulate experiments, intervention
+
+682
+00:41:37.470 --> 00:41:38.180
+experiments,
+
+683
+00:41:39.070 --> 00:41:42.530
+using real-world data and help predict
+
+684
+00:41:42.610 --> 00:41:46.310
+outcomes that could help you then design clinical experiments.
+
+685
+00:41:47.510 --> 00:41:51.310
+So a couple of examples here. This is a study
+
+686
+00:41:51.430 --> 00:41:55.050
+we did using real-world data to
+
+687
+00:41:55.130 --> 00:41:58.800
+model the impact of loosening inclusion and exclusion
+
+688
+00:41:58.890 --> 00:42:02.600
+criteria across a number of different diseases.
+
+689
+00:42:03.210 --> 00:42:07.090
+And we found that by loosening criteria just a
+
+690
+00:42:07.130 --> 00:42:11.090
+modest amount, you could increase the eligible population size by
+
+691
+00:42:11.130 --> 00:42:14.890
+78%. The strongest impact
+
+692
+00:42:14.970 --> 00:42:18.670
+was among patients and patient groups that are commonly
+
+693
+00:42:18.710 --> 00:42:21.230
+not well represented in clinical trials.
+
+694
+00:42:23.770 --> 00:42:26.850
+In another study, we looked at
+
+695
+00:42:27.310 --> 00:42:29.130
+leveraging the ability to curate
+
+696
+00:42:29.210 --> 00:42:32.890
+dataIn a number of ways, in a
+
+697
+00:42:33.010 --> 00:42:36.970
+study in collaboration with J&amp;J, who was the sponsor of
+
+698
+00:42:37.010 --> 00:42:40.730
+this study in patients with multiple myeloma receiving
+
+699
+00:42:40.750 --> 00:42:44.090
+daratumumab, to understand the
+
+700
+00:42:44.150 --> 00:42:47.730
+feasibility of patient ascertainment, direct
+
+701
+00:42:47.790 --> 00:42:51.450
+transfer of clinical trial data from the EHR to
+
+702
+00:42:51.610 --> 00:42:54.630
+EDCs, and then the centralized
+
+703
+00:42:54.650 --> 00:42:58.630
+abstraction of unstructured notes to reduce
+
+704
+00:42:58.690 --> 00:43:01.090
+site burden and increase efficiency.
+
+705
+00:43:01.770 --> 00:43:05.470
+The bottom line was that patients were rapidly accrued to this pilot
+
+706
+00:43:05.610 --> 00:43:05.950
+study.
+
+707
+00:43:07.150 --> 00:43:10.490
+30% of the patients were either Black or Hispanic,
+
+708
+00:43:10.830 --> 00:43:14.770
+suggesting that perhaps centralized patient
+
+709
+00:43:14.830 --> 00:43:17.050
+ascertainment and prompting to the sites
+
+710
+00:43:18.030 --> 00:43:21.970
+assisted with representativeness, and the level of
+
+711
+00:43:22.050 --> 00:43:24.390
+data missingness was very low.
+
+712
+00:43:25.890 --> 00:43:26.790
+Transfer time,
+
+713
+00:43:27.830 --> 00:43:31.350
+receipt of data in the EDC was rapid,
+
+714
+00:43:32.150 --> 00:43:35.389
+and resolution of queries was also very rapid using this
+
+715
+00:43:35.430 --> 00:43:36.170
+platform.
+
+716
+00:43:37.870 --> 00:43:41.770
+I'm now going to give another example now, moving on to
+
+717
+00:43:41.870 --> 00:43:44.110
+the external control arm use case.
+
+718
+00:43:45.050 --> 00:43:48.330
+This is hot off the press, and the presentation's
+
+719
+00:43:48.370 --> 00:43:51.850
+available online from the Friends of Cancer Research,
+
+720
+00:43:52.870 --> 00:43:56.070
+where a pre-competitive experiment
+
+721
+00:43:56.130 --> 00:43:59.890
+was supported by the Friends of Cancer Research to
+
+722
+00:43:59.950 --> 00:44:03.410
+bring together a variety of data
+
+723
+00:44:04.470 --> 00:44:07.830
+suppliers, if you will, of real-world data to construct
+
+724
+00:44:08.850 --> 00:44:12.670
+external control arms and explore the feasibility
+
+725
+00:44:12.710 --> 00:44:14.810
+of doing so and what the pitfalls might be.
+
+726
+00:44:16.470 --> 00:44:20.390
+The target population was the RESOLVE clinical
+
+727
+00:44:20.470 --> 00:44:24.110
+trial. That was a randomized study in metastatic
+
+728
+00:44:24.790 --> 00:44:28.330
+adenocarcinoma of the pancreas, patients receiving gemcitabine and
+
+729
+00:44:28.370 --> 00:44:32.290
+nab-paclitaxel, and the external data cohorts were
+
+730
+00:44:32.330 --> 00:44:36.150
+constructed and compared to the control arm of the
+
+731
+00:44:36.170 --> 00:44:40.010
+RESOLVE study. The statistical analysis plan,
+
+732
+00:44:40.250 --> 00:44:40.830
+matching
+
+733
+00:44:41.630 --> 00:44:45.170
+algorithms were all determined a priori.
+
+734
+00:44:45.810 --> 00:44:49.190
+There was adjustment for
+
+735
+00:44:49.270 --> 00:44:51.250
+confounding in all of the datasets
+
+736
+00:44:52.130 --> 00:44:55.030
+with propensity scoring, and then
+
+737
+00:44:56.330 --> 00:45:00.210
+survival curves were generated for each
+
+738
+00:45:00.330 --> 00:45:02.370
+of the datasets that participated.
+
+739
+00:45:03.630 --> 00:45:07.510
+I'm going to run through a series of slides extremely quickly in the interest of
+
+740
+00:45:07.610 --> 00:45:10.370
+time and get to the punchline, but
+
+741
+00:45:11.270 --> 00:45:15.070
+suffice it to say that different data sources, shown here as
+
+742
+00:45:15.150 --> 00:45:18.990
+A through H, had different levels of attrition when going through the
+
+743
+00:45:19.050 --> 00:45:22.550
+inclusion and exclusion criteria for different variables.
+
+744
+00:45:22.910 --> 00:45:26.850
+Some data sources have certain variables available, others did not,
+
+745
+00:45:28.170 --> 00:45:30.830
+both laboratory and clinical variables.
+
+746
+00:45:33.050 --> 00:45:36.890
+After balancing, most of the data sources did a pretty darn good
+
+747
+00:45:37.050 --> 00:45:40.670
+job balancing the populations for analysis through
+
+748
+00:45:40.730 --> 00:45:41.830
+statistical means,
+
+749
+00:45:43.070 --> 00:45:45.980
+and the characteristics
+
+750
+00:45:46.130 --> 00:45:50.020
+post-balancing were generally good,
+
+751
+00:45:50.050 --> 00:45:53.590
+and you can see here in the boxes, there were some
+
+752
+00:45:53.650 --> 00:45:57.350
+that were less aligned, if you will, with
+
+753
+00:45:57.550 --> 00:46:01.050
+the RESOLVE trial. The question being for
+
+754
+00:46:01.430 --> 00:46:05.410
+further analysis is how much do the variables
+
+755
+00:46:05.470 --> 00:46:09.410
+that could not be matched well contribute to the outcomes of
+
+756
+00:46:09.470 --> 00:46:12.690
+the experiment? And here's the punchline.
+
+757
+00:46:13.830 --> 00:46:17.510
+Six datasets were able to be matched and
+
+758
+00:46:17.990 --> 00:46:19.170
+curves generated.
+
+759
+00:46:19.990 --> 00:46:23.950
+For the most part, the curves performed very well when
+
+760
+00:46:23.990 --> 00:46:26.390
+compared to the control arm of the RESOLVE trial,
+
+761
+00:46:27.230 --> 00:46:30.550
+and further analyses are being undertaken to
+
+762
+00:46:30.610 --> 00:46:34.350
+understand which variables might have contributed the
+
+763
+00:46:34.430 --> 00:46:34.810
+most
+
+764
+00:46:35.610 --> 00:46:39.350
+to the situations where the curves did not align
+
+765
+00:46:39.470 --> 00:46:39.970
+as well.
+
+766
+00:46:42.250 --> 00:46:43.950
+So, to sum up,
+
+767
+00:46:44.890 --> 00:46:48.850
+prospective clinical trials, randomized clinical trials are
+
+768
+00:46:48.890 --> 00:46:49.690
+the gold standard.
+
+769
+00:46:50.909 --> 00:46:53.630
+However, access to real-world data,
+
+770
+00:46:54.470 --> 00:46:57.270
+curation methodologies, and
+
+771
+00:46:57.750 --> 00:47:01.350
+sophisticated methods for analyzing those data have
+
+772
+00:47:01.390 --> 00:47:04.950
+matured to the point where real-world evidence has really come of age
+
+773
+00:47:06.770 --> 00:47:10.130
+and can support clinical trials in a variety of ways.
+
+774
+00:47:12.310 --> 00:47:16.190
+It's key to pay attention to data reliability, relevance,
+
+775
+00:47:16.680 --> 00:47:20.670
+the source of the data, and its provenance when assessing
+
+776
+00:47:20.710 --> 00:47:21.700
+fitness for purpose.
+
+777
+00:47:22.790 --> 00:47:26.290
+And real-world data overall, because all patients
+
+778
+00:47:27.350 --> 00:47:29.970
+participate in the generation of real-world data
+
+779
+00:47:30.510 --> 00:47:34.070
+if EHRs are used for their care,
+
+780
+00:47:35.450 --> 00:47:38.930
+allows broader participation in clinical research,
+
+781
+00:47:39.270 --> 00:47:43.250
+ensuring representative patient populations and results
+
+782
+00:47:43.310 --> 00:47:45.290
+that are generalizable. Thank you.
+
+783
+00:47:53.050 --> 00:47:55.290
+Thanks, Neil. A great summary
+
+784
+00:47:56.370 --> 00:48:00.150
+of the EHR.
+
+785
+00:48:02.650 --> 00:48:03.590
+Let me see how we
+
+786
+00:48:04.770 --> 00:48:06.190
+get to the next...
+
+787
+00:48:07.590 --> 00:48:09.150
+How do we get out of this? Thank you.
+
+788
+00:48:23.170 --> 00:48:25.210
+I think it might be this one.
+
+789
+00:48:27.730 --> 00:48:27.950
+Let's
+
+790
+00:48:28.010 --> 00:48:34.698
+see.Okay.
+
+791
+00:48:35.878 --> 00:48:36.218
+Thank you.
+
+792
+00:48:38.478 --> 00:48:40.958
+So I'm Peter O'Dwyer. I am
+
+793
+00:48:41.898 --> 00:48:44.338
+a medical oncologist at the University of Pennsylvania,
+
+794
+00:48:45.358 --> 00:48:47.618
+co-chair of the ECOG-ACRIN
+
+795
+00:48:48.458 --> 00:48:50.218
+Research Group, cancer research group.
+
+796
+00:48:50.978 --> 00:48:53.338
+And in this final talk,
+
+797
+00:48:54.338 --> 00:48:58.078
+we'll address the implementation of
+
+798
+00:48:59.758 --> 00:49:01.278
+a real world data study
+
+799
+00:49:02.398 --> 00:49:06.338
+as part of an
+
+800
+00:49:06.418 --> 00:49:08.358
+FDA collaboration.
+
+801
+00:49:09.438 --> 00:49:13.418
+And the idea here is that this study was performed
+
+802
+00:49:13.478 --> 00:49:14.798
+in the cooperative group.
+
+803
+00:49:20.298 --> 00:49:24.118
+So I'll address two issues here. One is
+
+804
+00:49:24.598 --> 00:49:25.598
+the real world data
+
+805
+00:49:26.438 --> 00:49:29.658
+from prospective studies, the rationale, and the
+
+806
+00:49:29.718 --> 00:49:33.478
+implementation. I'll just remind you of the
+
+807
+00:49:34.118 --> 00:49:35.898
+slide that Neil just showed
+
+808
+00:49:36.878 --> 00:49:38.998
+of prospective and retrospective.
+
+809
+00:49:40.198 --> 00:49:43.338
+This prospective analysis fits kind of in the middle
+
+810
+00:49:43.858 --> 00:49:46.878
+between the retrospective, which is the EHR,
+
+811
+00:49:47.818 --> 00:49:51.478
+and the clinical trial, which is ultimately the prospective.
+
+812
+00:49:52.238 --> 00:49:52.708
+This one,
+
+813
+00:49:53.778 --> 00:49:57.078
+as a prospective study, is conducted at the same time
+
+814
+00:49:57.998 --> 00:50:00.718
+as the clinical trial, and you'll see the rationale for that.
+
+815
+00:50:01.058 --> 00:50:04.818
+And secondly, talk about changes to the use
+
+816
+00:50:05.298 --> 00:50:06.518
+of the EHR
+
+817
+00:50:07.378 --> 00:50:07.758
+that
+
+818
+00:50:08.978 --> 00:50:10.368
+may be useful in
+
+819
+00:50:11.458 --> 00:50:14.558
+terms of developing high-quality data.
+
+820
+00:50:16.078 --> 00:50:19.838
+Now, Dr. Hubbard already showed the differences between the
+
+821
+00:50:19.858 --> 00:50:21.598
+phase III trial and the real world,
+
+822
+00:50:22.718 --> 00:50:26.018
+or phase IV, often referred to as phase IV studies.
+
+823
+00:50:26.838 --> 00:50:30.658
+The real world includes all patients who may benefit
+
+824
+00:50:30.718 --> 00:50:34.558
+from the treatment, not just those who can bench press 200 pounds.
+
+825
+00:50:35.958 --> 00:50:39.078
+Who are those patients? They're patients with variable performance
+
+826
+00:50:39.138 --> 00:50:42.538
+statuses. They have diversity. They live in different
+
+827
+00:50:42.598 --> 00:50:43.857
+environments.
+
+828
+00:50:45.318 --> 00:50:48.848
+They have comorbidities, and different economic
+
+829
+00:50:48.938 --> 00:50:52.218
+circumstances, all of which have been shown to
+
+830
+00:50:52.258 --> 00:50:55.678
+determine outcome of cancer treatments.
+
+831
+00:50:57.518 --> 00:51:01.338
+In the real world, as has been emphasized, missingness is a source of
+
+832
+00:51:01.378 --> 00:51:04.988
+bias, and that's something that we don't have in clinical
+
+833
+00:51:05.098 --> 00:51:05.578
+trials.
+
+834
+00:51:07.038 --> 00:51:09.558
+The interpretation of the real world data
+
+835
+00:51:10.718 --> 00:51:12.468
+has been shown and discussed,
+
+836
+00:51:13.838 --> 00:51:17.738
+but what's important to know is that only
+
+837
+00:51:17.898 --> 00:51:21.838
+3% to 7% of patients treated for cancer
+
+838
+00:51:21.898 --> 00:51:25.798
+are treated on clinical trials. So if you
+
+839
+00:51:25.918 --> 00:51:27.758
+want a picture of
+
+840
+00:51:29.418 --> 00:51:33.218
+the effect of these treatments in the whole population, you need to go
+
+841
+00:51:33.578 --> 00:51:34.798
+to the whole population.
+
+842
+00:51:37.238 --> 00:51:38.138
+The FDA
+
+843
+00:51:39.018 --> 00:51:42.338
+has been the prime mover of
+
+844
+00:51:42.878 --> 00:51:43.778
+analyzing
+
+845
+00:51:44.998 --> 00:51:48.178
+the effects of treatments that they approve
+
+846
+00:51:49.458 --> 00:51:53.138
+as new therapies for cancer in the real
+
+847
+00:51:53.178 --> 00:51:53.538
+world.
+
+848
+00:51:54.678 --> 00:51:58.198
+This started off with the 21st Century Cures Act in 2016,
+
+849
+00:51:58.698 --> 00:52:02.378
+and over the last decade, there have been, I think, seven
+
+850
+00:52:02.618 --> 00:52:06.478
+guidances of increasing specificity
+
+851
+00:52:07.418 --> 00:52:10.718
+from the FDA to help
+
+852
+00:52:10.758 --> 00:52:13.878
+define how these studies should be conducted.
+
+853
+00:52:14.248 --> 00:52:17.978
+And essentially, the studies in the real world, you could think of them
+
+854
+00:52:18.038 --> 00:52:19.498
+as registry trials.
+
+855
+00:52:20.378 --> 00:52:21.258
+That's essentially
+
+856
+00:52:22.098 --> 00:52:23.238
+what they are.
+
+857
+00:52:24.178 --> 00:52:27.558
+They have some characteristics that are slightly different, and we'll talk about
+
+858
+00:52:27.618 --> 00:52:31.147
+those, too. But the considerations are
+
+859
+00:52:31.198 --> 00:52:34.867
+underpinned by epidemiological design principles,
+
+860
+00:52:34.867 --> 00:52:38.498
+which we don't usually take into account because we don't have to.
+
+861
+00:52:38.538 --> 00:52:41.138
+We have all of the data in phase III trials.
+
+862
+00:52:43.258 --> 00:52:43.458
+The
+
+863
+00:52:44.598 --> 00:52:46.318
+FDA issued an RFA
+
+864
+00:52:47.338 --> 00:52:51.198
+directed to addressing gaps in knowledge that
+
+865
+00:52:51.938 --> 00:52:55.238
+limit the usefulness of real world data and real world evidence.
+
+866
+00:52:55.358 --> 00:52:56.748
+That was in 2023.
+
+867
+00:52:57.718 --> 00:53:01.058
+And it caused us in the cooperative
+
+868
+00:53:01.178 --> 00:53:04.678
+group to reappraise the role of the group
+
+869
+00:53:05.138 --> 00:53:06.578
+in therapeutic research.
+
+870
+00:53:07.518 --> 00:53:08.038
+Normally,
+
+871
+00:53:09.038 --> 00:53:12.838
+the studies in the group address themselves to phase II trials or phase
+
+872
+00:53:12.938 --> 00:53:13.698
+III trials,
+
+873
+00:53:15.698 --> 00:53:19.378
+often with registration intent. But that
+
+874
+00:53:20.418 --> 00:53:24.328
+further analysis, as shown in the red box here, was thought
+
+875
+00:53:24.358 --> 00:53:28.318
+to be a valuable contribution that we could make
+
+876
+00:53:28.378 --> 00:53:31.628
+with institutions that span the country,
+
+877
+00:53:32.438 --> 00:53:36.298
+including cancer centers, community sites, large and small,
+
+878
+00:53:37.198 --> 00:53:37.558
+and
+
+879
+00:53:39.078 --> 00:53:41.598
+an important geographic distribution.
+
+880
+00:53:43.978 --> 00:53:46.838
+So our proposal was very simple,
+
+881
+00:53:48.078 --> 00:53:50.818
+and reducing the phase III trial to its
+
+882
+00:53:51.058 --> 00:53:54.958
+simplest design of a novel therapy
+
+883
+00:53:54.998 --> 00:53:57.418
+versus the standard therapy.
+
+884
+00:53:58.578 --> 00:54:02.538
+You know that if the trial is positive and
+
+885
+00:54:02.578 --> 00:54:06.558
+it's successful, that that novel therapy can
+
+886
+00:54:06.678 --> 00:54:10.398
+then be approved by the FDA for use
+
+887
+00:54:12.078 --> 00:54:15.738
+outside clinical trials. Post-approval, there may
+
+888
+00:54:15.778 --> 00:54:19.748
+be real world data studies, there may be phase IV trials, and
+
+889
+00:54:19.798 --> 00:54:23.268
+they can come up with results, but how do you
+
+890
+00:54:23.318 --> 00:54:27.258
+interpret those results? To what do you compare the
+
+891
+00:54:27.318 --> 00:54:31.098
+results? So our thought was that in
+
+892
+00:54:31.158 --> 00:54:34.658
+order to provide databases that would be
+
+893
+00:54:34.778 --> 00:54:36.138
+collected robustly,
+
+894
+00:54:37.738 --> 00:54:41.458
+that one should collect real world data on the control
+
+895
+00:54:41.498 --> 00:54:44.098
+arm while the phase III trial is
+
+896
+00:54:44.158 --> 00:54:47.522
+ongoing.We identified
+
+897
+00:54:48.482 --> 00:54:52.462
+a study in ECOG-ACRIN in non-small cell lung cancer,
+
+898
+00:54:53.062 --> 00:54:55.462
+EA5182, that
+
+899
+00:54:57.022 --> 00:55:00.882
+seemed to serve the purpose of this
+
+900
+00:55:00.902 --> 00:55:04.722
+type of design. The trial is a randomized study of
+
+901
+00:55:04.762 --> 00:55:08.022
+osimertinib versus osimertinib plus
+
+902
+00:55:08.062 --> 00:55:11.622
+bevacizumab in patients with non-small cell lung
+
+903
+00:55:11.682 --> 00:55:15.672
+cancer harboring a mutation
+
+904
+00:55:15.782 --> 00:55:18.102
+in the EGF receptor.
+
+905
+00:55:19.922 --> 00:55:23.692
+The trial had just begun at the time that
+
+906
+00:55:24.822 --> 00:55:28.342
+we started this effort, so we were able to design in
+
+907
+00:55:28.462 --> 00:55:31.802
+parallel PRECOG 1702
+
+908
+00:55:32.502 --> 00:55:36.482
+and to register patients treated with
+
+909
+00:55:36.842 --> 00:55:37.762
+osimertinib
+
+910
+00:55:38.622 --> 00:55:42.262
+or osimertinib plus chemotherapy outside the confines
+
+911
+00:55:42.762 --> 00:55:45.722
+of a clinical trial. Why two arms here?
+
+912
+00:55:46.182 --> 00:55:49.862
+Well, just because at the time that we were planning an
+
+913
+00:55:49.982 --> 00:55:53.242
+osimertinib study, the FLORA II data for
+
+914
+00:55:53.342 --> 00:55:56.762
+osimertinib plus chemotherapy were starting to emerge,
+
+915
+00:55:57.302 --> 00:56:00.922
+showing a potential benefit for patients
+
+916
+00:56:01.042 --> 00:56:04.982
+treated with the combination. So we thought it could be useful in
+
+917
+00:56:05.002 --> 00:56:08.522
+a real-world setting to accrue data on both
+
+918
+00:56:08.562 --> 00:56:09.062
+arms.
+
+919
+00:56:11.642 --> 00:56:12.202
+Now, if
+
+920
+00:56:13.622 --> 00:56:14.282
+these
+
+921
+00:56:15.282 --> 00:56:16.442
+types of workshop
+
+922
+00:56:17.542 --> 00:56:20.922
+should have a slide that is the main
+
+923
+00:56:21.142 --> 00:56:22.202
+how-to slide,
+
+924
+00:56:23.302 --> 00:56:27.022
+this is it for this presentation. The
+
+925
+00:56:27.062 --> 00:56:30.522
+data to be captured in a prospective real-world data
+
+926
+00:56:30.602 --> 00:56:31.262
+registry
+
+927
+00:56:32.502 --> 00:56:36.042
+need to be as carefully defined as
+
+928
+00:56:36.102 --> 00:56:39.622
+those in the phase III trial. And it goes back
+
+929
+00:56:39.902 --> 00:56:41.062
+to, as
+
+930
+00:56:42.382 --> 00:56:45.862
+both Neil and Rebecca mentioned, the idea
+
+931
+00:56:46.142 --> 00:56:50.012
+that the fatal flaw in interpreting
+
+932
+00:56:50.012 --> 00:56:53.522
+real-world data occurs if you have excessive
+
+933
+00:56:53.582 --> 00:56:55.201
+missingness of the data.
+
+934
+00:56:56.322 --> 00:56:59.862
+So the key variables for propensity scoring
+
+935
+00:57:00.242 --> 00:57:02.342
+are listed here. I won't go through all of them.
+
+936
+00:57:03.302 --> 00:57:07.122
+But we define those as the variables that would
+
+937
+00:57:07.202 --> 00:57:11.082
+count to estimate the quality of the
+
+938
+00:57:11.142 --> 00:57:14.162
+study. Completeness of these data was an
+
+939
+00:57:14.442 --> 00:57:16.241
+epidemiological priority.
+
+940
+00:57:17.882 --> 00:57:21.702
+The main goal of this study was feasibility because we
+
+941
+00:57:21.722 --> 00:57:23.002
+hadn't done this before.
+
+942
+00:57:24.122 --> 00:57:27.942
+Other endpoints included real-world endpoints
+
+943
+00:57:28.302 --> 00:57:31.642
+for treatment effectiveness, and these include real-world
+
+944
+00:57:31.702 --> 00:57:34.232
+progression-free survival, time to treatment
+
+945
+00:57:34.322 --> 00:57:37.342
+discontinuation, and overall survival.
+
+946
+00:57:37.352 --> 00:57:40.782
+And there were additional exploratory endpoints.
+
+947
+00:57:41.222 --> 00:57:44.702
+The study isn't complete, so I won't be discussing any of these today.
+
+948
+00:57:46.222 --> 00:57:47.442
+The trial status.
+
+949
+00:57:48.782 --> 00:57:52.602
+This study had a very slow start.
+
+950
+00:57:53.562 --> 00:57:56.962
+It was unfamiliar in the setting of
+
+951
+00:57:58.562 --> 00:58:01.802
+the research efforts in institutions
+
+952
+00:58:02.302 --> 00:58:03.582
+where the
+
+953
+00:58:05.362 --> 00:58:09.182
+staff are used to developing clinical
+
+954
+00:58:09.282 --> 00:58:13.252
+trials, registering patients on a clinical trial, and then determining
+
+955
+00:58:13.252 --> 00:58:16.482
+the treatment. This was totally different.
+
+956
+00:58:16.602 --> 00:58:20.222
+It was registering a patient who had just started
+
+957
+00:58:20.232 --> 00:58:23.822
+treatment and then following just the data.
+
+958
+00:58:24.722 --> 00:58:28.622
+As you'll see in a moment, actually, the treating physician had a
+
+959
+00:58:28.662 --> 00:58:32.652
+very minor role in the data set that
+
+960
+00:58:32.682 --> 00:58:36.442
+we were getting. The most important person was actually the clinical
+
+961
+00:58:36.542 --> 00:58:37.542
+research associate.
+
+962
+00:58:40.002 --> 00:58:40.282
+This
+
+963
+00:58:41.642 --> 00:58:45.442
+trial suddenly took off after about a year
+
+964
+00:58:45.582 --> 00:58:49.182
+of very slow accrual and is now accruing
+
+965
+00:58:49.382 --> 00:58:49.722
+at
+
+966
+00:58:51.042 --> 00:58:54.382
+about 25 patients per month, which is where we had
+
+967
+00:58:54.642 --> 00:58:57.322
+targeted the accrual from the beginning.
+
+968
+00:58:57.982 --> 00:58:58.022
+A
+
+969
+00:58:59.902 --> 00:59:03.822
+couple of months ago, we analyzed data from the first 80 patients, and we
+
+970
+00:59:03.841 --> 00:59:07.702
+were able to show that even before data
+
+971
+00:59:07.802 --> 00:59:08.322
+cleaning,
+
+972
+00:59:09.222 --> 00:59:12.862
+that the prospective model yields an expected data
+
+973
+00:59:12.942 --> 00:59:16.642
+quality over 85% capture of the key variables.
+
+974
+00:59:18.542 --> 00:59:22.062
+And let me just talk about two aspects of this.
+
+975
+00:59:22.482 --> 00:59:26.282
+One is engagement with the site CRAs, and the second,
+
+976
+00:59:26.402 --> 00:59:30.062
+the establishment of a network of institutions that are
+
+977
+00:59:30.082 --> 00:59:32.322
+interested in this type of work.
+
+978
+00:59:34.082 --> 00:59:37.642
+The CRA is the linchpin at each site, whether it's in a
+
+979
+00:59:37.682 --> 00:59:39.862
+community site or in a cancer center.
+
+980
+00:59:42.222 --> 00:59:44.782
+The barriers that we've identified
+
+981
+00:59:45.982 --> 00:59:48.462
+are shown here. I won't read through all of them.
+
+982
+00:59:49.002 --> 00:59:52.002
+And you can see that some solutions can be provided.
+
+983
+00:59:52.562 --> 00:59:53.602
+Some are
+
+984
+00:59:54.602 --> 00:59:55.402
+conjectural.
+
+985
+00:59:56.422 --> 01:00:00.082
+There's a decline in consent that we've noted among
+
+986
+01:00:00.262 --> 01:00:01.342
+elderly patients.
+
+987
+01:00:02.522 --> 01:00:06.262
+We don't understand that, but are continuing
+
+988
+01:00:06.342 --> 01:00:10.222
+to, as I show here, continuing to refine
+
+989
+01:00:10.382 --> 01:00:14.102
+the message. But the key interaction is
+
+990
+01:00:14.142 --> 01:00:17.662
+between the project manager in this study, staying in
+
+991
+01:00:17.762 --> 01:00:21.002
+regular contact with the CRA at the
+
+992
+01:00:21.082 --> 01:00:21.902
+institution.
+
+993
+01:00:23.042 --> 01:00:26.872
+And secondly, we now have a network for prospective
+
+994
+01:00:26.942 --> 01:00:28.322
+real-world data studies.
+
+995
+01:00:29.502 --> 01:00:31.182
+We generated this
+
+996
+01:00:32.362 --> 01:00:36.062
+design after two symposia at cooperative
+
+997
+01:00:36.122 --> 01:00:39.902
+group meetings. Input from the specialists is shown
+
+998
+01:00:39.982 --> 01:00:43.962
+here. Now we have active accrual from 40 institutions.
+
+999
+01:00:45.382 --> 01:00:48.142
+As in clinical trials, you need
+
+1000
+01:00:49.142 --> 01:00:53.066
+an adequate number of sites.And this provides an
+
+1001
+01:00:53.146 --> 01:00:55.346
+adequate number of sites for this particular trial.
+
+1002
+01:00:55.606 --> 01:00:58.206
+We're continuing to expand the
+
+1003
+01:00:58.966 --> 01:01:02.736
+participant list. There's participation
+
+1004
+01:01:02.786 --> 01:01:06.426
+here from various types of centers
+
+1005
+01:01:06.726 --> 01:01:09.096
+treating cancer patients and
+
+1006
+01:01:10.726 --> 01:01:11.166
+also
+
+1007
+01:01:12.446 --> 01:01:14.486
+good geographical diversity.
+
+1008
+01:01:16.726 --> 01:01:20.466
+The studies we expected to be IRB exempt,
+
+1009
+01:01:21.026 --> 01:01:24.966
+but they weren't for two reasons. One
+
+1010
+01:01:25.006 --> 01:01:28.886
+was patient-reported outcomes, and the other was social determinants
+
+1011
+01:01:28.926 --> 01:01:32.426
+of health. We have work to do with IRBs
+
+1012
+01:01:32.886 --> 01:01:36.666
+to determine how we can make a
+
+1013
+01:01:36.726 --> 01:01:38.686
+very light regulatory
+
+1014
+01:01:39.846 --> 01:01:43.166
+barrier to getting these studies activated.
+
+1015
+01:01:44.666 --> 01:01:48.266
+The current regulations contribute to both expense
+
+1016
+01:01:48.746 --> 01:01:51.086
+and delays in getting the studies up and running.
+
+1017
+01:01:52.766 --> 01:01:56.406
+And I do have to say that acceptance of trials like
+
+1018
+01:01:56.466 --> 01:01:59.786
+this did require a degree of culture change.
+
+1019
+01:01:59.906 --> 01:02:03.306
+It's different from clinical trials activities
+
+1020
+01:02:03.946 --> 01:02:05.006
+that are done normally.
+
+1021
+01:02:06.706 --> 01:02:09.406
+What challenges and opportunities are there?
+
+1022
+01:02:10.046 --> 01:02:11.086
+Well, the
+
+1023
+01:02:12.466 --> 01:02:14.666
+EHR is still
+
+1024
+01:02:15.706 --> 01:02:19.586
+going to wind up as probably the most valuable
+
+1025
+01:02:21.106 --> 01:02:22.426
+source of information.
+
+1026
+01:02:24.286 --> 01:02:27.586
+Neil has outlined the obstacles in curation.
+
+1027
+01:02:29.466 --> 01:02:33.286
+But even for these trials, the prospective trials, target
+
+1028
+01:02:33.346 --> 01:02:35.306
+populations are underrepresented.
+
+1029
+01:02:36.446 --> 01:02:39.746
+We need tech solutions that are broadly applicable,
+
+1030
+01:02:40.256 --> 01:02:44.166
+and institutional fit with the characteristics
+
+1031
+01:02:44.206 --> 01:02:47.446
+shown here are going to be an important component of the future.
+
+1032
+01:02:49.206 --> 01:02:51.906
+So let me switch then to consider
+
+1033
+01:02:52.786 --> 01:02:56.626
+the EHR from a different perspective in
+
+1034
+01:02:56.666 --> 01:03:00.545
+relation to prospective clinical trials of this nature.
+
+1035
+01:03:01.706 --> 01:03:04.306
+The weaknesses of the EHR are twofold.
+
+1036
+01:03:04.986 --> 01:03:08.606
+One is how you interrogate it, but the second
+
+1037
+01:03:08.746 --> 01:03:12.186
+is how the EHR is built, what
+
+1038
+01:03:13.226 --> 01:03:16.846
+data are recorded in the EHR by the
+
+1039
+01:03:16.886 --> 01:03:18.965
+treating physician and others.
+
+1040
+01:03:21.756 --> 01:03:21.806
+So,
+
+1041
+01:03:23.186 --> 01:03:24.506
+the current status,
+
+1042
+01:03:25.506 --> 01:03:25.946
+I think
+
+1043
+01:03:26.866 --> 01:03:29.746
+this has really been dealt with
+
+1044
+01:03:31.006 --> 01:03:31.926
+adequately by
+
+1045
+01:03:33.326 --> 01:03:33.646
+Neil.
+
+1046
+01:03:34.966 --> 01:03:38.886
+But I think just to go to the end of this, that the surrogate
+
+1047
+01:03:39.046 --> 01:03:41.886
+endpoints are limited by lack of
+
+1048
+01:03:42.286 --> 01:03:46.266
+documentation and definition of progression events, and these come
+
+1049
+01:03:46.306 --> 01:03:50.126
+from multiple studies by Friends of Cancer Research before the
+
+1050
+01:03:50.166 --> 01:03:53.646
+current one. So structured approaches and
+
+1051
+01:03:53.746 --> 01:03:55.866
+AI have the potential to increase
+
+1052
+01:03:58.566 --> 01:04:01.346
+reproducibility, particularly.
+
+1053
+01:04:02.466 --> 01:04:06.066
+Two approaches to data quality from the EHR have
+
+1054
+01:04:06.106 --> 01:04:10.086
+recently been published. One from the
+
+1055
+01:04:10.126 --> 01:04:13.826
+Duke-Margolis Institute, which has had a huge role in
+
+1056
+01:04:13.886 --> 01:04:15.086
+developing
+
+1057
+01:04:16.686 --> 01:04:20.386
+approaches to real-world data curation and real-world evidence
+
+1058
+01:04:20.506 --> 01:04:21.286
+generation.
+
+1059
+01:04:22.626 --> 01:04:23.786
+Here, the
+
+1060
+01:04:24.946 --> 01:04:28.536
+FDA's criteria for the life cycle of
+
+1061
+01:04:28.606 --> 01:04:32.196
+EHR data, which is data accrual, curation, and
+
+1062
+01:04:32.226 --> 01:04:35.656
+transformation to allow analysis,
+
+1063
+01:04:39.086 --> 01:04:42.246
+were discussed, and the
+
+1064
+01:04:42.266 --> 01:04:43.086
+complexity
+
+1065
+01:04:43.946 --> 01:04:47.546
+of EHR-derived data curation is addressed.
+
+1066
+01:04:48.046 --> 01:04:51.686
+The recommendations from Duke Margolis are to
+
+1067
+01:04:51.766 --> 01:04:55.666
+implement real-world data best practices and develop
+
+1068
+01:04:55.806 --> 01:04:59.746
+tools to address pertinent regulatory concerns for
+
+1069
+01:05:00.126 --> 01:05:02.666
+curation. And again, the proposal
+
+1070
+01:05:03.726 --> 01:05:06.426
+to involve AI in
+
+1071
+01:05:07.286 --> 01:05:10.506
+these models is front and center.
+
+1072
+01:05:12.966 --> 01:05:16.506
+And almost at the same time, the European Medicines
+
+1073
+01:05:16.586 --> 01:05:20.086
+Association developed a data
+
+1074
+01:05:20.126 --> 01:05:22.706
+quality framework, as shown here.
+
+1075
+01:05:23.646 --> 01:05:27.376
+And again, the recommendation was to
+
+1076
+01:05:27.426 --> 01:05:29.406
+implement best practices
+
+1077
+01:05:30.506 --> 01:05:30.746
+in
+
+1078
+01:05:31.806 --> 01:05:35.246
+developing regulatory quality real-world data.
+
+1079
+01:05:36.106 --> 01:05:36.706
+The table
+
+1080
+01:05:37.866 --> 01:05:41.786
+shows some of the domains that are important
+
+1081
+01:05:43.006 --> 01:05:46.666
+in the quality assessment. You see in the top
+
+1082
+01:05:46.726 --> 01:05:47.026
+line,
+
+1083
+01:05:47.906 --> 01:05:51.766
+reliability, extensiveness, coherence,
+
+1084
+01:05:52.406 --> 01:05:55.766
+timeliness, and relevance are the key elements
+
+1085
+01:05:56.186 --> 01:05:56.506
+that
+
+1086
+01:05:58.206 --> 01:06:02.046
+determine the quality of data and determine their value.
+
+1087
+01:06:03.206 --> 01:06:06.876
+At the University of Pennsylvania, we have collaborated
+
+1088
+01:06:08.746 --> 01:06:12.446
+both with ECOG-ACRIN and others to
+
+1089
+01:06:12.646 --> 01:06:14.606
+develop complementary approaches.
+
+1090
+01:06:15.766 --> 01:06:18.426
+One, the top one here, Chart Hero,
+
+1091
+01:06:19.846 --> 01:06:23.566
+is a program, a large language model, that
+
+1092
+01:06:23.646 --> 01:06:25.046
+interrogates the
+
+1093
+01:06:26.266 --> 01:06:28.286
+medical record for various purposes.
+
+1094
+01:06:29.246 --> 01:06:31.806
+The second is called OncAssessment,
+
+1095
+01:06:32.926 --> 01:06:35.806
+and this was developed to try and put
+
+1096
+01:06:35.986 --> 01:06:39.726
+structure on the medical record of
+
+1097
+01:06:39.746 --> 01:06:42.846
+patients who are being taken care of routinely.
+
+1098
+01:06:43.826 --> 01:06:45.746
+Both are based on the Epic
+
+1099
+01:06:46.586 --> 01:06:47.946
+electronic health record.
+
+1100
+01:06:48.846 --> 01:06:52.586
+This shows Chart Hero, and the example I'm giving you is
+
+1101
+01:06:52.646 --> 01:06:53.026
+not
+
+1102
+01:06:54.526 --> 01:06:58.366
+from oncology. This is a patient who
+
+1103
+01:06:59.626 --> 01:07:02.846
+shows up with a new atrial fibrillation.
+
+1104
+01:07:03.346 --> 01:07:07.026
+And the question is: What is the CHADS
+
+1105
+01:07:07.126 --> 01:07:10.838
+vascular score?Because that determines how these new
+
+1106
+01:07:10.938 --> 01:07:12.258
+patients are
+
+1107
+01:07:15.418 --> 01:07:15.858
+treated.
+
+1108
+01:07:17.518 --> 01:07:21.208
+And this score would ordinarily take
+
+1109
+01:07:23.518 --> 01:07:26.998
+the treating physician, or better, a fellow, going
+
+1110
+01:07:27.138 --> 01:07:30.858
+through a voluminous patient's chart to extract the data.
+
+1111
+01:07:30.918 --> 01:07:34.668
+The large language model can extract that data right away,
+
+1112
+01:07:35.218 --> 01:07:38.498
+provide the score, and the patient's treatment can go forward.
+
+1113
+01:07:40.058 --> 01:07:42.378
+The oncology assessment tool
+
+1114
+01:07:43.358 --> 01:07:45.778
+is an Epic-based smart form.
+
+1115
+01:07:46.878 --> 01:07:50.478
+It captures the clinical oncology data in structured format
+
+1116
+01:07:50.958 --> 01:07:53.398
+from the perspective of the treating physician.
+
+1117
+01:07:53.878 --> 01:07:55.558
+It's really easy to use.
+
+1118
+01:07:56.378 --> 01:08:00.278
+This is what it looks like. In the gray at the top of
+
+1119
+01:08:00.338 --> 01:08:00.918
+the slide,
+
+1120
+01:08:02.118 --> 01:08:06.098
+these are data that are entered at the first
+
+1121
+01:08:06.138 --> 01:08:09.618
+time you use the form. The first time you see the patient, you
+
+1122
+01:08:09.718 --> 01:08:11.858
+record what the
+
+1123
+01:08:14.178 --> 01:08:14.698
+cancer
+
+1124
+01:08:17.199 --> 01:08:19.619
+characteristics are and what
+
+1125
+01:08:19.638 --> 01:08:25.218
+metastatic
+
+1126
+01:08:25.298 --> 01:08:26.718
+sites are present.
+
+1127
+01:08:27.579 --> 01:08:28.119
+Below,
+
+1128
+01:08:29.239 --> 01:08:33.218
+in the white panels, are a
+
+1129
+01:08:33.478 --> 01:08:37.268
+point-and-click set of conditions for the
+
+1130
+01:08:37.358 --> 01:08:39.918
+patient who is seeing you in the clinic.
+
+1131
+01:08:41.318 --> 01:08:43.699
+You estimate the characteristics of the patients.
+
+1132
+01:08:44.538 --> 01:08:46.218
+You specify
+
+1133
+01:08:47.138 --> 01:08:50.558
+what changes in management are occurring and why.
+
+1134
+01:08:51.388 --> 01:08:55.218
+And those are the two questions that are most commonly
+
+1135
+01:08:55.279 --> 01:08:58.438
+missing in the EHR. So this has the
+
+1136
+01:08:58.458 --> 01:09:01.918
+potential to solve that problem if it's
+
+1137
+01:09:02.318 --> 01:09:04.058
+widely adopted.
+
+1138
+01:09:04.938 --> 01:09:08.598
+So, next steps will be to
+
+1139
+01:09:08.638 --> 01:09:10.798
+continue to perform these prospective
+
+1140
+01:09:11.938 --> 01:09:13.498
+real-world data analyses.
+
+1141
+01:09:14.498 --> 01:09:17.077
+We have two or three additional studies in the hopper.
+
+1142
+01:09:17.739 --> 01:09:20.858
+We want to expand the network of institutions.
+
+1143
+01:09:20.898 --> 01:09:24.498
+We think it's valuable to avail of the resources of a cooperative
+
+1144
+01:09:24.538 --> 01:09:28.378
+group to develop real-world evidence and
+
+1145
+01:09:28.398 --> 01:09:32.279
+benchmark these data against other approaches
+
+1146
+01:09:32.338 --> 01:09:34.018
+of developing real-world data.
+
+1147
+01:09:35.718 --> 01:09:36.708
+So in conclusion,
+
+1148
+01:09:38.538 --> 01:09:39.818
+the real-world data from
+
+1149
+01:09:40.958 --> 01:09:44.758
+deliberate prospective studies on the control arms of Phase
+
+1150
+01:09:44.838 --> 01:09:48.258
+III trials likely score high on
+
+1151
+01:09:48.438 --> 01:09:52.018
+reliability, coherence, relevance, and
+
+1152
+01:09:52.098 --> 01:09:52.838
+timeliness.
+
+1153
+01:09:54.958 --> 01:09:58.938
+We do need consultation with IRBs to address regulatory
+
+1154
+01:09:59.038 --> 01:10:02.518
+issues with social determinants of health and
+
+1155
+01:10:02.658 --> 01:10:04.198
+patient-reported outcomes.
+
+1156
+01:10:05.078 --> 01:10:08.838
+And the EHR is the richest source of real-world
+
+1157
+01:10:08.918 --> 01:10:11.918
+data. Increasing focus on structure,
+
+1158
+01:10:12.418 --> 01:10:14.438
+tools, data quality
+
+1159
+01:10:15.318 --> 01:10:18.397
+is going to be important and is needed for
+
+1160
+01:10:18.458 --> 01:10:21.538
+extensiveness and generalizability.
+
+1161
+01:10:23.038 --> 01:10:26.978
+We ask the question: Is this the model for real-world evidence that meets
+
+1162
+01:10:27.478 --> 01:10:31.378
+regulatory standards? That on one side you have Phase
+
+1163
+01:10:31.458 --> 01:10:32.658
+III clinical trials,
+
+1164
+01:10:33.498 --> 01:10:36.918
+on the other, on the extreme right, you have real-world data from the
+
+1165
+01:10:36.958 --> 01:10:38.318
+electronic health record.
+
+1166
+01:10:39.378 --> 01:10:43.218
+But in the middle, you have a useful benchmarking approach,
+
+1167
+01:10:43.638 --> 01:10:47.418
+which involves real-world data from prospectively
+
+1168
+01:10:47.498 --> 01:10:48.498
+designed studies.
+
+1169
+01:10:49.718 --> 01:10:50.978
+With that, let me conclude.
+
+1170
+01:10:51.918 --> 01:10:55.878
+Credit my colleagues who've been instrumental in developing these approaches
+
+1171
+01:10:56.258 --> 01:10:57.798
+and implementing this trial,
+
+1172
+01:10:58.618 --> 01:11:00.478
+and the advice and insight
+
+1173
+01:11:01.338 --> 01:11:04.358
+of Jeff Allen from Friends of Cancer Research and Dr.
+
+1174
+01:11:04.438 --> 01:11:06.218
+Meropol, who's sitting right here.
+
+1175
+01:11:06.938 --> 01:11:09.078
+So, thank you for your attention.
+
+1176
+01:11:14.938 --> 01:11:16.718
+So now we have
+
+1177
+01:11:17.638 --> 01:11:21.058
+about 20 minutes for
+
+1178
+01:11:21.878 --> 01:11:24.778
+a Q&amp;A session and a panel discussion.
+
+1179
+01:11:25.378 --> 01:11:27.397
+So questions will come up, I think,
+
+1180
+01:11:27.478 --> 01:11:31.428
+using this QR code. If you
+
+1181
+01:11:31.498 --> 01:11:33.678
+put them into the system, the questions will come up.
+
+1182
+01:11:34.558 --> 01:11:35.658
+If there are questions
+
+1183
+01:11:38.018 --> 01:11:41.898
+in the room, please, we have one taker here at the
+
+1184
+01:11:41.958 --> 01:11:44.218
+right side of the microphone. Go ahead.
+
+1185
+01:11:44.578 --> 01:11:46.378
+All right. Nasir Habibi. Hi, Peter.
+
+1186
+01:11:47.778 --> 01:11:50.898
+Who is the sponsor usually of the real-world evidence?
+
+1187
+01:11:52.338 --> 01:11:53.948
+The sponsor of what?
+
+1188
+01:11:53.948 --> 01:11:54.378
+Who's what?
+
+1189
+01:11:54.958 --> 01:11:55.998
+Who's the sponsor usually?
+
+1190
+01:11:56.038 --> 01:11:56.518
+Of which?
+
+1191
+01:11:57.578 --> 01:11:59.878
+Who sponsor the real-world evidence studies?
+
+1192
+01:12:01.778 --> 01:12:02.998
+Oh, in general?
+
+1193
+01:12:03.298 --> 01:12:03.738
+In ge-
+
+1194
+01:12:03.818 --> 01:12:04.818
+In general, yeah.
+
+1195
+01:12:07.818 --> 01:12:09.258
+Do you want to answer that?
+
+1196
+01:12:09.378 --> 01:12:10.978
+So there are a variety of
+
+1197
+01:12:12.198 --> 01:12:13.898
+different types of sponsors.
+
+1198
+01:12:15.078 --> 01:12:18.598
+One set of sponsors is the biopharmaceutical
+
+1199
+01:12:19.578 --> 01:12:20.118
+industry,
+
+1200
+01:12:21.278 --> 01:12:23.238
+biotech and pharma,
+
+1201
+01:12:24.258 --> 01:12:27.818
+who use real-world data to make drug
+
+1202
+01:12:27.878 --> 01:12:31.678
+development decisions, to understand drug use in the post-marketing
+
+1203
+01:12:31.798 --> 01:12:32.198
+setting,
+
+1204
+01:12:33.038 --> 01:12:35.938
+and a variety of other use cases.
+
+1205
+01:12:36.598 --> 01:12:40.278
+If I was to think of the dominant
+
+1206
+01:12:40.338 --> 01:12:41.518
+support for
+
+1207
+01:12:42.598 --> 01:12:43.938
+real-world data
+
+1208
+01:12:45.178 --> 01:12:47.778
+curation, it would be biopharma.
+
+1209
+01:12:48.758 --> 01:12:51.918
+But at the same time, individual institutions, as you heard from
+
+1210
+01:12:52.998 --> 01:12:53.338
+Peter,
+
+1211
+01:12:54.338 --> 01:12:57.638
+support some real-world data studies, the
+
+1212
+01:12:57.718 --> 01:12:58.398
+NCI,
+
+1213
+01:12:59.278 --> 01:13:01.078
+through the cooperative groups, the FDA.
+
+1214
+01:13:01.958 --> 01:13:03.218
+Heard a couple of examples
+
+1215
+01:13:04.178 --> 01:13:05.078
+today. So there is
+
+1216
+01:13:07.338 --> 01:13:10.598
+broad support both from public and
+
+1217
+01:13:10.918 --> 01:13:12.798
+private entities for what is
+
+1218
+01:13:13.678 --> 01:13:17.458
+frankly a super expensive enterprise to generate these
+
+1219
+01:13:17.478 --> 01:13:17.758
+data.
+
+1220
+01:13:24.808 --> 01:13:27.828
+So I have a question, two questions actually for Dr. Hubbard.
+
+1221
+01:13:28.028 --> 01:13:30.488
+First, enjoyed your talk tremendously.
+
+1222
+01:13:30.548 --> 01:13:34.408
+The first question is when one designs
+
+1223
+01:13:34.448 --> 01:13:35.908
+a platform design
+
+1224
+01:13:36.788 --> 01:13:38.888
+trial and is going to roll
+
+1225
+01:13:39.768 --> 01:13:43.308
+experimental arms in and out, we always have that trouble of drift,
+
+1226
+01:13:43.728 --> 01:13:47.108
+right? Patients may do better on the control arm over time
+
+1227
+01:13:47.168 --> 01:13:50.937
+as care improves. How does one account for
+
+1228
+01:13:50.937 --> 01:13:54.768
+that with real-world data? And my second question is, since you
+
+1229
+01:13:54.868 --> 01:13:58.788
+are using controls that get the
+
+1230
+01:13:58.868 --> 01:14:02.088
+standard of care in the community, can you not
+
+1231
+01:14:02.668 --> 01:14:06.548
+conversely take the patients who have been treated with
+
+1232
+01:14:06.588 --> 01:14:10.508
+your experimental arm off-label or in the earlier studies, the
+
+1233
+01:14:10.528 --> 01:14:14.328
+phase one, phase two studies, to enhance the experimental
+
+1234
+01:14:14.428 --> 01:14:14.728
+side?
+
+1235
+01:14:17.888 --> 01:14:18.988
+Yeah. Thanks for those questions.
+
+1236
+01:14:19.108 --> 01:14:22.907
+I think they both relate to how
+
+1237
+01:14:23.008 --> 01:14:26.748
+we've historically thought about designing these types of studies, which
+
+1238
+01:14:26.828 --> 01:14:30.108
+is not in terms of real-world data, but in terms of historical data.
+
+1239
+01:14:30.468 --> 01:14:34.288
+So, that discussion, that idea of incorporating,
+
+1240
+01:14:35.148 --> 01:14:39.108
+say, control data from an earlier trial where what's now the standard of
+
+1241
+01:14:39.168 --> 01:14:42.768
+care was experimental treatment, I think that concept has been around for 50
+
+1242
+01:14:42.828 --> 01:14:43.248
+years.
+
+1243
+01:14:44.428 --> 01:14:48.388
+But exactly as your first question hit on, one of the concerns there is about the
+
+1244
+01:14:48.468 --> 01:14:52.368
+temporal differences between patients in the current environment and in the past.
+
+1245
+01:14:52.848 --> 01:14:54.968
+So I do think with real-world data,
+
+1246
+01:14:56.208 --> 01:14:59.808
+one of the strengths is that we can potentially have better temporal alignment
+
+1247
+01:15:00.908 --> 01:15:03.788
+of the patients coming from a real-world control arm with patients in the
+
+1248
+01:15:03.828 --> 01:15:04.628
+randomized trial.
+
+1249
+01:15:05.728 --> 01:15:08.648
+I think there are opportunities like Peter was discussing, where you're actually
+
+1250
+01:15:08.688 --> 01:15:12.528
+doing prospective collection of patient data
+
+1251
+01:15:12.648 --> 01:15:16.488
+from the EHR at the same time that the trial is ongoing to try to address that.
+
+1252
+01:15:17.668 --> 01:15:18.848
+More broadly, I would say
+
+1253
+01:15:20.088 --> 01:15:23.588
+that temporal drift, temporal misalignment between the patients kind of rolls
+
+1254
+01:15:23.708 --> 01:15:27.657
+up to become yet another source of potential confounding between
+
+1255
+01:15:27.688 --> 01:15:28.437
+the two arms.
+
+1256
+01:15:29.427 --> 01:15:33.148
+And so to the extent that you're willing to make some parametric
+
+1257
+01:15:33.188 --> 01:15:37.138
+assumptions about changes in time, changes in patient outcomes
+
+1258
+01:15:37.188 --> 01:15:39.308
+over time, you could try to model it away.
+
+1259
+01:15:39.328 --> 01:15:42.828
+You could try to incorporate as a confounder, as long as there's some
+
+1260
+01:15:42.888 --> 01:15:43.448
+overlap.
+
+1261
+01:15:44.588 --> 01:15:48.328
+But that, of course, is risky because it relies on assumptions.
+
+1262
+01:15:49.508 --> 01:15:53.428
+I would say to your second question, which is I think a very exciting idea,
+
+1263
+01:15:53.908 --> 01:15:54.848
+most of the time,
+
+1264
+01:15:55.828 --> 01:15:59.728
+I'm assuming that while there's the opportunity to see patients receiving the
+
+1265
+01:15:59.748 --> 01:16:03.528
+standard of care treatment in the real world, probably the experimental treatment
+
+1266
+01:16:03.868 --> 01:16:07.048
+is not yet available, and so you're not going to see patients, at least not in
+
+1267
+01:16:07.708 --> 01:16:10.268
+large numbers, receiving that in routine care.
+
+1268
+01:16:10.588 --> 01:16:13.908
+But there's certainly possibilities, there's opportunities where that might not be
+
+1269
+01:16:13.928 --> 01:16:16.848
+the case, either because of off-label use,
+
+1270
+01:16:17.788 --> 01:16:21.648
+or other situations where the experimental treatment has already come
+
+1271
+01:16:21.708 --> 01:16:25.678
+into use in routine care. And so I think
+
+1272
+01:16:25.708 --> 01:16:29.418
+there's not really methodological work addressing that, the idea of
+
+1273
+01:16:29.668 --> 01:16:32.808
+augmenting both arms of the trial with real-world data.
+
+1274
+01:16:32.828 --> 01:16:35.898
+But that would actually be a very strong design because that gives you yet another
+
+1275
+01:16:35.948 --> 01:16:39.788
+opportunity to try to disentangle differences between the two treatment arms
+
+1276
+01:16:39.848 --> 01:16:41.148
+and the real-world versus
+
+1277
+01:16:42.108 --> 01:16:45.668
+trial environment. So I actually think that's quite cool,
+
+1278
+01:16:45.728 --> 01:16:49.578
+and there's a huge amount of methodological work in the statistical
+
+1279
+01:16:49.628 --> 01:16:53.148
+literature on different analytic approaches for the hybrid trial
+
+1280
+01:16:53.508 --> 01:16:57.328
+design. That kind of double hybrid design isn't something that people have really
+
+1281
+01:16:57.348 --> 01:17:00.388
+been working on, but I think that's a cool opportunity.
+
+1282
+01:17:00.508 --> 01:17:03.748
+Well, I hope you take it forward. You don't need to give me any credit, but...
+
+1283
+01:17:04.908 --> 01:17:07.448
+And Dr. O'Dwyer, a quick question for you.
+
+1284
+01:17:07.588 --> 01:17:11.388
+So one of the things that during my 40 years in
+
+1285
+01:17:11.508 --> 01:17:12.068
+practice
+
+1286
+01:17:13.388 --> 01:17:16.928
+was always touted was patients on clinical trials, even on the
+
+1287
+01:17:16.968 --> 01:17:17.748
+control arm,
+
+1288
+01:17:18.728 --> 01:17:22.548
+did better than the patients in the community, and there are
+
+1289
+01:17:22.588 --> 01:17:26.508
+lots of explanations. One of them was that they're just getting more
+
+1290
+01:17:26.608 --> 01:17:30.348
+oversight in their care. The design that you proposed
+
+1291
+01:17:31.348 --> 01:17:33.488
+would allow you to actually answer that question.
+
+1292
+01:17:33.528 --> 01:17:37.108
+So if you took that central group, the ones that are on the
+
+1293
+01:17:37.148 --> 01:17:38.528
+prospective real-world trial,
+
+1294
+01:17:39.548 --> 01:17:43.528
+and compared them to the sort of more classical real world,
+
+1295
+01:17:44.908 --> 01:17:48.778
+you'd actually be able to answer that question, if enrollment does
+
+1296
+01:17:48.788 --> 01:17:51.248
+change outcome even though it's real world.
+
+1297
+01:17:53.208 --> 01:17:57.088
+Yes. I think we need to analyze that when
+
+1298
+01:17:57.188 --> 01:18:01.018
+we get more data on this study. I think it's a very interesting
+
+1299
+01:18:01.128 --> 01:18:04.948
+possibility that just being
+
+1300
+01:18:05.028 --> 01:18:05.508
+watched
+
+1301
+01:18:06.548 --> 01:18:09.788
+increases the attention.
+
+1302
+01:18:11.628 --> 01:18:11.908
+The
+
+1303
+01:18:13.168 --> 01:18:15.768
+patients who are treated on these prospective studies, though,
+
+1304
+01:18:17.248 --> 01:18:20.108
+there is no contact with the treating physician.
+
+1305
+01:18:20.168 --> 01:18:24.088
+The study is not telling the treating physician what to do, what
+
+1306
+01:18:24.128 --> 01:18:24.868
+doses to give.
+
+1307
+01:18:24.928 --> 01:18:25.168
+Right.
+
+1308
+01:18:25.948 --> 01:18:25.988
+No-
+
+1309
+01:18:26.228 --> 01:18:28.028
+But they know the patient's on a study.
+
+1310
+01:18:28.188 --> 01:18:28.488
+Yes.
+
+1311
+01:18:28.728 --> 01:18:28.938
+Right. And that-
+
+1312
+01:18:28.948 --> 01:18:32.188
+They know. And there is one point of contact, which is
+
+1313
+01:18:32.848 --> 01:18:33.808
+when the patient
+
+1314
+01:18:34.868 --> 01:18:38.488
+stops the treatment, the CRA is
+
+1315
+01:18:38.588 --> 01:18:42.448
+tasked with finding out from the physician why.
+
+1316
+01:18:43.008 --> 01:18:46.548
+Did they stop because there was a scan that showed
+
+1317
+01:18:46.628 --> 01:18:49.368
+progression? Was it because toxicity?
+
+1318
+01:18:50.228 --> 01:18:51.108
+Other reasons?
+
+1319
+01:18:52.148 --> 01:18:55.828
+So that we can try and get more granular with what's going on with the
+
+1320
+01:18:55.868 --> 01:18:56.248
+patients.
+
+1321
+01:18:56.628 --> 01:18:57.188
+Right. Thank you.
+
+1322
+01:18:57.508 --> 01:18:58.548
+Thanks for the suggestion.
+
+1323
+01:18:59.508 --> 01:19:03.408
+So it seems to me that historically, the closest thing that we had to
+
+1324
+01:19:04.648 --> 01:19:07.688
+real-world data potentially was cancer registry data.
+
+1325
+01:19:07.698 --> 01:19:07.698
+Yeah.
+
+1326
+01:19:07.708 --> 01:19:09.748
+It had the problems of sampling and that sort of thing,
+
+1327
+01:19:11.328 --> 01:19:14.978
+and the problem that historically it was all hospital-based and originating from
+
+1328
+01:19:15.048 --> 01:19:15.748
+surgery, but the
+
+1329
+01:19:16.648 --> 01:19:20.488
+structure was there in place, had all exactly these same
+
+1330
+01:19:20.528 --> 01:19:21.208
+problems.
+
+1331
+01:19:22.196 --> 01:19:25.916
+And I was wondering how cancer registries are
+
+1332
+01:19:25.976 --> 01:19:29.456
+maybe being used in this or being expanded to take advantage, particularly of
+
+1333
+01:19:29.516 --> 01:19:33.476
+capturing outpatient data, because having worked
+
+1334
+01:19:33.496 --> 01:19:37.256
+in a large community cancer center for over 25 years, published 20 papers
+
+1335
+01:19:37.296 --> 01:19:38.666
+based on registry data,
+
+1336
+01:19:39.496 --> 01:19:43.316
+and when you go into the data, you start using the data, you find all the
+
+1337
+01:19:43.356 --> 01:19:45.396
+problems with the data. That's when you realize it's there.
+
+1338
+01:19:45.436 --> 01:19:48.996
+But it seems like the same issue, but it seems the structure at least was there to
+
+1339
+01:19:49.016 --> 01:19:51.996
+potentially take advantage of that in this effort.
+
+1340
+01:19:52.296 --> 01:19:53.536
+Yeah, I think it is. And
+
+1341
+01:19:54.376 --> 01:19:54.636
+we
+
+1342
+01:19:55.476 --> 01:19:59.096
+had lots of discussions with the people running the SEER
+
+1343
+01:19:59.156 --> 01:20:00.376
+database
+
+1344
+01:20:01.756 --> 01:20:04.916
+in the development of the design of these
+
+1345
+01:20:04.996 --> 01:20:07.996
+studies. The SEER database is a tremendous
+
+1346
+01:20:08.016 --> 01:20:11.856
+resource. It has some limitations, as you
+
+1347
+01:20:11.916 --> 01:20:12.516
+outlined.
+
+1348
+01:20:13.456 --> 01:20:16.836
+But just like the EHR, it overcomes those
+
+1349
+01:20:16.876 --> 01:20:20.276
+limitations with numbers, and numbers are really key here.
+
+1350
+01:20:20.856 --> 01:20:21.796
+So yes,
+
+1351
+01:20:22.656 --> 01:20:26.556
+we are looking forward to integrating SEER
+
+1352
+01:20:26.636 --> 01:20:29.896
+data into studies like this. Neil,
+
+1353
+01:20:30.296 --> 01:20:31.896
+you've also had some experience.
+
+1354
+01:20:32.196 --> 01:20:32.396
+Yeah.
+
+1355
+01:20:33.436 --> 01:20:35.396
+I think it's a great point about registry data.
+
+1356
+01:20:35.456 --> 01:20:39.296
+Registries are a great source of real-world
+
+1357
+01:20:39.416 --> 01:20:39.716
+data.
+
+1358
+01:20:42.096 --> 01:20:42.196
+It
+
+1359
+01:20:43.336 --> 01:20:46.296
+really gets to this question of fitness for purpose again.
+
+1360
+01:20:46.336 --> 01:20:49.736
+I realize I keep harping on this concept, but
+
+1361
+01:20:50.276 --> 01:20:54.116
+the beauty of the registry is that you've established an a
+
+1362
+01:20:54.176 --> 01:20:57.576
+priori data model, and the data are entered
+
+1363
+01:20:58.016 --> 01:20:58.476
+into it.
+
+1364
+01:20:59.396 --> 01:21:02.876
+But in terms of whether the use case,
+
+1365
+01:21:03.556 --> 01:21:07.036
+whether it's fit for to ask a particular research question,
+
+1366
+01:21:07.496 --> 01:21:08.896
+requires that that
+
+1367
+01:21:10.016 --> 01:21:13.556
+data model that you set up 20 years ago or 100 years ago
+
+1368
+01:21:13.936 --> 01:21:17.026
+is relevant to the question you're asking
+
+1369
+01:21:17.076 --> 01:21:20.676
+today. But there actually are a few
+
+1370
+01:21:20.736 --> 01:21:24.486
+examples of real-world data from registries
+
+1371
+01:21:24.916 --> 01:21:27.456
+that have been used for FDA approval
+
+1372
+01:21:28.296 --> 01:21:28.796
+recently.
+
+1373
+01:21:29.896 --> 01:21:30.536
+And so,
+
+1374
+01:21:31.735 --> 01:21:34.036
+it can be really valuable data.
+
+1375
+01:21:39.296 --> 01:21:39.636
+Yes.
+
+1376
+01:21:40.396 --> 01:21:43.976
+I have a question for Dr. Hubbard. I wanted to ask if, for
+
+1377
+01:21:44.016 --> 01:21:45.936
+instance, we choose to
+
+1378
+01:21:47.116 --> 01:21:50.736
+do an analysis on a real-world dataset, and we
+
+1379
+01:21:51.096 --> 01:21:54.736
+decide the critical variables for a propensity score analysis.
+
+1380
+01:21:55.116 --> 01:21:57.476
+But then, for example, we will find out that
+
+1381
+01:21:58.356 --> 01:22:00.136
+for one specific variable, we have
+
+1382
+01:22:01.176 --> 01:22:04.936
+a big number of missing data, like, I think
+
+1383
+01:22:05.036 --> 01:22:08.856
+for instance, ECOG PS, we found out that 20% of patients
+
+1384
+01:22:08.896 --> 01:22:12.876
+have missing data. Should we exclude those patients, or
+
+1385
+01:22:13.156 --> 01:22:16.836
+are there some statistical analysis that we can use
+
+1386
+01:22:16.956 --> 01:22:20.696
+to still consider these patients somehow in the trial?
+
+1387
+01:22:21.376 --> 01:22:22.085
+Thank you.
+
+1388
+01:22:22.156 --> 01:22:24.396
+So that's a really common problem.
+
+1389
+01:22:24.776 --> 01:22:28.416
+Working with these data, missingness, I think as all of us have emphasized, is
+
+1390
+01:22:28.436 --> 01:22:29.096
+really common.
+
+1391
+01:22:30.016 --> 01:22:33.736
+And so I would say, in general, excluding patients with missingness is generally
+
+1392
+01:22:33.776 --> 01:22:34.776
+not the best approach,
+
+1393
+01:22:35.596 --> 01:22:38.696
+because it degrades the efficiency of your analysis and potentially introduces
+
+1394
+01:22:38.706 --> 01:22:42.606
+selection bias. So there's actually a line of work that I think
+
+1395
+01:22:42.636 --> 01:22:42.766
+is--
+
+1396
+01:22:44.096 --> 01:22:47.556
+It seems like a really simple question, but it's very interesting, which is a
+
+1397
+01:22:47.596 --> 01:22:51.286
+better approach would be to impute the missing data using multiple imputation.
+
+1398
+01:22:52.336 --> 01:22:56.236
+But when you're combining a propensity score-based analysis with a multiple
+
+1399
+01:22:56.256 --> 01:23:00.076
+imputation, the question comes up, should you impute the data and
+
+1400
+01:23:00.136 --> 01:23:03.676
+then compute the propensity score from that imputed data,
+
+1401
+01:23:03.996 --> 01:23:06.996
+meaning you'll have a different propensity score for each person every time you
+
+1402
+01:23:07.036 --> 01:23:10.736
+repeat that process? Or should you compute the
+
+1403
+01:23:10.756 --> 01:23:14.156
+propensity score for everyone who has complete data and then impute the propensity
+
+1404
+01:23:14.216 --> 01:23:16.136
+score for the people who have missing information?
+
+1405
+01:23:17.176 --> 01:23:17.356
+And
+
+1406
+01:23:18.456 --> 01:23:21.296
+the short answer is the first approach is the better approach.
+
+1407
+01:23:21.636 --> 01:23:25.326
+But depending on your specific use case, how much missing data there is,
+
+1408
+01:23:25.596 --> 01:23:28.386
+how large your sample size is, and therefore how expensive
+
+1409
+01:23:28.456 --> 01:23:32.156
+computationally doing the imputation is, you might have slightly
+
+1410
+01:23:32.176 --> 01:23:36.156
+different considerations. But in general, I would advocate an approach that
+
+1411
+01:23:36.196 --> 01:23:39.596
+allows you to keep all of the patients or as many as possible in the analysis
+
+1412
+01:23:39.656 --> 01:23:43.236
+rather than dropping those with missing data, which can introduce bias.
+
+1413
+01:23:44.005 --> 01:23:44.776
+And is there a
+
+1414
+01:23:45.596 --> 01:23:49.456
+benchmark over which we can't impute because there are too
+
+1415
+01:23:49.516 --> 01:23:50.756
+many missing data or?
+
+1416
+01:23:51.416 --> 01:23:55.076
+So there's kind of a rule of thumb that
+
+1417
+01:23:55.196 --> 01:23:58.316
+says that how you should determine how many
+
+1418
+01:23:58.356 --> 01:24:02.316
+imputations you should do isn't based on the proportion of patients who
+
+1419
+01:24:02.416 --> 01:24:05.276
+have missing data, but the fraction of missing information.
+
+1420
+01:24:05.566 --> 01:24:09.396
+And I think this is a super interesting idea because it basically says you could
+
+1421
+01:24:09.436 --> 01:24:13.176
+have missing data for 95% of patients, but if you have another
+
+1422
+01:24:13.256 --> 01:24:17.096
+variable that contains almost the exact same information that's not missing,
+
+1423
+01:24:17.476 --> 01:24:20.596
+then you're really not missing any information, you're just missing observations.
+
+1424
+01:24:20.996 --> 01:24:24.916
+So I would use a criterion like that, fraction of missing information,
+
+1425
+01:24:25.236 --> 01:24:28.816
+to try to determine whether or not it's reasonable to undertake an imputation,
+
+1426
+01:24:29.376 --> 01:24:32.896
+as opposed to the proportion is missing, which often can look quite scary.
+
+1427
+01:24:33.596 --> 01:24:37.426
+But for instance, in EHR, where performance status is
+
+1428
+01:24:37.496 --> 01:24:41.036
+often missing, but you might have information on comorbidities or other
+
+1429
+01:24:41.076 --> 01:24:45.056
+information that kind of relates to the same quantities, you may actually
+
+1430
+01:24:45.076 --> 01:24:46.816
+be able to recover more information than you think.
+
+1431
+01:24:47.376 --> 01:24:48.116
+Okay. Thank you.
+
+1432
+01:24:48.556 --> 01:24:52.456
+Can I take advantage of Dr. Hubbard's presence on the panel as
+
+1433
+01:24:52.496 --> 01:24:55.996
+well? So when I'm faced with missing data,
+
+1434
+01:24:56.096 --> 01:24:59.516
+I'm always asking myself, is this missing at
+
+1435
+01:24:59.576 --> 01:25:03.236
+random or is there some systematic reason why it's missing?
+
+1436
+01:25:03.266 --> 01:25:04.896
+Like academic
+
+1437
+01:25:06.196 --> 01:25:09.916
+clinicians document differently than clinicians
+
+1438
+01:25:10.196 --> 01:25:13.676
+in community practices for particular variables.
+
+1439
+01:25:14.076 --> 01:25:14.776
+Believe it or not,
+
+1440
+01:25:15.736 --> 01:25:19.636
+academics are much worse at documenting stage
+
+1441
+01:25:20.236 --> 01:25:23.564
+than community oncologistsAnd
+
+1442
+01:25:23.664 --> 01:25:27.524
+why? I don't know, but it's a thing
+
+1443
+01:25:27.584 --> 01:25:28.484
+that we've observed.
+
+1444
+01:25:29.524 --> 01:25:31.764
+There's probably something systematic there.
+
+1445
+01:25:32.014 --> 01:25:32.014
+Mm-hmm.
+
+1446
+01:25:32.044 --> 01:25:32.184
+So
+
+1447
+01:25:33.684 --> 01:25:37.534
+how do you think about those different reasons for missing this and how
+
+1448
+01:25:37.584 --> 01:25:39.764
+that bears on how you adjust for it?
+
+1449
+01:25:41.684 --> 01:25:45.264
+So in the missing data literature, and this is getting kind of methods
+
+1450
+01:25:45.444 --> 01:25:48.904
+nerdy, but in the missing data literature, there are three general
+
+1451
+01:25:49.404 --> 01:25:52.874
+missing data mechanisms: missing completely at random, missing at random, and
+
+1452
+01:25:52.904 --> 01:25:56.844
+missing not at random. And so missing completely at random leads
+
+1453
+01:25:56.884 --> 01:25:56.944
+to
+
+1454
+01:25:58.004 --> 01:26:00.464
+no bias, pretty much under any analysis you might propose.
+
+1455
+01:26:01.064 --> 01:26:04.364
+And that's when there's absolutely nothing systematic about the missingness.
+
+1456
+01:26:04.404 --> 01:26:08.164
+It's completely random. It's like somebody just lost those records, and it's
+
+1457
+01:26:08.204 --> 01:26:08.984
+nothing to do with anything else.
+
+1458
+01:26:09.804 --> 01:26:13.584
+Missing at random is systematic missingness that's predictable based on the
+
+1459
+01:26:13.604 --> 01:26:17.184
+data. So in some of the cases that you're talking about, like
+
+1460
+01:26:18.964 --> 01:26:22.064
+clinicians in academic settings are less likely to record stage, that's a
+
+1461
+01:26:22.124 --> 01:26:25.504
+systematic missingness, but it's a predictable systematic missingness because it's
+
+1462
+01:26:25.564 --> 01:26:29.544
+missingness that's due to academic versus community site.
+
+1463
+01:26:29.884 --> 01:26:33.204
+So if you have that kind of predictable missingness, that's actually not a big
+
+1464
+01:26:33.244 --> 01:26:36.784
+concern. Imputation can handle that kind of setting.
+
+1465
+01:26:37.184 --> 01:26:41.124
+So missing not at random is the really problematic one, where the value
+
+1466
+01:26:41.164 --> 01:26:44.804
+of the variable itself is what determines whether or not it's likely to be missing.
+
+1467
+01:26:46.044 --> 01:26:49.984
+I've seen methods in the literature, especially in the machine learning
+
+1468
+01:26:50.024 --> 01:26:53.914
+literature, where people are claiming to have come up with fancy imputation
+
+1469
+01:26:53.984 --> 01:26:57.364
+methods using deep learning that they claim can deal with missing at random.
+
+1470
+01:26:57.984 --> 01:27:00.344
+If you see anything like that, don't believe it. It's a lie.
+
+1471
+01:27:00.644 --> 01:27:03.624
+Nothing can save you if you have missing not at random missingness.
+
+1472
+01:27:05.104 --> 01:27:08.744
+What it really comes down to is, is your data set rich enough
+
+1473
+01:27:09.064 --> 01:27:12.884
+that you can leverage information from other variables to help you
+
+1474
+01:27:12.944 --> 01:27:14.724
+predict the missing data?
+
+1475
+01:27:15.644 --> 01:27:19.524
+So in cases where I think that we understand the missing
+
+1476
+01:27:19.604 --> 01:27:23.044
+mechanism, I understand why it's missing, and we can potentially predict the
+
+1477
+01:27:23.084 --> 01:27:26.564
+missing variable based on other information, then I don't get too worried.
+
+1478
+01:27:27.564 --> 01:27:31.424
+It's the settings where... So to give an example, I was doing an analysis
+
+1479
+01:27:32.103 --> 01:27:35.864
+using Flatiron data, and there was a lot of missingness in ECOG
+
+1480
+01:27:35.874 --> 01:27:38.704
+performance status, which was an important confounder in our analysis.
+
+1481
+01:27:39.064 --> 01:27:42.684
+And one of the clinicians working on the study said, "I'm concerned that the data
+
+1482
+01:27:42.694 --> 01:27:46.424
+are missing not at random because I think the physician was possibly less likely to
+
+1483
+01:27:46.444 --> 01:27:50.224
+record the score if it was a higher score." And I said, "Oh,
+
+1484
+01:27:50.384 --> 01:27:54.364
+no. That's really a big problem because that's a systematic
+
+1485
+01:27:54.404 --> 01:27:58.284
+missingness that we can't predict from other things in the data." So
+
+1486
+01:27:59.164 --> 01:28:02.084
+I'm always on the lookout for missing at random data, and really the only thing you
+
+1487
+01:28:02.104 --> 01:28:03.984
+can do there is a sensitivity analysis.
+
+1488
+01:28:04.724 --> 01:28:08.004
+And I think we should, as we work more on these real-world data studies and deal
+
+1489
+01:28:08.044 --> 01:28:11.644
+with these kind of significant data quality limitations in the
+
+1490
+01:28:12.104 --> 01:28:15.984
+data sources we're working with, I think we should have a standard protocol
+
+1491
+01:28:16.064 --> 01:28:19.304
+for the sensitivity analyses that we're going to conduct because things like
+
+1492
+01:28:19.344 --> 01:28:22.964
+missing not at random missingness can never be completely ruled out, and you can't
+
+1493
+01:28:23.024 --> 01:28:24.824
+solve them with any kind of fancy analysis.
+
+1494
+01:28:26.704 --> 01:28:28.524
+That's great. There's a question
+
+1495
+01:28:29.344 --> 01:28:30.184
+on the virtual
+
+1496
+01:28:31.004 --> 01:28:31.704
+hub here.
+
+1497
+01:28:32.644 --> 01:28:36.364
+"How do you think AI can be
+
+1498
+01:28:36.484 --> 01:28:38.804
+best utilized safely
+
+1499
+01:28:39.684 --> 01:28:43.044
+to make the clinical trial process most efficient?"
+
+1500
+01:28:44.684 --> 01:28:45.264
+I think Neil.
+
+1501
+01:28:49.844 --> 01:28:52.624
+Well, how could it be used everywhere?
+
+1502
+01:28:52.684 --> 01:28:54.564
+How could it be used safely?
+
+1503
+01:28:55.004 --> 01:28:55.263
+Safely.
+
+1504
+01:28:55.664 --> 01:28:59.244
+Work in progress. One of the
+
+1505
+01:28:59.604 --> 01:29:00.364
+problems with
+
+1506
+01:29:01.784 --> 01:29:05.664
+the implementation of AI tools in anything
+
+1507
+01:29:05.724 --> 01:29:09.644
+having to do with clinical care is that it is
+
+1508
+01:29:09.704 --> 01:29:13.354
+the highest stakes scenario. There's
+
+1509
+01:29:13.964 --> 01:29:17.064
+really no room for error. So
+
+1510
+01:29:17.964 --> 01:29:21.644
+what that's led to is this recognition that you got to have humans in the
+
+1511
+01:29:21.704 --> 01:29:22.044
+loop,
+
+1512
+01:29:23.144 --> 01:29:27.044
+and when you're using AI tools, there
+
+1513
+01:29:27.084 --> 01:29:30.814
+needs to be gatekeeper oversight and
+
+1514
+01:29:30.864 --> 01:29:34.504
+interpretation to make sure that what the AI is feeding
+
+1515
+01:29:34.584 --> 01:29:34.924
+you
+
+1516
+01:29:37.004 --> 01:29:39.644
+is accurate. But where I've seen it
+
+1517
+01:29:40.904 --> 01:29:44.404
+have value is identifying patients for
+
+1518
+01:29:44.664 --> 01:29:47.204
+clinical trials because that's not
+
+1519
+01:29:47.244 --> 01:29:51.224
+recommending a treatment to a patient.
+
+1520
+01:29:51.284 --> 01:29:55.054
+That's surfacing a patient who might be eligible for a
+
+1521
+01:29:55.124 --> 01:29:56.224
+clinical trial. And that
+
+1522
+01:29:57.704 --> 01:30:01.584
+could be super helpful because there are all sorts of implicit biases that
+
+1523
+01:30:01.644 --> 01:30:02.324
+take place,
+
+1524
+01:30:03.584 --> 01:30:06.964
+notwithstanding the fact that clinicians are
+
+1525
+01:30:07.264 --> 01:30:11.204
+pressured for time and are trying to maintain their throughput of
+
+1526
+01:30:11.244 --> 01:30:15.104
+patients and may not have time to be thinking about a clinical trial or taking
+
+1527
+01:30:15.144 --> 01:30:15.604
+time to
+
+1528
+01:30:17.484 --> 01:30:19.324
+undergo informed consent with a patient.
+
+1529
+01:30:20.384 --> 01:30:20.764
+By
+
+1530
+01:30:21.664 --> 01:30:22.764
+centralizing
+
+1531
+01:30:23.844 --> 01:30:27.804
+the identification for clinical trials using
+
+1532
+01:30:27.864 --> 01:30:31.464
+AI as an example, that could really, I think,
+
+1533
+01:30:31.504 --> 01:30:33.984
+enhance the clinical trial process.
+
+1534
+01:30:34.964 --> 01:30:38.844
+Another area that we've done some exploration of is could
+
+1535
+01:30:39.024 --> 01:30:42.944
+AI be used to support the work of
+
+1536
+01:30:43.604 --> 01:30:47.344
+clinical research associates who are trying to identify and
+
+1537
+01:30:47.464 --> 01:30:51.424
+grade adverse events? Typically, a patient's on a
+
+1538
+01:30:51.484 --> 01:30:53.864
+clinical trial, the CRA
+
+1539
+01:30:54.824 --> 01:30:58.684
+is combing the clinical record for evidence that the patient had a
+
+1540
+01:30:58.764 --> 01:31:02.364
+side effect and then querying the clinician about
+
+1541
+01:31:02.944 --> 01:31:05.664
+grading and assigning attribution.
+
+1542
+01:31:07.004 --> 01:31:10.764
+AI could potentially do that work of combing the
+
+1543
+01:31:10.864 --> 01:31:14.824
+record for evidence of an adverse event and surfacing it
+
+1544
+01:31:14.904 --> 01:31:18.544
+to the CRA with what is the
+
+1545
+01:31:18.554 --> 01:31:20.844
+document that raised the suspicion.
+
+1546
+01:31:21.284 --> 01:31:24.184
+So that's an example
+
+1547
+01:31:25.204 --> 01:31:28.584
+in clinical trials that I think might be valuable.
+
+1548
+01:31:29.880 --> 01:31:33.160
+And I'll just add directly onto that piece of, I think one of the
+
+1549
+01:31:33.170 --> 01:31:36.760
+really excellent possibility is using LLMs to
+
+1550
+01:31:36.780 --> 01:31:38.259
+augment research data
+
+1551
+01:31:39.080 --> 01:31:42.360
+by combing through those records, improving the
+
+1552
+01:31:42.420 --> 01:31:46.040
+completeness of the data elements that we have access to.
+
+1553
+01:31:46.060 --> 01:31:49.140
+But I think a really important piece to go along with that is,
+
+1554
+01:31:50.120 --> 01:31:53.300
+as Neil discussed in the validation study that he presented,
+
+1555
+01:31:54.080 --> 01:31:57.400
+LLMs potentially make errors in ways that are very different from the kinds of
+
+1556
+01:31:57.460 --> 01:32:01.260
+errors that humans make. They hallucinate things in a way that a human abstractor
+
+1557
+01:32:01.320 --> 01:32:05.240
+wouldn't. So I think there's a lot of potential and also a need for
+
+1558
+01:32:05.540 --> 01:32:08.280
+exactly that kind of validation study so that we understand
+
+1559
+01:32:10.120 --> 01:32:13.880
+the improvements in the quality of the data, but also the potential
+
+1560
+01:32:13.940 --> 01:32:17.660
+errors that are being introduced and what the structure of errors created by AI
+
+1561
+01:32:17.840 --> 01:32:18.280
+look like.
+
+1562
+01:32:19.960 --> 01:32:23.600
+Thanks. The red light is blinking, but you've been waiting to ask a
+
+1563
+01:32:23.640 --> 01:32:24.140
+question.
+
+1564
+01:32:24.760 --> 01:32:24.880
+Oh.
+
+1565
+01:32:25.880 --> 01:32:25.960
+Thank you so much.
+
+1566
+01:32:26.140 --> 01:32:27.560
+So if you have a brief question.
+
+1567
+01:32:28.780 --> 01:32:32.480
+I would say that if we could start all over again, because the current
+
+1568
+01:32:32.520 --> 01:32:34.540
+approach is trial and error.
+
+1569
+01:32:35.420 --> 01:32:39.320
+If we were to start all fresh, no guess works,
+
+1570
+01:32:39.480 --> 01:32:41.220
+right? We can actually get to the answer.
+
+1571
+01:32:42.140 --> 01:32:45.980
+We can have LLMs that can give us the answer, give us a prediction.
+
+1572
+01:32:46.900 --> 01:32:49.300
+What are the five steps frameworks that you see
+
+1573
+01:32:50.320 --> 01:32:53.660
+us truly changing clinical trials in the future and just
+
+1574
+01:32:54.500 --> 01:32:57.960
+going to version two or version five, whatever it is, but that
+
+1575
+01:32:58.000 --> 01:33:01.440
+version completely gets rid of the guesswork.
+
+1576
+01:33:01.520 --> 01:33:04.460
+What would be like the five steps you see towards getting there?
+
+1577
+01:33:09.460 --> 01:33:12.520
+I think I can take that. I think that
+
+1578
+01:33:16.240 --> 01:33:19.720
+what this session has shown is that there are
+
+1579
+01:33:19.820 --> 01:33:23.740
+obstacles with getting to reality in the
+
+1580
+01:33:23.780 --> 01:33:24.200
+data,
+
+1581
+01:33:25.640 --> 01:33:29.540
+be it in the EHR or from other real
+
+1582
+01:33:29.620 --> 01:33:32.550
+world data approaches, or any of the
+
+1583
+01:33:34.920 --> 01:33:35.760
+claims data,
+
+1584
+01:33:37.160 --> 01:33:38.759
+or indeed SEER data.
+
+1585
+01:33:40.399 --> 01:33:42.920
+And if you were to design it
+
+1586
+01:33:44.080 --> 01:33:44.689
+differently,
+
+1587
+01:33:45.500 --> 01:33:49.310
+you would have all of the relevant data in structured forms
+
+1588
+01:33:49.800 --> 01:33:53.700
+within the medical record. And from there, you could
+
+1589
+01:33:53.840 --> 01:33:54.280
+start.
+
+1590
+01:33:55.700 --> 01:33:57.360
+That would allow you to
+
+1591
+01:33:59.300 --> 01:34:03.040
+develop designs for trials that would be hugely
+
+1592
+01:34:03.050 --> 01:34:05.220
+more economical, that would
+
+1593
+01:34:06.800 --> 01:34:10.220
+not give Dr. Hubbard a headache when she was looking at data
+
+1594
+01:34:10.640 --> 01:34:12.900
+being brought in as external controls,
+
+1595
+01:34:13.780 --> 01:34:15.540
+and it would be much more reliable.
+
+1596
+01:34:16.140 --> 01:34:16.280
+So,
+
+1597
+01:34:17.080 --> 01:34:19.880
+I'm not sure that there are five stages in this
+
+1598
+01:34:20.300 --> 01:34:23.840
+because the reality is that we live in the real world.
+
+1599
+01:34:24.340 --> 01:34:24.780
+But
+
+1600
+01:34:27.480 --> 01:34:31.180
+any measures that we take towards refining
+
+1601
+01:34:32.000 --> 01:34:35.840
+curation of the EHR and improving data quality that
+
+1602
+01:34:35.880 --> 01:34:39.720
+way, or improving the EHR itself
+
+1603
+01:34:40.400 --> 01:34:41.990
+through better documentation

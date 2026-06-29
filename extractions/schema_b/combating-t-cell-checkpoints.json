@@ -1,0 +1,415 @@
+[
+  {
+    "talk_id": "combating-t-cell-checkpoints::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Defne Bayik",
+      "institution_or_pharma": "University of Miami",
+      "session_title": "combating-t-cell-checkpoints",
+      "talk_title": "DPP4 as a novel checkpoint for CD8 T cells",
+      "rhetorical_signals": [
+        "Speaker said: we observed that they were having much better outcomes compared to patients who received standard of care",
+        "Speaker said: we observed that both in human and mouse, the inhibition of DPP4 increases proliferation rates",
+        "Speaker said: we observed an increase in spare mitochondrial respiratory capacity, and we also observed increased glycolysis rates"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical trial data in GBM patients",
+        "No prospective validation of DPP4 inhibition in human glioblastoma"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify GBM patients with high CD8+ T cell DPP4 expression who may benefit from repurposed DPP4 inhibitors.",
+        "transcript_evidence": "Speaker said: we observed that CD8 T cells are the main expressers of DPP4 and that inhibition improves proliferation and cytotoxicity.",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell RNA\u2011seq and metabolomic data to predict which tumors have DPP4\u2011high exhausted CD8 T cells and model responder likelihood.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Repurpose FDA\u2011approved gliptins (e.g., sitagliptin) for GBM by combining with checkpoint blockade or CAR\u2011T therapy.",
+        "transcript_evidence": "Speaker said: we turned into the Medicare data set and performed a retrospective analysis where we looked for the patients who were on DPP4 inhibitors and observed better outcomes.",
+        "crispro_angle": "CrisPRO can simulate drug\u2011target engagement in the GBM microenvironment and predict synergistic dosing schedules with PD\u20111 blockade.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "sitagliptin",
+        "context": "used as the most common DPP4 inhibitor in retrospective analysis",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "metformin",
+        "context": "used as a drug control showing no survival benefit",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will prospective DPP4 inhibition improve overall survival in GBM patients?",
+      "What is the impact of DPP4 inhibition on myeloid cell function in the GBM microenvironment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "sitagliptin",
+        "other gliptins"
+      ],
+      "companies_to_monitor": [
+        "Eli Lilly",
+        "Merck"
+      ]
+    }
+  },
+  {
+    "talk_id": "combating-t-cell-checkpoints::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Keisuke Watanabe",
+      "institution_or_pharma": "National Cancer Center, Japan",
+      "session_title": "combating-t-cell-checkpoints",
+      "talk_title": "On-Demand GLUT3 Expression Augments CAR T Cell Metabolic Fitness and Antitumor Efficacy While Preventing Toxicity in Glioblastoma Models",
+      "rhetorical_signals": [
+        "Speaker said: stable GLUT3 expression induced severe body weight loss and high serum TNF\u2011alpha",
+        "Speaker said: on\u2011demand GLUT3 expression prevented toxicity and achieved complete responses",
+        "Speaker said: stable GLUT3\u2011expressing CAR T cells lost CC chemo expression and showed high PD\u20111/TIM\u20113"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "stable GLUT3\u2011expressing CAR T cells",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "continuous high\u2011affinity glucose uptake leads to hyperactivation and terminal differentiation causing weight loss and cytokine storm",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: we observed some severe body weight loss in CAR T cells expressing GLUT3",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "constitutive GLUT3 overexpression construct",
+        "ip_vulnerability_note": "Speaker disclosed that continuous GLUT3 expression caused hyperactivation and toxicity, indicating the scaffold is not intrinsically safe",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad GLUT3 expression dilutes therapeutic window and leads to systemic toxicity"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human glioblastoma CAR\u2011T trial data",
+        "Long\u2011term persistence of on\u2011demand GLUT3 CAR T cells not reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop a computational switch model to predict optimal timing of GLUT3 induction based on tumor glucose measurements.",
+        "transcript_evidence": "Speaker said: on\u2011demand GLUT3 expression enabled glucose uptake only after antigen recognition and avoided toxicity.",
+        "crispro_angle": "CrisPRO can integrate real\u2011time glucose sensor data with CAR\u2011T activation kinetics to design inducible GLUT3 promoters.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine on\u2011demand GLUT3 CAR T cells with checkpoint blockade to further reduce PD\u20111/TIM\u20113 upregulation.",
+        "transcript_evidence": "Speaker said: stable GLUT3\u2011expressing CAR T cells showed high PD\u20111/TIM\u20113 expression, whereas on\u2011demand did not.",
+        "crispro_angle": "CrisPRO can model synergistic effects of metabolic enhancement plus PD\u20111 inhibition on T\u2011cell exhaustion trajectories.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "EGFRvIII CAR T",
+        "context": "referenced as an example of existing glioblastoma CAR T approaches",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What intracellular signaling pathways are triggered by chronic GLUT3\u2011mediated glucose influx?",
+      "Can on\u2011demand GLUT3 be safely translated to human CAR T products?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GLUT3\u2011engineered CAR T constructs"
+      ],
+      "companies_to_monitor": [
+        "Kite Pharma",
+        "Novartis"
+      ]
+    }
+  },
+  {
+    "talk_id": "combating-t-cell-checkpoints::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Adam Blaisdell",
+      "institution_or_pharma": "University of California, San Francisco",
+      "session_title": "combating-t-cell-checkpoints",
+      "talk_title": "Targeting A20 to Enhance ACT Potency",
+      "rhetorical_signals": [
+        "Speaker said: A20 knockout dramatically improved tumor suppression compared to controls",
+        "Speaker said: zinc finger seven mutation showed dramatically improved tumor control and survival",
+        "Speaker said: perforin knockout completely reversed the zinc finger seven tumor phenotype"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "A20 inhibition alone",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "A20 loss boosts cytokine production but does not fully restore perforin\u2011mediated killing without zinc\u2011finger\u20117 targeting",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker said: zinc finger seven targeting greatly enhanced ACT activity, implying that A20 knockout alone was suboptimal",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "A20 zinc\u2011finger\u20117 targeting strategy",
+        "ip_vulnerability_note": "Speaker showed that precise zinc\u2011finger\u20117 inactivation is required; broader A20 knockout may have off\u2011target NF\u2011\u03baB effects",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on base\u2011editing to introduce a single missense mutation may be challenging for GMP pipelines"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that zinc finger seven Ttex had lower perforin expression yet concluded that perforin release (degranulation) was increased \u2013 contradiction between lower intracellular perforin and higher functional killing"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in vivo safety data for zinc\u2011finger\u20117 edited T cells",
+        "Long\u2011term persistence of A20\u2011deficient ACT not reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue A20\u2011targeted ACTs by focusing on zinc\u2011finger\u20117 editing rather than full knockout.",
+        "transcript_evidence": "Speaker said: zinc finger seven targeting greatly enhanced ACT activity, whereas full A20 knockout was less effective.",
+        "crispro_angle": "CrisPRO can predict off\u2011target editing outcomes and model the impact of zinc\u2011finger\u20117 disruption on T\u2011cell signaling networks.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine zinc\u2011finger\u20117 edited ACT with RIP3 or caspase\u20111 modulators to further boost perforin degranulation.",
+        "transcript_evidence": "Speaker said: RIP3 ablation nearly eliminated the tumor phenotype in zinc finger seven mice, indicating a non\u2011canonical pathway.",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of dual pathway modulation on degranulation kinetics.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "NY\u2011ESO\u20111 TCR T cells",
+        "context": "used as a model ACT in melanoma",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "CD19 CAR T cells",
+        "context": "used as a model ACT in B\u2011cell leukemia",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the precise molecular link between zinc\u2011finger\u20117 loss and RIP3\u2011caspase\u20111 activation?",
+      "Does zinc\u2011finger\u20117 editing affect T\u2011cell memory formation long\u2011term?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "A20 zinc\u2011finger\u20117 edited T\u2011cell products"
+      ],
+      "companies_to_monitor": [
+        "Adaptimmune",
+        "Allogene"
+      ]
+    }
+  },
+  {
+    "talk_id": "combating-t-cell-checkpoints::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Marco Scheidegger",
+      "institution_or_pharma": "University of Buenos Aires",
+      "session_title": "combating-t-cell-checkpoints",
+      "talk_title": "Galectin\u20111 and exhausted CD8 T cells",
+      "rhetorical_signals": [
+        "Speaker said: galectin\u20111 expression increases during T cell exhaustion and that this promotes dysfunction",
+        "Speaker said: knockout of galectin\u20111 in T cells leads to higher IFN\u2011\u03b3 and TNF\u2011\u03b1 production",
+        "Speaker said: galectin\u20111 binds to LAG\u20113 and VISTA with micromolar affinity in a glycan\u2011dependent manner"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "endogenous galectin\u20111 in T cells",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "galectin\u20111 engages LAG\u20113 and VISTA to enforce exhaustion, a pathway not addressed by current PD\u20111/CTLA\u20114 blockade",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "galectin\u20111 binding interface to LAG\u20113/VISTA",
+        "ip_vulnerability_note": "Speaker demonstrated direct binding with KD ~12\u201113\u202f\u00b5M (LAG\u20113) and ~3\u202f\u00b5M (VISTA), suggesting a druggable pocket",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Current checkpoint inhibitors do not target galectin\u20111\u2011mediated co\u2011inhibition"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "In vivo efficacy of galectin\u20111 blockade in tumor models",
+        "Potential off\u2011target effects on other glycan\u2011binding proteins"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use galectin\u20111 expression on CD8 T cells as a biomarker to select patients for combination therapy with LAG\u20113 or VISTA inhibitors.",
+        "transcript_evidence": "Speaker said: galectin\u20111 expression increases during T cell exhaustion and binds LAG\u20113/VISTA.",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell RNA\u2011seq and glycoproteomics to predict galectin\u20111\u2011high exhausted T\u2011cell subsets.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop small\u2011molecule or antibody blockers of the galectin\u20111/LAG\u20113/VISTA interaction to complement existing checkpoint blockade.",
+        "transcript_evidence": "Speaker said: galectin\u20111 binds LAG\u20113 and VISTA with measurable affinity, and this binding is glycan\u2011dependent.",
+        "crispro_angle": "CrisPRO can model the structural interface and prioritize compounds that disrupt the glycan\u2011dependent interaction.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PD\u20111 inhibitors",
+        "context": "current standard checkpoint therapy not addressing galectin\u20111 mediated inhibition",
+        "sentiment": "critical"
+      },
+      {
+        "name": "LAG\u20113 inhibitors",
+        "context": "mentioned as therapeutic targets that galectin\u20111 also binds",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does galectin\u20111 blockade synergize with PD\u20111 or LAG\u20113 blockade in vivo?",
+      "What intracellular signaling pathways are triggered by galectin\u20111 binding to LAG\u20113/VISTA?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "galectin\u20111 inhibitors",
+        "LAG\u20113 antibodies"
+      ],
+      "companies_to_monitor": [
+        "Incyte",
+        "GSK"
+      ]
+    }
+  },
+  {
+    "talk_id": "combating-t-cell-checkpoints::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Yaita Senat",
+      "institution_or_pharma": "Broad Institute of MIT and Harvard",
+      "session_title": "combating-t-cell-checkpoints",
+      "talk_title": "Understanding compensatory signaling after PTPN2 and PTPN1 blockade",
+      "rhetorical_signals": [
+        "Speaker said: STAT3 and STAT1 pathways are the main pathways activated in chronically stimulated T cells with PTPN2 inhibition",
+        "Speaker said: SOCS3 upregulation likely mediates down\u2011regulation of IL\u20112/STAT5 signaling",
+        "Speaker said: double knockout of PTPN2 and SOCS3 restores STAT5 signaling and reduces exhaustion markers"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PTPN2 inhibition alone",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "dominant STAT3 activation suppresses IL\u20112/STAT5 signaling via SOCS3, limiting T\u2011cell persistence",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PTPN2 inhibitor AC44",
+        "ip_vulnerability_note": "Speaker showed that AC44 induces STAT3 dominance, revealing a mechanistic limitation of the inhibitor",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Single\u2011target PTPN2 blockade does not fully prevent exhaustion in chronic stimulation settings"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "In vivo tumor efficacy of PTPN2/SOCS3 double knockout T cells",
+        "Safety profile of combined PTPN2 and SOCS3 disruption"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design combination trials that pair PTPN2 inhibition with SOCS3 modulation to sustain IL\u20112/STAT5 signaling.",
+        "transcript_evidence": "Speaker said: double knockout PTPN2 and SOCS3 showed strong levels of IL\u20112/STAT5 compared to single knockouts.",
+        "crispro_angle": "CrisPRO can model cytokine milieu dynamics and predict optimal dosing schedules for dual inhibition.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target SOCS3 upregulation as a resistance node to PTPN2\u2011based metabolic reprogramming.",
+        "transcript_evidence": "Speaker said: SOCS3 is a known inhibitor of JAK\u2011STAT pathway and is induced in PTPN2\u2011inhibited T cells.",
+        "crispro_angle": "CrisPRO can simulate SOCS3 knockdown effects on STAT5 phosphorylation kinetics.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AC44 (PTPN2 inhibitor)",
+        "context": "used to inhibit PTPN2 in chronic stimulation assays",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will SOCS3 knockout in human T cells be safe and maintain controlled cytokine release?",
+      "How does the STAT3\u2011dominant program affect long\u2011term memory formation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PTPN2 inhibitors",
+        "SOCS3 targeting agents"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Bristol\u2011Myers Squibb"
+      ]
+    }
+  }
+]

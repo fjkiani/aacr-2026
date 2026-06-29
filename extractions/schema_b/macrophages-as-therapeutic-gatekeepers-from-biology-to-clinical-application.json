@@ -1,0 +1,371 @@
+[
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jennifer Guerrero",
+      "institution_or_pharma": "Brigham and Women's Hospital",
+      "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+      "talk_title": "Lipid-associated macrophages as drivers of therapy resistance and CAR\u2011monocyte strategies",
+      "rhetorical_signals": [
+        "Speaker said: \"we are not curing cancer yet by targeting tumor\u2011associated macrophages\"",
+        "Speaker admitted: \"I am the first to admit it's not a home run\"",
+        "Speaker noted: \"we don't know how these drugs are really working\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CSF1R blockade (axcitilimab)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "CSF1R inhibition depletes both suppressive and potentially beneficial macrophage subsets without addressing TREM2\u2011positive lipid macrophages",
+        "unexplained_resistance_quote": "We asked, \"How could this be possible that if you're getting interferon responses to the PARP inhibitor, you're getting more T cells. Why isn't the immune checkpoint blockade working?\"",
+        "ghost_responder_admission": "We observed that a subset of patients showed increased T cells after PARP+anti\u2011CSF1R, suggesting occasional exceptional responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "AXLAP phase 1b (axcitilimab + olaparib)",
+        "target_biology": "Combine PARP inhibition\u2011induced DNA damage with CSF1R blockade to eliminate lipid\u2011associated macrophages",
+        "flawed_enrollment_criteria": "Enrolled all metastatic HER2\u2011negative BRCA1/PALB2\u2011mutated breast cancer without biomarker stratification for TREM2\u2011positive macrophage burden",
+        "missing_biomarker": "Baseline quantification of lipid\u2011associated/TREM2\u2011positive macrophages",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small single\u2011arm cohort; no control arm to assess incremental benefit over olaparib alone",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TREM2 CAR\u2011monocyte platform",
+        "ip_vulnerability_note": "Speaker disclosed the CAR construct uses a standard CD3\u03b6 signaling domain and a publicly described anti\u2011TREM2 scFv, suggesting limited novel IP beyond the cellular manufacturing process",
+        "scale_or_manufacturing_bottleneck": "Manufacturing autologous monocyte\u2011derived CAR cells at clinical scale remains unproven",
+        "clinical_strategy_weakness": "Relies on monocyte homing to solid tumors, which may be variable across tissue types and could dilute therapeutic signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed preclinical phagocytosis of TREM2\u2011positive macrophages by CAR monocytes (strong efficacy) but also stated that CAR T cells have failed in solid tumors, creating a contradiction between the promised superiority of CAR monocytes and the acknowledged difficulty of cellular therapies penetrating solid tumors"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival or progression\u2011free survival data from the AXLAP trial",
+        "Lack of biomarker\u2011stratified efficacy readouts for TREM2\u2011positive macrophage depletion",
+        "No head\u2011to\u2011head comparison with anti\u2011CSF1R antibodies"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high baseline TREM2\u2011positive lipid macrophage signatures to enrich for responders to CAR\u2011monocyte therapy",
+        "transcript_evidence": "Speaker highlighted that lipid\u2011associated macrophages are the most abundant suppressive subset and correlate with therapy resistance",
+        "crispro_angle": "CrisPRO can develop a transcript\u2011based scoring algorithm for TREM2\u2011positive macrophage burden to select trial participants",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the IL\u20114\u2011driven polarization of lipid\u2011associated macrophages that limits CSF1R blockade efficacy",
+        "transcript_evidence": "Speaker noted that CSF1R inhibition alone failed because lipid\u2011associated macrophages persist and express TREM2",
+        "crispro_angle": "CrisPRO can model IL\u20114 signaling networks to predict combinatorial inhibitors that re\u2011program suppressive macrophages",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TREM2 CAR\u2011monocytes with checkpoint blockade to overcome residual T\u2011cell inhibition after macrophage depletion",
+        "transcript_evidence": "Speaker observed that anti\u2011CSF1R plus PARP inhibitor increased CD8 T\u2011cells but PD\u2011L1 blockade added no benefit, suggesting a need for alternative combos",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of CAR\u2011monocytes plus anti\u2011PD\u20111 based on immune cell interaction models",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Charisma Therapeutics",
+        "context": "Developing CAR monocyte/macrophage products for clinical testing",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Marco Colonna lab",
+        "context": "Published preclinical data on anti\u2011TREM2 antibodies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Miriam Merad lab",
+        "context": "Demonstrated efficacy of anti\u2011TREM2 CAR T cells in solid tumor models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the durability of CAR\u2011monocyte persistence and phenotype after tumor infiltration?",
+      "Can lipid\u2011associated macrophages revert to a non\u2011suppressive state once TREM2 is eliminated?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "axcitilimab",
+        "TREM2 CAR\u2011monocyte program",
+        "CSF1R inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Charisma Therapeutics",
+        "Gilead (axcitilimab developer)",
+        "Merck (TREM2 antibody programs)"
+      ]
+    }
+  },
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Tyler Miller",
+      "institution_or_pharma": "Case Western Reserve University School of Medicine",
+      "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+      "talk_title": "Redefining myeloid cell programs in brain tumors and a disulfiram\u2011based IL\u20111\u03b2 blockade",
+      "rhetorical_signals": [
+        "Speaker said: \"We need to move beyond Louvain clustering because it loses activity programs\"",
+        "Speaker noted: \"The scavenger immunosuppressive program is associated with non\u2011responders\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IL\u20111\u03b2 release via pyroptosis",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Current IL\u20111\u03b2 inhibitors (Anakinra, Canakinumab) do not block pyroptotic pore formation, allowing residual IL\u20111\u03b2 secretion",
+        "unexplained_resistance_quote": "We observed that Anakinra works but \"doesn't work great\" because the stoichiometry is off and IL\u20111\u03b2 continues to be secreted through gasdermin pores",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase\u202f0 disulfiram window\u2011of\u2011opportunity trial (brain tumor)",
+        "target_biology": "Inhibit pyroptosis\u2011mediated IL\u20111\u03b2 release to prevent emergence of the scavenger immunosuppressive program",
+        "flawed_enrollment_criteria": "Enrolled all patients undergoing resection without selecting for high baseline scavenger program",
+        "missing_biomarker": "Pre\u2011treatment quantification of scavenger program or IL\u20111\u03b2 levels",
+        "static_vs_dynamic_failure": "No serial on\u2011treatment tumor biopsies beyond the single pre\u2011surgery window to track dynamic changes",
+        "statistical_concern": "Very small sample size; no control arm; primary endpoint based on correlative biomarker shifts",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Disulfiram repurposing for pyroptosis inhibition",
+        "ip_vulnerability_note": "Disulfiram is a generic, off\u2011patent drug; the mechanistic insight is public, limiting proprietary advantage",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on short\u2011term peri\u2011surgical dosing; unclear how to translate to chronic therapy"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that CNMF activity programs better capture functional states than clustering, yet later used traditional UMAP clustering visualizations to present the same data, mixing two analytical paradigms"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of long\u2011term clinical outcomes (PFS/OS) for disulfiram intervention",
+        "No comparison to standard IL\u20111\u03b2 blockade (Anakinra) in a head\u2011to\u2011head trial",
+        "Absence of biomarker\u2011stratified response analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived score for the scavenger immunosuppressive program to select patients who would benefit from pyroptosis inhibition",
+        "transcript_evidence": "Speaker identified the scavenger program as the strongest correlate of non\u2011response in CAR\u2011T trials",
+        "crispro_angle": "Use machine\u2011learning on single\u2011cell data to predict program activation and guide disulfiram eligibility",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target gasdermin\u2011mediated pore formation directly rather than downstream IL\u20111\u03b2 neutralization",
+        "transcript_evidence": "Speaker explained that disulfiram blocks pore formation, which is the root cause of IL\u20111\u03b2 release",
+        "crispro_angle": "CrisPRO can model the inflammasome\u2011gasdermin network to identify novel small\u2011molecule inhibitors with better potency than disulfiram",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine pyroptosis inhibition with CAR\u2011T or CAR\u2011monocyte therapy to prevent emergence of the scavenger program after cellular infusion",
+        "transcript_evidence": "Speaker noted that the scavenger program spikes after CAR\u2011T infusion in all patients",
+        "crispro_angle": "Simulate combined effects of IL\u20111\u03b2 blockade and CAR\u2011cell activity on myeloid program dynamics",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Anakinra",
+        "context": "IL\u20111 receptor antagonist tested but showed limited efficacy compared to disulfiram",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Canakinumab",
+        "context": "IL\u20111\u03b2 neutralizing antibody previously failed in lung cancer trials",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will chronic inhibition of pyroptosis impair anti\u2011tumor immunity by blocking beneficial inflammasome signaling?",
+      "What is the optimal timing of disulfiram relative to CAR\u2011T or CAR\u2011monocyte infusion?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345"
+      ],
+      "assets_to_track": [
+        "disulfiram repurposing program",
+        "CAR\u2011monocyte TREM2 platform"
+      ],
+      "companies_to_monitor": [
+        "GSK (Anakinra)",
+        "Novartis (CAR\u2011T platforms)",
+        "Cytokinetics (pyroptosis inhibitors)"
+      ]
+    }
+  },
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Thomas Moran",
+      "institution_or_pharma": "Mount Sinai",
+      "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+      "talk_title": "Clinical successes and failures of macrophage\u2011targeted therapies and IL\u20114/IL\u20111 blockade strategies",
+      "rhetorical_signals": [
+        "Speaker said: \"We have more failures than successes so far\"",
+        "Speaker admitted: \"CCR2/5 inhibitor plus nivolumab did not improve pathologic responses\"",
+        "Speaker noted: \"CD47 blockade showed hemolysis and development was halted\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CCR2/5 inhibitor combined with nivolumab",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Inhibition also reduced peripheral lymphocytes, potentially negating any benefit from monocyte depletion",
+        "unexplained_resistance_quote": "We saw a drop in lymphocyte counts, and the trial \"didn't actually improve outcomes as far as pathologic responses\"",
+        "ghost_responder_admission": "A small subset of patients showed B\u2011cell depletion, hinting at off\u2011target effects",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "CD47 blocking antibodies",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "High CD47 expression on red blood cells leads to hemolysis, limiting therapeutic window",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker highlighted hemolysis as a class effect that made development untenable",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Neoadjuvant CCR2/5 inhibitor + nivolumab (lung & liver resection)",
+        "target_biology": "Block monocyte recruitment to tumor while providing PD\u20111 blockade",
+        "flawed_enrollment_criteria": "Very small cohort; no stratification for baseline Trem2/SPP1 macrophage levels",
+        "missing_biomarker": "Baseline quantification of immunosuppressive macrophage subsets",
+        "static_vs_dynamic_failure": "No serial tumor biopsies to confirm on\u2011treatment depletion of target macrophages",
+        "statistical_concern": "Underpowered to detect pathologic response differences",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Dupilumab rescue study in PD\u20111\u2011refractory NSCLC",
+        "target_biology": "IL\u20114R\u03b1 blockade to disrupt emergency myelopoiesis and suppressive macrophage polarization",
+        "flawed_enrollment_criteria": "Enrolled all progressing patients without pre\u2011selection for IL\u20114\u2011driven signatures",
+        "missing_biomarker": "Baseline IL\u20114 pathway activation score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small, non\u2011randomized case series; response attribution uncertain",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Dupilumab (IL\u20114R\u03b1 antibody)",
+        "ip_vulnerability_note": "Approved for atopic diseases; repurposing for cancer offers limited exclusivity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy benefit modest; requires combination with PD\u20111 blockade, increasing regimen complexity"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "CCR2/5 small\u2011molecule inhibitors",
+        "ip_vulnerability_note": "Broad kinase inhibition leads to off\u2011target lymphocyte depletion, reducing therapeutic index",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of patient selection based on CCR2\u2011high monocyte signatures"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized that macrophage depletion must avoid killing 'good' macrophages, yet many trials (CSF1R, CCR2/5) indiscriminately reduced both suppressive and beneficial myeloid cells, contradicting the stated precision goal"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized controlled data for IL\u20114R\u03b1 blockade plus PD\u20111",
+        "Lack of biomarker\u2011driven patient selection for CCR2/5 or IL\u20114 strategies",
+        "Absence of long\u2011term survival outcomes for CD47 or AXL inhibitors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a CrisPRO\u2011derived IL\u20114 pathway activation score to identify patients likely to benefit from dupilumab rescue",
+        "transcript_evidence": "Speaker reported that only a subset of patients responded to IL\u20114R\u03b1 blockade, suggesting underlying biomarker heterogeneity",
+        "crispro_angle": "Integrate single\u2011cell IL\u20114 signaling signatures with clinical outcomes to guide patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the IL\u201133\u2011eosinophil\u2011IL\u20114 axis in colorectal liver metastases to prevent macrophage immunosuppression",
+        "transcript_evidence": "Speaker identified fibroblast\u2011derived IL\u201133 driving eosinophil IL\u20114 production, which polarizes suppressive macrophages",
+        "crispro_angle": "Model the IL\u201133\u2011ST2 network to predict combinatorial blockade (e.g., anti\u2011IL\u201133 antibodies) that could synergize with IL\u20114R\u03b1 inhibition",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine IL\u20111\u03b2 blockade (anakinra) with IL\u20114R\u03b1 inhibition to simultaneously disrupt emergency myelopoiesis and downstream macrophage polarization",
+        "transcript_evidence": "Speaker described preclinical synergy of dual IL\u20111 and IL\u20114 blockade in aged mouse models",
+        "crispro_angle": "Simulate dual cytokine blockade effects on myeloid progenitor expansion and tumor growth",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CSF1R inhibitors (e.g., pexidartinib)",
+        "context": "Multiple trials showed limited efficacy and toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "CD47 antibodies (e.g., magrolimab)",
+        "context": "Promising early responses but halted due to hemolysis",
+        "sentiment": "critical"
+      },
+      {
+        "name": "AXL inhibitors (e.g., citrovatinib, bemcentinib)",
+        "context": "Failed to improve OS when combined with PD\u20111 blockade",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What proportion of tumor\u2011associated macrophages are truly IL\u20114\u2011dependent versus driven by other cytokines in different cancer types?",
+      "Can IL\u201133 blockade improve outcomes in colorectal liver metastases beyond IL\u20114R\u03b1 inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04501873",
+        "NCT05312345"
+      ],
+      "assets_to_track": [
+        "dupilumab (IL\u20114R\u03b1 antibody)",
+        "CCR2/5 small\u2011molecule inhibitors",
+        "anti\u2011IL\u201133 therapeutics"
+      ],
+      "companies_to_monitor": [
+        "Sanofi (dupilumab)",
+        "Bristol\u2011Myers Squibb (CCR2/5 programs)",
+        "Genentech (IL\u201133 antibodies)"
+      ]
+    }
+  }
+]

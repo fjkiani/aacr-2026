@@ -1,0 +1,216 @@
+[
+  {
+    "talk_id": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Faris",
+      "institution_or_pharma": "University of Washington",
+      "session_title": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice",
+      "talk_title": "Multiplex Assays of Variant Effects (MAVEs) for BRCA2 and other breast/ovarian cancer predisposition genes",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't always know that this haploid cell is behaving the right way. Is it behaving the same as a diploid cell?\"",
+        "Speaker said: \"MAVEs are not perfect. There is error in MAVEs, and you can see that there's a few percent that are differential, that are wrong\"",
+        "Speaker said: \"We expect that in a biological system. Perhaps more replicates would have fixed that\"",
+        "Speaker said: \"We are still only doing function. This is not clinical classification\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No OS or clinical outcome data presented",
+        "Lack of splicing/ RNA-level validation for many variants",
+        "Uncertainty about cell\u2011type specific effects (HAP1 vs primary mammary cells)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Current MAVEs lack systematic splicing readouts; integrating RNA\u2011seq based splicing metrics would fill this gap.",
+        "transcript_evidence": "Speaker said: \"We put in 10 bases on each side of the canonical splice site... there are a lot of variants that do seem to knock out activity... but there\u2019s no mention of any RNA work\"",
+        "crispro_angle": "CrisPRO can model variant impact on splicing using deep learning of RNA\u2011seq data and combine with DNA\u2011based functional scores.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: studies on splicing effects of BRCA2 variants",
+          "ClinicalTrials.gov: any trials using splicing\u2011modulating therapies for BRCA2"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integrate polygenic risk scores (PRS) with MAVE\u2011derived functional classifications to improve individualized risk prediction.",
+        "transcript_evidence": "Speaker said: \"We have not looked at it yet. It's simply an idea on a piece of paper... PRS modifies different mutations\"",
+        "crispro_angle": "CrisPRO can overlay PRS calculations with variant\u2011specific functional probabilities to generate a composite risk metric.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "UK Biobank: genotype\u2011phenotype data for BRCA2 carriers",
+          "PRS models for breast/ovarian cancer"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design prospective trials that stratify patients by MAVE\u2011derived functional categories rather than only by protein\u2011truncating status.",
+        "transcript_evidence": "Speaker said: \"We end up with 608 that remain as VUS... over 95% of the variants... combining MAVEs dramatically improves diagnostics\"",
+        "crispro_angle": "CrisPRO can simulate trial power under different functional stratifications to optimize enrollment criteria.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: identify ongoing BRCA2\u2011targeted therapy trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AlphaMissense",
+        "context": "Benchmarking computational predictor against MAVE functional scores",
+        "sentiment": "critical"
+      },
+      {
+        "name": "ClinVar",
+        "context": "Source of known pathogenic/benign standards for calibration",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Ambry Genetics",
+        "context": "Provided case\u2011control data for risk association and standards",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How do variant effects differ between HAP1 cells and primary mammary epithelial cells?",
+      "What proportion of VUS are truly pathogenic versus assay artefacts?",
+      "Can a single viability\u2011based MAVE capture all disease\u2011relevant mechanisms (e.g., replication\u2011fork stress)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BRCA2 functional MAVEs",
+        "AlphaMissense predictor"
+      ],
+      "companies_to_monitor": [
+        "Ambry Genetics",
+        "Lea Starita lab (University of Washington)"
+      ]
+    }
+  },
+  {
+    "talk_id": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jacob Kitzman",
+      "institution_or_pharma": "University of Michigan",
+      "session_title": "using-multiplex-assays-of-variant-effects-maves-in-clinical-oncology-practice",
+      "talk_title": "MAVEs for Lynch syndrome mismatch\u2011repair genes and colorectal cancer risk",
+      "rhetorical_signals": [
+        "Speaker said: \"We have now completed variant\u2011to\u2011function maps of all four of the key MMR genes. Only three would fit on the slide here, but this adds up to over 73,000 variants\"",
+        "Speaker said: \"One key thing we did\u2026 was to gather a gold\u2011standard set of clinical variants\u2026 and for 47 of those 48 variants, our functional data agreed directionally\"",
+        "Speaker said: \"AlphaMissense provides an output which is a so\u2011called probability of pathogenicity\u2026 you can see there's a lot more red on the bottom\"",
+        "Speaker said: \"We are interested in exploring whether we can use MAIV data to fine\u2011tune or improve computational predictions\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AlphaMissense predictor for MMR genes",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Over\u2011calling pathogenicity because evolutionary constraints do not map directly to cancer risk in humans",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "6\u2011thioguanine synthetic\u2011lethal selection for MMR loss",
+        "ip_vulnerability_note": "Relies on a single drug\u2011induced phenotype; may miss variants that affect other MMR functions without altering 6TG sensitivity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a broad viability readout may dilute signal for hypomorphic variants"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that AlphaMissense predicts >40% pathogenicity for PMS2 missense variants, but the MAVE functional assay shows only ~12% loss\u2011of\u2011function \u2013 yet the speaker concluded that computational predictors are \u201cgetting better and better\u201d without reconciling this discrepancy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited clinical phasing data for double\u2011mutant haplotypes",
+        "No systematic database of paired missense variants in patients",
+        "Splicing\u2011specific MAVEs not yet integrated for MMR genes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Identify and model epistatic interactions between mild missense variants (e.g., K618A) that together push functional scores into pathogenic range.",
+        "transcript_evidence": "Speaker said: \"We are making all these other variants on the background of K618A\u2026 a substantial minority of missense variants are poised for functional abnormality, and then when they occur on this background\u2026 they\u2019re sort of pushed down the sledding hill\"",
+        "crispro_angle": "CrisPRO can predict combinatorial effects using a probabilistic epistasis model trained on the double\u2011mutant MAVE data.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinVar: extract phased haplotype submissions",
+          "Population databases (gnomAD) for co\u2011occurrence frequencies"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop RNA\u2011seq based splicing MAVEs for MMR genes to complement the viability assay and capture splice\u2011disrupting VUS.",
+        "transcript_evidence": "Speaker said: \"There\u2019s no mention of any RNA work. Nobody\u2019s done that since the 2018 BRCA1 paper\"",
+        "crispro_angle": "CrisPRO\u2019s transcript\u2011impact module can integrate splice\u2011junction quantification with DNA\u2011based functional scores.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Published splicing MAVEs for other DNA\u2011repair genes",
+          "GTEx RNA\u2011seq data for MMR gene expression"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use MAVE\u2011derived loss\u2011of\u2011function classifications to stratify Lynch syndrome patients in existing surveillance trials.",
+        "transcript_evidence": "Speaker said: \"Our functional data allowed us to retrospectively reclassify 10 individuals as Lynch syndrome\"",
+        "crispro_angle": "CrisPRO can generate risk scores that combine functional classification with family\u2011history models for trial eligibility.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: Lynch syndrome surveillance studies",
+          "Ambry Genetics variant databases"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "AlphaMissense",
+        "context": "Benchmarking against functional MAPs for PMS2",
+        "sentiment": "critical"
+      },
+      {
+        "name": "ClinVar",
+        "context": "Source of gold\u2011standard clinical variants for calibration",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Ambry Genetics",
+        "context": "Provided case\u2011control risk data and variant standards",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the clinical prevalence of the K618A\u2011background epistatic interactions?",
+      "How do missense variants that affect splicing versus protein stability differ in cancer risk?",
+      "Can a single viability assay capture all pathogenic mechanisms of MMR deficiency?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MMR gene MAVEs (MSH2, MLH1, MSH6, PMS2)",
+        "AlphaMissense predictor"
+      ],
+      "companies_to_monitor": [
+        "Ambry Genetics",
+        "CrisPRO (internal development)"
+      ]
+    }
+  }
+]

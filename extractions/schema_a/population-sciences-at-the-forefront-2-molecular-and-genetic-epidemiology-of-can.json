@@ -1,0 +1,547 @@
+[
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::li::1",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Plasma proteomic signature of persistent smoking effects and cancer risk",
+    "speaker": {
+      "name": "Hui Li",
+      "affiliation": "Vanderbilt University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "upper aerodigestive tract cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "biomarker_development",
+      "early_detection",
+      "proteomics",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "PSPSE proteomic signature score",
+        "type": "predictive",
+        "finding": "Higher score associated with increased risk of lung cancer (HR ~1.5) and improved PLCOm2012 model AUC, especially in long-term quitters"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank",
+        "genotype_or_key_features": "28,000 former smokers with proteomics"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Shanghai Men's Health Study",
+        "genotype_or_key_features": "71 case-control participants"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "lung cancer risk HR",
+        "value": "1.5 per SD increase",
+        "confidence_interval": "95% CI 1.2-1.8",
+        "n": "n=28,000",
+        "population": "former smokers",
+        "comparator": "lower PSPSE score",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PLCOm2012 AUC improvement",
+        "value": "+0.03",
+        "n": "n=28,000",
+        "population": "former smokers",
+        "comparator": "PLCOm2012 alone",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "The PSPSE proteomic signature captures persistent protein alterations after smoking cessation, reflecting cumulative exposure and biological memory, and its elevated levels predict higher incidence of smoking-related cancers, particularly lung cancer, independent of self-reported smoking metrics.",
+    "readouts": [
+      "proteomics (SomaLogic)",
+      "linear regression",
+      "lasso regression",
+      "Cox proportional hazards"
+    ],
+    "key_findings": [
+      "Identified 18 proteins forming a PSPSE score that distinguishes current, former, and never smokers.",
+      "Higher PSPSE score significantly associated with increased lung cancer risk (HR ~1.5) in UK Biobank former smokers.",
+      "PSPSE score improves PLCOm2012 lung cancer risk prediction, especially in quitters >20 years.",
+      "Signature validated in an independent Asian cohort (Shanghai Men's Health Study) with consistent risk association."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What are the functional roles of the 18 signature proteins in carcinogenesis?",
+      "Can the signature predict response to lung cancer screening or chemoprevention?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::wang::2",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Adult height genetics and fatal prostate cancer risk",
+    "speaker": {
+      "name": "Anqi Wang",
+      "affiliation": "Harvard T.H. Chan School of Public Health",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "genetics",
+      "epidemiology",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Height polygenic risk score",
+        "type": "predictive",
+        "finding": "PRS associated with fatal prostate cancer; residual height after adjusting for PRS shows no association"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Health Professionals Follow-up Study",
+        "genotype_or_key_features": "51,000 men, DNA and tumor tissue available"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "HR for fatal prostate cancer per SD increase in height PRS",
+        "value": "1.30",
+        "confidence_interval": "95% CI 1.12-1.51",
+        "n": "n=~5,000 cases",
+        "population": "HPFS participants",
+        "comparator": "lower PRS",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Genetically determined adult height, captured by a polygenic risk score, drives the observed association with fatal prostate cancer, likely via growth\u2011related pathways such as androgen signaling, rather than early\u2011life nutrition.",
+    "readouts": [
+      "GWAS PRS calculation",
+      "linear regression",
+      "Cox models",
+      "pathway enrichment (GSEA)"
+    ],
+    "key_findings": [
+      "Height PRS strongly associated with fatal prostate cancer (HR 1.30 per SD).",
+      "Residual height after accounting for PRS shows no association, indicating genetics drive the risk.",
+      "Androgen response pathway upregulated in tumors of taller men, linking height to prostate cancer biology."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can height PRS improve risk stratification beyond PSA screening?",
+      "What specific genetic variants within the PRS mediate androgen pathway activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::wasak::3",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Copy number alteration subtypes in high\u2011grade serous ovarian cancer and racial survival disparities",
+    "speaker": {
+      "name": "Irma Wasak",
+      "affiliation": "Dartmouth College",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "high-grade serous ovarian carcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "genomics",
+      "spatial_biology",
+      "health_disparities"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "ACES/NCSCS/NHS",
+        "genotype_or_key_features": "638 HSOC tumors with matched blood, 37% Black"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Hazard ratio for death (C1 loss\u2011dominant vs C2 CNA\u2011quiet)",
+        "value": "1.45",
+        "confidence_interval": "95% CI 1.10-1.92",
+        "n": "n=638",
+        "population": "overall HSOC",
+        "comparator": "CNA\u2011quiet",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Hazard ratio for death (Black vs White within gain\u2011dominant C3)",
+        "value": "1.60",
+        "confidence_interval": "95% CI 1.12-2.28",
+        "n": "n=~200",
+        "population": "Black women in C3",
+        "comparator": "White women in C3",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Unsupervised clustering of genome\u2011wide copy\u2011number profiles from methylation arrays defines three HSOC subtypes (loss\u2011dominant, CNA\u2011quiet, gain\u2011dominant); CNA\u2011quiet tumors show higher immune infiltration and better survival, while Black patients in the gain\u2011dominant subtype experience higher mortality, suggesting ancestry\u2011linked biological contributors to disparity.",
+    "readouts": [
+      "Illumina EPIC methylation array",
+      "Copy number inference (CopyNumber R package)",
+      "HYTIME deconvolution",
+      "Cox proportional hazards"
+    ],
+    "key_findings": [
+      "Identified three CNA\u2011based clusters: loss\u2011dominant (44%), CNA\u2011quiet (40%), gain\u2011dominant (16%).",
+      "CNA\u2011quiet tumors have significantly higher immune cell infiltration and improved overall survival.",
+      "Within the gain\u2011dominant cluster, Black women have a 60% higher hazard of death compared to White women."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do specific copy\u2011number events drive the immune\u2011cold phenotype in gain\u2011dominant tumors?",
+      "Can targeted therapies reverse the survival disadvantage in Black patients with gain\u2011dominant HSOC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::reid::4",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Spatial context of T\u2011cell infiltration and exhaustion predicts ovarian cancer survival in Black women",
+    "speaker": {
+      "name": "Brett Reid",
+      "affiliation": "Moffitt Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "high-grade serous ovarian carcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "spatial_biology",
+      "immunology",
+      "health_disparities"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Cytotoxic T\u2011cell enrichment (tumor vs stroma)",
+        "type": "predictive",
+        "finding": "Tumor\u2011dominant enrichment associated with better overall survival (HR 0.68)"
+      },
+      {
+        "name": "TIM\u20113+ exhausted CD8+ T cells in tumor",
+        "type": "predictive",
+        "finding": "Presence associated with improved survival in tumors with \u22652% T\u2011cell infiltration"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "ACES ovarian cancer cohort",
+        "genotype_or_key_features": "221 Black women, whole\u2011section multiplex IF"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "HR for death per unit increase in tumor\u2011dominant cytotoxic gradient",
+        "value": "0.68",
+        "confidence_interval": "95% CI 0.52-0.89",
+        "n": "n=221",
+        "population": "Black women with HSOC",
+        "comparator": "stroma\u2011dominant",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "HR for death with tumor TIM\u20113+ exhaustion (\u22652% T cells)",
+        "value": "0.71",
+        "confidence_interval": "95% CI 0.55-0.92",
+        "n": "n=221",
+        "population": "subset with \u22652% T cells",
+        "comparator": "low exhaustion",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Multiplex immunofluorescence of whole\u2011section ovarian tumors reveals that cytotoxic CD8+ T cells confer survival benefit when enriched in the tumor compartment versus stroma, and tumor\u2011localized TIM\u20113+ exhausted T cells paradoxically mark better outcomes, indicating spatially resolved immune functionality drives prognosis in Black women.",
+    "readouts": [
+      "multiplex immunofluorescence",
+      "spatial point pattern analysis",
+      "Cox regression"
+    ],
+    "key_findings": [
+      "Tumor\u2011dominant cytotoxic T\u2011cell enrichment predicts improved survival (HR 0.68).",
+      "Stroma\u2011dominant cytotoxic enrichment predicts worse survival.",
+      "Tumor TIM\u20113+ exhaustion associated with better survival among tumors with \u22652% T cells."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Would checkpoint blockade efficacy differ by the identified spatial immunotypes?",
+      "Can spatial profiling be integrated into routine pathology for risk stratification?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::lawson-micho::5",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Pathways enriched in primary breast tumors with disseminated tumor cells",
+    "speaker": {
+      "name": "Kayli Lawson-Micho",
+      "affiliation": "Fred Hutch Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "metastasis",
+      "genomics",
+      "transcriptomics",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Wnt pathway mutations",
+        "type": "predictive",
+        "finding": "Associated with EMT signature and lower proliferation in DTC\u2011positive tumors"
+      },
+      {
+        "name": "PI3K/AKT/mTOR mutations",
+        "type": "predictive",
+        "finding": "Linked to increased proliferative pathway expression and reduced apoptosis"
+      },
+      {
+        "name": "APOBEC mutational signature activity",
+        "type": "exploratory",
+        "finding": "~2\u2011fold higher in DTC\u2011positive patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Prospective breast cancer DTC cohort",
+        "genotype_or_key_features": "148 patients with RNA\u2011seq, WGS, bone\u2011marrow DTC assessment"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "In early\u2011stage hormone\u2011receptor\u2011positive breast cancer, presence of disseminated tumor cells correlates with somatic mutations in Wnt, PI3K/AKT/mTOR, and NRF2 pathways; Wnt mutations drive EMT and a stem\u2011like migratory phenotype, while PI3K alterations promote proliferation and resistance, together facilitating dormancy and later metastasis.",
+    "readouts": [
+      "whole\u2011genome sequencing",
+      "RNA\u2011seq",
+      "mutational signature analysis",
+      "gene set enrichment analysis"
+    ],
+    "key_findings": [
+      "DTC\u2011positive tumors enriched for mutations in Wnt, PI3K/AKT/mTOR, and NRF2 pathways.",
+      "Wnt\u2011mutated DTC\u2011positive tumors show increased EMT and decreased proliferation signatures.",
+      "PI3K\u2011mutated DTC\u2011positive tumors display upregulated proliferative pathways and reduced apoptosis.",
+      "APOBEC mutagenesis activity nearly doubled in DTC\u2011positive patients."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can targeting Wnt or PI3K pathways eradicate DTCs and prevent recurrence?",
+      "What is the temporal relationship between DTC emergence and pathway activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::wang::6",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Colorectal cancer polygenic risk across birth cohorts",
+    "speaker": {
+      "name": "Xinyu Wang",
+      "affiliation": "Harvard Chan School of Public Health",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "genetics",
+      "epidemiology",
+      "risk_prediction"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Colorectal cancer PRS (204 SNPs)",
+        "type": "predictive",
+        "finding": "Association with CRC risk strengthens in more recent birth cohorts (trend p<0.001)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "GECCO consortium",
+        "genotype_or_key_features": "31,000 cases, 52,000 controls, European ancestry"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank",
+        "genotype_or_key_features": "31,000 cases, 52,000 controls"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "OR per SD increase in PRS",
+        "value": "1.20",
+        "confidence_interval": "95% CI 1.15-1.25",
+        "n": "n=~83,000",
+        "population": "most recent birth cohorts (born 1960\u20111970)",
+        "comparator": "earlier cohorts",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "A colorectal cancer polygenic risk score shows progressively stronger association with disease risk in later birth cohorts, suggesting gene\u2011environment interactions where modern lifestyle exposures amplify genetic susceptibility, particularly for distal colon and rectal cancers.",
+    "readouts": [
+      "GWAS\u2011derived PRS calculation",
+      "logistic regression",
+      "meta\u2011analysis",
+      "gene set enrichment"
+    ],
+    "key_findings": [
+      "PRS distribution unchanged across birth cohorts, but effect size increases in recent cohorts.",
+      "Stronger PRS\u2011CRC association observed in individuals <55 years, unscreened, without family history, and for distal colon/rectal cancers.",
+      "Innate immune system pathways enriched among SNPs showing birth\u2011cohort interaction."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Which specific environmental factors (e.g., diet, obesity) drive the observed gene\u2011environment interaction?",
+      "Can integrating PRS with lifestyle scores improve early\u2011onset CRC screening?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can::verma::7",
+    "session_title": "population-sciences-at-the-forefront-2-molecular-and-genetic-epidemiology-of-can",
+    "talk_title": "Functional characterization of STARD13 as a BRCA2 modifier in breast cancer",
+    "speaker": {
+      "name": "Shiv Prakash Verma",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "functional_genomics",
+      "cancer_genetics",
+      "modifier"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "STARD13",
+        "alteration": "non\u2011coding SNP rs3742324",
+        "pathway": "Rho GTPase signaling / EMT",
+        "modality": "enhancer",
+        "compound_name": "",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MCF10A BRCA2 6174delT heterozygous",
+        "genotype_or_key_features": "BRCA2 truncating mutation"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HMLE BRCA2 6174delT heterozygous",
+        "genotype_or_key_features": "same mutation in mammary epithelial cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A non\u2011coding variant rs3742324 within an enhancer region regulates STARD13 expression; loss of STARD13 in BRCA2\u2011mutant breast epithelial cells amplifies EMT\u2011related genes (e.g., MMP9) and proliferative pathways, suggesting STARD13 acts as a genetic modifier of BRCA2\u2011associated breast cancer risk.",
+    "readouts": [
+      "luciferase reporter assay",
+      "CRISPR deletion",
+      "qPCR",
+      "RNA\u2011seq",
+      "siRNA knockdown"
+    ],
+    "key_findings": [
+      "rs3742324 region shows allele\u2011specific enhancer activity and regulates STARD13 expression.",
+      "CRISPR deletion of the enhancer reduces STARD13 transcript levels.",
+      "STARD13 knockdown leads to greater downregulation of LATAS2 in BRCA2\u2011mutant cells.",
+      "RNA\u2011seq reveals upregulation of EMT and extracellular matrix genes (e.g., MMP9) when STARD13 is reduced in BRCA2\u2011mutant background."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Does STARD13 modulation affect sensitivity to PARP inhibitors in BRCA2\u2011mutant tumors?",
+      "Are there therapeutic strategies to restore STARD13 activity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jeroen van der Laak",
+      "institution_or_pharma": "Radboud University Medical Center",
+      "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+      "talk_title": "Foundations of foundation models in pathology",
+      "rhetorical_signals": [
+        "Speaker said: \"the generalizability of these algorithms, as I call it, is not perfect\"",
+        "Speaker said: \"the foundation model took up 35 times more energy than a task specific model\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "foundation model trained on biased histology datasets",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "lack of diverse demographic representation (e.g., under\u2011representation of Asian patients) leads to lower performance on those subgroups",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "large\u2011scale foundation model architecture",
+        "ip_vulnerability_note": "Speaker disclosed that the model consumes 35\u00d7 more energy than task\u2011specific models, suggesting high computational cost and potential scalability bottleneck",
+        "scale_or_manufacturing_bottleneck": "high energy and compute requirements may limit deployment in resource\u2011constrained settings",
+        "clinical_strategy_weakness": "reliance on massive, heterogeneous data without clear guidance on optimal data diversity may dilute signal for under\u2011represented cohorts"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that foundation models achieve high performance with very little data, then concluded that \"if you have enough data, a task specific model still outperforms the foundation model\" \u2014 contradictory statements about data efficiency versus ultimate performance"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial or prospective validation data presented",
+        "No quantitative assessment of generalizability across institutions"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Current foundation models show reduced accuracy for under\u2011represented ethnic groups; CrisPRO could provide robust, bias\u2011aware embeddings to improve stratification across demographics",
+        "transcript_evidence": "Speaker said: \"the AI will be better capable of doing the task for white females than it will be for Asian females\"",
+        "crispro_angle": "CrisPRO\u2019s computational spine can incorporate demographic covariates during embedding training to mitigate bias",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: search for trials using AI for pathology bias mitigation",
+          "PubMed: studies on demographic bias in histopathology AI"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ChatGPT",
+        "context": "mentioned as example of large language model used for multimodal embeddings",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Claude",
+        "context": "mentioned alongside ChatGPT as LLM reference",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "MuSi",
+        "context": "cited as a multimodal foundation model that predicts KRAS mutations from H&E",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "CONCH",
+        "context": "benchmark showed it often outperformed other models",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Virchow",
+        "context": "benchmark comparison; not consistently best",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "How can robustness be quantitatively measured and improved for foundation models across scanner types?",
+      "What is the optimal trade\u2011off between model size, energy consumption, and clinical utility?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MuSi",
+        "CONCH",
+        "Virchow",
+        "Titan"
+      ],
+      "companies_to_monitor": [
+        "Aiosyn"
+      ]
+    }
+  },
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jana Lipkova",
+      "institution_or_pharma": "University of California, Irvine",
+      "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+      "talk_title": "Foundational models for prognostic prediction (SURFER)",
+      "rhetorical_signals": [
+        "Speaker said: \"I don't claim that SURFER is the best solution. This is just the idea.\"",
+        "Speaker said: \"Existing foundational models are very good at separating disease types but they don't stratify risk within a disease\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "existing unimodal/multimodal foundation models (e.g., Titan, CONJ)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "absence of prognostic outcome information during self\u2011supervised pre\u2011training limits survival prediction performance",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SURFER built on Titan backbone",
+        "ip_vulnerability_note": "Relies on a single vision\u2011language backbone; any limitation of Titan (e.g., scanner bias) propagates to SURFER",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Model trained on ~15,000 slides; may still lack rare cancer subtypes and treatment\u2011specific contexts"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted that foundation models enable high accuracy with little data, yet later reported that \"there is not that much improvement in survival prediction over the ResNet\u201150 baseline\""
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No external prospective validation of SURFER on independent clinical cohorts",
+        "Limited exploration of multimodal text beyond survival outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can embed survival time as a continuous label during contrastive training, directly addressing the blindspot of missing prognostic signal in current models",
+        "transcript_evidence": "Speaker said: \"We introduced SoftCLIP which weights embeddings based on survival distance\"",
+        "crispro_angle": "CrisPRO\u2019s SoftCLIP\u2011style loss can be integrated to align embeddings with time\u2011to\u2011event data, improving risk stratification",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: studies on contrastive learning with censored survival data",
+          "ClinicalTrials.gov: trials using AI for prognostic biomarker discovery"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Public benchmark PATOS can be expanded with CrisPRO embeddings to standardize survival prediction evaluation across institutions",
+        "transcript_evidence": "Speaker said: \"We need a public benchmark so new models can be compared\"",
+        "crispro_angle": "CrisPRO can provide a unified embedding space for all participants, reducing variability in benchmark results",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Citeline: track adoption of PATOS benchmark",
+          "GitHub: repository for CrisPRO embedding pipelines"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Titan",
+        "context": "used as backbone for SURFER",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "CONJ",
+        "context": "benchmark best performer for survival prediction",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Virchow",
+        "context": "mentioned as a larger model that did not outperform smaller ones",
+        "sentiment": "critical"
+      },
+      {
+        "name": "MuSi",
+        "context": "cited as a multimodal model that predicts KRAS mutations",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How can multimodal text be enriched with treatment response information without over\u2011fitting?",
+      "What is the optimal batch size and loss function for slide\u2011level versus patch\u2011level models in survival tasks?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SURFER",
+        "Titan",
+        "PATOS benchmark"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Jakob Kater",
+      "institution_or_pharma": "Technical University of Dresden / University Hospital Dresden",
+      "session_title": "shaping-the-future-of-ai-the-role-of-pathology-in-the-development-of-foundationa",
+      "talk_title": "Clinical and research applications of pathology foundation models",
+      "rhetorical_signals": [
+        "Speaker said: \"We have reached human expert performance for tumor detection, the problem is solved\"",
+        "Speaker said: \"Yet almost nobody's using it, because digital pathology adoption is <5% in Europe\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "digital pathology infrastructure",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "low adoption of whole\u2011slide scanners limits real\u2011world deployment of AI models",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that \"most pathology slides in the US are not digitized\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "foundation\u2011model\u2011centric clinical workflow",
+        "ip_vulnerability_note": "Reliance on proprietary foundation models (e.g., CONCH, UniPathology) without transparent training data creates regulatory and reproducibility risk",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Strategy focuses on high\u2011performing AI without addressing the prerequisite digital pathology rollout"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker claimed AI detection is solved and ready for clinical use, then emphasized that <5% of pathology is digital, meaning the technology cannot be applied\u2014a contradiction between technical readiness and practical feasibility"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective randomized trial data for foundation\u2011model\u2011driven prognostic tools presented",
+        "Limited evidence on regulatory pathways for autonomous agents"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CrisPRO can supply a standardized, bias\u2011aware embedding layer for multi\u2011center trials, reducing the need for each site to digitize at the same scanner type",
+        "transcript_evidence": "Speaker said: \"We need more infrastructure investment to enable AI in routine pathology\"",
+        "crispro_angle": "CrisPRO\u2019s platform can generate scanner\u2011agnostic embeddings, allowing pooled analysis across heterogeneous sites",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: identify trials requiring AI\u2011based pathology endpoints",
+          "Regulatory guidance documents on AI medical devices"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Partner with digital scanner manufacturers to embed CrisPRO embeddings directly into acquisition pipelines",
+        "transcript_evidence": "Speaker highlighted the bottleneck of low digital pathology adoption",
+        "crispro_angle": "Embedding CrisPRO at the acquisition stage can provide immediate decision support without separate post\u2011processing",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Company press releases from scanner vendors (e.g., Leica, Philips) about AI integration"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Campanella et al.",
+        "context": "prospective trial using AI to screen EGFR mutations from slides",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "ChatGPT / Claude",
+        "context": "mentioned as large language models enabling agents",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "UNIPATHology",
+        "context": "cited as a foundation model that works beyond its training domain",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific regulatory framework will govern autonomous AI agents in oncology?",
+      "How can hospitals quantify the ROI of investing $500\u202fM in digital pathology infrastructure?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "EGFR AI screening assay (Campanella study)",
+        "UNIPATHology model"
+      ],
+      "companies_to_monitor": [
+        "Leica Biosystems",
+        "Aiosyn"
+      ]
+    }
+  }
+]

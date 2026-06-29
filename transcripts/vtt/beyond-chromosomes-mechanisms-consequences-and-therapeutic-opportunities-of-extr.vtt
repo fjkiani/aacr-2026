@@ -1,0 +1,5993 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:04.040
+Welcome everyone to today's major symposium on
+
+2
+00:00:04.140 --> 00:00:05.360
+extrachromosomal DNA.
+
+3
+00:00:06.940 --> 00:00:08.900
+It's a huge pleasure to chair this session.
+
+4
+00:00:09.740 --> 00:00:13.610
+My name is Anton Henson. I'm a physician scientist from Berlin, and it's really a
+
+5
+00:00:13.620 --> 00:00:17.300
+pleasure to do this session together with my co-speakers, Peter Lai
+
+6
+00:00:17.340 --> 00:00:19.000
+and Howard Chang, who
+
+7
+00:00:20.120 --> 00:00:21.220
+have really shaped our view
+
+8
+00:00:22.320 --> 00:00:24.580
+on ecDNA over the past couple of years.
+
+9
+00:00:26.640 --> 00:00:27.800
+I'm waiting for slide. Yeah.
+
+10
+00:00:28.880 --> 00:00:32.259
+So the session is called Beyond Chromosomes, Mechanisms, Consequences,
+
+11
+00:00:32.840 --> 00:00:35.560
+and Therapeutic Opportunities of Extrachromosomal DNA.
+
+12
+00:00:36.280 --> 00:00:38.900
+And I'd like to start this with an overview, a very simple one,
+
+13
+00:00:39.880 --> 00:00:41.080
+with basically two cells.
+
+14
+00:00:42.870 --> 00:00:46.540
+They are both dividing, and one of them is following the
+
+15
+00:00:46.580 --> 00:00:49.720
+classical rules of inheritance and the other is not.
+
+16
+00:00:52.080 --> 00:00:54.280
+As you can see on the right, extrachromosomal DNA
+
+17
+00:00:55.100 --> 00:00:58.960
+violates one of the most fundamental principles of inheritance
+
+18
+00:00:59.000 --> 00:01:02.580
+during mitosis, in that it distributes randomly to daughter cells,
+
+19
+00:01:03.440 --> 00:01:07.420
+and through that process is able to fuel intracellular
+
+20
+00:01:07.940 --> 00:01:10.680
+variance in a way that is otherwise not possible.
+
+21
+00:01:11.500 --> 00:01:14.990
+And we'll hear today how we can not only observe this now in cells,
+
+22
+00:01:15.520 --> 00:01:18.740
+but we can measure it at scale and using
+
+23
+00:01:19.840 --> 00:01:22.410
+some new algorithms that Howard will talk about.
+
+24
+00:01:27.160 --> 00:01:30.420
+And we now know that extrachromosomal DNA is not a rare event.
+
+25
+00:01:30.460 --> 00:01:33.640
+It's actually something that we can observe across different cancers in adult
+
+26
+00:01:33.660 --> 00:01:37.620
+cancers and pediatrics alike. And this is a figure from a review
+
+27
+00:01:37.660 --> 00:01:41.320
+that came out two days ago in "Cell," as part of a special
+
+28
+00:01:41.420 --> 00:01:45.370
+issue on the hallmarks of cancers that was written by Howard, Paul, and others
+
+29
+00:01:45.400 --> 00:01:45.980
+in the field
+
+30
+00:01:46.800 --> 00:01:50.660
+that really shows you how widely we can find ecDNA nowadays.
+
+31
+00:01:53.340 --> 00:01:56.460
+But we also come to realize that ecDNA is a moving target.
+
+32
+00:01:56.520 --> 00:01:59.950
+It's quite dynamic. There are catastrophic events that can lead to their
+
+33
+00:01:59.980 --> 00:02:01.040
+generation.
+
+34
+00:02:03.080 --> 00:02:06.700
+Many structural variants occur, and you'll see tomorrow a talk on ecDNA
+
+35
+00:02:06.760 --> 00:02:07.360
+fusions.
+
+36
+00:02:08.539 --> 00:02:12.080
+And all of this really leads to quite disrupted oncogene
+
+37
+00:02:12.120 --> 00:02:12.640
+expression.
+
+38
+00:02:13.480 --> 00:02:16.540
+And we're also learning more and more on the inheritance
+
+39
+00:02:17.280 --> 00:02:20.440
+patterns, as you'll see later. All of this
+
+40
+00:02:20.540 --> 00:02:24.320
+just contributes to how ecDNA drives
+
+41
+00:02:24.340 --> 00:02:25.080
+tumor progression.
+
+42
+00:02:26.720 --> 00:02:27.000
+And
+
+43
+00:02:28.720 --> 00:02:29.160
+all of this
+
+44
+00:02:29.980 --> 00:02:33.880
+really shows how it touches on so many different parts of the hallmarks of cancer.
+
+45
+00:02:34.860 --> 00:02:36.960
+And so we believe that ecDNA is really
+
+46
+00:02:38.820 --> 00:02:40.560
+a systems-level driver of cancer.
+
+47
+00:02:42.420 --> 00:02:45.640
+But in order to do so, it needs to actually be maintained in a cell.
+
+48
+00:02:46.120 --> 00:02:49.900
+And so you'll hear from Howard Chang on how certain retention
+
+49
+00:02:49.940 --> 00:02:53.049
+elements guarantee that ecDNA are retained within the cell.
+
+50
+00:02:54.180 --> 00:02:58.060
+In my talk, I'll talk to you about what happens when this doesn't go right
+
+51
+00:02:58.860 --> 00:03:01.880
+and when ecDNA leaves the nucleus and goes into micronuclei.
+
+52
+00:03:04.060 --> 00:03:06.410
+In Peter Lai's talk, you'll actually hear about
+
+53
+00:03:07.240 --> 00:03:10.460
+how this is not the end of the story and how micronuclei
+
+54
+00:03:11.560 --> 00:03:15.060
+can be transferred from one cell to the next through cell-to-cell
+
+55
+00:03:15.180 --> 00:03:15.670
+contacts.
+
+56
+00:03:17.000 --> 00:03:20.560
+So you'll really get a snapshot today on different parts of a life cycle of an
+
+57
+00:03:20.580 --> 00:03:21.670
+extrachromosomal DNA.
+
+58
+00:03:22.940 --> 00:03:26.700
+And at the end, we'll also touch on how this is relevant clinically and how we
+
+59
+00:03:26.740 --> 00:03:28.500
+might go about this therapeutically.
+
+60
+00:03:29.700 --> 00:03:33.420
+So with this, I'd like to introduce the first speaker of today, Peter Lai
+
+61
+00:03:33.480 --> 00:03:36.079
+from UT Southwestern. Thank you, Peter.
+
+62
+00:03:42.460 --> 00:03:45.460
+All right. Thank you very much to the organizers and to Anton for chairing this
+
+63
+00:03:45.480 --> 00:03:45.940
+session.
+
+64
+00:03:49.280 --> 00:03:52.200
+Okay, so my name is Peter Lai, and today I'm going to talk to you about some
+
+65
+00:03:52.240 --> 00:03:55.860
+emerging work from my lab which is currently unpublished, but hopefully, will
+
+66
+00:03:55.900 --> 00:03:58.520
+be published within the next month or so.
+
+67
+00:03:58.540 --> 00:04:02.120
+And so my laboratory is generally interested in the mechanisms and consequences of
+
+68
+00:04:02.140 --> 00:04:04.600
+genomic instability in the context of cancer development.
+
+69
+00:04:05.400 --> 00:04:09.320
+And so today I'm going to tell you about a catastrophic process that can give rise
+
+70
+00:04:09.329 --> 00:04:11.800
+to extrachromosomal DNAs or ecDNAs.
+
+71
+00:04:12.760 --> 00:04:16.360
+And so this is commonly referred to as chromothripsis, which is a Greek term for
+
+72
+00:04:16.459 --> 00:04:20.320
+chromosome shattering. And this was discovered by cancer genome sequencing
+
+73
+00:04:20.380 --> 00:04:24.360
+efforts over a decade ago. And so what they had initially
+
+74
+00:04:24.380 --> 00:04:28.240
+hypothesized from the current models of chromothripsis is that you start off
+
+75
+00:04:28.260 --> 00:04:31.720
+with an intact chromosome that undergoes some type of chromosome shattering event
+
+76
+00:04:32.060 --> 00:04:35.220
+to give rise to a number of different chromosome
+
+77
+00:04:35.260 --> 00:04:39.040
+fragments. These chromosome fragments are then subsequently repaired by the
+
+78
+00:04:39.060 --> 00:04:42.940
+cell's intrinsic DNA repair machinery and then put back together in the wrong order
+
+79
+00:04:43.040 --> 00:04:46.479
+to generate a derivative chromosome that's characterized by complex
+
+80
+00:04:46.560 --> 00:04:50.490
+rearrangements with segments that are now juxtaposed next to
+
+81
+00:04:50.520 --> 00:04:52.570
+segments that don't normally appear next to each other.
+
+82
+00:04:53.440 --> 00:04:57.160
+Some of these fragments also fail to participate in the religation event and also
+
+83
+00:04:57.400 --> 00:05:00.820
+can become lost to the cell and of a particular importance to this
+
+84
+00:05:01.100 --> 00:05:04.840
+session, some of these fragments can also circularize to give rise to
+
+85
+00:05:04.900 --> 00:05:08.670
+extrachromosomal DNA elements that we all know can harbor oncogenes and
+
+86
+00:05:08.740 --> 00:05:10.280
+genes that confer drug resistance.
+
+87
+00:05:11.380 --> 00:05:14.620
+And so typically from whole genome sequencing, the way that we would interpret
+
+88
+00:05:14.660 --> 00:05:15.380
+these types of
+
+89
+00:05:16.240 --> 00:05:18.640
+events is by looking at these copy number plots.
+
+90
+00:05:18.980 --> 00:05:22.060
+So this is an example where one chromosome is plotted from one end of the
+
+91
+00:05:22.080 --> 00:05:25.820
+chromosome to the other end, for a diploid chromosome sits at a copy number state
+
+92
+00:05:25.860 --> 00:05:26.140
+of two.
+
+93
+00:05:26.980 --> 00:05:30.240
+And after a chromothripsis event, you would now see a number of structural variants
+
+94
+00:05:30.280 --> 00:05:33.900
+that connects random pieces of the chromosome together, and this can also result in
+
+95
+00:05:33.960 --> 00:05:37.390
+loss of copy numbers when fragments are deleted, as well as
+
+96
+00:05:37.440 --> 00:05:41.120
+extrachromosomal DNA elements that get amplified to tens to hundreds of copies.
+
+97
+00:05:41.530 --> 00:05:45.320
+And this is a very simplistic overview of how we can see these events, and here's
+
+98
+00:05:45.340 --> 00:05:49.280
+one example from the original chromothripsis paper from Peter Campbell and
+
+99
+00:05:49.320 --> 00:05:53.180
+colleagues back in 2011. And so in this example, you can see a
+
+100
+00:05:53.200 --> 00:05:56.220
+chromothripsis event affecting chromosome 5, in which there are
+
+101
+00:05:57.100 --> 00:06:00.680
+a number of structural variants that connects different parts of the chromosome
+
+102
+00:06:00.720 --> 00:06:04.440
+together, probably about a couple dozen here or so, as well as
+
+103
+00:06:04.480 --> 00:06:08.040
+an oscillation in DNA copy number state in which it oscillates back and forth
+
+104
+00:06:08.060 --> 00:06:11.740
+between regions of the chromosome that are retained in this top copy number state
+
+105
+00:06:11.750 --> 00:06:14.790
+and then regions of the chromosome that are deleted from this bottom copy number
+
+106
+00:06:14.860 --> 00:06:18.480
+state. And if we zoom out and take a look at this particular example
+
+107
+00:06:18.880 --> 00:06:22.340
+in a genome-wide view, we can see that chromothripsis for this particular
+
+108
+00:06:22.400 --> 00:06:25.600
+chromosome is the sole site of genetic abnormality, which really raised the
+
+109
+00:06:25.640 --> 00:06:28.400
+question of how do these events arise
+
+110
+00:06:29.220 --> 00:06:32.420
+on a specific chromosome, whereas the rest of the genome is practically
+
+111
+00:06:32.520 --> 00:06:35.974
+spared?And so shortly after the discovery of
+
+112
+00:06:36.024 --> 00:06:37.344
+chromothripsis, several groups
+
+113
+00:06:38.204 --> 00:06:42.184
+began to propose that chromosome segregation defects during mitosis could be one
+
+114
+00:06:42.224 --> 00:06:44.164
+initiating event in driving chromothripsis.
+
+115
+00:06:44.504 --> 00:06:47.124
+So here's an example of a cell entering mitosis.
+
+116
+00:06:47.544 --> 00:06:51.304
+Chromosomes are aligned at the metaphase plate, and one particular chromosome is
+
+117
+00:06:51.344 --> 00:06:53.564
+now missegregated and improperly aligned.
+
+118
+00:06:53.854 --> 00:06:57.564
+And when this cell enters anaphase, this chromosome now gets missegregated into
+
+119
+00:06:57.584 --> 00:07:00.084
+this abnormal nuclear structure called the micronucleus.
+
+120
+00:07:00.444 --> 00:07:03.844
+And this was a very attractive hypothesis for chromothripsis at the time because
+
+121
+00:07:03.884 --> 00:07:07.724
+now you can spatially isolate a single chromosome away from the primary genome,
+
+122
+00:07:08.084 --> 00:07:10.624
+where it presumably acquires DNA damage.
+
+123
+00:07:11.074 --> 00:07:14.664
+And indeed, in 2015, David Pelman and colleagues combined live cell
+
+124
+00:07:14.684 --> 00:07:18.634
+imaging with single-cell DNA sequencing to demonstrate that the daughter cells
+
+125
+00:07:18.644 --> 00:07:22.594
+from a mother cell with a micronucleus can in fact acquire the signatures of
+
+126
+00:07:22.604 --> 00:07:25.004
+chromothripsis that we see in cancer genomes.
+
+127
+00:07:25.824 --> 00:07:29.484
+Of particular importance to this session, they also detected the
+
+128
+00:07:29.524 --> 00:07:33.224
+presence of circular DNA structures from single-cell DNA sequencing data.
+
+129
+00:07:33.624 --> 00:07:37.504
+And at the time, it was sort of unclear whether these represented bona fide
+
+130
+00:07:37.544 --> 00:07:41.204
+ecDNAs or double minute chromosomes, and whether they were stably
+
+131
+00:07:41.464 --> 00:07:42.903
+maintained within these genomes.
+
+132
+00:07:44.504 --> 00:07:48.324
+So my group has established a method to study
+
+133
+00:07:48.364 --> 00:07:51.954
+mechanisms underlying chromothripsis using a targeted chromothripsis approach in
+
+134
+00:07:51.984 --> 00:07:55.824
+which we can induce the missegregation of a specific human chromosome into
+
+135
+00:07:55.864 --> 00:07:57.654
+micronuclei at very high frequency.
+
+136
+00:07:58.074 --> 00:08:00.904
+And so I won't go into the details on how this works, but essentially we can take
+
+137
+00:08:00.964 --> 00:08:04.764
+human DLD1 colon cancer cells, and we can turn off the Y chromosome
+
+138
+00:08:04.844 --> 00:08:07.244
+centromere using this combination of these two drugs.
+
+139
+00:08:07.664 --> 00:08:11.524
+And so when we add doxycycline and auxin to these cells, the Y centromere is
+
+140
+00:08:11.564 --> 00:08:14.904
+turned off, and now we have an enrichment of these Y chromosome-specific
+
+141
+00:08:14.964 --> 00:08:17.534
+micronuclei that we can detect by DNA FISH.
+
+142
+00:08:19.404 --> 00:08:23.284
+Additionally, if we now propagate clones after inducing its
+
+143
+00:08:23.304 --> 00:08:26.844
+formation into micronuclei, we can see that under control conditions, this is what
+
+144
+00:08:26.884 --> 00:08:28.504
+a normal Y chromosome would look like.
+
+145
+00:08:28.874 --> 00:08:32.084
+And I forgot to mention that we also use CRISPR editing to insert a selection
+
+146
+00:08:32.124 --> 00:08:35.824
+marker specifically into the Y chromosome, and it's positioned here.
+
+147
+00:08:36.084 --> 00:08:38.725
+And after a chromothripsis event, this is now what it would look like.
+
+148
+00:08:38.804 --> 00:08:42.494
+So you would have a series of rearrangements as well as copy number changes
+
+149
+00:08:42.824 --> 00:08:46.204
+that's very reminiscent of what we typically see in human cancers.
+
+150
+00:08:47.444 --> 00:08:51.404
+Here's another example of clones that we can derive in which we see that the
+
+151
+00:08:51.444 --> 00:08:55.344
+cell essentially lost the entire Y chromosome except for
+
+152
+00:08:55.364 --> 00:08:58.784
+this particular fragment that sits right at the position where the neomycin
+
+153
+00:08:58.844 --> 00:09:02.764
+resistance gene is located. And so it's now amplified to a higher copy
+
+154
+00:09:02.804 --> 00:09:05.244
+number state, and if we use DNA
+
+155
+00:09:06.404 --> 00:09:10.364
+probes to look at these on mitotic chromosomes, we can see indeed that they are
+
+156
+00:09:10.424 --> 00:09:14.124
+now localized to ecDNAs, and they also become amplified
+
+157
+00:09:15.804 --> 00:09:19.324
+manyfold within these cells. And by whole genome sequencing, we can also
+
+158
+00:09:19.424 --> 00:09:23.364
+reconstruct the sequence of these events in which this
+
+159
+00:09:23.424 --> 00:09:26.824
+ecDNA, which is about 900 kilobases in size, was
+
+160
+00:09:26.864 --> 00:09:30.804
+originated from the ligation of two distinct fragments derived from the Y
+
+161
+00:09:30.824 --> 00:09:32.614
+chromosome at this particular location.
+
+162
+00:09:32.924 --> 00:09:36.804
+So this was the first experimental evidence that a chromothripsis event mediated
+
+163
+00:09:36.844 --> 00:09:40.744
+by micronuclei can in fact give rise to stable ecDNAs that can then
+
+164
+00:09:40.764 --> 00:09:42.464
+become propagated and amplified.
+
+165
+00:09:44.244 --> 00:09:47.384
+So using the system that I had just described to you, another cool thing about it
+
+166
+00:09:47.424 --> 00:09:50.644
+is that we can now look at mitotic chromosomes right after we induce
+
+167
+00:09:50.684 --> 00:09:54.484
+micronuclei, and we can recapitulate the sequence of events that leads to
+
+168
+00:09:54.504 --> 00:09:58.454
+chromothripsis. In this example, this is a Y chromosome that had now shattered into
+
+169
+00:09:58.484 --> 00:10:02.344
+multiple fragments, and you can see the fragments here lit up
+
+170
+00:10:02.384 --> 00:10:05.734
+by the green FISH probes. And we've used this system now to make several
+
+171
+00:10:05.734 --> 00:10:07.864
+discoveries about how chromothripsis arises.
+
+172
+00:10:07.904 --> 00:10:11.824
+For example, under-replicated chromosomes typically undergo mitotic cleavage by
+
+173
+00:10:11.864 --> 00:10:15.764
+this SLX4-XPF-ERCC1 endonuclease to shatter
+
+174
+00:10:15.844 --> 00:10:17.644
+or fragment the chromosome during mitosis.
+
+175
+00:10:18.034 --> 00:10:18.374
+And once the
+
+176
+00:10:19.604 --> 00:10:23.164
+chromosome has fragmented, these fragments are now held together by this protein
+
+177
+00:10:23.204 --> 00:10:26.654
+complex, and they segregate asymmetrically via this
+
+178
+00:10:26.844 --> 00:10:30.833
+clustering mechanism. However, some of these fragments can also fail to participate
+
+179
+00:10:30.864 --> 00:10:34.844
+in this clustering and also mislocalize to the cytoplasm at the exit
+
+180
+00:10:34.864 --> 00:10:35.604
+of mitosis.
+
+181
+00:10:36.534 --> 00:10:40.194
+And so one question that graduate student Liz Murray wanted to ask in my
+
+182
+00:10:40.264 --> 00:10:44.014
+laboratory is, beyond generating cell-intrinsic genomic alterations and
+
+183
+00:10:44.084 --> 00:10:47.724
+rearrangements, can micronuclei also impact nearby
+
+184
+00:10:47.784 --> 00:10:51.704
+cells? And so to address this, she started with RPE1 cells,
+
+185
+00:10:51.743 --> 00:10:53.243
+which are non-transformed cells.
+
+186
+00:10:53.623 --> 00:10:57.304
+She labeled DNA with the fluorescent dye called SirDNA and then
+
+187
+00:10:57.344 --> 00:11:00.784
+induced micronucleation using a combination of mitotic inhibitors.
+
+188
+00:11:01.244 --> 00:11:03.504
+And so I'm going to let this video play, and you're going to see the cells moving
+
+189
+00:11:03.584 --> 00:11:07.214
+around as cells normally do. And what really caught our attention is that
+
+190
+00:11:07.264 --> 00:11:10.734
+oftentimes these cells would form these long-stretched protrusions between these
+
+191
+00:11:10.764 --> 00:11:14.684
+two adjacent cells. And if we look at the DNA stain, we can see the presence of
+
+192
+00:11:14.724 --> 00:11:18.714
+this DNA stain that seemingly passages through this tube-like connection.
+
+193
+00:11:19.224 --> 00:11:22.054
+And although we didn't really understand at the time when we saw this what exactly
+
+194
+00:11:22.084 --> 00:11:25.624
+those were, looking in the literature, these are now referred to as tunneling
+
+195
+00:11:25.634 --> 00:11:29.344
+nanotubes, which have been described in a variety of physiological and disease
+
+196
+00:11:29.384 --> 00:11:29.924
+contexts.
+
+197
+00:11:30.884 --> 00:11:34.664
+And these tunneling nanotubes typically transport various types of cytoplasmic
+
+198
+00:11:34.684 --> 00:11:38.304
+cargo, including proteins, organelles, and RNA.
+
+199
+00:11:38.404 --> 00:11:41.834
+But whether DNA can serve as a substrate for transfer has not been
+
+200
+00:11:41.844 --> 00:11:45.464
+demonstrated. And if this was correct, this would sort of serve as the first
+
+201
+00:11:45.504 --> 00:11:48.664
+experimental evidence of a horizontal gene transfer-like mechanism
+
+202
+00:11:49.604 --> 00:11:51.984
+that's occurring in human cells.
+
+203
+00:11:53.904 --> 00:11:57.464
+In order to better visualize this, we wanted to arrest the cells from
+
+204
+00:11:57.474 --> 00:11:59.594
+migration and to stop moving around.
+
+205
+00:11:59.604 --> 00:12:02.984
+So we added this cytochalasin D, which is an actin inhibitor.
+
+206
+00:12:02.994 --> 00:12:06.144
+And when we do this, the cells immediately begin to constrict, and what really
+
+207
+00:12:06.184 --> 00:12:09.924
+caught our attention was that the cells that had already formed nanotubes continue
+
+208
+00:12:09.944 --> 00:12:12.704
+to maintain those nanotubes, such as here.
+
+209
+00:12:13.054 --> 00:12:15.664
+And if you look closely, you could also see the transport of these bulky
+
+210
+00:12:15.674 --> 00:12:19.314
+cytoplasmic cargo between these two adjacent cells between these nanotubes.
+
+211
+00:12:19.714 --> 00:12:23.654
+And if we now take the cells and fix them at a particular time and then
+
+212
+00:12:23.684 --> 00:12:27.624
+stain them for microtubules, we can see that these nanotubes are comprised of
+
+213
+00:12:27.664 --> 00:12:31.414
+different components of the mammalian cytoskeleton that forms this sort of
+
+214
+00:12:31.444 --> 00:12:33.574
+intricate network between cells in
+
+215
+00:12:33.584 --> 00:12:37.284
+culture.So now we combine these different
+
+216
+00:12:37.304 --> 00:12:39.544
+conditions together, and we can include
+
+217
+00:12:41.084 --> 00:12:44.184
+this DNA dye, and we can also induce micronuclei formation.
+
+218
+00:12:44.524 --> 00:12:48.204
+And we can indeed see the presence of these SIRH DNA labeled DNAs
+
+219
+00:12:48.244 --> 00:12:50.654
+passaging through these nanotube-like structures.
+
+220
+00:12:50.664 --> 00:12:53.924
+And from measuring the speed of this transfer, it seems to be
+
+221
+00:12:54.184 --> 00:12:58.044
+consistent with the transport of bulky cargo by molecular motors.
+
+222
+00:12:58.644 --> 00:13:02.184
+Additionally, these events are stimulated by induction of mitotic errors.
+
+223
+00:13:02.424 --> 00:13:06.344
+And importantly, these nanotubes are not induced by genomic instability or
+
+224
+00:13:06.424 --> 00:13:09.884
+having the micronuclei. So they form essentially spontaneously from direct
+
+225
+00:13:09.924 --> 00:13:10.864
+cell-cell contact.
+
+226
+00:13:11.864 --> 00:13:15.084
+And so now we're no longer going to use the cytoclazin D, so we can look at cells
+
+227
+00:13:15.094 --> 00:13:19.024
+in their intact native state. And if we take these cells and we stain them for the
+
+228
+00:13:19.044 --> 00:13:22.444
+cytoskeletal markers, tubulin and actin, we can see these stretched protrusions
+
+229
+00:13:22.464 --> 00:13:26.144
+between these cells. And if we use a different DNA stain called YoYo1, we can see
+
+230
+00:13:26.184 --> 00:13:29.544
+this large bulky micronucleus or piece of DNA
+
+231
+00:13:29.964 --> 00:13:33.764
+trapped here between these two tubes, or between these two cells within this
+
+232
+00:13:33.804 --> 00:13:37.584
+tube. And so what we think is happening is that a
+
+233
+00:13:37.604 --> 00:13:41.544
+genomically unstable cell with micronuclei could potentially
+
+234
+00:13:41.604 --> 00:13:45.224
+form nanotubes connections with these recipient cells, where the DNA can then
+
+235
+00:13:45.244 --> 00:13:48.604
+passage through this nanotube if the DNA was present in the cytoplasm.
+
+236
+00:13:49.364 --> 00:13:53.084
+And in order to really test this, we began to label distinct population of cells
+
+237
+00:13:53.104 --> 00:13:56.544
+with different markers. So here we're taking one set of cells, and we're labeling
+
+238
+00:13:56.584 --> 00:14:00.044
+them with histone H2B-GFP and another set with histone
+
+239
+00:14:00.164 --> 00:14:03.564
+H2B-RFP in red. And so now we can combine these two
+
+240
+00:14:03.604 --> 00:14:07.174
+cells together in co-culture experiments and then
+
+241
+00:14:07.604 --> 00:14:10.704
+perform microscopy. And what you're going to see is a green micronucleus at the
+
+242
+00:14:10.744 --> 00:14:14.444
+bottom of the screen coming up, and it's going to transfer over to that cell with a
+
+243
+00:14:14.464 --> 00:14:18.324
+red nucleus. And so the two cells now migrate apart, and it seems that this green
+
+244
+00:14:18.404 --> 00:14:21.224
+piece of DNA is now part of this red cell.
+
+245
+00:14:21.824 --> 00:14:24.744
+And so these were examples of DNA transfer between
+
+246
+00:14:24.804 --> 00:14:28.284
+the same RPE1 to RPE1 cell.
+
+247
+00:14:28.824 --> 00:14:31.034
+And now we can also do this in very different contexts.
+
+248
+00:14:31.124 --> 00:14:33.024
+We can take cells derived from the kidney.
+
+249
+00:14:33.074 --> 00:14:37.024
+So these are renal proximal tubule epithelial cells cultured
+
+250
+00:14:37.084 --> 00:14:40.024
+with RPE1 cells, so derived from different tissues.
+
+251
+00:14:40.394 --> 00:14:43.844
+And we also see these similar types of intercellular DNA transfer events,
+
+252
+00:14:44.483 --> 00:14:46.993
+suggesting that they're not restricted to individual cell types.
+
+253
+00:14:48.244 --> 00:14:52.034
+Next, in order to see this in a little bit more detail, we also labeled the
+
+254
+00:14:52.044 --> 00:14:55.324
+plasma membrane using this CAAX targeting motif
+
+255
+00:14:56.184 --> 00:14:59.644
+labeled with a halo tag. And so here you can see this long, stretched thin
+
+256
+00:14:59.684 --> 00:15:01.504
+protrusion between these two different cells.
+
+257
+00:15:01.824 --> 00:15:05.814
+And then now you can see the presence of this H2B-GFP labeled chromatin moving
+
+258
+00:15:05.844 --> 00:15:09.644
+from this donor cell to this RFP labeled recipient
+
+259
+00:15:09.724 --> 00:15:09.914
+cell.
+
+260
+00:15:13.304 --> 00:15:17.244
+We see this, and so after the DNA transfers, if we were then to
+
+261
+00:15:17.264 --> 00:15:20.084
+fix the cells, this is sort of what it would look like.
+
+262
+00:15:20.124 --> 00:15:23.984
+So these are examples of what we refer to as mismatched labeling
+
+263
+00:15:24.024 --> 00:15:25.924
+between the nuclei and micronuclei.
+
+264
+00:15:26.314 --> 00:15:29.984
+And so here, for example, is a kidney epithelial
+
+265
+00:15:30.064 --> 00:15:33.884
+cell labeled with histone H2B mCherry in which its nucleus is
+
+266
+00:15:33.944 --> 00:15:37.884
+red. And now it harbors this micronucleus or a fragment of DNA
+
+267
+00:15:37.944 --> 00:15:41.484
+that presumably arose from a neighboring kidney cell
+
+268
+00:15:41.524 --> 00:15:45.113
+expressing H2B-GFP. And we can see this also under very different
+
+269
+00:15:45.124 --> 00:15:48.494
+conditions. So for example, if we induce micronuclei using
+
+270
+00:15:48.904 --> 00:15:52.484
+depletion of mitotic checkpoint proteins to inactivate the mitotic
+
+271
+00:15:52.504 --> 00:15:54.654
+checkpoint, we can also do this and
+
+272
+00:15:55.924 --> 00:15:58.893
+arrest the cells in mitosis for a brief period using a
+
+273
+00:15:59.844 --> 00:16:03.544
+microtubule polymerization inhibitor, and then
+
+274
+00:16:03.584 --> 00:16:06.584
+release them from this arrest and allow them to form mitotic errors.
+
+275
+00:16:06.864 --> 00:16:09.384
+And we can also see similar types of DNA transfer events.
+
+276
+00:16:10.884 --> 00:16:13.324
+Additionally, this is not limited to just mitotic errors.
+
+277
+00:16:13.364 --> 00:16:17.264
+So if we induce DNA damage using variety of means,
+
+278
+00:16:17.284 --> 00:16:20.814
+so for example, if we use Cas9 to induce a DNA double strand break
+
+279
+00:16:20.944 --> 00:16:24.564
+specifically on the short arm of chromosome 3, this would generate chromosome
+
+280
+00:16:24.724 --> 00:16:28.604
+3p containing micronuclei. And we can also see similar types of DNA
+
+281
+00:16:28.644 --> 00:16:31.804
+transfer events between these co-cultured and
+
+282
+00:16:32.324 --> 00:16:36.244
+distinctly labeled cells. We can also hit cells with ionizing radiation to
+
+283
+00:16:36.284 --> 00:16:39.904
+induce DNA damage on a genome-wide level and also induce
+
+284
+00:16:40.744 --> 00:16:44.324
+DNA transfer. And then just to give you a sense of how often this
+
+285
+00:16:44.364 --> 00:16:47.374
+occurs, this is one way that we've begun to measure
+
+286
+00:16:48.724 --> 00:16:52.264
+this. So here we're taking RPE1 cells, treat them up with mitotic inhibitors.
+
+287
+00:16:52.604 --> 00:16:56.344
+And under these conditions, approximately 30% of cells has at least one
+
+288
+00:16:56.384 --> 00:17:00.144
+micronucleus. And if we now look at all of those micronuclei and ask what
+
+289
+00:17:00.224 --> 00:17:04.204
+fraction have this mismatched labeling, about 4% of those have a mismatched
+
+290
+00:17:04.214 --> 00:17:07.704
+label, suggesting that DNA transfer occurs at a low yet
+
+291
+00:17:07.844 --> 00:17:10.964
+measurable rate across many different cell types, many different
+
+292
+00:17:10.984 --> 00:17:14.325
+conditions. And it's also dependent on cell-to-cell contact.
+
+293
+00:17:14.464 --> 00:17:18.024
+So for example, if we culture cells and we reduce the density of cell
+
+294
+00:17:18.045 --> 00:17:21.884
+culture in order to prevent direct cell-cell contact, we can essentially
+
+295
+00:17:21.924 --> 00:17:25.844
+eliminate this event. And if we also use a filter to block the two different cells
+
+296
+00:17:25.884 --> 00:17:29.664
+from coming into direct contact, we can also inhibit DNA transfer.
+
+297
+00:17:31.584 --> 00:17:35.484
+So after the DNA goes into the recipient cell, it makes its way into the cytoplasm,
+
+298
+00:17:35.564 --> 00:17:39.054
+and we next wondered what happens to that piece of DNA after
+
+299
+00:17:39.104 --> 00:17:40.244
+that. So when the
+
+300
+00:17:41.084 --> 00:17:44.614
+recipient cell with the transferred DNA fragment enters the next mitosis,
+
+301
+00:17:44.944 --> 00:17:48.284
+its nuclear envelope disassembles, and the chromosomes begin to condense.
+
+302
+00:17:48.764 --> 00:17:51.794
+And what we see is that the transferred DNA fragments here labeled in different
+
+303
+00:17:51.864 --> 00:17:53.654
+colors from the native chromosomes
+
+304
+00:17:55.664 --> 00:17:59.524
+essentially rejoins the host chromosomes during mitosis, and they
+
+305
+00:17:59.544 --> 00:18:03.424
+can either be aligned with the host chromosomes, for example, here are examples
+
+306
+00:18:03.484 --> 00:18:07.244
+from metaphase as well as anaphase, or they can also be misaligned
+
+307
+00:18:07.704 --> 00:18:11.564
+as well. And so these are essentially fragments of DNA that either
+
+308
+00:18:11.584 --> 00:18:14.104
+contain or do not contain a human centromere.
+
+309
+00:18:15.824 --> 00:18:19.064
+So after it reincorporates into the host genome, the next question we wanted to ask
+
+310
+00:18:19.124 --> 00:18:22.264
+was whether these events can give rise to stable and functional
+
+311
+00:18:24.084 --> 00:18:26.604
+DNAs within that recipient cell population.
+
+312
+00:18:27.024 --> 00:18:30.684
+And so to test this, we went back to that system that I had described earlier in
+
+313
+00:18:30.704 --> 00:18:34.204
+which we can turn off the Y chromosome centromere and induce its formation in a
+
+314
+00:18:34.244 --> 00:18:38.064
+micronuclei. And then just to remind you, we also use CRISPR editing to
+
+315
+00:18:38.124 --> 00:18:41.344
+insert a neomycin resistance marker into this chromosome.
+
+316
+00:18:41.664 --> 00:18:45.644
+And so now the experiment that we really wanted to do was ask if we co-culture male
+
+317
+00:18:45.764 --> 00:18:48.444
+cells with Y chromosome containing this selection marker
+
+318
+00:18:49.324 --> 00:18:52.844
+in a micronucleus with female cells, can the female cells
+
+319
+00:18:53.004 --> 00:18:56.934
+eventually take up fragments of the Y chromosome and become resistant to the
+
+320
+00:18:57.004 --> 00:18:58.004
+drug that
+
+321
+00:18:58.824 --> 00:19:01.364
+this selection marker confers resistance
+
+322
+00:19:01.404 --> 00:19:05.196
+to?And so to test this, we performed a
+
+323
+00:19:05.236 --> 00:19:07.936
+series of experiments, and it's a little bit complicated, but I'm going to try to
+
+324
+00:19:07.976 --> 00:19:11.236
+walk you through it. And so here we took these male donor cells with the
+
+325
+00:19:11.396 --> 00:19:13.836
+Y-encoded neomycin resistance gene.
+
+326
+00:19:14.116 --> 00:19:17.696
+These cells are labeled in green, and we co-cultured these with female recipient
+
+327
+00:19:17.736 --> 00:19:21.616
+cells with a different set of selection markers and also a different fluorophore.
+
+328
+00:19:21.656 --> 00:19:23.016
+So they're labeled with their red.
+
+329
+00:19:23.836 --> 00:19:25.496
+And we co-cultured these two cells.
+
+330
+00:19:25.536 --> 00:19:29.406
+We added these two drugs, doxycycline and auxin, to trigger the missegregation of
+
+331
+00:19:29.436 --> 00:19:32.626
+the Y chromosome into micronuclei, specifically in the male
+
+332
+00:19:32.736 --> 00:19:36.456
+cells. And what we had hoped for is that then this fragment or the chromosome would
+
+333
+00:19:36.476 --> 00:19:39.376
+then transfer over to this female recipient cell.
+
+334
+00:19:39.396 --> 00:19:43.116
+So we then co-selected these cells with two different antibiotics, one
+
+335
+00:19:43.156 --> 00:19:46.836
+encoded from the male donor cell, one encoded by the female recipient cell.
+
+336
+00:19:47.276 --> 00:19:50.616
+And in the end, we're left with surviving cells that are comprised of
+
+337
+00:19:51.336 --> 00:19:52.576
+several different possibilities.
+
+338
+00:19:52.956 --> 00:19:56.356
+The first are green male cells that became spontaneously resistant to
+
+339
+00:19:56.736 --> 00:19:58.636
+this selection marker in the female cells.
+
+340
+00:19:58.996 --> 00:20:01.966
+This actually doesn't really happen, so we'll just ignore that.
+
+341
+00:20:02.896 --> 00:20:05.056
+The next possibility are these red and green cells.
+
+342
+00:20:05.076 --> 00:20:08.395
+So these actually represent male-to-female cell-cell fusion events,
+
+343
+00:20:09.256 --> 00:20:12.956
+which is sort of predicted if you co-select cells and force them to
+
+344
+00:20:12.996 --> 00:20:16.695
+survive. And then the third possibility are these mCherry positive cells.
+
+345
+00:20:16.736 --> 00:20:20.686
+So these are female recipient cells that had now became resistant
+
+346
+00:20:20.686 --> 00:20:24.536
+to the gene that was encoded on the Y chromosome in the male cells.
+
+347
+00:20:25.156 --> 00:20:28.836
+And so when we do this and look at the cell populations by flow cytometry, we can
+
+348
+00:20:28.896 --> 00:20:32.836
+see that under control conditions without induction of Y chromosome micronuclei,
+
+349
+00:20:33.176 --> 00:20:36.576
+most of these events give rise to these cell-cell fusion events as we had
+
+350
+00:20:36.616 --> 00:20:39.976
+expected. However, if we now induce Y chromosome-specific
+
+351
+00:20:39.996 --> 00:20:43.856
+micronuclei, this actually shifts from cell-cell fusion events to favor a
+
+352
+00:20:43.916 --> 00:20:47.536
+lot more of these mCherry labeled cells that now became resistant.
+
+353
+00:20:47.826 --> 00:20:49.836
+And this is the quantification down here.
+
+354
+00:20:50.286 --> 00:20:52.876
+And importantly, when we look at the different
+
+355
+00:20:53.576 --> 00:20:57.416
+mitotic chromosomes from all of these different control conditions,
+
+356
+00:20:58.356 --> 00:21:01.816
+almost all of them showed evidence of genome doubling between the
+
+357
+00:21:02.216 --> 00:21:04.216
+male donor and the female recipient genomes.
+
+358
+00:21:04.536 --> 00:21:07.516
+So they essentially became "tetraploid."
+
+359
+00:21:08.396 --> 00:21:12.056
+And we also see a small fraction of this in that population of cells in which we
+
+360
+00:21:12.076 --> 00:21:15.046
+expect the transfer to occur. But importantly, we also see this
+
+361
+00:21:15.356 --> 00:21:19.096
+subpopulation here that has a chromosome content that matches exactly
+
+362
+00:21:19.196 --> 00:21:21.796
+that of the female recipient genome.
+
+363
+00:21:21.836 --> 00:21:22.946
+And so we suspect that these
+
+364
+00:21:24.116 --> 00:21:28.016
+cells now harbor fragments of the Y chromosome, encoded neomycin
+
+365
+00:21:28.056 --> 00:21:31.896
+resistance gene, and then these female recipient cells that had taken up that
+
+366
+00:21:31.936 --> 00:21:35.716
+DNA became resistant to this drug, suggesting that they have now
+
+367
+00:21:36.076 --> 00:21:38.836
+this new function after inheriting this piece of DNA.
+
+368
+00:21:40.656 --> 00:21:44.536
+And to really look at this in more detail, we looked at these mitotic chromosome
+
+369
+00:21:44.576 --> 00:21:47.816
+spreads, and we used different types of DNA FISH probes to look for where are these
+
+370
+00:21:47.836 --> 00:21:49.876
+DNAs now located in the female genome.
+
+371
+00:21:50.366 --> 00:21:53.176
+And so these are female metaphase chromosomes, and we can see using
+
+372
+00:21:53.196 --> 00:21:57.076
+different FISH probes as well as these oligo paint
+
+373
+00:21:57.116 --> 00:22:00.996
+probes, that these transfer DNA fragments now manifest as
+
+374
+00:22:01.006 --> 00:22:04.476
+a single copy extra chromosomal DNA within these recipient cell
+
+375
+00:22:04.556 --> 00:22:05.036
+genomes.
+
+376
+00:22:07.036 --> 00:22:10.216
+And lastly, in order to demonstrate that these fragments indeed are
+
+377
+00:22:10.256 --> 00:22:13.576
+transcriptionally active in the recipient cell, we performed single-cell RNA
+
+378
+00:22:13.596 --> 00:22:17.406
+sequencing, and what this really showed us was that among those mCherry
+
+379
+00:22:17.516 --> 00:22:21.376
+positive cells, there's this distinct cluster of cells that are characterized
+
+380
+00:22:21.396 --> 00:22:25.076
+by high levels of the neomycin resistance gene and also a
+
+381
+00:22:25.136 --> 00:22:29.116
+nearby adjacent Y chromosome-encoded gene that's now being expressed in the
+
+382
+00:22:29.136 --> 00:22:32.816
+female cells. And we know these are female cells because they lack expression of
+
+383
+00:22:32.856 --> 00:22:35.056
+these male-specific markers,
+
+384
+00:22:36.636 --> 00:22:39.476
+suggesting that these fragments, once they've transferred over, are fully
+
+385
+00:22:39.496 --> 00:22:43.056
+functional, transcriptionally active, and can confer a new phenotype to these
+
+386
+00:22:43.096 --> 00:22:43.936
+recipient cells.
+
+387
+00:22:45.436 --> 00:22:47.536
+Okay, so here's the current model of this.
+
+388
+00:22:47.736 --> 00:22:48.036
+So
+
+389
+00:22:49.496 --> 00:22:49.876
+after
+
+390
+00:22:50.696 --> 00:22:54.356
+DNA damage or mitotic errors, this can cause the mislocalization of
+
+391
+00:22:54.376 --> 00:22:58.336
+genomic DNA to the cytoplasm, indicated here by the presence of
+
+392
+00:22:58.376 --> 00:23:01.716
+this micronucleus. These two cells, they migrate as part of their
+
+393
+00:23:01.736 --> 00:23:05.296
+normal nature, and then they come together and come into direct contact,
+
+394
+00:23:05.676 --> 00:23:08.976
+which then initiates the formation of these nanotube connections between the two
+
+395
+00:23:09.016 --> 00:23:09.376
+cells.
+
+396
+00:23:10.246 --> 00:23:13.956
+And then the DNA is now able to transport through this nanotube, enter the
+
+397
+00:23:13.996 --> 00:23:17.756
+recipient cell, and after the next mitosis and even in subsequent cell
+
+398
+00:23:17.776 --> 00:23:18.876
+divisions, is now
+
+399
+00:23:19.716 --> 00:23:23.496
+stably maintained within the recipient cell genomes for
+
+400
+00:23:23.555 --> 00:23:26.546
+months, actually. And when we showed that these
+
+401
+00:23:26.596 --> 00:23:30.476
+heritable extra chromosomal DNAs are also transcriptionally
+
+402
+00:23:30.486 --> 00:23:34.346
+active and can confer new cellular functions to this recipient
+
+403
+00:23:34.436 --> 00:23:38.286
+cell. And so in just the last couple of seconds, I want to talk about why does this
+
+404
+00:23:38.376 --> 00:23:41.716
+actually matter. So I think if this is correct, which we
+
+405
+00:23:42.636 --> 00:23:46.336
+are strongly confident that it is, it really challenges the assumption that
+
+406
+00:23:46.356 --> 00:23:49.146
+somatic genomes evolve as cell-autonomous units.
+
+407
+00:23:49.536 --> 00:23:53.016
+Instead, we show here that genomic alterations can also arise through
+
+408
+00:23:53.076 --> 00:23:54.876
+non-cell-autonomous mechanisms,
+
+409
+00:23:55.696 --> 00:23:59.456
+and that DNA transfer could represent an unrecognized source of somatic
+
+410
+00:23:59.516 --> 00:24:03.426
+aneuploidy and also megabase scale-sized DNA copy number
+
+411
+00:24:03.516 --> 00:24:07.426
+alterations. And then transferred DNA fragments can circularize and
+
+412
+00:24:07.536 --> 00:24:10.876
+become propagated and potentially amplified in the right context
+
+413
+00:24:11.516 --> 00:24:12.476
+as ecDNA.
+
+414
+00:24:13.286 --> 00:24:17.096
+And then in the tumor microenvironment, genomically unstable cancer cells could
+
+415
+00:24:17.116 --> 00:24:20.696
+potentially disseminate or propagate oncogenes or mutations to
+
+416
+00:24:20.736 --> 00:24:22.836
+nearby neighboring non-cancer cells.
+
+417
+00:24:23.616 --> 00:24:26.896
+And so these are exciting lines of direction that my laboratory is now
+
+418
+00:24:27.356 --> 00:24:28.236
+directly pursuing.
+
+419
+00:24:29.176 --> 00:24:31.496
+Okay, so with that, I would really like to thank the members of my lab.
+
+420
+00:24:31.836 --> 00:24:35.756
+So Elizabeth Murray is a graduate student who primarily drove
+
+421
+00:24:35.796 --> 00:24:39.256
+this work. We have a number of outstanding collaborators from researchers across
+
+422
+00:24:39.276 --> 00:24:42.236
+the world, as well as our sources of funding. And thank you very much.
+
+423
+00:24:46.716 --> 00:24:48.976
+Thank
+
+424
+00:24:48.996 --> 00:24:52.356
+you, Peter.
+
+425
+00:24:52.876 --> 00:24:53.366
+Any questions?
+
+426
+00:24:54.676 --> 00:24:55.575
+Raul? Yeah.
+
+427
+00:24:55.616 --> 00:24:57.836
+Hey, Peter. Great work. Really interesting.
+
+428
+00:24:57.916 --> 00:25:01.816
+Have you thought about how we could quantify the rate
+
+429
+00:25:01.856 --> 00:25:04.946
+at which this process might happen in
+
+430
+00:25:05.676 --> 00:25:08.226
+human samples, in particular human tumor samples?
+
+431
+00:25:08.616 --> 00:25:11.636
+Like, are there technologies or approaches you can think of?
+
+432
+00:25:12.016 --> 00:25:12.356
+Because it's-
+
+433
+00:25:12.960 --> 00:25:16.940
+One question I would have is that a random piece of DNA wouldn't really have
+
+434
+00:25:16.980 --> 00:25:20.760
+much function, right? So it would only matter if the DNA had an actual
+
+435
+00:25:20.840 --> 00:25:24.210
+gene or something on it. So how do you think we could quantify-
+
+436
+00:25:24.400 --> 00:25:24.450
+Right
+
+437
+00:25:25.000 --> 00:25:25.840
+... the rate?
+
+438
+00:25:25.900 --> 00:25:27.360
+Yeah. That's a fantastic question.
+
+439
+00:25:27.380 --> 00:25:31.230
+So I think, most of the DNA transfer events probably does
+
+440
+00:25:31.320 --> 00:25:34.170
+happen at a low frequency, and it doesn't give rise to much because
+
+441
+00:25:35.060 --> 00:25:37.540
+depending on what sequences are transferred.
+
+442
+00:25:37.560 --> 00:25:40.900
+But I think in the right context, so for example, if the right mutation
+
+443
+00:25:40.940 --> 00:25:44.140
+transfers to another cell, then that could potentially then become
+
+444
+00:25:44.180 --> 00:25:47.590
+propagated in the presence of a positive selection.
+
+445
+00:25:47.990 --> 00:25:51.740
+And how can we quantify this? So this is something that my lab has been thinking
+
+446
+00:25:51.810 --> 00:25:55.680
+about really hard. We haven't come up with a really concrete way to do this yet,
+
+447
+00:25:55.700 --> 00:25:59.470
+because one of the main challenges is that if you're thinking about an individual
+
+448
+00:25:59.500 --> 00:26:02.870
+tumor, they essentially share the same SNPs.
+
+449
+00:26:03.340 --> 00:26:06.920
+So it's really difficult to distinguish between donor-derived DNA
+
+450
+00:26:06.980 --> 00:26:09.700
+versus recipient cell DNA, right?
+
+451
+00:26:10.030 --> 00:26:13.620
+And so now we're thinking about different ways where we can experimentally model
+
+452
+00:26:13.680 --> 00:26:17.520
+this and use sequences that are more amenable to tracking
+
+453
+00:26:17.580 --> 00:26:21.330
+in the laboratory. And then in the context of actually measuring this
+
+454
+00:26:21.360 --> 00:26:24.120
+directly in tumors, we're still thinking about that.
+
+455
+00:26:24.180 --> 00:26:27.940
+But I think it really will rely on new computational techniques to
+
+456
+00:26:27.960 --> 00:26:29.840
+discriminate between these types of events.
+
+457
+00:26:30.270 --> 00:26:33.820
+And one way we've been thinking about it is by tracking mutations
+
+458
+00:26:33.840 --> 00:26:37.830
+between clones or actually DNA copy number alterations between clones
+
+459
+00:26:37.860 --> 00:26:41.660
+that arise at different times within the same tumor, and using that to infer
+
+460
+00:26:41.720 --> 00:26:42.300
+whether it was
+
+461
+00:26:43.180 --> 00:26:45.320
+transferred or not. But that's a really good question.
+
+462
+00:26:45.540 --> 00:26:48.340
+I don't have the best solid answer at this moment, though.
+
+463
+00:26:49.060 --> 00:26:51.620
+Peter, quick suggestion. Have you thought about
+
+464
+00:26:52.780 --> 00:26:55.860
+the context of leukemias? There are hematopoietic stem cell transplantations
+
+465
+00:26:55.900 --> 00:26:57.100
+happening. Have you thought about-
+
+466
+00:26:57.200 --> 00:26:57.210
+Absolutely
+
+467
+00:26:57.210 --> 00:27:00.560
+... looking at samples of those and to see if leukemia cells from the host
+
+468
+00:27:01.420 --> 00:27:03.140
+and the grafts could be exchanged?
+
+469
+00:27:03.200 --> 00:27:06.540
+Yeah, absolutely. So one really good example of that are, for example, Fanconi
+
+470
+00:27:06.580 --> 00:27:08.020
+anemia patients who had undergone
+
+471
+00:27:10.180 --> 00:27:13.860
+blood transplantations, where you could potentially look for donor-derived
+
+472
+00:27:14.140 --> 00:27:17.640
+DNA sequences and SNPs present in the donor DNA but not in the
+
+473
+00:27:18.820 --> 00:27:22.260
+patient DNA. So that's an excellent suggestion.
+
+474
+00:27:22.300 --> 00:27:23.279
+One more question.
+
+475
+00:27:24.040 --> 00:27:24.320
+Question.
+
+476
+00:27:27.440 --> 00:27:27.580
+Sure.
+
+477
+00:27:28.680 --> 00:27:31.420
+Peter, great talk, and it's an amazing discovery.
+
+478
+00:27:32.400 --> 00:27:36.320
+So in each case, is DNA damage required
+
+479
+00:27:36.380 --> 00:27:40.060
+in order to induce this transfer? And in that case, do you think that we're
+
+480
+00:27:40.120 --> 00:27:43.540
+accelerating this process when we treat patients with
+
+481
+00:27:43.560 --> 00:27:47.420
+chemotherapy and potentially provoking secondary malignancies?
+
+482
+00:27:48.360 --> 00:27:51.980
+Absolutely. So in the normal context, the genomic DNA is
+
+483
+00:27:52.000 --> 00:27:55.760
+confined to the nucleus. So it's protected from being
+
+484
+00:27:55.820 --> 00:27:59.569
+transferred. But if you have now DNA that's mislocalized in the cytoplasm, for
+
+485
+00:27:59.600 --> 00:28:03.380
+example, after DNA damage, after mitotic errors, now it's an
+
+486
+00:28:03.400 --> 00:28:06.880
+environment where it could then be permissive for undergoing
+
+487
+00:28:06.960 --> 00:28:07.440
+transfer.
+
+488
+00:28:08.420 --> 00:28:11.880
+And the question you're asking about whether we're inducing these events with
+
+489
+00:28:11.940 --> 00:28:15.900
+chemotherapy is something that we're actually trying to test right now in the
+
+490
+00:28:16.020 --> 00:28:19.920
+laboratory. So we're trying to determine whether DNA transfer occurs in
+
+491
+00:28:19.980 --> 00:28:23.860
+vivo if you hit tumor cells with either chemotherapy
+
+492
+00:28:23.920 --> 00:28:25.440
+or radiotherapy. Yeah.
+
+493
+00:28:26.860 --> 00:28:28.450
+One last question. Howard, do you want to ask something?
+
+494
+00:28:29.000 --> 00:28:32.640
+Peter, great talk. My question is whether you think the recipient
+
+495
+00:28:32.780 --> 00:28:36.720
+cell would have its cGAS-STING pathway activated and therefore
+
+496
+00:28:37.100 --> 00:28:39.260
+essentially reject the transferred DNA.
+
+497
+00:28:40.080 --> 00:28:43.840
+And if so, then is this mechanism really restricted to just transfer between
+
+498
+00:28:43.880 --> 00:28:44.520
+tumor cells?
+
+499
+00:28:45.020 --> 00:28:48.980
+Yeah. Excellent question. So we don't have direct experimental evidence for
+
+500
+00:28:49.020 --> 00:28:52.980
+it, but we do think that once it transfers into the recipient cell,
+
+501
+00:28:53.140 --> 00:28:55.680
+it could then potentially activate the cGAS-STING pathway.
+
+502
+00:28:56.840 --> 00:29:00.020
+However, we do show that both lamin-containing and
+
+503
+00:29:00.440 --> 00:29:02.980
+non-lamin-containing DNAs both transfer.
+
+504
+00:29:03.040 --> 00:29:06.810
+So whether one activates the pathway more strongly than the other, we don't really
+
+505
+00:29:06.820 --> 00:29:07.200
+know yet.
+
+506
+00:29:08.060 --> 00:29:11.450
+But we do think that there are potentially pathways that exist to suppress these
+
+507
+00:29:11.450 --> 00:29:15.250
+events. So, for example, in addition to DNA sensors, one can
+
+508
+00:29:15.300 --> 00:29:19.120
+also think about cytoplasmic nucleases that could potentially degrade the
+
+509
+00:29:19.140 --> 00:29:22.780
+DNA once it transfers, or even in the donor cell before it transfers.
+
+510
+00:29:22.880 --> 00:29:26.620
+But we're still currently trying to understand what are the molecular
+
+511
+00:29:26.800 --> 00:29:30.500
+mechanisms that regulate these type of processes in both cancer and
+
+512
+00:29:30.540 --> 00:29:32.440
+non-cancer settings. Yeah.
+
+513
+00:29:32.699 --> 00:29:33.699
+Peter, fantastic talk.
+
+514
+00:29:33.840 --> 00:29:34.060
+Thank you.
+
+515
+00:29:34.620 --> 00:29:36.780
+I'll hand over to Howard Chang now with the next talk.
+
+516
+00:29:45.560 --> 00:29:47.120
+Thank you, Anton. Good afternoon.
+
+517
+00:29:47.220 --> 00:29:50.660
+I'm delighted to be here and share some of the progress from our laboratory.
+
+518
+00:29:51.820 --> 00:29:53.020
+May I have my first slide, please?
+
+519
+00:29:57.980 --> 00:29:59.680
+Okay. These are my disclosures.
+
+520
+00:30:02.620 --> 00:30:06.360
+Cancer patients really face a daunting challenge when the cancers contain
+
+521
+00:30:06.420 --> 00:30:09.920
+extrachromosomal DNA. As you've heard, these are really prevalent
+
+522
+00:30:09.980 --> 00:30:13.620
+problems that affect both adults and children, men and women.
+
+523
+00:30:14.420 --> 00:30:18.020
+These are, as we've described, large circular pieces of
+
+524
+00:30:18.060 --> 00:30:21.780
+DNA that encode oncogenes, regulatory elements, and additional
+
+525
+00:30:21.880 --> 00:30:25.280
+elements. They are large in the sense that they are 100 kb to a
+
+526
+00:30:25.340 --> 00:30:25.940
+megabase.
+
+527
+00:30:26.760 --> 00:30:30.480
+But what I want to talk to you today is really on three important
+
+528
+00:30:30.540 --> 00:30:34.200
+advances. First, our increasing understanding of how
+
+529
+00:30:34.260 --> 00:30:37.720
+oncogenes gain a transcriptional advantage on ecDNAs.
+
+530
+00:30:38.540 --> 00:30:39.000
+Secondly,
+
+531
+00:30:39.920 --> 00:30:43.480
+how ecDNAs allow rapid genome change, yet retain
+
+532
+00:30:43.490 --> 00:30:47.120
+the capacity to be passed on through multiple
+
+533
+00:30:47.220 --> 00:30:49.020
+somatic generations in the cancer cell.
+
+534
+00:30:49.700 --> 00:30:52.710
+And finally, how this kind of unusual mechanism of
+
+535
+00:30:52.780 --> 00:30:56.600
+inheritance allows us to identify ecDNAs and their
+
+536
+00:30:56.660 --> 00:30:59.790
+unique roles in cancer and to improve cancer
+
+537
+00:30:59.880 --> 00:31:03.680
+diagnostic. And of course, this is a therapeutic vulnerability that we hope to
+
+538
+00:31:03.720 --> 00:31:07.510
+exploit on top of, because they're not found in normal cells.
+
+539
+00:31:08.380 --> 00:31:12.260
+All right, so let's dig in. As we start studying extrachromosomal DNA,
+
+540
+00:31:12.420 --> 00:31:16.080
+one of the first really, I think, surprising and beautiful
+
+541
+00:31:16.460 --> 00:31:19.140
+discoveries is that they congregate in these dynamic hubs.
+
+542
+00:31:19.600 --> 00:31:23.440
+When you hear about ecDNAs existing in 10 or maybe even 100
+
+543
+00:31:23.500 --> 00:31:27.000
+copies in a cancer cell-They don't actually show up in
+
+544
+00:31:27.040 --> 00:31:30.840
+100 separate dots. We discovered, and we and others, that in
+
+545
+00:31:30.900 --> 00:31:34.560
+fact they often concentrate into these micron size hubs
+
+546
+00:31:35.100 --> 00:31:38.970
+where dozens or more ecDNAs come into close physical proximity.
+
+547
+00:31:39.790 --> 00:31:43.560
+They're held together by specific proteins such as transcriptional machinery,
+
+548
+00:31:44.400 --> 00:31:48.360
+co-activators such as BRD4, and that if you block
+
+549
+00:31:48.420 --> 00:31:52.400
+the roles of these proteins, that ecDNAs fly apart, and in
+
+550
+00:31:52.460 --> 00:31:55.120
+fact, their transcriptional advantage stops.
+
+551
+00:31:56.040 --> 00:32:00.000
+So this led to a view that these extrachromosomal DNA hubs are
+
+552
+00:32:00.040 --> 00:32:03.920
+the unit of oncogene function. And what we learned is that inside
+
+553
+00:32:03.960 --> 00:32:07.900
+these ecDNA hubs, there is a new mode of transcription called
+
+554
+00:32:07.960 --> 00:32:10.220
+intermolecular gene activation.
+
+555
+00:32:10.920 --> 00:32:14.660
+So normally in a long piece of chromosome, you have genes and your
+
+556
+00:32:14.720 --> 00:32:16.880
+DNA regulatory elements on the same molecule.
+
+557
+00:32:17.480 --> 00:32:20.940
+And these regulatory elements are the switches that decide when and where these
+
+558
+00:32:21.000 --> 00:32:24.940
+genes turn on and off. And the switches only from near proximity on the
+
+559
+00:32:25.020 --> 00:32:27.060
+same molecule can turn on the gene.
+
+560
+00:32:27.820 --> 00:32:31.320
+That inside this ecDNA hub, we can actually have
+
+561
+00:32:32.180 --> 00:32:35.300
+different molecules, where the enhancer from one
+
+562
+00:32:35.400 --> 00:32:39.300
+ecDNA actually turns on the gene, the coding sequence, of
+
+563
+00:32:39.340 --> 00:32:43.250
+a different ecDNA. And these ecDNAs can actually originally come from
+
+564
+00:32:43.280 --> 00:32:45.130
+different chromosomes. All right?
+
+565
+00:32:45.300 --> 00:32:49.280
+So basically, this allows a cooperative and combinatorial modes of gene
+
+566
+00:32:49.400 --> 00:32:52.840
+activation. These ecDNAs gain access to
+
+567
+00:32:52.880 --> 00:32:56.500
+enhancers that could normally never get at before, and thus
+
+568
+00:32:56.580 --> 00:32:58.370
+allows this massive transcription.
+
+569
+00:32:59.440 --> 00:33:00.990
+But this has additional consequences.
+
+570
+00:33:01.840 --> 00:33:04.910
+And that is that we believe that this will lead to potentially oncogene
+
+571
+00:33:05.020 --> 00:33:08.860
+diversification in several ways, as I'll show you, because of this kind of
+
+572
+00:33:08.880 --> 00:33:12.520
+interdependency, and this is, of course, another therapeutic target.
+
+573
+00:33:13.840 --> 00:33:17.800
+One of the first most direct examples is when we first had the ability
+
+574
+00:33:17.820 --> 00:33:21.490
+to isolate individual ecDNAs biochemically and
+
+575
+00:33:21.520 --> 00:33:24.170
+subject them to single molecule or long-read sequencing.
+
+576
+00:33:24.830 --> 00:33:28.480
+And we can see that in fact there's far more sequence diversity
+
+577
+00:33:28.540 --> 00:33:29.600
+among ecDNAs.
+
+578
+00:33:30.940 --> 00:33:34.549
+We oftentimes imagine ecDNAs as a full locus amplification, just a
+
+579
+00:33:34.940 --> 00:33:38.620
+gene, all its regulatory elements, and in pressing lots of copies, and we
+
+580
+00:33:38.660 --> 00:33:39.340
+definitely see that.
+
+581
+00:33:40.220 --> 00:33:43.630
+We also often see what is called enhancer hijacking.
+
+582
+00:33:44.140 --> 00:33:48.020
+Rearrangements that bring in another enhancer into proximity to
+
+583
+00:33:48.040 --> 00:33:51.020
+an ecDNA, allowing, let's say, more potent expression.
+
+584
+00:33:52.040 --> 00:33:55.160
+But we were surprised to see another phenomenon called ecDNA
+
+585
+00:33:55.200 --> 00:33:59.100
+specialization. This is a situation where you have a coding
+
+586
+00:33:59.200 --> 00:34:02.420
+sequence that's amplified, but no regulatory elements.
+
+587
+00:34:03.020 --> 00:34:06.920
+And other times you see focal enhancer amplification, but no
+
+588
+00:34:06.960 --> 00:34:07.760
+coding sequence.
+
+589
+00:34:08.720 --> 00:34:12.341
+Now, if you're making an expression construct in the lab and you ended up with
+
+590
+00:34:12.380 --> 00:34:16.330
+these kinds of results, you probably go back and try to make it again because
+
+591
+00:34:16.330 --> 00:34:20.080
+the dogma of molecular biology tells us that you wouldn't get gene expression.
+
+592
+00:34:20.100 --> 00:34:23.841
+But in fact, we see this in fact in patient samples and amplified to
+
+593
+00:34:23.900 --> 00:34:25.980
+quite high levels, as seen in the
+
+594
+00:34:26.980 --> 00:34:30.870
+TRACERx or the Genomes England dataset pioneered by
+
+595
+00:34:30.880 --> 00:34:32.600
+Chris Bailey and Charlie Swanson.
+
+596
+00:34:33.160 --> 00:34:37.040
+So we interpret this to really mean that there's intermolecular
+
+597
+00:34:37.140 --> 00:34:40.520
+complementation in the ecDNA hubs because these
+
+598
+00:34:40.560 --> 00:34:44.170
+enhancers can turn on these coding gene only sequences,
+
+599
+00:34:44.500 --> 00:34:48.160
+and therefore these kind of unique molecular species can
+
+600
+00:34:48.220 --> 00:34:51.560
+exist and be possibly selected for in cancer cells.
+
+601
+00:34:52.400 --> 00:34:52.620
+Okay.
+
+602
+00:34:53.801 --> 00:34:57.660
+Another really striking observation came from the work of Hyrum Yee, who's in the
+
+603
+00:34:57.740 --> 00:35:01.600
+audience, and that is the finding that ecDNAs have become a platform
+
+604
+00:35:01.620 --> 00:35:03.740
+for gene innovation through gene fusions.
+
+605
+00:35:04.460 --> 00:35:08.420
+We heard this morning about the advent of Gleevec targeting Philadelphia
+
+606
+00:35:08.500 --> 00:35:12.320
+chromosome, and that, of course, is targeting a gene rearrangement,
+
+607
+00:35:12.760 --> 00:35:16.580
+a fusion protein, BCR-ABL, now that happens on a chromosome.
+
+608
+00:35:17.320 --> 00:35:21.120
+And so in this work, pioneered by Hyrum and Shu Zheng, and together with Paul
+
+609
+00:35:21.160 --> 00:35:24.650
+Michiel, we found that in fact there's a very high rate of
+
+610
+00:35:24.720 --> 00:35:28.630
+structural variation on extrachromosomal DNAs, and that actually will lead
+
+611
+00:35:28.660 --> 00:35:29.600
+to gene fusions.
+
+612
+00:35:30.540 --> 00:35:34.300
+And so this is basically a single coding transcript that will now bring different
+
+613
+00:35:34.360 --> 00:35:37.940
+kind of elements together. They're actually, in fact, the most
+
+614
+00:35:38.000 --> 00:35:41.939
+prevalent form of sort of source of structural variants or gene
+
+615
+00:35:41.980 --> 00:35:45.800
+fusions in solid tumors. And one of the most prevalent one that we found
+
+616
+00:35:45.860 --> 00:35:49.300
+is one that combines the five prime N exon
+
+617
+00:35:49.460 --> 00:35:53.320
+one of a long non-coding RNA called PVT1 with
+
+618
+00:35:53.560 --> 00:35:56.400
+diverse oncogene partners on the three prime N.
+
+619
+00:35:56.980 --> 00:35:59.300
+And this has the consequence of increasing the
+
+620
+00:36:00.380 --> 00:36:04.100
+messenger RNA stability of any transcript
+
+621
+00:36:04.200 --> 00:36:07.980
+that's fused to this PVT1, so for example, MYC, a short-lived transcript,
+
+622
+00:36:08.260 --> 00:36:09.980
+and that enhances oncogene function.
+
+623
+00:36:10.320 --> 00:36:13.380
+And that there are actually many other sort of oncogenes that can be boosted in
+
+624
+00:36:13.420 --> 00:36:16.500
+this way. So think of the PVT1 exon one as a
+
+625
+00:36:16.600 --> 00:36:20.400
+universal five-prime UTR that basically enhances your RNA
+
+626
+00:36:20.460 --> 00:36:21.380
+stability.
+
+627
+00:36:22.340 --> 00:36:25.000
+So we think this is going to be a fruitful area of investigation.
+
+628
+00:36:25.760 --> 00:36:29.300
+And to summarize the concept, there's this fearsome Greek
+
+629
+00:36:29.640 --> 00:36:33.060
+monster, right? The mythology, the Chimera, that combines
+
+630
+00:36:33.100 --> 00:36:33.710
+these
+
+631
+00:36:34.840 --> 00:36:38.620
+monsters' different capabilities, and that's kind of what the ecDNA provides.
+
+632
+00:36:38.660 --> 00:36:42.259
+It's a platform for making these now altered transcripts with
+
+633
+00:36:42.320 --> 00:36:44.440
+enhanced molecular capabilities. Dr.
+
+634
+00:36:44.660 --> 00:36:48.510
+Hyrum Yee, who's in the audience, will be giving a talk on this topic in the
+
+635
+00:36:48.540 --> 00:36:50.699
+mini symposium tomorrow afternoon.
+
+636
+00:36:50.740 --> 00:36:53.540
+So please go check it out if you find this interesting.
+
+637
+00:36:55.420 --> 00:36:55.520
+The
+
+638
+00:36:57.320 --> 00:37:01.020
+second major challenge I think ecDNA faces is its mitotic
+
+639
+00:37:01.030 --> 00:37:04.220
+transmission. As Anton and Peter both described,
+
+640
+00:37:04.260 --> 00:37:08.220
+ecDNAs lack centromeres. And so you can imagine that with
+
+641
+00:37:08.280 --> 00:37:12.250
+every cell division, this is a mortal challenge to its
+
+642
+00:37:12.380 --> 00:37:15.770
+propagation. And what we've learned, we and others have seen for
+
+643
+00:37:15.920 --> 00:37:19.780
+decades, is that extrachromosomal DNAs, in this case labeled in green,
+
+644
+00:37:20.280 --> 00:37:24.040
+will basically attach to mitotic chromosomes labeled in purple here.
+
+645
+00:37:24.380 --> 00:37:28.120
+And as the chromosome segregates, the ecDNA basically will hitch a ride
+
+646
+00:37:28.200 --> 00:37:29.860
+into the resulting daughter cells.
+
+647
+00:37:30.300 --> 00:37:34.252
+This is called mitotic hitchhiking.This is a phenomenon that also
+
+648
+00:37:34.292 --> 00:37:37.852
+is seen with DNA viruses that don't have centromeres.
+
+649
+00:37:38.192 --> 00:37:41.492
+But the question is, how does this happen? What is the molecular mechanism?
+
+650
+00:37:41.992 --> 00:37:45.892
+So we imagine that there must be some sort of special sequence that allows
+
+651
+00:37:45.932 --> 00:37:49.652
+ecDNAs and a machinery to attach to mitotic chromosomes.
+
+652
+00:37:50.492 --> 00:37:52.222
+So two very talented graduate students,
+
+653
+00:37:53.432 --> 00:37:57.232
+Venkat Sankar and King Hong, devised this new strategy that we call
+
+654
+00:37:57.312 --> 00:38:00.752
+Retain-seq to identify potential retention elements.
+
+655
+00:38:01.312 --> 00:38:04.272
+This strategy starts by taking human genomic DNA,
+
+656
+00:38:04.812 --> 00:38:08.212
+fragmenting them into small pieces, and including them into
+
+657
+00:38:08.392 --> 00:38:10.672
+a heterologous plasmid
+
+658
+00:38:11.632 --> 00:38:15.612
+and asking, would any of these sequences allow this plasmid,
+
+659
+00:38:15.672 --> 00:38:18.912
+upon transfection in multiple passages, to be
+
+660
+00:38:18.972 --> 00:38:22.092
+retained and therefore, basically,
+
+661
+00:38:22.592 --> 00:38:24.772
+proportionally amplified over time.
+
+662
+00:38:24.832 --> 00:38:28.372
+Okay, so then when you sequence this in the DNA, the input
+
+663
+00:38:28.412 --> 00:38:32.172
+genome-specific sequences might be retained and therefore elevated.
+
+664
+00:38:32.202 --> 00:38:34.212
+And this strategy proved successful.
+
+665
+00:38:34.252 --> 00:38:37.852
+It's an unbiased approach, and we discover a family of
+
+666
+00:38:37.951 --> 00:38:40.792
+actually thousands of these retention elements that are present on
+
+667
+00:38:40.832 --> 00:38:44.792
+ecDNAs. And this is an example showing that, in fact, their mechanism
+
+668
+00:38:44.852 --> 00:38:48.172
+is by enhancing retention. So we have these
+
+669
+00:38:48.492 --> 00:38:52.412
+cells where we have basically lacO array to allow imaging of the
+
+670
+00:38:52.432 --> 00:38:56.232
+ecDNA. We can have it in a naked fashion or add the retention
+
+671
+00:38:56.312 --> 00:38:58.292
+element. And if you transfect
+
+672
+00:39:00.012 --> 00:39:03.932
+the plasmid, we can then watch over time by labeling the
+
+673
+00:39:03.952 --> 00:39:07.472
+lacO with associated proteins, whether these ecDNAs are
+
+674
+00:39:07.512 --> 00:39:11.352
+basically attached to the mitotic chromosomes or perhaps are actually
+
+675
+00:39:11.392 --> 00:39:13.532
+detached if they lack the retention elements.
+
+676
+00:39:14.032 --> 00:39:17.872
+And what we found is that a single retention element basically
+
+677
+00:39:18.412 --> 00:39:19.972
+halves the rate of failure. Right?
+
+678
+00:39:20.052 --> 00:39:23.212
+So basically increase your chance for retention by at least 50%.
+
+679
+00:39:23.852 --> 00:39:27.732
+And this can be imaged basically through the entire time
+
+680
+00:39:27.812 --> 00:39:31.392
+through mitosis. And this is a endogenous ecDNA.
+
+681
+00:39:31.702 --> 00:39:34.612
+And what we also learned is that having multiple retention elements
+
+682
+00:39:35.312 --> 00:39:38.612
+sequentially improves the efficacy to over 95%.
+
+683
+00:39:38.972 --> 00:39:41.751
+And so this will have a very significant potential impact.
+
+684
+00:39:42.812 --> 00:39:46.572
+Okay. We also went in and delved into the molecular mechanism
+
+685
+00:39:46.692 --> 00:39:50.332
+of what are these sequences and where do they attach to.
+
+686
+00:39:50.352 --> 00:39:53.972
+And this then involves using a classic technology that's called chromosome
+
+687
+00:39:54.032 --> 00:39:58.011
+confirmation capture or Hi-C to map the contact points between the
+
+688
+00:39:58.032 --> 00:40:00.761
+retention elements and their chromosomal anchoring sites.
+
+689
+00:40:01.342 --> 00:40:04.922
+What we learned is that there's actually a very interesting logic to this
+
+690
+00:40:04.932 --> 00:40:08.642
+retention, and that is that these retention elements comprise of
+
+691
+00:40:08.772 --> 00:40:12.372
+specific classes of promoters, gene promoters that
+
+692
+00:40:12.392 --> 00:40:16.132
+allow transcription. And these bookmark sites, that's the places where the
+
+693
+00:40:16.172 --> 00:40:18.932
+ecDNA is attached to, are actually enhancers
+
+694
+00:40:19.272 --> 00:40:22.952
+where they interact. So in a
+
+695
+00:40:22.992 --> 00:40:26.972
+way, these mitotic retention, right, recapitulates
+
+696
+00:40:27.032 --> 00:40:30.972
+enhancer-promoter contact that happens in normal chromosome gene
+
+697
+00:40:30.981 --> 00:40:34.912
+expression, except this happens in interphase and mitotic
+
+698
+00:40:34.932 --> 00:40:38.332
+retention happens in M phase. Moreover, there's something very
+
+699
+00:40:38.342 --> 00:40:40.312
+special. It is not that
+
+700
+00:40:41.352 --> 00:40:45.312
+every promoter enhancer can be a retention element, but that
+
+701
+00:40:45.672 --> 00:40:49.132
+there are specific sites in the genome that
+
+702
+00:40:49.172 --> 00:40:51.232
+retain their accessibility and activity.
+
+703
+00:40:51.612 --> 00:40:55.452
+So during mitosis, their chromosomes condense 10,000-fold, but
+
+704
+00:40:55.552 --> 00:40:58.481
+only a special subset of sites retain accessibility.
+
+705
+00:40:58.872 --> 00:41:00.632
+So this is called mitotic bookmarking.
+
+706
+00:41:01.012 --> 00:41:04.972
+So these mitotic bookmark sites are massively enriched, 150-fold
+
+707
+00:41:05.012 --> 00:41:06.792
+plus enriched as retention elements.
+
+708
+00:41:07.172 --> 00:41:11.132
+So we understand that this retention activity is hacking
+
+709
+00:41:11.212 --> 00:41:14.932
+into exploiting this endogenous mechanism of mitotic
+
+710
+00:41:14.952 --> 00:41:18.622
+bookmarking, which allows gene transcription memory to get
+
+711
+00:41:18.652 --> 00:41:20.452
+reactivated in the next cell cycle.
+
+712
+00:41:20.812 --> 00:41:24.672
+And this is the mechanism that these cells are hacking into.
+
+713
+00:41:25.612 --> 00:41:25.932
+Okay.
+
+714
+00:41:27.992 --> 00:41:31.882
+And finally, we performed mathematic modeling led by
+
+715
+00:41:31.912 --> 00:41:35.012
+Matt Jones to ask how important are these retention elements.
+
+716
+00:41:35.032 --> 00:41:38.842
+And so if you take, for example, ecDNAs with
+
+717
+00:41:38.872 --> 00:41:42.072
+very a potent selection factor, let's say a potent oncogene.
+
+718
+00:41:42.452 --> 00:41:44.972
+We can imagine that they would really confer cell growth.
+
+719
+00:41:45.272 --> 00:41:49.171
+But we can also imagine that if the ecDNAs can get lost with some probability
+
+720
+00:41:49.212 --> 00:41:52.752
+with every cell division, what is the likelihood of maintaining that
+
+721
+00:41:53.231 --> 00:41:56.212
+over multiple cell generations? Okay.
+
+722
+00:41:56.292 --> 00:41:59.832
+And the answer is that essentially you need something like a
+
+723
+00:41:59.902 --> 00:42:03.742
+95% or greater efficacy of retention to have any
+
+724
+00:42:03.812 --> 00:42:07.572
+chance of a long-term propagation of any kind of extrachromosomal DNA
+
+725
+00:42:07.632 --> 00:42:11.612
+element. And so this is in fact matching the kind of data
+
+726
+00:42:11.652 --> 00:42:13.832
+we observed with our experimental system.
+
+727
+00:42:14.892 --> 00:42:18.832
+And this is also demonstrating that if we specifically methylate, for
+
+728
+00:42:18.872 --> 00:42:22.532
+example, retention elements, we also then can kick out basically
+
+729
+00:42:22.592 --> 00:42:26.572
+extrachromosomal DNAs, and that would actually because they would turn off the eDNA
+
+730
+00:42:26.632 --> 00:42:27.132
+activity.
+
+731
+00:42:27.992 --> 00:42:31.932
+Okay, so I've told you then is that retention elements represent a
+
+732
+00:42:31.972 --> 00:42:33.572
+new element in molecular biology.
+
+733
+00:42:33.772 --> 00:42:37.032
+They give ecDNAs their immortal status.
+
+734
+00:42:37.872 --> 00:42:40.612
+And what's happening is that in addition to a
+
+735
+00:42:41.492 --> 00:42:44.912
+oncogene or other selection factor that gives a cell a growth advantage,
+
+736
+00:42:45.592 --> 00:42:49.412
+we need a retention element to allow their basically uninterrupted
+
+737
+00:42:49.472 --> 00:42:53.192
+propagation that will allow persistence and oncogene will provide the
+
+738
+00:42:53.232 --> 00:42:56.982
+selection. Without it, the ecDNAs will
+
+739
+00:42:57.032 --> 00:42:59.952
+oftentimes be lost through subsequent cell divisions.
+
+740
+00:43:00.222 --> 00:43:04.172
+So this is a key new aspect of eDNA biology that we
+
+741
+00:43:04.212 --> 00:43:05.431
+should hope to exploit.
+
+742
+00:43:06.792 --> 00:43:07.092
+Okay.
+
+743
+00:43:08.092 --> 00:43:11.472
+Now, finally, I want to turn to the question of cell-to-cell
+
+744
+00:43:11.512 --> 00:43:12.152
+variation
+
+745
+00:43:13.032 --> 00:43:16.652
+and our understanding of how we can understand detect ecDNAs.
+
+746
+00:43:16.692 --> 00:43:20.572
+What I've told you about so far about eDNA persistence is that there
+
+747
+00:43:20.592 --> 00:43:23.681
+is still random segregation into daughter cells, right,
+
+748
+00:43:24.132 --> 00:43:27.492
+even if they're retained. And this is an
+
+749
+00:43:27.572 --> 00:43:31.492
+opportunity for us to think about how we can understand and detect ecDNAs.
+
+750
+00:43:31.552 --> 00:43:35.332
+Because if you imagine just throwing dice or other kind of
+
+751
+00:43:35.352 --> 00:43:38.962
+games of chance, then we get this random inheritance and very high
+
+752
+00:43:38.962 --> 00:43:41.952
+variance and with a high mean, whereas a chromosomal
+
+753
+00:43:41.992 --> 00:43:45.952
+amplification would have a staple inheritance, so it would have a high mean and low
+
+754
+00:43:45.972 --> 00:43:49.824
+variance. And so Matt JonesA very talented
+
+755
+00:43:49.864 --> 00:43:50.264
+postdoc
+
+756
+00:43:51.664 --> 00:43:55.014
+realized this property that we can visualize both in
+
+757
+00:43:55.404 --> 00:43:59.324
+basically DNA FISH experiments, for example, in these colon cancer
+
+758
+00:43:59.394 --> 00:44:02.844
+cells, these ecDNA-containing cells with the DM.
+
+759
+00:44:03.024 --> 00:44:06.884
+You can see different variations, lots of copies here, very few here, so
+
+760
+00:44:07.044 --> 00:44:10.864
+big variance versus in a-- And when they're staple integrated, so-called
+
+761
+00:44:11.024 --> 00:44:14.864
+HSR, they have a very consistent, a much more consistent level of copy
+
+762
+00:44:14.924 --> 00:44:18.684
+number. Okay. So this idea
+
+763
+00:44:18.724 --> 00:44:22.344
+then is to create a classifier that we call
+
+764
+00:44:22.564 --> 00:44:26.314
+SCAMP, okay? And we can classify gene amplifications with
+
+765
+00:44:26.364 --> 00:44:30.204
+single-cell resolution by looking at this variation in the
+
+766
+00:44:30.264 --> 00:44:31.664
+copy number. And so
+
+767
+00:44:32.604 --> 00:44:32.904
+this is
+
+768
+00:44:35.824 --> 00:44:39.344
+essentially an AI
+
+769
+00:44:39.464 --> 00:44:43.233
+system that classifies the ecDNA class genes,
+
+770
+00:44:43.584 --> 00:44:47.504
+and we can basically then quantify whether this is an ecDNA positive
+
+771
+00:44:47.704 --> 00:44:51.654
+or a negative cell or in a subpopulation of cells, and this led to a number of sort
+
+772
+00:44:51.654 --> 00:44:55.534
+of potentially useful end results, for example, evolutionary analysis,
+
+773
+00:44:55.904 --> 00:44:59.844
+the phenotyping of the cells, and tracking ecDNA biology.
+
+774
+00:44:59.884 --> 00:45:03.484
+Okay. So let's just remember that we're looking at the variance of the
+
+775
+00:45:03.804 --> 00:45:07.723
+signal, not just the height of the signal, and this has certain advantages.
+
+776
+00:45:07.784 --> 00:45:08.024
+Okay.
+
+777
+00:45:08.904 --> 00:45:12.864
+So first of all, is that if we use simulated amplicons, we can see that
+
+778
+00:45:12.924 --> 00:45:16.604
+indeed, as the copy number goes up, the copy number
+
+779
+00:45:16.684 --> 00:45:20.204
+variance also goes up with ecDNAs, shown in red here.
+
+780
+00:45:21.024 --> 00:45:24.864
+And that, for example, with chromosomal amplification, the copy
+
+781
+00:45:24.884 --> 00:45:27.764
+number goes up, but the variance does not. So this is very clear.
+
+782
+00:45:27.804 --> 00:45:31.374
+But even when there's a mixture at a single-cell level, we can still
+
+783
+00:45:31.384 --> 00:45:34.754
+discern the populations that have these different characteristics.
+
+784
+00:45:35.144 --> 00:45:39.044
+And that translates into this high-level performance
+
+785
+00:45:39.084 --> 00:45:40.794
+on both simulations and cell lines.
+
+786
+00:45:41.104 --> 00:45:42.724
+You can see that basically the true
+
+787
+00:45:43.684 --> 00:45:47.624
+information's here in the upper right, and we can actually approach that quite
+
+788
+00:45:47.664 --> 00:45:51.384
+well. Okay. So I think the key advantage here is that you can really detect
+
+789
+00:45:51.724 --> 00:45:55.604
+basically current ecDNA status versus the history of ecDNA
+
+790
+00:45:55.644 --> 00:45:59.404
+presence. Because if we look at prior methods, for example,
+
+791
+00:45:59.484 --> 00:46:03.044
+Amplicon Architect, pioneered by Maneet Bathna, who's really a key
+
+792
+00:46:03.104 --> 00:46:04.344
+workhorse in the field,
+
+793
+00:46:05.464 --> 00:46:08.684
+we can see that, for example, in the chromosomal reintegration,
+
+794
+00:46:09.144 --> 00:46:12.793
+sometimes these will be classified as ecDNA because they went through the
+
+795
+00:46:12.864 --> 00:46:16.724
+history of ecDNA. But that single-cell variance is no
+
+796
+00:46:16.804 --> 00:46:20.704
+longer there, and so that they will be correctly classified now as
+
+797
+00:46:20.784 --> 00:46:24.584
+actually no longer ecDNA by this method, which we
+
+798
+00:46:24.624 --> 00:46:28.474
+call SCAMP. Okay? And so there are a number of these situations which we have
+
+799
+00:46:28.504 --> 00:46:32.444
+this perhaps improved insight into the current status
+
+800
+00:46:32.484 --> 00:46:36.444
+of ecDNA biology. Okay. And so indeed, if we
+
+801
+00:46:36.484 --> 00:46:40.204
+look at this confusion matrix, we'll see that we will do a good job
+
+802
+00:46:40.704 --> 00:46:43.724
+versus whole genome sequencing analyzed with Amplicon Architect.
+
+803
+00:46:43.764 --> 00:46:47.524
+You can see that, SCAMP does a good job with a
+
+804
+00:46:47.624 --> 00:46:50.994
+true and false, and the specific advantage here is basically
+
+805
+00:46:51.064 --> 00:46:55.054
+over a situation where there's a history of ecDNA, but they have reintegrated,
+
+806
+00:46:55.164 --> 00:46:58.114
+and this is now, we believe, picked up by SCAMP. All right?
+
+807
+00:46:58.444 --> 00:47:01.964
+And this is as seen in, for example, in a set of tumors analyzed in the
+
+808
+00:47:02.164 --> 00:47:05.704
+TCGA, actually performed in my lab,
+
+809
+00:47:05.864 --> 00:47:09.624
+and then you can see that, for example, in a similar situation where, for
+
+810
+00:47:09.664 --> 00:47:13.324
+example, in breast cancer, there's this history of ecDNA, but they have
+
+811
+00:47:13.364 --> 00:47:17.104
+reintegrated. They are now detected by whole genome sequencing, but in
+
+812
+00:47:17.144 --> 00:47:20.584
+fact, most of these are now HSRs or other kind of genomic
+
+813
+00:47:20.594 --> 00:47:23.444
+reintegration, and they're actually not ecDNAs.
+
+814
+00:47:23.644 --> 00:47:27.404
+And there's also the capacity to detect subclonal ecDNA
+
+815
+00:47:27.924 --> 00:47:31.264
+presence because you're looking at this cell-to-cell variation.
+
+816
+00:47:31.944 --> 00:47:32.144
+Okay.
+
+817
+00:47:33.624 --> 00:47:37.584
+So I'll show you an example how we can deconvolute a complex biology
+
+818
+00:47:37.644 --> 00:47:39.464
+of subclonal ecDNAs.
+
+819
+00:47:40.444 --> 00:47:43.834
+Forward. Okay. And so in this case of a
+
+820
+00:47:43.864 --> 00:47:47.704
+glioblastoma tumor that was analyzed in TCGA.
+
+821
+00:47:47.724 --> 00:47:50.724
+And so here, every row is actually
+
+822
+00:47:52.064 --> 00:47:55.644
+a single cell, and every column is basically a genomic locus.
+
+823
+00:47:56.184 --> 00:48:00.174
+We can see that, in fact, that there are four clusters of
+
+824
+00:48:00.364 --> 00:48:02.704
+single cells, and they're in fact cells.
+
+825
+00:48:02.724 --> 00:48:06.624
+This cluster three has ecDNAs for both MDM2 and MYC,
+
+826
+00:48:07.244 --> 00:48:11.224
+and where these other clusters have different kind of ecDNAs, just MDM2, and
+
+827
+00:48:11.284 --> 00:48:15.254
+this other cluster does not. And so if you pseudo bulk it together,
+
+828
+00:48:15.564 --> 00:48:19.164
+you can, for example, reconstruct the genomic amplicon, for example, for
+
+829
+00:48:19.204 --> 00:48:22.244
+cluster three. Okay. All right.
+
+830
+00:48:23.114 --> 00:48:27.064
+And this method is not limited to just genomic sequencing or
+
+831
+00:48:27.104 --> 00:48:30.604
+single-cell sequencing, but you can also use it for FISH images.
+
+832
+00:48:31.004 --> 00:48:34.344
+And so this is, for example, for FFPE, so clinical
+
+833
+00:48:35.104 --> 00:48:35.544
+samples.
+
+834
+00:48:36.444 --> 00:48:40.404
+So in this set, every column here, this is different sets of tumors, and we
+
+835
+00:48:40.444 --> 00:48:44.204
+can analyze by sequencing or by fluorescent in situ hybridization, so more
+
+836
+00:48:44.224 --> 00:48:48.004
+compatible with clinical data. And you can see that
+
+837
+00:48:48.464 --> 00:48:52.304
+these tumors with very high levels of both MYC and also very
+
+838
+00:48:52.344 --> 00:48:55.944
+high variance, right? And so, for example, and they're predicted to be ecDNAs.
+
+839
+00:48:56.224 --> 00:49:00.174
+And for example, you can see that this one, you see lots of copies, very few copies
+
+840
+00:49:00.244 --> 00:49:03.044
+right next to each other. This is consistent with an ecDNA pattern.
+
+841
+00:49:03.564 --> 00:49:07.224
+And you can actually apply this classifier to this particular
+
+842
+00:49:07.324 --> 00:49:09.864
+problem. And this is done by Natasha Weiser.
+
+843
+00:49:10.884 --> 00:49:14.864
+Okay, so I've told you then is that ecDNAs allow the
+
+844
+00:49:14.904 --> 00:49:18.444
+accelerated evolution of cancer cells, and this is really a key
+
+845
+00:49:18.484 --> 00:49:22.424
+factor of ecDNA biology. And one of those mechanisms
+
+846
+00:49:22.604 --> 00:49:26.214
+is as a source of gene fusions, where you can combine different genes
+
+847
+00:49:26.244 --> 00:49:28.284
+together to activate their activity.
+
+848
+00:49:29.154 --> 00:49:32.884
+Another key element to allow ecDNA immortality are these
+
+849
+00:49:32.984 --> 00:49:36.324
+retention elements that allow their persistence through multiple cell
+
+850
+00:49:36.424 --> 00:49:38.104
+cycles. And finally, a
+
+851
+00:49:38.984 --> 00:49:42.564
+new tool called SCAMP will help you identify ecDNAs with single-cell
+
+852
+00:49:42.624 --> 00:49:46.364
+resolution and distinguishing current status also versus past
+
+853
+00:49:46.404 --> 00:49:50.054
+history. So hope that'll be useful, and it's compatible also with
+
+854
+00:49:50.084 --> 00:49:54.072
+histology or FISH kind of samples.I want
+
+855
+00:49:54.092 --> 00:49:58.032
+to thank many people involved in this work, especially highlight the work
+
+856
+00:49:58.112 --> 00:50:01.752
+of Venkat and King on the
+
+857
+00:50:01.952 --> 00:50:05.452
+retention elements, the work of Matt and Natasha
+
+858
+00:50:05.792 --> 00:50:09.732
+on the SCAM, single cell detection, and Hai-Rim, I
+
+859
+00:50:09.812 --> 00:50:13.692
+briefly mentioned her work on the gene fusion.
+
+860
+00:50:14.492 --> 00:50:18.412
+And I want to thank all my colleagues, especially Paul Michiel, Anton,
+
+861
+00:50:18.872 --> 00:50:22.352
+many folks involved in the E-Dynamic team, and a grateful acknowledge for my
+
+862
+00:50:22.372 --> 00:50:25.991
+funding sources. And I want a special shout out to my partner in
+
+863
+00:50:26.072 --> 00:50:30.032
+crime, Paul Michiel. We did not coordinate actually our dress code, but we ended
+
+864
+00:50:30.072 --> 00:50:34.032
+up wearing the same blue shirt. So, this is maybe more a
+
+865
+00:50:34.072 --> 00:50:36.092
+commentary about men's fashion. Okay.
+
+866
+00:50:36.172 --> 00:50:39.412
+So I'm happy to take questions. Thank you so much.
+
+867
+00:50:44.752 --> 00:50:45.572
+Fantastic talk.
+
+868
+00:50:49.252 --> 00:50:50.112
+Marson?
+
+869
+00:50:50.852 --> 00:50:54.412
+Hi. Gorgeous data as always. I was wondering if you could
+
+870
+00:50:54.422 --> 00:50:58.332
+speculate on mechanisms of HSR formation, sort
+
+871
+00:50:58.352 --> 00:51:02.332
+of post an ecDNA phase. And classically, HSRs represent
+
+872
+00:51:02.372 --> 00:51:05.512
+very long, potentially multi-megabase tandem arrays of a
+
+873
+00:51:06.812 --> 00:51:09.332
+particular amplified segment. And
+
+874
+00:51:10.492 --> 00:51:14.412
+what is the sort of dynamics of how all those copies would hone
+
+875
+00:51:14.552 --> 00:51:17.572
+in on a single locus? And does it have to do with
+
+876
+00:51:18.772 --> 00:51:22.262
+the biology of maybe these retention elements, or are there other
+
+877
+00:51:22.292 --> 00:51:25.812
+mechanisms at play? Because to me, that seems like an extremely mysterious
+
+878
+00:51:26.192 --> 00:51:27.032
+transition.
+
+879
+00:51:28.272 --> 00:51:30.312
+Thank you for this very insightful question.
+
+880
+00:51:30.372 --> 00:51:34.332
+So I think this really speaks to the importance of ecDNA hub in the life
+
+881
+00:51:34.412 --> 00:51:38.362
+cycle of ecDNA. Because if you imagine that when I first learned about
+
+882
+00:51:38.392 --> 00:51:42.242
+these HSRs, homogeneous staining regions, you basically have
+
+883
+00:51:42.292 --> 00:51:45.512
+multiple copies of some sort of amplicon one after another.
+
+884
+00:51:45.882 --> 00:51:49.171
+And if you think they are independent events, it seems almost
+
+885
+00:51:49.592 --> 00:51:53.452
+unimaginable that multiple copies would jump into the exact
+
+886
+00:51:53.462 --> 00:51:57.332
+same spot in the genome. Okay? But if you think about
+
+887
+00:51:57.372 --> 00:52:01.302
+an ecDNA hub, there are dozens of copies already right
+
+888
+00:52:01.332 --> 00:52:05.212
+next to each other, and then a ray of, let's say, X-ray shoots it and just
+
+889
+00:52:05.272 --> 00:52:07.152
+breaks it, but they're all next to each other.
+
+890
+00:52:07.212 --> 00:52:10.942
+You can imagine that they might now reintegrate as a single
+
+891
+00:52:11.012 --> 00:52:13.732
+tandem sort of duplicated region. Right?
+
+892
+00:52:13.792 --> 00:52:17.672
+So I think that is one explanation for how that may
+
+893
+00:52:17.712 --> 00:52:20.702
+happen. You can obviously imagine there are other
+
+894
+00:52:21.612 --> 00:52:25.392
+related mechanisms like breakage bridge, fusion bridge, but this involves
+
+895
+00:52:25.432 --> 00:52:29.352
+obviously locally copying and breaking, and there are other kind of signatures
+
+896
+00:52:29.372 --> 00:52:33.252
+associated with that. So I think that the physical structure is
+
+897
+00:52:33.292 --> 00:52:36.592
+telling us something about the history of the genesis of
+
+898
+00:52:36.672 --> 00:52:38.351
+the genomic abnormality.
+
+899
+00:52:38.912 --> 00:52:40.712
+Just a quick follow-up there. Do you ever see...
+
+900
+00:52:40.792 --> 00:52:44.652
+Because one other possibility is that the small circles start becoming bigger
+
+901
+00:52:44.772 --> 00:52:48.692
+circles and sort of self-assembling maybe through these kind of cycles
+
+902
+00:52:48.732 --> 00:52:52.252
+through micronuclei. Is that something you observe as a sort of pre-HSR
+
+903
+00:52:52.372 --> 00:52:52.732
+phase?
+
+904
+00:52:53.772 --> 00:52:57.642
+We do see that because in the sense that when we started doing this
+
+905
+00:52:57.712 --> 00:53:01.362
+work on, I showed you that there's a way that we can actually, it's a method called
+
+906
+00:53:01.432 --> 00:53:04.942
+CRISPR-Cas, you can actually basically isolate ecDNAs and
+
+907
+00:53:05.752 --> 00:53:09.252
+separate them by size. The ecDNA is actually far more complex.
+
+908
+00:53:09.532 --> 00:53:13.032
+So for example, in Colo 320DM cells, it's not just a single
+
+909
+00:53:13.132 --> 00:53:15.792
+species, there's actually multiple kinds of
+
+910
+00:53:16.852 --> 00:53:20.321
+ecDNAs. So there are probably all kinds of rearrangements that's going on
+
+911
+00:53:20.912 --> 00:53:22.632
+basically within these ecDNA hubs.
+
+912
+00:53:23.072 --> 00:53:23.372
+Thanks.
+
+913
+00:53:24.652 --> 00:53:25.312
+Next question, please.
+
+914
+00:53:25.772 --> 00:53:29.532
+Thanks. A really wonderful presentation.
+
+915
+00:53:29.632 --> 00:53:32.112
+Thanks. And my question is,
+
+916
+00:53:33.192 --> 00:53:36.872
+it is possible that ecDNA actually is the
+
+917
+00:53:37.032 --> 00:53:37.972
+DNA that
+
+918
+00:53:38.872 --> 00:53:42.512
+has been observed in several circulating
+
+919
+00:53:42.592 --> 00:53:45.732
+extracellular vesicles in tumor?
+
+920
+00:53:47.212 --> 00:53:51.132
+Okay. The question is whether the ecDNA can be present in, it's basically
+
+921
+00:53:51.152 --> 00:53:52.272
+a cell-free DNA or
+
+922
+00:53:52.312 --> 00:53:56.152
+extracellular vesicles.
+
+923
+00:53:56.692 --> 00:54:00.112
+I think the answer is definitely is possible, and I think that because of their
+
+924
+00:54:00.172 --> 00:54:03.892
+high copy number. If you just think about
+
+925
+00:54:03.952 --> 00:54:07.322
+sensitivity of detection, you're going to detect something or anything at all,
+
+926
+00:54:07.432 --> 00:54:10.511
+maybe ecDNA should have a higher chance of being detected.
+
+927
+00:54:10.592 --> 00:54:13.792
+So I was really excited to see Peter's talk about intercellular
+
+928
+00:54:13.852 --> 00:54:17.782
+transfer. So obviously then, in that process, if it goes wrong, it could obviously
+
+929
+00:54:17.812 --> 00:54:18.292
+come out.
+
+930
+00:54:19.232 --> 00:54:22.632
+So, I think it's definitely possible.
+
+931
+00:54:22.672 --> 00:54:23.702
+One more question, please.
+
+932
+00:54:25.832 --> 00:54:27.912
+Hi, Howard. Thanks so much for a great talk.
+
+933
+00:54:28.332 --> 00:54:31.292
+This is a question about the hub formation.
+
+934
+00:54:31.752 --> 00:54:35.492
+So outside the context of the MYC or PVT1
+
+935
+00:54:35.572 --> 00:54:39.552
+associated ecDNA, do you see a lot of hub formation, for example, with the EGFR
+
+936
+00:54:39.612 --> 00:54:41.742
+ecDNA or FGFR2, for example?
+
+937
+00:54:43.012 --> 00:54:46.972
+I believe that we have observed some of these hubs with the Snu16
+
+938
+00:54:47.052 --> 00:54:50.332
+cell line that involve FGFR2 and maybe also
+
+939
+00:54:51.412 --> 00:54:55.252
+a little bit with the EGFR. The mechanisms that I
+
+940
+00:54:55.312 --> 00:54:58.852
+talked about, especially with like BRD4 and so forth, of course, much better
+
+941
+00:54:58.932 --> 00:55:02.232
+described for the MYC ecDNA, where a lot of the
+
+942
+00:55:02.272 --> 00:55:04.832
+transcriptional landscape of the enhancer has been well mapped.
+
+943
+00:55:06.392 --> 00:55:06.712
+Thank you.
+
+944
+00:55:07.732 --> 00:55:08.692
+Thank you very much, Howard.
+
+945
+00:55:09.292 --> 00:55:09.552
+Thank you.
+
+946
+00:55:22.072 --> 00:55:25.832
+Okay, this was a perfect segue into the next talk that I would like
+
+947
+00:55:25.892 --> 00:55:29.672
+to present to you, where I'll talk to you about what happens when the
+
+948
+00:55:29.692 --> 00:55:33.592
+retention of ecDNA goes wrong and when ecDNA leaves the nucleus, and
+
+949
+00:55:33.632 --> 00:55:36.232
+what the consequences are of that micronucleation.
+
+950
+00:55:37.812 --> 00:55:38.722
+First, disclosures.
+
+951
+00:55:40.372 --> 00:55:42.652
+And I'll start with a very simple slide that I already showed you in the
+
+952
+00:55:42.672 --> 00:55:45.832
+introduction, where you can see one cell that divides
+
+953
+00:55:46.572 --> 00:55:49.922
+and where ecDNA fails to tether or to hitchhike to chromosomes,
+
+954
+00:55:50.912 --> 00:55:52.532
+and would then end up into a micronucleus.
+
+955
+00:55:52.752 --> 00:55:56.352
+And we've known for decades that this can happen, but what we
+
+956
+00:55:56.372 --> 00:56:00.336
+fundamentally didn't understand so far isWhen this happens,
+
+957
+00:56:01.076 --> 00:56:04.876
+how this happens, and what contributes to this detachment, and what the
+
+958
+00:56:04.916 --> 00:56:08.876
+consequences are, most importantly, for the cells that inherit such micronuclei.
+
+959
+00:56:11.806 --> 00:56:15.496
+So in order to understand this better, Lotte Brückner in my lab, a very talented
+
+960
+00:56:15.536 --> 00:56:19.216
+PhD student, studied isogenic cell line pairs in which
+
+961
+00:56:20.416 --> 00:56:22.936
+an oncogene, such as MYC, EGFR, or MYC--
+
+962
+00:56:24.036 --> 00:56:24.946
+sorry. MYC, yeah,
+
+963
+00:56:25.936 --> 00:56:29.236
+are amplified either in a linear form in an HSR or
+
+964
+00:56:29.276 --> 00:56:33.196
+extrachromosomally. These are derived from different cancer entities, and
+
+965
+00:56:33.236 --> 00:56:36.156
+she asked the question, how often do we see such
+
+966
+00:56:36.216 --> 00:56:39.316
+amplicons outside the nucleus within a micronucleus?
+
+967
+00:56:41.676 --> 00:56:44.856
+And here on the right side, you can see that with regards to those
+
+968
+00:56:45.056 --> 00:56:49.036
+micronuclei that did not contain the amplicon, there was no difference to be
+
+969
+00:56:49.096 --> 00:56:52.376
+seen between cells with a linear or extrachromosomal amplification.
+
+970
+00:56:52.436 --> 00:56:56.346
+Suggesting that in general, chromosomal instability does not seem to be different
+
+971
+00:56:56.356 --> 00:56:59.876
+between those two cell types. But when looking at those
+
+972
+00:56:59.916 --> 00:57:03.696
+micronuclei that contain the amplicon sequence specifically, we could see a
+
+973
+00:57:03.735 --> 00:57:07.256
+significantly higher degree of micronucleation in those cells with ecDNA,
+
+974
+00:57:07.336 --> 00:57:11.176
+suggesting that there is some likelihood of ecDNA
+
+975
+00:57:11.256 --> 00:57:15.196
+hitchhiking to not work, and those ecDNA ending up
+
+976
+00:57:15.256 --> 00:57:18.996
+in micronuclei. But what I would like you to pay attention to
+
+977
+00:57:19.316 --> 00:57:22.676
+is that there's actually quite a lot of variability between different cell types
+
+978
+00:57:23.176 --> 00:57:26.816
+in the amount of those micronuclei suggesting that
+
+979
+00:57:26.876 --> 00:57:30.196
+retention capacity might be different between different cell types, and this will
+
+980
+00:57:30.236 --> 00:57:32.246
+be more important at the end of this talk.
+
+981
+00:57:34.876 --> 00:57:38.306
+So in order to understand whether the mere presence of ecDNA would
+
+982
+00:57:38.316 --> 00:57:38.876
+promote
+
+983
+00:57:39.876 --> 00:57:43.416
+the likelihood of their micronucleation, we teamed up with Andrea
+
+984
+00:57:43.456 --> 00:57:47.436
+Ventura, a part of our E-Dynamics Cancer Grand Challenges consortium at Sloan
+
+985
+00:57:47.496 --> 00:57:51.396
+Kettering, who has developed a really elegant model in which you can engineer
+
+986
+00:57:51.476 --> 00:57:53.676
+ecDNA using the Cre-Lox system.
+
+987
+00:57:54.556 --> 00:57:58.116
+And so he engineered mouse cells that either had MYC on
+
+988
+00:57:58.136 --> 00:58:01.316
+ecDNA or where MYC was expressed from a linear transgene.
+
+989
+00:58:01.666 --> 00:58:05.256
+And you can clearly see on the right side that only in the presence of an
+
+990
+00:58:05.596 --> 00:58:06.356
+MYC ecDNA,
+
+991
+00:58:07.176 --> 00:58:10.216
+we detect high degrees of micronucleation.
+
+992
+00:58:10.316 --> 00:58:14.296
+Again, suggesting that it's not just the expression level of the oncogene or
+
+993
+00:58:14.816 --> 00:58:18.316
+some sort of chromosomal instability, but the ecDNA
+
+994
+00:58:18.326 --> 00:58:19.076
+itself that
+
+995
+00:58:20.276 --> 00:58:21.536
+promotes this micronucleation.
+
+996
+00:58:22.856 --> 00:58:25.716
+Based on this, we thought that this was a stochastic process, and that just
+
+997
+00:58:26.436 --> 00:58:29.876
+randomly one or two ecDNA might fail to tether, might fail to be
+
+998
+00:58:29.916 --> 00:58:33.156
+retained as how it showed and would end up in a micronucleus.
+
+999
+00:58:33.736 --> 00:58:36.756
+But when using a system that was developed in Paul Michel's lab, where you can
+
+1000
+00:58:36.836 --> 00:58:38.976
+track ecDNA using
+
+1001
+00:58:39.796 --> 00:58:43.476
+fluorescence imaging, where the ecDNA contains a Tet-O array and
+
+1002
+00:58:43.536 --> 00:58:47.476
+TetR mNeonGreen would label those ecDNA specifically, we observed something
+
+1003
+00:58:47.536 --> 00:58:47.976
+interesting.
+
+1004
+00:58:49.116 --> 00:58:52.956
+We saw that when ecDNA detached, they tended to form clusters of
+
+1005
+00:58:52.996 --> 00:58:56.896
+ecDNA, and those clusters were inherited on average in one of the two
+
+1006
+00:58:56.956 --> 00:59:00.936
+daughter cells and not both, and in one large micronucleus.
+
+1007
+00:59:00.996 --> 00:59:04.666
+Suggesting that this process was asymmetric and was originating mostly from
+
+1008
+00:59:04.736 --> 00:59:05.876
+clusters of ecDNA,
+
+1009
+00:59:07.176 --> 00:59:09.956
+which suggests that there's a directed process underneath this detachment.
+
+1010
+00:59:11.476 --> 00:59:13.296
+And this was a little bit reminiscent of
+
+1011
+00:59:14.216 --> 00:59:18.036
+some of the chromatin fragments that you can see tethered together during
+
+1012
+00:59:18.056 --> 00:59:21.916
+mitosis, so we asked, are these ecDNA maybe damaged?
+
+1013
+00:59:22.026 --> 00:59:25.756
+And indeed, when looking for signs of DNA damage, those
+
+1014
+00:59:25.816 --> 00:59:27.756
+clusters of ecDNA that detached
+
+1015
+00:59:29.576 --> 00:59:29.796
+showed
+
+1016
+00:59:31.216 --> 00:59:32.876
+heightened signs of DNA damage.
+
+1017
+00:59:34.336 --> 00:59:37.976
+And so that has asked the question, well, is DNA damage actually responsible for
+
+1018
+00:59:37.996 --> 00:59:41.856
+the detachment and clustering? In order to test that, we directed
+
+1019
+00:59:41.996 --> 00:59:45.926
+CRISPR-Cas9 directly to the ecDNA and induced cuts on
+
+1020
+00:59:45.996 --> 00:59:49.656
+ecDNA. As you can see here on the left side, this CRISPR guided cuts
+
+1021
+00:59:50.976 --> 00:59:54.796
+led to the detachment and clustering of ecDNA that was damaged and
+
+1022
+00:59:54.856 --> 00:59:58.536
+also caused them to micronucleate in one of the daughter cells.
+
+1023
+01:00:00.296 --> 01:00:03.826
+Which indicates that really, DNA damage on ecDNA can promote that clustering,
+
+1024
+01:00:03.896 --> 01:00:05.456
+detachment, and micronucleation.
+
+1025
+01:00:06.636 --> 01:00:10.336
+And similar as seen as for other chromatin fragments that are
+
+1026
+01:00:11.116 --> 01:00:15.036
+unrepaired in mitosis, which are held together as also Peter Lee
+
+1027
+01:00:15.316 --> 01:00:19.255
+contributed importantly to by CIP2A, TOPBP1,
+
+1028
+01:00:19.315 --> 01:00:23.196
+MDC1, those clusters of ecDNA were also associated with this
+
+1029
+01:00:23.236 --> 01:00:26.936
+complex. And moreover, when disrupting this complex
+
+1030
+01:00:27.056 --> 01:00:30.536
+through shRNA-mediated knockdown of each of those components, we saw a
+
+1031
+01:00:30.616 --> 01:00:33.936
+clear dispersal of this cluster into single
+
+1032
+01:00:33.976 --> 01:00:37.666
+ecDNA that would then form smaller micronuclei in both daughter
+
+1033
+01:00:37.696 --> 01:00:38.036
+cells.
+
+1034
+01:00:39.216 --> 01:00:41.136
+Which suggests that this
+
+1035
+01:00:41.936 --> 01:00:45.516
+complex is really important for the clustering of ecDNA during
+
+1036
+01:00:45.536 --> 01:00:46.096
+mitosis.
+
+1037
+01:00:46.896 --> 01:00:50.336
+But what was not clear was whether or not this detachment
+
+1038
+01:00:50.436 --> 01:00:53.556
+involved damaged chromatin fragments that would
+
+1039
+01:00:53.636 --> 01:00:57.276
+co-segregate with ecDNA into a micronucleus, whether this was
+
+1040
+01:00:57.336 --> 01:01:01.036
+only happening to one ecDNA species at a time,
+
+1041
+01:01:01.436 --> 01:01:05.416
+or whether maybe non-homologous different ecDNA species would collectively go into
+
+1042
+01:01:05.426 --> 01:01:06.076
+a micronucleus.
+
+1043
+01:01:06.916 --> 01:01:10.136
+And to address this question, we really needed a new method that would sensitively
+
+1044
+01:01:10.176 --> 01:01:13.856
+detect and quantify any type of DNA in single
+
+1045
+01:01:13.916 --> 01:01:14.656
+micronuclei.
+
+1046
+01:01:15.556 --> 01:01:19.436
+And in order to do this, Robin Xu, a very talented MD-PhD student in the lab,
+
+1047
+01:01:19.496 --> 01:01:23.056
+developed a method that he termed single micronucleus and main nucleus
+
+1048
+01:01:23.096 --> 01:01:26.876
+sequencing or MNM-seq, in which we laser
+
+1049
+01:01:26.896 --> 01:01:30.776
+microdissect out both the micronucleus and the adjacent primary
+
+1050
+01:01:30.836 --> 01:01:34.036
+nucleus, followed by sequencing and analysis.
+
+1051
+01:01:36.336 --> 01:01:40.276
+And as you can imagine, this is quite a difficult task to do, but really gave
+
+1052
+01:01:40.316 --> 01:01:43.336
+us some really interesting insights, not only into ecDNA
+
+1053
+01:01:44.196 --> 01:01:47.876
+locations into the micronucleus, but also can now help us understand patterns
+
+1054
+01:01:47.886 --> 01:01:49.856
+of chromosomal instability in general.
+
+1055
+01:01:51.316 --> 01:01:54.916
+So applying this method to cell lines in which we know that different
+
+1056
+01:01:54.956 --> 01:01:56.376
+ecDNA species exist,
+
+1057
+01:01:57.276 --> 01:01:59.096
+Robin observed something quite interesting.
+
+1058
+01:01:59.976 --> 01:02:03.896
+In the vast majority of cases, those micronuclei only contained
+
+1059
+01:02:03.936 --> 01:02:06.816
+the ecDNA, and only very rarely that we see any chromatin
+
+1060
+01:02:06.916 --> 01:02:10.828
+fragments.Not only were these chock-full with
+
+1061
+01:02:10.868 --> 01:02:14.428
+Ecdna, but we saw that all different Ecdna species found in the
+
+1062
+01:02:14.488 --> 01:02:18.148
+cell were found in the same micronucleus, suggesting that Ecdna
+
+1063
+01:02:18.428 --> 01:02:22.178
+collectively might missegregate into micronuclei, which kind of was
+
+1064
+01:02:22.228 --> 01:02:22.818
+also
+
+1065
+01:02:24.208 --> 01:02:27.088
+similar to what had been observed in Ecdna hubs.
+
+1066
+01:02:30.208 --> 01:02:33.188
+So we validated this using FISH. On the left side, you'll see a metaphase spread,
+
+1067
+01:02:33.308 --> 01:02:36.548
+just to confirm to you that these are really independent, different Ecdna
+
+1068
+01:02:36.628 --> 01:02:38.068
+structures that exist in the cell.
+
+1069
+01:02:38.558 --> 01:02:42.468
+And on the right side, you'll see micronuclei that contained
+
+1070
+01:02:42.568 --> 01:02:45.548
+all different Ecdna species within the same micronucleus.
+
+1071
+01:02:46.368 --> 01:02:49.788
+And this raised another question, and the question was, well, is it
+
+1072
+01:02:49.848 --> 01:02:53.588
+maybe that you don't need each Ecdna to be damaged, but maybe one
+
+1073
+01:02:53.628 --> 01:02:57.608
+Ecdna will drag other Ecdna into the same micronucleus,
+
+1074
+01:02:57.628 --> 01:02:59.988
+similar to what we see with Ecdna hubs?
+
+1075
+01:03:00.708 --> 01:03:04.508
+And so one experiment we did to test this was to induce a cut in one
+
+1076
+01:03:04.588 --> 01:03:08.368
+Ecdna and see what happens to another Ecdna species that's independent.
+
+1077
+01:03:09.378 --> 01:03:12.668
+And to our surprise, we saw that this cut on one Ecdna-containing
+
+1078
+01:03:12.728 --> 01:03:16.088
+MYC led to the co-missegregation of the other Ecdna
+
+1079
+01:03:16.688 --> 01:03:19.828
+into the same micronucleus, whereas we never saw this
+
+1080
+01:03:19.888 --> 01:03:22.388
+other Ecdna alone in a micronucleus.
+
+1081
+01:03:23.428 --> 01:03:27.168
+That really suggests that it's not only the DNA damage, but maybe the signaling
+
+1082
+01:03:27.188 --> 01:03:31.108
+involved or other factors that cluster Ecdna together that can
+
+1083
+01:03:31.168 --> 01:03:34.588
+lead to collective Ecdna missegregation into the same micronucleus.
+
+1084
+01:03:37.248 --> 01:03:40.748
+So to summarize, this new method of MN-seq allowed us to understand
+
+1085
+01:03:41.468 --> 01:03:43.208
+that Ecdna, when damaged,
+
+1086
+01:03:44.788 --> 01:03:48.528
+tends to missegregate collectively together with other non-homologous
+
+1087
+01:03:48.588 --> 01:03:51.288
+sequences and independent of other chromatin fragments.
+
+1088
+01:03:52.488 --> 01:03:56.338
+And so you may ask yourself now, well, this is all interesting, but how relevant is
+
+1089
+01:03:56.368 --> 01:03:57.228
+this for the cell?
+
+1090
+01:03:58.268 --> 01:04:02.068
+So in order to understand that, we went back to the system that was beautifully
+
+1091
+01:04:02.128 --> 01:04:05.888
+established in Paul Michel's lab, and Aditi in his lab, a very talented
+
+1092
+01:04:05.928 --> 01:04:09.318
+PhD student, looked at these cells over time and asked,
+
+1093
+01:04:09.618 --> 01:04:13.268
+"Well, when a cell inherits a micronucleus, what happens to that cell?"
+
+1094
+01:04:14.988 --> 01:04:15.878
+And what was really
+
+1095
+01:04:18.228 --> 01:04:21.708
+quite remarkable was to see that those cells that inherited a micronucleus that
+
+1096
+01:04:21.748 --> 01:04:25.528
+contained a lot of Ecdna behaved quite differently to other cells that either
+
+1097
+01:04:25.568 --> 01:04:29.468
+didn't have a micronucleus or had a micronucleus of other content, in
+
+1098
+01:04:29.508 --> 01:04:33.128
+that they stopped dividing, tended to undergo cell death, or
+
+1099
+01:04:33.168 --> 01:04:35.148
+proliferated at much, much lower extent.
+
+1100
+01:04:35.808 --> 01:04:38.688
+Which suggests that if Ecdna fails to
+
+1101
+01:04:39.588 --> 01:04:43.288
+be retained in a cell and leaves the nucleus, this
+
+1102
+01:04:43.368 --> 01:04:46.468
+has really important implications for cancer cell fitness.
+
+1103
+01:04:49.568 --> 01:04:52.868
+In order to better understand whether this was also relevant in patients, we
+
+1104
+01:04:52.908 --> 01:04:56.808
+set out to look for
+
+1105
+01:04:56.848 --> 01:05:00.828
+micronucleation in different patient populations, all with different types of
+
+1106
+01:05:00.868 --> 01:05:02.828
+oncogenes amplified on Ecdna,
+
+1107
+01:05:03.668 --> 01:05:05.588
+to ask, well, how often does this happen there?
+
+1108
+01:05:07.228 --> 01:05:10.478
+And quite strikingly, what I showed you at the beginning with cell lines, this was
+
+1109
+01:05:10.528 --> 01:05:14.298
+quite exaggerated in patients. Here we saw on the one hand that there was
+
+1110
+01:05:14.328 --> 01:05:18.108
+higher micronucleation rate in patients with Ecdna, but
+
+1111
+01:05:18.488 --> 01:05:22.148
+the variance of micronucleation rate was quite high between different patients.
+
+1112
+01:05:22.208 --> 01:05:25.808
+Some patients almost behaved like, or cancers behaved like
+
+1113
+01:05:25.848 --> 01:05:29.648
+cancers without Ecdna, and some had almost no cells that
+
+1114
+01:05:29.688 --> 01:05:33.108
+didn't have micronucleus with Ecdna, suggesting there was really a huge
+
+1115
+01:05:33.168 --> 01:05:37.128
+heterogeneity when it comes to the retention capacity or the likelihood of Ecdna
+
+1116
+01:05:37.528 --> 01:05:39.588
+to be lost from a nucleus in those cancers.
+
+1117
+01:05:40.348 --> 01:05:44.328
+And that raised the question whether this would impact cancer cell fitness,
+
+1118
+01:05:45.368 --> 01:05:47.488
+and therefore the cancer aggressiveness in general.
+
+1119
+01:05:48.048 --> 01:05:51.708
+But in order to address that question, we needed a homogenous population of
+
+1120
+01:05:51.828 --> 01:05:55.808
+patients that all had the same Ecdna with the same
+
+1121
+01:05:55.868 --> 01:05:59.848
+oncogene, and for which we had clinical data from diagnosis over
+
+1122
+01:05:59.888 --> 01:06:02.808
+the course of treatment, and for which we could establish
+
+1123
+01:06:02.868 --> 01:06:06.748
+the micronucleation tendency at diagnosis prior to
+
+1124
+01:06:06.798 --> 01:06:10.588
+treatment. So we collected hundreds of neuroblastoma patients for which we
+
+1125
+01:06:10.608 --> 01:06:12.048
+know that MYCN is the most
+
+1126
+01:06:13.008 --> 01:06:16.608
+commonly amplified oncogene on Ecdna, and found 86
+
+1127
+01:06:16.668 --> 01:06:20.268
+patients for which all of those were on Ecdna, and for which
+
+1128
+01:06:20.608 --> 01:06:24.448
+we knew that all of those got the same standard of care treatment over time,
+
+1129
+01:06:24.868 --> 01:06:28.028
+and where we had samples at diagnosis prior to any treatment.
+
+1130
+01:06:28.938 --> 01:06:30.998
+And again, Lotte stratified those into those
+
+1131
+01:06:32.528 --> 01:06:36.218
+cells with or without micronuclei and asked the question whether
+
+1132
+01:06:36.228 --> 01:06:37.828
+Ecdna was found within them.
+
+1133
+01:06:39.708 --> 01:06:39.898
+And
+
+1134
+01:06:41.268 --> 01:06:45.228
+remarkably, we found that when Ecdna tended to be in the micronucleus
+
+1135
+01:06:45.248 --> 01:06:48.868
+in those cancers, those patients did much better than
+
+1136
+01:06:48.988 --> 01:06:52.808
+patients in which either micronuclei were found but didn't contain any
+
+1137
+01:06:52.828 --> 01:06:55.768
+Ecdna, or those patients without any micronuclei.
+
+1138
+01:06:56.848 --> 01:07:00.728
+Which really suggests that this cell biological phenomenon that we saw in vitro
+
+1139
+01:07:01.368 --> 01:07:05.058
+not only translates to impaired cell fitness on a cellular level,
+
+1140
+01:07:05.528 --> 01:07:09.028
+but seems to also impact the aggressiveness of this tumor
+
+1141
+01:07:09.728 --> 01:07:11.708
+in patients over time.
+
+1142
+01:07:12.608 --> 01:07:15.908
+And looking at these Kaplan-Meier curves, this was really addressing one
+
+1143
+01:07:15.928 --> 01:07:17.568
+fundamental old question that we had in
+
+1144
+01:07:18.408 --> 01:07:21.928
+the field of neuroblastoma research, which was that all MYCN amplified
+
+1145
+01:07:21.948 --> 01:07:24.297
+neuroblastomas had been known for decades to
+
+1146
+01:07:24.988 --> 01:07:28.658
+be very aggressive. And actually, neuroblastoma is one of the first
+
+1147
+01:07:28.708 --> 01:07:32.228
+entities in which MYCN amplification on Ecdna was used to
+
+1148
+01:07:32.308 --> 01:07:35.588
+stratify patients because we knew that this was an aggressive phenotype.
+
+1149
+01:07:36.648 --> 01:07:39.968
+But clinically, we always observed a couple of patients that did better than
+
+1150
+01:07:40.048 --> 01:07:43.748
+others, and we couldn't find any genetic evidence that would give us a
+
+1151
+01:07:43.788 --> 01:07:46.828
+stratification of those patients that would perform better under treatment than
+
+1152
+01:07:46.888 --> 01:07:49.728
+others. And we believe that now, looking at
+
+1153
+01:07:49.768 --> 01:07:52.388
+Ecdna kind of retention
+
+1154
+01:07:53.708 --> 01:07:54.888
+or their extranuclear
+
+1155
+01:07:55.768 --> 01:07:58.608
+existence may help us to stratify those patients.
+
+1156
+01:07:59.068 --> 01:08:02.728
+But not only that, if you look at those curves, you might imagine that maybe
+
+1157
+01:08:03.008 --> 01:08:06.808
+we can now devise therapies that would force Ecdna
+
+1158
+01:08:07.308 --> 01:08:11.168
+to be lost in mitosis, going into micronuclei, and maybe we could
+
+1159
+01:08:11.208 --> 01:08:15.018
+make those patients behave more like the patients that have a lot of Ecdna in
+
+1160
+01:08:15.048 --> 01:08:18.960
+micronuclei.So in order to address that question, we
+
+1161
+01:08:19.000 --> 01:08:22.800
+collaborated with a company called Econic Biosciences which I
+
+1162
+01:08:22.840 --> 01:08:26.590
+co-founded and is based in London, and found inhibitors that
+
+1163
+01:08:26.590 --> 01:08:30.561
+would disrupt ecDNA tethering to a great extent, as seen here on the left
+
+1164
+01:08:30.601 --> 01:08:34.080
+side. We see all this ecDNA detaching from chromosomes.
+
+1165
+01:08:34.980 --> 01:08:38.760
+And so when we applied this inhibitor to patient-derived xenografts that either had
+
+1166
+01:08:38.800 --> 01:08:42.300
+the same amplicon amplified on an ecDNA or an
+
+1167
+01:08:42.440 --> 01:08:46.380
+HSR, same tumor entity, and treated those patient-derived
+
+1168
+01:08:46.400 --> 01:08:49.740
+xenograft models with this inhibitor, we saw drastic tumor regressions
+
+1169
+01:08:50.160 --> 01:08:53.519
+only in the context of ecDNA. But in the context of
+
+1170
+01:08:53.580 --> 01:08:57.221
+intrachromosomal amplifications, this did not seem to change the tumor's
+
+1171
+01:08:57.240 --> 01:09:00.641
+behavior to the same extent. Which really suggests that
+
+1172
+01:09:00.700 --> 01:09:01.280
+ecDNA
+
+1173
+01:09:02.620 --> 01:09:06.561
+retention is a therapeutically actionable liability
+
+1174
+01:09:06.940 --> 01:09:10.280
+of those cancers, which we think we should exploit more in the future.
+
+1175
+01:09:12.820 --> 01:09:16.181
+So with this, I'd like to summarize what I talked to you about today, and that is
+
+1176
+01:09:16.221 --> 01:09:19.820
+that the retention elements and the retention of ecDNA we know is
+
+1177
+01:09:19.860 --> 01:09:21.800
+important for ecDNA to be immortal.
+
+1178
+01:09:21.860 --> 01:09:25.760
+But not only that, we also know that if ecDNA is not
+
+1179
+01:09:25.800 --> 01:09:29.200
+retained and failed to retain, it's not only that they will be lost, as Howard
+
+1180
+01:09:29.240 --> 01:09:32.860
+showed, but if they're lost and go outside the
+
+1181
+01:09:32.920 --> 01:09:36.521
+nucleus and go into a micronucleus, this impacts cells'
+
+1182
+01:09:36.960 --> 01:09:40.641
+fitness in that they divide less, undergo cell death more
+
+1183
+01:09:40.700 --> 01:09:44.580
+often, and this translates to differences in patient survival, which we think we
+
+1184
+01:09:44.620 --> 01:09:45.039
+can now
+
+1185
+01:09:46.840 --> 01:09:47.740
+address therapeutically.
+
+1186
+01:09:48.860 --> 01:09:51.900
+With this, I'd like to end and thank all the people involved, especially Lotte
+
+1187
+01:09:51.980 --> 01:09:55.920
+Brückner, Robin Xu from my lab, but also Ivy, Xu, Aditi, and many
+
+1188
+01:09:55.960 --> 01:09:59.590
+more from Paul's and Howard's group who were essential to get
+
+1189
+01:09:59.640 --> 01:10:03.080
+this project going. As you can see, we went
+
+1190
+01:10:03.120 --> 01:10:06.760
+from in vitro cell experiments all the way
+
+1191
+01:10:06.830 --> 01:10:07.820
+to patient
+
+1192
+01:10:09.140 --> 01:10:12.440
+data, which wouldn't have been possible without the support from Cancer Grand
+
+1193
+01:10:12.480 --> 01:10:14.380
+Challenges and the entire team, eDynamic.
+
+1194
+01:10:14.800 --> 01:10:17.200
+I hope I've mentioned most of the people that were involved.
+
+1195
+01:10:17.540 --> 01:10:21.100
+Many others here in the room also clearly helped, such as Roel Verhaak and others.
+
+1196
+01:10:21.580 --> 01:10:24.240
+And, yeah, without that team, this wouldn't have been possible.
+
+1197
+01:10:24.340 --> 01:10:27.520
+So really, thank you to those. Thank you very much, and I look forward to your
+
+1198
+01:10:27.539 --> 01:10:27.840
+questions.
+
+1199
+01:10:39.640 --> 01:10:39.920
+Carol.
+
+1200
+01:10:40.740 --> 01:10:42.860
+Thanks, Anton. That was really terrific.
+
+1201
+01:10:43.380 --> 01:10:45.940
+I wanted to know for your patient samples,
+
+1202
+01:10:47.300 --> 01:10:50.320
+I'm trying to understand the difference from some of the talks that I've heard
+
+1203
+01:10:50.440 --> 01:10:50.940
+earlier.
+
+1204
+01:10:52.260 --> 01:10:55.680
+Neuroblastoma patients typically are P53 wild type.
+
+1205
+01:10:55.820 --> 01:10:59.760
+So do you think that the P53 status is impacting the fact that you see
+
+1206
+01:10:59.820 --> 01:11:03.640
+that the ecDNA is associated under our
+
+1207
+01:11:03.700 --> 01:11:07.060
+current therapies with a better prognosis, the retention of it?
+
+1208
+01:11:08.680 --> 01:11:12.040
+Yeah. So this is a great question. So actually, as you pointed out,
+
+1209
+01:11:12.560 --> 01:11:15.360
+most of the neuroblastomas are P53 wild type.
+
+1210
+01:11:15.420 --> 01:11:19.100
+And surprisingly, we still see neuroblastomas as being one of the cancer entities
+
+1211
+01:11:19.760 --> 01:11:21.740
+with the highest prevalence of ecDNA.
+
+1212
+01:11:21.820 --> 01:11:25.340
+And so understanding how those are tolerated,
+
+1213
+01:11:25.880 --> 01:11:29.460
+or the generation of those are tolerated in the context of wild type P53
+
+1214
+01:11:29.860 --> 01:11:33.600
+is a great question. In this population, we don't know the
+
+1215
+01:11:33.620 --> 01:11:37.380
+P53 status, but we assume that it's quite similar to what we know to
+
+1216
+01:11:37.460 --> 01:11:40.860
+be in ecDNA-positive neuroblastomas in general, where
+
+1217
+01:11:41.740 --> 01:11:42.980
+we've assessed this
+
+1218
+01:11:43.780 --> 01:11:47.600
+over hundreds of patients, and we don't see that there's
+
+1219
+01:11:47.620 --> 01:11:50.820
+a higher degree of P3 mutations in this population.
+
+1220
+01:11:50.850 --> 01:11:54.500
+So we don't think that is one of the primary causes of this
+
+1221
+01:11:54.540 --> 01:11:57.900
+difference, and yeah, but much to follow up on.
+
+1222
+01:11:57.940 --> 01:12:01.740
+And I guess another thing that makes maybe neuroblastoma a little bit different
+
+1223
+01:12:01.860 --> 01:12:03.120
+is typically aren't
+
+1224
+01:12:04.360 --> 01:12:07.980
+aneuploidy is associated with a better prognosis to some degree in
+
+1225
+01:12:08.020 --> 01:12:11.360
+neuroblastoma, where diploidy is associated with a poor?
+
+1226
+01:12:11.900 --> 01:12:15.220
+Absolutely. But I think as we also learned yesterday in the training session on
+
+1227
+01:12:16.080 --> 01:12:17.540
+chromosomal instability, I think aneuploidy
+
+1228
+01:12:19.040 --> 01:12:22.080
+is not always associated with ongoing chromosomal instability.
+
+1229
+01:12:22.120 --> 01:12:24.880
+So only because they're aneuploid doesn't mean that they're still chromosomally
+
+1230
+01:12:24.920 --> 01:12:28.900
+unstable. And as I showed you today, we do see that there's actually
+
+1231
+01:12:28.910 --> 01:12:32.589
+no difference of whether or not they're chromosomally unstable in the sense that
+
+1232
+01:12:32.600 --> 01:12:34.600
+they have any type of micronucleus.
+
+1233
+01:12:35.000 --> 01:12:37.519
+The difference that we see clinically is really between those that have
+
+1234
+01:12:37.560 --> 01:12:41.460
+micronucleus with ecDNA in them and not, and we don't actually see a
+
+1235
+01:12:41.480 --> 01:12:45.370
+difference for those patients that have micronuclei that lack ecDNA,
+
+1236
+01:12:45.420 --> 01:12:49.320
+that presumably have chromosome fragments or chromosomes that end up in
+
+1237
+01:12:49.340 --> 01:12:51.280
+micronuclei due to normal chromosomal instability.
+
+1238
+01:12:51.600 --> 01:12:52.600
+Yeah. Thanks a lot.
+
+1239
+01:12:52.920 --> 01:12:53.320
+Thanks, Carol.
+
+1240
+01:12:55.640 --> 01:12:56.700
+Maybe this, the other side.
+
+1241
+01:12:57.620 --> 01:12:59.440
+Thank you, Dr. Hessen. It's really exciting work.
+
+1242
+01:12:59.680 --> 01:13:03.300
+I'm curious whether you think we might be underestimating the
+
+1243
+01:13:03.340 --> 01:13:06.660
+amount of ecDNA in certain cancer types because perhaps
+
+1244
+01:13:06.720 --> 01:13:10.460
+micronucleation has already taken care of those ecDNA and whether there's
+
+1245
+01:13:10.480 --> 01:13:14.200
+anything that we can learn about the mechanism from those specific cancer types.
+
+1246
+01:13:15.820 --> 01:13:19.790
+That's a great question. If you
+
+1247
+01:13:19.840 --> 01:13:23.610
+assessed ecDNA using sequencing, I think
+
+1248
+01:13:23.720 --> 01:13:26.480
+that for those cells that have a micronucleus with ecDNA in them,
+
+1249
+01:13:28.320 --> 01:13:32.020
+presumably you would still be able to detect higher amounts of
+
+1250
+01:13:32.080 --> 01:13:36.030
+oncogene copies in those cells. So I don't think that it would directly impact this
+
+1251
+01:13:36.920 --> 01:13:40.360
+on a global level if you have ecDNA and there are
+
+1252
+01:13:40.380 --> 01:13:44.300
+micronucleation. But it's a great question to ask whether
+
+1253
+01:13:44.360 --> 01:13:48.270
+maybe in the life cycle of a tumor, ecDNA is, that are
+
+1254
+01:13:48.380 --> 01:13:52.240
+maybe not of selective advantage, are there at some point and are lost again maybe
+
+1255
+01:13:52.260 --> 01:13:55.800
+through the process of micronucleation and something that definitely interesting to
+
+1256
+01:13:55.840 --> 01:13:56.420
+study in the future.
+
+1257
+01:13:56.800 --> 01:13:57.099
+Thank you.
+
+1258
+01:13:58.320 --> 01:14:01.880
+So we have seen in the previous talk that there's a lot of clonality when it comes
+
+1259
+01:14:01.900 --> 01:14:05.760
+to ecDNA. Do you see evidence of micronucleation being
+
+1260
+01:14:05.960 --> 01:14:08.300
+clonal or subclonal, more to speak?
+
+1261
+01:14:09.300 --> 01:14:11.700
+Whether micronucleation itself is subclonal?
+
+1262
+01:14:12.540 --> 01:14:15.180
+So as I showed you, I think this is a transient phenomenon.
+
+1263
+01:14:15.240 --> 01:14:17.668
+I think micronuclei can persist over-...
+
+1264
+01:14:17.708 --> 01:14:21.528
+generations, but normally, or more frequently, and we might want to ask
+
+1265
+01:14:21.708 --> 01:14:24.128
+Peter or others who are more expert in micronuclei.
+
+1266
+01:14:24.308 --> 01:14:28.148
+Normally, micronuclei in the cell generations and the
+
+1267
+01:14:28.188 --> 01:14:31.628
+cell divisions after the first one where they're generated often
+
+1268
+01:14:32.168 --> 01:14:35.008
+reincorporate into the main nucleus over time.
+
+1269
+01:14:35.048 --> 01:14:38.668
+So I don't think that it's per se we're able to use micronuclei
+
+1270
+01:14:38.728 --> 01:14:41.288
+to detect whether this is a clonal or subclonal event.
+
+1271
+01:14:41.668 --> 01:14:45.528
+This might be an ongoing event, and at any time at which we look at this,
+
+1272
+01:14:45.668 --> 01:14:49.438
+this just captures the presence of this in the
+
+1273
+01:14:49.448 --> 01:14:52.408
+subpopulation of cells. But for the other cells, we don't know whether or not they
+
+1274
+01:14:52.548 --> 01:14:52.988
+either will
+
+1275
+01:14:53.828 --> 01:14:55.508
+micronucleate or have already in the past.
+
+1276
+01:14:55.568 --> 01:14:57.508
+So I think it's a difficult question to answer.
+
+1277
+01:14:59.268 --> 01:15:00.728
+Thanks. Maybe one last question.
+
+1278
+01:15:01.248 --> 01:15:01.368
+Yeah.
+
+1279
+01:15:02.388 --> 01:15:05.928
+Sorry. Do you think the DNA damage which you
+
+1280
+01:15:06.028 --> 01:15:08.828
+see coming from these micronuclei
+
+1281
+01:15:09.988 --> 01:15:11.408
+is kind of damage which
+
+1282
+01:15:12.228 --> 01:15:15.748
+is still capable of signaling to block the cell growth,
+
+1283
+01:15:16.468 --> 01:15:19.908
+and at the same time is incapable of repair, so it's
+
+1284
+01:15:20.168 --> 01:15:20.648
+becoming
+
+1285
+01:15:21.568 --> 01:15:24.238
+permanent DNA damage, and that could be the reason why?
+
+1286
+01:15:24.288 --> 01:15:27.188
+It's a great question. Actually, also goes to the question from Marcin.
+
+1287
+01:15:27.238 --> 01:15:30.978
+I think many people are wondering whether maybe the damage in the micronucleus is
+
+1288
+01:15:31.008 --> 01:15:34.768
+repaired. You saw these clusters of ecDNA all in the same micronucleus.
+
+1289
+01:15:34.828 --> 01:15:38.568
+You could imagine that if repaired in a certain sense and then coming back into the
+
+1290
+01:15:38.588 --> 01:15:41.088
+primary nucleus, these might be precursors to HSRs, right?
+
+1291
+01:15:42.068 --> 01:15:46.028
+At the same time, I agree with you that the DNA damage itself might be the trigger
+
+1292
+01:15:46.688 --> 01:15:49.588
+that elicits this
+
+1293
+01:15:52.048 --> 01:15:52.848
+effect on cells
+
+1294
+01:15:54.428 --> 01:15:57.788
+of lower cell cycling and maybe DNA
+
+1295
+01:15:59.208 --> 01:16:02.888
+cell death and others. So we haven't investigated this, but that's definitely
+
+1296
+01:16:02.908 --> 01:16:05.047
+something we should do in the future. Thanks a lot.
+
+1297
+01:16:06.828 --> 01:16:08.908
+Okay. So we're now going to, I think we have
+
+1298
+01:16:09.748 --> 01:16:12.888
+a little more time for the general discussion of that session.
+
+1299
+01:16:13.088 --> 01:16:16.768
+We have 10 more minutes. So please feel free to ask more questions if you have,
+
+1300
+01:16:16.828 --> 01:16:20.728
+to all the speakers of today, and also maybe one last
+
+1301
+01:16:20.768 --> 01:16:24.048
+round of applause for you two and for the entire session. Thank you very much.
+
+1302
+01:16:30.348 --> 01:16:32.088
+Any questions? I will actually go back to them.
+
+1303
+01:16:35.128 --> 01:16:37.488
+Hi. Sharda Shakti Kumar from "TGN."
+
+1304
+01:16:38.808 --> 01:16:41.888
+All along you've been talking about ecDNA in human.
+
+1305
+01:16:42.368 --> 01:16:45.668
+Have you ever looked at them in other species, like for example,
+
+1306
+01:16:45.848 --> 01:16:46.518
+canines'
+
+1307
+01:16:48.288 --> 01:16:48.848
+cancers?
+
+1308
+01:16:51.988 --> 01:16:55.628
+I can start by saying that I have definitely not looked at ecDNA in
+
+1309
+01:16:55.748 --> 01:16:56.348
+canines.
+
+1310
+01:16:57.208 --> 01:17:00.888
+I think that we can learn a lot, but if we take the concept of that
+
+1311
+01:17:00.948 --> 01:17:04.837
+question and just expand it out, I think we can learn a lot about really
+
+1312
+01:17:04.888 --> 01:17:05.478
+different
+
+1313
+01:17:06.448 --> 01:17:09.948
+organisms, right? And kind of their approach to chromosome biology.
+
+1314
+01:17:10.828 --> 01:17:14.768
+And so I think that we learn a lot about, for example, from tetrahymena about
+
+1315
+01:17:14.848 --> 01:17:18.318
+telomere biology. And so I think looking at other species could certainly
+
+1316
+01:17:18.368 --> 01:17:19.668
+potentially could teach us a lot.
+
+1317
+01:17:20.908 --> 01:17:21.248
+Thank you.
+
+1318
+01:17:22.768 --> 01:17:26.748
+I have question for Peter,
+
+1319
+01:17:26.908 --> 01:17:30.888
+and I wonder if you know the mechanism for the
+
+1320
+01:17:30.928 --> 01:17:34.708
+transported cargo DNA tethered to the host chromosome.
+
+1321
+01:17:38.028 --> 01:17:40.028
+You mean during the transport itself?
+
+1322
+01:17:40.648 --> 01:17:44.588
+No. So you show that the transported DNA cargo get into the
+
+1323
+01:17:44.648 --> 01:17:47.248
+nucleus while the mitosis happens.
+
+1324
+01:17:47.648 --> 01:17:47.968
+Oh, yes.
+
+1325
+01:17:47.988 --> 01:17:51.948
+And I saw from your image data that this DNA cargo tethered to the
+
+1326
+01:17:51.988 --> 01:17:52.868
+host chromosome.
+
+1327
+01:17:53.408 --> 01:17:57.268
+Yeah. Actually, so in those cases, I don't think they're tethered to chromosomes.
+
+1328
+01:17:57.348 --> 01:18:00.588
+I think they're just normally segregating if they have a centromere.
+
+1329
+01:18:00.628 --> 01:18:03.868
+So we showed that about half of these transferred DNAs do have a
+
+1330
+01:18:03.908 --> 01:18:04.848
+centromere.
+
+1331
+01:18:04.878 --> 01:18:04.878
+Mm-hmm.
+
+1332
+01:18:04.928 --> 01:18:07.268
+So it's suggesting that they can bind to the mitotic spindle.
+
+1333
+01:18:07.288 --> 01:18:11.198
+So they would essentially segregate and align themselves just like any
+
+1334
+01:18:11.268 --> 01:18:14.418
+other chromosome would. Then there's also, on the other hand, there's also another
+
+1335
+01:18:14.428 --> 01:18:16.188
+fraction that doesn't have a centromere.
+
+1336
+01:18:16.228 --> 01:18:16.288
+Mm-hmm.
+
+1337
+01:18:16.308 --> 01:18:20.188
+And those either commonly misalign, and they could form another cycle of
+
+1338
+01:18:20.228 --> 01:18:21.128
+micronucleation.
+
+1339
+01:18:22.128 --> 01:18:25.928
+But currently, we don't have evidence of tethering like
+
+1340
+01:18:26.628 --> 01:18:29.788
+normal ecDNAs normally do. So these are actually
+
+1341
+01:18:30.688 --> 01:18:34.628
+fragments or large pieces of DNA before they've actually
+
+1342
+01:18:34.688 --> 01:18:36.308
+evolved into an ecDNA.
+
+1343
+01:18:37.068 --> 01:18:40.408
+I see. I wanted to ask whether you see some ecDNA
+
+1344
+01:18:40.488 --> 01:18:44.348
+retention element features in the transported cargo. Yeah.
+
+1345
+01:18:44.448 --> 01:18:48.328
+Oh, no. We haven't gotten to that far yet, but that's definitely worth a look later
+
+1346
+01:18:48.348 --> 01:18:49.248
+down the road. Yeah.
+
+1347
+01:18:49.608 --> 01:18:50.268
+Okay. Thank you.
+
+1348
+01:18:52.788 --> 01:18:55.068
+I have question for Professor Li
+
+1349
+01:18:55.948 --> 01:18:56.968
+regarding this...
+
+1350
+01:18:59.888 --> 01:19:02.768
+I'm sorry, I just forgot it. I'm nervous. I'll come back.
+
+1351
+01:19:03.728 --> 01:19:03.988
+Sorry.
+
+1352
+01:19:04.148 --> 01:19:04.388
+No worries.
+
+1353
+01:19:04.608 --> 01:19:06.588
+I completely lost what I wanted to ask.
+
+1354
+01:19:06.828 --> 01:19:10.328
+It's okay. Then I can join in. Hi. Thank you so much. A wonderful session.
+
+1355
+01:19:10.388 --> 01:19:13.758
+I'm Sadaf. I'm from the German Cancer Research Center,
+
+1356
+01:19:13.868 --> 01:19:14.458
+Heidelberg.
+
+1357
+01:19:15.388 --> 01:19:17.048
+And I was wondering, we have heard
+
+1358
+01:19:18.048 --> 01:19:21.948
+a bit on the, like that now we know that there is transfer to
+
+1359
+01:19:22.008 --> 01:19:25.787
+the tumor cells, but have we some evidence
+
+1360
+01:19:25.888 --> 01:19:29.828
+that the ecDNAs, they can be transferred also to the
+
+1361
+01:19:30.368 --> 01:19:34.188
+immune cells, and how ecDNAs have an implication
+
+1362
+01:19:34.328 --> 01:19:36.268
+on the tumor microenvironment in general?
+
+1363
+01:19:37.268 --> 01:19:41.008
+And I'm particularly interested how the
+
+1364
+01:19:41.108 --> 01:19:43.548
+spatial technologies or spatial omics
+
+1365
+01:19:45.148 --> 01:19:49.048
+methods can be used to study these tumor microenvironment
+
+1366
+01:19:49.068 --> 01:19:49.598
+effects.
+
+1367
+01:19:51.438 --> 01:19:52.358
+It's general-
+
+1368
+01:19:52.668 --> 01:19:52.748
+Yeah
+
+1369
+01:19:52.928 --> 01:19:53.978
+... I mean, to everybody.
+
+1370
+01:19:53.978 --> 01:19:55.268
+So to comment on the transfer part.
+
+1371
+01:19:55.308 --> 01:19:56.698
+So we haven't directly looked-- So what
+
+1372
+01:19:57.668 --> 01:20:01.628
+I showed earlier was a mechanism for DNA transfer that eventually gives
+
+1373
+01:20:01.668 --> 01:20:03.788
+rise to an ecDNA-like element.
+
+1374
+01:20:04.588 --> 01:20:07.928
+We haven't directly tested whether ecDNAs themselves transfer,
+
+1375
+01:20:08.368 --> 01:20:12.188
+although, work from Anton suggests that they frequently go
+
+1376
+01:20:12.228 --> 01:20:16.037
+into micronuclei, so perhaps they do, but we haven't directly looked at
+
+1377
+01:20:16.088 --> 01:20:16.328
+that.
+
+1378
+01:20:17.368 --> 01:20:19.508
+Spatial, I'll let Howard take that.
+
+1379
+01:20:21.664 --> 01:20:25.104
+Yeah, I think your question's about really specifically not just transferring
+
+1380
+01:20:25.144 --> 01:20:28.874
+between tumor cells, but actually transferring into, let's
+
+1381
+01:20:28.944 --> 01:20:32.484
+say, immune cells or other cell types, right?
+
+1382
+01:20:32.624 --> 01:20:36.444
+And so I think that we see some kind of that kind of data.
+
+1383
+01:20:36.624 --> 01:20:40.564
+Actually, people have studied, for example, do a rearrange, I think
+
+1384
+01:20:40.684 --> 01:20:44.484
+immune receptor loci, some of those can be transferred, right?
+
+1385
+01:20:44.544 --> 01:20:46.044
+So I would not rule that out.
+
+1386
+01:20:46.484 --> 01:20:47.684
+Okay. All right.
+
+1387
+01:20:48.224 --> 01:20:48.484
+Thank you.
+
+1388
+01:20:48.534 --> 01:20:48.924
+Thanks so much.
+
+1389
+01:20:49.164 --> 01:20:49.984
+We'll go to Marson.
+
+1390
+01:20:51.384 --> 01:20:54.704
+So fascinating session and really exciting data on
+
+1391
+01:20:55.084 --> 01:20:58.564
+retention as a drug target. I was wondering,
+
+1392
+01:20:59.544 --> 01:21:00.604
+and this maybe goes to
+
+1393
+01:21:01.404 --> 01:21:04.684
+Howard's talk as well, is if you can
+
+1394
+01:21:04.884 --> 01:21:06.424
+predict the sort of,
+
+1395
+01:21:07.384 --> 01:21:08.503
+I guess, retention
+
+1396
+01:21:09.304 --> 01:21:12.724
+elements on individual ecDNA across tumors,
+
+1397
+01:21:12.784 --> 01:21:15.464
+does the
+
+1398
+01:21:16.504 --> 01:21:17.124
+stickiness
+
+1399
+01:21:18.204 --> 01:21:20.584
+in patient samples correlate with survival?
+
+1400
+01:21:20.684 --> 01:21:24.184
+I guess some ecDNA might be more intrinsically
+
+1401
+01:21:24.224 --> 01:21:27.824
+retention proficient based on these DNA elements.
+
+1402
+01:21:27.864 --> 01:21:30.964
+I don't know how well they can be predicted if you have a motif
+
+1403
+01:21:31.024 --> 01:21:31.984
+that's
+
+1404
+01:21:34.284 --> 01:21:36.024
+easily
+
+1405
+01:21:36.124 --> 01:21:40.004
+readable. But if in human
+
+1406
+01:21:40.064 --> 01:21:43.704
+tumors, are you seeing a correlation with retention ability and
+
+1407
+01:21:44.064 --> 01:21:44.644
+survival?
+
+1408
+01:21:45.684 --> 01:21:47.404
+I really like where you're going with this direction.
+
+1409
+01:21:47.444 --> 01:21:51.164
+That is, can we think about targeting the ecDNA
+
+1410
+01:21:51.184 --> 01:21:54.744
+retention elements or using it more of a prognostic kind of basis?
+
+1411
+01:21:56.084 --> 01:21:59.944
+I think that the current evidence suggests that the ecDNA we see in
+
+1412
+01:22:00.004 --> 01:22:03.374
+clinical samples are already at the end of a long evolutionary selection
+
+1413
+01:22:03.484 --> 01:22:07.344
+process. So the ecDNA retention element is pretty intact, right?
+
+1414
+01:22:07.364 --> 01:22:11.304
+Because imagine that if every cell division, you have a risk of being
+
+1415
+01:22:11.384 --> 01:22:14.144
+lost. This is a very strong selection pressure.
+
+1416
+01:22:15.304 --> 01:22:19.074
+And so the kind of evidence that we see is that in
+
+1417
+01:22:19.204 --> 01:22:21.244
+fact, we see ecDNA that
+
+1418
+01:22:22.144 --> 01:22:24.904
+retain multiple retention elements, right?
+
+1419
+01:22:24.944 --> 01:22:26.624
+So the COLO 320,
+
+1420
+01:22:27.704 --> 01:22:30.644
+the MYC ecDNA has lots and lots of ecDNA retention elements.
+
+1421
+01:22:30.664 --> 01:22:32.294
+We do see a correlation that
+
+1422
+01:22:33.304 --> 01:22:37.264
+if you start with an area in the genome that start with a lot of
+
+1423
+01:22:37.344 --> 01:22:41.334
+high ecDNA sort of retention element density, then
+
+1424
+01:22:41.364 --> 01:22:44.994
+there's, in fact, an enrichment for those to be
+
+1425
+01:22:45.084 --> 01:22:49.064
+smaller ecDNAs. There's no longer a pressure to rearrange
+
+1426
+01:22:49.084 --> 01:22:52.934
+or co-opt additional elements because you already got everything you need, right,
+
+1427
+01:22:53.004 --> 01:22:55.384
+to just keep getting propagated.
+
+1428
+01:22:56.464 --> 01:23:00.304
+I am not aware of... Let's see. I think the
+
+1429
+01:23:00.324 --> 01:23:04.084
+question you ask is possible. I just wonder that in the clinically observed tumors,
+
+1430
+01:23:04.164 --> 01:23:06.144
+right? So somebody to have a tumor, they have to have
+
+1431
+01:23:06.984 --> 01:23:07.564
+some sort of
+
+1432
+01:23:08.904 --> 01:23:12.844
+billions of tumor cells already. If you have an ecDNA there, that's already
+
+1433
+01:23:12.884 --> 01:23:15.014
+the end of a very long selection process.
+
+1434
+01:23:15.644 --> 01:23:19.484
+So, you may have a harder time tweaking out differences in
+
+1435
+01:23:19.504 --> 01:23:21.604
+retention efficiency in that setting.
+
+1436
+01:23:21.784 --> 01:23:23.784
+But I guess the tumors, Anton, that you were
+
+1437
+01:23:24.684 --> 01:23:27.704
+highlighting that had a very high fraction of these
+
+1438
+01:23:27.744 --> 01:23:31.684
+ecDNA in micronuclei. Did they have a different cis structure?
+
+1439
+01:23:31.753 --> 01:23:35.454
+Maybe those tend to be retained not as efficiently,
+
+1440
+01:23:35.524 --> 01:23:37.544
+and is there something you could detect there?
+
+1441
+01:23:37.604 --> 01:23:40.464
+That's exactly the question we're trying to ask now is to see how...
+
+1442
+01:23:40.504 --> 01:23:41.924
+And this is between different tumors, right?
+
+1443
+01:23:41.964 --> 01:23:43.944
+So between different patients, different tumors.
+
+1444
+01:23:44.304 --> 01:23:47.984
+We would want to know, for example, does the amount of, or the type of
+
+1445
+01:23:48.064 --> 01:23:51.964
+retention element that is situated on these different ecDNA that are structurally
+
+1446
+01:23:52.004 --> 01:23:55.404
+quite heterogeneous, is this different and does that explain why
+
+1447
+01:23:55.464 --> 01:23:58.554
+some tumors have higher micronucleation frequency than others?
+
+1448
+01:23:59.724 --> 01:24:03.544
+Yeah, I'll just hypothesize that your question might be very answerable if we
+
+1449
+01:24:03.604 --> 01:24:07.384
+look at the DNA methylation status of
+
+1450
+01:24:07.664 --> 01:24:11.104
+actually ecDNAs because we learn in the retention element work
+
+1451
+01:24:11.144 --> 01:24:15.024
+that DNA methylation is capable of silencing a retention element
+
+1452
+01:24:15.124 --> 01:24:19.114
+activity. So they might have each have 10 copies, but some of
+
+1453
+01:24:19.124 --> 01:24:22.813
+the copies may have more or less DNA demethylation and
+
+1454
+01:24:22.884 --> 01:24:25.514
+therefore more at the brink of being
+
+1455
+01:24:26.384 --> 01:24:27.364
+lost or not lost.
+
+1456
+01:24:29.033 --> 01:24:30.984
+Okay, let's go to the other side for a question.
+
+1457
+01:24:31.884 --> 01:24:35.284
+Sorry for my blackout. There is this feedback here, and it's very
+
+1458
+01:24:35.564 --> 01:24:39.324
+disturbing. So the question is regarding
+
+1459
+01:24:39.344 --> 01:24:43.003
+your donor cell line, because you only showed that you
+
+1460
+01:24:43.144 --> 01:24:47.124
+use RPE cells for the generation of
+
+1461
+01:24:47.164 --> 01:24:48.264
+the extra
+
+1462
+01:24:49.244 --> 01:24:53.144
+nuclear DNA, which is being transferred to the acceptor
+
+1463
+01:24:53.264 --> 01:24:56.834
+cells. I'm just curious if you tried also different cell lines
+
+1464
+01:24:57.644 --> 01:25:01.064
+as donor cell lines. The reason why I'm asking, because
+
+1465
+01:25:01.124 --> 01:25:04.204
+we did some experiments on RPE cells.
+
+1466
+01:25:04.424 --> 01:25:07.184
+We induced micronuclei in those cells with
+
+1467
+01:25:08.104 --> 01:25:11.824
+replication stress. And when we stained for SIGA
+
+1468
+01:25:12.164 --> 01:25:15.224
+in this particular cell line, we never saw SIGA
+
+1469
+01:25:15.924 --> 01:25:18.024
+colocalization with this micronuclei.
+
+1470
+01:25:18.524 --> 01:25:20.064
+It might be some special
+
+1471
+01:25:20.944 --> 01:25:22.664
+feature of this particular cell line.
+
+1472
+01:25:22.744 --> 01:25:26.444
+So I'm just curious if you tried other cell lines and if this might be
+
+1473
+01:25:26.564 --> 01:25:28.284
+some luck in your hands.
+
+1474
+01:25:28.764 --> 01:25:32.694
+Yes. Oh, sorry. Yeah, so I probably showed
+
+1475
+01:25:32.784 --> 01:25:36.654
+mostly RPE1 data, but we've done this across many different human cell lines
+
+1476
+01:25:36.684 --> 01:25:40.344
+now, and also we're now extending this into mice, mouse cell lines.
+
+1477
+01:25:40.424 --> 01:25:44.374
+But we've seen this in somatic epithelial cells, both cancer,
+
+1478
+01:25:44.524 --> 01:25:47.914
+non-cancer. We've done it also in induced pluripotent stem cells,
+
+1479
+01:25:49.144 --> 01:25:50.984
+fibroblasts. There's a
+
+1480
+01:25:52.504 --> 01:25:56.224
+panel of lines that we've seen this in, and we've measured it in the paper actually
+
+1481
+01:25:56.264 --> 01:25:59.304
+across many different conditions, across many different lines.
+
+1482
+01:25:59.634 --> 01:26:02.014
+So it's not a RPE1 specific match.
+
+1483
+01:26:02.664 --> 01:26:06.524
+The efficiency of the transfer was it
+
+1484
+01:26:06.544 --> 01:26:08.504
+the same across different cell lines or?
+
+1485
+01:26:08.564 --> 01:26:12.384
+Yeah. So, depending on the condition in which you induce DNA damage or
+
+1486
+01:26:12.444 --> 01:26:15.944
+mitotic errors, but it seems that across the board is somewhere between 1% to
+
+1487
+01:26:16.184 --> 01:26:19.464
+4% of micronuclei seems to have evidence of transfer.
+
+1488
+01:26:19.824 --> 01:26:19.984
+Mm-hmm.
+
+1489
+01:26:21.044 --> 01:26:21.244
+Okay.
+
+1490
+01:26:21.364 --> 01:26:24.644
+So although it's low, it's reproducible,
+
+1491
+01:26:25.844 --> 01:26:28.844
+and measurable across many different conditions and cell types.
+
+1492
+01:26:28.864 --> 01:26:32.664
+But we think that more importantly, under different contexts in which those
+
+1493
+01:26:32.704 --> 01:26:36.344
+events then become positively selected for will have the biggest impact.
+
+1494
+01:26:36.964 --> 01:26:37.124
+Yeah.
+
+1495
+01:26:37.364 --> 01:26:37.984
+Okay, thank you.
+
+1496
+01:26:38.204 --> 01:26:41.384
+Unfortunately, we don't have time for more questions, but you can come to us and
+
+1497
+01:26:41.464 --> 01:26:44.424
+ask questions after the session. So I'd like to thank all the speakers of the
+
+1498
+01:26:44.524 --> 01:26:46.764
+session and thank you all for your questions and your attention.

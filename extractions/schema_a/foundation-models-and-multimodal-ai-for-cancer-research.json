@@ -1,0 +1,132 @@
+[
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::bonner::1",
+    "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+    "talk_title": "Virtual patients with multimodal foundation models and agents",
+    "speaker": {
+      "name": "Charlotte Bonner",
+      "affiliation": "EPFL, Computer Science and Life Science, AI Center, Cancer Research Institute",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Developed multimodal foundation models that jointly encode histopathology RGB images and spatial proteomics protein panels into a shared representation, enabling virtual patient profiling, in silico treatment forecasting, and AI\u2011derived biomarker discovery through early\u2011fusion transformer architectures and reinforcement\u2011learning\u2011based sequential acquisition (EchoK).",
+    "readouts": [],
+    "key_findings": [
+      "Trained the first multimodal foundation model on 5,003 patients (4,605 publicly released) with paired H&E and spatial proteomics data across 8 cancer types.",
+      "Demonstrated that the model can virtually stain unmeasured proteins and predict optimal protein panels, achieving comparable performance to specialized single\u2011modality models.",
+      "Showed that model\u2011derived signatures stratify responders vs non\u2011responders in a triple\u2011negative breast cancer immunotherapy cohort better than existing clinical biomarkers.",
+      "Implemented EchoK, a reinforcement\u2011learning sequential acquisition system that selects a minimal set of proteomic markers (as few as 8) while preserving cell\u2011typing accuracy."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wang et al. 2023"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::levy::2",
+    "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+    "talk_title": "Generative image models and visual question answering for disease dynamics",
+    "speaker": {
+      "name": "Serena Yeung Levy",
+      "affiliation": "Stanford, Department of Biomedical Data Science",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "generative_models",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Introduced CellFlux, a flow\u2011matching based generative framework that learns a continuous velocity field to transform distributions of control cell images into perturbed cell images, and described scaling of the model to >11\u202fM images, joint imaging\u2011transcriptomics latent representations, and the MicroVQA benchmark for multimodal scientific visual question answering.",
+    "readouts": [],
+    "key_findings": [
+      "CellFlux trained on 300\u202fk images achieved higher image\u2011generation quality than prior baselines; scaling to 11.6\u202fM images further improved performance.",
+      "Demonstrated that flow\u2011matching in latent space (CellFlux v2) enables realistic perturbation simulations and visualizes transformation trajectories.",
+      "Created MicroVQA, a benchmark of >1\u202f000 expert\u2011curated microscopy questions covering higher\u2011order Bloom\u2019s taxonomy, revealing gaps in current vision\u2011language models.",
+      "Showed that large multimodal LLMs (e.g., Gemini\u202f3\u202fPro) achieve state\u2011of\u2011the\u2011art scores on MicroVQA but still struggle with fine\u2011grained visual reasoning."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to effectively model discrete biological events (e.g., apoptosis) within continuous flow\u2011matching frameworks?",
+      "Best strategies for joint training on limited matched multimodal (image\u2011transcriptomics) data combined with large unimodal datasets."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::moore::3",
+    "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+    "talk_title": "Reliable medical AI agents that plan, evaluate, and verify reasoning",
+    "speaker": {
+      "name": "Michael Moore",
+      "affiliation": "ETH Zurich, Assistant Professor of Medical AI",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "agentic_systems",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Proposed a framework for medical AI agents that integrate structured knowledge atlases (Myriad QA pairs) and process\u2011reward verification models to ground and audit each reasoning step, enabling reliable multimodal decision\u2011making for tasks such as molecular tumor boards and 3D radiology analysis.",
+    "readouts": [],
+    "key_findings": [
+      "Constructed Myriad, a 6\u202fM QA pair knowledge base derived from peer\u2011reviewed literature, improving retrieval\u2011augmented generation (RAG) performance on MedExpertQA.",
+      "Developed a process\u2011reward model that checks individual reasoning steps of a language model against guidelines, reducing hallucinations across multiple downstream medical tasks.",
+      "Demonstrated an agent that performs step\u2011wise 3D chest CT analysis with traceable reasoning, achieving higher fidelity than baseline LLMs."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to scale structured knowledge representation while maintaining up\u2011to\u2011date clinical guidelines?",
+      "Methods for integrating multimodal inputs (imaging, labs, notes) into the agentic reasoning loop."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dan Nomura",
+      "institution_or_pharma": "University of California, Berkeley",
+      "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+      "talk_title": "Induced proximity approaches for targeting transcription factors and epigenetic reprogramming",
+      "rhetorical_signals": [
+        "Speaker said: \"we see loss of MYC at two to four hours, but it's basically recovered by six hours because MYC has such high turnover rates\"",
+        "Speaker said: \"we still see off\u2011target engagement \u2013 the original hit molecule has over 100 off targets, so that's quite promiscuous still\"",
+        "Speaker said: \"we don't see global screwing up of transcription, we see quite selective manipulation of MYC target genes\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "MYC covalent degrader (236/219 series)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Rapid MYC protein turnover limits sustained degradation",
+        "unexplained_resistance_quote": "we see loss of MYC at two to four hours, but it's basically recovered by six hours because MYC has such high turnover rates",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Early MYC covalent hit molecule",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "High off\u2011target reactivity (>100 proteins) reduces selectivity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Covalent sulfonyl zeradine oxindole scaffold for MYC",
+        "ip_vulnerability_note": "Speaker disclosed that the scaffold still engages >100 off\u2011targets, indicating limited novelty of the core chemistry",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on covalent warhead may limit broader applicability to other TFs"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed stereoselective engagement of MYC indicating a transient pocket, then concluded that \"degradation may not even be the best way to disrupt transcription factors\" despite having a functional degrader"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy data for MYC degraders",
+        "No toxicity or safety data presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could model the transient pocket dynamics of intrinsically disordered MYC regions to design more selective covalent warheads with fewer off\u2011targets.",
+        "transcript_evidence": "Speaker noted that MYC cysteine 203 is hyperreactive in a transient pocket and that off\u2011target promiscuity remains high.",
+        "crispro_angle": "Use computational simulations of IDR ensembles to predict pocket formation and guide warhead placement, reducing off\u2011target reactivity.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Structural NMR data of MYC IDR ensembles",
+          "Proteomics profiling of off\u2011target engagement"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify tumors with low MYC turnover or co\u2011expression of stabilizing partners where covalent degraders would be more effective.",
+        "transcript_evidence": "Speaker highlighted rapid MYC turnover as a challenge for sustained degradation.",
+        "crispro_angle": "Integrate CrisPRO predictive models with transcriptomic data to flag patients likely to benefit from MYC covalent degraders.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Clinical datasets linking MYC half\u2011life to treatment response",
+          "Validation of turnover biomarkers (e.g., ubiquitination signatures)"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Can stereoselective covalent binders achieve durable MYC suppression without frequent re\u2011synthesis?",
+      "What structural features of the neighboring aspartic acid enable selective reactivity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MYC covalent degrader programs at UC Berkeley",
+        "TRACERS platform molecules"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Mark Foundation for Cancer Research"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Katherine Kaiser\u2011Burkher",
+      "institution_or_pharma": "Johnson & Johnson (Halod Therapeutics)",
+      "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+      "talk_title": "RIP\u2011Tag platform: AR\u2011BRD4 and ER\u2011BRD4 induced proximity therapeutics",
+      "rhetorical_signals": [
+        "Speaker said: \"we see activity across heterogeneous mechanisms of resistance\"",
+        "Speaker said: \"we have a very weak binary interaction with the essential protein in healthy tissues\"",
+        "Speaker said: \"we never saw a hook effect preclinically\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HLD0915 (AR\u2011BRD4 RIP\u2011Tag)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target BRD4 inhibition may cause hematologic/hepatic effects not fully characterized",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "activity observed in patients without AR amplification or with ARV7 splice variant",
+        "hidden_tox_signal": "grade 1 fatigue reported; no thrombocytopenia but limited safety data",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 HLD0915 mCRPC study (NCTxxxx)",
+        "target_biology": "AR expression\u2011driven sequestration of BRD4 leading to loss\u2011of\u2011function",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven selection; enrolling all mCRPC patients regardless of AR status",
+        "missing_biomarker": "Quantitative AR protein expression threshold to enrich for responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small patient numbers per dose cohort limit power to detect rare toxicities",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "RIP\u2011Tag heterobifunctional scaffold linking tumor\u2011specific ligand to BRD4 binder",
+        "ip_vulnerability_note": "Speaker disclosed crystal structures of ternary complexes, revealing that the BRD4 binding pocket is only weakly engaged, suggesting that alternative small molecules could compete",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on tumor\u2011specific protein expression; loss of AR or ER could render the modality ineffective"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented potent ternary complex formation and tumor regressions, then stated that the modality does not require the target (AR/ER) to be a driver, which contradicts the observed dependence on full\u2011length AR/ER for activity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "Limited long\u2011term safety/tolerability reporting",
+        "Absence of biomarker\u2011stratified efficacy analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to model AR/ER expression thresholds and predict which patients will achieve sufficient ternary complex formation.",
+        "transcript_evidence": "Speaker noted activity across AR\u2011amplified and non\u2011amplified patients but no quantitative biomarker used.",
+        "crispro_angle": "Integrate quantitative proteomics with CrisPRO binding models to define a minimal AR/ER expression cutoff for clinical response.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Retrospective analysis of AR/ER protein levels in trial cohorts",
+          "Prospective validation in a biomarker\u2011enriched arm"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine RIP\u2011Tag with agents that down\u2011regulate BRD4 compensatory pathways to prevent resistance.",
+        "transcript_evidence": "Speaker mentioned that resistance mechanisms upstream of transcription factors may still converge on MYC, suggesting potential escape routes.",
+        "crispro_angle": "Predict synthetic lethal interactions using CrisPRO network analysis to identify optimal combination partners.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "In\u2011vivo combination studies with BET inhibitors",
+          "CRISPR screens for resistance mediators"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PROTACs targeting BRD4",
+        "context": "Compared to traditional degraders, RIP\u2011Tag offers tumor\u2011selective sequestration",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Fulvestrant",
+        "context": "ER RIP\u2011Tag shown superior to fulvestrant in preclinical models",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will loss of AR or ER expression in tumors lead to rapid resistance?",
+      "What is the long\u2011term safety profile of chronic BRD4 sequestration?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTxxxx (HLD0915 mCRPC)",
+        "NCTyyyy (HLD0117 breast cancer)"
+      ],
+      "assets_to_track": [
+        "HLD0915 AR\u2011BRD4 RIP\u2011Tag",
+        "HLD0117 ER\u2011BRD4 RIP\u2011Tag"
+      ],
+      "companies_to_monitor": [
+        "Johnson & Johnson",
+        "Halod Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Ryan Potts",
+      "institution_or_pharma": "Amgen",
+      "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+      "talk_title": "Molecular glues, viral\u2011E3 (VIPER\u2011TAC) and LIMTAC platforms for induced proximity",
+      "rhetorical_signals": [
+        "Speaker said: \"we have more than half a million molecular glue library\"",
+        "Speaker said: \"we never saw a hook effect preclinically\"",
+        "Speaker said: \"the toxicity profile seen are very minimal\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "VHL\u2011Gemin3 molecular glue",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Gemin3 is pan\u2011essential; no therapeutic window",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "E6\u2011mediated VIPER\u2011TAC targeting SARS\u20111",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Dependence on viral E6 expression; heterogeneous in HPV\u2011positive tumors",
+        "unexplained_resistance_quote": "you have to consider that the virus sometimes silences E6 in cancer cells",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DNA\u2011encoded molecular glue library on beads",
+        "ip_vulnerability_note": "Speaker described the library composition, indicating that the core hydroxyproline scaffold is widely used, potentially limiting novelty",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "High reliance on screening throughput; translation to drug\u2011like candidates not yet demonstrated"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that VHL\u2011Gemin3 glue alters gene expression but then admitted the target is non\u2011selective and not therapeutically useful, contradicting the claim of a viable drug candidate"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy or safety data for VIPER\u2011TAC or LIMTAC molecules",
+        "Lack of clinical biomarker validation for viral E6 expression"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Apply CrisPRO to redesign VHL\u2011Gemin3 glue to target a cancer\u2011specific partner instead of pan\u2011essential Gemin3, creating a selective therapeutic.",
+        "transcript_evidence": "Speaker noted that Gemin3 is essential in all cells, making the glue non\u2011viable as a drug.",
+        "crispro_angle": "Use CrisPRO to predict alternative ternary interfaces that retain VHL binding but swap Gemin3 for a tumor\u2011specific protein.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Structural modeling of VHL\u2011alternative protein interfaces",
+          "Cell viability screens with redesigned glues"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate HPV\u2011E6 expression testing as a mandatory enrollment biomarker for VIPER\u2011TAC trials to avoid enrolling patients lacking the viral protein.",
+        "transcript_evidence": "Speaker acknowledged heterogeneous E6 expression could limit efficacy.",
+        "crispro_angle": "Leverage CrisPRO expression datasets to define a quantitative E6 threshold for trial eligibility.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Retrospective analysis of HPV\u2011positive tumor cohorts",
+          "Development of a clinical assay for E6 protein levels"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cereblon\u2011based PROTACs",
+        "context": "Compared to VHL\u2011based glues, cereblon is the traditional ligase used in degraders",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "BET inhibitors",
+        "context": "Mentioned as standard BRD4 targeting agents versus RIP\u2011Tag approach",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can viral\u2011E3 ligase based VIPER\u2011TACs achieve sufficient selectivity in heterogeneous HPV\u2011positive tumors?",
+      "What is the durability of LIMTAC\u2011mediated KRAS degradation after drug washout in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "VHL\u2011Gemin3 molecular glue",
+        "E6\u2011SARS1 VIPER\u2011TAC",
+        "KRAS LIMTAC"
+      ],
+      "companies_to_monitor": [
+        "Amgen"
+      ]
+    }
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "talk_id": "aacr-award-for-outstanding-achievement-in-blood-cancer-research::dipersio::1",
+    "session_title": "aacr-award-for-outstanding-achievement-in-blood-cancer-research",
+    "talk_title": "Developing CAR T\u2011cell therapies for T\u2011cell malignancies",
+    "speaker": {
+      "name": "Dr. John F. DiPersio",
+      "affiliation": "Washington University School of Medicine, St. Louis, Director of the Section of Cellular Therapy and the Center for Gene and Cellular Immunotherapy",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "T-cell acute lymphoblastic leukemia",
+      "peripheral T-cell lymphoma",
+      "acute myeloid leukemia"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "CAR_T",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD7",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "compound_name": "UCART7 (CD7 CAR)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "T-cell ALL (CD7\u2011high)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CD2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "compound_name": "UCART2 (CD2 CAR)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "T-cell non\u2011Hodgkin lymphoma (CD2\u2011high)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "IL7",
+        "alteration": "",
+        "pathway": "cytokine_signaling",
+        "modality": "other",
+        "compound_name": "NTi\u20117 (long\u2011acting IL\u20117 fusion)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CAR T\u2011cell expansion in vivo",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PIK3CG",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Devolasib (PI3\u03b3\u03b4 inhibitor)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Mitigation of CRS",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "JAK1/JAK2",
+        "alteration": "",
+        "pathway": "JAK/STAT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Ruxolitinib (Jakafi)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Mitigation of CRS",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD40LG",
+        "alteration": "",
+        "pathway": "immune_costimulation",
+        "modality": "other",
+        "compound_name": "CD40L antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "IL\u20116 production by monocytes",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD7 loss",
+        "type": "resistance",
+        "finding": "Observed in ~20% of relapsed patients after UCART7 therapy, often due to biallelic deletion or splicing abnormalities"
+      },
+      {
+        "name": "CD2 loss",
+        "type": "resistance",
+        "finding": "Most relapsed cases after CD2\u2011CAR therapy showed loss of CD2 surface expression"
+      },
+      {
+        "name": "CR rate",
+        "type": "predictive",
+        "finding": "82% complete remission at the recommended Phase\u202fII dose in the first\u2011in\u2011human UCART7 study (n not specified)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "UCART7 Phase\u202fI study (Blood 2025)",
+        "genotype_or_key_features": "Patients with relapsed/refractory T\u2011cell ALL, CD7\u2011high disease"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "T\u2011cell lymphoma xenograft model",
+        "genotype_or_key_features": "CD2\u2011positive lymphoma cell lines in immunodeficient mice"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "CD2\u2011positive T\u2011cell lymphoma lines (3 lines)",
+        "genotype_or_key_features": "high CD2 expression"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CR rate",
+        "value": "82%",
+        "confidence_interval": "",
+        "n": "n=unspecified",
+        "population": "relapsed/refractory T\u2011cell ALL, Phase\u202fI UCART7 cohort",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "The work introduces universal allogeneic CAR\u2011T platforms that multiplex\u2011edit donor T cells to delete CD7 (and TCR\u03b1) for T\u2011ALL and to delete CD2 (and TCR\u03b1) for T\u2011cell lymphomas, enabling potent antigen\u2011specific killing while avoiding fratricide. Epitope\u2011masking of CD2 or incorporation of the CD2 cytoplasmic tail restores costimulatory signaling lost after CD2 knockout. Long\u2011acting IL\u20117 fusion (NTi\u20117) administered early after infusion dramatically expands CAR\u2011T persistence and cures murine models. Small\u2011molecule PI3\u03b3\u03b4 and JAK inhibitors, or CD40L blockade, suppress IL\u20116\u2013driven CRS without impairing cytotoxicity.",
+    "readouts": [
+      "flow_cytometry",
+      "bioluminescent_imaging",
+      "in_vitro_killing_assays",
+      "repetitive_tumor_replating_assay",
+      "single_cell_RNA_seq",
+      "ELISA (IL\u20116, IFN\u2011\u03b3)",
+      "CRISPR_screen"
+    ],
+    "key_findings": [
+      "Multiplex CRISPR editing of donor T cells to delete CD7 and TCR\u03b1 enables universal CAR\u2011T cells that achieved an 82% complete remission rate in the first\u2011in\u2011human UCART7 Phase\u202fI trial for relapsed T\u2011ALL.",
+      "Deletion of CD2 in CAR\u2011T cells caused severe functional exhaustion in vitro and loss of antitumor activity in vivo, which was rescued by epitope\u2011masking of CD2 or by inserting the CD2 cytoplasmic domain into the CAR construct.",
+      "Long\u2011acting IL\u20117 (NTi\u20117) given between days 1\u20117 after CAR\u2011T infusion expands CAR\u2011T cells 10,000\u2011 to 100,000\u2011fold and cures murine models of T\u2011cell lymphoma, B\u2011cell lymphoma, and AML, whereas later dosing is ineffective.",
+      "A high\u2011throughput screen of 700 kinase inhibitors identified PI3\u03b3\u03b4 inhibitor (Devolasib) and JAK1/2 inhibitor (Ruxolitinib) as synergistic suppressors of IL\u20116 production without impairing CAR\u2011T cytotoxicity; combined prophylaxis eliminated grade\u202f\u22652 CRS in a randomized patient cohort.",
+      "CD4\u207a CAR\u2011T cells are the primary source of IL\u20116 via membrane\u2011bound CD40L, while CD8\u207a cells mediate killing; CD40L knockout or blockade markedly reduces CRS, highlighting a mechanistic link between CD40L signaling and cytokine release."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Relapse after UCART7 is frequently associated with loss of CD7 surface expression through biallelic deletion or splicing alterations.",
+      "CD2\u2011CAR\u2011T cells lose efficacy when CD2 is knocked out because CD2 provides essential costimulatory signaling; epitope\u2011masked CD2 restores function.",
+      "Targeting CD7 and CD2 depletes normal NK and T cells, leading to profound immunodeficiency and infection risk."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "NTi\u20117 (long\u2011acting IL\u20117 fusion)",
+        "rationale": "Early cytokine support enhances CAR\u2011T expansion, persistence, and antitumor efficacy",
+        "phenotype": "10,000\u2011100,000\u2011fold CAR\u2011T expansion; complete tumor eradication in murine models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Devolasib (PI3\u03b3\u03b4 inhibitor) + Ruxolitinib (JAK1/2 inhibitor)",
+        "rationale": "Dual inhibition suppresses IL\u20116\u2013driven CRS without compromising CAR\u2011T cytotoxicity",
+        "phenotype": "Near\u2011complete abrogation of grade\u202f\u22652 CRS in randomized patient cohort; maintained tumor killing",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How can the profound immunodeficiency caused by CD7/CD2 depletion be mitigated while preserving antitumor activity?",
+      "What are the molecular mechanisms underlying CD7 downregulation in relapsed patients (e.g., splice variants vs. genomic loss)?",
+      "Can the optimal timing and dosing of IL\u20117 be refined for different CAR\u2011T products and disease settings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AbbVie",
+        "WuJin"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

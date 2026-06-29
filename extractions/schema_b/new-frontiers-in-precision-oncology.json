@@ -1,0 +1,566 @@
+[
+  {
+    "talk_id": "new-frontiers-in-precision-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Byung Chul Cho",
+      "institution_or_pharma": "Yonsei Medical Center",
+      "session_title": "new-frontiers-in-precision-oncology",
+      "talk_title": "Safety and efficacy of elacrasib, a next\u2011generation GDP\u2011bound KRAS G12C inhibitor in advanced NSCLC",
+      "rhetorical_signals": [
+        "Speaker said: \"the study may underestimate the actual risk of autoimmune hepatitis, given that both of these would reduce the frequency of this event in this population.\"",
+        "Speaker noted: \"this raises the question of how many of these responses are true circumvention of an acquired resistance mechanism versus just re\u2011response in a patient where sensitive clones have grown out again after a wash\u2011out period.\"",
+        "Speaker presented: \"median OS was not mature, with a 12\u2011month OS rate being 68%\" but did not provide any OS hazard ratio or longer follow\u2011up."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Elacrasib (KRAS G12C GDP\u2011bound inhibitor)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "bypass signaling via KRAS amplification and other RTK\u2011driven pathways not fully suppressed by GDP\u2011state inhibition",
+        "unexplained_resistance_quote": "Speaker said: \"we do not yet know why a subset of patients in the refractory cohort did not achieve response despite target engagement.\"",
+        "ghost_responder_admission": "Speaker highlighted: \"32.3% of patients achieved partial response\" implying a minority of responders in a heavily pre\u2011treated refractory group.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase I/II elacrasib study (D\u20113S001)",
+        "target_biology": "KRAS G12C inhibition in NSCLC (na\u00efve and refractory to prior G12C inhibitors)",
+        "flawed_enrollment_criteria": "Refractory cohort allowed any prior G12C inhibitor with only a PR/CR requirement, regardless of duration, potentially mixing patients with true resistance and those with drug wash\u2011out re\u2011sensitivity",
+        "missing_biomarker": "Baseline KRAS G12C ctDNA status not required for enrollment despite its predictive value for response",
+        "static_vs_dynamic_failure": "No serial on\u2011treatment ctDNA monitoring mandated to track emergence of KRAS amplification or other resistance mechanisms",
+        "statistical_concern": "Single\u2011arm design without a comparator limits interpretation of ORR and PFS in a heterogeneous population",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GDP\u2011bound KRAS G12C covalent inhibitor",
+        "ip_vulnerability_note": "Speaker disclosed that elacrasib is a next\u2011generation GDP\u2011bound inhibitor, which still relies on the same switch\u2011II pocket as earlier drugs, limiting differentiation from sotorasib or adagrasib",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing monotherapy in a crowded G12C space without a clear biomarker\u2011guided combination strategy may dilute clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed deep and durable radiologic responses (e.g., 73% ORR in colorectal) yet simultaneously admitted that the study may underestimate autoimmune hepatitis risk and that many refractory responses could be due to drug wash\u2011out rather than true resistance overcoming"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival hazard ratio or mature OS data",
+        "Lack of a control arm for comparison",
+        "Absence of systematic on\u2011treatment ctDNA monitoring"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline KRAS G12C ctDNA positivity strongly predicts response, yet the trial did not require ctDNA screening",
+        "transcript_evidence": "Speaker said: \"15 out of 27 patients had ctDNA available at baseline and at cycle two... 87% had >50% clearance\"",
+        "crispro_angle": "CrisPRO can integrate baseline ctDNA allele fraction with clinical outcomes to define a predictive biomarker panel for G12C inhibitor selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "KRAS amplification emerges as a resistance mechanism; targeting the amplification axis could restore sensitivity",
+        "transcript_evidence": "Speaker noted: \"16% of patients had KRAS amplification, a well\u2011known resistant mechanism to G12C inhibitor\"",
+        "crispro_angle": "CrisPRO can model amplification\u2011driven signaling rewiring to identify synthetic lethal partners for combination therapy",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Elacrasib demonstrated a favorable safety profile, making it amenable to combination with checkpoint blockade",
+        "transcript_evidence": "Speaker highlighted: \"treatment discontinuation due to toxicity was rare\" and later suggested a pivotal trial with checkpoint inhibitor",
+        "crispro_angle": "CrisPRO can predict synergistic immune\u2011oncology combinations by linking KRAS\u2011driven immune evasion signatures to checkpoint pathways",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate mandatory on\u2011treatment ctDNA and stratify by prior G12C inhibitor wash\u2011out period to reduce response heterogeneity",
+        "transcript_evidence": "Speaker admitted uncertainty whether responses in refractory cohort reflect true circumvention of resistance",
+        "crispro_angle": "CrisPRO can simulate trial arms with ctDNA\u2011guided enrichment to forecast power gains",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sotorasib",
+        "context": "Referenced as the original KRAS G12C off\u2011inhibitor with modest OS benefit",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "Mentioned alongside sotorasib as earlier generation G12C inhibitors",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Divorasib",
+        "context": "Cited as a newer, more potent off\u2011inhibitor with higher response rates",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Calderacib",
+        "context": "Discussed in context of KRAS G12C on\u2011inhibitor plus pembrolizumab",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Eloronrasib",
+        "context": "Presented as a KRAS G12C on\u2011inhibitor with activity in off\u2011inhibitor resistant disease",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the dominant molecular mechanisms driving primary resistance in G12C\u2011na\u00efve patients?",
+      "Can serial ctDNA monitoring reliably predict early progression and guide escalation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Elacrasib (D\u20113S001)",
+        "Divorasib",
+        "Calderacib",
+        "Eloronrasib"
+      ],
+      "companies_to_monitor": [
+        "Novartis (sotorasib)",
+        "Amgen (adagrasib)",
+        "Revolution Medicines"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-frontiers-in-precision-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sacher",
+      "institution_or_pharma": "Unspecified (industry speaker)",
+      "session_title": "new-frontiers-in-precision-oncology",
+      "talk_title": "Landscape of KRAS G12C off\u2011inhibitors and future directions",
+      "rhetorical_signals": [
+        "Speaker said: \"the reality is that the modest clinical activity of existing KRAS G12C off inhibitor monotherapy has led to a rapid push to develop combination strategies\"",
+        "Speaker admitted: \"I unfortunately will have to disappoint you \u2013 the only thing we can say at this point is that it's still anyone's game\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C off\u2011inhibitors (class)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Compensatory pathway activation keeping KRAS in GTP\u2011bound state (e.g., RTK up\u2011regulation, KRAS amplification)",
+        "unexplained_resistance_quote": "Speaker noted: \"primary and acquired resistance are the key challenges for KRAS G12C off inhibitors\" without detailing specific frequencies",
+        "ghost_responder_admission": "Speaker highlighted response rates of 28\u201153% across agents, implying many patients do not respond",
+        "hidden_tox_signal": "Speaker mentioned a \"signal of autoimmune hepatitis\" that may be under\u2011reported in early trials",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GDP\u2011bound covalent KRAS G12C inhibitors",
+        "ip_vulnerability_note": "All agents bind the same switch\u2011II pocket, limiting differentiation; newer agents still rely on the same chemistry",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Heavy focus on monotherapy despite modest response rates; rapid move to combinations may dilute clear efficacy signals"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented modest response rates (e.g., 28% for sotorasib) yet concluded that KRAS G12C off\u2011inhibitors have \"revolutionized the field\" and are now standard of care"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of head\u2011to\u2011head comparative data between off\u2011 and on\u2011state inhibitors",
+        "Limited long\u2011term OS data for newer agents"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the GTP\u2011bound KRAS state (on\u2011inhibitors) could overcome bypass activation that limits off\u2011inhibitors",
+        "transcript_evidence": "Speaker said: \"novel KRAS G12C on tri\u2011complex inhibitors ... may overcome the fundamental limits of off inhibitors\"",
+        "crispro_angle": "CrisPRO can model the dynamic equilibrium between GDP and GTP KRAS states to prioritize on\u2011state inhibitors for patients with RTK\u2011driven bypass",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Safe toxicity profile of elacrasib suggests pairing with checkpoint blockade",
+        "transcript_evidence": "Speaker noted: \"treatment discontinuation due to toxicity was rare\" and later suggested combination trials",
+        "crispro_angle": "CrisPRO can predict synergistic immune signatures in KRAS\u2011mutant tumors to select optimal ICI partners",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "PD\u2011L1 low and STK11/KEAP1 co\u2011mutations remain poorly stratified for off\u2011inhibitor benefit",
+        "transcript_evidence": "Speaker highlighted: \"activity in difficult\u2011to\u2011treat subsets like STK11 and KEAP1 co\u2011mutated patients\" without quantitative data",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics to define a composite biomarker that predicts which co\u2011mutated tumors will respond",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sotorasib",
+        "context": "Original KRAS G12C off\u2011inhibitor with modest OS benefit",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "Another early off\u2011inhibitor referenced for comparison",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Divorasib",
+        "context": "Newer, more potent off\u2011inhibitor with higher response rates",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Calderacib",
+        "context": "KRAS G12C on\u2011inhibitor combined with pembrolizumab showing high response in PD\u2011L1 high patients",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Eloronrasib",
+        "context": "KRAS G12C on\u2011inhibitor with activity in off\u2011inhibitor resistant disease",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will on\u2011state KRAS inhibitors truly overcome acquired resistance seen with off\u2011state agents?",
+      "What is the optimal sequencing of KRAS inhibitors with immunotherapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Calderacib",
+        "Eloronrasib",
+        "Divorasib"
+      ],
+      "companies_to_monitor": [
+        "Amgen",
+        "Novartis",
+        "Revolution Medicines"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-frontiers-in-precision-oncology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Jonathan Rees",
+      "institution_or_pharma": "University of California Davis Comprehensive Cancer Center",
+      "session_title": "new-frontiers-in-precision-oncology",
+      "talk_title": "Preliminary safety and activity of zoldonrasib (RMC\u20119805), a KRAS G12D on\u2011state tri\u2011complex inhibitor",
+      "rhetorical_signals": [
+        "Speaker said: \"the study may underestimate the actual risk of autoimmune hepatitis, given that both of these would reduce the frequency of this event in this population\"",
+        "Speaker admitted: \"we don't yet have data on ERK as a resistance node in this trial\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Zoldonrasib (KRAS G12D on\u2011state inhibitor)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Potential emergence of KRAS amplification or alternative KRAS isoforms not covered by G12D\u2011specific binding",
+        "unexplained_resistance_quote": "Speaker noted uncertainty: \"we don't have data yet on ERK as a resistance node\"",
+        "ghost_responder_admission": "Speaker reported ORR 52% but acknowledged only 20 patients in the efficacy cohort",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "RMC\u20119805\u2011001 Phase I (zoldonrasib NSCLC cohort)",
+        "target_biology": "KRAS G12D inhibition in previously treated NSCLC",
+        "flawed_enrollment_criteria": "Allowed patients with prior brain metastases if stable, but excluded active CNS disease, potentially limiting assessment of CNS activity despite preclinical claims",
+        "missing_biomarker": "No requirement for baseline KRAS G12D ctDNA positivity, though ctDNA dynamics were later highlighted",
+        "static_vs_dynamic_failure": "No mandated on\u2011treatment ctDNA serial sampling for all patients",
+        "statistical_concern": "Single\u2011arm, small efficacy cohort (n=20) limits statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "G12D\u2011selective on\u2011state tri\u2011complex inhibitor",
+        "ip_vulnerability_note": "Selectivity to G12D restricts applicability to ~4% of NSCLC and excludes other KRAS alleles, limiting market breadth",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy focus despite emerging data that combinations (e.g., with ICI) may be required for durable benefit"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented deep and durable responses (median PFS 11.1\u202fmo) while simultaneously noting that the trial may underestimate autoimmune hepatitis risk and that resistance mechanisms such as ERK activation remain uncharacterized"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator",
+        "Limited data on CNS efficacy despite preclinical claims",
+        "Absence of systematic resistance biomarker analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline KRAS G12D ctDNA detection predicts higher response but was not required for enrollment",
+        "transcript_evidence": "Speaker reported: \"15 out of 27 patients had ctDNA available at baseline... 87% had >50% clearance\"",
+        "crispro_angle": "CrisPRO can develop a ctDNA\u2011based enrichment algorithm to select patients most likely to benefit",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Potential ERK re\u2011activation as a bypass not yet explored; combining with ERK or MEK inhibitors could pre\u2011empt resistance",
+        "transcript_evidence": "Audience question and speaker response highlighted lack of ERK data",
+        "crispro_angle": "CrisPRO can simulate pathway rewiring after G12D inhibition to prioritize downstream kinase co\u2011targets",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Favorable safety profile enables pairing with checkpoint blockade or chemotherapy",
+        "transcript_evidence": "Speaker emphasized low grade GI toxicities and rare grade\u202f3/4 events",
+        "crispro_angle": "CrisPRO can predict synergistic immune signatures for KRAS G12D\u2011inhibited tumors",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate mandatory serial ctDNA and stratify by prior G12C inhibitor exposure to reduce heterogeneity",
+        "transcript_evidence": "Speaker admitted uncertainty about true circumvention of prior G12C resistance",
+        "crispro_angle": "CrisPRO can model enrichment impact on statistical power for future phase\u202fII designs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sotorasib",
+        "context": "Referenced as the original KRAS G12C off\u2011inhibitor for contrast",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "Mentioned when discussing prior G12C inhibitor exposure in refractory patients",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What proportion of patients develop KRAS amplification or other secondary KRAS mutations after zoldonrasib treatment?",
+      "Can early ctDNA clearance be validated as a surrogate endpoint for PFS/OS?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zoldonrasib (RMC\u20119805)"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicines"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-frontiers-in-precision-oncology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Dr. Timothy Yap",
+      "institution_or_pharma": "Repair Therapeutics",
+      "session_title": "new-frontiers-in-precision-oncology",
+      "talk_title": "Phase I trial of WEE1 inhibitor zetaracib + PKMYT1 inhibitor lonresorib in CCNE1/FBXW7/PPP2R1A altered tumors",
+      "rhetorical_signals": [
+        "Speaker said: \"the combination was very well\u2011tolerated\" despite targeting two cell\u2011cycle kinases",
+        "Speaker noted: \"no clinically relevant myelosuppression events were observed as a safety concern\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Zetaracib + Lonresorib combination",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential redundancy via MYT1 overexpression or alternative CDK1 regulators not inhibited by the combo",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Overall response rate 10% in a heavily pre\u2011treated cohort, indicating limited activity beyond selected subgroups",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MYTHIC Phase I (zetaracib + lonresorib)",
+        "target_biology": "Synthetic lethal targeting of replication stress in CCNE1\u2011amplified, FBXW7\u2011mutated, or PPP2R1A\u2011mutated solid tumors",
+        "flawed_enrollment_criteria": "Broad inclusion of any solid tumor with the three alterations, mixing histologies with vastly different biology and potentially diluting signal",
+        "missing_biomarker": "No stratification by cyclin E overexpression vs amplification, despite preclinical data suggesting differential sensitivity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design with heterogeneous tumor types limits interpretability of ORR and DCR",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "WEE1 + PKMYT1 dual inhibition",
+        "ip_vulnerability_note": "Both agents are small\u2011molecule kinase inhibitors with overlapping ATP\u2011binding pockets; resistance via gatekeeper mutations could affect both",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a narrow genomic subset (CCNE1/FBXW7/PPP2R1A) limits broader market applicability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized a strong safety profile (no myelosuppression) while presenting modest efficacy (10% ORR) in a heavily pre\u2011treated, biomarker\u2011selected population"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of randomized comparator",
+        "Unclear durability of responses beyond 32\u202fweeks",
+        "No biomarker\u2011response correlation beyond CCNE1 amplification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Distinguish CCNE1 amplification from overexpression to enrich for truly replication\u2011stress dependent tumors",
+        "transcript_evidence": "Speaker highlighted higher response rates in CCNE1\u2011amplified ovarian cohort (60% ORR at RP2D)",
+        "crispro_angle": "CrisPRO can integrate copy\u2011number and expression data to define a refined CCNE1 activity score for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Low hematologic toxicity suggests pairing with DNA\u2011damaging agents (e.g., PARP inhibitors) or ADCs",
+        "transcript_evidence": "Speaker noted tolerability even in heavily pre\u2011treated patients and suggested future combination studies",
+        "crispro_angle": "CrisPRO can model synthetic lethal networks to prioritize agents that synergize with WEE1/PKMYT1 inhibition",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Implement a biomarker\u2011driven enrichment strategy focusing on cyclin E overexpression plus functional replication stress signatures",
+        "transcript_evidence": "Speaker discussed variability in response across tumor types despite same genomic alteration",
+        "crispro_angle": "CrisPRO can simulate enrichment impact on power and recommend adaptive trial designs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Adavosertib (AZD1775)",
+        "context": "Mentioned as a prior WEE1 inhibitor with higher hematologic toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Rucaparib",
+        "context": "Referenced indirectly when discussing PARP inhibitor success as a benchmark for synthetic lethality",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will intermittent dosing improve efficacy without compromising safety?",
+      "What is the role of MYT1 expression as a predictive biomarker for the combination?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zetaracib",
+        "Lonresorib"
+      ],
+      "companies_to_monitor": [
+        "Repair Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-frontiers-in-precision-oncology::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Dr. Afshin Delati",
+      "institution_or_pharma": "Circle Pharma / University Hospital Seidman Cancer Center",
+      "session_title": "new-frontiers-in-precision-oncology",
+      "talk_title": "Phase I evaluation of CID\u2011078, a novel cyclin A/B RxR inhibitor",
+      "rhetorical_signals": [
+        "Speaker said: \"CID\u2011078 has been well\u2011tolerated. Minimal grade three alterations have been seen\"",
+        "Speaker noted: \"no clear signal of dose relatedness has been seen\" despite exploring a wide dose range"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CID\u2011078 (cyclin A/B RxR inhibitor)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential lack of activity in tumors without RB pathway loss; reliance on RB loss may limit patient pool",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Only two individual case responses were highlighted, suggesting limited overall activity",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CID\u2011078 Phase I dose escalation",
+        "target_biology": "Inhibition of cyclin A/B RxR interaction to induce mitotic catastrophe in RB\u2011altered tumors",
+        "flawed_enrollment_criteria": "Broad inclusion of any solid tumor with \u22651 RB pathway alteration, mixing sarcoma, SCLC, NETs, etc., which may dilute efficacy signal",
+        "missing_biomarker": "No requirement for functional RB loss confirmation (e.g., IHC) despite genomic alterations being heterogeneous",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm, early\u2011phase with heterogeneous histologies limits ability to draw efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Macrocyclic cyclin A/B RxR binding inhibitor",
+        "ip_vulnerability_note": "Novel mechanism but target is a protein\u2011protein interaction that may be overcome by compensatory cyclin D/CDK4\u20116 activity",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy in a heavily pre\u2011treated, biomarker\u2011heterogeneous population may not achieve meaningful responses"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented impressive preclinical potency and two individual patient responses while simultaneously acknowledging that pharmacodynamic target engagement data are still pending"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No pharmacodynamic confirmation of cyclin A/B engagement",
+        "Limited efficacy data beyond two case reports",
+        "Unclear biomarker threshold for RB loss"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Standardize RB loss detection via immunohistochemistry rather than genomic sequencing to enrich for responsive patients",
+        "transcript_evidence": "Speaker discussed difficulty detecting RB alterations with exome sequencing and suggested IHC as a practical method",
+        "crispro_angle": "CrisPRO can develop an IHC\u2011based scoring algorithm linked to predicted CID\u2011078 sensitivity",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Low hematologic toxicity opens possibility to combine with DNA\u2011damaging chemotherapy or PARP inhibitors",
+        "transcript_evidence": "Speaker highlighted minimal grade\u202f3/4 toxicities and good dose intensity",
+        "crispro_angle": "CrisPRO can model synergistic DNA damage accumulation when cyclin A/B inhibition is paired with PARP blockade",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Focus expansion cohorts on tumors with confirmed RB loss by IHC and high E2F transcriptional activity",
+        "transcript_evidence": "Speaker noted that E2F hyperactivation is the mechanistic basis for synthetic lethality",
+        "crispro_angle": "CrisPRO can integrate transcriptomic E2F signatures to define a refined eligibility criterion",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Adavosertib",
+        "context": "Referenced as a prior WEE1 inhibitor with higher hematologic toxicity",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the quantitative relationship between RB loss (by IHC) and clinical response to CID\u2011078?",
+      "Can pharmacodynamic biomarkers (e.g., \u03b3\u2011H2AX) be validated as early readouts of target engagement?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CID\u2011078"
+      ],
+      "companies_to_monitor": [
+        "Circle Pharma"
+      ]
+    }
+  }
+]

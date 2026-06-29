@@ -1,0 +1,779 @@
+[
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::durbin::1",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Dysregulated AKT Signaling Reprograms Osteosarcoma to Drive Selective Reliance on EP300",
+    "speaker": {
+      "name": "Adam Durbin",
+      "affiliation": "St. Jude Children's Research Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "osteosarcoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EP300",
+        "alteration": "",
+        "pathway": "transcriptional_regulation",
+        "modality": "PROTAC",
+        "compound_name": "JQUAD1",
+        "compound_id": "",
+        "ligase_or_cofactor": "cereblon",
+        "dependency_context": "AKT-dysregulated osteosarcoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AKT",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MK-2206",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AKT-activated osteosarcoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AKT",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "capivasertib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AKT-activated osteosarcoma",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PTEN loss",
+        "type": "predictive",
+        "finding": "All JQUAD1-sensitive osteosarcoma lines harbored PTEN loss or AKT amplification"
+      },
+      {
+        "name": "AKT activation signature",
+        "type": "predictive",
+        "finding": "High AKT signaling correlated with JQUAD1 sensitivity across 800 cell lines"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "low-passage osteosarcoma PDX-derived cell lines",
+        "genotype_or_key_features": "PTEN loss or AKT amplification in sensitive lines"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "neuroblastoma cell lines",
+        "genotype_or_key_features": "not specified"
+      },
+      {
+        "model_type": "orthotopic_xenograft",
+        "name": "osteosoma xenografts in mice",
+        "genotype_or_key_features": "AKT-dysregulated"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor volume reduction",
+        "value": "significant suppression vs control",
+        "n": "n=5 per group",
+        "population": "AKT-dysregulated osteosarcoma xenografts",
+        "maturity": "interim"
+      },
+      {
+        "metric": "survival extension",
+        "value": "median survival increased by ~30 days",
+        "n": "n=5 per group",
+        "population": "AKT-dysregulated osteosarcoma xenografts",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "JQUAD1 is a cereblon-recruiting PROTAC that selectively degrades EP300, sparing CBP, leading to loss of enhancer acetylation and transcriptional reprogramming in AKT\u2011activated osteosarcoma. Co\u2011inhibition of AKT with MK\u20112206 or capivasertib reduces translation rates, enhancing EP300 degradation and synergistic tumor growth inhibition.",
+    "readouts": [
+      "Western_blot (p300 degradation)",
+      "RNA-seq",
+      "ChIP-seq (H3K27ac)",
+      "cell viability assays",
+      "synergy checkerboard assays",
+      "in vivo tumor volume measurements"
+    ],
+    "key_findings": [
+      "JQUAD1 selectively degrades EP300 with minimal effect on CBP in vitro.",
+      "AKT\u2011dysregulated osteosarcoma lines (PTEN loss or AKT amplification) are uniquely sensitive to JQUAD1.",
+      "Combining JQUAD1 with AKT inhibitors (MK\u20112206 or capivasertib) yields synergistic cell death in ~10\u201115% of 800 screened cell lines.",
+      "Synergy is linked to reduced translational capacity in sensitive lines, as shown by puromycin incorporation assays.",
+      "In orthotopic osteosarcoma xenografts, the JQUAD1 + MK\u20112206 combination markedly suppresses tumor growth and prolongs survival compared to either agent alone."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance associated with high basal translational rates and lack of AKT activation.",
+      "GPC2 downregulation not observed; resistance linked to MDSC infiltration in later studies (other talks)."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MK-2206 (AKT inhibitor)",
+        "rationale": "AKT inhibition lowers translation, enhancing EP300 degradation by JQUAD1",
+        "phenotype": "synergistic tumor regression in osteosarcoma xenografts",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "capivasertib (AKT inhibitor)",
+        "rationale": "Same as MK-2206, FDA\u2011approved AKT inhibitor",
+        "phenotype": "greater synergy than MK-2206 in cell line screens",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can EP300 degradation be achieved safely in pediatric patients?",
+      "What biomarkers predict durable response beyond AKT activation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Xiaotu Ma 2018 Nature"
+      ],
+      "company_or_sponsor": [
+        "St. Jude",
+        "Broad Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::schillenbacher::2",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Cell\u2011free DNA Profiling in Relapsed/Refractory Neuroblastoma",
+    "speaker": {
+      "name": "Gudrun Schillenbacher",
+      "affiliation": "Institute not specified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroblastoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "liquid_biopsy",
+      "ctDNA",
+      "biomarker_development",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "MYCN amplification",
+        "type": "prognostic",
+        "finding": "Associated with poorer outcome in BEACON cohort"
+      },
+      {
+        "name": "cfDNA quantity",
+        "type": "prognostic",
+        "finding": "Patients with cfDNA above cohort cutoff had worse survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "BEACON trial neuroblastoma patients",
+        "genotype_or_key_features": "192 relapsed/refractory patients, various MYCN/ALK/RAS status"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "response rate with bevacizumab backbone",
+        "value": "30%",
+        "n": "n=225 total, subset not specified",
+        "population": "relapsed/refractory neuroblastoma",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "response rate with dinutuximab beta backbone",
+        "value": "35%",
+        "n": "n=225 total, subset not specified",
+        "population": "relapsed/refractory neuroblastoma",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "cfDNA concentration range",
+        "value": "10\u20131000 ng/mL plasma",
+        "n": "n=455 plasma samples",
+        "population": "BEACON patients",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Low\u2011coverage whole\u2011genome and high\u2011coverage exome sequencing of plasma cfDNA enables detection of tumor\u2011specific copy\u2011number alterations and SNVs, allowing longitudinal monitoring of clonal dynamics, emergence of resistance mutations (e.g., ALK, FGFR1), and prognostic assessment via cfDNA quantity in relapsed/refractory neuroblastoma.",
+    "readouts": [
+      "low-coverage WGS",
+      "high-coverage WES of cfDNA",
+      "copy number analysis",
+      "SNV calling",
+      "cancer cell fraction estimation",
+      "clonal phylogeny reconstruction"
+    ],
+    "key_findings": [
+      "cfDNA quantity at enrollment predicts poorer survival independent of disease burden.",
+      "Relapsed neuroblastoma shows enrichment of ALK and RAS/MAPK pathway mutations, including FGFR1.",
+      "Longitudinal cfDNA dynamics correlate with treatment response: decrease during response, re\u2011increase at progression.",
+      "Clonal hematopoiesis events (e.g., JAK3) were detected in cfDNA, highlighting need for careful interpretation.",
+      "Predicted gene expression from cfDNA fragment patterns identifies activation of oncogenes (e.g., ALK, TERT) at relapse."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Emergence of subclonal RAS/MAPK mutations during therapy suggests adaptive resistance."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can cfDNA\u2011guided early intervention improve outcomes?",
+      "What is the functional impact of identified subclonal mutations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Beacon trial publications"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::zhang::3",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Spatial TCR Profiling Reveals Barriers to T Cell Engagement in High\u2011Risk Neuroblastoma",
+    "speaker": {
+      "name": "January Zhang",
+      "affiliation": "Princess Margaret Cancer Centre, University of Toronto",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "neuroblastoma"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "spatial_biology",
+      "TCR_sequencing",
+      "biomarker_development",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TCR gamma delta clone 2",
+        "alteration": "",
+        "pathway": "immune_surveillance",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high\u2011risk neuroblastoma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "LAG3 expression",
+        "type": "exhaustion",
+        "finding": "Higher in T cells located in neural blast\u2011rich domains"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "AMBL1531 (131I\u2011MIBG) trial",
+        "genotype_or_key_features": "high\u2011risk neuroblastoma, paired diagnostic and resection FFPE"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Custom Xenium spatial transcriptomics probes track specific TCR clonotypes in situ, revealing that gamma\u2011delta T cells preferentially infiltrate neural\u2011blast rich tumor domains and adopt an exhausted phenotype (LAG3 high), while alpha\u2011beta clones show variable localization, linking spatial context to T\u2011cell functional states in high\u2011risk neuroblastoma.",
+    "readouts": [
+      "bulk TCR sequencing",
+      "Xenium spatial transcriptomics",
+      "single\u2011cell RNA\u2011seq",
+      "co\u2011occurrence and neighbor distance analyses",
+      "domain clustering"
+    ],
+    "key_findings": [
+      "Gamma\u2011delta T cells are the most spatially privileged population, with ~45% of nearest neighbors being neural blast cells.",
+      "T cells in neural\u2011blast rich domains express exhaustion marker LAG3, whereas those in immune\u2011rich domains express activation markers CD4 and FOS.",
+      "Cross\u2011patient gamma\u2011delta clone 2 is detected in tumor, blood, and cfDNA across multiple patients and time points, often adjacent to tumor cells.",
+      "Alpha\u2011beta TCR pairing can be inferred by co\u2011detection of alpha and beta probes within the same cell, confirming clonotype identity in situ.",
+      "Predicted antigen specificity for clone 2 includes NY\u2011ESO\u20111, present in ~23% of neuroblastoma tumors."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do gamma\u2011delta clones exert functional anti\u2011tumor activity or are they bystanders?",
+      "Can targeting NY\u2011ESO\u20111 improve T\u2011cell mediated clearance in neuroblastoma?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::scheuer::4",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Co\u2011targeting GPC2 and B7H3 with Bicistronic CAR T Cells in Neuroblastoma and Medulloblastoma",
+    "speaker": {
+      "name": "Patrick Scheuer",
+      "affiliation": "Children's Hospital of Philadelphia",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroblastoma",
+      "medulloblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "immunotherapy",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GPC2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_T",
+        "compound_name": "GPC2 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "high\u2011risk neuroblastoma, medulloblastoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "B7H3",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_T",
+        "compound_name": "B7H3 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "neuroblastoma, medulloblastoma",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "neuroblastoma PDXs (AKT\u2011dysregulated)",
+        "genotype_or_key_features": "GPC2 low, B7H3 high"
+      },
+      {
+        "model_type": "PDX",
+        "name": "medulloblastoma (Group 3) PDXs",
+        "genotype_or_key_features": "variable GPC2, high B7H3"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Nalm6 isogenic panel",
+        "genotype_or_key_features": "GPC2/B7H3 negative control"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor regression",
+        "value": "complete responses in majority of mice",
+        "n": "n=5\u201110 per group",
+        "population": "GPC2/B7H3 dual\u2011CAR treated neuroblastoma PDXs",
+        "maturity": "interim"
+      },
+      {
+        "metric": "T\u2011cell expansion",
+        "value": "higher peripheral expansion with bicistronic CARs",
+        "n": "n=5 per group",
+        "population": "treated mice",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Bicistronic CAR T cells co\u2011express GPC2\u2011specific and B7H3\u2011specific CARs in a single vector, enabling simultaneous targeting of two tumor antigens; this prevents antigen escape (GPC2 down\u2011regulation) and improves T\u2011cell proliferation, cytokine secretion, and tumor infiltration, leading to durable tumor control in neuroblastoma and medulloblastoma PDX models.",
+    "readouts": [
+      "in vitro cytotoxicity assays",
+      "restimulation proliferation assays",
+      "cytokine secretion ELISA",
+      "in vivo bioluminescence imaging",
+      "flow cytometry for exhaustion markers",
+      "IHC for tumor infiltration"
+    ],
+    "key_findings": [
+      "Bicistronic GPC2/B7H3 CAR T cells outperform single\u2011antigen CARs and co\u2011transduced mixtures in vitro and in vivo.",
+      "Dual CARs achieve complete tumor regressions and long\u2011term survival in neuroblastoma and medulloblastoma PDX models.",
+      "B7H3 expression remains stable under CAR pressure, while GPC2 is frequently down\u2011regulated, supporting the need for dual targeting.",
+      "Mice cured with dual CARs retain persisting memory T cells in bone marrow, conferring protection against rechallenge.",
+      "Relapse after dual CAR therapy is associated with increased MDSC infiltration."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "GPC2 down\u2011regulation observed across all treatment groups.",
+      "MDSC infiltration linked to relapse in a subset of dual\u2011CAR treated mice."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MDSC\u2011targeting agents",
+        "rationale": "MDSCs may suppress CAR T efficacy in relapsed tumors",
+        "phenotype": "potentially improved durability",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Will bicistronic CARs retain efficacy in immune\u2011competent models?",
+      "What mechanisms drive GPC2 down\u2011regulation under CAR pressure?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Dotti et al. bicistronic CAR study"
+      ],
+      "company_or_sponsor": [
+        "CHOP",
+        "Stanford"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::xing::5",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Surface\u2011Localized Nuclear Envelope Proteins as Targets in MYC\u2011Driven Group 3 Medulloblastoma",
+    "speaker": {
+      "name": "Sheila Xing",
+      "affiliation": "McMaster University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "medulloblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "targeted_therapy",
+      "immunotherapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LBR",
+        "alteration": "",
+        "pathway": "nuclear_envelope",
+        "modality": "CAR_T",
+        "compound_name": "LBR\u2011CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MYC\u2011driven Group 3 medulloblastoma",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "TMPO",
+        "alteration": "",
+        "pathway": "nuclear_envelope",
+        "modality": "CAR_T",
+        "compound_name": "TMPO\u2011CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Group 3 medulloblastoma",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "LBR expression",
+        "type": "prognostic",
+        "finding": "Higher LBR correlates with MYC amplification and recurrence"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "Group 3 medulloblastoma PDXs",
+        "genotype_or_key_features": "MYC\u2011amplified, high LBR/TMPO"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "patient\u2011derived medulloblastoma lines (CRISPR\u2011tagged LBR)",
+        "genotype_or_key_features": "LBR N\u2011terminal Halo tag"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Single\u2011domain camelid antibodies against LBR and TMPO are engineered into second\u2011generation CARs; these antigens are aberrantly presented on the plasma membrane of MYC\u2011driven Group\u202f3 medulloblastoma due to nuclear envelope fragmentation, enabling CAR\u2011T mediated cytotoxicity against a proliferative tumor subpopulation.",
+    "readouts": [
+      "TIRF microscopy",
+      "flow cytometry",
+      "in vitro cytotoxicity (E:T 4:1)",
+      "in vivo tumor clearance in mouse xenografts",
+      "RNA\u2011seq of LBR+ vs LBR\u2011 sorted cells",
+      "cell cycle analysis"
+    ],
+    "key_findings": [
+      "LBR and TMPO are mislocalized to the cell surface specifically in MYC\u2011driven Group\u202f3 medulloblastoma, not in normal neural cells.",
+      "LBR+ tumor cells display high proliferation signatures (G2/M enrichment).",
+      "LBR\u2011CAR and TMPO\u2011CAR T cells achieve potent killing in vitro at low E:T ratios.",
+      "Bispecific CAR combining LBR and TMPO binders yields superior tumor remission and durability in vivo.",
+      "Therapy\u2011adapted mouse models show enrichment of LBR expression after standard chemoradiotherapy, indicating a post\u2011treatment target."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Low antigen density of individual targets necessitates bispecific approach."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can LBR/TMPO CARs be combined with checkpoint blockade to overcome T\u2011cell exhaustion?",
+      "Is the surface localization stable over long\u2011term treatment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Mikhael et al. DSB\u2011NETs"
+      ],
+      "company_or_sponsor": [
+        "NRC",
+        "National Research Council Canada"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::wu::6",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Neuronal Activity\u2011Regulated Mechanisms Promote Growth of Diffuse Hemispheric Glioma H3\u2011G34 Mutant",
+    "speaker": {
+      "name": "Samuel Wu",
+      "affiliation": "Stanford University, Michelle Monje Lab",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "diffuse hemispheric glioma H3\u2011G34 mutant"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "tumor_microenvironment",
+      "neuroscience",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "N\u2011CADHERIN",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "activity\u2011induced proliferation of G34 glioma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Neurofascin",
+        "alteration": "",
+        "pathway": "cell_adhesion",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "migration of G34 glioma",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "patient\u2011derived H3\u2011G34 mutant glioma cultures",
+        "genotype_or_key_features": "H3\u2011G34R/V mutation"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "hippocampal xenografts in mice",
+        "genotype_or_key_features": "G34 glioma cells implanted"
+      },
+      {
+        "model_type": "optogenetic mouse",
+        "name": "ChR2\u2011expressing cortical neurons",
+        "genotype_or_key_features": "glutamatergic or GABAergic activation"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Neuronal activity, via both glutamatergic and GABAergic circuits, enhances proliferation of H3\u2011G34 glioma cells through synaptic integration and release of activity\u2011regulated secreted factors; proteomic analysis identified N\u2011cadherin and neurofascin as novel paracrine mediators that promote tumor growth and migration.",
+    "readouts": [
+      "immunoelectron microscopy",
+      "patch\u2011clamp electrophysiology",
+      "optogenetic stimulation",
+      "proliferation assays",
+      "conditioned media assays",
+      "proteomics of conditioned media",
+      "spheroid migration assay",
+      "RNA\u2011seq",
+      "KEGG pathway analysis"
+    ],
+    "key_findings": [
+      "Electron microscopy shows ~10% neuron\u2011to\u2011glioma synapses and glioma\u2011to\u2011glioma synapses in G34 xenografts.",
+      "Glioma cells exhibit evoked EPSCs and spontaneous activity, indicating functional integration.",
+      "Pharmacologic blockade of neuronal activity (TTX, NBQX) abolishes neuron\u2011induced proliferation boost.",
+      "Optogenetic activation of either glutamatergic or GABAergic neurons increases tumor proliferation in vivo.",
+      "Proteomics of activity\u2011stimulated conditioned media identifies N\u2011cadherin and neurofascin as upregulated secreted factors.",
+      "Recombinant N\u2011cadherin promotes proliferation; neurofascin enhances glioma migration."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "perampanel (AMPA antagonist)",
+        "rationale": "Block glutamatergic activity\u2011driven proliferation",
+        "phenotype": "potential reduction of activity\u2011dependent growth",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "keppra (levetiracetam, GABAergic modulator)",
+        "rationale": "Modulate GABAergic circuit influence on tumor",
+        "phenotype": "potential attenuation of activity\u2011driven proliferation",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What receptors mediate N\u2011cadherin and neurofascin signaling on G34 cells?",
+      "Can targeting these adhesion molecules improve survival in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "pediatric-cancer-from-mechanism-to-translation::locke::7",
+    "session_title": "pediatric-cancer-from-mechanism-to-translation",
+    "talk_title": "Targeting MIB and REM4 with REM422 in Pediatric T\u2011ALL",
+    "speaker": {
+      "name": "Richard Locke",
+      "affiliation": "Children's Cancer Institute, Sydney",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "T\u2011cell acute lymphoblastic leukemia"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "small_molecule_inhibitor",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MIB",
+        "alteration": "",
+        "pathway": "NOTCH signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "REM422",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MIB\u2011dependent T\u2011ALL",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MIB mRNA expression",
+        "type": "predictive",
+        "finding": "Higher MIB levels observed in ALL PDXs versus solid tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "BEACON neuroblastoma trial (context only)",
+        "genotype_or_key_features": "not applicable"
+      },
+      {
+        "model_type": "PDX",
+        "name": "30 pediatric ALL PDXs (including 10 T\u2011ALL)",
+        "genotype_or_key_features": "various MIB expression levels"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "event\u2011free survival extension",
+        "value": "median +21 days (B\u2011ALL) / +33 days (T\u2011ALL)",
+        "n": "30 PDXs, 1 mouse per arm",
+        "population": "pediatric ALL PDXs treated with REM422",
+        "maturity": "interim"
+      },
+      {
+        "metric": "objective response",
+        "value": "4/20 B\u2011ALL responses; 7/10 T\u2011ALL responses (4 CR, 2 MCR)",
+        "n": "30 PDXs",
+        "population": "pediatric ALL subtypes",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "REM422 is an oral small\u2011molecule that promotes inclusion of a poison exon in MIB pre\u2011mRNA, triggering nonsense\u2011mediated decay and loss of MIB protein, thereby inhibiting NOTCH pathway signaling essential for T\u2011ALL survival.",
+    "readouts": [
+      "Western blot for MIB protein",
+      "ex vivo dose\u2011response viability",
+      "peripheral blood human CD45 monitoring",
+      "event\u2011free survival curves",
+      "objective response classification"
+    ],
+    "key_findings": [
+      "REM422 induces rapid (2\u201124\u202fh) depletion of MIB protein in ALL PDX cells at nanomolar concentrations.",
+      "In vivo, daily oral REM422 (5\u202fmg/kg) is well tolerated and extends EFS across diverse ALL subtypes.",
+      "T\u2011ALL PDXs show greater benefit (median +33\u202fdays, T/C\u202f=\u202f3.6) than B\u2011ALL.",
+      "Seven of ten T\u2011ALL models achieve complete or maintained complete responses, including durable remissions beyond treatment cessation.",
+      "MIB expression alone does not fully predict response, indicating additional determinants of sensitivity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Some T\u2011ALL PDXs with high MIB expression did not respond, suggesting alternative survival pathways."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What biomarkers beyond MIB expression predict REM422 sensitivity?",
+      "Will combining REM422 with NOTCH inhibitors enhance efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Remix Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

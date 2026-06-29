@@ -1,0 +1,287 @@
+[
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Gina",
+      "institution_or_pharma": "Memphis Cancer Center",
+      "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+      "talk_title": "Metabolic vulnerabilities of Nrf2\u2011active cancer cells",
+      "rhetorical_signals": [
+        "Speaker said: \"we can't fully distinguish whether the labeled cystine entered as cystine or cysteine\"",
+        "Speaker said: \"we were surprised to find that knocking out both disulfide reductases only had a moderate effect on tumor number\"",
+        "Speaker said: \"we think that the microenvironment is very different in pancreas compared to lung\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy data for cystine transport inhibitors",
+        "No OS or tumor burden endpoints reported",
+        "Unclear contribution of macrophage\u2011derived cysteine in vivo"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lung tumors show high interstitial cysteine but low cystine, suggesting cystine\u2011uptake inhibitors would be effective only in cystine\u2011dependent tumors.",
+        "transcript_evidence": "Speaker said: \"we would predict that if we blocked cystine uptake, this would be very potent to a lung tumor model, maybe less potent to a liver cancer model\"",
+        "crispro_angle": "CrisPRO could develop a predictive model linking tumor interstitial cysteine/cystine ratios to response to cystine\u2011transport blockade.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Macrophage\u2011derived cysteine rescues erastin\u2011treated lung cancer cells, indicating a microenvironmental resistance mechanism.",
+        "transcript_evidence": "Speaker said: \"if we co\u2011culture our lung cancer cells with macrophages, it will rescue erastin treatment\"",
+        "crispro_angle": "CrisPRO can identify combinatorial targets (e.g., cystine transport + macrophage cysteine secretion) to overcome this resistance.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CB\u2011839 (glutaminase inhibitor) shows potency only in standard RPMI but not in tumor\u2011like interstitial fluid, suggesting a need for combination with agents that restore cystine dependence.",
+        "transcript_evidence": "Speaker said: \"in RPMI, cells become very sensitive to CB\u2011839, but in sTIF they really don't care\"",
+        "crispro_angle": "CrisPRO can model metabolic flux changes to predict synergistic drug pairs that re\u2011sensitize tumors to glutaminase inhibition.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the precise source of the high interstitial cysteine in lung tumors?",
+      "Can selective inhibition of GGT1 be achieved without immune neutralization?",
+      "How does the tumor microenvironment regulate the balance between cystine uptake and transsulfuration in different cancer types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CB\u2011839",
+        "DRP\u2011104",
+        "GGT inhibitor (GGSTOP)",
+        "cysteine transport inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Novartis (CB\u2011839)",
+        "AstraZeneca (DRP\u2011104)",
+        "GlycoMimetics (GGT inhibitors)"
+      ]
+    }
+  },
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Ping\u2011Chi Ho",
+      "institution_or_pharma": "Lausanne, Switzerland",
+      "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+      "talk_title": "Mitochondrial protein degradation drives T\u2011cell exhaustion via regulatory heme",
+      "rhetorical_signals": [
+        "Speaker said: \"they start to degrade mitochondria protein to ensure they can still stay there\"",
+        "Speaker said: \"once you treat the cells with MG132, those T cell accumulate damaged mitochondria, they are terminal exhausted T cell. They express very low level of Bach2. But once you treat the MG132, you start to see Bach2 increase\"",
+        "Speaker said: \"we think that this degradation machinery can trigger the exhaustion commitment\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Proteasome activity in exhausted T cells",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Degradation of mitochondrial hemoproteins releases free heme that binds BACH2, driving exhaustion",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proteasome inhibitor (bortezomib) use in T\u2011cell engineering",
+        "ip_vulnerability_note": "Speaker demonstrated that low\u2011dose bortezomib improves CAR\u2011T function, suggesting the platform is sensitive to proteasome modulation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Current CAR\u2011T manufacturing does not incorporate proteasome modulation, potentially missing an efficacy lever"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that damaged mitochondria lead to increased proteasome\u2011mediated degradation of mitochondrial proteins, yet concluded that blocking proteasome activity (with bortezomib) restores stem\u2011like T\u2011cell phenotype, ignoring that proteasome inhibition could also impair antigen processing"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Direct measurement of nuclear free heme levels",
+        "In vivo validation of BACH2\u2011heme binding as the causal link",
+        "Long\u2011term safety of proteasome inhibition in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the heme\u2011BACH2 interaction could prevent exhaustion without global proteasome inhibition.",
+        "transcript_evidence": "Speaker said: \"when Heme become freely available, you shut down BACH2, you degrade BACH2, and then BLIMP1 will start to be expressed\"",
+        "crispro_angle": "CrisPRO can model heme\u2011binding pockets on BACH2 and screen for small molecules that block heme association.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine low\u2011dose bortezomib with checkpoint blockade to sustain progenitor\u2011exhausted T cells.",
+        "transcript_evidence": "Speaker said: \"prevent this entire proteasome activity to block mitochondria protein degradation process, you'll be able to reverse the T cell exhaustion pattern\"",
+        "crispro_angle": "CrisPRO can predict synergistic dosing schedules that maximize stemness markers while minimizing toxicity.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design CAR\u2011T trials that stratify patients by baseline proteasome gene expression scores.",
+        "transcript_evidence": "Speaker said: \"response negatively associated with their proteasome gene expression score\"",
+        "crispro_angle": "CrisPRO can generate a biomarker algorithm to select low\u2011proteasome\u2011activity donors for manufacturing.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "bortezomib",
+        "context": "used as a proteasome inhibitor to improve CAR\u2011T function",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the downstream transcriptional programs activated by regulatory heme beyond BACH2?",
+      "Can selective inhibition of the heme\u2011chaperone PGRMC2 replicate the effects of proteasome inhibition?",
+      "What is the impact of chronic proteasome inhibition on antigen presentation in T cells?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "bortezomib",
+        "CAR\u2011T manufacturing protocols",
+        "hemin analogs"
+      ],
+      "companies_to_monitor": [
+        "Celgene (bortezomib)",
+        "Novartis (CAR\u2011T platforms)",
+        "GSK (hemin\u2011targeting programs)"
+      ]
+    }
+  },
+  {
+    "talk_id": "cancer-metabolism-as-a-therapeutic-frontier::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Stanley Huang",
+      "institution_or_pharma": "Ohio State University",
+      "session_title": "cancer-metabolism-as-a-therapeutic-frontier",
+      "talk_title": "Mitochondrial chaperone TREM1 regulates immunosuppressive tumor\u2011associated macrophages",
+      "rhetorical_signals": [
+        "Speaker said: \"when you delete TREM1, mitochondrial function become hyper\"",
+        "Speaker said: \"TIM\u20114 activation suppresses TREM1 expression via AMPK\u2011MBK signaling\"",
+        "Speaker said: \"combination of TIM\u20114 antibody and GMG3 inhibitor strongly reduces tumor burden\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TREM1\u2011low tumor\u2011associated macrophages",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Loss of TREM1 leads to hyperactive mitochondrial oxidative phosphorylation that fuels immunosuppressive M2\u2011like phenotype",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "TIM\u20114 blockade to restore TREM1 in TAMs",
+        "flawed_enrollment_criteria": "No biomarker stratification for TIM\u20114 high vs low macrophage populations",
+        "missing_biomarker": "Tumor\u2011associated macrophage TIM\u20114 expression level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering due to heterogeneous TAM phenotypes",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TIM\u20114 monoclonal antibody",
+        "ip_vulnerability_note": "Speaker indicated that TIM\u20114 blockade alone only modestly reduces immunosuppression, suggesting redundancy with other phosphatidylserine receptors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Monotherapy with TIM\u20114 antibody may be insufficient without concurrent metabolic or epigenetic targeting"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "GMG3 inhibitor (GSKJ4)",
+        "ip_vulnerability_note": "Efficacy depends on upstream TIM\u20114 signaling; loss of TIM\u20114 can diminish drug impact",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires combination to achieve durable tumor control"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that TREM1 loss increases mitochondrial activity yet concluded that restoring TREM1 will suppress oxidative phosphorylation, without addressing how TREM1 mechanistically restrains complex II activity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of human clinical data for TIM\u20114 or GMG3 targeting",
+        "No pharmacokinetic/pharmacodynamic data for TREM1 modulation",
+        "Unclear safety profile of combined TIM\u20114 antibody and GMG3 inhibitor"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a diagnostic assay for TIM\u20114 high vs low TAMs to select patients for TIM\u20114 antibody therapy.",
+        "transcript_evidence": "Speaker said: \"tumor\u2011associated macrophages have high TIM\u20114 expression level\"",
+        "crispro_angle": "CrisPRO can integrate single\u2011cell RNA\u2011seq and imaging data to generate a TIM\u20114 TAM score for patient enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TIM\u20114 blockade with GMG3 inhibition to synergistically reduce immunosuppressive TAM metabolism.",
+        "transcript_evidence": "Speaker said: \"combination treatment make numbers of tumor\u2011associated macrophage decrease and increase T cell infiltration\"",
+        "crispro_angle": "CrisPRO can model metabolic flux changes to predict optimal dosing ratios for the two agents.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Repurpose existing TIM\u20114 antibodies (originally developed for autoimmune disease) for oncology based on the presented mechanism.",
+        "transcript_evidence": "Speaker said: \"TIM\u20114 monoclonal antibody shows same effect as genetic knockout\"",
+        "crispro_angle": "CrisPRO can assess target engagement and off\u2011target risk in tumor versus normal tissue.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CD47\u2011SIRPA blockade",
+        "context": "mentioned as a prominent macrophage checkpoint not covered in the talk",
+        "sentiment": "critical"
+      },
+      {
+        "name": "CSF1R inhibitors",
+        "context": "cited as having limited clinical benefit",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the direct molecular interaction between AMPK\u2011MBK signaling and TREM1 transcription?",
+      "Can selective activation of TREM1 be achieved without affecting other mitochondrial chaperones?",
+      "How does TIM\u20114 mediated phosphatidylserine uptake quantitatively contribute to \u03b1\u2011KG production in TAMs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TIM\u20114 monoclonal antibody candidates",
+        "GSKJ4 (GMG3 inhibitor)",
+        "TREM1 modulators (if any in preclinical pipelines)"
+      ],
+      "companies_to_monitor": [
+        "Genentech (TIM\u20114 programs)",
+        "GlaxoSmithKline (GSKJ4)",
+        "AstraZeneca (macrophage\u2011targeted therapies)"
+      ]
+    }
+  }
+]

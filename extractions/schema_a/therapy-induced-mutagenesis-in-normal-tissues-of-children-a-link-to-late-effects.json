@@ -1,0 +1,414 @@
+[
+  {
+    "talk_id": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects::sun::1",
+    "session_title": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects",
+    "talk_title": "Therapy\u2011induced mutagenesis underlying clonal hematopoiesis and second cancers in pediatric cancer survivors",
+    "speaker": {
+      "name": "Yingwei Sun",
+      "affiliation": "St. Jude Children's Research Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML",
+      "Hodgkin lymphoma",
+      "breast cancer",
+      "meningioma",
+      "thyroid cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "mutation_signature",
+      "cancer_vaccines",
+      "tumor_microenvironment",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "STAT3",
+        "alteration": "hotspot",
+        "pathway": "JAK/STAT",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Hodgkin lymphoma survivors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNMT3A",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pediatric cancer survivors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "St. Jude LIFE cohort",
+        "genotype_or_key_features": "~3000 survivors, ~3300 controls"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Hodgkin lymphoma survivor blood cells",
+        "genotype_or_key_features": "STAT3 mutant CD4/CD8 T cells"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "MCF10A",
+        "genotype_or_key_features": "treated with cyclophosphamide, cisplatin, cytarabine"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "CH prevalence",
+        "value": "accelerated",
+        "confidence_interval": "",
+        "n": "n=3000 survivors",
+        "population": "pediatric cancer survivors",
+        "comparator": "age\u2011matched controls",
+        "maturity": "interim"
+      },
+      {
+        "metric": "STAT3 hotspot enrichment",
+        "value": "3\u201110\u2011fold",
+        "confidence_interval": "",
+        "n": "n=3 Hodgkin lymphoma survivors (single\u2011cell analysis)",
+        "population": "Hodgkin lymphoma survivors",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Mutation burden increase (cyclophosphamide in vitro)",
+        "value": "median +600 SNVs",
+        "confidence_interval": "",
+        "n": "n=3 triplicates",
+        "population": "MCF10A cells",
+        "comparator": "untreated control",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Sun's group used deep targeted sequencing and single\u2011cell mutational signature analysis to show that therapy\u2011related clonal hematopoiesis is accelerated in pediatric cancer survivors, with STAT3 hotspot mutations in Hodgkin lymphoma survivors linked to a SBS25 signature caused by procapsid exposure, and distinct cell\u2011type enrichment patterns (e.g., CD4/CD8 T cells). They also demonstrated elevated mutation burdens and therapy\u2011associated signatures (cisplatin, nitrogen mustard) in secondary neoplasms, linking specific chemotherapies to mutational signatures and structural alterations such as NF2 disruption in meningioma.",
+    "readouts": [
+      "targeted deep sequencing",
+      "single\u2011cell Tapestry platform (DNA + antibody panel)",
+      "whole\u2011genome single\u2011cell sequencing",
+      "full\u2011length RNA\u2011seq (single\u2011cell Kinex)",
+      "mutational signature analysis (COSMIC SBS)",
+      "in vitro cell line WGS"
+    ],
+    "key_findings": [
+      "Accelerated clonal hematopoiesis observed in ~3000 pediatric cancer survivors versus controls.",
+      "Therapy\u2011related STAT3 hotspot mutations in Hodgkin lymphoma survivors are 3\u201110\u2011fold enriched in CD4/CD8 T cells and show 100% confidence of SBS25 signature linkage to procapsid exposure.",
+      "DNMT3A mutations display cell\u2011type specific enrichment (monocytes vs double\u2011negative CD3+ T cells).",
+      "Secondary neoplasms (breast, meningioma, thyroid) exhibit elevated SNV/indel burdens and cisplatin\u2011related signatures, confirming long\u2011term mutagenic imprint of childhood therapy.",
+      "In vitro cyclophosphamide treatment of MCF10A cells increases mutation burden (~600 SNVs) and reproduces SBS5\u2011like flat signatures.",
+      "NF2 structural disruption and kinase fusions are enriched in radiation\u2011associated secondary meningioma and thyroid cancers, respectively."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "STAT3 mutant T\u2011cell clones may contribute to immune dysfunction and lifelong graft\u2011versus\u2011host\u2011like risk in Hodgkin lymphoma survivors.",
+      "Platinum\u2011induced SBS5\u2011like signatures appear dose\u2011dependent but are attenuated in combination with cytarabine."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cytarabine",
+        "rationale": "Assess interaction of platinum with non\u2011mutagenic chemotherapy",
+        "phenotype": "slightly reduced mutation burden compared with platinum alone",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can dosage and timing of specific chemotherapies be quantitatively linked to SBS burden in individual survivors?",
+      "What is the functional impact of STAT3\u2011mutant T\u2011cell clones on long\u2011term immune competence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Hagiwara et al. 2022 Cancer Discovery"
+      ],
+      "company_or_sponsor": [
+        "National Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects::benatti::2",
+    "session_title": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects",
+    "talk_title": "Liver\u2011specific platinum mutagenesis in children revealed by duplex (NanoSeq) sequencing",
+    "speaker": {
+      "name": "Sam Benatti",
+      "affiliation": "Wellcome Sanger Institute / Cambridge Children Research Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "hepatoblastoma",
+      "liver cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "mutation_signature",
+      "cancer_vaccines",
+      "translational",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "platinum\u2011DNA adducts",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": "cisplatin / carboplatin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pediatric liver tissue",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Pediatric hepatoblastoma resections",
+        "genotype_or_key_features": "155 normal liver biopsies from children treated with platinum +/- SDS"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Liver tumor cell line (cisplatin\u2011exposed)",
+        "genotype_or_key_features": "exposed to cisplatin in vitro"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Breast cancer cell line (cisplatin\u2011exposed)",
+        "genotype_or_key_features": "negative control for liver\u2011specific signature"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Mutation burden",
+        "value": "elevated to adult levels",
+        "confidence_interval": "",
+        "n": "n=155 liver biopsies",
+        "population": "platinum\u2011treated pediatric liver tissue",
+        "comparator": "untreated normal liver",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Signature detection",
+        "value": "present in 6/6 platinum\u2011exposed recurrent hepatoblastoma tumors",
+        "confidence_interval": "",
+        "n": "n=6 tumors",
+        "population": "recurrent hepatoblastoma",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Coding driver\u2011like mutations",
+        "value": "\u22481,500 of 22,000 non\u2011synonymous variants",
+        "confidence_interval": "",
+        "n": "n\u2248110,000 DNA molecules interrogated",
+        "population": "normal liver",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Benatti's team applied duplex (NanoSeq) sequencing to normal pediatric liver tissue after platinum chemotherapy, uncovering a novel liver\u2011specific mutational signature distinct from canonical platinum signatures; this signature correlates with exposure, is absent in unexposed liver, and is detectable in recurrent hepatoblastoma tumors, indicating pervasive platinum\u2011induced mutagenesis and potential functional driver\u2011like mutations in normal liver cells.",
+    "readouts": [
+      "NanoSeq duplex sequencing",
+      "mutational signature extraction (COSMIC)",
+      "whole\u2011genome sequencing of tumors",
+      "cell line WGS for validation"
+    ],
+    "key_findings": [
+      "Normal liver tissue from platinum\u2011treated children shows mutation burdens comparable to adult liver, far exceeding untreated pediatric liver.",
+      "A novel liver\u2011specific platinum mutational signature was identified, distinct from known SBS31/35 signatures.",
+      "The liver\u2011specific signature is present in all platinum\u2011exposed normal liver samples and in six recurrent hepatoblastoma tumors previously treated with cisplatin.",
+      "Cell\u2011line experiments confirm the signature appears in liver tumor cells exposed to cisplatin but not in breast cancer cells, indicating tissue specificity.",
+      "Approximately 1,500 coding variants with potential driver impact were detected in normal liver, most attributable to the novel signature."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "The liver\u2011specific signature is absent after carboplatin alone, suggesting differential mutagenic mechanisms between platinum agents.",
+      "Signature detection depends on tissue type, highlighting organ\u2011specific DNA repair or adduct processing."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "SDS (chelator)",
+        "rationale": "Assess whether ototoxicity\u2011preventing chelator modulates platinum\u2011induced mutagenesis",
+        "phenotype": "no clear reduction of signature observed",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What molecular mechanisms underlie the liver\u2011specific platinum signature?",
+      "Do the identified driver\u2011like mutations contribute to late\u2011onset liver disease or secondary malignancies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nuria Lopez\u2011Bigas 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Wellcome Trust"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects::boxtel::3",
+    "session_title": "therapy-induced-mutagenesis-in-normal-tissues-of-children-a-link-to-late-effects",
+    "talk_title": "Single\u2011cell whole\u2011genome and transcriptome analysis of mutagenesis in hematopoietic stem cells of childhood cancer survivors",
+    "speaker": {
+      "name": "Ruben van Boxtel",
+      "affiliation": "Princess Maxima Center, Utrecht, Netherlands",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "mutation_signature",
+      "single_cell",
+      "cancer_vaccines",
+      "translational",
+      "basic_science",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SBS87",
+        "alteration": "",
+        "pathway": "thiopurine_metabolism",
+        "modality": "unspecified",
+        "compound_name": "6\u2011mercaptopurine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ALL patients treated with thiopurines",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SBS31/35",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "cisplatin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "platinum\u2011treated survivors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SBS87 (thiopurine) signature",
+        "type": "predictive",
+        "assay": "single\u2011cell WGS signature extraction",
+        "finding": "present in a subset of HSCs from ALL patients treated with 6\u2011MP"
+      },
+      {
+        "name": "Platinum signature",
+        "type": "predictive",
+        "assay": "single\u2011cell WGS",
+        "finding": "detected in HSCs of survivors exposed to cisplatin/carboplatin"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Childhood cancer survivor cohort with therapy\u2011related AML",
+        "genotype_or_key_features": "samples at diagnosis, post\u2011treatment, and AML onset"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Umbilical cord blood HSCs",
+        "genotype_or_key_features": "treated in vitro with cyclophosphamide (mafiosfamide) or 6\u2011MP"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Mutation load increase post\u2011treatment",
+        "value": "up to 3\u2011fold higher",
+        "confidence_interval": "",
+        "n": "n\u2248200 single cells across patients",
+        "population": "HSCs from ALL survivors",
+        "comparator": "pre\u2011treatment baseline",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Signature contribution (thiopurine)",
+        "value": "present in ~30% of cells",
+        "confidence_interval": "",
+        "n": "n=100 cells (2 patients)",
+        "population": "post\u2011induction HSCs",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Clock\u2011like signature acceleration",
+        "value": "up to 5\u2011fold increase",
+        "confidence_interval": "",
+        "n": "n=150 cells",
+        "population": "post\u2011treatment HSCs",
+        "comparator": "age\u2011matched controls",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Van Boxtel's group combined primary\u2011template\u2011directed amplification (PTA) single\u2011cell whole\u2011genome sequencing with matched transcriptomics to quantify chemotherapy\u2011induced mutagenesis in hematopoietic stem cells; they identified platinum\u2011 and thiopurine\u2011specific signatures (SBS31/35, SBS87) in subsets of cells, showed that mutation burden rises after therapy but can regress over years, and linked differential expression of DNA\u2011repair and apoptotic pathways to cells bearing these signatures, suggesting treatment\u2011specific transcriptional programs modulate mutagenesis.",
+    "readouts": [
+      "PTA single\u2011cell whole\u2011genome sequencing",
+      "single\u2011cell RNA\u2011seq",
+      "mutational signature extraction (COSMIC)",
+      "phylogenetic tree reconstruction",
+      "machine\u2011learning artifact filtering"
+    ],
+    "key_findings": [
+      "All examined ALL survivors show increased mutation burden post\u2011treatment (up to 3\u2011fold), driven by platinum and thiopurine signatures.",
+      "Thiopurine (SBS87) signature appears only in a subset of HSCs, whereas platinum signatures are more ubiquitous.",
+      "Mutation burden can decline over a decade, returning to baseline levels, suggesting selective loss or replacement of heavily mutated clones.",
+      "Differential expression analysis reveals enrichment of DNA\u2011repair, apoptosis, and autophagy pathways in cells with high thiopurine or clock\u2011like mutagenesis, without differences in cell\u2011cycle phase.",
+      "In vitro exposure of cord\u2011blood HSCs to mafosfamide (active cyclophosphamide) recapitulates a flat, clock\u2011like signature, confirming drug\u2011specific mutagenic patterns."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Cells lacking the thiopurine signature show higher expression of DNA\u2011repair genes, suggesting a protective transcriptional program.",
+      "Clonality of HSCs remains polyclonal post\u2011treatment, indicating no dominant expansion of mutated clones."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ganciclovir (antiviral)",
+        "rationale": "Assess mutagenic potential of antiviral drugs used during HSCT",
+        "phenotype": "identified novel mutational signatures in HSCT patients",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What molecular pathways determine why some HSCs acquire high mutation loads while others remain protected?",
+      "Can targeted modulation of identified DNA\u2011repair pathways reduce chemotherapy\u2011induced mutagenesis in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Campbell et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Princess Maxima Center"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Alan D'Andrea",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "DNA damage response and synthetic lethality in cancer",
+      "talk_title": "Synthetic lethality opportunities for tumors with MMEJ deficiency",
+      "rhetorical_signals": [
+        "Speaker said: \"we found such a tumor, and that tumor is a Ewing sarcoma\"",
+        "Speaker said: \"we think rhabdoid tumor is going to fall into that category\"",
+        "Speaker said: \"we have a biomarker for MMEJ deficiency, the splicing of this exon 25\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HR inhibitor (CDK12 inhibitor)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of data on HR inhibitor efficacy in other MMEJ\u2011deficient tumors beyond Ewing sarcoma",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy data for HR inhibitors in MMEJ\u2011deficient tumors",
+        "No OS or PFS endpoints presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use exon 25 skipping of POLQ as a biomarker to identify MMEJ\u2011deficient tumors for HR\u2011inhibitor therapy",
+        "transcript_evidence": "Speaker said: \"we have a biomarker for MMEJ deficiency, the splicing of this exon 25\"",
+        "crispro_angle": "CrisPRO can integrate exon\u2011skipping RNA\u2011seq signatures with genomic data to prospectively stratify patients for HR\u2011inhibitor trials",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Leverage POLQ inhibitors in combination with HR inhibitors for tumors that retain POLQ expression after EWS\u2011FLI1 loss",
+        "transcript_evidence": "Speaker said: \"if you knock out EWS\u2011FLI1, you can make the cells resistant by restoring MMEJ activity\"",
+        "crispro_angle": "CrisPRO can model synthetic\u2011lethal networks to prioritize POLQ\u2011HR inhibitor combos in resistant settings",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CDK12 inhibitor (Nathaniel Gray/Tim Stegmeyer)",
+        "context": "used as synthetic\u2011lethal partner for MMEJ\u2011deficient Ewing sarcoma",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "PARP inhibitors",
+        "context": "mentioned as parallel synthetic\u2011lethal strategy for HR\u2011deficient tumors",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can HR inhibitors be safely combined with standard alkylating regimens in pediatric Ewing sarcoma patients?",
+      "What other tumor types harbor MMEJ deficiency detectable by POLQ exon 25 skipping?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CDK12 inhibitor (preclinical lead from Gray lab)",
+        "POLQ inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Dana\u2011Farber Cancer Institute collaborations",
+        "Companies developing CDK12 inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sharon Kantor",
+      "institution_or_pharma": "University of Massachusetts",
+      "session_title": "DNA damage response and synthetic lethality in cancer",
+      "talk_title": "Replication gaps as a biomarker and therapeutic target",
+      "rhetorical_signals": [
+        "Speaker said: \"we think it's about gap repair protection, good lagging strand maturation\"",
+        "Speaker said: \"when you lose 53BP1, you don't have the BRCA1 positioning pathway, and you don't have the PARP positioning pathway\"",
+        "Speaker said: \"this would argue it's about target loss, not restoration of DNA repair\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "FEN1 inhibitor in 53BP1\u2011deficient background",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of functional FEN1 recruitment when both BRCA1 and 53BP1 are lost, leading to no drug target",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      },
+      {
+        "failing_compound_or_target": "PARP inhibitor in 53BP1\u2011deficient cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "PARP activity is lost when 53BP1 is absent, so PARP inhibition cannot be effective",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that 53BP1 loss restores PARP activity at the fork, yet concluded that loss of 53BP1 makes cells resistant to PARP inhibitors \u2013 contradictory because the target (PARP activity) is absent"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical validation of the GAP signature as a predictive biomarker",
+        "No in\u2011vivo efficacy data for FEN1 or PARP inhibitors stratified by gap scores"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a high\u2011throughput assay for replication\u2011gap signatures to select patients for PARP or FEN1 inhibitor trials",
+        "transcript_evidence": "Speaker said: \"we can look at the nick translation assay as a biomarker of response without adding DNA damage\"",
+        "crispro_angle": "CrisPRO can model gap formation dynamics and predict which tumors will exhibit high GAP scores, enabling companion\u2011diagnostic development",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the backup DNA2/XRCC1/Ligase\u202fIII pathway in 53BP1\u2011deficient tumors where PARP/FEN1 are ineffective",
+        "transcript_evidence": "Speaker said: \"ligase\u202fIII loss resensitizes double\u2011knockout cells to PARP inhibition\"",
+        "crispro_angle": "CrisPRO can simulate synthetic\u2011lethal networks to prioritize combination of Ligase\u202fIII inhibitors with PARP/FEN1 agents",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PARP inhibitors",
+        "context": "discussed as part of synthetic\u2011lethal strategy and as ineffective in 53BP1\u2011deficient cells",
+        "sentiment": "critical"
+      },
+      {
+        "name": "FEN1 inhibitors",
+        "context": "shown to synergize with PARP loss but ineffective when 53BP1 is absent",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Merck (collaboration for gap detection)",
+        "context": "providing resources for developing gap detection tools",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can the GAP signature be standardized for clinical use across tumor types?",
+      "What is the therapeutic window for FEN1 inhibition in patients with high gap scores?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "FEN1 inhibitor programs",
+        "Ligase\u202fIII inhibitor candidates"
+      ],
+      "companies_to_monitor": [
+        "Merck",
+        "Companies developing gap\u2011detection platforms"
+      ]
+    }
+  },
+  {
+    "talk_id": "dna-damage-response-and-synthetic-lethality-in-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Pamela Munster",
+      "institution_or_pharma": "University of California, San Francisco",
+      "session_title": "DNA damage response and synthetic lethality in cancer",
+      "talk_title": "Clinical landscape of PARP inhibition and beyond",
+      "rhetorical_signals": [
+        "Speaker said: \"PARP inhibitors are approved, but the approval is really only in limited indication\"",
+        "Speaker said: \"ATM mutation in prostate cancer shows limited benefit despite FDA approval\"",
+        "Speaker said: \"the duration of response can often be very prolonged\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PARP inhibitor in ATM\u2011mutated prostate cancer",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "ATM mutation does not consistently produce HRD; biallelic loss or protein loss may be required",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients with ATM mutation still derive benefit",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      },
+      {
+        "failing_compound_or_target": "PARP inhibitor in CHEK2\u2011mutated cancers",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "CHEK2 mutations are heterogeneous and not all confer HRD",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PROfound (olaparib in metastatic prostate cancer)",
+        "target_biology": "PARP inhibition in HRR\u2011mutated prostate cancer",
+        "flawed_enrollment_criteria": "Broad inclusion of all HRR\u2011mutated patients without stratifying by functional HRD or biallelic loss",
+        "missing_biomarker": "Protein\u2011level loss of ATM or functional HRD assay",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Subgroup analyses underpowered for less common mutations (ATM, CHEK2)",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "KEYLINK\u2011007 (PARP + immunotherapy, tumor\u2011agnostic)",
+        "target_biology": "Synthetic lethality via PARP inhibition plus checkpoint blockade",
+        "flawed_enrollment_criteria": "Enrolled patients based on any HRR mutation or HRD score >16, mixing BRCA\u2011high responders with low\u2011response non\u2011BRCA alterations",
+        "missing_biomarker": "Gap\u2011signature or replication\u2011stress biomarkers to refine responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Heterogeneous population dilutes OS signal for non\u2011BRCA subcohorts",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Broad PARP inhibitor class (olaparib, niraparib, talazoparib, rucaparib)",
+        "ip_vulnerability_note": "All share similar ATP\u2011competitive binding; no clear differentiation in efficacy for non\u2011BRCA mutations",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing label expansions based on limited biomarker data may dilute efficacy signals"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted FDA approval of PARP inhibitors for ATM\u2011mutated prostate cancer, then presented data showing minimal benefit in that subgroup \u2013 contradictory regulatory labeling vs observed efficacy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_OS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective biomarker stratification for ATM and CHEK2 mutations",
+        "Limited data on combination sequencing (PARP + radiation) in HRD\u2011negative tumors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a composite biomarker (biallelic loss + protein expression) to better select ATM\u2011mutated patients for PARP therapy",
+        "transcript_evidence": "Speaker said: \"ATM mutation in prostate cancer shows limited benefit despite FDA approval\"",
+        "crispro_angle": "CrisPRO can integrate genomic, transcriptomic, and proteomic layers to predict functional ATM loss",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify rational combos (e.g., ATR inhibitors) for ATM\u2011deficient tumors where PARP alone is ineffective",
+        "transcript_evidence": "Speaker said: \"ATR inhibitors convey benefit in ATM\u2011mutated backgrounds\"",
+        "crispro_angle": "CrisPRO can model synthetic\u2011lethal networks to prioritize ATR\u2011PARP or ATR\u2011immunotherapy regimens",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Redesign future PARP trials to enroll only patients with functional HRD (e.g., gap signature) rather than any HRR mutation",
+        "transcript_evidence": "Speaker said: \"we need more research to do just by our patients\"",
+        "crispro_angle": "CrisPRO can simulate trial power under different biomarker enrichment strategies",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Olaparib",
+        "context": "PARP inhibitor used in multiple tumor types; discussed for BRCA and non\u2011BRCA mutations",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Niraparib",
+        "context": "Combined with pembrolizumab in platinum\u2011resistant ovarian cancer",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Talazoparib",
+        "context": "Approved for BRCA\u2011mutated prostate cancer; mentioned as having broader approvals",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Durvalumab",
+        "context": "Immune checkpoint inhibitor combined with olaparib in endometrial cancer",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Serolazertib (ATR inhibitor)",
+        "context": "Shows benefit in ARID1A\u2011deficient solid tumors",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular features beyond mutation status predict response to PARP inhibition in ATM\u2011mutated cancers?",
+      "Can replication\u2011gap signatures improve patient selection for PARP\u2011immunotherapy combos?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT03742284 (PROfound)",
+        "NCT03840200 (KEYLINK\u2011007)",
+        "NCT04572451 (Serolazertib in ARID1A\u2011mutated tumors)"
+      ],
+      "assets_to_track": [
+        "Olaparib",
+        "Niraparib",
+        "Talazoparib",
+        "Serolazertib",
+        "Durvalumab"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Merck",
+        "Clovis Oncology",
+        "Novartis"
+      ]
+    }
+  }
+]

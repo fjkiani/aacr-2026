@@ -1,0 +1,260 @@
+[
+  {
+    "talk_id": "resistance-to-antibody-drug-conjugates::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Leif Ellison",
+      "institution_or_pharma": "Mass General Hospital",
+      "session_title": "Resistance to Antibody-Drug Conjugates",
+      "talk_title": "Mechanisms of ADC resistance informing novel combination therapy strategies",
+      "rhetorical_signals": [
+        "Speaker said: we don't fully understand why some patients escaped",
+        "Skipped OS data entirely, presented only PFS"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SG (Sacituzumab govitecan, Trop-2 ADC)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "TOP1 mutations (e.g., E418K, R364H) that prevent drug intercalation",
+        "unexplained_resistance_quote": "We observed TOP1 mutations emerging at progression, but the exact trigger remains unclear",
+        "ghost_responder_admission": "Some patients showed prolonged responses before rapid progression, indicating a subset of exceptional responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "SG (Trop-2 ADC)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Trop-2 missense mutation that shuttles the protein intracellularly, reducing surface binding",
+        "unexplained_resistance_quote": "The missense mutant Trop-2 remained entirely intracellular and conferred resistance",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1b/2 SG + Talazoparib study",
+        "target_biology": "Combine topoisomerase-1 inhibitor payload with PARP inhibition to enhance DNA damage",
+        "flawed_enrollment_criteria": "No biomarker stratification for TOP1 or Trop-2 status; mixed prior therapies",
+        "missing_biomarker": "Baseline TOP1 mutation status or Trop-2 expression level",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring of emerging TOP1 mutations during treatment",
+        "statistical_concern": "Non\u2011randomized, small cohort limits efficacy interpretation",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SG payload (SN\u201138) linked via cleavable, hydrolyzable linker",
+        "ip_vulnerability_note": "Speaker disclosed that the linker is labile, allowing extracellular release and bystander effect, which may also affect normal tissues",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use without target expression selection dilutes signal and may increase toxicity"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that TOP1 mutations confer resistance, then concluded that the combination with PARP inhibitor is broadly effective despite not addressing the underlying TOP1 resistance mechanism"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for the SG + talazoparib combination",
+        "Lack of biomarker\u2011stratified efficacy analysis",
+        "Absence of randomized comparator arm"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop computational models to predict emergence of TOP1 resistance mutations from cfDNA and design next\u2011generation ADCs with alternative payloads",
+        "transcript_evidence": "Speaker noted that TOP1 mutations were a harbinger of progression and that the combination with PARP inhibition did not fully overcome this resistance",
+        "crispro_angle": "CrisPRO can integrate longitudinal cfDNA sequencing with structural modeling of TOP1 to flag patients likely to develop resistance and suggest payload swaps",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: NCT04165772 (SG + talazoparib) for cfDNA monitoring",
+          "PubMed: studies on TOP1 resistance mutations in ADCs",
+          "SEC filings: pipeline status of alternative topoisomerase\u20111 inhibitor ADCs"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement prospective Trop\u20112 expression and TOP1 mutation screening to enrich for patients likely to benefit from SG",
+        "transcript_evidence": "Speaker emphasized that Trop\u20112 expression correlates only roughly with PFS and that TOP1 mutations drive resistance",
+        "crispro_angle": "CrisPRO can generate a composite biomarker score combining IHC, RNA\u2011seq, and cfDNA data to guide patient selection",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: trials with biomarker\u2011driven SG cohorts",
+          "TCGA/GENIE datasets for Trop\u20112 and TOP1 alteration frequencies"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Enfortumab vedotin",
+        "context": "Mentioned as a successful ADC in bladder cancer to illustrate why studying resistance to effective ADCs matters",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Mylotarg",
+        "context": "Cited as a failed ADC that will not be discussed",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal sequencing of SG with PARP inhibitors to maximize efficacy while minimizing myelosuppression?",
+      "Can serial cfDNA monitoring reliably predict TOP1 mutation\u2013driven resistance before clinical progression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "Sacituzumab govitecan (SG)",
+        "Talazoparib"
+      ],
+      "companies_to_monitor": [
+        "Immunomedics",
+        "GSK"
+      ]
+    }
+  },
+  {
+    "talk_id": "resistance-to-antibody-drug-conjugates::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jonathan Chou",
+      "institution_or_pharma": "UCSF",
+      "session_title": "Resistance to Antibody-Drug Conjugates",
+      "talk_title": "Tumor intrinsic and extrinsic mechanisms of ADC resistance in bladder cancer",
+      "rhetorical_signals": [
+        "Speaker said: we don't know yet whether pre\u2011treatment PPAR\u03b3 or retinoic signatures fully predict nectin\u20114 levels",
+        "Skipped detailed efficacy numbers for the priming strategy, focusing on mechanistic proof\u2011of\u2011concept"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Enfortumab vedotin (EV, nectin\u20114 ADC)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Low or heterogeneous nectin\u20114 expression driven by luminal\u2011basal differentiation state",
+        "unexplained_resistance_quote": "We see patients with low nectin\u20114 who progress despite EV, and the underlying regulation remains incompletely defined",
+        "ghost_responder_admission": "Patients with nectin\u20114 amplification show exceptionally high responses, indicating a subset of highly sensitive responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "EV payload (MMAE)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Altered endosomal trafficking and reduced ADC internalization despite retained nectin\u20114 surface levels",
+        "unexplained_resistance_quote": "EV\u2011resistant cells retain high nectin\u20114 but take up the antibody much less frequently",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "EV monotherapy pivotal trial (Rosenberg et al.)",
+        "target_biology": "Targeting nectin\u20114 with MMAE payload in metastatic urothelial carcinoma",
+        "flawed_enrollment_criteria": "Enrolled patients regardless of nectin\u20114 expression level, mixing low and high expressors in the same arm",
+        "missing_biomarker": "Pre\u2011treatment nectin\u20114 H\u2011score stratification for randomization",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Subgroup analyses show wide confidence intervals for low\u2011expressor cohort, risking dilution of signal",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EV linker\u2011MMAE construct with cleavable valine\u2011citrulline linker",
+        "ip_vulnerability_note": "Speaker highlighted that the same linker chemistry is used in multiple ADCs, making it a potential class effect",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single target (nectin\u20114) without robust biomarker selection limits efficacy across heterogeneous tumors"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PPAR\u03b3 agonists up\u2011regulate nectin\u20114 expression in tumor cells, then concluded that priming with rosiglitazone will not increase toxicity because normal tissues lack PPAR\u03b3, despite acknowledging that skin toxicity is a known issue with nectin\u20114 ADCs"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective clinical trial data testing rosiglitazone priming in patients",
+        "No direct comparison of EV efficacy in nectin\u20114\u2011amplified vs non\u2011amplified cohorts in a randomized setting"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a predictive model integrating PPAR\u03b3/retinoic acid pathway activity and nectin\u20114 expression to select patients for EV therapy",
+        "transcript_evidence": "Speaker demonstrated that rosiglitazone induces nectin\u20114 in low\u2011expressing bladder cancer cells and improves ADC killing in vitro",
+        "crispro_angle": "CrisPRO can combine transcriptomic signatures of PPAR\u03b3 activation with IHC data to generate a composite score for patient enrollment",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: design a biomarker\u2011driven EV trial (e.g., NCTXXXXXX)",
+          "GTEx database analysis for normal tissue PPAR\u03b3/nectin\u20114 co\u2011expression",
+          "PubMed: studies on PPAR\u03b3 agonists in cancer"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Leverage PPAR\u03b3 agonists (e.g., rosiglitazone) or retinoids (ATRA, bexarotene) as priming agents to up\u2011regulate nectin\u20114 before EV administration",
+        "transcript_evidence": "Rosiglitazone treatment increased surface nectin\u20114 and enhanced EV\u2011mediated tumor suppression in cell culture",
+        "crispro_angle": "CrisPRO can simulate dosing schedules and predict optimal priming duration to maximize target up\u2011regulation while minimizing off\u2011target toxicity",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical pharmacokinetic studies of rosiglitazone + EV",
+          "Safety data on combined use from FDA adverse event reports"
+        ]
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011engineer EV\u2011resistant, nectin\u20114\u2011high cells with CAR\u2011T constructs targeting the same antigen to bypass payload resistance",
+        "transcript_evidence": "CAR\u2011T cells using the EV binder killed EV\u2011resistant cells despite their resistance to the MMAE payload",
+        "crispro_angle": "CrisPRO can model antigen density thresholds required for CAR\u2011T activation versus ADC internalization, guiding patient selection for CAR\u2011T salvage",
+        "priority": "medium",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: CAR\u2011T nectin\u20114 trials (e.g., NCT04512345)",
+          "In\u2011vitro cytotoxicity data comparing ADC vs CAR\u2011T in resistant lines"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Enfortumab vedotin",
+        "context": "Primary ADC discussed; efficacy and resistance data presented",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sacituzumab govitecan (SG)",
+        "context": "Referenced as a contrasting Trop\u20112 ADC with different payload and resistance mechanisms",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "HER2\u2011targeted ADCs (e.g., T\u2011DXd)",
+        "context": "Mentioned in comparison of target expression relevance",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Can PPAR\u03b3 or retinoic acid priming be safely translated to the clinic without exacerbating skin toxicity?",
+      "What are the dominant mechanisms driving EV resistance in patients who retain high nectin\u20114 expression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04223856"
+      ],
+      "assets_to_track": [
+        "Enfortumab vedotin",
+        "Rosiglitazone",
+        "ATRA",
+        "Bexarotene"
+      ],
+      "companies_to_monitor": [
+        "Astellas",
+        "Genentech",
+        "Roche"
+      ]
+    }
+  }
+]

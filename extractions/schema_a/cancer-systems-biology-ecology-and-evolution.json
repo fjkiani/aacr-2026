@@ -1,0 +1,300 @@
+[
+  {
+    "talk_id": "cancer-systems-biology-ecology-and-evolution::sottoriva::1",
+    "session_title": "cancer-systems-biology-ecology-and-evolution",
+    "talk_title": "Measuring cancer evolution with mathematical modeling",
+    "speaker": {
+      "name": "Andrea Sottoriva",
+      "affiliation": "Computational Biology Research Center, Human Technopole, Milan",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "breast cancer",
+      "leukemia",
+      "melanoma",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "not specified",
+        "genotype_or_key_features": "not specified"
+      },
+      {
+        "model_type": "single_cell",
+        "name": "simulated single-cell data",
+        "genotype_or_key_features": "not specified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Sottoriva presented population genetics models that use bulk variant allele frequency distributions to infer clonal dynamics, mutation rates, and selection coefficients in tumors, enabling prediction of evolutionary trajectories and treatment response.",
+    "readouts": [
+      "bulk_WGS",
+      "variant_allele_frequency",
+      "single_cell_simulation"
+    ],
+    "key_findings": [
+      "Derived analytical relationship (1/F^2) between subclonal mutation frequency and mutation rate in expanding tumor populations.",
+      "Demonstrated that positive selection shifts subclonal driver mutations to higher frequencies, distinguishable from neutral drift.",
+      "Implemented Bayesian and machine\u2011learning deconvolution methods to estimate mutation rates and selection coefficients from bulk sequencing data.",
+      "Extended models to spatially resolved data, showing sampling bias can obscure selection events."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to accurately account for copy\u2011number alterations and normal contamination in VAF\u2011based selection inference?",
+      "Can spatial sampling strategies be optimized to reduce bias in detecting subclonal selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-systems-biology-ecology-and-evolution::anderson::2",
+    "session_title": "cancer-systems-biology-ecology-and-evolution",
+    "talk_title": "Evolutionary\u2011informed adaptive therapy and virtual clinical trial design",
+    "speaker": {
+      "name": "Sandy Anderson",
+      "affiliation": "Moffitt Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "melanoma",
+      "basal cell carcinoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "clinical_trial",
+      "combination_therapy",
+      "translational",
+      "modeling",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "PSA",
+        "type": "pharmacodynamic",
+        "assay": "blood test",
+        "finding": "Adaptive therapy cycles reduced PSA by >50% per cycle and extended median time to progression to 33 months vs 14 months standard"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "adaptive therapy prostate trial",
+        "genotype_or_key_features": "n=4 long\u2011term responders, PSA dynamics used for dosing"
+      },
+      {
+        "model_type": "digital_twin",
+        "name": "virtual patient cohort",
+        "genotype_or_key_features": "calibrated to individual PSA trajectories"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "median_time_to_progression",
+        "value": "33 months",
+        "confidence_interval": "",
+        "n": "n=4 long\u2011term responders",
+        "population": "metastatic castrate\u2011resistant prostate cancer",
+        "comparator": "standard of care 14 months",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "drug_usage",
+        "value": "<50% of standard cumulative dose",
+        "confidence_interval": "",
+        "n": "",
+        "population": "same cohort",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Anderson described adaptive therapy, an on\u2011off dosing strategy that exploits fitness costs of resistance, using PSA dynamics to trigger treatment pauses, thereby prolonging control of resistant prostate cancer and other solid tumors.",
+    "readouts": [
+      "PSA",
+      "imaging",
+      "tumor_volume"
+    ],
+    "key_findings": [
+      "Adaptive therapy using a 50% PSA reduction rule extended median progression\u2011free survival to 33 months versus 14 months with continuous dosing.",
+      "Patients received <50% of the cumulative drug dose while maintaining disease control.",
+      "Virtual trial simulations with calibrated digital twins accurately predicted the adaptive trial outcome before enrollment.",
+      "Stratifying patients by first\u2011cycle PSA dynamics (high/medium/low thresholds) could further improve adaptive therapy efficacy."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance may carry a fitness cost; sensitive cells outcompete resistant cells in drug\u2011free intervals."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "immune checkpoint inhibitor (backbone)",
+        "rationale": "Provide continuous pressure while adaptive targeted therapy is cycled to reduce toxicity.",
+        "phenotype": "maintained disease control with reduced targeted\u2011drug exposure",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What biomarkers beyond PSA can optimally trigger on/off cycles?",
+      "How does tumor spatial heterogeneity affect adaptive therapy outcomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Gatenby et al. 2019 Nat Rev Cancer"
+      ],
+      "company_or_sponsor": [
+        "Genentech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-systems-biology-ecology-and-evolution::unknown::3",
+    "session_title": "cancer-systems-biology-ecology-and-evolution",
+    "talk_title": "Metabolic quiescence and ATP synthase reversal as a vulnerability in enzalutamide\u2011resistant prostate cancer",
+    "speaker": {
+      "name": "Speaker Unknown",
+      "affiliation": "University of ??? (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "metabolism",
+      "resistance_mechanisms",
+      "preclinical",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ATPIF1",
+        "alteration": "downregulation",
+        "pathway": "mitochondrial ATP synthase regulation",
+        "modality": "protein_expression",
+        "compound_name": "MitoQ",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "enzalutamide\u2011resistant prostate cancer cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "p38 MAPK",
+        "alteration": "activation",
+        "pathway": "stress response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "p38 inhibitor (unspecified)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "enzalutamide\u2011resistant prostate cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "phospho\u2011p38",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "increased in metastatic castration\u2011resistant prostate cancer versus primary tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "LNCaP and enzalutamide\u2011resistant derivatives",
+        "genotype_or_key_features": "AR pathway inhibition, chronic enzalutamide exposure"
+      },
+      {
+        "model_type": "patient_derived_ctc",
+        "name": "circulating tumor cells RNA\u2011seq",
+        "genotype_or_key_features": "low ATPIF1 expression in non\u2011responders"
+      },
+      {
+        "model_type": "mouse_xenograft",
+        "name": "resistant LNCaP xenografts",
+        "genotype_or_key_features": "treated with MitoQ"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The presenter identified that enzalutamide\u2011resistant prostate cancer cells enter a metabolically quiescent state with reversed ATP synthase activity driven by loss of ATPIF1, creating a depolarized mitochondrial membrane that can be selectively targeted with the mitochondria\u2011directed cation MitoQ, leading to tumor regression in vivo.",
+    "readouts": [
+      "Seahorse respirometry",
+      "JC\u20111 fluorescence",
+      "TMRM assay",
+      "Western blot for phospho\u2011p38",
+      "RNA\u2011seq of CTCs"
+    ],
+    "key_findings": [
+      "Resistant cells show reduced basal and maximal respiration across multiple substrates.",
+      "Mitochondrial membrane potential is depolarized in resistant cells due to reverse ATP synthase activity.",
+      "ATPIF1 expression is decreased in resistant cells and in patient CTCs from non\u2011responders.",
+      "Pharmacologic inhibition of p38 restores ATPIF1 levels and sensitizes resistant cells to enzalutamide.",
+      "MitoQ treatment selectively kills resistant cells in vitro and causes tumor regression in resistant xenograft models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance is mediated by apoptosis inhibition rather than proliferative advantage.",
+      "Reverse ATP synthase activity creates a metabolic vulnerability unique to resistant cells."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "p38 inhibitor",
+        "rationale": "Restore ATPIF1 expression and reverse resistance phenotype",
+        "phenotype": "enhanced sensitivity to enzalutamide in resistant cells",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MitoQ",
+        "rationale": "Exploit depolarized mitochondrial membrane potential",
+        "phenotype": "selective tumor cell death with minimal toxicity to normal cells",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the temporal order of p38 activation versus ATPIF1 loss during resistance development?",
+      "Can ATPIF1 loss be detected in patient blood samples as an early biomarker of resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Anderson et al. 2024 Cancer Res"
+      ],
+      "company_or_sponsor": [
+        "Genentech"
+      ],
+      "patent_or_ip_hints": [
+        "MitoQ targeting of reverse ATP synthase in resistant prostate cancer"
+      ]
+    }
+  }
+]

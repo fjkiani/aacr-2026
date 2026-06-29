@@ -1,0 +1,255 @@
+[
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Charlotte Bonner",
+      "institution_or_pharma": "EPFL",
+      "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+      "talk_title": "Virtual patients with multimodal foundation models and agents",
+      "rhetorical_signals": [
+        "Speaker said: \"I am still very skeptical because if there's not the signal in H&E, then even a foundation model that has been trained on multiple modalities cannot infer what is simply not present.\"",
+        "Speaker said: \"We see that there is a way for those models by the amount of data it sees to distinguish between technical artifact and biological signal.\"",
+        "Speaker said: \"We are only at eight cancer types at this point... the diversity here helps us.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical validation or prospective trial data presented",
+        "No external benchmark against standard of care biomarkers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Speaker highlighted that their multimodal foundation model derives biomarkers that outperform existing clinical stratification schemes but no external validation was shown.",
+        "transcript_evidence": "Speaker said: \"... leads to a better kind of stratification than, again, the original cancer cell study...\"",
+        "crispro_angle": "CrisPRO can apply its computational spine to retrospectively validate these AI\u2011derived signatures across larger, outcome\u2011annotated cohorts.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "The need to decide when spatial proteomics is required versus when routine pathology suffices suggests a trial enrichment strategy.",
+        "transcript_evidence": "Speaker said: \"Do we always need a spatial proteomics screen? No. Many decisions can be simply made from routine pathology.\"",
+        "crispro_angle": "CrisPRO can model assay selection as an optimization problem, recommending minimal panels for prospective biomarker trials.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Meta vision transformers",
+        "context": "Referenced as the architecture adapted for histopathology foundation models",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Existing virtual staining methods",
+        "context": "Compared unfavorably to multimodal models for virtual staining tasks",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How will the models perform on truly unseen cancer types and modalities?",
+      "What is the minimal data requirement to achieve robust clinical decision support?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Serena Yeung Levy",
+      "institution_or_pharma": "Stanford",
+      "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+      "talk_title": "Generative models for disease dynamics and scientific reasoning",
+      "rhetorical_signals": [
+        "Speaker said: \"Flow matching is behind a lot of the state-of-the-art visual generation models today.\"",
+        "Speaker said: \"We still see performance gets worse the more out of distribution you are, but I think it's still overall promising trajectories here.\"",
+        "Speaker said: \"The actual flow matching is done in the latent space.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Flow\u2011matching based CellFlux model",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Limited ability to model discrete biological events such as apoptosis within a continuous latent trajectory",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CellFlux flow\u2011matching architecture",
+        "ip_vulnerability_note": "Speaker noted that the method still suffers from shortcut learning and out\u2011of\u2011distribution degradation, indicating potential exploitable weaknesses.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on large matched imaging\u2011transcriptomics datasets that are currently scarce."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the model can generate smooth continuous trajectories (observation) but then admitted that modeling discrete events like apoptosis remains a challenge (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No large-scale matched multimodal (image + transcriptomics) training set demonstrated",
+        "Limited evaluation on truly unseen perturbations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Speaker identified difficulty modeling discrete events (e.g., apoptosis) with continuous flow models.",
+        "transcript_evidence": "Speaker said: \"...how do you model some discrete transitions, like the apoptosis, and other biological process?\"",
+        "crispro_angle": "CrisPRO can incorporate explicit mechanistic graphs to augment continuous latent flows, enabling discrete event modeling.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "CellFlux performance degrades out\u2011of\u2011distribution, suggesting a need for robustness improvements.",
+        "transcript_evidence": "Speaker said: \"...performance gets worse the more out of distribution you are...\"",
+        "crispro_angle": "CrisPRO\u2019s uncertainty quantification can flag OOD cases and trigger fallback models.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Early\u2011fusion multimodal architecture outperforms late\u2011fusion, but still suffers shortcut learning.",
+        "transcript_evidence": "Speaker said: \"We compare this to late fusion schemes... they actually don't learn how to connect the information between modalities.\"",
+        "crispro_angle": "CrisPRO can provide a unified multimodal embedding that is explicitly regularized against shortcut features.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CellFlux V2",
+        "context": "Discussed as the current state of the flow\u2011matching model",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "MicroVQA benchmark",
+        "context": "Used to evaluate visual question answering models",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can flow\u2011matching be extended to hierarchical modeling of cell populations?",
+      "What are optimal loss functions for multimodal joint training beyond next\u2011token prediction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CellFlux",
+        "MicroVQA"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "foundation-models-and-multimodal-ai-for-cancer-research::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Michael Moore",
+      "institution_or_pharma": "ETH Zurich",
+      "session_title": "foundation-models-and-multimodal-ai-for-cancer-research",
+      "talk_title": "Reliable medical AI: agents that plan, evaluate, and verify",
+      "rhetorical_signals": [
+        "Speaker said: \"Many systems drop drastically in performance if they have to actually do the workup on their own.\"",
+        "Speaker said: \"We need to develop new methods, new strategies to ground and verify outputs of AI systems.\"",
+        "Speaker said: \"We propose a process reward model that can check each reasoning step against literature and guidelines.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard language\u2011model\u2011only medical assistants",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of grounding in structured medical knowledge leading to hallucinations",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Myriad QA knowledge atlas",
+        "ip_vulnerability_note": "Speaker noted that the atlas is a re\u2011structured representation of existing literature, not novel IP, suggesting easy replication.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on static QA pairs may limit adaptability to emerging guidelines."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented a vision of fully reliable agents (observation) but simultaneously admitted that current models still hallucinate and need step\u2011wise verification (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical evaluation of the agentic system",
+        "Limited public benchmarks for multimodal medical reasoning"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Need for structured, step\u2011wise verification suggests designing trials that capture intermediate reasoning checkpoints.",
+        "transcript_evidence": "Speaker said: \"We try to disentangle those two tasks and have some kind of policing language model... that can analyze each individual statement.\"",
+        "crispro_angle": "CrisPRO can generate and validate reasoning traces, providing measurable intermediate endpoints for trials.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Myriad\u2019s structured QA format improves retrieval and reduces hallucination compared to unstructured text.",
+        "transcript_evidence": "Speaker said: \"What we would like to have is a more organized representation of the data, where there's a neat hierarchy...\"",
+        "crispro_angle": "CrisPRO\u2019s knowledge graph backbone can be integrated to further enhance structured retrieval.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Existing language\u2011model\u2011only agents can be retrofitted with CrisPRO\u2019s process\u2011reward verification layer.",
+        "transcript_evidence": "Speaker said: \"We can improve many different language model by just hook plugging it in at inference time.\"",
+        "crispro_angle": "CrisPRO provides a plug\u2011in verification module that can be attached to legacy agents.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GPT\u20115 / Gemini\u20113 Pro",
+        "context": "Mentioned as state\u2011of\u2011the\u2011art models evaluated on MicroVQA",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Standard RAG pipelines",
+        "context": "Contrasted with the Myriad structured knowledge approach",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How will step\u2011wise verification scale to real\u2011time clinical workflows?",
+      "What metrics best capture the trustworthiness of an agent\u2019s reasoning trace?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Myriad QA atlas",
+        "process reward model"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

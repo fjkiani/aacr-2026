@@ -1,0 +1,428 @@
+[
+  {
+    "talk_id": "digital-pathology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Yujie Zhao",
+      "institution_or_pharma": "University of Washington",
+      "session_title": "digital-pathology",
+      "talk_title": "Elucidating Broad Cell-Cell Interactions via 3D Super Cell Graphs for Prostate Cancer Risk Stratification",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't have an independent cohort, this is a limitation in this study\"",
+        "Speaker said: \"We used leave-one-out cross-validation; we haven't considered independent validation\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Skell 3D prognostic model",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential loss of detailed cell\u2011level interaction information when aggregating into super\u2011cells",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No independent validation cohort",
+        "No OS data presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of independent validation cohort for the 3D super\u2011cell graph signature suggests an opportunity for CrisPRO to provide robust cross\u2011cohort validation using its computational spine.",
+        "transcript_evidence": "Speaker admitted: \"We don't have independent cohort\"",
+        "crispro_angle": "CrisPRO can integrate multi\u2011center data and assess model generalizability across cohorts.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does the super\u2011cell aggregation affect specific cell\u2011type interaction signals?",
+      "Can the model be extended to biopsy specimens with limited tissue?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sumana Biswas",
+      "institution_or_pharma": "Cedars-Sinai Medical Center",
+      "session_title": "digital-pathology",
+      "talk_title": "AI-Driven Spatial Analysis of 1,100 Head and Neck Squamous Cell Carcinoma Patients' H&E Slides Uncovers Three Tumor Subtypes with Markedly Distinct Tumor Microenvironments and Survival Patterns",
+      "rhetorical_signals": [
+        "Speaker said: \"The correlation is in the lower range\"",
+        "Speaker said: \"We have moderate correlation for many genes, especially in external validation\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "H&E\u2011inferred spatial transcriptomics model",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Limited predictive power for low\u2011expressed genes due to low variance across spots",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No direct validation of predicted spatial clusters with orthogonal proteomic stains"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Model struggles with low\u2011variance genes; CrisPRO could prioritize high\u2011impact gene sets and improve prediction of clinically actionable pathways.",
+        "transcript_evidence": "Speaker noted moderate correlations and difficulty predicting low\u2011expressed genes",
+        "crispro_angle": "CrisPRO can integrate pathway\u2011level priors to boost signal for weakly expressed targets.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Spatial clusters predict immunotherapy response; CrisPRO could combine with existing PD\u2011L1 IHC data to refine patient selection.",
+        "transcript_evidence": "Speaker showed AUC 0.74 for treatment response prediction using spatial clusters",
+        "crispro_angle": "CrisPRO can fuse multi\u2011modal biomarkers (spatial transcriptomics + IHC) for a composite predictor.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will the model perform on other head and neck subsites not represented in the training set?",
+      "Can the spatial transcriptomics predictions be calibrated against protein\u2011level measurements?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Spatial transcriptomics platforms",
+        "Head and neck AI biomarker pipelines"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dan Thai Hoang",
+      "institution_or_pharma": "Cedars-Sinai",
+      "session_title": "digital-pathology",
+      "talk_title": "Pan-Cancer Prediction of Response to Immune Checkpoint Blockade from Histopathology",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't have the ICB measure for the dataset we have\"",
+        "Speaker said: \"We are happy to collaborate if you have the data\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TAH\u2011HOT signature derived only from melanoma",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Potential lack of tumor\u2011type specific immune contexture beyond melanoma",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No direct ICB response measurements in the primary cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "TAH\u2011HOT relies on composite hotness score; CrisPRO could provide a more granular, pathway\u2011level hotness metric derived from histology.",
+        "transcript_evidence": "Speaker noted the signature was derived only from melanoma but generalized well",
+        "crispro_angle": "CrisPRO can model pan\u2011cancer immune signatures with explicit pathway annotations.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does the model perform on metastatic lesions versus primary tumors?",
+      "What is the minimal number of tiles needed for robust hotness prediction?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Path2Omic models",
+        "Pan\u2011cancer ICB response datasets"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Eric Bergstrom",
+      "institution_or_pharma": "Natera",
+      "session_title": "digital-pathology",
+      "talk_title": "A Large Scale Multi-Target Deep Learning Model for Virtual Genomic Profiling in Colorectal Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We still see confounders with different scanners and sites\"",
+        "Speaker said: \"Biopsy versus resection slides show differential performance\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Virtual genomics prediction for low\u2011prevalence mutations (e.g., APC)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Morphological phenotype for ubiquitous early driver mutations is weak, limiting discriminative power",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Virtual Genomics Cohort (internal)",
+        "target_biology": "Prediction of 463 gene mutations from H&E",
+        "flawed_enrollment_criteria": "Mixed biopsy and resection specimens without stratification",
+        "missing_biomarker": "Standardized scanner calibration metadata",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for rare mutation sub\u2011cohorts",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Multi\u2011task transformer model for virtual genomics",
+        "ip_vulnerability_note": "Relies on frozen foundation models; performance converges regardless of initial backbone at large scale, reducing unique IP advantage",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad pan\u2011cancer mutation screening may dilute regulatory focus on high\u2011impact biomarkers"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high AUC for MSI (0.98) yet admitted that biopsy slides reduce performance, suggesting overreliance on resection morphology"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective validation of virtual genomics predictions",
+        "Limited analysis of biopsy\u2011only cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Low AUC for common mutations like APC indicates a salvage opportunity; CrisPRO could integrate pathway\u2011level features to boost prediction for early drivers.",
+        "transcript_evidence": "Speaker noted APC had low AUC due to lack of morphological distinction",
+        "crispro_angle": "CrisPRO can model hierarchical pathway signatures to infer early driver status from subtle histologic cues.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Biopsy versus resection performance gap suggests redesigning future virtual genomics trials to stratify by specimen type.",
+        "transcript_evidence": "Speaker highlighted differential performance between biopsy and resection slides",
+        "crispro_angle": "CrisPRO can provide calibrated risk scores per specimen type, informing trial inclusion criteria.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What is the minimal number of positive mutation examples needed for stable performance across genes?",
+      "Can the model predict variant allele frequency thresholds?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Virtual genomics pipelines",
+        "Colorectal ctDNA MRD assays"
+      ],
+      "companies_to_monitor": [
+        "Natera"
+      ]
+    }
+  },
+  {
+    "talk_id": "digital-pathology::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Ajay Rajaraman Subramanian",
+      "institution_or_pharma": "Georgia Institute of Technology / Emory University",
+      "session_title": "digital-pathology",
+      "talk_title": "Peritumoral Collagen Microarchitecture is Differentially Prognostic of Biochemical Recurrence Across Populations in Prostate Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We cannot use one size fit all model for these types of data set\"",
+        "Speaker said: \"The African\u2011American features were able to stratify risk in the whole cohort, but European\u2011American features were not\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "European\u2011American collagen signature",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of robust texture features that capture prognostic variation in European\u2011American cohort",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Prostate Collagen Cohort Study",
+        "target_biology": "Peritumoral collagen microarchitecture as prognostic biomarker",
+        "flawed_enrollment_criteria": "Equal number of AA and EA patients but no stratification by Gleason score or tumor location",
+        "missing_biomarker": "Standardized collagen staining (e.g., Picrosirius Red) for ground truth validation",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small overall sample (202 patients) limits power for subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Deep\u2011learning collagen segmentation model",
+        "ip_vulnerability_note": "Model trained on H&E only; validation against only unpaired Mason Trichrome shows ~75\u201180% accuracy, indicating limited robustness",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on manual tumor annotations; scalability to routine pathology uncertain"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that African\u2011American collagen features predict whole\u2011cohort outcomes yet admitted lack of validation for European\u2011American features, highlighting contradictory model generalizability"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No independent external validation cohort",
+        "No orthogonal collagen stain (e.g., Picrosirius Red) for ground truth"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "European\u2011American collagen signature underperforms; CrisPRO could integrate multi\u2011ethnic training data and pathway\u2011level features to improve cross\u2011population robustness.",
+        "transcript_evidence": "Speaker noted only one shared feature between AA and EA signatures",
+        "crispro_angle": "CrisPRO's multi\u2011task framework can learn shared and population\u2011specific representations simultaneously.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Current collagen segmentation lacks validation; CrisPRO can incorporate multimodal stains (Mason Trichrome, Picrosirius Red) to strengthen model confidence.",
+        "transcript_evidence": "Speaker mentioned pathologist validation at ~75\u201180% accuracy",
+        "crispro_angle": "CrisPRO can fuse H&E with auxiliary stain embeddings for more accurate collagen detection.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Would incorporating Gleason score improve the collagen\u2011based model?",
+      "How does tumor location within the prostate affect peritumoral collagen patterns?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Prostate collagen AI models",
+        "Multi\u2011ethnic prostate cancer cohorts"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Rukmini Bandopadhyay",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "digital-pathology",
+      "talk_title": "PathIO, a deep learning pathomics framework for personalized immunotherapy selection and outcome prediction in metastatic non\u2011small cell lung cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We have not fine\u2011tuned the foundation models; we only extracted features\"",
+        "Speaker said: \"We still need prospective validation in clinical settings\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PathIO NSCLC Cohort",
+        "target_biology": "Prognostic risk prediction for ICB\u2011treated metastatic NSCLC",
+        "flawed_enrollment_criteria": "Mixed first\u2011line monotherapy and combination therapy patients without stratified randomization",
+        "missing_biomarker": "Standard PD\u2011L1 IHC scores for direct comparison",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential overfitting due to limited number of events per cohort",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tissue habitat map + random survival forest pipeline",
+        "ip_vulnerability_note": "Relies on manually annotated tissue regions; similar pipelines exist in other academic groups",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Model currently prognostic only; predictive utility for therapy selection remains exploratory"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented strong OS/PFS stratification yet acknowledged that the model is purely prognostic and not yet validated for predictive treatment selection"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No prospective trial demonstrating predictive benefit for monotherapy vs combination",
+        "Limited external validation beyond three cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate PD\u2011L1 IHC and other established biomarkers into PathIO risk model to create a predictive, not just prognostic, tool.",
+        "transcript_evidence": "Speaker noted need for prospective validation and comparison with existing biomarkers",
+        "crispro_angle": "CrisPRO can integrate multimodal data (pathology, radiology, IHC) within a unified predictive framework.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's interpretability modules to provide clearer attribution of risk to specific tissue habitats, addressing clinicians' demand for explainability.",
+        "transcript_evidence": "Speaker highlighted interpretability as a current limitation compared to foundation models",
+        "crispro_angle": "CrisPRO offers attention\u2011map visualizations linked to pathway activity scores.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does PathIO perform on biopsy\u2011only specimens?",
+      "Can the model be adapted to predict response to emerging combination regimens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NSCLC immunotherapy outcome datasets",
+        "PD\u2011L1 IHC assays"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

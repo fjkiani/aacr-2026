@@ -1,0 +1,707 @@
+[
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::hu::1",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Whole genome duplication as a pan-cancer predictor of metastasis",
+    "speaker": {
+      "name": "Dr. Hu",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "biomarker_development",
+      "prognostic",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Whole genome duplication (WGD)",
+        "type": "prognostic",
+        "finding": "WGD present in primary early-stage tumors predicts higher odds of future metastasis (overall ~22% prevalence, up to 2x risk in breast cancer) and higher metastatic burden"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK-IMPACT early-stage cohort",
+        "genotype_or_key_features": "14,000 early-stage tumors with copy-number data, radiology-inferred metastasis status"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "WGD prevalence in early-stage tumors",
+        "value": "22%",
+        "n": "n\u224814,000",
+        "population": "pan-cancer early-stage",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Relative risk of metastasis for WGD+ vs WGD-",
+        "value": "2.0x",
+        "n": "n not specified",
+        "population": "breast cancer",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Brain metastasis risk (WGD+ vs WGD-)",
+        "value": "2.0x pan-cancer, 2.5x NSCLC",
+        "n": "n not specified",
+        "population": "pan-cancer / NSCLC",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Whole genome duplication, inferred from copy-number profiles, marks tumors with increased genomic instability that independently predicts higher likelihood of future metastatic events and greater metastatic burden across cancer types, regardless of TP53 status.",
+    "readouts": [
+      "copy_number profiling",
+      "radiology report mining",
+      "machine learning metastasis inference"
+    ],
+    "key_findings": [
+      "WGD is present in ~22% of early-stage pan-cancer tumors and varies by cancer type (10% glioma to >30% esophageal/gastric/colorectal).",
+      "Primary tumors with WGD have a significantly higher probability of developing metastasis compared to non\u2011WGD tumors.",
+      "WGD+ tumors exhibit higher metastatic burden (\u22652 metastatic sites) within the first year after diagnosis.",
+      "WGD predicts increased risk of brain metastasis (2\u20112.5x higher) across pan\u2011cancer and NSCLC cohorts.",
+      "The association between WGD and metastasis persists in both TP53\u2011wildtype and TP53\u2011mutant groups, indicating independence from TP53 status."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What biological mechanisms link WGD to organ\u2011specific metastatic tropism, especially brain metastasis?",
+      "Can therapeutic interventions targeting aneuploidy or WGD\u2011associated pathways mitigate metastatic risk?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Jeeves et al. 2024 MSK\u2011CORD"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::safabakhsh::2",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Tissue\u2011based genomic instability score (GIS) for HRD prediction in breast, ovarian and pancreatic cancer",
+    "speaker": {
+      "name": "Pegah Safabakhsh",
+      "affiliation": "Guardant Health",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "ovarian cancer",
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "biomarker_development",
+      "DNA_damage_repair",
+      "targeted_therapy",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "biallelic loss",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HRD positive breast/ovarian/pancreatic tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRCA2",
+        "alteration": "biallelic loss",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HRD positive breast/ovarian/pancreatic tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Genomic Instability Score (GIS)",
+        "type": "predictive",
+        "finding": "AUC 0.98 in validation (n=164); sensitivity 88\u201196% and specificity \u226593% for HRD detection across breast, ovarian, pancreatic cancers"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Guardant360 tissue clinical cohort",
+        "genotype_or_key_features": "741\u2011gene panel with SNV, CNV, fusion, methylation, whole transcriptome"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC of GIS model",
+        "value": "0.98",
+        "n": "n=164",
+        "population": "breast/ovarian/pancreatic clinical samples",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Sensitivity (ovarian)",
+        "value": "88%\u201196%",
+        "n": "n not specified",
+        "population": "ovarian cancer",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Specificity (pan\u2011cancer non\u2011HRD cohort)",
+        "value": "100% (93% pancreatic)",
+        "n": "n not specified",
+        "population": "non\u2011HRD cancers",
+        "maturity": "interim"
+      },
+      {
+        "metric": "GIS prevalence",
+        "value": "\u224833% breast, 45% ovarian, 14% pancreatic",
+        "n": "n not specified",
+        "population": "clinical Guardant360 tissue samples",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "An ensemble model integrates SNV\u2011derived COSMIC signatures (SBS3, SBS39) and CNV\u2011based scar metrics to generate a probabilistic GIS that predicts homologous recombination deficiency, enabling broader identification of patients who may benefit from PARP inhibitor therapy beyond BRCA mutation testing.",
+    "readouts": [
+      "targeted NGS (SNV, CNV, fusion)",
+      "methylation profiling",
+      "whole transcriptome sequencing",
+      "signature extraction (COSMIC)"
+    ],
+    "key_findings": [
+      "GIS model achieved AUC 0.98 in a 164\u2011sample test set.",
+      "Sensitivity ranged from 78%\u201196% across breast, ovarian, and pancreatic cancers; specificity \u226593% across non\u2011HRD cohorts.",
+      "GIS detected HRD in ~1/3 of breast, 45% of ovarian, and 14% of pancreatic cancers, extending beyond BRCA1/2 pathogenic mutations.",
+      "Only 2\u20113% of GIS\u2011positive ovarian/breast cases were explained by non\u2011BRCA HRR gene alterations, indicating added value of the signature.",
+      "GIS is available on both tissue and liquid Guardant360 assays, supporting longitudinal monitoring."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How will GIS perform prospectively as a predictive biomarker in PARP inhibitor trials?",
+      "Can cancer\u2011type specific models (e.g., prostate) improve GIS accuracy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Guardant Health"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::so::3",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Integrated multi\u2011omic analysis of microvascular invasion in resectable hepatocellular carcinoma",
+    "speaker": {
+      "name": "Jisun So",
+      "affiliation": "University of XYZ (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "hepatocellular carcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "multi_omics",
+      "biomarker_development",
+      "targeted_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TOP2A",
+        "alteration": "",
+        "pathway": "DNA_topoisomerase",
+        "modality": "drug_target",
+        "compound_name": "Doxorubicin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MVI\u2011high HCC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MVI prediction score",
+        "type": "predictive",
+        "finding": "Score correlates with higher recurrence, poorer survival, and reduced response to atezolizumab (HR 0.56) in HCC"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "TCGA HCC cohort",
+        "genotype_or_key_features": "RNA\u2011seq with microvascular invasion annotation"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "5 external HCC cohorts (total n\u22481,000)",
+        "genotype_or_key_features": "PSSP algorithm derived MVI scores"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Primary HCC cultures",
+        "genotype_or_key_features": "Cell doubling time correlated with MVI score"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC of MVI prediction score",
+        "value": "not specified (validated across 5 cohorts)",
+        "n": "n not specified",
+        "population": "resectable HCC with MVI",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Response to atezolizumab (high vs low MVI score)",
+        "value": "HR 0.56, 95% CI 0.38\u20110.82",
+        "n": "n not specified",
+        "population": "IMbrave150 HCC patients",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Serum biomarker model performance",
+        "value": "AUC 0.856",
+        "n": "n not specified",
+        "population": "MVI\u2011high vs MVI\u2011low HCC",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A transcriptomic signature derived from microvascular invasion (MVI) tumors identifies cell\u2011cycle activation, metabolic reprogramming, and EMT\u2011related transcription factors; high MVI scores predict aggressive biology, poorer immunotherapy response, and highlight TOP2A as a therapeutic vulnerability treatable with doxorubicin.",
+    "readouts": [
+      "RNA\u2011seq",
+      "PSSP algorithm scoring",
+      "single\u2011sample GSEA",
+      "cell doubling assays",
+      "CRISPR dependency (DNA\u2011MAP)",
+      "Prism drug sensitivity"
+    ],
+    "key_findings": [
+      "An MVI\u2011associated gene signature robustly predicts microvascular invasion across five independent HCC cohorts.",
+      "High MVI scores associate with increased cell\u2011cycle pathway activity (G2M, E2F, MYC) and reduced hepatic metabolic function.",
+      "Patients with high MVI scores have inferior outcomes on atezolizumab\u2011based therapy (HR 0.56).",
+      "Serum protein panel (six markers) combined with albumin/bilirubin yields AUC 0.856 for non\u2011invasive MVI detection.",
+      "TOP2A emerged as a top dependency; doxorubicin showed strongest in\u2011vitro efficacy in MVI\u2011high models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Standard systemic agents (second/third line) show limited efficacy in MVI\u2011positive HCC, indicating a resistance phenotype."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Doxorubicin",
+        "rationale": "TOP2A dependency in MVI\u2011high HCC",
+        "phenotype": "Significant tumor cell kill in vitro; potential to overcome resistance to checkpoint inhibitors",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will prospective testing of the serum biomarker panel improve surveillance outcomes?",
+      "Can TOP2A\u2011targeted therapy improve survival when combined with immunotherapy in MVI\u2011high patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::deshmukh::4",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Spatial immune profiling of colorectal adenomas predicts recurrence and progression to cancer",
+    "speaker": {
+      "name": "Mrunal Deshmukh",
+      "affiliation": "Boardman Lab, University of XYZ (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "biomarker_development",
+      "immunotherapy",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "IgA plasma cell abundance",
+        "type": "predictive",
+        "finding": "Reduced IgA plasma cells in index polyps associate with recurrence and progression to cancer"
+      },
+      {
+        "name": "MUC2 expression",
+        "type": "predictive",
+        "finding": "Lower MUC2 in polyps predicts higher risk of recurrence/progression"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "NanoString GeoMx spatial transcriptomics cohort",
+        "genotype_or_key_features": "6\u201112 donors per outcome phenotype, multiple regions per polyp"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Immune cell reduction in progressive polyps",
+        "value": "Significant decrease (p<0.05) in IgA plasma cells, IgM plasma cells, macrophages",
+        "n": "n not specified",
+        "population": "polyps progressing to cancer vs non\u2011recurring",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Stem\u2011cell like marker increase",
+        "value": "Elevated TUFT cell and claudin\u201110+ cells in progressive polyps",
+        "n": "n not specified",
+        "population": "polyps progressing to cancer",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Spatial transcriptomics reveals that loss of mucosal immune surveillance (IgA/M plasma cells, microfold cells) and barrier proteins (MUC2, KRT20) together with increased stem\u2011cell\u2011like epithelial states drive adenoma recurrence and malignant transformation.",
+    "readouts": [
+      "NanoString GeoMx spatial transcriptomics",
+      "PanCK immunofluorescence",
+      "cell type deconvolution",
+      "pathway enrichment (GSEA)"
+    ],
+    "key_findings": [
+      "Progressive polyps show marked reduction of IgA/M plasma cells and macrophages, indicating compromised mucosal immunity.",
+      "Loss of barrier genes (MUC2, KRT20) and microfold cells correlates with higher recurrence risk.",
+      "Stem\u2011cell\u2011like transcriptional programs (TUFT cells, claudin\u201110+) are enriched in polyps that progress to cancer.",
+      "Stromal compartments of progressive polyps display reduced PPAR signaling and DNA repair (HR, base excision).",
+      "Shared immune deficits are observed between polyps that recur (with or without cancer) suggesting a common early risk signature."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can a combined spatial biomarker panel be translated into a clinically actionable risk score for surveillance intervals?",
+      "Would immune\u2011modulating interventions (e.g., mucosal vaccines) restore barrier immunity and prevent progression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::cha::5",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Whole\u2011exome HRD scoring predicts PARP inhibitor benefit in ovarian cancer",
+    "speaker": {
+      "name": "Yong\u2011Jun Cha",
+      "affiliation": "IMBDx",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "ovarian cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "DNA_damage_repair",
+      "biomarker_development",
+      "clinical_trial",
+      "targeted_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "pathogenic germline or somatic",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HRD\u2011positive ovarian cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRCA2",
+        "alteration": "pathogenic germline or somatic",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HRD\u2011positive ovarian cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Whole\u2011exome HRD score (cutoff >50)",
+        "type": "predictive",
+        "finding": "HRD\u2011High patients receiving PARP inhibitors had significantly longer PFS vs bevacizumab (first\u2011line and second\u2011line settings)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Seoul National University Hospital ovarian cohort",
+        "genotype_or_key_features": "81 patients, paired tumor\u2011normal WES, HRD score, BRCA status, maintenance therapy (PARPi or bevacizumab)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "PFS HR for PARPi vs bevacizumab (HRD\u2011High, first\u2011line)",
+        "value": "HR 0.56, 95% CI 0.38\u20110.82",
+        "n": "n=65 (PARPi) vs 16 (bevacizumab)",
+        "population": "HRD\u2011High ovarian cancer, first\u2011line maintenance",
+        "maturity": "interim"
+      },
+      {
+        "metric": "PFS HR for PARPi vs bevacizumab (HRD\u2011High, second\u2011line)",
+        "value": "HR 0.45, 95% CI 0.30\u20110.68",
+        "n": "n not specified",
+        "population": "HRD\u2011High ovarian cancer, second\u2011line maintenance",
+        "maturity": "interim"
+      },
+      {
+        "metric": "HRD\u2011High prevalence",
+        "value": "\u224866%",
+        "n": "n=81",
+        "population": "overall cohort",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A whole\u2011exome derived HRD scar score (integrating LOH, TAI, LST) identifies tumors with homologous recombination deficiency; HRD\u2011High status predicts superior progression\u2011free survival with PARP inhibitor maintenance compared with anti\u2011angiogenic therapy.",
+    "readouts": [
+      "whole\u2011exome sequencing",
+      "copy\u2011number scar metrics (LOH, TAI, LST)",
+      "BRCA mutation calling",
+      "clinical outcome (PFS)"
+    ],
+    "key_findings": [
+      "Two\u2011thirds of the cohort were HRD\u2011High (score >50).",
+      "HRD\u2011High correlated strongly with BRCA pathogenic alterations.",
+      "In first\u2011line maintenance, PARP inhibitors improved PFS over bevacizumab in HRD\u2011High patients (HR 0.56).",
+      "In second\u2011line maintenance, HRD\u2011High remained the dominant predictor of PARPi benefit, whereas BRCA status lost significance.",
+      "Whole\u2011exome HRD scoring provides independent prognostic information beyond BRCA mutation."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "BRCA mutation alone was less predictive in the recurrent (second\u2011line) setting, highlighting the need for broader HRD assessment."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the optimal HRD score cutoff across different tumor types and treatment lines?",
+      "Can the WES\u2011based HRD assay be prospectively validated in larger, multi\u2011center trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "IMBDx"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::fehrman::6",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "CA19\u20119 for early detection of pancreatic cancer in new\u2011onset diabetes",
+    "speaker": {
+      "name": "Johan Fehrman",
+      "affiliation": "XYZ Institute (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "early_detection",
+      "biomarker_development",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "CA19\u20119",
+        "type": "predictive",
+        "finding": "In new\u2011onset diabetes cohort, CA19\u20119 achieved 83% sensitivity at >97% specificity for pancreatic cancer (PPV ~70%)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NOD cohort (CPDPC)",
+        "genotype_or_key_features": "2,263 participants with new\u2011onset diabetes, 12 pancreatic cancer cases within 3\u202fyears"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Sensitivity of CA19\u20119",
+        "value": "83%",
+        "n": "n=12 pancreatic cancer cases",
+        "population": "new\u2011onset diabetes participants",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Specificity of CA19\u20119",
+        "value": "\u226597%",
+        "n": "n\u22482,251 non\u2011cancer participants",
+        "population": "new\u2011onset diabetes participants",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Positive predictive value",
+        "value": "\u224870%",
+        "n": "n=12 cases",
+        "population": "new\u2011onset diabetes cohort",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Elevated serum CA19\u20119 levels rise up to two years before clinical diagnosis of pancreatic cancer; longitudinal monitoring improves lead time by ~6\u202fmonths and captures cases missed by a single threshold.",
+    "readouts": [
+      "serum CA19\u20119 ELISA",
+      "serial blood sampling",
+      "longitudinal Bayesian algorithm (ROCA\u2011like)"
+    ],
+    "key_findings": [
+      "CA19\u20119 alone identified 83% of pancreatic cancers in a new\u2011onset diabetes cohort with >97% specificity.",
+      "A longitudinal algorithm incorporating CA19\u20119 velocity increased AUC by ~6% and added ~6\u202fmonths lead time.",
+      "One missed case was captured by the longitudinal rise despite a negative single threshold.",
+      "PPV in this high\u2011risk NOD population was ~70%, substantially higher than in the general population."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "TIMP1 and ALGY1 proteins",
+        "rationale": "Improve sensitivity for CA19\u20119\u2011negative cases",
+        "phenotype": "13% increase in sensitivity without loss of specificity",
+        "stage": "preclinical/validation"
+      }
+    ],
+    "open_questions": [
+      "How does CA19\u20119 performance vary across pancreatic cancer stages at diagnosis?",
+      "Can integration with imaging or other biomarkers further improve early detection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met::cao::7",
+    "session_title": "biomarkers-that-change-management-predicting-therapy-benefit-progression-and-met",
+    "talk_title": "Spatial biology and AI\u2011guided image analysis for early melanoma detection",
+    "speaker": {
+      "name": "Wendy Cao",
+      "affiliation": "University of Queensland / QIMR Berghofer Medical Research Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "AI_ML",
+      "diagnostic",
+      "early_detection"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRAF V600E",
+        "alteration": "mutation",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "benign nevus",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Melanocyte cell\u2011state module scores (nevus vs melanoma)",
+        "type": "predictive",
+        "finding": "Red melanocyte module enriched in benign nevi; purple module enriched in thin melanoma, enabling classification of ambiguous lesions"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Visium Cytospace cohort (261 samples)",
+        "genotype_or_key_features": "Spatial transcriptomics of benign nevi, atypical nevi, melanoma in situ, thin invasive melanoma"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Module score classification accuracy",
+        "value": "Not quantified; clear separation between benign and malignant lesions in validation set",
+        "n": "n=261",
+        "population": "melanocytic lesions",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Spatial transcriptomics deconvolution identifies distinct melanocyte transcriptional states; a melanoma\u2011specific module (purple) correlates with malignant lesions, while a nevus\u2011specific module (red) marks benign nevi, enabling AI models to predict gene expression from H&E and guide diagnostic decisions.",
+    "readouts": [
+      "Visium Cytospace spatial transcriptomics",
+      "single\u2011cell reference integration",
+      "deconvolution",
+      "Orion protein imaging",
+      "AI model predicting SOX10/S100B from H&E"
+    ],
+    "key_findings": [
+      "Two melanocyte cell states were discovered: red (nevus\u2011associated) and purple (melanoma\u2011associated).",
+      "Module scores derived from these states accurately differentiate benign nevi from thin melanoma.",
+      "BRAF V600E mutation signal was higher in benign nevi than in thin melanoma.",
+      "AI model trained on spatial data can predict SOX10 and S100B expression directly from H&E images with high correlation.",
+      "In ambiguous lesions, high melanoma module scores aligned with expert recommendation for excision."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can the H&E\u2011based AI prediction be scaled to routine pathology workflows?",
+      "Will integration of protein markers (e.g., via Orion) further improve diagnostic accuracy for intermediate lesions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

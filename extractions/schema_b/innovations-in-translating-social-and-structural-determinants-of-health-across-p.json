@@ -1,0 +1,157 @@
+[
+  {
+    "talk_id": "innovations-in-translating-social-and-structural-determinants-of-health-across-p::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jesse Placek",
+      "institution_or_pharma": "Ohio State University, College of Medicine, Division of Cancer Prevention and Control",
+      "session_title": "Innovations in Translating Social and Structural Determinants of Health Across Population, Community, and Basic Cancer Research",
+      "talk_title": "Social and Built Environmental Measures: Novel Spatiotemporal Approaches in Population Science",
+      "rhetorical_signals": [
+        "Speaker said: \"We replicated this 23,000 times using Google Street View\"",
+        "Speaker said: \"Our Kappa coefficients are that we can measure these quite well\"",
+        "Speaker said: \"We saw that as disinvestment increases, survival time decreases for those diagnosed stage two or stage three\"",
+        "Speaker said: \"The confidence interval is a little wide there, so I think the p-value wasn't quite .05\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Google Street View\u2013based built environment audit",
+        "failure_type": "measurement_limiting",
+        "mechanistic_blindspot": "Spatial coverage bias \u2013 rural areas have fewer or older images, leading to incomplete exposure assessment",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No longitudinal residential history for participants",
+        "Limited temporal resolution of Google Street View images in rural tracts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Integrate CrisPRO's computational spine to combine spatiotemporal disinvestment scores with epigenetic age acceleration biomarkers for more precise risk modeling.",
+        "transcript_evidence": "Speaker said: \"We found that epigenetic age acceleration increases for each standard deviation increase in disinvestment\"",
+        "crispro_angle": "CrisPRO can model high\u2011dimensional exposure matrices and link them to epigenetic signatures, addressing the current gap between spatial exposure scores and molecular biomarkers.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate optimal sampling designs that mitigate spatial coverage bias identified in Google Street View audits.",
+        "transcript_evidence": "Speaker said: \"We have spatial autocorrelation, but coverage is uneven, especially in rural areas\"",
+        "crispro_angle": "CrisPRO can predict information loss under different audit densities and recommend supplemental data collection strategies.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How does seasonal variation in Google Street View imagery affect disorder scoring?",
+      "Can the spatial model be validated against on\u2011ground audits in underserved neighborhoods?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Google Street View audit platform (Canvas)",
+        "Disinvestment exposure score"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "innovations-in-translating-social-and-structural-determinants-of-health-across-p::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Shannon Lynch",
+      "institution_or_pharma": "Fox Chase Cancer Center / Temple University",
+      "session_title": "Innovations in Translating Social and Structural Determinants of Health Across Population, Community, and Basic Cancer Research",
+      "talk_title": "Social and Structural Drivers of Health at the Intersection of Community and Basic Science Research",
+      "rhetorical_signals": [
+        "Speaker said: \"We linked disinvestment measures to breast cancer\u2011specific survival in the Women's Circle of Health Follow\u2011Up Study\"",
+        "Speaker said: \"Epigenetic age acceleration increases for each standard deviation increase in disinvestment\"",
+        "Speaker said: \"The confidence interval is a little wide there, so I think the p-value wasn't quite .05\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Neighborhood disinvestment exposure metric",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential confounding by individual socioeconomic status not fully captured despite adjustment",
+        "unexplained_resistance_quote": "Speaker said: \"No such associations, or at least they're weaker associations, for those diagnosed stage one and stage four\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Women's Circle of Health Follow\u2011Up Study (observational cohort)",
+        "target_biology": "Impact of built\u2011environment disinvestment on breast cancer survival and epigenetic aging",
+        "flawed_enrollment_criteria": "Cohort limited to Black women in urban New Jersey; limited generalizability to other races/regions",
+        "missing_biomarker": "Comprehensive panel of stress\u2011related biomarkers beyond epigenetic age",
+        "static_vs_dynamic_failure": "Exposure measured at a single time point; temporal changes in disinvestment not captured in primary survival analysis",
+        "statistical_concern": "Potential residual confounding by SES and treatment variables",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Google Street View\u2013based disinvestment scoring pipeline",
+        "ip_vulnerability_note": "Relies on publicly available imagery; any change in Google data licensing could disrupt the workflow",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Focus on a single built\u2011environment dimension (disinvestment) may dilute signal when multiple SDOH interact"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that disinvestment is associated with shorter breast cancer survival, then concluded that \"we should focus on downstream individual behaviors\" \u2014 ignoring the upstream exposure signal"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS (overall survival) data presented, only accelerated failure time models",
+        "Limited longitudinal exposure data (no temporal dynamics of disinvestment)",
+        "Lack of mechanistic biomarkers beyond epigenetic age"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Apply CrisPRO to model how spatial disinvestment interacts with molecular stress pathways (e.g., epigenetic age) to predict survival, enabling identification of high\u2011risk subpopulations.",
+        "transcript_evidence": "Speaker said: \"Epigenetic age acceleration increases for each standard deviation increase in disinvestment\"",
+        "crispro_angle": "CrisPRO can integrate multilevel exposure matrices with epigenomic data to uncover causal pathways and refine risk stratification.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a composite risk score combining disinvestment exposure, SES, and tumor molecular features to improve prognostic models.",
+        "transcript_evidence": "Speaker said: \"We adjusted for individual SES but still saw survival differences\"",
+        "crispro_angle": "CrisPRO's machine\u2011learning framework can generate weighted scores from heterogeneous data streams.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does the association between disinvestment and epigenetic age hold after adjusting for more granular stress biomarkers?",
+      "How do temporal changes in neighborhood disinvestment influence survival trajectories?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Women's Circle of Health Follow\u2011Up Study cohort",
+        "Disinvestment exposure score dataset"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

@@ -1,0 +1,627 @@
+[
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Kai Wang",
+      "institution_or_pharma": "OrigMed",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "CUPIA 2: a collaborative multi-agent large language model framework for diagnosis of cancer of unknown primary",
+      "rhetorical_signals": [
+        "Speaker said: \"we put all the mutation results like the KRAS, TP53, two gene losses, all to CUPIA 2 return as a prediction\"",
+        "Speaker said: \"we know CUP issue, but actually I would argue more than CUP\"",
+        "Speaker said: \"we have a limitation: small cell lung cancer and endometrial, the F1 score is lower\"",
+        "Speaker said: \"there is a 15-point gap between internal and MSK validation, which is kind of expected\"",
+        "Speaker said: \"we put a single KRAS G12C to any prediction, is not possible to give a unique result anyway\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CUPIA 2 model performance on small cell lung cancer and endometrial cancers",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Model trained predominantly on Chinese patient data, leading to reduced accuracy on cancer types with distinct genomic signatures",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CUPIA 2 large language model framework",
+        "ip_vulnerability_note": "Speaker disclosed reliance on a single\u2011agent LLM architecture and a specific in\u2011house database (Smart Data) which may limit generalizability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Only 19 cancer types covered; performance drops on external cohorts and on under\u2011represented tumor types"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed F1 >85% for lung adenocarcinoma but concluded the tool should be used as a general molecular second opinion for all cancers despite low performance on several types"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation",
+        "Limited cancer type coverage (19)",
+        "Performance drop on external MSK dataset not fully explained"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CUPIA 2 struggles with small cell lung cancer and endometrial cancers due to training data bias; CrisPRO could provide a computational spine to integrate multi\u2011ethnic genomic databases and improve stratification",
+        "transcript_evidence": "Speaker said: \"For example, small cell lung cancer and endometrial, the F1 score is lower\"",
+        "crispro_angle": "Use CrisPRO's cross\u2011cohort meta\u2011learning to harmonize heterogeneous genomic signatures and generate robust tissue\u2011of\u2011origin predictions",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MSK data set",
+        "context": "used as independent validation cohort",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can the model be extended to cover additional cancer types without sacrificing accuracy?",
+      "What specific genomic or clinical features could close the 15\u2011point performance gap on external data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CUPIA 2 platform",
+        "OrigMed eHospital integration"
+      ],
+      "companies_to_monitor": [
+        "OrigMed"
+      ]
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Akshat Singhal",
+      "institution_or_pharma": "City of Hope / UC San Diego",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "Multisite Analysis of a Deep Learning Model for Prediction of Palbociclib Response in ER+ HER2\u2011 negative Advanced Breast Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"the model was able to stratify patients into sensitive and resistant cohorts with a significant hazard ratio of 0.38\"",
+        "Speaker said: \"the model was specific to palbociclib treatment and did not stratify letrozole\u2011only patients\"",
+        "Speaker said: \"we started a phase two prospective trial and just got data for our first patient\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PalboVNN model on small sample size",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Model trained on cell\u2011line data; limited patient\u2011level genomic diversity may reduce generalizability",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients responded strongly (e.g., durable response) while others did not, without clear biomarker explanation",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase II Moores Cancer Center retrospective cohort",
+        "target_biology": "Palbociclib response in ER+/HER2\u2011 negative breast cancer",
+        "flawed_enrollment_criteria": "Required NGS within 180 days before to 90 days after treatment start, reducing cohort to 36 patients",
+        "missing_biomarker": "No incorporation of clinical covariates (e.g., prior therapies, comorbidities)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect modest effect sizes",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Visible Neural Network (VNN) architecture for drug response",
+        "ip_vulnerability_note": "Relies on mapping neurons to predefined protein complexes; may limit adaptability to novel pathways",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Model not yet prospectively validated; limited to palbociclib"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the model identified protein assemblies linked to response, yet concluded that prospective trials are still needed, highlighting a gap between mechanistic insight and clinical readiness"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS data presented for the small cohort",
+        "Lack of external validation beyond MSK\u2011IMPACT panel"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could integrate additional clinical variables and larger multi\u2011omics datasets to refine the VNN and improve prediction for non\u2011responders",
+        "transcript_evidence": "Speaker said: \"the model was able to stratify patients into sensitive and resistant cohorts with a significant hazard ratio\"",
+        "crispro_angle": "Apply CrisPRO's graph\u2011based integration to combine protein complex mapping with patient\u2011level covariates",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate larger virtual cohorts for power calculations before launching prospective palbociclib trials",
+        "transcript_evidence": "Speaker noted the small sample size (36 patients) after filtering",
+        "crispro_angle": "Leverage synthetic patient generation to assess trial feasibility",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ribociclib",
+        "context": "model evaluated on ribociclib data with strong stratification",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Abemaciclib",
+        "context": "model showed weaker stratification for abemaciclib",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the VNN architecture generalize to other CDK4/6 inhibitors?",
+      "How does ancestry or tumor mutational burden affect model predictions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "PalboVNN model",
+        "Visible Neural Network platform"
+      ],
+      "companies_to_monitor": [
+        "City of Hope",
+        "UC San Diego"
+      ]
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Hui Xu",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "OncoTwin: a multimodal digital twin framework for predicting treatment response and guiding trial design in ALK\u2011rearranged NSCLC",
+      "rhetorical_signals": [
+        "Speaker said: \"we used real\u2011world data to build a prognostic model and then applied it to BrightStar trial to estimate outcomes without ALCT\"",
+        "Speaker said: \"digital twin showed a hazard ratio around 2.8 with significant log\u2011rank p\"",
+        "Speaker said: \"propensity score matching derived hazard ratio closely matched our digital twin estimate\"",
+        "Speaker said: \"digital twin overcomes limitations of RCT and propensity matching, being fast, cost\u2011efficient, and allowing individual prediction\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Synthetic control arm generation",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Model does not incorporate dynamic temporal biomarkers (e.g., serial blood markers) beyond baseline routine labs",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BrightStar phase II",
+        "target_biology": "Effect of local consolidation therapy (LCT) with brigatinib in ALK\u2011rearranged NSCLC",
+        "flawed_enrollment_criteria": "Single\u2011arm design without a contemporaneous control; reliance on retrospective real\u2011world twins may introduce unmeasured confounding",
+        "missing_biomarker": "No incorporation of longitudinal ctDNA or dynamic imaging biomarkers",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA or serial imaging to track resistance",
+        "statistical_concern": "Potential bias from model misspecification in synthetic control",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "OncoTwin data\u2011driven digital twin platform",
+        "ip_vulnerability_note": "Relies on proprietary GEMINI real\u2011world database; external reproducibility may be limited",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires extensive manual 3D lesion annotation, limiting scalability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated strong individual\u2011level prediction but still emphasized that synthetic controls cannot fully replace randomized controls"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective validation of digital twin predictions",
+        "Limited to 103 real\u2011world ALK patients without ALCT"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CrisPRO could generate virtual control arms with integrated dynamic biomarkers (e.g., ctDNA trajectories) to reduce unmeasured confounding",
+        "transcript_evidence": "Speaker noted lack of dynamic temporal data as a limitation",
+        "crispro_angle": "Use CrisPRO's temporal simulation engine to model biomarker evolution and improve synthetic control fidelity",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Combine mechanistic tumor growth models with OncoTwin's data\u2011driven predictions for hybrid digital twins",
+        "transcript_evidence": "Speaker asked about mechanism\u2011based digital twins versus data\u2011driven approach",
+        "crispro_angle": "CrisPRO can integrate both physics\u2011based and AI\u2011based components",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "OTA\u20111L trial",
+        "context": "used for external validation of digital twin predictions",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How will OncoTwin perform when incorporating ctDNA or other liquid biopsy data?",
+      "Can the platform be generalized to other oncogene\u2011driven cancers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "OncoTwin 2D and 3D models",
+        "GEMINI real\u2011world database"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson"
+      ]
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Chintan Parmar",
+      "institution_or_pharma": "AstraZeneca",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "AI\u2011derived H&E biomarkers predict differential survival under immunotherapy versus chemotherapy in phase III metastatic NSCLC study NEPTUNE",
+      "rhetorical_signals": [
+        "Speaker said: \"the study did not meet its primary endpoint of OS benefit in high TMB group\"",
+        "Speaker said: \"AI\u2011derived fibroblast phenotype significantly separated patients in both IO and chemo arms\"",
+        "Speaker said: \"adding H&E\u2011based features to a multivariate Cox model made the separation significant\"",
+        "Speaker said: \"these features performed competitively or better than PD\u2011L1, TMB, age, gender\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NEPTUNE trial enrichment strategy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reliance on TMB and PD\u2011L1 alone missed spatial immune context captured by H&E",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NEPTUNE (Phase III NSCLC)",
+        "target_biology": "First\u2011line immunotherapy vs chemotherapy",
+        "flawed_enrollment_criteria": "Stratification based only on TMB/PD\u2011L1 without spatial biomarker integration",
+        "missing_biomarker": "AI\u2011derived H&E spatial features",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary endpoint not met despite trend, suggesting under\u2011powered enrichment",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "PathAI Path Explorer off\u2011the\u2011shelf models",
+        "ip_vulnerability_note": "Speaker disclosed use of pre\u2011trained models; limited customization may allow competitors to replicate",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Biomarker development not prospectively integrated into trial design"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that fibroblast density correlates with worse OS in both arms yet concluded that the same H&E features can be used to enrich for immunotherapy benefit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No prospective validation of H&E biomarkers",
+        "Limited to 426 images; may not capture full tumor heterogeneity"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can develop a composite spatial\u2011immune signature combining fibroblast and immune cell metrics to prospectively stratify patients in future IO trials",
+        "transcript_evidence": "Speaker highlighted that H&E features added prognostic value beyond PD\u2011L1/TMB",
+        "crispro_angle": "Leverage CrisPRO's multimodal integration to fuse H&E spatial data with genomic biomarkers",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate enriched trial arms incorporating H&E biomarkers before trial launch",
+        "transcript_evidence": "Speaker noted the trial failed primary endpoint due to suboptimal patient selection",
+        "crispro_angle": "Synthetic control and enrichment simulations to optimize power",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PathAI Path Explorer",
+        "context": "off\u2011the\u2011shelf AI model used to generate features",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the H&E spatial biomarkers retain predictive power in prospective cohorts?",
+      "How do these features interact with emerging biomarkers such as circulating tumor DNA?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512346"
+      ],
+      "assets_to_track": [
+        "AI\u2011derived fibroblast and immune phenotypes",
+        "Path Explorer models"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "PathAI"
+      ]
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Pahini Pandya",
+      "institution_or_pharma": "Cambridge, UK",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "Translational deep learning platform predicts metabolic pathway activity from routine H&E slides to enable patient stratification",
+      "rhetorical_signals": [
+        "Speaker said: \"87% of pathway\u2011cancer pairs had AUC >0.5, 9% >0.65\"",
+        "Speaker said: \"top pathways like nucleotide metabolism reached AUC up to 0.85\"",
+        "Speaker said: \"this could enable biomarker\u2011driven trial enrichment for metabolic inhibitors\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "H&E\u2011based metabolic pathway prediction",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Ground truth derived from transcriptomics\u2011based genome\u2011scale metabolic models, which may not reflect actual metabolic fluxes",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ResNet\u201134 encoder for tile\u2011level prediction",
+        "ip_vulnerability_note": "Standard architecture; competitors could replicate with similar performance",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on binary pathway activity labels; may oversimplify continuous metabolic states"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated high AUC for certain pathways yet emphasized that the approach is only a feasibility study, limiting immediate clinical impact"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No external validation on independent cohorts",
+        "No linkage to treatment response outcomes yet"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "CrisPRO could refine metabolic pathway predictions by integrating proteomics or metabolomics data to overcome reliance on transcriptomic proxies",
+        "transcript_evidence": "Speaker noted that ground truth is based on transcriptomics\u2011derived models",
+        "crispro_angle": "Use CrisPRO's multi\u2011omics fusion to generate more accurate metabolic activity scores",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients for nucleotide metabolism inhibitors using CrisPRO\u2011enhanced H&E predictions",
+        "transcript_evidence": "Speaker highlighted high AUC for nucleotide metabolism pathways",
+        "crispro_angle": "Combine CrisPRO's pathway activity inference with clinical trial enrollment filters",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How well do H&E\u2011predicted pathway activities correlate with actual metabolite measurements?",
+      "Can the model be extended to predict response to metabolic drugs in prospective trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ResNet\u201134 metabolic pathway predictor",
+        "EBI BioModels metabolic models"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Hanieh Ajami",
+      "institution_or_pharma": "Moffitt Cancer Center / University of South Florida",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "Enhancing Lung Cancer Risk Prediction with Longitudinal Fusion of LDCT Data",
+      "rhetorical_signals": [
+        "Speaker said: \"Hybrid architecture achieved almost perfect AUC at year one (0.99) and remained 0.94 at year six\"",
+        "Speaker said: \"Bi\u2011 and tri\u2011fusion models also showed reasonable mid\u2011horizon performance\"",
+        "Speaker said: \"Models were statistically significantly better than the single\u2011time\u2011point Sybil baseline\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Longitudinal LDCT risk model",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Model does not incorporate clinical/demographic risk factors, which may limit personalization",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Hybrid/bi\u2011/tri\u2011fusion architectures built on Sybil feature extractor",
+        "ip_vulnerability_note": "Relies on proprietary Sybil model; competitors could replace with alternative feature extractors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires manual tumor delineation for each LDCT scan, limiting scalability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized that longitudinal modeling dramatically improves risk prediction yet acknowledged that the model still lacks clinical variables, creating a gap between performance claims and real\u2011world applicability"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No integration of smoking history or comorbidities",
+        "External validation limited to one Moffitt cohort"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate enriched screening cohorts by adding clinical risk factors to the longitudinal LDCT model",
+        "transcript_evidence": "Speaker noted missing clinical and demographic risk factors",
+        "crispro_angle": "CrisPRO's multimodal fusion can combine imaging trajectories with patient\u2011level data for better trial enrollment modeling",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Partner with companies providing automated nodule segmentation to reduce manual delineation bottleneck",
+        "transcript_evidence": "Speaker mentioned manual tumor delineation as a limitation",
+        "crispro_angle": "Integrate CrisPRO's pipeline with automated segmentation APIs",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sybil",
+        "context": "state\u2011of\u2011the\u2011art single\u2011time\u2011point LDCT risk model used as baseline",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How does variable scan interval (e.g., yearly vs irregular) affect model calibration?",
+      "Can the model predict specific nodule malignancy versus overall lung cancer risk?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "Hybrid LDCT risk model",
+        "Sybil baseline model"
+      ],
+      "companies_to_monitor": [
+        "Moffitt Cancer Center"
+      ]
+    }
+  },
+  {
+    "talk_id": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Jingyuan Wang",
+      "institution_or_pharma": "Fudan University Zhongshan Hospital / Yangtze River Delta Guochi Intelligent Medical Technology",
+      "session_title": "machine-learning-approaches-for-cancer-diagnosis-and-treatment-prediction",
+      "talk_title": "Predicting gastric cancer response to anti\u2011PD\u20111 first\u2011line treatment based on multimodal data",
+      "rhetorical_signals": [
+        "Speaker said: \"CRP multimodal model achieved AUC 0.97 for tumor response and significantly longer PFS/OS\"",
+        "Speaker said: \"CRP outperformed uni\u2011modal radiomics, pathomics, and PD\u2011L1 CPS\"",
+        "Speaker said: \"Gene set enrichment showed immune inhibitory pathways enriched in predicted non\u2011PR group\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CRP multimodal prediction in limited cohort",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Model trained on ~200 patients; limited diversity may not capture rare gastric cancer subtypes",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Predictive PR status identified a subset with longer survival, but underlying biology not fully explained",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CLIME + CNN\u2011Transformer pathomics pipeline",
+        "ip_vulnerability_note": "Uses publicly available tools; core algorithm not proprietary",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires both CT and H&E for each patient; may limit applicability in centers lacking one modality"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker highlighted strong multimodal performance yet admitted that PD\u2011L1 CPS scores are still used clinically, indicating a gap between model superiority and current practice adoption"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No prospective validation in larger, diverse cohorts",
+        "Limited external cohorts (only two hospitals)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can augment the CRP model with additional omics (e.g., circulating tumor DNA) to improve prediction for rare gastric subtypes",
+        "transcript_evidence": "Speaker noted limited cohort size and need for larger validation",
+        "crispro_angle": "CrisPRO's multi\u2011modal integration can combine radiomics, pathomics, genomics, and liquid biopsy data",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use CrisPRO to simulate enriched trial arms for anti\u2011PD\u20111 therapies based on predicted PR status",
+        "transcript_evidence": "Speaker demonstrated that CRP model predicts longer PFS/OS",
+        "crispro_angle": "Synthetic control generation to estimate power gains from biomarker\u2011driven enrollment",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PD\u2011L1 CPS score",
+        "context": "standard clinical biomarker used for immunotherapy selection",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the multimodal model retain performance when only one modality (e.g., CT) is available?",
+      "How does the model perform across different anti\u2011PD\u20111 agents?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04789012"
+      ],
+      "assets_to_track": [
+        "CRP multimodal model",
+        "CLIME pathomics pipeline"
+      ],
+      "companies_to_monitor": [
+        "Yangtze River Delta Guochi Intelligent Medical Technology"
+      ]
+    }
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "talk_id": "ai-in-cancer-care-practical-applications-transforming-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dennis Brooks",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "ai-in-cancer-care-practical-applications-transforming-oncology",
+      "talk_title": "CODA: 3D Mapping of Tumors at Single-Cell Resolution",
+      "rhetorical_signals": [
+        "Speaker said: \"If you take a patient and they went through the pink path versus the blue path, and then you've got differences in image reconstruction, differences in post-processing, differences in segmentation, you end up with 1,000 different potential measurements, 1,000 different feature extractions coming out of the same patient\"",
+        "Speaker said: \"We discovered that actually, blood vessel and nerve follow beautiful scale-free fractal geometry across species and across developmental stages\"",
+        "Speaker said: \"All seven fallopian tubes that we assessed ... contain STIC lesions\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No quantitative validation of lesion counts against independent pathology gold standard",
+        "No longitudinal data to assess lesion evolution over time"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CODA reveals that many precancerous lesions are missed by standard 2D pathology; a computational pipeline could stratify patients based on 3D lesion burden for early intervention.",
+        "transcript_evidence": "Speaker said: \"If you go through a 2D assessment, you would completely miss the ability to tell which precancerous lesion is which... we found about 100 to 500 lesions in a healthy pancreas\"",
+        "crispro_angle": "CrisPRO can integrate 3D spatial metadata with genomic signatures to predict which lesions are likely to progress, enabling targeted surveillance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CODA's ability to register multimodal data (IHC, spatial transcriptomics, proteomics) at submicron resolution can be leveraged to benchmark AI models for multimodal integration.",
+        "transcript_evidence": "Speaker said: \"We can integrate all standard modalities, IHC, spatial transcriptomics, Codex, leading to very highly quantifiable data sets\"",
+        "crispro_angle": "CrisPRO's multimodal fusion engine can be trained on CODA-generated datasets to improve cross-modality prediction accuracy.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to extend CODA from a static 3D snapshot to 4D temporal imaging for monitoring lesion dynamics?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CODA 3D reconstruction pipeline"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "ai-in-cancer-care-practical-applications-transforming-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Michael Berger",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "ai-in-cancer-care-practical-applications-transforming-oncology",
+      "talk_title": "Sequencing to Treatment: The Role of AI in Precision Oncology",
+      "rhetorical_signals": [
+        "Speaker said: \"AI methods have now improved enough that there are real opportunities to incorporate into our workflows\"",
+        "Speaker said: \"Applying AI methods to infer which of the variants detected in the tumor are specific to the tumor versus inherited germline variants or clonal hematopoiesis\"",
+        "Speaker said: \"We have a limitation at our own center. We're only one specific geography, maybe not representative of all sort of national and ancestral and ethnic groups\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Tumor\u2011only sequencing pipelines",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Inability to distinguish somatic mutations from germline or clonal hematopoiesis without matched normal",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Reliance on internally curated knowledge bases (OncoKB)",
+        "ip_vulnerability_note": "Speaker highlighted that OncoKB is curated by internal faculty and not open\u2011source, suggesting a potential bottleneck for external integration",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad panel sequencing without systematic integration of emerging AI\u2011driven variant interpretation tools may dilute actionable signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that deep learning variant callers (e.g., DeepVariant) achieve high accuracy, then concluded that current probabilistic callers are still sufficient for clinical use \u2014 ignoring the demonstrated superiority of AI models"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective clinical trial validation for AI\u2011driven decision support tools",
+        "Limited representation of diverse ancestries in training data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "AI can infer functional impact of missense variants using AlphaMisSense/AlphaGenome, addressing the blindspot of unknown resistance mechanisms in tumor\u2011only sequencing.",
+        "transcript_evidence": "Speaker said: \"AlphaMisSense ... can predict the pathogenicity of missense variants\"",
+        "crispro_angle": "CrisPRO's protein\u2011structure aware variant impact module can prioritize resistance\u2011associated mutations for therapeutic targeting.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "AI\u2011augmented trial matching (e.g., TrialGPT) can improve enrollment of patients with rare biomarker profiles identified by MSK\u2011IMPACT.",
+        "transcript_evidence": "Speaker said: \"AI can retrieve individual trials, their enrollment criteria, patient characteristics to determine who's eligible\"",
+        "crispro_angle": "CrisPRO can integrate genomic signatures with trial eligibility rules to generate real\u2011time matching recommendations.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Current pipelines lack systematic stratification of clonal hematopoiesis mutations in liquid biopsy; CrisPRO can provide a dedicated classifier.",
+        "transcript_evidence": "Speaker said: \"Applying AI methods to infer which of the variants detected in the tumor are specific to the tumor versus inherited germline variants or clonal hematopoiesis\"",
+        "crispro_angle": "CrisPRO's hematopoietic\u2011origin detection model can flag CH variants, reducing false\u2011positive tumor calls.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MetaCH (AstraZeneca)",
+        "context": "Tool for inferring somatic vs clonal hematopoiesis in liquid biopsy",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "DeepVariant",
+        "context": "Deep learning variant caller shown to outperform conventional callers",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "AlphaMisSense (Google DeepMind)",
+        "context": "Predicts pathogenicity of missense variants using protein structure",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "OncoKB",
+        "context": "Somatic knowledge base used for clinical actionability annotation",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can AI models be validated prospectively across diverse patient populations to avoid bias?",
+      "What governance frameworks will ensure secure use of patient genomic data in LLMs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MSK-IMPACT",
+        "MetaCH",
+        "AlphaMisSense",
+        "TrialGPT"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca",
+        "Google DeepMind",
+        "Microsoft (for Azure AI services)",
+        "IBM Watson Health"
+      ]
+    }
+  },
+  {
+    "talk_id": "ai-in-cancer-care-practical-applications-transforming-oncology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Caroline Chung",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "ai-in-cancer-care-practical-applications-transforming-oncology",
+      "talk_title": "Embracing Cancer Complexity: Practical Considerations for Translating AI to the Clinic",
+      "rhetorical_signals": [
+        "Speaker said: \"If you create a very complex model that's expecting all these different data streams to come in, in completeness every single time, it's going to be much harder for you to successfully deploy that model later on\"",
+        "Speaker said: \"We call meta\u2011analyses and collections of meta\u2011analyses the Farmer's Almanac... it's not going to provide us with the type of information that we may want for an individual patient\"",
+        "Speaker said: \"The more work that you need to do to get this real\u2011world data coming from different hospitals into a state where you can actually train and validate and test this model, that gap is going to be the same gap you're going to have when you're trying to deploy the model\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No empirical data on model performance after deployment in heterogeneous hospital networks",
+        "Absence of quantitative metrics linking metadata\u2011aware training to clinical outcome improvement"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "CrisPRO can embed metadata\u2011quality scores into AI model training pipelines to reduce deployment failure due to heterogeneous real\u2011world data.",
+        "transcript_evidence": "Speaker said: \"If you think about how much work it took to get your data into a state where you could actually train and validate and test this model, that's the same gap you're going to have to overcome when you're running that model in the real world\"",
+        "crispro_angle": "CrisPRO's data provenance engine automatically flags missing or low\u2011quality streams, enabling adaptive model selection per site.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Standardizing imaging metadata (e.g., slice thickness, reconstruction protocol) can enable CrisPRO to stratify patients by imaging quality for downstream predictive modeling.",
+        "transcript_evidence": "Speaker said: \"If you flatten and assume that you're getting the same measurement, you may not be, and this is where biases can get introduced\"",
+        "crispro_angle": "CrisPRO integrates imaging metadata into radiomics pipelines, improving robustness of biomarker extraction.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What concrete standards should be adopted for metadata capture across multi\u2011institutional imaging pipelines?",
+      "How can AI models quantify and communicate uncertainty to clinicians in real time?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MD Anderson AI metadata framework"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

@@ -1,0 +1,753 @@
+[
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::bowers::1",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "Serial Plasma Comprehensive Genomic Profiling Detects Therapy Resistance and Guides Management of Metastatic Non-Small Cell Lung Cancer",
+    "speaker": {
+      "name": "William Bowers",
+      "affiliation": "Johns Hopkins University, Sidney Kimmel Comprehensive Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "liquid_biopsy",
+      "clinical_trial",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "activating alterations",
+        "pathway": "RTK/RAS",
+        "modality": "unspecified",
+        "compound_name": "osimertinib",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "EGFR-driven NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MET",
+        "alteration": "amplification",
+        "pathway": "RTK/RAS",
+        "modality": "unspecified",
+        "compound_name": "unspecified",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "NSCLC resistance",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "T790M",
+        "pathway": "RTK/RAS",
+        "modality": "unspecified",
+        "compound_name": "unspecified",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "post\u2011first\u2011gen TKI resistance",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "C797S",
+        "pathway": "RTK/RAS",
+        "modality": "unspecified",
+        "compound_name": "unspecified",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "osimertinib resistance",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "unspecified",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "unspecified",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "acquired resistance",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA detectability (mutation count)",
+        "type": "prognostic",
+        "assay": "Guardant 360 NGS",
+        "finding": "Undetectable ctDNA associated with significantly better overall survival"
+      },
+      {
+        "name": "Actionable alteration on plasma",
+        "type": "predictive",
+        "assay": "Guardant 360 NGS",
+        "finding": "Patients with actionable alteration who received genotype\u2011matched therapy had significantly improved overall survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "real\u2011world institutional NSCLC cohort",
+        "genotype_or_key_features": "718 patients, 214 EGFR\u2011mutant"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "actionable alteration on first plasma",
+        "value": "37%",
+        "n": "n=718",
+        "population": "all NSCLC patients",
+        "maturity": "interim"
+      },
+      {
+        "metric": "actionable alteration in treatment\u2011naive plasma",
+        "value": "36%",
+        "n": "n=427",
+        "population": "treatment\u2011naive NSCLC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "PCGP\u2011matched therapy initiation within 30 days",
+        "value": "22%",
+        "n": "n=427",
+        "population": "treatment\u2011naive NSCLC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "unique clinical utility of plasma genotyping",
+        "value": "13% of total cohort",
+        "n": "n=718",
+        "population": "overall NSCLC cohort",
+        "maturity": "interim"
+      },
+      {
+        "metric": "unique utility in EGFR\u2011mutant NSCLC",
+        "value": "28%",
+        "n": "n=214",
+        "population": "EGFR\u2011mutant NSCLC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "actionable alterations at progression",
+        "value": "22%",
+        "n": "n=214",
+        "population": "EGFR\u2011mutant NSCLC at progression",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Serial plasma comprehensive genomic profiling (PCGP) using Guardant 360 detects actionable and resistance alterations (e.g., EGFR, MET, EGFR T790M, C797S, BRAF) in metastatic NSCLC, enabling genotype\u2011matched therapy selection and demonstrating that ctDNA detectability correlates with overall survival.",
+    "readouts": [
+      "NGS panel sequencing (Guardant 360)",
+      "ctDNA mutation count",
+      "clinical outcomes (OS)"
+    ],
+    "key_findings": [
+      "37% of NSCLC patients had an actionable alteration on first plasma PCGP.",
+      "In treatment\u2011naive patients, 36% harbored FDA\u2011approved genotype\u2011matched alterations.",
+      "22% of treatment\u2011naive patients started genotype\u2011matched therapy within 30 days of plasma result.",
+      "Undetectable ctDNA was associated with significantly longer overall survival versus detectable ctDNA.",
+      "Patients receiving genotype\u2011matched therapy based on plasma findings had significantly improved overall survival."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "MET amplification and secondary EGFR alterations were the most common resistance mechanisms to osimertinib.",
+      "Resistance landscapes differed between first/second\u2011generation EGFR TKIs (T790M\u2011driven) and osimertinib (MET, C797S)."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does plasma PCGP performance compare with tissue NGS in low\u2011tumor\u2011burden settings?",
+      "Can earlier serial sampling improve detection of emerging resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Guardant Health"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::stabile::2",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "Feasibility of Plasma ctDNA for Detecting Brain Metastasis Specific Alterations in Lung Cancer",
+    "speaker": {
+      "name": "Dr. Stabile",
+      "affiliation": "University of Pittsburgh Hillman Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "liquid_biopsy",
+      "biomarker_development",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MET",
+        "alteration": "amplification",
+        "pathway": "RTK/RAS",
+        "modality": "unspecified",
+        "compound_name": "cabozantinib/tepotinib (FDA\u2011approved MET TKIs)",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "brain metastasis in lung cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MET amplification in plasma ctDNA",
+        "type": "predictive",
+        "assay": "Guardant 360",
+        "finding": "Detected more frequently in patients with brain metastases than without"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "retrospective metastatic NSCLC ctDNA cohort",
+        "genotype_or_key_features": "28 patients with paired pre/post\u2011craniotomy plasma and brain tissue"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "MET amplification detection in plasma at progression",
+        "value": "10%",
+        "n": "n=79",
+        "population": "patients with progression after EGFR TKI",
+        "maturity": "interim"
+      },
+      {
+        "metric": "MET amplification in brain metastasis tissue",
+        "value": "16.4%",
+        "n": "n=unknown",
+        "population": "brain mets from lung adenocarcinoma",
+        "maturity": "interim"
+      },
+      {
+        "metric": "MET amplification detection in matched plasma (complete sets)",
+        "value": "1/2 (50%)",
+        "n": "n=2",
+        "population": "patients with paired tissue and plasma",
+        "maturity": "interim"
+      },
+      {
+        "metric": "MET amplification detection in all plasma (including partial sets)",
+        "value": "1/6 (\u224817%)",
+        "n": "n=6",
+        "population": "all brain metastasis patients",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Post\u2011radiation ctDNA signal increase",
+        "value": "significant VAF and CNV rise",
+        "n": "n=1 case",
+        "population": "post\u2011craniotomy plasma after radiation",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Plasma ctDNA profiling detects MET amplifications, which are enriched in lung cancer brain metastases; radiation may enhance ctDNA shedding, improving detection of brain\u2011specific alterations.",
+    "readouts": [
+      "NGS panel sequencing (Guardant 360)",
+      "FISH for MET in tissue",
+      "VAF and CNV analysis"
+    ],
+    "key_findings": [
+      "MET amplification is significantly more common in lung cancer brain metastases (16.4%) than in primary tumors (3.7%).",
+      "Plasma ctDNA detects MET amplifications in ~10% of patients at progression, but concordance with tissue is limited.",
+      "In paired pre\u2011 and post\u2011craniotomy samples, only 1 of 2 tissue MET amplifications were captured in plasma.",
+      "Radiation therapy appears to increase ctDNA shedding, leading to higher VAF/CNV signals post\u2011radiation."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Technical challenges capture MET amplification by ctDNA, especially with low tumor burden or intrathoracic disease."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can assay sensitivity be improved to reliably detect brain\u2011specific MET amplifications?",
+      "What is the optimal timing of plasma collection relative to radiotherapy for maximal ctDNA yield?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Predicinn"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::leonido::3",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "AXL mRNA Overexpression in CTCs as a New Potential Liquid Biopsy Biomarker in Non-Small Cell Lung Cancer",
+    "speaker": {
+      "name": "Evi Leonido",
+      "affiliation": "University of Athens",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "liquid_biopsy",
+      "CTC",
+      "biomarker_development",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "AXL",
+        "alteration": "overexpression (mRNA)",
+        "pathway": "RTK/EMT",
+        "modality": "peptide_vaccine",
+        "compound_name": "unspecified AXL inhibitors/ADCs",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "osimertinib\u2011resistant NSCLC",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "AXL mRNA in CTCs",
+        "type": "predictive",
+        "assay": "RT\u2011qPCR after Parsortix size\u2011based enrichment",
+        "finding": "Detected in ~13% baseline, 16% after first osimertinib cycle, 9% during treatment, 12% at progression"
+      },
+      {
+        "name": "AXL mRNA in CTCs during immunotherapy",
+        "type": "predictive",
+        "assay": "RT\u2011qPCR",
+        "finding": "Low baseline; increased after anti\u2011PD\u20111 in a few patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NSCLC patient CTC cohort",
+        "genotype_or_key_features": "Group A: osimertinib-treated (multiple time points); Group B: immunotherapy-treated"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AXL overexpression prevalence at baseline",
+        "value": "13%",
+        "n": "n=unspecified",
+        "population": "NSCLC patients before osimertinib",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AXL overexpression after first osimertinib cycle",
+        "value": "16%",
+        "n": "n=unspecified",
+        "population": "osimertinib\u2011treated NSCLC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AXL overexpression at disease progression",
+        "value": "12%",
+        "n": "n=unspecified",
+        "population": "osimertinib\u2011treated NSCLC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AXL overexpression after immunotherapy",
+        "value": "few patients (3) showed increase",
+        "n": "n=unspecified",
+        "population": "NSCLC patients on anti\u2011PD\u20111",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "AXL mRNA overexpression in size\u2011enriched circulating tumor cells (CTCs) is detected by RT\u2011qPCR and rises after osimertinib exposure, suggesting a role in EMT\u2011mediated resistance and providing a potential biomarker for selecting AXL\u2011targeted therapies.",
+    "readouts": [
+      "Parsortix size\u2011based CTC enrichment",
+      "RT\u2011qPCR for AXL mRNA",
+      "Immunofluorescence protein staining",
+      "Droplet digital PCR for EGFR mutations"
+    ],
+    "key_findings": [
+      "AXL mRNA is overexpressed in CTCs of ~13% of NSCLC patients at baseline and increases after the first osimertinib cycle.",
+      "AXL overexpression persists in a subset of patients at disease progression, indicating a possible resistance mechanism.",
+      "During anti\u2011PD\u20111 therapy, AXL overexpression emerges in a few patients, suggesting adaptive resistance.",
+      "CTC\u2011derived AXL expression provides complementary information to ctDNA and tissue analyses."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "AXL overexpression is linked to EMT and resistance to EGFR TKIs and immune checkpoint inhibitors."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "AXL\u2011targeted TKIs/ADCs",
+        "rationale": "Counteract EMT\u2011driven resistance mediated by AXL",
+        "phenotype": "Potential restoration of osimertinib sensitivity",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the therapeutic threshold of AXL mRNA expression in CTCs for initiating AXL\u2011targeted therapy?",
+      "How does CTC\u2011derived AXL expression correlate with tissue AXL protein levels?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::zhu::4",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "Circulating Tumor Cell\u2011Informed Pipeline for Rapid Personalization of Synergistic Cytokine\u2011Armed CAR\u2011NK Cell Therapy in Pancreatic Ductal Adenocarcinoma",
+    "speaker": {
+      "name": "Yin Zhu",
+      "affiliation": "University of Michigan",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "CAR_T",
+      "cell_therapy",
+      "liquid_biopsy",
+      "platform_technology",
+      "preclinical"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Mesothelin",
+        "alteration": "overexpression",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_NK",
+        "compound_name": "anti\u2011mesothelin CAR\u2011NK",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "PDAC CTCs",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MUC4",
+        "alteration": "overexpression",
+        "pathway": "cell_surface_antigen",
+        "modality": "CAR_NK",
+        "compound_name": "anti\u2011MUC4 CAR\u2011NK",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "PDAC CTCs",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "CTC\u2011enriched blood from 33 PDAC patients",
+        "genotype_or_key_features": "Mesothelin+/MUC4+ CTC enumeration"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "BxPC3 (MUC4+), AsPC1 (mesothelin+)",
+        "genotype_or_key_features": "PDAC lines used for killing assays"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "PDAC mouse model",
+        "genotype_or_key_features": "Tumor\u2011bearing mice treated with CAR\u2011NK"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CTC enrichment via a microfluidic Labyrinth device identifies mesothelin or MUC4 expression, guiding selection of cytokine\u2011armed CAR\u2011NK cells (IL\u201112/IL\u201115) that synergistically enhance NK activation, granzyme B release, and long\u2011term tumor killing in PDAC models.",
+    "readouts": [
+      "Microfluidic CTC enrichment (Labyrinth)",
+      "Immunofluorescence for mesothelin/MUC4",
+      "2D and 3D killing assays",
+      "Granzyme B and IFN\u2011\u03b3 flow cytometry",
+      "In\u2011vivo tumor growth in mice"
+    ],
+    "key_findings": [
+      "87% of PDAC patients had CTCs expressing at least one CAR\u2011NK target (mesothelin or MUC4).",
+      "MUC4\u2011positive CTCs were enriched in metastatic patients.",
+      "IL\u201112 and IL\u201115 armed CAR\u2011NK cells achieved near\u2011complete tumor eradication in 2D killing assays and eliminated spheroids by day 12.",
+      "Synergistic cytokine\u2011armed CAR\u2011NK cells provided superior tumor suppression and survival benefit in mouse models compared with conventional CAR\u2011NK."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Target expression heterogeneity (exclusive mesothelin vs. MUC4) underscores need for personalized CAR\u2011NK selection."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IL\u201112 and IL\u201115 cytokine arms",
+        "rationale": "Enhance NK activation and proliferation for synergistic anti\u2011tumor effect",
+        "phenotype": "Increased granzyme B, IFN\u2011\u03b3, and sustained killing in vitro and in vivo",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How will CTC target expression evolve during therapy and affect CAR\u2011NK efficacy?",
+      "Can this pipeline be adapted for other solid tumors with distinct CTC antigens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Dana\u2011Faber Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::robinson::5",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "ctDNA Clearance Dynamics in MSI\u2011High Colorectal Cancer Treated with Immune Checkpoint Inhibitors",
+    "speaker": {
+      "name": "Hannah Robinson",
+      "affiliation": "University of Colorado",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "liquid_biopsy",
+      "clinical_trial",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "ctDNA (Signatera tumor\u2011informed assay)",
+        "type": "predictive",
+        "assay": "Signatera NGS",
+        "finding": "Early ctDNA negativity after ICI start associated with markedly improved OS (HR 4.7, 4\u2011yr OS 95% vs 81%)"
+      },
+      {
+        "name": "ctDNA clearance (any time)",
+        "type": "predictive",
+        "assay": "Signatera NGS",
+        "finding": "Patients who cleared ctDNA at any point had 10\u2011fold OS advantage (HR 10, 4\u2011yr OS 95.5% vs 66.1%)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Real\u2011world MSI\u2011high mCRC cohort (Natera database)",
+        "genotype_or_key_features": "465 patients, median 7 ctDNA time points"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ctDNA positivity pre\u2011ICI",
+        "value": "73%",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Patients achieving ctDNA clearance",
+        "value": "77%",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC after ICI",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Early clearance (<4 months)",
+        "value": "44%",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Sustained clearance (\u22656 months)",
+        "value": "63%",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "OS hazard ratio for early ctDNA negative vs positive",
+        "value": "HR 4.7",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "OS hazard ratio for any ctDNA clearance vs persistent positivity",
+        "value": "HR 10",
+        "n": "n=~465",
+        "population": "MSI\u2011high mCRC",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Longitudinal tumor\u2011informed ctDNA monitoring (Signatera) in MSI\u2011high metastatic colorectal cancer reveals that early and sustained ctDNA clearance after immune checkpoint inhibitor initiation predicts markedly improved overall survival.",
+    "readouts": [
+      "Signatera tumor\u2011informed NGS ctDNA assay",
+      "Overall survival analysis"
+    ],
+    "key_findings": [
+      "73% of MSI\u2011high mCRC patients were ctDNA positive before ICI therapy.",
+      "77% achieved ctDNA clearance at least once after ICI start, median time 96 days.",
+      "Early clearance (<4 months) occurred in 44% and correlated with 4\u2011year OS of 95% vs 81% for ctDNA\u2011positive patients.",
+      "Any clearance conferred a 10\u2011fold OS advantage (95.5% vs 66.1% 4\u2011yr OS).",
+      "Sustained clearance (\u22656 months) was observed in 63% of patients."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Persistent ctDNA positivity identified a high\u2011risk group with markedly inferior survival."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do ctDNA dynamics differ between pembrolizumab monotherapy and ipilimumab/nivolumab combination?",
+      "Can ctDNA monitoring guide optimal duration of ICI therapy in MSI\u2011high mCRC?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Natera"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology::yao::6",
+    "session_title": "liquid-biopsy-frontiers-ctdna-fragmentomics-and-mrd-to-guide-precision-oncology",
+    "talk_title": "Genomic Signatures in Red Blood Cell DNA\u2011Enabled Early Non\u2011Invasive Detection of Colorectal Neoplasia",
+    "speaker": {
+      "name": "Xinyu Yao",
+      "affiliation": "West Lake University, China",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "early_detection",
+      "liquid_biopsy",
+      "biomarker_development",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "RBC\u2011DNA genomic signature",
+        "type": "diagnostic",
+        "assay": "Low\u2011coverage whole\u2011genome sequencing of RBC DNA",
+        "finding": "AUC 0.95 for advanced colorectal neoplasia; 85% sensitivity for advanced adenomas, 95% for CRC at 90% specificity"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "1,251 treatment\u2011na\u00efve participants (discovery + internal test)",
+        "genotype_or_key_features": "Controls, advanced adenomas, CRC"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "External validation cohorts (two cities, China)",
+        "genotype_or_key_features": "Advanced neoplasia cases"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Prospective head\u2011to\u2011head cohort vs FIT",
+        "genotype_or_key_features": "585 participants"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC for advanced colorectal neoplasia (internal test)",
+        "value": "0.95",
+        "n": "n=~600 internal test",
+        "population": "advanced adenoma + CRC vs controls",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Sensitivity for advanced adenomas",
+        "value": "85%",
+        "n": "n=~300",
+        "population": "advanced adenoma cases",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Sensitivity for colorectal cancer",
+        "value": "95%",
+        "n": "n=~150",
+        "population": "CRC cases",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Specificity in controls",
+        "value": "90%",
+        "n": "n=~300",
+        "population": "participants without advanced neoplasia",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Advanced adenoma sensitivity in external cohorts",
+        "value": "over 60%",
+        "n": "n=unspecified",
+        "population": "external validation",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Comparison with FIT (prospective cohort)",
+        "value": "Higher sensitivity for advanced adenomas and Stage\u202f1 CRC",
+        "n": "n=585",
+        "population": "head\u2011to\u2011head FIT vs RBC\u2011DNA",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Red blood cell\u2011associated DNA fragments, released during erythropoiesis under tumor\u2011induced genotoxic stress, carry distinct genomic coverage patterns that differ between colorectal cancer patients and healthy controls, enabling a sequencing\u2011based classifier to detect advanced neoplasia with high accuracy.",
+    "readouts": [
+      "Low\u2011coverage whole\u2011genome sequencing of RBC DNA",
+      "Computational feature extraction",
+      "Binary classification model"
+    ],
+    "key_findings": [
+      "RBC DNA fragments are shorter (avg 4.3\u202fkb) than genomic DNA but longer than cfDNA.",
+      "Distinct genome\u2011wide coverage patterns differentiate CRC patients from healthy donors.",
+      "A binary classifier achieved AUC\u202f0.95, 85% sensitivity for advanced adenomas and 95% for CRC at 90% specificity.",
+      "Performance remained robust across external validation cohorts and was not confounded by blood counts or lifestyle factors.",
+      "In a prospective head\u2011to\u2011head comparison, RBC\u2011DNA testing outperformed FIT for detecting advanced adenomas and Stage\u202f1 CRC."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What are the specific genomic regions driving the RBC\u2011DNA signal and their biological relevance?",
+      "Can RBC\u2011DNA signatures be extended to other cancer types or pan\u2011cancer early detection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

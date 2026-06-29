@@ -1,0 +1,121 @@
+[
+  {
+    "talk_id": "aacr-joseph-h-burchenal-award-for-outstanding-achievement-in-clinical-cancer-res::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Luis A. Diaz Jr.",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "aacr-joseph-h-burchenal-award-for-outstanding-achievement-in-clinical-cancer-res",
+      "talk_title": "Tumor-agnostic immunotherapy, minimal residual disease, and cancer prevention",
+      "rhetorical_signals": [
+        "Speaker said: \"We still, to this date, don't know why they do so poorly\" (referring to pancreatic and glioma responses).",
+        "Speaker said: \"We closed the placebo arm because patients and doctors were very reticent to refer patients to a ctDNA positive trial with a placebo arm\".",
+        "Speaker said: \"I think that we could take these tumors that were mismatch or deficient and maybe avoid surgery in a large majority of them because they respond so well to immune checkpoint blockade\"."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Pembrolizumab (PD-1 blockade) in pancreatic ductal adenocarcinoma (MMR\u2011D)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Immunosuppressive tumor microenvironment and low neoantigen presentation in pancreatic cancer",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Pembrolizumab in glioma (MMR\u2011D)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Blood\u2011brain barrier limits immune cell infiltration and distinct CNS immune tolerance",
+        "unexplained_resistance_quote": "We still, to this date, don't know why they do so poorly.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MRD\u2011guided pembrolizumab adjuvant trial (no NCT disclosed)",
+        "target_biology": "Eliminate ctDNA\u2011positive minimal residual disease in MMR\u2011D solid tumors",
+        "flawed_enrollment_criteria": "Enrolling only ctDNA\u2011positive patients after standard therapy, leading to very low prevalence and slow accrual",
+        "missing_biomarker": "Standardized ctDNA assay threshold and dynamic monitoring plan",
+        "static_vs_dynamic_failure": "No serial on\u2011treatment ctDNA monitoring to adapt therapy duration",
+        "statistical_concern": "Underpowered due to small ctDNA\u2011positive cohort",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Pembrolizumab (PD\u20111 antibody) \u2013 broad checkpoint inhibition without tumor\u2011specific targeting",
+        "ip_vulnerability_note": "Speaker disclosed reliance on a single checkpoint pathway, making the approach vulnerable to tumors with alternative immune evasion mechanisms.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad tumor\u2011agnostic label without biomarker refinement for low\u2011responding sites (e.g., pancreas, glioma)."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that pancreatic and glioma MMR\u2011D tumors had poor responses, then concluded that \"we can cure systemic disease and local disease\" with checkpoint blockade across >50% of patients."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for the MRD adjuvant study",
+        "Lack of randomized control arm after placebo closure",
+        "Limited biomarker\u2011stratified analysis for low\u2011responding tumor types"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011enabled predictive model to identify MMR\u2011D tumor subtypes (e.g., pancreatic, glioma) unlikely to respond to PD\u20111 blockade.",
+        "transcript_evidence": "Speaker said: \"We still, to this date, don't know why they do so poorly\" regarding pancreatic and glioma responses.",
+        "crispro_angle": "Use computational modeling of tumor microenvironment and neoantigen landscape to flag patients for alternative combos.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair PD\u20111 blockade with agents that remodel the immunosuppressive microenvironment in pancreatic cancer (e.g., CXCR4 antagonists).",
+        "transcript_evidence": "Speaker highlighted insufficient efficacy of pembrolizumab alone in pancreatic cancer.",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of checkpoint inhibition plus stromal\u2011targeting drugs.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design adaptive MRD trials that enrich for ctDNA\u2011positive patients using real\u2011time assay feedback and allow early crossover to active therapy.",
+        "transcript_evidence": "Speaker noted slow accrual and closure of placebo arm due to rarity of ctDNA\u2011positive patients.",
+        "crispro_angle": "Leverage CrisPRO to model enrollment scenarios and power calculations for adaptive designs.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Merck",
+        "context": "Provided pembrolizumab drug supply for the early 2013 study under an IND.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Natera",
+        "context": "Mentioned as a later commercial ctDNA platform that was not available during the early MRD studies.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular mechanisms underlie the poor response of pancreatic and glioma MMR\u2011D tumors to PD\u20111 blockade?",
+      "Can longer duration of adjuvant pembrolizumab improve cure rates in ctDNA\u2011positive patients?",
+      "What is the optimal ctDNA assay sensitivity and threshold to guide treatment decisions without overtreatment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Pembrolizumab (Keytruda)",
+        "ctDNA MRD assays (e.g., Guardant360, Signatera)"
+      ],
+      "companies_to_monitor": [
+        "Merck",
+        "Natera",
+        "Guardant Health"
+      ]
+    }
+  }
+]

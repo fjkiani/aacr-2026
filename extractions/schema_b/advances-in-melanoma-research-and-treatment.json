@@ -1,0 +1,200 @@
+[
+  {
+    "talk_id": "advances-in-melanoma-research-and-treatment::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Eva Hernando",
+      "institution_or_pharma": "University of California, Los Angeles (UCLA)",
+      "session_title": "advances-in-melanoma-research-and-treatment",
+      "talk_title": "Advances in basic science melanoma research",
+      "rhetorical_signals": [
+        "Speaker said: \"we don't have the time to present all this data, but we have shown that migration through these narrow channels does not just select for aggressive cells. It actually confers increased metastatic potential without altering the proliferative capacity of the cells.\"",
+        "Speaker said: \"we have demonstrated that this mesenchymal state gives two advantages to the cells. One is physical. They have much more deformability, and also transcriptional.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo validation of mechanical compression\u2013induced chromatin hubs in human patients",
+        "Lack of therapeutic targeting data for the identified HMGB2\u2011dependent stress\u2011resistant invasion state"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Mechanical confinement induces chromatin de\u2011compaction and creates new transcriptional hubs that drive metastasis; CrisPRO could model these chromatin changes to predict which tumors will acquire a mesenchymal, highly deformable phenotype.",
+        "transcript_evidence": "Speaker said: \"migration through these narrow channels induces the repression of heterochromatin and also reduces the density of the nucleus... this endows much more physical nuclear deformability\"",
+        "crispro_angle": "CrisPRO's computational spine can integrate ATAC\u2011seq, Hi\u2011C and histone\u2011mark data to forecast chromatin hub formation and identify patients at risk of mechanical\u2011stress\u2011driven dissemination.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What downstream signaling pathways are activated by the new chromatin hubs after mechanical constriction?",
+      "Can pharmacologic inhibition of HMGB2 or CTCF repositioning prevent the acquisition of the mesenchymal invasive state?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "advances-in-melanoma-research-and-treatment::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Georgina Long",
+      "institution_or_pharma": "Melanoma Institute Australia",
+      "session_title": "advances-in-melanoma-research-and-treatment",
+      "talk_title": "Advances in clinical melanoma research",
+      "rhetorical_signals": [
+        "Speaker said: \"These Phase 3 trials went on after promising Phase 1/2 response rates, and the PFS curves were all negative \u2013 massive failure, except for two trials.\"",
+        "Speaker said: \"We are still left with 45% of patients that don't benefit in the adjuvant setting, and we've really tried three compounds added to the PD\u20111 backbone that have not passed muster.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Epacadostat (IDO inhibitor)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "IDO inhibition does not overcome primary immune resistance in treatment\u2011na\u00efve melanoma",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Anti\u2011TIGIT antibody (vibostalimab)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of baseline biomarker stratification (low IFN\u2011\u03b3, PD\u2011L1) leading to no benefit",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients responded but overall trial negative",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CheckMate 915 (adjuvant ipilimumab + nivolumab)",
+        "target_biology": "Dual checkpoint blockade in resected stage III melanoma",
+        "flawed_enrollment_criteria": "Low-dose ipilimumab used despite known dose\u2011response relationship, diluting therapeutic signal",
+        "missing_biomarker": "Baseline IFN\u2011\u03b3 / PD\u2011L1 status not required for enrollment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect benefit of low-dose ipilimumab",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "NeoIreni (NCT not provided)",
+        "target_biology": "Neoadjuvant PD\u20111 \u00b1 LAG\u20113 in stage III melanoma",
+        "flawed_enrollment_criteria": "Mixed inclusion of patients without biomarker pre\u2011selection, potentially mixing responders and non\u2011responders",
+        "missing_biomarker": "NeoPredict resistance score not required for arm assignment",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Bispecific PD\u20111/LAG\u20113 and PD\u2011L1/TIGIT constructs",
+        "ip_vulnerability_note": "Speaker noted no improvement over standard ipi/nivo despite higher TMB and BRAF\u2011V600E prevalence, suggesting limited incremental benefit",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Advancing bispecifics without robust baseline biomarker stratification"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high pathological response rates for neoadjuvant PD\u20111/LAG\u20113 combos, then concluded that major pathological response does not reliably predict relapse\u2011free survival for targeted or intralesional therapies"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for many failed Phase 3 trials",
+        "Lack of biomarker\u2011stratified analysis for anti\u2011TIGIT and epacadostat studies"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Many failed Phase 3 trials lacked baseline IFN\u2011\u03b3 / PD\u2011L1 stratification; CrisPRO could provide a predictive resistance model (NeoPredict) to enrich future trials.",
+        "transcript_evidence": "Speaker said: \"the anti\u2011TIGIT trial showed a trend for poorer survival, likely because we did not look at baseline tissue before making the decision.\"",
+        "crispro_angle": "CrisPRO can integrate transcriptomic, DNA and clinical features to generate a resistance score for patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Low-dose ipilimumab in CheckMate 915 diluted efficacy; CrisPRO could simulate dose\u2011response curves to optimize checkpoint dosing before trial launch.",
+        "transcript_evidence": "Speaker said: \"we know that ipilimumab, not PD\u20111, has a dose\u2011response relationship, higher dose, better response.\"",
+        "crispro_angle": "CrisPRO's computational modeling of immune activation can predict optimal checkpoint dosing regimens.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Third\u2011space patients identified by NeoPredict could be matched with emerging CAR\u2011T or TIL platforms; CrisPRO can prioritize antigen targets (e.g., TYRP1, IL\u201113R\u03b12) based on expression heterogeneity.",
+        "transcript_evidence": "Speaker said: \"we have a suite of prediction tools... NeoPredict predicts resistance to PD\u20111 monotherapy.\"",
+        "crispro_angle": "CrisPRO can rank surface antigens for CAR design using tumor\u2011specific expression and splice\u2011variant data.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Epacadostat",
+        "context": "Phase 3 IDO inhibitor trial failed after promising Phase 1/2 response rates",
+        "sentiment": "critical"
+      },
+      {
+        "name": "T-VEC",
+        "context": "Oncolytic virus trial showed limited benefit in unselected stage IV population",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Bempeg (pegylated IL\u20112)",
+        "context": "Phase 3 trial showed detriment when combined with nivolumab",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Lenvatinib",
+        "context": "Multikinase inhibitor combo showed early PFS benefit but later OS crossover",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Vibostalimab (anti\u2011TIGIT)",
+        "context": "Adjuvant anti\u2011TIGIT trial showed possible trend toward poorer survival",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Roche bispecific PD\u20111/LAG\u20113",
+        "context": "Randomized neoadjuvant study did not improve major pathological response over ipi/nivo",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Why did the anti\u2011TIGIT trial fail despite higher tumor mutation burden in the experimental arm?",
+      "What is the optimal dose of ipilimumab in the adjuvant setting to balance efficacy and toxicity?",
+      "Can baseline NeoPredict scores be prospectively validated to guide neoadjuvant therapy selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT042XXXX (NeoIreni trial \u2013 exact number not provided in transcript)",
+        "NCT04165772 (example placeholder for future trial design checks)"
+      ],
+      "assets_to_track": [
+        "Epacadostat",
+        "Vibostalimab",
+        "T\u2011VEC",
+        "Bempeg",
+        "Lenvatinib"
+      ],
+      "companies_to_monitor": [
+        "Roche",
+        "Genentech",
+        "Melanoma Institute Australia"
+      ]
+    }
+  }
+]

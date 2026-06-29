@@ -1,0 +1,323 @@
+[
+  {
+    "talk_id": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment::walsh::1",
+    "session_title": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment",
+    "talk_title": "Spatial omics workflow and challenges for neuroimmune characterization",
+    "speaker": {
+      "name": "Logan Walsh",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Described the development and benchmarking of cell segmentation tools and hierarchical phenotyping pipelines for spatial transcriptomics and proteomics, emphasizing the importance of accurate nucleus and membrane segmentation to correctly assign immune phenotypes in tumor sections.",
+    "readouts": [
+      "optical imaging",
+      "spatial transcriptomics",
+      "spatial proteomics",
+      "cell segmentation",
+      "pixel-level classification"
+    ],
+    "key_findings": [
+      "Developed Circle Cell Segmentation Across Scales (CCSAS) tool that outperforms existing segmentation methods qualitatively and quantitatively.",
+      "Implemented a ranked hierarchy pixel\u2011by\u2011pixel classification approach for immune phenotyping that improves cell type assignment compared with simple dimensionality reduction.",
+      "Demonstrated that accurate segmentation dramatically impacts downstream spatial analyses such as pairwise cell interaction and cellular neighborhood quantification."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can segmentation algorithms be further optimized for heterogeneous tumor architectures and nerve\u2011rich regions?",
+      "What are the best practices for integrating multi\u2011modal spatial data (RNA, protein, metabolomics) in a single analysis pipeline?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment::wang::2",
+    "session_title": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment",
+    "talk_title": "Spatial transcriptomics of perineural invasion in pancreatic cancer and PDGFD\u2011PDGFRB functional validation",
+    "speaker": {
+      "name": "Will Wang",
+      "affiliation": "Massachusetts General Hospital / Harvard Medical School",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "immunotherapy",
+      "combination_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PDGFD",
+        "alteration": "",
+        "pathway": "PDGF_signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PDAC cancer cells adjacent to nerves",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PDGFRB",
+        "alteration": "",
+        "pathway": "PDGF_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "SU16f",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "neurons, Schwann cells, PDAC cells near nerves",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PDGFD protein",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Enriched in cancer cells proximal to nerves (p<0.01)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "tissue_microarray",
+        "name": "PDAC TMA (29 patients, 12 TMAs)",
+        "genotype_or_key_features": "regions: nerve\u2011only, nerve\u2011plus\u2011cancer (PNI), cancer\u2011only"
+      },
+      {
+        "model_type": "3D neural invasion assay",
+        "name": "DRG\u2011Matrigel organoid co\u2011culture",
+        "genotype_or_key_features": "tdTomato\u2011labeled PDAC organoids with CRISPR\u2011activated PDGFD or PDGFRB"
+      },
+      {
+        "model_type": "syngeneic orthotopic transplant",
+        "name": "KP mouse PDAC model",
+        "genotype_or_key_features": "Rosa26\u2011dCas9\u2011Vpr activation of PDGFD"
+      },
+      {
+        "model_type": "sciatic nerve invasion model",
+        "name": "intrasciatic injection of PDAC cells",
+        "genotype_or_key_features": "PDGFD overexpressing vs control"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "nerve invasion area",
+        "value": "significantly increased in PDGFD\u2011overexpressing orthotopic tumors",
+        "confidence_interval": "",
+        "n": "n=8 mice per group",
+        "population": "KP orthotopic mice",
+        "comparator": "scramble control",
+        "maturity": "interim"
+      },
+      {
+        "metric": "neurite arborization length per cell body area",
+        "value": "\u2191 with PDGFD co\u2011culture (p<0.001)",
+        "confidence_interval": "",
+        "n": "n=3 independent neuron cultures",
+        "population": "Nav1.8\u2011Cre tdTomato DRG neurons",
+        "comparator": "scramble organoid co\u2011culture",
+        "maturity": "interim"
+      },
+      {
+        "metric": "sciatic nerve longitudinal invasion length",
+        "value": "reduced by SU16f treatment (p=0.004)",
+        "confidence_interval": "",
+        "n": "n=6 mice per arm",
+        "population": "sciatic nerve model",
+        "comparator": "vehicle",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Spatial transcriptomics identified PDGFD enrichment in cancer cells adjacent to nerves; functional assays showed PDGFD\u2011PDGFRB signaling promotes perineural invasion by enhancing cancer cell invasiveness, neurite outgrowth, and Schwann\u2011cell mediated tumor migration, which can be blocked by PDGFRB inhibition.",
+    "readouts": [
+      "spatial transcriptomics (GeoMx DSP)",
+      "spatial molecular imaging (CosMx)",
+      "immunofluorescence/IHC",
+      "3D organoid invasion imaging",
+      "mouse tumor burden measurements"
+    ],
+    "key_findings": [
+      "A bulk RNA\u2011derived classifier predicts perineural invasion and uncovered missed PNI cases on histology.",
+      "Spatial profiling revealed PDGFD\u2011PDGFRB as the only ligand\u2011receptor pair overlapping between sequencing\u2011based (GeoMx) and imaging\u2011based (SMI) datasets.",
+      "CRISPR activation of PDGFD in PDAC organoids increased 3D neural invasion index, which was dose\u2011dependently blocked by the PDGFRB inhibitor SU16f.",
+      "Recombinant PDGFD stimulates neurite outgrowth from DRG neurons; this effect is abolished by PDGFRB inhibition.",
+      "In vivo, PDGFD overexpression augments orthotopic tumor nerve invasion, while PDGFRB inhibition reduces sciatic nerve invasion."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "PDGFRB inhibition selectively blocks PDGFD\u2011driven invasion without affecting baseline tumor growth in control lines."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PDGFRB small\u2011molecule inhibitor (SU16f)",
+        "rationale": "Block PDGFD\u2011PDGFRB signaling axis that drives perineural invasion.",
+        "phenotype": "Dose\u2011dependent reduction of nerve invasion in 3D assay and in vivo models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will PDGFRB inhibition improve response to immunotherapy in PNI\u2011positive pancreatic cancer?",
+      "What are the downstream signaling pathways in neurons and Schwann cells mediating PDGFD effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wang et al. 2024 Nature Communications"
+      ],
+      "company_or_sponsor": [
+        "NanoString"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment::amit)::3",
+    "session_title": "mapping-neural-immune-circuits-spatial-multi-omics-in-the-tumor-microenvironment",
+    "talk_title": "Integrating spatial neuroimmune signatures with bulk RNA to predict immunotherapy resistance",
+    "speaker": {
+      "name": "Amit (Dr. Amit)",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "skin cancer",
+      "head and neck cancer",
+      "pancreatic cancer",
+      "melanoma",
+      "gastric cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "clinical_trial",
+      "translational",
+      "bioinformatics"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "nerve injury signature (e.g., ATF3, C-JUN)",
+        "type": "predictive",
+        "assay": "bulk RNA\u2011seq GSEA",
+        "finding": "Enriched in non\u2011responders to anti\u2011PD\u20111 across multiple cohorts (p<0.01)"
+      },
+      {
+        "name": "neurodegeneration GO terms",
+        "type": "predictive",
+        "assay": "bulk RNA\u2011seq enrichment",
+        "finding": "High scores correlate with worse overall survival in TCGA head\u2011and\u2011neck cohort"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Neoadjuvant anti\u2011PD\u20111 trial (resectable skin cancer)",
+        "genotype_or_key_features": "pre\u2011 and post\u2011treatment bulk RNA, spatial transcriptomics, proteomics"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA head\u2011and\u2011neck dataset",
+        "genotype_or_key_features": "n=500+, bulk RNA, survival data"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "perineural invasion prevalence",
+        "value": "\u224850% in non\u2011responders vs 20% in responders",
+        "confidence_interval": "",
+        "n": "n=78 patients",
+        "population": "neoadjuvant anti\u2011PD\u20111 skin cancer trial",
+        "comparator": "responders",
+        "maturity": "interim"
+      },
+      {
+        "metric": "overall survival hazard ratio",
+        "value": "HR 0.56 for low nerve\u2011injury signature vs high",
+        "confidence_interval": "95% CI 0.38\u20110.82",
+        "n": "n=312 head\u2011and\u2011neck TCGA patients",
+        "population": "TCGA HNSCC",
+        "comparator": "high vs low signature",
+        "maturity": "mature"
+      }
+    ],
+    "MOA_summary": "Bulk RNA signatures of nerve injury and neurodegeneration are enriched in tumors that fail anti\u2011PD\u20111 therapy; spatial profiling links these signatures to immunosuppressive microenvironments (e.g., FoxP3+ Tregs, myeloid cells) around injured nerves, suggesting nerve\u2011mediated resistance mechanisms.",
+    "readouts": [
+      "bulk RNA\u2011seq",
+      "GSEA",
+      "NanoString GeoMx spatial profiling",
+      "Visium spatial transcriptomics",
+      "IHC for NFH and immune markers"
+    ],
+    "key_findings": [
+      "Half of anti\u2011PD\u20111 non\u2011responders exhibited histologic perineural invasion, whereas responders had significantly lower rates.",
+      "Bulk RNA\u2011seq of non\u2011responders showed enrichment of nerve injury pathways (ATF3, C\u2011JUN) and neurodegeneration GO terms.",
+      "Applying neurodegeneration signatures to TCGA head\u2011and\u2011neck cohort stratified patients by survival, with high\u2011signature tumors having worse outcomes.",
+      "Spatial profiling demonstrated co\u2011localization of nerve injury markers with immunosuppressive cells (FoxP3+ Tregs, myeloid cells) but not with effective anti\u2011tumor immune signatures.",
+      "NanoString GeoMx analysis confirmed that nerve\u2011adjacent regions in non\u2011responders express higher checkpoint molecules (PD\u2011L1, CTLA\u20114) compared with responders."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Nerve injury signatures correlate specifically with immunosuppressive phenotypes, suggesting a selective resistance mechanism rather than a global tumor aggressiveness effect."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111 blockade",
+        "rationale": "Targeting nerve\u2011mediated immunosuppression may sensitize tumors to checkpoint inhibition.",
+        "phenotype": "Potential reduction of Treg enrichment around nerves and improved response rates (hypothetical).",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "PDGFRB inhibitor (e.g., SU16f)",
+        "rationale": "Block PDGFD\u2011PDGFRB axis implicated in nerve\u2011driven invasion and immunosuppression.",
+        "phenotype": "Reduced perineural invasion and decreased immunosuppressive niche in preclinical models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can nerve\u2011injury signatures be used prospectively to stratify patients for combination neuro\u2011targeted therapies with immunotherapy?",
+      "What are the optimal biomarkers (RNA vs protein) for detecting nerve\u2011mediated immunosuppression in routine clinical samples?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Amit et al. 2023 JCO",
+        "Wang et al. 2024 Nat Commun"
+      ],
+      "company_or_sponsor": [
+        "NanoString"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

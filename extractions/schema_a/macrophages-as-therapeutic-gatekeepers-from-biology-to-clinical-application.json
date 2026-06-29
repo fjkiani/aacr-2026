@@ -1,0 +1,472 @@
+[
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::guerrero::1",
+    "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+    "talk_title": "Lipid-associated macrophages as therapeutic targets and CAR\u2011monocyte strategy",
+    "speaker": {
+      "name": "Jennifer Guerrero",
+      "affiliation": "Brigham and Women's Hospital, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TREM2",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "CAR_T",
+        "compound_name": "TREM2 CAR",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TREM2\u2011positive TAMs in breast tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CSF1R",
+        "alteration": "",
+        "pathway": "tyrosine_kinase_signaling",
+        "modality": "antibody",
+        "compound_name": "axcitilimab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CSF1R\u2011positive lipid\u2011associated macrophages after PARP inhibition",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD36",
+        "alteration": "",
+        "pathway": "lipid_uptake",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Up\u2011regulated on lipid\u2011associated macrophages after olaparib",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PD-L1",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti\u2011PD\u2011L1",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Induced on macrophages by PARP inhibition",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CD68",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "\u224850% of breast tumor cells were CD68\u2011positive macrophages; high density correlated with worse relapse\u2011free survival"
+      },
+      {
+        "name": "TREM2",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "High TREM2 expression on TAMs associated with poor clinical outcome"
+      },
+      {
+        "name": "CSF1R",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "CSF1R up\u2011regulated on lipid\u2011associated macrophages after olaparib treatment"
+      },
+      {
+        "name": "CD36",
+        "type": "predictive",
+        "assay": "flow cytometry",
+        "finding": "Olaparib increased CD36 mean fluorescence intensity on murine bone\u2011marrow\u2011derived macrophages"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "BRCA1\u2011/\u2011; p53\u2011/\u2011 breast cancer model",
+        "genotype_or_key_features": "BRCA1\u2011deficient, p53\u2011deficient, immunocompetent"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "TALAZO trial (talazaparib \u00b1 avelumab)",
+        "genotype_or_key_features": "Advanced BRCA\u2011mutated breast cancer, pre\u2011 and on\u2011treatment biopsies"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "U937 CAR\u2011monocytes",
+        "genotype_or_key_features": "Engineered to express TREM2 CAR"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "PARP inhibition induces cGAS\u2011STING activation and CD8 T\u2011cell recruitment but simultaneously expands lipid\u2011associated, CSF1R\u2011 and TREM2\u2011positive macrophages that suppress immunity; anti\u2011CSF1R synergizes with PARP inhibition to double survival in mice, and a TREM2\u2011directed CAR\u2011monocyte platform is designed to phagocytose and eliminate these suppressive macrophages while secreting pro\u2011inflammatory cytokines.",
+    "readouts": [
+      "IHC",
+      "flow_cytometry",
+      "spatial_transcriptomics",
+      "digital_spatial_profiling",
+      "scRNA\u2011seq",
+      "Incucyte phagocytosis assay"
+    ],
+    "key_findings": [
+      "Olaparib treatment of BRCA\u2011deficient mice increased tumor\u2011infiltrating macrophages expressing PD\u2011L1, CSF1R, CD36 and TREM2.",
+      "Anti\u2011CSF1R combined with olaparib doubled median overall survival from ~100 to ~200 days in the mouse model, an effect dependent on CD8 T cells.",
+      "TREM2\u2011CAR monocytes specifically phagocytosed TREM2\u2011positive target cells in vitro, whereas irrelevant CARs did not.",
+      "In vivo, a single IV dose of TREM2\u2011CAR monocytes increased intratumoral CD8 T cells and reduced tumor burden by ~50% in a breast cancer model, further enhanced by anti\u2011PD\u20111.",
+      "The AXLAP phase\u202f1b trial (axcitilimab\u202f+\u202folaparib) is >50% enrolled in metastatic HER2\u2011negative, BRCA1/PALB2\u2011mutated breast cancer, enabling correlative studies of macrophage modulation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "PARP\u202f+\u202fPD\u2011L1 showed no benefit in a prior trial, likely due to expansion of lipid\u2011associated macrophages.",
+      "CAR\u2011monocytes avoid the poor tumor penetration seen with CAR\u2011T cells because monocytes naturally home to hypoxic, macrophage\u2011rich niches."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "olaparib",
+        "rationale": "PARP inhibition induces immunogenic DNA damage but also expands suppressive macrophages; CSF1R blockade mitigates the latter.",
+        "phenotype": "Survival doubled, increased CD8 T\u2011cell infiltration",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "anti\u2011PD\u20111",
+        "rationale": "CSF1R blockade alone leaves residual immunosuppression; checkpoint inhibition further activates T cells.",
+        "phenotype": "Additional tumor regression in mouse model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "TREM2\u2011CAR monocytes",
+        "rationale": "Direct elimination of TREM2\u2011positive suppressive macrophages and cytokine release to boost T\u2011cell activity.",
+        "phenotype": "50% tumor burden reduction; synergy with anti\u2011PD\u20111",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can CAR\u2011monocytes be further engineered with cytokine payloads to enhance durability of anti\u2011tumor immunity?",
+      "What is the optimal sequencing of PARP inhibition, CSF1R blockade, and CAR\u2011monocyte therapy in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Charisma Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::miller::2",
+    "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+    "talk_title": "Redefining myeloid states in glioma with CNMF and organoid platforms",
+    "speaker": {
+      "name": "Tyler Miller",
+      "affiliation": "Case Western Reserve University School of Medicine, Department of Neurology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "brain tumor"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "IL\u20111\u03b2",
+        "type": "pharmacodynamic",
+        "assay": "scRNA\u2011seq",
+        "finding": "IL\u20111\u03b2 expression defines a systemic inflammatory program in monocytes infiltrating glioma organoids"
+      },
+      {
+        "name": "IL\u20114",
+        "type": "pharmacodynamic",
+        "assay": "scRNA\u2011seq",
+        "finding": "IL\u20114 signaling program is highly active in monocyte\u2011derived macrophages across glioma samples"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "glioma GBO organoids",
+        "genotype_or_key_features": "Intact tumor microenvironment, retains microglia, macrophages, T cells for 2\u20118 weeks"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "U87 glioma line (used for perturbations)",
+        "genotype_or_key_features": "not specified"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "CSF samples from CAR\u2011T trial (44 patients)",
+        "genotype_or_key_features": "CSF myeloid cells profiled pre\u2011 and post\u2011CAR\u2011T infusion"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Consensus non\u2011negative matrix factorization (CNMF) decomposes glioma single\u2011cell RNA\u2011seq into identity and activity programs, revealing four dominant myeloid activity programs (systemic inflammatory, microglial inflammatory, dexamethasone\u2011driven immunosuppressive, hypoxia\u2011driven scavenger); the scavenger program predicts poor response to checkpoint blockade and CAR\u2011T therapy, while the microglial inflammatory program correlates with response.",
+    "readouts": [
+      "scRNA\u2011seq",
+      "CNMF program analysis",
+      "Visium spatial transcriptomics",
+      "10x Xenium spatial proteomics",
+      "flow_cytometry"
+    ],
+    "key_findings": [
+      "CNMF identified 14 myeloid programs across glioma, with four activity programs accounting for >90% of cells.",
+      "The scavenger immunosuppressive program (hypoxia\u2011linked) was enriched in non\u2011responders to checkpoint blockade and CAR\u2011T therapy.",
+      "Microglial inflammatory program was enriched in responders and associated with improved overall survival.",
+      "CAR\u2011T infusion induced a dose\u2011dependent surge of the complement immunosuppressive program in CSF myeloid cells across all patients.",
+      "Baseline high scavenger program levels in CSF predicted worse overall survival after CAR\u2011T treatment."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Dexamethasone treatment drives a distinct immunosuppressive myeloid program that may blunt immunotherapy efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IL\u20111\u03b2 blockade (disulfiram)",
+        "rationale": "Reduce pyroptosis\u2011mediated IL\u20111\u03b2 release that fuels the scavenger program.",
+        "phenotype": "Decreased scavenger program expression in organoid co\u2011culture",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "IL\u20114R\u03b1 blockade (dupilumab)",
+        "rationale": "Target IL\u20114\u2011driven immunosuppressive polarization observed in glioma macrophages.",
+        "phenotype": "Proposed to shift macrophages toward inflammatory program",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Can selective inhibition of the dexamethasone\u2011driven program improve CAR\u2011T efficacy without compromising steroid benefits?",
+      "What upstream signals trigger the hypoxia\u2011linked scavenger program in brain metastases?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application::moran::3",
+    "session_title": "macrophages-as-therapeutic-gatekeepers-from-biology-to-clinical-application",
+    "talk_title": "Clinical targeting of immunosuppressive macrophages: lessons from IL\u20114, IL\u20111 and checkpoint combos",
+    "speaker": {
+      "name": "Thomas Moran",
+      "affiliation": "Mount Sinai, Phase\u202f1 Oncology Program",
+      "role": "clinician_investigator",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non\u2011small cell lung cancer",
+      "colorectal cancer",
+      "breast cancer",
+      "pan\u2011cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "targeted_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "IL4RA",
+        "alteration": "",
+        "pathway": "type_II_immunity",
+        "modality": "antibody",
+        "compound_name": "dupilumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "IL\u20114/IL\u201113 signaling in monocyte\u2011derived macrophages of NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IL1R1",
+        "alteration": "",
+        "pathway": "inflammasome",
+        "modality": "antibody",
+        "compound_name": "anakinra",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "IL\u20111\u03b1/\u03b2 signaling in age\u2011related tumor promotion",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CSF1R",
+        "alteration": "",
+        "pathway": "tyrosine_kinase_signaling",
+        "modality": "antibody",
+        "compound_name": "axcitilimab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CSF1R\u2011positive TAMs in BRCA\u2011mutated breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD47",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "magrolimab (example)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Do\u2011not\u2011eat\u2011me signal on lymphoma and AML cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD24",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "CD24\u2011Fc",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CD24\u2011Siglec\u201110 axis in solid tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AXL",
+        "alteration": "",
+        "pathway": "phosphatidylserine_recognition",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "bemcentinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AXL\u2011mediated tolerogenic signaling in TAMs",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "PD\u2011L1",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Baseline PD\u2011L1 expression used to select patients for first\u2011line immunotherapy in NSCLC"
+      },
+      {
+        "name": "TREM2",
+        "type": "exploratory",
+        "assay": "scRNA\u2011seq",
+        "finding": "CCR2/5 inhibition reduced intratumoral TREM2\u207a macrophages in a neoadjuvant lung cancer cohort"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KP (Kras^G12D; p53^\u2212/\u2212) lung cancer model",
+        "genotype_or_key_features": "KRAS mutant, p53 deficient, immunocompetent"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Dupilumab rescue study (NCT05194995)",
+        "genotype_or_key_features": "PD\u20111\u2011refractory NSCLC, prior pembrolizumab"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Anakinra IL\u20111 blockade trial",
+        "genotype_or_key_features": "Advanced solid tumors progressing on PD\u20111 blockade"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "pain reduction",
+        "value": "morphine use reduced from 8\u00d7/day to 0 within weeks",
+        "confidence_interval": "",
+        "n": "1 patient",
+        "population": "PD\u20111\u2011refractory NSCLC with bone pain",
+        "comparator": "baseline",
+        "maturity": "interim"
+      },
+      {
+        "metric": "disease control rate",
+        "value": "\u224833%",
+        "confidence_interval": "",
+        "n": "12 patients",
+        "population": "NSCLC progressing on PD\u20111 therapy receiving dupilumab",
+        "comparator": "historical docetaxel control",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "IL\u20114R\u03b1 blockade with dupilumab interrupts tumor\u2011derived type\u202fII cytokine signaling that imprints immunosuppressive IL\u20114\u2011responsive macrophages in the bone marrow, restoring anti\u2011tumor immunity in a subset of PD\u20111\u2011refractory NSCLC patients; combined IL\u20111\u03b1/\u03b2 inhibition (anakinra) further disrupts inflammasome\u2011driven myeloid suppression, enhancing checkpoint efficacy in preclinical models of lung, colorectal and pancreatic cancer.",
+    "readouts": [
+      "scRNA\u2011seq",
+      "flow_cytometry",
+      "IHC",
+      "clinical imaging (RECIST)",
+      "pain medication logs"
+    ],
+    "key_findings": [
+      "Dupilumab added to ongoing PD\u20111 blockade induced remission and complete pain relief in a patient with progressive NSCLC.",
+      "Approximately one\u2011third of PD\u20111\u2011refractory NSCLC patients achieved disease control after three dupilumab doses, allowing continuation of checkpoint therapy.",
+      "IL\u20114 neutralization reduced emergency myelopoiesis and tumor\u2011associated macrophage accumulation in KRAS\u2011mutant mouse lung cancer.",
+      "Combined IL\u20114R\u03b1 and PD\u20111 blockade synergistically reduced tumor burden in KP1 mouse model compared with either monotherapy.",
+      "Dual IL\u20111\u03b1/\u03b2 blockade (anakinra) suppressed age\u2011related inflammasome activation and tumor growth in old mouse models of colorectal and pancreatic cancer."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "CCR2/5 inhibition depleted TREM2\u207a macrophages but also unexpectedly reduced peripheral lymphocytes, potentially limiting efficacy.",
+      "CD47 antibodies caused hemolysis due to CD47 expression on red blood cells, leading to halted development."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111 inhibitor (pembrolizumab)",
+        "rationale": "IL\u20114 blockade reprograms suppressive macrophages, enabling T\u2011cell mediated checkpoint response.",
+        "phenotype": "33% disease control in refractory NSCLC; synergistic tumor shrinkage in mouse models",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Anakinra (IL\u20111R antagonist)",
+        "rationale": "Concurrent inhibition of IL\u20111\u03b1/\u03b2 reduces inflammasome\u2011driven myeloid suppression and may augment IL\u20114 blockade.",
+        "phenotype": "Significant tumor growth inhibition in aged mouse models of CRC and PDA",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "AXL inhibitor (bemcentinib)",
+        "rationale": "Block tolerogenic AXL signaling in TAMs to prevent immunosuppressive reprogramming after therapy\u2011induced cell death.",
+        "phenotype": "No OS benefit in phase\u202f2 lung cancer trial when combined with PD\u20111 blockade",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "What biomarkers predict which NSCLC patients will respond to IL\u20114R\u03b1 blockade combined with PD\u20111 inhibition?",
+      "Can simultaneous targeting of IL\u20114 and IL\u20111 pathways overcome resistance in tumors with mixed myeloid programs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05194995",
+        "NCT04576171"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Moran et al. 2024 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "Sanofi (dupilumab)",
+        "Kineret (anakinra)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

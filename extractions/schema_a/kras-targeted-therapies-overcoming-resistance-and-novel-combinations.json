@@ -1,0 +1,768 @@
+[
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::chang::1",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "KEAP1-NRF2 mediated resistance to KRAS inhibition and glutamine metabolism targeting",
+    "speaker": {
+      "name": "Wen-Hsun Chang",
+      "affiliation": "University of North Carolina",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic cancer",
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KEAP1",
+        "alteration": "loss_of_function",
+        "pathway": "NRF2",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12D inhibitor treated PDAC and NSCLC models",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NRF2",
+        "alteration": "",
+        "pathway": "NRF2",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KEAP1 knockout models",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "GLS",
+        "alteration": "",
+        "pathway": "glutamine_metabolism",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "DRP104",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KEAP1-deficient KRAS inhibitor resistant tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "PDAC KEAP1 knockout",
+        "genotype_or_key_features": "KEAP1 KO, KRAS G12D"
+      },
+      {
+        "model_type": "PDX",
+        "name": "PDAC PDX with NRF2 activation",
+        "genotype_or_key_features": "KEAP1 loss"
+      },
+      {
+        "model_type": "allograft",
+        "name": "KP lung tumor allograft",
+        "genotype_or_key_features": "KEAP1 KO"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Loss of KEAP1 stabilizes NRF2, reprogramming transcription and glutamine metabolism to confer resistance to KRAS G12D and pan\u2011RAS inhibitors; co\u2011inhibition of glutamine metabolism with DRP104 restores sensitivity in vitro and in vivo.",
+    "readouts": [
+      "CRISPR screen",
+      "RNA\u2011seq",
+      "bulk RNA\u2011seq",
+      "Western blot",
+      "tumor growth curves"
+    ],
+    "key_findings": [
+      "CRISPR screens identified KEAP1 knockout as a top driver of resistance to KRAS G12D (MRTX1133) and pan\u2011RAS (RMC7977) inhibitors.",
+      "KEAP1 KO cells show NRF2 and NQO1 up\u2011regulation and reduced sensitivity to KRAS inhibitors in both pancreatic and NSCLC models.",
+      "A glutamine antagonist (DRP104) combined with KRAS inhibitors suppresses tumor growth in three resistant in vivo models.",
+      "Patient and PDX datasets reveal higher expression of a KEAP1\u2011deficiency gene signature in KRAS inhibitor\u2011resistant cases."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "KEAP1 loss drives resistance via NRF2\u2011dependent transcriptional program distinct from RAS, MYC, TEAD pathways."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "DRP104 (glutamine antagonist)",
+        "rationale": "Target glutamine metabolism up\u2011regulated by KEAP1 loss to overcome KRAS inhibitor resistance",
+        "phenotype": "Synergistic tumor growth inhibition in PDAC PDX, lung allograft, and KRAS\u2011mutant models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::bail::2",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "Selective ULK1/2 inhibitor 2088 synergizes with KRAS pathway blockade",
+    "speaker": {
+      "name": "Bail",
+      "affiliation": "Moffitt Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non-small cell lung cancer",
+      "pancreatic cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "autophagy",
+      "combination_therapy",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ULK1",
+        "alteration": "",
+        "pathway": "autophagy",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "2088",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS pathway inhibited cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "H2030 NSCLC",
+        "genotype_or_key_features": "KRAS mutant"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "Calu-1",
+        "genotype_or_key_features": "KRAS mutant, sotorasib treated"
+      },
+      {
+        "model_type": "DNA_barcode_clonal",
+        "name": "CADU1",
+        "genotype_or_key_features": "KRAS mutant, barcoded"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The ULK1/2 inhibitor 2088 blocks autophagy initiation, enhancing the efficacy of KRAS pathway inhibitors (MEK or KRAS G12C inhibitors) by preventing drug\u2011tolerant persister cell emergence without clonal selection.",
+    "readouts": [
+      "NanoBRET",
+      "LantaScreen",
+      "LC3B EGFP\u2011mCherry flux assay",
+      "DNA barcode sequencing",
+      "RNA\u2011seq",
+      "Shannon diversity index"
+    ],
+    "key_findings": [
+      "2088 shows higher cellular affinity than existing ULK1 inhibitors in NanoBRET assays.",
+      "Combination of 2088 with trametinib (MEK inhibitor) or sotorasib (KRAS G12C inhibitor) yields strong synergy in NSCLC H2030 cells.",
+      "In vivo, 2088 plus sotorasib significantly improves tumor growth inhibition compared to monotherapy in Calu\u20111 xenografts.",
+      "DNA barcode tracking indicates the combination delays clonal outgrowth and reduces drug\u2011tolerant persister populations."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "ULK1 inhibition overcomes adaptive autophagy\u2011mediated resistance; no specific resistance to 2088 observed."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "sotorasib (KRAS G12C inhibitor)",
+        "rationale": "Block autophagy that supports survival of KRAS\u2011inhibited cells",
+        "phenotype": "Enhanced tumor regression in xenograft models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "trametinib (MEK inhibitor)",
+        "rationale": "Target parallel MAPK signaling while suppressing autophagy",
+        "phenotype": "High synergy in vitro",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::zan::3",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "Modeling acquired resistance to pan\u2011KRAS inhibitor RMC\u20116236 in pancreatic cancer",
+    "speaker": {
+      "name": "Di Zan",
+      "affiliation": "Shanghai ChemPartner",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "resistance_mechanisms",
+      "combination_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "Y64D",
+        "pathway": "RAS/MAPK",
+        "modality": "molecular_glue",
+        "compound_name": "RMC-6236",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS\u2011mutant PDAC cell lines",
+        "target_novelty": "first_in_class"
+      },
+      {
+        "gene_or_protein": "MEK",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MEK inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Combination with RMC\u20116236",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Mia\u2011PaCa2 (KRAS G12C)",
+        "genotype_or_key_features": "KRAS Y64D engineered"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "ASPC\u20111 (KRAS G12D)",
+        "genotype_or_key_features": "KRAS Y64D engineered"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "Mia\u2011PaCa2 subcutaneous",
+        "genotype_or_key_features": "KRAS Y64D tumors"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "KRAS Y64 mutations disrupt binding of the pan\u2011KRAS molecular glue RMC\u20116236, conferring resistance; resistance can be overcome by MEK inhibition, suggesting downstream MAPK blockade as a viable combination.",
+    "readouts": [
+      "biochemical binding assay",
+      "tri\u2011complex formation assay",
+      "3D cell viability (CellTiter\u2011Glo)",
+      "Western blot (p\u2011ERK)",
+      "in vivo tumor growth curves"
+    ],
+    "key_findings": [
+      "Y64D mutation abolishes RMC\u20116236 binding to KRAS and prevents tri\u2011complex formation with RAF.",
+      "KRAS Y64D engineered cell lines show >50\u2011fold increase in IC50 to RMC\u20116236 compared with wild\u2011type.",
+      "In xenografts, Y64D tumors exhibit markedly reduced response to RMC\u20116236 at both low and high doses.",
+      "MEK inhibitor restores sensitivity in Y64D mutant models, indicating downstream MAPK blockade can bypass resistance."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance driven by a single point mutation (Y64) that blocks molecular glue engagement; not due to KRAS amplification."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MEK inhibitor",
+        "rationale": "Bypass KRAS\u2011mediated resistance caused by Y64 mutation",
+        "phenotype": "Restored tumor growth inhibition in Y64D models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Revolution Medicine"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::polidoro::4",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "Combining RAS inhibitors with ribonucleotide reductase inhibitor BBI 825 to prevent ecDNA\u2011driven resistance",
+    "speaker": {
+      "name": "Silvia Polidoro",
+      "affiliation": "Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "combination_therapy",
+      "resistance_mechanisms",
+      "targeted_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "amplification (ecDNA)",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "adagrasib / sotorasib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MSS CRC models",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RNR",
+        "alteration": "",
+        "pathway": "deoxynucleotide synthesis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "BBI 825",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ecDNA\u2011positive CRC cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "KRAS amplification (ecDNA)",
+        "type": "predictive",
+        "finding": "High baseline ecDNA correlates with rapid resistance emergence"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "RW7213",
+        "genotype_or_key_features": "MSS CRC, ecDNA+, KRAS amplification prone"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "C106",
+        "genotype_or_key_features": "MSS CRC, ecDNA\u2011negative"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "CLR142",
+        "genotype_or_key_features": "KRAS G12C CRC, acquired KRAS amplification at progression"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Inhibition of ribonucleotide reductase with BBI\u202f825 limits nucleotide pools, suppressing ecDNA\u2011driven KRAS amplification and delaying or preventing resistance to KRAS inhibitors in colorectal cancer models.",
+    "readouts": [
+      "FISH",
+      "copy number analysis",
+      "cell viability assays",
+      "in vivo tumor growth curves"
+    ],
+    "key_findings": [
+      "Combination of BBI\u202f825 with adagrasib or sotorasib completely prevented resistance emergence in ecDNA\u2011positive RW7213 cells.",
+      "BBI\u202f825 suppressed KRAS amplification in resistant subclones and reduced MEK amplification in deraxurib\u2011treated cells.",
+      "In RW7213 xenografts, BBI\u202f825 plus adagrasib markedly delayed tumor growth and lowered KRAS amplification frequency.",
+      "In CLR142 PDX, addition of BBI\u202f825 enhanced efficacy of sotorasib plus cetuximab and reduced c\u2011MYC expression."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance driven by ecDNA\u2011mediated oncogene amplification; BBI\u202f825 selectively impairs this process."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "adagrasib",
+        "rationale": "Prevent KRAS amplification\u2013driven resistance in ecDNA\u2011positive CRC",
+        "phenotype": "No resistant clones detected in vitro",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "sotorasib + cetuximab",
+        "rationale": "Same as above; block nucleotide supply for ecDNA replication",
+        "phenotype": "Significant delay of resistance in RW7213 xenografts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Boundless Bio"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::zhao::5",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "JAK\u2011STAT pathway inhibition sensitizes KRAS G12D mutant pancreatic cancer to KRAS inhibitors",
+    "speaker": {
+      "name": "Yi Zhao",
+      "affiliation": "Ruijin Hospital, Shanghai Jiao Tong University School of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "combination_therapy",
+      "targeted_therapy",
+      "resistance_mechanisms",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "HRS\u20114642",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PDAC patients (phase II trial)",
+        "target_novelty": "first_in_class"
+      },
+      {
+        "gene_or_protein": "STAT3",
+        "alteration": "",
+        "pathway": "JAK\u2011STAT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Oral STAT3 inhibitor (Yuyao Technique)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS inhibitor\u2011resistant PDAC models",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "phospho\u2011STAT3 (Y705)",
+        "type": "predictive",
+        "finding": "Higher baseline p\u2011STAT3 correlates with resistance to KRAS G12D inhibitor"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "MRT1133\u2011resistant PDAC line",
+        "genotype_or_key_features": "KRAS G12D, acquired resistance, high p\u2011STAT3"
+      },
+      {
+        "model_type": "patient_derived_xenograft",
+        "name": "KPC CDX",
+        "genotype_or_key_features": "KRAS G12D, murine PDAC"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "60%",
+        "confidence_interval": "",
+        "n": "n=?? (phase II cohort)",
+        "population": "advanced PDAC patients receiving HRS\u20114642 + gemcitabine + pardusol",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "DCR",
+        "value": "\u2248100%",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "same cohort",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "KRKRAS G12D inhibition induces acute STAT3 activation via IL\u20116 feedback; STAT3 inhibition restores sensitivity and synergizes with KRAS inhibitors in resistant pancreatic cancer models.",
+    "readouts": [
+      "Western blot",
+      "phospho\u2011proteomics",
+      "ATAC\u2011seq",
+      "RNA\u2011seq",
+      "ELISA (IL\u20116)",
+      "in vivo tumor growth"
+    ],
+    "key_findings": [
+      "Acquired KRAS G12D inhibitor\u2011resistant PDAC cells display up\u2011regulated JAK1/STAT3 signaling.",
+      "An oral STAT3 inhibitor selectively kills KRAS\u2011resistant cells and synergizes with KRAS G12D inhibitor in vitro.",
+      "Combination of KRAS inhibitor and STAT3 inhibitor leads to durable tumor regressions in KPC CDX models, overcoming relapse seen with KRAS inhibitor alone.",
+      "JAK1 inhibitor tofacitinib also blocks phospho\u2011STAT3 and enhances KRAS inhibitor efficacy."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "STAT3 activation acts as both acute and chronic resistance mechanism to KRAS inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Oral STAT3 inhibitor (Yuyao)",
+        "rationale": "Target STAT3 activation that mediates resistance",
+        "phenotype": "Synergistic tumor regression in murine PDAC models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Tofacitinib (JAK1 inhibitor)",
+        "rationale": "Block upstream JAK1 to suppress STAT3 phosphorylation",
+        "phenotype": "Enhanced cell viability reduction in combination",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Hengrui",
+        "Yuyao Technique"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::wong::6",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "VEGFR2 blockade overcomes KRAS G12D inhibitor resistance driven by PI3K\u03b3 activation",
+    "speaker": {
+      "name": "Sung Yun Wong",
+      "affiliation": "Seoul National University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "gastrointestinal cancers",
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "combination_therapy",
+      "targeted_therapy",
+      "resistance_mechanisms",
+      "angiogenesis"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MRTX833",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "GI organoid models",
+        "target_novelty": "first_in_class"
+      },
+      {
+        "gene_or_protein": "PI3K\u03b3",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Aconitase",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MRTX833\u2011resistant models",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "VEGFR2",
+        "alteration": "",
+        "pathway": "angiogenesis",
+        "modality": "antibody",
+        "compound_name": "DC101",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Resistant PDO and xenograft models",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "phospho\u2011VEGFR2",
+        "type": "predictive",
+        "finding": "Elevated in KRAS inhibitor\u2011resistant models"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_derived_organoid",
+        "name": "MRTX833\u2011resistant PDO",
+        "genotype_or_key_features": "KRAS G12D, resistant"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "PANCO\u20111 resistant mouse model",
+        "genotype_or_key_features": "KRAS G12D, VEGFR2 activation"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Acquired resistance to KRAS G12D inhibition activates a KRAS\u2011PI3K\u03b3\u2011AKT\u2011SP1 axis that drives VEGF\u2011A secretion and autocrine VEGFR2 signaling; VEGFR2 blockade with DC101 restores sensitivity.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "phospho\u2011Western blot",
+      "ELISA (VEGF\u2011A)",
+      "FISH",
+      "tumor growth curves"
+    ],
+    "key_findings": [
+      "Resistant PDOs show increased VEGF\u2011A expression and phospho\u2011VEGFR2 activation.",
+      "CRISPR\u2011mediated VEGFR2 knockout or DC101 treatment sensitizes resistant cells to MRTX1133.",
+      "PI3K\u03b3 inhibition reduces VEGF\u2011A/VEGFR2 signaling and re\u2011sensitizes resistant models.",
+      "Combination of MRTX1133 with DC101 markedly suppresses tumor growth in multiple resistant xenograft models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Resistance mediated by a KRAS\u2011PI3K\u03b3\u2011SP1\u2011VEGF\u2011VEGFR2 autocrine loop; targeting VEGFR2 overcomes this specific pathway."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "DC101 (VEGFR2 antibody)",
+        "rationale": "Block autocrine VEGF\u2011VEGFR2 signaling sustaining resistance",
+        "phenotype": "Significant tumor growth inhibition in resistant xenografts",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "PI3K\u03b3 inhibitor (aconitase)",
+        "rationale": "Disrupt upstream driver of VEGF\u2011A production",
+        "phenotype": "Decreased VEGF\u2011A secretion and restored KRAS inhibitor sensitivity",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::li::7",
+    "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+    "talk_title": "KRAS G12C inhibition induces chromosomal instability creating a vulnerability to Aurora kinase A inhibition",
+    "speaker": {
+      "name": "Chendu Li",
+      "affiliation": "Mass General Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "combination_therapy",
+      "targeted_therapy",
+      "resistance_mechanisms",
+      "cell_cycle"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "LY3499446",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NSCLC cell lines",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "AURKA",
+        "alteration": "",
+        "pathway": "mitosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "LSN3321213",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C inhibitor\u2011induced CIN high NSCLC lines",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "micronuclei formation",
+        "type": "predictive",
+        "finding": "Higher induction correlates with synergy between KRAS G12C and AURKA inhibition"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "15 KRAS G12C NSCLC lines",
+        "genotype_or_key_features": "Diverse co\u2011mutations"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "H1975 CDX",
+        "genotype_or_key_features": "KRAS G12C"
+      },
+      {
+        "model_type": "PDX",
+        "name": "KRAS G12C NSCLC PDX",
+        "genotype_or_key_features": "KRAS G12C"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "KRAS G12C inhibition induces DNA damage and micronuclei formation in a subset of NSCLC cells, activating ATR/ATM pathways that stabilize cyclin\u202fB1; Aurora kinase A inhibition forces mitotic catastrophe in these cells.",
+    "readouts": [
+      "\u03b3\u2011H2AX staining",
+      "micronucleus assay",
+      "clonogenic assay",
+      "single\u2011cell time\u2011lapse imaging",
+      "Western blot (p\u2011ATR, p\u2011ATM, cyclin\u202fB1)"
+    ],
+    "key_findings": [
+      "KRAS G12C inhibitor LY3499446 induces variable DNA damage and micronuclei across NSCLC lines.",
+      "Aurora kinase A inhibitor LSN3321213 shows the strongest synergy with KRAS G12C inhibition, especially in micronuclei\u2011high cells.",
+      "Combination treatment leads to prolonged G2/M arrest and mitotic catastrophe, markedly reducing colony formation.",
+      "In vivo, low\u2011dose AURKA inhibition combined with KRAS G12C inhibitor produces tumor regression and extends relapse\u2011free survival."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Synthetic vulnerability limited to KRAS\u2011inhibitor\u2011induced chromosomal instability; not observed in CIN\u2011low lines."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "LSN3321213 (AURKA inhibitor)",
+        "rationale": "Exploit mitotic dependency created by KRAS\u2011inhibitor\u2011induced CIN",
+        "phenotype": "Synergistic tumor regression at nanomolar AURKA inhibitor doses",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

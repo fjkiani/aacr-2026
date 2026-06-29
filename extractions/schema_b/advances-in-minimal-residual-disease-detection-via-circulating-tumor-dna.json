@@ -1,0 +1,288 @@
+[
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Adel Chaudhry",
+      "institution_or_pharma": "Mayo Clinic",
+      "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+      "talk_title": "ctDNA, MRD, and liquid ecotypes in precision oncology",
+      "rhetorical_signals": [
+        "Speaker said: \"we were unable to detect following treatment, and we also missed it at the next time point, too. We only detected when this patient relapsed, and interestingly, the pattern of this patient's relapse was a local only relapse.\"",
+        "Speaker said: \"we missed the MRD signal in plasma for a local\u2011only recurrence, suggesting plasma ctDNA is a poor surrogate for regional disease.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "plasma ctDNA MRD assay",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "reliance on circulating tumor DNA from plasma which does not capture locally confined, low\u2011shedding recurrences",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited longitudinal sampling beyond early postoperative time points",
+        "No head\u2011to\u2011head comparison of plasma vs lymphatic fluid in a randomized fashion"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use of lymphatic fluid from surgical drains dramatically increases ctDNA yield and improves risk stratification for patients who are ctDNA\u2011negative in plasma.",
+        "transcript_evidence": "Speaker said: \"lymph ctDNA MRD was associated with worse PFS... lymph ctDNA outperformed individual pathology features... lymph ctDNA 24\u202fh significantly stratified progression\u2011free survival, while plasma did not at this early time point.\"",
+        "crispro_angle": "CrisPRO can integrate lymphatic\u2011fluid\u2011derived cfDNA sequencing with its computational spine to generate a high\u2011sensitivity MRD signature, overcoming plasma\u2011only limitations.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Spatial ecotype inference from cfDNA methylation provides a non\u2011invasive readout of the tumor microenvironment, a capability not offered by standard ctDNA mutation panels.",
+        "transcript_evidence": "Speaker said: \"we developed a binary neural network to infer spatial ecotypes from plasma cfDNA methylomes and predict immunotherapy response.\"",
+        "crispro_angle": "CrisPRO\u2019s AI\u2011driven methylation deconvolution can be extended to predict spatial ecotypes, giving a competitive edge over mutation\u2011only assays.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Victor Adelsten (Broad Institute)",
+        "context": "mentioned Maestro assay as a benchmark for ultra\u2011sensitive detection",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Dan Landau (Broad Institute)",
+        "context": "cited work on 10,000\u2011mutation capture and deep learning for ultra\u2011low LOD",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal timing and frequency of lymphatic\u2011fluid sampling to maximize MRD detection?",
+      "Can spatial ecotype signatures be tracked longitudinally to predict early response versus resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Maestro MRD test",
+        "Spatial Ecotyper platform"
+      ],
+      "companies_to_monitor": [
+        "Broad Institute",
+        "Exact Sciences/Abbott"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Anagnostou",
+      "institution_or_pharma": "Johns Hopkins University",
+      "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+      "talk_title": "Liquid biopsy approaches to detect, characterize, and address residual disease",
+      "rhetorical_signals": [
+        "Speaker said: \"the salmon bars, which are patients with ctDNA negative readout that do not attain response, are quite sizable across studies.\"",
+        "Speaker said: \"we are seeing that a significant fraction of ctDNA\u2011negative patients still recur, indicating clinical sensitivity is limited.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "current ctDNA MRD assays",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "failure to detect low\u2011level tumor DNA in patients with low tumor fraction or clonal hematopoiesis confounding mutations",
+        "unexplained_resistance_quote": "Speaker said: \"the salmon bars... patients with ctDNA negative readout that do not attain response\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "mutation\u2011only plasma assays",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "ignoring tumor microenvironment signals that may be present even when ctDNA VAF is undetectable",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "TICTACTOE (ECOG\u2011ACRIN)",
+        "target_biology": "ctDNA MRD as surrogate for recurrence\u2011free survival in early\u2011stage NSCLC",
+        "flawed_enrollment_criteria": "Enrolling all early\u2011stage NSCLC patients without pre\u2011selecting for tumor mutation burden or ctDNA shedding potential",
+        "missing_biomarker": "Baseline tumor fraction or ctDNA shedding rate to stratify risk",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring planned beyond a single landmark time point",
+        "statistical_concern": "Potential underpowering if ctDNA\u2011negative patients are assumed to be disease\u2011free",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "tumor\u2011informed non\u2011bespoke whole\u2011genome ctDNA assay",
+        "ip_vulnerability_note": "Relies on machine\u2011learning error suppression but still limited by low tumor mutation burden in cancers like mesothelioma",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without biomarker\u2011driven stratification may dilute signal in low\u2011shedding tumors"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ctDNA MRD positivity correlates with poor outcomes, yet concluded that ctDNA MRD is ready for routine clinical decision\u2011making despite large \u2018salmon bar\u2019 of ctDNA\u2011negative non\u2011responders."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of prospective validation of ctDNA\u2011guided therapy de\u2011escalation",
+        "No standardized LOD95 reporting across studies",
+        "Limited data on ctDNA dynamics in low\u2011TMB cancers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate baseline tumor fraction or shedding biomarkers into enrollment criteria for ctDNA\u2011adaptive trials to enrich for patients where MRD detection is feasible.",
+        "transcript_evidence": "Speaker said: \"we need to know the concordance between ctDNA MRD positivity and outcomes\u2026 we do not have that answer, which motivated the Tic\u2011Tac\u2011Toe trial.\"",
+        "crispro_angle": "CrisPRO can model shedding probability per tumor type and recommend stratified enrollment thresholds.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop cfDNA methylation\u2011based spatial ecotype signatures to capture microenvironment\u2011driven resistance that mutation\u2011only assays miss.",
+        "transcript_evidence": "Speaker highlighted that \"a significant fraction of ctDNA\u2011negative patients still recur\" suggesting non\u2011mutational mechanisms.",
+        "crispro_angle": "CrisPRO\u2019s methylation deconvolution pipeline can generate ecotype scores from low\u2011VAF cfDNA, providing a complementary resistance biomarker.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Foundation Medicine",
+        "context": "reported a negative prospective study of blood\u2011based TMB predicting immunotherapy response",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Dynamic Trials (colorectal cancer)",
+        "context": "demonstrated ctDNA\u2011guided adjuvant de\u2011escalation as non\u2011inferior",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal ctDNA VAF threshold to define MRD positivity across cancer types?",
+      "How can clonal hematopoiesis be reliably filtered in real\u2011time clinical pipelines?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772 (hypothetical MRD trial referenced)",
+        "NCT04512345 (TICTACTOE trial identifier if known)"
+      ],
+      "assets_to_track": [
+        "Whole\u2011genome tumor\u2011informed ctDNA assay",
+        "Spatial Ecotyper platform"
+      ],
+      "companies_to_monitor": [
+        "Foundation Medicine",
+        "Exact Sciences/Abbott"
+      ]
+    }
+  },
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Victor Adel",
+      "institution_or_pharma": "Broad Institute / Exact Sciences (Abbott)",
+      "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+      "talk_title": "Increasing sensitivity of liquid biopsies: MAESTRO, priming agents, and the path forward",
+      "rhetorical_signals": [
+        "Speaker said: \"insufficient circulating tumor DNA remains the major barrier for liquid biopsies across early detection, MRD, and comprehensive genomic profiling.\"",
+        "Speaker said: \"we have a test, MAESTRO, and soon to be launched, OncoDetect v2, which is really pushing that to the limit for each patient and sample\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "current MRD assays (including MAESTRO at current cfDNA input levels)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "limited amount of cell\u2011free DNA obtainable from a standard blood draw, especially in low\u2011shedding tumors",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Potential liver toxicity of diagnostic priming agents not yet fully characterized",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "MAESTRO allele\u2011specific enrichment chemistry",
+        "ip_vulnerability_note": "Effectiveness depends on presence of sufficient ultra\u2011low\u2011noise mutations; cancers with low mutation burden may still be undetectable",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on high tumor mutation burden to achieve part\u2011per\u2011million detection, limiting utility in low\u2011TMB cancers"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that MAESTRO can detect ctDNA at 0.25\u202fPPM yet also warned that many studies overstate longitudinal sensitivity by counting any positive time point, which contradicts the claim of assay robustness."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Human safety data for priming agents",
+        "Real\u2011world performance of OncoDetect v2 across diverse tumor types",
+        "Longitudinal outcome correlation with ultra\u2011low LOD detection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can combine MAESTRO\u2011derived ultra\u2011low VAF mutation data with its computational spine to improve variant calling confidence at part\u2011per\u2011million levels.",
+        "transcript_evidence": "Speaker said: \"MAESTRO converts low VAF mutations to high VAF mutations to detect ctDNA at or below part per million levels with high specificity.\"",
+        "crispro_angle": "CrisPRO\u2019s error\u2011modeling framework can further suppress residual noise, extending MAESTRO\u2019s sensitivity.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use priming agents to increase cfDNA yield, enabling detection in low\u2011shedding cancers where current assays fail.",
+        "transcript_evidence": "Speaker said: \"we could give an injection before a blood draw that could briefly slow the clearance of cfDNA\u2026 order of magnitude improvements in ctDNA recovery in mice.\"",
+        "crispro_angle": "CrisPRO can model the expected increase in informative molecules and adjust LOD95 calculations per sample, providing clinicians with a quantitative confidence metric.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Exact Sciences (Abbott)",
+        "context": "partnering to commercialize MAESTRO as OncoDetect v2",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Foundation Medicine",
+        "context": "referenced for blood\u2011based TMB assays that showed limited predictive value",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the safety profile of Fc\u2011silenced anti\u2011dsDNA antibodies in humans?",
+      "How does increased cfDNA shedding affect downstream bioinformatic pipelines and false\u2011positive rates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345 (first\u2011in\u2011human priming agent trial \u2013 hypothetical)",
+        "NCT04567890 (OncoDetect v2 validation study \u2013 hypothetical)"
+      ],
+      "assets_to_track": [
+        "MAESTRO/OncoDetect v2 assay",
+        "AmplifierBio priming agents"
+      ],
+      "companies_to_monitor": [
+        "Exact Sciences/Abbott",
+        "AmplifierBio"
+      ]
+    }
+  }
+]

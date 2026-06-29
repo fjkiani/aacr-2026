@@ -1,0 +1,261 @@
+[
+  {
+    "talk_id": "aacr-annual-meeting-2026-highlights::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Christopher Li",
+      "institution_or_pharma": "Fred Hutchinson Cancer Center",
+      "session_title": "aacr-annual-meeting-2026-highlights",
+      "talk_title": "Prevention, Early Detection, Population Sciences, and Disparities Research Highlights",
+      "rhetorical_signals": [
+        "Speaker said: \"while aspirin has been shown to improve survival when given to Stage 1 to 3 colorectal cancer patients, it actually has the opposite effect and reduces survival when given to Stage 4 patients\"",
+        "Speaker noted: \"the uptake of salpingectomy in the US remains low, and there are persistent disparities\"",
+        "Speaker admitted: \"I\u2019m sorry I couldn\u2019t include all the slides that were sent to me because of time constraints\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Aspirin in Stage\u202fIV colorectal cancer",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Paradoxical survival reduction in metastatic disease without identified molecular mechanism",
+        "unexplained_resistance_quote": "Speaker said: \"while aspirin has been shown to improve survival when given to Stage 1 to 3 colorectal cancer patients, it actually has the opposite effect and reduces survival when given to Stage 4 patients\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Opportunistic salpingectomy for ovarian cancer prevention",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Low real\u2011world adoption due to insurance and education barriers rather than drug/target biology",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ADD ASPIRIN trial",
+        "target_biology": "Platelet activation reduction to prevent colorectal cancer progression",
+        "flawed_enrollment_criteria": "No pre\u2011selection of patients based on platelet activation biomarker (UTXM) despite biomarker hypothesis",
+        "missing_biomarker": "UTXM platelet activation score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering for subgroup analyses without biomarker stratification",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker presented scRNA\u2011seq data showing aspirin reduces platelet activation (mechanistic benefit) but concluded that aspirin may be harmful in Stage\u202fIV disease without explaining the mechanistic disconnect"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No mechanistic explanation for aspirin paradox in metastatic disease",
+        "Lack of prospective data on salpingectomy uptake and impact on ovarian cancer incidence"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify and validate a platelet activation biomarker (e.g., UTXM) to select patients who will benefit from aspirin chemoprevention",
+        "transcript_evidence": "Speaker said: \"she's currently evaluating a biomarker, UTXM, which is a biomarker of platelet activation, to see if this can inform who will versus who will not respond to aspirin\"",
+        "crispro_angle": "CrisPRO can integrate platelet\u2011derived omics with clinical outcomes to develop a predictive model for aspirin benefit",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: review ADD ASPIRIN trial protocol and results",
+          "PubMed: platelet activation signatures in colorectal cancer"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "policy_and_implementation_gap",
+        "description": "Use computational modeling to predict impact of insurance coverage and education interventions on salpingectomy adoption",
+        "transcript_evidence": "Speaker noted: \"insurance coverage and inadequate patient education were the primary barriers\"",
+        "crispro_angle": "CrisPRO can simulate population\u2011level uptake scenarios and estimate cancer incidence reduction",
+        "external_validation_needed": [
+          "CMS policy documents on preventive surgeries",
+          "Real\u2011world claims data on salpingectomy rates"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GRAIL multi\u2011cancer early detection test",
+        "context": "Discussed as having failed to meet clinical utility endpoints",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Sotorasib and adagrasib (KRAS G12C inhibitors)",
+        "context": "Mentioned as approved agents that newer KRAS G12C inhibitor elacestrant aims to improve upon",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What molecular mechanisms drive the aspirin survival paradox in Stage\u202fIV colorectal cancer?",
+      "How can insurance and education barriers to opportunistic salpingectomy be effectively overcome?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345  (ADD ASPIRIN trial placeholder)"
+      ],
+      "assets_to_track": [
+        "Aspirin chemoprevention programs",
+        "Salpingectomy preventive surgery initiatives"
+      ],
+      "companies_to_monitor": [
+        "GRAIL",
+        "AstraZeneca (aspirin\u2011related biomarker platforms)"
+      ]
+    }
+  },
+  {
+    "talk_id": "aacr-annual-meeting-2026-highlights::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Kathy Dombrowsk",
+      "institution_or_pharma": "University of California, San Francisco (assumed based on typical affiliation)",
+      "session_title": "aacr-annual-meeting-2026-highlights",
+      "talk_title": "Clinical Research and Clinical Trials Highlights",
+      "rhetorical_signals": [
+        "Speaker said: \"the overall response rate, the progression-free survival, they are unquestionably higher than what we see normally with the docetaxel\"",
+        "Speaker noted: \"the folate receptor antibody drug conjugate showed responses regardless of the level of the folate receptor expression\"",
+        "Speaker admitted: \"the responses were disappointing\" when discussing mesothelin CAR\u2011T trials"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Mesothelin CAR\u2011T therapies",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Tumor microenvironment\u2013mediated T\u2011cell exhaustion not addressed in current constructs",
+        "unexplained_resistance_quote": "Speaker admitted: \"the responses were disappointing\" when discussing mesothelin CAR\u2011T trials",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "CCR8\u2011targeted immunotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of biomarker\u2011driven patient selection for Treg depletion",
+        "unexplained_resistance_quote": "Speaker said: \"two of the trials that were presented had disappointing results with response rate in single digits\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Zotorasib + lunlesertib combination (VE\u20111/PKMYT inhibitors)",
+        "target_biology": "FBXW7 mutation\u2013driven cyclin\u202fE1 overexpression",
+        "flawed_enrollment_criteria": "Enrolling all patients with FBXW7 alterations without stratifying by cyclin\u202fE1 amplification level",
+        "missing_biomarker": "Cyclin\u202fE1 amplification status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering for subgroup with high cyclin\u202fE1 amplification",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "FolR\u2011ADC ZW91 study",
+        "target_biology": "Folate receptor targeting with topoisomerase payload",
+        "flawed_enrollment_criteria": "No pre\u2011screening for folate receptor expression despite variable expression across tumors",
+        "missing_biomarker": "Folate receptor expression level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Topoisomerase\u2011payload ADC platforms",
+        "ip_vulnerability_note": "Speaker highlighted that many ADCs in ovarian cancer share similar topoisomerase payloads, making differentiation difficult",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing multiple ADCs with near\u2011identical payloads without clear biomarker\u2011driven selection"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed scRNA\u2011seq data indicating high T\u2011cell exhaustion in solid tumors, then concluded that CCR8 targeting should be broadly effective despite low response rates"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term overall survival data for KRAS G12D inhibitor zoldonrasib",
+        "Lack of biomarker\u2011stratified efficacy for FBXW7\u2011based combination therapy",
+        "Absence of comparative arm for folate\u2011ADC efficacy across expression levels"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop computational models to predict tumor microenvironment factors that drive CAR\u2011T exhaustion in mesothelin\u2011targeted therapies",
+        "transcript_evidence": "Speaker admitted: \"the responses were disappointing\" when discussing mesothelin CAR\u2011T trials",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomics with CAR\u2011T phenotypes to suggest engineering modifications",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a predictive biomarker panel for cyclin\u202fE1 amplification to enrich patients for the VE\u20111/PKMYT inhibitor combination",
+        "transcript_evidence": "Speaker noted: \"we are not ignoring cyclin\u202fE1 amplifications because we have a potential matched treatment\"",
+        "crispro_angle": "CrisPRO can mine existing genomic datasets to derive a cyclin\u202fE1\u2011high signature linked to response",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011engineer the CCR8 antibody to include a conditional activation mechanism based on tumor\u2011specific protease activity",
+        "transcript_evidence": "Speaker said: \"two of the trials ... had disappointing results with response rate in single digits\"",
+        "crispro_angle": "CrisPRO can simulate protease\u2011cleavable linker designs to improve tumor selectivity",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate real\u2011time ctDNA monitoring to adapt dosing of KRAS G12D inhibitor zoldonrasib",
+        "transcript_evidence": "Speaker highlighted that 73% of patients cleared ctDNA but did not link this to adaptive trial design",
+        "crispro_angle": "CrisPRO can model ctDNA kinetics to propose adaptive trial algorithms",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sotorasib",
+        "context": "Mentioned as an approved KRAS G12C inhibitor used as a benchmark for newer agents",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Adagrasib",
+        "context": "Cited alongside sotorasib as existing KRAS G12C therapies",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "GRAIL MCED test",
+        "context": "Referenced as having failed to meet clinical utility endpoints",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific tumor\u2011intrinsic or microenvironmental factors limit the efficacy of mesothelin CAR\u2011T cells?",
+      "Can cyclin\u202fE1 amplification be prospectively validated as a predictive biomarker for VE\u20111/PKMYT inhibitor response?",
+      "Will broader adoption of folate\u2011receptor ADCs be justified without expression\u2011based patient selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890  (zoldonrasib NSCLC trial placeholder)",
+        "NCT04612345  (deraxone rasib pancreatic cancer trial placeholder)",
+        "NCT04789012  (CCR8 immunotherapy trial placeholder)"
+      ],
+      "assets_to_track": [
+        "Zoldonrasib (KRAS G12D inhibitor)",
+        "Deraxone rasib (pan\u2011RAS inhibitor)",
+        "Elacestrant (KRAS G12C inhibitor)",
+        "ZW91 folate\u2011ADC"
+      ],
+      "companies_to_monitor": [
+        "Amgen (zoldonrasib)",
+        "Roche (deraxone rasib)",
+        "Novartis (elacestrant)",
+        "AstraZeneca (ADC programs)"
+      ]
+    }
+  }
+]

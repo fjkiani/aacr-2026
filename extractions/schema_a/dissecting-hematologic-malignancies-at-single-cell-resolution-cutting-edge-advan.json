@@ -1,0 +1,137 @@
+[
+  {
+    "talk_id": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan::fang::1",
+    "session_title": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan",
+    "talk_title": "Lymphoma Transformers: Spatial Total RNA Sequencing of FFPE Tissue",
+    "speaker": {
+      "name": "Rong Fang",
+      "affiliation": "Yale University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "basic_science",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "FFPE stomach lymphoma biopsy",
+        "genotype_or_key_features": "low\u2011grade follicular lymphoma transforming to diffuse large B\u2011cell lymphoma in same patient"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Fang's group developed a spatial deterministic barcoding (DIBER+) workflow that adds poly\u2011tails to fragmented RNA in FFPE tissue, enabling unbiased total\u2011RNA sequencing (coding and non\u2011coding species) at near single\u2011cell resolution. The method captures spatial gene expression, chromatin accessibility, histone marks, SNVs, and metabolic activity (via stimulated Raman imaging), allowing reconstruction of clonal phylogeny, detection of microRNA signatures (e.g., miR\u201121, miR\u2011155) and metabolic lipid droplet patterns that correlate with lymphoma transformation.",
+    "readouts": [
+      "spatial_total_RNA_sequencing",
+      "spatial_epigenomics",
+      "stimulated_Raman_scattering_imaging",
+      "computational integration (iSTAR)",
+      "SNV calling from long\u2011read RNA"
+    ],
+    "key_findings": [
+      "Developed a poly\u2011tailing strategy that yields higher sensitivity on fragmented FFPE RNA than fresh\u2011frozen spatial transcriptomics.",
+      "Achieved near\u2011single\u2011cell resolution spatial maps of coding and >1,800 microRNAs in lymphoma tissue.",
+      "Detected de\u2011novo SNVs and copy\u2011number alterations from spatial total\u2011RNA data, enabling clonal phylogeny reconstruction within a single FFPE section.",
+      "Identified metabolic lipid\u2011droplet redistribution (nuclear/perinuclear) associated with transformation to diffuse large B\u2011cell lymphoma.",
+      "Found miR\u2011155 up\u2011regulation linked to PI3K/AKT pathway activation, suggesting a potential biomarker for PI3K\u2011inhibitor response."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How robust is the microRNA\u2011based prediction of PI3K inhibitor response across a larger patient cohort?",
+      "Can the TCR/BCR enrichment step improve immune repertoire detection in FFPE spatial assays?",
+      "What is the functional role of the observed lipid\u2011droplet alterations in lymphoma biology?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Mann et al. 2023 Nature Methods",
+        "Lundeberg et al. 2022 Science"
+      ],
+      "company_or_sponsor": [
+        "National Cancer Institute",
+        "Follicular Lymphoma Foundation"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan::sakata\u2011yanagimoto::2",
+    "session_title": "dissecting-hematologic-malignancies-at-single-cell-resolution-cutting-edge-advan",
+    "talk_title": "Spatial Multi\u2011omics Dissects Immune and Stromal Heterogeneity in Angioimmunoblastic T\u2011cell Lymphoma",
+    "speaker": {
+      "name": "Mamiko Sakata\u2011Yanagimoto",
+      "affiliation": "University of Tsukuba, Japan",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "angioimmunoblastic T-cell lymphoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "189 AITL patient samples",
+        "genotype_or_key_features": "TET2 and RHOA mutations in tumor cells; TET2\u2011mutated inflammatory cells as niche"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Sakata\u2011Yanagimoto\u2019s team combined single\u2011cell RNA\u2011seq, Xenium spatial transcriptomics, and multiplex digital spatial profiling to map 10 blood\u2011endothelial cell (BEC) subclusters in AITL, revealing a novel capillary\u2011activated high\u2011endothelial venule (cHEV1) that colocalizes with follicular dendritic cells and exhausted TIM\u20113\u207a T cells, forming a cHEV\u2011FDC niche that predicts poor therapeutic response and overall survival.",
+    "readouts": [
+      "single\u2011cell RNA sequencing",
+      "Xenium in situ spatial transcriptomics",
+      "multiplex digital spatial profiling (40\u2011antibody panel)",
+      "pseudo\u2011time trajectory analysis",
+      "neighborhood/peri\u2011vascular index calculations"
+    ],
+    "key_findings": [
+      "Identified 10 BEC subclusters, with chHEV2 and TIP cells significantly expanded in AITL versus normal lymph nodes.",
+      "cHEV1 (capillary\u2011activated HEV) localizes closest to high\u2011tumor\u2011density regions and forms a cHEV\u2011FDC niche enriched for exhausted TIM\u20113\u207a T cells.",
+      "Peri\u2011vascular index of exhausted T cells around cHEV1 is higher in non\u2011responders to therapy, linking the niche to treatment resistance.",
+      "High expression of cHEV and HEV signatures in bulk RNA\u2011seq cohorts correlates with worse overall survival.",
+      "Integrin\u2011related genes are up\u2011regulated in AITL\u2011associated BECs, suggesting a role in niche formation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Exhausted TIM\u20113\u207a T cells preferentially accumulate in the cHEV\u2011FDC niche, potentially mediating resistance to immunotherapy."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What cytokines or ligands drive TIM\u20113\u207a T\u2011cell exhaustion within the cHEV\u2011FDC niche?",
+      "Can integrin inhibition disrupt the cHEV niche and improve therapeutic response?",
+      "Is the cHEV\u2011FDC niche present in other T\u2011cell lymphoma subtypes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Matsumoto et al. 2024 Nature Methods"
+      ],
+      "company_or_sponsor": [
+        "National Cancer Institute",
+        "Follicular Lymphoma Foundation"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

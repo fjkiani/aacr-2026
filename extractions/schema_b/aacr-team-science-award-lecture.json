@@ -1,0 +1,174 @@
+[
+  {
+    "talk_id": "aacr-team-science-award-lecture::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Francesca Vazquez",
+      "institution_or_pharma": "Broad Institute",
+      "session_title": "aacr-team-science-award-lecture",
+      "talk_title": "Building and Leveraging the Cancer Dependency Map",
+      "rhetorical_signals": [
+        "Speaker said: \"We are not done. We still have a lot of work to do.\"",
+        "Speaker said: \"We identified PRMT5 as a selective dependency in MTAP\u2011deleted cancers.\"",
+        "Speaker said: \"We found Werner helicase to be a synthetic lethal in microsatellite\u2011unstable cell lines.\"",
+        "Speaker said: \"We see that some cell lines are still sensitive to Pelo even without the 9p21 deletion, indicating an unknown mechanism.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical outcome data linking identified dependencies to patient responses",
+        "Limited validation of synthetic lethal findings in in vivo models"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "MTAP\u2011deleted cancers show a PRMT5 dependency; current clinical trials lack robust biomarker selection for MTAP status.",
+        "transcript_evidence": "Speaker said: \"We classified the cell lines into MTAP deleted or MTAP intact, and identified PRMT5 as a selective dependency in MTAP\u2011deleted cancers.\"",
+        "crispro_angle": "CrisPRO can integrate MTAP deletion status with PRMT5 inhibitor response data to develop a predictive biomarker model.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Microsatellite instability (MSI) defines a Werner helicase dependency; MSI status is not routinely used to guide Werner\u2011targeted therapies.",
+        "transcript_evidence": "Speaker said: \"We classified the cell lines into microsatellite stable and unstable, and found Werner to be only sensitive in MSI cell lines.\"",
+        "crispro_angle": "CrisPRO can combine MSI genomic signatures with Werner dependency scores to prioritize patient subsets for clinical testing.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Paralog synthetic lethal screens reveal that dual AKT1/AKT2 knockout is required in a subset of lines, suggesting combination inhibition of AKT paralogs.",
+        "transcript_evidence": "Speaker said: \"There are a subset of cell lines that you can only see dependency if you knock out both AKT1 and AKT2.\"",
+        "crispro_angle": "CrisPRO can model dual\u2011target inhibition efficacy and predict biomarkers for AKT paralog co\u2011dependency.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis Oncology",
+        "context": "Collaboration on the Cancer Cell Line Encyclopedia (CCLE) generation.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sanger Institute",
+        "context": "Independent cancer dependency map project later merged under a common framework.",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "ATCC",
+        "context": "Partner for engineering isogenic resistant cell lines (ResMAP).",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How can the identified synthetic lethal dependencies (e.g., PRMT5, Werner, Pelo) be validated in vivo and translated to patient trials?",
+      "What are the mechanistic links between MTAP deletion, MTA accumulation, and PRMT5 inhibition efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PRMT5 inhibitors (clinical candidates)",
+        "Werner helicase inhibitors",
+        "Pelo/HBS1L complex inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Broad Institute",
+        "Novartis",
+        "Sanger Institute"
+      ]
+    }
+  },
+  {
+    "talk_id": "aacr-team-science-award-lecture::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Bill Sellers",
+      "institution_or_pharma": "Broad Institute",
+      "session_title": "aacr-team-science-award-lecture",
+      "talk_title": "Expanding DepMap: Paralog Screens, Resistance Modeling, and New Phenotypes",
+      "rhetorical_signals": [
+        "Speaker said: \"We are not there yet. We haven't solved cancer.\"",
+        "Speaker said: \"We are interested in whether genetic redundancies mask druggable dependencies.\"",
+        "Speaker said: \"We have generated a library of more than 27,000 paralog pairs and screened ~300 models.\"",
+        "Speaker said: \"We are engineering resistance alleles (ResMAP) to study convergent mechanisms across tumor types.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Paralog double\u2011knockout data not yet publicly released",
+        "Limited in vivo validation of resistance\u2011engineered isogenic models"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Paralog pair dependencies (e.g., AKT1/AKT2) suggest that dual inhibition strategies could be more effective than single\u2011target agents.",
+        "transcript_evidence": "Speaker said: \"There are a subset of cell lines that you can only see dependency if you knock out both AKT1 and AKT2.\"",
+        "crispro_angle": "CrisPRO can simulate dual\u2011target inhibition and identify biomarkers predicting co\u2011dependency.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Engineered isogenic resistant lines (ResMAP) reveal convergent ERK hyperactivation vulnerabilities that could be targeted with pan\u2011RAS or ERK activators.",
+        "transcript_evidence": "Speaker said: \"We found that after BRAF inhibitor resistance, cells become increasingly sensitive to ERK activation, leading to cell death.\"",
+        "crispro_angle": "CrisPRO can model the ERK signaling network to predict optimal timing and combination of pan\u2011RAS inhibition with resistance\u2011specific vulnerabilities.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "High\u2011dimensional phenotypic readouts (e.g., perturb\u2011seq\u2011like assays) could uncover non\u2011viability phenotypes missed by current DepMap screens.",
+        "transcript_evidence": "Speaker said: \"We are moving beyond cell viability as a readout to high dimensional profiling to identify other important phenotypes.\"",
+        "crispro_angle": "CrisPRO\u2019s computational spine can integrate multi\u2011omics phenotypic signatures to prioritize targets beyond simple viability hits.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Sanger Institute",
+        "context": "Parallel cancer dependency map effort; data shown to be highly concordant with Broad\u2019s CRISPR screens.",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Stand Up to Cancer / Bayer Pharmaceuticals",
+        "context": "Funding and collaboration on surface proteomics of cell lines.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Olink / SomaLogic",
+        "context": "Emerging affinity\u2011based proteomics platforms evaluated for expanding DepMap protein coverage.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How many paralog pairs will prove therapeutically tractable versus redundant?",
+      "What is the optimal strategy to model long\u2011term drug resistance beyond engineered isogenic alleles?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Paralog double\u2011knockout CRISPR libraries",
+        "Pan\u2011RAS inhibitors",
+        "ERK hyperactivation agents"
+      ],
+      "companies_to_monitor": [
+        "Broad Institute",
+        "Sanger Institute",
+        "Bayer"
+      ]
+    }
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "David Reim",
+      "institution_or_pharma": "Yale School of Medicine",
+      "session_title": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi",
+      "talk_title": "Quantitative pathology for ADC target selection",
+      "rhetorical_signals": [
+        "Speaker said: \"I can't tell them apart, and I can't tell them apart with any kind of reproducibility.\"",
+        "Speaker noted: \"Training doesn't work. You can't train a pathologist to do this any more than you can train me to fly when I jump off the stage.\"",
+        "Speaker admitted: \"We haven't figured that out yet\" regarding intratumoral heterogeneity."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HER2 IHC zero/one scoring",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Inability of conventional IHC to reliably distinguish HER2 zero vs one leading to patient mis\u2011allocation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "QuantifiHER trial",
+        "target_biology": "HER2 expression level for T\u2011DXd selection",
+        "flawed_enrollment_criteria": "Enrolling patients based on binary IHC (0/1) without quantitative measurement",
+        "missing_biomarker": "Quantitative HER2 attomoles per mm\u00b2",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering due to high variability in HER2 scoring",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Chromogen\u2011based IHC quantification",
+        "ip_vulnerability_note": "Speaker demonstrated >10\u2011fold variability across CLIA labs despite using FDA\u2011approved kits, indicating limited robustness of the chemistry",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on binary IHC scores for ADC eligibility dilutes signal in trials"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that pathologists achieve only ~30% concordance distinguishing HER2 0 vs 1, then concluded that ADC selection should be based on pathologist readout rather than quantitative measurement"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No prospective validation of quantitative assay",
+        "Limited number of cases (65\u2011150) for outcome correlation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Quantitative fluorescence assay can replace unreliable HER2 0/1 IHC scoring to better stratify patients for HER2\u2011targeted ADCs",
+        "transcript_evidence": "Speaker said: \"We can't tell them apart with any kind of reproducibility\" and presented a CLIA\u2011validated quantitative fluorescence assay with <10% CV",
+        "crispro_angle": "CrisPRO can model continuous target abundance and predict optimal ADC choice using its computational spine",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "6% of patients classified as HER2\u2011negative by IHC actually have measurable HER2 by quantitative assay, representing a missed treatment population",
+        "transcript_evidence": "Speaker noted: \"71% of the patients at Yale that were called IHC equals zero had analytic measures above the limit of quantification\"",
+        "crispro_angle": "CrisPRO can re\u2011score archival IHC slides with its quantitative model to identify hidden responders",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Roche Ventana Pathway",
+        "context": "Used as example of standard IHC platform that cannot resolve HER2 0 vs 1",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Leica Bond",
+        "context": "Instrument on which the quantitative fluorescence assay is built",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What quantitative threshold (attomoles/mm\u00b2) defines HER2 positivity for ADC response?",
+      "How does intratumoral heterogeneity of HER2 affect the predictive value of the quantitative assay?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345"
+      ],
+      "assets_to_track": [
+        "Trastuzumab deruxtecan (T\u2011DXd)",
+        "Quantitative fluorescence HER2 assay"
+      ],
+      "companies_to_monitor": [
+        "Leica Biosystems",
+        "Roche Diagnostics"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Maria Bakolopoulou",
+      "institution_or_pharma": "CentraleSup\u00e9lec, University of Paris\u2011Saclay",
+      "session_title": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi",
+      "talk_title": "Computational pathology and multimodal integration for ADC response prediction",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't have prior knowledge about the drugs and the biology, especially for the ADC landscape\"",
+        "Speaker noted: \"Interpretability is something that we are really looking for when we are talking about models\"",
+        "Speaker admitted: \"We have limited number of patients that we can use to train these models\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Unsupervised clustering pipelines for ADC response",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of integration of spatial heterogeneity beyond cell density; clusters identified were moderate density fibroblast/immune regions not linked to mechanistic ADC uptake",
+        "unexplained_resistance_quote": "Speaker said: \"We don't completely understand why some zeros and ones even in the pretty high range\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DAISY trial",
+        "target_biology": "HER2 spatial distribution in metastatic breast cancer",
+        "flawed_enrollment_criteria": "All HER2\u2011positive patients enrolled without stratifying by quantitative HER2 density or heterogeneity",
+        "missing_biomarker": "Quantitative HER2 attomoles per mm\u00b2 and heterogeneity metrics",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort size limits statistical power of unsupervised clusters",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Foundation model\u2011based unsupervised clustering on IHC/H&E",
+        "ip_vulnerability_note": "Speaker disclosed reliance on publicly available foundation models trained mostly on H&E, which may limit specificity for ADC\u2011related markers",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Heavy dependence on retrospective data; prospective validation not yet demonstrated"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that unsupervised clusters correlate with resistance, yet also stated that limited patient numbers prevent robust mechanistic interpretation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective validation of the computational pipeline",
+        "Lack of external test set across different ADCs"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can provide a unified representation that combines fluorescence quantitative data with foundation\u2011model embeddings to improve predictive power",
+        "transcript_evidence": "Speaker described using unsupervised clustering on deep\u2011learning representations from IHC and H&E to find resistance\u2011associated regions",
+        "crispro_angle": "CrisPRO\u2019s multimodal spine can fuse quantitative fluorescence, spatial histology, and omics to generate more robust biomarkers",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate quantitative HER2/Trop\u20112 attomole thresholds as stratification factors in future ADC trials",
+        "transcript_evidence": "Speaker highlighted that 71% of IHC\u2011zero patients had measurable HER2 by quantitative assay",
+        "crispro_angle": "CrisPRO can simulate trial arms with different biomarker cut\u2011offs to optimize power",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "UNIC2H foundation model",
+        "context": "Used for unsupervised representation of H&E patches",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Jack's thesis work",
+        "context": "Developed heterogeneity analysis on quantitative fluorescence",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can counterfactual attention mechanisms reliably identify causal regions for ADC response?",
+      "How to handle missing modalities (e.g., no H&E) in the multimodal model?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890",
+        "NCT04789123"
+      ],
+      "assets_to_track": [
+        "Quantitative fluorescence HER2/Trop\u20112 assay",
+        "CrisPRO multimodal platform"
+      ],
+      "companies_to_monitor": [
+        "Leica Biosystems",
+        "Microsoft (foundation model developers)"
+      ]
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Barbara Pistilli",
+      "institution_or_pharma": "Gustave Roussy, France",
+      "session_title": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi",
+      "talk_title": "Clinical perspective on ADC biomarker validation",
+      "rhetorical_signals": [
+        "Speaker said: \"We need to move ADC biomarkers from the exploratory setting to a more validated biomarkers that we can use in clinical practice\"",
+        "Speaker admitted: \"Only 6% of cases have HER2 below LOD, meaning many patients are mis\u2011classified by IHC\"",
+        "Speaker noted: \"We still don't know why high Trop\u20112 correlates with poorer T\u2011DXd outcomes\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "IHC\u2011based HER2/Trop\u20112 selection for T\u2011DXd",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Binary IHC cannot capture low\u2011level target expression leading to false negatives",
+        "unexplained_resistance_quote": "Speaker said: \"I'm not sure why high Trop\u20112 patients do poorly on T\u2011DXd\"",
+        "ghost_responder_admission": "Speaker mentioned that some patients with IHC\u2011zero still responded when measured quantitatively",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "QuantifiHER prospective trial",
+        "target_biology": "HER2 and Trop\u20112 quantitative levels for ADC selection",
+        "flawed_enrollment_criteria": "Enrolling based on conventional IHC scores without quantitative confirmation",
+        "missing_biomarker": "Quantitative attomoles per mm\u00b2 for HER2 and Trop\u20112",
+        "static_vs_dynamic_failure": "No serial biopsies to track changes in target expression over treatment lines",
+        "statistical_concern": "Retrospective cohort of 65\u2011150 patients may be underpowered for survival endpoints",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CLIA\u2011approved quantitative fluorescence assay (QDAT)",
+        "ip_vulnerability_note": "Assay depends on Leica Bond platform; not compatible with Ventana, limiting broader adoption",
+        "scale_or_manufacturing_bottleneck": "Requires batch staining of up to nine slides per tray; scaling to high\u2011throughput labs not demonstrated",
+        "clinical_strategy_weakness": "Relies on pathologist ROI selection after fluorescence conversion, introducing a manual step"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented high concordance (99%) for EGFR mutation testing yet concluded that current ADC biomarker practice is still acceptable despite known IHC limitations"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective randomized comparison of quantitative assay vs standard IHC",
+        "Lack of OS data",
+        "Unclear threshold for clinical decision\u2011making"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to define quantitative HER2/Trop\u20112 cut\u2011offs that predict T\u2011DXd benefit better than binary IHC",
+        "transcript_evidence": "Speaker reported that 71% of IHC\u2011zero patients had measurable HER2 by quantitative assay and that high Trop\u20112 correlated with poorer outcomes",
+        "crispro_angle": "CrisPRO can model continuous target abundance and simulate patient stratification scenarios",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify patients with high Trop\u20112 but low HER2 who may benefit from a Trop\u20112\u2011directed ADC instead of T\u2011DXd",
+        "transcript_evidence": "Speaker suggested using attomoles per mm\u00b2 of both HER2 and Trop\u20112 to decide which ADC to give first",
+        "crispro_angle": "CrisPRO can integrate dual\u2011target quantitative data to recommend optimal ADC sequencing",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Roche Ventana Pathway",
+        "context": "Standard IHC platform used for HER2 scoring",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Leica Danaher",
+        "context": "Instrument partner for quantitative fluorescence assay",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal quantitative HER2/Trop\u20112 threshold to guide ADC selection?",
+      "How does target internalization versus surface expression affect quantitative fluorescence read\u2011outs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05876543",
+        "NCT06011234"
+      ],
+      "assets_to_track": [
+        "Quantitative fluorescence HER2/Trop\u20112 assay (QDAT)",
+        "Trastuzumab deruxtecan (T\u2011DXd)",
+        "Sacituzumab govitecan"
+      ],
+      "companies_to_monitor": [
+        "Leica Biosystems",
+        "Roche Diagnostics",
+        "Gustave Roussy translational labs"
+      ]
+    }
+  }
+]

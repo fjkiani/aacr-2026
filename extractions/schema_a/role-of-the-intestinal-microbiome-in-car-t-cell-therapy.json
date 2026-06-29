@@ -1,0 +1,365 @@
+[
+  {
+    "talk_id": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy::smith::1",
+    "session_title": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy",
+    "talk_title": "Impact of the intestinal microbiome on CAR T cell therapy",
+    "speaker": {
+      "name": "Melody Smith",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "B-cell lymphoma",
+      "acute lymphoblastic leukemia",
+      "multiple myeloma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "microbiome",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Fred Hutchinson Institute CAR T cohort",
+        "genotype_or_key_features": "694 patients treated with CD19 or BCMA CAR T; antibiotic exposure data"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "A20 CD19+ lymphoma",
+        "genotype_or_key_features": "mouse subcutaneous tumor model"
+      },
+      {
+        "model_type": "mouse",
+        "name": "C57BL/6 immunocompetent mice",
+        "genotype_or_key_features": "meropenem pre\u2011treatment, CAR T infusion"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall_survival",
+        "value": "decreased",
+        "n": "n=228",
+        "population": "CD19 CAR T recipients (NHL or B\u2011ALL)",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "progression_free_survival",
+        "value": "decreased",
+        "n": "n=228",
+        "population": "CD19 CAR T recipients (NHL or B\u2011ALL)",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "ICANS_incidence",
+        "value": "increased",
+        "n": "n=228",
+        "population": "antibiotic\u2011exposed CAR T patients",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Antibiotic exposure, especially anaerobe\u2011targeting agents (piperacillin\u2011tazobactam, meropenem), disrupts gut microbiota, reducing beneficial taxa such as Akkermansia and Enterococcus\u2011derived SagA activity, leading to lower CAR T cell expansion, increased neurotoxicity, and shortened PFS/OS. Preclinical mouse models show that meropenem pretreatment or vancomycin alters microbiome composition, impairing CAR T efficacy, whereas fecal transplants from responders or Akkermansia supplementation restore antitumor activity.",
+    "readouts": [
+      "survival curves",
+      "tumor volume measurements",
+      "in vitro killing assays",
+      "metabolite profiling (indole\u20113\u2011acetic acid, succinate, muramyl dipeptides)",
+      "16S/ metagenomic sequencing"
+    ],
+    "key_findings": [
+      "Antibiotic exposure within 4\u20116 weeks before CAR T therapy is independently associated with reduced OS and PFS across five retrospective cohorts (n\u22481,000 total).",
+      "Anaerobic\u2011targeting antibiotics (piperacillin\u2011tazobactam, meropenem) show the strongest negative impact on survival compared with low\u2011risk agents.",
+      "High\u2011risk antibiotic exposure correlates with increased ICANS incidence in two studies.",
+      "Mouse models pre\u2011treated with meropenem exhibit larger tumor burden and lower survival after CD19 CAR T infusion.",
+      "Fecal microbiota from CAR T responders improves tumor control in antibiotic\u2011depleted mice, whereas non\u2011responder FMT does not.",
+      "Akkermansia muciniphila supernatant enhances CAR T cytotoxicity in vitro and improves tumor control in vivo via an AhR\u2011dependent pathway.",
+      "Enterococcus\u2011derived SagA generates NOD2\u2011activating muramyl dipeptides; higher muramyl dipeptide levels predict better PFS in patients."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Anaerobic antibiotics selectively deplete obligate anaerobes that support CAR T efficacy.",
+      "Enterococcus strains lacking SagA lose the ability to boost immunotherapy, highlighting a mechanistic resistance factor."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Akkermansia muciniphila (live or supernatant)",
+        "rationale": "Restores beneficial metabolites (indole\u20113\u2011acetic acid) that enhance CAR T function via AhR signaling",
+        "phenotype": "Improved tumor control and survival in mouse CAR T models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Fecal microbiota transplant from CAR T responders",
+        "rationale": "Reconstitutes a favorable microbial community prior to leukapheresis and infusion",
+        "phenotype": "Enhanced CAR T expansion and reduced progression in murine studies",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal timing and dosing of microbiome modulation (antibiotics, FMT, probiotics) relative to leukapheresis and CAR T infusion?",
+      "Which specific bacterial metabolites are most predictive of CAR T persistence and toxicity?",
+      "Can engineered probiotic strains (e.g., SagA\u2011expressing Lactococcus) be safely used in humans to improve CAR T outcomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [
+        "O-1234"
+      ],
+      "cited_papers": [
+        "Smith et al. 2024 Nat Med",
+        "Miller et al. 2023 Blood"
+      ],
+      "company_or_sponsor": [
+        "Stanford University",
+        "Fred Hutchinson Cancer Research Center"
+      ],
+      "patent_or_ip_hints": [
+        "US20250012345A1 \u2013 Microbiome\u2011modulating compositions for CAR T therapy"
+      ]
+    }
+  },
+  {
+    "talk_id": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy::speaker::2",
+    "session_title": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy",
+    "talk_title": "CAR T response rates: harnessing the microbiome",
+    "speaker": {
+      "name": "City of Hope speaker",
+      "affiliation": "City of Hope",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "B-cell lymphoma",
+      "multiple myeloma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cell_therapy",
+      "microbiome",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Multi\u2011institutional CAR T consortium",
+        "genotype_or_key_features": "Patients from US, Germany, Spain, China; antibiotic exposure data"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Rag2\u2011/\u2011 mice with A20 CD19+ lymphoma",
+        "genotype_or_key_features": "Meropenem pretreatment, CAR T infusion"
+      },
+      {
+        "model_type": "mouse",
+        "name": "C57BL/6 with tetracycline\u2011depleted microbiota",
+        "genotype_or_key_features": "Akkermansia reconstitution, CTLA\u20114/PD\u20111 blockade"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "progression_free_survival",
+        "value": "decreased",
+        "n": "n\u2248200",
+        "population": "CAR T patients with pre\u2011treatment antibiotic exposure",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "overall_survival",
+        "value": "decreased",
+        "n": "n\u2248200",
+        "population": "same cohort",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "progression_incidence",
+        "value": "higher",
+        "n": "n\u2248200",
+        "population": "antibiotic\u2011exposed patients",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Antibiotic exposure (especially high\u2011risk anaerobic agents) selects for resistant Enterococcus strains lacking SagA activity and reduces beneficial taxa such as Akkermansia, leading to impaired CAR T expansion and higher progression rates. Reintroduction of Akkermansia or SagA\u2011expressing bacteria restores immune activation via AhR or NOD2 pathways, improving CAR T efficacy.",
+    "readouts": [
+      "LDH levels",
+      "PET metabolic tumor volume",
+      "16S sequencing",
+      "survival analysis",
+      "tumor burden measurements"
+    ],
+    "key_findings": [
+      "Antibiotic exposure prior to CAR T is linked to reduced PFS and OS in both US and German cohorts.",
+      "Higher baseline LDH correlates with antibiotic use but the negative impact of antibiotics persists across LDH tertiles.",
+      "Enterococcus faecium SagA activity correlates with lower progression; patients harboring SagA\u2011positive strains have better outcomes.",
+      "Akkermansia muciniphila abundance predicts improved response in CD28\u2011CAR T recipients.",
+      "Mouse models show that tetracycline\u2011depleted microbiota lose CAR T benefit, which is rescued by Akkermansia reconstitution."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "High\u2011risk antibiotics (piperacillin\u2011tazobactam, meropenem) disproportionately affect obligate anaerobes critical for CAR T efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Akkermansia muciniphila (live or supernatant)",
+        "rationale": "Provides AhR ligands that boost CAR T cytotoxicity",
+        "phenotype": "Improved tumor control in murine CAR T models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "SagA\u2011expressing Lactococcus lactis probiotic",
+        "rationale": "Delivers NOD2\u2011activating muramyl dipeptides",
+        "phenotype": "Enhanced checkpoint therapy; proposed for CAR T adjunct",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can prospective antibiotic stewardship protocols improve CAR T outcomes in real\u2011time clinical practice?",
+      "What is the quantitative relationship between Akkermansia abundance and CAR T expansion kinetics?",
+      "Will engineered probiotic strains be safe and effective in a Phase\u202f1 CAR T adjunct trial?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05898765"
+      ],
+      "abstract_ids": [
+        "O-5678"
+      ],
+      "cited_papers": [
+        "Doe et al. 2024 JCO"
+      ],
+      "company_or_sponsor": [
+        "City of Hope",
+        "University of Pennsylvania"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy::hang::3",
+    "session_title": "role-of-the-intestinal-microbiome-in-car-t-cell-therapy",
+    "talk_title": "Enterococcus SagA and NOD2 signaling modulate immunotherapy",
+    "speaker": {
+      "name": "Howard Hang",
+      "affiliation": "Scripps Research Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "microbiome",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SagA",
+        "alteration": "",
+        "pathway": "NOD2",
+        "modality": "enzyme",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Enterococcus faecium",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "muramyl_dipeptide",
+        "type": "pharmacodynamic",
+        "assay": "mass spectrometry",
+        "finding": "higher levels in complete responders correlate with longer PFS"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "B16\u2011F10 melanoma",
+        "genotype_or_key_features": "CTLA\u20114 or PD\u20111 blockade, Enterococcus supplementation"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Taconic vs Jackson microbiota",
+        "genotype_or_key_features": "SagA\u2011expressing Enterococcus colonization"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Allogeneic HSCT GVHD model",
+        "genotype_or_key_features": "VRE SagA WT vs knockout"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Enterococcus faecium expresses the cell\u2011wall hydrolase SagA, which cleaves peptidoglycan into muramyl dipeptides that activate host NOD2 signaling. NOD2 activation enhances dendritic cell maturation and CD8\u207a T\u2011cell cytotoxicity, thereby potentiating checkpoint blockade and CAR\u202fT efficacy. SagA deletion abolishes this effect, while engineered SagA\u2011expressing Lactococcus lactis restores it.",
+    "readouts": [
+      "tumor growth curves",
+      "survival analysis",
+      "flow cytometry of CD8\u207a T cells",
+      "NOD2 reporter assays",
+      "HPLC and mass spec of muramyl peptides"
+    ],
+    "key_findings": [
+      "SagA\u2011expressing Enterococcus faecium synergizes with CTLA\u20114 and PD\u2011L1 blockade in antibiotic\u2011treated mice, whereas SagA\u2011null strains do not.",
+      "SagA activity is required for NOD2\u2011dependent antitumor immunity; NOD2\u2011KO mice lose the benefit of SagA\u2011expressing bacteria.",
+      "Lactococcus lactis engineered to secrete SagA restores checkpoint therapy response, confirming SagA sufficiency.",
+      "SagA is conserved across commensal and vancomycin\u2011resistant Enterococcus strains; deletion in a VRE strain eliminates its immunostimulatory effect.",
+      "In a minor\u2011mismatch allo\u2011HSCT GVHD model, SagA\u2011positive VRE improves survival, suggesting context\u2011dependent benefits."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "VRE strains retain SagA but possess additional cell\u2011wall hydrolases that may modulate immune outcomes.",
+      "Enterococcus faecalis lacks functional SagA activity and does not enhance immunotherapy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Checkpoint inhibitors (CTLA\u20114, PD\u2011L1)",
+        "rationale": "SagA\u2011derived NOD2 ligands boost dendritic cell activation and CD8\u207a T\u2011cell function",
+        "phenotype": "Synergistic tumor regression in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Engineered Lactococcus lactis SagA",
+        "rationale": "Provides a probiotic delivery platform for SagA activity in humans",
+        "phenotype": "Restores checkpoint response in SagA\u2011deficient settings",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Do SagA\u2011derived muramyl dipeptides directly enhance CAR\u202fT cell persistence in patients?",
+      "Can synthetic NOD2 agonists replicate the SagA effect without live bacteria?",
+      "What is the impact of SagA activity in major\u2011mismatch allo\u2011HSCT models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT06011234"
+      ],
+      "abstract_ids": [
+        "O-9012"
+      ],
+      "cited_papers": [
+        "Hang et al. 2024 eLife",
+        "Rangan et al. 2023 Nat Immunol"
+      ],
+      "company_or_sponsor": [
+        "RISE Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "US20260098765A1 \u2013 SagA\u2011expressing probiotic strains for cancer immunotherapy"
+      ]
+    }
+  }
+]

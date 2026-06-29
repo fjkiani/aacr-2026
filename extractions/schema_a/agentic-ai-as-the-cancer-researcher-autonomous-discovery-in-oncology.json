@@ -1,0 +1,114 @@
+[
+  {
+    "talk_id": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology::bittermann::1",
+    "session_title": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology",
+    "talk_title": "Agentic AI for Clinical Development in Oncology",
+    "speaker": {
+      "name": "Dr. Daniela Bittermann",
+      "affiliation": "Brigham and Women's Hospital / Dana-Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "clinical_trial",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "not specified",
+        "genotype_or_key_features": "not specified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Developed an agentic AI system that ingests unstructured clinical notes, extracts immunotherapy-related adverse events, grades severity, attributes causality, and provides evidence-backed JSON output, achieving macro F1 0.93 and reducing curation time by 40% while maintaining accuracy and inter-annotator agreement.",
+    "readouts": [
+      "LLM inference",
+      "JSON structured extraction",
+      "macro F1 score"
+    ],
+    "key_findings": [
+      "The agentic AI pipeline achieved a macro F1 of 0.93 for immunotherapy adverse event extraction from clinical notes.",
+      "Automated curation reduced manual review time from 10 minutes per note to approximately 0.2 minutes (two cents per note), a 40% time reduction.",
+      "Accuracy of adverse event determination was comparable to expert oncologists, with significantly improved inter-annotator agreement."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can the adverse event extraction system be extended to prospectively predict adverse events and guide patient selection in trials?",
+      "What governance frameworks are needed to benchmark and audit agentic AI outputs for regulatory submissions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology::firsch::2",
+    "session_title": "agentic-ai-as-the-cancer-researcher-autonomous-discovery-in-oncology",
+    "talk_title": "Agentic AI in Clinical Tissue Medicine and Pathology",
+    "speaker": {
+      "name": "Dr. Sebastian Firsch",
+      "affiliation": "University Medical Center Mainz, Institute of Pathology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "AI_ML",
+      "digital_pathology",
+      "platform_technology",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "not specified",
+        "genotype_or_key_features": "not specified"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Designed a modular agentic AI workflow for pathology that sequentially uses a foundation model to generate microscopic descriptions of whole-slide images, an LLM with retrieval-augmented generation to propose diagnoses and recommend immunohistochemical tests, and downstream agents to interpret IHC results and produce structured reports, all with on-premise deployment and reasoning traceability.",
+    "readouts": [
+      "Whole slide imaging",
+      "Microscopic description generation",
+      "LLM reasoning",
+      "Immunohistochemistry interpretation",
+      "Structured reporting"
+    ],
+    "key_findings": [
+      "A prototype system successfully described a lung squamous cell carcinoma slide, identified p40 positivity and TTF-1 negativity, and generated a final diagnostic report.",
+      "The workflow operates on open-source models with low computational requirements and can run on-premise, preserving data privacy.",
+      "Incorporating reasoning traces provides auditability for clinical quality management."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Potential bias from handwritten annotations on slides; ~25% of slides contain marks that may affect model predictions."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can the system be hardened against adversarial prompt injection attacks in clinical settings?",
+      "What standards are needed for validation and regulatory approval of multi-agent pathology AI pipelines?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

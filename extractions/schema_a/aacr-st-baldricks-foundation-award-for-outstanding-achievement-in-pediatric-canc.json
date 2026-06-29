@@ -1,0 +1,223 @@
+[
+  {
+    "talk_id": "aacr-st-baldricks-foundation-award-for-outstanding-achievement-in-pediatric-canc::stegmaier::1",
+    "session_title": "aacr-st-baldricks-foundation-award-for-outstanding-achievement-in-pediatric-canc",
+    "talk_title": "From fusion biology to functional genomics and therapeutic strategies in pediatric cancers",
+    "speaker": {
+      "name": "Dr. Kimberly Stegmaier",
+      "affiliation": "Department of Pediatric Oncology, Dana-Farber Cancer Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "acute lymphoblastic leukemia",
+      "Ewing sarcoma",
+      "neuroblastoma",
+      "pediatric solid tumors",
+      "brain tumors"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "molecular_glue",
+      "combination_therapy",
+      "translational",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EWS-FLI1",
+        "alteration": "fusion",
+        "pathway": "transcriptional_activation",
+        "modality": "other",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Ewing sarcoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STAG2",
+        "alteration": "loss_of_function",
+        "pathway": "cohesin_complex",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Ewing sarcoma, prognostic marker",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TRIM8",
+        "alteration": null,
+        "pathway": "ubiquitin_ligase",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Ewing sarcoma selective dependency",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "ETV6",
+        "alteration": null,
+        "pathway": "transcriptional_repression",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Ewing sarcoma, competition with EWS-FLI1",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "VRK1",
+        "alteration": null,
+        "pathway": "cell_cycle_regulation",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "VRK2-methylated brain tumors and neuroblastoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "NXT1",
+        "alteration": null,
+        "pathway": "RNA_export",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "NXT2-low neuroblastoma",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "UGT3A2",
+        "alteration": null,
+        "pathway": "UDP_glucose_metabolism",
+        "modality": "unspecified",
+        "compound_name": "R112",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "Ewing sarcoma sensitivity to R112",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "STAG2 loss",
+        "type": "prognostic",
+        "assay": "IHC",
+        "finding": "STAG2 loss associated with higher incidence of metastatic disease and poorer survival in Ewing sarcoma"
+      },
+      {
+        "name": "RCST1-ABL2 fusion",
+        "type": "predictive",
+        "assay": "NGS",
+        "finding": "Patient with B-ALL harboring RCST1-ABL2 fusion achieved complete remission when imatinib was added to chemotherapy"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Ewing sarcoma cell lines (e.g., A673)",
+        "genotype_or_key_features": "EWS-FLI1 fusion positive"
+      },
+      {
+        "model_type": "PDX",
+        "name": "Ewing sarcoma patient\u2011derived xenografts",
+        "genotype_or_key_features": "EWS-FLI1 fusion, variable STAG2 status"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "LEAP consortium leukemia cohort",
+        "genotype_or_key_features": "relapsed/refractory pediatric ALL, genomics\u2011guided therapy"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "LEAP (Leukemia Precision Therapy Consortium)",
+        "genotype_or_key_features": "genomics\u2011matched targeted therapy for pediatric leukemia"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Complete remission",
+        "value": "CR",
+        "confidence_interval": null,
+        "n": "n=1",
+        "population": "10\u2011year\u2011old B\u2011ALL patient with RCST1\u2011ABL2 fusion",
+        "comparator": null,
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Stegmaier's work integrates large\u2011scale functional genomics (CRISPR and chemical screens) with fusion biology to identify pediatric cancer dependencies such as TRIM8, ETV6, and UGT3A2, revealing a Goldilocks dosage requirement for EWS\u2011FLI1. She leverages degrader technologies (PROTACs, molecular glues) and bifunctional molecules to selectively degrade or rewire the fusion protein, demonstrating that loss of TRIM8 elevates EWS\u2011FLI1 levels and that targeted degradation of the fusion can induce apoptosis in Ewing sarcoma models.",
+    "readouts": [
+      "RNA\u2011seq",
+      "scRNA\u2011seq",
+      "ATAC\u2011seq",
+      "CRISPR dropout screens",
+      "chemical PRISM screens",
+      "flow cytometry",
+      "IHC",
+      "Western blot",
+      "in vivo xenograft tumor growth"
+    ],
+    "key_findings": [
+      "EWS\u2011FLI1 dosage is a Goldilocks dependency: both over\u2011expression and complete repression are deleterious to Ewing sarcoma cells.",
+      "TRIM8 is a selective Ewing sarcoma dependency; its knockout increases EWS\u2011FLI1 levels and is lethal in vitro and in vivo.",
+      "ETV6 competes with EWS\u2011FLI1 on chromatin; CRISPR or dTAG\u2011mediated loss of ETV6 leads to excess EWS\u2011FLI1 activity and cell death.",
+      "STAG2 loss predicts metastatic disease and poor prognosis in Ewing sarcoma, validated in isogenic knockout models.",
+      "Chemical PRISM screening identified compound R112 as uniquely active in Ewing sarcoma; activity is rescued by UGT3A2 knockout, implicating UDP\u2011glucose metabolism as a novel vulnerability.",
+      "A genomics\u2011guided case of a pediatric B\u2011ALL patient with RCST1\u2011ABL2 fusion achieved durable complete remission when imatinib was added to standard therapy.",
+      "Development of high\u2011throughput GFP\u2011mCherry reporter assays enabled screening of >100,000 molecules, yielding several candidates that induce proteasome\u2011dependent degradation of the EWS\u2011FLI1 fusion."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Goldilocks phenomenon indicates that precise modulation of fusion protein levels is required; both hyper\u2011activation and complete loss are cytotoxic, complicating therapeutic windows.",
+      "STAG2 loss creates a selective vulnerability but also promotes metastatic behavior, suggesting potential resistance via lineage plasticity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Imatinib",
+        "rationale": "Target the RCST1\u2011ABL2 kinase fusion identified by genomics in relapsed B\u2011ALL",
+        "phenotype": "Complete remission in a patient refractory to chemotherapy and CAR\u2011T",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Standard chemotherapy backbone",
+        "rationale": "Enhance efficacy of targeted agents (e.g., imatinib) in genomics\u2011matched leukemia",
+        "phenotype": "Improved remission rates in LEAP cohort (specific numbers not disclosed)",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Proteasome inhibitor (e.g., bortezomib)",
+        "rationale": "Rescue viability loss caused by degrader candidates, confirming proteasome\u2011dependent mechanism",
+        "phenotype": "Reversal of GFP\u2011fusion loss in reporter assays",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What are the precise molecular mechanisms by which UGT3A2 mediates sensitivity to R112 in Ewing sarcoma?",
+      "Can bifunctional degraders be developed that directly engage EWS\u2011FLI1 without requiring a high\u2011affinity ligand?",
+      "How can the Goldilocks dosage requirement be translated into a therapeutic index that avoids toxicity in normal tissues?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024 NEJM",
+        "Wu et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "St. Baldrick's Foundation",
+        "Dana\u2011Farber Cancer Institute",
+        "Broad Institute",
+        "AstraZeneca",
+        "InduPro"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

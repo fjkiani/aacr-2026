@@ -1,0 +1,528 @@
+[
+  {
+    "talk_id": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive::mcdonald::1",
+    "session_title": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive",
+    "talk_title": "27-hydroxycholesterol links hypercholesterolemia to estrogen receptor-positive breast cancer and metastasis",
+    "speaker": {
+      "name": "Donald McDonald",
+      "affiliation": "UCSF",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "metabolism",
+      "tumor_microenvironment",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Estrogen receptor",
+        "alteration": "wild-type",
+        "pathway": "estrogen_signaling",
+        "modality": "other",
+        "compound_name": "27-hydroxycholesterol",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ER-positive breast cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "GPX4",
+        "alteration": "",
+        "pathway": "ferroptosis",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "27HC-resistant metastatic cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "xenograft",
+        "name": "ER+ breast cancer xenograft",
+        "genotype_or_key_features": "ER-positive, estrogen dependent"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MMTV-PyMT",
+        "genotype_or_key_features": "spontaneous ER+ breast cancer"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "4T1, PY230, melanoma lines",
+        "genotype_or_key_features": "selected 27HC-resistant subclones"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "27-hydroxycholesterol, a cholesterol metabolite, acts as a partial estrogen receptor agonist promoting ER+ breast tumor growth and, through selection pressure, generates 27HC\u2011resistant subclones that acquire high lipid uptake, ferroptosis resistance via GPX4 upregulation, and enhanced metastatic potential.",
+    "readouts": [
+      "transcription assay",
+      "tumor volume measurement",
+      "luciferase imaging",
+      "lipid uptake assay",
+      "GPX4 inhibition assay"
+    ],
+    "key_findings": [
+      "27HC binds ER as a partial agonist at physiologic concentrations and drives ER+ tumor growth in mice.",
+      "Genetic knockout of CYP27A1 reduces tumor growth and delays latency in MMTV-PyMT mice.",
+      "27HC\u2011resistant subclones exhibit dramatically increased tumorigenicity and metastasis across breast cancer and melanoma models.",
+      "Resistant cells display non\u2011selective lipid uptake and become highly resistant to GPX4 inhibition, linking ferroptosis resistance to metastasis.",
+      "GPX4 knockout abolishes the metastatic advantage of 27HC\u2011selected cells, confirming GPX4 dependence."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "27HC\u2011selected cells develop resistance to GPX4 inhibitors and ferroptosis."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "statin (atorvastatin)",
+        "rationale": "lower LDL and 27HC levels",
+        "phenotype": "reduced LDL and 27HC in breast cancer patients after 8 weeks",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "vitamin D supplementation",
+        "rationale": "inhibit CYP27A1 activity",
+        "phenotype": "correlated decrease in 27HC with higher 25\u2011hydroxyvitamin D",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What are the specific transporters mediating increased lipid uptake in 27HC\u2011resistant cells?",
+      "Can targeting GPX4 be therapeutically safe in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Mangelsdorf et al. Nature Medicine",
+        "Brown and Goldstein studies on CYP27A1"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive::leeper::2",
+    "session_title": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive",
+    "talk_title": "Epidemiology and shared genetics of atherosclerosis and cancer",
+    "speaker": {
+      "name": "Nick Leeper",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "epidemiology",
+      "genetics",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "30 million claim dataset",
+        "genotype_or_key_features": "large population, multiple cancer and CVD outcomes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "cancer risk increase",
+        "value": "significant association with atherosclerotic CVD",
+        "confidence_interval": "",
+        "n": "30 million",
+        "population": "individuals with atherosclerotic disease",
+        "comparator": "non\u2011atherosclerotic disease",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Large\u2011scale claim analyses reveal that atherosclerotic cardiovascular disease, but not non\u2011atherosclerotic forms, is associated with increased incidence of multiple cancers, suggesting shared pathogenic mechanisms beyond traditional risk factors.",
+    "readouts": [
+      "claims data analysis",
+      "meta\u2011analysis"
+    ],
+    "key_findings": [
+      "Non\u2011atherosclerotic cardiovascular conditions (valve disease, arrhythmia) do not increase cancer risk.",
+      "Atherosclerotic diseases (CAD, PAD, aortic aneurysm) show stepwise increased cancer incidence across multiple malignancies.",
+      "Meta\u2011analysis of Life\u2019s Essential Eight risk factor control predicts up to 50% reduction in future cancer risk."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular pathways link atherosclerotic plaque biology to tumor initiation?",
+      "Can targeted lipid\u2011lowering therapies reduce cancer incidence in high\u2011risk CVD patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Javed et al. 2024 NEJM",
+        "Ebert et al. NEJM 2014"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive::luo::3",
+    "session_title": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive",
+    "talk_title": "Cancer\u2011driven atherosclerosis via TNF\u2011LRG1 axis and therapeutic targeting",
+    "speaker": {
+      "name": "Lingfeng Luo",
+      "affiliation": "Stanford University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colon cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "cardiovascular_disease",
+      "combination_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LRG1",
+        "alteration": "",
+        "pathway": "angiogenesis",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cancer\u2011induced plaque neovascularization",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TNF",
+        "alteration": "",
+        "pathway": "inflammation",
+        "modality": "other",
+        "compound_name": "etanercept",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tumor\u2011secreted TNF driving LRG1",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "circulating TNF",
+        "type": "exploratory",
+        "assay": "serum ELISA",
+        "finding": "higher in cancer patients vs controls (p<0.01)"
+      },
+      {
+        "name": "LRG1 in plaque",
+        "type": "exploratory",
+        "assay": "IHC",
+        "finding": "upregulated in plaques from cancer patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "xenograft",
+        "name": "flank colon cancer implants",
+        "genotype_or_key_features": "mouse colon carcinoma"
+      },
+      {
+        "model_type": "mouse",
+        "name": "ApoE\u2011/\u2011 atherosclerosis model",
+        "genotype_or_key_features": "hyperlipidemic, plaque prone"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Tumor\u2011derived TNF induces endothelial LRG1 expression, promoting intraplaque neovascularization and hemorrhage, thereby destabilizing atherosclerotic lesions; TNF blockade or LRG1 inhibition reduces plaque angiogenesis and size in mouse models.",
+    "readouts": [
+      "RNA\u2011seq of vasculature",
+      "IHC for LRG1",
+      "plaque histology",
+      "TNF ELISA",
+      "plaque size quantification"
+    ],
+    "key_findings": [
+      "Mice bearing colon tumors develop plaques with abundant fragile neovessels and intraplaque hemorrhage.",
+      "RNA\u2011seq identifies LRG1 as the sole consistently up\u2011regulated angiogenic factor in tumor\u2011bearing mice.",
+      "Tumor\u2011derived TNF drives LRG1 expression in vascular tissue.",
+      "Etanercept treatment abolishes tumor\u2011induced plaque neovascularization and reduces plaque size.",
+      "shRNA knockdown of LRG1 recapitulates the protective effect of TNF blockade."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "etanercept (TNF inhibitor)",
+        "rationale": "block tumor\u2011derived TNF that induces LRG1\u2011mediated angiogenesis",
+        "phenotype": "reduced plaque neovascularization and smaller plaques",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "LRG1 blocking antibody (in development)",
+        "rationale": "directly inhibit the angiogenic cytokine downstream of TNF",
+        "phenotype": "similar plaque stabilization as TNF blockade",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can LRG1 inhibition be safely applied in humans given its role in normal angiogenesis?",
+      "Does the TNF\u2011LRG1 axis operate in other cancer types beyond colon cancer?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive::moore::4",
+    "session_title": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive",
+    "talk_title": "Ischemic cardiovascular events reprogram bone marrow to promote tumor growth",
+    "speaker": {
+      "name": "Catherine Moore",
+      "affiliation": "NYU Langone Health",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "immunology",
+      "cardiovascular_disease",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Ly6C^high monocytes (MDSC-like)",
+        "alteration": "",
+        "pathway": "myeloid_suppression",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "post\u2011MI tumor microenvironment",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Ly6C^high monocytic cells",
+        "type": "exploratory",
+        "assay": "flow cytometry",
+        "finding": "increased frequency in tumors after MI"
+      },
+      {
+        "name": "FoxP3+ Tregs",
+        "type": "exploratory",
+        "assay": "IHC/flow",
+        "finding": "elevated in MI\u2011associated tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "LACE and Pathways breast cancer studies",
+        "genotype_or_key_features": "4,000 breast cancer survivors, 12\u2011yr follow\u2011up"
+      },
+      {
+        "model_type": "mouse",
+        "name": "E0771 orthotopic breast cancer + LAD ligation",
+        "genotype_or_key_features": "C57BL/6, MI induced 3 days post\u2011tumor"
+      },
+      {
+        "model_type": "mouse",
+        "name": "MMTV\u2011PyMT spontaneous breast cancer + MI",
+        "genotype_or_key_features": "spontaneous tumor model"
+      },
+      {
+        "model_type": "mouse",
+        "name": "YUM1.7 melanoma + hindlimb ischemia",
+        "genotype_or_key_features": "melanoma model with peripheral ischemia"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Bone marrow transplant from MI donors",
+        "genotype_or_key_features": "Ccr2\u2011DTR depletion experiments"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "cancer recurrence risk",
+        "value": "60% increase after CV event",
+        "confidence_interval": "",
+        "n": "4,000 breast cancer patients",
+        "population": "breast cancer survivors with post\u2011diagnosis CV event",
+        "comparator": "no CV event",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "cancer\u2011specific mortality",
+        "value": "60% increase after CV event",
+        "confidence_interval": "",
+        "n": "4,000",
+        "population": "same as above",
+        "comparator": "no CV event",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Myocardial infarction induces long\u2011lasting epigenetic reprogramming of bone\u2011marrow myeloid progenitors, expanding Ly6C^high monocytic MDSCs that suppress T\u2011cell activation and increase regulatory T cells in tumors, thereby accelerating tumor growth and metastasis.",
+    "readouts": [
+      "tumor volume measurement",
+      "Ki\u201167 IHC",
+      "flow cytometry",
+      "RNA\u2011seq",
+      "ATAC\u2011seq",
+      "single\u2011nucleus multi\u2011omics",
+      "bone\u2011marrow transplantation"
+    ],
+    "key_findings": [
+      "Breast cancer survivors who experience a cardiovascular event have a 60% higher risk of recurrence and cancer\u2011specific death.",
+      "MI in mice doubles orthotopic breast tumor volume and increases lung metastases in melanoma models.",
+      "Tumors after MI show increased Ly6C^high monocytic MDSCs and FoxP3+ Tregs with reduced CD8+ T\u2011cell activation.",
+      "Depletion of Ly6C^high monocytes (Ccr2\u2011DTR) abolishes the MI\u2011induced tumor growth advantage.",
+      "Bone\u2011marrow from MI mice transferred to na\u00efve recipients recapitulates accelerated tumor growth, indicating durable bone\u2011marrow imprinting.",
+      "ATAC\u2011seq reveals altered chromatin accessibility in myeloid progenitors, especially NLRP3\u2011positive MDPs, with reduced IRF8 motifs."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "CCR2 antagonist",
+        "rationale": "prevent recruitment of Ly6C^high monocytes",
+        "phenotype": "loss of MI\u2011induced tumor acceleration in mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "TNF inhibitor (etanercept)",
+        "rationale": "reduce systemic inflammation post\u2011MI",
+        "phenotype": "potentially attenuate bone\u2011marrow reprogramming",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Which specific cytokines from the infarcted heart drive myeloid progenitor reprogramming?",
+      "Can pharmacologic reversal of epigenetic changes in HSPCs mitigate the pro\u2011tumor effect?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "DeBeer et al. 2018 Nat Med",
+        "Javed et al. 2024 NEJM"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive::chair)::5",
+    "session_title": "beyond-cardiotoxicity-how-cardiovascular-disease-and-systemic-risk-factors-drive",
+    "talk_title": "Reverse cardio\u2011oncology: cardiovascular events accelerate cancer recurrence via immune reprogramming",
+    "speaker": {
+      "name": "Javed (session chair)",
+      "affiliation": "University of Illinois",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "melanoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "epidemiology",
+      "immunology",
+      "cardiovascular_disease"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "UK Biobank",
+        "genotype_or_key_features": "cancer vs non\u2011cancer participants"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Plaque biobank (endarterectomy samples)",
+        "genotype_or_key_features": "patients with/without cancer"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "TNF levels",
+        "value": "higher in cancer patients",
+        "confidence_interval": "",
+        "n": "UK Biobank cohort",
+        "population": "cancer patients",
+        "comparator": "non\u2011cancer controls",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "LRG1 expression in plaques",
+        "value": "upregulated in cancer patients",
+        "confidence_interval": "",
+        "n": "endarterectomy samples",
+        "population": "plaque tissue from cancer patients",
+        "comparator": "plaque from non\u2011cancer patients",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Cancer elevates systemic TNF, which induces LRG1 expression in vascular tissue, promoting intraplaque neovascularization and hemorrhage, thereby linking tumor presence to plaque vulnerability.",
+    "readouts": [
+      "serum TNF ELISA",
+      "plaque histology",
+      "machine learning predictors"
+    ],
+    "key_findings": [
+      "Cancer patients have higher circulating TNF levels (UK Biobank).",
+      "LRG1 is upregulated in atherosclerotic plaques from cancer patients.",
+      "Machine\u2011learning identifies prior cancer as a top predictor of intraplaque hemorrhage."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "TNF inhibitor (etanercept)",
+        "rationale": "block cancer\u2011derived TNF to reduce plaque neovascularization",
+        "phenotype": "plaque size reduction in mouse models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Does long\u2011term TNF blockade improve cardiovascular outcomes in cancer survivors?",
+      "Are other tumor\u2011derived cytokines contributing to plaque instability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

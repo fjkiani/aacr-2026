@@ -1,0 +1,157 @@
+[
+  {
+    "talk_id": "cancer-systems-biology-ecology-and-evolution::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Andrea Sottoriva",
+      "institution_or_pharma": "Computational Biology Research Center, Milan",
+      "session_title": "cancer-systems-biology-ecology-and-evolution",
+      "talk_title": "Measuring cancer evolution with mathematical modeling",
+      "rhetorical_signals": [
+        "Speaker said: \"we may even undersample or oversample, mostly undersample selection events\"",
+        "Speaker said: \"we have to be aware of that\" when discussing spatial sampling bias"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Bulk whole\u2011tumor sequencing",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Assumes a well\u2011mixed tumor population; fails to capture spatial subclonal structure",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No single\u2011cell or spatial validation of subclonal frequency predictions",
+        "No clinical outcome data linking model parameters to patient survival"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Need for spatially resolved biomarkers to validate subclonal frequency estimates and improve model calibration.",
+        "transcript_evidence": "Speaker said: \"we need spatial data before modeling crazy scenarios that we can't possibly measure\"",
+        "crispro_angle": "CrisPRO can integrate spatial omics with evolutionary modeling to generate robust subclonal biomarkers.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How to accurately infer selection coefficients from bulk VAF data in spatially heterogeneous tumors?",
+      "What is the minimal sampling density required to avoid undersampling of subclonal drivers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cancer-systems-biology-ecology-and-evolution::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sandy Anderson",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "cancer-systems-biology-ecology-and-evolution",
+      "talk_title": "Mathematical modeling drives adaptive therapy clinical trials",
+      "rhetorical_signals": [
+        "Speaker said: \"Resistance should have a cost when compared to the transformed tumor cells that are not resistant\"",
+        "Speaker said: \"However, the 1205LU population appears to show no difference in proliferative ability\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Continuous high\u2011dose abiraterone therapy",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Assumes resistant clones have no fitness cost; some resistant lines grow as fast as sensitive ones",
+        "unexplained_resistance_quote": "Speaker said: \"the 1205LU population appears to show no difference in proliferative ability\"",
+        "ghost_responder_admission": "Speaker noted that a subset of patients responded dramatically to continuous therapy but later relapsed",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Adaptive therapy prostate cancer trial (abiraterone + Lupron)",
+        "target_biology": "Androgen receptor signaling in castration\u2011resistant prostate cancer",
+        "flawed_enrollment_criteria": "No biomarker stratification for intrinsic resistance; all patients received same adaptive protocol",
+        "missing_biomarker": "Baseline PSA dynamics or molecular markers to predict cost of resistance",
+        "static_vs_dynamic_failure": "Lack of early on\u2011treatment PSA kinetics to adjust adaptive thresholds",
+        "statistical_concern": "Small cohort (\u2248100 patients) limits power to detect subgroup effects",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Adaptive therapy dosing algorithm",
+        "ip_vulnerability_note": "Relies on simple PSA\u2011based rule\u2011of\u2011thumb; may be circumvented by more sophisticated biomarker\u2011driven schedules",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad application without patient\u2011specific biomarker selection could dilute therapeutic signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that resistant cells often have a growth cost (e.g., MCF7 doxorubicin\u2011resistant cells are outcompeted) but then presented data where a resistant melanoma line (1205LU) showed no proliferative disadvantage, contradicting the general claim of a cost to resistance"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival endpoint reported",
+        "Limited molecular profiling of resistant clones"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop computational biomarkers (e.g., PSA dynamics, tumor growth models) to pre\u2011select patients who will benefit from adaptive therapy.",
+        "transcript_evidence": "Speaker said: \"we could have done even better if we designed this trial where we had just created three arms to classify the patients based on their dynamics\"",
+        "crispro_angle": "CrisPRO can model individual PSA trajectories and predict optimal adaptive thresholds for each patient.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integrate p38 inhibition (identified as a resistance mechanism) with adaptive dosing to enhance efficacy.",
+        "transcript_evidence": "Speaker discussed p38 as a stress response driving resistance in prostate cancer models.",
+        "crispro_angle": "CrisPRO can simulate multi\u2011drug adaptive schedules incorporating targeted agents like p38 inhibitors.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Abiraterone",
+        "context": "Standard of care drug used continuously in the trial",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Lupron",
+        "context": "Combined with abiraterone in the adaptive protocol",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal PSA reduction threshold (25%, 50%, 75%) for switching on/off therapy?",
+      "Can early on\u2011treatment dynamics reliably predict long\u2011term adaptive therapy success?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Abiraterone",
+        "p38 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca (abiraterone)",
+        "Genentech (trial collaborations)"
+      ]
+    }
+  }
+]

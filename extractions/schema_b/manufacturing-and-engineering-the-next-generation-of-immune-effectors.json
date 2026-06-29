@@ -1,0 +1,336 @@
+[
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Remus",
+      "institution_or_pharma": "Miltenyi Biotec",
+      "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+      "talk_title": "Advances and Challenges in CAR T Cell Engineering",
+      "rhetorical_signals": [
+        "Speaker said: \"We know that we can armor against negative signals.\"",
+        "Speaker said: \"I'm not telling you if that's good or bad. The jury is still out, but it certainly does happen.\"",
+        "Speaker said: \"We are giving futile therapy to some of our patients that we know that their CAR T cells are not going to do anything against that leukemia or that lymphoma.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CD19 CAR (Cilta-cel-like)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Antigen loss and CAR self\u2011association leading to cytokine\u2011driven neurotoxicity are not mechanistically addressed in the current design.",
+        "unexplained_resistance_quote": "We don't know for sure why this CAR keeps proliferating; we will find out.",
+        "ghost_responder_admission": "Some patients have a huge rise in CAR T cells initially but then sink very fast, indicating a subset of responders that are not durable.",
+        "hidden_tox_signal": "Self\u2011activating CARs produce high IFN\u2011\u03b3 and IL\u20112 in culture, which the speaker linked to neurotoxicity in patients.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CAR hinge and transmembrane domain choices (e.g., CD8 vs CD28 vs IgG hinge)",
+        "ip_vulnerability_note": "Speaker noted that some transmembrane domains (LNGFR, CD4, TNF receptor) perform poorly, indicating limited flexibility of the platform.",
+        "scale_or_manufacturing_bottleneck": "Metronomic kinase rest and ex\u2011vivo manufacturing speed are highlighted as rate\u2011limiting steps.",
+        "clinical_strategy_weakness": "Broad enrollment without molecular stratification of antigen loss mechanisms may dilute signal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that Cilta\u2011cel\u2011like CAR self\u2011clusters and secretes cytokines in vitro (observation) yet still presented it as the gold\u2011standard comparator for BCMA targeting (contradiction).",
+      "Speaker described extensive epigenetic programming to make exhaustion\u2011proof CAR T cells (observation) while also acknowledging that many patients receive futile therapy due to inherent CAR resistance (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical efficacy or OS data presented",
+        "Lack of biomarker\u2011stratified analysis for antigen loss",
+        "No head\u2011to\u2011head comparison of hinge/transmembrane variants in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with pre\u2011existing antigen loss or CAR self\u2011association signatures to select those who will benefit from engineered CARs.",
+        "transcript_evidence": "Speaker highlighted antigen loss variation and self\u2011association as common mechanisms of failure.",
+        "crispro_angle": "CrisPRO can integrate scRNA\u2011seq and ctDNA data to predict antigen loss and guide patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop computationally designed hinge and transmembrane modules that minimize CAR clustering and tonic signaling.",
+        "transcript_evidence": "Speaker noted that certain transmembrane domains (e.g., LNGFR) perform poorly and cause clustering.",
+        "crispro_angle": "CrisPRO can model membrane topology and predict non\u2011clustering designs.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine CAR T therapy with TGF\u2011\u03b2 inhibition to enhance central memory phenotype without losing ADCC.",
+        "transcript_evidence": "Speaker discussed TGF\u2011\u03b2 in manufacturing preserving central memory while reducing CD16 expression.",
+        "crispro_angle": "CrisPRO can simulate cytokine milieu effects on CAR T phenotypes to optimize combination schedules.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cilta\u2011cel",
+        "context": "Used as a benchmark CAR; also discussed as having self\u2011activation and neurotoxicity issues.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "J&J/Abelzeta bispecific CAR",
+        "context": "Mentioned as having adopted a similar tandem CAR design.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Kite",
+        "context": "Referenced for a bispecific product with two chains.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What precise molecular features of the hinge domain prevent CAR clustering?",
+      "Can donor\u2011derived gamma\u2011delta cells be standardized to avoid graft\u2011versus\u2011host disease?",
+      "How does the in\u2011vivo persistence of self\u2011activating CARs correlate with neurotoxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Cilta\u2011cel",
+        "CD22 CAR (Terry Fry)",
+        "Zamtoscel (tandem CAR)"
+      ],
+      "companies_to_monitor": [
+        "Miltenyi Biotec",
+        "J&J",
+        "Kite"
+      ]
+    }
+  },
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Trent Spencer",
+      "institution_or_pharma": "Emory University",
+      "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+      "talk_title": "Innate Cell Product Engineering: Gamma\u2011Delta T Cells",
+      "rhetorical_signals": [
+        "Speaker said: \"If you have a robust recovery in gamma delta cells after transplant, you have a higher chance of survival.\"",
+        "Speaker said: \"Not all donors are equal, so the use of an allogeneic gamma delta T cell is a major goal, but choosing the donor randomly is a poor strategy.\"",
+        "Speaker said: \"We lose CD16 expression when we expand with TGF\u2011beta, but genetic engineering will replace the ADCC component.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Ex\u2011vivo expanded gamma\u2011delta T cells",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Donor variability and loss of CD16\u2011mediated ADCC are not fully mitigated in current expansion protocols.",
+        "unexplained_resistance_quote": "We don't know why some donors are non\u2011expanders despite identical culture conditions.",
+        "ghost_responder_admission": "A subset of donors (the 'expanders') show high CD16 and robust killing, while others do not.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Gamma\u2011delta T cell cytotoxicity against solid tumors and hematologic malignancies",
+        "flawed_enrollment_criteria": "No pre\u2011screening for donor expandability or CD16 expression leads to heterogeneous product potency.",
+        "missing_biomarker": "Donor CD16 level or exercise\u2011induced expansion signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering due to variable cell product potency across cohorts.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Gamma\u2011delta T cell expansion process",
+        "ip_vulnerability_note": "Process relies on empirical cytokine mixes; no proprietary bioreactor design disclosed, making it replicable.",
+        "scale_or_manufacturing_bottleneck": "Large\u2011scale bioreactor expansion and removal of contaminating alpha\u2011beta T cells remain challenging.",
+        "clinical_strategy_weakness": "Broad enrollment without donor selection may dilute clinical signal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that NK cells dominate killing in mixed cultures (observation) yet emphasized gamma\u2011delta cells as the primary therapeutic engine (contradiction).",
+      "Speaker demonstrated that TGF\u2011beta improves central memory phenotype (observation) while also stating that CD16\u2011mediated ADCC is lost, which is critical for antibody\u2011dependent killing (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_reported",
+      "key_data_gaps": [
+        "No human efficacy data; only in\u2011vitro and murine models",
+        "Lack of standardized donor selection criteria",
+        "Absence of long\u2011term persistence data in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop predictive markers (e.g., exercise\u2011induced gene signatures) to select high\u2011expanding donors.",
+        "transcript_evidence": "Speaker noted that exercisers and younger donors expand better.",
+        "crispro_angle": "CrisPRO can analyze donor transcriptomics to flag optimal expansion profiles.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair gamma\u2011delta cell therapy with zoledronate to boost phosphoantigen expression on tumors.",
+        "transcript_evidence": "Speaker described zoledronate increasing phosphoantigen levels for gamma\u2011delta TCR recognition.",
+        "crispro_angle": "CrisPRO can model synergistic effects of metabolic priming on target antigen density.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue CD16\u2011deficient gamma\u2011delta products by engineering BiTEs that restore ADCC.",
+        "transcript_evidence": "Speaker suggested BiTE expression as a way to replace lost CD16 function.",
+        "crispro_angle": "CrisPRO can design optimized BiTE scaffolds compatible with gamma\u2011delta T cell expression.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Kite",
+        "context": "Developing a bispecific product with two different chains (duocar approach).",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "J&J/Abelzeta",
+        "context": "Acquired similar tandem CAR technology (zamtoscel).",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal cytokine cocktail to retain CD16 while preserving central memory phenotype?",
+      "Can allogeneic gamma\u2011delta products be standardized without causing graft\u2011versus\u2011host disease?",
+      "How does TGF\u2011beta exposure affect long\u2011term in\u2011vivo persistence versus immediate cytotoxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zamtoscel (tandem CAR)",
+        "BiTE constructs for gamma\u2011delta cells"
+      ],
+      "companies_to_monitor": [
+        "Emory University/Marcus Center",
+        "Kite",
+        "J&J"
+      ]
+    }
+  },
+  {
+    "talk_id": "manufacturing-and-engineering-the-next-generation-of-immune-effectors::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Ryan Larsen",
+      "institution_or_pharma": "Emoja BioPharma",
+      "session_title": "manufacturing-and-engineering-the-next-generation-of-immune-effectors",
+      "talk_title": "In\u2011vivo Lentiviral Vector CAR Delivery (VivoVEC) Platform",
+      "rhetorical_signals": [
+        "Speaker said: \"We are able to manufacture that in a suspension\u2011based manufacturing process.\"",
+        "Speaker said: \"We saw rapid and complete B cell depletion, concomitant to the peak CAR T cell expansion around day 7\u201110.\"",
+        "Speaker said: \"The risk of a resultant T cell malignancy is extremely low. Far lower, actually, than ex\u2011vivo manufactured CAR T cells.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "In\u2011vivo anti\u2011CD20 CAR (Lu16 scFv)",
+        "failure_type": "immunogenicity_limiting",
+        "mechanistic_blindspot": "Anti\u2011CAR immune response against murine scFv and human hinge/endodomain leads to B\u2011cell recovery.",
+        "unexplained_resistance_quote": "We see recovery of B cells directly correlates with the arising anti\u2011CAR response.",
+        "ghost_responder_admission": "One animal showed minimal CAR T generation and only partial B\u2011cell depletion.",
+        "hidden_tox_signal": "Low\u2011grade transient CRS observed during peak expansion but resolved quickly.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "In\u2011vivo transduction of circulating T cells to express anti\u2011CD20 CAR",
+        "flawed_enrollment_criteria": "No lymphodepletion required; variability in patient T\u2011cell health may affect transduction efficiency.",
+        "missing_biomarker": "Baseline CD3/CD28 expression levels to predict particle binding avidity",
+        "static_vs_dynamic_failure": "No on\u2011treatment monitoring of anti\u2011CAR antibodies could miss emerging immunity.",
+        "statistical_concern": "Single\u2011dose design may under\u2011power detection of late\u2011onset toxicities.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Multi\u2011domain fusion (MDF) surface engineering of lentiviral particles",
+        "ip_vulnerability_note": "Relies on anti\u2011CD3 scFv, CD80, CD58; similar constructs could be replicated by competitors once disclosed.",
+        "scale_or_manufacturing_bottleneck": "High\u2011purity GMP lentiviral production at scale remains technically demanding.",
+        "clinical_strategy_weakness": "Single\u2011dose approach may limit ability to boost CAR T cells if transduction is suboptimal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated robust CAR T expansion and B\u2011cell depletion (observation) yet emphasized that the platform does not require lymphodepletion, which contradicts the known need for T\u2011cell activation to achieve efficient transduction.",
+      "Speaker highlighted low immunogenicity of lentiviral vectors (observation) while reporting a strong anti\u2011CAR antibody response that drives B\u2011cell recovery (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term durability of CAR T cells beyond 90 days",
+        "Impact of anti\u2011CAR immunity on repeat dosing",
+        "Efficacy in heavily pre\u2011treated human patients (only NHP data shown)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO to design next\u2011generation scFv domains with reduced immunogenicity for the MDF.",
+        "transcript_evidence": "Speaker noted anti\u2011CAR immune response against murine scFv as a key limitation.",
+        "crispro_angle": "CrisPRO can predict T\u2011cell epitope hotspots and suggest humanized alternatives.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate baseline T\u2011cell phenotyping (e.g., CD28/CD2 expression) as a stratification biomarker.",
+        "transcript_evidence": "Speaker explained MDF engages CD2/CD58 to capture diverse T\u2011cell subsets.",
+        "crispro_angle": "CrisPRO can model binding avidity across T\u2011cell phenotypes to optimize patient selection.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine in\u2011vivo CAR delivery with transient rapamycin\u2011based RACR activation to sustain CAR T persistence despite anti\u2011CAR immunity.",
+        "transcript_evidence": "Speaker described RACR system enabling drug\u2011on cytokine signaling and potential redosing.",
+        "crispro_angle": "CrisPRO can simulate STAT5 signaling dynamics to fine\u2011tune rapamycin dosing schedules.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "J&J/Abelzeta",
+        "context": "Acquired similar tandem CAR technology (zamtoscel) mentioned by Remus.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Kite",
+        "context": "Developing bispecific CAR products; referenced in discussion of tandem designs.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Novartis (T\u2011charge)",
+        "context": "Mentioned as a company pursuing one\u2011day manufacturing of CAR T cells.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal vector dose that balances transduction efficiency with minimal anti\u2011CAR immunity?",
+      "Can the MDF be adapted to target other T\u2011cell subsets (e.g., gamma\u2011delta) without loss of avidity?",
+      "How durable is the RACR\u2011mediated cytokine support after rapamycin withdrawal?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "VivoVEC anti\u2011CD20 CAR (Lu16 scFv)",
+        "RACR rapamycin\u2011activated cytokine receptor"
+      ],
+      "companies_to_monitor": [
+        "Emoja BioPharma",
+        "AbbVie (partner)",
+        "Novartis"
+      ]
+    }
+  }
+]

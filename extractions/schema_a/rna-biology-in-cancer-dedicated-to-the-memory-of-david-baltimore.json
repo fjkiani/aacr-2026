@@ -1,0 +1,221 @@
+[
+  {
+    "talk_id": "rna-biology-in-cancer-dedicated-to-the-memory-of-david-baltimore::inscho::1",
+    "session_title": "rna-biology-in-cancer-dedicated-to-the-memory-of-david-baltimore",
+    "talk_title": "ZC3H18 truncating mutations drive ERV accumulation and melanomagenesis",
+    "speaker": {
+      "name": "Megan Inscho",
+      "affiliation": "Dana-Farber Cancer Institute, Department of Medicine, Harvard Medical School",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "melanoma",
+      "colon cancer",
+      "uterine cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ZC3H18",
+        "alteration": "truncating mutation",
+        "pathway": "RNA_surveillance",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "melanoma and epithelial cancers with ZC3H18 loss",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ERV RNA expression",
+        "type": "predictive",
+        "finding": "ZC3H18 truncating mutants show >5\u2011fold upregulation of ERV transcripts in melanoma cell lines and patient tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "zebrafish",
+        "name": "MITFA\u2011BRAF melanoma model",
+        "genotype_or_key_features": "p53\u2011/\u2011, MITFA\u2011/\u2011, human BRAF V600E; ZC3H18 truncation introduced"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "human melanoma cell lines (e.g., A375)",
+        "genotype_or_key_features": "ZC3H18 wild\u2011type or CRISPR\u2011edited truncation; ERV upregulation measured"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA melanoma and uterine cancer",
+        "genotype_or_key_features": "ZC3H18 mutant vs wild\u2011type tumors"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Truncating mutations in the RNA\u2011surveillance factor ZC3H18 act in a dominant\u2011negative manner, losing interaction with the NEXT complex while retaining RNA\u2011binding capacity, leading to cytoplasmic sequestration and stabilization of endogenous retroviral RNAs; these ERV transcripts are necessary and sufficient to accelerate melanomagenesis in zebrafish and human models.",
+    "readouts": [
+      "RNA\u2011seq (bulk and CCLE/TCGA)",
+      "PAR\u2011CLIP",
+      "mass spectrometry IP",
+      "pulse\u2011chase 4SU labeling",
+      "base\u2011scope RNA FISH",
+      "IGV visualization"
+    ],
+    "key_findings": [
+      "35% of melanoma patients harbor mono\u2011 or biallelic loss of ZC3H18, and ~30% of all solid tumors show focal deletions of the locus.",
+      "ZC3H18 truncations increase ERV RNA levels >10\u2011fold in zebrafish melanoma and human melanoma cell lines compared with wild\u2011type controls.",
+      "CRISPR\u2011mediated knockout of ZC3H18 recapitulates the ERV up\u2011regulation, whereas heterozygous loss shows a modest effect, supporting a dominant\u2011negative mechanism.",
+      "Exogenous expression of the truncation mutant alone is sufficient to drive ERV accumulation and enhances tumor initiation in zebrafish.",
+      "Base\u2011scope FISH demonstrates cytoplasmic accumulation of ERV RNAs in ZC3H18\u2011mutant cells, indicating mislocalization away from nuclear decay machinery.",
+      "CRISPR\u2011interference targeting the up\u2011regulated ERV transcripts fully rescues the accelerated oncogenesis phenotype in zebrafish, proving ERV RNAs are necessary for ZC3H18\u2011driven tumorigenesis."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular features of ERV RNAs confer oncogenic activity beyond innate immune activation?",
+      "How does the ZC3H18 truncation specifically sequester ERV RNAs without affecting other NEXT substrates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhang et al. 2024 Nature",
+        "Zhang et al. 2023 bioRxiv"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "rna-biology-in-cancer-dedicated-to-the-memory-of-david-baltimore::abdelwahab::2",
+    "session_title": "rna-biology-in-cancer-dedicated-to-the-memory-of-david-baltimore",
+    "talk_title": "Splicing\u2011regulated LAG\u20113 intron removal enables conditional FOXO1 and IL\u201112 expression to overcome T\u2011cell exhaustion",
+    "speaker": {
+      "name": "Omar Abdelwahab",
+      "affiliation": "Memorial Sloan Kettering Cancer Center, Chair of Molecular Pharmacology, Attending Physician, Leukemia Service",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "basic_science",
+      "translational",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LAG3",
+        "alteration": null,
+        "pathway": "immune_checkpoint",
+        "modality": "protein",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "exhausted CD8+ T cells in melanoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FOXO1",
+        "alteration": null,
+        "pathway": "T\u2011cell transcriptional regulation",
+        "modality": "protein",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "chronically stimulated CD8+ T cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IL12A",
+        "alteration": null,
+        "pathway": "cytokine signaling",
+        "modality": "protein",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "exhausted CD8+ T cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "LAG\u20113 surface protein",
+        "type": "pharmacodynamic",
+        "finding": "LAG\u20113 surface expression increases 3\u2011fold in exhausted tumor\u2011infiltrating CD8+ T cells versus peripheral blood"
+      },
+      {
+        "name": "PD\u20111",
+        "type": "pharmacodynamic",
+        "finding": "PD\u20111 expression reduced by ~40% in T cells with splicing\u2011regulated FOXO1 expression"
+      },
+      {
+        "name": "Granzyme B",
+        "type": "pharmacodynamic",
+        "finding": "Granzyme B+ CD8+ T cells increased from 12% to 28% after chronic stimulation with splicing\u2011regulated FOXO1"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "melanoma tumor\u2011derived CD8+ T cells (n=4 patients)",
+        "genotype_or_key_features": "sorted exhausted vs non\u2011exhausted subsets; long\u2011read scRNA\u2011seq"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "NY\u2011ESO\u20111 TCR\u2011engineered T cells",
+        "genotype_or_key_features": "P2A\u2011FOXO1 or P2A\u2011IL12 constructs under LAG3 intron control"
+      },
+      {
+        "model_type": "other",
+        "name": "in vivo mouse melanoma model",
+        "genotype_or_key_features": "tumor implantation with adoptive transfer of engineered T cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Exhausted CD8+ T cells splice out a retained intron in LAG3, enabling full\u2011length LAG\u20113 protein; this splicing switch is harnessed by inserting a therapeutic cassette downstream of the intron, so that FOXO1 or IL\u201112 is expressed only after intron removal in chronically stimulated T cells, thereby reprogramming exhausted T cells to a less exhausted, more cytotoxic phenotype and improving anti\u2011tumor activity.",
+    "readouts": [
+      "single\u2011cell long\u2011read RNA\u2011seq (PacBio)",
+      "flow cytometry (surface LAG\u20113, PD\u20111, TIM\u20113, granzyme B, IL\u201112)",
+      "intracellular FOXO1 staining",
+      "tumor growth curves in vitro (rechallenge assay)",
+      "in vivo tumor burden measurement",
+      "CRISPR screen for splicing regulators"
+    ],
+    "key_findings": [
+      "A previously unannotated intron in LAG3 is retained in acutely stimulated CD8+ T cells but efficiently removed in exhausted tumor\u2011infiltrating T cells, correlating with a 4\u2011fold increase in LAG\u20113 mRNA and protein.",
+      "Minigene reporter assays show that forced intron retention abolishes LAG\u20113 protein production and GFP reporter expression, confirming NMD\u2011mediated loss.",
+      "CRISPR screening identifies MBNL1 as a positive regulator of intron removal; MBNL1 knock\u2011down maintains intron retention and reduces LAG\u20113 surface expression.",
+      "Engineering a LAG3\u2011intron\u2011controlled FOXO1 cassette yields conditional FOXO1 expression only after chronic stimulation, decreasing PD\u20111, TIM\u20113, and LAG\u20113 while increasing granzyme B and perforin.",
+      "In repeated tumor rechallenge assays, T cells bearing the splicing\u2011regulated FOXO1 construct achieve 60% tumor clearance versus 35% with constitutive FOXO1 and 10% with control T cells.",
+      "A splicing\u2011regulated IL\u201112 construct produces IL\u201112 and IFN\u2011\u03b3 exclusively in exhausted T cells, demonstrating temporal control of a toxic cytokine."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Which additional RNA\u2011binding proteins cooperate with MBNL1 to regulate the LAG3 intron during exhaustion?",
+      "Can the splicing\u2011controlled payload strategy be generalized to other exhaustion\u2011associated checkpoints (e.g., TIM\u20113, TIGIT)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhang et al. 2024 Cell"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

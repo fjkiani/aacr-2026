@@ -1,0 +1,170 @@
+[
+  {
+    "talk_id": "pathobiology-of-sarcomas-and-emerging-technologies::rubin::1",
+    "session_title": "pathobiology-of-sarcomas-and-emerging-technologies",
+    "talk_title": "Bench to bedside in epithelioid hemangioendothelioma (EHE)",
+    "speaker": {
+      "name": "Brian Rubin",
+      "affiliation": "Cleveland Clinic",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "epithelioid hemangioendothelioma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "translational",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TAZ",
+        "alteration": "TAZ-CAMTA1 fusion",
+        "pathway": "Hippo",
+        "modality": "other",
+        "compound_name": "trametinib",
+        "compound_id": "NCT0015",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EHE tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MEK",
+        "alteration": "",
+        "pathway": "MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "trametinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EHE cell lines",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CDK9",
+        "alteration": "",
+        "pathway": "transcriptional_elongation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "dinaciclib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EHE xenograft models",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TEAD",
+        "alteration": "",
+        "pathway": "Hippo",
+        "modality": "other",
+        "compound_name": "MGH CP1 (tool compound)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EHE cell lines",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CAMTA1 IHC",
+        "type": "diagnostic",
+        "assay": "IHC",
+        "finding": "Specific nuclear staining identifies TAZ-CAMTA1 fusion positive EHE"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "NIH3T3 expressing TAZ-CAMTA1",
+        "genotype_or_key_features": "TAZ-CAMTA1 fusion"
+      },
+      {
+        "model_type": "GEM",
+        "name": "TAZ-CAMTA1 homozygous mouse",
+        "genotype_or_key_features": "Conditional TAZ-CAMTA1 allele"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "EHE cell line xenograft",
+        "genotype_or_key_features": "TAZ-CAMTA1 driven tumors"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "20 responders out of 24 patients",
+        "confidence_interval": "",
+        "n": "n=24",
+        "population": "unresectable/metastatic EHE",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Toxicity leading discontinuation",
+        "value": "significant, exact rate not specified",
+        "confidence_interval": "",
+        "n": "",
+        "population": "EHE patients on trametinib",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The TAZ-CAMTA1 fusion drives EHE by constitutively activating the Hippo pathway effector TAZ, leading to nuclear TEAD transcriptional programs. Trametinib inhibits MAPK signaling downstream of the fusion, reducing colony formation in vitro and tumor growth in mouse models. CDK9 inhibition (dinaciclib) disrupts transcriptional elongation complexes essential for fusion-driven transcription, showing synergistic tumor regression when combined with MEK inhibition.",
+    "readouts": [
+      "soft_agar colony assay",
+      "IC50 dose\u2011response curves",
+      "xenograft tumor burden (lung metastasis)",
+      "IHC (CD31, ERG, CAMTA1)",
+      "Western blot for phospho\u2011TAZ",
+      "NMR fragment screening"
+    ],
+    "key_findings": [
+      "TAZ-CAMTA1 fusion activates MAPK pathway; MEK inhibitor trametinib shows IC50 <10\u202fnM in colony assays.",
+      "Phase\u202f2 trial of trametinib in unresectable/metastatic EHE yielded 20 responders among 24 patients but did not meet primary endpoint for FDA approval.",
+      "Genetically engineered TAZ-CAMTA1 homozygous mice develop histologically identical EHE tumors, providing a faithful preclinical model.",
+      "CDK9 inhibitors (dinaciclib, CGP) induce apoptosis in EHE cell lines and dramatically reduce lung tumor burden in xenograft models.",
+      "Combination of MEK inhibition with TEAD inhibition (MGH CP1) shows synergistic growth suppression in vitro.",
+      "NMR\u2011based fragment screening identified small\u2011molecule hits targeting TEAD interface pockets, achieving sub\u2011micromolar affinity after optimization."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Trametinib toxicity limited treatment duration in some patients.",
+      "CDK9 inhibition appears selective for EHE cells due to dependence on transcriptional elongation complex."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "TEAD inhibitor (MGH CP1)",
+        "rationale": "Dual blockade of Hippo downstream transcriptional output enhances anti\u2011tumor effect.",
+        "phenotype": "Synergistic inhibition of colony formation in EHE cell lines",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "MEK inhibitor (trametinib)",
+        "rationale": "Target MAPK activation downstream of TAZ\u2011CAMTA1 fusion.",
+        "phenotype": "Significant tumor regression in mouse xenografts",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What is the precise functional contribution of the CAMTA1 portion of the fusion to oncogenesis?",
+      "Can TEAD inhibitors be optimized for clinical use in EHE patients?",
+      "What mechanisms underlie trametinib resistance in EHE?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT0015"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Rubin et al. 2024 Clinical Cancer Research"
+      ],
+      "company_or_sponsor": [
+        "Cleveland Clinic"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

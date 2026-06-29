@@ -1,0 +1,703 @@
+[
+  {
+    "talk_id": "digital-pathology::zhao::1",
+    "session_title": "digital-pathology",
+    "talk_title": "Elucidating Broad Cell-Cell Interactions via 3D Super Cell Graphs for Prostate Cancer Risk Stratification",
+    "speaker": {
+      "name": "Yujie Zhao",
+      "affiliation": "University of Washington, PhD student",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "spatial_biology",
+      "tumor_microenvironment",
+      "prognosis",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "76 patient 3D pathology cohort",
+        "genotype_or_key_features": "known five-year biochemical recurrence outcomes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC for 5-year BCR prediction",
+        "value": "0.8",
+        "confidence_interval": "",
+        "n": "n=76",
+        "population": "prostate cancer patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "C-index for survival analysis",
+        "value": "0.61",
+        "confidence_interval": "",
+        "n": "n=76",
+        "population": "prostate cancer patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Computation time reduction",
+        "value": "25-fold",
+        "confidence_interval": "",
+        "n": "",
+        "population": "",
+        "comparator": "standard cell-level graph",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The Skell 3D framework groups phenotypically similar, spatially adjacent cells into super cells, constructs super cell graphs, and extracts interaction features that predict five-year biochemical recurrence in prostate cancer with higher AUC and reduced computational cost compared to standard cell-level graphs.",
+    "readouts": [
+      "nuclear morphology extraction",
+      "super cell clustering",
+      "graph feature extraction",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Skell 3D achieved AUC 0.8 for five-year BCR prediction in a 76-patient cohort, outperforming 3D morphology alone (AUC 0.68).",
+      "Integration of Skell 3D features increased C-index from 0.64 to 0.61 in survival analysis.",
+      "Super cell graphs reduced computation time by ~25-fold relative to standard cell-level graphs.",
+      "Ablation studies identified optimal super cell neighbor threshold (15\u202f\u00b5m) and interaction distance (20\u202f\u00b5m).",
+      "Super cell approach showed robustness to simulated Gaussian noise compared with cell-level graphs."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does Skell 3D perform on independent external prostate cancer cohorts?",
+      "Can the super cell graph approach be extended to other cancer types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::biswas::2",
+    "session_title": "digital-pathology",
+    "talk_title": "AI-Driven Spatial Analysis of 1,100 Head and Neck Squamous Cell Carcinoma Patients' H&E Slides Uncovers Three Tumor Subtypes with Distinct Microenvironments and Survival",
+    "speaker": {
+      "name": "Sumana Biswas",
+      "affiliation": "Cedars-Sinai Medical Center, Postdoctoral Fellow",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "head and neck squamous cell carcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "cancer_vaccines",
+      "spatial_biology",
+      "biomarker_development",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "EGFR spatial expression",
+        "type": "predictive",
+        "finding": "Predicted EGFR hotspots matched measured spatial transcriptomics in H&E images"
+      },
+      {
+        "name": "MMP2 spatial expression",
+        "type": "predictive",
+        "finding": "Model accurately recapitulated MMP2 spatial patterns"
+      },
+      {
+        "name": "ACTA2 spatial expression",
+        "type": "predictive",
+        "finding": "Predicted ACTA2 distribution aligned with measured data"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA HNSCC cohort",
+        "genotype_or_key_features": "~445 patients with H&E slides and survival data"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Hancock cohort",
+        "genotype_or_key_features": "700 patients with survival outcomes"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Taiwan Veteran Hospital cohort",
+        "genotype_or_key_features": "231 patients with recurrence-free survival data"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC for treatment response prediction",
+        "value": "0.74",
+        "confidence_interval": "",
+        "n": "n=94 (immunotherapy cohort)",
+        "population": "HNSCC patients",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Odds ratio for response prediction",
+        "value": "5",
+        "confidence_interval": "",
+        "n": "n=94",
+        "population": "HNSCC immunotherapy cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Hazard ratio for overall survival (immune exhausted vs activated spatiotype)",
+        "value": "HR >1 (significant)",
+        "confidence_interval": "",
+        "n": "n=445",
+        "population": "TCGA HNSCC",
+        "comparator": "immune activated spatiotype",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A deep learning model predicts spatial transcriptomic gene expression from H&E slides, enabling clustering of tumors into immune-activated and immune-exhausted spatiotypes; these spatiotypes robustly stratify survival and predict therapy response across multiple head and neck cancer cohorts.",
+    "readouts": [
+      "deep learning image-to-transcriptome prediction",
+      "spatial clustering",
+      "gene set enrichment analysis",
+      "Kaplan-Meier survival analysis"
+    ],
+    "key_findings": [
+      "Model accurately predicts spatial expression of ~2,800 genes from H&E images, capturing cancer hallmark pathways.",
+      "Clustering of predicted spatial transcriptomics identifies two spatiotypes (immune-activated vs immune-exhausted) with distinct survival outcomes.",
+      "Immune-exhausted spatiotype shows worse overall, progression-free, and disease-specific survival across TCGA, Hancock, and Taiwan cohorts.",
+      "Spatial cluster-based model predicts treatment response with AUC 0.74 and odds ratio ~5 in a 94-patient immunotherapy cohort.",
+      "Model performance correlates with number of genes robustly predicted; external validation confirms reproducibility."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can the H&E-informed spatial transcriptomics model be extended to other tumor types?",
+      "What is the minimal number of H&E slides needed per patient for reliable spatiotype assignment?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Cedars-Sinai",
+        "National Cancer Institute"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::hoang::3",
+    "session_title": "digital-pathology",
+    "talk_title": "Pan-Cancer Prediction of Response to Immune Checkpoint Blockade from Histopathology",
+    "speaker": {
+      "name": "Dan Thai Hoang",
+      "affiliation": "Cedars-Sinai, Research Scientist",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer",
+      "melanoma",
+      "NSCLC",
+      "head and neck",
+      "colorectal",
+      "others"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "AI_ML",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Tumor hotness (TAHMAC signature)",
+        "type": "predictive",
+        "finding": "AUC 0.98 across 11 cohorts for hot/cold classification"
+      },
+      {
+        "name": "ICB response signature (TAHMAC)",
+        "type": "predictive",
+        "finding": "AUC 0.74 across 22 transcriptomic cohorts, outperforming 26 existing signatures"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA melanoma (derivation cohort)",
+        "genotype_or_key_features": "immune score, inflammation score, TMB"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "22 transcriptomic ICB response cohorts",
+        "genotype_or_key_features": "various cancer types with ICB outcomes"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "8 TCGA cancer types (Path2Omic inference)",
+        "genotype_or_key_features": "inferred gene expression"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "9 external ICB cohorts",
+        "genotype_or_key_features": "treated with checkpoint inhibitors"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC for tumor hotness prediction (measured expression)",
+        "value": "0.98",
+        "confidence_interval": "",
+        "n": "across 11 cohorts",
+        "population": "pan-cancer",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AUC for ICB response prediction (measured expression)",
+        "value": "0.74",
+        "confidence_interval": "",
+        "n": "across 22 cohorts",
+        "population": "pan-cancer ICB-treated patients",
+        "comparator": "26 established signatures",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AUC for tumor hotness prediction (inferred expression)",
+        "value": "0.96",
+        "confidence_interval": "",
+        "n": "across 8 TCGA cancer types",
+        "population": "pan-cancer",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AUC for ICB response prediction (inferred expression)",
+        "value": "0.72",
+        "confidence_interval": "",
+        "n": "across 9 external ICB cohorts",
+        "population": "pan-cancer ICB-treated",
+        "comparator": "direct slide-to-response models",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A composite tumor hotness signature (TAHMAC) derived from immune score, inflammation score, and TMB in melanoma is applied pan\u2011cancer to classify hot vs cold tumors; Path2Omic deep learning infers gene expression from H&E, enabling hotness and ICB response prediction directly from pathology with performance comparable to measured transcriptomics.",
+    "readouts": [
+      "gene expression inference",
+      "immune score calculation",
+      "TMB estimation",
+      "deep learning image analysis",
+      "random forest classification"
+    ],
+    "key_findings": [
+      "TAHMAC signature achieved AUC 0.98 for hot/cold classification across 11 diverse cancer cohorts despite being derived from melanoma.",
+      "TAHMAC outperformed 26 existing ICB response signatures with AUC 0.74 on 22 transcriptomic cohorts.",
+      "Path2Omic accurately inferred ~6,000 genes per cancer type, with TAM genes among the most reliably predicted.",
+      "Using inferred expression, tumor hotness prediction reached mean AUC 0.96 across eight TCGA cancers.",
+      "ICB response prediction from inferred expression achieved AUC 0.72 on nine external cohorts, surpassing direct slide\u2011to\u2011response models."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will integrating spatial hotness prediction with other modalities (e.g., radiomics) further improve ICB response prediction?",
+      "How does the signature perform on metastatic lesions versus primary tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Cedars-Sinai"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::bergstrom::4",
+    "session_title": "digital-pathology",
+    "talk_title": "A Large Scale Multi-Target Deep Learning Model for Virtual Genomic Profiling in Colorectal Cancer",
+    "speaker": {
+      "name": "Eric Bergstrom",
+      "affiliation": "Natera, Industry Presenter",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "genomics",
+      "AI_ML",
+      "diagnostics",
+      "clinical_trial",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MSI",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "V600E",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Natera internal colorectal cohort",
+        "genotype_or_key_features": "45,000 patients with H&E, WES, longitudinal ctDNA"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "External colorectal cohort",
+        "genotype_or_key_features": "21,000 patients with paired data"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC for individual gene mutation prediction",
+        "value": "\u22650.7 for >80% of 463 genes",
+        "confidence_interval": "",
+        "n": "45,000 patients",
+        "population": "colorectal cancer",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AUC for MSI prediction",
+        "value": "0.98",
+        "confidence_interval": "",
+        "n": "",
+        "population": "colorectal cancer",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Hazard ratio for molecular recurrence (BRAF V600E true positive vs false positive)",
+        "value": "HR >1 (worse outcome)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "colorectal cancer patients",
+        "comparator": "wild-type",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A transformer-based deep learning model processes tiled H&E images to predict whole-exome sequencing mutations (including MSI, BRAF, KRAS) and infer molecular recurrence risk, demonstrating that morphological features can capture pathway-level alterations and correlate with ctDNA-defined outcomes.",
+    "readouts": [
+      "whole slide image tiling",
+      "transformer aggregation",
+      "mutation classification",
+      "ctDNA longitudinal tracking",
+      "Cox proportional hazards modeling"
+    ],
+    "key_findings": [
+      "Single-task models achieved AUC >0.7 for >80% of 463 genes in a 45,000-patient cohort.",
+      "Multitask training improved performance for 95% of genes, with ~40% gaining \u22655% AUC.",
+      "MSI prediction reached AUC 0.98, BRAF V600E AUC 0.90+, and KRAS AUC 0.85+.",
+      "Patients with model-predicted BRAF V600E but wild-type sequencing showed similar poor survival, suggesting pathway-level phenotype capture.",
+      "H&E\u2011based risk model stratified MRD\u2011negative patients into high/low risk, adding prognostic value beyond ctDNA alone."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Model performance plateaued early for high-penetrance biomarkers (MSI) but continued to improve with more data for heterogeneous markers (KRAS)."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ctDNA MRD testing",
+        "rationale": "Combine morphological risk with molecular residual disease to refine surveillance",
+        "phenotype": "Improved stratification of MRD-negative patients into high vs low recurrence risk",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How will scanner and site variability affect model generalizability in real-world pathology labs?",
+      "Can the virtual genomics approach be extended to predict treatment response biomarkers beyond mutation status?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Natera"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::subramanian::5",
+    "session_title": "digital-pathology",
+    "talk_title": "Peritumoral Collagen Microarchitecture is Differentially Prognostic of Biochemical Recurrence Across Populations in Prostate Cancer",
+    "speaker": {
+      "name": "Ajay Rajaraman Subramanian",
+      "affiliation": "Georgia Institute of Technology / Emory University, PhD Student",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "biomarker_development",
+      "prognosis",
+      "basic_science",
+      "AI_ML"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "African American-specific peritumoral collagen features",
+        "type": "prognostic",
+        "finding": "Hazard ratio 4.09, p=0.02 for biochemical recurrence in whole test set"
+      },
+      {
+        "name": "European American collagen features",
+        "type": "prognostic",
+        "finding": "Not significant (HR 1.89, p>0.05)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "101 AA + 101 EA radical prostatectomy WSIs",
+        "genotype_or_key_features": "biochemical recurrence outcomes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Hazard ratio for AA-derived collagen signature",
+        "value": "4.09",
+        "confidence_interval": "",
+        "n": "n=202 total, test set 20% balanced",
+        "population": "prostate cancer patients (AA and EA)",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "P-value for AA signature across whole test set",
+        "value": "0.02",
+        "confidence_interval": "",
+        "n": "",
+        "population": "",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "A deep learning collagen segmentation model extracts structural, spatial, and textural features from peritumoral regions of prostatectomy slides; African American\u2011specific collagen signatures strongly predict biochemical recurrence, whereas European American signatures do not, highlighting population-specific tumor microenvironment differences.",
+    "readouts": [
+      "deep learning collagen segmentation",
+      "texture (Haralick) analysis",
+      "spatial feature extraction",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Nine collagen features derived from African American training set stratified recurrence risk in the whole test set (HR 4.09, p=0.02).",
+      "The same AA features also stratified risk within the AA test subset but failed in the EA test subset.",
+      "European American-derived features did not achieve significant prognostic power in any cohort.",
+      "Only one feature (Haralick entropy variability) overlapped between AA and EA signatures, indicating distinct collagen architectures.",
+      "Texture entropy and GLCM entropy were significantly higher in AA tumors compared to EA."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What biological mechanisms drive the observed collagen differences between AA and EA prostate cancers?",
+      "Can integrating collagen signatures with Gleason grade improve overall prognostic models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Emory University",
+        "Georgia Tech"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "digital-pathology::bandopadhyay::6",
+    "session_title": "digital-pathology",
+    "talk_title": "PathIO: Deep Learning Pathomics Framework for Personalized Immunotherapy Selection and Outcome Prediction in Metastatic NSCLC",
+    "speaker": {
+      "name": "Rukmini Bandopadhyay",
+      "affiliation": "MD Anderson Cancer Center, Postdoctoral Fellow",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "immunotherapy",
+      "clinical_trial",
+      "AI_ML",
+      "biomarker_development",
+      "translational",
+      "combination_therapy"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "PathIO risk score",
+        "type": "prognostic",
+        "finding": "Stratifies OS and PFS with significant separation in MD Anderson and three external cohorts"
+      },
+      {
+        "name": "Immune cell density (multiplex IF)",
+        "type": "predictive",
+        "finding": "Low-risk patients have higher immune cell infiltration"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MD Anderson metastatic NSCLC cohort",
+        "genotype_or_key_features": "H&E slides, outcomes, treatment (ICI monotherapy vs combo)"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Mayo Clinic cohort",
+        "genotype_or_key_features": "external validation"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Gustave Roussy cohort",
+        "genotype_or_key_features": "external validation"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "E1400i trial cohort",
+        "genotype_or_key_features": "external validation"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Hazard ratio for OS (high vs low PathIO risk)",
+        "value": "HR >1 (significant)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "metastatic NSCLC patients",
+        "comparator": "low-risk group",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Hazard ratio for PFS",
+        "value": "HR >1 (significant)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "metastatic NSCLC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "AUC for monotherapy benefit prediction (low-risk)",
+        "value": "0.75",
+        "confidence_interval": "",
+        "n": "",
+        "population": "PD-L1 high NSCLC",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "PathIO uses a pathologist-annotated tissue habitat map from H&E slides, aggregates multi-scale ROI embeddings, and trains a random survival forest to generate a risk score that independently predicts overall and progression-free survival in metastatic NSCLC, correlating with immune cell infiltration and guiding monotherapy versus combination immunotherapy selection.",
+    "readouts": [
+      "tissue habitat classification",
+      "multi-scale ROI embedding",
+      "random survival forest",
+      "multiplex immunofluorescence",
+      "NanoString expression profiling"
+    ],
+    "key_findings": [
+      "PathIO risk score significantly stratifies OS and PFS across four independent metastatic NSCLC cohorts.",
+      "Risk score remains an independent predictor after multivariate adjustment for clinical factors.",
+      "Low-risk patients exhibit higher immune cell density and lower tumor cell density on multiplex IF.",
+      "In PD-L1\u2011high patients, low-risk scores predict benefit from ICI monotherapy, whereas high-risk scores suggest added chemotherapy benefit.",
+      "Combining PathIO with CT\u2011based radiomics and clinical variables improves prognostic performance over any single modality."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "CT radiomics risk score",
+        "rationale": "Integrate complementary imaging modalities for enhanced prognostication",
+        "phenotype": "Improved C-index compared to PathIO alone",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Standard clinical factors (age, stage, PD-L1)",
+        "rationale": "Add orthogonal pathological information",
+        "phenotype": "Higher predictive accuracy for OS/PFS",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can PathIO be prospectively validated to guide first-line ICI monotherapy versus combination therapy decisions?",
+      "What is the minimal amount of annotated tissue required to generate reliable habitat maps?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "MD Anderson"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

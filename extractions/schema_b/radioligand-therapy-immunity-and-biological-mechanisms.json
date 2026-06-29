@@ -1,0 +1,333 @@
+[
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "David (Dave) [LastName]",
+      "institution_or_pharma": "University/Institution (unspecified)",
+      "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+      "talk_title": "Immunological considerations of radioligand therapy and B7H3\u2011targeted antibody BetaBART",
+      "rhetorical_signals": [
+        "Speaker said: \"the circulating two is a potential pseudo target, in effect, a decoy or a sink that's not widely appreciated that could really confound therapy\"",
+        "Speaker said: \"we see significant long\u2011term survivals with just a single injection of 100\u202f\u00b5Ci of the yttrium\u201190 beta emitting MIL\u201133B\"",
+        "Speaker said: \"cold antibody by itself as monotherapy has no effect. All the animals die\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BetaBART (anti\u2011B7H3 4\u2011Ig isoform antibody)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Circulating soluble 2\u2011Ig isoform acts as a decoy sink, reducing delivery of radioligand to tumor\u2011bound 4\u2011Ig isoform",
+        "unexplained_resistance_quote": "Speaker said: \"we don't have direct evidence that the circulating 2\u2011Ig isoform limits tumor uptake in patients\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "BetaBART Phase\u202f1/2 (first\u2011in\u2011human)",
+        "target_biology": "B7H3 4\u2011Ig isoform targeting with ^90Y\u2011labeled antibody",
+        "flawed_enrollment_criteria": "Enrolling all\u2011comers with B7H3 IHC positivity without stratifying for 4\u2011Ig vs 2\u2011Ig isoform expression or circulating soluble B7H3 levels",
+        "missing_biomarker": "Quantitative serum 2\u2011Ig B7H3 level or tumor 4\u2011Ig specific expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm design limits ability to discern contribution of isoform sink versus true drug activity",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Full\u2011length IgG antibody scaffold targeting B7H3 4\u2011Ig",
+        "ip_vulnerability_note": "Speaker disclosed that the antibody has 300\u2011fold selectivity for 4\u2011Ig over 2\u2011Ig, but the human\u2011specific 4\u2011Ig isoform is absent in standard mouse models, limiting preclinical translatability",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a broad pan\u2011tumor label without biomarker\u2011driven patient selection may dilute signal due to isoform variability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the MIL\u201133B antibody alone (cold) has no anti\u2011tumor effect, yet concluded that the Fc domain may still engage FCR receptors and contribute to immune priming as a single\u2011agent therapy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker\u2011stratified analysis of 4\u2011Ig vs 2\u2011Ig expression",
+        "Lack of comparative arm with standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011enabled assay to quantify circulating soluble B7H3 2\u2011Ig isoform and tumor\u2011specific 4\u2011Ig expression to select patients most likely to benefit from BetaBART",
+        "transcript_evidence": "Speaker said: \"the circulating two is a potential pseudo target, in effect, a decoy or a sink that's not widely appreciated\"",
+        "crispro_angle": "CrisPRO can integrate proteomic and transcriptomic data to model isoform\u2011specific binding and predict patient\u2011level sink effects",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Redesign the BetaBART trial to include a biomarker\u2011enriched cohort (high 4\u2011Ig, low soluble 2\u2011Ig) and a control arm receiving the cold antibody plus external beam radiation to isolate Fc\u2011mediated effects",
+        "transcript_evidence": "Speaker noted that \"cold antibody by itself as monotherapy has no effect\" yet the Fc may still play a role",
+        "crispro_angle": "CrisPRO can simulate trial outcomes under different stratification scenarios to prioritize designs",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to design next\u2011generation anti\u2011B7H3 constructs that avoid the soluble 2\u2011Ig decoy (e.g., bispecific formats or engineered Fc\u2011silencing) to overcome the identified resistance mechanism",
+        "transcript_evidence": "Speaker highlighted the decoy sink as a confounder for therapy efficacy",
+        "crispro_angle": "Computational protein design within CrisPRO can generate variants with enhanced 4\u2011Ig specificity and reduced off\u2011target binding",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Zach Morris (University of Wisconsin)",
+        "context": "Compared small\u2011molecule NM600 radioligand to the MIL\u201133B antibody in preclinical models",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "ADC programs targeting B7H3",
+        "context": "Mentioned as parallel development to radioligand approach",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How does the level of circulating soluble 2\u2011Ig B7H3 correlate with clinical response in patients receiving BetaBART?",
+      "Can Fc engineering improve anti\u2011tumor immunity without increasing toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTXXXXXXX (BetaBART Phase\u202f1/2 trial \u2013 placeholder)"
+      ],
+      "assets_to_track": [
+        "BetaBART (anti\u2011B7H3 4\u2011Ig antibody)",
+        "NM600 small\u2011molecule radioligand"
+      ],
+      "companies_to_monitor": [
+        "Company developing BetaBART (unspecified)",
+        "University of Wisconsin radioligand program"
+      ]
+    }
+  },
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mike Evans",
+      "institution_or_pharma": "UCSF",
+      "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+      "talk_title": "Granzyme\u2011B PET imaging platform for monitoring immune activation during PSMA\u2011targeted radioligand therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"we see a very compelling correlation between PET avid lesions and other orthogonal clinical features of response\"",
+        "Speaker said: \"we don't know when to run the granzyme scan\"",
+        "Speaker said: \"we occasionally see uptake in patients that are not receiving IO\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Granzyme\u2011B PET probe (GRIP/RIP platform)",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Potential off\u2011target activation by other proteases (e.g., caspases) in necrotic or inflamed tissue leading to false\u2011positive signals",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Granzyme\u2011B PET sub\u2011study within PLUVICTO + pembrolizumab trial",
+        "target_biology": "Imaging of granzyme\u2011B release as a surrogate for CD8 T\u2011cell activation",
+        "flawed_enrollment_criteria": "No predefined imaging time\u2011points based on pharmacodynamics; scans performed opportunistically leading to heterogeneous data",
+        "missing_biomarker": "Concurrent measurement of serum granzyme\u2011B activity to validate PET signal",
+        "static_vs_dynamic_failure": "No serial biopsies or ctDNA to track evolving resistance",
+        "statistical_concern": "Small patient numbers (case series) limit statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GRIP/RIP peptide\u2011based membrane insertion platform",
+        "ip_vulnerability_note": "Speaker disclosed the peptide originates from a frog antimicrobial sequence; core chemistry (DOTA\u2011Cu\u201164) is widely used, suggesting limited proprietary protection",
+        "scale_or_manufacturing_bottleneck": "Peptide synthesis and radiolabeling require GMP facilities; scalability not demonstrated",
+        "clinical_strategy_weakness": "Reliance on a narrow clinical niche (PSMA\u2011RLT + IO) may limit broader adoption"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that granzyme\u2011B PET signal increases in responding lesions, yet also admitted \"we don't know when to run the granzyme scan\" indicating a gap between mechanistic confidence and practical clinical implementation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of head\u2011to\u2011head comparison with PSMA PET response",
+        "No systematic correlation with peripheral blood granzyme\u2011B assays",
+        "Limited data on specificity in non\u2011IO patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement CrisPRO to define optimal imaging windows based on kinetic modeling of granzyme\u2011B release after PSMA\u2011RLT",
+        "transcript_evidence": "Speaker said: \"we don't know when to run the granzyme scan\"",
+        "crispro_angle": "CrisPRO can integrate PK/PD data to predict peak granzyme activity and schedule PET scans accordingly",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s protease\u2011specificity prediction to engineer next\u2011generation GRIP probes with reduced cross\u2011reactivity to caspases",
+        "transcript_evidence": "Speaker said: \"we focus on other things that we think have potentially granzyme\u2011like biochemical activity... there\u2019s remarkably little activity\"",
+        "crispro_angle": "Computational protease substrate design within CrisPRO can improve selectivity",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design a randomized arm comparing granzyme\u2011B PET\u2011guided therapy adjustments versus standard of care in PSMA\u2011RLT + IO patients",
+        "transcript_evidence": "Speaker noted the current study is a small case series without control arm",
+        "crispro_angle": "CrisPRO can simulate trial outcomes under different imaging\u2011guided decision rules",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Nordic Bioscience",
+        "context": "Provides blood\u2011based granzyme\u2011B activity assays",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Standard PSMA PET imaging",
+        "context": "Used as sanity check to confirm lesions are cancerous",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the quantitative relationship between granzyme\u2011B PET SUV and actual intratumoral CD8 activity?",
+      "Can granzyme\u2011B PET predict response earlier than PSA decline or PSMA PET changes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772 (PLUVICTO + pembrolizumab combination trial \u2013 placeholder)"
+      ],
+      "assets_to_track": [
+        "GRIP/RIP granzyme\u2011B PET probe",
+        "Pluvicto (Lu\u2011177\u2011PSMA\u2011617)"
+      ],
+      "companies_to_monitor": [
+        "UCSF radiopharmacy group",
+        "Companies developing granzyme\u2011B imaging agents"
+      ]
+    }
+  },
+  {
+    "talk_id": "radioligand-therapy-immunity-and-biological-mechanisms::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Ravi Patel",
+      "institution_or_pharma": "University of Pittsburgh",
+      "session_title": "radioligand-therapy-immunity-and-biological-mechanisms",
+      "talk_title": "Immunostimulatory radioligand therapy to enhance checkpoint blockade and CAR\u2011T efficacy",
+      "rhetorical_signals": [
+        "Speaker said: \"when we gave external beam to the whole mouse, we lost that effect\"",
+        "Speaker said: \"systemic lymphodepletion blunts the benefit of checkpoint blockade\"",
+        "Speaker said: \"low dose TRT can act as a conditioning agent for adoptive T\u2011cell therapy\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Systemic high\u2011dose TRT (e.g., full\u2011length antibody\u2011based radioligand)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Radiation delivered to lymphoid organs depletes CD4/CD8 cells, negating immune checkpoint synergy",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that 50\u202f% of mice responded while 50\u202f% progressed, implying a subset benefit",
+        "hidden_tox_signal": "Speaker said: \"when we gave two and a half gray to the whole mouse, we lost that effect\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical TRT + checkpoint combination studies (CT26, B78, 4T1 models)",
+        "target_biology": "Low\u2011dose yttrium\u201190 or actinium\u2011225 NM600 radioligand plus anti\u2011PD\u20111/CTLA\u20114",
+        "flawed_enrollment_criteria": "No stratification for tumor immunogenicity; mixed hot and cold models combined in same analysis",
+        "missing_biomarker": "Baseline tumor infiltrating lymphocyte (TIL) density or PD\u2011L1 status",
+        "static_vs_dynamic_failure": "No serial ctDNA or imaging to monitor emergence of resistance",
+        "statistical_concern": "Small animal cohort sizes (n\u22485\u201110) limit reproducibility",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "NM600 lysophosphatidylcholine analog radioligand",
+        "ip_vulnerability_note": "Speaker described NM600 as a small\u2011molecule lipid\u2011raft binder; similar analogs are publicly disclosed, suggesting limited IP moat",
+        "scale_or_manufacturing_bottleneck": "Synthesis of high\u2011purity NM600 at GMP scale not demonstrated",
+        "clinical_strategy_weakness": "Reliance on low\u2011dose regimens may limit monotherapy efficacy and require combination partners for meaningful clinical benefit"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the full\u2011length B7H3 antibody MIL\u201133B alone can generate immune memory, yet also concluded that \"cold antibody by itself has no effect\" in control experiments, creating a contradiction between observed adaptive immunity and lack of monotherapy activity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No human clinical trial data presented",
+        "Lack of pharmacokinetic/dosimetry data for systemic lymphocyte exposure",
+        "Absence of biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Use CrisPRO to model optimal dose\u2011fractionation schedules that maximize tumor dose while sparing lymphoid organs for checkpoint blockade",
+        "transcript_evidence": "Speaker said: \"when we gave two and a half gray to the whole mouse, we lost that effect\"",
+        "crispro_angle": "CrisPRO can simulate organ\u2011level radiation exposure and predict immune cell preservation",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate baseline TIL or PD\u2011L1 biomarker stratification into future TRT + IO trials to reduce heterogeneity",
+        "transcript_evidence": "Speaker noted mixed responder/non\u2011responder outcomes in the same model",
+        "crispro_angle": "CrisPRO can evaluate enrichment strategies and estimate power gains",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011engineer NM600 with a cleavable linker that reduces off\u2011target lymphoid uptake, addressing the identified toxicity limitation",
+        "transcript_evidence": "Speaker highlighted systemic lymphodepletion as a problem for checkpoint synergy",
+        "crispro_angle": "Computational chemistry within CrisPRO can design linkers that preferentially release radioisotope in tumor microenvironment",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "FAP\u2011targeted radioligands",
+        "context": "Benchmarked against RIPS platform for tumor AUC",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "GD2\u2011targeted antibody radioligand",
+        "context": "Compared efficacy; noted higher systemic lymphodepletion",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal tumor dose of NM600 required to achieve immune priming without systemic lymphodepletion?",
+      "Can the timing of TRT relative to checkpoint inhibitor dosing be optimized to enhance memory T\u2011cell formation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTXXXXX (preclinical NM600 + checkpoint study \u2013 placeholder)"
+      ],
+      "assets_to_track": [
+        "NM600 small\u2011molecule radioligand",
+        "LLP\u20112A VLA4\u2011targeted radioligand",
+        "B7H3\u2011CAR T\u2011cell programs"
+      ],
+      "companies_to_monitor": [
+        "Companies developing NM600 analogs",
+        "CAR\u2011T developers targeting B7H3"
+      ]
+    }
+  }
+]

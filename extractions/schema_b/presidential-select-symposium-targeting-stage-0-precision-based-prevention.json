@@ -1,0 +1,361 @@
+[
+  {
+    "talk_id": "presidential-select-symposium-targeting-stage-0-precision-based-prevention::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Sharon Plon",
+      "institution_or_pharma": "Baylor College of Medicine",
+      "session_title": "presidential-select-symposium-targeting-stage-0-precision-based-prevention",
+      "talk_title": "Risk for Pediatric Cancer in Newborn Screening",
+      "rhetorical_signals": [
+        "Speaker said: \"What we don't know is how many positives might not have developed a tumor\"",
+        "Speaker said: \"We saw concordance of results... the five children of the 2,000 who had a RET variant all had medullary thyroid cancer\"",
+        "Speaker said: \"We estimate about one in 30,000 children who have a positive blood spot might go on to develop cancer\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Newborn cancer predisposition sequencing panel",
+        "failure_type": "biomarker_failure",
+        "mechanistic_blindspot": "Inability to predict which carriers will actually develop cancer (penetrance uncertainty)",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCARE prospective newborn screening trial",
+        "target_biology": "Early detection of high\u2011penetrance pediatric cancer predisposition genes (RB1, WT1, DICER1)",
+        "flawed_enrollment_criteria": "Randomizing mothers to a focused panel versus a full panel without pre\u2011screening for baseline carrier frequency",
+        "missing_biomarker": "Inclusion of low\u2011penetrance genes (e.g., DICER1) that may dilute signal",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for rare positive events",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No long\u2011term outcome data on cancer incidence in screened positives",
+        "No cost\u2011effectiveness analysis beyond modeling"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of validated risk thresholds for which newborns with pathogenic variants will develop cancer creates an opportunity for CrisPRO to develop predictive models integrating genotype, family history, and epigenetic data.",
+        "transcript_evidence": "Speaker said: \"We don't know how many positives might not have developed a tumor\"",
+        "crispro_angle": "CrisPRO can generate individualized risk scores to prioritize carriers for surveillance, reducing over\u2011diagnosis.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "The NCARE trial randomizes mothers to focused vs full panels without adaptive enrichment; CrisPRO could design adaptive trial simulations to optimize panel composition.",
+        "transcript_evidence": "Speaker said: \"We will randomize mothers to either the focus panel or the full panel, look at their acceptability of these two options\"",
+        "crispro_angle": "Use computational modeling to predict power and cost impact of different panel sizes before launch.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What proportion of newborns with pathogenic variants will develop cancer without intervention?",
+      "How to balance false\u2011positive anxiety with early detection benefits?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NCARE newborn screening trial",
+        "BEACON newborn sequencing study"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "presidential-select-symposium-targeting-stage-0-precision-based-prevention::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "John Burn",
+      "institution_or_pharma": "Newcastle University",
+      "session_title": "presidential-select-symposium-targeting-stage-0-precision-based-prevention",
+      "talk_title": "Therapeutic Precision Cancer Prevention, the Power of Canaries",
+      "rhetorical_signals": [
+        "Speaker said: \"The fewest Lynch syndrome cancers were in the people on the smallest dose of aspirin\"",
+        "Speaker said: \"We saw the fewest colorectal cancers in the 100 milligram group, which was obviously slightly surprising\"",
+        "Speaker said: \"There were no major hospital treatment events of people in the 100 milligram group\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Aspirin dose regimen in CAP3",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of mechanistic explanation why low\u2011dose aspirin outperforms higher doses in Lynch syndrome",
+        "unexplained_resistance_quote": "Speaker said: \"The fewest Lynch syndrome cancers were in the people on the smallest dose of aspirin\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted bruising as a dose\u2011related adverse event but minimized serious toxicity",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CAP3 (CAPP3) trial",
+        "target_biology": "Aspirin chemoprevention in Lynch syndrome carriers",
+        "flawed_enrollment_criteria": "Four\u2011to\u2011three randomization ratio overloaded the 600\u202fmg arm, creating imbalance and potential dilution of dose\u2011response signal",
+        "missing_biomarker": "No stratification by BMI or other risk modifiers despite suggestion to double dose for BMI\u202f>\u202f30",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Non\u2011inferiority margins required 97.5% CI, causing per\u2011protocol analysis to slightly cross the threshold",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Aspirin (generic, no proprietary chemistry)",
+        "ip_vulnerability_note": "Speaker disclosed aspirin is a natural substance with no unique IP, making it easily replaceable by competitors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a low\u2011cost, non\u2011patented drug limits commercial incentive for large\u2011scale development"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed data that low\u2011dose (100\u202fmg) aspirin had the fewest cancers, then concluded \"we should be recommending low\u2011dose aspirin to people with Lynch syndrome\" \u2014 contradictory to earlier belief that higher doses were needed for effect"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No mechanistic biomarker linking dose to tumor suppression",
+        "Limited data on long\u2011term safety of very low\u2011dose aspirin in young carriers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Unclear why low\u2011dose aspirin works better; CrisPRO could model aspirin\u2011mediated pathways (platelet COX\u20111 inhibition, mTOR, PIK3CA) to identify predictive biomarkers.",
+        "transcript_evidence": "Speaker said: \"We don't fully understand why the smallest dose had the fewest cancers\"",
+        "crispro_angle": "Integrate multi\u2011omics data to predict which carriers benefit most from specific aspirin doses.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Potential to combine low\u2011dose aspirin with emerging vaccines or microbiome modulators to enhance prevention.",
+        "transcript_evidence": "Speaker mentioned platelets and aspirin synergy with vaccine work from Cambridge group",
+        "crispro_angle": "Use computational synergy scoring to prioritize combination regimens for trials.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CAPP2 trial",
+        "context": "Referenced as prior aspirin prevention study",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal aspirin dose for obese (BMI\u202f>\u202f30) Lynch syndrome carriers?",
+      "How does aspirin interact with emerging platelet\u2011targeted therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "CAP3 trial",
+        "CAPP2 trial"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "presidential-select-symposium-targeting-stage-0-precision-based-prevention::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Nora Disis",
+      "institution_or_pharma": "University of Washington",
+      "session_title": "presidential-select-symposium-targeting-stage-0-precision-based-prevention",
+      "talk_title": "Vaccines for Cancer Prevention and Intervention",
+      "rhetorical_signals": [
+        "Speaker said: \"100% of the patients developed immunity to some of the frameshift mutations\"",
+        "Speaker said: \"We showed pathologic complete responses in about 30% of DCIS patients that were HER2/neu positive\"",
+        "Speaker said: \"We are moving the NAUS209 vaccine into phase two studies to look at cancer prevention\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NAUS209 frameshift vaccine",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited data on durability of immune response beyond one year and on actual cancer incidence reduction",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted 100% immunogenicity but no efficacy endpoint yet",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NAUS209 Phase I/II Lynch syndrome vaccine trial",
+        "target_biology": "Frameshift neoantigen vaccination in Lynch syndrome carriers",
+        "flawed_enrollment_criteria": "Enrolled subjects with high\u2011grade dysplasia but no baseline tumor burden, making cancer endpoint hard to assess",
+        "missing_biomarker": "No serial ctDNA monitoring to correlate immune response with tumor emergence",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA tracking",
+        "statistical_concern": "Small sample size (45 participants) limits statistical power for cancer prevention endpoint",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Adenoviral and MVA vector platform for NAUS209",
+        "ip_vulnerability_note": "Speaker disclosed use of common viral vectors (great\u2011ape adenovirus, modified Ankara) that have existing immunity in population, potentially reducing efficacy on repeat dosing",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single off\u2011the\u2011shelf antigen set may not cover all Lynch\u2011associated neoantigens"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No cancer incidence endpoint reported",
+        "Lack of long\u2011term safety data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify which Lynch syndrome carriers have the highest neoantigen load to prioritize for vaccination; CrisPRO can predict immunogenic frameshift peptides.",
+        "transcript_evidence": "Speaker said: \"Frameshift mutations are immunogenic and can act as neoantigens\"",
+        "crispro_angle": "Computational neoantigen ranking to refine vaccine target selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate serial ctDNA monitoring as a surrogate endpoint to reduce trial duration.",
+        "transcript_evidence": "Speaker noted lack of data on how many positives might not develop a tumor",
+        "crispro_angle": "Model ctDNA dynamics to predict cancer emergence and power calculations.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "HPV vaccine programs",
+        "context": "Cited as successful cancer prevention model",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Will the vaccine prevent cancer incidence or only generate immune responses?",
+      "How durable is immunity beyond one year?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NAUS209 vaccine",
+        "DCIS HER2/neu vaccine trials"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "presidential-select-symposium-targeting-stage-0-precision-based-prevention::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Joanne Elmore",
+      "institution_or_pharma": "UCLA School of Medicine",
+      "session_title": "presidential-select-symposium-targeting-stage-0-precision-based-prevention",
+      "talk_title": "AI in Cancer Diagnosis, Promise and Performance, and the Human AI Factor",
+      "rhetorical_signals": [
+        "Speaker said: \"More than 21% of the women were classified as high risk by all three models, but the Venn diagram shows little overlap\"",
+        "Speaker said: \"In 25% of cases radiologists gave different recommendations, and in 9% they disagreed on which breast to biopsy\"",
+        "Speaker said: \"When the computer was used, it was associated with significantly lower accuracy\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AI\u2011assisted diagnostic tools",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Automation bias and lack of reproducibility among clinicians when AI cues are presented early",
+        "unexplained_resistance_quote": "Speaker said: \"When the computer was used, it was associated with significantly lower accuracy\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "PRISM mammography AI trial",
+        "target_biology": "AI decision support for screening mammography",
+        "flawed_enrollment_criteria": "Randomization to AI before radiologist reads may introduce automation bias, diluting true diagnostic benefit",
+        "missing_biomarker": "No stratification by breast density or patient risk to assess differential AI performance",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary endpoint includes recall rate; potential underestimation of AI impact on cancer detection",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Proprietary AI models for pathology and radiology",
+        "ip_vulnerability_note": "Speaker highlighted that many models lack transparent gold standards, making them vulnerable to bias and regulatory challenge",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Deploying AI without robust validation across diverse populations"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that AI models can achieve high accuracy on historic data, then concluded that current AI tools may reduce diagnostic accuracy in real\u2011world practice \u2014 contradictory to the earlier performance claim"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of outcome data linking AI use to patient survival",
+        "Insufficient analysis of bias across skin tones and socioeconomic groups"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "CrisPRO can provide explainable AI outputs with mechanistic rationale, addressing the black\u2011box concern raised by the speaker.",
+        "transcript_evidence": "Speaker said: \"I don't understand the black box, so I'm having the AI give me words to explain why it's calling someone high risk versus low risk\"",
+        "crispro_angle": "Integrate interpretable models that output feature importance linked to pathology findings.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "bias_and_generalizability",
+        "description": "Develop bias\u2011mitigation pipelines to ensure AI performance across diverse skin types and demographic groups.",
+        "transcript_evidence": "Speaker said: \"The algorithm was systematically discriminating against black patients because it used health costs as a proxy for health needs\"",
+        "crispro_angle": "Use multi\u2011ethnic training datasets and fairness constraints within CrisPRO framework.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ScreenPoint Medical Transpara",
+        "context": "AI tool used in PRISM trial",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Aidoc platform",
+        "context": "Randomization platform for AI vs no\u2011AI arms",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal timing of AI cue presentation to minimize automation bias?",
+      "How does AI impact long\u2011term patient outcomes beyond recall rates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PRISM mammography AI trial",
+        "AI pathology reproducibility studies"
+      ],
+      "companies_to_monitor": [
+        "ScreenPoint Medical",
+        "Aidoc"
+      ]
+    }
+  }
+]

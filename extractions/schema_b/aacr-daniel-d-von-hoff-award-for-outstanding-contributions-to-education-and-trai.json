@@ -1,0 +1,78 @@
+[
+  {
+    "talk_id": "aacr-daniel-d-von-hoff-award-for-outstanding-contributions-to-education-and-trai::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Charles W.M. Roberts",
+      "institution_or_pharma": "St. Jude Children's Research Hospital",
+      "session_title": "aacr-daniel-d-von-hoff-award-for-outstanding-contributions-to-education-and-trai",
+      "talk_title": "Award Lecture: From Chromatin Remodeling to Therapeutic Vulnerabilities",
+      "rhetorical_signals": [
+        "Speaker said: \"I didn't take time to show you this, but we made germline knockouts of the mice, and they're viable.\"",
+        "Speaker said: \"We waited 100 days, and the tumors did not come back.\"",
+        "Speaker said: \"I have an initial binder of DCAF5, and we have a big project going on to go after that.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DCAF5 ubiquitin ligase adapter targeting SWI/SNF subunits",
+        "ip_vulnerability_note": "Speaker disclosed that only a few binders exist and the target is in early discovery, suggesting limited IP protection and high risk of alternative approaches.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a synthetic\u2011lethal interaction that has not yet been demonstrated in patients; early\u2011phase preclinical only."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data presented for DCAF5 inhibition",
+        "Lack of pharmacodynamic biomarkers to confirm target engagement in vivo",
+        "No safety data beyond mouse germline knockout phenotype"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "DCAF5 loss restores SWI/SNF complex activity in SMARCB1\u2011deficient tumors, representing a synthetic\u2011lethal vulnerability that CrisPRO could model to predict responders.",
+        "transcript_evidence": "Speaker said: \"When we knock out DCAF5, we see the SwitchNif complex accumulating... transcription is rescued... tumors were completely wiped out and did not recur.\"",
+        "crispro_angle": "CrisPRO can integrate CRISPR dependency data with epigenomic signatures to prioritize patients whose tumors show SMARCB1 loss and DCAF5 dependency, enabling biomarker\u2011driven trial design.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "No biomarker was presented to identify which SMARCB1\u2011deficient cancers are most dependent on DCAF5, an opening for CrisPRO to develop a predictive expression signature.",
+        "transcript_evidence": "Speaker noted that DCAF5 dependency was observed in rhabdoid tumor cell lines but did not discuss patient\u2011level biomarkers.",
+        "crispro_angle": "Use machine\u2011learning on DepMap and patient transcriptomics to derive a DCAF5\u2011dependency score for trial enrollment.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "tazemetostat",
+        "context": "FDA\u2011approved EZH2 inhibitor for SMARCB1\u2011deficient cancers",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal pharmacologic modality (PROTAC, small\u2011molecule inhibitor) to achieve durable DCAF5 degradation in patients?",
+      "Will systemic DCAF5 inhibition cause on\u2011target toxicities in adult tissues despite viable germline knockout mice?",
+      "Can biomarkers beyond SMARCB1 loss predict sensitivity to DCAF5 targeting across tumor types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DCAF5 inhibitor programs",
+        "FIP (FIP1L1) dependency projects"
+      ],
+      "companies_to_monitor": [
+        "Gray Lab (Stanford)",
+        "Fisher Lab (Dana\u2011Farber)",
+        "Broad Institute DepMap initiatives"
+      ]
+    }
+  }
+]

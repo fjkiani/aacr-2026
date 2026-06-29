@@ -1,0 +1,243 @@
+[
+  {
+    "talk_id": "daniel-sw-tan-leveraging-novel-technologies-to-delineate-therapeutic-resistance-::tan::1",
+    "session_title": "daniel-sw-tan-leveraging-novel-technologies-to-delineate-therapeutic-resistance-",
+    "talk_title": "Integrating multi-omics and novel modalities to map EGFR TKI resistance in NSCLC",
+    "speaker": {
+      "name": "Daniel S.W. Tan",
+      "affiliation": "University of California, San Francisco, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "targeted_therapy",
+      "immunotherapy",
+      "combination_therapy",
+      "biomarker_development",
+      "spatial_biology",
+      "AI_ML",
+      "resistance_mechanisms",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "C797S",
+        "pathway": "RTK_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "fourth\u2011generation EGFR TKI",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EGFR\u2011mutant NSCLC with acquired resistance",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MET",
+        "alteration": "amplification",
+        "pathway": "RTK_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "capmatinib (or similar MET inhibitor)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cMET\u2011amplified NSCLC (15\u201120% prevalence)",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ALK",
+        "alteration": "",
+        "pathway": "RTK_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "lorlatinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ALK\u2011rearranged NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RET",
+        "alteration": "rearrangement",
+        "pathway": "RTK_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "selpercatinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RET\u2011rearranged NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "sotorasib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant NSCLC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD47",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "anti\u2011CD47 antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TKI\u2011treated NSCLC with high CD47 expression",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "EGFR ctDNA persistence",
+        "type": "predictive",
+        "assay": "ctDNA NGS",
+        "finding": "Patients with persistent EGFR ctDNA after third\u2011generation TKI had shorter PFS (median 5.2\u202fmo vs 9.8\u202fmo) in retrospective cohort"
+      },
+      {
+        "name": "cMET amplification",
+        "type": "predictive",
+        "assay": "FISH",
+        "finding": "Detected in 15\u201120% of resistant biopsies; co\u2011targeting yielded partial responses in 4/9 evaluable patients"
+      },
+      {
+        "name": "P53 co\u2011mutation",
+        "type": "poor_risk",
+        "assay": "NGS panel",
+        "finding": "Associated with median PFS 4.1\u202fmo vs 7.6\u202fmo in EGFR\u2011mutant cohort (HR\u202f0.62, p=0.03)"
+      },
+      {
+        "name": "Stromal TME signature (activated neutrophils, CAFs)",
+        "type": "prognostic",
+        "assay": "RNA\u2011seq signature",
+        "finding": "High signature score correlated with 2\u2011year relapse rate 48% vs 22% (p=0.004)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "NSCLC EGFR\u2011TKI resistance cohort",
+        "genotype_or_key_features": "EGFR mutant, pre\u2011 and post\u2011treatment biopsies, n=36"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Persistent EGFR ctDNA + chemotherapy trial (North America)",
+        "genotype_or_key_features": "EGFR mutant NSCLC with ctDNA persistence, randomized 1:1, n=112"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "60\u201180%",
+        "confidence_interval": "",
+        "n": "n=various EGFR TKI studies",
+        "population": "EGFR\u2011mutant NSCLC first\u2011line",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "On\u2011target resistance mutation frequency",
+        "value": "10\u201125%",
+        "confidence_interval": "",
+        "n": "n=multiple resistance biopsies",
+        "population": "EGFR\u2011TKI resistant NSCLC",
+        "comparator": "",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "Patients with no known resistance mechanism",
+        "value": "50\u201160%",
+        "confidence_interval": "",
+        "n": "n=post\u2011third\u2011gen TKI cohort",
+        "population": "frontline third\u2011gen EGFR TKI",
+        "comparator": "",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "PFS",
+        "value": "18.4 months",
+        "confidence_interval": "",
+        "n": "n=unspecified RET inhibitor cohort",
+        "population": "RET\u2011rearranged NSCLC across lines",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Median PFS (lorlatinib 7\u2011year update)",
+        "value": "not reached",
+        "confidence_interval": "",
+        "n": "n=unspecified ALK cohort",
+        "population": "ALK\u2011rearranged NSCLC treated with lorlatinib",
+        "comparator": "",
+        "maturity": "updated"
+      }
+    ],
+    "MOA_summary": "Tan described how sequential EGFR TKIs select for on\u2011target (e.g., C797S) and off\u2011target alterations (MET amplification, lineage plasticity) and how multi\u2011omics (DNA, RNA, spatial transcriptomics, proteomics) can map these states. He showed that ctDNA persistence, MET amplification, and stromal TME signatures predict resistance, and that rational combinations (e.g., EGFR TKI\u202f+\u202fMET inhibitor, EGFR TKI\u202f+\u202fchemotherapy, anti\u2011CD47) can be matched to specific resistance phenotypes.",
+    "readouts": [
+      "DNA panel sequencing",
+      "ctDNA NGS",
+      "RNA\u2011seq",
+      "spatial transcriptomics",
+      "proteomic panel (250 proteins)",
+      "IHC",
+      "FISH",
+      "single\u2011cell RNA\u2011seq"
+    ],
+    "key_findings": [
+      "EGFR TKIs achieve high initial ORR (60\u201180%) but 50\u201160% of patients on frontline third\u2011gen inhibitors lack any detectable resistance mechanism by NGS.",
+      "On\u2011target resistance mutations (e.g., C797S) occur in 10\u201125% of resistant biopsies, while MET amplification is found in 15\u201120% and predicts response to MET inhibitors (4/9 partial responses).",
+      "Persistent EGFR ctDNA after TKI therapy identifies a high\u2011risk subgroup with median PFS 5.2\u202fmo vs 9.8\u202fmo (p<0.01).",
+      "Spatial transcriptomics revealed CD47 up\u2011regulation in on\u2011treatment lesions, suggesting a combinatorial anti\u2011CD47 strategy.",
+      "Stromal\u2011rich TME signatures (activated neutrophils, CAFs) correlate with 2\u2011year relapse rates of 48% vs 22% (p=0.004), defining a poor\u2011risk population for upfront combination trials.",
+      "Retrospective analysis of RET inhibitor trials showed ORR >30% and median PFS 18.4\u202fmo, yet phase III trials were terminated due to enrollment challenges."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Fourth\u2011generation EGFR TKIs produce deep ctDNA reductions but limited radiographic responses, indicating that target inhibition alone may not overcome lineage plasticity.",
+      "Lineage transition to neuroendocrine\u2011like phenotype observed in resistant single\u2011cell profiles, suggesting a non\u2011genetic resistance route."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Chemotherapy",
+        "rationale": "Add cytotoxic pressure to eradicate clones with persistent EGFR ctDNA after TKI",
+        "phenotype": "Improved PFS in ctDNA\u2011positive subgroup (median 7.4\u202fmo vs 5.2\u202fmo)",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "MET inhibitor (e.g., capmatinib)",
+        "rationale": "Target MET amplification as a bypass driver in EGFR\u2011TKI resistant disease",
+        "phenotype": "Partial responses in 44% of MET\u2011amplified patients",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Selpercatinib (RET inhibitor)",
+        "rationale": "Combine with osimertinib to suppress concurrent RET rearrangements",
+        "phenotype": "Objective responses observed in case series (n=3)",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "Anti\u2011CD47 antibody",
+        "rationale": "Counteract CD47 up\u2011regulation identified by spatial transcriptomics in on\u2011treatment lesions",
+        "phenotype": "Preclinical synergy with EGFR TKI (tumor regression p<0.01)",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal molecular threshold for defining MET amplification as a therapeutic target?",
+      "Can ctDNA persistence be validated as a surrogate endpoint for early efficacy in phase II trials?",
+      "How can real\u2011world molecular databases be leveraged to generate robust external controls for rare\u2011driver trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

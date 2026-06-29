@@ -1,0 +1,144 @@
+[
+  {
+    "talk_id": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Betty Anne Ash Murray",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m",
+      "talk_title": "Revolutionizing Phase I Trials Using Multidimensional Toxicity, Efficacy, and PRO Integration",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't probably often spend enough time understanding the efficacy readout in early phase trials.\"",
+        "Speaker said: \"We have a package, it's called a phase one RMD. It's an R package for repeated measures dose-finding designs.\"",
+        "Speaker said: \"We didn't incorporate the PROs in the first two phases, it was really in the final dose recommendation.\"",
+        "Speaker said: \"We have a design in press, but we really don't have a trial with this design yet.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No actual trial data presented for the proposed multidimensional design",
+        "No OS or PFS endpoints reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Speaker highlighted lack of molecular biomarker integration in early phase dose optimization, suggesting an opportunity for CrisPRO to provide biomarker-driven stratification.",
+        "transcript_evidence": "Speaker said: \"If you have a good understanding of the molecular features of this target, maybe even understanding that at the early stage is important.\"",
+        "crispro_angle": "CrisPRO can integrate genomic and transcriptomic biomarkers to inform dose selection and patient subgroups early in development.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "The need to incorporate patient-reported outcomes (PROs) alongside toxicity and efficacy suggests a platform that can combine multi-omic and PRO data for holistic decision making.",
+        "transcript_evidence": "Speaker said: \"We need to bring patient-reported outcomes into early phase to understand compliance and drop-out risk.\"",
+        "crispro_angle": "CrisPRO's data integration layer can fuse PRO CTCAE scores with molecular data to predict adherence and optimize dosing schedules.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will the multidimensional toxicity score be weighted across different AE grades and types?",
+      "What is the optimal threshold for the PRO CTCAE score to influence dose recommendation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Speaker BOIN Framework",
+      "institution_or_pharma": "Unspecified",
+      "session_title": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m",
+      "talk_title": "Revolutionize in Phase I Trials Using the BOIN Framework and Backfill",
+      "rhetorical_signals": [
+        "Speaker said: \"FDA has determined that the statistical methodology of the local BOIN design under the naive informative prior is suitable for fit for purpose designation in 2021.\"",
+        "Speaker said: \"We observed that the risk of underdosing is the lowest in general for BOIN compared to 3+3.\"",
+        "Speaker said: \"Agencies are okay to override the rule because the long-term transition using one out of three makes statistical sense.\"",
+        "Speaker said: \"The back-fill BOIN design provides a principle to rigorous approach that can address those issues and safeguard patient safety.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BOIN design with target toxicity >0.3",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Using a high target DLT rate (e.g., 0.3) can lead to overly permissive escalation boundaries, increasing risk of exposing patients to unsafe doses.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: \"If you choose target toxicity 0.3, the de-escalation boundary will become 0.359, which is too high in general.\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Dose escalation based solely on DLT rates without biomarker stratification",
+        "flawed_enrollment_criteria": "Enrolling all-comers without molecular or histology selection may dilute safety signal and obscure efficacy patterns.",
+        "missing_biomarker": "Predictive biomarker to identify patients at higher risk of toxicity or likely responders.",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential underpowering for detecting dose\u2011response relationships due to heterogeneous patient population.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BOIN algorithm implementation",
+        "ip_vulnerability_note": "Speaker disclosed that the design relies on simple interval boundaries (lambda_e, lambda_d) which are publicly known and easily replicated, limiting proprietary advantage.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad enrollment without biomarker-driven cohorts may dilute signal and increase regulatory scrutiny."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that BOIN reduces underdosing risk compared to 3+3, then concluded that agencies are comfortable with overriding the rule for one out of three patients, which contradicts the emphasis on strict safety boundaries."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No real-world trial outcomes presented for BOIN with backfill implementation",
+        "Lack of comparative efficacy data versus standard 3+3 designs"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate biomarker-driven strata into BOIN designs to prevent signal dilution identified in trial dilution risk.",
+        "transcript_evidence": "Speaker noted enrolling all\u2011comers can dilute safety and efficacy signals.",
+        "crispro_angle": "CrisPRO can generate biomarker\u2011guided dose escalation rules within the BOIN framework, enhancing patient selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's proprietary adaptive algorithms to extend BOIN's simple interval approach with dynamic Bayesian updating for better overdose control.",
+        "transcript_evidence": "Speaker admitted that high target toxicity rates lead to overly permissive de\u2011escalation boundaries.",
+        "crispro_angle": "CrisPRO's Bayesian spine can continuously update toxicity probabilities, offering tighter safety monitoring than static BOIN intervals.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will back\u2011fill BOIN handle conflicting toxicity signals from multiple dose levels?",
+      "What are the recommended simulation parameters for agencies when target toxicity is set below 0.25?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "BOIN design implementations",
+        "Backfill BOIN extensions"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

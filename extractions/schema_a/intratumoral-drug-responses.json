@@ -1,0 +1,303 @@
+[
+  {
+    "talk_id": "intratumoral-drug-responses::davidson::1",
+    "session_title": "intratumoral-drug-responses",
+    "talk_title": "Spatial metabolomics and microdevice delivery to map intratumoral drug responses",
+    "speaker": {
+      "name": "Sean Davidson",
+      "affiliation": "Northwestern University",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "pancreatic ductal adenocarcinoma",
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "metabolism",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "EIPA",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "KRAS G12D mutant pancreatic xenograft",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "overexpression",
+        "pathway": "apoptosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Venetoclax",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "KRAS\u2011mutant tumor cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CDK4/6",
+        "alteration": "unspecified",
+        "pathway": "cell_cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CDK4/6 inhibitor (generic)",
+        "compound_id": "unspecified",
+        "ligase_or_cofactor": "unspecified",
+        "dependency_context": "tumor xenografts",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "GSSG/GSH ratio",
+        "type": "pharmacodynamic",
+        "assay": "MALDI imaging",
+        "finding": "Elevated GSSG/GSH ratio in cell\u2011death zones indicating oxidative stress"
+      },
+      {
+        "name": "Uric acid",
+        "type": "pharmacodynamic",
+        "assay": "MALDI imaging",
+        "finding": "Enriched in cell\u2011death zones; potential danger signal"
+      },
+      {
+        "name": "Glutamine / glutamate levels",
+        "type": "exploratory",
+        "assay": "MALDI imaging",
+        "finding": "Spatially distinct between stromal and tumor regions, suggesting metabolic crosstalk"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "xenograft",
+        "name": "KRAS\u2011mutant pancreatic tumor line",
+        "genotype_or_key_features": "KRAS G12D transformation, high macropinocytosis"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "BxPC\u20113 (KRAS\u2011wildtype) pancreatic line",
+        "genotype_or_key_features": "KRAS wild\u2011type, low macropinocytosis"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Implantable microdevices release drugs locally; MALDI imaging visualizes spatial drug distribution and metabolic changes. In KRAS\u2011mutant tumors, inhibition of macropinocytosis with EIPA reduces intracellular amino acids, confirming nutrient acquisition via protein uptake. Metabolomic signatures (purine catabolites, lipid profiles) correlate with immune cell neighborhoods, enabling prediction of immune states from metabolites alone.",
+    "readouts": [
+      "MALDI imaging mass spectrometry",
+      "CyTOF",
+      "fluorescent dextran/DQ\u2011BSA uptake",
+      "spatial logistic regression",
+      "ROC analysis"
+    ],
+    "key_findings": [
+      "EIPA delivery via microdevice decreased tumor amino\u2011acid levels in KRAS\u2011mutant xenografts, confirming macropinocytosis\u2011driven nutrient uptake.",
+      "DQ\u2011BSA fluorescence showed lysosomal processing of extracellular protein in KRAS\u2011mutant but not KRAS\u2011wildtype cells.",
+      "Spatial metabolomics identified two macrophage metabolic states: purine\u2011rich (pro\u2011inflammatory) versus lipid\u2011rich (pro\u2011tumor).",
+      "Logistic regression on metabolite data predicted immune neighborhoods with ROC AUC >0.85, suggesting metabolites can serve as surrogate immune biomarkers.",
+      "Microdevice can co\u2011deliver diverse agents (small molecules, base editors, antisense oligos, ADCs) with release kinetics tuned by PEG molecular weight."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Macropinocytosis inhibition selectively affected KRAS\u2011mutant cells, indicating a metabolic vulnerability not present in KRAS\u2011wildtype tumors."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What temporal dynamics govern the shift from purine\u2011driven to lipid\u2011driven macrophage states during treatment?",
+      "Can stabilized isotope tracing be integrated with the microdevice to quantify metabolic fluxes in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "intratumoral-drug-responses::unknown::2",
+    "session_title": "intratumoral-drug-responses",
+    "talk_title": "Implantable microdevice platform for intratumoral pharmacodynamics and precision treatment selection",
+    "speaker": {
+      "name": "Dr. Unknown",
+      "affiliation": "Academic institution (unspecified)",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "cutaneous T\u2011cell lymphoma",
+      "head and neck cancer",
+      "prostate cancer",
+      "bladder cancer",
+      "pan\u2011cancer (solid tumors)"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "combination_therapy",
+      "biomarker_development",
+      "spatial_biology",
+      "clinical_trial",
+      "translational",
+      "drug_delivery",
+      "immunotherapy"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Cleaved caspase\u20113",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Spatial gradient of apoptosis correlates with local drug concentration"
+      },
+      {
+        "name": "PCNA",
+        "type": "pharmacodynamic",
+        "assay": "IHC",
+        "finding": "Reduced proliferation in high\u2011dose zones of DNA\u2011damaging agents"
+      },
+      {
+        "name": "Interferon response genes",
+        "type": "pharmacodynamic",
+        "assay": "spatial transcriptomics",
+        "finding": "Up\u2011regulated in high\u2011efficacy temozolomide zones"
+      },
+      {
+        "name": "EGFR pathway activity",
+        "type": "pharmacodynamic",
+        "assay": "spatial transcriptomics",
+        "finding": "Down\u2011regulated after local osimertinib delivery"
+      },
+      {
+        "name": "mTOR signaling",
+        "type": "pharmacodynamic",
+        "assay": "spatial transcriptomics",
+        "finding": "Suppressed in everolimus\u2011treated zones"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Microdevice GBM study",
+        "genotype_or_key_features": "Patients with primary or recurrent GBM, n\u224812"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "CTCL microdevice study",
+        "genotype_or_key_features": "Patients with cutaneous T\u2011cell lymphoma, multiple agents"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "devices placed",
+        "value": "350",
+        "confidence_interval": "",
+        "n": "n=350 devices",
+        "population": "solid tumor patients across 13 trials",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "clinical trials",
+        "value": "13",
+        "confidence_interval": "",
+        "n": "n=13 trials",
+        "population": "various solid tumors",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "GBM patient response prediction accuracy",
+        "value": "100% (3/3 primary, 2/2 recurrent)",
+        "confidence_interval": "",
+        "n": "n=5 evaluable GBM patients",
+        "population": "GBM patients receiving temozolomide or lomustine",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Adverse events",
+        "value": "0 serious adverse events",
+        "confidence_interval": "",
+        "n": "n=350 devices",
+        "population": "all patients",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The grain\u2011of\u2011rice sized implantable microdevice contains ~20 reservoirs delivering micro\u2011doses of drugs directly into the tumor for 3\u20135 days. Spatial gradients of drug concentration are measured by MALDI\u2011MS or fluorescence, while parallel readouts (IHC, spatial transcriptomics, CyTOF) capture pharmacodynamic effects on tumor cells, immune subsets, and signaling pathways, enabling rapid prediction of systemic response and mechanistic biomarker discovery.",
+    "readouts": [
+      "MALDI imaging mass spectrometry",
+      "fluorescent drug tracing",
+      "IHC (cleaved caspase\u20113, PCNA, DNA damage markers)",
+      "spatial transcriptomics (1,000\u2011gene panel)",
+      "CyTOF",
+      "RNA\u2011seq",
+      "clinical imaging (MRI)"
+    ],
+    "key_findings": [
+      "Implantable microdevices were placed in >350 patients across 13 trials with no serious adverse events.",
+      "Local drug concentration gradients correlated with apoptosis (cleaved caspase\u20113) and proliferation inhibition (PCNA) in GBM xenografts.",
+      "Spatial transcriptomics confirmed on\u2011target pathway inhibition for osimertinib (EGFR), lapatinib (HER2/EGFR), everolimus (mTOR), and abemaciclib (cell\u2011cycle).",
+      "In a pilot GBM cohort, microdevice\u2011derived biomarkers predicted clinical temozolomide response in 5/5 patients, outperforming MGMT methylation status.",
+      "Interferon response programs were strongly associated with high\u2011efficacy temozolomide zones, suggesting a role for innate immunity in alkylator sensitivity.",
+      "Combination testing on the device (e.g., palbociclib + anti\u2011CD4) identified synergistic immune remodeling that translated to superior efficacy in preclinical models.",
+      "The platform enables rapid, patient\u2011specific drug selection and early human PD data for investigational agents, accelerating IND\u2011enabling studies."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Device insertion causes limited local inflammation confined to 3\u20134 cell layers, distinguishable from drug\u2011induced effects.",
+      "Variable drug diffusion can create concentration\u2011dependent resistance zones; precise polymer formulation mitigates this."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011CD4 antibody",
+        "rationale": "Palbociclib induced protumorigenic macrophages; CD4 blockade reprograms macrophages to enhance efficacy",
+        "phenotype": "Superior tumor regression in mouse models compared to palbociclib alone",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011CSF1R antibody",
+        "rationale": "Panobinostat increased antigen\u2011presenting neutrophils; CSF1R blockade targets pro\u2011tumor macrophages",
+        "phenotype": "Enhanced anti\u2011tumor immunity in xenograft studies",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "sequential delivery (agent\u202f1 then agent\u202f2)",
+        "rationale": "Order of release may affect synergy; microdevice allows testing of priming vs. concurrent exposure",
+        "phenotype": "Variable efficacy depending on sequence; data pending",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "How do microdevice\u2011induced spatial drug gradients compare to systemic pharmacokinetics in heterogeneous tumors?",
+      "Can the platform be adapted for real\u2011time monitoring of immune checkpoint inhibitor activity in lymph nodes?",
+      "What is the minimal drug dose required locally to achieve systemic\u2011equivalent efficacy while avoiding toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024 NEJM",
+        "Wu et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [
+        "Stand Up to Cancer",
+        "CRUK",
+        "NIH"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

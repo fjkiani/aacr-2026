@@ -1,0 +1,167 @@
+[
+  {
+    "talk_id": "radiotheranostics-nuts-and-bolts::mcconathy::1",
+    "session_title": "radiotheranostics-nuts-and-bolts",
+    "talk_title": "Clinical application of radiopharmaceutical theranostics in neuroendocrine tumors and prostate cancer",
+    "speaker": {
+      "name": "Dr. Jonathan McConathy",
+      "affiliation": "University of Alabama, Department of Radiology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "neuroendocrine tumor",
+      "prostate cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "radiopharmaceuticals",
+      "targeted_therapy",
+      "clinical_trial",
+      "combination_therapy",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SSTR2",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "other",
+        "compound_name": "DOTATATE",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "well\u2011differentiated GEP\u2011NETs",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FOLH1",
+        "alteration": "",
+        "pathway": "cell_surface_antigen",
+        "modality": "other",
+        "compound_name": "PSMA\u2011617",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "metastatic castration\u2011resistant prostate cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SSTR2 PET uptake (DOTATATE SUV)",
+        "type": "predictive",
+        "assay": "PET/CT",
+        "finding": "Higher tumor SUV correlated with improved progression\u2011free survival in NETTER\u20111"
+      },
+      {
+        "name": "PSMA PET SUVmean >10",
+        "type": "predictive",
+        "assay": "PET/CT",
+        "finding": "Patients with SUVmean >10 had higher PSA response rates in PSMA\u2011targeted trials"
+      },
+      {
+        "name": "Serum PSA",
+        "type": "pharmacodynamic",
+        "assay": "blood test",
+        "finding": "Median PSA decline >50% observed after three cycles of PSMA\u2011617 in responsive patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "NETTER\u20111",
+        "genotype_or_key_features": "Grade 1\u20112 GEP\u2011NETs progressed on somatostatin analog"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "VISION",
+        "genotype_or_key_features": "Metastatic castration\u2011resistant prostate cancer after ARPI and taxane"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Progression\u2011free survival",
+        "value": "significant improvement vs high\u2011dose somatostatin analog",
+        "confidence_interval": "",
+        "n": "n=230 (NETTER\u20111)",
+        "population": "Grade 1\u20112 NET patients",
+        "comparator": "high\u2011dose octreotide",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall survival",
+        "value": "+4 months",
+        "confidence_interval": "",
+        "n": "n=551 (VISION)",
+        "population": "mCRPC after ARPI and taxane",
+        "comparator": "standard of care",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PSA response (\u226550% decline)",
+        "value": "\u224860%",
+        "confidence_interval": "",
+        "n": "n=125 (PSMA\u2011617 cohort)",
+        "population": "PSMA\u2011positive mCRPC",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Radiolabeled somatostatin analogs (DOTATATE) and PSMA\u2011targeted ligands (PSMA\u2011617) bind cell\u2011surface receptors on neuroendocrine tumors or prostate cancer cells, are internalized, and deliver beta\u2011particle radiation (Lu\u2011177) that induces DNA double\u2011strand breaks, leading to tumor cell death while allowing PET imaging of target expression for patient selection and dosimetry.",
+    "readouts": [
+      "PET/CT",
+      "SPECT",
+      "Serum PSA",
+      "CT/MRI for anatomic response",
+      "Laboratory blood counts"
+    ],
+    "key_findings": [
+      "DOTATATE therapy (NETTER\u20111) provided a marked progression\u2011free survival benefit compared with high\u2011dose octreotide in Grade\u202f1\u20112 GEP\u2011NETs.",
+      "PSMA\u2011617 therapy (VISION) improved overall survival by 4\u202fmonths versus standard of care in mCRPC after ARPI and taxane.",
+      "Higher baseline PSMA PET SUVmean (>10) predicted greater PSA response and longer PFS in PSMA\u2011targeted trials.",
+      "Patients with high circulating tumor DNA or PTEN loss had poorer outcomes on PSMA therapy, suggesting genomic biomarkers of resistance.",
+      "Combination of PSMA\u2011targeted radioligand therapy with PARP inhibitors or immune checkpoint blockade is feasible and shows early safety signals."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Patients with low PSMA uptake or high FDG\u2011avid disease showed limited response to PSMA\u2011617.",
+      "PTEN alterations were associated with worse PFS on PSMA therapy, indicating a potential resistance mechanism."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PARP inhibitor (e.g., olaparib)",
+        "rationale": "Inhibit DNA repair to potentiate radiation\u2011induced DNA damage",
+        "phenotype": "Early phase trials report acceptable safety and suggest enhanced tumor control",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "PD\u20111/PD\u2011L1 checkpoint inhibitor",
+        "rationale": "Radiation may increase neoantigen release and immune activation",
+        "phenotype": "Preliminary data show synergistic tumor regression in a subset of patients",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "External beam radiation (local boost)",
+        "rationale": "Increase dose to bulky or resistant lesions while systemic radioligand treats micrometastases",
+        "phenotype": "Palliative pain relief and improved local control reported in case series",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal sequencing of beta\u2011 versus alpha\u2011emitting PSMA agents?",
+      "Can early on\u2011treatment imaging biomarkers (e.g., new lesions on interim PET) reliably predict long\u2011term survival?",
+      "How should dosing intervals be personalized based on hematologic recovery versus tumor dosimetry?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT03511664",
+        "NCT01578239"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Novartis"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "talk_id": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-::clapper::1",
+    "session_title": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-",
+    "talk_title": "Targeted Cancer Interception Vaccines and p53 Reactivation Strategies",
+    "speaker": {
+      "name": "Margie Lee Clapper",
+      "affiliation": "Fox Chase Cancer Center, Philadelphia, PA, USA, Director of the Cancer Prevention Interception Targeted Agent Discovery Program",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "lung adenocarcinoma",
+      "breast cancer",
+      "pancreatic cancer",
+      "multiple solid tumors"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "targeted_therapy",
+      "translational",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "L858R",
+        "pathway": "RTK/RAS/RAF",
+        "modality": "mRNA_vaccine",
+        "compound_name": "EGFR L858R mRNA vaccine (Moderna platform)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "EGFR L858R mutant ground-glass opacity lesions",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "mRNA_vaccine",
+        "compound_name": "KRAS G12C mRNA vaccine (Moderna platform)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS G12C mutant ground-glass opacity lesions",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "REM-491",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "p53 hotspot mutations (R175H, R273) in Li-Fraumeni syndrome models",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "IFN-\u03b3 ELISpot response",
+        "type": "pharmacodynamic",
+        "assay": "ELISpot",
+        "finding": "85% of vaccinated Lynch syndrome individuals showed a positive IFN-\u03b3 response at 1 year"
+      },
+      {
+        "name": "Nox and Puma mRNA induction",
+        "type": "pharmacodynamic",
+        "assay": "RT-qPCR",
+        "finding": "Significant upregulation in p53 mutant Cal-33 cells treated with REM-491, not in WT or p53-null cells"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Cal-33",
+        "genotype_or_key_features": "TP53 R175H homozygous"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "Cal-33 heterozygous",
+        "genotype_or_key_features": "TP53 R273 heterozygous"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "EGFR L858R tail\u2011vein injection model",
+        "genotype_or_key_features": "Mouse tail\u2011vein injection of EGFR L858R\u2011mutant cells"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "Breast carcinoma R175H PDX",
+        "genotype_or_key_features": "TP53 R175H mutant breast cancer cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Clapper presented mRNA\u2011based vaccines targeting EGFR L858R and KRAS G12C mutations found in premalignant lung ground\u2011glass opacities, demonstrating CD8+ T\u2011cell activation and reduced tumor formation in mouse models. She also described the small\u2011molecule p53 reactivator REM\u2011491, which restores transcriptional activity of multiple hotspot p53 mutants (R175H, R273) in vitro (EC50 ~40\u202fnM) and suppresses tumor growth in xenograft models without observable toxicity.",
+    "readouts": [
+      "ELISpot",
+      "flow_cytometry",
+      "RT-qPCR",
+      "MOMP assay",
+      "tumor volume caliper measurement",
+      "luciferase imaging"
+    ],
+    "key_findings": [
+      "In a cohort of Lynch syndrome individuals, 85% maintained a positive IFN\u2011\u03b3 ELISpot response one year after two doses of the 209\u2011peptide NU209 vaccine.",
+      "Whole\u2011exome sequencing of 200 ground\u2011glass lung nodules revealed 25% harbor EGFR L858R and 40% KRAS G12C mutations.",
+      "EGFR L858R mRNA vaccine achieved >90% lipid nanoparticle encapsulation efficiency and induced robust CD8+ T\u2011cell responses in mice.",
+      "Mice vaccinated with EGFR L858R mRNA vaccine showed a dramatic reduction in tumor formation compared with empty nanoparticle controls.",
+      "REM\u2011491 induced Nox and Puma transcription in TP53\u2011mutant Cal\u201133 cells but not in WT or p53\u2011null cells, confirming mutant\u2011specific activity.",
+      "REM\u2011491 achieved EC50 \u224840\u202fnM for mitochondrial outer membrane permeabilization in TP53 R175H cells and lower EC50 in heterozygous R273 cells.",
+      "In vivo, REM\u2011491 administered daily for 17 days reduced tumor volume and weight in TP53 R175H breast cancer xenografts without weight loss or biochemical toxicity, and MTD >400\u202fmg/kg was not reached."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "REM\u2011491 showed activity across ~25\u201130% of p53 hotspot mutations, suggesting broad but not universal reactivation.",
+      "Preliminary clinical data on Y220C\u2011targeted agents (e.g., rosatapopt) indicate emerging resistance, underscoring the need for agents like REM\u2011491 with broader mutant coverage."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Empty lipid nanoparticle (control)",
+        "rationale": "Negative control to demonstrate vaccine specificity",
+        "phenotype": "No tumor formation reduction",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What are the pharmacodynamic biomarkers that can be used to monitor REM\u2011491 target engagement in patients?",
+      "Can the EGFR/KRAS mRNA vaccines be adapted to target additional driver mutations found in premalignant lesions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Nature Medicine 2024 NU209 vaccine study",
+        "Phase 1/2a trial of frameshift peptide vaccine in Lynch syndrome (Matthias Kloor)"
+      ],
+      "company_or_sponsor": [
+        "Moderna",
+        "PMV Pharmaceuticals"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-::delaloge::2",
+    "session_title": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-",
+    "talk_title": "Precision Cancer Prevention: Risk Assessment, Implementation, and Public Health Strategies",
+    "speaker": {
+      "name": "Suzette Delaloge",
+      "affiliation": "Gustave Roussy, Paris, France, Director of the Interception Personalized Cancer Prevention Program",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer",
+      "pancreatic cancer",
+      "lung cancer",
+      "liver cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "clinical_trial",
+      "biomarker_development",
+      "early_detection",
+      "risk_reduction",
+      "implementation_science",
+      "digital_health",
+      "AI_ML"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Breast density",
+        "type": "predictive",
+        "assay": "mammography imaging",
+        "finding": "Integrated into risk models to stratify women into low, average, and high risk categories"
+      },
+      {
+        "name": "Polygenic risk scores (PRS)",
+        "type": "predictive",
+        "assay": "NGS genotyping panel",
+        "finding": "Combined with clinical factors to achieve 5\u2011year invasive breast cancer risk estimates (high risk \u22481.67%)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MIPEPS trial cohort",
+        "genotype_or_key_features": "28,000 European women, risk stratified by PEARS score, ages 40\u201170"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "LIBER trial",
+        "genotype_or_key_features": "BRCA/Lynch carriers, letrozole vs placebo, n\u2248? (low accrual 18%)"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Risk category distribution",
+        "value": "Low risk 36%, High risk 33% of participants",
+        "confidence_interval": "",
+        "n": "n=28,000",
+        "population": "MIPEPS trial participants",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "5\u2011year invasive breast cancer risk (high risk group)",
+        "value": "1.67%",
+        "confidence_interval": "",
+        "n": "n=~9,240 (33% of 28,000)",
+        "population": "High\u2011risk women in MIPEPS",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Trial acceptance rate",
+        "value": "18%",
+        "confidence_interval": "",
+        "n": "n=carriers enrolled in LIBER",
+        "population": "BRCA/Lynch carriers offered letrozole trial",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Adherence to screening in interception program",
+        "value": "High (specific % not disclosed)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "Participants in French interception pilot program",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Delaloge outlined a public\u2011health\u2011driven precision prevention framework that integrates individual risk assessment (clinical scores, breast density, polygenic risk scores) with AI\u2011enhanced imaging, digital tools, and coordinated care pathways to deliver risk\u2011adapted screening, surveillance, and risk\u2011reduction interventions across multiple cancer types.",
+    "readouts": [
+      "mammography",
+      "MRI",
+      "NGS genotyping",
+      "AI image analysis",
+      "digital questionnaire platforms",
+      "WCRF lifestyle score"
+    ],
+    "key_findings": [
+      "In the MIPEPS trial, 36% of 28,000 women were classified as low risk and 33% as high risk, with a 5\u2011year invasive breast cancer risk of 1.67% in the high\u2011risk group.",
+      "Turnaround time for the PEARS risk score was a median of 7 weeks, demonstrating feasibility of large\u2011scale academic risk profiling.",
+      "The US Wisdom trial (non\u2011inferiority) met its primary endpoint of Stage 2B breast cancer incidence, supporting risk\u2011adapted screening.",
+      "The LIBER letrozole prevention trial suffered low accrual (18% acceptance) and 75% 5\u2011year adherence, resulting in an underpowered study with no observed risk reduction.",
+      "The French interception pilot program achieved a 1\u2011point improvement in the WCRF lifestyle score in 41% of participants and high adherence to recommended screening."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "AI\u2011based imaging risk models",
+        "rationale": "Improve accuracy and feasibility of risk stratification compared with traditional clinical scores",
+        "phenotype": "Potentially comparable predictive performance to classical models",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "Digital health platform (app + navigator)",
+        "rationale": "Facilitate patient engagement, education, and adherence to prevention interventions",
+        "phenotype": "Increased WCRF score and screening adherence in pilot participants",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "How can risk assessment tools be standardized and integrated across different European health systems?",
+      "What are the most effective strategies to improve participation of low\u2011education and socio\u2011economically deprived populations in risk\u2011based screening?",
+      "Which biomarkers can serve as actionable, longitudinal surrogates to motivate lifestyle change and monitor prevention efficacy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Wisdom trial publication 2024",
+        "MIPEPS protocol publication 2023"
+      ],
+      "company_or_sponsor": [
+        "Gustave Roussy",
+        "European Union Horizon Europe"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

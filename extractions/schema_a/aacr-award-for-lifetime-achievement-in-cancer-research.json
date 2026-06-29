@@ -1,0 +1,180 @@
+[
+  {
+    "talk_id": "aacr-award-for-lifetime-achievement-in-cancer-research::allison::1",
+    "session_title": "aacr-award-for-lifetime-achievement-in-cancer-research",
+    "talk_title": "Mechanistic insights into CTLA-4 blockade and novel immune structures",
+    "speaker": {
+      "name": "Dr. James P. Allison",
+      "affiliation": "University of Texas MD Anderson Cancer Center, James P. Allison Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "colorectal cancer",
+      "bladder cancer",
+      "urothelial carcinoma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CTLA4",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "ipilimumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "all solid tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PDCD1",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "pembrolizumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "melanoma, NSCLC, others",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ICOS-positive CD4 T cells",
+        "type": "predictive",
+        "assay": "flow_cytometry",
+        "finding": "Presence of ICOS+ CD4 cells after anti\u2011CTLA\u20114 treatment correlated with response; no responders lacked these cells"
+      },
+      {
+        "name": "Tetrad structures (CD4 ICOS+, CD8, dendritic cell)",
+        "type": "exploratory",
+        "assay": "spatial_transcriptomics, multiplex_IHC",
+        "finding": "Tetrads were enriched in responders to anti\u2011CTLA\u20114 and absent in non\u2011responders"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "MC38 colorectal carcinoma",
+        "genotype_or_key_features": "high mutational load"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "B16 melanoma",
+        "genotype_or_key_features": "poorly immunogenic"
+      },
+      {
+        "model_type": "genetic_knockout_mouse",
+        "name": "CTLA4 knockout",
+        "genotype_or_key_features": "global CTLA4 deletion"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ipilimumab Phase I melanoma",
+        "genotype_or_key_features": "n=14, 3 CRs"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ipilimumab Phase III melanoma long\u2011term follow\u2011up",
+        "genotype_or_key_features": "\u224820% 10\u2011year survival, n\u2248200"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "complete response",
+        "value": "3/14 patients",
+        "confidence_interval": "",
+        "n": "n=14",
+        "population": "Phase I melanoma",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "10\u2011year survival rate",
+        "value": "20%",
+        "confidence_interval": "",
+        "n": "n\u2248200",
+        "population": "melanoma patients treated with ipilimumab",
+        "comparator": "",
+        "maturity": "updated"
+      },
+      {
+        "metric": "overall survival at 3 years (combined CTLA\u20114 + PD\u20111)",
+        "value": ">50%",
+        "confidence_interval": "",
+        "n": "n not specified",
+        "population": "melanoma patients in combination trial",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "neoadjuvant bladder cancer 3\u2011year survival",
+        "value": "70%",
+        "confidence_interval": "",
+        "n": "n not specified",
+        "population": "bladder cancer patients receiving neoadjuvant anti\u2011CTLA\u20114",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Blocking CTLA\u20114 removes its high\u2011affinity competition with CD28 for B7 ligands, restoring costimulatory signaling during T\u2011cell priming. This generates a unique ICOS\u2011high CD4 effector subset that collaborates with ICOS\u2011ligand\u2011expressing dendritic cells to form spatial 'tetrads', which remodel the myeloid compartment and prime stem\u2011like TCF7+ CD8 T cells with high granzyme expression. The resulting effector\u2011only immune infiltrate underlies durable tumor regressions and distinguishes CTLA\u20114 blockade from PD\u20111 inhibition.",
+    "readouts": [
+      "CyTOF",
+      "flow_cytometry",
+      "single_cell_RNA_seq",
+      "Visium_spatial_transcriptomics",
+      "multiplex_IHC",
+      "ELISpot"
+    ],
+    "key_findings": [
+      "Anti\u2011CTLA\u20114 treatment expands ICOS\u2011positive CD4 T cells; absence of these cells predicts lack of response.",
+      "CTLA\u20114 blockade induces novel spatial 'tetrad' structures (CD4 ICOS+, CD8, dendritic cell) that are enriched in responders and absent with PD\u20111 blockade.",
+      "In CTLA\u20114 knockout mice, CD4 cells co\u2011express multiple lineage transcription factors (BCL6, GATA3, ROR\u03b3C), indicating deregulated differentiation.",
+      "Adding ICOS\u2011ligand to a tumor vaccine converts a non\u2011curative anti\u2011CTLA\u20114 regimen into 100% tumor eradication in a resistant B16 model.",
+      "Combination of anti\u2011CTLA\u20114 with anti\u2011PD\u20111 shifts the exhausted CD8 population to a stem\u2011like TCF7+ phenotype and improves survival (>50% at 3\u202fyears in melanoma).",
+      "Long\u2011term follow\u2011up of ipilimumab trials shows ~20% of melanoma patients achieve 10\u2011year survival, whereas median pre\u2011trial survival was 6\u20137\u202fmonths."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "PD\u20111 monotherapy expands terminally exhausted CD8 cells and shows higher relapse rates (25\u201135% at 2\u202fyears) compared with CTLA\u20114.",
+      "CTLA\u20114 blockade rarely leads to disease recurrence, but efficacy depends on intact ICOS\u2013ICOSL signaling."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "PD\u20111 antibody (pembrolizumab/nivolumab)",
+        "rationale": "Target complementary phases of T\u2011cell response (priming vs exhaustion) to achieve synergistic tumor regression.",
+        "phenotype": "Improved overall survival (>50% at 3\u202fyears) and increased effector CD4/CD8 populations.",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "ICOS\u2011ligand expressing tumor vaccine",
+        "rationale": "Provide the necessary ICOS co\u2011stimulatory signal to amplify CTLA\u20114\u2011induced CD4 effectors.",
+        "phenotype": "Conversion of non\u2011responsive anti\u2011CTLA\u20114 treatment to 100% cure in resistant B16 mouse model.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What specific role do macrophages play in the formation and function of the CTLA\u20114\u2011induced tetrads?",
+      "Can the tetrad architecture be leveraged as a predictive biomarker in human cancers beyond melanoma?",
+      "How can checkpoint strategies be adapted for pediatric fusion\u2011driven cancers that may lack immunogenic neoantigens?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "MD Anderson Cancer Center"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::chaudhry::1",
+    "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+    "talk_title": "Ultrasensitive ctDNA MRD detection, lymphatic fluid sampling, and liquid spatial ecotypes for immunotherapy response prediction",
+    "speaker": {
+      "name": "Adel Chaudhry",
+      "affiliation": "Mayo Clinic, Department of Radiation Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "head and neck cancer",
+      "melanoma",
+      "non-small cell lung cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "liquid_biopsy",
+      "spatial_biology",
+      "biomarker_development",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Lymph ctDNA MRD",
+        "type": "predictive",
+        "finding": "Presence in surgical drain fluid at 24h post-op associated with worse progression-free survival and local-regional progression-free survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "head and neck cancer surgical drain fluid",
+        "genotype_or_key_features": "HPV-positive and HPV-negative cohorts"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Multi-mutation tracking and tumor-informed sequencing enable detection of ctDNA at parts-per-million levels; sampling lymphatic fluid from surgical drains enriches ctDNA, improving MRD detection and prognostication; cfDNA methylation patterns inferred from spatial transcriptomics define liquid spatial ecotypes that predict immunotherapy response or resistance.",
+    "readouts": [
+      "error-corrected NGS",
+      "methylation sequencing",
+      "spatial transcriptomics",
+      "bulk RNA-seq",
+      "Visium spatial transcriptomics",
+      "Merscope"
+    ],
+    "key_findings": [
+      "Multi-mutation tracking lowers MRD detection limit to ~1 part per million",
+      "Lymphatic fluid ctDNA detection at 24h post-surgery predicts worse PFS and outperforms pathology features",
+      "Liquid spatial ecotype 7 inferred from cfDNA methylation predicts immunotherapy response and improved survival across melanoma and NSCLC",
+      "Spatial ecotype 4 predicts resistance and worse survival, outperforming PD-L1 and TMB"
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does tumor fraction affect accuracy of liquid ecotype inference?",
+      "Can serial monitoring of liquid ecotypes track pseudoprogression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Rosenfeld et al. 2017"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::anagnostou::2",
+    "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+    "talk_title": "Ultra-sensitive tumor-informed whole genome ctDNA MRD assays and adaptive clinical trial designs",
+    "speaker": {
+      "name": "Anagnostou",
+      "affiliation": "Johns Hopkins University, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "gastroesophageal cancer",
+      "mesothelioma",
+      "non-small cell lung cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_2_3",
+    "topic_categories": [
+      "immunotherapy",
+      "liquid_biopsy",
+      "clinical_trial",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "ctDNA clearance",
+        "type": "pharmacodynamic",
+        "finding": "Associated with better outcomes in neoadjuvant gastroesophageal cancer"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "TICTACTOE",
+        "genotype_or_key_features": "early-stage NSCLC, ctDNA MRD assessed 4-6 weeks post definitive therapy"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ctDNA clearance",
+        "value": "associated with improved recurrence-free survival",
+        "confidence_interval": "",
+        "n": "n=127",
+        "population": "operable gastroesophageal cancer",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "ctDNA persistence",
+        "value": "associated with inferior outcomes",
+        "confidence_interval": "",
+        "n": "n=45",
+        "population": "early-stage mesothelioma",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Tumor-informed whole-genome sequencing tracks thousands of SNVs to achieve ultra-sensitive MRD detection; integrating machine learning reduces error rates, enabling ctDNA monitoring to guide adaptive trial designs and therapeutic escalation in early-stage cancers.",
+    "readouts": [
+      "whole genome sequencing",
+      "error-corrected NGS",
+      "machine learning classifiers",
+      "RNA-seq"
+    ],
+    "key_findings": [
+      "Whole-genome tumor-informed ctDNA assay detects MRD at parts-per-million sensitivity across multiple cancer types",
+      "ctDNA persistence pre-surgery predicts inferior outcomes in low-TMB mesothelioma",
+      "Adaptive trial designs (e.g., TICTACTOE) will assess ctDNA MRD concordance with recurrence-free survival in early-stage NSCLC",
+      "ctDNA molecular response at 6-9 weeks predicts long-term outcomes in metastatic NSCLC treated with pembrolizumab"
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the optimal ctDNA MRD timepoint for guiding adjuvant therapy?",
+      "How to improve clinical sensitivity of MRD assays in low-shedding tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna::adelsten::3",
+    "session_title": "advances-in-minimal-residual-disease-detection-via-circulating-tumor-dna",
+    "talk_title": "Improving ctDNA assay sensitivity via increased cfDNA sampling and diagnostic priming agents",
+    "speaker": {
+      "name": "Victor Adelsten",
+      "affiliation": "Broad Institute, Gerstner Center for Cancer Diagnostics",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "liquid_biopsy",
+      "platform_technology",
+      "diagnostic"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "MAESTRO enrichment uses allele-specific oligos to boost low-frequency mutations, enabling detection below 1 ppm; diagnostic priming agents (nanoparticles or Fc-silenced antibodies) transiently inhibit cfDNA clearance, increasing ctDNA yield for downstream assays.",
+    "readouts": [
+      "NGS with MAESTRO enrichment",
+      "cfDNA quantification"
+    ],
+    "key_findings": [
+      "MAESTRO converts low VAF mutations to high VAF, achieving detection down to 0.25 ppm with linearity"
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Safety profile and optimal dosing of cfDNA priming agents in humans?",
+      "Can priming improve detection in low-shedding cancers like renal cell carcinoma?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Exact Sciences (Abbott)",
+        "AmplifierBio"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

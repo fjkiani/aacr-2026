@@ -1,0 +1,623 @@
+[
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Wen-Hsun Chang",
+      "institution_or_pharma": "University of North Carolina",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Defining a molecular signature for KEAP1-Nrf2-mediated resistance to KRAS inhibition",
+      "rhetorical_signals": [
+        "Speaker said: \"we didn't do the experiment, but let me see if this can answer your question\"",
+        "Speaker said: \"we see that SLC7A11 is significantly upregulated, so we try to knock it down... that won't reverse the resistance to RAS inhibitors\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS inhibitors (G12D inhibitor MRTX1133, multi-RAS inhibitor RMC7977)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "KEAP1 loss leading to Nrf2 activation drives resistance independent of RAS, MYC, TEAD pathways",
+        "unexplained_resistance_quote": "we found that the KEAP1 knockout cell line become far less sensitive to RAS inhibitor compared to the control cell lines",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy data",
+        "No toxicity assessment of DRP104 combination"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "KEAP1-Nrf2 driven resistance could be targeted by CrisPRO predictive modeling of Nrf2 transcriptional programs to identify patients likely to benefit from glutamine metabolism inhibition.",
+        "transcript_evidence": "Speaker concluded that KEAP1 knockout promotes resistance and that a glutamine antagonist DRP104 can overcome it.",
+        "crispro_angle": "Use CrisPRO to score KEAP1/Nrf2 signature in patient tumors and prioritize combination with glutamine antagonists.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Does glutathione supplementation reverse resistance?",
+      "What is the durability of the DRP104 + KRAS inhibitor combination in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "DRP104",
+        "MRTX1133",
+        "RMC7977"
+      ],
+      "companies_to_monitor": [
+        "NYU collaborators",
+        "Revolution Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Bail",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Selective ULK1/2 inhibitors enhance KRAS pathway blockade and uncover stress adaptive programs",
+      "rhetorical_signals": [
+        "Speaker said: \"Hydroxychloroquine and chloroquine have a lot of off\u2011target effect and are linked to high toxicity\"",
+        "Speaker said: \"we are still missing some specific biomarker in order to pinpoint when and how we can target autophagy\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Hydroxychloroquine / chloroquine autophagy inhibition",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Off\u2011target effects of chloroquine obscure on\u2011target autophagy inhibition",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker highlighted high toxicity of chloroquine and hydroxychloroquine",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "KRAS pathway + autophagy inhibition",
+        "flawed_enrollment_criteria": "No biomarker\u2011driven selection for autophagy dependence",
+        "missing_biomarker": "Autophagy dependency marker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ULK1/2 inhibitor 2088",
+        "ip_vulnerability_note": "Speaker disclosed structure\u2011guided design and SAR but noted need for biomarker to guide use",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use without patient selection may dilute signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that ULK1 inhibition synergizes with KRAS pathway blockade, yet concluded that without a biomarker the approach may fail in pancreatic cancer"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparison",
+        "No biomarker stratification"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify transcriptional or metabolic signatures of autophagy dependence to select patients for ULK1 inhibitor + KRAS inhibitor combos.",
+        "transcript_evidence": "Speaker admitted missing specific biomarker to pinpoint when and how to target autophagy.",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics to derive an autophagy\u2011dependency score for trial enrichment.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Hydroxychloroquine",
+        "context": "Compared as off\u2011target autophagy inhibitor with high toxicity",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Other ULK1 inhibitors",
+        "context": "Benchmarking against 2088 in vitro",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will ULK1 PROTACs show superior synergy?",
+      "What biomarker predicts ULK1 inhibitor response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "2088",
+        "sotorasib",
+        "trametinib"
+      ],
+      "companies_to_monitor": [
+        "Moffitt Cancer Center",
+        "companies developing ULK1 PROTACs"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Di Zan",
+      "institution_or_pharma": "Shanghai ChemPartner",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Modeling of acquired resistance to multi RAS inhibitor RMC-6236 in KRAS mutant pancreatic cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"we see that the Y64 mutation completely abolishes binding\"",
+        "Speaker said: \"it is unlikely to be a single event\u2011driven resistance\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "RMC-6236 (pan\u2011KRAS molecular glue)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Secondary KRAS Y64 mutations prevent tri\u2011complex formation with RAF",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Pan\u2011KRAS inhibition",
+        "flawed_enrollment_criteria": "No pre\u2011screening for KRAS Y64 or other secondary mutations",
+        "missing_biomarker": "KRAS Y64 mutation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "RMC-6236 molecular glue",
+        "ip_vulnerability_note": "Speaker showed that Y64 mutation abolishes binding, indicating a narrow chemical interaction surface",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on single binding mode makes it vulnerable to point mutations"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical data on Y64 prevalence",
+        "No in\u2011human resistance monitoring"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Use CrisPRO to predict KRAS secondary mutation hotspots (e.g., Y64) and design next\u2011generation molecular glues that retain binding.",
+        "transcript_evidence": "Speaker demonstrated loss of binding with Y64 mutation.",
+        "crispro_angle": "Computational modeling of KRAS surface flexibility to guide redesign of glue scaffold.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine pan\u2011KRAS glue with MEK inhibitors to overcome Y64\u2011mediated resistance.",
+        "transcript_evidence": "Speaker noted MEK inhibitor remained effective against Y64 mutant lines.",
+        "crispro_angle": "CrisPRO can prioritize MEK inhibitor combos based on pathway re\u2011activation signatures.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Merck KRAS inhibitor",
+        "context": "Shown to retain activity against Y64 mutants",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the clinical frequency of KRAS Y64 mutations after RMC\u20116236 treatment?",
+      "Can combination with SHP2 or RTK inhibitors prevent emergence of bypass pathways?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "RMC-6236",
+        "MEK inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Silvia Palladino",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Combining RAS inhibitors with RNR inhibitor to prevent ecDNA\u2011driven resistance",
+      "rhetorical_signals": [
+        "Speaker said: \"the addition of BBI 825 completely prevented the emergence of resistance\"",
+        "Speaker said: \"we were not able to get any resistant subclone from this combinatorial treatment\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C inhibitors (sotorasib, adagrasib) + EGFR antibodies",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "ecDNA\u2011mediated KRAS or MET amplifications drive rapid resistance",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some patients acquired KRAS amplifications and progressed quickly",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CRYSTAL-1",
+        "target_biology": "KRAS G12C + EGFR blockade",
+        "flawed_enrollment_criteria": "No baseline ecDNA assessment to stratify patients",
+        "missing_biomarker": "ecDNA\u2011positive status / KRAS amplification risk",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BBI 825 (RNR inhibitor)",
+        "ip_vulnerability_note": "Oral selective RNR inhibition may be limited by nucleotide salvage pathways",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Combination relies on suppressing amplification which may not apply to all resistance mechanisms"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that KRAS G12C + cetuximab alone leads to rapid KRAS amplification, yet concluded that adding BBI 825 can fully prevent resistance, despite not testing all possible bypass routes"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term clinical outcome data with BBI 825",
+        "Effect in MSI\u2011high tumors where amplification is not the driver"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop CrisPRO\u2011based ecDNA detection score to enroll patients who would benefit from RNR inhibition combo.",
+        "transcript_evidence": "Speaker linked ecDNA\u2011driven KRAS amplifications to rapid resistance and showed BBI 825 prevents it.",
+        "crispro_angle": "Integrate low\u2011coverage whole\u2011genome sequencing with CrisPRO to flag ecDNA\u2011positive tumors.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair RNR inhibition with MEK inhibitors for KRAS\u2011amplified resistant clones.",
+        "transcript_evidence": "Speaker noted MEK inhibitors remain effective against KRAS\u2011amplified models.",
+        "crispro_angle": "CrisPRO can predict MAPK re\u2011activation signatures to prioritize MEK combo.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Merck MEK inhibitor",
+        "context": "Effective against KRAS\u2011amplified resistant lines",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Will BBI 825 affect normal proliferating tissues leading to hematologic toxicity?",
+      "Can ecDNA status be reliably measured in routine clinical biopsies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "BBI 825",
+        "sotorasib",
+        "adagrasib"
+      ],
+      "companies_to_monitor": [
+        "Boundless Bio"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Yi Zhao",
+      "institution_or_pharma": "Ruijin Hospital, Shanghai Jiao Tong University School of Medicine",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Targeting the JAK\u2011STAT pathway sensitizes KRAS mutant cancer to KRAS inhibitors",
+      "rhetorical_signals": [
+        "Speaker said: \"the compound's effect is related to the activation level of STAT3\"",
+        "Speaker said: \"we don't see any adverse effect\" regarding the STAT3 inhibitor"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12D inhibitor (HRS4642) alone",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "JAK1/STAT3 pathway up\u2011regulation provides bypass signaling",
+        "unexplained_resistance_quote": "we observed high phospho\u2011STAT3 in resistant lines without clear upstream driver",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "KRAS G12D inhibition + chemotherapy",
+        "flawed_enrollment_criteria": "No STAT3 activation biomarker used for patient selection",
+        "missing_biomarker": "phospho\u2011STAT3 level",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Oral STAT3 inhibitor (Yuyao Technique)",
+        "ip_vulnerability_note": "Early phase trial; limited safety data and potential class\u2011wide toxicities",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on STAT3 activation which may be heterogeneous"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Clinical validation of STAT3 inhibitor safety",
+        "Biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to generate a phospho\u2011STAT3 activation score to select patients for KRAS + STAT3 inhibitor combos.",
+        "transcript_evidence": "Speaker showed that STAT3 inhibitor efficacy correlates with phospho\u2011STAT3 levels.",
+        "crispro_angle": "Integrate phosphoproteomics with CrisPRO predictive modeling for STAT3\u2011dependent resistance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair KRAS G12D inhibitors with JAK1 inhibitors (e.g., tofacitinib) as an alternative to STAT3 inhibitors.",
+        "transcript_evidence": "Speaker demonstrated tofacitinib blocks phospho\u2011STAT3 and improves viability.",
+        "crispro_angle": "CrisPRO can rank JAK inhibitors based on predicted synergy with KRAS blockade.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Tofacitinib",
+        "context": "JAK1 inhibitor tested for synergy",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the safety profile of the oral STAT3 inhibitor in humans?",
+      "Does STAT3 inhibition affect immune microenvironment in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "HRS4642",
+        "Yuyao STAT3 inhibitor",
+        "tofacitinib"
+      ],
+      "companies_to_monitor": [
+        "Hengrui",
+        "Yuyao Technique"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Sung Yun Wong",
+      "institution_or_pharma": "Seoul National University",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "VEGFR2 blockade overcomes acquired KRAS G12D inhibitor resistance driven by PI3K\u03b3 activation",
+      "rhetorical_signals": [
+        "Speaker said: \"we think this result a general mechanism in resistance\"",
+        "Speaker said: \"the combination showed significantly greater tumor growth inhibition\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12D inhibitor MRTX833",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "PI3K\u03b3\u2011driven VEGF\u2011A/VEGFR2 autocrine loop sustains survival",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some resistant models showed rapid progression despite KRAS inhibition",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "KRAS G12D + VEGFR2 inhibition",
+        "flawed_enrollment_criteria": "No selection for PI3K\u03b3 activation or VEGF\u2011A high tumors",
+        "missing_biomarker": "PI3K\u03b3 activity / VEGF\u2011A expression",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "VEGFR2 antibody remucirumab",
+        "ip_vulnerability_note": "Monoclonal antibody may have limited tumor penetration",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires combination with KRAS inhibitor; single agent ineffective"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Clinical validation of VEGFR2 blockade in KRAS\u2011G12D patients",
+        "Safety of long\u2011term VEGFR2 inhibition combined with KRAS inhibitors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a CrisPRO\u2011derived PI3K\u03b3/VEGF\u2011A activation signature to select patients for KRAS + VEGFR2 combo.",
+        "transcript_evidence": "Speaker linked PI3K\u03b3 activation and VEGF\u2011A upregulation to resistance.",
+        "crispro_angle": "Integrate phospho\u2011proteomics with CrisPRO to predict VEGF\u2011driven resistance.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine KRAS G12D inhibitors with PI3K\u03b3 selective inhibitors as an alternative to VEGFR2 antibodies.",
+        "transcript_evidence": "Inhibition of PI3K\u03b3 decreased VEGF\u2011A and restored sensitivity.",
+        "crispro_angle": "CrisPRO can rank PI3K\u03b3 inhibitors for synergy with KRAS blockade.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Revolution Medicine RMC\u20119805",
+        "context": "Mentioned as a trial combining VEGF\u2011R1 bispecific with KRAS inhibitor",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Is the VEGFR2\u2011driven mechanism present in KRAS G12C patients?",
+      "What is the impact on normal vasculature with chronic VEGFR2 blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MRTX833",
+        "remucirumab",
+        "PI3K\u03b3 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicine"
+      ]
+    }
+  },
+  {
+    "talk_id": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Chendu Li",
+      "institution_or_pharma": "Mass General Hospital",
+      "session_title": "kras-targeted-therapies-overcoming-resistance-and-novel-combinations",
+      "talk_title": "Targeted therapy\u2011induced chromosomal instability dictates mitotic dependency on Aurora kinase A",
+      "rhetorical_signals": [
+        "Speaker said: \"we cannot show this data as of this presentation\"",
+        "Speaker said: \"the combination can cause tumor regression as well as improve the relapse\u2011free survival\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C inhibitor LY3499446 (monotherapy)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Induced chromosomal instability creates a mitotic vulnerability that is not exploited by KRAS inhibition alone",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "some cell lines showed only cytostatic response",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "KRAS G12C inhibition",
+        "flawed_enrollment_criteria": "No assessment of CIN or micronuclei status to enrich for Aurora A dependency",
+        "missing_biomarker": "Micronuclei / CIN score",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Aurora kinase A inhibitor LSN3321213",
+        "ip_vulnerability_note": "Highly selective but may have dose\u2011limiting toxicities; prior pan\u2011Aurora programs halted",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires precise patient selection based on CIN"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that KRAS inhibition induces DNA damage and CIN, yet concluded that KRAS inhibitors alone have limited efficacy without addressing the mitotic vulnerability"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Clinical validation of CIN as predictive biomarker",
+        "Safety of low\u2011dose Aurora A inhibition in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop CrisPRO CIN signature to identify tumors where KRAS inhibition will create Aurora A dependency.",
+        "transcript_evidence": "Speaker linked micronuclei induction to Aurora A inhibitor synergy.",
+        "crispro_angle": "Use CrisPRO to integrate \u03b3\u2011H2AX and micronucleus data for patient enrichment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's ability to predict synthetic lethal interactions between targeted therapy\u2011induced stress and cell\u2011cycle kinases.",
+        "transcript_evidence": "Speaker showed mechanistic link between KRAS\u2011induced DNA damage and Aurora A dependency.",
+        "crispro_angle": "CrisPRO can model stress\u2011induced synthetic vulnerabilities across drug classes.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Eli Lilly KRAS G12C + Aurora A combo",
+        "context": "Mentioned as not moving forward due to toxicity concerns",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Will transient CIN trigger immune activation that could be leveraged with immunotherapy?",
+      "What is the therapeutic window for Aurora A inhibition in patients with high CIN?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "LY3499446",
+        "LSN3321213"
+      ],
+      "companies_to_monitor": [
+        "Eli Lilly"
+      ]
+    }
+  }
+]

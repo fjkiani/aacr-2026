@@ -1,0 +1,294 @@
+[
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::pitt::1",
+    "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+    "talk_title": "Neural representation learning for pan\u2011cancer HRD prediction and platinum response",
+    "speaker": {
+      "name": "Jason Pitt",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "AI_ML",
+      "computational",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Pitt presented HR\u2011Difuse, a multi\u2011view neural representation learning framework that encodes SBS, indel, SV, and copy\u2011number features from whole\u2011genome sequencing, fuses them via self\u2011attention, and uses contrastive learning to predict homologous recombination deficiency (HRD) and platinum response, outperforming HRDetect and random\u2011forest\u2011based Cord across pan\u2011cancer cohorts.",
+    "readouts": [],
+    "key_findings": [
+      "HR\u2011Difuse achieved higher AUROC and AUPRC than HRDetect and Cord for HRD prediction in TCGA and PEACOG datasets.",
+      "The model retained predictive power for somatic HRD events lacking high microhomology\u2011mediated deletions, where existing tools performed poorly.",
+      "Transfer\u2011learning fine\u2011tuning of the HRD model on platinum\u2011response labels yielded an F1 score of ~0.75, surpassing baseline HR\u2011Difuse and other classifiers.",
+      "Contrastive learning of latent encodings improved cross\u2011view feature integration compared with pure NMF\u2011based signatures."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Everall et al. 2024 Nature Genetics"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::imielinski::2",
+    "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+    "talk_title": "Dimensional structural chromosome instability and the JAVEL mass\u2011balance method",
+    "speaker": {
+      "name": "Marcin Imielinski",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "basic_science",
+      "computational",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Imielinski described JAVEL, a mass\u2011balance\u2011principle algorithm that jointly infers copy\u2011number segments and rearrangement junctions from whole\u2011genome sequencing, leveraging stoichiometric constraints to produce coherent structural chromosome instability profiles across cancer types.",
+    "readouts": [],
+    "key_findings": [
+      "JAVEL integrates copy\u2011number and structural\u2011variant data into a unified representation based on segment neighbor balance.",
+      "The method enables detection of complex events such as chromothripsis, chromoplexy, and retrotransposition with improved resolution over separate CNV or SV callers.",
+      "Application to TCGA whole\u2011genome data reveals pervasive multi\u2011scale chromosomal instability signatures across tumor types."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::martin::3",
+    "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+    "talk_title": "Graph-based genome analysis reveals structural chromosomal instability patterns",
+    "speaker": {
+      "name": "Martin",
+      "affiliation": "NYU Pathology Department",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "acral melanoma",
+      "breast cancer",
+      "prostate cancer",
+      "colorectal cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "spatial_biology",
+      "tumor_microenvironment",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "biallelic deficiency",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MYCN",
+        "pathway": "cell_cycle",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ERBB2",
+        "pathway": "cell_surface_antigen",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA whole genome cohort",
+        "genotype_or_key_features": "8,500 tumor-normal pairs across 32 cancer types"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The presenter introduced JAVEL, a graph\u2011based copy\u2011number and breakpoint detection tool, and demonstrated how genome graphs can be mined for structural chromosomal instability (SIN) patterns such as chromoplexy, chromothripsis, ecDNA, BFB cycles and a novel class called Typhonis. Specific graph motifs correlate with DNA repair deficiencies (e.g., BRCA1 loss) and with oncogene amplification contexts (e.g., HER2 HSR vs ecDNA).",
+    "readouts": [
+      "genome graph analysis",
+      "Hi-C contact maps",
+      "metaphase FISH",
+      "copy number profiling"
+    ],
+    "key_findings": [
+      "JAVEL outperforms prior methods in breakpoint precision and recall on TCGA genomes.",
+      "Identified a new structural scar highly specific for BRCA1 deficiency, present in >90% of BRCA1\u2011deficient tumors and rare elsewhere.",
+      "Discovered Typhonis, a distinct HSR amplification pattern affecting ~3% of cancers and enriched for MYC, CCND1, ERBB2 amplifications.",
+      "Found that glioblastoma is dominated by ecDNA amplifications of EGFR/PDGFRA, whereas most other cancers show HSR\u2011type amplifications.",
+      "HSR HER2 amplifications predict lower likelihood of resistance to HER2\u2011targeted ADCs compared with ecDNA\u2011based HER2 amplifications."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "HSR\u2011mediated HER2 amplifications may be less prone to resistance than ecDNA\u2011mediated amplifications."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular mechanisms drive conversion of ecDNA to HSR versus retention as ecDNA?",
+      "Can long\u2011read or Hi\u2011C sequencing reliably distinguish reintegrated ecDNA from primary HSR events?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "new-insights-from-tcga-whole-genome-sequencing::gadi::4",
+    "session_title": "new-insights-from-tcga-whole-genome-sequencing",
+    "talk_title": "Comprehensive analysis of >8,000 TCGA whole\u2011genome sequences reveals new coding, non\u2011coding and structural drivers",
+    "speaker": {
+      "name": "Gadi",
+      "affiliation": "Broad Institute and InnoCrac",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "skin melanoma",
+      "lung adenocarcinoma",
+      "lung squamous cell carcinoma",
+      "colorectal cancer",
+      "breast cancer",
+      "prostate cancer",
+      "ovarian cancer",
+      "sarcoma",
+      "glioblastoma",
+      "kidney cancer",
+      "liver cancer",
+      "head and neck cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "genomics",
+      "bioinformatics",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TP53",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PTEN",
+        "pathway": "PI3K/AKT",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRCA1",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TERT",
+        "pathway": "telomere_maintenance",
+        "modality": "unspecified",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BMPR2",
+        "pathway": "TGF_beta",
+        "modality": "unspecified",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SLC30A4",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA PCR\u2011free whole\u2011genome cohort",
+        "genotype_or_key_features": "8,500+ tumor\u2011normal pairs, 30\u201180\u00d7 coverage, 32 cancer types"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Using dual cloud pipelines, the team generated a high\u2011quality variant call set from >8,000 TCGA whole\u2011genome samples, uncovering sequencing artifacts (vapor\u2011trail T>G/A>C), correcting coverage gaps, and identifying novel coding and non\u2011coding driver mutations, structural variation drivers, and HRD signatures across cancer types.",
+    "readouts": [
+      "short\u2011read Illumina sequencing",
+      "long\u2011read (10\u2011100\u202fkb) sequencing",
+      "optical mapping",
+      "Hi\u2011C",
+      "RNA\u2011seq (for expression correlation)",
+      "copy number profiling"
+    ],
+    "key_findings": [
+      "Identified a novel NovaSeq\u2011specific sequencing artifact (T>G/A>C \u201cvapor trail\u201d) and created a filter that removed up to 15% of false SNVs in affected tumor types.",
+      "PCR\u2011free whole\u2011genome data recovered >90% of missed TERT promoter mutations and uncovered new hotspots in GC\u2011rich regions of VHL, ARID1A and other tumor suppressors.",
+      "Detected 200\u202fmillion SNVs, 1.7\u202fmillion DNVs, 56\u202fmillion indels and 1.3\u202fmillion SVs across the cohort.",
+      "Discovered new non\u2011coding drivers (e.g., recurrent promoter indels in albumin, surfactant genes, P63, GATA3, XBP1, ESR1 regulatory region amplifications).",
+      "SVelfi analysis revealed known SV drivers (TMPRSS2\u2011ERG) and novel recurrent SVs such as SLC30A4 translocations driving ETV1 overexpression in prostate cancer.",
+      "HRD signatures were present in 7% of all tumors, including 3.3% outside ovarian and breast cancers, with some cases lacking known BRCA1/2 alterations.",
+      "Approximately 10% of samples harbored pathogenic germline variants; a novel intronic BRCA1 splice variant showed LOH and reduced expression, indicating functional HRD."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the functional impact of the newly identified non\u2011coding driver mutations on tumor biology?",
+      "How do the novel SV drivers (e.g., SLC30A4\u2011ETV1) influence therapeutic vulnerabilities?",
+      "Can the vapor\u2011trail filter be generalized to other sequencing platforms?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "InnoCrac",
+        "Google Cloud"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

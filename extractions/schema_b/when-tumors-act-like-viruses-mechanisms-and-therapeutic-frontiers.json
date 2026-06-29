@@ -1,0 +1,233 @@
+[
+  {
+    "talk_id": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Catherine Chapinelli",
+      "institution_or_pharma": "George Washington University",
+      "session_title": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers",
+      "talk_title": "Epigenetic Regulation of Viral Mimicry and Its Clinical Implications",
+      "rhetorical_signals": [
+        "Speaker said: \"DNMT inhibitors remove DNA methylation across the genome, resulting in transcription of transposable element RNAs\"",
+        "Speaker said: \"HDAC inhibitors alone do not seem to be enough to reactivate teRNA, but when you add HDAC inhibitors, this response is increased\"",
+        "Speaker said: \"Mutant p53 (R175H) is much less responsive to DNMT inhibitors, potentially due to lack of hotspot binding\"",
+        "Speaker said: \"High TE expression in ovarian cancer patients correlates with longer overall survival\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DNMT inhibitors in solid tumors (e.g., ovarian cancer)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited drug delivery to tumor tissue leading to poor demethylation",
+        "unexplained_resistance_quote": "Speaker noted: \"in at least one of the trials on ovarian cancer, they were able to take tumor biopsies and saw no demethylation in the tumor\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Various early\u2011phase DNMTi + ICB trials (e.g., ovarian, lung, melanoma)",
+        "target_biology": "Reactivation of transposable elements to induce type I interferon",
+        "flawed_enrollment_criteria": "Broad enrollment without biomarker (TE expression or methylation) stratification",
+        "missing_biomarker": "Baseline TE expression or DNA methylation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Trials may be underpowered to detect benefit in biomarker\u2011selected subgroups",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DNMT inhibitor class (azacitidine, decitabine)",
+        "ip_vulnerability_note": "Speaker highlighted mixed clinical outcomes, suggesting limited differentiation among agents",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on epigenetic re\u2011activation without patient\u2011specific biomarker selection"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that p53 loss leads to global DNA hypomethylation and high TE expression (mechanistic observation) but concluded that p53\u2011null tumors are the most responsive to DNMT inhibitors (contradictory therapeutic conclusion)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of OS data in most DNMTi + ICB trials",
+        "No prospective biomarker\u2011driven patient selection reported"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011based TE expression signature to select patients for DNMTi + ICB combos.",
+        "transcript_evidence": "Speaker said: \"High TE expression in ovarian cancer patients correlates with longer overall survival\"",
+        "crispro_angle": "CrisPRO can quantify TE\u2011derived interferon signatures from bulk RNA\u2011seq to predict responders.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target ADAR1 editing to overcome resistance to viral mimicry in DNMTi\u2011treated tumors.",
+        "transcript_evidence": "Speaker said: \"ADAR1 knockdown further increases survival\"",
+        "crispro_angle": "CrisPRO can model A\u2011to\u2011I editing impact on dsRNA hairpins and suggest ADAR1 inhibition strategies.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate baseline TE methylation and expression metrics into future DNMTi + ICB trial designs.",
+        "transcript_evidence": "Speaker noted lack of demethylation in ovarian trial biopsies despite treatment",
+        "crispro_angle": "CrisPRO can simulate expected demethylation kinetics and guide biomarker timing.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Azacitidine (DNMT inhibitor)",
+        "context": "Clinical trials combined with anti\u2011PD\u20111/CTLA\u20114",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "HDAC inhibitors",
+        "context": "Synergize with DNMTi to boost TE transcription",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "ADAR1 inhibitors (experimental)",
+        "context": "Enhance viral mimicry when combined with DNMTi",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific epigenetic regulators (e.g., KAT2A) drive high TE expression in long\u2011term ovarian cancer survivors?",
+      "How does mutant p53 (R175H) alter TE regulation independent of DNA methylation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Azacitidine",
+        "Decitabine",
+        "HDAC inhibitors (e.g., vorinostat)",
+        "ADAR1 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Celgene/BMS (azacitidine)",
+        "Eli Lilly (HDACi pipeline)",
+        "Novartis (ADAR1 programs)"
+      ]
+    }
+  },
+  {
+    "talk_id": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Nicolas Verret",
+      "institution_or_pharma": "Icahn School of Medicine at Mount Sinai",
+      "session_title": "when-tumors-act-like-viruses-mechanisms-and-therapeutic-frontiers",
+      "talk_title": "Viral Mimicry Enhances Cancer Vaccine Efficacy via Interferon\u2011Driven Tumor Microenvironment Remodeling",
+      "rhetorical_signals": [
+        "Speaker said: \"the combination of vaccination and azacitidine increased class I expression on the surface of the cancer cells\"",
+        "Speaker said: \"when we knock out MAVS and STING, the combination therapy doesn't work anymore\"",
+        "Speaker said: \"azacitidine treatment reduced Arg1\u2011positive tumor\u2011associated macrophages\"",
+        "Speaker said: \"vaccination alone was completely useless in the therapeutic setting\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Azacitidine monotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Requires intact MAVS/STING signaling in tumor cells; tumors lacking these pathways will not respond",
+        "unexplained_resistance_quote": "Speaker noted that in MAVS/STING knockout tumors the combo failed, implying resistance in such contexts",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Azacitidine + anti\u2011PD\u20111 in NK/T\u2011cell lymphoma (clinical case cited)",
+        "target_biology": "Induction of viral mimicry to sensitize to checkpoint blockade",
+        "flawed_enrollment_criteria": "Patients not pre\u2011selected for intact cGAS\u2011STING/MAVS pathway",
+        "missing_biomarker": "Tumor expression of STING/MAVS or baseline interferon signature",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Azacitidine (DNA methyltransferase inhibitor)",
+        "ip_vulnerability_note": "Well\u2011established class with multiple generics; no unique chemistry disclosed",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on tumor\u2011intrinsic interferon signaling, limiting applicability to STING/MAVS\u2011deficient cancers"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that azacitidine induces strong interferon response in B16 melanoma (scientific observation) but concluded that azacitidine alone does not control tumor growth, highlighting a disconnect between pathway activation and monotherapy efficacy."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of human vaccine + azacitidine trial data",
+        "No long\u2011term survival or toxicity assessment"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair azacitidine with STING agonists to bypass MAVS/STING loss in tumors.",
+        "transcript_evidence": "Speaker said: \"we think that azacitidine will produce interferon inside the cancer cell, not just myeloid cells\"",
+        "crispro_angle": "CrisPRO can model combined epigenetic + STING agonist signaling to predict synergistic interferon output.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived MAVS/STING activity score to select patients for vaccine + azacitidine combos.",
+        "transcript_evidence": "Speaker noted loss of efficacy in MAVS/STING knockout tumors",
+        "crispro_angle": "CrisPRO can infer pathway competence from tumor RNA\u2011seq to guide enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rescue azacitidine monotherapy failures by adding a vaccine component that drives CD8 infiltration.",
+        "transcript_evidence": "Speaker showed that azacitidine alone did not control tumor, but combo with vaccine did",
+        "crispro_angle": "CrisPRO can simulate immune cell infiltration changes upon vaccine addition to predict rescue potential.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Azacitidine",
+        "context": "Used to induce viral mimicry before vaccination",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "STING agonists (experimental)",
+        "context": "Discussed as alternative to azacitidine for inducing interferon",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Anti\u2011PD\u20111 checkpoint inhibitors",
+        "context": "Combined with azacitidine in NK/T\u2011cell lymphoma case",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the durability of myeloid repolarization after cessation of azacitidine?",
+      "Can the vaccine\u2011azacitidine strategy be translated to human neoantigen vaccines with similar timing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Azacitidine",
+        "STING agonist candidates",
+        "mRNA cancer vaccines"
+      ],
+      "companies_to_monitor": [
+        "Merck (STING agonist programs)",
+        "Moderna (mRNA cancer vaccines)",
+        "Celgene/BMS (azacitidine)"
+      ]
+    }
+  }
+]

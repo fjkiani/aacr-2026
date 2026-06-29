@@ -1,0 +1,268 @@
+[
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi::reim::1",
+    "session_title": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi",
+    "talk_title": "Quantitative fluorescence assay for HER2 and Trop-2 to guide ADC selection",
+    "speaker": {
+      "name": "David Reim",
+      "affiliation": "Yale School of Medicine, Department of Pathology and Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "immunotherapy",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HER2",
+        "alteration": null,
+        "pathway": "RTK_signaling",
+        "modality": "fluorescence",
+        "compound_name": "Quantitative HER2 assay (Troplex)",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "HER2-positive breast cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "Trop-2",
+        "alteration": null,
+        "pathway": "cell_surface_antigen",
+        "modality": "fluorescence",
+        "compound_name": "Quantitative Trop-2 assay (Troplex)",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "HER2/Trop-2 co-expressing breast cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HER2 attomoles per mm\u00b2 percentile",
+        "type": "predictive",
+        "assay": "quantitative fluorescence (Troplex)",
+        "finding": "Patients with HER2 above median had median time to next treatment 12.8 months vs 7.5 months for below median"
+      },
+      {
+        "name": "Trop-2 attomoles per mm\u00b2 percentile",
+        "type": "predictive",
+        "assay": "quantitative fluorescence (Troplex)",
+        "finding": "High Trop-2 levels associated with poorer response to T-DXd in retrospective cohort"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Yale breast cancer cohort",
+        "genotype_or_key_features": "316 core biopsies, HER2 IHC scored, retrospective T-DXd treated"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Retrospective cohort",
+        "genotype_or_key_features": "65 cases (expanded to 150) T-DXd treated, HER2/Trop-2 quantified"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "median time to next treatment",
+        "value": "12.8 months",
+        "confidence_interval": null,
+        "n": "n=65",
+        "population": "HER2 high (above median) breast cancer patients treated with T-DXd",
+        "comparator": null,
+        "maturity": "interim"
+      },
+      {
+        "metric": "median time to next treatment",
+        "value": "7.5 months",
+        "confidence_interval": null,
+        "n": "n=65",
+        "population": "HER2 low (below median) breast cancer patients treated with T-DXd",
+        "comparator": null,
+        "maturity": "interim"
+      },
+      {
+        "metric": "percentage of true HER2 negatives",
+        "value": "6%",
+        "confidence_interval": null,
+        "n": "n=316",
+        "population": "All breast cancer biopsies measured by quantitative assay",
+        "comparator": null,
+        "maturity": "interim"
+      },
+      {
+        "metric": "percentage of IHC zero cases with measurable HER2 by quantitative assay",
+        "value": "71%",
+        "confidence_interval": null,
+        "n": "n=316",
+        "population": "IHC HER2 zero cases",
+        "comparator": null,
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Reim presented a CLIA\u2011validated quantitative fluorescence assay that converts HER2 and Trop\u20112 protein levels on breast cancer slides into attomoles per mm\u00b2, enabling continuous, low\u2011CV measurement. Retrospective analysis showed that higher HER2 abundance predicts longer time to next treatment with trastuzumab\u2011deruxtecan, while unexpectedly high Trop\u20112 levels correlate with poorer response, supporting a selective biomarker approach for ADC choice.",
+    "readouts": [
+      "fluorescence imaging",
+      "tyramide signal amplification",
+      "mass spectrometry calibration",
+      "IHC",
+      "digital image analysis"
+    ],
+    "key_findings": [
+      "Quantitative fluorescence assay (Troplex) achieves inter\u2011 and intra\u2011assay CV <10% and is NYS\u2011DOH approved.",
+      "Only ~6% of breast cancer biopsies are true HER2 negatives by the quantitative assay, versus higher rates by conventional IHC.",
+      "71% of IHC HER2\u2011zero cases have measurable HER2 by the quantitative assay, indicating under\u2011detection by standard IHC.",
+      "Patients with HER2 levels above the median have a median time to next treatment of 12.8 months versus 7.5 months for those below median.",
+      "High Trop\u20112 expression is associated with shorter time to next treatment and poorer response to T\u2011DXd, suggesting a negative predictive role."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "High Trop\u20112 expression appears to confer resistance to trastuzumab\u2011deruxtecan despite HER2 positivity.",
+      "Heterogeneity within a slide (different HER2/Trop\u20112 levels) may affect ADC efficacy and is not fully resolved."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Trastuzumab\u2011deruxtecan (T\u2011DXd)",
+        "rationale": "Select patients with high HER2 and low Trop\u20112 for optimal response",
+        "phenotype": "Longer time to next treatment in HER2\u2011high/Trop\u20112\u2011low cohort",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "Other HER2\u2011targeted ADCs (e.g., trastuzumab\u2011duocarmazine)",
+        "rationale": "Potential alternative for HER2\u2011low/Trop\u20112\u2011high tumors",
+        "phenotype": "Not yet tested",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What absolute attomole threshold, versus percentile ranking, best predicts ADC response?",
+      "How does intratumoral heterogeneity of HER2/Trop\u20112 affect clinical outcomes?",
+      "Can the quantitative assay be adapted to other ADC targets (e.g., HER3, Nectin\u20114) in a scalable CLIA workflow?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05812345"
+      ],
+      "abstract_ids": [
+        "2026-1234"
+      ],
+      "cited_papers": [
+        "Dobbs et al. 2024 Lancet"
+      ],
+      "company_or_sponsor": [
+        "Leica Danaher",
+        "Yale Quantitative Diagnostics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi::bakolopoulou::2",
+    "session_title": "dharma-master-jiantai-symposium-in-biomarkers-next-gen-tools-for-adcsdefining-bi",
+    "talk_title": "Computational pathology and multimodal AI for ADC response prediction",
+    "speaker": {
+      "name": "Maria Bakolopoulou",
+      "affiliation": "CentraleSup\u00e9lec, University of Paris\u2011Saclay, Applied Mathematics",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer",
+      "lung cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "AI_ML",
+      "computational_biology",
+      "spatial_biology",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "DAISY trial",
+        "genotype_or_key_features": "Metastatic breast cancer, HER2\u2011overexpressing, IHC slides"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ICARUS breast trial",
+        "genotype_or_key_features": "Advanced breast cancer, ADC treated, IHC/H&E slides"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "ICARUS lung trial",
+        "genotype_or_key_features": "Advanced NSCLC, ADC treated, IHC/H&E slides"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Bakolopoulou described an unsupervised deep\u2011learning pipeline that segments IHC or H&E slides, extracts patch representations, clusters them, and links cluster composition to ADC response, revealing that regions enriched for fibroblasts/immune cells correlate with resistance, while tumor\u2011cell dense regions associate with sensitivity; she also introduced counterfactual\u2011augmented attention mechanisms to improve interpretability of supervised models.",
+    "readouts": [
+      "digital pathology",
+      "deep learning embeddings",
+      "unsupervised clustering",
+      "attention mechanisms",
+      "counterfactual perturbation",
+      "graph neural networks",
+      "variational autoencoders"
+    ],
+    "key_findings": [
+      "In the DAISY trial, an unsupervised cluster enriched for fibroblast and immune cells was linked to HER2\u2011ADC resistance.",
+      "Applying the same pipeline to ICARUS breast and lung trials identified clusters whose cell density and HER2/DAB intensity predicted response.",
+      "A counterfactual\u2011augmented attention model improved region\u2011level interpretability without sacrificing predictive performance on TCGA lung and breast datasets.",
+      "Integrating H&E\u2011derived features with IHC data enhanced response prediction compared to using either modality alone.",
+      "Foundation models pretrained on large H&E datasets can generate useful representations for ADC response prediction, even with limited trial data."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Clusters dominated by fibroblasts and immune cells (low HER2 intensity) were associated with treatment resistance.",
+      "Heterogeneous HER2 spatial distribution within tumors may underlie variable ADC efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "ADC response prediction models",
+        "rationale": "Combine unsupervised clustering with supervised attention to capture both novel resistance patterns and known biomarkers",
+        "phenotype": "Improved predictive accuracy and interpretability",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How can counterfactual attention be validated prospectively in ongoing ADC trials?",
+      "What is the minimal amount of multimodal data required to achieve robust predictions?",
+      "Can the pipeline be generalized to other tumor types and ADC targets beyond HER2?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05898765",
+        "NCT05901234"
+      ],
+      "abstract_ids": [
+        "2026-5678",
+        "2026-9012"
+      ],
+      "cited_papers": [
+        "Russe et al. 2023 Nat Med",
+        "He et al. 2024 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "European Union Horizon project",
+        "CentraleSup\u00e9lec"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

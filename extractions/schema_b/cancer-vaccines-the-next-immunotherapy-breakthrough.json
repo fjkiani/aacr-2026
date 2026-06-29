@@ -1,0 +1,346 @@
+[
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::wu::1",
+    "talk_metadata": {
+      "speaker_name": "Cathy Wu",
+      "institution_or_pharma": "Dana-Farber Brigham",
+      "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+      "talk_title": "Personalized Neoantigen Vaccines in Glioblastoma",
+      "rhetorical_signals": [
+        "I'm a little bit nervous because I haven't presented this before",
+        "This is still a work in progress",
+        "maybe we need actually better professional antigen-presenting cells to be present at the time of priming to really launch that CD8 positive response"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "anti-PD-1 monotherapy in GBM",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Tumor intrinsic transcriptional programs; specifically, a shift away from the mesenchymal (MES) phenotype as a mode of acquired resistance to ICB monotherapy.",
+        "unexplained_resistance_quote": "we also saw a shift away from the mes transcriptional programs as a mode of acquired resistance to ICB monotherapy",
+        "ghost_responder_admission": "a small percentage that actually have longer overall survival",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "peptide-based vaccines in GBM",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "T cell exhaustion; speaker noted 'a lot of co-inhibitory receptors present on the tumor-associated T cells'.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "those patients who didn't get dexamethasone were actually able to mount circulating T cell responses",
+        "hidden_tox_signal": "dexamethasone is bad. So this is a way to flatline your immune stimulation",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "unspecified (four-cohort study)",
+        "target_biology": "Timing of anti-PD-1 therapy relative to neoantigen vaccination in GBM",
+        "flawed_enrollment_criteria": "Including MGMT methylated patients who receive Temodar, which generates lymphopenia, potentially confounding the immune response analysis.",
+        "missing_biomarker": "None explicitly mentioned as missing, but noted that TMB did not make a difference in GBM, unlike other tumors.",
+        "static_vs_dynamic_failure": "The speaker is using longitudinal samples to track genomic shifts, reducing this risk.",
+        "statistical_concern": "Small sample size (close to 40 patients) across four cohorts may be underpowered for definitive timing conclusions.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Peptide-based vaccines",
+        "ip_vulnerability_note": "Relies on synthetic long peptides and poly-ICLC adjuvant; speaker admits the response is predominantly CD4+ rather than the desired CD8+ response.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "The current approach may be limited by the need for professional APCs to effectively prime CD8+ responses."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker noted that TMB does not portend response in GBM, yet the vaccine strategy is based on targeting somatic mutations (neoantigens) derived from that same mutational burden."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized OS data for the GBM cohorts",
+        "Limited sample size for single-nuclear sequencing (30-some tumors)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting the non-mesenchymal phenotype that emerges as a resistance mechanism to ICB in GBM.",
+        "transcript_evidence": "we could see in the presence of anti-PD-1 therapy that there was actually selection for non-mes genetic lesions over time",
+        "crispro_angle": "Use computational spine to identify specific genetic lesions driving the non-MES transition to develop targeted interventions.",
+        "external_validation_needed": [
+          "PubMed: search for 'mesenchymal phenotype glioblastoma resistance'"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Why are the induced responses predominantly CD4+ instead of CD8+?",
+      "What is the optimal timing of anti-PD-1 relative to vaccination?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::griffin::2",
+    "talk_metadata": {
+      "speaker_name": "Adam Griffin",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+      "talk_title": "mRNA Vaccines as Immune Adjuvants to Checkpoint Blockade",
+      "rhetorical_signals": [
+        "we like to propose this very linear story... But in reality, I think that the reality here is a little more complex",
+        "this retrospective data we really have to take with a grain of salt",
+        "designed not to produce a strong interferon alpha burst"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Personalized RNA nanoparticle vaccines",
+        "failure_type": "manufacturing_failure",
+        "mechanistic_blindspot": "The 'linear story' of target selection -> injection -> regression ignores the potent non-specific innate immune activation (interferon alpha) that may be the actual driver of efficacy.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "GFP RNA nanoparticle vaccine doubles survival in an aggressive metastatic model of osteosarcoma",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "unspecified (pragmatic Phase II/III)",
+        "target_biology": "Universal mRNA vaccine as an adjuvant to ICI",
+        "flawed_enrollment_criteria": "Retrospective data suffered from 'healthy vaccinee bias' and 'immortal time bias'.",
+        "missing_biomarker": "Lack of a specific biomarker to predict who will mount the MDA5-mediated interferon alpha response.",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Retrospective cohorts were relatively small.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Personalized mRNA vaccines",
+        "ip_vulnerability_note": "High cost and long manufacturing lead times (4-8 weeks) make them unsuitable for advanced disease, creating a gap for 'off-the-shelf' universal adjuvants.",
+        "scale_or_manufacturing_bottleneck": "4-8 weeks for RNA manufacturing; 26 weeks for peptide manufacturing.",
+        "clinical_strategy_weakness": "Over-reliance on personalization when non-specific innate activation (IFN-alpha) may provide significant benefit."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker notes that COVID vaccines were specifically designed to avoid TLR7 activation (via N1-methylpseudouridine), yet they still trigger a massive interferon alpha surge via the MDA5 'backdoor' pathway."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of prospective human trial data for the 'universal' adjuvant hypothesis",
+        "Mouse model data may not fully translate to human T cell dynamics"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Developing an off-the-shelf mRNA adjuvant that optimizes the MDA5/IFN-alpha pathway without the need for personalization.",
+        "transcript_evidence": "we have a large ramp of opportunity to dial this type of an effect up and increase the sensitivity to these RNA vaccines",
+        "crispro_angle": "Use computational modeling to optimize RNA structures that maximize MDA5 activation while minimizing off-target toxicity.",
+        "external_validation_needed": [
+          "PubMed: 'MDA5 activation mRNA lipid nanoparticles'",
+          "ClinicalTrials.gov: search for 'mRNA adjuvant ICI'"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "BioNTech",
+        "context": "Mentioned as the source of the COVID vaccine specifications used in the study.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does a personalized vaccine provide an added benefit over a universal adjuvant in humans?",
+      "How to optimize the 'backdoor' MDA5 activation for maximum anti-tumor effect?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Universal mRNA adjuvant"
+      ],
+      "companies_to_monitor": [
+        "BioNTech"
+      ]
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::seder::3",
+    "talk_metadata": {
+      "speaker_name": "Robert Seder",
+      "institution_or_pharma": "Vaccine Research Center, NIH",
+      "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+      "talk_title": "Optimizing Peptide Vaccines and Adoptive Cell Therapy",
+      "rhetorical_signals": [
+        "this is probably motherhood and apple pie",
+        "I wish I had some disclosures"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Subcutaneous (subcu) peptide vaccines",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Failure to induce stem-like CD8 T cells (TCF7+/SLAMF6+); instead, they induce short-lived effector cells (Granzyme+/KLRG1+).",
+        "unexplained_resistance_quote": "why weren't those high frequency of CD8 cells by the subcu working?",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard TIL expansion (IL-2, anti-CD3/CD28)",
+        "ip_vulnerability_note": "Standard expansion for a month leads to effector-like or exhausted cells, reducing durability.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Standard ACT lacks a complementary vaccination strategy to remodel the TME and boost the transferred cells."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human data for the PI3K delta inhibitor expansion protocol",
+        "Durability of the stem-like T cell response is unknown (protection wanes after 30 days)"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combining PI3K delta inhibitors during T cell expansion with a specific IV vaccine to maintain stemness and remodel the TME.",
+        "transcript_evidence": "Stem-like cells are better than effector-like cells, and they need vaccine",
+        "crispro_angle": "Identify the optimal combination of small molecule inhibitors and vaccine antigens to maximize the TCF1+ stem-like population.",
+        "external_validation_needed": [
+          "PubMed: 'PI3K delta inhibitor T cell stemness'",
+          "PubMed: 'TCF7 SLAMF6 CD8 T cells cancer'"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Genentech",
+        "context": "Mentioned in the context of early peptide response studies (Lelia Delamar).",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How durable is the protection provided by stem-like T cells?",
+      "Do stem-like cells convert quickly to effectors upon tumor entry?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "PI3K delta inhibitor for TIL expansion"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "cancer-vaccines-the-next-immunotherapy-breakthrough::balachandran::4",
+    "talk_metadata": {
+      "speaker_name": "Vinod Balachandran",
+      "institution_or_pharma": "Memorial Sloan Kettering Cancer Center",
+      "session_title": "Cancer Vaccines: The Next Immunotherapy Breakthrough",
+      "talk_title": "Neoantigen Vaccination in Pancreatic Cancer",
+      "rhetorical_signals": [
+        "Correlation does not imply causation",
+        "I think this has not really been exactly known"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Autogene cevumar\u00e1n (in non-responders)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Surgical removal of the spleen (splenectomy) removes the critical driver of the immune response for this platform.",
+        "unexplained_resistance_quote": "most of the non-responders were asplenic at the time of vaccination",
+        "ghost_responder_admission": "10% in fact survive long-term [naturally]",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Autogene cevumar\u00e1n (long-term)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Clonal evolution; outgrowth of cancer clones that do not harbor the targeted neoantigens.",
+        "unexplained_resistance_quote": "resistance appears to occur due to outgrowth of non-vaccine targeted cancer clones",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard neoantigen selection (quantity-based)",
+        "ip_vulnerability_note": "Conventional thinking focuses on mutation quantity (TMB), but the speaker's 'quality model' shows that high-quality neoantigens in low-TMB tumors (PDAC) are the real drivers of survival.",
+        "scale_or_manufacturing_bottleneck": "Current access is limited to lower-risk indications and specific centers; infrastructure for academic-led end-to-end vaccination is missing.",
+        "clinical_strategy_weakness": "Reliance on peripheral blood analysis is insufficient; requires clone-by-clone overlap analysis with tissues to distinguish de novo vs. pre-existing responses."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Causation not yet proven (randomized trial ongoing)",
+        "Role of CD4 T cells in direct killing vs. helper function is unknown"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Using a 'neoantigen quality model' (biophysical characteristics of non-selfness) rather than TMB to select patients for vaccination in 'cold' tumors.",
+        "transcript_evidence": "tumors enriched in high quality, but not quantity neoantigens identified patients with longer survival",
+        "crispro_angle": "Integrate biophysical neoantigen quality scoring into the computational spine to identify targetable antigens in low-TMB cancers.",
+        "external_validation_needed": [
+          "PubMed: 'neoantigen quality model pancreatic cancer'",
+          "ClinicalTrials.gov: check status of Autogene cevumar\u00e1n randomized trial"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "BioNTech",
+        "context": "Partner in manufacturing the custom vaccines.",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "GenTech",
+        "context": "Partner in manufacturing the custom vaccines.",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Do vaccine-induced CD4 T cells directly kill tumor cells or only support CD8s?",
+      "Does cross-reactivity to the wild-type epitope actually help T cell persistence without causing toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Autogene cevumar\u00e1n"
+      ],
+      "companies_to_monitor": [
+        "BioNTech"
+      ]
+    }
+  }
+]

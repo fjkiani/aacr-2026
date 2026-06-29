@@ -1,0 +1,111 @@
+[
+  {
+    "talk_id": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Margie Lee Clapper",
+      "institution_or_pharma": "Fox Chase Cancer Center",
+      "session_title": "cancer-detection-and-interception-across-tumor-types-addressing-modifiable-risk-",
+      "talk_title": "Precision Cancer Prevention: Immunoprevention and p53 Reactivation",
+      "rhetorical_signals": [
+        "Speaker said: \"we have identified an agent which we call REM-491\"",
+        "Speaker said: \"we have not achieved the maximum tolerated dose yet\"",
+        "Speaker said: \"we saw no evidence of adverse effects\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "REM-491",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential lack of target engagement confirmation in vivo",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical mouse efficacy study of REM-491",
+        "target_biology": "Reactivation of mutant p53 across hotspot mutations",
+        "flawed_enrollment_criteria": "Only aggressive tumor models (tail\u2011vein injection) were used, not less aggressive or heterozygous models",
+        "missing_biomarker": "Direct demonstration of compound binding to mutant p53 (target engagement biomarker)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small group sizes, no power calculation reported",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Small\u2011molecule p53 reactivator (REM-491) scaffold",
+        "ip_vulnerability_note": "Speaker disclosed that the lead was identified from a nine\u2011million\u2011compound screen and optimized over 400 analogs, suggesting the core scaffold may be non\u2011proprietary and open to analog development",
+        "scale_or_manufacturing_bottleneck": "No manufacturing scale\u2011up data; dosing >400\u202fmg/kg in mice suggests high required dose",
+        "clinical_strategy_weakness": "Advancing a single agent without clear biomarker\u2011driven patient selection may dilute signal in heterogeneous p53\u2011mutant populations"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed robust CD8 T\u2011cell responses and tumor reduction in an aggressive mouse model, then concluded that the agent is ready for early\u2011phase clinical trials despite lacking target\u2011engagement data"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No target engagement confirmation",
+        "No pharmacodynamic biomarkers reported",
+        "No toxicity data beyond weight monitoring"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can model mutant p53 structural pockets to predict which mutations are most likely to be reactivated by small molecules, guiding optimization of REM-491 analogs",
+        "transcript_evidence": "Speaker said: \"we are using computational approaches using Boltz2 and AlphaFold 3 to further confirm target engagement\"",
+        "crispro_angle": "Use CrisPRO's AI\u2011driven pocket prediction to prioritize compounds that bind the cryptic pocket across diverse p53 mutants",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: structural studies of mutant p53 pockets",
+          "ClinicalTrials.gov: any ongoing p53 reactivator trials"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a pharmacodynamic biomarker (e.g., transcriptional activation signature) to select patients with functional p53 reactivation",
+        "transcript_evidence": "Speaker said: \"we need to show that our drug is actually binding to mutant p53\"",
+        "crispro_angle": "Leverage CrisPRO's gene\u2011expression impact modeling to define a signature of p53 pathway reactivation for patient selection",
+        "priority": "medium",
+        "external_validation_needed": [
+          "TCGA: p53 mutant expression profiles",
+          "Proteomics databases for downstream p53 targets"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PMV Pharmaceuticals",
+        "context": "Mentioned rosatapopt as a p53 Y220C targeting agent with limited response and resistance",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Moderna",
+        "context": "Referenced for mRNA nanoparticle platform used in EGFR vaccine studies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the definitive in vivo target engagement evidence for REM-491?",
+      "Can REM-491 demonstrate efficacy in less aggressive or heterozygous p53 mutant models?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "REM-491",
+        "rosatapopt"
+      ],
+      "companies_to_monitor": [
+        "Fox Chase Cancer Center",
+        "PMV Pharmaceuticals"
+      ]
+    }
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "talk_id": "kurt-schalper-correcting-altered-tumor-immune-cell-interactions-for-anti-cancer-::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Kurt Schalper",
+      "institution_or_pharma": "University of Washington",
+      "session_title": "kurt-schalper-correcting-altered-tumor-immune-cell-interactions-for-anti-cancer-",
+      "talk_title": "Correcting Altered Tumor-Immune Cell Interactions for Anti\u2011Cancer Therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"we could see that when we added both the blocker of IL4 and pembrolizumab, we could significantly increase the activation of CD8 T cells.\"",
+        "Speaker said: \"we did not see that with the downregulation of TAP1 or in patients that were treated with chemotherapy, so this seems to be immunotherapy specific.\"",
+        "Speaker said: \"we actually don't see that. You can see, for example, here, when we treat with cells with IL4, we see a reduction in TAP2. We add cytokines, and we don't restore the level to a normal situation.\"",
+        "Speaker said: \"we found a number of compounds that could upregulate TAP2 without modifying PD\u2011L1.\"",
+        "Speaker said: \"we believe there are good avenues here to use repurposed drugs to be able to treat patients that have defective TAP2 expression.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TAP2 expression (antigen presentation pathway)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "IL\u20114\u2013driven epigenetic silencing of the TAP2 promoter leading to reduced interferon\u2011\u03b3 signaling via SOX1 up\u2011regulation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Planned low\u2011TAP2 enrichment trial (unpublished)",
+        "target_biology": "Restoration of TAP2 to sensitize tumors to PD\u20111 blockade",
+        "flawed_enrollment_criteria": "Enrolling all comers with advanced lung cancer without pre\u2011selecting for low TAP2 expression",
+        "missing_biomarker": "Tumor TAP2 protein/RNA level (or IL\u20114 plasma) as a predictive biomarker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential under\u2011powering because only a minority of patients are expected to have low TAP2",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Epigenetic modulation strategy (HDAC inhibitors, taxanes) to up\u2011regulate TAP2",
+        "ip_vulnerability_note": "Speaker disclosed that the effect is achieved with existing FDA\u2011approved agents, suggesting limited proprietary chemistry",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad use of taxanes/HDAC inhibitors without biomarker\u2011driven patient selection may dilute clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical efficacy data for TAP2\u2011restoring interventions",
+        "No overall survival or randomized comparator data",
+        "Lack of validated circulating or tissue biomarker assay for TAP2 loss"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011based predictive model to identify patients with epigenetically silenced TAP2 (low TAP2 RNA/protein or high IL\u20114) who may benefit from IL\u20114 blockade or TAP2\u2011up\u2011regulating agents.",
+        "transcript_evidence": "Speaker said: \"measuring IL\u20114, which is the main mechanism behind TAP2 loss, is a very viable, reasonable way to do sort of blood, like liquid biopsy type of the testing.\"",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics (ATAC\u2011seq, RNA\u2011seq, proteomics) to generate a composite TAP2\u2011silencing score and predict response to epigenetic or IL\u20114\u2011targeted therapies.",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve enrollment criteria and outcomes for any ongoing IL\u20114R blockade trials in lung cancer",
+          "PubMed: validate IL\u20114\u2013driven TAP2 epigenetic silencing across independent cohorts",
+          "Evaluate commercial IL\u20114R antibody pharmacodynamics"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair TAP2\u2011restoring HDAC inhibitors (e.g., vorinostat) with PD\u20111 blockade to overcome TAP2\u2011mediated resistance.",
+        "transcript_evidence": "Speaker said: \"we found a number of compounds that could upregulate TAP2 without modifying PD\u2011L1\" and \"SAHA could restore the functionality and the tumor antigen\u2011specific killing.\"",
+        "crispro_angle": "CrisPRO can model synergistic effects of epigenetic drugs on TAP2 expression and downstream immune activation to prioritize combination regimens.",
+        "external_validation_needed": [
+          "Check ongoing phase\u202fII trials combining HDAC inhibitors with checkpoint inhibitors in NSCLC",
+          "Review safety data for combined dosing schedules"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Merad group IL\u20114R blockade trial",
+        "context": "clinical data showing benefit of an asthma drug repurposed for lung cancer refractory to checkpoint blockade",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Vorinostat (SAHA)",
+        "context": "HDAC inhibitor identified in screen to up\u2011regulate TAP2 without PD\u2011L1 increase",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the quantitative relationship between plasma IL\u20114 levels and tumor TAP2 silencing?",
+      "Can TAP2 restoration translate into improved overall survival in patients receiving PD\u20111 blockade?",
+      "What are the long\u2011term safety implications of chronic IL\u20114R blockade in cancer patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "IL\u20114R antibody (asthma drug repurposed)",
+        "Vorinostat (SAHA)",
+        "Docetaxel",
+        "Dasatinib"
+      ],
+      "companies_to_monitor": [
+        "Merck",
+        "AstraZeneca",
+        "Novartis"
+      ]
+    }
+  }
+]

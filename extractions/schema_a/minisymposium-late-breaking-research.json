@@ -1,0 +1,590 @@
+[
+  {
+    "talk_id": "minisymposium-late-breaking-research::steele::1",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "The Genomic Landscape of Likely Human Pre-cancers",
+    "speaker": {
+      "name": "Dr. Steele",
+      "affiliation": "unspecified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "pre-cancer samples",
+        "genotype_or_key_features": "33 pre-cancer types, 1,500 samples, WGS/WES data"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Comprehensive genomic profiling of ~1,500 human pre-cancer lesions across 33 tissue types identified high heterogeneity in mutational burden, copy-number alterations, and driver gene alterations, and a random forest model using TMB, ploidy, and genome aberration predicts malignant potential.",
+    "readouts": [
+      "whole_genome_sequencing",
+      "whole_exome_sequencing",
+      "mutational_signature_analysis",
+      "random_forest_model"
+    ],
+    "key_findings": [
+      "Pre-cancer samples exhibited coding mutation counts ranging from <10 to >3,000 across tissue types.",
+      "43% of pre-cancers lacked detectable driver gene alterations compared with 11% in TCGA cancers.",
+      "Tumor mutational burden, ploidy, and percent genome aberrant were the top three features distinguishing cancer-like from precancer-like samples.",
+      "In Barrett's esophagus, the cancer-like score correlated with progression to invasive cancer."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to collect longitudinal clinical outcome data for indolent pre-cancers that never progress?",
+      "What is the role of germline predisposition in pre-cancer genomic signatures?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minisymposium-late-breaking-research::ahad::2",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "Mechanisms of Tumor Dormancy Through Immune Niche Formation and Its Impact on Immune Therapeutic Relapse",
+    "speaker": {
+      "name": "Dr. Ahad",
+      "affiliation": "unspecified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "triple-negative breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "immunotherapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD200",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "dormant TNBC lesions",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Tgp\u2011myeloid knockout mouse with inducible GFP tumor cells",
+        "genotype_or_key_features": "TGF\u2011\u03b2R2 knockout in myeloid cells, disseminated tumor cells"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Dormant tumor cells up\u2011regulate CD200, which engages CD200R on NK cells within a monocyte\u2011neutrophil\u2011NK cell niche, suppressing NK\u2011mediated killing; CD200 knockdown reduces dormant lesions, and anti\u2011CD200 therapy eradicates residual dormant cells after chemotherapy, preventing relapse.",
+    "readouts": [
+      "multiplex_IBEX_imaging",
+      "RNAseq",
+      "IHC",
+      "flow_cytometry",
+      "in_vivo_relapse_models"
+    ],
+    "key_findings": [
+      "Dormant lesions (1\u20118 cells) were enriched for monocytes, neutrophils, dendritic cells, and NK cells, but lacked T cells.",
+      "CD200 expression was high in dormant tumor cells and mediated resistance to NK\u2011cell killing.",
+      "CD200 knockdown reduced dormant lesion burden without affecting proliferative lesions.",
+      "Anti\u2011CD200 antibody combined with cisplatin and anti\u2011PD\u20111 eliminated residual dormant cells and prevented tumor regrowth after therapy withdrawal."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Dormant cells evade immune clearance via CD200\u2011mediated inhibition of NK cells."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cisplatin",
+        "rationale": "Chemotherapy reduces proliferative tumor bulk, leaving dormant cells.",
+        "phenotype": "Residual dormant cells persist; anti\u2011CD200 needed for eradication.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011PD\u20111",
+        "rationale": "Checkpoint blockade enhances T\u2011cell activity; combined with anti\u2011CD200 targets both T\u2011cell and NK\u2011cell pathways.",
+        "phenotype": "Complete elimination of dormant lesions and prevention of relapse.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can CD200 blockade improve outcomes in patients with minimal residual disease after standard therapy?",
+      "What is the relevance of CD200\u2011mediated dormancy in other cancer types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minisymposium-late-breaking-research::wang::3",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "Ligandable PNT Domain Establishes ERG as a Druggable Oncogenic Driver in Prostate Cancer",
+    "speaker": {
+      "name": "Dr. Wang",
+      "affiliation": "University of Michigan / Shanghai Institute of Chemistry",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "small_molecule_inhibitor",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ERG",
+        "alteration": "TMPRSS2\u2011ERG fusion",
+        "pathway": "transcription_factor",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "Pbite\u20111",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ERG\u2011positive prostate cancer (VCaP cells)",
+        "target_novelty": "undruggable_being_addressed"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "VCaP (ERG\u2011positive)",
+        "genotype_or_key_features": "TMPRSS2\u2011ERG fusion"
+      },
+      {
+        "model_type": "organoid",
+        "name": "ERG+ mouse organoid, ERG+ PDX\u2011derived organoid",
+        "genotype_or_key_features": "ERG overexpression"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "VCaP subcutaneous xenograft",
+        "genotype_or_key_features": "ERG+"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Pbite\u20111 binds the PNT domain of ERG with ~28\u202f\u00b5M affinity, stabilizing the protein and disrupting PNT\u2011mediated protein\u2011protein interactions, leading to down\u2011regulation of ERG target genes, induction of apoptosis, and inhibition of invasion in ERG\u2011positive prostate cancer models.",
+    "readouts": [
+      "DSF",
+      "SPR",
+      "cellular_thermal_shift_assay",
+      "biotin_pull_down",
+      "NMR_chemical_shift_perturbation",
+      "RNA_seq",
+      "qPCR",
+      "colony_formation",
+      "TUNEL_IHC"
+    ],
+    "key_findings": [
+      "Pbite\u20111 stabilizes ERG PNT domain in vitro (DSF) and in cells (CETSA) with KD ~28\u202f\u00b5M.",
+      "Biotinylated Pbite\u20111 pulls down full\u2011length ERG but not PNT\u2011deleted fragments, confirming domain specificity.",
+      "Pbite\u20111 selectively reduces viability and induces apoptosis in ERG\u2011positive cell lines and organoids, sparing ERG\u2011negative controls.",
+      "Treatment suppresses ERG\u2011regulated transcriptional programs (MYC, AR, etc.) and inhibits invasion in ERG\u2011overexpressing models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Pbite\u20111 shows modest potency (micromolar) and requires further optimization for clinical translation."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can higher\u2011affinity PNT binders achieve therapeutic efficacy in vivo?",
+      "Will targeting the PNT domain affect other ETS family members and cause off\u2011target effects?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Parabilis Medicine"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minisymposium-late-breaking-research::gao::4",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "Novel Brain\u2011Penetrant BRAF Inhibitor HSK42360 for BRAF\u2011Mutant Glioma",
+    "speaker": {
+      "name": "Dr. Xidong Gao",
+      "affiliation": "HSK Pharmaceutical Group",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "targeted_therapy",
+      "clinical_trial",
+      "brain_penetrant",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "V600E",
+        "pathway": "MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "HSK42360",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRAF\u2011mutant glioma",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "BRAF V600E mutation",
+        "type": "eligibility",
+        "assay": "NGS",
+        "finding": "Patients harboring V600E were enrolled"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HCT116, H1755, H1795",
+        "genotype_or_key_features": "BRAF class I/II/III mutants"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "intracranial A375 CDX, glioma PDX",
+        "genotype_or_key_features": "BRAF V600E"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR (high\u2011grade glioma)",
+        "value": "42.1%",
+        "confidence_interval": "",
+        "n": "n=19",
+        "population": "recurrent high\u2011grade BRAF V600E glioma",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "ORR (low\u2011grade glioma)",
+        "value": "50%",
+        "confidence_interval": "",
+        "n": "n=4",
+        "population": "recurrent low\u2011grade BRAF V600E glioma",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Median PFS",
+        "value": "8.2 months",
+        "confidence_interval": "",
+        "n": "",
+        "population": "overall glioma cohort",
+        "comparator": "dabrafenib+trametinib historical 3.8 months",
+        "maturity": "interim"
+      },
+      {
+        "metric": "CR rate",
+        "value": "15.8%",
+        "confidence_interval": "",
+        "n": "",
+        "population": "high\u2011grade glioma",
+        "comparator": "dabrafenib+trametinib 7%",
+        "maturity": "interim"
+      },
+      {
+        "metric": "TRAEs pyrexia",
+        "value": "5.8%",
+        "confidence_interval": "",
+        "n": "n=69",
+        "population": "treated patients",
+        "comparator": "dabrafenib 28%",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "HSK42360 induces an external rotation of the \u03b1C\u2011helix of BRAF, preventing RAF dimerization and thus avoiding paradoxical MAPK activation; it penetrates the brain (Kp,uu\u202f=\u202f1.1) and shows potent inhibition of class I\u2011III BRAF mutants in vitro and tumor regression in intracranial glioma models.",
+    "readouts": [
+      "cell_viability_assays",
+      "IC50_determination",
+      "brain_plasma_ratio",
+      "survival_studies_in_mice",
+      "radiographic_response_assessment"
+    ],
+    "key_findings": [
+      "HSK42360 does not cause paradoxical MAPK activation in HCT116 cells.",
+      "In vitro IC50s against class II (G469A) and class III (G466V) BRAF mutants ranged from 7.6\u202fnM to 101\u202fnM, outperforming dabrafenib.",
+      "Brain penetration Kp,uu\u202f=\u202f1.1 exceeds the 0.3 threshold for CNS drugs.",
+      "In intracranial A375 CDX mice, HSK42360 significantly prolonged survival.",
+      "In a clinical cohort (n=23), ORR was 42.1% (high\u2011grade) and 50% (low\u2011grade) with durable responses and reduced BRAF\u2011inhibitor toxicities."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "No paradoxical activation observed; activity retained in NRAS\u2011mutant resistant models."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MEK inhibitor",
+        "rationale": "Potential synergistic MAPK pathway blockade.",
+        "phenotype": "Enhanced tumor regression in class II/III BRAF models.",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "EGFR\u2011targeted therapy (cetuximab)",
+        "rationale": "Overcome resistance in CRC models with EGFR activation.",
+        "phenotype": "Tumor control in cetuximab\u2011plus\u2011vemurafenib resistant CRC PDX.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will HSK42360 demonstrate efficacy in BRAF\u2011inhibitor resistant glioma patients?",
+      "Can broader tumor types with BRAF mutations benefit from this brain\u2011penetrant inhibitor?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "HSK Pharmaceutical Group"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minisymposium-late-breaking-research::tan::5",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "Active RAS Inhibition Intercepts Pancreas Cancer in Mice",
+    "speaker": {
+      "name": "Dr. Tan",
+      "affiliation": "unspecified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "preclinical",
+      "cancer_interception",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "RMC-7977 (multi\u2011selective) / RMC-9945 (G12D\u2011selective)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "panIN lesions in KPC mice",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "GEM",
+        "name": "KPC mouse (KRAS G12D + TP53 mutation)",
+        "genotype_or_key_features": "Develops PanIN at 1\u20112\u202fmo, tumors at 3\u20114\u202fmo"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "MRTX1133 (G12D\u2011specific inhibitor) preclinical analog",
+        "genotype_or_key_features": "KRAS G12D"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "RAS inhibitors induce apoptosis of KRAS\u2011mutant PanIN lesions, reducing their number and delaying tumor onset; intermittent metronomic dosing further prolongs latency, demonstrating that early interception of pre\u2011malignant KRAS\u2011driven lesions can extend survival independent of adaptive T\u2011cell immunity.",
+    "readouts": [
+      "CODA 3D histology reconstruction",
+      "IHC for cleaved caspase\u20113",
+      "ultrasound tumor monitoring",
+      "survival curves"
+    ],
+    "key_findings": [
+      "10\u2011day RAS inhibition reduced PanIN lesions from ~400 to significantly fewer in 9\u2011week\u2011old KPC mice.",
+      "RAS inhibition increased cleaved caspase\u20113 in PanIN cells, indicating apoptosis without transdifferentiation.",
+      "Four weeks of RAS inhibition delayed tumor onset and improved overall survival in KPC mice.",
+      "T\u2011cell depletion did not affect the interception benefit, suggesting a T\u2011cell\u2011independent mechanism.",
+      "Metronomic weekly RAS inhibition (1\u202fweek on/1\u202fweek off) delayed tumor onset by >200\u202fdays and extended survival by >1\u202fyear."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Interception efficacy appears independent of immune surveillance."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to translate PanIN interception to high\u2011risk human populations?",
+      "Will long\u2011term intermittent RAS inhibition be safe in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "minisymposium-late-breaking-research::wolpin::6",
+    "session_title": "minisymposium-late-breaking-research",
+    "talk_title": "Phase 1/2 Study of Deruxnaratib with Gemcitabine and Nab\u2011Paclitaxel in First\u2011Line Metastatic Pancreatic Cancer",
+    "speaker": {
+      "name": "Dr. Wolpin",
+      "affiliation": "Revolution Medicines",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "clinical_trial",
+      "targeted_therapy",
+      "combination_therapy",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D/G12V/G12R",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "deruxnaratib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "metastatic PDAC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "KRAS mutant allele fraction (ctDNA)",
+        "type": "pharmacodynamic",
+        "assay": "ctDNA NGS",
+        "finding": "96% of patients achieved \u226550% reduction; 61% cleared ctDNA"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "GI102 sub\u2011protocol C (dose level 1B)",
+        "genotype_or_key_features": "40 pts, KRAS G12D/V/R, first\u2011line metastatic PDAC"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "58%",
+        "confidence_interval": "",
+        "n": "n=40",
+        "population": "first\u2011line metastatic PDAC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "DCR",
+        "value": "90%",
+        "confidence_interval": "",
+        "n": "n=40",
+        "population": "first\u2011line metastatic PDAC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "6\u2011month PFS landmark",
+        "value": "84%",
+        "confidence_interval": "",
+        "n": "",
+        "population": "first\u2011line metastatic PDAC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "6\u2011month OS landmark",
+        "value": "90%",
+        "confidence_interval": "",
+        "n": "",
+        "population": "first\u2011line metastatic PDAC",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Grade \u22653 rash",
+        "value": "10\u201115%",
+        "confidence_interval": "",
+        "n": "n=40",
+        "population": "treatment\u2011related AEs",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Deruxnaratib binds cyclophilin\u202fA and forms a complex that sterically blocks effector binding to GTP\u2011bound KRAS (codons 12,13,61 and WT), suppressing MAPK signaling; combined with gemcitabine/nab\u2011paclitaxel, it yields high response rates and deep ctDNA reductions in KRAS\u2011mutant PDAC.",
+    "readouts": [
+      "CT imaging",
+      "RECIST assessments",
+      "ctDNA sequencing",
+      "CTCAE grading"
+    ],
+    "key_findings": [
+      "Confirmed ORR of 58% and DCR of 90% in 40 first\u2011line PDAC patients receiving deruxnaratib\u202f+\u202fgemcitabine/nab\u2011paclitaxel.",
+      "Six\u2011month landmark PFS and OS were 84% and 90%, respectively, exceeding historical chemotherapy benchmarks.",
+      "96% of evaluable patients achieved \u226550% reduction in KRAS ctDNA; 61% cleared detectable KRAS mutation.",
+      "Grade\u202f\u22653 rash occurred in ~10\u201115% of patients; overall safety profile was manageable with dose reductions."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "gemcitabine + nab\u2011paclitaxel",
+        "rationale": "Standard chemotherapy backbone to enhance tumor kill while KRAS inhibition blocks MAPK signaling.",
+        "phenotype": "High ORR and durable disease control in KRAS\u2011mutant PDAC.",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Will maintenance deruxnaratib after chemotherapy improve long\u2011term outcomes?",
+      "How does efficacy differ among KRAS alleles (G12D vs G12V vs G12R)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT???"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Revolution Medicines"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

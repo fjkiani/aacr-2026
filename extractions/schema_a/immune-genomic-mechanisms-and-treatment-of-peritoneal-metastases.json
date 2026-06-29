@@ -1,0 +1,453 @@
+[
+  {
+    "talk_id": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases::ra::1",
+    "session_title": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases",
+    "talk_title": "Multimodal Treatment Strategies and Spatial Niche in Gastric Cancer Peritoneal Metastasis",
+    "speaker": {
+      "name": "Sun Young Ra",
+      "affiliation": "Yonsei Cancer Center, Department of Medical Oncology, South Korea",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "gastric cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "spatial_biology",
+      "translational",
+      "clinical_trial",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "FGFR2",
+        "alteration": "amplification",
+        "pathway": "FGF signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "peritoneal metastasis of gastric cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "COL1A1",
+        "alteration": "",
+        "pathway": "extracellular matrix",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "fibroblast-rich peritoneal lesions",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HER2 status",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "HER2\u2011positive patients had ~15% peritoneal involvement versus ~75% in HER2\u2011negative"
+      },
+      {
+        "name": "CMS-like genomic stable subtype",
+        "type": "exploratory",
+        "assay": "bulk RNA\u2011seq",
+        "finding": "Enriched in peritoneal metastases with EMT and stem\u2011cell signatures"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Stage IV gastric cancer real\u2011world cohort",
+        "genotype_or_key_features": "n=3,200 cases (2015\u20112025), 70.8% peritoneal involvement"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Primary tumor and peritoneal metastasis paired samples",
+        "genotype_or_key_features": "633 primary tumors, 39 peritoneal metastasis tissues"
+      },
+      {
+        "model_type": "spatial_transcriptomics",
+        "name": "Yonsei Cancer Center Translation Research Platform (Xenium 5K)",
+        "genotype_or_key_features": "9 paired primary\u2011peritoneal cases, HER2\u2011negative, polycohesive histology"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Peritoneal metastasis incidence",
+        "value": "70.8%",
+        "confidence_interval": "",
+        "n": "n=3,200 stage IV gastric cancer patients",
+        "population": "overall stage IV gastric cancer cohort",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "HER2\u2011positive peritoneal involvement",
+        "value": "\u224850%",
+        "confidence_interval": "",
+        "n": "n=15% of cohort HER2\u2011positive",
+        "population": "HER2\u2011positive gastric cancer patients",
+        "comparator": "HER2\u2011negative patients (75% involvement)",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Spatial transcriptomics of matched primary and peritoneal gastric cancer lesions revealed a fibroblast\u2011rich, dense extracellular matrix niche that physically shields tumor cells from immune effector cells and limits drug delivery. FGFR2 amplification and collagen/ECM\u2011related pathways are up\u2011regulated in peritoneal deposits, while immune\u2011checkpoint activation is reduced, suggesting that CAF\u2011mediated barrier formation drives immune evasion and therapeutic resistance in gastric cancer peritoneal metastasis.",
+    "readouts": [
+      "bulk RNA\u2011seq",
+      "single\u2011cell RNA\u2011seq",
+      "spatial transcriptomics (Xenium)",
+      "NMF pattern analysis",
+      "IHC",
+      "clinical survival analysis"
+    ],
+    "key_findings": [
+      "Peritoneal metastasis occurred in 70.8% of stage\u202fIV gastric cancer patients (n=3,200) and was associated with markedly poorer overall survival compared with lymph\u2011node\u2011only disease.",
+      "HER2\u2011negative gastric cancers showed a higher peritoneal metastasis rate (\u224875%) than HER2\u2011positive cases (\u224850%).",
+      "FGFR2 amplification was significantly enriched in peritoneal metastasis tissues versus primary tumors, suggesting a potential therapeutic target.",
+      "Spatial profiling identified four CAF subtypes (remodeling, immune\u2011controlling, mesothelial, stress\u2011related) with remodeling and immune\u2011controlling CAFs markedly increased in peritoneal lesions.",
+      "Peritoneal lesions exhibited higher fibroblast, endothelial, macrophage, and T\u2011cell infiltration but reduced T\u2011cell activation and granzyme expression, indicating an immunosuppressive microenvironment.",
+      "Antigen\u2011presentation genes (e.g., cloudin) were down\u2011regulated in peritoneal metastases, implying reduced efficacy of cloudin\u2011targeted ADCs in this compartment."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "Dense CAF\u2011derived extracellular matrix physically blocks immune cell contact and drug penetration, contributing to resistance.",
+      "Down\u2011regulation of cloudin and other ADC targets in peritoneal lesions suggests loss of target expression limits efficacy of ADCs."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can CAF\u2011targeting agents or matrix\u2011modulating therapies improve drug delivery and immune infiltration in gastric peritoneal metastasis?",
+      "What is the optimal timing and modality (systemic vs intraperitoneal) for delivering FGFR2\u2011directed therapies?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Aptis",
+        "Genios"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases::sundar::2",
+    "session_title": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases",
+    "talk_title": "Molecular Heterogeneity in Colorectal Peritoneal Metastasis",
+    "speaker": {
+      "name": "Raghav Sundar",
+      "affiliation": "Yale University, Department of Medicine, GI Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "clinical_trial",
+      "translational",
+      "combination_therapy",
+      "resistance_mechanisms"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CMS4 colorectal peritoneal metastases",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA damage response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colorectal peritoneal metastases",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TGF\u2011beta",
+        "alteration": "",
+        "pathway": "TGF\u2011beta signaling",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CMS4 stromal subtype",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Consensus Molecular Subtype 4 (CMS4)",
+        "type": "predictive",
+        "assay": "RNA\u2011seq classification",
+        "finding": "Enriched in peritoneal metastases; associated with poorer overall survival versus CMS1\u20113"
+      },
+      {
+        "name": "Moesin expression",
+        "type": "exploratory",
+        "assay": "IHC / proteomics",
+        "finding": "Up\u2011regulated in peritoneal lesions; targeting moesin reduced tumor burden in preclinical models"
+      },
+      {
+        "name": "PAI\u20111 (SERPINE1)",
+        "type": "exploratory",
+        "assay": "RNA\u2011seq / protein",
+        "finding": "Elevated in CMS4 peritoneal metastases; anti\u2011PAI\u20111 antibody showed activity in mouse peritoneal models"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Colorectal peritoneal metastasis cohort",
+        "genotype_or_key_features": "\u2248120 patients, 200+ samples, 30\u201140 paired primary\u2011peritoneal specimens"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "CMS\u2011classified colorectal cancer cell lines",
+        "genotype_or_key_features": "CMS4 vs CMS1\u20113, tested with Mitomycin C and Oxaliplatin"
+      },
+      {
+        "model_type": "other",
+        "name": "Moesin and PAI\u20111 preclinical mouse models",
+        "genotype_or_key_features": "Peritoneal tumor implantation, therapeutic antibody testing"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival difference by CMS subtype",
+        "value": "HR 0.56",
+        "confidence_interval": "95% CI 0.38\u20110.82",
+        "n": "n=120 peritoneal patients",
+        "population": "CMS4 vs non\u2011CMS4 colorectal peritoneal metastasis",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Response of CMS4 cell lines to HIPEC agents",
+        "value": "Mitomycin C IC50 2\u2011fold lower than Oxaliplatin",
+        "confidence_interval": "",
+        "n": "n=6 CMS4 cell lines",
+        "population": "in vitro drug sensitivity",
+        "comparator": "non\u2011CMS4 cell lines",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Colorectal peritoneal metastases are highly enriched for the mesenchymal CMS4 subtype, characterized by TGF\u2011\u03b2 activation, stromal infiltration, and EMT. Multi\u2011omic profiling shows that CMS4 tumors retain the same driver mutations as primaries but undergo transcriptional reprogramming and distinct microenvironmental remodeling, leading to resistance to standard HIPEC agents. Targeting stromal components such as moesin or PAI\u20111 may overcome this resistance.",
+    "readouts": [
+      "bulk RNA\u2011seq",
+      "multi\u2011omic profiling (DNA, RNA, proteomics)",
+      "cell line drug screens",
+      "IHC",
+      "mouse peritoneal tumor models"
+    ],
+    "key_findings": [
+      "CMS4 is significantly over\u2011represented in colorectal peritoneal metastases compared with primary tumors and liver metastases.",
+      "Within CMS4, three molecular subgroups (RAS\u2011mutated mucinous, inflamed, and others) exhibit distinct RAS/TP53 mutation patterns and microenvironment compositions.",
+      "Genomic landscapes (TP53, APC, KRAS) are largely conserved between primary and peritoneal lesions, indicating polyclonal seeding rather than subclonal divergence.",
+      "CMS4 peritoneal metastases display poor prognosis (HR\u202f0.56 vs non\u2011CMS4) and are less responsive to oxaliplatin\u2011based HIPEC, but show greater sensitivity to mitomycin C in vitro.",
+      "Targeting stromal proteins moesin or PAI\u20111 with monoclonal antibodies reduced tumor burden in preclinical peritoneal models, suggesting a novel therapeutic avenue."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Oxaliplatin\u2011based HIPEC shows limited efficacy in CMS4 peritoneal metastases, likely due to stromal barrier and drug penetration issues.",
+      "Poly\u2011clonal seeding leads to heterogeneous therapeutic vulnerabilities, reducing the effectiveness of single\u2011target agents."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "Mitomycin C",
+        "rationale": "CMS4 tumors are more sensitive to mitomycin C than oxaliplatin in vitro",
+        "phenotype": "Improved cytotoxicity in CMS4 cell lines (2\u2011fold lower IC50)",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Anti\u2011PAI\u20111 monoclonal antibody",
+        "rationale": "PAI\u20111 is up\u2011regulated in CMS4 peritoneal lesions and drives stromal remodeling",
+        "phenotype": "Reduced tumor burden in mouse peritoneal model",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can CMS4 classification be reliably performed on limited peritoneal biopsy material to guide therapy?",
+      "Will combining stromal\u2011targeted agents with systemic chemotherapy improve overall survival in CMS4 patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases::garcia::3",
+    "session_title": "immune-genomic-mechanisms-and-treatment-of-peritoneal-metastases",
+    "talk_title": "Mutational Signatures and Cellular Phenotypes in Ovarian Peritoneal Metastasis",
+    "speaker": {
+      "name": "Ignacio Garcia",
+      "affiliation": "Massachusetts General Hospital, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "ovarian cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "DNA_damage_repair",
+      "immunotherapy",
+      "spatial_biology",
+      "tumor_microenvironment",
+      "basic_science",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRCA1",
+        "alteration": "",
+        "pathway": "homologous recombination",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HR\u2011deficient ovarian peritoneal metastasis",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRCA2",
+        "alteration": "",
+        "pathway": "homologous recombination",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HR\u2011deficient ovarian peritoneal metastasis",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "cGAS",
+        "alteration": "",
+        "pathway": "cGAS\u2011STING innate immunity",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "genome\u2011doubled ovarian cancer cells",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "HR deficiency (HRD\u2011DUP/HRD\u2011DEL signatures)",
+        "type": "predictive",
+        "assay": "whole\u2011genome sequencing signatures",
+        "finding": "HRD tumors show higher type\u2011I interferon and JAK\u2011STAT signaling and more HLA loss"
+      },
+      {
+        "name": "6p LOH (HLA loss)",
+        "type": "resistance",
+        "assay": "single\u2011cell RNA\u2011seq inferred copy\u2011number",
+        "finding": "Clonal 6p loss enriched in BRCA1\u2011like HRD\u2011DUP tumors, associated with T\u2011cell dysfunction"
+      },
+      {
+        "name": "PD\u20111/PD\u2011L1 proximity interactions",
+        "type": "exploratory",
+        "assay": "multiplex immunofluorescence (Aquaria BioVector)",
+        "finding": "Higher PD\u20111/PD\u2011L1 contacts in HRD\u2011DUP tumors versus HR\u2011proficient (FBI) tumors"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "High\u2011grade serous ovarian cancer cohort",
+        "genotype_or_key_features": "\u224841 patients, primary and peritoneal metastasis samples, ascites"
+      },
+      {
+        "model_type": "single_cell",
+        "name": "scRNA\u2011seq of tumor and immune cells",
+        "genotype_or_key_features": "Cell\u2011type clusters linked to HR status and anatomical site"
+      },
+      {
+        "model_type": "single_cell",
+        "name": "scWGS (single\u2011cell whole\u2011genome sequencing)",
+        "genotype_or_key_features": "Hundreds of thousands of cells across 40+ patients, ploidy and chromosome missegregation profiling"
+      },
+      {
+        "model_type": "other",
+        "name": "Multiplex IF for cGAS\u2011positive micronuclei",
+        "genotype_or_key_features": "Quantifies cytosolic DNA in genome\u2011doubled vs diploid cells"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival by HR status",
+        "value": "HR\u2011deficient patients have better OS than HR\u2011proficient",
+        "confidence_interval": "",
+        "n": "n=41",
+        "population": "high\u2011grade serous ovarian cancer",
+        "comparator": "HR\u2011proficient cohort",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Whole\u2011genome signatures separate HR\u2011deficient (BRCA1/2\u2011like) from HR\u2011proficient ovarian tumors. HR\u2011deficient peritoneal metastases display heightened interferon/JAK\u2011STAT signaling, increased antigen presentation, and frequent clonal loss of HLA (6p LOH), leading to T\u2011cell dysfunction. Genome doubling is universal, generating ongoing chromosome missegregation and micronuclei; however, genome\u2011doubled cells down\u2011regulate cGAS\u2011STING signaling to tolerate instability, shaping immune evasion in the peritoneal niche.",
+    "readouts": [
+      "bulk WGS",
+      "scRNA\u2011seq",
+      "scWGS",
+      "multiplex immunofluorescence",
+      "cGAS micronucleus imaging",
+      "PD\u20111/PD\u2011L1 proximity analysis"
+    ],
+    "key_findings": [
+      "\u224850% of high\u2011grade serous ovarian cancers are HR\u2011deficient, identifiable by tandem\u2011duplication (BRCA1\u2011like) or interstitial deletion (BRCA2\u2011like) signatures.",
+      "HR\u2011deficient tumors up\u2011regulate type\u2011I interferon and JAK\u2011STAT pathways and show higher expression of antigen\u2011presentation machinery compared with HR\u2011proficient (FBI) tumors.",
+      "Clonal 6p LOH (HLA loss) is enriched in BRCA1\u2011like HRD\u2011DUP tumors and correlates with increased T\u2011cell dysfunction.",
+      "All tumors contain genome\u2011doubled cells; genome doubling drives extensive cell\u2011specific aneuploidies and micronucleus formation.",
+      "cGAS\u2011positive micronuclei are abundant in diploid cells but inversely correlated with cGAS\u2011STING signaling in genome\u2011doubled cells, suggesting adaptive suppression of innate immunity.",
+      "Multiplex IF reveals significantly more PD\u20111/PD\u2011L1 proximal interactions in HRD\u2011DUP tumors, indicating a distinct immune checkpoint landscape."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Clonal HLA loss (6p LOH) provides a mechanism of immune escape in HR\u2011deficient peritoneal lesions.",
+      "Genome doubling suppresses cGAS\u2011STING signaling, allowing cells with high chromosomal instability to survive."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "TGF\u2011beta inhibitor",
+        "rationale": "HR\u2011proficient (FBI) tumors exhibit immunosuppressive TGF\u2011beta programs",
+        "phenotype": "Potential re\u2011activation of anti\u2011tumor immunity in HR\u2011proficient peritoneal metastases",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "PD\u20111/PD\u2011L1 blockade",
+        "rationale": "Increased PD\u20111/PD\u2011L1 interactions in HRD\u2011DUP tumors suggest checkpoint dependence",
+        "phenotype": "Enhanced T\u2011cell activation in preclinical models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What determines the selective suppression of cGAS\u2011STING signaling after genome doubling?",
+      "Can HLA loss be reversed or compensated to restore immunogenicity in HR\u2011deficient lesions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

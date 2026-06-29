@@ -1,0 +1,377 @@
+[
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::reznik::1",
+    "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+    "talk_title": "EHR-based phenotyping of cancer cachexia and identification of anatomical subtypes",
+    "speaker": {
+      "name": "Ed Reznik",
+      "affiliation": "Memorial Sloan Kettering Cancer Center, Computational Oncology Lab",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "melanoma",
+      "pancreatic cancer",
+      "colon adenocarcinoma",
+      "kidney cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "translational",
+      "basic_science",
+      "biomarker_development",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "multiple adenocarcinomas",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "P53 mutation",
+        "type": "predictive",
+        "assay": "genomic sequencing",
+        "finding": "significant association with increased risk of cachexia (p<0.001) across diseases"
+      },
+      {
+        "name": "Neutrophil to lymphocyte ratio (NLR)",
+        "type": "pharmacodynamic",
+        "assay": "blood count",
+        "finding": "type A cachexia patients show marked increase in NLR during cachexia episode"
+      },
+      {
+        "name": "Albumin",
+        "type": "pharmacodynamic",
+        "assay": "serum chemistry",
+        "finding": "albumin declines during cachexia, reaching hypoalbuminemia in type A patients"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK EHR weight trajectory cohort",
+        "genotype_or_key_features": "60,000 patients with longitudinal weight data, 5,000 with paired pre/post CT"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Reznik's group defined cachexia windows using longitudinal weight loss criteria in EHR data, aligned these windows with serologic, imaging, and genomic measurements, and identified three CT-based anatomical subtypes (A, B, C) distinguished by organ volume changes and systemic inflammation, with TP53 mutations emerging as a genomic risk factor when modeled as a time-to-event.",
+    "readouts": [
+      "weight trajectory analysis",
+      "mixed effects modeling of labs",
+      "CT body composition segmentation (OSNIR)",
+      "genomic association (log\u2011p values)",
+      "NLR longitudinal plots"
+    ],
+    "key_findings": [
+      "Implemented a 5% weight loss over 6\u2011month EHR algorithm to define cachexia windows in >60,000 cancer patients.",
+      "Found ~30% prevalence of cachexia episodes in melanoma and high prevalence in pancreatic cancer.",
+      "Identified three CT\u2011based cachexia subtypes: Type A (fat loss + spleen/liver enlargement), Type B (fat loss + organ atrophy and radiodensity increase), Type C (mixed).",
+      "Type A subtype associated with worst overall survival across diseases.",
+      "TP53 mutation is the most significant genomic correlate of cachexia risk when modeled as a time\u2011to\u2011event, validated in an independent cohort.",
+      "Type A patients exhibit rising NLR and dropping albumin during cachexia episodes, indicating systemic inflammation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What molecular mechanisms drive the divergent organ volume changes in cachexia subtypes?",
+      "Can early detection of the Type A inflammatory signature guide therapeutic intervention?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::dunn::2",
+    "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+    "talk_title": "Observational study of cachexia phenotypes using patient-reported outcomes and biomarkers",
+    "speaker": {
+      "name": "Richard Dunn",
+      "affiliation": "University of Rochester Medical Center, GI Oncology",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "pancreatic cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "clinical_trial",
+      "biomarker_development",
+      "patient_reported_outcomes",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GDF15",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "ponatugumab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "elevated serum GDF15 in cachectic patients",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "GDF15",
+        "type": "predictive",
+        "assay": "serum ELISA",
+        "finding": "higher levels in high symptom burden cachexia cluster"
+      },
+      {
+        "name": "IL6",
+        "type": "predictive",
+        "assay": "serum cytokine panel",
+        "finding": "elevated in high symptom burden cluster"
+      },
+      {
+        "name": "IL8",
+        "type": "predictive",
+        "assay": "serum cytokine panel",
+        "finding": "elevated in high symptom burden cluster"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "Lotus study",
+        "genotype_or_key_features": "\u22481,000 patients with advanced lung, pancreatic, or colorectal cancer, longitudinal PROs, imaging, blood, and tumor tissue"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "UNCOVER study",
+        "genotype_or_key_features": "\u2248800 patients, similar protocol, Kaiser Permanente"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "weight loss at enrollment",
+        "value": "\u22655% body weight",
+        "confidence_interval": "",
+        "n": "\u224850% of Lotus cohort",
+        "population": "advanced lung, pancreatic, colorectal cancer patients",
+        "comparator": "",
+        "maturity": "baseline"
+      },
+      {
+        "metric": "progression-free survival at 3 months",
+        "value": "shorter in high symptom burden cluster",
+        "confidence_interval": "",
+        "n": "subset of high symptom burden patients",
+        "population": "weight loss cohort",
+        "comparator": "low symptom burden cluster",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Dunn presented the design and early baseline findings of two prospective observational cohorts (Lotus and UNCOVER) that longitudinally collect patient-reported outcomes, body composition imaging, and blood/tumor biomarkers to identify cachexia phenotypes; preliminary symptom clustering revealed high\u2011symptom and low\u2011symptom groups, with the high\u2011symptom group showing elevated GDF15, IL\u20116, and IL\u20118 and worse early disease progression.",
+    "readouts": [
+      "patient-reported outcome questionnaires",
+      "body composition CT analysis",
+      "serum cytokine panels",
+      "GDF15 ELISA",
+      "clinical outcomes (PFS, OS)"
+    ],
+    "key_findings": [
+      "Enrolled ~1,000 patients in Lotus (U Rochester) and ~800 in UNCOVER (Kaiser) to prospectively phenotype cachexia.",
+      "Baseline: >50% of patients already have \u22655% weight loss; pancreatic cancer patients show highest prevalence.",
+      "Symptom clustering identified three groups: low symptom burden (similar to weight\u2011stable), high symptom burden (fatigue, anorexia, emotional distress), and intermediate.",
+      "High symptom burden cluster associated with higher serum GDF15, IL\u20116, and IL\u20118 levels.",
+      "Patients in high symptom burden cluster had lower physical activity, higher appetite stimulant use, and higher 3\u2011month disease progression rates.",
+      "Preliminary data suggest that symptom clusters may correlate with body\u2011composition clusters (e.g., low symptom = minimal wasting)."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "ponatugumab (anti\u2011GDF15)",
+        "rationale": "Targeting elevated GDF15 may improve weight and activity in a molecularly defined cachexia subtype",
+        "phenotype": "weight gain and increased physical activity in phase\u20112 trial",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Do symptom\u2011based clusters align with the CT\u2011based anatomical subtypes described by Reznik?",
+      "Can early GDF15 elevation predict response to anti\u2011GDF15 therapy across tumor types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "clinical-and-molecular-phenotyping-of-cancer-cachexia::gonsalves::3",
+    "session_title": "clinical-and-molecular-phenotyping-of-cancer-cachexia",
+    "talk_title": "Prostaglandin E2\u2013driven cachexia and immunotherapy resistance in lung cancer models",
+    "speaker": {
+      "name": "Dr. Gonsalves",
+      "affiliation": "New York University School of Medicine, Cancer Immunology Lab",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "basic_science",
+      "preclinical",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PTGES",
+        "alteration": "",
+        "pathway": "prostaglandin_synthesis",
+        "modality": "CRISPR_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS/LKB1 mutant lung tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PTGS2",
+        "alteration": "",
+        "pathway": "prostaglandin_synthesis",
+        "modality": "CRISPR_knockout",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "C26 cachectic colon carcinoma cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Prostaglandin E2 (PGE2)",
+        "type": "exploratory",
+        "assay": "mass spectrometry of tumor lysate / BAL fluid",
+        "finding": "significantly higher in cachectic mice and in BAL fluid of cachectic lung cancer patients"
+      },
+      {
+        "name": "PD\u2011L1 expression",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "high PD\u2011L1 tumors enriched in patients whose cachexia reversed with ICI therapy"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "GEM",
+        "name": "KL mouse (KRAS^G12D; LKB1 loss)",
+        "genotype_or_key_features": "KRAS activating mutation + LKB1 loss, develops lung tumors and cachexia in ~80% of mice"
+      },
+      {
+        "model_type": "allograft",
+        "name": "C26 cachectic colon carcinoma line",
+        "genotype_or_key_features": "cachectic inducing vs non\u2011cachectic variant"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "NYU advanced lung adenocarcinoma ICI cohort",
+        "genotype_or_key_features": "serial weight data, PD\u2011L1 status, outcomes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "shorter in cachexia\u2011continued group",
+        "confidence_interval": "",
+        "n": "n=?? (cohort size not specified)",
+        "population": "lung adenocarcinoma patients on ICI",
+        "comparator": "cachexia reversed group",
+        "maturity": "interim"
+      },
+      {
+        "metric": "partial response rate",
+        "value": "100% in cachexia reversed group",
+        "confidence_interval": "",
+        "n": "",
+        "population": "ICI\u2011treated lung adenocarcinoma patients",
+        "comparator": "cachexia continued group",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Gonsalves demonstrated that elevated prostaglandin E2 production by tumor\u2011associated neutrophils and tumor cells drives cachexia and impairs anti\u2011PD\u2011L1 efficacy; CRISPR\u2011mediated knockdown of PTGES or PTGS2 reduces PGE2, delays weight loss in KRAS/LKB1 mouse models and C26 allografts, linking PGE2 to both wasting and immunotherapy resistance, with dysbiotic lung microbiota further amplifying neutrophil activation.",
+    "readouts": [
+      "body weight monitoring",
+      "tumor volume measurement",
+      "survival curves",
+      "PGE2 quantification (mass spec)",
+      "single\u2011cell RNA\u2011seq of tumor and BAL cells",
+      "16S bacterial profiling",
+      "IL\u20116 family cytokine panels"
+    ],
+    "key_findings": [
+      "In KRAS/LKB1 (KL) lung cancer mice, ~80% develop cachexia with up to 20% weight loss; non\u2011cachectic littermates retain weight despite similar tumor burden.",
+      "Cachectic mice show higher tumor and serum IL\u20116 family cytokines and enrichment of arginase\u2011positive macrophages and prostaglandin\u2011producing neutrophils.",
+      "Prostaglandin E2 levels are markedly increased in cachectic mouse tumors and in bronchoalveolar lavage fluid of cachectic lung cancer patients.",
+      "CRISPR knockdown of PTGES in KL tumors suppresses PGE2 and significantly delays cachexia onset.",
+      "CRISPR knockout of PTGS2 in C26 cachectic cells eliminates tumor PGE2 and protects mice from weight loss.",
+      "Lung tumor dysbiosis (higher 16S density) correlates with cachexia and neutrophil infiltration; introducing dysbiotic bacteria to non\u2011cachectic tumor\u2011bearing mice induces weight loss.",
+      "Clinical cohort analysis shows cachexia reversal after ICI correlates with high PD\u2011L1 expression and partial responses, whereas continued cachexia associates with progressive disease and early death."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Cachectic mice exhibit resistance to anti\u2011PD\u2011L1 therapy despite similar tumor burden.",
+      "Neutrophil\u2011derived PGE2 appears to mediate both muscle wasting and immune suppression."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "DPP1 inhibitor (neutrophil depletion)",
+        "rationale": "Reduce neutrophil numbers that produce PGE2 and suppress immunity",
+        "phenotype": "preclinical testing ongoing",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "COX\u20112 selective inhibitor (celecoxib)",
+        "rationale": "Block prostaglandin synthesis upstream of PGE2",
+        "phenotype": "potential to mitigate cachexia, but safety concerns noted",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "Sensory neuron PGE2 receptor antagonist",
+        "rationale": "Block central appetite suppression without systemic NSAID toxicity",
+        "phenotype": "preclinical proof\u2011of\u2011concept",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will pharmacologic inhibition of PGE2 restore anti\u2011PD\u2011L1 efficacy in cachectic tumor models?",
+      "What is the relative contribution of tumor\u2011derived vs. neutrophil\u2011derived PGE2 to systemic wasting?",
+      "Can modulation of lung microbiota prevent neutrophil activation and cachexia development?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

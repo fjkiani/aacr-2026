@@ -1,0 +1,444 @@
+[
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::axelrod::1",
+    "session_title": "genetic-and-environmental-determinants-of-cancer",
+    "talk_title": "Distinguishing selection in normal tissues from cancer causation",
+    "speaker": {
+      "name": "Kamila Axelrod",
+      "affiliation": "Harvard Medical School, Department of Genetics",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "esophageal squamous cell carcinoma",
+      "acute myeloid leukemia",
+      "breast cancer",
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "basic_science",
+      "computational",
+      "cancer_genetics",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "esophageal SCC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "NOTCH1",
+        "alteration": "",
+        "pathway": "cell_fate",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "esophageal SCC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PIK3CA",
+        "alteration": "",
+        "pathway": "PI3K/AKT",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "esophageal SCC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Axelrod presented a quantitative framework that compares mutation frequencies in cancers (Y) to frequencies in matched normal tissues (X) to compute a carcinogenic effect (odds ratio). Using esophageal SCC, AML and other cancers, she showed that some canonical drivers (e.g., TP53) have high carcinogenic effects, whereas others (e.g., NOTCH1, PIK3CA) appear neutral or even cancer\u2011inhibiting, indicating that positive selection in normal tissues can distort perceived driver status.",
+    "readouts": [
+      "whole_genome_sequencing",
+      "bioRxiv_preprint_analysis",
+      "age_distribution_plots"
+    ],
+    "key_findings": [
+      "Carcinogenic effect is calculated as the odds ratio of cancer vs. normal tissue mutation frequencies.",
+      "TP53 shows a carcinogenic effect in the thousands in esophageal SCC, confirming strong driver status.",
+      "NOTCH1 mutations are more frequent in normal esophagus than in cancer, suggesting a tumor\u2011inhibiting role.",
+      "PIK3CA, FAD1, EP300 show low carcinogenic effects, indicating limited contribution to malignancy.",
+      "In AML, classic drivers (e.g., FLT3) have high carcinogenic effects, while TET2/DNMT3A have low effects."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can age\u2011dependent mutation frequency be used prospectively to identify high\u2011risk individuals?",
+      "How do environmental exposures alter the normal\u2011tissue mutation frequencies used in the model?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Gu et al. 2023 Nat Genet"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::balmain::2",
+    "session_title": "genetic-and-environmental-determinants-of-cancer",
+    "talk_title": "Clonal evolution and promotion in mouse skin carcinogenesis",
+    "speaker": {
+      "name": "Alan Balmain",
+      "affiliation": "University of California, San Francisco, Helen Diller Family Comprehensive Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "skin squamous cell carcinoma (mouse model)"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "immunology",
+      "basic_science",
+      "combination_therapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "HRAS",
+        "alteration": "Q61L",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mouse skin",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mouse skin",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G13R",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mouse skin",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "DMBA/TPA skin carcinogenesis model",
+        "genotype_or_key_features": "wild\u2011type, HRAS\u2011/\u2011 knockout, various spontaneous RAS mutations"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor incidence",
+        "value": "90% of tumors harbor HRAS Q61L",
+        "confidence_interval": "",
+        "n": "n=10 mice per group",
+        "population": "DMBA+TPA treated wild\u2011type mice",
+        "comparator": "HRAS\u2011/\u2011 mice",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "tumor incidence in HRAS\u2011/\u2011 mice",
+        "value": "few tumors, but 30% KRAS G13R in benign, higher in malignant",
+        "confidence_interval": "",
+        "n": "n=10 HRAS\u2011/\u2011 mice",
+        "population": "HRAS knockout mice with DMBA+TPA",
+        "comparator": "wild\u2011type",
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Balmain demonstrated that initiating mutations (e.g., DMBA\u2011induced HRAS Q61L) persist as latent clones for months, but tumor formation requires a promoting inflammatory stimulus (TPA). Promotion drives clonal expansion of specific RAS mutants, with immune cell infiltration (neutrophils, monocytes) being essential; HRAS and KRAS mutants compete for clonal dominance, and HRAS loss reveals KRAS\u2011driven tumors.",
+    "readouts": [
+      "twin\u2011strand sequencing",
+      "single\u2011cell RNA\u2011seq",
+      "mutational signature analysis",
+      "histology"
+    ],
+    "key_findings": [
+      "A single DMBA dose creates ~30,000\u201350,000 mutations, including HRAS Q61L, which remains latent for up to a year.",
+      "TPA promotion induces massive clonal expansion of HRAS Q61L, accounting for >90% of tumors.",
+      "Spontaneous KRAS G12D/G13R clones expand with TPA but disappear unless HRAS is knocked out.",
+      "HRAS knockout mice develop KRAS\u2011driven tumors, revealing competitive clonal interactions.",
+      "Promotion requires innate immune cells; NSG mice (immune\u2011deficient) develop few tumors."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "HRAS and KRAS mutants show reciprocal competition; removal of HRAS permits KRAS\u2011driven tumorigenesis."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "TPA (promoter)",
+        "rationale": "Induces inflammation and hyperplasia to promote expansion of initiated clones",
+        "phenotype": "Synergistic tumor formation with HRAS Q61L",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "RPA (TPA analog)",
+        "rationale": "Tests whether inflammation without specific immune recruitment drives promotion",
+        "phenotype": "Induces inflammation but minimal clonal expansion",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What precise molecular signals from neutrophils/monocytes drive HRAS\u2011clone expansion?",
+      "How do different genetic backgrounds modulate promotion sensitivity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Balmain et al. 2024 Cancer Res"
+      ],
+      "company_or_sponsor": [
+        "Cancer Grand Challenges PROMINENT"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::zhang::3",
+    "session_title": "genetic-and-environmental-determinants-of-cancer",
+    "talk_title": "Germline\u2011somatic associations in cancer using real\u2011world panel sequencing",
+    "speaker": {
+      "name": "Jian Carrot Zhang",
+      "affiliation": "Memorial Sloan Kettering Cancer Center, Computational Oncology Service",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer",
+      "breast cancer",
+      "colorectal cancer",
+      "pancreatic cancer",
+      "prostate cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "genomics",
+      "biomarker_development",
+      "translational",
+      "computational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pan\u2011cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MDM4",
+        "alteration": "",
+        "pathway": "p53_regulation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "germline association with TP53 mutation",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ERG",
+        "alteration": "",
+        "pathway": "transcription_fusion",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "prostate cancer fusion status",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "MDM4 germline variant (1q32 locus)",
+        "type": "predictive",
+        "assay": "imputed genotype from off\u2011target reads",
+        "finding": "Associated with increased TP53 mutation frequency across cancers (p<1e\u20116)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK\u2011IMPACT",
+        "genotype_or_key_features": "~50,000 tumor\u2011only panel sequenced cases"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Dana\u2011Farber PROFILE",
+        "genotype_or_key_features": "independent validation cohort"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Zhang described a pipeline that imputes genome\u2011wide germline genotypes from off\u2011target reads of clinical tumor panels, enabling GWAS of germline variants influencing somatic driver acquisition. A germline locus near MDM4 was linked to higher TP53 mutation rates, likely via increased MDM4 expression reducing p53 activity, and this association persisted after adjusting for mutational burden and smoking.",
+    "readouts": [
+      "off\u2011target read imputation",
+      "GWAS",
+      "TWAS",
+      "CRISPR\u20119 enhancer deletion",
+      "HiChIP"
+    ],
+    "key_findings": [
+      "Off\u2011target reads from panel sequencing can accurately impute common germline variants (R\u00b2>0.8).",
+      "Pan\u2011cancer GWAS identified a 1q32/M\u200bDM4 locus associated with TP53 mutations; replicated in Dana\u2011Farber and TCGA cohorts.",
+      "CRISPR deletion of the implicated enhancer reduced MDM4 expression, confirming functional relevance.",
+      "The MDM4 risk allele is enriched in stage\u202fIV disease and lung metastasis in breast cancer, independent of TP53 status.",
+      "Ancestry\u2011specific germline variant explains part of the higher ERG fusion frequency in European\u2011ancestry prostate cancer."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How many additional germline\u2011somatic associations remain undiscovered at larger sample sizes?",
+      "Can germline\u2011driven selection be leveraged for preventive interventions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhang et al. 2024 Nat Genet"
+      ],
+      "company_or_sponsor": [
+        "AACR GENIE POM"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "genetic-and-environmental-determinants-of-cancer::l\u00f3pez\u2011bigas::4",
+    "session_title": "genetic-and-environmental-determinants-of-cancer",
+    "talk_title": "Cancer driver mutations in normal tissues and their relation to cancer risk",
+    "speaker": {
+      "name": "Nuria L\u00f3pez\u2011Bigas",
+      "affiliation": "Institute for Research in Biomedicine, Barcelona",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colon cancer",
+      "lung cancer",
+      "bladder cancer",
+      "blood (AML)"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "computational",
+      "basic_science",
+      "tumor_microenvironment",
+      "epidemiology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TP53",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "normal tissue driver frequency",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "APC",
+        "alteration": "",
+        "pathway": "WNT",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colon crypt stem cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung basal stem cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "whole\u2011genome sequencing of normal colon crypts, lung stem cells, blood cells",
+        "genotype_or_key_features": "donors aged 30\u201180, smoker vs non\u2011smoker"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "normal bladder cytobrush duplex sequencing (45 donors)",
+        "genotype_or_key_features": "male vs female, smoker vs non\u2011smoker"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "L\u00f3pez\u2011Bigas introduced MutRisk, a model that integrates tissue\u2011specific mutation rates, trinucleotide signatures, and chromatin context to estimate per\u2011site mutation probabilities in normal stem cells. Multiplying by stem\u2011cell pool sizes yields estimates of how many cells harbor specific driver mutations (e.g., ~1.5\u202fmillion TP53\u2011mutant lung basal cells in a smoker). The analysis shows that random mutagenesis alone cannot explain observed cancer incidence, highlighting the need for clonal selection driven by promotion and microenvironmental factors.",
+    "readouts": [
+      "whole\u2011genome sequencing",
+      "MutRisk computational model",
+      "duplex error\u2011corrected sequencing",
+      "DN/DS analysis",
+      "age\u2011stratified mutation frequency"
+    ],
+    "key_findings": [
+      "MutRisk predicts highly unequal per\u2011site mutation probabilities; some TP53 codons are orders of magnitude more likely to mutate.",
+      "Estimated numbers of TP53\u2011mutant stem cells range from ~18\u202f000 in colon to ~1.5\u202fmillion in smoker lung tissue.",
+      "Combinations of driver mutations (e.g., APC\u202f+\u202fAPC\u202f+\u202fKRAS) are exceedingly rare without clonal selection (<1 per million individuals).",
+      "Duplex sequencing of normal bladder reveals strong positive selection for RBM10 truncations and TP53 mutations, with higher DN/DS in males.",
+      "TERT promoter mutations show strong selection only in smokers, linking exposure to clonal expansion."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do specific environmental exposures reshape the selection landscape in different tissues?",
+      "Can MutRisk be integrated with longitudinal sampling to predict individual cancer risk?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "L\u00f3pez\u2011Bigas et al. 2024 Nat Rev Cancer"
+      ],
+      "company_or_sponsor": [
+        "Cancer Grand Challenges PROMINENT"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

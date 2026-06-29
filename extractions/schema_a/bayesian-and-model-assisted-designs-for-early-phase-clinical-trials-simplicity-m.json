@@ -1,0 +1,99 @@
+[
+  {
+    "talk_id": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m::murray::1",
+    "session_title": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m",
+    "talk_title": "Revolutionizing Phase I Trials Using the BOIN Framework and Backfill Implementation",
+    "speaker": {
+      "name": "Betty Anne Ash Murray",
+      "affiliation": "MD Anderson Cancer Center, Department of Biostatistics",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "statistical_methodology",
+      "combination_therapy",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "Murray presented a Bayesian adaptive dose-finding framework (BOIN) with backfilling to optimize dose escalation, safety, and efficacy decisions in early-phase oncology trials, incorporating multidimensional toxicity scores, patient-reported outcomes, and flexible cohort sizes.",
+    "readouts": [
+      "toxicity_score",
+      "PRO_CTCAE",
+      "tumor_shrinkage",
+      "biomarker_levels"
+    ],
+    "key_findings": [
+      "Introduced a multidimensional toxicity scoring system ranging 0-1 to quantify cumulative adverse events across cycles.",
+      "Demonstrated that incorporating patient-reported CTCAE data alongside clinician-assessed AEs can inform dose recommendation.",
+      "Described the BOIN decision boundaries (lambda_e, lambda_d) for escalation/de-escalation and highlighted flexibility in cohort size.",
+      "Presented a backfill BOIN design (BFBOIN/BEBOIN) to allow safety\u2011cleared dose levels to be populated with additional patients, improving dose recommendation robustness."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to model genetic polymorphisms influencing toxicity slopes across cycles?",
+      "Best practices for integrating PRO CTCAE data without introducing bias in non\u2011randomized early-phase settings?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m::unknown::2",
+    "session_title": "bayesian-and-model-assisted-designs-for-early-phase-clinical-trials-simplicity-m",
+    "talk_title": "Bayesian Optimal Phase 2 Design (BOP2) for Simultaneous Toxicity and Efficacy Monitoring",
+    "speaker": {
+      "name": "Unknown",
+      "affiliation": "unspecified",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "clinical_trial",
+      "statistical_methodology",
+      "other"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [],
+    "clinical_data": [],
+    "MOA_summary": "The speaker introduced the Bayesian Optimal Phase 2 (BOP2) design, a model\u2011assisted approach that uses posterior probabilities to make real\u2011time stopping decisions for toxicity and futility in single\u2011arm and randomized trials, with flexible interim monitoring schedules.",
+    "readouts": [
+      "binary_toxicity",
+      "binary_efficacy"
+    ],
+    "key_findings": [
+      "BOP2 provides decision tables pre\u2011tabulated for clinicians, eliminating on\u2011the\u2011fly calculations during the trial.",
+      "Demonstrated information\u2011dependent cutoffs that balance early stopping for unsafe or ineffective treatments while preserving power for promising agents.",
+      "Showed extensions to handle multiple efficacy endpoints, differing monitoring times for toxicity and efficacy, and incorporation of historical control data.",
+      "Implemented via the trialdesign.org web tool, generating protocol templates and operating characteristic simulations acceptable to regulatory reviewers."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How to best incorporate predictive biomarkers into the BOP2 posterior probability calculations?",
+      "Strategies for adapting BOP2 decision boundaries in platform trials with shifting control arm response rates."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

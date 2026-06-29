@@ -1,0 +1,659 @@
+[
+  {
+    "talk_id": "focus-on-ctdna::jiang::1",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "Neoadjuvant pembrolizumab stratified by tumor mutation burden and high-risk stage two, three deficient mismatch repair or MSI-high colorectal cancer: The NeoPRISM-CRC study",
+    "speaker": {
+      "name": "Yanrong Jiang",
+      "affiliation": "UCL",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "ctDNA",
+      "biomarker_development",
+      "translational",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "pembrolizumab",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA clearance",
+        "type": "predictive",
+        "assay": "Next Personal assay (WGS-based tumor-informed)",
+        "finding": "Super molecular responders (rapid/complete clearance) all achieved pCR; dynamic responders (reduction <100 ppm) had 80% pCR rate."
+      },
+      {
+        "name": "TCR clonal expansion",
+        "type": "predictive",
+        "assay": "Fume TCR-Seq",
+        "finding": "Patients achieving pCR had more expanded large clones than non-responders."
+      },
+      {
+        "name": "post-operative ctDNA",
+        "type": "prognostic",
+        "assay": "Next Personal assay",
+        "finding": "100% specificity and 100% negative predictive value for relapse (median follow-up 33 months)."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "NeoPRISM-CRC",
+        "genotype_or_key_features": "high-risk stage II or III MMRd colorectal cancers, n=32"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "pCR",
+        "value": "59%",
+        "n": "n=31",
+        "population": "high-risk stage II/III MMRd CRC",
+        "maturity": "interim"
+      },
+      {
+        "metric": "ctDNA_clearance_rate",
+        "value": "58%",
+        "n": "n=25",
+        "population": "pre-surgery after 3 cycles",
+        "maturity": "interim"
+      },
+      {
+        "metric": "relapse_rate",
+        "value": "0%",
+        "n": "n=25",
+        "population": "post-operative ctDNA negative",
+        "maturity": "updated"
+      }
+    ],
+    "MOA_summary": "Neoadjuvant pembrolizumab was used in MMRd colorectal cancer to induce pathological complete response. The study integrated ultrasensitive ctDNA monitoring and TCR profiling to identify 'super molecular responders' who clear ctDNA rapidly, suggesting a potential for non-operative management.",
+    "readouts": [
+      "WGS",
+      "ctDNA_WGS",
+      "Fume TCR-Seq",
+      "histopathological assessment"
+    ],
+    "key_findings": [
+      "Nine weeks of neoadjuvant pembrolizumab achieved a 59% pCR rate in high-risk stage II/III MMRd CRC (n=31).",
+      "ctDNA was detected in 100% of patients at baseline, with 24% in the ultrasensitive range (<100 ppm).",
+      "100% of 'super molecular responders' (rapid clearance after 1 cycle) achieved pCR.",
+      "Post-operative ctDNA surveillance demonstrated 100% specificity and 100% negative predictive value for relapse over a median follow-up of 33 months.",
+      "Baseline TCR clonal expansion correlates with pCR, and a combined Bayesian model of TCR and ctDNA kinetics improves response prediction."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Whether super molecular responders can be safely managed non-operatively."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "MSD",
+        "Personalis"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "focus-on-ctdna::foldy::2",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "Early findings from MONITOR-BREAST: ctDNA dynamics during neoadjuvant therapy using an ultrasensitive MRD assay",
+    "speaker": {
+      "name": "Julia Foldy",
+      "affiliation": "not specified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "ctDNA",
+      "biomarker_development",
+      "translational",
+      "clinical_trial"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "post-neoadjuvant ctDNA",
+        "type": "predictive",
+        "assay": "ultrasensitive WGS-based assay (<100 ppm)",
+        "finding": "100% specificity for pCR; all 47 patients who achieved pCR were ctDNA negative."
+      },
+      {
+        "name": "sustained MRD negativity",
+        "type": "predictive",
+        "assay": "ultrasensitive WGS-based assay",
+        "finding": "63% pCR rate for sustained clearers vs 0% for persistently positive and 7% for intermittently positive."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "MONITOR-BREAST",
+        "genotype_or_key_features": "all breast cancer subtypes, early stages I-III, n=113 evaluable"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "pCR",
+        "value": "63%",
+        "n": "n=sustained clearers",
+        "population": "sustained MRD negative",
+        "maturity": "interim"
+      },
+      {
+        "metric": "pCR",
+        "value": "0%",
+        "n": "n=persistently positive",
+        "population": "persistently MRD positive",
+        "maturity": "interim"
+      },
+      {
+        "metric": "pCR",
+        "value": "7%",
+        "n": "n=intermittently positive",
+        "population": "intermittently MRD positive",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The study evaluated the association between dense, ultrasensitive ctDNA sampling and pathologic response in neoadjuvant breast cancer therapy. It found that sustained MRD negativity is a strong predictor of pCR, while persistent or intermittent positivity strongly predicts residual disease.",
+    "readouts": [
+      "WGS",
+      "ctDNA_WGS",
+      "RCB index"
+    ],
+    "key_findings": [
+      "100% specificity: all 47 patients achieving pCR were ctDNA negative post-neoadjuvant therapy.",
+      "Sustained MRD negativity (76% of patients) resulted in a 63% pCR rate.",
+      "Persistent MRD positivity resulted in 0% pCR and 100% residual disease (all RCB2 or 3).",
+      "Frequent sampling identified 64% more patients at risk for residual disease compared to a single post-neoadjuvant time point.",
+      "Clearance timing varied by subtype: TNBC cleared within 45 days (90% of patients) vs HR+/HER2- which took 16 weeks (90% of patients)."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Whether a negative test in the presence of residual disease implies a favorable long-term outcome regardless of pCR."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Myriad Genetics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "focus-on-ctdna::upadhyay::3",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "Phase 2 study of adjuvant PD-1 blockade with endocrine therapy in hormone receptor-positive and inflammatory breast cancer",
+    "speaker": {
+      "name": "Ranjan Upadhyay",
+      "affiliation": "not specified",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "inflammatory breast cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "ctDNA",
+      "combination_therapy",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "pembrolizumab",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA negativity at end of treatment",
+        "type": "prognostic",
+        "assay": "Myriad MRD panel (1,000 variants)",
+        "finding": "100% disease-free survival at 24 months."
+      },
+      {
+        "name": "ctDNA positivity",
+        "type": "prognostic",
+        "assay": "Myriad MRD panel",
+        "finding": "ctDNA positivity preceded radiographic relapse by up to 15 months."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "not specified",
+        "genotype_or_key_features": "HR+ inflammatory breast cancer with residual disease after local therapy, n=31"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "DFS",
+        "value": "71%",
+        "n": "n=31",
+        "population": "HR+ IBC",
+        "maturity": "updated"
+      },
+      {
+        "metric": "OS",
+        "value": "90%",
+        "n": "n=31",
+        "population": "HR+ IBC",
+        "maturity": "updated"
+      },
+      {
+        "metric": "median_DFS",
+        "value": "4.2 years",
+        "n": "n=31",
+        "population": "HR+ IBC",
+        "maturity": "updated"
+      }
+    ],
+    "MOA_summary": "The study tested the combination of pembrolizumab and endocrine therapy in HR+ inflammatory breast cancer (IBC). The hypothesis was that targeting the immunosuppressive microenvironment of IBC would improve DFS, which was observed (71% vs 60% historical).",
+    "readouts": [
+      "ctDNA_WGS",
+      "copy_number_analysis",
+      "somatic_mutation_analysis",
+      "peripheral_immune_profiling"
+    ],
+    "key_findings": [
+      "Two-year DFS was 71%, an improvement over the historical benchmark of 60% for HR+ IBC.",
+      "ctDNA negativity at the end of treatment was associated with 100% disease-free survival at 24 months.",
+      "ctDNA positivity provided a lead time to clinical progression of up to 15 months.",
+      "Durable responders showed lower maximum variant allele frequency (VAF) in nodal tissue compared to non-responders.",
+      "Deletions in the immunoglobulin heavy locus (IGH) were found in durable responders, suggesting B-cell involvement in the response."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "endocrine therapy",
+        "rationale": "Synergy between PD-1 blockade and endocrine therapy in high-risk HR+ disease",
+        "phenotype": "Improved 2-year DFS (71% vs 60% historical)",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "The specific role of B-cell clones in aiding T-cell effectors in IBC response."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Merck",
+        "Myriad"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "focus-on-ctdna::sanz_garcia::4",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "Molecular residual disease interception in local regionally advanced head and neck squamous cell carcinoma, the MERIDIAN phase two trial",
+    "speaker": {
+      "name": "Enrique Sanz Garcia",
+      "affiliation": "Princess Margaret Hospital",
+      "role": "clinician_investigator",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "head and neck squamous cell carcinoma"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "ctDNA",
+      "bispecific",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-1",
+        "pathway": "immune_checkpoint",
+        "modality": "bispecific",
+        "compound_name": "rivocostimib",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "TIGIT",
+        "pathway": "immune_checkpoint",
+        "modality": "bispecific",
+        "compound_name": "rivocostimib",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA (RADAR assay)",
+        "type": "predictive",
+        "assay": "tumor-informed WES-based panel",
+        "finding": "Detection at 8-12 weeks post-therapy associated with recurrence; longitudinal tracking increased sensitivity to 73%."
+      },
+      {
+        "name": "HPV DNA",
+        "type": "predictive",
+        "assay": "HPV sequencing",
+        "finding": "Higher sensitivity than RADAR but lower specificity in oropharyngeal cancer patients."
+      },
+      {
+        "name": "PD-L1 CPS",
+        "type": "eligibility",
+        "assay": "IHC",
+        "finding": "CPS >= 1 required for interception therapy."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "MERIDIAN",
+        "genotype_or_key_features": "locally advanced HNSCC, high risk of recurrence, n=42 evaluable for MRD"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "recurrence_rate",
+        "value": "23%",
+        "n": "n=42",
+        "population": "evaluable population",
+        "maturity": "interim"
+      },
+      {
+        "metric": "ctDNA_clearance",
+        "value": "100%",
+        "n": "n=1",
+        "population": "patient 17 (interception arm)",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The MERIDIAN trial tests the 'interception' hypothesis: treating MRD-positive HNSCC patients with the PD-1/TIGIT bispecific antibody rivocostimib to clear ctDNA and prevent clinical recurrence. One patient achieved persistent ctDNA clearance and remains disease-free 2 years later.",
+    "readouts": [
+      "WES",
+      "ctDNA_WES",
+      "HPV sequencing",
+      "IHC"
+    ],
+    "key_findings": [
+      "A single patient treated with rivocostimib achieved persistent ctDNA clearance and remains disease-free 2 years post-therapy.",
+      "ctDNA detection at 8-12 weeks post-therapy had 50% sensitivity for recurrence, which improved to 73% with longitudinal tracking.",
+      "HPV DNA sequencing showed higher sensitivity but lower specificity compared to the RADAR assay in OPC patients.",
+      "Combining tumor-informed assays and HPV DNA increased sensitivity to 100% in OPC patients.",
+      "The study was paused due to lower-than-expected MRD prevalence (only 6 patients eligible for interception)."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Whether more sensitive assays (<100 ppm) can catch relapses that occur more than a year after the positive sample."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "AstraZeneca"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "focus-on-ctdna::lu::5",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "Unlocking endocrine resistance, co-targeting KAT6 and ER with bifetostat and fulvestrant",
+    "speaker": {
+      "name": "Li Lu",
+      "affiliation": "not specified",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "epigenetics",
+      "targeted_therapy",
+      "ctDNA",
+      "combination_therapy",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KAT6A/B",
+        "pathway": "epigenetic_modification",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "bifetostat",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "ER",
+        "pathway": "ER_signaling",
+        "modality": "antibody",
+        "compound_name": "fulvestrant",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "H3K23 acetylation",
+        "type": "pharmacodynamic",
+        "assay": "PBMC and tumor biopsy",
+        "finding": ">=50% reduction achieved with bifetostat 1mg and 5mg doses."
+      },
+      {
+        "name": "ctDNA clearance",
+        "type": "predictive",
+        "assay": "Guardant 74 Gene Panel",
+        "finding": "Bifetostat 5mg + fulvestrant showed 26.5% overall clearance, 63% for ESR1, and 31% for PI3K pathway mutations."
+      },
+      {
+        "name": "ctDNA status at 9 weeks",
+        "type": "prognostic",
+        "assay": "Guardant 74 Gene Panel",
+        "finding": "Median PFS was 21.9 months for ctDNA negative vs 5.3 months for ctDNA positive."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1 study",
+        "genotype_or_key_features": "ER-positive, HER2-negative metastatic breast cancer, all prior CDK4/6 inhibitor use"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "median_PFS",
+        "value": "21.9 months",
+        "n": "not specified",
+        "population": "ctDNA negative at 9 weeks",
+        "maturity": "interim"
+      },
+      {
+        "metric": "median_PFS",
+        "value": "5.3 months",
+        "n": "not specified",
+        "population": "ctDNA positive at 9 weeks",
+        "maturity": "interim"
+      },
+      {
+        "metric": "ctDNA_clearance_rate",
+        "value": "63%",
+        "n": "not specified",
+        "population": "ESR1 mutations (5mg + fulvestrant)",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Bifetostat inhibits KAT6A/B, shifting the tumor transcriptome toward tumor suppressor programs (e.g., FOXP3, ING4) and away from cell cycle genes (TK1, CYCB1). Combining this with fulvestrant blocks both epigenetic and ER signaling, leading to robust clearance of ESR1 variants associated with endocrine resistance.",
+    "readouts": [
+      "Guardant 74 Gene Panel",
+      "RNA-seq",
+      "PBMC analysis",
+      "tumor biopsy"
+    ],
+    "key_findings": [
+      "Bifetostat 5mg + fulvestrant is the recommended dose for Phase 3 based on superior ctDNA clearance and gene expression changes.",
+      "Early ctDNA clearance (within 9 weeks) strongly correlates with clinical response (PR and SD).",
+      "Patients with undetectable ctDNA at 9 weeks had a significantly longer median PFS (21.9 vs 5.3 months).",
+      "The combination effectively clears ESR1 mutations (63% clearance rate), which are key drivers of endocrine resistance."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "fulvestrant",
+        "rationale": "Co-targeting epigenetic modifiers and ER to overcome endocrine resistance",
+        "phenotype": "Increased tumor suppressor expression and robust ESR1 ctDNA clearance",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Determinants of responder vs non-responder among patients who still showed >50% ctDNA drop but progressed."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "not specified"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "focus-on-ctdna::kar::6",
+    "session_title": "Focus on ctDNA",
+    "talk_title": "ctDNA Clearance as a Prognostic Biomarker in Extensive Stage Small Cell Lung Cancer: Insights from the LUMINOUS Phase 3B Study",
+    "speaker": {
+      "name": "Gozde Kar",
+      "affiliation": "not specified",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "small cell lung cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "ctDNA",
+      "biomarker_development",
+      "clinical_trial"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PD-L1",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "durvalumab",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA clearance",
+        "type": "prognostic",
+        "assay": "GRAIL Portrait RIO (methylation-based, tumor-agnostic)",
+        "finding": "Early sustained clearance associated with the most favorable OS and PFS; never-clearers had the poorest outcomes."
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "LUMINOUS",
+        "genotype_or_key_features": "extensive stage small cell lung cancer, n=152"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "median_OS",
+        "value": "not reached",
+        "n": "not specified",
+        "population": "ctDNA clearance group",
+        "maturity": "interim"
+      },
+      {
+        "metric": "median_OS",
+        "value": "16.4 months",
+        "n": "not specified",
+        "population": "non-clearance group",
+        "maturity": "interim"
+      },
+      {
+        "metric": "median_PFS",
+        "value": "19.3 months",
+        "n": "not specified",
+        "population": "clearance group",
+        "maturity": "interim"
+      },
+      {
+        "metric": "median_PFS",
+        "value": "6.2 months",
+        "n": "not specified",
+        "population": "non-clearance group",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "The study used a tumor-agnostic methylation-based assay to monitor ctDNA in ES-SCLC patients treated with durvalumab and platinum-etoposide. The results show that the pattern of ctDNA clearance (sustained vs late vs never) is a powerful prognostic indicator of OS and PFS.",
+    "readouts": [
+      "methylation-based ctDNA assay",
+      "RECIST"
+    ],
+    "key_findings": [
+      "Sustained ctDNA clearance was associated with the best outcomes (median PFS 19.3 months vs 6.2 months for non-clearers).",
+      "ctDNA re-emergence occurred 55 days before clinical progression in one representative case.",
+      "100% of sustained clearance patients were alive at 12 months, compared to 36% of never-clearers.",
+      "The methylation-based assay is viable for SCLC due to the high shedding nature of the tumor.",
+      "ctDNA dynamics aligned closely with longitudinal RECIST assessments."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "platinum etoposide",
+        "rationale": "Standard of care combination with PD-L1 blockade",
+        "phenotype": "Median OS 16.4 months",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Need for prospective randomized trials to determine if ctDNA-guided therapy improves outcomes over standard care."
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "GRAIL"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

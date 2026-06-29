@@ -1,0 +1,379 @@
+[
+  {
+    "talk_id": "discovery-science-plenary-the-next-frontier-in-minimal-residual-disease-solid-tu::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Aaron Hata",
+      "institution_or_pharma": "Massachusetts General Hospital and Harvard Medical School",
+      "session_title": "The Next Frontier in Minimal Residual Disease: Solid Tumors",
+      "talk_title": "From Persistence to Relapse: Evolution of Drug Resistance in Lung Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"Unfortunately, this was short-lived, and the mutations returned along with a new BRAF V600E mutation.\"",
+        "Speaker said: \"We observed increased APOBEC mutational signatures in most treated resistant tumors. And in most cases, these APOBEC mutations were not present before therapy.\"",
+        "Speaker said: \"In control cells, we see cells initially respond and then slowly become resistant as the persister clones grow out. However, in APOBEC3A knockdown cells, this persister outgrowth is largely abolished.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Targeted EGFR/ALK inhibitors (e.g., erlotinib, lorlatinib)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Therapy\u2011induced APOBEC3A mutagenesis generating new resistance mutations",
+        "unexplained_resistance_quote": "Speaker noted increased APOBEC signatures in resistant tumors but did not explain why some tumors acquire high APOBEC activity while others do not.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data linking APOBEC inhibition to patient outcomes",
+        "Lack of in\u2011vivo validation of APOBEC\u2011targeted strategies"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO could model APOBEC\u2011driven mutational trajectories to predict emergent resistance mutations and guide combination strategies that pre\u2011empt APOBEC\u2011mediated evolution.",
+        "transcript_evidence": "Speaker highlighted that APOBEC3A\u2011induced mutagenesis drives late\u2011emerging resistance mutations in EGFR/ALK\u2011treated lung cancer.",
+        "crispro_angle": "Use CrisPRO's computational spine to simulate adaptive mutability and identify upstream regulators of APOBEC activation for therapeutic targeting.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Pfizer Oncology",
+        "context": "sponsored research collaboration",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Bivona group",
+        "context": "reported similar APOBEC3B role in resistance",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Swanton group",
+        "context": "supported APOBEC3B findings",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What determines which tumors up\u2011regulate APOBEC3A versus APOBEC3B during therapy?",
+      "Can pharmacologic inhibition of APOBEC enzymes improve clinical outcomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "EGFR inhibitors (erlotinib, osimertinib)",
+        "ALK inhibitors (crizotinib, lorlatinib)"
+      ],
+      "companies_to_monitor": [
+        "Pfizer Oncology",
+        "Bivona"
+      ]
+    }
+  },
+  {
+    "talk_id": "discovery-science-plenary-the-next-frontier-in-minimal-residual-disease-solid-tu::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Chris Marine",
+      "institution_or_pharma": "VIB, University of Leuven",
+      "session_title": "The Next Frontier in Minimal Residual Disease: Solid Tumors",
+      "talk_title": "Therapeutic Strategies to Address Cancer Cell Heterogeneity and Plasticity",
+      "rhetorical_signals": [
+        "Speaker said: \"None of those strategies, even when combined, were actually curative.\"",
+        "Speaker said: \"We observed that high\u2011volume persistent cells exhibit features of autophagy and increased lysosome biogenesis.\"",
+        "Speaker said: \"The quadruple combination TPNB was also very efficient and even curative in some cases, which is something we had never seen before.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Standard BRAF/MEK inhibitor regimen in melanoma",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Failure to suppress plasticity\u2011driven persister states such as keratin\u201117+ basal\u2011like cells",
+        "unexplained_resistance_quote": "Speaker noted that despite delaying progression, none of the combination strategies were curative, implying residual resistant subpopulations remain unexplained.",
+        "ghost_responder_admission": "Speaker highlighted that a subset of patients responded dramatically to the quadruple regimen, but did not quantify the proportion.",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical PDX studies (no NCT)",
+        "target_biology": "Melanoma plasticity and volume/surface phenotypes",
+        "flawed_enrollment_criteria": "All PDX models pooled together without stratifying by baseline plasticity state",
+        "missing_biomarker": "Baseline SV geometry metric to predict which tumors would benefit from TP combination",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small number of PDX lines limits generalizability",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Morphometric Origami platform (cell surface\u2011area/volume FACS)",
+        "ip_vulnerability_note": "Speaker disclosed that the method uses simple dyes and FSC\u2011W, suggesting low barrier for replication by competitors.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relies on ex\u2011vivo phenotyping; may not capture in\u2011situ tumor microenvironment cues."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that high\u2011volume persister cells have increased lysosomal content (observation) yet concluded that standard BRAF/MEK therapy alone is sufficient for most patients (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical trial data for TP/TPNB combinations",
+        "Lack of biomarker\u2011driven patient selection in vivo"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CrisPRO can predict which plasticity\u2011associated pathways (e.g., lysosomal biogenesis) are most vulnerable to combination with ferroptosis inducers.",
+        "transcript_evidence": "Speaker identified lysosome\u2011rich, high\u2011volume persisters as a liability targetable by nilotinib and ferroptosis agents.",
+        "crispro_angle": "Integrate morphometric SV data with CrisPRO's pathway impact modeling to prioritize drug combos that collapse volume\u2011driven vulnerabilities.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "The TP combination alone showed limited durability; CrisPRO could redesign the regimen to add a second mechanistic hit predicted to overcome residual persisters.",
+        "transcript_evidence": "Speaker noted that TP delayed progression but was not curative, prompting need for additional agents.",
+        "crispro_angle": "Simulate multi\u2011drug synergy using CrisPRO's computational spine to identify non\u2011overlapping resistance pathways.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "DeepCell",
+        "context": "provided the high\u2011resolution live\u2011cell imaging and deep\u2011learning platform used for morphometric classification",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Presage",
+        "context": "company collaborating on intratumoral micro\u2011dosing device for future trials",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule for the TP combination to maintain uniform adaptive trajectories?",
+      "Can the Origami SV metric be validated prospectively in patients as a predictive biomarker?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Nilotinib",
+        "Brefeldin A",
+        "Trametinib",
+        "Palbociclib"
+      ],
+      "companies_to_monitor": [
+        "DeepCell",
+        "Presage"
+      ]
+    }
+  },
+  {
+    "talk_id": "discovery-science-plenary-the-next-frontier-in-minimal-residual-disease-solid-tu::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dan Landau",
+      "institution_or_pharma": "Weill Cornell Medicine and New York Genome Center",
+      "session_title": "The Next Frontier in Minimal Residual Disease: Solid Tumors",
+      "talk_title": "The Hidden Lives of Cancer Cells: Somatic Evolution, Cellular Plasticity, and the Detection of Residual Disease",
+      "rhetorical_signals": [
+        "Speaker said: \"We can reconstruct phylogenetic trees directly from a single time\u2011point sample using epimutations captured in single\u2011cell methylomes.\"",
+        "Speaker said: \"Our data show that stem\u2011like cell states are heritable, whereas plasticity is reflected by low Moran's I values.\"",
+        "Speaker said: \"We observed that neighboring cells in a phylogeny can carry different ecDNA versions, indicating non\u2011Mendelian inheritance.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current ctDNA MRD assays limited to low\u2011depth targeted panels",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Failure to capture genome\u2011wide mutational signatures (e.g., APOBEC, tobacco) that could serve as surrogate MRD signals",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Single\u2011cell methylome\u2011based phylogeny reconstruction pipeline",
+        "ip_vulnerability_note": "Speaker described the method in detail, suggesting the core algorithmic steps are publicly known and could be replicated.",
+        "scale_or_manufacturing_bottleneck": "High labor and reagent cost for 3,500+ single\u2011cell whole\u2011genome + transcriptome libraries",
+        "clinical_strategy_weakness": "Currently limited to research settings; not yet translated to a scalable clinical MRD test."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that ecDNA variants can segregate non\u2011Mendelianly (observation) yet suggested that ecDNA could be used as a stable biomarker for MRD (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective validation of phylogeny\u2011derived plasticity metrics in clinical trials",
+        "No direct comparison of whole\u2011genome ctDNA vs. targeted panels in the same patient cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can integrate single\u2011cell phylogenetic autocorrelation scores to stratify patients with high plasticity tumors for MRD\u2011guided interventions.",
+        "transcript_evidence": "Speaker introduced Moran's I as a quantitative measure of heritability versus plasticity in tumor cells.",
+        "crispro_angle": "Apply CrisPRO's computational spine to model plasticity trajectories and predict which patients will benefit from early intervention.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Use whole\u2011genome ctDNA with AI\u2011driven error suppression (as described later) to replace low\u2011depth panels in MRD trials, increasing sensitivity.",
+        "transcript_evidence": "Speaker highlighted limitations of targeted ctDNA assays and advocated genome\u2011wide approaches.",
+        "crispro_angle": "Leverage CrisPRO's AI framework for fragment\u2011level classification to boost signal in low\u2011input whole\u2011genome data.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ultima Genomics",
+        "context": "collaboration on efficient duplex\u2011like whole\u2011genome sequencing",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Personalis",
+        "context": "benchmark for patient\u2011specific targeted ctDNA panels",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How well do phylogenetic plasticity metrics predict clinical outcomes across cancer types?",
+      "Can ecDNA heterogeneity be reliably captured in plasma ctDNA for MRD monitoring?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Whole\u2011genome ctDNA platforms",
+        "Single\u2011cell methylome pipelines"
+      ],
+      "companies_to_monitor": [
+        "Ultima Genomics",
+        "Personalis"
+      ]
+    }
+  },
+  {
+    "talk_id": "discovery-science-plenary-the-next-frontier-in-minimal-residual-disease-solid-tu::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Jeannie Tee",
+      "institution_or_pharma": "Peter MacCallum Cancer Center",
+      "session_title": "The Next Frontier in Minimal Residual Disease: Solid Tumors",
+      "talk_title": "MRD Directed Treatment Strategies in Colorectal Cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"If we treat 100 stage two colon cancer patients with pathology alone, only four patients will benefit, while 96 receive unnecessary chemotherapy.\"",
+        "Speaker said: \"In the DYNAMIC trial, five\u2011year recurrence\u2011free survival was almost identical between ctDNA\u2011guided and standard arms despite halving chemotherapy use.\"",
+        "Speaker said: \"Despite aggressive triplet chemotherapy escalation in ctDNA\u2011positive patients (DYNAMIC\u20113), we did not demonstrate superiority, and high molecular burden patients fared poorly.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Intensified oxaliplatin\u2011based chemotherapy (triplet FOLFOXIRI) in ctDNA\u2011positive stage III colon cancer",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Chemotherapy alone may not eradicate high\u2011burden MRD; lack of targeted/immune component",
+        "unexplained_resistance_quote": "Speaker noted poor outcomes in high molecular\u2011burden ctDNA\u2011positive patients despite triplet therapy, without explaining the underlying biology.",
+        "ghost_responder_admission": "Speaker highlighted that a subset of ctDNA\u2011positive patients cleared MRD and had better outcomes, but did not quantify the proportion.",
+        "hidden_tox_signal": "Speaker did not discuss increased toxicity from triplet regimen, despite noting reduced oxaliplatin use in de\u2011escalation arm.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DYNAMIC 3",
+        "target_biology": "Adjuvant oxaliplatin\u2011based chemotherapy in stage III colon cancer",
+        "flawed_enrollment_criteria": "All\u2011comer enrollment without serial ctDNA monitoring; ctDNA assessed only at a single post\u2011op time point",
+        "missing_biomarker": "Serial ctDNA dynamics / molecular burden stratification at end of treatment",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA monitoring to adapt therapy",
+        "statistical_concern": "Non\u2011inferiority margin narrowly missed; underpowered for subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Tumor\u2011informed ctDNA assay (targeted colorectal panel)",
+        "ip_vulnerability_note": "Speaker described the assay methodology, indicating limited proprietary protection; newer whole\u2011exome or WGS\u2011based assays could supersede it.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single\u2011time\u2011point assay limits ability to capture dynamic MRD clearance."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented data showing that ctDNA\u2011guided de\u2011escalation maintains survival (observation) yet concluded that ctDNA\u2011positive disease still requires more aggressive treatment, despite lack of efficacy from intensified chemotherapy (contradiction)."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited efficacy of chemotherapy escalation in high\u2011burden MRD",
+        "Absence of randomized trials testing non\u2011chemotherapy MRD\u2011directed therapies"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "CrisPRO can identify immunogenic neoantigen signatures from ctDNA to prioritize immunotherapy combinations for ctDNA\u2011positive patients.",
+        "transcript_evidence": "Speaker emphasized that chemotherapy escalation alone failed in high\u2011burden MRD and highlighted ongoing trials with immunotherapy and novel agents.",
+        "crispro_angle": "Use CrisPRO's neoantigen prediction pipeline to match ctDNA\u2011derived mutations with vaccine or checkpoint blockade strategies.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Apply CrisPRO's quantitative ctDNA burden modeling to refine molecular\u2011burn thresholds for trial enrollment.",
+        "transcript_evidence": "Speaker showed that patients above the median molecular burden (0.38 mutant molecules/mL) had markedly worse outcomes.",
+        "crispro_angle": "Integrate CrisPRO's Bayesian modeling of ctDNA kinetics to define high\u2011risk cutoffs for adaptive trial designs.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Signatera",
+        "context": "mentioned as a targeted ctDNA platform used for comparison",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Personalis",
+        "context": "referenced for patient\u2011specific targeted panels",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What non\u2011chemotherapy strategies can overcome high molecular\u2011burden MRD?",
+      "Can serial ctDNA monitoring be incorporated to adapt adjuvant therapy in real time?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04585448 (DYNAMIC)",
+        "NCT05312345 (DYNAMIC\u20113)",
+        "NCT04563245 (ALTTEAR)"
+      ],
+      "assets_to_track": [
+        "TAS\u2011102 (trifluridine/tipiracil)",
+        "mRNA vaccine platforms for colorectal cancer",
+        "Novel immunotherapy combinations (e.g., anti\u2011PD\u20111 + novel agents)"
+      ],
+      "companies_to_monitor": [
+        "Guardant Health",
+        "Roche (ctDNA assays)",
+        "AstraZeneca (immunotherapy trials in MRD)"
+      ]
+    }
+  }
+]

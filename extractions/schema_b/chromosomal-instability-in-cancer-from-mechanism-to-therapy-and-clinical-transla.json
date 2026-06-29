@@ -1,0 +1,352 @@
+[
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Uri Ben-David",
+      "institution_or_pharma": "Tel Aviv University",
+      "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+      "talk_title": "Cell-intrinsic mechanisms of chromosomal instability",
+      "rhetorical_signals": [
+        "Speaker said: \"If we impair it, then we basically prohibit evolvability or adaptability\"",
+        "Speaker said: \"If we also increase it too much beyond a tolerated threshold, this can also be used as therapeutics\"",
+        "Speaker said: \"We identified the spindle assembly checkpoint and its regulator, KIF18A, as a unique vulnerability of chromosomally unstable aneuploid tumor cells\"",
+        "Speaker said: \"We found that highly aneuploid cells exhibit a higher degree of basal DNA damage... this leads to activation of a MAP kinase signaling, and in particular SRAF\"",
+        "Speaker said: \"Proteasome inhibitors failed in clinical trials for many solid tumors, but stratifying patients by aneuploidy showed higher sensitivity\"",
+        "Speaker said: \"Aurora B kinase expression is downregulated when chromosome 17p is lost, making cells more sensitive to its inhibition\"",
+        "Speaker said: \"RBM14 is toxic when overexpressed and its overexpression correlates with worse prognosis\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KIF18A inhibition",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of patient stratification by RB pathway status limits response",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some tumors responded while others did not, suggesting subset efficacy",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      },
+      {
+        "failing_compound_or_target": "Proteasome inhibitors in solid tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Trials did not select for high\u2011aneuploidy patients who are more sensitive",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "KIF18A inhibitor scaffold",
+        "ip_vulnerability_note": "Multiple companies (Amgen, Valastra, Akcea) are developing similar KIF18A inhibitors, suggesting limited differentiation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without RB pathway biomarker dilutes therapeutic signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that proteasome inhibitors failed in solid tumor trials, then concluded that aneuploidy\u2011stratified patients are sensitive \u2013 ignoring the original trial\u2019s lack of biomarker selection"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No prospective clinical trial data linking KIF18A inhibition to RB status",
+        "Lack of OS or PFS endpoints for aneuploidy\u2011stratified proteasome inhibitor analyses"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011based aneuploidy score to prospectively select patients for KIF18A inhibitor trials",
+        "transcript_evidence": "Speaker noted that high aneuploidy predicts proteasome inhibitor sensitivity and that KIF18A synthetic lethality is specific to CIN\u2011positive cells",
+        "crispro_angle": "CrisPRO can compute genome\u2011wide aneuploidy burden and predict synthetic lethal dependencies, enabling rational patient enrichment",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011evaluate past proteasome inhibitor solid\u2011tumor trials using CrisPRO aneuploidy re\u2011stratification to identify responder subcohorts",
+        "transcript_evidence": "Speaker reported retrospective analysis showing aneuploid tumors were more sensitive to proteasome inhibition",
+        "crispro_angle": "Apply CrisPRO to archived trial genomic data to generate post\u2011hoc biomarker evidence",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen",
+        "context": "Developing KIF18A inhibitors",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Valastra",
+        "context": "Published first\u2011in\u2011human KIF18A inhibitor results",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Akcea Therapeutics",
+        "context": "Developing KIF18A inhibitors",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What precise molecular features define the subset of CIN\u2011positive tumors that respond to KIF18A inhibition?",
+      "Can RB pathway status alone serve as a predictive biomarker across cancer types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "KIF18A inhibitors (Valastra, Amgen, Akcea)",
+        "Proteasome inhibitors in aneuploid cancers"
+      ],
+      "companies_to_monitor": [
+        "Amgen",
+        "Valastra Therapeutics",
+        "Akcea Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Ashley Loughney",
+      "institution_or_pharma": "Weill Cornell Medicine",
+      "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+      "talk_title": "Cell-extrinsic immune consequences of chromosomal instability",
+      "rhetorical_signals": [
+        "Speaker said: \"When you knock out STING, you suppress metastasis\"",
+        "Speaker said: \"Chronic STING activation leads to tachyphylaxis of interferon and a shift to ER stress\"",
+        "Speaker said: \"STING has many functions \u2013 interferon, NF\u2011kB, autophagy, ER stress \u2013 making it a pleiotropic target\"",
+        "Speaker said: \"Stat\u2011seq can map loss\u2011of\u2011function domains for interferon versus ER stress\"",
+        "Speaker said: \"A single amino\u2011acid difference explains why DMXAA failed in humans\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "STING agonists (e.g., DMXAA)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Species\u2011specific binding site (human STING position 229) not accounted for in preclinical models",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients responded (e.g., Merkel cell carcinoma) despite overall failure",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "STING activation for anti\u2011tumor immunity",
+        "flawed_enrollment_criteria": "Enrolling all\u2011comer solid tumors without stratifying by chronic cGAS\u2011STING activation status",
+        "missing_biomarker": "cGAS micronuclei / STING protein level assessment",
+        "static_vs_dynamic_failure": "No monitoring of chronic versus acute STING signaling during treatment",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "STING agonist small molecules",
+        "ip_vulnerability_note": "Efficacy depends on precise binding pocket residues; single\u2011amino\u2011acid differences can abolish activity across species",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of patient selection based on chronic STING activation leads to diluted clinical signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that chronic STING activation suppresses interferon but then concluded that STING agonists are broadly useful anti\u2011tumor agents without addressing the chronic desensitization"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data linking Stat\u2011seq identified functional domains to patient outcomes",
+        "Absence of prospective biomarker validation for chronic STING activation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Pair STING agonists with cGAS inhibitors to reset chronic STING signaling and restore interferon response",
+        "transcript_evidence": "Speaker demonstrated that cGAS knockout or inhibition re\u2011sensitizes tumors to STING agonists",
+        "crispro_angle": "CrisPRO can model cGAS\u2011STING dynamics and predict optimal dosing schedules to avoid tachyphylaxis",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011derived composite biomarker (cGAS micronuclei + STING protein level) to select patients for STING agonist trials",
+        "transcript_evidence": "Speaker noted that high cGAS/low STING tumors did not respond, whereas low cGAS/high STING tumors showed responses",
+        "crispro_angle": "CrisPRO can integrate imaging\u2011derived micronuclei counts with transcriptomic STING signatures for patient enrichment",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "DMXAA",
+        "context": "Failed STING agonist due to species\u2011specific binding site",
+        "sentiment": "critical"
+      },
+      {
+        "name": "MSA\u20112",
+        "context": "STING agonist used in preclinical combination with cGAS inhibitor RU521",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Which specific STING domains mediate ER stress versus interferon, and can separation\u2011of\u2011function drugs be designed?",
+      "What is the optimal dosing schedule for cGAS inhibition followed by STING agonist to avoid re\u2011inducing chronic desensitization?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "STING agonists (MSA\u20112, DMXAA)",
+        "cGAS inhibitor RU521"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Velastra Therapeutics Co\u2011founder & CSO",
+      "institution_or_pharma": "Velastra Therapeutics",
+      "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+      "talk_title": "Translating chromosomal instability insights to the clinic",
+      "rhetorical_signals": [
+        "Speaker said: \"KIF18A inhibition doesn't work in every chromosomally unstable tumor\"",
+        "Speaker said: \"RB loss leads to high MAD2 levels, which are required for KIF18A inhibitor efficacy\"",
+        "Speaker said: \"p16 positivity enriched for partial responses in two KIF18A inhibitor trials\"",
+        "Speaker said: \"cGAS inhibition restores STING agonist sensitivity in chronically active tumors\"",
+        "Speaker said: \"Patients with high cGAS and low STING did not respond to STING agonists\""
+      ],
+      "presentation_type": "industry_pitch"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KIF18A inhibitors (VLS\u20111488, savolnisib)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Trials did not pre\u2011select for RB pathway loss (p16 high) leading to mixed responses",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Partial responses occurred only in p16\u2011positive tumors",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "STING agonists in CIN\u2011high tumors",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Chronic cGAS\u2011STING activation leads to interferon desensitization; trials lacked cGAS/STING biomarker stratification",
+        "unexplained_resistance_quote": "Patients with high cGAS\u2011positive micronuclei and low STING did not respond",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "VLS\u20111488 dose\u2011escalation study",
+        "target_biology": "KIF18A inhibition synthetic lethality in CIN tumors",
+        "flawed_enrollment_criteria": "Enrolled patients regardless of RB/p16 status, diluting signal",
+        "missing_biomarker": "p16 immunohistochemistry for RB loss",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No correlation between dose level and response once p16\u2011positive patients were identified",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Savolnisib dose\u2011escalation study",
+        "target_biology": "KIF18A inhibition",
+        "flawed_enrollment_criteria": "Same as above \u2013 lack of RB pathway enrichment",
+        "missing_biomarker": "p16 IHC",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "KIF18A inhibitor chemical series",
+        "ip_vulnerability_note": "Multiple companies are pursuing KIF18A inhibitors, reducing differentiation",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad patient enrollment without RB/p16 biomarker limits differentiation"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "cGAS inhibitor RU521 (pre\u2011clinical tool)",
+        "ip_vulnerability_note": "RU521 is a mouse\u2011specific inhibitor; human\u2011compatible inhibitors are not yet advanced",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a non\u2011optimized tool compound for proof\u2011of\u2011concept"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented preclinical data that chronic STING activation suppresses interferon yet advocated for STING agonist monotherapy without first addressing chronic desensitization"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Prospective validation of p16 as a predictive biomarker for KIF18A inhibitors",
+        "Clinical data confirming cGAS inhibition improves STING agonist efficacy in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement CrisPRO\u2011derived RB/p16 scoring to prospectively select patients for KIF18A inhibitor trials",
+        "transcript_evidence": "Speaker showed that p16 positivity enriched for partial responses across two independent KIF18A inhibitor studies",
+        "crispro_angle": "CrisPRO can integrate genomic loss of RB1 and CDKN2A expression data to generate a robust predictive score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine cGAS inhibitors with STING agonists using CrisPRO modeling to schedule pulsed activation and avoid tachyphylaxis",
+        "transcript_evidence": "Speaker demonstrated that cGAS knockout or inhibition restores interferon response to STING agonists in vitro and in vivo",
+        "crispro_angle": "CrisPRO can simulate chronic versus acute STING signaling dynamics to optimize dosing intervals",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011analyze prior STING agonist trials with CrisPRO\u2011derived cGAS/STING biomarker to identify responder sub\u2011cohorts",
+        "transcript_evidence": "Speaker noted that patients with low cGAS/high STING responded while the opposite pattern did not",
+        "crispro_angle": "Retrospective CrisPRO scoring of tumor samples could uncover hidden efficacy signals",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen",
+        "context": "Developing KIF18A inhibitors",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Valastra",
+        "context": "Published KIF18A inhibitor data",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Akcea Therapeutics",
+        "context": "KIF18A inhibitor program",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule for cGAS inhibition followed by STING agonist to maintain interferon responsiveness?",
+      "Can p16 IHC be standardized across labs to serve as a reliable companion diagnostic for KIF18A inhibitors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "VLS\u20111488",
+        "Savolnisib",
+        "cGAS inhibitor RU521 (or next\u2011gen human analogues)",
+        "STING agonists (MSA\u20112, others)"
+      ],
+      "companies_to_monitor": [
+        "Velastra Therapeutics",
+        "Amgen",
+        "Valastra Therapeutics",
+        "Akcea Therapeutics"
+      ]
+    }
+  }
+]

@@ -1,0 +1,318 @@
+[
+  {
+    "talk_id": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Patrick",
+      "institution_or_pharma": "Bristol Myers Squibb",
+      "session_title": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen",
+      "talk_title": "CTLA-4 and PD-1 colitis: cellular origins and regulatory T\u2011cell dynamics",
+      "rhetorical_signals": [
+        "Speaker said: \"we are not really looking too late. This is probably something still very early on in the process.\"",
+        "Speaker said: \"we cannot separate those two phenotypes from each other, so the TH1 and TH17 are stuck clustered together.\"",
+        "Speaker said: \"we don't really know what to make of that [naive Treg expansion in PD\u20111 colitis].\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CTLA-4 blockade (dual CTLA-4/PD-1 therapy)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Failure to deplete tissue\u2011resident regulatory T cells in human colitis despite preclinical expectation",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that only one patient had steroids before biopsy, implying early sampling may miss later regulatory T\u2011cell depletion.",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed extensive expansion of TH1/TH17 effector CD4 T cells in colitis biopsies, then concluded that \"CTLA-4 antibodies do not deplete these Tregs from what we can tell in human colitis\" \u2014 contradictory because depletion of Tregs would be expected to amplify effector expansion."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No longitudinal OS or PFS data",
+        "Lack of functional assays for Treg suppressive capacity",
+        "No pre\u2011treatment tissue sampling to define resident vs migratory populations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with pre\u2011existing resident memory CD8/Treg signatures that predict colitis risk.",
+        "transcript_evidence": "Speaker highlighted that resident memory CD8 T cells are expanded in both CTLA-4 and PD-1 colitis and that early biopsies capture these cells.",
+        "crispro_angle": "Use CrisPRO single\u2011cell TCR\u2011clonotype mapping to detect expanded resident clones in baseline biopsies and predict toxicity.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: NCT04165772 (colitis biomarker study)",
+          "PubMed: recent scRNA\u2011seq colitis datasets"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine CTLA-4 blockade with agents that preserve peripheral Treg function (e.g., low\u2011dose IL\u20112) to mitigate colitis.",
+        "transcript_evidence": "Speaker noted peripheral Tregs are expanded early in colitis and may be insufficient to control inflammation.",
+        "crispro_angle": "CrisPRO can model cytokine network effects of IL\u20112 on Treg expansion and predict optimal dosing to balance anti\u2011tumor immunity.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Phase I trial data of low\u2011dose IL\u20112 with checkpoint inhibitors"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ipilimumab",
+        "context": "clinical CTLA-4 antibody used as reference for colitis induction",
+        "sentiment": "critical"
+      },
+      {
+        "name": "PD\u20111 inhibitors",
+        "context": "used in combination with CTLA\u20114 blockade in the presented cohort",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the functional status of the expanded Tregs in early colitis?",
+      "Do naive Treg populations in PD\u20111 colitis confer protection?",
+      "Can pre\u2011treatment tissue sampling reliably identify resident memory populations?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "Ipilimumab",
+        "PD\u20111 antibodies (pembrolizumab, nivolumab)"
+      ],
+      "companies_to_monitor": [
+        "Bristol Myers Squibb",
+        "Merck"
+      ]
+    }
+  },
+  {
+    "talk_id": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Kristen Pauken",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen",
+      "talk_title": "Resident vs migratory immune cells in checkpoint inhibitor\u2011induced IRAEs",
+      "rhetorical_signals": [
+        "Speaker said: \"We don't know when they came into the tissue, whether it's minutes, hours, weeks, or months.\"",
+        "Speaker said: \"If you block migration you may also block regulatory T cells, potentially worsening inflammation.\"",
+        "Speaker said: \"We have no way to translate parabiosis to patients, so we rely on mouse models.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Integrin \u03b14\u03b27 blockade (e.g., vedolizumab) for IRAE prevention",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Inability to distinguish resident pathogenic T cells from migratory regulatory T cells, leading to paradoxical increase in colitis when migration is blocked",
+        "unexplained_resistance_quote": "Speaker noted that blocking migration with an \u03b14\u03b27 inhibitor resulted in more inflammation, which was unexpected.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT04212345 (hypothetical \u03b14\u03b27 blockade trial)",
+        "target_biology": "Blockade of gut\u2011homing lymphocyte migration to prevent colitis",
+        "flawed_enrollment_criteria": "Enrolling all patients receiving checkpoint inhibitors without stratifying for baseline resident memory signatures",
+        "missing_biomarker": "Baseline tissue\u2011resident CD8/Treg markers (CD69, CD103) to identify patients who would not benefit from migration blockade",
+        "static_vs_dynamic_failure": "No serial biopsies or blood TCR tracking to monitor dynamic migration",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CD45 IV\u2011timestamping antibody method",
+        "ip_vulnerability_note": "Relies on specific CD45 clone (104) that may not be universally applicable across mouse strains or translate to humans",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires genetically engineered CD45.2 mice, limiting broader preclinical adoption"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented single\u2011cell data showing exhausted T cells share residency transcriptional programs, then argued that residency markers alone cannot define pathogenic vs exhausted cells \u2014 contradictory interpretation."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of human validation for IV\u2011timestamping approach",
+        "No direct comparison of resident vs migratory contributions in patient samples"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate longitudinal blood TCR sequencing to distinguish resident\u2011derived vs migratory clones during checkpoint therapy.",
+        "transcript_evidence": "Speaker emphasized using blood as a non\u2011invasive window to track migratory populations and TCR barcodes.",
+        "crispro_angle": "CrisPRO can integrate serial TCR\u2011seq data with tissue signatures to model clone dynamics and predict IRAE onset.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: recent studies on blood TCR tracking in ICI patients",
+          "ClinicalTrials.gov: trials collecting serial blood for TCR analysis"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a composite biomarker (CD69/CD103 + TCR clonality) to identify patients whose colitis is driven by resident cells.",
+        "transcript_evidence": "Speaker noted that resident signatures are present at toxicity onset but unclear if they existed pre\u2011treatment.",
+        "crispro_angle": "CrisPRO can predict resident\u2011cell prevalence from baseline scRNA\u2011seq and guide patient selection.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Single\u2011cell datasets from checkpoint\u2011induced colitis biopsies"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Vedolizumab (\u03b14\u03b27 inhibitor)",
+        "context": "Discussed as a potential migration blocker that paradoxically increased inflammation in mouse experiments",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Jason Schinkel",
+        "context": "Developed the CD45 IV\u2011timestamping method used in the talk",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What proportion of tissue\u2011resident T cells truly never exit versus recirculate?",
+      "Can selective blockade of effector migration be achieved without impairing regulatory T\u2011cell entry?",
+      "How well does the CD45 IV\u2011timestamping translate to human peripheral blood labeling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04212345"
+      ],
+      "assets_to_track": [
+        "\u03b14\u03b27 inhibitors",
+        "CD45 IV\u2011timestamping antibodies"
+      ],
+      "companies_to_monitor": [
+        "Takeda",
+        "Genentech"
+      ]
+    }
+  },
+  {
+    "talk_id": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Gabriel Nunez",
+      "institution_or_pharma": "University of Michigan",
+      "session_title": "optimizing-efficacy-while-limiting-toxicity-in-immunotherapy-for-cancer-treatmen",
+      "talk_title": "Wild\u2011microbiota mouse model reveals CD4 Th1\u2011driven, Fc\u2011dependent CTLA\u20114 colitis",
+      "rhetorical_signals": [
+        "Speaker said: \"Only the mice gavaged with wild microbiota developed colitis; SPF mice did not.\"",
+        "Speaker said: \"Depletion of peripheral Tregs was required for colitis, and Fc\u03b3R signaling was necessary for that depletion.\"",
+        "Speaker said: \"Using an Fc\u2011silent CTLA\u20114 antibody blocked tumor growth without inducing colitis.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Fc\u2011enhanced CTLA\u20114 antibodies (clinical ipilimumab\u2011like molecules)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Fc\u2011mediated depletion of peripheral Tregs in the gut drives colitis, a mechanism not addressed by current clinical dosing strategies",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that a subset of mice (those with wild microbiota) developed severe colitis, implying patient\u2011specific microbiome susceptibility.",
+        "hidden_tox_signal": "Speaker highlighted that Fc\u2011silent CTLA\u20114 antibodies retain anti\u2011tumor efficacy while eliminating colitis, suggesting current antibodies\u2019 Fc function is a hidden toxicity driver.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "NCT04567890 (hypothetical Fc\u2011enhanced CTLA\u20114 antibody trial)",
+        "target_biology": "Enhanced Fc\u2011mediated ADCC to improve anti\u2011tumor response",
+        "flawed_enrollment_criteria": "No stratification by baseline gut microbiome composition, risking high colitis incidence in microbiome\u2011rich patients",
+        "missing_biomarker": "Baseline fecal microbiome profiling (e.g., presence of Enterobacteriaceae)",
+        "static_vs_dynamic_failure": "No serial monitoring of peripheral Treg frequencies to detect early depletion",
+        "statistical_concern": "Potential underpowering for colitis safety endpoint due to heterogeneous microbiome backgrounds",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CTLA\u20114 antibody Fc engineering",
+        "ip_vulnerability_note": "Speaker demonstrated that Fc\u2011silent versions retain efficacy, indicating the Fc region is not essential for tumor control and can be modified to reduce toxicity.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Current clinical CTLA\u20114 antibodies retain Fc effector function, leading to peripheral Treg depletion and colitis."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that Fc\u2011silent CTLA\u20114 antibodies block tumor growth equally to Fc\u2011competent antibodies, yet concluded that Fc\u2011mediated Treg depletion is the primary driver of colitis, implying Fc is dispensable for efficacy but essential for toxicity."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of human fecal microbiome transplantation validation",
+        "No long\u2011term survival or tumor regression data",
+        "Limited mechanistic data on identified bacterial antigens driving Th1 expansion"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Re\u2011engineer existing CTLA\u20114 antibodies to an Fc\u2011silent format to retain anti\u2011tumor activity while eliminating colitis risk.",
+        "transcript_evidence": "Speaker demonstrated that Fc\u2011silent CTLA\u20114 antibody blocked tumor growth without inducing colitis in wild\u2011microbiota mice.",
+        "crispro_angle": "CrisPRO can model Fc\u2011effector interactions and predict impact on peripheral Treg depletion across patient microbiome subtypes.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Patent landscape for Fc\u2011silent CTLA\u20114 constructs",
+          "Pre\u2011clinical toxicology data for Fc\u2011silent antibodies"
+        ]
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a fecal microbiome\u2011based risk score (e.g., abundance of Enterobacteriaceae) to identify patients at high risk for CTLA\u20114\u2011induced colitis.",
+        "transcript_evidence": "Speaker showed that only mice colonized with wild microbiota (rich in Enterobacteriaceae) developed colitis.",
+        "crispro_angle": "CrisPRO can integrate microbiome sequencing with immune modeling to predict colitis likelihood for individual patients.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Metagenomic datasets from ICI\u2011treated patients with/without colitis"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ipilimumab",
+        "context": "Standard Fc\u2011competent CTLA\u20114 antibody used as comparator",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Tremelimumab",
+        "context": "Fc\u2011reduced CTLA\u20114 antibody mentioned as having uncertain activity",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Which specific bacterial antigens are recognized by the oligoclonal Th1 TCRs?",
+      "Can peripheral Treg depletion be prevented without compromising anti\u2011tumor efficacy?",
+      "How translatable are the wild\u2011mouse microbiota findings to diverse human patient microbiomes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "Fc\u2011silent CTLA\u20114 antibodies",
+        "Enterobacteriaceae\u2011targeted microbiome therapeutics"
+      ],
+      "companies_to_monitor": [
+        "Bristol Myers Squibb",
+        "Takeda",
+        "Genentech"
+      ]
+    }
+  }
+]

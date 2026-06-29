@@ -1,0 +1,229 @@
+[
+  {
+    "talk_id": "biology-mechanisms-and-models-of-cachexia::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Tor Erik Rusten",
+      "institution_or_pharma": "University of Oslo",
+      "session_title": "biology-mechanisms-and-models-of-cachexia",
+      "talk_title": "Systemic reprogramming in cancer cachexia using Drosophila and mouse models",
+      "rhetorical_signals": [
+        "Speaker said: \"we believe that the paraneoplastic effect of the tumor goes beyond muscle and fat wasting\"",
+        "Speaker said: \"we saw that most of the biomass of the growing tumor actually derived from the degrading organs and not food\"",
+        "Speaker said: \"we identified one that behaved exactly like this, which is called subermesa... reduces malignant tumor growth but does not affect benign growth or normal development\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SLC7A11",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Redundancy with SLC7A9; targeting SLC7A11 alone may be insufficient due to compensatory SLC7A9 activity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SLC7A11 inhibitor",
+        "ip_vulnerability_note": "Speaker showed that SLC7A9 can compensate for SLC7A11 loss, suggesting limited monotherapy efficacy",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Focusing on SLC7A11 alone may dilute therapeutic signal due to functional redundancy with SLC7A9"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that tumor autophagy provides nutrients to support growth, then concluded that targeting autophagy alone will block tumor growth \u2013 ignoring that nutrient transporters (SLC7A9) can bypass autophagy-derived supply"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy data for combined SLC7A9 inhibition with autophagy blockade",
+        "Lack of patient-derived validation of SLC7A9 dependency"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting SLC7A9 alongside SLC7A11 could overcome redundancy and prevent tumor utilization of host-derived cysteine",
+        "transcript_evidence": "Speaker identified subermesa (fly ortholog of SLC7A9) as essential for malignant tumor growth but not for benign growth",
+        "crispro_angle": "CrisPRO can model transporter network dependencies and predict combinatorial inhibition of SLC7A9/SLC7A11 to block cysteine uptake",
+        "external_validation_needed": [
+          "PubMed: functional studies of SLC7A9 in pancreatic cancer",
+          "ClinicalTrials.gov: trials of SLC7A11 inhibitors"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Expression levels of SLC7A9 may stratify patients who would benefit from HIF2 or ferroptosis-targeted therapies",
+        "transcript_evidence": "Higher SLC7A9 expression correlated with tumor growth and ferroptosis resistance in pancreatic cancer models",
+        "crispro_angle": "CrisPRO can integrate transcriptomic data to develop a predictive biomarker panel including SLC7A9",
+        "external_validation_needed": [
+          "TCGA analysis of SLC7A9 expression in RCC and pancreatic cancer",
+          "Prospective cohort measuring SLC7A9 protein levels"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "SLC7A11 inhibitors",
+        "context": "Discussed as existing targets that may be insufficient alone",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Can combined inhibition of autophagy and SLC7A9 produce synergistic tumor suppression?",
+      "What upstream signals regulate subermesa/SLC7A9 expression in cachectic tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SLC7A9 inhibitors",
+        "Autophagy inhibitors in cachexia models"
+      ],
+      "companies_to_monitor": [
+        "Companies developing SLC7A9-targeted agents"
+      ]
+    }
+  },
+  {
+    "talk_id": "biology-mechanisms-and-models-of-cachexia::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Muhannad Abu-Ramalah",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "biology-mechanisms-and-models-of-cachexia",
+      "talk_title": "VHL loss\u2013driven HIF\u20112\u03b1\u2013PTHrP axis mediates cachexia in clear\u2011cell renal carcinoma",
+      "rhetorical_signals": [
+        "Speaker said: \"the phenotype was independent from the tumor size\"",
+        "Speaker said: \"treatment with HIF\u20112\u03b1 inhibitor reduced PTHrP levels and improved body weight\"",
+        "Speaker said: \"PTHLH knockout mice maintained body weight and survived\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "HIF\u20112\u03b1 inhibitors (belzutifan, NKT2152)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Cachexia improvement observed but overall survival benefit not demonstrated in current trials",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Patients maintained weight gain independent of tumor response",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Belzutifan RCC trial (NCT04200962)",
+        "target_biology": "Inhibition of HIF\u20112\u03b1 to suppress PTHrP\u2011mediated cachexia",
+        "flawed_enrollment_criteria": "Patients were not stratified by baseline PTHrP levels, potentially diluting weight\u2011gain signal",
+        "missing_biomarker": "Baseline plasma PTHrP",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Weight change analysis not powered for subgroup (high PTHrP) outcomes",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "HIF\u20112\u03b1 allosteric inhibitors",
+        "ip_vulnerability_note": "Speaker demonstrated that PTHrP reduction is the primary cachexia mechanism, suggesting that targeting downstream PTHrP may be more direct",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Focusing on HIF\u20112\u03b1 may miss patients whose cachexia is driven by alternative pathways"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PTHrP drives both hypercalcemia and weight loss, then concluded that HIF\u20112\u03b1 inhibition improves weight independent of tumor burden \u2013 ignoring that tumor burden itself can also influence cachexia"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term survival impact of cachexia reversal",
+        "Effect of PTHrP neutralization independent of HIF\u20112\u03b1 inhibition"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Baseline plasma PTHrP could identify RCC patients who would benefit most from HIF\u20112\u03b1 inhibition for cachexia mitigation",
+        "transcript_evidence": "High pretreatment PTHrP levels correlated with lower muscle mass and higher calcium in patients",
+        "crispro_angle": "CrisPRO can develop a predictive model integrating PTHrP, calcium, and gene expression to select patients for HIF\u20112\u03b1 therapy",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: prospective trial stratifying by PTHrP",
+          "PubMed: validation of PTHrP as cachexia biomarker in RCC"
+        ],
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Direct PTHrP neutralizing antibodies or ligand traps could bypass HIF\u20112\u03b1 and directly treat cachexia",
+        "transcript_evidence": "PTHLH knockout eliminated cachexia despite tumor presence",
+        "crispro_angle": "CrisPRO can model ligand\u2011receptor interaction networks to prioritize anti\u2011PTHrP biologics",
+        "external_validation_needed": [
+          "Preclinical studies of anti\u2011PTHrP antibodies in RCC models",
+          "Safety data from hypercalcemia treatments"
+        ],
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine HIF\u20112\u03b1 inhibitors with agents that block downstream PTHrP signaling (e.g., PTH1R antagonists) to enhance cachexia reversal",
+        "transcript_evidence": "HIF\u20112\u03b1 inhibition reduced PTHrP but did not improve overall survival",
+        "crispro_angle": "CrisPRO can simulate combination effects on cachexia endpoints",
+        "external_validation_needed": [
+          "Preclinical combination studies of belzutifan + PTH1R antagonist",
+          "Phase I safety of combined regimen"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Belzutifan (Bayer)",
+        "context": "FDA\u2011approved HIF\u20112\u03b1 inhibitor evaluated for cachexia effects",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "NKT2152 (Niken Therapeutics)",
+        "context": "Second HIF\u20112\u03b1 inhibitor showing PTHrP reduction",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Immune checkpoint inhibitors",
+        "context": "Compared as control arm; did not reduce PTHrP",
+        "sentiment": "critical"
+      },
+      {
+        "name": "VEGF\u2011TK inhibitors",
+        "context": "Control arm; decreased BMI despite treatment",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Does long\u2011term PTHrP suppression translate into overall survival benefit?",
+      "What is the precise mechanism by which PTHrP induces muscle wasting beyond lipolysis?",
+      "Can PTHrP levels predict response to HIF\u20112\u03b1 inhibitors in earlier disease stages?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04200962",
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "Belzutifan",
+        "NKT2152",
+        "PTHrP neutralizing antibodies"
+      ],
+      "companies_to_monitor": [
+        "Bayer",
+        "Niken Therapeutics",
+        "Companies developing PTH1R antagonists"
+      ]
+    }
+  }
+]

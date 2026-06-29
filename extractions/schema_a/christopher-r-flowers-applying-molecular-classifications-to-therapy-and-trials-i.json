@@ -1,0 +1,232 @@
+[
+  {
+    "talk_id": "christopher-r-flowers-applying-molecular-classifications-to-therapy-and-trials-i::flowers::1",
+    "session_title": "christopher-r-flowers-applying-molecular-classifications-to-therapy-and-trials-i",
+    "talk_title": "Applying molecular classifications to therapy and trials in diffuse large B\u2011cell lymphoma",
+    "speaker": {
+      "name": "Christopher R. Flowers",
+      "affiliation": "MD Anderson Cancer Center, Division of Cancer Medicine",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "diffuse large B-cell lymphoma"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "targeted_therapy",
+      "ADC",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "biomarker_development",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CD79B",
+        "alteration": "",
+        "pathway": "B-cell receptor signaling",
+        "modality": "ADC",
+        "compound_name": "polatuzumab vedotin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "DLBCL patients receiving frontline therapy",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CD20",
+        "alteration": "",
+        "pathway": "immune_checkpoint",
+        "modality": "antibody",
+        "compound_name": "rituximab",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "standard R-CHOP backbone",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SETD2",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "SETD2 inhibitor (experimental)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SETD2 haploinsufficient DLBCL (African ancestry)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "ATM",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MGA",
+        "alteration": "",
+        "pathway": "transcriptional_regulation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "International Prognostic Index (IPI)",
+        "type": "eligibility",
+        "assay": "clinical scoring",
+        "finding": "Patients with higher IPI derived greater PFS benefit from polatuzumab\u2011R\u2011CHOP (HR 0.73)"
+      },
+      {
+        "name": "Cell\u2011of\u2011origin (COO) subtype",
+        "type": "predictive",
+        "assay": "gene expression profiling",
+        "finding": "ABC subtype showed larger PFS benefit from polatuzumab\u2011R\u2011CHOP versus GCB"
+      },
+      {
+        "name": "Dark Zone (DZ) signature",
+        "type": "predictive",
+        "assay": "RNA\u2011seq based classifier",
+        "finding": "DZ\u2011positive GCB patients have markedly worse outcomes with standard R\u2011CHOP"
+      },
+      {
+        "name": "LymphGen classification",
+        "type": "predictive",
+        "assay": "RNA\u2011seq / WES classifier",
+        "finding": "EZB\u2011MYC positive subgroup aligns with DZ\u2011signature and predicts poorer R\u2011CHOP response"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "POLARIX",
+        "genotype_or_key_features": "Frontline DLBCL, stratified by IPI, global enrollment"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "TAFASITAMAB + LENALIDOMIDE + R\u2011CHOP vs placebo + R\u2011CHOP",
+        "genotype_or_key_features": "DLBCL, reduced eligibility criteria, progression\u2011free survival endpoint"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "LEO consortium cohort",
+        "genotype_or_key_features": "8 academic centers, >7,700 patients, real\u2011world DLBCL"
+      },
+      {
+        "model_type": "preclinical",
+        "name": "SETD2 haploinsufficient mouse model",
+        "genotype_or_key_features": "SETD2 +/- mice, synthetic lethality with SETD2 inhibition"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Progression\u2011free survival hazard ratio",
+        "value": "HR 0.73",
+        "confidence_interval": "",
+        "n": "n=~1,400 (POLARIX overall)",
+        "population": "Frontline DLBCL patients with higher IPI",
+        "comparator": "R\u2011CHOP",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Progression\u2011free survival hazard ratio",
+        "value": "HR ~0.75",
+        "confidence_interval": "",
+        "n": "n=~600 (tafasi\u2011lenalidomide trial)",
+        "population": "DLBCL patients enrolled with streamlined eligibility",
+        "comparator": "placebo + R\u2011CHOP",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Overall response rate",
+        "value": "59%",
+        "confidence_interval": "",
+        "n": "n=61 (SMART regimen cohort)",
+        "population": "DLBCL patients receiving R\u2011lenalidomide\u2011ibrutinib (no chemo)",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Diagnosis\u2011to\u2011treatment interval median",
+        "value": "30 days",
+        "confidence_interval": "",
+        "n": "n=7,700 (LEO cohort)",
+        "population": "All enrolled DLBCL patients",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Polatuzumab vedotin delivers a cytotoxic payload to CD79B\u2011expressing B\u2011cells, enhancing the efficacy of R\u2011CHOP and improving PFS (HR 0.73) in frontline DLBCL, especially in ABC and high\u2011IPI patients. Parallel work leverages gene\u2011expression and whole\u2011exome classifiers (COO, DZ\u2011signature, LymphGen) to stratify patients for targeted regimens such as tafasitamab\u202f+\u202flenalidomide\u202f+\u202fR\u2011CHOP or chemotherapy\u2011free SMART combinations, aiming to replace CHOP with biology\u2011driven, less toxic therapies.",
+    "readouts": [
+      "RNA\u2011seq",
+      "whole exome sequencing",
+      "spatial transcriptomics",
+      "single\u2011cell RNA\u2011seq",
+      "CODEX multiplex protein imaging",
+      "flow cytometry",
+      "IHC",
+      "ctDNA quantitative assay"
+    ],
+    "key_findings": [
+      "Polatuzumab\u2011R\u2011CHOP improved PFS versus R\u2011CHOP (HR 0.73) in a global phase\u202fIII POLARIX trial, establishing a new frontline standard for DLBCL.",
+      "Subgroup analysis showed the greatest PFS benefit in ABC\u2011type DLBCL, confirming genotype\u2011guided therapy.",
+      "A rapid (median 10\u2011day) whole\u2011exome/RNA\u2011seq pipeline accurately classifies COO, DZ\u2011signature, and LymphGen subtypes in both newly diagnosed and relapsed patients.",
+      "Streamlined eligibility criteria (13 essential vs 37 traditional) enabled faster trial enrollment and maintained efficacy (HR ~0.75) for tafasitamab\u202f+\u202flenalidomide\u202f+\u202fR\u2011CHOP.",
+      "SETD2 haploinsufficiency is enriched in patients of African ancestry; preclinical models demonstrate synthetic lethality with SETD2 inhibition, though clinical development was paused after company acquisition.",
+      "Chemotherapy\u2011free SMART regimens (rituximab\u202f+\u202fibrutinib\u202f+\u202flenalidomide) achieved favorable PFS in 61 patients with markedly reduced cytopenias and no alopecia."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Hans IHC algorithm misclassifies ~20% of DLBCL cases, limiting its utility for subtype\u2011specific therapy.",
+      "Dark\u2011zone signature identifies high\u2011risk GCB patients not captured by traditional double\u2011hit FISH, suggesting a need for alternative treatment strategies."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "R\u2011CHOP",
+        "rationale": "Add CD79B\u2011targeted ADC to standard chemo\u2011immunotherapy to improve depth of response.",
+        "phenotype": "Improved PFS (HR 0.73) in frontline DLBCL",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "tafasitamab + lenalidomide",
+        "rationale": "Enhance antibody\u2011dependent cellular cytotoxicity and immunomodulation in high\u2011IPI patients.",
+        "phenotype": "PFS benefit (HR ~0.75) with reduced toxicity",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "ibrutinib + lenalidomide (SMART regimen)",
+        "rationale": "Target BCR signaling and immune microenvironment without chemotherapy.",
+        "phenotype": "High response rate (59%) and minimal cytopenias in 61 patients",
+        "stage": "clinical_reported"
+      },
+      {
+        "with_agent": "gefitinib + polatuzumab + gocatumab (ULTRA trial)",
+        "rationale": "Combine EGFR inhibition, CD79B\u2011ADC, and anti\u2011CD38 to attack multiple pathways.",
+        "phenotype": "Proposed synergistic tumor regression in early phase",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "What early molecular readouts (e.g., cfDNA fragmentomics) can reliably predict long\u2011term benefit of subtype\u2011directed regimens?",
+      "How can spatial transcriptomics\u2011derived plasticity be integrated into real\u2011time treatment decision algorithms?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

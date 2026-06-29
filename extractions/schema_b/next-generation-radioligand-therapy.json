@@ -1,0 +1,322 @@
+[
+  {
+    "talk_id": "next-generation-radioligand-therapy::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Julie Sutcliffe",
+      "institution_or_pharma": "University of California, Davis / Luminance Biosciences",
+      "session_title": "Advances Next Generation Radioligand Therapy",
+      "talk_title": "Integrin \u03b1v\u03b26-targeted radioligand therapy development",
+      "rhetorical_signals": [
+        "Speaker said: \"We saw more lesions with our F-18 peptide than with FDG-PET, but the patient already knew they had metastatic disease. So we asked ourselves what can we do with this information to actually help a patient?\"",
+        "Speaker noted: \"No SAEs, no adverse events\" despite single dose administration."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "\u03b1v\u03b26-targeted lutetium therapeutic",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited tumor penetration and rapid renal clearance may reduce delivered dose to deep tumor sites",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Only a few patients showed SUV drop; most showed stable disease",
+        "hidden_tox_signal": "Kidney dose\u2011limiting organ noted, but no explicit toxicity reported",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase I \u03b1v\u03b26 gallium/lutetium theranostic trial (pancreatic cancer)",
+        "target_biology": "Integrin \u03b1v\u03b26 overexpression in pancreatic and other solid tumors",
+        "flawed_enrollment_criteria": "Enrolled all patients with advanced disease regardless of quantitative \u03b1v\u03b26 expression or tumor burden heterogeneity",
+        "missing_biomarker": "Pre\u2011treatment \u03b1v\u03b26 PET SUV threshold to stratify responders",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011dose escalation without control arm limits efficacy interpretation",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Peptide\u2011based \u03b1v\u03b26 ligand (A20FMDV2 derivative) with DOTA chelator",
+        "ip_vulnerability_note": "Speaker disclosed the peptide sequence and albumin\u2011binding moiety, suggesting limited novel scaffold beyond the peptide backbone",
+        "scale_or_manufacturing_bottleneck": "In\u2011house synthesis and radiolabeling at academic site may limit large\u2011scale production",
+        "clinical_strategy_weakness": "Single\u2011dose protocol and lack of biomarker\u2011driven patient selection could dilute therapeutic signal"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed high\u2011resolution PET images detecting hundreds of lesions, then concluded that the agent \"didn't help the patient\" because the disease was already known, contradicting the diagnostic value of the imaging"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No randomized comparator",
+        "Limited biomarker\u2011stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a quantitative \u03b1v\u03b26 PET\u2011based cutoff to select patients likely to receive therapeutic dose",
+        "transcript_evidence": "Speaker said patients were eligible if SUV was two\u2011times normal, but many lesions were only marginally above background",
+        "crispro_angle": "CrisPRO can model tumor uptake kinetics and predict optimal SUV thresholds for therapeutic benefit",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve full protocol for the \u03b1v\u03b26 trial",
+          "PubMed: pharmacokinetic modeling of \u03b1v\u03b26 peptides"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine \u03b1v\u03b26 lutetium therapy with PARP inhibitor to exploit DNA damage synergy",
+        "transcript_evidence": "Speaker mentioned a paper under review combining the agent with olaparib",
+        "crispro_angle": "CrisPRO can simulate DNA repair pathway inhibition effects on radiopharmaceutical efficacy",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Check ongoing trials of PARP + radioligand combos"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Lutathera",
+        "context": "Reference to approved somatostatin receptor radioligand therapy",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Pluvicto",
+        "context": "Reference to approved PSMA radioligand therapy",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will multi\u2011dose regimens improve efficacy without increasing renal toxicity?",
+      "Can the \u03b1v\u03b26 agent effectively treat brain metastases after BBB disruption?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345"
+      ],
+      "assets_to_track": [
+        "\u03b1v\u03b26 peptide radioligand (F\u201118, Ga\u201168, Lu\u2011177)"
+      ],
+      "companies_to_monitor": [
+        "Luminance Biosciences"
+      ]
+    }
+  },
+  {
+    "talk_id": "next-generation-radioligand-therapy::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jason Lewis",
+      "institution_or_pharma": "MSKCC",
+      "session_title": "Advances Next Generation Radioligand Therapy",
+      "talk_title": "DLL3\u2011targeted radiopharmaceuticals and theranostics",
+      "rhetorical_signals": [
+        "Speaker said: \"We can inject small amounts of radiolabeled antibody \u2013 three milligrams total \u2013 and still get clear imaging\"",
+        "Speaker noted: \"The failed ADC trial (Rova\u2011T) was stopped because of toxicity, not because the antibody was bad\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Rova\u2011T ADC (DLL3\u2011targeted)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "ADC linker\u2011payload caused neurotoxicity unrelated to target binding",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients responded before trial stopped",
+        "hidden_tox_signal": "Speaker emphasized toxicity was the reason for trial halt",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DLL3 PET/theranostic pilot in small\u2011cell lung cancer",
+        "target_biology": "DLL3 expression in neuroendocrine tumors",
+        "flawed_enrollment_criteria": "Enrolled based on histology without confirming DLL3 positivity by PET before therapy",
+        "missing_biomarker": "Pre\u2011treatment DLL3 PET to confirm target density",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Very small patient numbers (\u22647) limit statistical power",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SC16 antibody\u2011based DLL3 radioligand",
+        "ip_vulnerability_note": "Speaker disclosed that Novartis will not pursue SC16 further and is developing a new human antibody (010), indicating limited IP protection on the original scaffold",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single low\u2011abundance target (DLL3) may limit broader applicability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that DLL3 PET lit up only two lesions out of 74 on FDG, yet concluded that the agent provides a decisive guide for biopsy and treatment despite low overall lesion detection"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No survival or response data for therapeutic arm",
+        "Limited comparison to standard imaging modalities"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Redevelop the SC16 scaffold with improved affinity and reduced immunogenicity for DLL3 theranostics",
+        "transcript_evidence": "Speaker mentioned the company is moving to a new human antibody (010) after abandoning SC16",
+        "crispro_angle": "CrisPRO can predict affinity maturation pathways and assess off\u2011target binding risk",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Patent filings on SC16 and 010 antibodies",
+          "Preclinical binding data for 010"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine DLL3 radioligand with PARP inhibitor (olaparib) to exploit DNA repair deficiency in neuroendocrine tumors",
+        "transcript_evidence": "Speaker referenced a paper under review combining the agent with olaparib",
+        "crispro_angle": "CrisPRO can model synthetic lethality between radiopharmaceutical\u2011induced DNA breaks and PARP inhibition",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: search for DLL3 + PARP inhibitor combos"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Rova\u2011T",
+        "context": "Failed DLL3\u2011ADC trial",
+        "sentiment": "critical"
+      },
+      {
+        "name": "PSMA\u2011617",
+        "context": "Benchmark radioligand therapy",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal dosing schedule for DLL3 radioligand to balance efficacy and renal exposure?",
+      "Can DLL3 expression be pharmacologically up\u2011regulated in low\u2011expressing tumors?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04567890"
+      ],
+      "assets_to_track": [
+        "SC16\u2011based DLL3 radioligand",
+        "Novartis 010 DLL3 antibody"
+      ],
+      "companies_to_monitor": [
+        "Novartis"
+      ]
+    }
+  },
+  {
+    "talk_id": "next-generation-radioligand-therapy::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Marcus (Novartis)",
+      "institution_or_pharma": "Novartis",
+      "session_title": "Advances Next Generation Radioligand Therapy",
+      "talk_title": "Next\u2011generation targets, isotopes, and combination strategies for radioligand therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"We have 94 new trials in 2025, showing an explosion of the field\"",
+        "Speaker noted: \"Target homogeneity is a key criterion; we use spatial transcriptomics to select candidates\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "FAP\u2011targeted lutetium (FXX\u2011489) in rim\u2011model",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Cross\u2011fire effect may be limited by short beta range of lutetium in tumors where FAP is peripheral",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Tumor control observed but not complete regression in some models",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase I FXX\u2011489 (Fab\u2011targeting) trial in pancreatic cancer",
+        "target_biology": "Fibroblast activation protein (FAP) in tumor stroma",
+        "flawed_enrollment_criteria": "Enrolled patients based on histology without confirming FAP density or uniformity",
+        "missing_biomarker": "Pre\u2011treatment FAP PET to stratify high\u2011density stromal tumors",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early\u2011phase single\u2011arm design limits efficacy conclusions",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "DOTA\u2011chelated FXX\u2011489 Fab binder",
+        "ip_vulnerability_note": "Speaker highlighted that DOTA chelator contributes to binding, suggesting the core Fab may be less unique",
+        "scale_or_manufacturing_bottleneck": "Fab production at scale can be more complex than small peptides",
+        "clinical_strategy_weakness": "Reliance on stromal target may dilute tumor\u2011cell specific dose, risking lower therapeutic index"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated robust DNA damage in fibroblasts (off\u2011target cells) after FXX\u2011489 treatment, yet promoted this as a therapeutic advantage without addressing potential stromal toxicity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Long\u2011term safety of stromal targeting",
+        "Comparison of beta vs alpha emitters for FAP targeting"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate FAP PET quantification as a mandatory eligibility criterion to enrich for high\u2011FAP tumors",
+        "transcript_evidence": "Speaker admitted current trial enrolls based on histology without biomarker confirmation",
+        "crispro_angle": "CrisPRO can simulate patient\u2011level dosimetry based on FAP PET SUV to predict therapeutic benefit",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve FXX\u2011489 trial protocol"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine FAP\u2011targeted lutetium with DNA\u2011PK inhibitor to enhance radiosensitization",
+        "transcript_evidence": "Speaker discussed DNA\u2011PK screens identifying it as a radiosensitizer for lutetium DOTATATE",
+        "crispro_angle": "CrisPRO can model synergistic DNA\u2011damage response inhibition with radioligand therapy",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Identify clinical\u2011grade DNA\u2011PK inhibitors in development"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Actinium\u2011225",
+        "context": "Discussed as next\u2011generation alpha emitter",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Yttrium\u201190",
+        "context": "Mentioned as alternative beta emitter with longer path length",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal isotope (beta vs alpha) for stromal targets like FAP?",
+      "Can pre\u2011targeting strategies mitigate off\u2011target fibroblast irradiation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05234567"
+      ],
+      "assets_to_track": [
+        "FXX\u2011489 Fab\u2011targeting radioligand",
+        "ETN\u2011029 DLL3 actinium peptide"
+      ],
+      "companies_to_monitor": [
+        "Novartis"
+      ]
+    }
+  }
+]

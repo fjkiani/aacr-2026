@@ -1,0 +1,247 @@
+[
+  {
+    "talk_id": "aacr-asco-joint-session-next-generation-of-car-t-cell-therapies::gill::1",
+    "talk_metadata": {
+      "speaker_name": "Saar Gill",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "AACR/ASCO Joint Session: Next Generation of CAR-T Cell Therapies",
+      "talk_title": "In Vivo CAR T Cell Platforms and Paradigms",
+      "rhetorical_signals": [
+        "Speaker said: 'I'm actually not going to show that much data from my own group because this is a brand new, exciting field'",
+        "Speaker said: 'I have no idea what's going on with it [the company], and so I clearly have no disclosures'",
+        "Speaker said: 'This is mostly speculative, by calculation and with some extrapolations'",
+        "Speaker said: 'I'll take your word for it' regarding complex data slides"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Lentiviral vectors (VSVG pseudotyping)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Low LDL receptor expression and low dNTP pools in resting T cells prevent efficient transduction without prior activation.",
+        "unexplained_resistance_quote": "successful reverse transcription requires a considerable dNTP pool, which is low in resting T cells... this remains actually unaddressed",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Mentioned a clinical trial in China where 5/5 patients had grade 3 AEs and one patient had an early death, potentially due to innate immune response to viral particles or CD3 cross-linking.",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "In vivo CAR T (General)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Immunogenicity of the CAR construct leading to anti-CAR antibodies.",
+        "unexplained_resistance_quote": "Ultimately, a lot of the animals had developed anti-CAR antibodies detected by 7 to 14 days... the B-cells came back, basically.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard VSVG pseudotyping",
+        "ip_vulnerability_note": "Speaker disclosed that standard VSVG is limited by LDL receptor expression; the 'blinded' mutation strategy is required to prevent non-specific transduction of all cells.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on CD3 cross-linking for transduction may cause significant systemic inflammation/toxicity."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No head-to-head comparison between ex vivo and in vivo potency",
+        "Lack of granularity in cytokine profiles to distinguish between infusion reactions and CRS",
+        "Biodistribution and PK not well known for in vivo approaches"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Overcoming the need for T cell activation (which is required for LDLR upregulation and dNTP pool increase) to allow direct in vivo transduction of resting T cells.",
+        "transcript_evidence": "successful reverse transcription requires a considerable dNTP pool, which is low in resting T cells",
+        "crispro_angle": "Computational identification of alternative entry receptors or metabolic modifiers to bypass the dNTP/LDLR requirement for resting T cells.",
+        "external_validation_needed": [
+          "PubMed: SAM HD1 inhibition and dNTP pool expansion in resting T cells"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cilta-Cel",
+        "context": "Used as a benchmark for toxicity profiles.",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Whether tissue-resident immune effector cells (T cells in spleen, bone marrow) are better suited for cancer immunotherapy than circulating T cells.",
+      "Whether the early toxicity in in vivo trials is due to innate immune response to particles or TCR cross-linking."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Anti-BCMA CAR viral-like particles (China trial)",
+        "Anti-CD19 CAR mRNA-LNP for SLE"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "aacr-asco-joint-session-next-generation-of-car-t-cell-therapies::mackall::2",
+    "talk_metadata": {
+      "speaker_name": "Crystal Mackall",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "AACR/ASCO Joint Session: Next Generation of CAR-T Cell Therapies",
+      "talk_title": "CAR T Cells for Pediatric Brain Tumors",
+      "rhetorical_signals": [
+        "Speaker said: 'The bad news is... we saw some significant toxicity'",
+        "Speaker said: 'We didn't catch on to this until too late [regarding lymphodepletion in Arm B]'",
+        "Speaker said: 'I think we need to add immunogenicity to this list [of solid tumor failures]'"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "GD2 CAR T (Arm B - ICV without lymphodepletion)",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Host immune response (anti-CAR antibodies and T cell responses) leading to rapid clearance of CAR T cells in the CNS.",
+        "unexplained_resistance_quote": "Patients had transient responses, but they would rarely last longer than two to three months... we really felt we had lost our efficacy.",
+        "ghost_responder_admission": "Patient 10 achieved a complete response ongoing for over four years (Arm A).",
+        "hidden_tox_signal": "Tumor inflammation-associated neurotoxicity (swelling of the tumor leading to increased intracranial pressure).",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Arm B",
+        "target_biology": "GD2 targeting in pediatric brain tumors",
+        "flawed_enrollment_criteria": "Removal of lymphodepletion in Arm B led to loss of efficacy due to immune rejection of the CAR T cells.",
+        "missing_biomarker": "Anti-CAR antibody titers (not monitored in real-time during Arm B)",
+        "static_vs_dynamic_failure": "Failure to monitor anti-CAR antibody onset temporally correlated with CAR T disappearance.",
+        "statistical_concern": "Single-arm trial caveats.",
+        "severity": "fatal_to_trial"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Mouse-derived anti-GD2 scFv",
+        "ip_vulnerability_note": "The use of a 1980s mouse-derived binder is a primary driver of the robust anti-CAR immune responses (CD4, CD8, and antibodies).",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on repeated lymphodepletion to prevent antibody-mediated rejection."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of power to distinguish phenotypic differences between CNS-retained and peripheral-trafficking CAR T cells",
+        "Lack of data on naturally occurring GD2 binding proteins"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Replacing mouse-derived scFv with fully humanized or 'stealth' platforms to prevent the anti-CAR immune response that limits persistence in the CNS.",
+        "transcript_evidence": "these mapped in large part to the mouse-derived single-chain Fv... these data suggest that perhaps we should be using stealth platforms",
+        "crispro_angle": "Computational design of non-immunogenic humanized binders and junctional domains to eliminate T cell and B cell epitopes.",
+        "external_validation_needed": [
+          "PubMed: Humanized GD2 binders and their immunogenicity profiles"
+        ],
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Whether the myeloid cells in the CNS contribute to a second axis of resistance.",
+      "Whether the anti-CAR response is initiated in the CNS or peri-CNS tissues (IgA bias suggests CNS/gut axis)."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GD2 CAR T (Stanford/Mackall)"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "aacr-asco-joint-session-next-generation-of-car-t-cell-therapies::darcy::3",
+    "talk_metadata": {
+      "speaker_name": "Phil Darcy",
+      "institution_or_pharma": "Peter McCallum Cancer Centre",
+      "session_title": "AACR/ASCO Joint Session: Next Generation of CAR-T Cell Therapies",
+      "talk_title": "Precision Targeted Engineering of CAR T Cells",
+      "rhetorical_signals": [
+        "Speaker said: 'this is unpublished, this data'",
+        "Speaker said: 'we're getting peripheral expression through that promoter... we propose that this loss of gene regulation may be due to disruption of the RG16 gene'",
+        "Speaker said: 'I don't have time to go into that data today [regarding 3' UTR]'"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NFAT inducible promoter",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Lack of tissue specificity leads to peripheral expression of pro-inflammatory cytokines (e.g., IL-12), causing systemic toxicity.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "NFAT system caused rapid weight loss and systemic toxicity in mice.",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "RGS16 promoter (standard knock-in)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Disruption of the endogenous RGS16 gene during CRISPR knock-in leads to loss of gene regulation and unintended peripheral expression.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "High expression in the spleen leading to systemic toxicity when driving IL-12.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard CRISPR HDR knock-in",
+        "ip_vulnerability_note": "Standard knock-in disrupts the target gene, which can lead to loss of regulatory control (e.g., RGS16). The speaker's 'next-generation' P2A linker strategy preserves the endogenous gene to maintain specificity.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": null
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No human clinical data presented",
+        "Lack of testing against other CAR targets (e.g., CD19) to check for tonic signaling effects"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Using tumor-specific promoters (NR4A2 for safety, RGS16 for potency) to drive armored payloads (IL-12, IL-2) specifically at the tumor site.",
+        "transcript_evidence": "NR4A2 was driving a safe delivery of IL-12 to the tumor, inducing strong anti-tumor effects",
+        "crispro_angle": "Computational identification of more precise tumor-specific promoters and 3' UTR elements to further restrict expression and avoid peripheral toxicity.",
+        "external_validation_needed": [
+          "PubMed: NR4A2 and RGS16 expression patterns in human solid tumors"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Whether the RGS16 promoter is driven by TCR signaling or other microenvironmental factors.",
+      "Whether the P2A linker strategy that retains RGS16 expression might drive T cell exhaustion over time."
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NR4A2-driven IL-12 CAR T",
+        "RGS16-driven IL-2 CAR T"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

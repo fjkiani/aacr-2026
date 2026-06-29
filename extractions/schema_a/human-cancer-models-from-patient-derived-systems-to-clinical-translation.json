@@ -1,0 +1,504 @@
+[
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::tuveson::1",
+    "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+    "talk_title": "Organoid-guided randomized trial of gemcitabine/nab-paclitaxel versus FOLFIRINOX in pancreatic cancer",
+    "speaker": {
+      "name": "David Tuveson",
+      "affiliation": "Cold Spring Harbor Laboratory",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "targeted_therapy",
+      "combination_therapy",
+      "translational",
+      "platform_technology",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "mutant",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "pan-RAS inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KRAS mutant pancreatic cancer organoids",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "DNA polymerase",
+        "alteration": "",
+        "pathway": "DNA replication",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "gemcitabine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pancreatic cancer organoids",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "\u03b2\u2011tubulin",
+        "alteration": "",
+        "pathway": "microtubule dynamics",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "nab\u2011paclitaxel (Abraxane)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pancreatic cancer organoids",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNA synthesis",
+        "alteration": "",
+        "pathway": "folate metabolism",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "oxaliplatin (FOLFIRINOX component)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pancreatic cancer organoids",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CA19-9 dynamics",
+        "type": "predictive",
+        "assay": "serum ELISA",
+        "finding": "Rapid decline within 4 weeks correlated with longer overall survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "Randomized organoid\u2011guided trial (gemcitabine/nab\u2011paclitaxel vs FOLFIRINOX)",
+        "genotype_or_key_features": "160 patients with advanced pancreatic adenocarcinoma, KRAS mutant in ~90%"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Patient\u2011derived organoids (PDO)",
+        "genotype_or_key_features": "186 biopsies, 73% liver mets, KRAS mutant status recorded"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival",
+        "value": "gemcitabine/nab\u2011paclitaxel superior to FOLFIRINOX (hazard ratio not specified)",
+        "confidence_interval": "",
+        "n": "n=71 (FOLFIRINOX) vs n=69 (gem/nab\u2011paclitaxel)",
+        "population": "advanced pancreatic cancer",
+        "comparator": "FOLFIRINOX",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Organoid establishment rate",
+        "value": "\u224850% success",
+        "confidence_interval": "",
+        "n": "n=186 biopsies",
+        "population": "pancreatic cancer specimens",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Median time to PDO drug testing",
+        "value": "70 days (median)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "all PDOs",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Patient\u2011derived pancreatic organoids are cultured from core biopsies, pharmacotyped with gemcitabine, nab\u2011paclitaxel, and FOLFIRINOX components, and the ex vivo drug sensitivity correlates with patient outcomes; a transcriptional signature derived from sensitive organoids can predict response without the need for culture, enabling functional precision oncology.",
+    "readouts": [
+      "IC50 dose\u2011response curves",
+      "RNA\u2011seq transcriptional profiling",
+      "CODEX spatial protein imaging",
+      "CA19\u20119 serum levels"
+    ],
+    "key_findings": [
+      "Organoid establishment success was ~50% across 186 biopsies, with failure associated with markedly longer patient survival.",
+      "Ex vivo gemcitabine/nab\u2011paclitaxel sensitivity in PDOs predicted better clinical outcomes compared with FOLFIRINOX in the randomized trial.",
+      "A transcriptional oxaliplatin\u2011response signature derived from hypersensitive organoids stratified patients receiving FOLFIRINOX and correlated with overall survival.",
+      "Pan\u2011RAS inhibitor showed heterogeneous activity across KRAS\u2011mutant and wild\u2011type organoids, highlighting the need for functional testing beyond genotype.",
+      "High\u2011content microscopy reduced assay turnaround to <30 days while maintaining strong correlation with traditional ATP\u2011based readouts."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Organoids that failed to grow were derived from less aggressive tumors, indicating that culture failure itself is a prognostic marker.",
+      "Fibroblast co\u2011culture increased the IC50 of the pan\u2011RAS inhibitor three\u2011fold, demonstrating microenvironment\u2011mediated drug resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "nab\u2011paclitaxel",
+        "rationale": "Synergistic cytotoxicity with gemcitabine in PDOs",
+        "phenotype": "Improved tumor regression in organoid models and superior OS in trial",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "fibroblast co\u2011culture",
+        "rationale": "Model tumor microenvironment impact on drug response",
+        "phenotype": "Increased resistance to RAS inhibitor, no effect on taxane",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can the organoid establishment rate be increased to >80% to capture the most chemosensitive patient subset?",
+      "Will prospective use of the transcriptional signature alone replace the need for PDO testing in routine care?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::tyner::2",
+    "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+    "talk_title": "Functional ex vivo testing and cell\u2011state\u2011guided therapy in AML",
+    "speaker": {
+      "name": "Jeffrey Tyner",
+      "affiliation": "Oregon Health & Science University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "translational",
+      "basic_science",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "",
+        "pathway": "apoptosis regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "venetoclax",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "stem\u2011like AML cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CDK4/6",
+        "alteration": "",
+        "pathway": "cell cycle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "palbociclib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "monocytic AML cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FLT3",
+        "alteration": "mutant",
+        "pathway": "RTK signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "gilteritinib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "FLT3\u2011mutant AML",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "HDAC",
+        "alteration": "",
+        "pathway": "epigenetic regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "panobinostat",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "differentiated AML cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "Cell differentiation state signature",
+        "type": "predictive",
+        "assay": "RNA\u2011seq deconvolution",
+        "finding": "Stem\u2011like signature predicts venetoclax sensitivity; monocytic signature predicts resistance"
+      },
+      {
+        "name": "RAS mutation",
+        "type": "predictive",
+        "assay": "DNA sequencing",
+        "finding": "Enriches for response to venetoclax\u202f+\u202fpalbociclib combination"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "BEAT\u2011AML 1.0 cohort",
+        "genotype_or_key_features": "\u22481,000 AML patient specimens with ex vivo drug screens, DNA/RNA/Proteomics"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "Primary AML blasts",
+        "genotype_or_key_features": "Various mutational backgrounds, including FLT3\u2011ITD, NPM1, TP53"
+      },
+      {
+        "model_type": "PDX",
+        "name": "AML xenograft models",
+        "genotype_or_key_features": "Validated venetoclax\u202f+\u202fpalbociclib efficacy"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Ex vivo synergy score (venetoclax\u202f+\u202fpalbociclib)",
+        "value": "High synergy (score > 0.8)",
+        "confidence_interval": "",
+        "n": "n=400 tested combos",
+        "population": "AML patient samples",
+        "comparator": "",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "Pharma\u2011type prediction accuracy for venetoclax\u202f+\u202fHMA",
+        "value": "\u2248100% in newly diagnosed, >90% in relapsed/refractory",
+        "confidence_interval": "",
+        "n": "n>100 patients",
+        "population": "AML",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "High\u2011throughput ex vivo drug screens of primary AML blasts reveal that differentiation state, rather than mutation alone, dictates sensitivity; stem\u2011like blasts are venetoclax\u2011sensitive, while monocytic blasts resist venetoclax but are vulnerable to CDK4/6 inhibition, enabling rational venetoclax\u202f+\u202fpalbociclib combinations.",
+    "readouts": [
+      "high\u2011throughput viability assay",
+      "flow cytometry immunophenotyping",
+      "single\u2011cell CITE\u2011seq",
+      "RNA\u2011seq deconvolution",
+      "synergy scoring"
+    ],
+    "key_findings": [
+      "Cell state signatures (stem\u2011like vs monocytic) explain response to >70% of 120 tested drugs.",
+      "Venetoclax is highly effective against stem\u2011like AML but ineffective against monocytic AML.",
+      "Panobinostat shows the opposite pattern, being active in differentiated AML.",
+      "Venetoclax\u202f+\u202fpalbociclib demonstrates superior ex vivo activity and synergy, especially in RAS\u2011mutant or monocytic\u2011like samples.",
+      "The pharma\u2011type composite ex vivo signature predicts clinical response to venetoclax\u202f+\u202fHMA with near\u2011perfect accuracy in newly diagnosed AML."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Monocytic differentiation confers resistance to BCL2 inhibition by upregulating protein synthesis pathways.",
+      "RAS mutations sensitize AML cells to the venetoclax\u202f+\u202fpalbociclib combination."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "palbociclib",
+        "rationale": "Targets protein synthesis dependency in monocytic AML that limits venetoclax efficacy",
+        "phenotype": "Synergistic cell kill in >80% of monocytic samples",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "hypomethylating agent (azacitidine)",
+        "rationale": "Standard frontline regimen; ex vivo response mirrors clinical outcomes",
+        "phenotype": "High activity and synergy comparable to clinical data",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can cell\u2011state\u2011guided therapy be prospectively validated in a randomized AML trial?",
+      "What additional biomarkers (e.g., protein synthesis signatures) can refine patient selection for venetoclax\u202f+\u202fCDK4/6 inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Weber et al. 2024 NEJM",
+        "Wu et al. 2023 Nature"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "human-cancer-models-from-patient-derived-systems-to-clinical-translation::claudio::3",
+    "session_title": "human-cancer-models-from-patient-derived-systems-to-clinical-translation",
+    "talk_title": "Functional Precision Oncology: ChemoID\u2011guided therapy improves outcomes in recurrent glioblastoma and platinum\u2011resistant ovarian cancer",
+    "speaker": {
+      "name": "Pier Paolo Claudio",
+      "affiliation": "University of Mississippi Medical Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioblastoma",
+      "ovarian cancer"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "combination_therapy",
+      "translational",
+      "clinical_trial",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNA synthesis",
+        "alteration": "",
+        "pathway": "cell proliferation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "temozolomide",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "glioblastoma bulk cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "microtubule dynamics",
+        "alteration": "",
+        "pathway": "mitosis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "paclitaxel",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer bulk cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNA crosslinking",
+        "alteration": "",
+        "pathway": "DNA damage",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "carboplatin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer bulk cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNA intercalation",
+        "alteration": "",
+        "pathway": "DNA replication",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "doxorubicin",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer bulk cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CA\u2011125",
+        "type": "predictive",
+        "assay": "serum immunoassay",
+        "finding": "Greater decline after ChemoID\u2011guided therapy correlated with longer PFS"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "ChemoID glioblastoma randomized trial (2023)",
+        "genotype_or_key_features": "Recurrent Grade\u202f4 gliomas, n\u2248??"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "ChemoID ovarian cancer randomized trial (2025)",
+        "genotype_or_key_features": "Recurrent platinum\u2011resistant ovarian cancer, \u22645 prior lines"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "ChemoID assay (bulk + cancer stem cell cultures)",
+        "genotype_or_key_features": "Biopsy\u2011derived bulk tumor cells and enriched cancer stem cells cultured 7\u202fdays"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Overall survival (glioblastoma)",
+        "value": "12.0 months (ChemoID) vs 7.5 months (physician choice)",
+        "confidence_interval": "",
+        "n": "n=??",
+        "population": "recurrent glioblastoma",
+        "comparator": "physician\u2011choice standard of care",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Overall survival benefit",
+        "value": "+4.5 months",
+        "confidence_interval": "",
+        "n": "",
+        "population": "glioblastoma",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Objective response rate (ovarian cancer)",
+        "value": "55% (ChemoID) vs 5% (physician choice)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "platinum\u2011resistant ovarian cancer",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Progression\u2011free survival (ovarian cancer)",
+        "value": "11 months (ChemoID) vs 3 months (physician choice)",
+        "confidence_interval": "",
+        "n": "",
+        "population": "platinum\u2011resistant ovarian cancer",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "ChemoID isolates bulk tumor cells and patient\u2011derived cancer stem cells, tests a panel of chemotherapies and combinations ex vivo, and reports percent cell kill for each compartment; selecting agents that achieve \u226550% kill in both compartments guides therapy, leading to significant OS and ORR improvements in randomized glioblastoma and ovarian cancer trials.",
+    "readouts": [
+      "cell viability (% kill) assay",
+      "flow cytometry immunophenotyping (CD44, CD24, CD117, CD184)",
+      "in vivo tumorigenicity (limiting\u2011dilution mouse xenografts)"
+    ],
+    "key_findings": [
+      "ChemoID\u2011guided therapy extended median OS by 4.5\u202fmonths in recurrent glioblastoma (12\u202fvs\u202f7.5\u202fmonths).",
+      "In ovarian cancer, objective response rate increased from 5% to 55% with ChemoID guidance.",
+      "Median PFS improved from 3\u202fmonths to 11\u202fmonths in the ChemoID arm for ovarian cancer.",
+      "A \u226550% cell\u2011kill threshold in both bulk and cancer stem cell compartments predicted clinical response.",
+      "The assay achieved CLIA/CAP accreditation and received FDA breakthrough device designation for brain tumors."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Patients whose tumors showed <50% kill in cancer stem cell assays experienced progressive disease despite bulk sensitivity.",
+      "Monocytic\u2011like cancer stem cells persisted after many standard agents, indicating a resistant subpopulation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "carboplatin\u202f+\u202fpaclitaxel",
+        "rationale": "Standard of care doublet; ex vivo sensitivity in both compartments predicts response",
+        "phenotype": "Complete responses in ChemoID\u2011guided arm",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "doxorubicin alone",
+        "rationale": "Tested as single agent; lack of stem\u2011cell kill correlated with progression",
+        "phenotype": "Progressive disease in physician\u2011choice arm",
+        "stage": "clinical_reported"
+      }
+    ],
+    "open_questions": [
+      "Can the ChemoID platform be scaled for broader tumor types and integrated with genomic biomarkers?",
+      "What is the optimal cell\u2011kill cutoff for cancer stem cells to maximize clinical benefit?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

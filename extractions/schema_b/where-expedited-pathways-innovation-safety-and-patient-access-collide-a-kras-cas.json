@@ -1,0 +1,213 @@
+[
+  {
+    "talk_id": "where-expedited-pathways-innovation-safety-and-patient-access-collide-a-kras-cas::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ignacio Garrido Laguna",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "where-expedited-pathways-innovation-safety-and-patient-access-collide-a-kras-cas",
+      "talk_title": "Clinical advances and patient experience with KRAS inhibitors",
+      "rhetorical_signals": [
+        "Speaker said: \"He attained a complete response and continue in complete remission, and I can tell you he's tolerating treatment fantastically well.\"",
+        "Speaker said: \"There are over 50 different KRAS inhibitors, and they all have a different spectrum of inhibition and also a different spectrum of toxicities. So it's going to overwhelm the whole approval process.\"",
+        "Speaker said: \"The study did not allow for crossover, and 230 patients never had a chance to benefit from this drug.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Pan-KRAS inhibitors (GDP\u2011bound selective)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited activity against GTP\u2011bound KRAS forms, leading to low response in certain alleles (e.g., G12R)",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "sotorasib (G12C inhibitor) control arm patients",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of crossover prevented patients from receiving active KRAS inhibition, obscuring true benefit",
+        "unexplained_resistance_quote": "Speaker said: \"These 230 patients never had a chance to benefit from this drug.\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 3 sotorasib lung cancer trial (unnamed)",
+        "target_biology": "KRAS G12C inhibition in NSCLC",
+        "flawed_enrollment_criteria": "No crossover allowed despite strong efficacy signals, leading to high withdrawal and patient attrition",
+        "missing_biomarker": "",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential bias from asymmetric dropout of control patients",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Multiple first\u2011line KRAS inhibitor phase\u20113 trials (company\u2011specific, not named)",
+        "target_biology": "Pan\u2011KRAS inhibition in pancreatic cancer",
+        "flawed_enrollment_criteria": "Broad control arms without biomarker stratification; enrolling patients who may not be eligible for KRAS\u2011targeted therapy",
+        "missing_biomarker": "KRAS mutation subtype (e.g., G12D, G12R) not required for enrollment",
+        "static_vs_dynamic_failure": "No serial ctDNA or tissue biopsies to track emerging resistance",
+        "statistical_concern": "Underpowered to detect differences in sub\u2011cohorts defined by allele",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Pan\u2011KRAS inhibitors based on GDP\u2011bound scaffold",
+        "ip_vulnerability_note": "Speaker highlighted that these agents are limited to the GDP\u2011bound form, making them vulnerable to resistance via GTP\u2011bound KRAS amplification.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on combination with upstream inhibitors (EGFR, SHP2) without clear combinatorial data."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed a complete response in a pancreatic cancer patient (high efficacy) but then emphasized that wait\u2011lists and lack of trial slots are a major barrier, contradicting the notion that the drug alone can solve access issues."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for the pan\u2011KRAS agents",
+        "No biomarker\u2011stratified efficacy analysis for non\u2011G12C alleles",
+        "Lack of randomized comparator data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven KRAS allele\u2011specific biomarker panel to prospectively select patients for pan\u2011KRAS versus allele\u2011specific trials.",
+        "transcript_evidence": "Speaker said: \"The only molecules that we have for these G12R mutations are actually the multi\u2011RAS inhibitors. We don't have allele specifics against this mutation either.\"",
+        "crispro_angle": "CrisPRO can integrate ctDNA, RNA\u2011seq and clinical data to predict KRAS allele activity and guide trial enrollment.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: identify trials enrolling KRAS G12R patients",
+          "PubMed: resistance mechanisms for pan\u2011KRAS inhibitors"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Use CrisPRO to model optimal upstream inhibitor combinations (EGFR, SHP2, SOS1) for GDP\u2011bound limited pan\u2011KRAS agents.",
+        "transcript_evidence": "Speaker said: \"They will likely need to be combined with upstream inhibitors, either EGFR or SHP2 or SOS1 inhibitors that we have already undergoing clinical testing.\"",
+        "crispro_angle": "Computational simulation of pathway inhibition can prioritize synergistic combos before clinical testing.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical synergy datasets for KRAS + EGFR/SHP2 inhibitors"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "sotorasib",
+        "context": "First FDA\u2011approved KRAS G12C inhibitor, used as example of crossover limitation",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "adagrasib",
+        "context": "Second FDA\u2011approved KRAS G12C inhibitor, mentioned alongside sotorasib",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Revolution Medicine pan\u2011KRAS inhibitor",
+        "context": "Cited as the most advanced pan\u2011KRAS candidate with promising early data",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Boehringer Ingelheim pan\u2011KRAS",
+        "context": "Reported limited activity and discontinued due to non\u2011linear PK",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "How can ctDNA be standardized as a surrogate endpoint for early efficacy readouts?",
+      "What regulatory framework will allow crossover without compromising OS endpoints?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Revolution Medicine pan\u2011KRAS inhibitor",
+        "Boehringer Ingelheim pan\u2011KRAS program",
+        "QTX\u20113034 (G12D inhibitor)",
+        "ASP3032"
+      ],
+      "companies_to_monitor": [
+        "Revolution Medicine",
+        "Boehringer Ingelheim",
+        "Amgen",
+        "Mirati/BMS"
+      ]
+    }
+  },
+  {
+    "talk_id": "where-expedited-pathways-innovation-safety-and-patient-access-collide-a-kras-cas::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mark Lee",
+      "institution_or_pharma": "N-Power Medicine",
+      "session_title": "where-expedited-pathways-innovation-safety-and-patient-access-collide-a-kras-cas",
+      "talk_title": "Prospective external (synthetic) control arms for KRAS inhibitor trials",
+      "rhetorical_signals": [
+        "Speaker said: \"We have limited success with external control arms outside of niche indications, but the real win will be in common indications to avoid challenges.\"",
+        "Speaker said: \"The vast majority of the US does not have access to these KRAS trials \u2013 70% to 80% of patients don't live within two hours of a trial center.\"",
+        "Speaker said: \"We propose to generate prospective external control arms by design, under protocol, using standard\u2011of\u2011care patients.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "",
+        "target_biology": "Standard\u2011of\u2011care KRAS\u2011mutant cancer therapies",
+        "flawed_enrollment_criteria": "Current trials rely on historical control data that may not reflect contemporary SOC, risking dilution of signal",
+        "missing_biomarker": "Real\u2011time KRAS allele status in control cohorts",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Retrospective ECAs show poor comparability to trial data, leading to potential bias",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Prospective external control arm platform",
+        "ip_vulnerability_note": "Speaker disclosed the workflow and data\u2011capture methodology, suggesting the core novelty is the operational design rather than proprietary technology.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on real\u2011world data sources that may lack uniform data quality across sites."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective validation that synthetic control arms can replace randomized controls",
+        "Lack of regulatory acceptance framework for prospective ECAs"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Apply CrisPRO to generate high\u2011fidelity synthetic control cohorts by matching on multi\u2011omics and clinical variables.",
+        "transcript_evidence": "Speaker said: \"We propose to create these prospectively, by design, under protocol, and just anticipating what the control arms are going to be.\"",
+        "crispro_angle": "CrisPRO can algorithmically match patients across institutions, ensuring comparable baseline characteristics and reducing bias.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Retrospective comparison of CrisPRO\u2011matched ECAs vs actual randomized controls in KRAS trials"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What regulatory pathway will accept prospectively built synthetic control arms for pivotal approvals?",
+      "How can data standardization across disparate EHR systems be achieved for reliable ECAs?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "N-Power Medicine external control platform"
+      ],
+      "companies_to_monitor": [
+        "N-Power Medicine"
+      ]
+    }
+  }
+]

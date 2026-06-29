@@ -1,0 +1,405 @@
+[
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Charlotte Grieco",
+      "institution_or_pharma": "Cancer Research UK",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Multiple primary lung cancers within TRACERx",
+      "rhetorical_signals": [
+        "Speaker said: \"One in 10 cases were perhaps not accurately diagnosed and treated as a result of not using sequencing of their relapse or new primary lesions.\"",
+        "Speaker said: \"We do see some survival differences within the cohort... for those with synchronous primaries, we do see that their survival is poorer.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "Limited biomarker-stratified analysis"
+      ]
+    },
+    "crispro_opportunity": [],
+    "cited_competitors": [],
+    "unresolved_questions": [],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Sebastian Mueller",
+      "institution_or_pharma": "Technical University of Munich",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Mouse Cancer Cell Line Atlas",
+      "rhetorical_signals": [
+        "Speaker said: \"Mouse tumors have less mutations, less copy number alterations, giving a cleaner view on dependencies.\"",
+        "Speaker said: \"We found this dependency of RAS on CDKN2A loss, and if you do the same kind of analysis in humans, you don't see that pattern until you remove P53-inactivated tumors.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Mouse Cancer Cell Line Atlas resource",
+        "ip_vulnerability_note": "Speaker disclosed that the atlas currently covers 590 lines from 22 lineages, indicating limited breadth compared to human datasets.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": null
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Limited cross-species validation of copy number event conservation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Leverage the Mouse Cancer Cell Line Atlas to design mouse preclinical trials that better match human KRAS dosage amplification timing across tissues.",
+        "transcript_evidence": "Speaker said: \"We found that KRAS dosage increase occurs early in pancreas but late in lung and intestine, mirroring human data.\"",
+        "crispro_angle": "Use CrisPRO to model tissue-specific KRAS amplification trajectories and predict optimal timing for intervention in mouse models.",
+        "priority": "high",
+        "external_validation_needed": [
+          "PubMed: KRAS amplification timing in human cancers",
+          "ClinicalTrials.gov: preclinical mouse model trial designs"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How conserved are specific copy number events between mouse and human cancers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Mouse Cancer Cell Line Atlas"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Colin Lindsay",
+      "institution_or_pharma": "University of Manchester",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Allele-specific KRAS mutation signatures",
+      "rhetorical_signals": [
+        "Speaker said: \"We see that only G12C, G12V, G13C, and perhaps Q61L seem to be directly caused by smoking, SBS4 in particular.\"",
+        "Speaker said: \"Smoking may select for variants like 13D and 12A, but it doesn't have a dominant contribution, but it's always present.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "KRAS G12C inhibitors",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Smoking signature SBS4 directly causes G12C mutations but does not guarantee therapeutic response; other KRAS subtypes lack direct smoking causality.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that smoking signatures dominate the mutational landscape for many KRAS subtypes, then concluded that KRAS mutant lung cancer is generally ascribed to smoking, despite data showing limited direct causality for several subtypes."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited functional validation of signature-to-mutation causality",
+        "No outcome data linking signature attribution to therapy response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO-based classifier to identify patients with KRAS G12C driven by smoking signature SBS4 for targeted therapy prioritization.",
+        "transcript_evidence": "Speaker said: \"Only G12C, G12V, G13C, and perhaps Q61L seem to be directly caused by smoking, SBS4 in particular.\"",
+        "crispro_angle": "Integrate mutational signature probabilities with KRAS subtype to predict smoking-driven KRAS lesions.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: KRAS G12C inhibitor trials",
+          "PubMed: Smoking signature impact on KRAS inhibitor response"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model non-smoking-driven KRAS subtypes (e.g., G12D, G13D) to uncover alternative resistance mechanisms.",
+        "transcript_evidence": "Speaker noted that smoking signatures are not directly implicated in causing G12D and G13D mutations.",
+        "crispro_angle": "Predict downstream pathway dependencies for KRAS subtypes lacking smoking etiology.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "TCGA lung adenocarcinoma KRAS subtype analyses"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the clinical outcomes for patients with KRAS subtypes not directly linked to smoking signatures?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "KRAS G12C inhibitor programs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Elizabeth Brunk",
+      "institution_or_pharma": "University of North Carolina Chapel Hill",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Gene amplification architecture and expression",
+      "rhetorical_signals": [
+        "Speaker said: \"EcDNA provides cancer cells with distinct evolutionary strategies... a continuous spectrum of gene dosage across cells that's maintained.\"",
+        "Speaker said: \"When we sort high and low HER2 cells, both populations converge back to the original distribution within two to three generations.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "ecDNA detection workflow",
+        "ip_vulnerability_note": "Speaker disclosed reliance on manual FISH counting and AI pipelines that may be proprietary, indicating potential IP exposure.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited scalability of ecDNA quantification hampers clinical trial enrollment criteria based on ecDNA status."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "In vivo validation of ecDNA-driven transcriptional scaling",
+        "Therapeutic targeting data for ecDNA-specific vulnerabilities"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Apply CrisPRO to model dosage-dependent transcriptional scaling of ecDNA-amplified oncogenes for predictive response to dosage-targeted therapies.",
+        "transcript_evidence": "Speaker demonstrated that HER2 protein levels scale with ecDNA copy number and that scaling differs between ecDNA and HSR contexts.",
+        "crispro_angle": "Simulate ecDNA dosage heterogeneity to predict optimal drug dosing strategies.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical studies of HER2-targeted agents in ecDNA vs HSR models"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What mechanisms enforce the rapid re-equilibration of ecDNA copy number distributions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ecDNA-targeted therapeutic programs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Joseph Chen",
+      "institution_or_pharma": "MSKCC",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Histological transformation and lineage plasticity in lung cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"We find that adeno to small cell transformation is much more complicated than a binary switch, and leads to a multiverse of different states.\"",
+        "Speaker said: \"FOX2B may be a driver of the neuroendocrine state with EGFR suppression.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "EGFR-targeted therapies in transformed small cell",
+        "failure_type": "acquired_resistance",
+        "mechanistic_blindspot": "Transformation to small cell phenotype retains original EGFR driver but becomes EGFR-independent, limiting efficacy of EGFR inhibitors.",
+        "unexplained_resistance_quote": "Speaker noted that transformed small cell adopts a phenotype independent of the originally targeted gene program.",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "N/A",
+        "target_biology": "EGFR mutant adenocarcinoma treated with EGFR TKIs",
+        "flawed_enrollment_criteria": "Including patients without molecular confirmation of transformation status may dilute signal of EGFR TKI efficacy.",
+        "missing_biomarker": "Lack of routine serial biopsies or ctDNA to detect small cell transformation.",
+        "static_vs_dynamic_failure": "No on-treatment monitoring of histologic state leads to missed emergence of resistant small cell clones.",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker presented extensive single-cell evidence of multiple intermediate states, yet concluded that targeting FOX2B could reverse neuroendocrine identity without showing functional rescue data."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Limited functional validation of FOX2B as therapeutic target",
+        "Absence of longitudinal clinical outcome correlation"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model FOX2B-driven neuroendocrine reprogramming and predict combinatorial inhibition strategies to prevent EGFR TKI resistance.",
+        "transcript_evidence": "Speaker showed FOX2B overexpression increases neuroendocrine markers and suppresses EGFR signaling.",
+        "crispro_angle": "Simulate transcriptional network rewiring upon FOX2B perturbation to identify synergistic drug combos.",
+        "priority": "high",
+        "external_validation_needed": [
+          "In vitro FOX2B knockdown studies",
+          "Clinical data linking FOX2B expression to transformation outcomes"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What are the upstream signals that trigger the basal intermediate state preceding transformation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "EGFR TKI resistance programs",
+        "FOXO2B-targeted research"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Nick Godzik",
+      "institution_or_pharma": "Broad Institute / MIT",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Image-based pooled screens to identify regulators of pancreatic cancer plasticity",
+      "rhetorical_signals": [
+        "Speaker said: \"We identified H3K9 methylation related factors, including SUV39H1 and H2, as putative plasticity regulators.\"",
+        "Speaker said: \"Knocking them out will reduce heterochromatin, laying hypothesis that chromatin mediates plasticity.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Optical pooled screening platform",
+        "ip_vulnerability_note": "Speaker described a custom dual-guide vector and in situ sequencing pipeline that may be proprietary.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Screen performed in a single PDAC cell line, limiting generalizability to patient tumors."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Validation of hits in additional PDAC models",
+        "Mechanistic link between H3K9 methylation loss and plasticity"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Explore combination of SUV39H1/H2 inhibition with KRAS pathway inhibitors to lock PDAC cells in a treatment-sensitive epithelial state.",
+        "transcript_evidence": "Speaker noted that SUV39 knockouts increase plasticity, suggesting that inhibition may have opposite effect.",
+        "crispro_angle": "Model epigenetic perturbations alongside KRAS inhibition to predict synergistic effects.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical studies of SUV39 inhibitors in PDAC"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "Do H3K9 demethylases act as maintenance factors opposing plasticity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SUV39H1/H2 inhibitor programs"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "genomic-approaches-to-understanding-tumor-evolution::unknown::7",
+    "talk_metadata": {
+      "speaker_name": "Yue Wu",
+      "institution_or_pharma": "UCSD / Salk Institute",
+      "session_title": "genomic-approaches-to-understanding-tumor-evolution",
+      "talk_title": "Joint profiling of methylation and 3D genome in glioma heterogeneity",
+      "rhetorical_signals": [
+        "Speaker said: \"EcDNAs are exclusively detected among wild-type GBMs, where more than half of the patients contain some sort of ecDNA.\"",
+        "Speaker said: \"The 3D genome change usually happens earlier than methylation, providing flexibility in defining cell types.\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Correlation of ecDNA structural subtypes with patient outcomes",
+        "Functional validation of methylation changes driven by ecDNA"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "indication_expansion",
+        "description": "Apply CrisPRO to predict how ecDNA-driven methylation rewiring could be targeted in IDH-wildtype GBM.",
+        "transcript_evidence": "Speaker demonstrated that EGFR ecDNA variants associate with distinct methylation programs.",
+        "crispro_angle": "Simulate ecDNA structural variants and downstream epigenetic effects to identify druggable pathways.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Clinical data linking EGFRvIII ecDNA to therapy response"
+        ]
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "What upstream factors drive the asynchronous 3D genome versus methylation changes?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "ecDNA detection platforms"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

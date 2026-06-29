@@ -1,0 +1,298 @@
+[
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Josh Rabinowitz",
+      "institution_or_pharma": "Harvard Medical School",
+      "session_title": "new-technologies-in-the-metabolism-of-cancer",
+      "talk_title": "Spatial metabolomics of pancreas and breast cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"the trial was never powered to give a definitive answer, right, but it had 16 valuable patients per arm randomized\"",
+        "Speaker said: \"When they were in ketosis, they were not in very deep ketosis, and there was a correlation between the extent of ketosis and longer survival in the trial\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Ketogenic diet + standard chemotherapy in metastatic pancreatic cancer",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Trial did not control for phytochemical differences between standard chow and ketogenic diet, confounding interpretation of efficacy",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Some patients responded better when deeper ketosis was achieved",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Unnamed first\u2011line metastatic pancreatic cancer trial (ketogenic diet vs control)",
+        "target_biology": "Combination of carbohydrate\u2011restricted diet with gemcitabine/abraxane/cisplatin",
+        "flawed_enrollment_criteria": "Small sample size (16 per arm) and lack of stratification for diet adherence",
+        "missing_biomarker": "No baseline or on\u2011treatment ketone measurements used for patient selection",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect modest survival benefit; no pre\u2011specified statistical plan disclosed",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that glucose is depleted in cancer cells (spatial metabolomics) yet concluded that further glucose restriction via ketogenic diet could be therapeutically beneficial \u2013 ignoring the paradox that cancer cells already appear glucose\u2011starved"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival hazard ratios reported",
+        "Lack of metabolic imaging correlates for diet adherence",
+        "No mechanistic biomarker linking ketone utilization to tumor response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high intratumoral ketone utilization (e.g., CD8+ T\u2011cell 3\u2011hydroxybutyrate uptake) to enrich for responders to ketogenic diet\u2011based regimens",
+        "transcript_evidence": "Speaker said: \"CD8 positive T cells within the tumor preferentially use 3\u2011hydroxybutyrate\"",
+        "crispro_angle": "CrisPRO can integrate spatial metabolomics with single\u2011cell transcriptomics to predict ketone\u2011dependent immune niches",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: NCTxxxxxx (ketogenic diet trial) for patient\u2011level ketone measurements",
+          "PubMed: studies on tumor ketone metabolism in pancreatic cancer"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Redesign the pancreatic cancer diet trial to control for phytochemical content and include prospective ketone monitoring as a stratification biomarker",
+        "transcript_evidence": "Speaker noted that phytochemical differences between chow and ketogenic diet affected drug metabolism",
+        "crispro_angle": "CrisPRO can model drug\u2011diet interactions and simulate pharmacokinetic impacts of diet\u2011derived phytochemicals",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Pharmacokinetic data on gemcitabine metabolism with/without phytochemicals",
+          "NCT registry for diet\u2011intervention trials"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Virta Health",
+        "context": "provided electronic monitoring of patient ketosis in the diet trial",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Greg Dougherty's lab",
+        "context": "previous high\u2011profile papers claimed immunosuppressive cells love lactate",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Does deeper ketosis (higher blood \u03b2\u2011hydroxybutyrate) consistently improve survival across larger patient cohorts?",
+      "What is the relative contribution of diet\u2011induced changes in drug metabolism versus metabolic stress on tumor control?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Ketogenic diet adjuncts for pancreatic cancer",
+        "Gemcitabine/abraxane pharmacokinetics with diet modulation"
+      ],
+      "companies_to_monitor": [
+        "Virta Health"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Gerta Hoxha",
+      "institution_or_pharma": "UT Southwestern",
+      "session_title": "new-technologies-in-the-metabolism-of-cancer",
+      "talk_title": "Metabolic regulation of cancer cell growth via mitochondrial NADPH",
+      "rhetorical_signals": [
+        "Speaker said: \"We observed that loss of NDK2 completely disrupted proline biosynthesis\"",
+        "Speaker said: \"We see a reduction in lipoic acid in all of these proteins, indicating that NADK2 loss affects general protein lipoylation\""
+      ],
+      "presentation_type": "basic_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NDK2 (mitochondrial NAD kinase) inhibition",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Potential compensatory pathways for mitochondrial NADPH (e.g., cytosolic NADK retargeted to mitochondria) not fully explored",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Proline supplementation fully rescues proliferation of NDK2\u2011KO cells",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Mitochondrial NADK2 enzyme",
+        "ip_vulnerability_note": "Speaker showed that catalytic\u2011inactive NADK2 cannot restore lipoylation, indicating the enzymatic activity is essential and may be targetable",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on proline supplementation to rescue NDK2 loss suggests a narrow therapeutic window if targeting NDK2 alone"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that mitochondrial NADPH supports TCA cycle flux via PDH lipoylation, yet concluded that the main function of mitochondrial NADPH is proline synthesis \u2013 overlooking the broader metabolic impact"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "In vivo validation of NDK2 inhibition in tumor models",
+        "Assessment of toxicity in normal proliferative tissues"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target the proline auxotrophy induced by NDK2 loss with proline\u2011degrading enzymes or transport inhibitors to prevent rescue of tumor cells",
+        "transcript_evidence": "Speaker said: \"Proline alone was able to restore cell proliferation in these proline auxotroph NDK2 knockout cells\"",
+        "crispro_angle": "CrisPRO can predict metabolic flux rerouting upon NDK2 inhibition and identify synthetic lethal partners in proline metabolism",
+        "priority": "high",
+        "external_validation_needed": [
+          "DepMap dependency data for PRODH/PRODH2 in NDK2\u2011amplified cancers",
+          "In vivo efficacy of proline transport inhibitors"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's ability to model rare post\u2011translational modifications (lipoylation) to discover biomarkers of mitochondrial NADPH deficiency",
+        "transcript_evidence": "Speaker said: \"Loss of NADK2 shows a reduction in lipoic acid in all of these proteins\"",
+        "crispro_angle": "Integrate proteomics\u2011derived lipoylation status with metabolic modeling to stratify tumors dependent on mitochondrial NADPH",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Mass\u2011spec datasets of protein lipoylation in patient tumors",
+          "Correlation of NDK2 expression with lipoylation signatures"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Blenis and Anaguma labs",
+        "context": "reported KRAS regulation of NADK",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Ralph DeBerardinis",
+        "context": "cited for lactate utilization data in lung cancer",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does mitochondrial NADPH affect mitochondrial translation through mechanisms beyond fatty\u2011acid synthesis?",
+      "What is the impact of NDK2 inhibition on normal stem cell compartments (bone marrow, intestine) in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "NDK2 inhibitors",
+        "Proline metabolism enzymes (PRODH, PYCR)"
+      ],
+      "companies_to_monitor": [
+        "Companies developing mitochondrial NADPH modulators"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-technologies-in-the-metabolism-of-cancer::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Matt Vander Heiden",
+      "institution_or_pharma": "University of California, San Diego",
+      "session_title": "new-technologies-in-the-metabolism-of-cancer",
+      "talk_title": "Methodological insights into whole\u2011body metabolism and nucleotide constraints in cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"If you simply take the folate level in MPM and make it look like RPMI, now they don't care about nucleotide salvage at all\"",
+        "Speaker said: \"Standard mouse chow is actually high in folates because we breed the mice\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Low extracellular folate in physiological plasma\u2011like media",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Folates are the limiting cofactor for de\u202fnovo nucleotide synthesis; standard culture media overestimates folate availability",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Cells grown in mouse plasma\u2011like media survive only when salvage pathways are intact",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [
+      "Speaker showed that folate depletion dramatically slows B\u2011ALL growth, yet suggested that standard culture conditions are \u201cphysiological\u201d for nucleotide metabolism \u2013 ignoring the mismatch"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Direct in vivo validation that folate limitation drives replication stress in tumors",
+        "Effect of ketogenic diet on systemic folate levels"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a folate\u2011status biomarker panel to identify tumors reliant on salvage pathways for nucleotide synthesis",
+        "transcript_evidence": "Speaker said: \"If you take the folate level in MPM and make it look like RPMI, now they don't care about nucleotide salvage at all\"",
+        "crispro_angle": "CrisPRO can integrate plasma metabolomics with tumor gene expression to predict folate\u2011dependent vulnerabilities",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: studies measuring plasma folate in leukemia patients",
+          "PubMed: folate\u2011dependent replication stress signatures"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine antifolate agents with drugs that exacerbate replication stress (e.g., gemcitabine) in low\u2011folate microenvironments",
+        "transcript_evidence": "Speaker noted that low folate leads to DNA replication stress which could sensitize cells to chemotherapy",
+        "crispro_angle": "CrisPRO can simulate synergistic effects of folate depletion and nucleoside analogs on DNA synthesis flux",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical trials of antifolates + gemcitabine in mouse plasma\u2011like media models",
+          "NCT numbers for antifolate\u2011based combination studies"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Incorporate tissue\u2011specific nutrient profiling (e.g., folate, lactate) into cancer trial eligibility criteria",
+        "transcript_evidence": "Speaker highlighted that each tissue has a distinct nutrient environment that shapes metabolic phenotypes",
+        "crispro_angle": "CrisPRO can predict which tumor types will be most sensitive to nutrient\u2011modulating interventions based on tissue\u2011specific metabolite maps",
+        "priority": "low",
+        "external_validation_needed": [
+          "Metabolomics datasets of human tumor interstitial fluid",
+          "Regulatory guidance on biomarker\u2011driven trial designs"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Greg Dougherty's lab",
+        "context": "previous lactate utilization studies in Tregs",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Ralph DeBerardinis",
+        "context": "cited for lung cancer lactate tracing data",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How does systemic folate supplementation affect tumor replication stress and response to chemotherapy in vivo?",
+      "Do ketogenic diets alter circulating folate or other one\u2011carbon metabolites in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Antifolate drugs (e.g., methotrexate, pemetrexed)",
+        "Ketogenic diet clinical trials in pancreatic cancer"
+      ],
+      "companies_to_monitor": [
+        "Companies developing plasma\u2011like media platforms for drug screening"
+      ]
+    }
+  }
+]

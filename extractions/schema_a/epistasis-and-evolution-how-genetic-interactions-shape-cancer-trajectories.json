@@ -1,0 +1,282 @@
+[
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::aranzo::1",
+    "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+    "talk_title": "Detecting and Modeling Genetic Epistasis in Cancer Using Conditional Selection",
+    "speaker": {
+      "name": "Jaime Aranzo",
+      "affiliation": "Sanger Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer",
+      "low-grade glioma",
+      "endometrial cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "basic_science",
+      "computational",
+      "evolutionary",
+      "cancer_genomics",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA bulk sequencing",
+        "genotype_or_key_features": "large pan\u2011cancer cohort, stratified by presence/absence of split gene"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Aranzo presented a statistical framework that uses synonymous mutations to build a neutral null model of mutation, compares expected vs observed non\u2011synonymous counts to estimate driver selection, and then quantifies conditional selection (epistasis) by stratifying tumors on a split gene and re\u2011estimating selection for a query gene, implemented in the R package cosalliance.",
+    "readouts": [
+      "bulk DNA sequencing",
+      "statistical modeling",
+      "network visualization"
+    ],
+    "key_findings": [
+      "Positive and negative epistasis are pervasive, with 25\u201150% of driver mutations affected by positive epistasis across cancer types.",
+      "Epistasis networks are modular: genes within a module show synergistic interactions, while modules antagonize each other.",
+      "Module\u2011based mutational profiles predict patient survival better than individual gene mutations.",
+      "Early mutations in a module can forecast the eventual molecular subtype of a tumor.",
+      "Asymmetric epistatic relationships reveal logical ordering of mutations, e.g., TP53 enhances the effect of RB1 in glioblastoma but not vice versa."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do epistatic modules behave in longitudinal pre\u2011malignant lesions?",
+      "Can single\u2011cell data improve resolution of conditional selection estimates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::alfaro-murillo::2",
+    "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+    "talk_title": "Quantifying Epistasis and Evolutionary Trajectories in Cancer",
+    "speaker": {
+      "name": "Jorge Alfaro-Murillo",
+      "affiliation": "Universidad de Costa Rica",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "colorectal adenocarcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "basic_science",
+      "computational",
+      "evolutionary",
+      "cancer_genomics",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA COAD",
+        "genotype_or_key_features": "APC, KRAS, BRAF mutation status per tumor"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Alfaro-Murillo described a continuous\u2011time Markov chain model that estimates substitution rates for all possible mutational pathways among a set of genes, fits these rates to observed genotype frequencies, and separates mutation from selection using neutral mutation rate estimates (e.g., NDS, SigMutCel) to derive selection coefficients and epistatic interactions.",
+    "readouts": [
+      "bulk DNA sequencing",
+      "Markov chain modeling",
+      "likelihood estimation"
+    ],
+    "key_findings": [
+      "The model can infer four substitution rates for any gene pair, capturing order\u2011dependent effects.",
+      "In colorectal cancer, KRAS and BRAF show strong antagonistic epistasis, while APC and KRAS display weak or non\u2011significant interaction.",
+      "Selection coefficients derived after correcting for mutation rates reveal that many apparent co\u2011occurrences are driven by high mutation rates rather than true epistasis.",
+      "Statistical tests (likelihood ratio) can formally assess the presence of epistasis and compare epistatic effects across populations."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does incorporating copy\u2011number variation alter inferred substitution rates?",
+      "Can subclonal VAF information be integrated to improve order\u2011specific selection estimates?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories::jeff::3",
+    "session_title": "epistasis-and-evolution-how-genetic-interactions-shape-cancer-trajectories",
+    "talk_title": "Tobacco Smoking and Somatic Selective Epistasis in Lung Adenocarcinoma",
+    "speaker": {
+      "name": "Jeff",
+      "affiliation": "unknown (session chair, presenting data)",
+      "role": "session_chair_with_data",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "cancer_genomics",
+      "evolutionary",
+      "clinical_trial",
+      "translational",
+      "immunotherapy"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ever smoker LUAD",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": "",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "never smoker LUAD",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KEAP1",
+        "alteration": "",
+        "pathway": "NRF2 oxidative stress",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ever smoker LUAD",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STK11",
+        "alteration": "",
+        "pathway": "AMPK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ever smoker LUAD",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "smoking status",
+        "type": "eligibility",
+        "assay": "patient history",
+        "finding": "Stratifies selection coefficients; ever smokers show higher KRAS selection, never smokers higher EGFR selection"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "TCGA LUAD",
+        "genotype_or_key_features": "ever vs never smokers, driver mutation status"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "KRAS prevalence",
+        "value": "higher in ever smokers",
+        "confidence_interval": "",
+        "n": "n=TCGA LUAD cohort",
+        "population": "ever smokers",
+        "comparator": "never smokers",
+        "maturity": "interim"
+      },
+      {
+        "metric": "EGFR prevalence",
+        "value": "higher in never smokers",
+        "confidence_interval": "",
+        "n": "n=TCGA LUAD cohort",
+        "population": "never smokers",
+        "comparator": "ever smokers",
+        "maturity": "interim"
+      },
+      {
+        "metric": "EGFR TKI response rate",
+        "value": "73% in never smokers vs 46% in >10 pack\u2011year smokers",
+        "confidence_interval": "",
+        "n": "retrospective analysis",
+        "population": "EGFR\u2011mutant LUAD",
+        "comparator": "smoking history",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Jeff showed that smoking alters both mutation rates and selection coefficients of key lung adenocarcinoma drivers; after deconvolution, KRAS, KEAP1, STK11 and SDK11 have higher selection in ever smokers, while EGFR, PI3K and SMAD4 are stronger drivers in never smokers, and complex gene\u2011by\u2011gene\u2011by\u2011environment epistatic interactions reshape evolutionary trajectories.",
+    "readouts": [
+      "bulk DNA sequencing",
+      "mutation rate estimation",
+      "selection coefficient inference",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Smoking increases mutation rates genome\u2011wide but the magnitude varies by gene (e.g., ALK, GNAS show especially high rates).",
+      "After correcting for mutation rates, KRAS selection is significantly higher in ever smokers, while EGFR selection is negligible in smokers.",
+      "Pairwise epistasis is common in ever smokers; many driver mutations (e.g., KRAS, KEAP1) antagonize early genes like TP53, indicating early clonal emergence.",
+      "Higher\u2011order interactions (G\u00d7G\u00d7E) were identified, e.g., KEAP1 selection strongest in smokers without EGFR mutation, weaker in EGFR\u2011mutant smokers.",
+      "Clinical implications: EGFR TKIs achieve higher response rates in never smokers; co\u2011mutations (e.g., KRAS, KEAP1) predict poorer outcomes in EGFR\u2011mutant disease."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "KRAS and KEAP1 co\u2011mutations confer resistance to EGFR TKIs and worsen survival in KRAS\u2011mutant NSCLC.",
+      "Antagonistic epistasis between EGFR and KRAS/KEAP1 may reduce efficacy of EGFR\u2011targeted therapy when these alterations co\u2011occur."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EGFR TKIs",
+        "rationale": "EGFR driver more selected in never smokers; co\u2011mutations may blunt response",
+        "phenotype": "Higher response rates in never smokers (73% vs 46% in smokers)",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "KRAS/KEAP1 targeted approaches",
+        "rationale": "KRAS and KEAP1 are strong drivers in ever smokers",
+        "phenotype": "Potential synthetic lethality; preclinical data show KEAP1 loss accelerates KRAS\u2011mutant tumor growth",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can integrating proteomics or transcriptomics clarify convergent signaling downstream of distinct mutational modules?",
+      "How do age, sex, and cumulative pack\u2011years quantitatively modulate selection coefficients beyond binary smoking status?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "DeGregori et al. 2024 Nat Cancer",
+        "Yihong Lu et al. 2024 (age\u2011selection poster)",
+        "Kira Glasmacher et al. 2024 (copy\u2011number selection poster)"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,153 @@
+[
+  {
+    "talk_id": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Mingyao Li",
+      "institution_or_pharma": "University of Pennsylvania",
+      "session_title": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro",
+      "talk_title": "Digital Tissue Twins: AI\u2011Powered Virtual Prediction of Spatial Omics from H&E Slides",
+      "rhetorical_signals": [
+        "Speaker said: \"the current spatial technologies remain expensive and slow, and this makes them difficult to scale across the full clinical enterprise\"",
+        "Speaker said: \"when we directly predict a gene expression from histology images alone, we don't really know the relevant ranks of the dynamic ranges across the different people we are trying to predict\"",
+        "Speaker said: \"we are risking the possibility of generating a lot of false positive predictions\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No prospective clinical validation of AURORA predictions",
+        "Limited assessment of model performance on post\u2011treatment samples"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "AURORA predicts spatial gene expression but lacks validated biomarkers to guide therapeutic decisions; CrisPRO could provide calibrated confidence scores and integrate with clinical outcomes to define actionable spatial biomarkers.",
+        "transcript_evidence": "Speaker said: \"we need to ensure that the predictions are reliable, you are not simply predicting false positives\"",
+        "crispro_angle": "CrisPRO can overlay conformal confidence intervals on AURORA predictions to flag high\u2011certainty regions for downstream therapeutic targeting.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Virtual population\u2011scale spatial maps (e.g., TCGA 4,000 lung adenocarcinoma slides) could be used to pre\u2011select patients with high\u2011risk spatial niches for enrollment in targeted trials.",
+        "transcript_evidence": "Speaker said: \"we applied AURORA to generate single\u2011cell resolution spatial maps on nearly 4,000 TCGA samples\"",
+        "crispro_angle": "CrisPRO can stratify these virtual cohorts by predicted spatial biomarkers (e.g., mature TLS area) to design biomarker\u2011enriched trial arms.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will AURORA perform on post\u2011treatment or therapy\u2011resistant tumor samples?",
+      "What are the limits of predicting immune\u2011related genes that show low spatial variation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AURORA",
+        "iSTAR",
+        "iSCALE",
+        "i2Omics",
+        "COZEE"
+      ],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "James Zou",
+      "institution_or_pharma": "Stanford University",
+      "session_title": "using-ai-and-spatial-transcriptomics-data-to-predict-spatial-gene-expression-fro",
+      "talk_title": "Rosie and Virtual Biotech: Generative AI for In\u2011Silico Spatial Proteomics and Therapeutic Strategy Design",
+      "rhetorical_signals": [
+        "Speaker said: \"this enables the algorithm to be able to capture information from a broader, larger context in order to predict and impute the biomarkers at a smaller window\"",
+        "Speaker said: \"even at the 25th percentile where the algorithm performed relatively worse, the output ... still matches a lot of the fine grain structures\"",
+        "Speaker said: \"the agents reasoned that that's okay because this is a target that's more relevant in tumor cells, whereas a lot of the genetics is looking at the germline mutations\""
+      ],
+      "presentation_type": "industry_pitch"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Rosie in\u2011silico CODEX generation",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Limited ability to accurately predict low\u2011abundance proteins and rare cell types, leading to reduced correlation in the 25th percentile samples",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Rosie generative model for CODEX imputation",
+        "ip_vulnerability_note": "Speaker disclosed that performance drops for lower\u2011percentile samples, indicating the core model may not generalize across all tissue contexts",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on large paired H&E\u2011CODEX training sets limits rapid expansion to new indications"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that Rosie can recapitulate fine\u2011grain structures in 99th percentile samples, then concluded that the method is broadly reliable across all sites despite acknowledging poorer performance in 25th percentile samples"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "External validation on independent clinical cohorts not presented",
+        "Performance on rare tumor types not demonstrated"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Rosie's lower\u2011performance on rare proteins could be addressed by integrating CrisPRO's conformal confidence framework to flag uncertain predictions and guide selective experimental validation.",
+        "transcript_evidence": "Speaker said: \"even if we look at the medium sample or the 25th sample where the algorithm performed relatively worse, the output ... still matches a lot of the fine grain structures\"",
+        "crispro_angle": "CrisPRO can provide calibrated uncertainty scores for each imputed protein, allowing users to prioritize high\u2011confidence regions for downstream validation.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Virtual Biotech's AI agents identified CD276 (B7H3) as a promising ADC target; CrisPRO could augment this by modeling spatial resistance mechanisms to refine payload selection.",
+        "transcript_evidence": "Speaker said: \"the agents recommended designing an antibody\u2011drug conjugate targeting CD276 with payload DXd\"",
+        "crispro_angle": "CrisPRO can simulate spatial heterogeneity of CD276 expression and predict resistance pathways to optimize ADC design.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "CODEX",
+        "context": "benchmark spatial proteomics platform used for ground\u2011truth comparison",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Xenium",
+        "context": "mentioned as a preferred spatial transcriptomics platform for future work",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "How does Rosie perform on out\u2011of\u2011distribution tissue types not represented in the training set?",
+      "Can the virtual biotech agents reliably predict clinical outcomes for targets lacking genetic evidence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Rosie",
+        "Virtual Biotech platform",
+        "CD276 ADC programs"
+      ],
+      "companies_to_monitor": [
+        "Merck (CD276\u2011DXd ADC breakthrough designation)",
+        "Enable Medicine (partner for paired H&E\u2011CODEX data)"
+      ]
+    }
+  }
+]

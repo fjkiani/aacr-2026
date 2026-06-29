@@ -1,0 +1,345 @@
+[
+  {
+    "talk_id": "does-adherence-to-oral-cancer-therapy-matter::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Katherine Reeder-Hayes",
+      "institution_or_pharma": "University of North Carolina Lineberger",
+      "session_title": "does-adherence-to-oral-cancer-therapy-matter",
+      "talk_title": "Breast cancer oral therapy adherence",
+      "rhetorical_signals": [
+        "Speaker said: \"only about 60% of patients with female breast cancer in this system were continuing to take their drugs and adherent at a threshold of 80% over their five years of therapy.\"",
+        "Speaker said: \"we do not have any reliable biomarkers of, for instance, drug levels in these medications, and so we are relying on indirect and patient-reported measures of adherence.\"",
+        "Speaker said: \"the SWOG 1105 trial was negative, and the Emory trial did not find an effect of that intervention on adherence.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Oral endocrine therapy (tamoxifen, aromatase inhibitors, oral SERDs)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of reliable pharmacokinetic biomarkers to monitor drug exposure and adjust therapy",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "SWOG 1105",
+        "target_biology": "Adherence to aromatase inhibitors in breast cancer survivors",
+        "flawed_enrollment_criteria": "Unselected breast cancer survivor population without risk stratification",
+        "missing_biomarker": "Pharmacokinetic or adherence biomarker to identify high\u2011risk non\u2011adherers",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to detect modest adherence improvements in a heterogeneous cohort",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Emory symptom management RCT",
+        "target_biology": "Symptom management to improve endocrine therapy adherence",
+        "flawed_enrollment_criteria": "Unselected users, single\u2011mode intervention",
+        "missing_biomarker": "Objective adherence monitoring (e.g., electronic pill caps)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential dilution of signal due to lack of stratification",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Oral SERDs (e.g., jiradecirant) pending approval",
+        "ip_vulnerability_note": "Efficacy depends on strict adherence over five years, but no biomarker to confirm drug exposure",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad label without robust adherence support mechanisms"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that side\u2011effect burden is high and adherence is low, yet concluded that low\u2011intensity, single\u2011mode interventions (e.g., text\u2011message reminders) are sufficient \u2013 ignoring the data that such trials were negative"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No OS data presented for adherence interventions",
+        "No biomarker\u2011stratified analysis of adherence impact",
+        "Lack of prospective pharmacokinetic monitoring"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Absence of a pharmacokinetic or circulating biomarker to identify patients with sub\u2011therapeutic endocrine drug exposure",
+        "transcript_evidence": "Speaker said: \"we don't have any reliable biomarkers of, for instance, drug levels in these medications, and so we are relying on indirect and patient-reported measures of adherence.\"",
+        "crispro_angle": "CrisPRO can develop predictive models linking electronic adherence data with outcomes to create a surrogate exposure biomarker",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Integrate electronic pill\u2011cap data with mobile health platforms to deliver adaptive, multi\u2011component adherence interventions",
+        "transcript_evidence": "Speaker highlighted that low\u2011intensity interventions failed and suggested multi\u2011component approaches are needed",
+        "crispro_angle": "CrisPRO's analytics can personalize reminder frequency and content based on real\u2011time adherence patterns",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "SWOG 1105",
+        "context": "Negative text\u2011message reminder trial for adherence",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Emory symptom management trial",
+        "context": "Single\u2011mode symptom management RCT with no adherence benefit",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific high\u2011intensity, multi\u2011component intervention will effectively improve adherence in high\u2011risk subgroups?",
+      "Can a pharmacokinetic biomarker be validated to guide endocrine therapy dosing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT01864798",
+        "NCT03011177"
+      ],
+      "assets_to_track": [
+        "jiradecirant",
+        "oral SERDs"
+      ],
+      "companies_to_monitor": [
+        "Pfizer",
+        "Novartis"
+      ]
+    }
+  },
+  {
+    "talk_id": "does-adherence-to-oral-cancer-therapy-matter::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Meyris",
+      "institution_or_pharma": "MD Anderson Cancer Center",
+      "session_title": "does-adherence-to-oral-cancer-therapy-matter",
+      "talk_title": "Oral therapy adherence in colorectal cancer",
+      "rhetorical_signals": [
+        "Speaker said: \"the difference or improvement in overall survival for these FDA\u2011approved drugs is on the order of one and a half to three and a half months. So we're barely moving the needle forward, and at the expense of significant toxicity.\"",
+        "Speaker said: \"we are executing a program that when a patient establishes first contact with our registration, we're piloting an initiative to meet them at their home to get the blood test so that by the time they hit the door for their first visit we will know the BRAF, KRAS, HER2 expression status.\"",
+        "Speaker said: \"we have a completely virtual trial\u2026 to treat patients on this clinical trial with oral therapy approach, which we find to be very promising.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Regorafenib (standard dose 160\u202fmg daily)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Uniform starting dose ignores inter\u2011patient tolerability leading to high grade\u20113/4 adverse events",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker noted that grade\u20113 toxicities limited quality of life despite modest survival benefit",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "CORRECT",
+        "target_biology": "Regorafenib in refractory metastatic colorectal cancer",
+        "flawed_enrollment_criteria": "All\u2011comer refractory population without dose\u2011adjustment stratification",
+        "missing_biomarker": "Pharmacogenomic or functional biomarkers to predict tolerability",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Modest OS benefit may be diluted by high toxicity\u2011related discontinuations",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "BEACON/BREAKWATER",
+        "target_biology": "BRAF\u2011targeted oral therapy (encorafenib) plus cetuximab",
+        "flawed_enrollment_criteria": "Later\u2011line enrollment in BEACON limited efficacy; frontline benefit not captured until BREAKWATER",
+        "missing_biomarker": "Rapid ctDNA\u2011based BRAF status at diagnosis to enable frontline use",
+        "static_vs_dynamic_failure": "No serial ctDNA monitoring to detect early resistance",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Regorafenib standard dosing regimen",
+        "ip_vulnerability_note": "Speaker disclosed that a personalized dose\u2011escalation approach improves toxicity without compromising efficacy, indicating the fixed\u2011dose chemistry is not essential",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing broad label at full dose despite known tolerability issues"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented data that regorafenib provides only a 1.4\u2011month OS gain yet concluded that the drug remains a standard third\u2011line option without emphasizing the need for dose personalization"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of long\u2011term OS data for personalized dosing arm",
+        "No prospective ctDNA\u2011guided frontline trial data presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "dose_optimization",
+        "description": "Develop computational models to predict individual tolerability and optimal starting dose for regorafenib",
+        "transcript_evidence": "Speaker noted that a personalized dose\u2011escalation improved toxicity without compromising survival",
+        "crispro_angle": "CrisPRO can integrate patient\u2011specific covariates and early toxicity signals to recommend dose adjustments",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Implement rapid ctDNA testing at diagnosis to stratify patients for frontline BRAF\u2011targeted oral therapy",
+        "transcript_evidence": "Speaker described a home\u2011phlebotomy ctDNA workflow to obtain BRAF/KRAS status before first visit",
+        "crispro_angle": "CrisPRO can model the impact of earlier biomarker\u2011driven therapy on survival and adherence",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design virtual, oral\u2011therapy\u2011focused trials with built\u2011in electronic adherence monitoring",
+        "transcript_evidence": "Speaker highlighted a completely virtual trial for oral agents as promising",
+        "crispro_angle": "CrisPRO can simulate enrollment criteria and adherence trajectories to optimize virtual trial feasibility",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Regorafenib",
+        "context": "Standard dose associated with high toxicity and modest OS benefit",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Encorafenib + cetuximab (BEACON/BREAKWATER)",
+        "context": "Frontline BRAF\u2011targeted oral regimen showing survival doubling",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal ctDNA turnaround time to impact frontline therapy decisions?",
+      "Can real\u2011time toxicity monitoring further refine personalized dosing beyond the 50\u201175\u2011100% escalation schedule?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04003657",
+        "NCT04565772"
+      ],
+      "assets_to_track": [
+        "regorafenib",
+        "encorafenib",
+        "lonserf"
+      ],
+      "companies_to_monitor": [
+        "Bayer",
+        "Eli Lilly"
+      ]
+    }
+  },
+  {
+    "talk_id": "does-adherence-to-oral-cancer-therapy-matter::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. [Unnamed] (Childhood ALL adherence presenter)",
+      "institution_or_pharma": "Children's Oncology Group (COG) / multiple US sites",
+      "session_title": "does-adherence-to-oral-cancer-therapy-matter",
+      "talk_title": "Adherence to oral mercaptopurine in childhood ALL",
+      "rhetorical_signals": [
+        "Speaker said: \"Overall, they start off with adherence of 95%, and it trends down to about 90% by the time they're done with the study. And this trend is statistically significant.\"",
+        "Speaker said: \"non\u2011adherent teens had difficulty identifying that dyad situation where they could have the parents be responsible for this.\"",
+        "Speaker said: \"the intervention package ... did much better in the older patients, where overall, there was a 4% improvement, but amongst those who were baseline non\u2011adherers, there was a nine and a half percent improvement in adherence.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Oral 6\u2011mercaptopurine (6\u2011MP)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Reliance on patient\u2011reported adherence without real\u2011time pharmacodynamic monitoring (e.g., TGN levels) to detect sub\u2011therapeutic exposure",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that 47% of relapses could be attributed to non\u2011adherence",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "GETSET (GETSET trial)",
+        "target_biology": "Motivational interviewing + text reminders to improve 6\u2011MP adherence",
+        "flawed_enrollment_criteria": "Broad enrollment without pre\u2011screening for baseline adherence risk",
+        "missing_biomarker": "Baseline MEMS adherence data not used to stratify randomization (later study addresses this)",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Potential dilution of effect because adherent patients were included in both arms",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard oral 6\u2011MP formulation",
+        "ip_vulnerability_note": "Efficacy is highly dependent on strict adherence; no formulation or delivery system to mitigate missed doses",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Relying on a single daily pill without built\u2011in adherence safeguards"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that forgetfulness is the dominant barrier yet concluded that a simple pill\u2011box or alarm is sufficient, despite data that many patients still missed doses even with those tools"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term impact of the intervention on relapse\u2011free survival not yet reported",
+        "No pharmacogenomic integration beyond baseline TPMT/NUDT15"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to model the relationship between MEMS adherence patterns, TGN levels, and relapse risk to identify early warning thresholds",
+        "transcript_evidence": "Speaker linked <95% adherence to a two\u2011fold higher relapse risk",
+        "crispro_angle": "Predictive modeling can trigger proactive interventions before adherence falls below critical thresholds",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Integrate electronic pill\u2011cap data with mobile health platform for real\u2011time adherence coaching",
+        "transcript_evidence": "Speaker described a web\u2011based medication scheduling app with text confirmations",
+        "crispro_angle": "CrisPRO can personalize reminder frequency based on individual adherence trajectories",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Future trials should stratify by baseline MEMS adherence and randomize only non\u2011adherers to intensive interventions",
+        "transcript_evidence": "Speaker noted the next study will intensify intervention for <95% adherers",
+        "crispro_angle": "Simulation of stratified designs can optimize power and reduce dilution",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GETSET trial",
+        "context": "Motivational interviewing + text reminders vs education",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "DAILY trial",
+        "context": "Vitamin D, aspirin, lifestyle intervention for ctDNA\u2011positive micrometastatic disease",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal adherence threshold needed to maintain therapeutic TGN levels in different age/weight groups?",
+      "Can wearable or ingestible sensor technology further reduce forgetfulness beyond MEMS caps?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04565772",
+        "NCT04165772"
+      ],
+      "assets_to_track": [
+        "6\u2011MP (mercaptopurine)",
+        "DAILY trial oral agents"
+      ],
+      "companies_to_monitor": [
+        "Novartis (6\u2011MP generic manufacturers)",
+        "CrisPRO"
+      ]
+    }
+  }
+]

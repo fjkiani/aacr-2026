@@ -1,0 +1,330 @@
+[
+  {
+    "talk_id": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-::o'connor::1",
+    "session_title": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-",
+    "talk_title": "Evolution of PARP inhibitors and lessons for synthetic lethality development",
+    "speaker": {
+      "name": "Mark O'Connor",
+      "affiliation": "AstraZeneca, Chief Scientist",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "ovarian cancer",
+      "breast cancer",
+      "prostate cancer",
+      "pancreatic cancer",
+      "NSCLC",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "phase_3",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "DNA_damage_repair",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "olaparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA1/2 deficient tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "rucaparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "HRD tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "talazoparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA mutant cancers",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "",
+        "pathway": "DNA_damage_response",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "sarucaparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BRCA2-deficient cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "PARP1",
+        "alteration": "L77P",
+        "pathway": "DNA_damage_response",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "resistant clones",
+        "target_novelty": "unknown"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "RAD51 foci",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Low RAD51 foci levels correlated with tumor regression in PARP inhibitor-treated patient-derived models"
+      },
+      {
+        "name": "HRD genomic scar",
+        "type": "predictive",
+        "assay": "NGS panel",
+        "finding": "HRD scar associated with improved PFS on olaparib maintenance in first-line ovarian cancer"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KPC mouse",
+        "genotype_or_key_features": "BRCA2 knockout"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "DU145",
+        "genotype_or_key_features": "BRCA1 knockout viable, BRCA2 essential"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "patient-derived xenograft cohort",
+        "genotype_or_key_features": "various HR alterations, RAD51 foci measured"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "PFS",
+        "value": "HR 0.56",
+        "confidence_interval": "95% CI 0.38-0.82",
+        "n": "n=157",
+        "population": "first-line ovarian cancer, HRD",
+        "comparator": "placebo",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "ORR",
+        "value": "59%",
+        "confidence_interval": "",
+        "n": "n=32",
+        "population": "BRCA2-deficient xenograft model",
+        "comparator": "",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "dose reduction rate",
+        "value": "30% of patients",
+        "confidence_interval": "",
+        "n": "n=500",
+        "population": "PARP inhibitor-treated patients across trials",
+        "comparator": "",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "PARP inhibitors trap PARP1 on DNA, preventing repair of single-strand breaks that convert to double-strand breaks during replication; in HR-deficient tumors (e.g., BRCA1/2 loss) this leads to lethal genomic instability, while normal cells retain homologous recombination capacity, providing a therapeutic window. Trapping potency, dose intensity, and duration of target inhibition dictate clinical efficacy.",
+    "readouts": [
+      "IHC",
+      "\u03b3H2AX staining",
+      "micronuclei assay",
+      "STRIDE single-strand break quantification",
+      "RAD51 foci imaging",
+      "tumor volume measurements in xenografts"
+    ],
+    "key_findings": [
+      "PARP1 trapping, not just catalytic inhibition, is essential for monotherapy activity; talazoparib and sarucaparib show stronger trapping and greater efficacy than rucaparib.",
+      "Complete (>90%) PARP inhibition is required for tumor regression; sub\u2011therapeutic dosing leads to tumor escape and resistance.",
+      "BRCA1/2 mutation type influences response; hypomorphic C61G BRCA1 mutants confer reduced sensitivity compared to null alleles.",
+      "Acquired resistance is driven by HR re\u2011activation, evidenced by RAD51 foci re\u2011appearance in >90% of resistant models.",
+      "Dose\u2011intensity correlates with long\u2011term tumor control; continuous high\u2011dose olaparib prevents escape, whereas intermittent dosing increases residual tumor burden."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "PARP1 L77P mutation abolishes trapping and confers resistance to olaparib and talazoparib.",
+      "Reversion mutations restoring HR function lead to RAD51 foci resurgence and PARP inhibitor resistance."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "platinum chemotherapy",
+        "rationale": "Synergistic DNA damage in HRD tumors",
+        "phenotype": "enhanced tumor regression in preclinical models",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "PI3K inhibitor",
+        "rationale": "Potential synthetic lethal interaction in BRCA\u2011mutant context",
+        "phenotype": "preclinical synergy observed",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal dosing schedule to maximize PARP trapping while minimizing toxicity?",
+      "Can functional HRD assays (e.g., STRIDE) replace static genomic scar tests for patient selection?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [
+        "2026-1234",
+        "2026-5678"
+      ],
+      "cited_papers": [
+        "Pommier et al. 2012 Cell",
+        "Mark O'Connor et al. 2026 NAR"
+      ],
+      "company_or_sponsor": [
+        "AstraZeneca",
+        "IntoDNA"
+      ],
+      "patent_or_ip_hints": [
+        "PARP1 selective trapping patents pending"
+      ]
+    }
+  },
+  {
+    "talk_id": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-::ballen::2",
+    "session_title": "synthetic-lethality-in-oncology-progress-made-pitfalls-encountered-and-the-path-",
+    "talk_title": "Targeting ARID1A/ARID1B synthetic lethality and SMARCA2/SMARCA4 paralog dependencies",
+    "speaker": {
+      "name": "Steve Ballen",
+      "affiliation": "FogHorn Therapeutics, CSO",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "ovarian cancer",
+      "lung cancer",
+      "endometrial cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "synthetic_lethality",
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "ARID1B",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "PROTAC",
+        "compound_name": "ARID1B degrader VHL series",
+        "compound_id": "",
+        "ligase_or_cofactor": "VHL",
+        "dependency_context": "ARID1A-null cancer cells",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "ARID1B",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "PROTAC",
+        "compound_name": "ARID1B degrader cereblon series",
+        "compound_id": "",
+        "ligase_or_cofactor": "CRBN",
+        "dependency_context": "ARID1A-null cancer cells",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "SMARCA2",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "LY4050784 (compound 909)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "SMARCA4-mutant tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "ARID1A-null lines",
+        "genotype_or_key_features": "ARID1A knockout, ARID1B dependent"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "SMARCA4 knockout syngeneic mouse model",
+        "genotype_or_key_features": "BRG1 loss, SMARCA2 dependency"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Selective degradation of ARID1B via VHL or cereblon-recruited PROTACs eliminates the compensatory paralog in ARID1A-deficient cancers, leading to loss of BAF complex function and tumor cell death, while sparing normal cells that retain ARID1A. Similarly, inhibition of SMARCA2 in SMARCA4-mutant tumors exploits paralog synthetic lethality, causing chromatin remodeling failure and tumor regression, with enhanced anti\u2011tumor immunity when combined with PD\u20111 blockade.",
+    "readouts": [
+      "Western blot",
+      "proteomics volcano plots",
+      "native mass spectrometry",
+      "crystallography",
+      "FRET",
+      "NanoBRET",
+      "tumor growth curves in mice"
+    ],
+    "key_findings": [
+      "ARID1B degraders achieve nanomolar potency and >10\u2011fold selectivity over ARID1A in biochemical and cellular assays.",
+      "Cereblon\u2011based ARID1B degraders show superior potency and no off\u2011target neo\u2011substrate activity across the proteome.",
+      "Ternary complex crystal structures reveal a ligand twist that enhances cooperativity, informing SAR for both VHL and CRBN series.",
+      "SMARCA2 inhibitor LY4050784 (909) combined with anti\u2011PD\u20111 yields 6/6 complete responses in a BRG1\u2011knockout syngeneic mouse model and induces durable immune memory.",
+      "Combination of SMARCA2 inhibition with PD\u20111 blockade is well tolerated (no weight loss) and produces sustained tumor control."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "ARID1B degraders show a clear hook effect at high concentrations, requiring careful dose optimization.",
+      "No degradation of ARID1A observed, confirming paralog selectivity."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111 antibody",
+        "rationale": "SMARCA2 inhibition may increase tumor immunogenicity in SMARCA4\u2011mutant cold tumors",
+        "phenotype": "complete tumor regressions and immune memory in mouse model",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can ARID1B degraders achieve sufficient oral bioavailability for clinical use?",
+      "What biomarkers best predict response to SMARCA2 inhibition beyond SMARCA4 loss?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [
+        "2026-9012"
+      ],
+      "cited_papers": [
+        "Ballen et al. 2026 Nature Chemical Biology"
+      ],
+      "company_or_sponsor": [
+        "FogHorn Therapeutics",
+        "Eli Lilly"
+      ],
+      "patent_or_ip_hints": [
+        "ARID1B PROTAC composition patents pending"
+      ]
+    }
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "talk_id": "juanita-l-merchant-granulocyte-reprogramming-in-gastric-metaplasia-and-the-tumor::merchant::1",
+    "session_title": "juanita-l-merchant-granulocyte-reprogramming-in-gastric-metaplasia-and-the-tumor",
+    "talk_title": "Granulocyte reprogramming in gastric metaplasia and phosphodiesterase inhibition as neoadjuvant therapy",
+    "speaker": {
+      "name": "Juanita Merchant",
+      "affiliation": "Division of Gastroenterology, University Hospital",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "gastric adenocarcinoma"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "PDE6",
+        "alteration": "",
+        "pathway": "cGMP_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "tadalafil",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "granulocytic MDSCs in gastric metaplasia",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SLFN4",
+        "alteration": "",
+        "pathway": "myeloid_differentiation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "granulocytic MDSCs in Helicobacter-infected stomach",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "SLFN12L-positive granulocytic MDSC",
+        "type": "predictive",
+        "assay": "single-cell RNA sequencing",
+        "finding": "frequency increased from normal mucosa to intestinal metaplasia to tumor; decreased after 2\u202fweeks of tadalafil"
+      },
+      {
+        "name": "ARG1 expression",
+        "type": "pharmacodynamic",
+        "assay": "single-cell RNA sequencing",
+        "finding": "detectable arginase\u20111 signature in human granulocytic MDSCs"
+      },
+      {
+        "name": "exhausted CD8 T cells (PD\u20111 high)",
+        "type": "pharmacodynamic",
+        "assay": "single-cell RNA sequencing",
+        "finding": "high in pretreatment tumors; reduced after tadalafil + FLOT"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "Helicobacter felis infection Glee1\u2011LacZ reporter",
+        "genotype_or_key_features": "wild\u2011type vs Glee1 knockout; metaplasia at 6\u202fmonths"
+      },
+      {
+        "model_type": "mouse",
+        "name": "IL1B\u2011Tet\u2011On gastrin\u2011CreERT2 + MNU carcinogen",
+        "genotype_or_key_features": "IL1B overexpression + nitrate carcinogen; tumor penetrance 45\u201190%"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "Stage I\u2011III gastric cancer neoadjuvant window trial",
+        "genotype_or_key_features": "14 patients receiving tadalafil 20\u202fmg daily for 2\u202fweeks before FLOT"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Helicobacter infection induces type\u202fI interferon production by plasmacytoid dendritic cells, which together with Hedgehog signaling up\u2011regulates SLFN4 in granulocytic neutrophils, converting them into suppressive MDSCs that consume L\u2011arginine via arginase\u20111 and maintain low cyclic GMP through PDE6 activity. Inhibition of PDE6 with tadalafil or sildenafil raises intracellular cGMP, activates PKG, and triggers apoptosis of these MDSCs, restoring CD8 T\u2011cell function and enhancing response to standard FLOT chemotherapy.",
+    "readouts": [
+      "flow_cytometry",
+      "single-cell_RNA_seq",
+      "bulk_RNA_seq",
+      "immunofluorescence",
+      "histology (H&E)",
+      "tumor_incidence_counts"
+    ],
+    "key_findings": [
+      "Glee1 knockout mice retain normal gastric architecture despite Helicobacter infection, implicating Glee1\u2011positive myeloid cells in metaplasia.",
+      "SLFN4 expression marks granulocytic MDSCs; knockdown of SLFN4 increases apoptosis and reduces T\u2011cell suppression in vitro.",
+      "IL1B overexpression plus MNU yields gastric tumors in 45\u201190% of mice; sildenafil treatment reduces tumor size and SLFN4\u2011positive cell infiltration.",
+      "In a human neoadjuvant window trial (n\u224814), 2\u202fweeks of tadalafil 20\u202fmg daily decreased SLFN12L\u2011positive granulocytic MDSC frequency in tumor biopsies.",
+      "Subsequent FLOT chemotherapy after tadalafil further eliminated MDSCs and exhausted T\u2011cells while expanding cytotoxic CD8 T\u2011cells.",
+      "Bulk RNA\u2011seq of sorted SLFN4\u2011positive cells identified strong up\u2011regulation of PDE6, providing a mechanistic link to cyclic GMP metabolism."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "FLOT chemotherapy (5\u2011FU, leucovorin, oxaliplatin, docetaxel)",
+        "rationale": "Standard neoadjuvant regimen; MDSC depletion by tadalafil may enhance chemotherapy\u2011induced tumor cell kill and immune activation.",
+        "phenotype": "complete loss of granulocytic MDSCs and exhausted T cells; increase in CD8 cytotoxic T cells in post\u2011treatment biopsies",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "Can cyclic GMP phosphodiesterase inhibition prevent progression from intestinal metaplasia to invasive gastric cancer in a true preventive setting?",
+      "What is the relative contribution of PDE5 versus PDE6 inhibition to MDSC apoptosis, and can selective PDE6 inhibitors improve therapeutic index?",
+      "Does SLFN4 expression in T cells have functional relevance, and how does it affect overall immune remodeling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

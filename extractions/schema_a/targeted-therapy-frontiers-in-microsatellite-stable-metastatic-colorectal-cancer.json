@@ -1,0 +1,281 @@
+[
+  {
+    "talk_id": "targeted-therapy-frontiers-in-microsatellite-stable-metastatic-colorectal-cancer::kopetz::1",
+    "session_title": "targeted-therapy-frontiers-in-microsatellite-stable-metastatic-colorectal-cancer",
+    "talk_title": "Targeting RAS and RAF in MSS Metastatic Colorectal Cancer",
+    "speaker": {
+      "name": "Scott Kopetz",
+      "affiliation": "University of Texas MD Anderson Cancer Center, Department of Gastrointestinal Medical Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "targeted_therapy",
+      "combination_therapy",
+      "clinical_trial",
+      "translational",
+      "resistance_mechanisms"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BRAF",
+        "alteration": "V600E",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "encorafenib",
+        "compound_id": "NCT04017650",
+        "ligase_or_cofactor": null,
+        "dependency_context": "BRAF V600E mutant MSS colorectal cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "EGFR",
+        "alteration": null,
+        "pathway": "RTK_signaling",
+        "modality": "antibody",
+        "compound_name": "cetuximab",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MSS colorectal cancer receiving BRAF inhibition",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12C",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "adagrasib",
+        "compound_id": "NCT03785249",
+        "ligase_or_cofactor": null,
+        "dependency_context": "KRAS G12C mutant MSS colorectal cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "zolynrasib",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "KRAS G12D mutant MSS colorectal cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MET",
+        "alteration": "amplification",
+        "pathway": "RTK_signaling",
+        "modality": "antibody",
+        "compound_name": "amivantamab",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MET-amplified MSS colorectal cancer",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "ctDNA clearance of BRAF V600E clone",
+        "type": "pharmacodynamic",
+        "assay": "ctDNA NGS",
+        "finding": "Undetectable ctDNA at 6 weeks increased from 35% (control) to 45% (EC) to 67% (EC+FOLFOX)"
+      },
+      {
+        "name": "Cytolytic score (granzyme/perforin)",
+        "type": "predictive",
+        "assay": "RNA-seq signature",
+        "finding": "Low cytolytic score associated with greater benefit from encorafenib+cetuximab (higher ORR and PFS)"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "BEACON",
+        "genotype_or_key_features": "BRAF V600E mutant MSS colorectal cancer, second/third line"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "BreakWater",
+        "genotype_or_key_features": "BRAF V600E mutant MSS colorectal cancer, first line, arms: EC+FOLFOX, EC alone, standard chemo"
+      },
+      {
+        "model_type": "PDX",
+        "name": "multiple KRAS/BRAF resistant PDX models",
+        "genotype_or_key_features": "KRAS/NRAS/MAP2K1 mutations, MET amplification, subclonal resistance"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "FOLFIRI\u2011treated CRC cell lines",
+        "genotype_or_key_features": "KRAS wild\u2011type, BRAF V600E"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "ORR",
+        "value": "67%",
+        "confidence_interval": null,
+        "n": "n=?? (BreakWater experimental arm EC+FOLFOX)",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": "standard of care chemotherapy (37% ORR)",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "ORR",
+        "value": "37%",
+        "confidence_interval": null,
+        "n": "n=?? (control arm)",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS",
+        "value": "12.8 months",
+        "confidence_interval": null,
+        "n": "n=?? (EC+FOLFOX)",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": "7 months (control)",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "HR for PFS",
+        "value": "0.53",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": "control arm",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "OS",
+        "value": "30.3 months",
+        "confidence_interval": null,
+        "n": "n=?? (EC+FOLFOX)",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": "15.1 months (control)",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "HR for OS",
+        "value": "0.49",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "BRAF V600E mutant MSS colorectal cancer, first line",
+        "comparator": "control arm",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Response rate",
+        "value": "34%",
+        "confidence_interval": null,
+        "n": "n=?? (adagrasib + cetuximab G12C cohort)",
+        "population": "KRAS G12C mutant MSS colorectal cancer",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PFS",
+        "value": "6.9 months",
+        "confidence_interval": null,
+        "n": "n=?? (adagrasib + cetuximab G12C cohort)",
+        "population": "KRAS G12C mutant MSS colorectal cancer",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Response rate",
+        "value": "47%",
+        "confidence_interval": null,
+        "n": "n=?? (elacestrant monotherapy G12C)",
+        "population": "KRAS G12C mutant MSS colorectal cancer",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Response rate",
+        "value": "62%",
+        "confidence_interval": null,
+        "n": "n=?? (elacestrant + EGFR inhibitor)",
+        "population": "KRAS G12C mutant MSS colorectal cancer",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      }
+    ],
+    "MOA_summary": "Encouraging BRAF V600E inhibition in MSS colorectal cancer requires concurrent EGFR blockade to prevent feedback re\u2011activation of MAPK signaling; adding chemotherapy (FOLFOX) further suppresses emergent resistant clones and reduces ctDNA\u2011detectable resistance mutations, leading to higher response rates and prolonged PFS/OS. Parallel KRAS allele\u2011specific inhibitors (G12C, G12D) show modest activity alone, which is markedly enhanced when combined with EGFR antibodies, reflecting the same feedback loop. Emerging degraders and pan\u2011RAS approaches aim to overcome subclonal resistance mechanisms such as MET amplification, KRAS/NRAS secondary mutations, and YAP/TEAD activation.",
+    "readouts": [
+      "ctDNA NGS",
+      "RNA-seq",
+      "RNA\u2011seq cytolytic signature",
+      "clinical imaging (RECIST)",
+      "adverse event reporting"
+    ],
+    "key_findings": [
+      "BreakWater first\u2011line BRAF V600E + EGFR inhibition plus FOLFOX achieved ORR 67% vs 37% with standard chemotherapy (HR for PFS 0.53, HR for OS 0.49).",
+      "Median OS doubled from 15.1\u202fmonths (control) to 30.3\u202fmonths with EC+FOLFOX in BRAF V600E MSS colorectal cancer.",
+      "ctDNA clearance of the BRAF V600E clone at 6\u202fweeks increased from 35% (control) to 45% (EC) and 67% (EC+FOLFOX), correlating with improved outcomes.",
+      "Acquired resistance mutations (KRAS, NRAS, MAP2K1, MET amplification) were subclonal and more frequent after EC alone than after EC+FOLFOX.",
+      "KRAS G12C inhibitor adagrasib combined with cetuximab yielded ORR 34% and PFS 6.9\u202fmonths; elacestrant monotherapy gave ORR 47% (up to 62% with EGFR inhibitor).",
+      "High baseline cell\u2011cycle signaling predicts emergence of secondary resistance mutations; low cytolytic score predicts greater benefit from BRAF\u2011EGFR therapy.",
+      "Pre\u2011clinical data show cross\u2011resistance between prior chemotherapy and BRAF\u2011EGFR therapy, supporting first\u2011line use of the combination."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "Secondary KRAS/NRAS/MAP2K1 mutations and MET amplifications emerge at progression, often subclonal (\u22481% of tumor cells).",
+      "High baseline cell\u2011cycle transcriptional activity predicts acquisition of resistance mutations.",
+      "YAP/TEAD signaling up\u2011regulation observed in paired biopsies after KRAS inhibition, suggesting a bypass pathway."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cetuximab (EGFR antibody)",
+        "rationale": "Blocks EGFR\u2011mediated MAPK re\u2011activation that limits BRAF inhibitor efficacy.",
+        "phenotype": "Synergistic tumor regression; ORR 67% with EC+FOLFOX vs 37% control.",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "FOLFOX chemotherapy",
+        "rationale": "Suppresses emergent resistant clones and reduces ctDNA\u2011detectable resistance mutations.",
+        "phenotype": "Improved PFS (12.8\u202fmo vs 7\u202fmo) and OS (30.3\u202fmo vs 15.1\u202fmo).",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "PD\u20111 inhibitor (cemiplimab)",
+        "rationale": "KRAS inhibition may prime tumor microenvironment for immune activation.",
+        "phenotype": "Early data suggest increased lymphocyte clustering and immune activation in paired biopsies.",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "PROTAC degrader targeting EGFR",
+        "rationale": "Degrader plus EGFR inhibition superior to BRAF\u2011EGFR combo in pre\u2011clinical models.",
+        "phenotype": "Enhanced tumor regression in PDX models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal sequencing of BRAF\u2011EGFR therapy with cytotoxic chemotherapy to minimize cross\u2011resistance?",
+      "Can pan\u2011RAS or KRAS G12D inhibitors achieve durable responses without EGFR blockade, or is EGFR inhibition always required?",
+      "What are the mechanisms driving the indolent biology of post\u2011BreakWater resistant tumors (PFS2), and can they be therapeutically exploited?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04017650",
+        "NCT03785249"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Kopetz et al. 2024 AACR",
+        "Lee et al. 2024 AACR"
+      ],
+      "company_or_sponsor": [
+        "Eli Lilly (encorafenib)",
+        "Amgen (elacestrant)",
+        "Mirati (adagrasib)",
+        "Amivantamab (J&J)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

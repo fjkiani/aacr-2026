@@ -1,0 +1,5933 @@
+WEBVTT
+
+1
+00:00:00.040 --> 00:00:03.760
+We're going to get started with this session, which is titled Non-Invasive Early
+
+2
+00:00:03.820 --> 00:00:05.819
+Detection of Single Site Cancers.
+
+3
+00:00:06.000 --> 00:00:09.900
+And obviously, I just came from a presidential session on
+
+4
+00:00:09.920 --> 00:00:12.420
+early detection and prevention. Obviously, there's a lot of interest in this
+
+5
+00:00:12.500 --> 00:00:16.239
+domain, so we hope this will be an interesting session for you.
+
+6
+00:00:17.140 --> 00:00:20.300
+We will each be giving a talk and then probably answering questions
+
+7
+00:00:21.140 --> 00:00:22.300
+for our individual talks
+
+8
+00:00:23.220 --> 00:00:26.400
+right after our presentations, and we'll go from there.
+
+9
+00:00:26.440 --> 00:00:30.340
+And very lucky today to have an exemplar
+
+10
+00:00:32.140 --> 00:00:35.160
+group of colleagues here, Adam Yala from Berkeley, and Sandy
+
+11
+00:00:35.660 --> 00:00:36.440
+Markowitz from
+
+12
+00:00:37.460 --> 00:00:38.960
+Case Western. And
+
+13
+00:00:40.640 --> 00:00:44.100
+we'll be covering a full domain around pancreas
+
+14
+00:00:44.220 --> 00:00:47.900
+cancer. Adam will talk about what's happening in AI and imaging
+
+15
+00:00:47.960 --> 00:00:51.660
+across several cancer types, and then Sandy will be telling us about his work in
+
+16
+00:00:51.700 --> 00:00:54.980
+Barrett's. So with that, we'll go ahead and launch into the first talk.
+
+17
+00:01:07.260 --> 00:01:09.600
+Okay, so I'm going to talk a little bit about where we are with
+
+18
+00:01:10.440 --> 00:01:12.520
+pancreatic cancer, which has really been
+
+19
+00:01:13.440 --> 00:01:16.360
+a really tough challenge, especially in the early detection space.
+
+20
+00:01:17.400 --> 00:01:18.600
+Here are my disclosures.
+
+21
+00:01:20.520 --> 00:01:23.980
+So despite having worked on this disease for many years, and some of you in the
+
+22
+00:01:24.060 --> 00:01:26.670
+audience may also be working on this disease, it's
+
+23
+00:01:27.600 --> 00:01:29.320
+a little bit heartbreaking to see we're still at a
+
+24
+00:01:30.180 --> 00:01:34.060
+13% five-year survival, and that was the same rate
+
+25
+00:01:34.140 --> 00:01:37.840
+that we had last year. And, of course, we
+
+26
+00:01:37.900 --> 00:01:41.520
+know that there are new therapeutics that are now being deployed for pancreatic
+
+27
+00:01:41.620 --> 00:01:43.680
+cancer, and we're seeing significant results
+
+28
+00:01:44.700 --> 00:01:46.380
+when they're applied in the metastatic setting.
+
+29
+00:01:47.020 --> 00:01:51.000
+However, I think it's going to be a combination of new, more promising
+
+30
+00:01:51.040 --> 00:01:54.760
+effective therapeutics and down staging of pancreatic cancer that's probably going
+
+31
+00:01:54.780 --> 00:01:58.140
+to be the magical combination to make advances in this disease.
+
+32
+00:01:58.660 --> 00:02:00.620
+This is not a disease that's going away.
+
+33
+00:02:00.780 --> 00:02:04.620
+When I started working on it, it was thought to be a relatively uncommon cancer,
+
+34
+00:02:04.760 --> 00:02:08.549
+but the incidence has been increasing globally as shown by this
+
+35
+00:02:08.660 --> 00:02:10.660
+data. And even in the United States,
+
+36
+00:02:11.900 --> 00:02:15.460
+American Cancer Society facts and figures showing an increase of 1%
+
+37
+00:02:15.920 --> 00:02:19.420
+incidence per year since the year 2000.
+
+38
+00:02:21.140 --> 00:02:24.460
+We know some of the risk factors for pancreas cancer, but
+
+39
+00:02:25.160 --> 00:02:28.520
+I personally find when I go to clinic and see patients with pancreas cancer, only
+
+40
+00:02:28.560 --> 00:02:32.540
+about 50% of the patients that come in with a de novo pancreas
+
+41
+00:02:32.620 --> 00:02:36.400
+cancer can we clearly put our finger on with this risk factor, so we
+
+42
+00:02:36.440 --> 00:02:40.320
+still have some work to do here. We're going to be talking a little bit about the
+
+43
+00:02:40.360 --> 00:02:43.989
+genetic risk, which conservatively is associated with about
+
+44
+00:02:44.020 --> 00:02:47.760
+10% of pancreas cancers, but could be as high as 15% to even potentially
+
+45
+00:02:47.820 --> 00:02:51.260
+20% if you take into account moderate risk genes.
+
+46
+00:02:52.360 --> 00:02:56.240
+For the risk factors we know about, smoking, obesity, heavy alcohol
+
+47
+00:02:56.380 --> 00:02:59.120
+use, especially if it's associated with chronic pancreatitis,
+
+48
+00:02:59.860 --> 00:03:03.740
+diabetes, these are relative risk factors, but
+
+49
+00:03:03.780 --> 00:03:06.600
+really not more than a twofold known increase.
+
+50
+00:03:07.120 --> 00:03:10.800
+We do know there's a higher incidence in Blacks, and you can see the data here.
+
+51
+00:03:11.250 --> 00:03:14.960
+And in general, this has been thought to be a cancer that we see in older
+
+52
+00:03:15.000 --> 00:03:15.459
+people.
+
+53
+00:03:16.300 --> 00:03:19.900
+But I just want to highlight there has been a concerning
+
+54
+00:03:20.280 --> 00:03:23.880
+amount of data about a generational shift in cancer incidence, and this is
+
+55
+00:03:23.920 --> 00:03:27.540
+across about eight to 10 different cancers, but does include
+
+56
+00:03:27.600 --> 00:03:28.560
+pancreatic cancer.
+
+57
+00:03:29.520 --> 00:03:33.500
+And we're starting to see this now in the clinics where we're starting to
+
+58
+00:03:33.520 --> 00:03:37.410
+see patients come in who have pancreatic cancer in their 30s and 40s, where in the
+
+59
+00:03:37.520 --> 00:03:41.340
+past that was not very common. We don't have
+
+60
+00:03:41.380 --> 00:03:45.300
+complete insight into this yet, so I think there's some interesting
+
+61
+00:03:45.340 --> 00:03:49.140
+work that's being done around this with colon cancer, and I know Ludmil Alexandrov
+
+62
+00:03:49.180 --> 00:03:52.600
+is giving a plenary session at this meeting where he'll
+
+63
+00:03:53.180 --> 00:03:56.620
+talk about some of his microbiome work that's been pretty compelling.
+
+64
+00:03:56.700 --> 00:04:00.120
+But this is something we still need to delve in across all the
+
+65
+00:04:00.200 --> 00:04:02.400
+cancers by which we're seeing this.
+
+66
+00:04:04.340 --> 00:04:08.100
+And even at this point of having done a lot of work as a
+
+67
+00:04:08.200 --> 00:04:12.180
+field in pancreatic cancer, these kinds of films are still
+
+68
+00:04:12.260 --> 00:04:14.460
+not uncommon in the clinic,
+
+69
+00:04:15.840 --> 00:04:19.560
+where people have locally advanced cancers, where we have limited
+
+70
+00:04:19.601 --> 00:04:23.520
+surgical options for these patients because of extensive vascular involvement as
+
+71
+00:04:23.560 --> 00:04:27.460
+shown on the scan on the left, or frankly, metastatic disease, and still half
+
+72
+00:04:27.500 --> 00:04:31.180
+of patients when they come into the clinic have metastatic disease
+
+73
+00:04:31.260 --> 00:04:33.260
+at their initial presentation.
+
+74
+00:04:35.220 --> 00:04:38.760
+So we still do not fully
+
+75
+00:04:38.770 --> 00:04:42.700
+understand who is at risk for pancreas cancer, what's the level of risk,
+
+76
+00:04:42.760 --> 00:04:46.720
+and then, of course, what we can do about it, both in terms of early detection and
+
+77
+00:04:46.820 --> 00:04:48.880
+prevention. And I think this is
+
+78
+00:04:49.680 --> 00:04:53.540
+the important data point for us to all keep our eye on, and this
+
+79
+00:04:53.580 --> 00:04:57.560
+is five-year-old SEER data that if you are identified as having a Stage IA
+
+80
+00:04:57.620 --> 00:05:00.260
+pancreas cancer, which is two centimeters or less,
+
+81
+00:05:01.240 --> 00:05:04.340
+that the five-year survival rate is 83%.
+
+82
+00:05:04.440 --> 00:05:08.320
+So we know 83% is a very different number than 13%, and I
+
+83
+00:05:08.340 --> 00:05:12.020
+would like to make the case that of all the investment we should be making in
+
+84
+00:05:12.080 --> 00:05:16.060
+pancreas cancer right now, it's probably in early detection.
+
+85
+00:05:18.280 --> 00:05:19.540
+Now, how do we get
+
+86
+00:05:20.520 --> 00:05:23.540
+to having effective early detection, understanding risk?
+
+87
+00:05:23.880 --> 00:05:27.640
+It's for this reason we started an effort
+
+88
+00:05:27.700 --> 00:05:29.820
+called PRECEDE, and
+
+89
+00:05:30.820 --> 00:05:33.440
+what we're really seeing is a lot of institutional
+
+90
+00:05:35.140 --> 00:05:38.240
+or individual efforts around trying to understand early detection, but this is
+
+91
+00:05:38.300 --> 00:05:39.840
+something that really needed to have
+
+92
+00:05:40.940 --> 00:05:44.100
+a scale-up to tackle it in the proper way.
+
+93
+00:05:44.840 --> 00:05:48.700
+So we developed a collaborative research effort, which has now grown
+
+94
+00:05:48.780 --> 00:05:52.300
+and involves 65 academic centers around the world,
+
+95
+00:05:52.880 --> 00:05:56.260
+all focused on changing outcomes for pancreas cancer through early detection.
+
+96
+00:05:56.300 --> 00:05:59.890
+There's another 30 to 40 centers in queue that are getting their regulatory
+
+97
+00:05:59.980 --> 00:06:03.700
+documents in place. And we set an ambitious
+
+98
+00:06:03.720 --> 00:06:06.680
+goal to get for a five-year survival rate from 13% to
+
+99
+00:06:06.940 --> 00:06:10.280
+50% by driving early detection.
+
+100
+00:06:10.920 --> 00:06:14.500
+And this has grown now to be the largest effort of its kind, and
+
+101
+00:06:14.840 --> 00:06:18.640
+by using a novel model of data and bio
+
+102
+00:06:18.700 --> 00:06:22.580
+sample sharing and collaboration, we do think this will help get
+
+103
+00:06:22.620 --> 00:06:24.200
+us to early detection much more
+
+104
+00:06:24.260 --> 00:06:28.100
+quickly.This study was set up to try
+
+105
+00:06:28.140 --> 00:06:28.860
+to answer
+
+106
+00:06:29.980 --> 00:06:32.080
+and address some of the points made on this slide.
+
+107
+00:06:32.940 --> 00:06:36.840
+We standardized collection of clinical laboratory and imaging data, as well
+
+108
+00:06:36.860 --> 00:06:39.560
+as biosamples for a longitudinal study of
+
+109
+00:06:39.580 --> 00:06:42.880
+individuals at higher risk of pancreas cancer
+
+110
+00:06:42.900 --> 00:06:46.500
+worldwide. We still don't have proof that screening
+
+111
+00:06:46.580 --> 00:06:50.380
+saves lives. We can hypothesize it does, and small
+
+112
+00:06:50.500 --> 00:06:54.480
+studies would suggest that's the case, but we don't have the formal definitive
+
+113
+00:06:54.560 --> 00:06:55.420
+proof around this.
+
+114
+00:06:56.260 --> 00:07:00.040
+We need to understand not only the genetic, but also the environmental risks
+
+115
+00:07:00.540 --> 00:07:03.980
+associated with pancreas cancer, and this study positions us to do
+
+116
+00:07:04.020 --> 00:07:07.780
+so. Eighty-five percent of heritable pancreas
+
+117
+00:07:07.860 --> 00:07:08.340
+cancer,
+
+118
+00:07:09.480 --> 00:07:12.600
+which we call familial pancreas cancer, the genetic cause is unknown.
+
+119
+00:07:12.680 --> 00:07:16.020
+So we have the potential to address this. I'll talk about that a little bit later.
+
+120
+00:07:16.720 --> 00:07:20.100
+And then certainly by having this platform, any new
+
+121
+00:07:20.200 --> 00:07:21.480
+tool upon
+
+122
+00:07:22.300 --> 00:07:26.140
+which you want to say it improves our ability to detect pancreas cancer
+
+123
+00:07:26.240 --> 00:07:30.000
+early, this will be a platform which can be effectively
+
+124
+00:07:30.020 --> 00:07:30.560
+deployed.
+
+125
+00:07:32.080 --> 00:07:35.660
+And then, not lost on us, if we have a large enough
+
+126
+00:07:35.760 --> 00:07:39.670
+cohort and have a good early detection test, then we have
+
+127
+00:07:39.700 --> 00:07:43.400
+the opportunity to do interception and prevention
+
+128
+00:07:43.540 --> 00:07:43.990
+studies.
+
+129
+00:07:45.540 --> 00:07:47.920
+So we started this study, and it's really to
+
+130
+00:07:49.400 --> 00:07:53.040
+try to understand risk and early detection in
+
+131
+00:07:53.080 --> 00:07:56.800
+anyone who might come in the clinic who is worried about their
+
+132
+00:07:56.840 --> 00:08:00.100
+pancreatic cancer risk, and I'll show you who I mean by that.
+
+133
+00:08:00.140 --> 00:08:03.990
+We initially planned a 10,000-patient, 10-year study, but
+
+134
+00:08:04.020 --> 00:08:07.440
+we've already surpassed that, so now we're going to be enrolling a total of
+
+135
+00:08:07.660 --> 00:08:08.840
+20,000 patients.
+
+136
+00:08:10.220 --> 00:08:14.200
+For centers to participate, we want centers to
+
+137
+00:08:14.280 --> 00:08:15.860
+have some organization and
+
+138
+00:08:17.220 --> 00:08:21.000
+see at least 50 to 75 high-risk patients a year, have
+
+139
+00:08:21.080 --> 00:08:24.490
+an organized team in place, infrastructure to collect data and
+
+140
+00:08:24.600 --> 00:08:28.280
+samples, and agree to share data and samples to join.
+
+141
+00:08:29.600 --> 00:08:31.980
+Now, who do we follow in this study?
+
+142
+00:08:32.060 --> 00:08:35.980
+This is a really important part that I think is going to pay off in
+
+143
+00:08:36.000 --> 00:08:39.841
+the long term. Cohort one is the cohort that would
+
+144
+00:08:39.880 --> 00:08:42.680
+be typically followed at centers like yours.
+
+145
+00:08:42.720 --> 00:08:46.520
+These are people that will have familial pancreas cancer or have mutations
+
+146
+00:08:46.700 --> 00:08:49.320
+and a family member with pancreas cancer.
+
+147
+00:08:49.360 --> 00:08:53.140
+And this is already in the NCCN guidelines that these folks should get annual
+
+148
+00:08:53.300 --> 00:08:57.260
+imaging, which normally would constitute getting an MRI alternating with
+
+149
+00:08:57.320 --> 00:08:58.820
+an endoscopic ultrasound.
+
+150
+00:09:00.020 --> 00:09:02.640
+Cohort two is an interesting one. This is one we
+
+151
+00:09:02.780 --> 00:09:04.140
+started,
+
+152
+00:09:05.100 --> 00:09:08.560
+and it includes people with ATM, BRCA1 and 2 mutations,
+
+153
+00:09:08.660 --> 00:09:12.440
+PALB2. People who have two first-degree relatives on one
+
+154
+00:09:12.560 --> 00:09:16.240
+side, but perhaps not a first-degree relative, and if we have someone who
+
+155
+00:09:16.360 --> 00:09:19.200
+has a family history of early onset cancer.
+
+156
+00:09:19.320 --> 00:09:23.060
+And when we started collecting these patients and following
+
+157
+00:09:23.100 --> 00:09:26.820
+them, it was not in any guidelines that any of
+
+158
+00:09:27.240 --> 00:09:29.940
+the folks in this cohort should get longitudinal screening.
+
+159
+00:09:30.020 --> 00:09:33.860
+But since then, there are two guidelines that have put forth
+
+160
+00:09:33.869 --> 00:09:34.140
+that
+
+161
+00:09:35.580 --> 00:09:39.340
+some of these carriers should be screened without a family history of pancreas
+
+162
+00:09:39.420 --> 00:09:42.300
+cancer. ASGE suggests screening
+
+163
+00:09:42.380 --> 00:09:46.320
+BRCA1 and BRCA2 carriers at
+
+164
+00:09:46.360 --> 00:09:50.030
+age 50 without a family history. And in the NCCN now, it is
+
+165
+00:09:50.080 --> 00:09:53.620
+standard of care to do screening of ATM and BRCA
+
+166
+00:09:53.680 --> 00:09:57.440
+carriers at age 50. And that's because if you, in particular, take
+
+167
+00:09:57.480 --> 00:10:01.400
+ATM and BRCA2 carriers, the lifetime risk of getting pancreas cancer is
+
+168
+00:10:01.420 --> 00:10:05.180
+going to be about 5% to 7%. And when you're talking for a lethal
+
+169
+00:10:05.260 --> 00:10:07.800
+cancer, it would make sense to do screening.
+
+170
+00:10:07.860 --> 00:10:11.790
+Importantly, also, when we started to implement doing germline testing for
+
+171
+00:10:11.840 --> 00:10:15.680
+all pancreatic cancer patients in the United States, and we
+
+172
+00:10:15.740 --> 00:10:19.520
+found that individuals had a mutation, and we asked them, "Do
+
+173
+00:10:19.760 --> 00:10:23.720
+you have a history of pancreas cancer in the
+
+174
+00:10:23.780 --> 00:10:27.160
+family?" Over 80% of the time, the answer was no.
+
+175
+00:10:27.300 --> 00:10:31.140
+So that let us know that we don't want to solely rely on family
+
+176
+00:10:31.220 --> 00:10:33.620
+history to understand who's at risk.
+
+177
+00:10:34.380 --> 00:10:36.320
+Other important cohorts here
+
+178
+00:10:37.400 --> 00:10:41.380
+are cohort three. So these are people who should be screened, but they're
+
+179
+00:10:41.440 --> 00:10:45.409
+too young. So if we had a prevention approach
+
+180
+00:10:45.820 --> 00:10:49.360
+for individuals at high risk of pancreas cancer, this is a cohort that may come
+
+181
+00:10:49.380 --> 00:10:53.340
+into play. Cohort four, and this is important to know if you have a single
+
+182
+00:10:53.480 --> 00:10:57.280
+first-degree family member with pancreas cancer, it's now in the NCCN
+
+183
+00:10:57.289 --> 00:10:59.470
+guidelines that you should get germline testing.
+
+184
+00:11:00.320 --> 00:11:04.200
+And we currently have about 1,300 patients in cohort four in
+
+185
+00:11:04.240 --> 00:11:04.860
+this study.
+
+186
+00:11:07.020 --> 00:11:10.990
+Cohort five is just to be able to collect a biosample from a
+
+187
+00:11:11.020 --> 00:11:13.840
+family where we may be able to do some important research.
+
+188
+00:11:14.480 --> 00:11:16.300
+Cohort 6A is
+
+189
+00:11:17.540 --> 00:11:21.160
+the strength of the study. We predict that about 1,200
+
+190
+00:11:21.200 --> 00:11:24.300
+people who are in screening will get pancreas cancer
+
+191
+00:11:24.400 --> 00:11:28.170
+during their participation. And the good
+
+192
+00:11:28.260 --> 00:11:31.960
+news is, for those individuals that are in screening,
+
+193
+00:11:32.020 --> 00:11:34.960
+it's much more likely we're going to find an early cancer.
+
+194
+00:11:35.960 --> 00:11:39.020
+We've also included other cohorts which are important controls.
+
+195
+00:11:39.320 --> 00:11:42.560
+6B are people that have come
+
+196
+00:11:42.570 --> 00:11:46.500
+into the clinic with cancer that have family history
+
+197
+00:11:46.540 --> 00:11:47.500
+or a mutation.
+
+198
+00:11:48.340 --> 00:11:52.260
+Cohort 6C are early-stage pancreas cancers across our
+
+199
+00:11:52.620 --> 00:11:56.420
+65 centers. So if there are clinical trials upon
+
+200
+00:11:56.480 --> 00:12:00.360
+which we want to test therapeutics for very early-stage pancreas cancer, we
+
+201
+00:12:00.440 --> 00:12:04.360
+have such a cohort assembled. And then we've also added in a cyst
+
+202
+00:12:04.440 --> 00:12:05.000
+cohort,
+
+203
+00:12:06.180 --> 00:12:09.620
+and we see hundreds of thousands of patients with pancreatic cysts in the United
+
+204
+00:12:09.700 --> 00:12:13.480
+States every year and still don't have optimization of how
+
+205
+00:12:13.600 --> 00:12:15.220
+we should make decisions for
+
+206
+00:12:17.600 --> 00:12:21.140
+duration and frequency of screening, along with who should go to the
+
+207
+00:12:21.200 --> 00:12:24.700
+operating room.Now, as part of this study, we
+
+208
+00:12:25.380 --> 00:12:29.260
+have standardized collection of data, three-generation family history,
+
+209
+00:12:30.020 --> 00:12:33.360
+using pedigree templates, standardized germline testing for all
+
+210
+00:12:33.400 --> 00:12:37.110
+participants. We track modifiable risk
+
+211
+00:12:37.180 --> 00:12:41.050
+factors, diabetes, obesity, pancreatitis, smoking, alcohol use,
+
+212
+00:12:41.100 --> 00:12:44.800
+and we're soon adding in a list of medications, standardized
+
+213
+00:12:44.860 --> 00:12:48.480
+templates for imaging for both MRI and endoscopic
+
+214
+00:12:48.540 --> 00:12:52.380
+ultrasound, standardized collection of blood, tumor tissue when
+
+215
+00:12:52.420 --> 00:12:56.400
+available, and also we obtain CA 19-9
+
+216
+00:12:56.440 --> 00:12:59.400
+and hemoglobin AC, which may be important for model development.
+
+217
+00:13:01.080 --> 00:13:04.920
+We now have 11,550 patients in. We started as a
+
+218
+00:13:04.980 --> 00:13:08.900
+single center in May of 2020, and gradually more
+
+219
+00:13:08.920 --> 00:13:11.990
+sites have come on. I'll show you where the data is.
+
+220
+00:13:12.220 --> 00:13:16.110
+We made the investment to have Arbor Research be the data coordinating center.
+
+221
+00:13:16.240 --> 00:13:20.090
+They run many consortia for the NCI and other
+
+222
+00:13:20.200 --> 00:13:23.760
+efforts, and they help with all the regulatory documents, and also
+
+223
+00:13:23.820 --> 00:13:27.020
+provide a beautiful weekly report that's very
+
+224
+00:13:27.080 --> 00:13:30.960
+comprehensive, chronicling every patient seen at each site, in which
+
+225
+00:13:31.020 --> 00:13:34.340
+cohort, and all the mutational information, et cetera.
+
+226
+00:13:35.200 --> 00:13:38.620
+Samples are bar-coded, and then we're in the process of getting them
+
+227
+00:13:38.960 --> 00:13:42.560
+shipped to a central repository at five sites.
+
+228
+00:13:43.590 --> 00:13:47.560
+So this is the enrollment curve, and the largest enrollment is in Cohort 1,
+
+229
+00:13:47.660 --> 00:13:47.970
+which is
+
+230
+00:13:49.100 --> 00:13:51.440
+a little bit above half of the cohort.
+
+231
+00:13:51.480 --> 00:13:55.160
+We're almost at 5,600 patients in, in Cohort 1.
+
+232
+00:13:56.980 --> 00:14:00.340
+But you can see that Cohort 2, which is the second line on the right,
+
+233
+00:14:01.120 --> 00:14:05.060
+we have 2,300 patients. So we have a large group
+
+234
+00:14:05.140 --> 00:14:08.520
+of mutation carriers that we're following longitudinally,
+
+235
+00:14:08.880 --> 00:14:12.780
+and even the CIS cohort, we have almost 550 patients.
+
+236
+00:14:14.440 --> 00:14:18.400
+This is just one snapshot of the weekly data we get, and
+
+237
+00:14:18.500 --> 00:14:20.640
+I told you everybody gets standardized germline testing.
+
+238
+00:14:21.180 --> 00:14:24.950
+So you can see that we see all the mutations, and I just went A through
+
+239
+00:14:25.040 --> 00:14:25.880
+C, but we
+
+240
+00:14:26.700 --> 00:14:29.590
+have 37 standardized PGVs that are tested,
+
+241
+00:14:30.440 --> 00:14:33.040
+and also blood collected for genomic discovery work.
+
+242
+00:14:33.920 --> 00:14:36.880
+You can see here on the right that we have almost
+
+243
+00:14:37.860 --> 00:14:40.240
+3,000 BRCA carriers that are in study.
+
+244
+00:14:40.340 --> 00:14:44.320
+So you could make the case if we wanted to do an MCED study, this
+
+245
+00:14:44.360 --> 00:14:47.680
+might be a good place to do it because all these patients are getting annual
+
+246
+00:14:47.740 --> 00:14:50.140
+imaging, not only for their pancreas, but being followed
+
+247
+00:14:51.020 --> 00:14:53.280
+for other cancers they might be at risk.
+
+248
+00:14:54.120 --> 00:14:57.560
+Almost 900 ATM carriers, et cetera.
+
+249
+00:14:59.060 --> 00:15:02.720
+So I just would show you a little bit of the data we have for
+
+250
+00:15:03.120 --> 00:15:06.900
+the cancers that have been detected so far, and the numbers are still small, but we
+
+251
+00:15:06.920 --> 00:15:09.340
+expect that these numbers are going to increase substantially.
+
+252
+00:15:10.040 --> 00:15:13.560
+In fact, even since I submitted these slides, two additional cancers
+
+253
+00:15:13.920 --> 00:15:16.200
+have been detected in the last week.
+
+254
+00:15:16.280 --> 00:15:19.880
+I didn't include them, but that just shows you that with the size of this
+
+255
+00:15:19.920 --> 00:15:23.830
+cohort, we'll be expecting to get at least a screen-detected cancer every
+
+256
+00:15:23.860 --> 00:15:25.480
+week or two. So
+
+257
+00:15:26.320 --> 00:15:30.000
+of the 42 cases that I'm reporting on now,
+
+258
+00:15:30.220 --> 00:15:33.740
+six cases were found just when patients came in the door the very first time to get
+
+259
+00:15:33.780 --> 00:15:34.920
+imaging, and you can see
+
+260
+00:15:35.960 --> 00:15:37.920
+there's a spread as shown there on the right.
+
+261
+00:15:38.240 --> 00:15:42.100
+Interestingly, it's not just Cohort 1, which is the cohort, the
+
+262
+00:15:42.140 --> 00:15:46.040
+group that's typically studied at centers, but we see that we have a couple cancers
+
+263
+00:15:46.060 --> 00:15:47.000
+from Cohort 2.
+
+264
+00:15:49.260 --> 00:15:52.260
+Now, these are the screen-detected cancers so far, and
+
+265
+00:15:54.020 --> 00:15:57.900
+I'm glad to report that 72% of them are either high-grade
+
+266
+00:15:57.960 --> 00:16:01.800
+dysplasia or Stage 1. And again, also you can see
+
+267
+00:16:01.860 --> 00:16:05.740
+while most of them are from Cohort 1, which is the group that standardly gets
+
+268
+00:16:05.860 --> 00:16:09.740
+screened, that we also have some cancers from Cohort 2 and
+
+269
+00:16:09.800 --> 00:16:13.360
+even Cohort 4, which are the folks
+
+270
+00:16:13.420 --> 00:16:17.349
+that had a single family member and had germline testing and it
+
+271
+00:16:17.400 --> 00:16:21.160
+was negative. Now you could ask, "Well, why did they even get
+
+272
+00:16:21.260 --> 00:16:24.620
+followed?" Because if their germline testing was negative, you wouldn't expect them
+
+273
+00:16:24.640 --> 00:16:28.220
+to be screened. It was because they had an MRI
+
+274
+00:16:28.860 --> 00:16:32.320
+previously that showed a small cyst in their pancreas, and so that bought them the
+
+275
+00:16:32.360 --> 00:16:34.520
+ticket to get imaging the next year.
+
+276
+00:16:35.340 --> 00:16:39.180
+And in these cases, we found a small cancer that was not in the cyst.
+
+277
+00:16:39.229 --> 00:16:43.169
+So that's just an important point for us to pay attention to, because it
+
+278
+00:16:43.240 --> 00:16:47.160
+might be that there's a subset of patients with a single
+
+279
+00:16:47.300 --> 00:16:51.060
+family member that we may be able to develop criteria that would
+
+280
+00:16:51.120 --> 00:16:52.560
+warrant longitudinal screening.
+
+281
+00:16:54.160 --> 00:16:55.580
+Just wanted to show you this.
+
+282
+00:16:56.740 --> 00:17:00.580
+In Cohort 1, again, we found there were three high-grade
+
+283
+00:17:00.600 --> 00:17:01.510
+dysplasia, not even
+
+284
+00:17:02.800 --> 00:17:06.460
+invasive cancer yet, 73% early stage.
+
+285
+00:17:06.960 --> 00:17:10.800
+About half were gene mutation carriers, and about half were
+
+286
+00:17:12.060 --> 00:17:15.700
+FPC. In Cohort 2, these are people
+
+287
+00:17:15.760 --> 00:17:17.161
+without a family history
+
+288
+00:17:18.200 --> 00:17:22.161
+that had mutations. Four of them were BRCA2, and as I told you in
+
+289
+00:17:22.200 --> 00:17:25.520
+the NCCN guidelines, there is recommendation for screening for
+
+290
+00:17:25.540 --> 00:17:28.760
+BRCA2. But three of them were BRCA1,
+
+291
+00:17:29.380 --> 00:17:33.320
+and so that highlights the fact as we accumulate this data that we may be
+
+292
+00:17:33.340 --> 00:17:37.040
+able to bend the NCCN guidelines to help provide guidance who with
+
+293
+00:17:37.060 --> 00:17:38.960
+BRCA1 should get pancreas screening.
+
+294
+00:17:39.530 --> 00:17:42.220
+And then you can see we had three cancers in Cohort 4.
+
+295
+00:17:42.320 --> 00:17:45.700
+So this is something for us to be paying attention to as this data
+
+296
+00:17:45.760 --> 00:17:46.340
+evolves.
+
+297
+00:17:48.400 --> 00:17:52.300
+And again, if you just look at the distribution of early-stage
+
+298
+00:17:52.340 --> 00:17:55.860
+cancers in the study so far versus SEER
+
+299
+00:17:56.100 --> 00:17:56.720
+cohort
+
+300
+00:17:57.900 --> 00:17:59.140
+data, which shows
+
+301
+00:18:00.680 --> 00:18:04.160
+traditionally about 11% of pancreas cancers
+
+302
+00:18:04.260 --> 00:18:06.300
+are found early otherwise.
+
+303
+00:18:07.280 --> 00:18:10.540
+Now, an important part of really moving the needle
+
+304
+00:18:10.600 --> 00:18:11.500
+is
+
+305
+00:18:12.660 --> 00:18:16.500
+trying to understand any screen-detected cancer that's not a Stage
+
+306
+00:18:16.900 --> 00:18:16.920
+1,
+
+307
+00:18:17.780 --> 00:18:21.680
+what might be the reason? And so we now have established a monthly
+
+308
+00:18:21.820 --> 00:18:25.320
+PRESEED worldwide tumor board, and we
+
+309
+00:18:25.880 --> 00:18:29.400
+examine every single case, and we're setting up to get independent
+
+310
+00:18:30.420 --> 00:18:34.380
+imaging review. And so the question is: Was it a
+
+311
+00:18:34.480 --> 00:18:35.200
+case in which the
+
+312
+00:18:37.500 --> 00:18:41.182
+time interval between screening was delayed?Was the
+
+313
+00:18:41.312 --> 00:18:42.872
+imaging suboptimal?
+
+314
+00:18:44.112 --> 00:18:47.972
+Was there something subtle on a prior scan that now that we look back
+
+315
+00:18:48.012 --> 00:18:49.592
+in retrospect was there?
+
+316
+00:18:50.712 --> 00:18:53.952
+Or are there a subset of pancreas cancers that may be
+
+317
+00:18:54.032 --> 00:18:57.892
+genomically more aggressive and that'll be important for us
+
+318
+00:18:57.932 --> 00:18:59.212
+to know about as we
+
+319
+00:19:00.412 --> 00:19:03.531
+think about being more precise in our screening strategies.
+
+320
+00:19:04.212 --> 00:19:07.492
+And I just want to talk about that point on this slide.
+
+321
+00:19:08.092 --> 00:19:12.012
+So there's been a lot of work trying to understand the genomic trajectories
+
+322
+00:19:12.052 --> 00:19:15.692
+of pancreas cancer, and there was a paper published in
+
+323
+00:19:16.132 --> 00:19:19.872
+"Nature" in 2010 that put forth using mathematical
+
+324
+00:19:19.992 --> 00:19:23.492
+modeling that there was a very slow ramp-up on the
+
+325
+00:19:23.552 --> 00:19:26.912
+trajectory to pancreas cancer, where there was a gradual accumulation of
+
+326
+00:19:26.972 --> 00:19:30.372
+mutations, and you can see that up there on the top right.
+
+327
+00:19:31.152 --> 00:19:34.932
+However, there was initial hypothesis
+
+328
+00:19:35.052 --> 00:19:38.972
+generating paper by Paco Real, published in "Gastroenterology" in
+
+329
+00:19:39.112 --> 00:19:42.912
+2003, and subsequent work by Fayez Nota that said,
+
+330
+00:19:42.992 --> 00:19:43.892
+while there may be
+
+331
+00:19:46.332 --> 00:19:48.292
+cancers that have this gradual
+
+332
+00:19:49.132 --> 00:19:52.892
+accumulation mutations, we do know that some
+
+333
+00:19:52.932 --> 00:19:56.792
+pancreatic cancers actually undergo chromothripsis and
+
+334
+00:19:56.952 --> 00:20:00.792
+have a punctuated equilibrium where they may have loss of multiple
+
+335
+00:20:00.802 --> 00:20:03.572
+tumor suppressor genes at the same time.
+
+336
+00:20:03.612 --> 00:20:05.912
+And so that trajectory may be different.
+
+337
+00:20:05.942 --> 00:20:09.672
+And so we may find that there's a subset of patients at risk for pancreas cancer
+
+338
+00:20:09.712 --> 00:20:13.672
+that have that kind of trajectory, and that'll be really important
+
+339
+00:20:13.712 --> 00:20:17.372
+for us to know. And they may be people that we have to screen at a different
+
+340
+00:20:17.432 --> 00:20:19.252
+cadence or using different tools.
+
+341
+00:20:21.612 --> 00:20:25.392
+Now when you have a platform like this, the goal is not to necessarily just have
+
+342
+00:20:25.432 --> 00:20:29.232
+the platform, but to have a platform upon which now
+
+343
+00:20:29.352 --> 00:20:32.652
+we have the size and scale of data to answer questions.
+
+344
+00:20:33.132 --> 00:20:35.232
+These are all active projects going on.
+
+345
+00:20:36.092 --> 00:20:39.332
+Long-read sequencing in PDAC, I'll show you a slide on that.
+
+346
+00:20:39.342 --> 00:20:43.312
+Early detection biomarkers, AI-enabled image analysis
+
+347
+00:20:43.352 --> 00:20:46.332
+and multimodal data, polygenic risk scores, et cetera.
+
+348
+00:20:47.112 --> 00:20:48.752
+So now we have
+
+349
+00:20:49.612 --> 00:20:52.872
+dozens and dozens of scientists around the world that are able to tackle
+
+350
+00:20:53.412 --> 00:20:57.192
+these unresolved questions using this platform and data
+
+351
+00:20:57.272 --> 00:20:57.672
+set.
+
+352
+00:20:59.452 --> 00:21:03.342
+I want to give a shout-out for this collaboration, which is to do
+
+353
+00:21:03.342 --> 00:21:07.172
+a pilot of 200 pancreas cancer patients that have familial
+
+354
+00:21:07.232 --> 00:21:09.712
+cancer with a negative germline panel.
+
+355
+00:21:10.282 --> 00:21:13.712
+We're in partnership with Ambry Genetics and PacBio.
+
+356
+00:21:14.232 --> 00:21:18.112
+We're doing long-read sequencing, and we have some interesting
+
+357
+00:21:18.172 --> 00:21:21.612
+hits, which maybe we'll be able to present once they're validated in an upcoming
+
+358
+00:21:21.712 --> 00:21:22.092
+meeting.
+
+359
+00:21:23.712 --> 00:21:27.552
+And then PRECEDE is a good platform if there's a
+
+360
+00:21:27.592 --> 00:21:30.912
+biomarker test that has high performance where we can test it
+
+361
+00:21:31.012 --> 00:21:34.622
+longitudinally to predict its sensitivity and
+
+362
+00:21:34.772 --> 00:21:36.352
+specificity in a
+
+363
+00:21:37.732 --> 00:21:41.302
+target population. So there are now two active studies, one with
+
+364
+00:21:42.252 --> 00:21:46.192
+a test called Advantech, and soon to come on board,
+
+365
+00:21:46.592 --> 00:21:50.552
+PancraSure, and these both have high performance in comparing
+
+366
+00:21:50.672 --> 00:21:54.012
+stage one pancreas cancer to both normals and
+
+367
+00:21:54.992 --> 00:21:58.252
+benign disease controls. And so we're going to see how they perform
+
+368
+00:21:58.332 --> 00:21:59.632
+longitudinally over time.
+
+369
+00:22:02.612 --> 00:22:03.332
+So in summary,
+
+370
+00:22:04.552 --> 00:22:07.492
+this has been an exciting project and
+
+371
+00:22:07.532 --> 00:22:11.492
+platform that is being performed at large scale to
+
+372
+00:22:11.552 --> 00:22:15.292
+really try to change survival for pancreas cancer by driving
+
+373
+00:22:15.332 --> 00:22:18.432
+early detection. Importantly, we have
+
+374
+00:22:18.752 --> 00:22:22.012
+engagement of key stakeholders all listed here
+
+375
+00:22:22.592 --> 00:22:25.092
+that all have skin in the game to
+
+376
+00:22:25.912 --> 00:22:29.572
+allow us to elicit change, and the biggest advocates of this study
+
+377
+00:22:29.712 --> 00:22:31.192
+are patients.
+
+378
+00:22:32.282 --> 00:22:35.922
+With no marketing communication budget, we have patients coming
+
+379
+00:22:36.832 --> 00:22:40.152
+forward all around the world to participate in this study because they think by
+
+380
+00:22:40.412 --> 00:22:43.632
+everybody working together and sharing data, it's going to make an impact.
+
+381
+00:22:45.572 --> 00:22:49.522
+And just a slide acknowledging all the investigators,
+
+382
+00:22:49.672 --> 00:22:51.292
+funders, and
+
+383
+00:22:54.052 --> 00:22:57.972
+the hope that we can use this platform to really transform early
+
+384
+00:22:57.992 --> 00:23:00.331
+detection. Thank you.
+
+385
+00:23:06.252 --> 00:23:06.552
+So I think we
+
+386
+00:23:07.472 --> 00:23:11.232
+have five minutes for questions. If anyone has a question, I'm happy to answer it.
+
+387
+00:23:11.682 --> 00:23:11.872
+Yeah.
+
+388
+00:23:11.892 --> 00:23:11.992
+Yeah.
+
+389
+00:23:12.072 --> 00:23:14.612
+I have a question. Thank you for that lovely talk.
+
+390
+00:23:14.712 --> 00:23:17.712
+I send all my patients to PRECEDE, so all good.
+
+391
+00:23:18.332 --> 00:23:21.742
+Once you get into the pancreatic cyst
+
+392
+00:23:21.992 --> 00:23:22.432
+area,
+
+393
+00:23:23.812 --> 00:23:27.312
+I start thinking about PNETs as well.
+
+394
+00:23:27.412 --> 00:23:31.352
+And so there are clearly inherited syndromes such as VHL with multiple
+
+395
+00:23:31.492 --> 00:23:35.352
+pancreatic cysts, and that's a PNET thing where the screening is very
+
+396
+00:23:35.392 --> 00:23:39.162
+different. So I'm just curious how you're thinking
+
+397
+00:23:39.412 --> 00:23:43.242
+about that in the context of PRECEDE, where those patients have
+
+398
+00:23:43.252 --> 00:23:44.942
+historically not, for example-
+
+399
+00:23:45.072 --> 00:23:45.812
+Yeah
+
+400
+00:23:45.822 --> 00:23:46.692
+... had US.
+
+401
+00:23:47.252 --> 00:23:49.772
+So, I think it's a fascinating point.
+
+402
+00:23:49.812 --> 00:23:53.452
+The first paper we published from PRECEDE, looking at the
+
+403
+00:23:53.692 --> 00:23:57.332
+first 1,800 patients in, we found 12 incidental
+
+404
+00:23:57.372 --> 00:23:59.081
+PNETs. So that did raise--
+
+405
+00:24:00.272 --> 00:24:03.752
+We did pay attention to that because we did wonder if perhaps there's a field
+
+406
+00:24:03.832 --> 00:24:06.712
+defect where we might see more PNETs in this setting.
+
+407
+00:24:07.892 --> 00:24:11.312
+We are doing a separate study, and actually that's in partnership with Adam.
+
+408
+00:24:11.352 --> 00:24:14.892
+We're in the UC system. We're going back 10 years,
+
+409
+00:24:15.772 --> 00:24:19.762
+to look at who got pancreas cancer and who got
+
+410
+00:24:19.812 --> 00:24:23.572
+a PNET and see if we can develop multimodal data integration
+
+411
+00:24:23.672 --> 00:24:26.092
+to develop predictive algorithms.
+
+412
+00:24:26.712 --> 00:24:30.292
+So I think there are ways we can leverage this to go a little bit deeper in the
+
+413
+00:24:30.342 --> 00:24:32.612
+PNET space, and we can talk more about that.
+
+414
+00:24:32.692 --> 00:24:34.492
+But I think it's a really good point.
+
+415
+00:24:37.432 --> 00:24:37.632
+Yeah.
+
+416
+00:24:38.152 --> 00:24:40.151
+Hi, Diane. Yue Feng from Johns Hopkins.
+
+417
+00:24:40.232 --> 00:24:44.180
+SoThank you for your tremendous effort on this to
+
+418
+00:24:44.220 --> 00:24:47.420
+build out this platform. So I have two questions.
+
+419
+00:24:47.860 --> 00:24:51.640
+Actually, first one is whether the cyst fluid will be considered to you or
+
+420
+00:24:51.700 --> 00:24:53.340
+like a cyst?
+
+421
+00:24:53.480 --> 00:24:53.740
+Yeah.
+
+422
+00:24:55.100 --> 00:24:56.610
+We do have a U01
+
+423
+00:24:57.780 --> 00:24:59.080
+that is comparing
+
+424
+00:25:00.360 --> 00:25:03.200
+some of these promising early detection blood tests
+
+425
+00:25:04.560 --> 00:25:05.040
+with
+
+426
+00:25:05.960 --> 00:25:09.660
+cyst fluid genetic analysis, and in this particular project, it's
+
+427
+00:25:09.700 --> 00:25:13.480
+PANCREAseek versus gold standard, which is path, surgical
+
+428
+00:25:13.600 --> 00:25:17.120
+path in patients who undergo surgical resection for cysts.
+
+429
+00:25:17.500 --> 00:25:21.320
+In the U01, that's cohort one. Cohort two are people with larger
+
+430
+00:25:21.440 --> 00:25:25.160
+cysts, 2.5 centimeters or greater, or main pancreatic duct six
+
+431
+00:25:25.300 --> 00:25:25.940
+millimeters
+
+432
+00:25:26.820 --> 00:25:30.560
+or greater, in which we will follow them for five years, and we expect about a
+
+433
+00:25:30.620 --> 00:25:33.360
+third of those patients will go to the operating room, and so we'll have some
+
+434
+00:25:33.440 --> 00:25:36.700
+longitudinal data comparing performance of blood tests,
+
+435
+00:25:37.320 --> 00:25:40.360
+cyst fluid analysis, and of course, path.
+
+436
+00:25:40.800 --> 00:25:41.060
+Okay.
+
+437
+00:25:41.230 --> 00:25:41.520
+Yeah.
+
+438
+00:25:41.550 --> 00:25:44.960
+And my second question is actually, you show two new
+
+439
+00:25:45.040 --> 00:25:49.000
+technology. One is on the methylation, the other is based on the protein
+
+440
+00:25:49.060 --> 00:25:49.780
+immunoassay.
+
+441
+00:25:50.180 --> 00:25:50.320
+Yeah.
+
+442
+00:25:50.350 --> 00:25:53.800
+Is there other technology can be considered to
+
+443
+00:25:53.880 --> 00:25:57.340
+contribute, for example, like a mass spec based assay for the
+
+444
+00:25:57.900 --> 00:26:00.220
+protein, glycoprotein, something like that?
+
+445
+00:26:01.280 --> 00:26:04.880
+Yeah. Thanks for the question. So as you all know, there are many different tools
+
+446
+00:26:04.900 --> 00:26:08.860
+in the toolbox to look at blood samples or
+
+447
+00:26:09.060 --> 00:26:12.370
+even urine samples, et cetera, biosamples for early
+
+448
+00:26:12.420 --> 00:26:13.120
+detection.
+
+449
+00:26:14.220 --> 00:26:17.780
+We're receptive to using other tools since we're having
+
+450
+00:26:17.840 --> 00:26:21.640
+comprehensive longitudinal biosample collection on
+
+451
+00:26:21.680 --> 00:26:24.200
+these patients. If
+
+452
+00:26:25.120 --> 00:26:28.840
+a group has something that looks promising, but they don't
+
+453
+00:26:28.920 --> 00:26:29.500
+have
+
+454
+00:26:30.720 --> 00:26:34.200
+enough data, then we try to help that group use
+
+455
+00:26:34.240 --> 00:26:38.200
+retrospective convenient samples to help build their
+
+456
+00:26:38.260 --> 00:26:41.920
+data set. But we do want to have a fairly high bar if we're going to test
+
+457
+00:26:41.940 --> 00:26:45.670
+something longitudinally because we're cognizant that those are samples
+
+458
+00:26:45.720 --> 00:26:49.459
+that are important and precious, and so we
+
+459
+00:26:49.620 --> 00:26:51.600
+just want to be thoughtful for their use. Yep.
+
+460
+00:26:52.320 --> 00:26:52.660
+Thank you.
+
+461
+00:26:52.880 --> 00:26:53.200
+Thank you.
+
+462
+00:26:54.200 --> 00:26:55.940
+And probably time for one more. Yep.
+
+463
+00:26:56.880 --> 00:26:57.620
+So I'll make it quick.
+
+464
+00:26:58.820 --> 00:27:02.700
+So I'm curious because this data set is so large and there's enrichment in these
+
+465
+00:27:02.780 --> 00:27:06.740
+carriers, do you collect information about previous
+
+466
+00:27:07.100 --> 00:27:10.920
+cancer histories? Maybe some of these patients have breast or prostate in the BRCA1
+
+467
+00:27:10.940 --> 00:27:12.060
+or BRCA2 at least.
+
+468
+00:27:13.140 --> 00:27:15.850
+We do, yeah. So I think that's why this is a very
+
+469
+00:27:16.800 --> 00:27:18.860
+important study. And of course,
+
+470
+00:27:19.840 --> 00:27:23.770
+depending on the timeframe that someone with a mutation comes to see us, they
+
+471
+00:27:23.800 --> 00:27:25.520
+may have already
+
+472
+00:27:26.400 --> 00:27:26.710
+had their
+
+473
+00:27:27.540 --> 00:27:31.280
+breast cancer or ovarian cancer or prostate cancer being dealt with.
+
+474
+00:27:31.340 --> 00:27:35.300
+But we do track, not only pancreas cancers, but other cancers that
+
+475
+00:27:35.680 --> 00:27:38.940
+any of the carriers develop as part of the whole project. Yep.
+
+476
+00:27:39.020 --> 00:27:42.920
+I see. So if someone develops a breast cancer, you'll record that, and
+
+477
+00:27:43.000 --> 00:27:46.620
+you will continue following them up
+
+478
+00:27:46.680 --> 00:27:48.140
+longitudinally for pancreatic cancer?
+
+479
+00:27:48.420 --> 00:27:52.360
+We do, yeah. Because what we found is a lot of people,
+
+480
+00:27:52.400 --> 00:27:55.520
+for example, with a BRCA2 mutation, they didn't really
+
+481
+00:27:55.560 --> 00:27:59.500
+realize that they were at risk for pancreas cancer, and so that's
+
+482
+00:27:59.580 --> 00:28:03.260
+about increasing awareness. So often, we might not see
+
+483
+00:28:03.300 --> 00:28:06.980
+somebody until after they've already seen an oncologist with a new
+
+484
+00:28:07.000 --> 00:28:09.920
+diagnosis of a breast cancer, and then they'll get referred to us.
+
+485
+00:28:10.320 --> 00:28:13.620
+"Oh, it's really important you get followed for pancreas cancer, too." So.
+
+486
+00:28:13.680 --> 00:28:13.880
+Thank you.
+
+487
+00:28:15.000 --> 00:28:18.680
+All right, thanks. And we're going to go ahead and move on
+
+488
+00:28:19.360 --> 00:28:23.240
+to our next speaker. So Sandy Markowitz is going to come and talk to
+
+489
+00:28:23.280 --> 00:28:26.060
+us. Let me get your slides up here, Sandy.
+
+490
+00:28:30.260 --> 00:28:33.400
+About Barrett's.
+
+491
+00:28:39.540 --> 00:28:39.650
+Thanks, Diane.
+
+492
+00:28:41.300 --> 00:28:43.540
+Well, let me begin by thanking
+
+493
+00:28:44.420 --> 00:28:48.400
+Diane and the organizing committee for the pleasure of being able to
+
+494
+00:28:48.580 --> 00:28:51.320
+speak to you today. I'm Sandy Markowitz.
+
+495
+00:28:51.360 --> 00:28:55.330
+I'm going to speak about biomarker-based early detection of Barrett's
+
+496
+00:28:55.380 --> 00:28:59.260
+esophagus and its cancer progression, a work that our team
+
+497
+00:28:59.320 --> 00:29:01.969
+in Cleveland has been engaged in for some years now.
+
+498
+00:29:04.420 --> 00:29:07.990
+More succinctly, I'm going to talk about biomarker-based interception of
+
+499
+00:29:08.020 --> 00:29:09.940
+esophageal adenocarcinoma.
+
+500
+00:29:12.480 --> 00:29:13.800
+These are my disclosures.
+
+501
+00:29:16.120 --> 00:29:19.960
+And this is the challenge of esophageal adenocarcinoma,
+
+502
+00:29:20.110 --> 00:29:20.780
+or EAC.
+
+503
+00:29:21.640 --> 00:29:25.600
+It's been the fastest growing solid tumor in the United States
+
+504
+00:29:25.660 --> 00:29:29.040
+over the last several decades. It has a five-year
+
+505
+00:29:29.200 --> 00:29:32.740
+survival of less than 20%, a death toll that now
+
+506
+00:29:32.780 --> 00:29:36.620
+exceeds that of ovarian cancer, and it is seldom, seldom
+
+507
+00:29:36.660 --> 00:29:37.600
+detected early.
+
+508
+00:29:40.720 --> 00:29:44.710
+Now, the opportunity to intercept this disease lies in the
+
+509
+00:29:44.740 --> 00:29:48.680
+fact that it has an obligate precursor, which is known
+
+510
+00:29:48.720 --> 00:29:52.560
+as Barrett's esophagus. And here on
+
+511
+00:29:52.600 --> 00:29:55.920
+the slide, you can see the transition from the normal squamous
+
+512
+00:29:55.980 --> 00:29:58.870
+histology of the esophagus to this columnar
+
+513
+00:29:58.900 --> 00:30:02.560
+histology that marks the Barrett's condition and that gives
+
+514
+00:30:02.660 --> 00:30:05.360
+rise to the esophageal adenocarcinomas.
+
+515
+00:30:07.280 --> 00:30:11.040
+Now, Barrett's is thought to be initiated by esophageal injury,
+
+516
+00:30:11.480 --> 00:30:15.320
+most commonly longstanding gastroesophageal reflux disease
+
+517
+00:30:15.360 --> 00:30:15.940
+or GERD.
+
+518
+00:30:18.460 --> 00:30:22.360
+And the Barrett's itself has a progression phase to
+
+519
+00:30:22.380 --> 00:30:26.320
+Barrett's with dysplasia, which are the immediate precursors of the cancers.
+
+520
+00:30:27.620 --> 00:30:30.940
+Now, the importance of this process is that if these
+
+521
+00:30:31.010 --> 00:30:34.590
+dysplasias are detected, they can be ablated through
+
+522
+00:30:34.620 --> 00:30:38.520
+endoscopic technologies, thereby intercepting and preventing the
+
+523
+00:30:38.560 --> 00:30:42.204
+cancer.The
+
+524
+00:30:42.304 --> 00:30:45.704
+other important thing about Barrett's is that it arises in a
+
+525
+00:30:45.824 --> 00:30:49.784
+stereotypical location in the distal esophagus, right near the
+
+526
+00:30:49.804 --> 00:30:51.564
+gastroesophageal junction.
+
+527
+00:30:52.584 --> 00:30:56.504
+Okay? Now, because of the burden of this disease,
+
+528
+00:30:57.064 --> 00:31:00.784
+the American College of Gastroenterology has recommended Barrett's
+
+529
+00:31:00.824 --> 00:31:04.774
+screening for all men with chronic GERD and
+
+530
+00:31:04.804 --> 00:31:07.914
+two additional risk factors from the list that's shown.
+
+531
+00:31:10.424 --> 00:31:10.984
+However,
+
+532
+00:31:11.964 --> 00:31:15.444
+endoscopic screening for Barrett's has been a massive failure in
+
+533
+00:31:15.524 --> 00:31:18.724
+acceptance, both by patients and by physicians.
+
+534
+00:31:19.264 --> 00:31:23.124
+And the result is that 95% of the time when an esophageal
+
+535
+00:31:23.164 --> 00:31:27.064
+adenocarcinoma is diagnosed, there was never any screening
+
+536
+00:31:27.104 --> 00:31:29.544
+to detect the antecedent Barrett's condition.
+
+537
+00:31:32.644 --> 00:31:36.264
+So to attempt to do something about this, our
+
+538
+00:31:36.304 --> 00:31:39.684
+group decided to look for biomarkers that could
+
+539
+00:31:39.724 --> 00:31:43.264
+be present in Barrett's and esophageal cancers.
+
+540
+00:31:43.964 --> 00:31:47.044
+And we initially focused on methylated DNAs.
+
+541
+00:31:47.844 --> 00:31:51.464
+We did a genome-wide screen for differentially methylated loci
+
+542
+00:31:51.764 --> 00:31:55.524
+that were diagnostic of Barrett's or esophageal adenocarcinomas,
+
+543
+00:31:56.304 --> 00:32:00.144
+in part using reduced representation bisulfite sequencing
+
+544
+00:32:00.204 --> 00:32:02.104
+from biopsies of these conditions.
+
+545
+00:32:03.464 --> 00:32:07.344
+Now, that biopsy-based screen nominated two
+
+546
+00:32:08.364 --> 00:32:10.104
+differentially methylated loci.
+
+547
+00:32:11.644 --> 00:32:13.764
+The first of these was methylated vimentin.
+
+548
+00:32:14.254 --> 00:32:18.124
+Now, this was a locus we had previously discovered as
+
+549
+00:32:19.224 --> 00:32:23.134
+a wonderful biomarker of colon carcinomas, and
+
+550
+00:32:23.164 --> 00:32:26.644
+indeed, we had brought this forward in collaboration with Exact
+
+551
+00:32:26.744 --> 00:32:30.524
+Sciences as the Cologuard test, and it was the first methylated
+
+552
+00:32:30.544 --> 00:32:33.974
+DNA stool test for early detection of colon cancer.
+
+553
+00:32:34.464 --> 00:32:38.344
+We found it was even more commonly present in the Barrett's than it was in the
+
+554
+00:32:38.404 --> 00:32:41.784
+colon. The second biomarker was methylated
+
+555
+00:32:41.824 --> 00:32:45.384
+CCNA1 that came out of the reduced representation
+
+556
+00:32:45.424 --> 00:32:49.204
+bisulfite screen. So to validate these biomarkers,
+
+557
+00:32:49.824 --> 00:32:53.624
+we took advantage of a cohort of nearly 300 individuals
+
+558
+00:32:53.864 --> 00:32:57.784
+who had had endoscopically guided cytology brushings, and we
+
+559
+00:32:57.864 --> 00:33:01.824
+analyzed the DNA off of those cytology brushings and found that both
+
+560
+00:33:01.904 --> 00:33:05.724
+methylated vimentin and methylated CCNA1 could
+
+561
+00:33:05.744 --> 00:33:09.584
+distinguish the normal esophagus from the Barrett's esophagus with an
+
+562
+00:33:09.644 --> 00:33:13.634
+AUC of over 0.95 for both of these markers
+
+563
+00:33:13.684 --> 00:33:14.364
+individually.
+
+564
+00:33:15.524 --> 00:33:19.484
+So that got us biomarkers. Of course, we still needed to find a way
+
+565
+00:33:19.504 --> 00:33:20.884
+to get rid of the endoscope.
+
+566
+00:33:22.684 --> 00:33:26.644
+And to do that, we developed a swallowable
+
+567
+00:33:26.784 --> 00:33:27.724
+textured balloon,
+
+568
+00:33:28.724 --> 00:33:32.684
+shown here in cartoon form, with the idea that it could be pulled back
+
+569
+00:33:32.764 --> 00:33:36.564
+through the gastroesophageal junction to get what would effectively be a
+
+570
+00:33:36.624 --> 00:33:38.704
+Pap smear of the distal esophagus.
+
+571
+00:33:39.724 --> 00:33:41.904
+Now, this is what the device actually looks like.
+
+572
+00:33:43.804 --> 00:33:47.684
+And here is the balloon tip, which is the functional part of the
+
+573
+00:33:47.744 --> 00:33:51.404
+device. And if we hone in on it, what you can see
+
+574
+00:33:52.144 --> 00:33:55.704
+is that the tip of the device is actually a capsule about the size of a
+
+575
+00:33:55.744 --> 00:33:58.244
+vitamin pill. Here's the close-up.
+
+576
+00:33:58.904 --> 00:34:02.564
+And in the stomach, one can insert air through this silicon
+
+577
+00:34:02.664 --> 00:34:06.644
+catheter that's attached and pop out the textured balloon to
+
+578
+00:34:06.684 --> 00:34:10.444
+get the best sample. Now importantly, once you have the
+
+579
+00:34:10.455 --> 00:34:14.245
+sample, you can then withdraw the air and pop the balloon back
+
+580
+00:34:14.284 --> 00:34:18.044
+inside the capsule, and this now traps the sample and
+
+581
+00:34:18.064 --> 00:34:21.944
+protects it from dilution and contamination as you pull
+
+582
+00:34:21.984 --> 00:34:24.784
+this back through the esophagus and the oropharynx.
+
+583
+00:34:26.404 --> 00:34:28.624
+So here's how it looks from the patient point of view.
+
+584
+00:34:28.933 --> 00:34:30.745
+The patient swallows the capsule.
+
+585
+00:34:31.404 --> 00:34:34.964
+In the stomach, the air is inserted, and the balloon is deployed.
+
+586
+00:34:35.364 --> 00:34:37.304
+You pull it back to get the Pap smear.
+
+587
+00:34:37.644 --> 00:34:40.984
+You take the air out to invert the balloon and trap the sample.
+
+588
+00:34:41.384 --> 00:34:45.094
+And then once it's out of the patient through the mouth, you can cut off the
+
+589
+00:34:45.144 --> 00:34:46.564
+balloon and send it to the lab.
+
+590
+00:34:48.004 --> 00:34:51.424
+So we combined the biomarker panel and the balloon
+
+591
+00:34:52.304 --> 00:34:56.284
+and did an initial pilot trial of this technology, finding
+
+592
+00:34:56.324 --> 00:34:59.864
+that we had 90% sensitivity for detecting
+
+593
+00:34:59.884 --> 00:35:03.824
+non-dysplastic early-stage Barrett's esophagus, and that was
+
+594
+00:35:03.884 --> 00:35:06.004
+at a 92% specificity.
+
+595
+00:35:07.684 --> 00:35:11.293
+Now, since our initial "Science Translational Medicine" publication,
+
+596
+00:35:11.784 --> 00:35:14.674
+there are now four clinical trials of this technology.
+
+597
+00:35:16.644 --> 00:35:20.254
+Across these four cohorts, the sensitivity for detecting
+
+598
+00:35:20.324 --> 00:35:23.144
+Barrett's has ranged between 80% and 90%.
+
+599
+00:35:24.424 --> 00:35:27.984
+The sensitivity for detecting
+
+600
+00:35:28.104 --> 00:35:30.964
+cancer has basically been 100%,
+
+601
+00:35:31.764 --> 00:35:33.564
+with one anomalous case missed.
+
+602
+00:35:36.124 --> 00:35:39.924
+And the specificity of the approach has also ranged
+
+603
+00:35:39.964 --> 00:35:41.784
+between 80% and 90%.
+
+604
+00:35:42.944 --> 00:35:46.604
+Of a clinical value, the positive predictive value of the
+
+605
+00:35:46.644 --> 00:35:50.184
+technology is over 30%, and the negative predictive
+
+606
+00:35:50.264 --> 00:35:52.564
+value is nearly 99%.
+
+607
+00:35:55.264 --> 00:35:59.064
+So at this point, the status of the technology is that it has a
+
+608
+00:35:59.144 --> 00:36:01.524
+name. The balloon is called EsaCheck.
+
+609
+00:36:01.784 --> 00:36:04.644
+The methylated DNA panel is called EsaGuard.
+
+610
+00:36:05.404 --> 00:36:08.984
+The EsaCheck device has been awarded 510approval from the
+
+611
+00:36:09.084 --> 00:36:12.744
+FDA. The EsaGuard test panel has been awarded FDA
+
+612
+00:36:12.844 --> 00:36:14.564
+breakthrough device designation.
+
+613
+00:36:15.444 --> 00:36:19.204
+And the EsaCheck and EsaGuard test combination were
+
+614
+00:36:19.244 --> 00:36:23.234
+included in the 2022 American College of Gastroenterology
+
+615
+00:36:23.604 --> 00:36:25.684
+updated Barrett's clinical guidelines.
+
+616
+00:36:26.624 --> 00:36:30.544
+The technology has now been successfully commercialized, and
+
+617
+00:36:30.584 --> 00:36:34.124
+a Medicare CMS review is pending for insurance
+
+618
+00:36:34.244 --> 00:36:34.724
+coverage.
+
+619
+00:36:37.284 --> 00:36:38.144
+So what's next?
+
+620
+00:36:39.224 --> 00:36:42.464
+Well, first of all, 40% of esophageal
+
+621
+00:36:42.504 --> 00:36:46.464
+adenocarcinomas arise in individuals who never report
+
+622
+00:36:46.524 --> 00:36:47.484
+having reflux
+
+623
+00:36:47.584 --> 00:36:51.464
+symptoms.So how do
+
+624
+00:36:51.504 --> 00:36:53.984
+we address this population of individuals?
+
+625
+00:36:55.964 --> 00:36:59.844
+So we tried to develop a pilot study to use the
+
+626
+00:36:59.904 --> 00:37:03.464
+EASE チ ェ ッ ク ESAGR technology to screen asymptomatic but
+
+627
+00:37:03.524 --> 00:37:07.494
+high-risk individuals. Now, we defined high risk as
+
+628
+00:37:07.564 --> 00:37:11.114
+any individual with three risk factors for having Barrett's,
+
+629
+00:37:11.664 --> 00:37:14.994
+and that basically comes down to white men over 50,
+
+630
+00:37:15.204 --> 00:37:16.784
+Caucasian males over 50.
+
+631
+00:37:18.924 --> 00:37:22.444
+We've done an initial pilot study of 120 of these high-risk
+
+632
+00:37:22.504 --> 00:37:26.284
+individuals. Thirty-four of them were test positive for the
+
+633
+00:37:26.324 --> 00:37:30.154
+methylation markers. Twenty-seven of those individuals have come to
+
+634
+00:37:30.184 --> 00:37:33.984
+endoscopy now, and nine of them had Barrett's, giving us a positive
+
+635
+00:37:34.024 --> 00:37:37.644
+predictive value in this population of 33%.
+
+636
+00:37:37.684 --> 00:37:41.404
+Basically exactly the same positive predictive value as we got in a
+
+637
+00:37:41.444 --> 00:37:45.364
+symptomatic GERD population and bringing promise
+
+638
+00:37:45.384 --> 00:37:46.884
+that this approach could be used.
+
+639
+00:37:49.264 --> 00:37:52.824
+Let's see. There we go. Eighty-six individuals were test
+
+640
+00:37:52.884 --> 00:37:56.764
+negative, and 22 of those have come to endoscopy, and all
+
+641
+00:37:56.824 --> 00:38:00.684
+of them were negative for Barrett's, giving us right now a negative predictive
+
+642
+00:38:00.744 --> 00:38:04.004
+value of 100% in this asymptomatic population.
+
+643
+00:38:05.884 --> 00:38:09.804
+Moving forward, we now have a clinical trial, a validation trial
+
+644
+00:38:09.864 --> 00:38:13.624
+underway. I'm supported by an NIH Division of Cancer
+
+645
+00:38:13.704 --> 00:38:17.524
+Prevention R01, with the aim of accruing 800 of these
+
+646
+00:38:17.584 --> 00:38:21.524
+asymptomatic high-risk subjects to validate this screening approach.
+
+647
+00:38:24.604 --> 00:38:28.044
+Here is the team that has been driving this technology forward,
+
+648
+00:38:28.644 --> 00:38:32.244
+Amitab Chak and Joe Willis, with whom I developed the device,
+
+649
+00:38:32.944 --> 00:38:36.384
+Helen Wanova, who developed the biomarker panel in our
+
+650
+00:38:37.064 --> 00:38:40.774
+laboratory, and particularly Amitab Chak, who's led all of the clinical
+
+651
+00:38:40.904 --> 00:38:44.364
+trials of this technology in collaboration with his clinical
+
+652
+00:38:44.404 --> 00:38:46.484
+collaborators in the BetterNet consortium.
+
+653
+00:38:50.924 --> 00:38:54.624
+However, identifying individuals with Barrett's is only the first step,
+
+654
+00:38:55.344 --> 00:38:59.023
+because in order to intercept the cancers, we have to
+
+655
+00:38:59.044 --> 00:39:02.924
+identify when the Barrett's progresses to dysplasia and then send these
+
+656
+00:39:03.044 --> 00:39:06.564
+patients to ablation. And the challenge of this
+
+657
+00:39:07.224 --> 00:39:10.504
+is indicated on this survival plot from the
+
+658
+00:39:10.564 --> 00:39:13.984
+AGCC staging criteria for esophageal
+
+659
+00:39:14.044 --> 00:39:17.804
+adenocarcinoma. And what you'll note is that even stage
+
+660
+00:39:17.984 --> 00:39:20.404
+one, early stage one esophageal
+
+661
+00:39:20.424 --> 00:39:22.214
+adenocarcinomas have
+
+662
+00:39:23.064 --> 00:39:27.024
+over 20% 10-year mortality rate. So
+
+663
+00:39:27.064 --> 00:39:30.884
+you really have to catch this disease at the stage of
+
+664
+00:39:30.964 --> 00:39:32.064
+high-grade dysplasia
+
+665
+00:39:33.024 --> 00:39:36.824
+or early intramucosal cancers, because once the disease is
+
+666
+00:39:36.884 --> 00:39:40.564
+submucosal, even if it's stage one, there's a good chance these patients will
+
+667
+00:39:40.624 --> 00:39:41.084
+succumb.
+
+668
+00:39:43.184 --> 00:39:45.024
+So the standard approach has been
+
+669
+00:39:46.044 --> 00:39:49.724
+triennial surveillance endoscopies and random
+
+670
+00:39:49.744 --> 00:39:53.304
+biopsies. And the problem with that approach is that these small
+
+671
+00:39:53.404 --> 00:39:57.384
+progressed clones of cancer and dysplasia are often missed by
+
+672
+00:39:57.464 --> 00:39:58.984
+random biopsy sampling.
+
+673
+00:39:59.864 --> 00:40:03.724
+Moreover, the esophageal adenocarcinomas can develop quickly,
+
+674
+00:40:04.224 --> 00:40:07.464
+and they often present clinically in between these three-year
+
+675
+00:40:08.184 --> 00:40:12.124
+interval surveillance exams. And even when they're caught
+
+676
+00:40:12.184 --> 00:40:15.744
+under surveillance, 40% of these cancers are already
+
+677
+00:40:15.824 --> 00:40:16.564
+metastatic.
+
+678
+00:40:17.364 --> 00:40:20.524
+So we clearly need more sensitive methods than just random
+
+679
+00:40:20.564 --> 00:40:24.354
+biopsies to detect high-risk progression during
+
+680
+00:40:24.384 --> 00:40:26.174
+surveillance of Barrett's patients.
+
+681
+00:40:27.104 --> 00:40:30.844
+So the molecular challenge here is finding a small progressed
+
+682
+00:40:30.854 --> 00:40:34.004
+dysplastic Barrett's clone in a much larger
+
+683
+00:40:34.124 --> 00:40:36.344
+non-dysplastic Barrett's segment.
+
+684
+00:40:36.384 --> 00:40:39.224
+So this is the classic needle in the haystack problem.
+
+685
+00:40:40.944 --> 00:40:44.404
+And this problem is amplified by the fact that blood doesn't help.
+
+686
+00:40:45.124 --> 00:40:48.964
+And that's because these small clones of
+
+687
+00:40:48.984 --> 00:40:52.724
+dysplastic Barrett's or of early stage one
+
+688
+00:40:52.964 --> 00:40:56.124
+esophageal adenocarcinomas do not put enough
+
+689
+00:40:56.184 --> 00:40:59.664
+ctDNA into the blood to be
+
+690
+00:40:59.684 --> 00:41:03.364
+detected by any of the current ctDNA-based tests.
+
+691
+00:41:04.704 --> 00:41:05.184
+However,
+
+692
+00:41:06.064 --> 00:41:07.264
+the breakthrough was
+
+693
+00:41:08.184 --> 00:41:08.403
+when
+
+694
+00:41:09.324 --> 00:41:13.124
+our group, together with Bert Vogelstein's group, realized that we
+
+695
+00:41:13.184 --> 00:41:16.644
+could take the technology that the Vogelstein lab had
+
+696
+00:41:16.684 --> 00:41:20.564
+developed to detect ctDNA
+
+697
+00:41:20.604 --> 00:41:24.404
+abnormalities in blood and instead apply it to a Barrett's
+
+698
+00:41:24.564 --> 00:41:26.524
+brushing sample. All right.
+
+699
+00:41:27.464 --> 00:41:31.394
+So the idea was to take a brushing of the esophagus of the
+
+700
+00:41:31.484 --> 00:41:32.564
+patient with Barrett's,
+
+701
+00:41:33.784 --> 00:41:37.084
+amplify that DNA on the brush with a
+
+702
+00:41:37.104 --> 00:41:40.774
+PCR-based technology that would look at 350,000
+
+703
+00:41:40.844 --> 00:41:44.824
+amplicons, sequence the amplicons, and then use
+
+704
+00:41:44.884 --> 00:41:48.444
+read imbalances, too many reads or too few reads,
+
+705
+00:41:48.844 --> 00:41:52.084
+as indicators of chromosomal gains or losses.
+
+706
+00:41:52.504 --> 00:41:56.424
+Okay. And then we interrogated this panel of chromosomal
+
+707
+00:41:56.524 --> 00:41:59.844
+gains or losses with an algorithm that we called Barrett's
+
+708
+00:41:59.964 --> 00:42:03.064
+Aneuploidy Detection, or BAD. Okay.
+
+709
+00:42:04.424 --> 00:42:05.244
+So let me show you.
+
+710
+00:42:06.604 --> 00:42:10.384
+So the first question was, well, can you just use aneuploidy to detect Barrett's
+
+711
+00:42:10.404 --> 00:42:14.364
+progression? And it is indeed true that high-grade
+
+712
+00:42:14.424 --> 00:42:17.984
+dysplasias are highly aneuploid, as you see on this violin
+
+713
+00:42:18.064 --> 00:42:18.444
+plot.
+
+714
+00:42:20.044 --> 00:42:23.944
+The problem is that a third of non-dysplastic Barrett's are aneuploid
+
+715
+00:42:24.024 --> 00:42:27.764
+as well. So aneuploidy alone is not a useful
+
+716
+00:42:27.804 --> 00:42:28.484
+biomarker.
+
+717
+00:42:31.424 --> 00:42:31.784
+Whoops.
+
+718
+00:42:33.524 --> 00:42:34.244
+What happened there?
+
+719
+00:42:44.244 --> 00:42:45.204
+Let's try this guy.
+
+720
+00:42:50.104 --> 00:42:55.552
+Okay.So
+
+721
+00:42:55.612 --> 00:42:58.812
+the breakthrough came from realizing that esophageal
+
+722
+00:42:58.872 --> 00:43:02.642
+adenocarcinomas were typified by a stereotypical
+
+723
+00:43:02.732 --> 00:43:06.512
+set of chromosomal gains or losses, as shown in this panel.
+
+724
+00:43:07.252 --> 00:43:10.991
+And moreover, all the variability of this panel of gains or
+
+725
+00:43:11.072 --> 00:43:14.652
+losses could be captured in just six of these
+
+726
+00:43:14.752 --> 00:43:17.972
+chromosomal alterations, the ones that are shown in red.
+
+727
+00:43:20.672 --> 00:43:24.272
+So here's a list of these six indicator chromosomal
+
+728
+00:43:24.392 --> 00:43:27.992
+changes. And those of you who are cancer geneticists will
+
+729
+00:43:28.032 --> 00:43:31.992
+immediately recognize that this maps very nicely into
+
+730
+00:43:32.232 --> 00:43:35.132
+CDKN2A, P53,
+
+731
+00:43:35.972 --> 00:43:36.792
+KRAS.
+
+732
+00:43:41.272 --> 00:43:45.112
+And so these chromosomal gains and losses that we pulled
+
+733
+00:43:45.192 --> 00:43:48.881
+out because they captured the variability of the panel, actually are
+
+734
+00:43:48.912 --> 00:43:52.032
+driver events in the development of this malignancy.
+
+735
+00:43:53.092 --> 00:43:56.872
+So here was the algorithm. We would take the BAD
+
+736
+00:43:57.032 --> 00:44:00.852
+score, and we would ask, "Does a particular patient's lesion
+
+737
+00:44:00.912 --> 00:44:04.572
+show aneuploidy?" And if it didn't, we set it aside.
+
+738
+00:44:04.712 --> 00:44:05.842
+We called it Not Bad.
+
+739
+00:44:06.772 --> 00:44:10.572
+If it did show aneuploidy, we then went further and asked,
+
+740
+00:44:10.722 --> 00:44:14.432
+"Does the aneuploidy include gains or losses on our
+
+741
+00:44:14.472 --> 00:44:18.272
+driver chromosome panel?" If it didn't, we again set the
+
+742
+00:44:18.312 --> 00:44:21.152
+lesion aside. Initially, we called it Maybe Bad.
+
+743
+00:44:22.812 --> 00:44:26.712
+But if a lesion showed both aneuploidy and a hit on a driver
+
+744
+00:44:26.752 --> 00:44:29.092
+chromosome, we called it Very Bad.
+
+745
+00:44:31.332 --> 00:44:32.812
+So here is a heat map,
+
+746
+00:44:34.372 --> 00:44:34.792
+showing
+
+747
+00:44:36.212 --> 00:44:37.012
+in this column,
+
+748
+00:44:38.492 --> 00:44:41.742
+lesions that are aneuploid. And here you can see all these
+
+749
+00:44:41.792 --> 00:44:45.272
+non-dysplastic Barrett's lesions that are aneuploid.
+
+750
+00:44:46.852 --> 00:44:50.432
+And here's the heat map of this validation cohort of patients.
+
+751
+00:44:50.912 --> 00:44:54.532
+And now you can see essentially all the lesions that were
+
+752
+00:44:54.652 --> 00:44:58.252
+aneuploid and that were cancers or high-grade dysplasias
+
+753
+00:44:58.552 --> 00:45:02.512
+are recognized as Very Bad, but only a very, very small number
+
+754
+00:45:02.552 --> 00:45:05.191
+of the non-dysplastic Barrett's are called Very Bad.
+
+755
+00:45:06.012 --> 00:45:07.852
+So this is the biomarker we were looking for,
+
+756
+00:45:08.712 --> 00:45:10.292
+and the performance is shown here.
+
+757
+00:45:10.372 --> 00:45:13.572
+We detected 96% of the cancers as Very Bad,
+
+758
+00:45:14.232 --> 00:45:17.912
+68% of the high-grade dysplasias as Very Bad, and
+
+759
+00:45:17.972 --> 00:45:21.092
+only 7% of the non-dysplastic Barrett's lesions.
+
+760
+00:45:23.452 --> 00:45:27.392
+So the immediate question is, can now this molecular biomarker
+
+761
+00:45:27.452 --> 00:45:31.112
+of Very Bad be used to supplement or replace random
+
+762
+00:45:31.152 --> 00:45:34.352
+biopsies in order to improve Barrett's surveillance?
+
+763
+00:45:35.792 --> 00:45:36.872
+There's another question,
+
+764
+00:45:38.232 --> 00:45:41.992
+and that was posed by the fact that we had 36
+
+765
+00:45:42.052 --> 00:45:44.272
+months of surveillance on this cohort.
+
+766
+00:45:45.052 --> 00:45:48.772
+And over 36 months, two of those non-dysplastic
+
+767
+00:45:48.852 --> 00:45:52.292
+Barrett's that we called Very Bad progressed, one to high-grade
+
+768
+00:45:52.372 --> 00:45:56.332
+dysplasia, one to a cancer. In contrast, none of the Not
+
+769
+00:45:56.412 --> 00:45:59.952
+or Maybe Bad lesions progressed, and that gave us a
+
+770
+00:45:59.992 --> 00:46:03.872
+nominal P value of 0.004 for BAD being able to
+
+771
+00:46:03.912 --> 00:46:06.972
+predict non-dysplastic lesions that would progress.
+
+772
+00:46:08.592 --> 00:46:11.152
+So where we're going with the BAD technology
+
+773
+00:46:11.992 --> 00:46:15.932
+is right now in collaboration with the Early Detection Research
+
+774
+00:46:15.992 --> 00:46:19.032
+Network of the NIH and with the Servent Clinical Consortium.
+
+775
+00:46:19.492 --> 00:46:22.992
+We're following a cohort of 365 patients with
+
+776
+00:46:23.092 --> 00:46:26.872
+low-grade dysplasia to ask whether BAD will correctly predict the
+
+777
+00:46:26.952 --> 00:46:28.312
+ones that are going to progress.
+
+778
+00:46:29.232 --> 00:46:30.072
+Additionally,
+
+779
+00:46:31.252 --> 00:46:35.212
+in work funded by the Division of Cancer Prevention RO1,
+
+780
+00:46:35.812 --> 00:46:39.272
+we're accruing a cohort of 1,300 patients with
+
+781
+00:46:39.372 --> 00:46:43.232
+non-dysplastic Barrett's who will similarly be followed to see if
+
+782
+00:46:43.332 --> 00:46:44.832
+BAD can detect initial
+
+783
+00:46:45.632 --> 00:46:49.232
+progression that's missed by random biopsies and also
+
+784
+00:46:49.272 --> 00:46:50.522
+predict that progression.
+
+785
+00:46:52.712 --> 00:46:56.612
+Now, here is the BAD team. As I mentioned, the idea
+
+786
+00:46:56.652 --> 00:47:00.192
+was originally conceived in a discussion between Bert Vogelstein and
+
+787
+00:47:00.532 --> 00:47:01.852
+me on a visit to Baltimore.
+
+788
+00:47:03.332 --> 00:47:06.792
+The work has been carried forward, the molecular work by Chris
+
+789
+00:47:06.892 --> 00:47:10.812
+Duvel, who developed the REALSEEK technology that we're using for the
+
+790
+00:47:10.852 --> 00:47:11.412
+PCR
+
+791
+00:47:12.331 --> 00:47:16.252
+and chromosomal gains or losses. The clinical trials are
+
+792
+00:47:16.292 --> 00:47:20.152
+being led by Amitabh Chawla at Case, and Helen Wanova in my lab
+
+793
+00:47:20.192 --> 00:47:22.312
+is also contributing to the molecular work.
+
+794
+00:47:22.792 --> 00:47:26.622
+And then we have a group of key further collaborators,
+
+795
+00:47:27.072 --> 00:47:30.732
+Nick Papadopoulos, Jitan Badiga, Ken Kinzler in the
+
+796
+00:47:30.772 --> 00:47:33.192
+Vogelstein lab, and Joe Willis in Cleveland.
+
+797
+00:47:35.212 --> 00:47:39.032
+However, even if you can identify the high-grade
+
+798
+00:47:39.072 --> 00:47:42.882
+dysplasias in the Barrett's and ablate it, the work is not yet
+
+799
+00:47:42.992 --> 00:47:43.272
+done.
+
+800
+00:47:44.152 --> 00:47:48.092
+And that's because after ablation, there's an 8% annual
+
+801
+00:47:48.132 --> 00:47:51.572
+recurrence rate in these patients.
+
+802
+00:47:54.292 --> 00:47:57.952
+So we wondered, could we use our methylated DNA as a
+
+803
+00:47:58.012 --> 00:48:01.932
+marker of minimal residual disease after ablation to
+
+804
+00:48:01.952 --> 00:48:05.772
+identify the patients who are going to be at high risk for disease recurrence?
+
+805
+00:48:07.632 --> 00:48:10.672
+We were able to take advantage of Nick Shahin's
+
+806
+00:48:10.952 --> 00:48:14.372
+biorepository at UNC,
+
+807
+00:48:15.372 --> 00:48:18.892
+to look at 80 individuals who had had cancer or high-grade
+
+808
+00:48:18.952 --> 00:48:22.392
+dysplasia that were ablated, and that after the ablation,
+
+809
+00:48:22.832 --> 00:48:26.552
+had a biopsy taken, a single biopsy taken of the
+
+810
+00:48:26.592 --> 00:48:28.692
+healed neosquamous epithelium.
+
+811
+00:48:29.832 --> 00:48:33.732
+Twenty-seven of those patients have already recurred, and when we tested
+
+812
+00:48:33.752 --> 00:48:37.372
+their biopsies for methylated DNA, 13 of those
+
+813
+00:48:37.532 --> 00:48:41.422
+27 individuals had detectable methylated CCNA1 in
+
+814
+00:48:41.452 --> 00:48:42.252
+their biopsy.
+
+815
+00:48:43.712 --> 00:48:47.612
+In contrast, if we looked at the 53 patients who have not recurred
+
+816
+00:48:47.632 --> 00:48:51.092
+and remain without evidence of disease, only one of those
+
+817
+00:48:51.192 --> 00:48:53.952
+biopsies showed a detectable methylated
+
+818
+00:48:54.012 --> 00:48:57.888
+CCNA1.And if you quickly do the arithmetic,
+
+819
+00:48:58.208 --> 00:49:02.148
+the relative risk for disease recurrence associated
+
+820
+00:49:02.208 --> 00:49:02.448
+with
+
+821
+00:49:03.428 --> 00:49:07.288
+continued positivity for DNA methylation is a relative risk
+
+822
+00:49:07.328 --> 00:49:11.248
+of 25. So this is an enormously predictive biomarker,
+
+823
+00:49:12.048 --> 00:49:15.768
+and we are now carrying this forward in a prospective clinical trial that's
+
+824
+00:49:15.788 --> 00:49:18.808
+underway using esophageal brushings to more
+
+825
+00:49:18.928 --> 00:49:22.828
+comprehensively survey the post-ablated esophagus,
+
+826
+00:49:23.168 --> 00:49:24.708
+not just a single biopsy.
+
+827
+00:49:26.048 --> 00:49:29.628
+And this is also being supported by the NIH Early Detection Research
+
+828
+00:49:29.708 --> 00:49:31.208
+Network. Whoops.
+
+829
+00:49:34.908 --> 00:49:38.708
+Here's the minimal residual disease team that's been doing
+
+830
+00:49:38.728 --> 00:49:42.568
+this work. First, Nick Shaheen at UNC, who provided all the
+
+831
+00:49:42.608 --> 00:49:45.788
+clinical samples for this study, and then our team at Case,
+
+832
+00:49:46.728 --> 00:49:49.588
+my lab, Amitop Chak and Joe Willis.
+
+833
+00:49:49.948 --> 00:49:53.438
+And let us also acknowledge Suman Verma and the Lucid
+
+834
+00:49:53.528 --> 00:49:56.628
+Diagnostics clinical lab team who've been running the assays.
+
+835
+00:49:58.888 --> 00:50:00.158
+So, in conclusion,
+
+836
+00:50:01.448 --> 00:50:05.428
+non-endoscopic DNA biomarker-based screening for Barrett's disease
+
+837
+00:50:05.768 --> 00:50:09.648
+is a new and now clinically available technology captured
+
+838
+00:50:09.668 --> 00:50:11.268
+in EsaCheck and EsaGuard.
+
+839
+00:50:12.648 --> 00:50:16.568
+Second, molecular surveillance for early detection of Barrett's
+
+840
+00:50:16.628 --> 00:50:20.608
+progression to high-grade dysplasia and/or cancer has proof
+
+841
+00:50:20.648 --> 00:50:23.088
+of principle in the work around BAD.
+
+842
+00:50:24.068 --> 00:50:27.808
+And third, molecular predictors of patients at high risk for
+
+843
+00:50:27.828 --> 00:50:31.788
+Barrett's progression, that is very BAD non-dysplastic Barrett's,
+
+844
+00:50:32.368 --> 00:50:36.358
+or for post-ablation disease recurrence because of markers
+
+845
+00:50:36.408 --> 00:50:40.008
+of minimal residual disease, are both now being tested in
+
+846
+00:50:40.108 --> 00:50:42.148
+ongoing prospective clinical trials.
+
+847
+00:50:43.828 --> 00:50:47.608
+So, with that, let me thank all of you for your kind attention
+
+848
+00:50:47.668 --> 00:50:47.868
+in
+
+849
+00:50:48.688 --> 00:50:52.608
+coming to this session today, and I'm happy to take any questions.
+
+850
+00:51:05.327 --> 00:51:06.628
+Must've been a bad talk.
+
+851
+00:51:14.608 --> 00:51:17.308
+Any questions from the panel?
+
+852
+00:51:20.968 --> 00:51:23.948
+How many markers do you need?
+
+853
+00:51:24.488 --> 00:51:24.948
+Just two.
+
+854
+00:51:26.298 --> 00:51:26.298
+Just two?
+
+855
+00:51:27.428 --> 00:51:27.748
+Yes.
+
+856
+00:51:29.188 --> 00:51:31.568
+So there's different approaches to this.
+
+857
+00:51:31.648 --> 00:51:35.508
+Of course, the world is much seized by big data and AI analysis of
+
+858
+00:51:35.568 --> 00:51:39.148
+it. But the price you pay every time you add a marker
+
+859
+00:51:40.288 --> 00:51:41.968
+is you reduce specificity.
+
+860
+00:51:42.868 --> 00:51:46.808
+Right? And specificity is the main driver of positive
+
+861
+00:51:46.868 --> 00:51:50.748
+predictive value, and it's positive predictive value that a
+
+862
+00:51:50.808 --> 00:51:52.688
+clinician cares about the most.
+
+863
+00:51:53.568 --> 00:51:57.548
+If I do this test and get a positive result, what's the likelihood
+
+864
+00:51:57.568 --> 00:51:59.088
+the patient has the disease?
+
+865
+00:52:00.108 --> 00:52:04.028
+Okay. So our focus was on developing a panel
+
+866
+00:52:04.348 --> 00:52:08.188
+that would have the smallest number of high-performing markers
+
+867
+00:52:10.588 --> 00:52:11.588
+to bring forward.
+
+868
+00:52:14.988 --> 00:52:15.628
+I have a question.
+
+869
+00:52:16.608 --> 00:52:18.668
+Hi, Sandy. Jim Willey at the University of Toledo.
+
+870
+00:52:20.968 --> 00:52:21.448
+Can you see me?
+
+871
+00:52:23.028 --> 00:52:23.728
+Yeah. So,
+
+872
+00:52:24.588 --> 00:52:27.858
+in your sequencing analyses, did you identify any
+
+873
+00:52:29.288 --> 00:52:33.148
+nucleotide driver mutations at the single nucleotide
+
+874
+00:52:33.168 --> 00:52:37.028
+level? Was it only the chromosome copy number
+
+875
+00:52:37.108 --> 00:52:39.528
+changes that were associated with the BAD
+
+876
+00:52:40.508 --> 00:52:41.108
+situation?
+
+877
+00:52:42.368 --> 00:52:42.588
+So
+
+878
+00:52:43.568 --> 00:52:47.168
+this technology that was
+
+879
+00:52:47.428 --> 00:52:51.388
+developed by Chris Duvel in Bert's lab and called REAL seeks,
+
+880
+00:52:52.508 --> 00:52:56.108
+is really quite outlike, and it uses just a single primer pair,
+
+881
+00:52:56.688 --> 00:53:00.328
+and the single primer pair works because it's directed toward
+
+882
+00:53:01.008 --> 00:53:02.048
+Alu sequences,
+
+883
+00:53:02.968 --> 00:53:06.908
+or line sequences. So you can use a single primer pair.
+
+884
+00:53:07.228 --> 00:53:11.168
+What you're picking up are, by and large, non-coding sequences.
+
+885
+00:53:11.568 --> 00:53:13.748
+I'm trying to see you because the light's in my eye.
+
+886
+00:53:15.027 --> 00:53:18.388
+But you're picking up repetitive DNA
+
+887
+00:53:18.448 --> 00:53:22.228
+sequences. So these are not super useful for
+
+888
+00:53:22.288 --> 00:53:25.728
+looking for SNVs, but they're extremely useful.
+
+889
+00:53:26.018 --> 00:53:29.948
+They have enough sequence identity that you can map them back
+
+890
+00:53:29.988 --> 00:53:33.698
+to the genome, and they're highly useful for scoring
+
+891
+00:53:33.968 --> 00:53:36.488
+gains and losses of chromosomal arms.
+
+892
+00:53:37.288 --> 00:53:41.268
+Do you see any advantage to doing the additional analysis to look
+
+893
+00:53:41.308 --> 00:53:43.488
+for low variant allele
+
+894
+00:53:44.588 --> 00:53:45.148
+copy?
+
+895
+00:53:45.748 --> 00:53:49.318
+So the question of whether you could do this with
+
+896
+00:53:49.668 --> 00:53:50.898
+whole genome sequencing and
+
+897
+00:53:50.968 --> 00:53:56.188
+with
+
+898
+00:53:56.228 --> 00:54:00.208
+low coverage whole genome DNA sequencing to map gains and losses is
+
+899
+00:54:00.268 --> 00:54:02.888
+a good one. We haven't done that comparative
+
+900
+00:54:02.928 --> 00:54:04.428
+experiment.
+
+901
+00:54:04.838 --> 00:54:04.978
+Okay. All right.
+
+902
+00:54:05.468 --> 00:54:05.628
+But-
+
+903
+00:54:05.708 --> 00:54:08.568
+Well, thank you. It's wonderful work as it is, so thank you.
+
+904
+00:54:09.268 --> 00:54:10.568
+It was a great presentation.
+
+905
+00:54:11.228 --> 00:54:11.648
+Thanks, Jim.
+
+906
+00:54:14.768 --> 00:54:16.188
+I see somebody coming to the...
+
+907
+00:54:20.948 --> 00:54:24.268
+Great talk. A really quick one. Bruno from France, Institut
+
+908
+00:54:24.288 --> 00:54:25.048
+Curie.
+
+909
+00:54:25.848 --> 00:54:27.568
+Just step forward to the mic a little bit.
+
+910
+00:54:27.648 --> 00:54:28.208
+It's better now.
+
+911
+00:54:28.508 --> 00:54:28.518
+Yeah.
+
+912
+00:54:28.548 --> 00:54:31.968
+There you go. So have you tried to benchmark this data with the
+
+913
+00:54:32.028 --> 00:54:32.868
+cytosponge-
+
+914
+00:54:33.248 --> 00:54:35.848
+Sorry, I'm having a little trouble hearing. Can you speak a little louder?
+
+915
+00:54:36.028 --> 00:54:39.968
+Sure. Did you benchmark this data with the cytosponge from the group
+
+916
+00:54:39.988 --> 00:54:40.648
+in the UK?
+
+917
+00:54:41.168 --> 00:54:42.348
+Can we benchmark...
+
+918
+00:54:42.808 --> 00:54:46.528
+Yeah, the data from your balloon with the people who are doing the
+
+919
+00:54:46.588 --> 00:54:48.248
+cytosponge in the UK,
+
+920
+00:54:49.728 --> 00:54:51.528
+cytology from the esophageal
+
+921
+00:54:52.788 --> 00:54:53.488
+tissue as well.
+
+922
+00:54:53.728 --> 00:54:56.348
+I'm sorry, I think you're asking me about Rebecca's work from the UK.
+
+923
+00:54:56.388 --> 00:54:57.368
+Yeah. Exactly.
+
+924
+00:54:57.508 --> 00:55:00.488
+But I'm having trouble hearing. You want to come forward and just...
+
+925
+00:55:00.508 --> 00:55:01.968
+He was asking if you could benchmark
+
+926
+00:55:03.744 --> 00:55:04.964
+Oh, if could I benchmark or compare?
+
+927
+00:55:05.864 --> 00:55:09.524
+We do not have head-to-head data to benchmark it
+
+928
+00:55:09.584 --> 00:55:10.924
+compared to Cyto Sponge.
+
+929
+00:55:11.864 --> 00:55:12.844
+But what
+
+930
+00:55:14.444 --> 00:55:18.434
+I can say from the non-head-to-head comparison is that
+
+931
+00:55:18.444 --> 00:55:22.214
+the advantage of the balloon technology is that we have
+
+932
+00:55:22.244 --> 00:55:26.204
+exquisite sensitivity for short segment Barrett's, which Cyto
+
+933
+00:55:26.344 --> 00:55:30.044
+Sponge in the non-head-to-head comparisons,
+
+934
+00:55:30.424 --> 00:55:34.224
+Cyto Sponge misses, and that's what you would expect
+
+935
+00:55:34.264 --> 00:55:38.104
+when you are using a technology like Cyto Sponge
+
+936
+00:55:38.524 --> 00:55:42.474
+where you pull the sponge back along the entire length of the esophagus,
+
+937
+00:55:42.864 --> 00:55:46.844
+okay, and dilute the sample. The advantage of the balloon is
+
+938
+00:55:46.864 --> 00:55:50.564
+that we can focus it to sample just the distal esophagus,
+
+939
+00:55:52.044 --> 00:55:55.924
+and then capture the sample inside the balloon so that we
+
+940
+00:55:55.964 --> 00:55:59.664
+don't dilute it as we bring it further up through the
+
+941
+00:55:59.704 --> 00:56:03.544
+esophagus. So we detect short segment
+
+942
+00:56:03.584 --> 00:56:07.474
+Barrett's with exactly the same sensitivity and
+
+943
+00:56:07.583 --> 00:56:11.444
+specificity as we do long segment Barrett's, whereas in
+
+944
+00:56:11.544 --> 00:56:15.404
+all of the studies of Cyto Sponge, short segment Barrett's has
+
+945
+00:56:15.444 --> 00:56:17.784
+basically been censored from the analysis.
+
+946
+00:56:20.024 --> 00:56:20.304
+Thanks.
+
+947
+00:56:20.904 --> 00:56:22.464
+I hope that addressed your question.
+
+948
+00:56:26.134 --> 00:56:26.164
+All
+
+949
+00:56:26.184 --> 00:56:30.874
+right.
+
+950
+00:56:30.944 --> 00:56:32.544
+Thanks for that great talk, Sandy.
+
+951
+00:56:32.614 --> 00:56:36.084
+And now we'll go ahead and move on to our last speaker,
+
+952
+00:56:36.604 --> 00:56:40.484
+Dr. Adam Yala from Berkeley, who will be
+
+953
+00:56:40.524 --> 00:56:44.084
+talking to us about AI and precision imaging. Adam?
+
+954
+00:56:52.224 --> 00:56:54.004
+Thanks for translating the English accent.
+
+955
+00:56:54.204 --> 00:56:56.184
+Everyone, it's a pleasure to share my work with you.
+
+956
+00:56:57.284 --> 00:56:58.844
+I don't usually wear a hat during talks.
+
+957
+00:56:58.864 --> 00:57:01.644
+I'm trying not to go blind while speaking to you, but I swear that...
+
+958
+00:57:03.304 --> 00:57:03.944
+I'll move a little bit closer.
+
+959
+00:57:04.744 --> 00:57:08.704
+I'm excited to share our work on AI for personalized cancer care.
+
+960
+00:57:09.064 --> 00:57:12.884
+So by, these are my disclosures. I started a company where I'm CEO, and I've done a
+
+961
+00:57:12.924 --> 00:57:13.684
+lot of consulting.
+
+962
+00:57:15.264 --> 00:57:18.524
+I'm a computer scientist by training, and I think a lot about cancer as a
+
+963
+00:57:18.564 --> 00:57:22.484
+computational problem. And my general lens is there's just simply a huge amount
+
+964
+00:57:22.504 --> 00:57:26.204
+of data that we often don't use to drive what's the right decision at the right
+
+965
+00:57:26.264 --> 00:57:29.924
+time. So individual patients, say pictorial here in the world of breast,
+
+966
+00:57:30.404 --> 00:57:34.304
+has many gigabytes of data. In the world of tokens, in the
+
+967
+00:57:34.344 --> 00:57:37.604
+modern AI landscape, that's hundreds of billions of tokens.
+
+968
+00:57:39.364 --> 00:57:41.764
+And there's a question of, well, how do I actually integrate all of that to make
+
+969
+00:57:41.784 --> 00:57:42.374
+something better?
+
+970
+00:57:43.284 --> 00:57:47.064
+And the talk today and my work
+
+971
+00:57:47.164 --> 00:57:49.024
+spans across many parts of that arc.
+
+972
+00:57:49.664 --> 00:57:53.524
+One, the problem of prediction. How do I use all the data I have available to go
+
+973
+00:57:53.564 --> 00:57:54.014
+beyond the
+
+974
+00:57:55.204 --> 00:57:58.904
+high-risk checklist that we see recurring across all of medicine?
+
+975
+00:57:58.944 --> 00:58:02.184
+How do we better understand what the patient has today and their progression of the
+
+976
+00:58:02.194 --> 00:58:04.673
+future as an AI problem first order of principles?
+
+977
+00:58:05.504 --> 00:58:08.884
+Given that, how do we make new kinds of guidelines and algorithms as a control
+
+978
+00:58:08.924 --> 00:58:12.664
+problem, the way we think about learning navigation or robotics, but
+
+979
+00:58:12.673 --> 00:58:15.764
+apply it to health? And finally, even if you have those things, it's not enough.
+
+980
+00:58:15.804 --> 00:58:19.324
+You have to prove that it works. And the models will always change, so how do we
+
+981
+00:58:19.344 --> 00:58:22.864
+invent an era of trials that are actually compatible with
+
+982
+00:58:22.884 --> 00:58:25.884
+continually changing models? So that's the point for today.
+
+983
+00:58:25.964 --> 00:58:27.923
+I'm going to speed run through all of them.
+
+984
+00:58:29.444 --> 00:58:29.944
+And
+
+985
+00:58:31.144 --> 00:58:34.184
+let's dive in. So a motivating example I've used a lot throughout my career is the
+
+986
+00:58:34.204 --> 00:58:37.424
+world of breast cancer screening, where by and large, like many other regimes tell
+
+987
+00:58:37.434 --> 00:58:40.244
+people, "Do the same thing. You're a person above 40.
+
+988
+00:58:40.344 --> 00:58:44.134
+Show up every year." And with every type of program that exists, there's always
+
+989
+00:58:44.144 --> 00:58:48.004
+kind of two edges of the spectrum. On one side, this program
+
+990
+00:58:48.064 --> 00:58:51.724
+as is, is not quite sensitive enough, and there are some people who will still get
+
+991
+00:58:51.764 --> 00:58:54.984
+interval cancer as worse outcomes. If you knew, you'd want to have done more.
+
+992
+00:58:55.404 --> 00:58:57.704
+There's more sensitive screening options out there.
+
+993
+00:58:57.724 --> 00:59:01.204
+And for a bunch of people who will never get cancer, the program itself is
+
+994
+00:59:01.244 --> 00:59:04.224
+associated with a lot of anxiety and harm, and you wish you would've actually
+
+995
+00:59:04.304 --> 00:59:07.684
+either made the process better or have done less, and it's hard to have both at the
+
+996
+00:59:07.724 --> 00:59:08.184
+same time.
+
+997
+00:59:09.024 --> 00:59:12.784
+And the solution is in back of my lens of prediction and control is kind of
+
+998
+00:59:12.824 --> 00:59:16.624
+simple. Predict and ascend who's going to have it, turn the statement of only if we
+
+999
+00:59:16.684 --> 00:59:20.264
+knew into a statement of foresight, and then given that, act, right?
+
+1000
+00:59:20.273 --> 00:59:23.604
+There should be guidelines that are personalized by the individual and inherently
+
+1001
+00:59:23.664 --> 00:59:25.923
+dynamic as life progresses over time.
+
+1002
+00:59:26.004 --> 00:59:29.344
+So that is not a new idea. There's been a lot of risk models.
+
+1003
+00:59:29.374 --> 00:59:30.604
+We've already seen the session today.
+
+1004
+00:59:30.784 --> 00:59:34.344
+We already have risk models for breast that have been adopted for
+
+1005
+00:59:34.384 --> 00:59:36.344
+decades that have the following shape.
+
+1006
+00:59:36.924 --> 00:59:39.404
+There's age, there's family history, maybe we elevate some because of the genetic
+
+1007
+00:59:39.424 --> 00:59:43.144
+marker we know about. The trouble with these markers is that, like in
+
+1008
+00:59:43.184 --> 00:59:47.104
+many other regimes, they're not so powerful that they explain
+
+1009
+00:59:47.144 --> 00:59:51.024
+the full phenomenon. So in the world of breast, up until actually very
+
+1010
+00:59:51.044 --> 00:59:54.204
+recently, the guidelines changed this year.
+
+1011
+00:59:54.344 --> 00:59:58.064
+The mainstream guideline of who is high risk of breast cancer
+
+1012
+00:59:58.224 --> 01:00:00.494
+only flags a quarter of all the people who are going to get breast cancer in the
+
+1013
+01:00:00.524 --> 01:00:03.204
+next five years. So it's not very sensitive as a risk model.
+
+1014
+01:00:03.304 --> 01:00:06.924
+The sensitivity is only 25%, and it's also not very specific.
+
+1015
+01:00:06.934 --> 01:00:10.484
+The vast majority of people who are called high risk will not get cancer within a
+
+1016
+01:00:10.544 --> 01:00:11.984
+six-year observation period.
+
+1017
+01:00:12.964 --> 01:00:16.283
+So stepping back to my central frame as a computer scientist, my North Star is,
+
+1018
+01:00:16.384 --> 01:00:19.864
+well, how do I use literally everything I know to do better?
+
+1019
+01:00:20.724 --> 01:00:24.584
+And I will start off with some of my older work showing steps towards
+
+1020
+01:00:24.644 --> 01:00:28.584
+that direction. Now, there's a bunch of papers here that kind of
+
+1021
+01:00:28.604 --> 01:00:31.724
+big picture as well. There's a lot more than we know than those questions within
+
+1022
+01:00:31.764 --> 01:00:35.524
+that questionnaire. We have pixels. We have morphological data. We have phenotypes.
+
+1023
+01:00:35.584 --> 01:00:36.884
+Let's do something with that directly.
+
+1024
+01:00:37.584 --> 01:00:41.204
+Now, one of these models is called Mirai, which is some work for my PhD.
+
+1025
+01:00:41.964 --> 01:00:43.664
+And I won't belabor the technical details.
+
+1026
+01:00:43.704 --> 01:00:45.784
+They feel artisanal in the modern AI era.
+
+1027
+01:00:47.244 --> 01:00:50.924
+But the core point I want to highlight is that it's with actually less information
+
+1028
+01:00:50.964 --> 01:00:53.744
+than we normally use within our clinical calculators.
+
+1029
+01:00:54.524 --> 01:00:58.494
+We can not only get a much better result, but it works very reliably, and it's a
+
+1030
+01:00:58.524 --> 01:01:02.084
+very repeatable playbook. So I mean by that, the blue bar here is a Tyrer-Cuzick.
+
+1031
+01:01:02.144 --> 01:01:04.214
+It's pages of questionnaires. It has breast density.
+
+1032
+01:01:04.224 --> 01:01:07.888
+It has... more things you would normally want to
+
+1033
+01:01:07.928 --> 01:01:10.688
+track. Image alone beats that by a large margin.
+
+1034
+01:01:10.728 --> 01:01:14.578
+This here is five-year AUCs. But out of the box, it works across many hospitals,
+
+1035
+01:01:14.608 --> 01:01:15.458
+across many places.
+
+1036
+01:01:16.578 --> 01:01:18.228
+And that's not a uniquely breast cancer story.
+
+1037
+01:01:18.268 --> 01:01:21.938
+We have very similar models in lung cancer, looking at, once again, the blue bar is
+
+1038
+01:01:21.948 --> 01:01:24.988
+another questionnaire focused on smoking history, the best clinical knowledge of
+
+1039
+01:01:25.028 --> 01:01:27.188
+that domain. Single CT does much better.
+
+1040
+01:01:27.888 --> 01:01:31.828
+And together, these two models, this slide is out of date, but it's like 90
+
+1041
+01:01:31.868 --> 01:01:34.648
+hospitals, 30 countries have independently tested it, so things work.
+
+1042
+01:01:35.448 --> 01:01:38.438
+Now, it's one thing to have better AUCs.
+
+1043
+01:01:38.528 --> 01:01:40.868
+A very healthy question is, so what?
+
+1044
+01:01:41.768 --> 01:01:44.508
+So I want to bring it back to the central motivation, and there's two types of
+
+1045
+01:01:44.568 --> 01:01:45.288
+trials we're running
+
+1046
+01:01:46.348 --> 01:01:49.788
+on the two sides of the spectrum. So one is, well, to have a better risk model,
+
+1047
+01:01:50.528 --> 01:01:54.028
+and I say that the current screening regime still leaves things to be desired
+
+1048
+01:01:54.068 --> 01:01:56.228
+because we want to be able to escalate if we know something.
+
+1049
+01:01:56.928 --> 01:01:57.168
+Well,
+
+1050
+01:01:59.128 --> 01:02:02.648
+we should try exactly that. So we have an ongoing multi-site clinical trial
+
+1051
+01:02:02.708 --> 01:02:05.388
+supported by BCRF, where we're looking at high-risk patients.
+
+1052
+01:02:05.468 --> 01:02:07.328
+A lot of them get supplemental screening MRI
+
+1053
+01:02:08.168 --> 01:02:12.008
+after the negative mammogram to catch would otherwise be a later stage cancer
+
+1054
+01:02:12.068 --> 01:02:15.868
+sooner. So that study's ongoing. If folks are interested, that's the NCTID.
+
+1055
+01:02:18.288 --> 01:02:21.928
+A pleasant surprise to me, actually, NCCN updated this
+
+1056
+01:02:22.008 --> 01:02:22.288
+year
+
+1057
+01:02:23.188 --> 01:02:25.588
+to officially support image-based risk models.
+
+1058
+01:02:26.248 --> 01:02:30.188
+The individual threshold here leaves some things to be desired, but this world
+
+1059
+01:02:30.228 --> 01:02:30.428
+of
+
+1060
+01:02:31.928 --> 01:02:33.508
+we have better notions of prediction.
+
+1061
+01:02:33.548 --> 01:02:37.508
+We understand the future better, so we can better drive allocations is
+
+1062
+01:02:37.588 --> 01:02:39.088
+finally getting broader and broader accepted.
+
+1063
+01:02:39.128 --> 01:02:40.808
+It feels like shouting till the wind works eventually.
+
+1064
+01:02:42.088 --> 01:02:45.768
+So that's the picture of how do we use this foresight to make care
+
+1065
+01:02:45.848 --> 01:02:49.648
+better at the top of the spectrum. But we also mentioned there's a bunch of
+
+1066
+01:02:49.668 --> 01:02:53.328
+people who won't have cancer, and their association with the process is
+
+1067
+01:02:53.368 --> 01:02:55.648
+generally not great and causes a lot of anxiety.
+
+1068
+01:02:55.708 --> 01:02:57.748
+So that's the focus of another trial we recently ran.
+
+1069
+01:02:58.648 --> 01:03:02.128
+Here the focus had been just on the actual flow of the screening pipeline.
+
+1070
+01:03:02.188 --> 01:03:04.888
+So at SFGH, our kind of safety net hospital in SF,
+
+1071
+01:03:05.768 --> 01:03:09.048
+the median time to go from you get a screening mammogram to know that you have
+
+1072
+01:03:09.088 --> 01:03:12.808
+cancer or know that you don't have it after a diagnostic resolution is like 40 plus
+
+1073
+01:03:12.848 --> 01:03:13.208
+days.
+
+1074
+01:03:14.047 --> 01:03:15.368
+It's not a fun process.
+
+1075
+01:03:16.588 --> 01:03:20.568
+But we have access to a risk score, which is closely linked to diagnosis
+
+1076
+01:03:20.608 --> 01:03:24.568
+in real time. So in this study, we basically showed by plugging in Mirai the right
+
+1077
+01:03:24.608 --> 01:03:26.988
+way, we could bring down that time for, say,
+
+1078
+01:03:28.188 --> 01:03:32.117
+cancer is down from 57 days median time to knowing the diagnostic resolution
+
+1079
+01:03:32.148 --> 01:03:36.128
+down to 12 hours. And that is now becoming part of standard of
+
+1080
+01:03:36.148 --> 01:03:38.468
+care at SFGH pending some PACS integrations.
+
+1081
+01:03:39.188 --> 01:03:40.008
+So both of these
+
+1082
+01:03:40.868 --> 01:03:44.408
+individual settings, both the Mirai MRI trial, Mirai SDA trial to me are
+
+1083
+01:03:45.128 --> 01:03:48.878
+base cases of very simple things you can do if you have notions of better
+
+1084
+01:03:48.948 --> 01:03:51.628
+foresight, and you can expect a better foresight as an AI problem.
+
+1085
+01:03:52.268 --> 01:03:55.208
+Now, I won't get into this today, but there's actually much bigger opportunities.
+
+1086
+01:03:55.248 --> 01:03:58.628
+The way you even think about guideline design as a reinforcement learning problem.
+
+1087
+01:03:59.128 --> 01:04:02.048
+We don't say, well, if I give you an MRI once, I saw something.
+
+1088
+01:04:02.508 --> 01:04:05.428
+Should you stay in the MRI forever? Probably not, right?
+
+1089
+01:04:05.648 --> 01:04:08.808
+You know something should be able to dynamically escalate and deescalate if at all
+
+1090
+01:04:08.828 --> 01:04:11.128
+in context. We have some work on that area.
+
+1091
+01:04:11.228 --> 01:04:13.688
+I won't get into it today, but if folks are interested, the reference is
+
+1092
+01:04:13.728 --> 01:04:15.268
+screenshotted. Okay, so
+
+1093
+01:04:17.328 --> 01:04:21.148
+the most exciting thing to me about this world of prediction is that it has a
+
+1094
+01:04:21.268 --> 01:04:24.568
+fundamentally different shape than the types of models we've used in the past.
+
+1095
+01:04:25.208 --> 01:04:28.968
+If I have an individual biomarker, or I have a notion of
+
+1096
+01:04:29.368 --> 01:04:32.868
+BRCA. A BRCA is not going to get meaningfully transformed as a definition year over
+
+1097
+01:04:32.928 --> 01:04:36.588
+year. That is not true of the models that look at phenotypes directly.
+
+1098
+01:04:37.268 --> 01:04:41.088
+So I want to talk briefly about the existing/ongoing foundation model
+
+1099
+01:04:41.168 --> 01:04:45.128
+boom in this space and why I'm excited to say it will continue to
+
+1100
+01:04:45.148 --> 01:04:46.648
+get dramatically better very quickly.
+
+1101
+01:04:47.248 --> 01:04:50.128
+So for that, I want to talk about our work building a foundation model called
+
+1102
+01:04:50.168 --> 01:04:53.248
+Pillar Zero. And first I want to say, what is a foundation model?
+
+1103
+01:04:53.288 --> 01:04:56.148
+What are the goals you would hope to have for a model of this kind?
+
+1104
+01:04:56.908 --> 01:04:59.688
+Well, if we're actually making things better, we're kind of used to this in the
+
+1105
+01:04:59.708 --> 01:05:03.168
+world of language. We're used to GPT-5 should be better than four.
+
+1106
+01:05:03.208 --> 01:05:07.088
+Well, for a vision model to be real, it should be helpful in everything, like many
+
+1107
+01:05:07.148 --> 01:05:08.868
+hundreds of things that you work on.
+
+1108
+01:05:08.908 --> 01:05:10.898
+So it should be broadly available to the community.
+
+1109
+01:05:10.928 --> 01:05:14.087
+If you have something that humans can't do, say like estimate future lung cancer
+
+1110
+01:05:14.128 --> 01:05:16.458
+risk or future pancreatic cancer risk, it should be better at that.
+
+1111
+01:05:16.488 --> 01:05:19.738
+So it should push beyond the regime of what is already known,
+
+1112
+01:05:20.548 --> 01:05:23.748
+and it should work requiring a lot less data than before.
+
+1113
+01:05:23.788 --> 01:05:27.587
+So if before I needed 20,000 samples to solve a problem, maybe I only need 1,000 or
+
+1114
+01:05:27.808 --> 01:05:28.188
+500.
+
+1115
+01:05:29.288 --> 01:05:32.388
+And finally, if all those things are true, you have a real foundation model, and
+
+1116
+01:05:32.428 --> 01:05:34.908
+practically, this moment has not really happened in the community yet.
+
+1117
+01:05:35.088 --> 01:05:38.348
+The models I showed you for lung cancer pre-trained on YouTube.
+
+1118
+01:05:38.888 --> 01:05:42.148
+So reliable, the way to actually leverage the massive amount of data we have as
+
+1119
+01:05:42.188 --> 01:05:44.928
+health systems to actually make everything better has been elusive.
+
+1120
+01:05:45.648 --> 01:05:46.008
+Now,
+
+1121
+01:05:47.168 --> 01:05:49.108
+to motivate what I'm going to show you, I first want to talk briefly about
+
+1122
+01:05:49.128 --> 01:05:49.788
+evaluation.
+
+1123
+01:05:51.208 --> 01:05:53.508
+Foundation models in radiology is not a hot idea.
+
+1124
+01:05:53.708 --> 01:05:55.418
+People thought about this since at least 2017.
+
+1125
+01:05:56.728 --> 01:05:59.508
+The problem with a lot of our evaluations to date and what you'll see in the
+
+1126
+01:05:59.548 --> 01:06:03.038
+frontier evals of Gemini and OpenAI Anthropic, is they use stuff like this,
+
+1127
+01:06:03.788 --> 01:06:07.738
+where you take 2D screenshots off of a website and say, "Is there a liver in this
+
+1128
+01:06:07.768 --> 01:06:09.688
+image?" Which I will argue is broadly useless.
+
+1129
+01:06:10.828 --> 01:06:14.178
+And so this type of eval has held back the community.
+
+1130
+01:06:14.758 --> 01:06:17.788
+And so everything I'm going to show is going to have a different type of setup, in
+
+1131
+01:06:17.828 --> 01:06:21.078
+which for any individual exam, the input to the test I'm going to show you is going
+
+1132
+01:06:21.078 --> 01:06:23.608
+to be a full volume unadulterated in DICOM.
+
+1133
+01:06:24.168 --> 01:06:27.738
+The ask is a long list of findings that attending radiologists
+
+1134
+01:06:27.768 --> 01:06:30.828
+curate. So it's not like, is there a liver? Is there pancreatic cancer?
+
+1135
+01:06:30.868 --> 01:06:33.888
+Is there pneumatitis? Can we actually find in the image things you would expect to
+
+1136
+01:06:33.908 --> 01:06:34.988
+see from a radiology report?
+
+1137
+01:06:35.808 --> 01:06:38.968
+And this is the flavor of the evaluation I'm about to show you for the hundreds of
+
+1138
+01:06:39.028 --> 01:06:41.408
+conditions that we already do and know off of the imaging.
+
+1139
+01:06:42.208 --> 01:06:42.548
+Okay, so
+
+1140
+01:06:43.848 --> 01:06:46.788
+now that we talked about evaluation, I can actually substitute these claims.
+
+1141
+01:06:46.828 --> 01:06:50.528
+Let's start off with, do we outperform baselines across hundreds of findings?
+
+1142
+01:06:51.188 --> 01:06:55.028
+And the answer is yes. So Pillar Zero is a
+
+1143
+01:06:55.268 --> 01:06:57.388
+new type of model. It uses something called an Atlas Backbone.
+
+1144
+01:06:57.408 --> 01:06:59.448
+There's new architectural innovations I won't get into.
+
+1145
+01:07:00.168 --> 01:07:04.068
+But across hundreds of types of conditions, the average ACC will range
+
+1146
+01:07:04.088 --> 01:07:04.188
+from
+
+1147
+01:07:05.048 --> 01:07:08.998
+82 to 90, and it's much better we can get out of the Google, Microsoft models, and
+
+1148
+01:07:09.028 --> 01:07:12.028
+models from Alibaba like Qwen, and the recent vision model from
+
+1149
+01:07:12.068 --> 01:07:15.324
+Stanford.On the right-hand side, I'm showing you just absolute top win rates are
+
+1150
+01:07:15.384 --> 01:07:19.344
+like broadly, no matter what you're working on, it should be able to
+
+1151
+01:07:19.364 --> 01:07:21.764
+be helpful. So I'll put a check on that.
+
+1152
+01:07:23.864 --> 01:07:27.384
+The pre-training for this is a vision language model.
+
+1153
+01:07:27.464 --> 01:07:29.464
+So it uses a lot of radiology reports as part of our pre-training.
+
+1154
+01:07:30.384 --> 01:07:33.984
+And radiology reports don't talk about who's going to get cancer in the
+
+1155
+01:07:34.004 --> 01:07:37.364
+future. So a critical thing is, well, does it do things that humans don't do?
+
+1156
+01:07:37.704 --> 01:07:40.484
+So I showed you before that we have this like cybil model, which does lung cancer.
+
+1157
+01:07:41.444 --> 01:07:45.423
+Well, pre-training on Pillar makes that model better, and it doesn't just make
+
+1158
+01:07:45.464 --> 01:07:48.164
+it better on the original test set, which is endless, but also works better in
+
+1159
+01:07:48.204 --> 01:07:50.224
+external validation in Taiwan and MGH.
+
+1160
+01:07:50.944 --> 01:07:53.504
+And this is not on the slides here, but we have some colleagues that just tried
+
+1161
+01:07:53.544 --> 01:07:56.884
+this on ILD, like interstitial lung disease.
+
+1162
+01:07:57.044 --> 01:07:57.884
+I might be pronouncing that wrong.
+
+1163
+01:07:59.424 --> 01:08:01.434
+Their traditional approaches give them ACs of 80.
+
+1164
+01:08:01.524 --> 01:08:03.184
+They pre-train on Pillar zero, they get 95.
+
+1165
+01:08:03.584 --> 01:08:05.204
+So in like every condition we've tried it,
+
+1166
+01:08:06.204 --> 01:08:07.863
+it can boost the thing that you want.
+
+1167
+01:08:08.304 --> 01:08:10.524
+So the next thing is, well, do you need less data?
+
+1168
+01:08:11.384 --> 01:08:14.824
+I mentioned in building the original type of model, pre-trained on YouTube.
+
+1169
+01:08:15.464 --> 01:08:18.143
+And why did I pre-train it on YouTube? Because it's the best thing that I had.
+
+1170
+01:08:20.084 --> 01:08:21.184
+Here, I'm showing you some experiments.
+
+1171
+01:08:21.195 --> 01:08:23.945
+We're trying to build a hemorrhage detector. Do you need less data than before?
+
+1172
+01:08:24.624 --> 01:08:28.565
+So in the purple lines I'm showing you here was medical specific pre-trained
+
+1173
+01:08:28.605 --> 01:08:31.945
+models. So things like Merlin, things pre-trained on other CTs.
+
+1174
+01:08:32.924 --> 01:08:35.004
+These gray lines are not trained on that at all.
+
+1175
+01:08:35.184 --> 01:08:38.824
+So this gray line, I'll see if I can use the mouse here, is
+
+1176
+01:08:38.864 --> 01:08:41.804
+pre-training on YouTube. And it's
+
+1177
+01:08:43.184 --> 01:08:45.504
+basically equivalent to this like CT model, Merlin.
+
+1178
+01:08:46.624 --> 01:08:50.584
+We show that our pre-training lets you get to 95 AC with using one twentieth of the
+
+1179
+01:08:50.644 --> 01:08:54.084
+data. And this kind of core property of you need less to achieve something
+
+1180
+01:08:54.945 --> 01:08:58.025
+is actually achieved. And something to me is very exciting about these models is
+
+1181
+01:08:58.044 --> 01:08:59.324
+that they enable new things.
+
+1182
+01:09:00.144 --> 01:09:00.424
+So
+
+1183
+01:09:01.424 --> 01:09:04.025
+why build foundation models? One, I mean, I want better numbers across every task
+
+1184
+01:09:04.044 --> 01:09:06.584
+that I work on because those better numbers should enable better clinical
+
+1185
+01:09:06.605 --> 01:09:07.124
+workflows.
+
+1186
+01:09:07.924 --> 01:09:11.514
+But as the models get better, they open up a bigger playground of tasks that
+
+1187
+01:09:11.525 --> 01:09:15.164
+otherwise could not solve. You notice that the older work I showed you focused on
+
+1188
+01:09:15.204 --> 01:09:16.044
+breast and lung, some
+
+1189
+01:09:17.105 --> 01:09:18.525
+diseases with a huge amount of volume.
+
+1190
+01:09:18.565 --> 01:09:21.584
+So you can actually build things with hundreds of thousands of scans and many
+
+1191
+01:09:21.663 --> 01:09:25.605
+thousands of cancers. That locks you off from working in many other and really
+
+1192
+01:09:25.624 --> 01:09:27.264
+important problems like pancreatic cancer.
+
+1193
+01:09:27.924 --> 01:09:31.485
+So by making things more sample efficient and kind of changing the line of what is
+
+1194
+01:09:31.544 --> 01:09:35.254
+now AI bold versus classical radiomics, it opens up a bigger
+
+1195
+01:09:35.284 --> 01:09:37.464
+field. And that's something I'm super excited about.
+
+1196
+01:09:37.504 --> 01:09:39.584
+And what I've showed you so far is pillar zero.
+
+1197
+01:09:39.684 --> 01:09:41.644
+Pillar one is going to be much better.
+
+1198
+01:09:41.684 --> 01:09:45.144
+And as it's getting much cheaper now to build models across these new questions,
+
+1199
+01:09:45.184 --> 01:09:48.525
+say, questions that are otherwise kind of locked out, things in treatments we
+
+1200
+01:09:48.565 --> 01:09:50.764
+usually rely on much more radiomics-style approaches,
+
+1201
+01:09:51.824 --> 01:09:54.904
+and pancreas cancer, then efforts like PRECI to allow you to have
+
+1202
+01:09:54.944 --> 01:09:58.934
+large-scale prospective data collection across many places at the same time, yet
+
+1203
+01:09:58.984 --> 01:10:01.754
+ever more important, because that's going to become the true bottleneck to making
+
+1204
+01:10:01.784 --> 01:10:05.024
+these things actually hit real impact. So I'm very excited to partner in that work.
+
+1205
+01:10:05.924 --> 01:10:08.124
+Okay, so I've talked a lot about prediction.
+
+1206
+01:10:08.324 --> 01:10:11.164
+The technology is still rapidly improving, and I'll say that for a couple of
+
+1207
+01:10:11.184 --> 01:10:13.884
+reasons. One, pillar zero to me is like a...
+
+1208
+01:10:13.924 --> 01:10:16.744
+I mean, it's useful and I encourage people, it's free and it's open and encourage
+
+1209
+01:10:16.764 --> 01:10:18.684
+people to use it if they're doing this kind of work.
+
+1210
+01:10:18.864 --> 01:10:22.304
+But that only used like hundreds of thousands of imaging exams or like a single
+
+1211
+01:10:22.364 --> 01:10:22.824
+AMC.
+
+1212
+01:10:23.684 --> 01:10:26.554
+Pillar one is a commercial style model that is
+
+1213
+01:10:27.404 --> 01:10:30.944
+as of now looking at 10 to the seven exams.
+
+1214
+01:10:30.964 --> 01:10:32.534
+So like literally orders of magnitudes.
+
+1215
+01:10:32.544 --> 01:10:34.124
+And our stretch goal for the team is 10 to the eight.
+
+1216
+01:10:34.724 --> 01:10:37.084
+And there's going to be a huge amount of progress in this space within the year.
+
+1217
+01:10:37.144 --> 01:10:37.964
+So this kind of era of
+
+1218
+01:10:38.884 --> 01:10:42.824
+radiomics and artisanal type of research in the space, I think is near
+
+1219
+01:10:42.844 --> 01:10:45.664
+an end the way that it's no longer true within self-driving and other kind of core
+
+1220
+01:10:45.704 --> 01:10:46.304
+AI domains.
+
+1221
+01:10:47.884 --> 01:10:49.644
+That's a bunch of work is happening within the company.
+
+1222
+01:10:49.684 --> 01:10:52.664
+I mentioned the disclosure, and it's not just within scope of predicting many
+
+1223
+01:10:52.704 --> 01:10:55.344
+things that humans can't do, but also a write full report.
+
+1224
+01:10:55.404 --> 01:10:58.504
+So it's like the space is going to get both faster and much broader.
+
+1225
+01:10:59.364 --> 01:11:01.244
+Okay, so that touches on the work of prediction, and I think it's,
+
+1226
+01:11:02.384 --> 01:11:05.733
+to me, super exciting. I've been dreaming of a world in which this space feels as
+
+1227
+01:11:05.764 --> 01:11:07.964
+aggressive and fast, all the parts of AI for kind of forever.
+
+1228
+01:11:08.424 --> 01:11:10.904
+And it's finally time because things are coalescing enough and the technology is
+
+1229
+01:11:10.924 --> 01:11:14.233
+getting more and more unified. Which working on breast is no longer separate from
+
+1230
+01:11:14.264 --> 01:11:15.544
+working on lung or working on pancreas.
+
+1231
+01:11:15.584 --> 01:11:17.504
+It's becoming one unified technical problem.
+
+1232
+01:11:19.244 --> 01:11:21.214
+This causes new problems in translation.
+
+1233
+01:11:21.924 --> 01:11:24.264
+So you've noticed how I told you I care about running trials.
+
+1234
+01:11:24.284 --> 01:11:25.564
+We're running a trial right now in MR,
+
+1235
+01:11:26.604 --> 01:11:29.464
+and yet I have already better models, albeit this is in lung,
+
+1236
+01:11:30.344 --> 01:11:31.924
+and by definition
+
+1237
+01:11:32.984 --> 01:11:35.624
+by the time the trial is done, the model will be totally obsolete because I'll have
+
+1238
+01:11:35.664 --> 01:11:38.164
+a better one. That's kind of a problem, right?
+
+1239
+01:11:38.304 --> 01:11:42.064
+I want better models all the time. I want real evidence of the prospective
+
+1240
+01:11:42.124 --> 01:11:46.044
+utility, and yet every single time I run a trial, by
+
+1241
+01:11:46.084 --> 01:11:48.964
+the time the trial is done, I should have actually much better models already.
+
+1242
+01:11:49.544 --> 01:11:53.504
+And that causes a statistical problem of like, well, what's an evidence framework
+
+1243
+01:11:53.764 --> 01:11:56.104
+to actually encourage people to run trials that's compatible with that pace of
+
+1244
+01:11:56.144 --> 01:11:56.924
+model innovation?
+
+1245
+01:11:57.944 --> 01:11:59.004
+So this
+
+1246
+01:11:59.864 --> 01:12:01.624
+luckily has some statistical solutions I want to share.
+
+1247
+01:12:02.244 --> 01:12:05.404
+So we've been working on a new statistical trial framework called BRIDGE that lets
+
+1248
+01:12:05.424 --> 01:12:06.944
+you kind of recycle models over time.
+
+1249
+01:12:07.464 --> 01:12:10.844
+So you can't do this with all interventions, but let's focus on, well, what does an
+
+1250
+01:12:10.884 --> 01:12:11.844
+AI risk model do?
+
+1251
+01:12:12.764 --> 01:12:15.844
+Does a risk model, say, that PRECI uses or
+
+1252
+01:12:16.204 --> 01:12:19.664
+whoever itself help catch pancreatic cancer early?
+
+1253
+01:12:20.284 --> 01:12:24.044
+No, the actual image does. The intervention you actually assign changes it.
+
+1254
+01:12:24.584 --> 01:12:28.364
+So if you're willing to assume that patients who got the same
+
+1255
+01:12:28.384 --> 01:12:30.384
+recommendation under different risk models, because you can run things in
+
+1256
+01:12:30.444 --> 01:12:34.244
+hindsight, are exchangeable, you can basically do adaptive data
+
+1257
+01:12:34.264 --> 01:12:37.994
+reuse. So I'm going to show you just a quick worked example in the context of our
+
+1258
+01:12:38.004 --> 01:12:41.744
+MIRRO-SDA trial with a preliminary version of MIRRO 1.5 and the
+
+1259
+01:12:41.764 --> 01:12:44.644
+original MIRRO model. So different generations of AI risk model.
+
+1260
+01:12:45.384 --> 01:12:49.124
+Well, for the kind of top 5% high-risk cohort, a bunch of people
+
+1261
+01:12:49.184 --> 01:12:50.744
+overlap, which makes sense, right?
+
+1262
+01:12:50.764 --> 01:12:53.044
+If you have two models that are good, they're trying to catch the same medication.
+
+1263
+01:12:53.684 --> 01:12:57.224
+It's one disease, they should agree on some of the subsets, and I shouldn't have to
+
+1264
+01:12:57.264 --> 01:12:59.284
+re-enroll the same phenotype of people.
+
+1265
+01:13:00.524 --> 01:13:01.064
+So if you do that,
+
+1266
+01:13:02.524 --> 01:13:05.984
+then actually every subsequent trial gets cheaper and faster.
+
+1267
+01:13:06.924 --> 01:13:10.784
+So a natural question is, well, are these kind of overlaps of AI
+
+1268
+01:13:10.824 --> 01:13:14.004
+models over time agreeing with each other common? And the answer is yes.
+
+1269
+01:13:14.064 --> 01:13:17.044
+So I'm showing you three different examples, one in breast cancer, one in
+
+1270
+01:13:17.084 --> 01:13:19.404
+cardiovascular disease, another one in sepsis, with very different kinds of
+
+1271
+01:13:19.444 --> 01:13:23.334
+datasets. This is imaging, ECG, and EMR type
+
+1272
+01:13:23.384 --> 01:13:27.344
+variables. And across different generations of model, if they have
+
+1273
+01:13:27.364 --> 01:13:29.524
+the same type of endpoint, they're trying to understand the same kind of
+
+1274
+01:13:29.544 --> 01:13:32.380
+phenomenon, the overlap is-Very high.
+
+1275
+01:13:32.460 --> 01:13:35.040
+These are all with a top 5% overlap.
+
+1276
+01:13:35.360 --> 01:13:38.920
+But obviously, as the risk definitions change, you have different amounts.
+
+1277
+01:13:39.800 --> 01:13:43.220
+And, well, what does that enable? Well, it not only makes the trial faster, but
+
+1278
+01:13:43.300 --> 01:13:46.820
+fundamentally much cheaper. So once again, I mentioned I'm running these MRI
+
+1279
+01:13:46.860 --> 01:13:48.920
+trials. I pay for the MRIs, very expensive.
+
+1280
+01:13:50.540 --> 01:13:53.940
+The potential saving here is in the millions and therefore valuable.
+
+1281
+01:13:53.970 --> 01:13:55.640
+So if people are interested, I encourage the reference there.
+
+1282
+01:13:55.780 --> 01:13:59.300
+All of that is open with an open demo, et cetera, like click controls,
+
+1283
+01:14:00.000 --> 01:14:01.260
+calculator type of interface.
+
+1284
+01:14:02.200 --> 01:14:03.000
+Okay. So I
+
+1285
+01:14:03.939 --> 01:14:06.360
+probably spoke a little too fast, but as it goes.
+
+1286
+01:14:07.340 --> 01:14:11.120
+That covers a speed run across a bunch of different areas across both
+
+1287
+01:14:11.160 --> 01:14:14.660
+prediction, which really feels like core deep learning innovations, things across
+
+1288
+01:14:14.680 --> 01:14:16.460
+pre-training, post-training, architecture design.
+
+1289
+01:14:16.520 --> 01:14:17.710
+If folks are interested, happy to share more.
+
+1290
+01:14:18.660 --> 01:14:21.440
+Control, I didn't touch much on, but I think there's a really rich space of, as you
+
+1291
+01:14:21.480 --> 01:14:24.830
+have these better tools, how do you imagine much more flexible types of guidelines?
+
+1292
+01:14:25.240 --> 01:14:28.470
+If we end up saying, "Oh, I have a new model to say do this for 20 years," we have
+
+1293
+01:14:28.500 --> 01:14:31.880
+failed. There's something-- We see more information, so we should be able to act
+
+1294
+01:14:31.920 --> 01:14:35.720
+better. And finally, translation, because we should expect better tools to
+
+1295
+01:14:35.740 --> 01:14:38.300
+happen faster than any trial. It's going to require new statistical frameworks.
+
+1296
+01:14:39.120 --> 01:14:40.860
+And now I want to close with kind of what if it all works.
+
+1297
+01:14:41.340 --> 01:14:42.560
+I think the easy case
+
+1298
+01:14:43.380 --> 01:14:46.800
+is cases where we already have a lot of data, like breast and lung and more
+
+1299
+01:14:46.840 --> 01:14:49.680
+broadly, clinical reports in radiology where we have lots of volume.
+
+1300
+01:14:50.060 --> 01:14:53.920
+The hard case where I'm super excited is areas like pancreatic cancer and other
+
+1301
+01:14:53.960 --> 01:14:56.460
+diseases where we just don't have that much data in any one AMC.
+
+1302
+01:14:56.960 --> 01:15:00.380
+And how do we take the innovations and the core model development to open up more
+
+1303
+01:15:00.400 --> 01:15:03.040
+and more domains to be AI-enabled rather than
+
+1304
+01:15:03.900 --> 01:15:06.880
+high-data domains being AI-enabled, everything else is manual feature engineering.
+
+1305
+01:15:07.800 --> 01:15:10.680
+So, and I think it's going to also open new doors on product spectrum.
+
+1306
+01:15:11.130 --> 01:15:12.900
+And with that, I want to say thank you, and happy to take questions.
+
+1307
+01:15:21.940 --> 01:15:23.920
+I'm also blind, so I will try to see.
+
+1308
+01:15:24.180 --> 01:15:24.640
+Over there.
+
+1309
+01:15:25.720 --> 01:15:29.680
+I have a question. So as you develop the models in ADAPT,
+
+1310
+01:15:30.200 --> 01:15:33.540
+are you able to identify the variables that come to the top that are
+
+1311
+01:15:33.660 --> 01:15:36.960
+the most contributing to the performance of the model?
+
+1312
+01:15:37.000 --> 01:15:40.879
+Are you able to curate those, find them, and collect them,
+
+1313
+01:15:41.000 --> 01:15:43.820
+and put them at the top as you go on to the next models?
+
+1314
+01:15:43.980 --> 01:15:47.940
+Or is it agnostic in terms of the variables that
+
+1315
+01:15:47.960 --> 01:15:48.740
+are part of the models?
+
+1316
+01:15:49.680 --> 01:15:51.180
+Yeah, it's fundamentally agnostic.
+
+1317
+01:15:51.240 --> 01:15:55.040
+So, it takes full volumes without any preprocessing and then gives you new
+
+1318
+01:15:55.100 --> 01:15:59.000
+outputs. So if I wanted to understand now what subset of my input
+
+1319
+01:15:59.040 --> 01:16:01.820
+volume helps me explain the model prediction, I can do that.
+
+1320
+01:16:02.520 --> 01:16:04.860
+The thing is, it doesn't necessarily have to be the same explanation for two
+
+1321
+01:16:04.900 --> 01:16:08.040
+different people. So sometimes we're lucky and there's a single
+
+1322
+01:16:08.740 --> 01:16:12.300
+phenomenon, right? Like a small one is called BRCA, and it explains many things.
+
+1323
+01:16:12.860 --> 01:16:16.060
+Sometimes we're not that lucky, and it's actually a bajillion things that all act
+
+1324
+01:16:16.080 --> 01:16:18.460
+somewhat independently that come together towards an explanation.
+
+1325
+01:16:18.520 --> 01:16:22.440
+So just a follow-up question. If you were able to develop a
+
+1326
+01:16:22.480 --> 01:16:26.220
+model where you could identify the high-performing variables,
+
+1327
+01:16:26.800 --> 01:16:30.729
+would that help us sort of go back and forth with the data that
+
+1328
+01:16:30.760 --> 01:16:32.350
+we're collecting to identify-
+
+1329
+01:16:32.840 --> 01:16:32.930
+Yeah
+
+1330
+01:16:32.930 --> 01:16:35.780
+... what's missing or how to make it better, how to make the technology for
+
+1331
+01:16:36.320 --> 01:16:38.960
+radiology better, get that feedback?
+
+1332
+01:16:39.720 --> 01:16:41.700
+Yes. So, that's definitely a thing.
+
+1333
+01:16:42.020 --> 01:16:45.710
+And I'll say that now we're doing that at a level that's much more abstract, right?
+
+1334
+01:16:45.750 --> 01:16:49.490
+So if I have longitudinal imaging, I can say, well, which scan in my
+
+1335
+01:16:49.520 --> 01:16:51.710
+longitudinal sequence made the most difference? Which modality?
+
+1336
+01:16:51.800 --> 01:16:54.920
+Which acquisition parameter? What I'm not getting is which pixel.
+
+1337
+01:16:55.570 --> 01:16:55.680
+Yeah.
+
+1338
+01:16:55.700 --> 01:16:59.500
+That's fine because I would never collect data one pixel at a time because I
+
+1339
+01:16:59.740 --> 01:17:03.620
+can kind of amortize that cost. And so my view is not that we get to a space in
+
+1340
+01:17:03.640 --> 01:17:05.430
+which we give everybody maximal imaging forever.
+
+1341
+01:17:05.530 --> 01:17:09.120
+My opener was like, we sometimes use too much, we sometimes use too little.
+
+1342
+01:17:09.570 --> 01:17:12.440
+We should actually be able to get better net with actually much less total
+
+1343
+01:17:12.460 --> 01:17:15.720
+screening. And that, it comes down to being able to understand where was value
+
+1344
+01:17:15.740 --> 01:17:16.320
+actually driven.
+
+1345
+01:17:16.980 --> 01:17:17.260
+Thank you.
+
+1346
+01:17:18.500 --> 01:17:20.199
+Adam, just to kind of follow up on that.
+
+1347
+01:17:21.040 --> 01:17:24.600
+We're collecting, or not just we in Preceive, but
+
+1348
+01:17:24.640 --> 01:17:28.620
+across many cancers at risk, we're collecting multimodal data,
+
+1349
+01:17:28.700 --> 01:17:31.680
+right? Blood tests, germline testing, imaging.
+
+1350
+01:17:32.120 --> 01:17:35.449
+It could be for each cancer type, there's a different--
+
+1351
+01:17:35.940 --> 01:17:39.640
+Maybe just the imaging is all you need, but it could be that having the
+
+1352
+01:17:39.660 --> 01:17:43.289
+germline test and the imaging may be more important in other cancers than other,
+
+1353
+01:17:43.380 --> 01:17:45.320
+but obviously, we can discern that, right?
+
+1354
+01:17:45.540 --> 01:17:45.729
+Yep.
+
+1355
+01:17:45.870 --> 01:17:49.259
+And maybe just comment on what you've seen with breast, and does your
+
+1356
+01:17:49.800 --> 01:17:53.649
+AI imaging get augmented by having any additional
+
+1357
+01:17:53.920 --> 01:17:57.620
+patient information, or is the imaging alone sufficient versus
+
+1358
+01:17:57.700 --> 01:17:59.370
+lung, for example, and smoking?
+
+1359
+01:18:00.120 --> 01:18:03.720
+Yeah. So I'd say the pattern is clearly different by disease area.
+
+1360
+01:18:03.760 --> 01:18:07.480
+So in breast, we tried combining the imaging model with everything within
+
+1361
+01:18:07.500 --> 01:18:09.540
+Tyrer-Cuzick, which has detailed family history.
+
+1362
+01:18:09.580 --> 01:18:12.720
+Does the person take hormone replacement therapy? How many children?
+
+1363
+01:18:13.140 --> 01:18:14.500
+Last breastfeeding, blah, blah, blah.
+
+1364
+01:18:15.320 --> 01:18:18.440
+And none of that helped. It didn't make any difference over the imaging model
+
+1365
+01:18:18.460 --> 01:18:21.760
+alone. And in some other experiments, we saw that you can actually predict a lot of
+
+1366
+01:18:21.780 --> 01:18:25.560
+these variables from the image. And so, in some sense, specifically in breast,
+
+1367
+01:18:26.420 --> 01:18:29.780
+breast imaging is a phenotype, and many things kind of collide into that.
+
+1368
+01:18:29.860 --> 01:18:32.500
+And so you can understand, did this person breastfeed from the mammogram alone?
+
+1369
+01:18:32.960 --> 01:18:33.980
+So adding it doesn't help.
+
+1370
+01:18:35.120 --> 01:18:36.340
+But that's not always going to be true.
+
+1371
+01:18:36.480 --> 01:18:38.340
+In lung cancer, that's not the phenomenon at all.
+
+1372
+01:18:38.860 --> 01:18:42.540
+If we add other smoking-related factors, not all that's mediated through the lung,
+
+1373
+01:18:42.580 --> 01:18:46.360
+you can't predict it from the lung CT. And so adding it actually helps.
+
+1374
+01:18:46.730 --> 01:18:50.380
+And I think that where I think we'll end up is there's going to be this
+
+1375
+01:18:50.460 --> 01:18:53.670
+natively AI multimodal integration in which you're always saying, "Given what I
+
+1376
+01:18:53.700 --> 01:18:57.420
+know, what should I be acquiring next?" And some tests that might be not good
+
+1377
+01:18:57.440 --> 01:19:00.370
+enough alone as an MCET, if you can train it like this person's high-risk lung
+
+1378
+01:19:00.370 --> 01:19:03.300
+cancer just by this image, you can now make it viable.
+
+1379
+01:19:03.360 --> 01:19:06.000
+Everything's kind of sequential decision-making, and it should be integrated across
+
+1380
+01:19:06.040 --> 01:19:09.800
+everything. Also, I think there's similar lessons that we see within the imaging
+
+1381
+01:19:09.860 --> 01:19:13.820
+world. Like if I take an image, I feed it as radiomics, my upper bound on what's
+
+1382
+01:19:13.880 --> 01:19:17.140
+possible is completely wrong. What you can do with deep learning is not any
+
+1383
+01:19:17.200 --> 01:19:18.520
+different from what you can do off radiomics.
+
+1384
+01:19:19.280 --> 01:19:21.820
+I think we'll see similar things in the way we tackle other problems and other
+
+1385
+01:19:21.880 --> 01:19:24.790
+modalities. Like what you can do with a genome language model that looks at every
+
+1386
+01:19:24.920 --> 01:19:28.120
+base pair and understands stuff like we see with these Evo models is different than
+
+1387
+01:19:28.140 --> 01:19:28.500
+SNPs.
+
+1388
+01:19:29.860 --> 01:19:32.480
+And so every one of these places has room for more richness.
+
+1389
+01:19:32.520 --> 01:19:34.510
+It's going to be a dynamic area for a while to come.
+
+1390
+01:19:36.828 --> 01:19:40.728
+I have two questions. The first is, so in your prediction part
+
+1391
+01:19:40.748 --> 01:19:43.468
+when you showed your model and how it was better on various
+
+1392
+01:19:44.468 --> 01:19:47.998
+tasks and questions, there were many questions that you had in each section.
+
+1393
+01:19:48.018 --> 01:19:51.258
+And so the question is just more generally, how do you decide how to weight those
+
+1394
+01:19:51.288 --> 01:19:54.688
+questions or whether the questions are all equally important in deciding one model
+
+1395
+01:19:54.748 --> 01:19:57.488
+is better and to use experts or just the general concept there of-
+
+1396
+01:19:57.848 --> 01:19:57.968
+Yeah
+
+1397
+01:19:58.408 --> 01:19:58.648
+... that.
+
+1398
+01:19:59.468 --> 01:20:01.548
+So in this context, I didn't weight them at all.
+
+1399
+01:20:01.648 --> 01:20:04.968
+I was trying to be as comprehensive as I could convince my clinical collaborators
+
+1400
+01:20:04.988 --> 01:20:05.428
+to write down.
+
+1401
+01:20:06.328 --> 01:20:08.548
+So what we were looking for was raw dominance.
+
+1402
+01:20:08.588 --> 01:20:10.548
+We wanted coverage across as broad as possible.
+
+1403
+01:20:11.268 --> 01:20:14.348
+Now, that is a proxy indicator. It's not the true thing,
+
+1404
+01:20:15.248 --> 01:20:18.528
+because one thing we're doing now is we're making new types of metrics for report
+
+1405
+01:20:18.548 --> 01:20:21.928
+generation. The two types of tasks that I care about is one of them is to make it
+
+1406
+01:20:22.008 --> 01:20:25.888
+easier to do the current diagnostic flow faster and better and more
+
+1407
+01:20:25.968 --> 01:20:26.408
+accurately,
+
+1408
+01:20:27.228 --> 01:20:30.788
+and that's not the same as to give me the average performance across a dozen
+
+1409
+01:20:30.828 --> 01:20:33.608
+questions because it's long tail, long coverage.
+
+1410
+01:20:33.648 --> 01:20:35.828
+It's actually like a natural language generation problem.
+
+1411
+01:20:36.648 --> 01:20:39.728
+We're working on some new metrics there, and the validation is this a good metric?
+
+1412
+01:20:39.748 --> 01:20:41.108
+Does it correlate to human preference?
+
+1413
+01:20:41.168 --> 01:20:44.288
+If I give you two reports, one of them is better than the other, and you say so,
+
+1414
+01:20:44.308 --> 01:20:46.568
+does the metric produce that behavior consistently?
+
+1415
+01:20:47.128 --> 01:20:49.908
+So we're running reader studies on that phenomenon all the time, and I expect to
+
+1416
+01:20:49.928 --> 01:20:52.788
+publish out that new metric, which we're calling Beam within like...
+
+1417
+01:20:53.128 --> 01:20:56.938
+I'll call Natalia. But like within-- Every day I say, "Is today the day?" And she's
+
+1418
+01:20:56.968 --> 01:20:59.648
+told me that today's only maybe the day, so we'll see. But working on it.
+
+1419
+01:20:59.668 --> 01:21:00.748
+It's a very important question.
+
+1420
+01:21:00.828 --> 01:21:03.328
+Awesome. Thanks. And the other question is, with your
+
+1421
+01:21:04.208 --> 01:21:04.948
+patient reuse
+
+1422
+01:21:05.928 --> 01:21:09.628
+bridge study sort of layout, what is your method to get
+
+1423
+01:21:09.668 --> 01:21:13.248
+traction with that to actually get accepted as a way to run a trial?
+
+1424
+01:21:13.848 --> 01:21:14.518
+Yeah, I think
+
+1425
+01:21:15.568 --> 01:21:19.508
+in a way, we built this because I saw this coming from my own trials.
+
+1426
+01:21:19.528 --> 01:21:19.828
+Yeah.
+
+1427
+01:21:20.028 --> 01:21:22.858
+Because we're running trials, and from the beginning, if we don't have a better
+
+1428
+01:21:22.888 --> 01:21:25.528
+model by the time this is over, we have messed something up fundamental.
+
+1429
+01:21:26.228 --> 01:21:30.168
+So this work is currently under review, and we'll definitely be using this as part
+
+1430
+01:21:30.188 --> 01:21:33.888
+of our core flow because we'll be innovating at such a pace on the model side,
+
+1431
+01:21:33.988 --> 01:21:36.228
+it's not possible any other way.
+
+1432
+01:21:37.508 --> 01:21:41.348
+If others have feedback on how to enable more of the
+
+1433
+01:21:41.368 --> 01:21:45.068
+world's benefit from this, I would love to learn, but I've been
+
+1434
+01:21:45.108 --> 01:21:48.457
+tackling more as like this is a critical path in our own work, and so we're just
+
+1435
+01:21:48.488 --> 01:21:48.888
+going to
+
+1436
+01:21:50.468 --> 01:21:52.088
+dog food it, live through doing.
+
+1437
+01:21:52.748 --> 01:21:53.228
+Cool. Thank you.
+
+1438
+01:21:56.188 --> 01:21:58.308
+Hi, Dr. Ayala. Thank you for the very interesting talk.
+
+1439
+01:21:58.668 --> 01:22:02.448
+Could you speak a bit about the demographic diversity of the data that you're
+
+1440
+01:22:02.508 --> 01:22:05.868
+using to train these models? And in particular for Mirai, you talked about
+
+1441
+01:22:05.888 --> 01:22:08.188
+deploying it in 90 countries across the world.
+
+1442
+01:22:08.268 --> 01:22:12.008
+So did you note any differences in performance across those diverse
+
+1443
+01:22:12.068 --> 01:22:12.928
+demographic groups?
+
+1444
+01:22:13.408 --> 01:22:16.068
+Yes. Thank you for the question. So
+
+1445
+01:22:17.148 --> 01:22:20.648
+once again, this is something kind of depends by the type of model that you're
+
+1446
+01:22:20.708 --> 01:22:22.628
+using, and going bar from the beginning makes your life much easier.
+
+1447
+01:22:23.288 --> 01:22:23.568
+So
+
+1448
+01:22:24.568 --> 01:22:26.188
+we find so far that
+
+1449
+01:22:27.148 --> 01:22:31.108
+X-ray style models, meaning things like Mirai looks at mammography, the CT-based
+
+1450
+01:22:31.148 --> 01:22:33.598
+models, out of the box generalize really, really well.
+
+1451
+01:22:34.328 --> 01:22:37.818
+And so what I mean by that is Mirai was only trained on data from MGH, which is
+
+1452
+01:22:37.868 --> 01:22:41.797
+like 80% white only in Boston. And so it was
+
+1453
+01:22:41.848 --> 01:22:45.088
+not expected that it would work out of the box in CJ MASH in
+
+1454
+01:22:45.168 --> 01:22:48.068
+Taiwan or in Asuta in Israel or
+
+1455
+01:22:48.928 --> 01:22:52.748
+with colleagues in Nigeria. We had to test that along the way, but we
+
+1456
+01:22:52.768 --> 01:22:56.028
+find that it seems to work reliably in all these different testing settings.
+
+1457
+01:22:56.068 --> 01:22:57.928
+You do not get that behavior for free in MR.
+
+1458
+01:22:58.748 --> 01:23:02.408
+And there, the differences are actually the acquisition is so different from place
+
+1459
+01:23:02.428 --> 01:23:05.338
+to place. So it's an individual question by
+
+1460
+01:23:05.348 --> 01:23:09.188
+condition. Does this vary dramatically by subgroup, so you need to train
+
+1461
+01:23:09.208 --> 01:23:12.438
+differently? Now, what we do now for pillar one is we're collecting
+
+1462
+01:23:13.208 --> 01:23:16.288
+very large... We're trying to collect data at a scale that's on the order of like
+
+1463
+01:23:16.788 --> 01:23:19.888
+our surgical for the year is 10 to the 8. You can't get that kind of volume.
+
+1464
+01:23:19.928 --> 01:23:20.988
+You can't get it from any one place.
+
+1465
+01:23:21.348 --> 01:23:25.148
+It has to be national scale and international scale to get those kind of numbers,
+
+1466
+01:23:25.568 --> 01:23:26.848
+which makes generalization much easier.
+
+1467
+01:23:26.908 --> 01:23:29.478
+But for us, we have to test it every single time to know because
+
+1468
+01:23:30.388 --> 01:23:31.288
+it's never guaranteed.
+
+1469
+01:23:32.688 --> 01:23:35.868
+So to that point on having sufficient data, have you considered generating
+
+1470
+01:23:35.928 --> 01:23:38.588
+synthetic X-rays or other kinds of imaging modalities?
+
+1471
+01:23:39.628 --> 01:23:43.168
+Yeah. So we think a lot about synthetic data generation, partially to develop
+
+1472
+01:23:43.188 --> 01:23:45.248
+reasoning traces to improve model capabilities.
+
+1473
+01:23:46.628 --> 01:23:50.548
+I don't think it really helps in address kind of like latent bias in distribution,
+
+1474
+01:23:51.528 --> 01:23:55.088
+because it's easier to interpret the scan than to generate a
+
+1475
+01:23:55.168 --> 01:23:58.888
+scan. And so you get into this chicken and egg consistency problem.
+
+1476
+01:23:59.308 --> 01:24:02.448
+But there is really great work in data engine generation.
+
+1477
+01:24:02.988 --> 01:24:05.808
+I'm happy to chat more about offline. So that's a core research of ours.
+
+1478
+01:24:05.858 --> 01:24:09.108
+It's not for that problem. It's more for how do we expand capabilities
+
+1479
+01:24:10.268 --> 01:24:12.368
+to make new things possible for the model.
+
+1480
+01:24:13.248 --> 01:24:13.568
+Thank you.
+
+1481
+01:24:17.228 --> 01:24:19.728
+Okay. AI for good. Thank you, Adam.
+
+1482
+01:24:19.848 --> 01:24:22.068
+And thanks, everyone, for attending the session.
+
+1483
+01:24:22.628 --> 01:24:23.128
+Hope you found it-

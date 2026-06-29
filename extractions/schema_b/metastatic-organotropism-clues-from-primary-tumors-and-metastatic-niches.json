@@ -1,0 +1,248 @@
+[
+  {
+    "talk_id": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Massimo Loda",
+      "institution_or_pharma": "Weill Cornell Medical Center",
+      "session_title": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches",
+      "talk_title": "Stromal microenvironment as a predictor of bone metastasis in prostate cancer",
+      "rhetorical_signals": [
+        "One caveat is that clinical trials targeting the stromal component have not been very successful",
+        "we think very strongly that periostin is associated both with neuroendocrine differentiation and organotropism"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Stromal\u2011targeting therapies (e.g., CAF\u2011directed agents)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Neglect of fibroblast heterogeneity and AR\u2011loss driven periostin signaling",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical trial data on stromal\u2011targeting agents in prostate cancer",
+        "Lack of prospective validation of the periostin stromal signature in independent patient cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Periostin\u2011rich stromal signature could be used to stratify patients for bone\u2011metastasis risk and to select trials of bone\u2011targeted therapies.",
+        "transcript_evidence": "The speaker showed that a periostin\u2011based stromal signature predicts metastasis in an independent Mayo Clinic cohort.",
+        "crispro_angle": "CrisPRO can integrate periostin\u2011related transcriptomic features with spatial data to generate a predictive risk model for bone tropism.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Existing CAF\u2011targeting drugs that failed could be repurposed by pairing with agents that block periostin\u2011\u03b1V\u03b23/\u03b1V\u03b25 signaling.",
+        "transcript_evidence": "Speaker noted that clinical trials targeting the stromal component have not been very successful, suggesting a need for new combinatorial approaches.",
+        "crispro_angle": "CrisPRO can model combinatorial effects of periostin inhibition with other pathway inhibitors to prioritize salvage strategies.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Oncotype DX",
+        "context": "The stromal gene signature overlaps with three genes used in the Oncotype DX assay.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What determines the differential periostin expression between liver and bone metastases?",
+      "Can periostin inhibition reverse neuroendocrine differentiation in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Periostin\u2011targeting antibodies or small molecules",
+        "CAF\u2011directed clinical trials in prostate cancer"
+      ],
+      "companies_to_monitor": [
+        "Companies developing \u03b1V\u03b23/\u03b1V\u03b25 integrin inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "George Paul Janas",
+      "institution_or_pharma": "Institute of Cancer Research, London",
+      "session_title": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches",
+      "talk_title": "Metabolic coding of organotropism in breast cancer metastasis",
+      "rhetorical_signals": [
+        "Metastatic success is not about brute force. It is all the growth signaling nutrient requirements that are markedly different in the different metastatic niches",
+        "We were quite keen to show that bone metastatic cancer cells are very sensitive to glutamine dependency"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Glutamine metabolism (GLS1, SLC1A5/SLC38A12 transporters)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Redundant glutamine transporters limit efficacy of single transporter inhibition",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Limited matched primary\u2011metastasis metabolomics datasets",
+        "No in\u2011human validation of GLS1 inhibitor efficacy in bone metastasis"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Targeting GLS1 activity (e.g., with CBA39) could overcome glutamine addiction of bone\u2011metastatic breast cancer cells.",
+        "transcript_evidence": "Speaker showed that bone metastatic cells have higher GLS1 activity and are sensitive to a GLS1 inhibitor in vitro.",
+        "crispro_angle": "CrisPRO can predict GLS1 dependency across patient transcriptomes and prioritize patients for GLS1\u2011targeted trials.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "A glutamine\u2011dependency transcriptional signature could stratify patients likely to develop bone metastases.",
+        "transcript_evidence": "Integration of RNA\u2011seq and metabolomics identified a bone\u2011specific glutamine\u2011uptake program.",
+        "crispro_angle": "CrisPRO can generate a composite score linking glutamine transporter expression and GLS1 activity to clinical outcomes.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine GLS1 inhibition with agents that block compensatory pathways (e.g., mTOR inhibitors) to prevent metabolic escape.",
+        "transcript_evidence": "Bone metastatic cells rely on glutamine\u2011derived \u03b1\u2011ketoglutarate to sustain mTOR signaling.",
+        "crispro_angle": "CrisPRO can model synergistic effects of dual metabolic inhibition using pathway interaction maps.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Vander Heiden lab",
+        "context": "Provided example of fatty\u2011acid synthesis dependency in brain metastasis.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sarah Fenn lab",
+        "context": "Demonstrated pyruvate carboxylase dependency in lung metastasis.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the source of extracellular glutamine in the bone microenvironment?",
+      "Can targeting glutamine metabolism affect osteoblast function and bone health?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GLS1 inhibitors (e.g., CBA39)",
+        "Glutamine transporter inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Companies developing glutaminase inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Cory Barret Shen",
+      "institution_or_pharma": "Columbia University",
+      "session_title": "metastatic-organotropism-clues-from-primary-tumors-and-metastatic-niches",
+      "talk_title": "Circulating tumor cell heterogeneity and the role of TMPO in metastasis",
+      "rhetorical_signals": [
+        "TMPO is a nuclear membrane\u2011associated protein that allows cells to survive stress in circulation",
+        "We think TMPO is allowing the cells to survive the stress and to find their home at the metastatic site"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TMPO (LAP2) activity",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of therapeutic agents that specifically inhibit TMPO\u2011driven hypoxia\u2011oxphos switch",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "TMPO is strikingly strongly expressed in a large percentage of circulating tumor cells from advanced prostate cancer patients",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in\u2011human functional validation of TMPO as a therapeutic target",
+        "Unclear whether TMPO inhibition affects normal hematopoietic or stromal cells"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "TMPO expression in CTCs could serve as a prognostic biomarker for metastatic risk and bone tropism in prostate cancer.",
+        "transcript_evidence": "Speaker showed that TMPO knockdown reduces CTC numbers and bone metastasis in mouse models and that TMPO is highly expressed in patient CTCs.",
+        "crispro_angle": "CrisPRO can integrate TMPO transcript levels with CTC enumeration data to generate a risk score for aggressive disease.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Existing drugs that modulate nuclear lamina interactions could be repurposed to target TMPO\u2011driven pathways.",
+        "transcript_evidence": "TMPO is a Lamin\u2011Associated Protein 2 that drives a hypoxia\u2011oxphos program in CTCs.",
+        "crispro_angle": "CrisPRO can screen libraries of nuclear\u2011targeting compounds for predicted impact on TMPO\u2011regulated gene networks.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine TMPO inhibition with GLS1 or oxidative\u2011phosphorylation modulators to block both hypoxic survival and metabolic flexibility of CTCs.",
+        "transcript_evidence": "Knockdown of TMPO shifts CTC organoids from a hypoxic to an ox\u2011phos program, reducing metastatic capacity.",
+        "crispro_angle": "CrisPRO can model synergistic effects of dual targeting on CTC survival pathways.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Califano group",
+        "context": "Collaborated on master regulator analysis of CTC single\u2011cell data.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Peter Sims",
+        "context": "Lead author on the CTC organoid paper.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does TMPO expression differ between single CTCs and CTC clusters?",
+      "What upstream signals regulate TMPO activity during circulation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "TMPO/LAP2 inhibitors (if any in preclinical pipelines)",
+        "CTC enumeration platforms for prostate cancer"
+      ],
+      "companies_to_monitor": [
+        "Companies developing nuclear envelope targeting therapeutics"
+      ]
+    }
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Phil Chamberlain",
+      "institution_or_pharma": "Neomorph",
+      "session_title": "new-drugs-on-the-horizon-part-1",
+      "talk_title": "Development of NEO811, a molecular glue degrader of ARNT, which is also HIF-1 beta, with potent single activity in clear cell renal cell carcinoma",
+      "rhetorical_signals": [
+        "Speaker said: we don't expect that our mechanism will avoid the well-established consequence such as anemia, but we believe that these are easily monitorable and manageable.",
+        "Speaker said: we have not disclosed all the biomarker strategy data at this time."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "NEO811",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential redundancy of HIF-2\u03b1 inhibition in tumors with low HIF-2\u03b1 expression",
+        "unexplained_resistance_quote": "We haven't actually proven the mechanism in the XP490 model yet, but we hypothesize it may involve HIF1\u03b1 signaling.",
+        "ghost_responder_admission": "We see full activity in some resistant models while belzutifan fails.",
+        "hidden_tox_signal": "No real changes in body weight despite systemic ARNT degradation, but anemia is expected.",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 first\u2011in\u2011human study of NEO811 in locally advanced or metastatic ccRCC",
+        "target_biology": "Pan\u2011HIF pathway via ARNT degradation",
+        "flawed_enrollment_criteria": "Enrolling all ccRCC patients regardless of HIF\u20112\u03b1 status or ARNT expression levels",
+        "missing_biomarker": "Baseline tumor HIF\u20112\u03b1 or ARNT expression to stratify responders",
+        "static_vs_dynamic_failure": "No on\u2011treatment ctDNA or serial biopsies to track ARNT degradation dynamics",
+        "statistical_concern": "Single\u2011arm design with limited patient numbers; no comparator arm",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Cereblon\u2011based molecular glue platform targeting ARNT",
+        "ip_vulnerability_note": "Speaker disclosed detailed Cryo\u2011EM structure, revealing a large conformational change that may be exploitable for alternative binders.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad pan\u2011HIF degradation may limit combination flexibility with other VHL\u2011targeted agents."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed Cryo\u2011EM data indicating a complex, multi\u2011domain induced degron, yet concluded that the approach will be broadly combinable with all downstream HIF inhibitors without addressing potential pathway cross\u2011talk."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data",
+        "No biomarker\u2011stratified efficacy analysis",
+        "No comparator to standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can model the pan\u2011HIF degron interface to predict and design next\u2011generation glues that retain activity in HIF\u20112\u03b1 low tumors.",
+        "transcript_evidence": "Speaker hypothesized that HIF\u20111\u03b1 may drive pathology in HIF\u20112\u03b1 low models and that ARNT degradation captures that biology.",
+        "crispro_angle": "Use CrisPRO's protein\u2011protein interaction prediction to identify alternative neo\u2011substrate motifs for ARNT that overcome low HIF\u20112\u03b1 dependency.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a companion diagnostic measuring tumor ARNT/HIF\u20112\u03b1 levels to enrich for patients likely to respond to NEO811.",
+        "transcript_evidence": "Speaker noted lack of patient selection based on HIF\u20112\u03b1 status and admitted uncertainty about mechanism in the XP490 model.",
+        "crispro_angle": "Leverage CrisPRO's expression\u2011driven modeling to correlate ARNT degradation kinetics with baseline HIF signatures.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "belzutifan",
+        "context": "Compared as a HIF\u20112\u03b1 inhibitor that loses activity in G323E mutant; NEO811 retains activity.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "cabozantinib",
+        "context": "Mentioned as an approved VEGFR TKI in the same pathway.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the precise mechanism of tumor regression in HIF\u20112\u03b1 null models?",
+      "Will chronic systemic ARNT degradation cause unforeseen toxicities beyond anemia?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345"
+      ],
+      "assets_to_track": [
+        "NEO811"
+      ],
+      "companies_to_monitor": [
+        "Neomorph"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Suzanne Sitnikova",
+      "institution_or_pharma": "AstraZeneca",
+      "session_title": "new-drugs-on-the-horizon-part-1",
+      "talk_title": "AZD8359, a novel CD8-based T-cell engager designed to deliver a wide therapeutic window in prostate cancer",
+      "rhetorical_signals": [
+        "Speaker said: we don't see any detrimental effect, even in durability, in all sorts of aspects of this reduced engagement of the CD4s.",
+        "Speaker said: we have not had any red flags in anything we've been doing that suggests that biasing to the CD8s is increasing our ADA risk."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "AZD8359 CD8\u2011biased TCE",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential loss of CD4 helper function leading to reduced long\u2011term T\u2011cell memory",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "We see potent killing even without the CD8 arm, but potency is increased with it.",
+        "hidden_tox_signal": "No explicit mention of CRS at high doses, but preclinical data may not capture human cytokine storm risk.",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 study of AZD8359 in metastatic castration\u2011resistant prostate cancer",
+        "target_biology": "CD8\u2011biased T\u2011cell engagement to STEAP2\u2011expressing tumor cells",
+        "flawed_enrollment_criteria": "Enrolling all mCRPC patients without pre\u2011selecting for STEAP2 expression levels",
+        "missing_biomarker": "Tumor STEAP2 IHC or RNA expression to confirm target presence",
+        "static_vs_dynamic_failure": "No serial cytokine monitoring plan described",
+        "statistical_concern": "Single\u2011arm dose\u2011escalation may not detect rare CRS events",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CD8\u2011guided bispecific antibody format (Titan platform)",
+        "ip_vulnerability_note": "Speaker described the format but did not disclose unique engineering details, suggesting potential for competitors to replicate CD8 bias using alternative scaffolds.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without STEAP2 biomarker may dilute efficacy signal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed in vitro data that CD4 T cells produce cytokines and contribute to antitumor activity, yet concluded that biasing to CD8 will reduce CRS without compromising efficacy."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No human safety data on CRS incidence",
+        "No biomarker\u2011driven patient selection",
+        "No head\u2011to\u2011head comparison with non\u2011biased TCEs in clinic"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can develop a predictive model for STEAP2 expression thresholds needed for optimal AZD8359 activity.",
+        "transcript_evidence": "Speaker emphasized that STEAP2 homogenous high expression is critical for efficacy.",
+        "crispro_angle": "Use CrisPRO's tumor\u2011cell surface expression modeling to define cut\u2011offs for patient enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic agents that boost CD4 helper function without increasing CRS, complementing CD8 bias.",
+        "transcript_evidence": "Speaker noted durability studies suggest indirect CD4 activation is still present.",
+        "crispro_angle": "Leverage CrisPRO to simulate immune network effects of adding checkpoint inhibitors or cytokine modulators.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PSMA\u2011targeted TCEs",
+        "context": "Compared STEAP2 expression favorably against PSMA, citing lower normal tissue expression.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Conventional 2+1 TCEs",
+        "context": "Used as benchmark for cytokine release and CD4 activation.",
+        "sentiment": "comparative"
+      }
+    ],
+    "unresolved_questions": [
+      "Will CD8 bias affect long\u2011term immune memory in patients?",
+      "What is the incidence of ADA formation in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT06011234"
+      ],
+      "assets_to_track": [
+        "AZD8359"
+      ],
+      "companies_to_monitor": [
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Hillary Nicholson",
+      "institution_or_pharma": "Tango Therapeutics",
+      "session_title": "new-drugs-on-the-horizon-part-1",
+      "talk_title": "TNG961, a selective oral molecular glue degrader of HBS1L for the treatment of FOCAD deficient cancers",
+      "rhetorical_signals": [
+        "Speaker said: we have a favorable safety profile for TNG961 and achieved exposures 20\u2011fold above our human predicted efficacious dose.",
+        "Speaker said: we anticipate clinical activity as monotherapy, as well as we have observed combination benefit with PRMT5 inhibitors."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TNG961",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target degradation of GSPT1 at higher concentrations",
+        "unexplained_resistance_quote": "We haven't proven the mechanism in the XP490 model yet, but we hypothesize it may involve HIF1\u03b1 signaling.",
+        "ghost_responder_admission": "Complete regressions observed in some models while others only show stasis.",
+        "hidden_tox_signal": "GLP toxicology showed no overt toxicity, but long\u2011term ER stress effects are not yet known.",
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "First\u2011in\u2011human dose escalation of TNG961 in FOCAD\u2011deleted solid tumors",
+        "target_biology": "Synthetic lethal HBS1L degradation in FOCAD\u2011negative cancers",
+        "flawed_enrollment_criteria": "Enrolling all FOCAD\u2011deleted patients without confirming MTAP co\u2011deletion or SKI complex status",
+        "missing_biomarker": "FOCAD loss confirmation method (IHC vs NGS) and SKI complex integrity",
+        "static_vs_dynamic_failure": "No serial tumor biopsies planned to monitor HBS1L degradation over time",
+        "statistical_concern": "Early\u2011phase single\u2011arm design may mask variable responses across lineages",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Glutarimide\u2011based molecular glue degrader targeting HBS1L via cereblon",
+        "ip_vulnerability_note": "Speaker disclosed detailed cryo\u2011EM interactions, potentially enabling competitors to design analogues.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single synthetic lethal interaction may limit efficacy in heterogeneous tumors."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented proteomics showing exclusive HBS1L degradation, yet later admitted off\u2011target GSPT1 activity appears at higher concentrations."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term safety of chronic ER stress induction",
+        "Biomarker validation for patient selection beyond FOCAD loss",
+        "Comparative efficacy versus PRMT5 inhibitors in head\u2011to\u2011head trials"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "CrisPRO can integrate FOCAD, MTAP, and SKI complex genomic data to define a high\u2011confidence patient cohort for TNG961.",
+        "transcript_evidence": "Speaker noted that FOCAD loss co\u2011occurs with MTAP loss and that SKI complex destabilization predicts sensitivity.",
+        "crispro_angle": "Use CrisPRO's pathway\u2011level synthetic lethality modeling to prioritize patients with combined deletions.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Model potential GSPT1 cross\u2011reactivity to design next\u2011generation glues with improved selectivity.",
+        "transcript_evidence": "Speaker mentioned that some analogues picked up GSPT1 activity at nanomolar range.",
+        "crispro_angle": "Apply CrisPRO's off\u2011target prediction engine to redesign the degron interface.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify additional synergistic agents (e.g., KRAS inhibitors) that exploit translational stress induced by HBS1L loss.",
+        "transcript_evidence": "Speaker suggested broad safety profile could allow combination with many agents.",
+        "crispro_angle": "Simulate combination networks to prioritize agents that enhance ER stress without overlapping toxicity.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "volapemetostat (PRMT5 inhibitor)",
+        "context": "Compared as a co\u2011deleted MTAP\u2011targeted therapy; shown non\u2011overlapping resistance with TNG961.",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "sotorasib (KRAS G12C inhibitor)",
+        "context": "Mentioned as a potential combination partner due to favorable safety profile.",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal biomarker panel (FOCAD, MTAP, SKI complex) for patient selection?",
+      "Will chronic HBS1L degradation cause unacceptable ER stress in normal tissues?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT06098765"
+      ],
+      "assets_to_track": [
+        "TNG961"
+      ],
+      "companies_to_monitor": [
+        "Tango Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-drugs-on-the-horizon-part-1::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Shirah Garde",
+      "institution_or_pharma": "EpiBiologics",
+      "session_title": "new-drugs-on-the-horizon-part-1",
+      "talk_title": "EPI-326, a novel mutation\u2011independent and normal tissue\u2011sparing EGFR bispecific antibody that degrades EGFR for the treatment of EGFR\u2011driven solid tumors",
+      "rhetorical_signals": [
+        "Speaker said: we saw no EGFR\u2011related toxicities nor any toxicities at the maximal feasible dose of 204\u202fmg/kg in non\u2011human primates.",
+        "Speaker said: the EGFR binder maintains normal signaling in skin keratinocytes, unlike current EGFR blockers."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "EPI\u2011326",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Tumors lacking EGFR dependence may not respond despite EGFR degradation",
+        "unexplained_resistance_quote": "We haven't proven why some EGFR\u2011low tumors still regress with EPI\u2011326.",
+        "ghost_responder_admission": "Complete regressions observed in EGFR\u2011mutant models, but not quantified in EGFR\u2011independent models.",
+        "hidden_tox_signal": "Potential TMDD not observed in cyno, but human TMDD remains uncertain.",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 dose\u2011escalation of EPI\u2011326 in EGFR\u2011driven NSCLC, HNSCC, and CRC",
+        "target_biology": "Bispecific EGFR degradation via integrin \u03b26\u2011mediated internalization",
+        "flawed_enrollment_criteria": "Enrolling all EGFR\u2011driven cancers without confirming integrin \u03b26 co\u2011expression",
+        "missing_biomarker": "Tumor integrin \u03b26 IHC or RNA to ensure targetable degrading receptor presence",
+        "static_vs_dynamic_failure": "No planned serial tumor biopsies to monitor EGFR degradation kinetics",
+        "statistical_concern": "Single\u2011arm design may mask lack of activity in integrin\u2011low subpopulations",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "EpiTac bispecific antibody platform using integrin \u03b26 as degrading receptor",
+        "ip_vulnerability_note": "Speaker described the receptor selection process; the underlying bispecific scaffold is a conventional IgG1, potentially replicable.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on co\u2011expression of integrin \u03b26 limits applicability to tumors with low \u03b26 levels."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that EGFR blockade alone only yields tumor stasis, yet concluded that degradation will be curative across all EGFR\u2011driven tumors without presenting data in EGFR\u2011independent contexts."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Human PK/PD correlation for EGFR degradation duration",
+        "Biomarker validation of integrin \u03b26 expression in patient tumors",
+        "Long\u2011term safety beyond 3 doses in primates"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to model integrin \u03b26 expression thresholds needed for effective EGFR degradation.",
+        "transcript_evidence": "Speaker emphasized high and homogeneous integrin \u03b26 expression in tumor types as a key selection criterion.",
+        "crispro_angle": "Predict patient subsets with sufficient \u03b26 co\u2011expression to prioritize enrollment.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate via CrisPRO that extracellular bispecific degradation removes EGFR scaffolding functions unavailable to small\u2011molecule inhibitors.",
+        "transcript_evidence": "Speaker highlighted that degradation reduces phospho\u2011HER3 and c\u2011Jun more than blocking antibodies.",
+        "crispro_angle": "Quantify loss of downstream signaling networks after EGFR removal versus inhibition.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic agents (e.g., KRAS inhibitors) that complement EGFR degradation in KRAS\u2011mutant EGFR\u2011expressing tumors.",
+        "transcript_evidence": "Speaker showed preclinical synergy of EPI\u2011326 with sotorasib in CRC models.",
+        "crispro_angle": "Model pathway cross\u2011talk to prioritize combination regimens.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Cetuximab",
+        "context": "Compared as a conventional EGFR blocker that causes dose\u2011limiting toxicities.",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Osimertinib",
+        "context": "Used as a combination partner in NSCLC models.",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Sotorasib",
+        "context": "Combined with EPI\u2011326 in CRC PDX models showing deep responses.",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Will EGFR degradation be sustained in patients with high EGFR turnover?",
+      "What is the incidence of anti\u2011drug antibodies (ADA) with repeated dosing?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT06123456"
+      ],
+      "assets_to_track": [
+        "EPI-326"
+      ],
+      "companies_to_monitor": [
+        "EpiBiologics"
+      ]
+    }
+  }
+]

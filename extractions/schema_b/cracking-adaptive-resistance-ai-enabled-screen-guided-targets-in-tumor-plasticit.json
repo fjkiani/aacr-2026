@@ -1,0 +1,528 @@
+[
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Zaman Ahmed",
+      "institution_or_pharma": "MD Anderson",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "Chemical Trapping of Inactive GRB2 Dimer Unveils a Novel Cancer Vulnerability by Coupling Replication Stress to Antitumor Immunity",
+      "rhetorical_signals": [
+        "Speaker said: we don't care they're promiscuous. We just want to teach the model how to find binders versus non-binders",
+        "Speaker admitted: we have not yet shown how the inhibitor affects focal adhesion kinase directly"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "GRB2 dimer inhibitor (G232)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential off\u2011target effects on focal adhesion kinase not fully characterized",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "GRB2 dimer interface inhibitor",
+        "ip_vulnerability_note": "Selectivity relies solely on dimer interface; many SH2/SH3 proteins may share similar pockets",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad enrollment without biomarker stratification of GRB2 dependency"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that GRB2 knockout cells are sensitive to PARP inhibition, then concluded that the GRB2 inhibitor alone is sufficient for cytotoxicity without addressing PARP synergy"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No in vivo efficacy in immunocompetent models",
+        "Lack of pharmacokinetic/toxicology data"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "GRB2 inhibitor induces cGAS\u2011STING activation via replication stress; CrisPRO could model this innate immune activation to predict combinatorial partners",
+        "transcript_evidence": "Speaker said: inhibitor increases gamma H2AX and activates cGAS\u2011STING pathway",
+        "crispro_angle": "Use CrisPRO's pathway simulation to identify synergistic immune checkpoint or STING agonist combos",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "No biomarker used to select tumors dependent on GRB2 dimerization",
+        "transcript_evidence": "Speaker noted specificity concerns due to many SH2/SH3 proteins",
+        "crispro_angle": "Apply CrisPRO's predictive modeling to discover expression signatures of GRB2 dependency",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "KRAS G12C inhibitors",
+        "context": "mentioned as example of SH2/SH3 targeting challenges",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does chronic GRB2 inhibition lead to adaptive resistance via alternative signaling pathways?",
+      "What is the impact of GRB2 inhibition on normal tissue homeostasis in vivo?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GRB2 dimer inhibitor G232"
+      ],
+      "companies_to_monitor": [
+        "MD Anderson translational labs"
+      ]
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Fangjia Tong",
+      "institution_or_pharma": "Northwestern University",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "AI\u2011guided discovery and targeting of Plexin B2 in circulating tumor cell cluster\u2011driven metastasis",
+      "rhetorical_signals": [
+        "Speaker said: we have 80% true positive rate in predicting antibody performance, highlighting its strong power for antibody prediction",
+        "Speaker admitted: we only tested the best AI\u2011predicted antibody so far"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Anti\u2011plexin B2 antibody (lead candidate)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Potential expression of plexin B2 in normal monocytes and neurons may cause off\u2011target toxicity not yet evaluated",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "We observed significant reduction in clusters, but did not report any non\u2011responders",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "AI\u2011guided antibody discovery pipeline",
+        "ip_vulnerability_note": "Relies heavily on AlphaFold 3 and proprietary docking scores; competitors could replicate with open\u2011source models",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Single\u2011target approach; loss of plexin B2 expression could render therapy ineffective"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed strong in vitro blockade of CTC clusters by anti\u2011plexin B2, then concluded that targeting plexin B2 alone will be sufficient without addressing potential redundancy with other adhesion molecules"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No post\u2011treatment patient samples to assess target loss",
+        "Toxicity assessment in normal tissues not presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "If plexin B2 antibodies fail due to target loss, CrisPRO can repurpose the AI pipeline to design antibodies against the up\u2011regulated DL3 target",
+        "transcript_evidence": "Speaker identified DL3 up\u2011regulation in plexin B2\u2011low neuroendocrine clusters",
+        "crispro_angle": "Leverage existing antibody language model to rapidly generate DL3\u2011specific candidates",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Lack of prospective biomarker to select patients with high plexin B2\u2011cluster activity",
+        "transcript_evidence": "Speaker noted plexin B2 enrichment in CTC clusters but no clinical assay described",
+        "crispro_angle": "Develop CrisPRO\u2011derived predictive signature integrating CTC\u2011cluster transcriptomics",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Enfortumab vedotin (Nectin\u20114 ADC)",
+        "context": "mentioned as a successful ADC for bladder cancer",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "Does chronic blockade of plexin B2 affect normal immune cell trafficking?",
+      "Can tumors switch to alternative adhesion pathways after plexin B2 inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Anti\u2011plexin B2 antibodies",
+        "DL3 targeting agents"
+      ],
+      "companies_to_monitor": [
+        "Northwestern translational labs"
+      ]
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Henry Chen",
+      "institution_or_pharma": "Johns Hopkins University",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "SWALL\u20111 controls epigenetic methylation, mitochondrial metabolism, and antitumor immunity in IDH mutant gliomas",
+      "rhetorical_signals": [
+        "Speaker said: we have not tested other IDH mutations beyond R132H",
+        "Speaker admitted: we do not know why SWELL\u20111 expression is higher in IDH mutant tumors"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "SWELL\u20111 (LRRC8A/C) channel inhibition",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Compensatory ion channels (e.g., other LRRC8 subunits) may maintain D\u20112HG export",
+        "unexplained_resistance_quote": "We noticed a 25% increase upon AD knockdown, indicating channel composition flexibility",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Preclinical IDH\u2011mutant glioma models",
+        "target_biology": "SWELL\u20111 mediated D\u20112HG export",
+        "flawed_enrollment_criteria": "No patient stratification by IDH1 vs IDH2 mutation type",
+        "missing_biomarker": "LRRC8 subunit expression profiling",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "SWELL\u20111 channel as therapeutic target",
+        "ip_vulnerability_note": "Channel is ubiquitously expressed; selectivity may be limited",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad inhibition may affect normal tissues due to VRAC's role in cell volume regulation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that SWELL\u20111 knockout reduces D\u20112HG release and improves immune activation, yet concluded that targeting SWELL\u20111 will only benefit IDH1\u2011mutant gliomas without addressing IDH2 context"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Lack of in vivo pharmacologic inhibitor data",
+        "No human tumor biomarker validation of SWELL\u20111 expression"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high SWELL\u20111/LRRC8C expression to enrich for responders",
+        "transcript_evidence": "Speaker noted ~1\u2011fold increase of SWELL\u20111 expression in IDH mutant tumors from TCGA",
+        "crispro_angle": "Use CrisPRO to integrate TCGA expression and metabolomics to generate a predictive score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Model compensatory up\u2011regulation of alternative LRRC8 subunits that may bypass SWELL\u20111 inhibition",
+        "transcript_evidence": "Speaker observed AD knockdown increased D\u20112HG release via AC channel formation",
+        "crispro_angle": "Simulate channel subunit composition dynamics to design combination strategies",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "PARP inhibitors",
+        "context": "Synergy with GRB2 inhibitor discussed earlier",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will pharmacologic SWELL\u20111 blockade recapitulate genetic knockout effects?",
+      "How does SWELL\u20111 inhibition affect normal brain cells and blood\u2011brain barrier integrity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "SWELL\u20111 channel inhibitors",
+        "LRRC8 subunit modulators"
+      ],
+      "companies_to_monitor": [
+        "Companies developing VRAC modulators"
+      ]
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "Xiaoxu Zhang",
+      "institution_or_pharma": "Beckman Research Institute of the City of Hope",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "eIF4A1 inhibition to target translation of serine biosynthesis in AML",
+      "rhetorical_signals": [
+        "Speaker said: Zoledronate showed no impact on normal hematopoietic cells",
+        "Speaker admitted: we have not performed detailed systemic toxicity studies in mice"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Zoledronate (eIF4A1 inhibitor)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential off\u2011target effects on bone metabolism not evaluated in AML models",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker minimized toxicity by only monitoring mouse weight",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Zoledronate repurposed as eIF4A1 inhibitor",
+        "ip_vulnerability_note": "Zoledronate is a known bone\u2011targeting bisphosphonate; its chemistry may limit tumor penetration",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of tumor\u2011selective delivery mechanism"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that >90% of eIF4A1 is free of eIF4F complex, yet concluded that targeting eIF4A1 will not affect global cap\u2011dependent translation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical trial data",
+        "Absence of pharmacodynamic biomarkers in patients"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine eIF4A1 inhibition with MCL1 inhibitors to exploit synthetic lethality",
+        "transcript_evidence": "Speaker identified MCL1 as top sensitizer in CRISPR screen",
+        "crispro_angle": "CrisPRO can prioritize dosing schedules for synergistic combos",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify AML subsets with high free eIF4A1/YB\u20111 complex activity",
+        "transcript_evidence": "Speaker showed YB\u20111 interaction drives PHGDH mRNA stability",
+        "crispro_angle": "Use CrisPRO to develop a transcriptomic signature predicting response to zoledronate",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MCL1 inhibitors",
+        "context": "Synergistic partner in preclinical studies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Will long\u2011term eIF4A1 inhibition affect normal protein synthesis in non\u2011hematopoietic tissues?",
+      "Can resistance emerge via up\u2011regulation of alternative RNA helicases?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Zoledronate",
+        "MCL1 inhibitors"
+      ],
+      "companies_to_monitor": [
+        "City of Hope",
+        "Pharma companies developing eIF4A1 inhibitors"
+      ]
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::5",
+    "talk_metadata": {
+      "speaker_name": "Emanuela Ghia",
+      "institution_or_pharma": "University of California San Diego",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "Targeting cancer stem cells via anti\u2011Rho2 antibody to overcome ADC resistance in triple\u2011negative breast cancer",
+      "rhetorical_signals": [
+        "Speaker said: anti\u2011Rho2 antibody is anti\u2011human and works in mouse PDXs",
+        "Speaker admitted: the kinase activity of Rho2 is still under investigation"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Anti\u2011Rho2 monoclonal antibody",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Unclear whether antibody blocks ligand binding or induces receptor internalization; downstream signaling not fully mapped",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Rho2\u2011negative cells did not form tumors, but no data on potential escape via Rho1 or other pathways",
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_data_gap"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Anti\u2011Rho2 antibody platform",
+        "ip_vulnerability_note": "Rho2 is an orphan receptor; lack of structural data may limit antibody optimization",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Single\u2011antigen approach; tumors may switch to Rho1 or other stemness pathways"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that anti\u2011Rho2 reduces stemness markers, yet concluded that targeting Rho2 alone will eradicate therapy\u2011resistant cells without addressing potential compensatory pathways"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No clinical safety data for anti\u2011Rho2 antibody",
+        "Mechanistic proof of receptor blockade missing"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine anti\u2011Rho2 with APR\u2011246 (p53 reactivator) to exploit redox vulnerability",
+        "transcript_evidence": "Speaker showed anti\u2011Rho2 lowers NRF2 targets and sensitizes cells to APR\u2011246",
+        "crispro_angle": "CrisPRO can model redox network to predict optimal dosing ratios",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop assay to quantify surface Rho2 on patient tumors for enrollment",
+        "transcript_evidence": "Speaker used CITE\u2011seq to identify Rho2\u2011positive cells",
+        "crispro_angle": "Leverage CrisPRO to translate CITE\u2011seq signatures into a clinical IHC panel",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Enfortumab vedotin",
+        "context": "Discussed as ADC with resistance due to target loss",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Does anti\u2011Rho2 affect normal embryonic\u2011like cells in adult tissues?",
+      "Can tumors up\u2011regulate Rho1 to bypass Rho2 blockade?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Anti\u2011Rho2 antibody",
+        "APR\u2011246"
+      ],
+      "companies_to_monitor": [
+        "UCSD translational labs"
+      ]
+    }
+  },
+  {
+    "talk_id": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit::unknown::6",
+    "talk_metadata": {
+      "speaker_name": "Brian Cunningham",
+      "institution_or_pharma": "University of Vermont Cancer Center",
+      "session_title": "cracking-adaptive-resistance-ai-enabled-screen-guided-targets-in-tumor-plasticit",
+      "talk_title": "Deletion of Peroxiredoxin 3 Impairs Mitochondrial Bioenergetics and Tumor Growth in Mesothelioma",
+      "rhetorical_signals": [
+        "Speaker said: thiostrepton is insoluble and challenging to formulate, but we succeeded in a local formulation",
+        "Speaker admitted: we have limited patient numbers in Phase\u202f1, making biomarker validation difficult"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Thiostrepton (RS\u2011021)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Potential systemic toxicity due to off\u2011target covalent modification of other cysteine proteins",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Patients with high SLC7A11 expression were non\u2011responders",
+        "hidden_tox_signal": "Speaker minimized systemic exposure by intrapleural delivery",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "MITOPE Phase\u202f1 intrapleural thiostrepton trial",
+        "target_biology": "PRDX3 inhibition in mesothelioma",
+        "flawed_enrollment_criteria": "No pre\u2011selection for PRDX3 high\u2011expressing tumors",
+        "missing_biomarker": "Baseline PRDX3 protein/activity levels",
+        "static_vs_dynamic_failure": "No serial monitoring of PRDX3 cross\u2011linking beyond pleural effusion samples",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Thiostrepton covalent PRDX3 inhibitor",
+        "ip_vulnerability_note": "Covalent mechanism may affect other peroxiredoxins; scaffold is chemically unstable",
+        "scale_or_manufacturing_bottleneck": "Low solubility limits large\u2011scale production",
+        "clinical_strategy_weakness": "Local delivery restricts applicability to pleural disease only"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PRDX3 knockout abolishes tumor growth in mice, yet concluded that systemic thiostrepton may be viable despite its poor pharmacokinetics"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of systemic safety data",
+        "No biomarker\u2011driven patient selection"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use SLC7A11 expression to select patients likely to respond to thiostrepton",
+        "transcript_evidence": "Speaker identified SLC7A11 up\u2011regulation in non\u2011responding explants",
+        "crispro_angle": "CrisPRO can integrate RNA\u2011seq and proteomics to build a predictive response model",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Develop next\u2011generation PRDX3 inhibitors with improved solubility and selectivity using AI\u2011driven scaffold optimization",
+        "transcript_evidence": "Speaker mentioned ongoing SAR to reduce off\u2011target effects",
+        "crispro_angle": "Apply CrisPRO's generative chemistry module to design covalent warheads specific for PRDX3 active site cysteines",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Thiostrepton (RS\u2011021)",
+        "context": "Investigational PRDX3 inhibitor",
+        "sentiment": "critical"
+      },
+      {
+        "name": "SLC7A11 inhibitors (e.g., erastin)",
+        "context": "Synergistic partner in preclinical studies",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can systemic PRDX3 inhibition be achieved without off\u2011target toxicity?",
+      "What is the role of PRDX3 in normal mesothelial cells and potential side effects of chronic inhibition?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTXXXXXXX"
+      ],
+      "assets_to_track": [
+        "RS\u2011021 (thiostrepton)",
+        "PRDX3 expression assays"
+      ],
+      "companies_to_monitor": [
+        "University of Vermont translational team",
+        "Pharma partners developing PRDX3 inhibitors"
+      ]
+    }
+  }
+]

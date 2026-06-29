@@ -1,0 +1,630 @@
+[
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::hung::1",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "Targeting RNA Polymerase I and BCL2 synergy in acute myeloid leukemia",
+    "speaker": {
+      "name": "Putzer Hung",
+      "affiliation": "University of Pennsylvania, Postdoctoral Fellow, Palkar Lab",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "AML"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "targeted_therapy",
+      "combination_therapy",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "POLR1A",
+        "alteration": "",
+        "pathway": "RNA_Pol_I_transcription",
+        "modality": "degrader_other",
+        "compound_name": "dTAG",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "",
+        "pathway": "apoptosis_regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "venetoclax",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AML cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HOXA9ER AML",
+        "genotype_or_key_features": "HOXA9-ER fusion, TP53 null"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "primary AML bone marrow aspirates",
+        "genotype_or_key_features": "various AML subtypes"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Pol I degradation reduces rRNA synthesis, inducing differentiation and G1 arrest in AML cells, and synergizes with BCL2 inhibition to trigger apoptosis independent of TP53 status.",
+    "readouts": [
+      "FISH_flow",
+      "single-cell RNA-seq",
+      "western_blot",
+      "dose_response_curves",
+      "synergy_plot"
+    ],
+    "key_findings": [
+      "Nascent and mature rRNA levels are elevated in primary AML blasts versus healthy hematopoietic cells.",
+      "HOXA9 activation drives Pol I expression and rRNA synthesis; HOXA9 inactivation reduces rRNA production before cell cycle changes.",
+      "Targeted degradation of POLR1A with dTAG decreases rRNA synthesis, induces G1 arrest, differentiation, and reduces viability.",
+      "Pol I degradation synergizes with venetoclax (Z-score >10) to enhance AML cell killing, independent of TP53 mutation."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Pol I inhibition may have a therapeutic window due to AML addiction to rRNA synthesis."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "venetoclax",
+        "rationale": "BCL2 inhibition combined with Pol I degradation may overcome apoptosis resistance in AML.",
+        "phenotype": "synergistic lethal effect in vitro, left-shifted dose-response curves",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the therapeutic window for Pol I inhibition in vivo?",
+      "Can Pol I degradation overcome venetoclax resistance in patient-derived xenografts?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::zhao::2",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "LncRNA CYP4A22-AS1/YBX1/PK1 axis drives radiation resistance in cervical adenocarcinoma",
+    "speaker": {
+      "name": "Dr. Zhao",
+      "affiliation": "University of Texas MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "cervical adenocarcinoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "radiotherapy_resistance",
+      "lncRNA",
+      "metabolism",
+      "biomarker_development",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CYP4A22-AS1",
+        "alteration": "",
+        "pathway": "lncRNA_regulation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "cervical adenocarcinoma cells",
+        "target_novelty": "novel_target"
+      },
+      {
+        "gene_or_protein": "YBX1",
+        "alteration": "",
+        "pathway": "transcription_factor",
+        "modality": "protein_interaction",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "CYP4A22-AS1 mediated regulation",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PK1",
+        "alteration": "",
+        "pathway": "glycolysis",
+        "modality": "protein_expression",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "downstream of CYP4A22-AS1/YBX1",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "CYP4A22-AS1 expression",
+        "type": "prognostic",
+        "finding": "high expression correlates with shorter overall and disease-free survival in cervical adenocarcinoma patients"
+      },
+      {
+        "name": "PK1 protein level",
+        "type": "prognostic",
+        "finding": "high PK1 predicts poorer disease-free and progression-free survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "Cervical adenocarcinoma cell lines (knockdown/overexpression)",
+        "genotype_or_key_features": "CYP4A22-AS1 manipulated"
+      },
+      {
+        "model_type": "mouse",
+        "name": "Cervical adenocarcinoma xenograft",
+        "genotype_or_key_features": "CYP4A22-AS1 overexpression or knockdown"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CYP4A22-AS1 binds YBX1, enhancing transcription of PK1, which drives glycolysis and confers radiation resistance; depletion of the lncRNA or PK1 sensitizes cells to radiation-induced DNA damage and apoptosis.",
+    "readouts": [
+      "CCK-8",
+      "EdU",
+      "TUNEL",
+      "Western_blot (DNA damage markers)",
+      "Seahorse_glycolysis_assay",
+      "mass_spectrometry",
+      "RNA_pull-down",
+      "RIP",
+      "ChIP-qPCR",
+      "FRET"
+    ],
+    "key_findings": [
+      "CYP4A22-AS1 is upregulated in cervical adenocarcinoma and predicts poor survival.",
+      "Knockdown of CYP4A22-AS1 increases radiation-induced apoptosis and DNA damage markers.",
+      "CYP4A22-AS1 regulates glycolysis via upregulation of PK1 through YBX1 interaction.",
+      "PK1 depletion reverses glycolytic enhancement and radiosensitizes CYP4A22-AS1 overexpressing cells.",
+      "In vivo, CYP4A22-AS1 overexpression accelerates tumor growth in mouse models."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "CYP4A22-AS1 mediates resistance to radiation by metabolic reprogramming."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Does the CYP4A22-AS1/YBX1/PK1 axis operate in other tumor types?",
+      "Can pharmacologic inhibition of PK1 sensitize tumors to radiotherapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::ziyadeh::3",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "Ultrasmall lactoferrin nanoassemblies delivering miR-196b antagomir and COP TF II inhibitor for RCC CAF remodeling",
+    "speaker": {
+      "name": "Ahmed Ziyadeh",
+      "affiliation": "Amherst College (Zoughbi Lab, Harvard Medical School)",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "renal cell carcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "tumor_microenvironment",
+      "nanomedicine",
+      "microRNA",
+      "combination_therapy",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "miR-196b",
+        "alteration": "",
+        "pathway": "microRNA_regulation",
+        "modality": "antagomir",
+        "compound_name": "miR-196b antagomir",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RCC-associated fibroblasts",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "COP TF II",
+        "alteration": "",
+        "pathway": "fibroblast_activation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "CIA1",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RCC CAFs",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "patient-derived RCC CAFs",
+        "genotype_or_key_features": "primary CAFs"
+      },
+      {
+        "model_type": "mouse",
+        "name": "orthotopic RENCA syngeneic RCC model",
+        "genotype_or_key_features": "tumor in kidney"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "An ultra\u2011small lactoferrin\u2011stabilized nanoassembly co\u2011delivers a miR\u2011196b antagomir and the COP TF\u202fII inhibitor CIA1 to RCC cancer\u2011associated fibroblasts, suppressing activation markers, ECM production, and secreted cytokines, thereby reducing CAF\u2011driven tumor growth and enhancing immune infiltration.",
+    "readouts": [
+      "Cryo-EM",
+      "zeta_potential",
+      "size_distribution",
+      "Western_blot (\u03b1\u2011SMA, PDGF, collagen I)",
+      "ELISA (IL\u20116, IL\u20118, CXCL12)",
+      "wound_healing assay",
+      "in_vivo imaging",
+      "tumor volume/weight",
+      "IHC (CD8, CD11c, CD335, FoxP3)"
+    ],
+    "key_findings": [
+      "Nanoassembly size ~6.3\u202fnm enables renal filtration and accumulation in tumor kidney.",
+      "Both miR\u2011196b antagomir and CIA1 independently down\u2011regulate CAF activation (\u03b1\u2011SMA) and ECM markers (collagen\u202fI, LOX).",
+      "Conditioned media from treated CAFs reduces RCC cell apoptosis resistance, EMT markers, and migration.",
+      "In orthotopic RENCA mice, combined nanoassembly markedly reduces tumor volume and weight without systemic toxicity.",
+      "Treatment increases intratumoral CD8\u207a T cells, dendritic cells, and NK cells while decreasing Tregs and suppressive myeloid cells."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "immune checkpoint inhibitor (immunotherapy)",
+        "rationale": "CAF remodeling may enhance immune infiltration and response to checkpoint blockade",
+        "phenotype": "greater tumor reduction when combined with immunotherapy versus immunotherapy alone",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can targeting PDGFR\u03b2 improve nanoassembly tumor specificity?",
+      "What is the optimal dosing schedule for sustained CAF reprogramming?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::schwankert::4",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "Mitochondrial tRNA\u2011Arg fragments modulate breast cancer metastasis",
+    "speaker": {
+      "name": "Katie Schwankert",
+      "affiliation": "University of Kansas Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "mitochondrial_biology",
+      "noncoding_RNA",
+      "metastasis",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "mt-tRNA^Arg",
+        "alteration": "",
+        "pathway": "mitochondrial_translation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "mouse strains with mitochondrial SNPs",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "MINX (mitochondrial nuclear exchange) mice",
+        "genotype_or_key_features": "Mismatched nuclear and mitochondrial genomes (e.g., C57BL/6 nuclear, FVB mitochondria)"
+      },
+      {
+        "model_type": "mouse",
+        "name": "PyMT breast cancer model",
+        "genotype_or_key_features": "MMTV\u2011PyMT transgene on various mitochondrial backgrounds"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Strain\u2011specific SNPs in mitochondrial tRNA^Arg alter its secondary structure, influencing cleavage into ~50\u2011nt fragments; these fragments correlate with primary tumor latency and pulmonary metastasis, suggesting a non\u2011coding RNA signaling role in metastatic progression.",
+    "readouts": [
+      "Northern_blot",
+      "small_RNA_seq (with enzymatic end\u2011repair)",
+      "mass_spectrometry",
+      "AlphaFold modeling",
+      "metastatic burden quantification in mice"
+    ],
+    "key_findings": [
+      "Mitochondrial SNPs in tRNA^Arg D\u2011loop differ among mouse strains and associate with metastatic burden.",
+      "Northern blots reveal 40\u201150\u202fnt tRNA^Arg fragments whose abundance varies with mitochondrial genotype.",
+      "Enzymatic end\u2011repair and demethylation enable detection of these fragments by small\u2011RNA\u2011seq.",
+      "MINX mice with mismatched mitochondria show altered primary tumor latency and number of lung metastases.",
+      "Fragment production is higher in strains with higher metastatic propensity, implicating a functional role."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What endonuclease generates the mt\u2011tRNA^Arg fragments?",
+      "Do the fragments act in stromal cells or tumor cells to promote metastasis?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::ando::5",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "Urinary extracellular vesicle microRNA panel for early detection and prognosis of lung cancer",
+    "speaker": {
+      "name": "Yoriko Ando",
+      "affiliation": "Clive Inc., Japan",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "clinical_trial",
+    "topic_categories": [
+      "liquid_biopsy",
+      "early_detection",
+      "biomarker_development",
+      "microRNA"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "Urinary EV miRNA signature (11 miRNAs, final 3\u2011miRNA panel)",
+        "type": "predictive",
+        "finding": "AUC 0.94 for cancer vs control; early\u2011stage sensitivity 88% and specificity 87%"
+      },
+      {
+        "name": "Three\u2011miRNA prognostic panel",
+        "type": "prognostic",
+        "finding": "Hazard ratio 8.3 for recurrence\u2011free survival; 3\u2011year AUC 0.80"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "278 lung cancer patients + 213 non\u2011cancer controls",
+        "genotype_or_key_features": "Stage 0\u2011I NSCLC predominant, urine EV miRNA sequencing"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "111 surgically resected lung cancer patients (stage I\u2011II)",
+        "genotype_or_key_features": "Follow\u2011up up to 4\u202fyears for recurrence"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "AUC",
+        "value": "0.94",
+        "confidence_interval": "",
+        "n": "n=278 cancer, n=213 control (training)",
+        "population": "lung cancer vs non\u2011cancer",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Sensitivity",
+        "value": "88%",
+        "confidence_interval": "",
+        "n": "n=~140 early\u2011stage cases",
+        "population": "stage 0\u2011I NSCLC",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Specificity",
+        "value": "87%",
+        "confidence_interval": "",
+        "n": "n=213 controls",
+        "population": "non\u2011cancer controls",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Hazard Ratio (RFS)",
+        "value": "8.3",
+        "confidence_interval": "",
+        "n": "n=111",
+        "population": "stage I\u2011II resected lung cancer",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      },
+      {
+        "metric": "Hazard Ratio (OS)",
+        "value": "9.5",
+        "confidence_interval": "",
+        "n": "n=111",
+        "population": "stage I\u2011II resected lung cancer",
+        "comparator": "",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Urinary extracellular vesicles enriched for tumor\u2011derived miRNAs provide a non\u2011invasive source of cancer\u2011specific signatures; a machine\u2011learning model using selected miRNAs discriminates early\u2011stage lung cancer from controls and stratifies recurrence risk after surgery.",
+    "readouts": [
+      "PEG\u2011based EV precipitation",
+      "small_RNA_seq",
+      "mass_spectrometry (tRNA competition)",
+      "machine_learning classification",
+      "Cox regression"
+    ],
+    "key_findings": [
+      "Urinary EV isolation increases miRNA read proportion fivefold.",
+      "A 11\u2011miRNA feature set yields AUC 0.94 for cancer detection; performance holds in age\u2011matched subset.",
+      "Three\u2011miRNA prognostic panel (selected from 11) predicts recurrence\u2011free survival with HR 8.3 and 3\u2011year AUC 0.80.",
+      "Age and other clinical covariates do not confound the detection score."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will the miRNA panel retain performance in broader, multi\u2011ethnic cohorts?",
+      "Can longitudinal urine sampling monitor treatment response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Clive Inc."
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke::pal::6",
+    "session_title": "noncoding-rna-regulation-of-cancer-hallmarks-therapeutic-resistance-and-biomarke",
+    "talk_title": "Multimodal miR\u201115a conjugates overcome olaparib resistance in epithelial ovarian cancer",
+    "speaker": {
+      "name": "Amartya Pal",
+      "affiliation": "Stony Brook University, Graduate Student",
+      "role": "trainee",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "epithelial ovarian cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "microRNA",
+      "multimodal_therapy",
+      "combination_therapy",
+      "DNA_damage_repair",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "BCL2",
+        "alteration": "",
+        "pathway": "apoptosis_regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "olaparib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PARP inhibitor\u2011resistant ovarian cancer",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "CHEK1",
+        "alteration": "",
+        "pathway": "DNA_damage_checkpoint",
+        "modality": "microRNA_target",
+        "compound_name": "miR\u201115a mimic (modified)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "E1",
+        "alteration": "",
+        "pathway": "DNA_repair",
+        "modality": "microRNA_target",
+        "compound_name": "miR\u201115a mimic (modified)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "ovarian cancer cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "panel of ovarian cancer lines (various BRCA/P53 status)",
+        "genotype_or_key_features": "including olaparib\u2011resistant derivatives"
+      },
+      {
+        "model_type": "mouse",
+        "name": "metastatic ovarian cancer model (parental and olaparib\u2011resistant SCOP3 cells)",
+        "genotype_or_key_features": "intraperitoneal dissemination"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A chemically modified miR\u201115a mimic incorporates 5\u2011FU, gemcitabine, and methotrexate, delivering tumor\u2011suppressive miRNA activity plus chemotherapeutic payloads; it down\u2011regulates DNA repair/checkpoint proteins (CHEK1, E1) and induces DNA damage, forcing cells into mitotic catastrophe and synergizing with olaparib.",
+    "readouts": [
+      "cell_viability (nanomolar IC50)",
+      "apoptosis assays",
+      "cell_cycle analysis",
+      "RNA\u2011seq with KEGG",
+      "Western_blot (CHEK1, E1, CDK1)",
+      "Bliss synergy analysis",
+      "in vivo tumor burden (weight, volume)",
+      "mouse weight monitoring"
+    ],
+    "key_findings": [
+      "Modified miR\u201115a reduces viability of ovarian cancer cells at low nanomolar concentrations without delivery vehicle.",
+      "The construct retains potency in olaparib\u2011resistant cells, showing similar IC50 values.",
+      "RNA\u2011seq reveals up\u2011regulation of DNA damage pathways and down\u2011regulation of WNT, mTOR, AMPK signaling.",
+      "Western blots confirm down\u2011regulation of CHEK1 and E1, and activation of CDK1/CDC25A.",
+      "Bliss analysis demonstrates strong synergy between the modified miR\u201115a and olaparib.",
+      "In vivo, treatment (3.75\u202fmg/kg) markedly suppresses metastatic tumor growth in both parental and resistant models with no observable toxicity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Modified miR\u201115a overcomes olaparib resistance regardless of BRCA or TP53 status."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "olaparib",
+        "rationale": "Combined DNA damage from PARP inhibition with checkpoint abrogation by miR\u201115a targets CHEK1/E1",
+        "phenotype": "synergistic tumor cell killing (Bliss score >10)",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the pharmacokinetic profile of the modified miR\u201115a in vivo?",
+      "Can the approach be translated to other PARP\u2011resistant tumor types?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

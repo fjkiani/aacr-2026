@@ -1,0 +1,158 @@
+[
+  {
+    "talk_id": "agentic-ai-as-the-oncologist-clinical-decision-support-and-human-ai-collaboratio::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Dr. Dorin Comaniciu",
+      "institution_or_pharma": "Siemens Healthineers",
+      "session_title": "Agentic AI as the Oncologist: Clinical Decision Support and Human AI Collaboration",
+      "talk_title": "Agentic AI in Radiation Oncology: From Imaging to Therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"We see a lot of our focus is on non-communicable diseases such as neurodegenerative, cardiovascular, stroke, and the focus of today, cancer.\"",
+        "Speaker said: \"I believe it's always very important to keep everything in a context.\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Siemens Healthineers AI-powered medical devices portfolio",
+        "ip_vulnerability_note": "Speaker highlighted >100 AI\u2011powered devices approved in the US, indicating reliance on a large but potentially commoditized AI IP base.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad deployment across many indications without biomarker\u2011selected patient cohorts may dilute clinical signal."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No clinical efficacy or safety data presented for AI RT planning system",
+        "No comparative outcomes versus standard planning workflow"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Siemens AI RT planning accelerates plan generation but lacks integration of patient\u2011specific radiobiologic biomarkers that could guide plan quality and toxicity prediction.",
+        "transcript_evidence": "Speaker said: \"We have technology where the entire optimization, starting from the simulation to the deliverable plan, goes in under a second on a standard hardware.\"",
+        "crispro_angle": "CrisPRO can overlay molecular and imaging biomarkers onto the rapid planning workflow to prioritize plans that minimize predicted toxicity while maintaining efficacy.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Opportunity to embed real\u2011time outcome monitoring into AI\u2011driven scheduling trials to prove safety and efficacy of ultra\u2011fast plan generation.",
+        "transcript_evidence": "Speaker said: \"When the system doesn't give me an answer immediately, then due to the time pressure, I need to switch my work to a different problem and come back later.\"",
+        "crispro_angle": "CrisPRO's simulation platform can generate prospective trial arms that compare AI\u2011accelerated planning versus conventional planning with predefined safety endpoints.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AI RT planning system (Siemens Healthineers)"
+      ],
+      "companies_to_monitor": [
+        "Siemens Healthineers"
+      ]
+    }
+  },
+  {
+    "talk_id": "agentic-ai-as-the-oncologist-clinical-decision-support-and-human-ai-collaboratio::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Dr. Taehyong Hwang",
+      "institution_or_pharma": "Vanderbilt University Medical Center",
+      "session_title": "Agentic AI as the Oncologist: Clinical Decision Support and Human AI Collaboration",
+      "talk_title": "4D Oncology: Real\u2011Time Visualization of Drug Delivery and Response",
+      "rhetorical_signals": [
+        "Speaker said: \"This is not a prediction. This is not a simulation. This is real tumor, real drug that we treat today for patient.\"",
+        "Speaker said: \"We want to embed it in clinical setting, in standard care. That's what we do. We don't interrupt any standard care mechanisms or asking any additional material.\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Trop2 ADC",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Lack of lysosomal expression in patient tumor prevents linker cleavage and payload release",
+        "unexplained_resistance_quote": "Speaker said: \"The reason why Trop2 ADC didn't work is not because of ADC for Trop2 is bad. It's because it's patient tumor. Those patient tumor cell doesn't express lysosome, which means that we cannot cleave this linker, and then we cannot release payload.\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "N/A",
+        "target_biology": "ADC efficacy in gastric and breast cancer patients",
+        "flawed_enrollment_criteria": "Enrolling patients based solely on standard histology without pre\u2011screening for lysosomal activity or stromal barriers",
+        "missing_biomarker": "Lysosomal activity / stromal density biomarkers to predict ADC penetration",
+        "static_vs_dynamic_failure": "No serial biopsies or imaging to track dynamic changes in drug penetration over treatment course",
+        "statistical_concern": null,
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "LG Axon AI platform for 4D drug visualization",
+        "ip_vulnerability_note": "Speaker disclosed that the platform relies heavily on proprietary LG AI models and large\u2011scale data generation, which may be difficult for competitors to replicate without similar partnerships.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Requires generation of patient\u2011derived organoids and microfluidic assays for each case, potentially limiting scalability and rapid turnaround."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed real\u2011time imaging of ADC internalization and lysosomal processing, then concluded that \"we can now decide which drug will work for my patient\" despite acknowledging that many tumors lack lysosomal activity, which contradicts the observed mechanistic limitation."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparison to standard of care",
+        "Limited patient numbers; scalability of organoid testing not demonstrated",
+        "Long\u2011term outcome data (OS/PFS) not presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can model lysosomal deficiency and stromal barriers to predict ADC failure and suggest alternative therapeutic strategies.",
+        "transcript_evidence": "Speaker said: \"The reason why Trop2 ADC didn't work is ... tumor cell doesn't express lysosome...\"",
+        "crispro_angle": "CrisPRO's computational spine can integrate multi\u2011omics and spatial data to flag lysosomal insufficiency before ADC selection.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO's ability to simulate 4D drug distribution across heterogeneous tumor microenvironments, offering a more scalable alternative to patient\u2011derived organoid assays.",
+        "transcript_evidence": "Speaker said: \"We generate data within seven days... we can profile and prioritize all existing 56 FDA approved ADC drugs.\"",
+        "crispro_angle": "CrisPRO can provide rapid in silico predictions of ADC penetration and efficacy, reducing dependence on labor\u2011intensive wet\u2011lab assays.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "LG AI Research",
+        "context": "Co\u2011development partner for the agentic AI platform and large language model integration",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How will the platform be validated in a prospective clinical trial with survival endpoints?",
+      "What is the cost and turnaround time for generating patient\u2011specific organoids at scale?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "LG Axon AI platform",
+        "Vanderbilt 4D oncology pipeline"
+      ],
+      "companies_to_monitor": [
+        "LG AI Research",
+        "Vanderbilt University Medical Center"
+      ]
+    }
+  }
+]

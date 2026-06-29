@@ -1,0 +1,643 @@
+[
+  {
+    "talk_id": "advances-in-cancer-epigenetics::xie::1",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "CHD7 drives lineage plasticity and replication competence in neuroendocrine prostate cancer",
+    "speaker": {
+      "name": "Ace Xie",
+      "affiliation": "University of British Columbia, Dr. Weizhu Wan's lab",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "CHD7",
+        "alteration": "",
+        "pathway": "chromatin_remodeling",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NEPC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "PDX",
+        "name": "321-321 RPDX",
+        "genotype_or_key_features": "caspase-driven transition from adenoma to NEPC"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "CHD7 is progressively up\u2011regulated during androgen deprivation\u2011induced NEPC development, where it maintains open chromatin at lineage and replication stress genes, promotes NE transcription factor expression, and sustains ATR checkpoint activity, thereby driving lineage plasticity and cisplatin resistance.",
+    "readouts": [
+      "RNA\u2011seq",
+      "ATAC\u2011seq",
+      "ChIP\u2011seq",
+      "Western blot",
+      "cell viability assays",
+      "IC50 assays"
+    ],
+    "key_findings": [
+      "CHD7 expression is minimal in pre\u2011castration prostate tissue, induced early post\u2011castration, and sustained in terminal NEPC lesions.",
+      "CHD7 knockdown reduces NE marker expression, cell growth, DNA synthesis, and increases DNA damage and apoptosis.",
+      "CHD7 directly binds and maintains accessibility at ~1,805 loci, regulating 563 transcriptional targets involved in neural fate and DNA replication.",
+      "Loss of CHD7 impairs ATR checkpoint phosphorylation and sensitizes NEPC cells to cisplatin (IC50 markedly reduced).",
+      "Combining cisplatin with ATR checkpoint inhibition further decreases viability compared with either agent alone."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "CHD7 up\u2011regulation confers cisplatin tolerance via ATR checkpoint activation."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cisplatin",
+        "rationale": "CHD7 maintains ATR checkpoint activity that mitigates cisplatin\u2011induced replication stress",
+        "phenotype": "CHD7 knockdown lowers cisplatin IC50; combination with ATR inhibitor further reduces viability",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals drive early CHD7 induction in NEPC?",
+      "Which transcription factors cooperate with CHD7 at its binding sites?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::li::2",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "KDM5B\u2011SOX9 signaling drives therapy\u2011induced neuroendocrine prostate cancer",
+    "speaker": {
+      "name": "Guoliang Li",
+      "affiliation": "Meharry Medical College",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KDM5B",
+        "alteration": "",
+        "pathway": "histone_demethylation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tNEPC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SOX9",
+        "alteration": "",
+        "pathway": "transcription_factor",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "tNEPC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "NSE",
+        "type": "predictive",
+        "assay": "Western blot",
+        "finding": "KDM5B knockout reduces NSE expression in NEPC cells"
+      },
+      {
+        "name": "SYN",
+        "type": "predictive",
+        "assay": "Western blot",
+        "finding": "KDM5B knockout reduces SYN expression"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "NCI\u2011H660, PC3, LNCaP, C4\u20112",
+        "genotype_or_key_features": "NEPC\u2011like or CRPC lines"
+      },
+      {
+        "model_type": "mouse",
+        "name": "PTEN\u2011p53 double knockout",
+        "genotype_or_key_features": "Castration\u2011induced regression then NE recurrence"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "KDM5B up\u2011regulation in therapy\u2011induced NEPC activates SOX9 transcription, which drives neuroendocrine marker expression; loss of KDM5B diminishes SOX9 and NE markers, while overexpression rescues them, establishing a KDM5B\u2011SOX9 axis essential for NE differentiation.",
+    "readouts": [
+      "Western blot",
+      "CRISPR knockout",
+      "overexpression assays",
+      "IHC",
+      "mouse tumor growth"
+    ],
+    "key_findings": [
+      "KDM5B and SOX9 are co\u2011overexpressed in ~46% of NEPC cases and correlate with NSE levels.",
+      "KDM5B knockout reduces SOX9, NSE, and SYN expression in NEPC cell lines.",
+      "Restoring KDM5B rescues SOX9 and NE markers in a dose\u2011dependent manner.",
+      "Castrated PTEN\u2011p53 mice develop NE recurrence with high KDM5B, SOX9, NSE, and SYN.",
+      "Triple knockout of PTEN\u2011p53\u2011KDM5B prevents tumor recurrence and NE marker expression."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Does KDM5B directly demethylate the SOX9 promoter or act via co\u2011factors?",
+      "Can pharmacologic inhibition of KDM5B prevent therapy\u2011induced NEPC in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::thursby::3",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "Promoter methylation gains in aging and colon cancer are independent of replication",
+    "speaker": {
+      "name": "Sarah-Jane Thursby",
+      "affiliation": "Johns Hopkins University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colon cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "DNA_damage_repair",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "organoid",
+        "name": "wild\u2011type colon organoid",
+        "genotype_or_key_features": "young vs. aged (12\u201114\u202fmo) cultures"
+      },
+      {
+        "model_type": "organoid",
+        "name": "BRAF V600E mutant organoid",
+        "genotype_or_key_features": "oncogenic BRAF induction"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Long\u2011term organoid culture and BRAF V600E induction reveal that CpG\u2011island promoter hypermethylation accumulates with age independent of cell division, whereas non\u2011CGI hypomethylation tracks with replication, indicating distinct mechanisms for methylation gains versus losses during tumorigenesis.",
+    "readouts": [
+      "single\u2011organoid WGBS",
+      "ATAC\u2011seq",
+      "single\u2011cell RNA\u2011seq",
+      "pseudobulk TF enrichment"
+    ],
+    "key_findings": [
+      "Global CpG methylation does not change acutely after BRAF V600E induction.",
+      "CGI promoters gain methylation over months in both control and BRAF lineages, independent of replication.",
+      "Non\u2011CGI sites lose methylation in a replication\u2011dependent manner, accelerated in BRAF organoids.",
+      "Transcription factor enrichment differs: control lineage shows stress/viral TFs; BRAF lineage enriches cancer\u2011related TFs.",
+      "External datasets (replication inhibition, mitomycin C) confirm that promoter hypermethylation is replication\u2011independent while loss is replication\u2011linked."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "What enzymatic pathways mediate replication\u2011independent CGI hypermethylation?",
+      "Do similar replication\u2011independent methylation gains occur in other CpG\u2011island hypermethylator cancers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::singh::4",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "Cooperativity between DNA methylation and EZH2 drives neuroendocrine prostate cancer",
+    "speaker": {
+      "name": "Richa Singh",
+      "affiliation": "Weill Cornell Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "EZH2",
+        "alteration": "",
+        "pathway": "PRC2/H3K27me3",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NEPC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "DNMT1",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "NEPC",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "PRNE (EZH2 conditional KO in NEPC model)",
+        "genotype_or_key_features": "EZH2 deleted in NEPC context"
+      },
+      {
+        "model_type": "patient_derived_organoid",
+        "name": "NEPC PDO",
+        "genotype_or_key_features": "EZH2 WT or KO"
+      },
+      {
+        "model_type": "mouse",
+        "name": "DNMT1 KO organoid",
+        "genotype_or_key_features": "DNMT1 deleted in NEPC PDO"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Loss of EZH2 in NEPC remodels the DNA methylome, increasing promoter hypermethylation and altering neuroendocrine gene expression; conversely, DNMT1 deletion redistributes H3K27me3, revealing a bidirectional crosstalk where each epigenetic silencer compensates for the other in a disease\u2011state\u2011specific manner.",
+    "readouts": [
+      "bisulfite sequencing",
+      "array methylome",
+      "ChIP\u2011seq (H3K27me3)",
+      "RNA\u2011seq",
+      "IHC",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "EZH2 deletion in NEPC mice leads to global DNA methylation changes at PRC2 target DMRs.",
+      "EZH2\u2011KO NEPC organoids show increased NE signature scores despite loss of H3K27me3.",
+      "DNMT1 deletion in NEPC models causes increased H3K27me3 at neuron\u2011related promoters, suppressing their expression.",
+      "Pharmacologic EZH2 inhibition mirrors genetic EZH2 loss; DNMT inhibition (decitabine) mirrors DNMT1 deletion, both reshaping H3K27me3 landscapes.",
+      "In adenocarcinoma context, DNMT1 loss upregulates neuroendocrine genes, highlighting cell\u2011state\u2011specific effects."
+    ],
+    "novelty_flag": "best_in_class",
+    "resistance_or_selectivity_notes": [
+      "EZH2 inhibition in established NEPC may trigger compensatory DNA methylation, potentially limiting efficacy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "EZH2 inhibitor",
+        "rationale": "Target EZH2 before NEPC establishment to avoid compensatory methylation",
+        "phenotype": "Potentially prevents NEPC epigenetic reprogramming",
+        "stage": "proposed"
+      },
+      {
+        "with_agent": "DNMT inhibitor (decitabine)",
+        "rationale": "Disrupt DNMT1\u2011mediated compensation after EZH2 loss",
+        "phenotype": "Redistribution of H3K27me3 and reduced NE gene expression",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What co\u2011factors dictate the opposite outcomes of DNMT1 loss in NEPC vs adenocarcinoma?",
+      "Can sequential EZH2 then DNMT inhibition achieve durable NEPC suppression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::luepe::5",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "Targeting the ubiquitin\u2011reading function of DNMT1 as a next\u2011generation epigenetic therapy",
+    "speaker": {
+      "name": "Joshua Luepe",
+      "affiliation": "Van Andel Institute",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "targeted_therapy",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "DNMT1",
+        "alteration": "",
+        "pathway": "DNA_methylation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "solid tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "colorectal cancer cell line",
+        "genotype_or_key_features": "UIM mutant vs WT DNMT1"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "DNMT1 requires its ubiquitin\u2011interacting motifs (UIMs) to read UHRF1\u2011mediated H3 ubiquitination; mutating UIMs abolishes DNA methylation maintenance, induces viral\u2011mimicry gene expression, and reduces cancer cell viability, providing a druggable interface distinct from catalytic inhibition.",
+    "readouts": [
+      "clonogenic assay",
+      "IncuCyte growth",
+      "RNA\u2011seq",
+      "DNA methylation profiling",
+      "UIM binding assays"
+    ],
+    "key_findings": [
+      "UIM\u2011mutant DNMT1 fails to bind ubiquitinated nucleosomes despite retained catalytic activity.",
+      "Loss of UIM function leads to global hypomethylation comparable to DNMT1 knockdown.",
+      "UIM loss upregulates viral\u2011mimicry pathways and downregulates oncogenic signaling, mirroring decitabine effects.",
+      "Cell viability and colony formation are severely impaired in UIM mutants, similar to catalytic dead DNMT1.",
+      "Screening identified a natural product (afetinin) and de\u2011novo designed protein binders that inhibit DNMT1 UIMs at low\u2011nanomolar affinity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [
+      {
+        "with_agent": "standard DNMTi (decitabine)",
+        "rationale": "UIM inhibition is replication\u2011independent, potentially synergizing with replication\u2011dependent DNMTis",
+        "phenotype": "Enhanced hypomethylation and viral\u2011mimicry activation",
+        "stage": "proposed"
+      }
+    ],
+    "open_questions": [
+      "Will UIM inhibition cause off\u2011target effects on other ubiquitin\u2011reading proteins?",
+      "Can in vivo delivery of UIM binders achieve tumor regression without replication dependence?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "University of Michigan Center for Chemical Genomics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::dave::6",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "KDM2A\u2011driven epigenetic reprogramming promotes Barrett\u2019s esophagus to adenocarcinoma progression",
+    "speaker": {
+      "name": "Shilpa Dave",
+      "affiliation": "MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "esophageal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "cancer_progression",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KDM2A",
+        "alteration": "",
+        "pathway": "H3K36me2 demethylation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "Barrett to EAC progression",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "H3K36me2",
+        "type": "pharmacodynamic",
+        "assay": "IHC/Western blot",
+        "finding": "KDM2A overexpression correlates with decreased H3K36me2 in Barrett/EAC samples"
+      },
+      {
+        "name": "H3K27ac",
+        "type": "pharmacodynamic",
+        "assay": "CUT&RUN",
+        "finding": "KDM2A overexpression increases H3K27ac at oncogenic enhancers"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "patient_cohort",
+        "name": "TCGA esophageal adenocarcinoma",
+        "genotype_or_key_features": "KDM2A amplification in ~20% cases"
+      },
+      {
+        "model_type": "organoid",
+        "name": "Barrett and EAC patient\u2011derived organoids",
+        "genotype_or_key_features": "High vs low KDM2A expression"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HET\u20111A (normal esophageal)",
+        "genotype_or_key_features": "KDM2A overexpression"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "KDM2A amplification reduces H3K36me2 and elevates H3K27ac, reprogramming chromatin to open enhancer landscapes that drive two distinct epithelial programs\u2014secretory (SPINK1/PSCA) and proliferative (MYC, HER2)\u2014facilitating Barrett\u2019s metaplasia progression to heterogeneous esophageal adenocarcinoma.",
+    "readouts": [
+      "ATAC\u2011seq",
+      "CUT&RUN",
+      "RNA\u2011seq",
+      "IHC",
+      "Western blot"
+    ],
+    "key_findings": [
+      "KDM2A is the most amplified histone demethylase in EAC TCGA cohort.",
+      "KDM2A expression shows a trend of increase from Barrett through dysplasia to EAC.",
+      "High KDM2A correlates with reduced H3K36me2 and increased H3K27ac at oncogenic loci.",
+      "KDM2A overexpression in HET\u20111A opens chromatin at MYC and other oncogenes, inducing secretory and proliferative gene programs.",
+      "Patient\u2011derived organoids with high KDM2A display enhanced enhancer activity and poorer prognosis."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can KDM2A inhibition reverse enhancer activation and block Barrett\u2011to\u2011EAC transition?",
+      "Which transcription factors cooperate with KDM2A at newly opened enhancers?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "advances-in-cancer-epigenetics::wu::7",
+    "session_title": "advances-in-cancer-epigenetics",
+    "talk_title": "KMT2D is a master epigenetic regulator of lineage plasticity in lung squamous cell carcinoma",
+    "speaker": {
+      "name": "Manrun Wu",
+      "affiliation": "Baylor College of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "lung squamous cell carcinoma",
+      "lung adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KMT2D",
+        "alteration": "",
+        "pathway": "H3K4 monomethylation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KP lung adenocarcinoma model",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FOXA1",
+        "alteration": "",
+        "pathway": "endoderm transcription factor",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KMT2D\u2011null lung tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SOX2",
+        "alteration": "",
+        "pathway": "squamous lineage TF",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "KMT2D\u2011null lung tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KP (KRAS G12D; p53\u2011null) with KMT2D floxed",
+        "genotype_or_key_features": "Club cell or AT2 cell\u2011initiated tumors"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KP\u2011derived wild\u2011type and KMT2D\u2011KO lines",
+        "genotype_or_key_features": "KRAS/TP53 mutant lung adenocarcinoma"
+      },
+      {
+        "model_type": "single_nucleus_multiomics",
+        "name": "10x snRNA\u2011seq + ATAC\u2011seq",
+        "genotype_or_key_features": "WT vs KMT2D\u2011KO tumors"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Loss of KMT2D in KRAS/TP53\u2011driven lung adenocarcinoma reduces H3K4me1 at FOXA1/FOXA2\u2011bound enhancers, shifts cellular states toward a basal\u2011like, integrin \u03b16\u03b24 stem\u2011like cluster, and promotes a trajectory through GI\u2011like intermediates to squamous transcriptional programs (TRP63, SOX2), driven by redistribution of MEN1\u2011associated H3K4me3 and cooperation with FOXA1/FOXA2.",
+    "readouts": [
+      "10x snRNA\u2011seq",
+      "snATAC\u2011seq",
+      "RNA velocity",
+      "CUT&RUN",
+      "Western blot",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "KMT2D deletion shortens survival in KP mice initiated from both club and AT2 cells.",
+      "Adenosquamous lesions appear exclusively in KMT2D\u2011null tumors.",
+      "Single\u2011nucleus multi\u2011omics reveal enrichment of a basal\u2011like cluster and an integrin \u03b16\u03b24 stem\u2011like intermediate in KMT2D\u2011KO tumors.",
+      "Chromatin regions losing H3K4me1 in KMT2D\u2011KO are enriched for FOXA1/FOXA2 motifs and co\u2011factor binding (SMARCC1, EP300).",
+      "FOXA1 physically interacts with KMT2D; MEN1 inhibition (MI\u2011503) shows increased sensitivity in KMT2D\u2011KO cells."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "KMT2D loss creates dependency on MEN1, suggesting a synthetic lethal vulnerability."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "MEN1 inhibitor (MI\u2011503)",
+        "rationale": "KMT2D\u2011null cells show heightened reliance on MEN1\u2011mediated H3K4me3",
+        "phenotype": "Increased cytotoxicity in KMT2D\u2011KO vs WT cells",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Does catalytic inactivation of KMT2D recapitulate the phenotypes of complete loss?",
+      "Can targeting FOXA1 or SOX2 downstream mitigate the squamous transdifferentiation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

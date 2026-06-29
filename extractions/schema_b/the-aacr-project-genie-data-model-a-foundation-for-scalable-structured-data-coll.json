@@ -1,0 +1,205 @@
+[
+  {
+    "talk_id": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Jennifer Hoppe",
+      "institution_or_pharma": "AACR Project Genie",
+      "session_title": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll",
+      "talk_title": "Technical considerations and architecture of the Genie Data Model",
+      "rhetorical_signals": [
+        "Speaker said: \"the Genie data model is open source, cohort agnostic, and the really key point here is it implements a dual pathway architecture\"",
+        "Speaker said: \"we looked to FHIR and mCODE for interoperability components, and then also the analytical framework of the OMOP Common Data Model\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No real-world outcome data presented, only model specifications"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Develop AI/NLP pipelines to accurately extract clinical variables from unstructured notes, addressing the manual abstraction gap highlighted by the speaker.",
+        "transcript_evidence": "Speaker answered: \"We have a variety of built-in checks... we also have QA processes that will happen once those data are collected... we do have some AI tools like NLP to automate this portion as well\"",
+        "crispro_angle": "CrisPRO's computational spine can provide validated NLP models and ontology mapping to improve extraction accuracy and reduce manual curation errors.",
+        "priority": "high"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "FHIR",
+        "context": "referenced as a standard used to inform the Genie model",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "mCODE",
+        "context": "referenced as a standard used to inform the Genie model",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "OMOP Common Data Model",
+        "context": "referenced as a standard used to inform the Genie model",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific NLP methods will be used to train models for accurate extraction of unstructured data?",
+      "How will extensions to the data model be versioned and shared back to the consortium?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Genie Data Model",
+        "Genie Data Model open-source repository"
+      ],
+      "companies_to_monitor": [
+        "AACR"
+      ]
+    }
+  },
+  {
+    "talk_id": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Jake Van Kampen",
+      "institution_or_pharma": "Providence Cancer Institute",
+      "session_title": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll",
+      "talk_title": "Implementation of the Genie Data Model at Providence (GP3)",
+      "rhetorical_signals": [
+        "Speaker said: \"GP3 aims to replace or augment the manual data curation process so we can scale to larger cohorts and have better data quality\"",
+        "Speaker said: \"We use AI tools like GitHub Copilot to accelerate code writing and improve software engineering best practices\""
+      ],
+      "presentation_type": "platform_showcase"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Limited discussion of how multi-cancer patient records are reconciled across tables"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Apply CrisPRO's data lineage and validation framework to enhance GP3's QA/QC pipelines for heterogeneous source hierarchies.",
+        "transcript_evidence": "Speaker said: \"We implemented a lineage parser tool... it will automatically document the source of all of our attributes\"",
+        "crispro_angle": "CrisPRO can provide automated provenance tracking and anomaly detection across mapped attributes, reducing manual lineage errors.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "GitHub Copilot",
+        "context": "mentioned as an AI code assistant used in the pipeline",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "OMOP",
+        "context": "mentioned as part of Providence's data warehouse",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "How will the pipeline handle patients with multiple primary cancers when aggregating data across tables?",
+      "What strategies are planned to incorporate unstructured data extraction at scale?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "GP3 pipeline codebase",
+        "Providence Snowflake data warehouse"
+      ],
+      "companies_to_monitor": [
+        "Providence Cancer Institute"
+      ]
+    }
+  },
+  {
+    "talk_id": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Dr. Hacker Busch",
+      "institution_or_pharma": "University of L\u00fcbeck",
+      "session_title": "the-aacr-project-genie-data-model-a-foundation-for-scalable-structured-data-coll",
+      "talk_title": "European perspective on Genie, national cancer nodes, and clinical implementation",
+      "rhetorical_signals": [
+        "Speaker said: \"Genie has shown that multi-institutional data sharing is feasible, and with these layers of data sharing and the Candle project, the EU is now trying to scale this up to up to 20 nations\"",
+        "Speaker said: \"In the GenomeDE project, health insurance pays for sequencing only after a confirmation token is returned, creating a financial incentive for data submission\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No quantitative outcome data on survival benefit from the German MTB implementation",
+        "Limited evidence on data validation metrics across national nodes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO to provide standardized QA/QC metrics for the German cBioPortal MTB extension, addressing the speaker's concern about internal validation.",
+        "transcript_evidence": "Speaker said: \"I'm concerned about the validation and internal QA of the model... we do a lot of interlaboratory testing where we compare pipelines... it's still a big problem\"",
+        "crispro_angle": "CrisPRO can generate reproducible validation dashboards and cross-site consistency reports, strengthening confidence in the MTB data pipeline.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Use CrisPRO to identify under\u2011captured social determinants and comorbidity data that the speaker noted as a model weakness, enabling richer biomarker analyses.",
+        "transcript_evidence": "Speaker said: \"We built a more robust section for capturing social determinants of health\"",
+        "crispro_angle": "CrisPRO's integrative analytics can combine SDOH variables with genomic data to discover population\u2011specific biomarkers.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "cBioPortal",
+        "context": "adapted for molecular tumor boards in Germany",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "CANDLE consortium",
+        "context": "mentioned as a European effort to harmonize data",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "GenomeDE",
+        "context": "described as a German reimbursement\u2011driven sequencing program using the Genie model",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What quantitative QA/QC metrics are currently used to validate the cBioPortal MTB implementation?",
+      "How will the European Health Data Space integrate heterogeneous national cancer nodes technically?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Genie Data Model",
+        "cBioPortal MTB extension",
+        "GenomeDE data submissions"
+      ],
+      "companies_to_monitor": [
+        "University of L\u00fcbeck",
+        "German Cancer Consortium"
+      ]
+    }
+  }
+]

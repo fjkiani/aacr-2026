@@ -1,0 +1,386 @@
+[
+  {
+    "talk_id": "new-advances-in-bispecific-antibody-development::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Bill Sellers",
+      "institution_or_pharma": "Academic (formerly Novartis)",
+      "session_title": "new-advances-in-bispecific-antibody-development",
+      "talk_title": "Biparatopic antibodies targeting FGFR2 fusions and ADC development",
+      "rhetorical_signals": [
+        "Speaker said: \"we see striking absence of FGFR2 on the surface\"",
+        "Speaker said: \"we think the activity was primarily driven by loss of FGFR2 through internalization and degradation\"",
+        "Speaker said: \"the small molecule inhibitor gave about -20% tumor regression, not as good as the small molecule, but it's also not so far off\"",
+        "Speaker said: \"we got pretty good degradation without having to do any additional manipulation of the antibody\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Biparatopic FGFR2 antibodies (e.g., BD, BC) as monotherapy",
+        "failure_type": "partial_response_only",
+        "mechanistic_blindspot": "Inability to fully regress tumors despite internalization; unclear why some biparatopic formats become agonists in ligand\u2011independent settings",
+        "unexplained_resistance_quote": "Speaker said: \"we were unable to disrupt the dimers, which were our original hypothesis\"",
+        "ghost_responder_admission": "Speaker said: \"antibodies BD and BC had significant inhibition of tumor growth, though not regression\"",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Biparatopic FGFR2 antibody format",
+        "ip_vulnerability_note": "Speaker disclosed that only 15 biparatopic combinations were sampled from a very small diversity space, suggesting limited breadth of the platform",
+        "scale_or_manufacturing_bottleneck": "No explicit mention, but extensive ADC conjugation work suggests added complexity",
+        "clinical_strategy_weakness": "Reliance on naked antibody activity that is inferior to small\u2011molecule FGFR inhibitors"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that biparatopic antibodies cause robust FGFR2 internalization and degradation (mechanistic observation) but concluded that the antibodies are \"not as good as the small molecule\" (contradictory efficacy conclusion)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in\u2011human efficacy or safety data presented",
+        "Lack of comparative pharmacokinetic or toxicity profiling versus small\u2011molecule FGFR inhibitors"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "FGFR2 fusion status and kinase\u2011domain mutation status are not used to select patients in the preclinical models, representing a gap for CrisPRO predictive biomarker integration.",
+        "transcript_evidence": "Speaker said: \"we thought that perhaps these antibodies would also work in inhibitor\u2011resistant settings\" and created kinase\u2011domain resistant mutations for testing.",
+        "crispro_angle": "CrisPRO can model the impact of specific FGFR2 fusions and resistance mutations on antibody binding and internalization to prioritize candidates.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: check any FGFR2\u2011targeted bispecific trials for biomarker criteria",
+          "PubMed: resistance mechanisms for FGFR2 inhibitors"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Biparatopic antibodies retain activity against FGFR2 kinase\u2011domain resistance mutations, suggesting a combinatorial strategy with FGFR inhibitors.",
+        "transcript_evidence": "Speaker said: \"BC and BD have anti\u2011proliferative activity for both of the intracellular kinase domain mutations\".",
+        "crispro_angle": "CrisPRO can predict synergistic combinations of biparatopic antibodies with FGFR inhibitors and forecast resistance trajectories.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical data on FGFR inhibitor + biparatopic antibody synergy",
+          "Patent filings on FGFR2 biparatopic formats"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combining biparatopic FGFR2 antibodies with small\u2011molecule FGFR inhibitors may overcome residual tumor growth.",
+        "transcript_evidence": "Speaker said: \"the antibody plus the small molecule might end up to be a way to defeat resistance in a combination strategy\".",
+        "crispro_angle": "CrisPRO can simulate pharmacodynamic interactions and optimal dosing schedules for antibody\u2011small molecule combos.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Phase I/II trial designs involving FGFR2 antibodies + FGFR inhibitors"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Ribosome\u2011display nanobody platform enables rapid generation of diverse binders, addressing the limited combinatorial space of traditional biparatopic screening.",
+        "transcript_evidence": "Speaker said: \"we screened three different libraries, each 10^11 in size, and after six cycles we had 500,000 unique sequences\".",
+        "crispro_angle": "CrisPRO can prioritize nanobody clusters based on predicted epitope complementarity and developability, accelerating lead selection.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Benchmarking of ribosome\u2011display output against conventional hybridoma libraries"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Small\u2011molecule FGFR inhibitors",
+        "context": "Compared as a benchmark for tumor regression efficacy",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Why do certain biparatopic antibodies become agonists in the absence of ligand?",
+      "Can the internalization\u2011driven degradation be quantitatively linked to in\u2011vivo tumor regression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "FGFR2 biparatopic antibodies BD and BC",
+        "FGFR2 ADC candidates (MMAF, MMAE, deruxtecan conjugates)",
+        "FGFR2 small\u2011molecule inhibitors"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "Red Ridge Bio"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-advances-in-bispecific-antibody-development::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Nina Weiser",
+      "institution_or_pharma": "Designworks",
+      "session_title": "new-advances-in-bispecific-antibody-development",
+      "talk_title": "Zenitatamab (zanidatamab) \u2013 a biparatopic HER2 antibody and trispecific costimulatory antibodies",
+      "rhetorical_signals": [
+        "Speaker said: \"Zani mediates very potent CDC, whereas the individual antibodies and the combination did not\"",
+        "Speaker said: \"zenatuximab meets full tumor regression at closely equivalent or even lesser dosing\"",
+        "Speaker said: \"the progression\u2011free survival and overall survival benefit was observed independent of PD\u2011L1 status\"",
+        "Speaker said: \"the dual scFv format showed loss of growth inhibitory potential and potential agonism\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Dual scFv format of zenitatamab",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Spatial distance between antigen\u2011binding domains leading to unintended HER2 agonism",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker said: \"dual scFv format showed loss of growth inhibitory potential and potential agonism\"",
+        "hidden_tox_signal": "Speaker said: \"we observed agonism occurring in this growth inhibition assay\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "HORIZON\u2011GEA101",
+        "target_biology": "HER2\u2011positive biliary tract and gastric cancers",
+        "flawed_enrollment_criteria": "No concurrent standard\u2011of\u2011care arm (chemo\u202f+\u202ftrastuzumab\u202f+\u202fPD\u2011L1) for direct comparative efficacy",
+        "missing_biomarker": "PD\u2011L1 status not used for stratification despite being a known predictor for HER2\u2011targeted combos",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Cross\u2011trial comparison may overstate benefit without a head\u2011to\u2011head control",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Biparatopic HER2 antibody (zenitatamab) binding in trans",
+        "ip_vulnerability_note": "Speaker disclosed that the trans binding leads to HER2 clustering, a mechanism that could be mimicked by engineered bispecifics from competitors",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single HER2 epitope combination may limit efficacy against HER2\u2011heterogeneous tumors"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Trispecific CD3\u2011CD28\u2011tumor antigen (ZW209) format",
+        "ip_vulnerability_note": "Speaker noted that paratope positioning dramatically affects affinity and target dependency, indicating a narrow design space that competitors could exploit",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential for peripheral T\u2011cell activation if target dependency is not strictly enforced"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that zenitatamab creates large HER2 clusters enabling CDC (scientific observation) but also stated that the antibody\u2019s overall antitumor activity is comparable to the trastuzumab\u202f+\u202fpertuzumab combo in many settings (contradictory conclusion)",
+      "Speaker demonstrated that trispecifics can provide superior T\u2011cell activation (observation) yet admitted that most trispecifics in the clinic have shown limited antitumor activity (contradiction)"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall\u2011survival data from a randomized control arm",
+        "Limited biomarker\u2011stratified analysis beyond HER2 IHC\u20113+"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify HER2 expression patterns or co\u2011mutations that predict the CDC\u2011mediated advantage of zenitatamab over trastuzumab\u202f+\u202fpertuzumab.",
+        "transcript_evidence": "Speaker said: \"zenitatamab mediates very potent CDC, whereas the individual antibodies and the combination did not\"",
+        "crispro_angle": "CrisPRO can integrate HER2 epitope mapping with CDC assay data to define a predictive biomarker panel.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve HER2 IHC and CDC assay data from zenitatamab trials",
+          "PubMed: studies linking HER2 clustering to complement activation"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Explore whether HER2\u2011negative or low\u2011expressing tumor cells become susceptible via the bystander effect observed with zenitatamab.",
+        "transcript_evidence": "Speaker said: \"we see robust killing of HER2\u2011negative cells in the admixed model\"",
+        "crispro_angle": "CrisPRO can model diffusion of complement components and predict bystander cytotoxicity across heterogeneous tumor populations.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "In\u2011vivo xenograft studies with mixed HER2\u2011positive/negative cell populations"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine zenitatamab with checkpoint inhibitors (e.g., tislelizumab) to exploit the observed PD\u2011L1\u2011independent survival benefit.",
+        "transcript_evidence": "Speaker said: \"progression\u2011free and overall survival benefit was observed independent of PD\u2011L1 status\"",
+        "crispro_angle": "CrisPRO can simulate immune\u2011cell recruitment and predict synergistic effects of CDC\u2011active antibodies with PD\u20111 blockade.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Trial data from the zenitatamab\u202f+\u202ftislelizumab triplet arm"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO\u2019s structural modeling to design biparatopic HER2 antibodies with optimized trans\u2011binding geometry, potentially surpassing zenitatamab\u2019s CDC activity.",
+        "transcript_evidence": "Speaker said: \"different formats may mediate different potencies, but not necessarily is the case where you see particular formats with very undesirable properties\"",
+        "crispro_angle": "CrisPRO can predict optimal epitope pairings and linker lengths to maximize clustering without inducing agonism.",
+        "priority": "high",
+        "external_validation_needed": [
+          "Structural data of HER2 ectodomain complexes",
+          "Comparative CDC assays of engineered biparatopics"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Trastuzumab + Pertuzumab",
+        "context": "Standard of care combination used as benchmark for efficacy and safety",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Tislelizumab",
+        "context": "Checkpoint inhibitor combined with zenitatamab in a triplet regimen",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the mechanistic basis for the loss of growth inhibition and agonism observed with the dual scFv format?",
+      "Can the CDC effect of zenitatamab be replicated with alternative biparatopic designs that avoid potential agonism?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345  // hypothetical zenitatamab phase III biliary tract trial",
+        "NCT04678901  // hypothetical zenitatamab + tislelizumab triplet trial"
+      ],
+      "assets_to_track": [
+        "Zenitatamab (zanidatamab)",
+        "ZW209 trispecific CD3\u2011CD28\u2011tumor antigen",
+        "Dual scFv HER2 formats"
+      ],
+      "companies_to_monitor": [
+        "Designworks",
+        "Xymaris"
+      ]
+    }
+  },
+  {
+    "talk_id": "new-advances-in-bispecific-antibody-development::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "John Desjarlais",
+      "institution_or_pharma": "Zencor",
+      "session_title": "new-advances-in-bispecific-antibody-development",
+      "talk_title": "Two\u2011plus\u2011one (2+1) bispecific T\u2011cell engagers and CD28 co\u2011stimulatory strategies",
+      "rhetorical_signals": [
+        "Speaker said: \"the two plus one format provides avidity\u2011driven selectivity\"",
+        "Speaker said: \"we observed a ~70% CRS rate during priming, but low grade\u20113 and no grade\u20114 events at target dose\"",
+        "Speaker said: \"the strongest progressors had absolutely no EMPP3 expression\"",
+        "Speaker said: \"we design FC\u2011silenced versions to avoid non\u2011selective T\u2011cell activation\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "EMPP3\u2011targeted 2+1 CD3 T\u2011cell engager (Zencor program)",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Efficacy observed in patients lacking EMPP3 expression suggests off\u2011target or bystander effects not fully understood",
+        "unexplained_resistance_quote": "Speaker said: \"the two strongest progressors in this study actually had absolutely no EMPP3 expression\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: \"around a 70% CRS rate during priming\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Zencor EMPP3 2+1 T\u2011cell engager Phase\u202f1",
+        "target_biology": "Avidity\u2011driven CD3 engagement of EMPP3\u2011high tumors",
+        "flawed_enrollment_criteria": "No pre\u2011screening for EMPP3 expression despite known heterogeneity; inclusion of EMPP3\u2011negative patients dilutes signal",
+        "missing_biomarker": "EMPP3 membrane positivity as a mandatory enrollment criterion",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Small cohort (N=20) with mixed biomarker status limits statistical power to detect true efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "2+1 avidity\u2011based bispecific platform",
+        "ip_vulnerability_note": "Speaker acknowledged that avidity\u2011driven selectivity is a concept previously published (e.g., Christian Kline 2014), reducing novelty",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Heavy reliance on step\u2011up dosing to mitigate CRS may limit dosing flexibility and patient compliance"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "CD28 co\u2011stimulatory bispecifics",
+        "ip_vulnerability_note": "Speaker noted variability in CD28 expression (e.g., down\u2011regulation in elderly) which could blunt efficacy",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Potential for peripheral T\u2011cell activation if target dependency is not strictly enforced"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated robust tumor regression in EMPP3\u2011high RCC patients (observation) but also highlighted that the two best responders lacked EMPP3 expression (contradiction), suggesting an unclear mechanism of action"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term safety beyond priming phase",
+        "Correlation of EMPP3 expression with response"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a robust EMPP3 IHC/flow cytometry assay to enrich for responders and reduce exposure of EMPP3\u2011negative patients.",
+        "transcript_evidence": "Speaker said: \"the two strongest progressors in this study actually had absolutely no EMPP3 expression\"",
+        "crispro_angle": "CrisPRO can model expression thresholds needed for avidity\u2011driven killing and define a quantitative biomarker cutoff.",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve patient\u2011level EMPP3 expression data",
+          "Pathology databases for EMPP3 IHC scoring standards"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine the EMPP3 2+1 engager with a CD28 co\u2011stimulatory bispecific to overcome T\u2011cell exhaustion observed after repeated dosing.",
+        "transcript_evidence": "Speaker said: \"co\u2011dosing with CD28 bispecific rescued anti\u2011tumor activity after chronic restimulation\"",
+        "crispro_angle": "CrisPRO can simulate sequential dosing schedules and predict synergistic cytokine profiles.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Preclinical data on CD28 bispecific + EMPP3 engager combos",
+          "Safety data on combined CRS risk"
+        ]
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Leverage CrisPRO to design 2+1 formats with optimized CD3 affinity tiers (medium vs high) to balance potency and CRS risk.",
+        "transcript_evidence": "Speaker said: \"we have settled on the medium affinity for CD3 as the sweet spot\"",
+        "crispro_angle": "CrisPRO can predict kinetic avidity effects of varying CD3 affinities within the 2+1 scaffold.",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Biophysical binding data for CD3 variants",
+          "In\u2011vivo CRS incidence correlated with affinity"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Amgen AMG\u202f509 (2+1 FGFR2 T\u2011cell engager)",
+        "context": "Cited as a successful example of the 2+1 format achieving high PSA response rates",
+        "sentiment": "favorable"
+      },
+      {
+        "name": "Zencor EMPP3 2+1 program",
+        "context": "Own program discussed throughout the talk",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the mechanistic basis for tumor regressions in EMPP3\u2011negative patients?",
+      "Can alternative CD28 co\u2011stimulatory targets (e.g., CD2) improve efficacy in elderly populations with reduced CD28 expression?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT05812345  // hypothetical Zencor EMPP3 2+1 Phase\u202f1 trial"
+      ],
+      "assets_to_track": [
+        "EMPP3\u2011targeted 2+1 bispecific",
+        "CD28 co\u2011stimulatory bispecifics (B7H3\u2011CD28, etc.)"
+      ],
+      "companies_to_monitor": [
+        "Zencor",
+        "Amgen",
+        "Astellas"
+      ]
+    }
+  }
+]

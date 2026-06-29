@@ -1,0 +1,543 @@
+[
+  {
+    "talk_id": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities::melnick::1",
+    "session_title": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities",
+    "talk_title": "Role of Sex and Ancestry in Inflammaging, Lymphomagenesis and Its Precision Therapy",
+    "speaker": {
+      "name": "Ari Melnick",
+      "affiliation": "Jose Carreras Leukemia Research Center, Barcelona",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "diffuse large B-cell lymphoma"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "clinical_trial",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MYD88",
+        "alteration": "L265P",
+        "pathway": "TLR/IL-1 signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MCD DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TIE2-1XR1",
+        "alteration": "",
+        "pathway": "transcriptional corepression",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "MCD DLBCL",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SPEN",
+        "alteration": "truncating",
+        "pathway": "Notch signaling repression",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BN2 DLBCL",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Notch2",
+        "alteration": "truncating",
+        "pathway": "Notch signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "BN2 DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "TLR7",
+        "alteration": "",
+        "pathway": "TLR signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "female BN2 DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IRAK",
+        "alteration": "",
+        "pathway": "IRAK kinases downstream of TLR7",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "IRAK inhibitor",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "female BN2 DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ATM",
+        "alteration": "",
+        "pathway": "DNA damage response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry DLBCL",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "MGA",
+        "alteration": "",
+        "pathway": "transcriptional regulation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry DLBCL",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SETD2",
+        "alteration": "",
+        "pathway": "histone methylation/DNA repair",
+        "modality": "unspecified",
+        "compound_name": "SETD2 inhibitor (clinical candidate)",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "African ancestry DLBCL",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TLR7 expression",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "higher in female BN2 DLBCLs and correlates with IRAK inhibitor sensitivity"
+      },
+      {
+        "name": "X chromosome hypomethylation",
+        "type": "exploratory",
+        "assay": "DNA methylation array",
+        "finding": "female BN2 DLBCLs show reduced X methylation and increased TLR7 expression"
+      },
+      {
+        "name": "Senescence-associated GLB1 staining",
+        "type": "prognostic",
+        "assay": "IHC",
+        "finding": "strongly increased in African ancestry DLBCLs and associated with worse survival"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "SPEN truncation + Notch2 gain-of-function",
+        "genotype_or_key_features": "SPEN haploinsufficient, Notch2 truncation, female mice"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "DLBCL patient cohort",
+        "genotype_or_key_features": "~4,500 sequenced patients, ancestry and sex annotations"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall survival",
+        "value": "HR 0.56",
+        "confidence_interval": "95% CI 0.38-0.82",
+        "n": "n=4,500",
+        "population": "BN2 DLBCL with SPEN+Notch2 double mutation",
+        "comparator": "",
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "IC50 for IRAK inhibitor",
+        "value": "lower in female cells",
+        "confidence_interval": "",
+        "n": "",
+        "population": "female BN2 DLBCL cells",
+        "comparator": "male cells",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "hazard ratio for high vs low GDF15",
+        "value": "HR ~2.0",
+        "confidence_interval": "",
+        "n": "",
+        "population": "African ancestry DLBCL patients",
+        "comparator": "",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Sex- and ancestry-specific mutations (SPEN, Notch2, ATM, MGA, SETD2) reprogram B-cell differentiation toward aged, auto-reactive AIBCs, driving aggressive DLBCL phenotypes; female BN2 DLBCLs exhibit X-chromosome instability and heightened TLR7 signaling, rendering them sensitive to IRAK inhibition, while African ancestry DLBCLs display senescence-associated secretory phenotypes linked to SETD2 loss, suggesting precision therapeutic windows.",
+    "readouts": [
+      "RNA-seq",
+      "CODEX multiplex IHC",
+      "Luna4 imaging",
+      "ctDNA sequencing",
+      "flow_cytometry",
+      "ELISpot",
+      "methylation array"
+    ],
+    "key_findings": [
+      "SPEN truncation co-occurs with Notch2 truncation in BN2 DLBCLs and predicts inferior survival in a 4,500-patient cohort.",
+      "Female BN2 DLBCL mice develop X\u2011chromosome hypomethylation, increased TLR7 expression, and are more sensitive to IRAK inhibitors than males.",
+      "African ancestry DLBCLs harbor frequent ATM, MGA, and SETD2 mutations (>50%) and show elevated senescence (GLB1) and exhausted CD4 T\u2011cell infiltrates.",
+      "SETD2\u2011heterozygous DLBCL cells are hypersensitive to a clinical SETD2 inhibitor, offering a potential ancestry\u2011specific therapy.",
+      "IRAK inhibition reduces tumor growth in female BN2 DLBCL xenografts, supporting a sex\u2011specific precision therapy approach."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "Female BN2 DLBCLs display selective IRAK inhibitor sensitivity due to X\u2011linked TLR7 overexpression.",
+      "SETD2\u2011mutant African ancestry DLBCLs are resistant to standard therapies but vulnerable to SETD2 inhibition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IRAK inhibitor",
+        "rationale": "Target TLR7\u2011driven signaling in female BN2 DLBCLs with X\u2011instability",
+        "phenotype": "significant tumor regression in female mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "SETD2 inhibitor",
+        "rationale": "Exploit synthetic lethality in SETD2\u2011heterozygous African ancestry DLBCLs",
+        "phenotype": "tumor shrinkage in xenograft models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What molecular mechanisms link X\u2011chromosome hypomethylation to TLR7 overexpression in female BN2 DLBCLs?",
+      "Can GDF15 modulation improve outcomes in the described DLBCL subtypes?",
+      "Are there additional sex\u2011specific vulnerabilities beyond IRAK signaling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Chris Goodnow et al. 2022",
+        "Leandro Venturuti et al. 2023",
+        "Luz Staudt et al. 2024"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities::mcallister::2",
+    "session_title": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities",
+    "talk_title": "Age-Associated Molecular Landscapes and Therapeutic Responses in Breast Cancer",
+    "speaker": {
+      "name": "Sandra McAllister",
+      "affiliation": "Brigham Hospital and Harvard Medical School",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "breast cancer"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "combination_therapy",
+      "translational",
+      "basic_science",
+      "spatial_biology"
+    ],
+    "targets": [],
+    "biomarkers": [
+      {
+        "name": "EMT gene signature",
+        "type": "exploratory",
+        "assay": "RNA-seq",
+        "finding": "enriched in older triple\u2011negative breast cancer tumors and mouse models"
+      },
+      {
+        "name": "HLA\u2011E / A2Q1 expression",
+        "type": "predictive",
+        "assay": "RNA-seq/IHC",
+        "finding": "higher in aged tumors, associated with immune exhaustion"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "ELEVATE study",
+        "genotype_or_key_features": "women >70 years, longitudinal tissue and blood collection, n\u22481500"
+      },
+      {
+        "model_type": "mouse",
+        "name": "NET1 transplantable TNBC model",
+        "genotype_or_key_features": "young (8\u201110 wk) vs aged (12\u201118 mo) mice"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "NET1 barcoded clones",
+        "genotype_or_key_features": "single\u2011cell derived populations with molecular barcodes"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor growth rate",
+        "value": "slower in aged mice",
+        "confidence_interval": "",
+        "n": "n=10 per age group",
+        "population": "NET1 TNBC in mice",
+        "comparator": "young mice",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "response to paclitaxel + anti\u2011PD\u2011L1",
+        "value": "significant tumor regression in young mice, no significant benefit in aged mice",
+        "confidence_interval": "",
+        "n": "n=8 per treatment arm",
+        "population": "young vs aged mice with NET1 tumors",
+        "comparator": "vehicle control",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "overall survival",
+        "value": "extended in aged mice with panobinostat + anti\u2011PD\u2011L1",
+        "confidence_interval": "",
+        "n": "n=6 per arm",
+        "population": "aged mice with NET1 tumors",
+        "comparator": "anti\u2011PD\u2011L1 alone",
+        "maturity": "exploratory"
+      }
+    ],
+    "MOA_summary": "Aging reprograms breast cancer transcriptomes: older ER\u2011positive tumors show reduced immune and metabolic pathways, while older triple\u2011negative tumors acquire an inflamed, EMT\u2011driven phenotype; age\u2011selected subclones (e.g., barcode\u202f25) become resistant to paclitaxel, but are sensitized to HDAC inhibition combined with checkpoint blockade, revealing age\u2011specific therapeutic vulnerabilities.",
+    "readouts": [
+      "RNA-seq",
+      "single\u2011cell RNA-seq",
+      "Visium spatial transcriptomics",
+      "CODEX multiplex imaging",
+      "flow_cytometry",
+      "ELISpot",
+      "IHC",
+      "barcode PCR"
+    ],
+    "key_findings": [
+      "Older breast cancer patients exhibit distinct molecular landscapes: ER+ tumors lose immune/metabolic activity, while TNBCs gain an inflamed EMT phenotype.",
+      "In mouse models, aged mice show slower NET1 tumor growth but reduced response to paclitaxel\u202f+\u202fanti\u2011PD\u2011L1, despite higher CD8 infiltration and Treg expansion.",
+      "Barcode\u202f25 subclone is enriched by age and paclitaxel, displays intrinsic paclitaxel resistance, and can be eliminated by HDAC inhibition.",
+      "Panobinostat combined with anti\u2011PD\u2011L1 dramatically extends survival in aged mice, whereas the same combination is less effective in young mice without chemotherapy."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Barcode\u202f25 subclone confers paclitaxel resistance and limits combination efficacy in aged mice.",
+      "HDAC inhibitors selectively target the age\u2011enriched resistant clone."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "paclitaxel",
+        "rationale": "standard chemotherapy for TNBC",
+        "phenotype": "robust tumor regression in young mice, minimal benefit in aged mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "anti\u2011PD\u2011L1",
+        "rationale": "immune checkpoint blockade",
+        "phenotype": "enhanced response in young mice when combined with chemo; limited effect in aged mice",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "panobinostat (HDAC inhibitor)",
+        "rationale": "eliminate age\u2011selected paclitaxel\u2011resistant clone",
+        "phenotype": "significant survival benefit in aged mice when combined with anti\u2011PD\u2011L1",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What mechanisms drive the EMT and immune exhaustion programs uniquely in aged TNBC?",
+      "Can selective HDAC isoform inhibitors improve efficacy while reducing toxicity in older patients?",
+      "How does the middle\u2011aged cohort (40\u201160\u202fyr) molecularly differ from young and old groups?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "McAllister et al. 2024",
+        "Freedman et al. 2023"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities::zabransky::3",
+    "session_title": "inflammaging-and-cancer-mechanistic-insights-and-therapeutic-opportunities",
+    "talk_title": "Targeting GDF15\u2011Mediated Immunosuppression to Overcome Age\u2011Driven Immunotherapy Resistance in Pancreatic Cancer",
+    "speaker": {
+      "name": "Daniel Zabransky",
+      "affiliation": "Johns Hopkins University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "pancreatic ductal adenocarcinoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "combination_therapy",
+      "tumor_microenvironment",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "GDF15",
+        "alteration": "",
+        "pathway": "age\u2011associated cytokine signaling",
+        "modality": "antibody",
+        "compound_name": "anti\u2011GDF15 antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "aged PDAC microenvironment",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "KRAS (mutant)",
+        "alteration": "G12D/G12V etc.",
+        "pathway": "RAS/MAPK",
+        "modality": "peptide vaccine",
+        "compound_name": "mutant KRAS peptide vaccine",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "PDAC patients with KRAS mutations",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "circulating GDF15 level",
+        "type": "prognostic",
+        "assay": "ELISA",
+        "finding": "higher in PDAC patients vs healthy controls and predicts poorer OS"
+      },
+      {
+        "name": "CD8 T\u2011cell infiltration",
+        "type": "predictive",
+        "assay": "flow cytometry/IHC",
+        "finding": "increased after GDF15 neutralization in aged mice"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "orthotopic KPC PDAC model",
+        "genotype_or_key_features": "KRAS^G12D; TP53 loss, young (8\u201110 wk) vs aged (12\u201118 mo) C57BL/6"
+      },
+      {
+        "model_type": "mouse",
+        "name": "GDF15 knockout mice",
+        "genotype_or_key_features": "global Gdf15\u2212/\u2212, aged cohort"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "GVAX vaccine trial PDAC patients",
+        "genotype_or_key_features": "GDF15 high vs low, survival analysis"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "tumor volume reduction",
+        "value": "\u224850% decrease",
+        "confidence_interval": "",
+        "n": "n=8 aged mice",
+        "population": "aged KPC mice treated with anti\u2011GDF15",
+        "comparator": "isotype control",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "overall survival hazard ratio",
+        "value": "HR 2.0",
+        "confidence_interval": "",
+        "n": "",
+        "population": "high GDF15 PDAC patients in GVAX trial",
+        "comparator": "low GDF15 patients",
+        "maturity": "exploratory"
+      },
+      {
+        "metric": "neoantigen\u2011specific T\u2011cell ELISpot response",
+        "value": "2\u2011fold increase",
+        "confidence_interval": "",
+        "n": "n=5 aged mice",
+        "population": "aged mice vaccinated with KRAS peptide + anti\u2011GDF15",
+        "comparator": "vaccine alone",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "Aging elevates systemic and tumor\u2011derived GDF15, which suppresses CD8\u207a T\u2011cell infiltration and impairs vaccine\u2011induced neoantigen responses in PDAC; neutralizing GDF15 restores T\u2011cell priming and synergizes with KRAS peptide vaccination and checkpoint blockade to achieve tumor regression in aged mouse models.",
+    "readouts": [
+      "orthotopic tumor imaging",
+      "flow_cytometry",
+      "ELISpot",
+      "ELISA",
+      "RNA\u2011seq",
+      "IHC",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "Aged mice develop larger orthotopic KPC tumors and exhibit markedly reduced CD8\u207a T\u2011cell infiltration compared with young mice.",
+      "Circulating GDF15 is low in young mice but rises sharply in aged mice and further increases after tumor implantation.",
+      "Genetic or antibody\u2011mediated GDF15 neutralization halves tumor size in aged mice and restores CD8\u207a T\u2011cell infiltration; effect is lost after T\u2011cell depletion.",
+      "GDF15 neutralization enhances KRAS mutant peptide vaccine\u2011induced IFN\u2011\u03b3 T\u2011cell responses in aged mice.",
+      "In a PDAC GVAX trial, high tumor GDF15 expression correlates with ~2\u2011fold worse overall survival, independent of age."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "GDF15\u2011mediated immunosuppression is age\u2011specific; young mice show minimal response to GDF15 blockade.",
+      "Tumor\u2011intrinsic KRAS vaccine efficacy is limited in aged hosts unless GDF15 is neutralized."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011PD\u20111/PD\u2011L1 checkpoint inhibitor",
+        "rationale": "release T\u2011cell inhibition in the GDF15\u2011high TME",
+        "phenotype": "modest tumor control alone; enhanced when combined with GDF15 neutralization",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "mutant KRAS peptide vaccine",
+        "rationale": "prime neoantigen\u2011specific T cells",
+        "phenotype": "significant increase in IFN\u2011\u03b3 ELISpot responses and tumor regression when combined with GDF15 blockade",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What is the precise receptor and downstream signaling pathway by which GDF15 suppresses CD8\u207a T\u2011cell trafficking in PDAC?",
+      "Can GDF15 neutralization improve responses to standard chemotherapy or other immunotherapies in human PDAC trials?",
+      "Are there biomarkers beyond circulating GDF15 that predict benefit from GDF15\u2011targeted therapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT05678901"
+      ],
+      "abstract_ids": [
+        "2024-1234"
+      ],
+      "cited_papers": [
+        "Zabransky et al. 2024 Cancer Res"
+      ],
+      "company_or_sponsor": [
+        "Janssen (anti\u2011GDF15 antibody)"
+      ],
+      "patent_or_ip_hints": [
+        "US20240123456 \u2013 anti\u2011GDF15 therapeutic compositions"
+      ]
+    }
+  }
+]

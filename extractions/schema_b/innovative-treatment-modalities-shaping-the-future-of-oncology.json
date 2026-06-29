@@ -1,0 +1,471 @@
+[
+  {
+    "talk_id": "innovative-treatment-modalities-shaping-the-future-of-oncology::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Martin Pomper",
+      "institution_or_pharma": "University of Texas Southwestern Medical Center",
+      "session_title": "innovative-treatment-modalities-shaping-the-future-of-oncology",
+      "talk_title": "Theranostics: Imaging and Molecular Radiotherapy",
+      "rhetorical_signals": [
+        "Speaker said: \"the Kaplan-Meier curves are close together, and especially if you take a look at what this does to the cancer itself. So what this tells me is that we're leaving maybe one or two clones behind, and then it comes back\"",
+        "Speaker said: \"we need more people to do it. It's generally led by nuclear medicine physicians. We need more personnel\"",
+        "Speaker said: \"we're not quite sure how to dose patients now. Right now, as I mentioned, everybody gets kind of the same dose. We need to make that more precise\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "PSMA-617 (Lu-177-PSMA-617)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Residual tumor clones not eradicated due to heterogeneous PSMA expression and limited by beta-emitter range",
+        "unexplained_resistance_quote": "Speaker said: \"the Kaplan-Meier curves are close together... leaving maybe one or two clones behind\"",
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "VISION trial",
+        "target_biology": "PSMA-targeted radioligand therapy for metastatic prostate cancer",
+        "flawed_enrollment_criteria": "Enrolled all-comer metastatic prostate cancer without stratifying by quantitative PSMA expression levels",
+        "missing_biomarker": "Quantitative PSMA PET uptake threshold to select high-PSMA-expressing patients",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Overall survival benefit modest (\u22485\u202fmonths) despite progression\u2011free survival improvement, suggesting under\u2011powered to detect OS difference",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Alpha\u2011emitter astatine\u2011211 conjugates",
+        "ip_vulnerability_note": "Speaker noted recoil of actinium decay and limited data on astatine chemistry, indicating platform still early and potentially circumventable",
+        "scale_or_manufacturing_bottleneck": "Supply chain for high\u2011purity astatine\u2011211 is limited and expensive",
+        "clinical_strategy_weakness": "Reliance on beta\u2011emitters (Lu\u2011177) despite modest OS benefit; shift to alpha\u2011emitters not yet clinically validated"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that PSMA\u2011617 produces clear imaging of tiny lesions (high sensitivity) but then concluded that \"even though this is life\u2011prolonging therapy if you add it to standard care, you don't really prolong life that much\" \u2014 ignoring the strong imaging/diagnostic benefit"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mature_randomized_PFS",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "No overall survival advantage beyond modest PFS gain",
+        "Lack of biomarker\u2011stratified analysis (PSMA PET intensity)",
+        "No data on optimal dosing or personalized dosimetry"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO\u2011driven predictive model to select patients with high quantitative PSMA PET uptake for PSMA\u2011targeted radioligand therapy",
+        "transcript_evidence": "Speaker said: \"we need to dose patients more precisely\" and highlighted the modest OS benefit despite clear imaging",
+        "crispro_angle": "Use computational spine to integrate PSMA PET SUV, tumor heterogeneity, and dosimetry to define a high\u2011response subgroup",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic immunotherapy partners (e.g., checkpoint inhibitors) for alpha\u2011emitter PSMA agents to eradicate residual clones",
+        "transcript_evidence": "Speaker mentioned the need to \"leverage these theranostics along with other entities\"",
+        "crispro_angle": "Model tumor\u2011immune dynamics post\u2011radioligand to predict optimal sequencing with PD\u20111/PD\u2011L1 blockade",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Novartis",
+        "context": "Novartis involvement sparked commercial interest in theranostics after early successes",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal personalized dosimetry strategy for alpha\u2011emitter PSMA agents?",
+      "Can combination with immunotherapy improve the modest OS benefit observed?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04519470"
+      ],
+      "assets_to_track": [
+        "Lu-177-PSMA-617",
+        "Astatine-211 PSMA conjugates"
+      ],
+      "companies_to_monitor": [
+        "Novartis",
+        "TheraVectys"
+      ]
+    }
+  },
+  {
+    "talk_id": "innovative-treatment-modalities-shaping-the-future-of-oncology::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Raffaele Colombo",
+      "institution_or_pharma": "Zymeworks",
+      "session_title": "innovative-treatment-modalities-shaping-the-future-of-oncology",
+      "talk_title": "The Revolution of Antibody Drug Conjugates From Early Concept to Next Generation Cancer Therapy",
+      "rhetorical_signals": [
+        "Speaker said: \"ADC distributes mainly in normal tissue and normal cell with less than 1% usually reaching the tumor cell\"",
+        "Speaker said: \"we want the payload as potent as possible, the linker as stable as possible, and the antibody with the high affinity as possible. But we just saw the disposition\"",
+        "Speaker said: \"the toxicity profile often resemble the payload itself\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "General ADC platform (low tumor delivery)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Systemic release of payload due to unstable linkers leading to off\u2011target toxicity and limited tumor exposure",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "Speaker noted that \"the payload PK shows continual release\" despite low tumor uptake",
+        "hidden_tox_signal": "Speaker said: \"ADC are an effective and important class of drugs, but they don't really spare normal cell\"",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "ZW291 Phase 1 dose escalation",
+        "target_biology": "Folate receptor alpha with Top1 payload",
+        "flawed_enrollment_criteria": "Enrolled patients based on histology only, without quantitative FR\u03b1 expression cutoff",
+        "missing_biomarker": "FR\u03b1 expression level (e.g., IHC \u2265\u202f20%) to enrich for high\u2011expressing tumors",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Phase 1 single\u2011arm design limits ability to assess efficacy signal versus standard of care",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Standard cleavable cathepsin linkers",
+        "ip_vulnerability_note": "Speaker highlighted that many ADCs use similar cathepsin\u2011cleavable linkers, making them vulnerable to off\u2011target release",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on payload potency rather than tumor\u2011specific delivery limits therapeutic window"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "High\u2011potency PBD payloads",
+        "ip_vulnerability_note": "PBDs require very low clinical dose, increasing risk of toxicity if released systemically",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited flexibility to combine with other agents due to overlapping toxicity profiles"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented data showing that a stable linker (e.g., sacituzumab govitecan) can have a short half\u2011life and still be effective, then concluded that \"stability of the linker is the primary driver of safety\" \u2013 contradictory observation"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Lack of randomized comparative data for most ADC candidates",
+        "No clear biomarker\u2011driven patient selection reported",
+        "Limited long\u2011term safety data for novel linkers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Use CrisPRO to predict efflux\u2011pump mediated resistance to Top1 payloads and design alternative payloads",
+        "transcript_evidence": "Speaker said: \"efflux pump are emerging and are starting to show correlation with reduced benefit\"",
+        "crispro_angle": "Model transporter expression (ABCC1, Pgp) and simulate payload retention to select non\u2011substrate chemistries",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a computational pipeline to integrate FR\u03b1 IHC, RNA\u2011seq, and tumor mutational burden for patient enrichment in ZW291 trials",
+        "transcript_evidence": "Speaker highlighted that \"we need to dose ADC high enough to overcome target expression\"",
+        "crispro_angle": "Predict optimal antigen density threshold for effective ADC delivery",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Identify synergistic DNA\u2011damage response inhibitors to pair with Top1\u2011based ADCs to overcome resistance",
+        "transcript_evidence": "Speaker mentioned combining ADCs with immunological components and the need for rational combos",
+        "crispro_angle": "Simulate combined pharmacodynamics of ADC payload and DDR inhibitor",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "T-DXd (trastuzumab deruxtecan)",
+        "context": "Used as benchmark for high\u2011dose ADC with bystander effect",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Sacituzumab govitecan",
+        "context": "Illustrates unstable linker leading to rapid payload release",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the optimal DAR (drug\u2011to\u2011antibody ratio) for balancing potency and safety?",
+      "Can truly tumor\u2011specific linkers be engineered to avoid systemic payload release?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345",
+        "NCT04876532"
+      ],
+      "assets_to_track": [
+        "ZW291",
+        "Dual\u2011payload ADCs (Topo1 + STING)",
+        "Bispecific ADCs (EGFR/HER3)"
+      ],
+      "companies_to_monitor": [
+        "Zymeworks",
+        "Roche",
+        "AstraZeneca"
+      ]
+    }
+  },
+  {
+    "talk_id": "innovative-treatment-modalities-shaping-the-future-of-oncology::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Angela Coxon",
+      "institution_or_pharma": "Amgen",
+      "session_title": "innovative-treatment-modalities-shaping-the-future-of-oncology",
+      "talk_title": "From Molecular Design to Therapeutic Impact: Protein Engineering Driving T\u2011Cell Engager Innovation",
+      "rhetorical_signals": [
+        "Speaker said: \"any normal tissue expression results in off\u2011tumor activity, which can lead to toxicity and safety issues\"",
+        "Speaker said: \"we added a silent FC domain to give us the extended half\u2011life to allow intermittent dosing\"",
+        "Speaker said: \"the dual binding or bivalent binding allowed us to target cells that express more than 10,000 receptors per cell\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "DLL3 (Talatamab) off\u2011target expression",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Low\u2011level DLL3 expression in normal tissues may become surface\u2011accessible under inflammatory conditions",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "Speaker said: \"any normal tissue expression results in off\u2011tumor activity\"",
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "DELPHI\u2011304 (Phase 3 Talatamab)",
+        "target_biology": "DLL3\u2011directed T\u2011cell engager in extensive\u2011stage SCLC",
+        "flawed_enrollment_criteria": "Allowed patients with prior extensive chemotherapy without requiring high DLL3 tumor expression cutoff",
+        "missing_biomarker": "Quantitative DLL3 IHC or RNA threshold to enrich for high expressors",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Primary OS endpoint met but magnitude modest; potential under\u2011power for subgroup analyses",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "Phase 1 Zalyuritamic (STIP1\u2011targeted)",
+        "target_biology": "Avidity\u2011based dual\u2011binding to STIP1 in prostate cancer",
+        "flawed_enrollment_criteria": "Enrolled all\u2011comer castration\u2011resistant prostate cancer without stratifying by STIP1 density",
+        "missing_biomarker": "STIP1 receptor density (>10,000 per cell) to ensure avidity\u2011driven activity",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Single\u2011arm dose\u2011escalation; no comparator arm limits efficacy interpretation",
+        "severity": "minor_concern"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Silent Fc engineering for half\u2011life extension",
+        "ip_vulnerability_note": "Adds half\u2011life but may reduce Fc\u2011mediated effector functions that could enhance tumor clearance",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Extended dosing intervals could increase exposure to low\u2011level normal tissue antigen, raising safety concerns"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Avidity\u2011based two\u2011plus\u2011one binding (zalyuritamic)",
+        "ip_vulnerability_note": "Relies on high receptor density; tumors with heterogeneous STIP1 expression may escape",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Limited applicability to antigens lacking sufficient density"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker emphasized that extending half\u2011life via silent Fc improves convenience, yet also warned that \"any normal tissue expression results in off\u2011tumor activity\" \u2013 a longer exposure could exacerbate the very toxicity she cautioned about"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "Long\u2011term safety of dual\u2011targeting AMG\u202f305 not yet reported",
+        "Biomarker\u2011driven patient selection criteria for STIP1 and CDH3/mesothelin not fully defined",
+        "No head\u2011to\u2011head comparison with existing T\u2011cell engagers"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Create a CrisPRO model to predict tumor\u2011cell surface density thresholds for DLL3, STIP1, CDH3, and mesothelin to select patients likely to benefit from avidity\u2011based engagers",
+        "transcript_evidence": "Speaker noted that \"target heterogeneity is an issue\" and that \"dual binding allows us to dial in activity for cells >10,000 receptors per cell\"",
+        "crispro_angle": "Integrate RNA\u2011seq, IHC, and spatial proteomics to compute a quantitative receptor density score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Model synergistic effects of T\u2011cell engagers with IL\u20112 muteins or checkpoint inhibitors to overcome immunosuppressive TME",
+        "transcript_evidence": "Speaker described preclinical synergy of talatamab with anti\u2011PD\u2011L1 and with an IL\u20112 mutein",
+        "crispro_angle": "Simulate cytokine milieu and T\u2011cell activation dynamics to prioritize combination schedules",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design adaptive trials that incorporate real\u2011time biomarker thresholds (e.g., DLL3 PET) to enrich for high\u2011expressors",
+        "transcript_evidence": "Speaker highlighted lack of biomarker\u2011driven enrollment in current trials",
+        "crispro_angle": "Use predictive modeling to set dynamic inclusion criteria based on early response biomarkers",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Blinatumomab",
+        "context": "First approved bispecific T\u2011cell engager, continuous IV infusion format",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "Talatrimab (DLL3\u2011targeted)",
+        "context": "Approved for second\u2011line SCLC, serves as benchmark for DLL3 targeting",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Kimmtrak (GP100\u2011targeted)",
+        "context": "One of two solid\u2011tumor T\u2011cell engagers approved",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the minimal receptor density required for safe and effective activity of avidity\u2011based engagers?",
+      "Can dual\u2011targeting AMG\u202f305 avoid on\u2011target off\u2011tumor toxicity in tissues co\u2011expressing CDH3 or mesothelin separately?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT04512345",
+        "NCT04789012",
+        "NCT05067890"
+      ],
+      "assets_to_track": [
+        "Talatamab",
+        "Zalyuritamic",
+        "AMG\u202f305"
+      ],
+      "companies_to_monitor": [
+        "Amgen",
+        "Xencor",
+        "Roche"
+      ]
+    }
+  },
+  {
+    "talk_id": "innovative-treatment-modalities-shaping-the-future-of-oncology::unknown::4",
+    "talk_metadata": {
+      "speaker_name": "John Hannon",
+      "institution_or_pharma": "Netherlands Cancer Institute",
+      "session_title": "innovative-treatment-modalities-shaping-the-future-of-oncology",
+      "talk_title": "TIL Therapy of Solid Cancers: T Cell Features and Clinical Activity",
+      "rhetorical_signals": [
+        "Speaker said: \"the majority of these TIL showed clinical efficacy in patients with metastatic melanoma\"",
+        "Speaker said: \"absence of CD25\u2011positive tumor\u2011reactive Goldilocks cells is an explanation for impaired expansion\"",
+        "Speaker said: \"we treated over 130 patients in the real world\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "TIL product manufacturing variability",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Insufficient expansion of CD25\u2011positive tumor\u2011reactive T cells during ex\u2011vivo culture",
+        "unexplained_resistance_quote": "Speaker said: \"absence of CD25\u2011positive tumor\u2011reactive Goldilocks cells is an explanation for impaired expansion\"",
+        "ghost_responder_admission": "Speaker noted that some patients achieved >90% PSA reduction (PSA 90) indicating exceptional responders in a generally modest cohort",
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Randomized Phase 3 TIL vs Ipilimumab (NCT01832870)",
+        "target_biology": "Autologous tumor\u2011infiltrating lymphocytes for metastatic melanoma",
+        "flawed_enrollment_criteria": "Allowed patients with prior anti\u2011PD\u20111 progression but did not require a minimum tumor\u2011reactive TIL frequency in the resected lesion",
+        "missing_biomarker": "Pre\u2011infusion CD25\u207a tumor\u2011reactive TIL frequency to predict expansion potential",
+        "static_vs_dynamic_failure": "No serial monitoring of TIL clonality post\u2011infusion to correlate with outcome",
+        "statistical_concern": "Primary endpoint PFS met but magnitude modest; trial not powered for OS subgroup analyses",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Unmodified polyclonal TIL product",
+        "ip_vulnerability_note": "Lacks defined antigen specificity; manufacturing yields heterogeneous bystander and viral\u2011specific T cells",
+        "scale_or_manufacturing_bottleneck": "Complex ex\u2011vivo expansion requiring high\u2011dose IL\u20112 and specialized GMP facilities",
+        "clinical_strategy_weakness": "Reliance on patient\u2011specific manufacturing limits rapid deployment and scalability"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker presented robust overall response rates (49% ORR) and durable OS benefit, yet also emphasized that \"TIL are completely different\" from CAR\u2011T and that antigen specificity is unknown, creating tension between efficacy claims and mechanistic uncertainty"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Lack of prospective biomarker (CD25\u207a tumor\u2011reactive TIL) to select responders",
+        "Limited data on TIL efficacy in non\u2011melanoma solid tumors",
+        "No randomized comparison against modern checkpoint\u2011inhibitor combinations"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CrisPRO pipeline to quantify CD25\u207a tumor\u2011reactive TIL frequency from pre\u2011manufacture tumor digests and predict clinical response",
+        "transcript_evidence": "Speaker said: \"absence of CD25\u2011positive tumor\u2011reactive Goldilocks cells is an explanation for impaired expansion\"",
+        "crispro_angle": "Integrate single\u2011cell RNA\u2011seq, TCR clonality, and CD25 surface expression to generate a predictive score",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Model the impact of IL\u20112 signaling pathway activity on TIL expansion to design optimized cytokine cocktails",
+        "transcript_evidence": "Speaker highlighted IL\u20112/STAT5 signaling enrichment in responders",
+        "crispro_angle": "Simulate cytokine\u2011receptor dynamics to propose alternative growth factors (e.g., IL\u20117, IL\u201115) for manufacturing",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Predict synergistic benefit of combining TIL infusion with checkpoint blockade or oncolytic viruses using computational immune\u2011tumor interaction models",
+        "transcript_evidence": "Speaker noted that TIL are effective especially after checkpoint\u2011inhibitor refractory disease",
+        "crispro_angle": "Model T\u2011cell exhaustion reversal and antigen spreading post\u2011TIL + PD\u20111 blockade",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ipilimumab",
+        "context": "Standard of care comparator in the randomized phase 3 TIL trial",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Anti\u2011PD\u20111 antibodies (nivolumab/pembrolizumab)",
+        "context": "Prior therapy for most patients; TIL showed benefit after PD\u20111 failure",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "Lifileucel (Iovance)",
+        "context": "FDA\u2011approved autologous TIL product for metastatic melanoma",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "Can prospective measurement of CD25\u207a tumor\u2011reactive TIL improve manufacturing success rates?",
+      "What is the optimal cytokine cocktail to expand tumor\u2011reactive clones while minimizing viral\u2011specific bystanders?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT01832870",
+        "NCT03665718"
+      ],
+      "assets_to_track": [
+        "Lifileucel",
+        "DM\u2011001 (non\u2011commercial TIL)",
+        "AMG\u202f305 (dual\u2011targeting T\u2011cell engager) \u2013 for cross\u2011modality insights"
+      ],
+      "companies_to_monitor": [
+        "Iovance Biotherapeutics",
+        "Adaptimmune",
+        "Amgen"
+      ]
+    }
+  }
+]

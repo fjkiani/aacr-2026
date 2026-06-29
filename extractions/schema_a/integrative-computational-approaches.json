@@ -1,0 +1,551 @@
+[
+  {
+    "talk_id": "integrative-computational-approaches::boehm::1",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Digital pathology models AEON and Paladin for tumor subtyping and molecular alteration inference",
+    "speaker": {
+      "name": "Kevin Boehm",
+      "affiliation": "Computational Oncology, Radiation Oncology, Memorial Sloan Kettering Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "colorectal cancer",
+      "pancreatic cancer",
+      "urothelial carcinoma",
+      "breast cancer",
+      "glioma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "computational",
+      "translational",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MSI",
+        "alteration": "high microsatellite instability",
+        "pathway": "DNA_damage_response",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "colon adenocarcinoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS",
+        "alteration": "mutant",
+        "pathway": "RAS/MAPK",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "pancreatic adenocarcinoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FGFR3",
+        "alteration": "oncogenic alteration",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "urothelial carcinoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SDK11",
+        "alteration": "loss of function",
+        "pathway": "unknown",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "various solid tumors",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "whole slide image",
+        "name": "AEON / Paladin",
+        "genotype_or_key_features": "124 tumor subtypes, tile-level features"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "MSK Impact sequencing cohort",
+        "genotype_or_key_features": "350,000 WSIs from 60,000 cases"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "AEON uses a knowledge graph\u2013derived representation to infer 124 detailed tumor subtypes directly from H&E whole\u2011slide images, while Paladin conditions on each subtype to predict the presence of specific molecular alterations, demonstrating that digital pathology can capture phenotype\u2011genotype relationships for a subset of alterations (~4%).",
+    "readouts": [
+      "tile-level image embeddings",
+      "AUROC",
+      "IHC",
+      "RNA\u2011seq"
+    ],
+    "key_findings": [
+      "AEON achieved an average one\u2011vs\u2011rest AUROC of 0.996 across 124 tumor subtypes in the internal MSK test set.",
+      "Multimodal integration of AEON with the GDENS genomic classifier improved performance in both primary and metastatic validation cohorts.",
+      "Paladin correctly identified 9 of 11 ovarian granulosa cell tumors and outperformed DeepHistology on most molecular alteration predictions.",
+      "Only ~4% of examined molecular alterations showed a strong phenotype\u2011genotype signal on H&E, confirming limited but actionable predictive value.",
+      "Digital pathology aided variant\u2011of\u2011unknown\u2011significance annotation, low\u2011purity sample inference, and phenocopy detection."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Most molecular alterations lacked a detectable histologic phenotype, limiting the utility of H&E\u2011based prediction for many targets."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "GDENS genomic classifier",
+        "rationale": "Combine histologic and genomic information to improve tumor subtype and alteration inference.",
+        "phenotype": "Higher AUROC and accuracy in external validation.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can allele\u2011specific effects of mutations be resolved by the current models?",
+      "How can the approach be extended to rare tumor subtypes with limited image data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::lowe::2",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Multi\u2011omic model for glioblastoma recurrence prediction centered on histopathology",
+    "speaker": {
+      "name": "Julia Lowe",
+      "affiliation": "Computational Biology, Duke University",
+      "role": "trainee",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "cancer_vaccines",
+      "spatial_biology",
+      "machine_learning",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "whole slide image",
+        "name": "UniHeal foundation model (fine\u2011tuned)",
+        "genotype_or_key_features": "tile embeddings from H&E"
+      },
+      {
+        "model_type": "spatial_omics",
+        "name": "Xenium (RNA) / Codex (protein)",
+        "genotype_or_key_features": "single\u2011cell resolution spatial transcriptomics and proteomics"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "19 GBM patients (total resection)",
+        "genotype_or_key_features": "short, intermediate, long recurrence groups; 4 received PD\u20111 inhibitor"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A pathology\u2011foundation model (UniHeal) is fine\u2011tuned to predict GBM recurrence time from H&E tiles, using MRI radiomics and clinical covariates as inputs, while spatial omics (Xenium, Codex) provide explainability by linking predictive tiles to gene\u2011program and immune\u2011cell signatures.",
+    "readouts": [
+      "tile embeddings",
+      "UMAP clustering",
+      "radiomic features",
+      "spatial transcriptomics",
+      "protein expression (Codex)",
+      "saliency maps"
+    ],
+    "key_findings": [
+      "Preliminary cohort of 19 GBM patients shows that short\u2011recurrence tumors exhibit disrupted tissue architecture and necrosis, whereas long\u2011recurrence tumors retain normal segmentation.",
+      "UniHeal embeddings cluster tiles into biologically meaningful groups (e.g., necrotic vs. vascular regions).",
+      "Spatial alignment of Xenium and Codex data reveals that longer recurrence is associated with enhanced immune activity, while short recurrence shows immunosuppressive signatures.",
+      "A K\u2011means spatial domain analysis identified an oligodendrocyte\u2011enriched niche (cluster 8) with increased immune engagement in long\u2011recurrence tumors."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "Will the model generalize to larger, multi\u2011institutional GBM cohorts?",
+      "How robust is the approach to varying adjuvant therapies (e.g., PD\u20111 inhibition)?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::zhao::3",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Unified single\u2011cell and spatial atlas of prostate cancer progression",
+    "speaker": {
+      "name": "Faming Zhao",
+      "affiliation": "Oregon Health & Science University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "single_cell",
+      "tumor_microenvironment",
+      "translational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "single_cell",
+        "name": "Pan\u2011PCa atlas",
+        "genotype_or_key_features": "700k cells from 19 sites, epithelial, immune, stromal states"
+      },
+      {
+        "model_type": "spatial_transcriptomics",
+        "name": "10x Xenium & other spatial cohorts",
+        "genotype_or_key_features": "spatial mapping of niches CN1\u2013CN7"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Integration of >700\u202fk single\u2011cell profiles across localized, metastatic, and neuroendocrine prostate cancer defines epithelial, immune, and stromal state trajectories, revealing SP1\u2011macrophage and mCAF\u2011centered immunosuppressive niches that drive progression and correlate with poor survival.",
+    "readouts": [
+      "scRNA\u2011seq",
+      "spatial transcriptomics",
+      "immunohistochemistry",
+      "mouse models"
+    ],
+    "key_findings": [
+      "SP1\u2011macrophage expansion is associated with lymph\u2011node and bone metastasis and predicts worse overall survival.",
+      "mCAF enrichment co\u2011localizes with SP1\u2011macrophage in a stromal niche (CN7) linked to poor outcomes.",
+      "Anti\u2011SP1 treatment in bone\u2011metastasis mouse models reduced tumor burden, pain, and prolonged survival.",
+      "NEPC emergence aligns with specific epithelial lineage\u2011positive states and distinct transcription factor programs."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "SP1\u2011macrophage mediates TGF\u2011\u03b2\u2013driven immunosuppression, representing a selective vulnerability."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011SP1 therapeutic",
+        "rationale": "Target the immunosuppressive macrophage niche to relieve TGF\u2011\u03b2\u2013mediated suppression.",
+        "phenotype": "Reduced tumor burden and pain, extended survival in bone metastasis mouse model.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can SP1\u2011targeted therapy be safely combined with checkpoint inhibition?",
+      "What are the mechanisms underlying SP1\u2011macrophage recruitment to bone metastases?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::sokolova::4",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Deep learning profiling of regulatory somatic variants across clonal cancer evolution",
+    "speaker": {
+      "name": "Ksenia Sokolova",
+      "affiliation": "Princeton Precision Health",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "computational",
+      "basic_science",
+      "biomarker_development"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "deep_learning",
+        "name": "SAIE framework",
+        "genotype_or_key_features": "22,000 chromatin profiles condensed into 40 sequence classes"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "A sequence\u2011based deep learning model (SAIE) predicts the regulatory impact of somatic variants by comparing reference and mutant genome embeddings across 40 learned sequence classes, enabling patient\u2011level regulatory disruption scores that correlate with progression\u2011free interval independent of mutational burden.",
+    "readouts": [
+      "sequence embeddings",
+      "clonal/subclonal variant classification (PyClone)",
+      "progression\u2011free interval survival analysis"
+    ],
+    "key_findings": [
+      "High regulatory disruption scores are associated with significantly worse progression\u2011free survival across TCGA pan\u2011cancer cohorts.",
+      "Severity of regulatory impact, not the number of regulatory variants, drives the prognostic signal.",
+      "Clonal versus subclonal disruption severity provides complementary prognostic information.",
+      "Six patient clusters based on disruption profiles show distinct pathway enrichments (e.g., immune vs. cell\u2011cycle)."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How do regulatory disruption scores integrate with coding\u2011mutation drivers for therapy selection?",
+      "Can the approach be adapted to rare pediatric cancers with limited variant data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::ene::5",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Spatial multi\u2011omics integration to guide glioblastoma surgery and engineered macrophage therapy",
+    "speaker": {
+      "name": "Chibawanye Ene",
+      "affiliation": "Department of Neurosurgery, MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "glioblastoma"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "spatial_biology",
+      "metabolism",
+      "cell_therapy",
+      "radiomics",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TGF\u2011\u03b22",
+        "alteration": "",
+        "pathway": "TGF\u2011\u03b2 signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "AC\u2011like glioblastoma cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "FGFR3",
+        "alteration": "oncogenic alteration",
+        "pathway": "RTK signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "urothelial carcinoma (reference example)",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "spatial_omics",
+        "name": "10x Xenium + Imaging Mass Cytometry + MSI",
+        "genotype_or_key_features": "core vs edge glioblastoma TMA"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Upcoming engineered macrophage trial (T\u2011cell\u2011resistant)",
+        "genotype_or_key_features": "CRISPR\u2011KO TGF\u2011\u03b2 receptors in macrophages"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Integrated spatial transcriptomics, proteomics, and mass\u2011spec imaging of glioblastoma core and edge identifies mesenchymal\u2011like and AC\u2011like cell states linked to TGF\u2011\u03b2\u2013driven immunosuppression; engineered macrophages lacking TGF\u2011\u03b2 receptors are designed to resist this suppression and improve therapeutic efficacy.",
+    "readouts": [
+      "spatial transcriptomics (Xenium)",
+      "imaging mass cytometry",
+      "mass spectrometry imaging",
+      "MasSpec Pen intra\u2011operative metabolomics"
+    ],
+    "key_findings": [
+      "Mesenchymal\u2011like cell states are enriched in hypoxic tumor cores, while AC\u2011like cells produce TGF\u2011\u03b22 that activates tumor\u2011associated macrophages.",
+      "SP1\u2011macrophage and mCAF co\u2011localization defines an immunosuppressive niche associated with poor survival.",
+      "MasSpec Pen can detect metabolic signatures of proliferating (Ki\u201167+) tumor cells intra\u2011operatively, potentially guiding resection margins.",
+      "CRISPR\u2011KO of TGF\u2011\u03b2 receptors in engineered macrophages reduces tumor burden and pain in a glioblastoma bone\u2011metastasis mouse model."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "TGF\u2011\u03b2 signaling from AC\u2011like cells creates a selective immunosuppressive pressure on macrophages."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "CRISPR\u2011engineered TGF\u2011\u03b2\u2011receptor\u2011null macrophages",
+        "rationale": "Render cell therapy resistant to tumor\u2011derived TGF\u2011\u03b2 immunosuppression.",
+        "phenotype": "Enhanced tumor control and survival in mouse models.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Will intra\u2011operative metabolomic signatures reliably predict residual aggressive cell states across patients?",
+      "How will engineered macrophages perform in the immunosuppressive brain microenvironment in humans?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::zhang::6",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "ADT Norm: non\u2011parametric batch correction for single\u2011cell proteomics across technologies",
+    "speaker": {
+      "name": "Ye Zhang",
+      "affiliation": "Pharmacology and Computational Biology, MD Anderson Cancer Center",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "single_cell",
+      "platform_technology",
+      "AI_ML",
+      "computational"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "computational",
+        "name": "ADT Norm",
+        "genotype_or_key_features": "non\u2011parametric peak alignment for ADT counts"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "ADT Norm identifies negative and positive peaks in antibody\u2011derived tag (ADT) distributions using functional data analysis and aligns these landmarks across batches, removing technical variation while preserving biological cell\u2011type signals for downstream integration of CITE\u2011seq, CyTOF, and other single\u2011cell proteomics platforms.",
+    "readouts": [
+      "ADT count density plots",
+      "2\u2011D embeddings (UMAP)",
+      "batch mixing metrics"
+    ],
+    "key_findings": [
+      "ADT Norm aligns background and signal peaks across heterogeneous CITE\u2011seq batches, achieving superior batch mixing and cell\u2011type separation compared with SeR normalization.",
+      "The method quantifies antibody staining quality, flagging markers with poor signal\u2011to\u2011background separation.",
+      "An AI\u2011agent interface enables natural\u2011language driven parameter tuning for large\u2011scale multi\u2011technology integration."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [],
+    "combination_strategies": [],
+    "open_questions": [
+      "How does ADT Norm perform on highly multiplexed spatial proteomics (e.g., CODEX) where signal bleed is prominent?",
+      "Can the AI\u2011agent be extended to automatically select optimal markers for downstream analyses?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Zhang et al. 2024 Nature Communications"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "integrative-computational-approaches::laughal::7",
+    "session_title": "integrative-computational-approaches",
+    "talk_title": "Foundation\u2011model\u2011driven MHC\u2011II peptide binding prediction with data\u2011efficient graph neural network",
+    "speaker": {
+      "name": "Kamal Laughal",
+      "affiliation": "TGen",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "computational",
+      "AI_ML",
+      "protein_binding"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MHC class II (HLA\u2011DR, HLA\u2011DP, HLA\u2011DQ)",
+        "alteration": "",
+        "pathway": "antigen presentation",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "various cancer antigens",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "computational",
+        "name": "AlphaFold3 + ESM2 + GNN (trained on PepSeq)",
+        "genotype_or_key_features": "structure embeddings + protein language model embeddings"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "AlphaFold3 generates structural representations of peptide\u2011MHC\u2011II complexes, ESM2 provides sequence embeddings, and a graph neural network trained on low\u2011volume PepSeq binding data predicts peptide affinity, achieving state\u2011of\u2011the\u2011art performance with only ~2% of traditional training data.",
+    "readouts": [
+      "PepSeq binding assay",
+      "AUC on IEDB CD4 epitope benchmark",
+      "orientation analysis of peptide\u2011MHC complexes"
+    ],
+    "key_findings": [
+      "The GNN model trained on 2% of the data matches or exceeds NetMHC\u2011II Pan performance on DRB1 alleles.",
+      "Zero\u2011shot AlphaFold3 scoring (Fisher score) provides moderate predictive power, but the GNN substantially improves AUC.",
+      "Orientation errors in AlphaFold3 predictions for HLA\u2011DP alleles reduce performance, suggesting a need for orientation\u2011aware modeling.",
+      "Training NetMHC\u2011II Pan on the same limited dataset yields a 10% lower AUC, confirming the data efficiency of the new approach."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "AlphaFold3 sometimes predicts reverse peptide orientation for HLA\u2011DP, leading to reduced binding prediction accuracy."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "NetMHC\u2011II Pan (ensemble)",
+        "rationale": "Combine complementary predictions to improve overall AUC.",
+        "phenotype": "Slight performance boost over either model alone.",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "Can orientation\u2011corrected AlphaFold3 models further improve predictions for HLA\u2011DP alleles?",
+      "How will the model perform on rare HLA alleles with minimal PepSeq data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "talk_id": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms::loupiain::1",
+    "session_title": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms",
+    "talk_title": "Epigenomic heterogeneity and chromatin variants in metastatic castration\u2011resistant prostate cancer",
+    "speaker": {
+      "name": "Matthew Loupiain",
+      "affiliation": "University of California, San Diego, Department of Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "prostate cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "AR",
+        "alteration": "amplification",
+        "pathway": "androgen_receptor_signaling",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "LINE1+ metastatic castration\u2011resistant prostate cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "71 mCRPC patients",
+        "genotype_or_key_features": "LINE1+, SETL, SINE1+, constant subgroups; AR amplification in LINE1+"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "overall_survival",
+        "value": "significantly shorter in LINE1+ subgroup",
+        "confidence_interval": null,
+        "n": "n=71",
+        "population": "LINE1+ mCRPC patients treated with AR selective inhibitors",
+        "comparator": "other subgroups (SETL, SINE1+, constant)",
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "Chromatin variant analysis using ATAC\u2011seq identified repetitive element\u2011driven accessible regions that recruit AR, FOXA1 and other transcription factors, forming de novo regulatory elements that amplify AR expression in LINE1+ metastatic castration\u2011resistant prostate cancer, leading to intrinsic resistance to AR\u2011targeted therapy.",
+    "readouts": [
+      "ATAC-seq",
+      "Hi\u2011C",
+      "whole genome sequencing",
+      "copy number analysis",
+      "Kaplan\u2011Meier survival curves"
+    ],
+    "key_findings": [
+      "Unsupervised clustering of ATAC\u2011seq data from 71 mCRPC samples defined four subgroups based on repetitive element chromatin variants (LINE1+, SETL, SINE1+, constant).",
+      "LINE1+ subgroup showed intrinsic resistance to androgen\u2011receptor selective inhibitors, with markedly shorter survival.",
+      "AR locus amplification (up to >150 copies) and ecDNA positivity were enriched in LINE1+ tumors.",
+      "Repetitive element\u2011derived accessible sites in LINE1+ tumors physically interact with the AR promoter (Hi\u2011C), recruiting AR, FOXA1, and OCTB13.",
+      "Chromatin variant classification did not align with gene\u2011expression\u2011based subtypes, highlighting orthogonal heterogeneity."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "LINE1+ tumors are intrinsically resistant to AR\u2011selective inhibitors due to extreme AR overexpression driven by repeat\u2011derived enhancers."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Do repeat\u2011derived chromatin variants directly generate ecDNA, or are they a consequence of ecDNA formation?",
+      "What upstream mechanisms (e.g., p53 loss, metabolic stress) drive the emergence of LINE1+ chromatin variant profiles?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms::work)::2",
+    "session_title": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms",
+    "talk_title": "SMARCA4 loss drives cell\u2011state disorder and dedifferentiated endometrial cancer",
+    "speaker": {
+      "name": "Unspecified presenter (endometrial cancer work)",
+      "affiliation": "University of Alberta, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "endometrial cancer"
+    ],
+    "clinical_stage": "unspecified",
+    "topic_categories": [
+      "epigenetics",
+      "tumor_microenvironment",
+      "basic_science",
+      "translational"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "SMARCA4",
+        "alteration": "loss",
+        "pathway": "SWI/SNF_chromatin_remodeling",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "SMARCA4\u2011deficient dedifferentiated endometrial cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "organoid",
+        "name": "KRAS\u2011LKB1 mouse lung adenocarcinoma organoids (used for parallel studies)",
+        "genotype_or_key_features": "not applicable for endometrial work"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "microdissected well\u2011differentiated vs dedifferentiated regions of DDEC",
+        "genotype_or_key_features": "SMARCA4 loss, ARID1B loss in dedifferentiated component"
+      },
+      {
+        "model_type": "xenograft",
+        "name": "SMARCA4\u2011KO and WT endometrial cancer cells serially passaged in mice",
+        "genotype_or_key_features": "SMARCA4 knockout vs wild\u2011type"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Loss of SMARCA4 disrupts the SWI/SNF chromatin remodeling complex, leading to global DNA hypomethylation and stochastic chromatin accessibility changes that prevent cells from stabilizing in a differentiated state, resulting in histologic dedifferentiation and therapy resistance in endometrial cancer.",
+    "readouts": [
+      "exome sequencing",
+      "DNA methylation arrays",
+      "single\u2011cell multi\u2011omics (ATAC + RNA)",
+      "IHC for E\u2011cadherin and PAX8",
+      "sphere formation assays",
+      "soft agar assays"
+    ],
+    "key_findings": [
+      "80% of dedifferentiated endometrial cancer (DDEC) cases show loss of SMARCA4 and/or ARID1B, components of the SWI/SNF complex.",
+      "CRISPR\u2011mediated SMARCA4 knockout in endometrial cancer cells reduces in\u2011vitro tumorigenicity but, after serial in\u2011vivo passaging, restores growth and yields mixed well\u2011 and poorly\u2011differentiated histology.",
+      "SMARCA4\u2011deficient tumors display global DNA hypomethylation and distinct chromatin accessibility patterns compared with wild\u2011type.",
+      "Single\u2011cell multi\u2011omics reveal that SMARCA4 loss increases cell\u2011state plasticity, generating an uncommitted transcriptional state without a stem\u2011cell or embryonic signature.",
+      "Patient DDEC samples retain heterogeneous E\u2011cadherin expression, supporting a model of cell\u2011state disorder rather than true dedifferentiation."
+    ],
+    "novelty_flag": "clinical_validation_of_known",
+    "resistance_or_selectivity_notes": [
+      "SMARCA4\u2011deficient tumors are resistant to carboplatin chemotherapy in vivo."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What upstream signals (e.g., hypoxia, metabolic stress) trigger SMARCA4 loss\u2011induced chromatin variants?",
+      "Can epigenetic drugs restore chromatin stability and re\u2011sensitize SMARCA4\u2011deficient DDEC to chemotherapy?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms::ji::3",
+    "session_title": "aacr-bayard-d-clarkson-symposium-on-plasticity-and-cancer-progression-mechanisms",
+    "talk_title": "LKB1 loss\u2011driven adenocarcinoma\u2011to\u2011squamous transition (AST) and therapeutic vulnerabilities in KRAS\u2011mutant lung cancer",
+    "speaker": {
+      "name": "Hongjun Ji",
+      "affiliation": "University of Texas Southwestern, Department of Oncology",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "NSCLC"
+    ],
+    "clinical_stage": "phase_2",
+    "topic_categories": [
+      "plasticity",
+      "tumor_microenvironment",
+      "combination_therapy",
+      "clinical_trial",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "LKB1",
+        "alteration": "loss",
+        "pathway": "AMPK_signaling",
+        "modality": "unspecified",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "LKB1\u2011deficient KRAS\u2011mutant lung adenocarcinoma",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RELA",
+        "alteration": "activation",
+        "pathway": "NF\u2011kappaB_signaling",
+        "modality": "inhibitor",
+        "compound_name": "BAY compound",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "AST intermediate state",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IL1R",
+        "alteration": "antagonism",
+        "pathway": "IL\u20111_signaling",
+        "modality": "antagonist",
+        "compound_name": "IL\u20111 receptor antagonist",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "squamous tumor microenvironment",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RAS",
+        "alteration": "G12C mutation",
+        "pathway": "RAS/MAPK",
+        "modality": "inhibitor",
+        "compound_name": "IMC\u20116236",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "KRAS\u2011G12C lung adenocarcinoma",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "KLK6A",
+        "type": "predictive",
+        "assay": "RNA\u2011seq expression",
+        "finding": "high KLK6A expression correlates with shorter treatment duration and poor survival in LKB1\u2011mutant lung adenocarcinoma"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse",
+        "name": "KRAS\u2011G12D; LKB1\u2011KO (KL) genetically engineered mouse model",
+        "genotype_or_key_features": "KRAS G12D activation, LKB1 loss"
+      },
+      {
+        "model_type": "organoid",
+        "name": "KL lung adenocarcinoma organoids",
+        "genotype_or_key_features": "KRAS G12D; LKB1 loss"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "CHRISTOPHER\u20111 trial lung cancer samples (n\u22488)",
+        "genotype_or_key_features": "KRAS G12C or EGFR mutant, LKB1 status known"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "treatment_duration",
+        "value": "shorter in patients with high squamous signature",
+        "confidence_interval": null,
+        "n": "n=7 adenocarcinoma samples",
+        "population": "LKB1\u2011mutant lung adenocarcinoma patients",
+        "comparator": null,
+        "maturity": "interim"
+      },
+      {
+        "metric": "overall_survival",
+        "value": "worse in high KLK6A expressors",
+        "confidence_interval": null,
+        "n": "independent cohort (size not specified)",
+        "population": "LKB1\u2011mutant lung cancer",
+        "comparator": null,
+        "maturity": "interim"
+      }
+    ],
+    "MOA_summary": "LKB1 loss elevates ROS, transiently activating NF\u2011\u03baB (RELA) which sustains adenocarcinoma survival; prolonged stress leads to a double\u2011positive p63\u207a/RELA\u207a state that secretes IL\u20111\u03b1, reprograms CAFs to a leukocyte\u2011like phenotype, induces IL\u20111\u03b2\u2011driven neutrophil NET formation, and drives squamous transdifferentiation (AST) that confers resistance to KRAS\u2011G12C inhibition; combined NF\u2011\u03baB inhibition, ROS modulation, and IL\u20111 blockade synergize with KRAS\u2011G12C inhibitor to prevent or eradicate squamous lesions.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "bulk RNA\u2011seq",
+      "ATAC\u2011seq",
+      "organoid morphology",
+      "IHC (p63, p40, IL\u20111\u03b1)",
+      "NET assay",
+      "survival analysis"
+    ],
+    "key_findings": [
+      "LKB1 loss in KRAS\u2011mutant mouse models induces spontaneous adenocarcinoma\u2011to\u2011squamous transition (AST) that is enriched after targeted therapy.",
+      "High squamous transcriptional signature predicts shorter treatment duration in LKB1\u2011mutant lung cancer patients.",
+      "KLK6A expression serves as a predictive biomarker for poor response to aggressive therapy in LKB1\u2011deficient tumors.",
+      "ROS accumulation activates NF\u2011\u03baB; NF\u2011\u03baB inhibition accelerates p63\u207a squamous differentiation, while ROS scavenging (NAC) reduces RELA activation.",
+      "p63\u207a squamous cells secrete IL\u20111\u03b1, reprogramming CAFs to IL\u20111\u03b2\u2011producing leukocyte\u2011like CAFs that trigger neutrophil NET formation, promoting squamous tumor growth.",
+      "Combined KRAS\u2011G12C inhibitor (IMC\u20116236) with IL\u20111 receptor antagonist or NET inhibitor (GSK\u2011484) markedly reduces squamous tumor burden and improves overall tumor control."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "AST confers resistance to KRAS\u2011G12C inhibition; NF\u2011\u03baB activation maintains adenocarcinoma lineage but its inhibition promotes squamous transition."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "IMC\u20116236 (KRAS\u2011G12C inhibitor)",
+        "rationale": "Target oncogenic KRAS while preventing emergence of resistant squamous phenotype",
+        "phenotype": "tumor regression of adenocarcinoma; squamous lesions persist unless combined with IL\u20111 blockade",
+        "stage": "clinical_ongoing"
+      },
+      {
+        "with_agent": "IL\u20111 receptor antagonist",
+        "rationale": "Block IL\u20111\u03b1/\u03b2 signaling that drives CAF reprogramming and NET formation supporting squamous growth",
+        "phenotype": "reduced squamous tumor number and NETs in KRAS\u2011LKB1 mouse model",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "BAY compound (NF\u2011\u03baB inhibitor)",
+        "rationale": "Transient NF\u2011\u03baB activity sustains adenocarcinoma; inhibition accelerates AST, suggesting timing matters for combination",
+        "phenotype": "accelerated p63\u207a squamous differentiation; reduced adenocarcinoma survival in vitro",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "GSK\u2011484 (NET inhibitor)",
+        "rationale": "Inhibit neutrophil extracellular trap formation that supports squamous tumor growth",
+        "phenotype": "decreased squamous tumor burden and NET levels",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What determines the threshold of ROS/NF\u2011\u03baB activation that switches from protective to pro\u2011AST signaling?",
+      "Can early detection of the double\u2011positive p63\u207a/RELA\u207a state predict imminent squamous transition in patients?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04165772",
+        "NCT05194995"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Swearingen et al. 2020 Nat Med",
+        "Yu et al. 2020 Cancer Cell"
+      ],
+      "company_or_sponsor": [
+        "ImmunoGen",
+        "Bayer"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]

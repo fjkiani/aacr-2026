@@ -1,0 +1,355 @@
+[
+  {
+    "talk_id": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Stephanie Duggan",
+      "institution_or_pharma": "Dana-Farber Cancer Institute and Harvard Medical School",
+      "session_title": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment",
+      "talk_title": "Fibroblasts and anti-tumor immunity",
+      "rhetorical_signals": [
+        "Speaker said: the Smoothened inhibitor plus gemcitabine actually made the tumors progress faster than with chemotherapy alone",
+        "Speaker said: depleting the extracellular matrix with pegylated hyaluronidase worsens overall survival",
+        "Speaker said: the trial of TGF-beta blockade with gemcitabine plus paclitaxel in pancreas cancer was actually stopped in phase three for a worsening of overall survival"
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Smoothened inhibitor (hedgehog pathway inhibitor)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Did not account for fibroblast-mediated tumor support; depletion of stroma increased tumor progression",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "Pegylated hyaluronidase (PEGPH20)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Enzymatic ECM degradation failed to improve drug delivery and worsened survival, suggesting overlooked fibroblast heterogeneity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "TGF-beta blockade combined with chemotherapy",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Targeting TGF-beta depleted myCAFs but did not improve outcomes, indicating missing understanding of CAF subpopulation roles",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "IL-1 beta blockade",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Lack of effect in established pancreatic cancer suggests IL-1 beta role is context\u2011dependent and not a universal driver",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Smoothened inhibitor + gemcitabine trial (unpublished press release)",
+        "target_biology": "Hedgehog pathway inhibition to deplete CAFs and improve drug delivery",
+        "flawed_enrollment_criteria": "Enrolled all pancreatic cancer patients without biomarker selection for Hedgehog\u2011active tumors",
+        "missing_biomarker": "Hedgehog pathway activation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Early termination due to unexpected acceleration of progression",
+        "severity": "fatal_to_trial"
+      },
+      {
+        "trial_name_or_nct": "Pegylated hyaluronidase (PEGPH20) + gemcitabine/paclitaxel Phase III",
+        "target_biology": "Hyaluronic acid degradation to reduce stromal pressure",
+        "flawed_enrollment_criteria": "Mixed chemotherapy backbones (gemcitabine/paclitaxel and FOLFIRINOX) without stratification",
+        "missing_biomarker": "Baseline hyaluronic acid levels as a predictive marker",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "No OS benefit despite biomarker\u2011positive subgroup; trial underpowered for subgroup analysis",
+        "severity": "significant_risk"
+      },
+      {
+        "trial_name_or_nct": "TGF-beta blockade + gemcitabine/paclitaxel Phase III",
+        "target_biology": "Inhibit TGF-beta signaling to deplete myCAFs",
+        "flawed_enrollment_criteria": "All\u2011comer pancreatic cancer without selection for TGF-beta\u2011high tumors",
+        "missing_biomarker": "Tumor TGF-beta activity or SMAD2 phosphorylation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Worsening overall survival observed, indicating trial design did not anticipate adverse stromal effects",
+        "severity": "fatal_to_trial"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Smoothened inhibitors (hedgehog pathway)",
+        "ip_vulnerability_note": "Efficacy relied on a simplistic model of CAF depletion; clinical data revealed paradoxical tumor acceleration",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad stromal depletion without biomarker\u2011guided patient selection"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "Pegylated hyaluronidase (PEGPH20)",
+        "ip_vulnerability_note": "Enzyme activity assumed to improve drug delivery, but ignored fibroblast heterogeneity and potential protective ECM components",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of companion diagnostic for hyaluronic acid levels; trial mixed chemotherapy regimens"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed pre\u2011clinical mouse data where Smoothened inhibition + gemcitabine improved survival, then concluded that the same approach in humans made tumors progress faster \u2014 ignoring the contradictory outcome",
+      "Speaker presented IL\u20111\u03b2 blockade pre\u2011clinical promise in lung cancer, yet reported no benefit in pancreatic cancer patients, yet still suggested IL\u20111\u03b2 as a viable target without reconciling the failure"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data for Smoothened inhibitor trial",
+        "Lack of biomarker\u2011stratified analysis for PEGPH20",
+        "No mechanistic correlative studies linking CAF depletion to clinical outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high Hedgehog pathway activity or high hyaluronic acid content to select those who might benefit from Smoothened or PEGPH20 therapy",
+        "transcript_evidence": "Speaker noted that trials enrolled all\u2011comer patients without biomarker selection and resulted in failure",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics to derive a composite stromal activity score predicting response to stromal\u2011targeting agents",
+        "priority": "high",
+        "external_validation_needed": [
+          "ClinicalTrials.gov: retrieve enrollment criteria and biomarker data for the Smoothened and PEGPH20 trials",
+          "PubMed: studies linking Hedgehog activation or HA levels to therapy response in PDAC"
+        ]
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine stromal\u2011targeting agents with immune checkpoint blockade to counteract the immune\u2011suppressive effects observed after CAF depletion",
+        "transcript_evidence": "Speaker highlighted that depleting fibroblasts increased CD45+ leukocyte infiltration but worsened survival, suggesting immune dysregulation",
+        "crispro_angle": "CrisPRO can model cytokine/chemokine networks to predict synergistic immune\u2011activating combinations",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Check ongoing trials combining PEGPH20 or Smoothened inhibitors with anti\u2011PD\u20111/PD\u2011L1 agents"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "Ken Olive's group (Smoothened inhibitor study)",
+        "context": "Pre\u2011clinical mouse work showing survival benefit, contrasted with failed human trial",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Company developing the Smoothened inhibitor (unnamed)",
+        "context": "Early press release announcing trial failure",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Company developing pegylated hyaluronidase (PEGPH20)",
+        "context": "Phase II promising, Phase III negative",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What specific fibroblast subsets mediate the adverse effects observed after stromal depletion?",
+      "Can biomarkers be identified to predict which patients will benefit from Hedgehog or HA targeting?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCTXXXXXXX (Smoothened inhibitor trial)",
+        "NCTXXXXXXX (PEGPH20 Phase III trial)",
+        "NCTXXXXXXX (TGF\u2011beta blockade trial)"
+      ],
+      "assets_to_track": [
+        "Smoothened inhibitor (company name)",
+        "Pegylated hyaluronidase (PEGPH20)",
+        "TGF\u2011beta neutralizing antibodies in PDAC"
+      ],
+      "companies_to_monitor": [
+        "Company developing Smoothened inhibitor",
+        "Company developing PEGPH20"
+      ]
+    }
+  },
+  {
+    "talk_id": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Mara Sherman",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment",
+      "talk_title": "Stellate\u2011cell derived Kit ligand as a stromal tumor suppressor",
+      "rhetorical_signals": [
+        "Speaker said: Kit ligand is clearly expressed in normal pancreas tissue but really seemed to be lost in tumors",
+        "Speaker said: conditional deletion of Kit ligand increased CD45 positive cells and perivascular mesenchymal cells",
+        "Speaker said: loss of Kit ligand in the stroma significantly increased tumorigenesis in three implantable models"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Kit ligand (Stem Cell Factor) loss",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Downregulation by TGF\u2011beta in tumor microenvironment removes a barrier to epithelial plasticity",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Stromal Kit ligand signaling axis",
+        "ip_vulnerability_note": "Therapeutic agonism of c\u2011Kit is undesirable due to oncogenic potential; loss of ligand is not currently targetable",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "No feasible way to restore Kit ligand in patients; attempts to boost pathway may cause off\u2011target oncogenic effects"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that Kit ligand maintains normal basement membrane components and suppresses LRRC15 expression, yet concluded that targeting Kit ligand directly is not a therapeutic strategy due to oncogenic concerns"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "Human longitudinal data on Kit ligand loss during PanIN to PDAC progression",
+        "Mechanistic link between Kit ligand loss and specific immune cell recruitment"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a Kit ligand\u2011based stromal biomarker to identify patients with retained stromal Kit ligand who may have slower disease progression",
+        "transcript_evidence": "Speaker noted significant reduction of Kit ligand\u2011positive mesenchyme in invasive cancer compared to benign pancreas",
+        "crispro_angle": "CrisPRO can integrate spatial transcriptomics and proteomics to quantify Kit ligand expression across lesions",
+        "priority": "high",
+        "external_validation_needed": [
+          "Access to tissue microarrays of PanIN, IPMN, and PDAC for Kit ligand IHC/RNA\u2011FISH validation",
+          "Correlate Kit ligand levels with clinical outcomes in existing PDAC cohorts"
+        ]
+      },
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Target downstream effectors of Kit ligand loss (e.g., LRRC15, IL\u20116) to mimic its tumor\u2011restraining effects",
+        "transcript_evidence": "Loss of Kit ligand up\u2011regulated LRRC15 and immune\u2011suppressive cytokines in fibroblasts",
+        "crispro_angle": "CrisPRO can model the regulatory network downstream of Kit ligand to prioritize druggable nodes",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Literature on LRRC15 inhibitors or neutralizing antibodies",
+          "Pre\u2011clinical testing of IL\u20116 blockade in Kit\u2011ligand\u2011deficient stromal models"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "TGF\u2011beta pathway inhibitors",
+        "context": "TGF\u2011beta shown to downregulate Kit ligand in stromal cells",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "Is TGF\u2011beta the sole driver of Kit ligand loss, or are additional signals involved?",
+      "Can restoration of Kit ligand in the tumor stroma reverse established PanIN lesions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "c\u2011Kit agonists (if any) and their safety profiles",
+        "LRRC15 targeting agents"
+      ],
+      "companies_to_monitor": [
+        "Companies developing stromal modulators for PDAC"
+      ]
+    }
+  },
+  {
+    "talk_id": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Claus",
+      "institution_or_pharma": "Dana-Farber Cancer Institute",
+      "session_title": "fibroblast-dynamics-how-heterogeneity-shapes-the-tumor-microenvironment",
+      "talk_title": "CD105-defined fibroblast lineages and tissue\u2011specific fibroblast responses",
+      "rhetorical_signals": [
+        "Speaker said: CD105 positive fibroblasts remain CD105 positive in culture, indicating a stable lineage",
+        "Speaker said: CD105 negative fibroblasts suppress tumor growth in a CD45\u2011dependent manner",
+        "Speaker said: fibroblast responses to tumor signals cluster by tissue of origin rather than tumor type"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "CD105\u2011targeted therapies (hypothetical)",
+        "failure_type": "unknown",
+        "mechanistic_blindspot": "CD105 expression is lineage\u2011stable and does not shift with TGF\u2011beta or cytokine treatment, limiting ability to reprogram via conventional signaling",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "implied_by_hedging"
+      }
+    ],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "CD105 as a therapeutic target on fibroblasts",
+        "ip_vulnerability_note": "CD105 is a co\u2011receptor for TGF\u2011beta; targeting may not alter fibroblast phenotype because expression is hard\u2011wired",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Lack of biomarkers to select patients where CD105 modulation would be beneficial"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker demonstrated that CD105 positive fibroblasts accelerate tumor growth, yet CD105 is a TGF\u2011beta co\u2011receptor that is up\u2011regulated by TGF\u2011beta, suggesting that blocking TGF\u2011beta (as done in other trials) might paradoxically reduce a tumor\u2011promoting fibroblast subset"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "mature",
+      "key_data_gaps": [
+        "Mechanistic link between CD105 expression and downstream signaling in vivo",
+        "Effect of CD105 modulation on metastatic sites"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop a CD105\u2011based stromal signature to stratify patients for therapies that target myofibroblastic versus tumor\u2011suppressive fibroblasts",
+        "transcript_evidence": "Speaker showed CD105 positive fibroblasts accelerate tumor growth while CD105 negative fibroblasts suppress it in a CD45\u2011dependent manner",
+        "crispro_angle": "CrisPRO can integrate spatial proteomics to map CD105+ versus CD105\u2011 fibroblast niches and predict response to stromal therapies",
+        "priority": "medium",
+        "external_validation_needed": [
+          "Immunofluorescence validation of CD105 in human PDAC cohorts",
+          "Correlation of CD105 levels with clinical outcomes"
+        ]
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Design trials that account for tissue\u2011specific fibroblast responses by incorporating organ\u2011matched pre\u2011clinical models",
+        "transcript_evidence": "Speaker demonstrated that fibroblast responses to tumor conditioned media cluster by tissue of origin",
+        "crispro_angle": "CrisPRO can simulate organ\u2011specific stromal networks to predict trial outcomes before patient enrollment",
+        "priority": "high",
+        "external_validation_needed": [
+          "Access to organ\u2011specific fibroblast panels and corresponding omics data"
+        ]
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "TGF\u2011beta inhibitors",
+        "context": "Mentioned as upstream regulator of CD105 expression",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What signals, if any, can convert CD105 negative fibroblasts into CD105 positive ones, or vice versa?",
+      "Do CD105\u2011defined fibroblast lineages behave similarly in metastatic niches?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Anti\u2011CD105 antibodies or ADCs in development",
+        "TGF\u2011beta pathway inhibitors in PDAC"
+      ],
+      "companies_to_monitor": [
+        "Companies pursuing CD105\u2011targeted therapeutics"
+      ]
+    }
+  }
+]

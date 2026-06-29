@@ -1,0 +1,475 @@
+[
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::nomura::1",
+    "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+    "talk_title": "Covalent chemoproteomic approaches to target transcription factors and epigenetic rewiring",
+    "speaker": {
+      "name": "Dan Nomura",
+      "affiliation": "University of California, Berkeley, Department of Chemistry",
+      "role": "academic_pi",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "molecular_glue",
+      "epigenetics",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "MYC",
+        "alteration": null,
+        "pathway": "transcription",
+        "modality": "covalent_inhibitor",
+        "compound_name": "236",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MYC intrinsically disordered region",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MYC",
+        "alteration": null,
+        "pathway": "transcription",
+        "modality": "covalent_inhibitor",
+        "compound_name": "219A",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "MYC with rapid turnover",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "beta-catenin",
+        "alteration": null,
+        "pathway": "WNT",
+        "modality": "covalent_inhibitor",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": null,
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AR",
+        "alteration": "V7 splice variant",
+        "pathway": "androgen signaling",
+        "modality": "covalent_inhibitor",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "prostate cancer cells",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "IRF5",
+        "alteration": null,
+        "pathway": "inflammatory transcription",
+        "modality": "covalent_inhibitor",
+        "compound_name": null,
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": null,
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "MBD2",
+        "alteration": null,
+        "pathway": "DNA methylation binding",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "MBD2 inhibitor (patent-derived)",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "recruits HDAC complex for TRACER",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRD9",
+        "alteration": null,
+        "pathway": "non\u2011canonical BAF complex",
+        "modality": "molecular_glue",
+        "compound_name": "ZD186",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "BCL6 transcriptional repressor context",
+        "target_novelty": "emerging_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "VCAP",
+        "genotype_or_key_features": "AR\u2011amplified, AR\u2011V7+, p53 mutant"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "22RV1",
+        "genotype_or_key_features": "AR full\u2011length + AR\u2011V7, prostate cancer"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Covalent chemoproteomic probes identify hyperreactive cysteines in intrinsically disordered transcription factors (e.g., MYC C203). Stereoselective electrophiles covalently engage these sites, destabilize the protein, and trigger proteasomal degradation, while linked recruiters (e.g., MBD2 inhibitor) enable small\u2011molecule epigenetic rewiring (TRACER) that recruits HDAC complexes to silence locus\u2011specific transcription such as ER or AR\u2011V7. Molecular glues (e.g., ZD186) covalently attach to BCL6 and recruit BRD9, leading to MYC down\u2011regulation via neomorphic transcriptional complexes.",
+    "readouts": [
+      "ABPP",
+      "western_blot",
+      "RNA-seq",
+      "ATAT-seq",
+      "pull_down",
+      "proteomics",
+      "thermal_shift_assay",
+      "CRISPR_mutagenesis"
+    ],
+    "key_findings": [
+      "Identified >100,000 ligandable cysteine sites across the human proteome using activity\u2011based protein profiling.",
+      "Stereoselective MYC degrader 236 caused dose\u2011responsive MYC degradation with EC50 ~2\u202f\u00b5M, rescued by proteasome inhibition, and engaged C203 with >100 off\u2011targets.",
+      "Optimized degrader 219A achieved sustained MYC degradation for 24\u202fh, reduced off\u2011target engagement, and lowered MYC levels by >90% in VCAP cells.",
+      "TRACER heterobifunctional molecule linking an estrone agonist to an MBD2 inhibitor suppressed ER transcription >90% at low nanomolar concentrations and maintained inhibition after washout for days.",
+      "Molecular glue ZD186 recruited BRD9 to BCL6, resulting in rapid MYC down\u2011regulation (observed before P21 up\u2011regulation) and rescue of the phenotype with BRD9 inhibition or knockout.",
+      "Covalent destabilizing degraders were also generated for beta\u2011catenin, AR, and IRF5, demonstrating the generality of the approach for diverse transcription factors."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Fast turnover of transcription factors (e.g., MYC) limits durability of degradation; 219A was engineered for faster kinetics to overcome rapid resynthesis.",
+      "Off\u2011target cysteine reactivity correlated with neighboring Asp/Glu residues; mutation of both Cys and Asp rescued MYC degradation, highlighting selectivity determinants."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "Can covalent MYC binders be linked to other recruiters (e.g., BCL6) to achieve locus\u2011specific transcriptional repression?",
+      "What is the structural basis for the transient pocket formation in intrinsically disordered regions that enables stereoselective covalent engagement?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Novartis",
+        "Mark Foundation for Cancer Research"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::kaiser\u2011burkher::2",
+    "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+    "talk_title": "RIP\u2011Tag platform: tumor\u2011specific induced proximity targeting essential proteins",
+    "speaker": {
+      "name": "Katherine Kaiser\u2011Burkher",
+      "affiliation": "Johnson & Johnson, Oncology R&D",
+      "role": "industry_presenter",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "prostate cancer",
+      "breast cancer"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "induced_proximity",
+      "targeted_therapy",
+      "clinical_trial",
+      "translational",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "AR",
+        "alteration": null,
+        "pathway": "androgen signaling",
+        "modality": "heterobifunctional_small_molecule",
+        "compound_name": "HLD0915",
+        "compound_id": "NCT???",
+        "ligase_or_cofactor": null,
+        "dependency_context": "AR\u2011expressing metastatic CRPC",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "BRD4",
+        "alteration": null,
+        "pathway": "transcriptional regulation",
+        "modality": "essential_protein_recruiter",
+        "compound_name": "HLD0915",
+        "compound_id": null,
+        "ligase_or_cofactor": null,
+        "dependency_context": "pan\u2011essential transcriptional co\u2011activator",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "ER",
+        "alteration": "ESR1 Y537S",
+        "pathway": "estrogen signaling",
+        "modality": "heterobifunctional_small_molecule",
+        "compound_name": "HLD0117",
+        "compound_id": "NCT???",
+        "ligase_or_cofactor": null,
+        "dependency_context": "ER\u2011positive HER2\u2011negative breast cancer",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "VCAP",
+        "genotype_or_key_features": "AR\u2011amplified, AR\u2011V7+, p53 mutant"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "LNCaP\u201195",
+        "genotype_or_key_features": "AR\u2011independent, enzalutamide\u2011resistant"
+      },
+      {
+        "model_type": "patient_sample_ex_vivo",
+        "name": "clinical_cohort",
+        "genotype_or_key_features": "mCRPC patients with diverse AR alterations"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1 HLD0915 trial",
+        "genotype_or_key_features": "mCRPC, AR\u2011expressing, any AR mutation"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "Phase 1 HLD0117 trial",
+        "genotype_or_key_features": "ER\u2011positive HER2\u2011negative metastatic breast cancer"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "PSA50 response",
+        "value": "70%",
+        "confidence_interval": null,
+        "n": "n=?? (patients with \u22652 cycles at 50\u202fmg)",
+        "population": "mCRPC patients (all AR statuses)",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "PSA90 response",
+        "value": "40%",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "mCRPC patients (all AR statuses)",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Objective response (RECIST PR)",
+        "value": "100% (5/5 measurable disease patients)",
+        "confidence_interval": null,
+        "n": "n=5",
+        "population": "mCRPC with measurable disease",
+        "comparator": null,
+        "maturity": "primary_endpoint_met"
+      },
+      {
+        "metric": "Tumor regressions in VCAP xenograft",
+        "value": "8/8 mice with tumor regression",
+        "confidence_interval": null,
+        "n": "n=8",
+        "population": "AR\u2011amplified castrate\u2011resistant xenograft",
+        "comparator": "enzalutamide (ineffective)",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "Tumor regressions in LNCaP\u201195 xenograft",
+        "value": "robust regressions (complete responses in majority)",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "AR\u2011independent prostate cancer model",
+        "comparator": "enzalutamide (no activity)",
+        "maturity": "preclinical"
+      },
+      {
+        "metric": "Tumor regressions in MCF7 CDX (HLD0117)",
+        "value": "dose\u2011dependent regressions, superior to fulvestrant",
+        "confidence_interval": null,
+        "n": "n=??",
+        "population": "ER\u2011positive breast cancer xenograft",
+        "comparator": "fulvestrant",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "RIP\u2011Tag molecules are heterobifunctional agents that bind a tumor\u2011specific protein (e.g., AR or ER) and a pan\u2011essential protein (BRD4). The induced ternary complex sequesters BRD4, causing loss\u2011of\u2011function of this essential transcriptional co\u2011activator selectively in tumor cells, leading to potent cell death independent of the oncogenic driver. Positive cooperativity (>60) between the two ligands drives tumor\u2011specific activity and a wide therapeutic window.",
+    "readouts": [
+      "ternary_complex_EC50_assay",
+      "cell_proliferation_GI50",
+      "western_blot_BRD4_targets",
+      "pharmacokinetic_PK",
+      "pharmacodynamic_PD (cMyc, HEXIM1, TIXSNIP)",
+      "xenograft_tumor_growth",
+      "PSA_levels_clinical",
+      "RECIST_imaging"
+    ],
+    "key_findings": [
+      "Identified >100,000 ligandable cysteine sites across the proteome, enabling covalent recruitment of novel E3 ligases.",
+      "HLD0915 formed a ternary complex with AR and BRD4 at EC50\u202f\u2248\u202f2\u202fnM and inhibited VCAP cell proliferation (GI50\u202f\u2248\u202f3\u202fnM).",
+      "In vivo, HLD0915 induced dose\u2011dependent ternary complex formation and BRD4 loss\u2011of\u2011function markers (\u2193cMyc, \u2191HEXIM1) in tumor tissue.",
+      "Preclinical efficacy demonstrated tumor regressions in AR\u2011amplified, AR\u2011V7+, and AR\u2011independent prostate cancer xenografts, outperforming enzalutamide.",
+      "Phase\u202f1 mCRPC trial (31 patients) showed PSA50 response of 70% and PSA90 of 40% across AR\u2011amplified, non\u2011amplified, AR\u2011mutant, and AR\u2011V7 sub\u2011cohorts.",
+      "HLD0117 achieved sub\u2011nanomolar ternary complex formation with ER and BRD4, showed >90% ER transcription suppression, and produced dose\u2011dependent tumor regressions superior to fulvestrant in MCF7 xenografts.",
+      "Both RIP\u2011Tags retained activity against clinically relevant ER mutations (Y537S, D538G) and AR LBD mutations, indicating resistance\u2011agnostic potential."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "RIP\u2011Tag activity is independent of AR or ER signaling status; only expression of the tumor\u2011specific protein is required, mitigating common resistance mechanisms.",
+      "Positive cooperativity ensures weak binary binding to the essential protein in normal tissues, providing a wide safety margin."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "What is the optimal essential protein partner beyond BRD4 to maximize therapeutic index across different tumor types?",
+      "Can RIP\u2011Tag molecules be combined with standard of care (e.g., AR antagonists) to further delay or overcome emergent resistance?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCTXXXXX1",
+        "NCTXXXXX2"
+      ],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Johnson & Johnson",
+        "Halda Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "US2024/XXXXX"
+      ]
+    }
+  },
+  {
+    "talk_id": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d::potts::3",
+    "session_title": "chemistry-to-the-clinic-part-4-of-4-from-transcript-to-proteinnew-frontiers-in-d",
+    "talk_title": "Expanding induced proximity: molecular glues, viral E3 ligases and lysosomal targeting chimeras",
+    "speaker": {
+      "name": "Ryan Potts",
+      "affiliation": "Amgen, Induced Proximity & Small Molecule Discovery",
+      "role": "industry_presenter",
+      "disclosures_noted": false
+    },
+    "tumor_types": [
+      "pan-cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "molecular_glue",
+      "targeted_therapy",
+      "PROTAC_degrader",
+      "other"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "Caspase\u20112",
+        "alteration": null,
+        "pathway": "apoptosis",
+        "modality": "molecular_glue",
+        "compound_name": "VHL\u2011glue\u2011Casp2",
+        "compound_id": null,
+        "ligase_or_cofactor": "VHL",
+        "dependency_context": "pan\u2011essential protease",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "Gemin3",
+        "alteration": null,
+        "pathway": "mRNA splicing",
+        "modality": "molecular_glue",
+        "compound_name": "dGem3",
+        "compound_id": null,
+        "ligase_or_cofactor": "VHL",
+        "dependency_context": "SMN complex component",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "SARS\u20111",
+        "alteration": null,
+        "pathway": "protein translation",
+        "modality": "molecular_glue",
+        "compound_name": "Viral\u2011E6\u2011SARS1 glue",
+        "compound_id": null,
+        "ligase_or_cofactor": "E6AP (via HPV E6)",
+        "dependency_context": "pan\u2011essential tRNA\u2011transferase",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "KRAS G12D",
+        "alteration": "G12D",
+        "pathway": "RAS/MAPK",
+        "modality": "LIMTAC",
+        "compound_name": "KRAS\u2011LIMTAC",
+        "compound_id": null,
+        "ligase_or_cofactor": "Rnf152 (lysosomal membrane protein)",
+        "dependency_context": "oncogenic KRAS mutant cancer cells",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "HEK293",
+        "genotype_or_key_features": "used for proteomics screening of VHL glue library"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HPV\u2011positive cancer line",
+        "genotype_or_key_features": "expresses HPV E6 protein"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "HPV\u2011negative control line",
+        "genotype_or_key_features": "lacks E6 expression"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KRAS G12D mutant line",
+        "genotype_or_key_features": "plasma\u2011membrane KRAS G12D"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Amgen generated large DNA\u2011encoded libraries of low\u2011affinity ligands for >35 E3 ligases (\u2248350 chemotypes) and screened them for molecular glue activity using high\u2011throughput proteomics and barcode\u2011encoded bead assays. Hits such as a VHL\u2011glue induce selective degradation of caspase\u20112 via ternary complex formation. Viral\u2011derived E6 ligase (E6AP) was repurposed (VIPER\u2011TAC) to degrade pan\u2011essential SARS\u20111 selectively in HPV\u2011positive cells, achieving tumor\u2011specific killing. Lysosomal\u2011targeting chimeras (LIMTACs) recruit plasma\u2011membrane KRAS G12D to the lysosomal membrane protein Rnf152, causing relocalization and lysosomal degradation, yielding sustained MAPK pathway inhibition beyond simple kinase inhibition.",
+    "readouts": [
+      "high\u2011throughput proteomics",
+      "Hi\u2011BIT degradation assay",
+      "SPR ternary complex KD",
+      "RNA\u2011seq transcriptional profiling",
+      "cell viability (dose\u2011response)",
+      "western_blot (p\u2011ERK, KRAS)",
+      "fluorescence microscopy (colocalization)",
+      "DNA\u2011encoded library sequencing"
+    ],
+    "key_findings": [
+      "Built a >500,000\u2011compound molecular glue library covering 35 newly enabled E3 ligases.",
+      "Proteomics screen identified a VHL\u2011based glue that selectively degrades caspase\u20112, confirmed as proteasome\u2011 and VHL\u2011dependent with KD \u224870\u202fnM ternary complex.",
+      "DNA\u2011encoded bead assay of 25,000 VHL\u2011glues uncovered dGem3, which induces transcriptional changes via recruitment of the SMN complex component Gemin3; ternary complex KD \u224870\u202fnM.",
+      "VIPER\u2011TAC using HPV E6/E6AP and a small\u2011molecule recruiter of SARS\u20111 achieved selective degradation of SARS\u20111 in HPV\u2011positive cells, leading to dose\u2011dependent cell killing absent in HPV\u2011negative controls.",
+      "LIMTAC strategy demonstrated that a bifunctional molecule can relocalize KRAS G12D from the plasma membrane to lysosomal membranes via Rnf152, resulting in KRAS degradation and sustained phospho\u2011ERK suppression after washout."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "VIPER\u2011TAC activity depends on expression of viral E6 protein; loss of E6 or mutation of its E6AP\u2011binding surface could confer resistance.",
+      "LIMTAC efficacy requires co\u2011localization of target and lysosomal membrane protein; differential subcellular localization may limit activity in some contexts."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can the ligandability of underexplored E3 ligases be further expanded to target tissue\u2011restricted essential proteins?",
+      "What structural features dictate successful ternary complex formation for lysosomal membrane recruitment versus proteasomal degradation?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Amgen"
+      ],
+      "patent_or_ip_hints": [
+        "US2025/XXXXX (VHL glue patents)",
+        "US2025/XXXXX (VIPER\u2011TAC patents)",
+        "US2025/XXXXX (LIMTAC patents)"
+      ]
+    }
+  }
+]

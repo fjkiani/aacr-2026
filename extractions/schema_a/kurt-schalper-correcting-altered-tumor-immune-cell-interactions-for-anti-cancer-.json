@@ -1,0 +1,209 @@
+[
+  {
+    "talk_id": "kurt-schalper-correcting-altered-tumor-immune-cell-interactions-for-anti-cancer-::sch\"alper::1",
+    "session_title": "kurt-schalper-correcting-altered-tumor-immune-cell-interactions-for-anti-cancer-",
+    "talk_title": "TAP2 downregulation drives immune evasion and can be therapeutically reversed",
+    "speaker": {
+      "name": "Kurt Sch\"alper",
+      "affiliation": "University of Texas Southwestern Medical Center, Department of Oncology",
+      "role": "session_chair_with_data",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "lung cancer",
+      "colorectal cancer",
+      "brain metastases"
+    ],
+    "clinical_stage": "mixed",
+    "topic_categories": [
+      "immunotherapy",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "combination_therapy",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "TAP2",
+        "alteration": "",
+        "pathway": "antigen_presentation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung cancer cells (KRAS or EGFR mutant)",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "B2M",
+        "alteration": "",
+        "pathway": "antigen_presentation",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "acquired resistance to dual checkpoint blockade",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SOX1",
+        "alteration": "",
+        "pathway": "interferon_gamma_signaling",
+        "modality": "unspecified",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "TAP2-deficient lung cancer cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "IL4",
+        "alteration": "",
+        "pathway": "cytokine_signaling",
+        "modality": "antibody",
+        "compound_name": "anti-IL4R antibody",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "myeloid-derived suppressor cells in lung tumor microenvironment",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "PLA2G10",
+        "alteration": "",
+        "pathway": "T_cell_migration",
+        "modality": "antibody",
+        "compound_name": "1C11 anti-PLA2G10",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "lung and pancreatic tumors with immune exclusion phenotype",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "TAP2 low expression",
+        "type": "predictive",
+        "assay": "IHC / spatial transcriptomics",
+        "finding": "Patients with low TAP2 had a hazard ratio of 1.8 for death after immunotherapy (n\u2248819, retrospective cohort)"
+      },
+      {
+        "name": "IL4 RNA in tumor microenvironment",
+        "type": "exploratory",
+        "assay": "RNA in situ hybridization",
+        "finding": "IL4 RNA colocalized with CD11b+ myeloid cells in TAP2-low tumor regions"
+      },
+      {
+        "name": "SOX1 upregulation",
+        "type": "pharmacodynamic",
+        "assay": "flow cytometry / RNA\u2011seq",
+        "finding": "TAP2 knockdown increased SOX1 protein levels; overexpression of TAP2 reduced SOX1"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_cohort",
+        "name": "819 treatment\u2011na\u00efve lung tumors",
+        "genotype_or_key_features": "baseline specimens, diverse histology, prior to any therapy"
+      },
+      {
+        "model_type": "syngeneic_mouse",
+        "name": "carcinogen\u2011induced lung cancer model",
+        "genotype_or_key_features": "beta\u20112M loss confers PD\u20111 resistance"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "KRAS\u2011mutant and EGFR\u2011mutant lung cancer lines",
+        "genotype_or_key_features": "TAP2 knockdown/knockout, cytokine treatments"
+      },
+      {
+        "model_type": "clinical_cohort",
+        "name": "primary human lung tumors (n\u2248250) for spatial transcriptomics",
+        "genotype_or_key_features": "sorted cancer vs stromal compartments"
+      },
+      {
+        "model_type": "primary_explant",
+        "name": "Tumor\u2011Associated Primary Explants (TAPEs)",
+        "genotype_or_key_features": "patient\u2011derived lung tumors cultured up to 10\u202fdays"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Hazard Ratio for overall survival",
+        "value": "HR 1.8",
+        "confidence_interval": "",
+        "n": "n=819",
+        "population": "low TAP2 lung cancer patients treated with immunotherapy",
+        "comparator": "high TAP2 patients",
+        "maturity": "secondary_endpoint"
+      }
+    ],
+    "MOA_summary": "Downregulation of TAP2 in lung cancer cells reduces antigen presentation modestly (10\u201115% peptide loss) but more critically impairs interferon\u2011\u03b3 signaling via upregulation of the inhibitor SOX1 and suppression of chemokines (CXCL10, CCL5, CXCL11), leading to T\u2011cell exclusion. IL\u20114 produced by tumor\u2011associated myeloid cells epigenetically silences TAP2, an effect reversible by IL\u20114R blockade or epigenetic drugs (HDAC inhibitors, taxanes). Restoring TAP2 re\u2011sensitizes cells to cytokine signaling and tumor\u2011antigen specific killing. Separately, secreted factors such as PLA2G10 act as active T\u2011cell excluders, limiting lymphocyte migration and promoting tumor growth; blocking these molecules restores T\u2011cell infiltration.",
+    "readouts": [
+      "IHC",
+      "multiplex IF",
+      "RNA\u2011seq",
+      "ATAC\u2011seq",
+      "spatial transcriptomics",
+      "mass\u2011spec immunopeptidomics",
+      "flow cytometry",
+      "phospho\u2011protein array",
+      "Boyden chamber migration assay",
+      "cell viability assays"
+    ],
+    "key_findings": [
+      "24% of treatment\u2011na\u00efve lung cancers show cancer\u2011cell selective TAP2 downregulation; only 6% show TAP1 loss.",
+      "Low TAP2 expression predicts an 80% increased risk of death (HR\u202f1.8) after immunotherapy, with no effect on chemotherapy outcomes.",
+      "TAP2 knockout reduces tumor\u2011antigen specific CD8 T\u2011cell killing more than TAP1 loss; re\u2011expression of TAP2 rescues killing.",
+      "TAP2 loss leads to a 10\u201115% reduction in total HLA\u2011bound peptides but causes a >50% decrease in interferon\u2011\u03b3\u2011induced gene expression (e.g., IDO1, PD\u2011L1) via SOX1 up\u2011regulation.",
+      "IL\u20114 secreted by CD11b+ myeloid cells epigenetically closes the TAP2 promoter, an effect not reversed by exogenous IFN\u2011\u03b3/TNF\u2011\u03b1.",
+      "HDAC inhibitors (vorinostat), taxanes, and dasatinib up\u2011regulate TAP2 without increasing PD\u2011L1, restoring antigen presentation and T\u2011cell killing in vitro.",
+      "Secreted phospholipase PLA2G10 acts as a T\u2011cell excluder; overexpression in mouse models accelerates tumor growth and reduces CD8 infiltration, while anti\u2011PLA2G10 antibody restores T\u2011cell entry.",
+      "Spatial analysis of 250 lung cancers identifies ~20% with a dominant immune\u2011excluded phenotype, which correlates with poorer immunotherapy survival."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "TAP2 loss confers resistance specifically to checkpoint blockade, not to chemotherapy.",
+      "IL\u20114\u2013mediated epigenetic silencing of TAP2 is not overcome by IFN\u2011\u03b3/TNF\u2011\u03b1 stimulation, indicating a durable resistance mechanism."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "anti\u2011IL4R antibody",
+        "rationale": "Blocks IL\u20114\u2013driven epigenetic silencing of TAP2, restoring antigen presentation and enhancing PD\u20111 blockade efficacy",
+        "phenotype": "In autologous co\u2011culture, combined IL\u20114R blockade + pembrolizumab increased CD8 activation (CD25+) and cancer cell killing (Annexin\u202fV+ EpCAM+)",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "HDAC inhibitor (vorinostat)",
+        "rationale": "Epigenetically re\u2011expresses TAP2 without up\u2011regulating PD\u2011L1",
+        "phenotype": "Increased TAP2 protein, surface peptide load, and tumor\u2011antigen specific T\u2011cell killing in vitro",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Taxane (docetaxel)",
+        "rationale": "Induces TAP2 expression and inflammatory signaling",
+        "phenotype": "Up\u2011regulation of TAP2 and enhanced T\u2011cell mediated cytotoxicity",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "1C11 anti\u2011PLA2G10 antibody",
+        "rationale": "Neutralizes secreted PLA2G10 to relieve active T\u2011cell exclusion",
+        "phenotype": "In mouse KPC and MC38 models, antibody treatment increased CD8 infiltration and synergized with anti\u2011PD\u20111",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What upstream signals drive IL\u20114 production by myeloid cells in TAP2\u2011low tumors?",
+      "Can plasma IL\u20114 levels reliably predict TAP2 epigenetic silencing across cancer types?",
+      "What are the precise molecular mechanisms by which PLA2G10 impairs T\u2011cell migration?",
+      "Will TAP2\u2011restoring epigenetic therapies improve clinical outcomes when combined with checkpoint inhibitors in a prospective trial?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  }
+]

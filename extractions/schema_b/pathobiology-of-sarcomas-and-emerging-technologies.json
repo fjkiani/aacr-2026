@@ -1,0 +1,127 @@
+[
+  {
+    "talk_id": "pathobiology-of-sarcomas-and-emerging-technologies::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Brian Rubin",
+      "institution_or_pharma": "Cleveland Clinic",
+      "session_title": "pathobiology-of-sarcomas-and-emerging-technologies",
+      "talk_title": "Bench to bedside in EHE",
+      "rhetorical_signals": [
+        "Speaker said: we didn't meet our endpoint, but we actually had a great response",
+        "Speaker said: the drug's relatively toxic, so one of the things was we had to take patients off because of the toxicity of the drug"
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Trametinib in EHE (SARC-33 trial)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Reliance on MAPK pathway inhibition without addressing upstream TAZ-CAMTA1 driver",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": "about 20 patients actually responded really well",
+        "hidden_tox_signal": "The drug's relatively toxic, so one of the things was we had to take patients off because of the toxicity",
+        "evidence_strength": "explicit_admission"
+      },
+      {
+        "failing_compound_or_target": "MGH CP1 TEAD inhibitor (tool compound)",
+        "failure_type": "toxicity_limiting",
+        "mechanistic_blindspot": "Requires millimolar concentrations, not drug-like potency",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": "It's a tool compound active at millimolar concentrations, not suitable for clinic",
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "SARC-33 (NCI.0015)",
+        "target_biology": "TRAMETINIB inhibition of MAPK pathway in TAZ-CAMTA1 driven EHE",
+        "flawed_enrollment_criteria": "Non\u2011randomized, open\u2011label single\u2011arm design without biomarker stratification beyond EHE diagnosis",
+        "missing_biomarker": "No selection for CDK9 or TEAD pathway activation status",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Underpowered to meet primary endpoint; small sample size",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "TEAD interface inhibitors",
+        "ip_vulnerability_note": "Current tool compounds (e.g., MGH CP1) show only millimolar potency and lack drug\u2011like properties",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on TEAD inhibition as monotherapy despite low potency and need for combination"
+      },
+      {
+        "vulnerable_ip_or_chemistry": "CDK9 inhibitors (e.g., dinaciclib)",
+        "ip_vulnerability_note": "Broad CDK inhibition with off\u2011target effects; not a selective CDK9 probe for TAZ\u2011CAMTA1 context",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Use of non\u2011selective CDK inhibitors may cause toxicity limiting dose escalation"
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that CDK9 inhibition caused strong apoptosis in EHE cell lines, then concluded that CDK9 inhibitors are ready for clinical development despite acknowledging toxicity and lack of selectivity"
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No overall survival data presented",
+        "No biomarker\u2011stratified analysis beyond EHE diagnosis",
+        "Lack of comparative arm to standard of care"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Identify patients with high CDK9 activity or TEAD dependency to enrich for responders to CDK9 or TEAD\u2011targeted combos",
+        "transcript_evidence": "Speaker noted that CDK9 appears to be the target of dinaciclib and that CDK9 inhibition blows apart the transcriptional complex",
+        "crispro_angle": "CrisPRO can integrate transcriptomic and phosphoproteomic data to define a CDK9\u2011activity signature for patient selection",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "combination_partner",
+        "description": "Combine low\u2011dose trametinib with a potent TEAD inhibitor to achieve synergistic suppression of TAZ\u2011CAMTA1 signaling while mitigating toxicity",
+        "transcript_evidence": "Speaker demonstrated synergistic effect of trametinib with a TEAD inhibitor in cell lines",
+        "crispro_angle": "CrisPRO can model drug\u2011drug interaction networks to prioritize TEAD inhibitors with favorable pharmacodynamics for combination",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Redevelop the TEAD fragment\u2011based NMR hits into higher\u2011affinity, drug\u2011like molecules using CrisPRO\u2019s structure\u2011guided design pipeline",
+        "transcript_evidence": "Speaker reported progress from 10\u202f\u00b5M to 500\u202fnM affinity but still needs another log reduction",
+        "crispro_angle": "CrisPRO can predict optimal scaffold modifications to improve potency and drug\u2011likeness while preserving TEAD interface binding",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "MGH CP1 (TEAD inhibitor)",
+        "context": "Tool compound used in preclinical synergy studies with trametinib",
+        "sentiment": "critical"
+      },
+      {
+        "name": "Dinaciclib (CDK inhibitor)",
+        "context": "Showed in vivo tumor reduction in xenograft models",
+        "sentiment": "favorable"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the precise role of the CAMTA1 portion of the TAZ\u2011CAMTA1 fusion in driving oncogenesis?",
+      "Can more selective CDK9 inhibitors be developed that retain efficacy without off\u2011target toxicity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT0015"
+      ],
+      "assets_to_track": [
+        "Trametinib",
+        "MGH CP1 TEAD inhibitor",
+        "Dinaciclib"
+      ],
+      "companies_to_monitor": [
+        "Cleveland Clinic (academic spin\u2011outs)",
+        "Mass General (TEAD program)"
+      ]
+    }
+  }
+]

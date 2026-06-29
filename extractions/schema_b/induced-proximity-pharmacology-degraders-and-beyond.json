@@ -1,0 +1,254 @@
+[
+  {
+    "talk_id": "induced-proximity-pharmacology-degraders-and-beyond::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Danette Daniels",
+      "institution_or_pharma": "Foghorn Therapeutics",
+      "session_title": "induced-proximity-pharmacology-degraders-and-beyond",
+      "talk_title": "Towards New Cancer Medicines with Degraders of Chromatin",
+      "rhetorical_signals": [
+        "Speaker said: \"we have many targets, as you know. Chromatin remodelers, as well as transcription factors, have a lot of intrinsically disordered regions, and there's been many successful examples where targeted protein degradation now can address these types of targets.\"",
+        "Speaker said: \"we want to stay away from the cliff, this rate cliff, because as soon as compounds drop below these rates, we know we will start to see target recovery happening.\""
+      ],
+      "presentation_type": "translational_science"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Degrader selectivity via linker/E3 ligase choice",
+        "ip_vulnerability_note": "Speaker disclosed that selectivity is achieved through linker design and choice of E3 ligase, indicating the core scaffold is shared across programs and could be circumvented by alternative E3 recruitment strategies.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Broad indication strategy may dilute signal if degradation rate is not optimized for each tumor type."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "preclinical_only",
+      "sample_size_adequacy": "not_applicable",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No in vivo efficacy data presented",
+        "No clinical trial data or patient outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Foghorn's degradation-rate metric lacks integration with patient-specific target half-life biomarkers, presenting an opportunity for CrisPRO to develop predictive models linking degradation kinetics to tumor biomarker profiles.",
+        "transcript_evidence": "Speaker emphasized the need to understand native homeostasis and target half\u2011lives to interpret degradation\u2011rate data.",
+        "crispro_angle": "Use CrisPRO's computational spine to predict optimal degrader dosing regimens based on tumor\u2011specific protein turnover rates.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Demonstrate that CrisPRO can predict rate inflection points across targets more accurately than empirical AUC curves, providing a competitive advantage in degrader design.",
+        "transcript_evidence": "Speaker described defining a rate inflection point and \u201ccliff\u201d that determines complete Dmax across programs.",
+        "crispro_angle": "Apply machine\u2011learning on existing degrader datasets to forecast inflection points before synthesis.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [],
+      "companies_to_monitor": []
+    }
+  },
+  {
+    "talk_id": "induced-proximity-pharmacology-degraders-and-beyond::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Gwen Hansen",
+      "institution_or_pharma": "Nurix Therapeutics",
+      "session_title": "induced-proximity-pharmacology-degraders-and-beyond",
+      "talk_title": "Designing Effective Degrader Therapeutics: What Early Clinical Experience Has Taught Us",
+      "rhetorical_signals": [
+        "Speaker said: \"we are seeing an 83% response rate and 20 months so far of duration of response\"",
+        "Speaker said: \"we absolutely see no QT prolongation on treatment of the drug\"",
+        "Speaker said: \"there is one mutation that has now been described\u2026 A428D\u2026 no inhibitor or degrader can bind to BTK in the context of that mutation\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "BTK A428D mutation",
+        "failure_type": "primary_resistance",
+        "mechanistic_blindspot": "Mutation collapses the active site pocket, preventing both inhibitor and degrader binding",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": "Phase 1 A/B dose escalation (Nurix BTK degrader)",
+        "target_biology": "BTK degradation to block B\u2011cell receptor signaling",
+        "flawed_enrollment_criteria": "Enrolled heavily pre\u2011treated CLL patients including those with multiple resistance mutations, potentially diluting signal for early dose\u2011finding",
+        "missing_biomarker": "Prospective stratification for specific BTK resistance mutations (e.g., C481, L528) at baseline",
+        "static_vs_dynamic_failure": null,
+        "statistical_concern": "Cross\u2011trial comparison to pirtobrutinib without a randomized control may overstate efficacy",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "BTK degrader (bexipridil) scaffold",
+        "ip_vulnerability_note": "Speaker noted poor oral bioavailability requiring high mg dosing, indicating formulation and PK limitations.",
+        "scale_or_manufacturing_bottleneck": "High dose (600\u202fmg) reflects suboptimal formulation and bioavailability.",
+        "clinical_strategy_weakness": "Broad dose escalation without early biomarker\u2011guided dose selection may expose patients to unnecessary exposure."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed robust in vivo BTK degradation and high response rates, yet concluded that higher doses (600\u202fmg) do not increase adverse events, contradicting the expectation that higher exposure would raise toxicity."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "adequately_powered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized comparator arm",
+        "Limited long\u2011term safety beyond 20\u202fmonths",
+        "No detailed PK/PD modeling linking degradation rate to clinical outcomes"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "CrisPRO can design next\u2011generation degraders that retain binding to BTK A428D by modeling alternative ternary complex geometries.",
+        "transcript_evidence": "Speaker identified A428D mutation as a resistance hotspot that blocks current degrader binding.",
+        "crispro_angle": "Leverage computational docking to explore alternative E3 ligase recruiters and linker chemistries that accommodate the altered pocket.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Implement biomarker\u2011stratified enrollment (e.g., baseline BTK mutation profiling) to enrich for patients most likely to benefit.",
+        "transcript_evidence": "Speaker noted heterogeneous resistance mutations across patients and cross\u2011trial efficacy comparisons.",
+        "crispro_angle": "Use CrisPRO's predictive models to simulate response rates under different enrichment strategies.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Highlight CrisPRO's ability to predict sub\u2011stoichiometric dosing requirements, addressing the high dose requirement of the current degrader.",
+        "transcript_evidence": "Speaker discussed the need for 600\u202fmg dosing due to poor bioavailability and sub\u2011stoichiometric goals.",
+        "crispro_angle": "Model drug\u2011target occupancy versus protein turnover to optimize dosing and reduce formulation burden.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "pirtobrutinib",
+        "context": "Benchmark inhibitor with 65\u201169% ORR and ~1\u202fyear duration of response in late\u2011line CLL",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "ibrutinib",
+        "context": "Standard covalent BTK inhibitor referenced for dose comparison",
+        "sentiment": "neutral"
+      },
+      {
+        "name": "zanubrutinib",
+        "context": "Non\u2011covalent BTK inhibitor used in exposure comparison",
+        "sentiment": "neutral"
+      }
+    ],
+    "unresolved_questions": [
+      "What are the molecular mechanisms underlying the rare A428D resistance mutation and can alternative E3 ligases overcome it?",
+      "Will long\u2011term BTK degradation lead to immunodeficiency or off\u2011target effects not captured in the current safety dataset?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [
+        "NCT0XXXXXX"
+      ],
+      "assets_to_track": [
+        "bexipridil (Nurix BTK degrader)"
+      ],
+      "companies_to_monitor": [
+        "Nurix Therapeutics"
+      ]
+    }
+  },
+  {
+    "talk_id": "induced-proximity-pharmacology-degraders-and-beyond::unknown::3",
+    "talk_metadata": {
+      "speaker_name": "Sherry Ao",
+      "institution_or_pharma": "University of California, San Francisco (UCSF)",
+      "session_title": "induced-proximity-pharmacology-degraders-and-beyond",
+      "talk_title": "First\u2011in\u2011class dual AR/ARV7 molecular glue degraders",
+      "rhetorical_signals": [
+        "Speaker said: \"we identified 13 hits compound, we select this number 7907 as our top candidate\"",
+        "Speaker said: \"compound 15 induced proteasome degradation of both AR and ARV7\"",
+        "Speaker said: \"DDB1 knockout partially reverse ARV7 degradation, confirming its role\""
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Novel molecular glue chemotype targeting AR N\u2011terminal TAL1/AF1",
+        "ip_vulnerability_note": "Speaker disclosed that the glue binds to the N\u2011terminal domain, a region not previously drugged, indicating the core scaffold may be vulnerable to design\u2011around by competitors.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Reliance on a single E3 ligase (Cullin\u2011RING/DDB1) may limit efficacy in tumors with altered ligase expression."
+      }
+    ],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "mixed",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No randomized clinical data; only xenograft efficacy shown",
+        "Limited pharmacokinetic profiling",
+        "Off\u2011target proteomics still being characterized"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "biomarker_stratification_gap",
+        "description": "Develop predictive biomarkers for tumors dependent on ARV7 to prioritize patients for the molecular glue therapy.",
+        "transcript_evidence": "Speaker highlighted that ARV7 is present in ~75% of CRPC patients and drives resistance.",
+        "crispro_angle": "Use CrisPRO's data integration to correlate ARV7 expression levels with expected degradation efficacy.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "failed_asset_salvage",
+        "description": "Apply CrisPRO to redesign the glue scaffold to engage alternative Cullin\u2011RING ligases, mitigating potential resistance due to DDB1 loss.",
+        "transcript_evidence": "Speaker noted no observed loss of cereblon expression but acknowledged possible ligase pathway alterations.",
+        "crispro_angle": "Model alternative E3 recruitment geometries to generate next\u2011gen glues.",
+        "priority": "medium"
+      },
+      {
+        "opportunity_type": "platform_superiority_angle",
+        "description": "Showcase CrisPRO's ability to predict ternary complex stability for N\u2011terminal domain glues, differentiating from conventional inhibitor platforms.",
+        "transcript_evidence": "Speaker demonstrated that the glue uniquely targets TAL1/AF1 regions not addressed by inhibitors.",
+        "crispro_angle": "Provide quantitative predictions of cooperativity and degradation rates for N\u2011terminal domain glues.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [
+      {
+        "name": "ARV110",
+        "context": "AR PROTAC that degrades full\u2011length AR but not ARV7, used as comparator in vitro and in vivo",
+        "sentiment": "comparative"
+      },
+      {
+        "name": "en\u00adzalutamide",
+        "context": "Standard AR inhibitor shown to be ineffective against ARV7\u2011driven resistance",
+        "sentiment": "critical"
+      }
+    ],
+    "unresolved_questions": [
+      "What is the identity of the E3 ligase complex mediating degradation beyond DDB1 involvement?",
+      "Can the glue maintain efficacy in tumors with low DDB1 or altered Cullin\u2011RING activity?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "AR/ARV7 molecular glue candidates (compound 15, 64)"
+      ],
+      "companies_to_monitor": []
+    }
+  }
+]

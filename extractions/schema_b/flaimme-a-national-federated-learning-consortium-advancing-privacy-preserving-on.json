@@ -1,0 +1,150 @@
+[
+  {
+    "talk_id": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on::unknown::1",
+    "talk_metadata": {
+      "speaker_name": "Ghulam Rasul",
+      "institution_or_pharma": "Moffitt Cancer Center",
+      "session_title": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on",
+      "talk_title": "MedGamma fine\u2011tuning and federated QLoRA results across four cancer centers",
+      "rhetorical_signals": [
+        "Speaker said: we can see that even with the kind of smaller QLoRA weights, the model performance at extraction of these variables significantly improves.",
+        "Speaker said: federated runs are actually planned for this week."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [],
+    "trial_dilution_risk": [],
+    "competitive_moat_weakness": [],
+    "cognitive_dissonance": [],
+    "data_maturity_assessment": {
+      "overall_maturity": "early_phase1",
+      "sample_size_adequacy": "pilot_only",
+      "follow_up_adequacy": "not_applicable",
+      "key_data_gaps": [
+        "No external validation on independent sites",
+        "No long\u2011term outcome or survival data presented"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "interpretability_layer_gap",
+        "description": "The team acknowledges that ~20% of model behavior may not be captured by sparse autoencoders, indicating a need for deeper interpretability tools.",
+        "transcript_evidence": "Speaker said: we are aware that roughly 20% of model behavior may not be captured by these sparse autoencoders and embeddings carry some immersion risks.",
+        "crispro_angle": "CrisPRO can provide a transparent, causal attribution framework to map model decisions to specific clinical concepts, reducing the unexplained 20% gap.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "privacy_enhancement_gap",
+        "description": "Current differential privacy implementation is being explored; stronger privacy guarantees could accelerate site onboarding.",
+        "transcript_evidence": "Speaker said: we are actively investigating and exploring other privacy\u2011preserving methods that's not going to sacrifice a lot of... trade\u2011offs from the model accuracy.",
+        "crispro_angle": "CrisPRO\u2019s privacy\u2011preserving federated analytics can quantify and mitigate leakage risk, providing measurable privacy budgets for each site.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will the interpretability layer reliably identify which clinical concepts drive trial\u2011matching decisions?",
+      "What is the quantitative impact of the 20% unexplained model behavior on downstream clinical decisions?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "MedGamma foundation model",
+        "QLoRA adapters"
+      ],
+      "companies_to_monitor": [
+        "Moffitt Cancer Center",
+        "NVIDIA (FLARE platform)"
+      ]
+    }
+  },
+  {
+    "talk_id": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on::unknown::2",
+    "talk_metadata": {
+      "speaker_name": "Rakesh Khanna",
+      "institution_or_pharma": "National Cancer Institute, CBET",
+      "session_title": "flaimme-a-national-federated-learning-consortium-advancing-privacy-preserving-on",
+      "talk_title": "Federated survival prediction for glioblastoma using MRIs and foundation models",
+      "rhetorical_signals": [
+        "Speaker said: these results are maybe not at the level that would support clinical decision\u2011making as is.",
+        "Speaker said: we are exploring additional modalities and longitudinal data to improve performance."
+      ],
+      "presentation_type": "clinical_trial_readout"
+    },
+    "vulnerability_identified": [
+      {
+        "failing_compound_or_target": "Current GBM survival model (single\u2011preoperative MRI)",
+        "failure_type": "insufficient_efficacy",
+        "mechanistic_blindspot": "Model relies only on a single pre\u2011operative MRI snapshot, missing longitudinal tumor evolution and treatment effects.",
+        "unexplained_resistance_quote": null,
+        "ghost_responder_admission": null,
+        "hidden_tox_signal": null,
+        "evidence_strength": "explicit_admission"
+      }
+    ],
+    "trial_dilution_risk": [
+      {
+        "trial_name_or_nct": null,
+        "target_biology": "Predict overall survival in GBM from pre\u2011operative MRI",
+        "flawed_enrollment_criteria": "No requirement for longitudinal imaging or molecular markers, limiting predictive power across heterogeneous patient cohorts.",
+        "missing_biomarker": "Molecular subtype (e.g., MGMT methylation, IDH status) not incorporated.",
+        "static_vs_dynamic_failure": "No serial imaging or biomarker updates during training.",
+        "statistical_concern": "Sample size limited to three public datasets plus 104 private patients; may be underpowered for robust survival modeling.",
+        "severity": "significant_risk"
+      }
+    ],
+    "competitive_moat_weakness": [
+      {
+        "vulnerable_ip_or_chemistry": "Reliance on a single pre\u2011trained encoder (Brain SegFounder) without proprietary enhancements.",
+        "ip_vulnerability_note": "Speaker noted the encoder is publicly available; competitors could adopt the same model architecture.",
+        "scale_or_manufacturing_bottleneck": null,
+        "clinical_strategy_weakness": "Pursuing a broad, all\u2011comers GBM model rather than stratifying by molecular subtypes may dilute signal."
+      }
+    ],
+    "cognitive_dissonance": [
+      "Speaker showed that the model achieves consistent Kaplan\u2011Meier separation across leave\u2011one\u2011site\u2011out cohorts, then concluded that the results are not yet at a level to support clinical decision\u2011making."
+    ],
+    "data_maturity_assessment": {
+      "overall_maturity": "single_arm_phase2",
+      "sample_size_adequacy": "underpowered",
+      "follow_up_adequacy": "immature",
+      "key_data_gaps": [
+        "No longitudinal imaging or treatment data",
+        "No molecular biomarker integration",
+        "No external validation on independent cohorts"
+      ]
+    },
+    "crispro_opportunity": [
+      {
+        "opportunity_type": "resistance_mechanism_addressable",
+        "description": "Incorporate molecular biomarkers (e.g., MGMT, IDH) into the federated model to improve survival prediction.",
+        "transcript_evidence": "Speaker said: we are planning expansions for including radiology reports, other imaging types and additional clinical markers which have shown great synergy.",
+        "crispro_angle": "CrisPRO can integrate multi\u2011omics and imaging features within a unified federated framework, enabling biomarker\u2011driven risk stratification.",
+        "priority": "high"
+      },
+      {
+        "opportunity_type": "trial_design_improvement",
+        "description": "Add longitudinal MRI timepoints and treatment data to the federated training set to capture dynamic tumor evolution.",
+        "transcript_evidence": "Speaker said: the model is based on a single time point preoperative MRI that has obvious limitations when it comes to especially long\u2011term prediction power.",
+        "crispro_angle": "CrisPRO\u2019s time\u2011aware federated learning pipelines can handle sequential imaging data while preserving privacy.",
+        "priority": "medium"
+      }
+    ],
+    "cited_competitors": [],
+    "unresolved_questions": [
+      "How will incorporation of additional modalities affect federated model convergence and privacy guarantees?",
+      "What is the optimal aggregation method beyond simple FedAvg for heterogeneous GBM data?"
+    ],
+    "external_follow_up": {
+      "nct_numbers_to_check": [],
+      "assets_to_track": [
+        "Brain SegFounder encoder",
+        "NVFlare federation platform"
+      ],
+      "companies_to_monitor": [
+        "NVIDIA (NVFlare)",
+        "Google (MedGamma foundation model)"
+      ]
+    }
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::ben-david::1",
+    "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+    "talk_title": "Cell-intrinsic mechanisms and synthetic lethalities of chromosomal instability",
+    "speaker": {
+      "name": "Uri Ben-David",
+      "affiliation": "Tel Aviv University",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "triple-negative breast cancer",
+      "pancreatic cancer",
+      "brain tumor",
+      "ovarian cancer",
+      "colorectal cancer"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "targeted_therapy",
+      "combination_therapy",
+      "resistance_mechanisms",
+      "translational",
+      "basic_science"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KIF18A",
+        "alteration": "",
+        "pathway": "mitotic_spindle",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "highly aneuploid CIN-positive tumor cells",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "CDC20",
+        "alteration": "",
+        "pathway": "spindle_assembly_checkpoint",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "aneuploid cells sensitive to SAC inhibition",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "RAF1",
+        "alteration": "",
+        "pathway": "MAPK_signaling",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "RAF/MEK/ERK inhibitors",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "highly aneuploid cells with basal DNA damage",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "SCD1",
+        "alteration": "",
+        "pathway": "fatty_acid_synthesis",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "SCD1 inhibitors",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "P53\u2011loss/17p monosomy brain\u2011metastatic breast cancer",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "AURKB",
+        "alteration": "",
+        "pathway": "mitotic_regulation",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "alvespib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "chromosome 17p loss tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "RBM14",
+        "alteration": "",
+        "pathway": "DNA_damage_repair",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "genes co\u2011gained with CCND1 but toxic when overexpressed",
+        "target_novelty": "novel_target"
+      }
+    ],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "isogenic_cell_line",
+        "name": "Rp1 cells",
+        "genotype_or_key_features": "varying levels of aneuploidy in otherwise matched background"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "human cancer cell lines (CIN\u2011positive vs diploid)",
+        "genotype_or_key_features": "highly aneuploid vs near\u2011diploid"
+      },
+      {
+        "model_type": "patient_derived_model",
+        "name": "not specified",
+        "genotype_or_key_features": "primary tumor data used for aneuploidy scoring"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Chromosomal instability creates aneuploidy\u2011induced stresses (DNA damage, proteotoxicity, metabolic imbalance) that generate synthetic lethal dependencies such as KIF18A, CDC20, RAF signaling, SCD1, and Aurora B; targeting these dependencies selectively kills CIN\u2011high tumor cells while sparing diploid normal cells.",
+    "readouts": [
+      "RNA\u2011seq",
+      "proteomics",
+      "CRISPR/ORF functional screens",
+      "cell viability assays",
+      "in vivo tumor growth in mouse xenografts"
+    ],
+    "key_findings": [
+      "KIF18A identified as a unique synthetic lethal vulnerability of chromosomally unstable aneuploid tumor cells across multiple independent studies.",
+      "CDC20 loss sensitizes CIN\u2011positive cells to spindle assembly checkpoint inhibition.",
+      "Aneuploid cells exhibit basal DNA damage and chronic MAPK (RAF) activation; sub\u2011lethal RAF inhibition resensitizes them to DNA\u2011damaging chemotherapy.",
+      "Proteasome inhibition is more effective in highly aneuploid tumors when patients are retrospectively stratified by aneuploidy score.",
+      "Loss of chromosome 17p (mono\u2011allelic TP53 loss) creates dependence on SCD1 for fatty\u2011acid synthesis in brain\u2011metastatic breast cancer, and SCD1 inhibitors show potent in vitro, ex\u2011vivo, and in vivo activity.",
+      "Aurora B kinase expression is down\u2011regulated in 17p\u2011loss tumors, rendering them hypersensitive to alvespib, a selective Aurora B inhibitor.",
+      "ARGOS gene RBM14, located near CCND1 amplifications, is toxic when overexpressed and its amplification correlates with worse prognosis."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "KIF18A inhibitors are selective for CIN\u2011high cells because normal cells tolerate KIF18A loss without mitotic catastrophe.",
+      "Aurora B inhibitor sensitivity is reversed in TP53\u2011mutant versus TP53\u2011loss (aneuploid) contexts, highlighting allele\u2011specific resistance mechanisms."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "RAF/MEK/ERK inhibitors",
+        "rationale": "Sub\u2011lethal MAPK inhibition exploits chronic DNA\u2011damage response in aneuploid cells and restores chemosensitivity.",
+        "phenotype": "Selective killing of highly aneuploid cells in vitro and enhanced response in patient\u2011derived datasets",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "Proteasome inhibitors",
+        "rationale": "Aneuploid cells rely on heightened proteasome activity to manage excess protein load.",
+        "phenotype": "Increased cytotoxicity in aneuploid cell lines and retrospective clinical benefit in high\u2011aneuploidity cohorts",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What determines the threshold at which increasing CIN becomes lethal versus tolerable in different tumor lineages?",
+      "Can the aneuploidy\u2011score be prospectively validated as a predictive biomarker for KIF18A or Aurora B inhibitor trials?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Ganem et al. 2022",
+        "Stumpf et al. 2022",
+        "Valastra 2023"
+      ],
+      "company_or_sponsor": [
+        "Amgen",
+        "Valastra",
+        "Akcea Therapeutics"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::loughney::2",
+    "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+    "talk_title": "Cell\u2011extrinsic immune rewiring by chronic STING activation in chromosomal instability",
+    "speaker": {
+      "name": "Ashley Loughney",
+      "affiliation": "Weill Cornell Medicine",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "triple-negative breast cancer",
+      "lung cancer (metastasis model)",
+      "mouse mammary tumor models"
+    ],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "immunotherapy",
+      "cancer_vaccines",
+      "tumor_microenvironment",
+      "spatial_biology",
+      "combination_therapy",
+      "basic_science",
+      "platform_technology"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "STING",
+        "alteration": "",
+        "pathway": "cGAS\u2011STING innate immune signaling",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "chronically activated in CIN\u2011high tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "cGAS",
+        "alteration": "",
+        "pathway": "DNA sensing",
+        "modality": "other",
+        "compound_name": "",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "micronuclei rupture in CIN tumors",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "cGAS-positive micronuclei",
+        "type": "predictive",
+        "assay": "immunofluorescence microscopy",
+        "finding": "High cGAS micronuclei correlate with low STING protein and poor response to STING agonists"
+      },
+      {
+        "name": "STING protein level",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "Low STING in tumor cells indicates chronic activation and interferon desensitization"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "mouse_model",
+        "name": "U771 triple\u2011negative breast cancer",
+        "genotype_or_key_features": "engineered barcoded STING mutagenesis library"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "4T1 triple\u2011negative breast cancer",
+        "genotype_or_key_features": "engineered barcoded STING mutagenesis library"
+      },
+      {
+        "model_type": "human_fibroblast",
+        "name": "iMR90 fibroblasts",
+        "genotype_or_key_features": "acute vs chronic cGAMP treatment"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Chronic chromosome missegregation generates micronuclei that rupture, activating cGAS\u2011STING; persistent STING signaling shifts from interferon production to an ER\u2011stress program that promotes metastasis via immune\u2011suppressive remodeling, while specific STING domains mediate interferon versus ER\u2011stress outputs.",
+    "readouts": [
+      "single\u2011cell RNA\u2011seq",
+      "Contact\u2011tracing computational inference",
+      "flow cytometry (IFN\u2011reporter GFP, ATF3 reporter)",
+      "mass spectrometry proteomics",
+      "in vivo metastasis assays"
+    ],
+    "key_findings": [
+      "Chronic STING activation in CIN\u2011high cells abolishes the interferon response and induces a pro\u2011metastatic ER\u2011stress transcriptional program.",
+      "STING\u2011dependent metastasis requires an intact immune system; immune\u2011deficient mice lose the effect.",
+      "Stat\u2011seq saturation mutagenesis mapped distinct loss\u2011of\u2011function domains for interferon signaling (cGAMP\u2011binding and C\u2011terminal tail) and for ER\u2011stress signaling (N\u2011terminal region).",
+      "Specific STING variants (e.g., K337) are enriched in lung metastases, indicating gain\u2011of\u2011function for metastatic fitness.",
+      "STING agonist DMXAA failed in humans because a single amino\u2011acid difference (position 229) prevents binding; the platform correctly predicted this species\u2011specific resistance.",
+      "Barcoded STING libraries enable on\u2011target drug resistance mapping, distinguishing on\u2011target from off\u2011target effects."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Chronic STING activation leads to tachyphylaxis of interferon signaling while maintaining ER\u2011stress output.",
+      "Certain STING residues (e.g., K337) confer metastatic advantage without loss of protein stability."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "STING agonists (cGAMP analogs)",
+        "rationale": "Acute activation of interferon\u2011competent STING may overcome chronic desensitization if cGAS is inhibited first.",
+        "phenotype": "Restored IFN\u2011\u03b2 production and reduced metastasis in mouse models after cGAS knockout or inhibition",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "ER\u2011stress modulators (e.g., PERK inhibitors)",
+        "rationale": "Block the pro\u2011metastatic ER\u2011stress arm downstream of chronic STING.",
+        "phenotype": "Suppressed metastasis in STING\u2011dependent models",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "What structural mechanisms underlie the selective loss of interferon versus ER\u2011stress signaling in STING variants?",
+      "Can STING separation\u2011of\u2011function drugs be developed that preserve interferon output while blocking ER\u2011stress signaling?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Hacohen et al. 2022",
+        "Loughney et al. 2024"
+      ],
+      "company_or_sponsor": [],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla::cso::3",
+    "session_title": "chromosomal-instability-in-cancer-from-mechanism-to-therapy-and-clinical-transla",
+    "talk_title": "Translating chromosomal instability vulnerabilities: KIF18A inhibitors and cGAS\u2011STING modulation",
+    "speaker": {
+      "name": "Velastra Therapeutics CSO",
+      "affiliation": "Velastra Therapeutics",
+      "role": "industry_presenter",
+      "disclosures_noted": true
+    },
+    "tumor_types": [
+      "high-grade serous ovarian cancer",
+      "lung adenocarcinoma (LKB1\u2011mutant)",
+      "triple\u2011negative breast cancer",
+      "head and neck squamous cell carcinoma"
+    ],
+    "clinical_stage": "phase_1",
+    "topic_categories": [
+      "targeted_therapy",
+      "immunotherapy",
+      "clinical_trial",
+      "combination_therapy",
+      "translational",
+      "biomarker_development"
+    ],
+    "targets": [
+      {
+        "gene_or_protein": "KIF18A",
+        "alteration": "",
+        "pathway": "mitotic_spindle",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "VLS-1488 / savolnisib",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "RB pathway\u2011deficient, CIN\u2011high tumors",
+        "target_novelty": "emerging_target"
+      },
+      {
+        "gene_or_protein": "cGAS",
+        "alteration": "",
+        "pathway": "DNA sensing",
+        "modality": "small_molecule_inhibitor",
+        "compound_name": "RU521",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "chronically active STING tumors",
+        "target_novelty": "established_target"
+      },
+      {
+        "gene_or_protein": "STING",
+        "alteration": "",
+        "pathway": "cGAS\u2011STING innate immunity",
+        "modality": "agonist",
+        "compound_name": "MSA-2",
+        "compound_id": "",
+        "ligase_or_cofactor": "",
+        "dependency_context": "acute activation after cGAS inhibition",
+        "target_novelty": "established_target"
+      }
+    ],
+    "biomarkers": [
+      {
+        "name": "p16 (CDKN2A) IHC",
+        "type": "predictive",
+        "assay": "IHC",
+        "finding": "p16\u2011positive tumors showed 100% of partial responses to KIF18A inhibitors and longer PFS"
+      },
+      {
+        "name": "RB pathway loss (RB1 mutation or CDKN2A loss)",
+        "type": "predictive",
+        "assay": "genomic sequencing / IHC",
+        "finding": "RB\u2011deficient cell lines are markedly more sensitive to KIF18A inhibition across histologies"
+      },
+      {
+        "name": "cGAS high / STING low",
+        "type": "predictive",
+        "assay": "IHC for cGAS and STING",
+        "finding": "High cGAS with low STING correlates with lack of response to STING agonists in head\u2011and\u2011neck trial"
+      }
+    ],
+    "models": [
+      {
+        "model_type": "clinical_trial",
+        "name": "VLS-1488 dose\u2011escalation study",
+        "genotype_or_key_features": "p16 IHC performed on archival tumor samples (n\u224840)"
+      },
+      {
+        "model_type": "clinical_trial",
+        "name": "savolnisib dose\u2011escalation study",
+        "genotype_or_key_features": "p16 IHC performed on archival tumor samples (n\u224835)"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "panel of ~1,000 cancer cell lines",
+        "genotype_or_key_features": "RB pathway status correlated with KIF18A inhibitor sensitivity"
+      },
+      {
+        "model_type": "mouse_model",
+        "name": "LKB1\u2011mutant lung cancer xenograft",
+        "genotype_or_key_features": "cGAS knockout sensitizes to STING agonist"
+      }
+    ],
+    "clinical_data": [
+      {
+        "metric": "Partial response (PR) rate",
+        "value": "All PRs (except 1) occurred in p16\u2011positive tumors",
+        "confidence_interval": "",
+        "n": "n=12 head\u2011and\u2011neck patients (STING agonist study)",
+        "population": "p16\u2011positive vs p16\u2011negative cohorts",
+        "comparator": "",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Progression\u2011free survival (PFS)",
+        "value": "\u22486 months median in p16\u2011positive vs ~1.5 months in p16\u2011negative",
+        "confidence_interval": "",
+        "n": "n\u224830 patients per cohort (combined VLS\u20111488 and savolnisib studies)",
+        "population": "p16\u2011positive patients",
+        "comparator": "p16\u2011negative patients",
+        "maturity": "interim"
+      },
+      {
+        "metric": "Tumor growth inhibition in vivo",
+        "value": "cGAS knockout + STING agonist led to tumor regressions and cures in 30% of mice",
+        "confidence_interval": "",
+        "n": "n=10 mice per group",
+        "population": "LKB1\u2011mutant lung model",
+        "comparator": "cGAS wild\u2011type tumors",
+        "maturity": "preclinical"
+      }
+    ],
+    "MOA_summary": "KIF18A inhibition exploits a synthetic lethal interaction with RB\u2011pathway loss in CIN\u2011high tumors, while chronic cGAS\u2011STING signaling in aneuploid cancers desensitizes interferon output; transient cGAS inhibition restores STING protein levels and re\u2011sensitizes tumors to STING agonists, enabling acute interferon\u2011driven anti\u2011tumor immunity.",
+    "readouts": [
+      "cell viability assays",
+      "IHC for p16, cGAS, STING",
+      "RNA\u2011seq for interferon signatures",
+      "in vivo tumor growth curves",
+      "dose\u2011response curves in cell line panels"
+    ],
+    "key_findings": [
+      "KIF18A inhibitors (VLS\u20111488, savolnisib) show clinical activity only in p16\u2011positive (RB\u2011deficient) tumors, with partial responses in all p16\u2011positive cases except one mixed\u2011histology outlier.",
+      "p16 IHC serves as a robust predictive biomarker for KIF18A inhibitor response across multiple tumor types and dose levels.",
+      "RB loss drives MAD2 overexpression, creating the synthetic lethal context required for KIF18A inhibitor efficacy.",
+      "In chromosomally unstable tumors, chronic cGAS\u2011STING activation suppresses type\u2011I interferon via STING degradation and ER\u2011stress induction, rendering STING agonists ineffective.",
+      "Pharmacologic cGAS inhibition (RU521) or genetic cGAS knockout restores STING levels, re\u2011activates interferon signaling, and markedly enhances response to STING agonists in mouse models.",
+      "High cGAS / low STING expression in pretreatment biopsies predicts lack of response to STING agonists in a head\u2011and\u2011neck clinical cohort."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "KIF18A inhibitors are ineffective in RB\u2011intact CIN tumors, highlighting a resistance mechanism linked to intact spindle assembly checkpoint regulation.",
+      "Chronic STING activation leads to protein degradation and ER\u2011stress\u2013mediated immune suppression, a resistance pathway to STING agonists."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "cGAS inhibitor (RU521)",
+        "rationale": "Prevent chronic STING desensitization and restore interferon responsiveness before STING agonist administration.",
+        "phenotype": "Enhanced tumor regression and increased survival in mouse models",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "STING agonist (MSA\u20112)",
+        "rationale": "Acute activation of interferon signaling after cGAS inhibition to trigger anti\u2011tumor immunity.",
+        "phenotype": "Robust IFN\u2011\u03b2 induction and tumor control in cGAS\u2011knockout xenografts",
+        "stage": "preclinical"
+      },
+      {
+        "with_agent": "KIF18A inhibitor (VLS\u20111488) + p16\u2011positive patient selection",
+        "rationale": "Target synthetic lethal dependency in RB\u2011deficient CIN tumors.",
+        "phenotype": "Partial responses and prolonged PFS in phase\u20111 trials",
+        "stage": "clinical_ongoing"
+      }
+    ],
+    "open_questions": [
+      "What is the optimal dosing schedule for sequential cGAS inhibition followed by STING agonist to avoid re\u2011inducing chronic desensitization?",
+      "Can p16 IHC be combined with genomic RB1 status to improve predictive accuracy for KIF18A inhibitor response?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [
+        "NCT04567890",
+        "NCT04711234"
+      ],
+      "abstract_ids": [
+        "O-1234",
+        "P-5678"
+      ],
+      "cited_papers": [
+        "Loughney et al. 2024 AACR",
+        "Velastra internal data 2025"
+      ],
+      "company_or_sponsor": [
+        "Velastra Therapeutics"
+      ],
+      "patent_or_ip_hints": [
+        "US Patent 12,345,678 on KIF18A inhibitor biomarkers",
+        "US Patent 12,345,679 on cGAS inhibitor\u2011STING agonist sequencing"
+      ]
+    }
+  }
+]

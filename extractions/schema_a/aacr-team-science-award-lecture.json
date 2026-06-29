@@ -1,0 +1,147 @@
+[
+  {
+    "talk_id": "aacr-team-science-award-lecture::vazquez::1",
+    "session_title": "aacr-team-science-award-lecture",
+    "talk_title": "Building and Leveraging the Cancer Dependency Map for Target Discovery",
+    "speaker": {
+      "name": "Francesca Vazquez",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "target_discovery",
+      "functional_genomics",
+      "computational_biology",
+      "platform_technology",
+      "basic_science"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "cell_line",
+        "name": "multiple cancer cell lines (>1000)",
+        "genotype_or_key_features": "diverse molecular and genetic alterations across tumor types"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "The Cancer Dependency Map integrates large-scale CRISPR and shRNA genetic perturbation screens with multi-omics profiling and drug sensitivity data across >1,000 cancer cell lines, using the Chronos gene effect score to correct biases, thereby linking molecular alterations to gene dependencies and identifying synthetic lethal vulnerabilities such as PRMT5 in MTAP\u2011deleted cancers and WRN in MSI cancers.",
+    "readouts": [
+      "CRISPR_screen",
+      "shRNA_screen",
+      "RNA-seq",
+      "ATAC-seq",
+      "proteomics",
+      "drug_sensitivity_prism_assay"
+    ],
+    "key_findings": [
+      "Identified PRMT5 as a synthetic lethal dependency in MTAP\u2011deleted cancers, validated by three concurrent manuscripts and ongoing clinical trials of PRMT5 inhibitors.",
+      "Discovered WRN helicase dependency in microsatellite instability (MSI) cancers using both CRISPR and shRNA data, leading to multiple manuscripts and clinical development of WRN inhibitors.",
+      "Found that loss of the 9p21 region creates dependency on the SKI complex (PELO/HBS1L), with MSI also driving PELO dependency, revealing a novel synthetic lethal axis."
+    ],
+    "novelty_flag": "first_in_class",
+    "resistance_or_selectivity_notes": [
+      "CRISPR screens exhibit copy\u2011number\u2013related off\u2011target toxicity, addressed by the Chronos model to improve selectivity of gene effect scores."
+    ],
+    "combination_strategies": [],
+    "open_questions": [
+      "How can the map be expanded to capture resistance mechanisms and combination dependencies beyond single\u2011gene knockouts?",
+      "What are the optimal high\u2011dimensional phenotypes to predict therapeutic efficacy beyond cell viability?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [
+        "Three concurrent PRMT5 synthetic lethal manuscripts (2024)",
+        "Three concurrent WRN synthetic lethal manuscripts (2024)",
+        "Two concurrent SKI complex dependency manuscripts (2024)"
+      ],
+      "company_or_sponsor": [
+        "Eli Lilly (award sponsor)",
+        "Novartis Oncology (CCLE collaboration)",
+        "Bayer Pharmaceuticals (surface proteomics support)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  },
+  {
+    "talk_id": "aacr-team-science-award-lecture::sellers::2",
+    "session_title": "aacr-team-science-award-lecture",
+    "talk_title": "Advancing DepMap: New Models, Paralog Screens, and Future Directions",
+    "speaker": {
+      "name": "Bill Sellers",
+      "affiliation": "Broad Institute",
+      "role": "academic_pi",
+      "disclosures_noted": true
+    },
+    "tumor_types": [],
+    "clinical_stage": "preclinical",
+    "topic_categories": [
+      "functional_genomics",
+      "platform_technology",
+      "combination_therapy",
+      "basic_science",
+      "AI_ML"
+    ],
+    "targets": [],
+    "biomarkers": [],
+    "models": [
+      {
+        "model_type": "organoid",
+        "name": "150 organoid and neurosphere models",
+        "genotype_or_key_features": "diverse pediatric, rare, and adult cancer types"
+      },
+      {
+        "model_type": "cell_line",
+        "name": "1000+ cancer cell lines",
+        "genotype_or_key_features": "wide representation of tumor lineages"
+      }
+    ],
+    "clinical_data": [],
+    "MOA_summary": "Expands the DepMap resource by integrating organoid and 3D spheroid models, performing large\u2011scale paralog pair CRISPR screens to uncover hidden dependencies (e.g., AKT1 vs AKT1/2), and developing high\u2011dimensional phenotypic assays and AI\u2011enabled portals to predict combination and resistance mechanisms.",
+    "readouts": [
+      "CRISPR_screen",
+      "shRNA_screen",
+      "prism_barcode_assay",
+      "mass_spec_surface_proteomics",
+      "ATAC-seq",
+      "long_read_RNA_seq",
+      "AI_chat_interface"
+    ],
+    "key_findings": [
+      "Generated a library of >27,000 paralog pairs and screened ~300 models, revealing context\u2011specific dependencies such as AKT1 alone versus AKT1+AKT2 co\u2011knockout.",
+      "Integrated 150 organoid and neurosphere models into DepMap, showing lineage\u2011specific dependencies (e.g., ITGAV vs ITGV1) that differ from 2D cell lines.",
+      "Developed the Prism bar\u2011coded pooled drug sensitivity assay covering 900 cell lines and 265 compounds, enabling rapid assessment of compound selectivity and synthetic lethal interactions."
+    ],
+    "novelty_flag": "platform_technology",
+    "resistance_or_selectivity_notes": [
+      "Paralog screens reveal that single\u2011gene knockouts may miss dependencies masked by redundancy, emphasizing the need for combinatorial targeting."
+    ],
+    "combination_strategies": [
+      {
+        "with_agent": "pan\u2011RAS inhibitor",
+        "rationale": "Synthetic lethal interaction with FGFR\u2011driven cancers requiring co\u2011inhibition of RAS isoforms",
+        "phenotype": "Improved efficacy in FGFR2\u2011altered gastric cancer model versus single agents",
+        "stage": "preclinical"
+      }
+    ],
+    "open_questions": [
+      "How can high\u2011dimensional phenotypic readouts be scaled to systematically map resistance mechanisms?",
+      "What is the optimal strategy to model metabolic and microenvironmental contexts (e.g., serum vs defined media) in DepMap?"
+    ],
+    "external_follow_up": {
+      "nct_numbers": [],
+      "abstract_ids": [],
+      "cited_papers": [],
+      "company_or_sponsor": [
+        "Bayer Pharmaceuticals (surface proteomics)",
+        "Stand Up to Cancer (funding for surface proteomics)",
+        "ATCC (isogenic resistant line engineering)"
+      ],
+      "patent_or_ip_hints": []
+    }
+  }
+]
