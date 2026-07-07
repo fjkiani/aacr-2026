@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "version": "v2",
+    "generated_at": "2026-07-07T21:36:13.036475Z",
+    "corpus_size": 4285,
+    "corpus_sources": [
+      "enriched_final_7485_v3.jsonl",
+      "gemma_all_out.jsonl",
+      "or_w0_out.jsonl"
+    ]
+  },
+  "coverage": {
+    "total_llm_records": 4285,
+    "high_fit_count": 677,
+    "high_fit_pct": 15.8,
+    "mean_fit_score": 0.141
+  },
+  "quality_metrics": {
+    "axis_fp_rate": 0.118,
+    "gene_grounding_rate": 0.89,
+    "drug_grounding_rate": 0.99,
+    "boilerplate_rationale_rate": 0.015,
+    "fit02_inflation_rate": 0.44,
+    "notes": "axis_fp_rate locked from manual audit (6 FP / 51 assignments). fit02_inflation: 44% genuine weak-relevance."
+  },
+  "axis_distribution": {
+    "IMMUNOTHERAPY": 699,
+    "PI3K_AKT": 161,
+    "PARP_INHIBITORS": 129,
+    "TP53_REPLICATION_STRESS": 86,
+    "CCNE1_AMP": 58,
+    "ATR_WEE1": 51,
+    "CYTIDINE_ANALOGS": 50,
+    "WRN": 30,
+    "PRMT5_MTAP": 30,
+    "PKMYT1": 5,
+    "TP53": 1,
+    "JAK_INHIBITORS": 1
+  },
+  "axis_stats": {
+    "PRMT5_MTAP": {
+      "total_records": 30,
+      "high_fit_count": 10,
+      "mean_fit": 0.29,
+      "conversion_rate": 0.333,
+      "clinical_trials_count": 1,
+      "trial_ids": [
+        "NCT05528055"
+      ],
+      "top_genes": [
+        "PRMT5",
+        "MTAP",
+        "KRAS",
+        "EGFR",
+        "CDKN2A",
+        "AR",
+        "MAT2A",
+        "BAP1"
+      ],
+      "top_drugs": [
+        "IDE397",
+        "ABSK131",
+        "KRAS inhibitors",
+        "EGFR inhibitors",
+        "chemotherapy agents",
+        "MAT2A inhibitors",
+        "ISM1745",
+        "ISM3412"
+      ],
+      "top_cancer_types": {
+        "Lung": 3,
+        "Melanoma": 3,
+        "PDAC": 3,
+        "Prostate": 2,
+        "Heme": 2,
+        "CRC": 1
+      },
+      "gap_score": 30.0,
+      "white_space": false
+    },
+    "WRN": {
+      "total_records": 30,
+      "high_fit_count": 17,
+      "mean_fit": 0.437,
+      "conversion_rate": 0.567,
+      "clinical_trials_count": 0,
+      "trial_ids": [],
+      "top_genes": [
+        "WRN",
+        "TP53",
+        "APC",
+        "BC",
+        "MLH1",
+        "BRAF",
+        "CTNNB1",
+        "KRAS"
+      ],
+      "top_drugs": [
+        "HRO761",
+        "cisplatin",
+        "TOPO1i",
+        "PARPi",
+        "ATRi",
+        "ETX-880",
+        "RO7589831",
+        "GSK4418959"
+      ],
+      "top_cancer_types": {
+        "CRC": 6,
+        "Other": 3,
+        "PDAC": 2,
+        "Ovarian": 2,
+        "Breast": 2,
+        "Lung": 2
+      },
+      "gap_score": 30.0,
+      "white_space": true
+    },
+    "TP53_REPLICATION_STRESS": {
+      "total_records": 86,
+      "high_fit_count": 54,
+      "mean_fit": 0.471,
+      "conversion_rate": 0.628,
+      "clinical_trials_count": 3,
+      "trial_ids": [
+        "NCT",
+        "NCT phase I/II",
+        "NCT04511039"
+      ],
+      "top_genes": [
+        "TP53",
+        "MYC",
+        "EGFR",
+        "RB1",
+        "KRAS",
+        "p53",
+        "BRCA1",
+        "PTEN"
+      ],
+      "top_drugs": [
+        "cisplatin",
+        "PARP inhibitor",
+        "venetoclax",
+        "osimertinib",
+        "azenosertib",
+        "5-FU",
+        "PMG-A9",
+        "Enzalutamide"
+      ],
+      "top_cancer_types": {
+        "Lung": 13,
+        "CRC": 11,
+        "GBM": 9,
+        "Prostate": 6,
+        "Other": 6,
+        "Ovarian": 5
+      },
+      "gap_score": 28.7,
+      "white_space": false
+    },
+    "PI3K_AKT": {
+      "total_records": 161,
+      "high_fit_count": 99,
+      "mean_fit": 0.453,
+      "conversion_rate": 0.615,
+      "clinical_trials_count": 6,
+      "trial_ids": [
+        "null",
+        "NCT04808362",
+        "ACTRN12620000583943",
+        "CAPItello-281",
+        "NCT05079074",
+        "NCT05607550"
+      ],
+      "top_genes": [
+        "KRAS",
+        "EGFR",
+        "AKT",
+        "PIK3CA",
+        "PI3K",
+        "PTEN",
+        "AR",
+        "TP53"
+      ],
+      "top_drugs": [
+        "osimertinib",
+        "RMC-6236",
+        "sotorasib",
+        "PI3K inhibitors",
+        "lenvatinib",
+        "MRTX1133",
+        "palbociclib",
+        "capivasertib"
+      ],
+      "top_cancer_types": {
+        "Breast": 28,
+        "Lung": 27,
+        "Prostate": 17,
+        "CRC": 14,
+        "PDAC": 11,
+        "Other": 10
+      },
+      "gap_score": 26.8,
+      "white_space": false
+    },
+    "ATR_WEE1": {
+      "total_records": 51,
+      "high_fit_count": 31,
+      "mean_fit": 0.445,
+      "conversion_rate": 0.608,
+      "clinical_trials_count": 2,
+      "trial_ids": [
+        "NCT06944457",
+        "NCT04511039"
+      ],
+      "top_genes": [
+        "TP53",
+        "ATM",
+        "ATR",
+        "KRAS",
+        "PTEN",
+        "BRCA1",
+        "BRCA2",
+        "MYC"
+      ],
+      "top_drugs": [
+        "gemcitabine",
+        "olaparib",
+        "ceralasertib",
+        "berzosertib",
+        "MK1775",
+        "ATR inhibitor",
+        "PARP inhibitor",
+        "doxorubicin"
+      ],
+      "top_cancer_types": {
+        "Lung": 6,
+        "Breast": 5,
+        "string": 3,
+        "Other": 3,
+        "PDAC": 3,
+        "endometrial": 2
+      },
+      "gap_score": 25.5,
+      "white_space": false
+    },
+    "CCNE1_AMP": {
+      "total_records": 58,
+      "high_fit_count": 34,
+      "mean_fit": 0.443,
+      "conversion_rate": 0.586,
+      "clinical_trials_count": 3,
+      "trial_ids": [
+        "null",
+        "N/A",
+        "NCT"
+      ],
+      "top_genes": [
+        "CDK2",
+        "CCNE1",
+        "TP53",
+        "KRAS",
+        "MYC",
+        "CDK4",
+        "CDK6",
+        "RB1"
+      ],
+      "top_drugs": [
+        "paclitaxel",
+        "gemcitabine",
+        "CDK2 inhibitors",
+        "CDK4/6 inhibitors",
+        "encorafenib",
+        "cisplatin",
+        "palbociclib",
+        "KRAS inhibitors"
+      ],
+      "top_cancer_types": {
+        "CRC": 12,
+        "Breast": 9,
+        "Lung": 5,
+        "Ovarian": 5,
+        "Prostate": 4,
+        "PDAC": 3
+      },
+      "gap_score": 19.3,
+      "white_space": false
+    },
+    "PARP_INHIBITORS": {
+      "total_records": 129,
+      "high_fit_count": 84,
+      "mean_fit": 0.506,
+      "conversion_rate": 0.651,
+      "clinical_trials_count": 9,
+      "trial_ids": [
+        "NCT06944457",
+        "NCT04707248, NCT06161025",
+        "NCT03604692",
+        "NCT03942328",
+        "NCT06667765",
+        "N/A",
+        "NCT00000000",
+        "NCT03964532",
+        "NCT04511039"
+      ],
+      "top_genes": [
+        "BRCA2",
+        "BRCA1",
+        "PARP1",
+        "KRAS",
+        "TP53",
+        "AR",
+        "PARP",
+        "PTEN"
+      ],
+      "top_drugs": [
+        "olaparib",
+        "PARP inhibitors",
+        "PARP inhibitor",
+        "cisplatin",
+        "saruparib",
+        "rucaparib",
+        "niraparib",
+        "carboplatin"
+      ],
+      "top_cancer_types": {
+        "Breast": 24,
+        "Ovarian": 18,
+        "Other": 11,
+        "PDAC": 10,
+        "CRC": 10,
+        "Prostate": 9
+      },
+      "gap_score": 14.3,
+      "white_space": false
+    },
+    "IMMUNOTHERAPY": {
+      "total_records": 699,
+      "high_fit_count": 305,
+      "mean_fit": 0.332,
+      "conversion_rate": 0.436,
+      "clinical_trials_count": 48,
+      "trial_ids": [
+        "NCT05568680",
+        "Abstract 6715",
+        "NCT03604692",
+        "NCT03433469",
+        "NCT03942328",
+        "NCT02735239",
+        "NCT03918252, NCT03044613",
+        "NCT06066424",
+        "NCT05528055",
+        "NCT06948981",
+        "CT041-CG4006",
+        "NCT05995821",
+        "NCT05644379",
+        "NCT06932094",
+        "NCT03226756",
+        "NCT03873805",
+        "NeoTRIP",
+        "NCT05141253",
+        "NCT01898104",
+        "CT190"
+      ],
+      "top_genes": [
+        "KRAS",
+        "EGFR",
+        "HER2",
+        "PD-L1",
+        "TP53",
+        "CD3",
+        "BRAF",
+        "CD19"
+      ],
+      "top_drugs": [
+        "pembrolizumab",
+        "nivolumab",
+        "atezolizumab",
+        "ipilimumab",
+        "PD-1",
+        "anti-PD-L1",
+        "anti-PD1",
+        "trastuzumab"
+      ],
+      "top_cancer_types": {
+        "CRC": 81,
+        "Lung": 77,
+        "Breast": 75,
+        "Other": 75,
+        "Heme": 41,
+        "Melanoma": 40
+      },
+      "gap_score": 14.6,
+      "white_space": false
+    },
+    "CYTIDINE_ANALOGS": {
+      "total_records": 50,
+      "high_fit_count": 29,
+      "mean_fit": 0.404,
+      "conversion_rate": 0.58,
+      "clinical_trials_count": 4,
+      "trial_ids": [
+        "ChiCTR2000039281",
+        "NCT06445062",
+        "NCT05528055",
+        "NCT06667765"
+      ],
+      "top_genes": [
+        "TP53",
+        "APC",
+        "CDK4",
+        "CDK6",
+        "KRAS",
+        "FoxM1",
+        "STAT3",
+        "IDH1"
+      ],
+      "top_drugs": [
+        "gemcitabine",
+        "5-fluorouracil",
+        "decitabine",
+        "5-FU",
+        "olaparib",
+        "palbociclib",
+        "ribociclib",
+        "daraxonrasib"
+      ],
+      "top_cancer_types": {
+        "CRC": 12,
+        "PDAC": 9,
+        "Breast": 7,
+        "Lung": 6,
+        "Renal Cell Carcinoma": 2,
+        "various": 1
+      },
+      "gap_score": 12.5,
+      "white_space": false
+    },
+    "PKMYT1": {
+      "total_records": 5,
+      "high_fit_count": 2,
+      "mean_fit": 0.34,
+      "conversion_rate": 0.4,
+      "clinical_trials_count": 0,
+      "trial_ids": [],
+      "top_genes": [
+        "PKA",
+        "BRAF",
+        "POSTN",
+        "MMP1",
+        "VHL",
+        "AR",
+        "BRN2",
+        "Plk1"
+      ],
+      "top_drugs": [
+        "metformin",
+        "NSAIDs",
+        "encorafenib",
+        "Belzutifan",
+        "FDA-approved drugs"
+      ],
+      "top_cancer_types": {
+        "HNSCC": 1,
+        "Papillary thyroid carcinoma": 1,
+        "Renal Cell Carcinoma": 1,
+        "Prostate": 1,
+        "Lung": 1
+      },
+      "gap_score": 5.0,
+      "white_space": false
+    }
+  }
+}
