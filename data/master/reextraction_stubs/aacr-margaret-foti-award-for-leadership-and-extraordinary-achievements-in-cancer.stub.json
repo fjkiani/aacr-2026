@@ -1,0 +1,150 @@
+{
+  "session_slug": "aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer",
+  "generated_at": "2026-11-27T22:46:24.904037+00:00",
+  "mode": "offline_stub",
+  "queue": {
+    "session_slug": "aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer",
+    "primary_reason": "no_schema_a",
+    "n_unmatched_b": "1",
+    "n_schema_a": "0",
+    "n_schema_b_valid": "1",
+    "n_joined": "0",
+    "n_leftover_a": "0",
+    "blocked_without_schema_a": "yes",
+    "action": "extract_schema_a_missing",
+    "unmatched_b_speakers": "Dr. Anthony Ribas",
+    "priority_score": "123",
+    "queue_rank": "5"
+  },
+  "schema_a_present": false,
+  "n_schema_a": 0,
+  "n_schema_b": 1,
+  "schema_a": [],
+  "schema_b": [
+    {
+      "talk_id": "aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer::ribas::1",
+      "talk_metadata": {
+        "speaker_name": "Dr. Anthony Ribas",
+        "institution_or_pharma": "University of California, Los Angeles",
+        "session_title": "aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer",
+        "talk_title": "Award Lecture – Transforming Melanoma Immunotherapy",
+        "rhetorical_signals": [
+          "Speaker said: \"we don't need a phase three clinical trial. That should be made available to patients before that.\"",
+          "Speaker noted: \"we were told several times that this was the stupidest clinical trial you could ever do because everybody will receive 18 doses of anti-PD-1 and surgery, and the only difference was three doses before surgery.\"",
+          "Speaker hedged: \"I don't think any immune checkpoint blockade will have 100% response rate in any situation.\""
+        ],
+        "presentation_type": "clinical_trial_readout"
+      },
+      "vulnerability_identified": [
+        {
+          "failing_compound_or_target": "PD-1 checkpoint blockade",
+          "failure_type": "primary_resistance",
+          "mechanistic_blindspot": "Loss-of-function mutations in JAK1/JAK2 or beta-2 microglobulin leading to interferon‑γ signaling loss and MHC I loss",
+          "unexplained_resistance_quote": "we can see the resistant cancers have homozygous JAK1 or JAK2 loss-of-function mutations, or loss of MHC expression by loss of beta-2 microglobulin",
+          "ghost_responder_admission": "some patients responded dramatically while others did not; \"30% of patients that got neoadjuvant therapy did not do as well\"",
+          "hidden_tox_signal": null,
+          "evidence_strength": "explicit_admission"
+        }
+      ],
+      "trial_dilution_risk": [
+        {
+          "trial_name_or_nct": "SWOG S1512 (neoadjuvant anti‑PD‑1)",
+          "target_biology": "PD‑1 checkpoint inhibition in desmoplastic melanoma",
+          "flawed_enrollment_criteria": "Randomized arms received essentially the same anti‑PD‑1 regimen (18 doses total), differing only in timing of three pre‑surgery doses",
+          "missing_biomarker": "Prospective selection based on baseline CD8/PD‑L1 colocalization or interferon‑γ signature",
+          "static_vs_dynamic_failure": "No on‑treatment ctDNA or serial biopsies to track emerging JAK loss or MHC loss",
+          "statistical_concern": "Potential underpowering to detect difference between neoadjuvant and adjuvant timing due to identical drug exposure",
+          "severity": "significant_risk"
+        }
+      ],
+      "competitive_moat_weakness": [
+        {
+          "vulnerable_ip_or_chemistry": "PD‑1/PD‑L1 antibody platform",
+          "ip_vulnerability_note": "Speaker highlighted that efficacy depends on pre‑existing T‑cell receptor recognition and interferon‑γ signaling, suggesting the antibody alone has limited durability",
+          "scale_or_manufacturing_bottleneck": null,
+          "clinical_strategy_weakness": "Pursuing broad checkpoint blockade without robust biomarker stratification may dilute signal in heterogeneous melanoma populations"
+        }
+      ],
+      "cognitive_dissonance": [
+        "Speaker showed that only ~30% of patients lack baseline CD8/PD‑L1 colocalization yet concluded that \"adding more immune checkpoint blockade agents will not get us there,\" ignoring the data that biomarker‑negative tumors fail to respond"
+      ],
+      "data_maturity_assessment": {
+        "overall_maturity": "single_arm_phase2",
+        "sample_size_adequacy": "adequately_powered",
+        "follow_up_adequacy": "immature",
+        "key_data_gaps": [
+          "No overall survival data presented",
+          "Lack of biomarker‑stratified efficacy analysis",
+          "No comparison to standard of care arm in neoadjuvant study"
+        ]
+      },
+      "crispro_opportunity": [
+        {
+          "opportunity_type": "biomarker_stratification_gap",
+          "description": "Develop a CrisPRO‑driven predictive model integrating baseline CD8 immunohistochemistry, PD‑L1 expression, and interferon‑γ gene signature to select patients most likely to achieve pathological complete response to neoadjuvant anti‑PD‑1.",
+          "transcript_evidence": "Speaker said: \"It only works if there's the target and the receptor, the PD‑1 receptor colocalized with the PD‑L1... If this interaction is not there, these therapies will not be working.\"",
+          "crispro_angle": "CrisPRO can computationally model tumor‑immune interaction networks and predict which tumors possess the requisite interferon‑γ signaling competence, enabling prospective enrichment.",
+          "external_validation_needed": [
+            "ClinicalTrials.gov: retrieve enrollment criteria and outcomes for SWOG S1512",
+            "PubMed: studies linking JAK1/2 loss to anti‑PD‑1 resistance",
+            "Evaluate: real‑world response rates of PD‑1 blockade in desmoplastic melanoma"
+          ],
+          "priority": "high"
+        },
+        {
+          "opportunity_type": "resistance_mechanism_addressable",
+          "description": "Target JAK1/2 loss‑of‑function or beta‑2 microglobulin loss with combination strategies (e.g., epigenetic modulators or cytokine agonists) identified by CrisPRO network analysis.",
+          "transcript_evidence": "Speaker noted: \"resistant cancers have homozygous JAK1 or JAK2 loss-of-function mutations, or loss of MHC expression by loss of beta‑2 microglobulin.\"",
+          "crispro_angle": "CrisPRO can simulate pathway rewiring after JAK loss and suggest compensatory targets to restore interferon‑γ signaling.",
+          "external_validation_needed": [
+            "Preclinical data on JAK inhibitors or STAT activators in JAK‑deficient melanoma models"
+          ],
+          "priority": "medium"
+        }
+      ],
+      "cited_competitors": [
+        {
+          "name": "Pfizer",
+          "context": "Developed a MEK inhibitor that was combined with BRAF inhibition in early trials.",
+          "sentiment": "neutral"
+        },
+        {
+          "name": "SWOG",
+          "context": "Collaborative group conducting the neoadjuvant S1512 trial.",
+          "sentiment": "neutral"
+        }
+      ],
+      "unresolved_questions": [
+        "What are the molecular determinants of the ~30% of desmoplastic melanoma patients who fail to achieve pathological complete response to neoadjuvant anti‑PD‑1?",
+        "Is adjuvant anti‑PD‑1 therapy necessary after a complete pathological response from neoadjuvant treatment?"
+      ],
+      "external_follow_up": {
+        "nct_numbers_to_check": [
+          "NCT02834013"
+        ],
+        "assets_to_track": [
+          "anti‑PD‑1 antibodies in melanoma",
+          "MEK inhibitors combined with BRAF inhibitors"
+        ],
+        "companies_to_monitor": [
+          "Pfizer",
+          "Merck",
+          "Bristol‑Myers Squibb"
+        ]
+      }
+    }
+  ],
+  "extractor_guidance": {
+    "use_patched_v6_patterns": true,
+    "speaker_name_paths": [
+      "speaker.name",
+      "talk_metadata.speaker_name"
+    ],
+    "filter_orphan_fragments": true,
+    "align_ab_in_one_call": false,
+    "goal": "Extract missing Schema A talks for this B-only session"
+  },
+  "unmatched_speakers": [
+    "Dr. Anthony Ribas"
+  ]
+}

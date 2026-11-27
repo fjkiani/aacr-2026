@@ -44,6 +44,7 @@ Aggregated outputs across all sessions:
 
 ### `scripts/`
 - `extractor_v3.py` through `extractor_v6.py` — Iterative extractor pipeline versions. v6 is production.
+- `repair_talk_id_joins.py` — Repairs Schema B `talk_id`s (extractor bug forced `::unknown::`) and joins them to Schema A. See `reports/fix_plan_identity_and_vectors.md`.
 
 ## Scale
 
