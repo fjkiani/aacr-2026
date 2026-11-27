@@ -32,6 +32,10 @@ python3 scripts/attempt_reextraction.py [--limit 10]
 
 - Unmatched B intel (CrisPRO / CD / vuln) → `metadata.join_status=unmatched`
 - B-only sessions (no Schema A) → `join_status=provisional` + synthesized talk cards
-- Quality flags: `has_evidence`, `has_entity`, `provisional`, `indexable`
+- Residual joined `::unknown::` intel kept with `unknown_speaker` / `indexable=false`
+- Quality flags on every unit: `join_status`, `has_evidence`, `has_entity`, `provisional`, `indexable`
+- Clinical facts stay Schema A–sourced only (no invented A science)
 
 Use `--joined-only` for the legacy gate behavior.
+
+**Supabase** load / RPC is out of scope for this offline path (auth declined).

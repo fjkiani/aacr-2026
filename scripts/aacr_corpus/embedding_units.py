@@ -417,7 +417,14 @@ def build_crispro(
     with open(path, newline="") as f:
         for row in csv.DictReader(f):
             talk_id = row.get("talk_id") or ""
-            ok, js = talk_id_gate(talk_id, status, allow_provisional=allow_provisional)
+            # Residual A/B unknowns still carry real intel — emit with quality flags
+            # (indexable=false when unknown_speaker + joined).
+            ok, js = talk_id_gate(
+                talk_id,
+                status,
+                allow_provisional=allow_provisional,
+                allow_schema_a_unknown=True,
+            )
             if not ok:
                 skip["bad_talk_id"] += 1
                 continue
@@ -429,11 +436,16 @@ def build_crispro(
                 continue
             speaker = row.get("speaker_name") or ""
             otype = row.get("opportunity_type") or ""
-            unknown_spk = speaker.lower().startswith("dr. unknown") or speaker.lower() == "unknown"
-            if unknown_spk and js == "joined":
+            unknown_spk = (
+                speaker.lower().startswith("dr. unknown")
+                or speaker.lower() == "unknown"
+                or "::unknown::" in talk_id
+            )
+            # Keep joined unknowns when opportunity type or descriptive speaker label exists
+            if unknown_spk and js == "joined" and not (nonempty(otype) or nonempty(speaker)):
                 skip["low_signal_unknown"] += 1
                 continue
-            has_ent = nonempty(speaker) or nonempty(otype)
+            has_ent = nonempty(speaker) or nonempty(otype) or nonempty(desc)
             if not has_ent:
                 skip["no_entity"] += 1
                 continue
@@ -477,8 +489,17 @@ def build_cd_and_vuln(
         talk_id = rec.get("talk_id") or ""
         md = rec.get("talk_metadata") or {}
         speaker = md.get("speaker_name") or ""
-        ok, js = talk_id_gate(talk_id, status, allow_provisional=allow_provisional)
-        unknown_spk = speaker.lower().startswith("dr. unknown") or speaker.lower() == "unknown"
+        ok, js = talk_id_gate(
+            talk_id,
+            status,
+            allow_provisional=allow_provisional,
+            allow_schema_a_unknown=True,
+        )
+        unknown_spk = (
+            speaker.lower().startswith("dr. unknown")
+            or speaker.lower() == "unknown"
+            or "::unknown::" in talk_id
+        )
 
         for cd in rec.get("cognitive_dissonance") or []:
             if not ok:
@@ -488,13 +509,11 @@ def build_cd_and_vuln(
             if not nonempty(text) or len(text) < 40:
                 skip_cd["no_evidence"] += 1
                 continue
-            if unknown_spk and js == "joined":
-                skip_cd["low_signal_unknown"] += 1
-                continue
             has_ent = nonempty(speaker) or nonempty(md.get("talk_title"))
             if not has_ent:
                 skip_cd["no_entity"] += 1
                 continue
+            # Joined unknowns keep CD text; quality_flags mark indexable=false
             qf = quality_flags(
                 join_status=js,
                 speaker=speaker,
@@ -533,9 +552,6 @@ def build_cd_and_vuln(
             text = " | ".join(x for x in bits if x)
             if len(text) < 40:
                 skip_v["no_evidence"] += 1
-                continue
-            if unknown_spk and js == "joined":
-                skip_v["low_signal_unknown"] += 1
                 continue
             has_ent = (
                 nonempty(speaker)
@@ -628,6 +644,11 @@ def build_all(
             "vulnerability": dict(skip_v),
         },
         "joined_talk_ids": len(load_joined_ids(status)),
+        "status_talk_ids": {
+            "joined": sum(1 for s in status.values() if s == "joined"),
+            "unmatched": sum(1 for s in status.values() if s == "unmatched"),
+            "provisional": sum(1 for s in status.values() if s == "provisional"),
+        },
         "allow_provisional": allow_provisional,
         "schema": {
             "id": "stable unit id",

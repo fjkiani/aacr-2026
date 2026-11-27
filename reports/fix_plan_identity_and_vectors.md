@@ -119,19 +119,25 @@ Quality flags on every unit: `has_evidence`, `has_entity`, `provisional`, `index
 
 ### Counts
 
-| Unit type | Before (joined-gated) | After (incl. provisional) |
-|---|---|---|
-| talk_card | 858 | **929** (+71 B-synthesized) |
-| clinical_fact | 1,480 | 1,480 |
-| crispro_opp | 1,752 | 1,752 (116 tagged unmatched/provisional) |
-| cd_hit | 461 | 461 |
-| vulnerability | 671 | 671 |
-| **total** | **5,222** | **5,293** |
+| Unit type | Joined-gated | + provisional B | + residual unknown intel |
+|---|---|---|---|
+| talk_card | 858 | **929** (+71 B-synthesized) | 929 |
+| clinical_fact | 1,480 | 1,480 | 1,480 (Schema A only) |
+| crispro_opp | 1,752 | 1,752 | **1,763** (+11 joined `::unknown::`) |
+| cd_hit | 461 | 461 | **464** (+3) |
+| vulnerability | 671 | 671 | **675** (+4) |
+| **total** | **5,222** | **5,293** | **5,311** |
 
-Join-status mix (all units): `joined=5046`, `unmatched=206`, `provisional=41`.  
-All **16** B-only session talks now have provisional talk cards in the index prep.
+Join-status mix (all units): `joined=5064`, `unmatched=206`, `provisional=41`.  
+Talk-id cohorts on join map: joined **810** / unmatched **55** / provisional **16**.  
+All **16** B-only session talks and all **55** unmatched B talks have talk cards.  
+Residual joined `::unknown::` CrisPRO/CD/vuln kept with `unknown_speaker` + `indexable=false` where applicable — no invented Schema A science.
 
-**Not done:** Supabase re-index / `match_embeddings` RPC (auth declined / MCP `needsAuth`). Load `data/embeddings/*.jsonl` when credentials available — prefer filterable `join_status` rather than wiping.
+### Supabase — out of scope / declined
+
+**Supabase is not part of this deliverable.** MCP auth failed (`client id failed` / declined / `needsAuth`). Do not block offline work on credentials.
+
+Offline path **is** the deliverable: claim-level JSONL under `data/embeddings/` with filterable `join_status` + quality flags. A future operator may load those files into Supabase / `match_embeddings` when credentials exist — prefer filterable `join_status` rather than wiping.
 
 ---
 
@@ -151,11 +157,11 @@ Model build order stays: **reranker → extractor LoRA/DPO → fit ranker**; sti
 
 ---
 
-## Fix 4 — Downstream consumers (still open)
+## Fix 4 — Downstream consumers (still open; offline-first)
 
-After remap + re-embed:
+Supabase / live RPC work is **deferred** (auth declined). When credentials return:
 
-1. `match_embeddings` RPC — filter by `source_type` / `join_status`, lower threshold for short clinical facts
+1. Load `data/embeddings/*.jsonl` — filter by `source_type` / `join_status`, lower threshold for short clinical facts
 2. `aacr-semantic-search` / `crispro-scorer` / `cd-hit-extractor` — join on repaired `talk_id`; optionally include provisional with down-rank
 3. CRM push — prefer `joined=yes` + priority high/medium; provisional for outreach drafts only
 
@@ -167,8 +173,9 @@ After remap + re-embed:
 2. **Done:** `--write` repaired Schema B + remapped masters
 3. **Done:** triage + prioritized re-extraction queue + offline stubs (LLM re-pass still open / no keys)
 4. **Done:** flywheel quality scores + real DPO rejects (offline/synthetic)
-5. **Done:** modular `aacr_corpus` package; claim units **beyond joinables**
-6. **Open:** Supabase embed + hybrid RPC; gold-set eval (Recall@10 / entity hit-rate)
+5. **Done:** modular `aacr_corpus` package; claim units **beyond joinables** (5,222 → 5,311)
+6. **Out of scope:** Supabase embed + hybrid RPC (auth declined)
+7. **Open (offline):** gold-set eval fixtures; Schema A extract for residual B-only sessions; OpenRouter re-extract when keys available
 
 ---
 
@@ -178,7 +185,9 @@ After remap + re-embed:
 - [ ] A↔B join coverage ≥ 95% of valid B talks (**91.9%** all / **93.6%** joinable — blocked on missing Schema A)
 - [x] Zero orphan fragments in Schema B arrays
 - [x] Offline embedding units cover unmatched + provisional B (not join-only)
+- [x] Residual joined-unknown intel retained with quality flags
 - [x] Flywheel quality scores non-constant
-- [ ] Search gold-set entity hit-rate improves vs pre-repair baseline (needs Supabase)
+- [ ] Search gold-set entity hit-rate improves vs pre-repair baseline (**blocked — Supabase out of scope**)
 - [x] Preference rejects are real failure modes (not stub-only)
 - [x] Monolith scripts modularized under `scripts/aacr_corpus/`
+- [x] Supabase explicitly out of scope; offline JSONL is the vector deliverable

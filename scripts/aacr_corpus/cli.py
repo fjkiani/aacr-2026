@@ -430,7 +430,8 @@ def embeddings_main(argv: list[str] | None = None) -> None:
             [
                 "# AACR embedding units (offline)",
                 "",
-                "Claim-level units for later Supabase / vector load. **No embeddings computed here.**",
+                "Claim-level units for offline index prep. **No embeddings computed here.** "
+                "Supabase load is **out of scope / declined** — JSONL is the deliverable.",
                 "",
                 "Includes **joined**, **unmatched**, and **provisional** (B-only) units with "
                 "`metadata.join_status` + quality flags. Use `--joined-only` for legacy gate.",
@@ -469,6 +470,8 @@ def embeddings_main(argv: list[str] | None = None) -> None:
                 "## Gates",
                 "",
                 "- Resolvable `talk_id` **or** unmatched/provisional B id (when allow_provisional)",
+                "- Residual joined `::unknown::` intel (CrisPRO/CD/vuln) kept with `unknown_speaker` +"
+                " `indexable=false` — no invented Schema A science",
                 "- Entity anchor (speaker / target / tumor / metric / opportunity type)",
                 "- Evidence present (MOA/findings, clinical value, quote, or CD/vuln text)",
                 "",
