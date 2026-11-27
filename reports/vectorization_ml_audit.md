@@ -34,22 +34,22 @@ Likely embedding mix (inferred, not verified live):
 ### 1. Wrong unit of retrieval
 Raw session text (~76k chars) mixes chairs, Q&A, ASR noise, and multiple talks. Cosine neighbors become “same room vibe,” not “same claim.”
 
-### 2. Broken identity join (critical)
-Schema A ↔ Schema B `talk_id` alignment is nearly broken:
+### 2. Broken identity join (critical) — repaired in this PR
+Schema A ↔ Schema B `talk_id` alignment was nearly broken pre-repair:
 
-| Check | Result |
-|---|---|
-| Exact `talk_id` intersection | **22 / 862+926** |
-| Schema B speaker slug `unknown` | **891 / 926** |
-| Sessions with equal A/B counts (order-joinable) | **182 sessions / 588 talks** |
+| Check | Before | After cascade v2 |
+|---|---|---|
+| Exact `talk_id` intersection | **22 / 862+926** | Canonical B IDs rewritten to A when joined |
+| Schema B `::unknown::` talk_ids | **891 / 926** | **5 / 881** |
+| Valid B joined to A | — | **810 / 881 (91.9%)** · **810 / 865 joinable (93.6%)** |
 
-Without a stable `talk_id`, embeddings cannot be filtered/joined to CRM, CrisPRO views, or clinical facts cleanly.
+See `reports/fix_plan_identity_and_vectors.md` + `data/master/talk_id_join_map.csv`. Residual unmatched triage: `data/master/unmatched_talk_triage.csv`.
 
 ### 3. Caption ASR risk
 All 272 transcripts are **English auto-generated**. Drug names, gene symbols, NCT IDs, and dose numbers are the highest-value tokens and the most error-prone.
 
-### 4. Fake quality signal
-All 862 flywheel SFT rows have `quality_score = 0.8500` (constant). Preference “rejected” rows are thin `fast_path_no_cd_analysis` stubs (~313 chars) vs chosen (~2.0k chars) — useful for length/structure preference, weak for factual preference.
+### 4. Fake quality signal — rescored offline
+Original seed had all 862 SFT rows at `quality_score = 0.8500` and stub rejects. Rescored copy: `data/flywheel/aacr_flywheel_seed_scored.json` (8 unique scores, mean 0.934) + 450 synthetic failure-mode rejects. See `reports/flywheel_quality_summary.md`.
 
 ### 5. Low-signal Schema B rows
 73 Schema B records have empty vulnerability / dilution / moat / CD / CrisPRO arrays. Embedding those pollutes the index with near-empty cards.
@@ -179,14 +179,15 @@ Start with gradient boosting on structured features; only deep-learn if text fea
 
 ## Concrete anti-junk checklist
 
-- [ ] No raw transcript vectors in production index
-- [ ] Every vector has resolvable `talk_id` → speaker → session
-- [ ] Evidence quote required for CD / CrisPRO units
-- [ ] Gene/drug sparse index alongside dense
-- [ ] Constant `quality_score=0.85` replaced with real gates
-- [ ] Preference rejects regenerated with factual errors
+- [x] Offline claim units built (`data/embeddings/`, 5,222 gated rows) — no raw transcript units
+- [x] Intel units require resolvable non-`::unknown::` `talk_id`
+- [x] Evidence/value required for clinical / CrisPRO / CD / vuln units
+- [ ] Gene/drug sparse index alongside dense (needs Supabase load)
+- [x] Constant `quality_score=0.85` replaced with real gates
+- [x] Preference rejects regenerated with factual errors
 - [ ] Gold query set scored before/after re-embed
 - [ ] NCT IDs stay unverified until linked — never sole embed text
+- [ ] Production Supabase re-index (auth declined this run)
 
 ---
 

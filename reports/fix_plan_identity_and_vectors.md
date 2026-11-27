@@ -1,7 +1,10 @@
 # Fix Plan — What’s Broken & How to Repair It
 
 **Companion to:** `reports/vectorization_ml_audit.md`  
-**Repair script:** `scripts/repair_talk_id_joins.py`
+**Repair script:** `scripts/repair_talk_id_joins.py`  
+**Triage:** `scripts/triage_unmatched_talks.py` → `data/master/unmatched_talk_triage.csv`  
+**Flywheel:** `scripts/recompute_flywheel_quality.py`  
+**Embedding units (offline):** `scripts/build_embedding_units.py` → `data/embeddings/`
 
 ---
 
@@ -21,87 +24,101 @@ rec["talk_id"] = f"{slug}::{last}::{i+1}"
 | A | `speaker.name` | Correct `slug::lastname::N` |
 | B | `talk_metadata.speaker_name` | Always `slug::unknown::N` |
 
-Evidence: **837 / 926** Schema B rows have a real speaker name in metadata but `::unknown::` in `talk_id`. Only **22** exact A↔B ID matches before repair.
+Evidence: **837 / 926** Schema B rows had a real speaker name in metadata but `::unknown::` in `talk_id`. Only **22** exact A↔B ID matches before repair.
 
 Secondary bug: JSON parse sometimes promoted nested objects into the top-level Schema B array. Worst case: `advances-in-therapeutic-antibodies` → **47** “rows”, only **2** valid talks (**45 orphan fragments**).
 
 ---
 
-## Fix 1 — Identity repair (do this first)
+## Fix 1 — Identity repair
 
-### Immediate (offline, no re-extract)
-Run:
+### Done (this PR)
 
 ```bash
 python3 scripts/repair_talk_id_joins.py --write
+python3 scripts/triage_unmatched_talks.py
 ```
 
-What it does:
-1. Drops orphan non-talk Schema B fragments
-2. Cascade-joins B→A: **name → name+title → title → equal-count order**
-3. Rewrites B `talk_id` to the canonical Schema A id when joined
-4. Writes `data/master/talk_id_join_map.csv`
-5. Remaps `schema_b_master.*`, `crispro_opportunities_all.csv`, `cognitive_dissonance_all.csv`
+Cascade v2: **name → fuzzy ASR last-name (≥0.72) → first-name → name+title → title/token → equal-count order → shift-aware residual**.
 
-### Measured recovery (dry-run on current corpus)
+| Metric | Pre-repair | After v1 filter+join | After v2 cascade |
+|---|---|---|---|
+| Exact talk_id matches | 22 | — | — |
+| Orphan fragments | 45 | 0 | 0 |
+| Valid B joined to A | — | **806 / 881 (91.5%)** | **810 / 881 (91.9%)** |
+| Of joinable (has Schema A) | — | 806 / 865 (93.2%) | **810 / 865 (93.6%)** |
+| Schema B `::unknown::` talk_ids | 891 / 926 | 5 / 881 | **5 / 881** |
+| Unmatched B | — | 75 | **71** |
 
-| Metric | Before | After filter+join |
+Recovered offline examples: Eva Hernando↔Monje, Ghulam Rasul↔Rasool, Gadi↔Getz, Patrick↔Dugan.
+
+### Residual unmatched (71 talks / 47 sessions)
+
+Triage categories (`data/master/unmatched_talk_triage.csv`):
+
+| Category | Count | Notes |
 |---|---|---|
-| Exact talk_id matches | 22 | — |
-| Orphan fragments | 45 (1 session) | 0 dropped |
-| Valid B joined to A | — | **806 / 865 (93.2%)** |
-| Unmatched B | — | ~59 |
-| Unmatched A | — | ~52 |
+| `count_mismatch` | 49 | B extracted extra chairs/panelists A never modeled |
+| `no_schema_a` | 16 | 5 sessions with B only — **blocked without Schema A extract** |
+| `low_signal` | 4 | Speaker N / panel / no original data |
+| `asr_name` | 2 | Leftover A still needs human/LLM name resolve |
 
-Join methods: mostly unique last-name (~764), then title (~32), name+title (~3), order (~7).
+Queue + notes: `data/master/reextraction_queue.csv`, `data/master/reextraction_queue_notes.md`.
+
+**Blocked without LLM / Schema A (5 sessions):**
+- `leveraging-nci-supported-cancer-epidemiology-cohorts-to-advance-cancer-preventio`
+- `nci-opportunities-to-support-early-career-cancer-researchers-and-research-specia`
+- `nci-opportunities-in-technology-development-for-cancer-research`
+- `researcher-town-hall-navigating-policy-challenges-and-securing-funding`
+- `aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer`
+
+≥95% of all valid B (837/881) needs those Schema A fills + ~12 more aligned re-extracts. Offline ceiling without new A rows ≈ **93.6% of joinable**.
 
 ### Permanent (extractor)
-`extractor_v6.py` now:
-- Reads `speaker.name` **or** `talk_metadata.speaker_name`
-- Filters Schema B to records that have talk metadata before reindexing
-
-Re-extract only needed for unmatched / low-signal sessions, not the full 272.
-
-### Residual unmatched (~7%)
-Handle as a triage queue from `talk_id_join_map.csv` where `joined=no`:
-- Count-mismatched sessions (79 before filter; fewer after)
-- ASR name garbling (`Adelsten` vs `Adel`, first-name-only speakers)
-- Schema A/B disagreed on who “presented data”
-
-Action: human or LLM re-pass those sessions with both schemas in one call so IDs are assigned together.
+`extractor_v6.py` now reads `speaker.name` **or** `talk_metadata.speaker_name` and filters Schema B before reindexing.
 
 ---
 
-## Fix 2 — Stop embedding junk
+## Fix 2 — Stop embedding junk (offline units ready)
 
-Once IDs are repaired:
+```bash
+python3 scripts/build_embedding_units.py
+```
 
-| Do | Don’t |
+Emits claim-level JSONL under `data/embeddings/` (see `data/embeddings/README.md`).
+
+| Unit type | Count (gated) |
 |---|---|
-| Embed talk cards (MOA + findings + targets) | Embed raw ~76k-char transcripts |
-| Embed clinical facts / CrisPRO / CD units with evidence | Embed empty intel arrays (73 low-signal B rows) |
-| Hybrid BM25 (gene/drug/NCT) + dense + rerank | Global cosine 0.65 only |
-| Require resolvable `talk_id` + entity anchor | Index unverified NCT dump alone |
+| talk_card | 858 |
+| clinical_fact | 1,480 |
+| crispro_opp | 1,752 |
+| cd_hit | 461 |
+| vulnerability | 671 |
+| **total** | **5,222** |
 
-Quarantine rows with no crispro/CD/vulnerability/dilution/moat until re-extracted.
+Gates: resolvable non-`::unknown::` talk_id for intel units; entity anchor; evidence/quote/value present. Quarantines unknown-speaker low-signal cards.
 
-Re-build `aacr_embeddings` with `source_type` + filter metadata (Supabase re-index; auth declined this run so not executed here).
+**Not done:** Supabase re-index / `match_embeddings` RPC (auth declined). Load `data/embeddings/*.jsonl` when credentials available.
 
 ---
 
 ## Fix 3 — Flywheel / ML data quality
 
-| Broken | Fix |
+```bash
+python3 scripts/recompute_flywheel_quality.py
+```
+
+| Broken | Fix status |
 |---|---|
-| All SFT `quality_score = 0.85` | Compute real gates: evidence quote in transcript, non-empty intel, valid talk_id, parse success → score ∈ [0,1] |
-| All 450 rejected prefs = `fast_path_no_cd_analysis` stubs | Regenerate rejects with real failure modes: hallucinated opp, missing quote, wrong talk_id, empty arrays on rich talks |
-| Extractor/B split | Train next SFT generation on **repaired** joined pairs |
+| All SFT `quality_score = 0.85` | **Done** → gated scores in `data/flywheel/aacr_flywheel_seed_scored.json` (8 unique values, mean 0.934, range 0.60–0.95). Summary: `reports/flywheel_quality_summary.md` |
+| All 450 rejected prefs = `fast_path_no_cd_analysis` stubs | **Done** → synthetic failure modes: hallucinated_opp (113), missing_quote (113), wrong_talk_id (112), empty_arrays_on_rich_talk (112) |
+| Extractor/B split | Train next SFT gen on **repaired** joined pairs (still open) |
 
 Model build order stays: **reranker → extractor LoRA/DPO → fit ranker**; still do not train a custom embedder on this scale.
 
 ---
 
-## Fix 4 — Downstream consumers
+## Fix 4 — Downstream consumers (still open)
 
 After remap + re-embed:
 
@@ -113,20 +130,21 @@ After remap + re-embed:
 
 ## Execution order
 
-1. **Done in this PR:** root-cause analysis, `repair_talk_id_joins.py`, extractor_v6 guard, join map
-2. Run `--write` and commit repaired Schema B + remapped masters
-3. Triage `joined=no` sessions (re-extract ~50–80 talks, not full corpus)
-4. Recompute flywheel quality scores + real DPO rejects
-5. Re-embed claim units in Supabase + hybrid RPC
-6. Gold-set eval (Recall@10 / entity hit-rate) before/after
+1. **Done:** root-cause analysis, `repair_talk_id_joins.py`, extractor_v6 guard, join map
+2. **Done:** `--write` repaired Schema B + remapped masters
+3. **Done:** triage `joined=no` + re-extraction queue (LLM re-pass still open / blocked for 5 sessions)
+4. **Done:** flywheel quality scores + real DPO rejects (offline/synthetic)
+5. **Done offline:** claim-unit JSONL builder; **open:** Supabase embed + hybrid RPC
+6. **Open:** gold-set eval (Recall@10 / entity hit-rate) before/after
 
 ---
 
 ## Success criteria
 
-- [ ] Schema B `::unknown::` rate &lt; 5%
-- [ ] A↔B join coverage ≥ 95% of valid B talks
-- [ ] Zero orphan fragments in Schema B arrays
-- [ ] Every production embedding has resolvable `talk_id`
-- [ ] Flywheel quality scores non-constant
-- [ ] Search gold-set entity hit-rate improves vs pre-repair baseline
+- [x] Schema B `::unknown::` rate &lt; 5% (5/881 ≈ 0.6%)
+- [ ] A↔B join coverage ≥ 95% of valid B talks (**91.9%** all / **93.6%** joinable — blocked on missing Schema A)
+- [x] Zero orphan fragments in Schema B arrays
+- [x] Offline embedding units require resolvable `talk_id` (intel units)
+- [x] Flywheel quality scores non-constant
+- [ ] Search gold-set entity hit-rate improves vs pre-repair baseline (needs Supabase)
+- [x] Preference rejects are real failure modes (not stub-only)
