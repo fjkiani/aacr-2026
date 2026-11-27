@@ -265,13 +265,29 @@ Extract one JSON record per data-presenting speaker{" in THIS PART" if part_labe
         if part_label == "P1":
             time.sleep(CALL_SLEEP)
 
-    for i, rec in enumerate(all_records):
-        last = rec.get("speaker", {}).get("name", "unknown").split()[-1].lower()
+    # Schema A uses speaker.name; Schema B uses talk_metadata.speaker_name.
+    # Older builds only read speaker.name, which forced Schema B → ::unknown::.
+    cleaned = []
+    for rec in all_records:
+        if schema_label.startswith("B"):
+            # Drop nested fragment objects that leaked into the top-level array
+            md = rec.get("talk_metadata") if isinstance(rec, dict) else None
+            if not (isinstance(md, dict) and (md.get("speaker_name") or md.get("talk_title"))):
+                continue
+        cleaned.append(rec)
+
+    for i, rec in enumerate(cleaned):
+        name = (
+            (rec.get("speaker") or {}).get("name")
+            or ((rec.get("talk_metadata") or {}).get("speaker_name"))
+            or "unknown"
+        )
+        last = str(name).split()[-1].lower() if str(name).strip() else "unknown"
         rec["talk_id"] = f"{slug}::{last}::{i+1}"
 
     with open(out_dir / f"{slug}.json", "w") as f:
-        json.dump(all_records, f, indent=2)
-    return all_records, "ok"
+        json.dump(cleaned, f, indent=2)
+    return cleaned, "ok"
 
 # ── Load sessions ─────────────────────────────────────────────────────────────
 sessions = []
