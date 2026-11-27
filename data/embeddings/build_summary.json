@@ -1,15 +1,24 @@
 {
   "counts": {
-    "talk_card": 858,
+    "talk_card": 929,
     "clinical_fact": 1480,
     "crispro_opp": 1752,
     "cd_hit": 461,
     "vulnerability": 671,
-    "total": 5222
+    "total": 5293
   },
+  "join_status_counts": {
+    "joined": 5046,
+    "unmatched": 206,
+    "provisional": 41
+  },
+  "provisional_talk_cards_from_b": 71,
   "skips": {
     "talk_card": {
       "low_signal_unknown": 4
+    },
+    "provisional_talk_card": {
+      "already_joined_or_native": 810
     },
     "clinical_fact": {},
     "crispro_opp": {
@@ -23,12 +32,21 @@
     }
   },
   "joined_talk_ids": 810,
+  "allow_provisional": true,
   "schema": {
     "id": "stable unit id",
     "unit_type": "talk_card|clinical_fact|crispro_opp|cd_hit|vulnerability",
-    "talk_id": "canonical Schema A talk_id when joined",
+    "talk_id": "canonical Schema A talk_id when joined; B-derived when provisional",
     "text": "string to embed",
-    "metadata": "filterable fields (speaker, tumors, priority, ...)",
+    "metadata": "filterable fields incl. join_status + quality flags",
     "source": "origin master file"
+  },
+  "before_counts": {
+    "talk_card": 858,
+    "clinical_fact": 1480,
+    "crispro_opp": 1752,
+    "cd_hit": 461,
+    "vulnerability": 671,
+    "total": 5222
   }
 }

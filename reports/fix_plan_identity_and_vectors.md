@@ -1,10 +1,29 @@
 # Fix Plan — What’s Broken & How to Repair It
 
 **Companion to:** `reports/vectorization_ml_audit.md`  
-**Repair script:** `scripts/repair_talk_id_joins.py`  
-**Triage:** `scripts/triage_unmatched_talks.py` → `data/master/unmatched_talk_triage.csv`  
-**Flywheel:** `scripts/recompute_flywheel_quality.py`  
-**Embedding units (offline):** `scripts/build_embedding_units.py` → `data/embeddings/`
+**Package:** `scripts/aacr_corpus/` (modular; thin CLIs keep old names)  
+**Repair:** `scripts/repair_talk_id_joins.py` → `aacr_corpus.identity`  
+**Triage:** `scripts/triage_unmatched_talks.py` → `aacr_corpus.triage`  
+**Flywheel:** `scripts/recompute_flywheel_quality.py` → `aacr_corpus.flywheel_quality`  
+**Embedding units:** `scripts/build_embedding_units.py` → `aacr_corpus.embedding_units`  
+**Re-extract:** `scripts/attempt_reextraction.py` → `aacr_corpus.reextract`
+
+---
+
+## Modular layout (monolith gutted)
+
+| Module | Role |
+|---|---|
+| `identity.py` | Name/title sim, talk_id rewrite, cascade join |
+| `schema_b_clean.py` | Orphan fragment filter + A/B accessors |
+| `triage.py` | Unmatched categorization + prioritized queue |
+| `flywheel_quality.py` | SFT score gates + synthetic preference rejects |
+| `embedding_units.py` | Claim units — **joined + unmatched + provisional** |
+| `reextract.py` | Top-queue offline stubs; API prep if keys exist |
+| `cli.py` | Argparse entrypoints |
+| `README.md` | Module map |
+
+One-file scripts under `scripts/` are thin wrappers only.
 
 ---
 
@@ -63,7 +82,7 @@ Triage categories (`data/master/unmatched_talk_triage.csv`):
 | `low_signal` | 4 | Speaker N / panel / no original data |
 | `asr_name` | 2 | Leftover A still needs human/LLM name resolve |
 
-Queue + notes: `data/master/reextraction_queue.csv`, `data/master/reextraction_queue_notes.md`.
+Queue is **priority-sorted** (`priority_score`, `queue_rank`). Top sessions get offline stubs under `data/master/reextraction_stubs/` (no OpenRouter keys in env). Notes: `data/master/reextraction_queue_notes.md`, `data/master/reextraction_offline_notes.md`.
 
 **Blocked without LLM / Schema A (5 sessions):**
 - `leveraging-nci-supported-cancer-epidemiology-cohorts-to-advance-cancer-preventio`
@@ -72,33 +91,47 @@ Queue + notes: `data/master/reextraction_queue.csv`, `data/master/reextraction_q
 - `researcher-town-hall-navigating-policy-challenges-and-securing-funding`
 - `aacr-margaret-foti-award-for-leadership-and-extraordinary-achievements-in-cancer`
 
-≥95% of all valid B (837/881) needs those Schema A fills + ~12 more aligned re-extracts. Offline ceiling without new A rows ≈ **93.6% of joinable**.
+Offline join ceiling without new A rows ≈ **93.6% of joinable**. Embedding index prep no longer waits on that ceiling (see Fix 2).
 
 ### Permanent (extractor)
 `extractor_v6.py` now reads `speaker.name` **or** `talk_metadata.speaker_name` and filters Schema B before reindexing.
 
 ---
 
-## Fix 2 — Stop embedding junk (offline units ready)
+## Fix 2 — Beyond joinables (embedding units)
 
 ```bash
-python3 scripts/build_embedding_units.py
+python3 scripts/build_embedding_units.py          # joined + unmatched + provisional
+python3 scripts/build_embedding_units.py --joined-only  # legacy gate
 ```
 
 Emits claim-level JSONL under `data/embeddings/` (see `data/embeddings/README.md`).
 
-| Unit type | Count (gated) |
-|---|---|
-| talk_card | 858 |
-| clinical_fact | 1,480 |
-| crispro_opp | 1,752 |
-| cd_hit | 461 |
-| vulnerability | 671 |
-| **total** | **5,222** |
+### Strategy
 
-Gates: resolvable non-`::unknown::` talk_id for intel units; entity anchor; evidence/quote/value present. Quarantines unknown-speaker low-signal cards.
+| Cohort | `metadata.join_status` | Treatment |
+|---|---|---|
+| Joined B→A / Schema A native | `joined` | Full gate (no `::unknown::` on intel) |
+| Unmatched B (count_mismatch, asr, …) | `unmatched` | Keep CrisPRO/CD/vuln + provisional talk cards |
+| B-only sessions (no Schema A) | `provisional` | Synthesize talk cards from B speaker/title/CD/opp |
 
-**Not done:** Supabase re-index / `match_embeddings` RPC (auth declined). Load `data/embeddings/*.jsonl` when credentials available.
+Quality flags on every unit: `has_evidence`, `has_entity`, `provisional`, `indexable`.
+
+### Counts
+
+| Unit type | Before (joined-gated) | After (incl. provisional) |
+|---|---|---|
+| talk_card | 858 | **929** (+71 B-synthesized) |
+| clinical_fact | 1,480 | 1,480 |
+| crispro_opp | 1,752 | 1,752 (116 tagged unmatched/provisional) |
+| cd_hit | 461 | 461 |
+| vulnerability | 671 | 671 |
+| **total** | **5,222** | **5,293** |
+
+Join-status mix (all units): `joined=5046`, `unmatched=206`, `provisional=41`.  
+All **16** B-only session talks now have provisional talk cards in the index prep.
+
+**Not done:** Supabase re-index / `match_embeddings` RPC (auth declined / MCP `needsAuth`). Load `data/embeddings/*.jsonl` when credentials available — prefer filterable `join_status` rather than wiping.
 
 ---
 
@@ -122,20 +155,20 @@ Model build order stays: **reranker → extractor LoRA/DPO → fit ranker**; sti
 
 After remap + re-embed:
 
-1. `match_embeddings` RPC — filter by `source_type`, lower threshold for short clinical facts
-2. `aacr-semantic-search` / `crispro-scorer` / `cd-hit-extractor` — join on repaired `talk_id`
-3. CRM push — only rows with `joined=yes` + priority high/medium
+1. `match_embeddings` RPC — filter by `source_type` / `join_status`, lower threshold for short clinical facts
+2. `aacr-semantic-search` / `crispro-scorer` / `cd-hit-extractor` — join on repaired `talk_id`; optionally include provisional with down-rank
+3. CRM push — prefer `joined=yes` + priority high/medium; provisional for outreach drafts only
 
 ---
 
 ## Execution order
 
-1. **Done:** root-cause analysis, `repair_talk_id_joins.py`, extractor_v6 guard, join map
+1. **Done:** root-cause analysis, join cascade, extractor_v6 guard
 2. **Done:** `--write` repaired Schema B + remapped masters
-3. **Done:** triage `joined=no` + re-extraction queue (LLM re-pass still open / blocked for 5 sessions)
+3. **Done:** triage + prioritized re-extraction queue + offline stubs (LLM re-pass still open / no keys)
 4. **Done:** flywheel quality scores + real DPO rejects (offline/synthetic)
-5. **Done offline:** claim-unit JSONL builder; **open:** Supabase embed + hybrid RPC
-6. **Open:** gold-set eval (Recall@10 / entity hit-rate) before/after
+5. **Done:** modular `aacr_corpus` package; claim units **beyond joinables**
+6. **Open:** Supabase embed + hybrid RPC; gold-set eval (Recall@10 / entity hit-rate)
 
 ---
 
@@ -144,7 +177,8 @@ After remap + re-embed:
 - [x] Schema B `::unknown::` rate &lt; 5% (5/881 ≈ 0.6%)
 - [ ] A↔B join coverage ≥ 95% of valid B talks (**91.9%** all / **93.6%** joinable — blocked on missing Schema A)
 - [x] Zero orphan fragments in Schema B arrays
-- [x] Offline embedding units require resolvable `talk_id` (intel units)
+- [x] Offline embedding units cover unmatched + provisional B (not join-only)
 - [x] Flywheel quality scores non-constant
 - [ ] Search gold-set entity hit-rate improves vs pre-repair baseline (needs Supabase)
 - [x] Preference rejects are real failure modes (not stub-only)
+- [x] Monolith scripts modularized under `scripts/aacr_corpus/`
